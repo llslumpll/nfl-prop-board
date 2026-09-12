@@ -31,6 +31,7 @@
     <tr>
       <td>
         <div class="player-name">
+          <span class="team-badge" style="background:{{ r.team_badge.color }}">{{ r.team_badge.abbr }}</span>
           {{ r.player }}
           {% if qb_by_team.get(r.team) %}
             <span class="corr-flag" title="Correlated with QB {{ qb_by_team[r.team] }} on the same team">&middot; corr. w/ {{ qb_by_team[r.team] }}</span>
@@ -43,7 +44,7 @@
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num">{{ r.targets }}</td>
-      <td class="num">{{ r.receptions }}</td>
+      <td class="num stat-{{ r.perf.css }}">{{ r.receptions }}</td>
       <td class="num">{{ r.catch_rate if r.catch_rate is not none else '—' }}</td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
     </tr>
