@@ -36,11 +36,24 @@
     
 <h1>Matchups</h1>
 <p class="lede">
-  Upcoming games from the real schedule, with each team's current top
-  passer/rusher/receiver's real historical stat line against that exact
-  opponent (2023&ndash;2025). No history between two teams shows as
+  Upcoming games from the real schedule. For each team's top passer,
+  rusher, and receiver: a dampened projection for this game, their real
+  historical performance against this exact opponent (2023&ndash;2025),
+  and how those combine. No history between two teams shows as
   <em>no meetings on record</em> &mdash; never a guessed number.
 </p>
+
+<div class="notice">
+  <strong>How the projection works.</strong> Each number blends the
+  player's career average with this season's observed average, shifted
+  only <strong>20%</strong> of the way from one to the other (never a
+  full override from a single game's result) &mdash; the same dampening
+  principle proven on the MLB build, tuned for NFL's slower weekly
+  cadence. Projections are frozen the moment this page was built and
+  won't silently change mid-week. Not yet validated against real graded
+  results, and not yet compared against a market line since none is
+  wired in.
+</div>
 
 
 
@@ -51,6 +64,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -65,6 +79,9 @@
       </td>
       <td>CHI vs CAR</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 225.0 (career (2023-2025))">
+        225.0
+      </td>
       <td>
         
           <span class="num">304.0</span> avg over 1 game
@@ -82,6 +99,9 @@
       </td>
       <td>CHI vs CAR</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 62.7 (career (2023-2025))">
+        62.7
+      </td>
       <td>
         
           <span class="num">73.0</span> avg over 1 game
@@ -99,6 +119,9 @@
       </td>
       <td>CHI vs CAR</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 50.3 (career (2023-2025))">
+        50.3
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -115,6 +138,9 @@
       </td>
       <td>CAR vs CHI</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 182.0 (career (2023-2025))">
+        182.0
+      </td>
       <td>
         
           <span class="num">121.5</span> avg over 2 games
@@ -132,6 +158,9 @@
       </td>
       <td>CAR vs CHI</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 49.7 (career (2023-2025))">
+        49.7
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -148,6 +177,9 @@
       </td>
       <td>CAR vs CHI</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 60.8 (career (2023-2025))">
+        60.8
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -165,6 +197,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -179,6 +212,9 @@
       </td>
       <td>TB vs CIN</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 242.7 (career (2023-2025))">
+        242.7
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -195,6 +231,9 @@
       </td>
       <td>TB vs CIN</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 63.8 (career (2023-2025))">
+        63.8
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -211,6 +250,9 @@
       </td>
       <td>TB vs CIN</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 55.2 (career (2023-2025))">
+        55.2
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -227,6 +269,9 @@
       </td>
       <td>CIN vs TB</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 258.2 (career (2023-2025))">
+        258.2
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -243,6 +288,9 @@
       </td>
       <td>CIN vs TB</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 48.6 (career (2023-2025))">
+        48.6
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -259,6 +307,9 @@
       </td>
       <td>CIN vs TB</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 88.5 (career (2023-2025))">
+        88.5
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -276,6 +327,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -290,6 +342,9 @@
       </td>
       <td>NO vs DET</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 216.7 (career (2023-2025))">
+        216.7
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -306,6 +361,9 @@
       </td>
       <td>NO vs DET</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 55.7 (career (2023-2025))">
+        55.7
+      </td>
       <td>
         
           <span class="num">51.0</span> avg over 1 game
@@ -323,6 +381,9 @@
       </td>
       <td>NO vs DET</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 67.2 (career (2023-2025))">
+        67.2
+      </td>
       <td>
         
           <span class="num">119.0</span> avg over 1 game
@@ -340,6 +401,9 @@
       </td>
       <td>DET vs NO</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 271.2 (career (2023-2025))">
+        271.2
+      </td>
       <td>
         
           <span class="num">213.0</span> avg over 1 game
@@ -357,6 +421,9 @@
       </td>
       <td>DET vs NO</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 72.2 (career (2023-2025))">
+        72.2
+      </td>
       <td>
         
           <span class="num">60.0</span> avg over 1 game
@@ -374,6 +441,9 @@
       </td>
       <td>DET vs NO</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 85.0 (career (2023-2025))">
+        85.0
+      </td>
       <td>
         
           <span class="num">49.0</span> avg over 1 game
@@ -392,6 +462,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -406,6 +477,9 @@
       </td>
       <td>BUF vs HOU</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 237.2 (career (2023-2025))">
+        237.2
+      </td>
       <td>
         
           <span class="num">192.0</span> avg over 2 games
@@ -423,6 +497,9 @@
       </td>
       <td>BUF vs HOU</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 75.9 (career (2023-2025))">
+        75.9
+      </td>
       <td>
         
           <span class="num">99.0</span> avg over 2 games
@@ -440,6 +517,9 @@
       </td>
       <td>BUF vs HOU</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 47.4 (career (2023-2025))">
+        47.4
+      </td>
       <td>
         
           <span class="num">110.0</span> avg over 1 game
@@ -457,6 +537,9 @@
       </td>
       <td>HOU vs BUF</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 236.8 (career (2023-2025))">
+        236.8
+      </td>
       <td>
         
           <span class="num">331.0</span> avg over 1 game
@@ -474,6 +557,9 @@
       </td>
       <td>HOU vs BUF</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 46.2 (career (2023-2025))">
+        46.2
+      </td>
       <td>
         
           <span class="num">74.0</span> avg over 1 game
@@ -491,6 +577,9 @@
       </td>
       <td>HOU vs BUF</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 81.0 (career (2023-2025))">
+        81.0
+      </td>
       <td>
         
           <span class="num">66.5</span> avg over 2 games
@@ -509,6 +598,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -523,6 +613,9 @@
       </td>
       <td>BAL vs IND</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 225.0 (career (2023-2025))">
+        225.0
+      </td>
       <td>
         
           <span class="num">202.0</span> avg over 1 game
@@ -540,6 +633,9 @@
       </td>
       <td>BAL vs IND</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 93.5 (career (2023-2025))">
+        93.5
+      </td>
       <td>
         
           <span class="num">72.5</span> avg over 2 games
@@ -557,6 +653,9 @@
       </td>
       <td>BAL vs IND</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 63.2 (career (2023-2025))">
+        63.2
+      </td>
       <td>
         
           <span class="num">48.0</span> avg over 1 game
@@ -574,6 +673,9 @@
       </td>
       <td>IND vs BAL</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 209.7 (career (2023-2025))">
+        209.7
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -590,6 +692,9 @@
       </td>
       <td>IND vs BAL</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 91.6 (career (2023-2025))">
+        91.6
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -606,6 +711,9 @@
       </td>
       <td>IND vs BAL</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 48.8 (career (2023-2025))">
+        48.8
+      </td>
       <td>
         
           <span class="num">43.0</span> avg over 1 game
@@ -624,6 +732,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -638,6 +747,9 @@
       </td>
       <td>CLE vs JAX</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 175.0 (career (2023-2025))">
+        175.0
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -654,6 +766,9 @@
       </td>
       <td>CLE vs JAX</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 59.1 (career (2023-2025))">
+        59.1
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -670,6 +785,9 @@
       </td>
       <td>CLE vs JAX</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 45.7 (career (2023-2025))">
+        45.7
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -686,6 +804,9 @@
       </td>
       <td>JAX vs CLE</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 233.5 (career (2023-2025))">
+        233.5
+      </td>
       <td>
         
           <span class="num">238.5</span> avg over 2 games
@@ -703,6 +824,9 @@
       </td>
       <td>JAX vs CLE</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 54.8 (career (2023-2025))">
+        54.8
+      </td>
       <td>
         
           <span class="num">43.5</span> avg over 2 games
@@ -720,6 +844,9 @@
       </td>
       <td>JAX vs CLE</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 37.8 (career (2023-2025))">
+        37.8
+      </td>
       <td>
         
           <span class="num">13.5</span> avg over 2 games
@@ -738,6 +865,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -752,6 +880,9 @@
       </td>
       <td>ATL vs PIT</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 196.9 (career (2023-2025))">
+        196.9
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -768,6 +899,9 @@
       </td>
       <td>ATL vs PIT</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 76.7 (career (2023-2025))">
+        76.7
+      </td>
       <td>
         
           <span class="num">68.0</span> avg over 1 game
@@ -785,6 +919,9 @@
       </td>
       <td>ATL vs PIT</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 43.1 (career (2023-2025))">
+        43.1
+      </td>
       <td>
         
           <span class="num">26.0</span> avg over 1 game
@@ -802,6 +939,9 @@
       </td>
       <td>PIT vs ATL</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 210.4 (career (2023-2025))">
+        210.4
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -818,6 +958,9 @@
       </td>
       <td>PIT vs ATL</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 45.9 (career (2023-2025))">
+        45.9
+      </td>
       <td>
         
           <span class="num">7.0</span> avg over 1 game
@@ -835,6 +978,9 @@
       </td>
       <td>PIT vs ATL</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 63.8 (career (2023-2025))">
+        63.8
+      </td>
       <td>
         
           <span class="num">99.0</span> avg over 1 game
@@ -853,6 +999,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -867,6 +1014,9 @@
       </td>
       <td>NYJ vs TEN</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 149.3 (career (2023-2025))">
+        149.3
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -883,6 +1033,9 @@
       </td>
       <td>NYJ vs TEN</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 59.9 (career (2023-2025))">
+        59.9
+      </td>
       <td>
         
           <span class="num">62.0</span> avg over 1 game
@@ -900,6 +1053,9 @@
       </td>
       <td>NYJ vs TEN</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 62.0 (career (2023-2025))">
+        62.0
+      </td>
       <td>
         
           <span class="num">57.0</span> avg over 1 game
@@ -917,6 +1073,9 @@
       </td>
       <td>TEN vs NYJ</td>
       <td>passing yards</td>
+      <td class="num" title="Baseline 186.4 (career (2023-2025))">
+        186.4
+      </td>
       <td>
         
           <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
@@ -933,6 +1092,9 @@
       </td>
       <td>TEN vs NYJ</td>
       <td>rushing yards</td>
+      <td class="num" title="Baseline 63.2 (career (2023-2025))">
+        63.2
+      </td>
       <td>
         
           <span class="num">67.0</span> avg over 2 games
@@ -950,6 +1112,9 @@
       </td>
       <td>TEN vs NYJ</td>
       <td>receiving yards</td>
+      <td class="num" title="Baseline 31.3 (career (2023-2025))">
+        31.3
+      </td>
       <td>
         
           <span class="num">16.0</span> avg over 1 game
@@ -972,7 +1137,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      Last built: 2026-09-12 06:42 UTC &middot; auto-rebuilds via GitHub Actions
+      Last built: 2026-09-12 06:51 UTC &middot; auto-rebuilds via GitHub Actions
     </div>
   </footer>
 </body>
