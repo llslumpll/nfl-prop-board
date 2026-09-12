@@ -59,6 +59,59 @@ _schedules_cache = None
 MIN_SAMPLE = 30
 DAMPEN = 0.20
 
+# ---------------------------------------------------------------------------
+# Team badges
+# ---------------------------------------------------------------------------
+# Real NFL logos are trademarked and can't be embedded. These are each
+# team's well-known primary brand color (a fact, not artwork) used behind
+# a plain text abbreviation -- a scannable stand-in, not a reproduction
+# of any team's actual logo.
+TEAM_COLORS = {
+    "ARI": "#97233F", "ATL": "#A71930", "BAL": "#241773", "BUF": "#00338D",
+    "CAR": "#0085CA", "CHI": "#0B162A", "CIN": "#FB4F14", "CLE": "#311D00",
+    "DAL": "#041E42", "DEN": "#FB4F14", "DET": "#0076B6", "GB": "#203731",
+    "HOU": "#03202F", "IND": "#002C5F", "JAX": "#101820", "KC": "#E31837",
+    "LA": "#003594", "LAC": "#0080C6", "LV": "#000000", "MIA": "#008E97",
+    "MIN": "#4F2683", "NE": "#002244", "NO": "#D3BC8D", "NYG": "#0B2265",
+    "NYJ": "#125740", "PHI": "#004C54", "PIT": "#FFB612", "SEA": "#69BE28",
+    "SF": "#AA0000", "TB": "#D50A0A", "TEN": "#4B92DB", "WAS": "#5A1414",
+}
+
+
+def team_badge(team: str) -> dict:
+    """Color + abbreviation for a team badge chip. Falls back to a neutral
+    gray for anything unrecognized rather than guessing a color."""
+    return {"abbr": team, "color": TEAM_COLORS.get(team, "#5f6862")}
+
+
+# ---------------------------------------------------------------------------
+# Performance coloring (green/red)
+# ---------------------------------------------------------------------------
+# "Good" and "bad" are defined relative to the player's OWN baseline
+# (their 2023-2025 career average, or league position average if they
+# have no career history) -- never an arbitrary fixed number like "300+
+# yards is good," which would misjudge a backup and a star by the same
+# yardstick. A game 15%+ above a player's own baseline reads as good;
+# 15%+ below reads as bad; anything closer than that is genuinely
+# unremarkable and stays neutral rather than being forced into a color.
+PERF_THRESHOLD = 0.15
+
+
+def performance_vs_baseline(player_name: str, stat_col: str, actual_value) -> dict:
+    if actual_value is None:
+        return {"css": "neutral", "pct_diff": None}
+    baseline, _source = _get_baseline(player_name, stat_col)
+    if not baseline:
+        return {"css": "neutral", "pct_diff": None}
+    pct_diff = round(100 * (actual_value - baseline) / baseline, 0)
+    if pct_diff >= PERF_THRESHOLD * 100:
+        css = "good"
+    elif pct_diff <= -PERF_THRESHOLD * 100:
+        css = "bad"
+    else:
+        css = "neutral"
+    return {"css": css, "pct_diff": pct_diff}
+
 
 def load_stats() -> pl.DataFrame:
     global _stats_cache
@@ -142,6 +195,7 @@ def passing_leaders(limit: int = 30) -> list[dict]:
         out.append({
             "player": row["player_display_name"],
             "team": row["team"],
+            "team_badge": team_badge(row["team"]),
             "opponent": row["opponent_team"],
             "week": row["week"],
             "completions": row["completions"],
@@ -149,6 +203,7 @@ def passing_leaders(limit: int = 30) -> list[dict]:
             "passing_yards": row["passing_yards"],
             "passing_tds": row["passing_tds"],
             "interceptions": row["passing_interceptions"],
+            "perf": performance_vs_baseline(row["player_display_name"], "passing_yards", row["passing_yards"]),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -167,6 +222,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "player": row["player_display_name"],
             "position": row["position"],
             "team": row["team"],
+            "team_badge": team_badge(row["team"]),
             "opponent": row["opponent_team"],
             "week": row["week"],
             "targets": row["targets"],
@@ -174,6 +230,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "receiving_yards": row["receiving_yards"],
             "receiving_tds": row["receiving_tds"],
             "target_share": row.get("target_share"),
+            "perf": performance_vs_baseline(row["player_display_name"], "receiving_yards", row["receiving_yards"]),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -197,6 +254,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
             "player": row["player_display_name"],
             "position": row["position"],
             "team": row["team"],
+            "team_badge": team_badge(row["team"]),
             "opponent": row["opponent_team"],
             "week": row["week"],
             "targets": row["targets"],
@@ -205,6 +263,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
                 round(100 * row["receptions"] / row["targets"], 1)
                 if row.get("targets") else None
             ),
+            "perf": performance_vs_baseline(row["player_display_name"], "receptions", row.get("receptions")),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -223,11 +282,13 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "player": row["player_display_name"],
             "position": row["position"],
             "team": row["team"],
+            "team_badge": team_badge(row["team"]),
             "opponent": row["opponent_team"],
             "week": row["week"],
             "carries": row.get("carries"),
             "rushing_yards": row["rushing_yards"],
             "rushing_tds": row["rushing_tds"],
+            "perf": performance_vs_baseline(row["player_display_name"], "rushing_yards", row["rushing_yards"]),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -260,10 +321,12 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "player": row["player_display_name"],
             "position": row["position"],
             "team": row["team"],
+            "team_badge": team_badge(row["team"]),
             "opponent": row["opponent_team"],
             "week": row["week"],
             "total_tds": total,
             "breakdown": ", ".join(kinds),
+            "perf": {"css": "good" if total >= 2 else "neutral", "pct_diff": None},
             "tier": provisional_tier(1),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -378,6 +441,8 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
             "gameday": g.get("gameday"),
             "away_team": g["away_team"],
             "home_team": g["home_team"],
+            "away_badge": team_badge(g["away_team"]),
+            "home_badge": team_badge(g["home_team"]),
             "players": [],
         }
         for team, opponent in [(g["away_team"], g["home_team"]), (g["home_team"], g["away_team"])]:
@@ -388,7 +453,9 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
                 matchup["players"].append({
                     "player": prow["player_display_name"],
                     "team": team,
+                    "team_badge": team_badge(team),
                     "opponent": opponent,
+                    "opponent_badge": team_badge(opponent),
                     "stat_label": stat_col.replace("_", " "),
                     "history": hist_line,
                     "based_on_current_season": is_current,
@@ -443,6 +510,18 @@ def _league_baseline(stat_col: str) -> float:
     return avg
 
 
+def _get_baseline(player_name: str, stat_col: str) -> tuple[float, str]:
+    """Shared baseline logic: player's own career average, or league
+    position average as fallback. Used by both project_stat() and
+    performance_vs_baseline() so the two stay consistent."""
+    hist = load_historical_stats()
+    career_rows = hist.filter(pl.col("player_display_name") == player_name)
+    career_vals = [v for v in career_rows[stat_col].to_list() if v is not None]
+    if career_vals:
+        return round(sum(career_vals) / len(career_vals), 1), "career (2023-2025)"
+    return _league_baseline(stat_col), "league position average"
+
+
 def project_stat(player_name: str, stat_col: str) -> dict:
     """
     Returns a frozen-at-build-time projection for one player/stat,
@@ -451,13 +530,9 @@ def project_stat(player_name: str, stat_col: str) -> dict:
     let them silently drift" principle, this build.py run's projection
     should not be silently recomputed intra-week.
     """
-    hist = load_historical_stats()
     stats_2026 = load_stats()
 
-    career_rows = hist.filter(pl.col("player_display_name") == player_name)
-    career_vals = [v for v in career_rows[stat_col].to_list() if v is not None]
-    has_career = len(career_vals) > 0
-    baseline = round(sum(career_vals) / len(career_vals), 1) if has_career else _league_baseline(stat_col)
+    baseline, baseline_source = _get_baseline(player_name, stat_col)
 
     season_rows = stats_2026.filter(pl.col("player_display_name") == player_name)
     season_vals = [v for v in season_rows[stat_col].to_list() if v is not None]
@@ -469,7 +544,7 @@ def project_stat(player_name: str, stat_col: str) -> dict:
     return {
         "projected": projected,
         "baseline": baseline,
-        "baseline_source": "career (2023-2025)" if has_career else "league position average",
+        "baseline_source": baseline_source,
         "observed_2026": observed if n_games else None,
         "n_games_2026": n_games,
         "dampen": DAMPEN,
