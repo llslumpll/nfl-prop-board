@@ -13,9 +13,19 @@
       
         <a href="index.html" class="active">Home</a>
       
+        <a href="matchups.html" class="">Matchups</a>
+      
         <a href="passing.html" class="">Passing</a>
       
         <a href="receiving.html" class="">Receiving</a>
+      
+        <a href="receptions.html" class="">Receptions</a>
+      
+        <a href="rushing.html" class="">Rushing</a>
+      
+        <a href="kicking.html" class="">Kicking</a>
+      
+        <a href="touchdowns.html" class="">Touchdowns</a>
       
         <a href="history.html" class="">History</a>
       
@@ -34,11 +44,11 @@
 <div class="stat-strip">
   <div class="stat-block">
     <div class="num">1</div>
-    <div class="label">week of real data loaded</div>
+    <div class="label">week of real 2026 data loaded</div>
   </div>
   <div class="stat-block">
-    <div class="num">2</div>
-    <div class="label">prop pages live: Passing, Receiving</div>
+    <div class="num">7</div>
+    <div class="label">pages live: Matchups, Passing, Receiving, Receptions, Rushing, Kicking, Touchdowns</div>
   </div>
   <div class="stat-block">
     <div class="num">0</div>
@@ -48,16 +58,18 @@
 
 <h2>What's real right now</h2>
 <ul class="plain">
-  <li>Passing and Receiving leaderboards, from live nflreadpy Week 1 data.</li>
+  <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, Kicking, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
+  <li>Matchups page: real upcoming games from the live schedule, with each team's top passer/rusher/receiver's actual historical performance against that specific opponent (2023&ndash;2025) &mdash; or an honest "no meetings on record" where two teams haven't played recently.</li>
   <li>Injury report status pulled in per player, where reported.</li>
-  <li>QB&ndash;receiver correlation flagged on the Receiving page, since stacking a QB with his own WR1 is a common, easy mistake.</li>
+  <li>QB&ndash;receiver correlation flagged on Receiving and Receptions, since stacking a QB with his own WR1 is a common, easy mistake.</li>
 </ul>
 
 <h2>What's intentionally not faked</h2>
 <ul class="plain">
-  <li>No calibrated confidence score &mdash; MIN_SAMPLE/DAMPEN for NFL's weekly cadence is still an open design question, so tiers here are sample-size labels only, not tuned predictions.</li>
-  <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build.</li>
-  <li>No Touchdown, Rushing, Receptions, Kicking, or Teams/Matchups pages yet.</li>
+  <li>No calibrated confidence score. A first-cut MIN_SAMPLE=30 / DAMPEN=0.20 has been reasoned out for NFL's weekly cadence (see <code>scripts/dataio.py</code>), but it hasn't been validated against real graded picks yet, so tiers shown here are still sample-size labels, not tuned predictions.</li>
+  <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build (the sandbox this was built in can't reach those APIs; GitHub Actions runners can, so this is a natural next step).</li>
+  <li>No weather factor for passing yet &mdash; needs its own wind-specific derivation per the brief, not a ported formula.</li>
+  <li>History page is empty on purpose &mdash; no predictions exist yet to grade.</li>
 </ul>
 
   </main>
@@ -67,11 +79,9 @@
       <span>Data: nflreadpy (nflverse), auto-updated.</span>
       <span>Not connected: Kalshi, PrizePicks market lines.</span>
     </div>
+    
     <div class="foot-row foot-dim">
-      Coming soon &mdash; Touchdowns, Rushing, Receptions, Kicking, Teams/Matchups
-    </div>
-    <div class="foot-row foot-dim">
-      Last built: 2026-09-12 06:09 UTC &middot; auto-rebuilds via GitHub Actions
+      Last built: 2026-09-12 06:29 UTC &middot; auto-rebuilds via GitHub Actions
     </div>
   </footer>
 </body>

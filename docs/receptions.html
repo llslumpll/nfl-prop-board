@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Receiving — Prop Edge Board</title>
+  <title>Receptions — Prop Edge Board</title>
   <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
       
         <a href="passing.html" class="">Passing</a>
       
-        <a href="receiving.html" class="active">Receiving</a>
+        <a href="receiving.html" class="">Receiving</a>
       
-        <a href="receptions.html" class="">Receptions</a>
+        <a href="receptions.html" class="active">Receptions</a>
       
         <a href="rushing.html" class="">Rushing</a>
       
@@ -34,20 +34,17 @@
 
   <main class="site-main">
     
-<h1>Receiving</h1>
+<h1>Receptions</h1>
 <p class="lede">
-  Receiving yardage lines from live nflreadpy data. Kept separate from
-  Receptions, since the two are priced as distinct props on both PrizePicks
-  and Kalshi.
+  Reception count, kept as its own page &mdash; Receiving Yards and
+  Receptions are priced as two separate props on PrizePicks and Kalshi,
+  so they're not merged here.
 </p>
 
 <div class="notice">
-  <strong>Provisional tiers only.</strong> Same caveat as Passing &mdash;
-  one week of sample isn't enough for a calibrated model yet.
-  Where a receiver's own quarterback appears in the table, that pairing is
-  flagged as <span class="corr-flag">correlated</span>: their props move
-  together, so stacking both as if they were independent legs is a common
-  mistake worth catching before it happens.
+  <strong>Provisional tiers only.</strong> Same caveat as the other prop
+  pages. Where a receiver's own quarterback appears, that pairing is
+  flagged as <span class="corr-flag">correlated</span>.
 </div>
 
 
@@ -58,8 +55,7 @@
       <th>Matchup</th>
       <th class="num">Targets</th>
       <th class="num">Rec</th>
-      <th class="num">Yards</th>
-      <th class="num">TD</th>
+      <th class="num">Catch %</th>
       <th>Tier</th>
     </tr>
   </thead>
@@ -79,65 +75,7 @@
       <td>W1 vs NE</td>
       <td class="num">11</td>
       <td class="num">8</td>
-      <td class="num">122</td>
-      <td class="num">1</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Puka Nacua
-          
-            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
-          
-        </div>
-        <div class="player-sub">LA &middot; WR</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">9</td>
-      <td class="num">5</td>
-      <td class="num">74</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Mack Hollins
-          
-            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
-          
-        </div>
-        <div class="player-sub">NE &middot; WR</div>
-        
-      </td>
-      <td>W1 vs SEA</td>
-      <td class="num">5</td>
-      <td class="num">4</td>
-      <td class="num">51</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Demarcus Robinson
-          
-            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
-          
-        </div>
-        <div class="player-sub">SF &middot; WR</div>
-        
-      </td>
-      <td>W1 vs LA</td>
-      <td class="num">3</td>
-      <td class="num">2</td>
-      <td class="num">50</td>
-      <td class="num">1</td>
+      <td class="num">72.7</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -155,8 +93,7 @@
       <td>W1 vs LA</td>
       <td class="num">7</td>
       <td class="num">6</td>
-      <td class="num">49</td>
-      <td class="num">1</td>
+      <td class="num">85.7</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -174,122 +111,7 @@
       <td>W1 vs LA</td>
       <td class="num">7</td>
       <td class="num">6</td>
-      <td class="num">48</td>
-      <td class="num">1</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Rhamondre Stevenson
-          
-            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
-          
-        </div>
-        <div class="player-sub">NE &middot; RB</div>
-        
-      </td>
-      <td>W1 vs SEA</td>
-      <td class="num">6</td>
-      <td class="num">5</td>
-      <td class="num">44</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Cooper Kupp
-          
-            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
-          
-        </div>
-        <div class="player-sub">SEA &middot; WR</div>
-        
-      </td>
-      <td>W1 vs NE</td>
-      <td class="num">3</td>
-      <td class="num">2</td>
-      <td class="num">35</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Davante Adams
-          
-            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
-          
-        </div>
-        <div class="player-sub">LA &middot; WR</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">6</td>
-      <td class="num">3</td>
-      <td class="num">26</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Hunter Henry
-          
-            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
-          
-        </div>
-        <div class="player-sub">NE &middot; TE</div>
-        
-      </td>
-      <td>W1 vs SEA</td>
-      <td class="num">3</td>
-      <td class="num">3</td>
-      <td class="num">26</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          A.J. Brown
-          
-            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
-          
-        </div>
-        <div class="player-sub">NE &middot; WR</div>
-        
-      </td>
-      <td>W1 vs SEA</td>
-      <td class="num">4</td>
-      <td class="num">3</td>
-      <td class="num">26</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Kyren Williams
-          
-            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
-          
-        </div>
-        <div class="player-sub">LA &middot; RB</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">3</td>
-      <td class="num">3</td>
-      <td class="num">24</td>
-      <td class="num">0</td>
+      <td class="num">85.7</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -307,27 +129,25 @@
       <td>W1 vs LA</td>
       <td class="num">8</td>
       <td class="num">5</td>
-      <td class="num">20</td>
-      <td class="num">0</td>
+      <td class="num">62.5</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">
-          Brady Russell
+          Rhamondre Stevenson
           
-            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
           
         </div>
-        <div class="player-sub">SEA &middot; RB</div>
+        <div class="player-sub">NE &middot; RB</div>
         
       </td>
-      <td>W1 vs NE</td>
-      <td class="num">2</td>
-      <td class="num">2</td>
-      <td class="num">20</td>
-      <td class="num">0</td>
+      <td>W1 vs SEA</td>
+      <td class="num">6</td>
+      <td class="num">5</td>
+      <td class="num">83.3</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -345,67 +165,133 @@
       <td>W1 vs SEA</td>
       <td class="num">7</td>
       <td class="num">5</td>
-      <td class="num">20</td>
-      <td class="num">0</td>
+      <td class="num">71.4</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">
-          Luke Farrell
-          
-            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
-          
-        </div>
-        <div class="player-sub">SF &middot; TE</div>
-        
-      </td>
-      <td>W1 vs LA</td>
-      <td class="num">2</td>
-      <td class="num">2</td>
-      <td class="num">19</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Davis Allen
+          Puka Nacua
           
             <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
           
         </div>
-        <div class="player-sub">LA &middot; TE</div>
+        <div class="player-sub">LA &middot; WR</div>
         
       </td>
       <td>W1 vs SF</td>
-      <td class="num">1</td>
-      <td class="num">1</td>
-      <td class="num">13</td>
-      <td class="num">0</td>
+      <td class="num">9</td>
+      <td class="num">5</td>
+      <td class="num">55.6</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">
-          AJ Barner
+          Mack Hollins
           
-            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
           
         </div>
-        <div class="player-sub">SEA &middot; TE</div>
-        
-          <span class="injury-flag" title="Oblique">Full Participation in Practice</span>
+        <div class="player-sub">NE &middot; WR</div>
         
       </td>
-      <td>W1 vs NE</td>
+      <td>W1 vs SEA</td>
+      <td class="num">5</td>
+      <td class="num">4</td>
+      <td class="num">80.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Davante Adams
+          
+            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
+          
+        </div>
+        <div class="player-sub">LA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">6</td>
+      <td class="num">3</td>
+      <td class="num">50.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Hunter Henry
+          
+            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
+          
+        </div>
+        <div class="player-sub">NE &middot; TE</div>
+        
+      </td>
+      <td>W1 vs SEA</td>
+      <td class="num">3</td>
+      <td class="num">3</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          A.J. Brown
+          
+            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
+          
+        </div>
+        <div class="player-sub">NE &middot; WR</div>
+        
+      </td>
+      <td>W1 vs SEA</td>
+      <td class="num">4</td>
+      <td class="num">3</td>
+      <td class="num">75.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Kyren Williams
+          
+            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
+          
+        </div>
+        <div class="player-sub">LA &middot; RB</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">3</td>
+      <td class="num">3</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Demarcus Robinson
+          
+            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
+          
+        </div>
+        <div class="player-sub">SF &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">3</td>
       <td class="num">2</td>
-      <td class="num">2</td>
-      <td class="num">13</td>
-      <td class="num">0</td>
+      <td class="num">66.7</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -425,8 +311,7 @@
       <td>W1 vs SF</td>
       <td class="num">2</td>
       <td class="num">2</td>
-      <td class="num">12</td>
-      <td class="num">0</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -446,8 +331,81 @@
       <td>W1 vs LA</td>
       <td class="num">5</td>
       <td class="num">2</td>
-      <td class="num">12</td>
-      <td class="num">0</td>
+      <td class="num">40.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Cooper Kupp
+          
+            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+          
+        </div>
+        <div class="player-sub">SEA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">3</td>
+      <td class="num">2</td>
+      <td class="num">66.7</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Luke Farrell
+          
+            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
+          
+        </div>
+        <div class="player-sub">SF &middot; TE</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">2</td>
+      <td class="num">2</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Brady Russell
+          
+            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+          
+        </div>
+        <div class="player-sub">SEA &middot; RB</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">2</td>
+      <td class="num">2</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          AJ Barner
+          
+            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+          
+        </div>
+        <div class="player-sub">SEA &middot; TE</div>
+        
+          <span class="injury-flag" title="Oblique">Full Participation in Practice</span>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">2</td>
+      <td class="num">2</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -465,46 +423,7 @@
       <td>W1 vs SEA</td>
       <td class="num">2</td>
       <td class="num">2</td>
-      <td class="num">9</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Jordan Whittington
-          
-            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
-          
-        </div>
-        <div class="player-sub">LA &middot; WR</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">1</td>
-      <td class="num">1</td>
-      <td class="num">8</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Colby Parkinson
-          
-            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
-          
-        </div>
-        <div class="player-sub">LA &middot; TE</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">2</td>
-      <td class="num">1</td>
-      <td class="num">6</td>
-      <td class="num">0</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -522,46 +441,25 @@
       <td>W1 vs NE</td>
       <td class="num">2</td>
       <td class="num">2</td>
-      <td class="num">6</td>
-      <td class="num">0</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">
-          Ronnie Rivers
+          Colby Parkinson
           
             <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
           
         </div>
-        <div class="player-sub">LA &middot; RB</div>
+        <div class="player-sub">LA &middot; TE</div>
         
       </td>
       <td>W1 vs SF</td>
+      <td class="num">2</td>
       <td class="num">1</td>
-      <td class="num">1</td>
-      <td class="num">5</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">
-          Kaelon Black
-          
-            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
-          
-        </div>
-        <div class="player-sub">SF &middot; RB</div>
-        
-      </td>
-      <td>W1 vs LA</td>
-      <td class="num">1</td>
-      <td class="num">1</td>
-      <td class="num">5</td>
-      <td class="num">0</td>
+      <td class="num">50.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -579,8 +477,79 @@
       <td>W1 vs NE</td>
       <td class="num">3</td>
       <td class="num">1</td>
-      <td class="num">4</td>
-      <td class="num">0</td>
+      <td class="num">33.3</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Ronnie Rivers
+          
+            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
+          
+        </div>
+        <div class="player-sub">LA &middot; RB</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Davis Allen
+          
+            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
+          
+        </div>
+        <div class="player-sub">LA &middot; TE</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Jordan Whittington
+          
+            <span class="corr-flag" title="Correlated with QB Matthew Stafford on the same team">&middot; corr. w/ Matthew Stafford</span>
+          
+        </div>
+        <div class="player-sub">LA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">100.0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          Kaelon Black
+          
+            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
+          
+        </div>
+        <div class="player-sub">SF &middot; RB</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -598,8 +567,7 @@
       <td>W1 vs SEA</td>
       <td class="num">1</td>
       <td class="num">1</td>
-      <td class="num">2</td>
-      <td class="num">1</td>
+      <td class="num">100.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -617,8 +585,7 @@
       <td>W1 vs NE</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -636,8 +603,7 @@
       <td>W1 vs LA</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -655,8 +621,7 @@
       <td>W1 vs SEA</td>
       <td class="num">3</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">0.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -674,8 +639,7 @@
       <td>W1 vs SF</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -695,8 +659,7 @@
       <td>W1 vs NE</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -714,8 +677,7 @@
       <td>W1 vs NE</td>
       <td class="num">1</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">0.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -733,8 +695,7 @@
       <td>W1 vs LA</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -752,8 +713,7 @@
       <td>W1 vs SF</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -771,8 +731,7 @@
       <td>W1 vs SEA</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -790,8 +749,7 @@
       <td>W1 vs SEA</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -809,8 +767,7 @@
       <td>W1 vs SF</td>
       <td class="num">1</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">0.0</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
@@ -828,8 +785,7 @@
       <td>W1 vs NE</td>
       <td class="num">0</td>
       <td class="num">0</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="num">—</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     

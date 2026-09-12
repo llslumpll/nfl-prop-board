@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Passing — Prop Edge Board</title>
+  <title>Touchdowns — Prop Edge Board</title>
   <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       
         <a href="matchups.html" class="">Matchups</a>
       
-        <a href="passing.html" class="active">Passing</a>
+        <a href="passing.html" class="">Passing</a>
       
         <a href="receiving.html" class="">Receiving</a>
       
@@ -25,7 +25,7 @@
       
         <a href="kicking.html" class="">Kicking</a>
       
-        <a href="touchdowns.html" class="">Touchdowns</a>
+        <a href="touchdowns.html" class="active">Touchdowns</a>
       
         <a href="history.html" class="">History</a>
       
@@ -34,14 +34,16 @@
 
   <main class="site-main">
     
-<h1>Passing</h1>
-<p class="lede">Quarterback passing lines from live nflreadpy data.</p>
+<h1>Touchdowns</h1>
+<p class="lede">
+  Touchdowns cut across positions and prop types (passing, rushing,
+  receiving all count), so per the brief this gets its own page instead
+  of living inside one of the stat-specific pages.
+</p>
 
 <div class="notice">
-  <strong>Provisional tiers only.</strong> With one week of data, there isn't
-  enough sample to run a real calibrated model. The tier column reflects
-  sample size, not a tuned prediction &mdash; see the project brief's open
-  question on NFL's weekly MIN_SAMPLE/DAMPEN values.
+  <strong>Provisional tiers only.</strong> One week of sample isn't enough
+  for a calibrated model yet.
 </div>
 
 
@@ -50,10 +52,8 @@
     <tr>
       <th>Player</th>
       <th>Matchup</th>
-      <th class="num">Comp/Att</th>
-      <th class="num">Yards</th>
-      <th class="num">TD</th>
-      <th class="num">INT</th>
+      <th class="num">Total TDs</th>
+      <th>Breakdown</th>
       <th>Tier</th>
     </tr>
   </thead>
@@ -62,84 +62,108 @@
     <tr>
       <td>
         <div class="player-name">Brock Purdy</div>
-        <div class="player-sub">SF</div>
+        <div class="player-sub">SF &middot; QB</div>
         
       </td>
       <td>W1 vs LA</td>
-      <td class="num">25/34</td>
-      <td class="num">205</td>
       <td class="num">3</td>
+      <td class="player-sub">3 pass</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Mike Evans</div>
+        <div class="player-sub">SF &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LA</td>
       <td class="num">1</td>
+      <td class="player-sub">1 rec</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Demarcus Robinson</div>
+        <div class="player-sub">SF &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">1</td>
+      <td class="player-sub">1 rec</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">Drew Lock</div>
-        <div class="player-sub">SEA</div>
+        <div class="player-sub">SEA &middot; QB</div>
         
       </td>
       <td>W1 vs NE</td>
-      <td class="num">16/22</td>
-      <td class="num">187</td>
       <td class="num">1</td>
-      <td class="num">0</td>
+      <td class="player-sub">1 pass</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Deebo Samuel Sr.</div>
+        <div class="player-sub">SF &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">1</td>
+      <td class="player-sub">1 rec</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Kyren Williams</div>
+        <div class="player-sub">LA &middot; RB</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">1</td>
+      <td class="player-sub">1 rush</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Jaxon Smith-Njigba</div>
+        <div class="player-sub">SEA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">1</td>
+      <td class="player-sub">1 rec</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
         <div class="player-name">Drake Maye</div>
-        <div class="player-sub">NE</div>
+        <div class="player-sub">NE &middot; QB</div>
         
       </td>
       <td>W1 vs SEA</td>
-      <td class="num">23/33</td>
-      <td class="num">178</td>
       <td class="num">1</td>
-      <td class="num">3</td>
+      <td class="player-sub">1 pass</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
     <tr>
       <td>
-        <div class="player-name">Matthew Stafford</div>
-        <div class="player-sub">LA</div>
+        <div class="player-name">Eli Raridon</div>
+        <div class="player-sub">NE &middot; TE</div>
         
       </td>
-      <td>W1 vs SF</td>
-      <td class="num">15/25</td>
-      <td class="num">155</td>
-      <td class="num">0</td>
+      <td>W1 vs SEA</td>
       <td class="num">1</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">Sam Darnold</div>
-        <div class="player-sub">SEA</div>
-        
-      </td>
-      <td>W1 vs NE</td>
-      <td class="num">1/2</td>
-      <td class="num">13</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
-      <td><span class="tier tier-low">Provisional (low sample)</span></td>
-    </tr>
-    
-    <tr>
-      <td>
-        <div class="player-name">Stetson Bennett</div>
-        <div class="player-sub">LA</div>
-        
-      </td>
-      <td>W1 vs SF</td>
-      <td class="num">2/3</td>
-      <td class="num">13</td>
-      <td class="num">0</td>
-      <td class="num">0</td>
+      <td class="player-sub">1 rec</td>
       <td><span class="tier tier-low">Provisional (low sample)</span></td>
     </tr>
     
