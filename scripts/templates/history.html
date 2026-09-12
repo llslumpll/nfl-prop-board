@@ -7,18 +7,31 @@
   not just the hits. This is what would make an accuracy claim credible.
 </p>
 
+<div class="stat-strip">
+  <div class="stat-block">
+    <div class="num">{{ projections_logged }}</div>
+    <div class="label">projections frozen and logged so far</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">0</div>
+    <div class="label">graded predictions &mdash; nothing to grade against yet</div>
+  </div>
+</div>
+
 <div class="empty-state">
-  <h3>No graded predictions yet</h3>
+  <h3>Projections exist. Grading doesn't yet.</h3>
   <p>
-    This build doesn't make predictions yet &mdash; it shows real stat
-    lines only, since the calibration model (MIN_SAMPLE/DAMPEN for NFL's
-    weekly cadence) hasn't been decided. Once predictions are made and
-    graded, this page will show:
+    Every projection shown on the Matchups page gets frozen with a
+    timestamp and appended to a permanent log the moment it's built
+    &mdash; that part of the "gets better over time" promise is real and
+    running now. What's still missing is a way to call a projection a
+    hit or a miss:
   </p>
   <ul class="plain">
-    <li>Every graded pick, win or loss, timestamped at the moment it was frozen.</li>
-    <li>Accuracy trend over time, week by week.</li>
-    <li>Accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
+    <li>No market line is wired in yet, so there's no over/under to grade against &mdash; a projection alone isn't a bet.</li>
+    <li>Once either a market line or a simple actual-vs-projected error metric is decided on, this page will show every graded pick, win or loss, timestamped at the moment it was frozen.</li>
+    <li>From there: accuracy trend over time, week by week, and accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
   </ul>
 </div>
 {% endblock %}
+
