@@ -1,0 +1,57 @@
+{
+  "props": {
+    "Drake Maye": {
+      "passing_yards": 227.5,
+      "rushing_yards": 26.5
+    },
+    "Brock Purdy": {
+      "passing_yards": 242.5,
+      "rushing_yards": 18.5
+    },
+    "Mike Evans": {
+      "receiving_yards": 50.5
+    },
+    "Jaxon Smith-Njigba": {
+      "receiving_yards": 83.5
+    },
+    "Matthew Stafford": {
+      "passing_yards": 252.5,
+      "rushing_yards": -0.5
+    },
+    "Puka Nacua": {
+      "receiving_yards": 91.5
+    },
+    "Davante Adams": {
+      "receiving_yards": 51.5
+    }
+  },
+  "error": null,
+  "diagnostics": {
+    "status_code": 200,
+    "total_projections_returned": 48049,
+    "total_included_resources": 7528,
+    "matched_props": 10,
+    "sample_stat_types_seen": [
+      "1+2 inning pitcher strikeouts",
+      "1+2+3 inning hits+runs+rbis",
+      "1+2+3 inning hitter fantasy score",
+      "1+2+3 inning pitcher strikeouts",
+      "1+2+3+4+5 inning hits+runs+rbis",
+      "1+2+3+4+5 inning hitter fantasy score",
+      "100+ rec yard games",
+      "100+ rush yard games",
+      "180's thrown",
+      "180's thrown (combo)",
+      "1st game total points",
+      "1st inning balls counted",
+      "1st inning hits+runs+rbis",
+      "1st inning hitter fantasy score",
+      "1st inning pitches seen",
+      "1st inning runs",
+      "1st inning runs allowed",
+      "1st inning strikes counted",
+      "1st leg checkout total",
+      "1st pit stop time (sec)"
+    ]
+  }
+}
