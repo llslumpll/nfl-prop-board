@@ -1,71 +1,37 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css">
-</head>
-<body>
-  <header class="site-head">
-    <a class="brand" href="index.html">Prop Edge Board <span class="brand-sub">/ NFL</span></a>
-    <nav class="site-nav">
-      
-        <a href="index.html" class="">Home</a>
-      
-        <a href="matchups.html" class="">Matchups</a>
-      
-        <a href="passing.html" class="">Passing</a>
-      
-        <a href="receiving.html" class="">Receiving</a>
-      
-        <a href="receptions.html" class="">Receptions</a>
-      
-        <a href="rushing.html" class="">Rushing</a>
-      
-        <a href="kicking.html" class="">Kicking</a>
-      
-        <a href="touchdowns.html" class="">Touchdowns</a>
-      
-        <a href="history.html" class="active">History</a>
-      
-    </nav>
-  </header>
-
-  <main class="site-main">
-    
+{% extends "base.html" %}
+{% block title %}History — Prop Edge Board{% endblock %}
+{% block content %}
 <h1>History</h1>
 <p class="lede">
   The full, honest track record of graded picks &mdash; every one shown,
   not just the hits. This is what would make an accuracy claim credible.
 </p>
 
-<div class="empty-state">
-  <h3>No graded predictions yet</h3>
-  <p>
-    This build doesn't make predictions yet &mdash; it shows real stat
-    lines only, since the calibration model (MIN_SAMPLE/DAMPEN for NFL's
-    weekly cadence) hasn't been decided. Once predictions are made and
-    graded, this page will show:
-  </p>
-  <ul class="plain">
-    <li>Every graded pick, win or loss, timestamped at the moment it was frozen.</li>
-    <li>Accuracy trend over time, week by week.</li>
-    <li>Accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
-  </ul>
+<div class="stat-strip">
+  <div class="stat-block">
+    <div class="num">{{ projections_logged }}</div>
+    <div class="label">projections frozen and logged so far</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">0</div>
+    <div class="label">graded predictions &mdash; nothing to grade against yet</div>
+  </div>
 </div>
 
-  </main>
+<div class="empty-state">
+  <h3>Projections exist. Grading doesn't yet.</h3>
+  <p>
+    Every projection shown on the Matchups page gets frozen with a
+    timestamp and appended to a permanent log the moment it's built
+    &mdash; that part of the "gets better over time" promise is real and
+    running now. What's still missing is a way to call a projection a
+    hit or a miss:
+  </p>
+  <ul class="plain">
+    <li>No market line is wired in yet, so there's no over/under to grade against &mdash; a projection alone isn't a bet.</li>
+    <li>Once either a market line or a simple actual-vs-projected error metric is decided on, this page will show every graded pick, win or loss, timestamped at the moment it was frozen.</li>
+    <li>From there: accuracy trend over time, week by week, and accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
+  </ul>
+</div>
+{% endblock %}
 
-  <footer class="site-foot">
-    <div class="foot-row">
-      <span>Data: nflreadpy (nflverse), auto-updated.</span>
-      <span>Not connected: Kalshi, PrizePicks market lines.</span>
-    </div>
-    
-    <div class="foot-row foot-dim">
-      Last built: 2026-09-12 06:29 UTC &middot; auto-rebuilds via GitHub Actions
-    </div>
-  </footer>
-</body>
-</html>
