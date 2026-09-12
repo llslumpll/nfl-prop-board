@@ -234,39 +234,6 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
     return out
 
 
-def kicking_leaders(limit: int = 40) -> list[dict]:
-    """
-    Uses the distance-bucketed FG data confirmed in the brief -- enough
-    detail to show attempt/make patterns by range, not just raw totals.
-    """
-    df = load_stats()
-    k = df.filter(pl.col("position") == "K").filter(
-        (pl.col("fg_att") > 0) | (pl.col("pat_att") > 0)
-    ).sort("fg_made", descending=True)
-    out = []
-    for row in k.head(limit).iter_rows(named=True):
-        n_games = 1
-        long_range_att = (
-            (row.get("fg_made_50_59") or 0) + (row.get("fg_missed_50_59") or 0)
-            + (row.get("fg_made_60_") or 0) + (row.get("fg_missed_60_") or 0)
-        )
-        out.append({
-            "player": row["player_display_name"],
-            "team": row["team"],
-            "opponent": row["opponent_team"],
-            "week": row["week"],
-            "fg_made": row["fg_made"],
-            "fg_att": row["fg_att"],
-            "fg_long": row.get("fg_long"),
-            "long_range_att_50plus": long_range_att,
-            "pat_made": row.get("pat_made"),
-            "pat_att": row.get("pat_att"),
-            "tier": provisional_tier(n_games),
-            "injury": injury_status_for(row["player_display_name"]),
-        })
-    return out
-
-
 def touchdown_leaders(limit: int = 40) -> list[dict]:
     """
     Cross-position anytime-TD board (brief: TDs cut across prop types,
