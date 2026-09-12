@@ -97,7 +97,7 @@ def build():
         "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders()}),
         "kicking.html": ("kicking", "kicking.html", {"rows": dataio.kicking_leaders()}),
         "touchdowns.html": ("touchdowns", "touchdowns.html", {"rows": dataio.touchdown_leaders()}),
-        "history.html": ("history", "history.html", {}),
+        "history.html": ("history", "history.html", {"projections_logged": dataio.projections_logged_count()}),
     }
 
     for filename, (slug, template_name, ctx) in pages.items():
