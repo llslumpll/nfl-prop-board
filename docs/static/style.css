@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap');
+
 :root {
   --bg: #05070a;
   --grid-line: rgba(0, 240, 255, 0.055);
@@ -10,9 +12,9 @@
   --green: #39ff8c;
   --red: #ff3b5c;
   --amber: #ffb020;
-  --mono: "Courier New", ui-monospace, Menlo, monospace;
-  --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-  --display: "Courier New", var(--mono);
+  --mono: "Share Tech Mono", ui-monospace, Menlo, monospace;
+  --sans: "Rajdhani", "Segoe UI", sans-serif;
+  --display: "Orbitron", var(--mono);
 }
 
 * { box-sizing: border-box; }
@@ -27,8 +29,9 @@ html, body {
   background-attachment: fixed;
   color: var(--text);
   font-family: var(--sans);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 a { color: var(--cyan); text-decoration: none; }
@@ -36,14 +39,18 @@ a:hover { text-decoration: underline; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
 
 .site-head {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 24px;
-  padding: 20px 28px;
+  padding: 16px 28px;
   border-bottom: 1px solid var(--line);
   flex-wrap: wrap;
-  background: rgba(0, 240, 255, 0.02);
+  background: rgba(5, 7, 10, 0.94);
+  backdrop-filter: blur(6px);
 }
 
 .brand {
@@ -60,9 +67,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
 .site-nav { display: flex; gap: 20px; flex-wrap: wrap; }
 .site-nav a {
   color: var(--text-dim);
-  font-size: 0.82rem;
-  font-family: var(--mono);
-  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
@@ -71,6 +80,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   border-bottom-color: var(--cyan);
   text-decoration: none;
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.7);
+}
+
+.sys-tagline {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  text-align: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 46, 196, 0.02);
 }
 
 .site-main {
@@ -146,6 +166,30 @@ table.stat-table td.num, table.stat-table th.num {
   text-align: right;
 }
 table.stat-table tr:hover td { background: rgba(0, 240, 255, 0.025); }
+
+.table-wrap {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.table-scroll { max-height: 520px; overflow-y: auto; }
+.table-scroll table.stat-table { margin: 0; }
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #0b0f14;
+}
+.scroll-hint {
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: var(--mono);
+  color: var(--text-dim);
+  padding: 7px;
+  background: #0b0f14;
+  border-top: 1px solid var(--line);
+}
 
 .player-name { font-weight: 600; display: flex; align-items: center; flex-wrap: wrap; gap: 2px; }
 .player-sub { color: var(--text-dim); font-size: 0.85em; }
