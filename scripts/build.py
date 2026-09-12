@@ -19,6 +19,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 import dataio  # noqa: E402
+import kalshi_client  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -34,7 +35,6 @@ NAV_PAGES = [
     ("receiving", "Receiving", "receiving.html"),
     ("receptions", "Receptions", "receptions.html"),
     ("rushing", "Rushing", "rushing.html"),
-    ("kicking", "Kicking", "kicking.html"),
     ("touchdowns", "Touchdowns", "touchdowns.html"),
     ("history", "History", "history.html"),
 ]
@@ -74,9 +74,35 @@ def build():
     DOCS.mkdir(exist_ok=True)
     (DOCS / ".nojekyll").touch()  # tell GitHub Pages not to run Jekyll on this
 
+    # Remove stale pages that are no longer part of the site (e.g. kicking,
+    # dropped as unreliable to project honestly) so they don't linger as
+    # orphaned, unlinked URLs.
+    stale = (DOCS / "kicking.html",)
+    for f in stale:
+        if f.exists():
+            f.unlink()
+            print(f"removed stale {f.name}")
+
+    # Kalshi: real public API, scoped to touchdown + game-level props only
+    # (player yardage props are PrizePicks' lane -- see prizepicks_client.py
+    # once that's added). Fails soft -- see kalshi_client.py docstring.
+    print("Fetching Kalshi touchdown/game props...")
+    kalshi_data = kalshi_client.fetch_nfl_touchdown_and_game_props()
+    if kalshi_data["error"]:
+        print(f"WARNING: Kalshi fetch failed ({kalshi_data['error']}); site builds without it.")
+    else:
+        print(f"Kalshi: found {len(kalshi_data['touchdown_props'])} TD props, "
+              f"{len(kalshi_data['game_props'])} game props.")
+    import json
+    (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
+
     pages = {
         "index.html": ("home", "home.html", {"weeks": dataio.weeks_available()}),
-        "matchups.html": ("matchups", "matchups.html", {"matchups": dataio.upcoming_matchups()}),
+        "matchups.html": (
+            "matchups",
+            "matchups.html",
+            {"matchups": dataio.upcoming_matchups(), "kalshi_game_props": kalshi_data["game_props"], "kalshi_error": kalshi_data["error"]},
+        ),
         "passing.html": ("passing", "passing.html", {"rows": dataio.passing_leaders()}),
         "receiving.html": (
             "receiving",
@@ -95,8 +121,11 @@ def build():
             },
         ),
         "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders()}),
-        "kicking.html": ("kicking", "kicking.html", {"rows": dataio.kicking_leaders()}),
-        "touchdowns.html": ("touchdowns", "touchdowns.html", {"rows": dataio.touchdown_leaders()}),
+        "touchdowns.html": (
+            "touchdowns",
+            "touchdowns.html",
+            {"rows": dataio.touchdown_leaders(), "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
+        ),
         "history.html": ("history", "history.html", {"projections_logged": dataio.projections_logged_count()}),
     }
 
