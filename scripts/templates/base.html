@@ -25,9 +25,11 @@
       <span>Data: nflreadpy (nflverse), auto-updated.</span>
       <span>Not connected: Kalshi, PrizePicks market lines.</span>
     </div>
+    {% if coming_soon %}
     <div class="foot-row foot-dim">
       Coming soon &mdash; {{ coming_soon|join(', ') }}
     </div>
+    {% endif %}
     <div class="foot-row foot-dim">
       Last built: {{ build_time }} &middot; auto-rebuilds via GitHub Actions
     </div>
