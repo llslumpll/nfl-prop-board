@@ -10,6 +10,13 @@
   and what's not.
 </div>
 
+{% if pp_error %}
+<div class="notice">
+  <strong>PrizePicks fetch failed on this build.</strong> Error: {{ pp_error }}
+  <br>Unofficial endpoint, known to block datacenter IPs like GitHub Actions.
+</div>
+{% endif %}
+
 {% if rows %}
 <div class="table-wrap">
 <div class="table-scroll">
@@ -22,6 +29,7 @@
       <th class="num">Yards</th>
       <th class="num">TD</th>
       <th>Next game proj.</th>
+      <th>PrizePicks line</th>
       <th>Tier</th>
     </tr>
   </thead>
@@ -47,6 +55,17 @@
           <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
         {% else %}
           <span class="player-sub">season over</span>
+        {% endif %}
+      </td>
+      <td>
+        {% set pp_line = pp_props.get(r.player, {}).get('rushing_yards') %}
+        {% if pp_line %}
+          <span class="num">{{ pp_line }}</span> yds
+          {% if r.next_game %}
+            <span class="player-sub">(us: {{ r.next_game.projection.projected }})</span>
+          {% endif %}
+        {% else %}
+          <span class="player-sub">no line found</span>
         {% endif %}
       </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
