@@ -14,6 +14,8 @@
 </div>
 
 {% if rows %}
+<div class="table-wrap">
+<div class="table-scroll">
 <table class="stat-table">
   <thead>
     <tr>
@@ -21,6 +23,7 @@
       <th>Matchup</th>
       <th class="num">Total TDs</th>
       <th>Breakdown</th>
+      <th>Next game proj.</th>
       <th>Tier</th>
     </tr>
   </thead>
@@ -40,11 +43,21 @@
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.total_tds }}</td>
       <td class="player-sub">{{ r.breakdown }}</td>
+      <td>
+        {% if r.next_game %}
+          <span class="num">{{ r.next_game.projected_total }}</span> TD ({{ r.next_game.breakdown }}) &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
+        {% else %}
+          <span class="player-sub">season over</span>
+        {% endif %}
+      </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ rows|length }} players</div>
+</div>
 {% else %}
 <div class="empty-state">
   <h3>No touchdown data loaded</h3>
@@ -64,6 +77,8 @@
   Live implied probability from Kalshi's real market prices (cents = %
   chance), for direct comparison against the touchdown totals above.
 </p>
+<div class="table-wrap">
+<div class="table-scroll">
 <table class="stat-table">
   <thead>
     <tr>
@@ -84,6 +99,9 @@
     {% endfor %}
   </tbody>
 </table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ kalshi_td_props|length }} markets</div>
+</div>
 {% else %}
 <div class="empty-state">
   <h3>No Kalshi touchdown markets found this build</h3>
