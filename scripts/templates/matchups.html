@@ -24,7 +24,12 @@
 
 {% if matchups %}
 {% for m in matchups %}
-<h2>Week {{ m.week }}: {{ m.away_team }} @ {{ m.home_team }}{% if m.gameday %} &mdash; {{ m.gameday }}{% endif %}</h2>
+<h2>
+  <span class="team-badge" style="background:{{ m.away_badge.color }}">{{ m.away_badge.abbr }}</span>
+  Week {{ m.week }}: {{ m.away_team }} @ {{ m.home_team }}
+  <span class="team-badge" style="background:{{ m.home_badge.color }}">{{ m.home_badge.abbr }}</span>
+  {% if m.gameday %} &mdash; {{ m.gameday }}{% endif %}
+</h2>
 <table class="stat-table">
   <thead>
     <tr>
@@ -39,7 +44,10 @@
     {% for p in m.players %}
     <tr>
       <td>
-        <div class="player-name">{{ p.player }}</div>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ p.team_badge.color }}">{{ p.team_badge.abbr }}</span>
+          {{ p.player }}
+        </div>
         {% if not p.based_on_current_season %}
           <div class="player-sub">based on 2025 usage &mdash; hasn't played in 2026 yet</div>
         {% endif %}
