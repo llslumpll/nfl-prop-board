@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Receptions — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Receptions</h1>
+<p class="lede">
+  Reception count, kept as its own page &mdash; Receiving Yards and
+  Receptions are priced as two separate props on PrizePicks and Kalshi,
+  so they're not merged here.
+</p>
+
+<div class="notice">
+  <strong>Provisional tiers only.</strong> Same caveat as the other prop
+  pages. Where a receiver's own quarterback appears, that pairing is
+  flagged as <span class="corr-flag">correlated</span>.
+</div>
+
+{% if rows %}
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Matchup</th>
+      <th class="num">Targets</th>
+      <th class="num">Rec</th>
+      <th class="num">Catch %</th>
+      <th>Tier</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+    <tr>
+      <td>
+        <div class="player-name">
+          {{ r.player }}
+          {% if qb_by_team.get(r.team) %}
+            <span class="corr-flag" title="Correlated with QB {{ qb_by_team[r.team] }} on the same team">&middot; corr. w/ {{ qb_by_team[r.team] }}</span>
+          {% endif %}
+        </div>
+        <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
+        {% if r.injury %}
+          <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
+        {% endif %}
+      </td>
+      <td>W{{ r.week }} vs {{ r.opponent }}</td>
+      <td class="num">{{ r.targets }}</td>
+      <td class="num">{{ r.receptions }}</td>
+      <td class="num">{{ r.catch_rate if r.catch_rate is not none else '—' }}</td>
+      <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+  <h3>No receptions data loaded</h3>
+</div>
+{% endif %}
+{% endblock %}

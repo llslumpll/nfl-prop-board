@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}Matchups — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Matchups</h1>
+<p class="lede">
+  Upcoming games from the real schedule, with each team's current top
+  passer/rusher/receiver's real historical stat line against that exact
+  opponent (2023&ndash;2025). No history between two teams shows as
+  <em>no meetings on record</em> &mdash; never a guessed number.
+</p>
+
+{% if matchups %}
+{% for m in matchups %}
+<h2>Week {{ m.week }}: {{ m.away_team }} @ {{ m.home_team }}{% if m.gameday %} &mdash; {{ m.gameday }}{% endif %}</h2>
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Stat</th>
+      <th>History vs opponent</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in m.players %}
+    <tr>
+      <td>
+        <div class="player-name">{{ p.player }}</div>
+        {% if not p.based_on_current_season %}
+          <div class="player-sub">based on 2025 usage &mdash; hasn't played in 2026 yet</div>
+        {% endif %}
+      </td>
+      <td>{{ p.team }} vs {{ p.opponent }}</td>
+      <td>{{ p.stat_label }}</td>
+      <td>
+        {% if p.history %}
+          <span class="num">{{ p.history.avg }}</span> avg over {{ p.history.games }} game{{ 's' if p.history.games != 1 }}
+          ({{ p.history.seasons|join(', ') }}), best {{ p.history.best }}
+        {% else %}
+          <span class="player-sub">no meetings on record (2023&ndash;2025)</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+{% else %}
+<div class="empty-state">
+  <h3>No upcoming games found</h3>
+  <p>The live schedule didn't return any unplayed games.</p>
+</div>
+{% endif %}
+{% endblock %}

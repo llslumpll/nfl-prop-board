@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Touchdowns — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Touchdowns</h1>
+<p class="lede">
+  Touchdowns cut across positions and prop types (passing, rushing,
+  receiving all count), so per the brief this gets its own page instead
+  of living inside one of the stat-specific pages.
+</p>
+
+<div class="notice">
+  <strong>Provisional tiers only.</strong> One week of sample isn't enough
+  for a calibrated model yet.
+</div>
+
+{% if rows %}
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Matchup</th>
+      <th class="num">Total TDs</th>
+      <th>Breakdown</th>
+      <th>Tier</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+    <tr>
+      <td>
+        <div class="player-name">{{ r.player }}</div>
+        <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
+        {% if r.injury %}
+          <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
+        {% endif %}
+      </td>
+      <td>W{{ r.week }} vs {{ r.opponent }}</td>
+      <td class="num">{{ r.total_tds }}</td>
+      <td class="player-sub">{{ r.breakdown }}</td>
+      <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+  <h3>No touchdown data loaded</h3>
+</div>
+{% endif %}
+{% endblock %}
