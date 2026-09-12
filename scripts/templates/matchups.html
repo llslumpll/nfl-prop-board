@@ -3,11 +3,24 @@
 {% block content %}
 <h1>Matchups</h1>
 <p class="lede">
-  Upcoming games from the real schedule, with each team's current top
-  passer/rusher/receiver's real historical stat line against that exact
-  opponent (2023&ndash;2025). No history between two teams shows as
+  Upcoming games from the real schedule. For each team's top passer,
+  rusher, and receiver: a dampened projection for this game, their real
+  historical performance against this exact opponent (2023&ndash;2025),
+  and how those combine. No history between two teams shows as
   <em>no meetings on record</em> &mdash; never a guessed number.
 </p>
+
+<div class="notice">
+  <strong>How the projection works.</strong> Each number blends the
+  player's career average with this season's observed average, shifted
+  only <strong>20%</strong> of the way from one to the other (never a
+  full override from a single game's result) &mdash; the same dampening
+  principle proven on the MLB build, tuned for NFL's slower weekly
+  cadence. Projections are frozen the moment this page was built and
+  won't silently change mid-week. Not yet validated against real graded
+  results, and not yet compared against a market line since none is
+  wired in.
+</div>
 
 {% if matchups %}
 {% for m in matchups %}
@@ -18,6 +31,7 @@
       <th>Player</th>
       <th>Team</th>
       <th>Stat</th>
+      <th class="num">Projected</th>
       <th>History vs opponent</th>
     </tr>
   </thead>
@@ -32,6 +46,9 @@
       </td>
       <td>{{ p.team }} vs {{ p.opponent }}</td>
       <td>{{ p.stat_label }}</td>
+      <td class="num" title="Baseline {{ p.projection.baseline }} ({{ p.projection.baseline_source }}){% if p.projection.observed_2026 is not none %}, 2026 avg {{ p.projection.observed_2026 }} over {{ p.projection.n_games_2026 }} game(s){% endif %}">
+        {{ p.projection.projected }}
+      </td>
       <td>
         {% if p.history %}
           <span class="num">{{ p.history.avg }}</span> avg over {{ p.history.games }} game{{ 's' if p.history.games != 1 }}
