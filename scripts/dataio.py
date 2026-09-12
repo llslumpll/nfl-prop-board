@@ -16,8 +16,14 @@ IMPORTANT HONESTY NOTES (per project brief):
 
 import polars as pl
 from pathlib import Path
+from datetime import datetime, timezone
 
 DATA_DIR = Path(__file__).parent.parent / "data"
+
+# Captured once when this module loads (i.e. once per build run) so every
+# projection computed in a single build shares the same frozen timestamp,
+# per the brief's "freeze predictions, timestamp every freeze" principle.
+FROZEN_AT = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
 _stats_cache = None
 _injuries_cache = None
@@ -410,6 +416,8 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
         for team, opponent in [(g["away_team"], g["home_team"]), (g["home_team"], g["away_team"])]:
             for stat_col, prow, is_current in top_players_for_team(team):
                 hist_line = history_vs_opponent(prow["player_display_name"], stat_col, opponent)
+                projection = project_stat(prow["player_display_name"], stat_col)
+                log_projection(prow["player_display_name"], stat_col, g["week"], projection)
                 matchup["players"].append({
                     "player": prow["player_display_name"],
                     "team": team,
@@ -417,6 +425,124 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
                     "stat_label": stat_col.replace("_", " "),
                     "history": hist_line,
                     "based_on_current_season": is_current,
+                    "projection": projection,
                 })
         out.append(matchup)
     return out
+
+
+# ---------------------------------------------------------------------------
+# Projection engine
+# ---------------------------------------------------------------------------
+# Method (brief-compliant): shrinkage toward a baseline, never a full
+# override from a small sample. This is the "dampen every correction"
+# principle carried over from the proven MLB approach, using the NFL-
+# specific DAMPEN constant defined above.
+#
+#   baseline = player's own 2023-2025 career average for this stat, if
+#              they have any games with a real attempt/target/carry in
+#              that stat; otherwise the league-wide position average
+#              (a rookie/new player has no personal baseline to shrink
+#              toward, so we fall back to the position's typical rate
+#              rather than guessing).
+#   observed = player's 2026-season-so-far average for this stat.
+#   projection = baseline + DAMPEN * (observed - baseline)
+#
+# With only 1 week of 2026 data, "observed" this early is a single game
+# -- exactly the "never a full override from one data point" case the
+# brief warns about, which is why DAMPEN keeps the correction partial.
+_LEAGUE_BASELINE_CACHE: dict[str, float] = {}
+
+_STAT_QUALIFIER = {
+    "passing_yards": ("QB", "attempts", 10),
+    "rushing_yards": ("RB", "carries", 1),
+    "receiving_yards": ("WR", "targets", 1),
+}
+
+
+def _league_baseline(stat_col: str) -> float:
+    if stat_col in _LEAGUE_BASELINE_CACHE:
+        return _LEAGUE_BASELINE_CACHE[stat_col]
+    hist = load_historical_stats()
+    position, qual_col, qual_min = _STAT_QUALIFIER.get(stat_col, (None, None, 0))
+    df = hist
+    if position:
+        df = df.filter(pl.col("position") == position)
+    if qual_col:
+        df = df.filter(pl.col(qual_col) > qual_min)
+    vals = [v for v in df[stat_col].to_list() if v is not None]
+    avg = round(sum(vals) / len(vals), 1) if vals else 0.0
+    _LEAGUE_BASELINE_CACHE[stat_col] = avg
+    return avg
+
+
+def project_stat(player_name: str, stat_col: str) -> dict:
+    """
+    Returns a frozen-at-build-time projection for one player/stat,
+    dampened per the constants above. Callers should treat the result as
+    immutable once built -- per the brief's "freeze predictions, never
+    let them silently drift" principle, this build.py run's projection
+    should not be silently recomputed intra-week.
+    """
+    hist = load_historical_stats()
+    stats_2026 = load_stats()
+
+    career_rows = hist.filter(pl.col("player_display_name") == player_name)
+    career_vals = [v for v in career_rows[stat_col].to_list() if v is not None]
+    has_career = len(career_vals) > 0
+    baseline = round(sum(career_vals) / len(career_vals), 1) if has_career else _league_baseline(stat_col)
+
+    season_rows = stats_2026.filter(pl.col("player_display_name") == player_name)
+    season_vals = [v for v in season_rows[stat_col].to_list() if v is not None]
+    n_games = len(season_vals)
+    observed = round(sum(season_vals) / n_games, 1) if n_games else baseline
+
+    projected = round(baseline + DAMPEN * (observed - baseline), 1)
+
+    return {
+        "projected": projected,
+        "baseline": baseline,
+        "baseline_source": "career (2023-2025)" if has_career else "league position average",
+        "observed_2026": observed if n_games else None,
+        "n_games_2026": n_games,
+        "dampen": DAMPEN,
+        "min_sample": MIN_SAMPLE,
+        "meets_min_sample": n_games >= MIN_SAMPLE,
+        "frozen_at": FROZEN_AT,
+    }
+
+
+def log_projection(player_name: str, stat_col: str, week: int, projection: dict) -> None:
+    """
+    Appends a frozen projection to data/projections_log.csv, one row per
+    player/stat/week/build. This is what makes future grading possible
+    once either (a) a market line exists to define hit/miss, or (b) the
+    site starts comparing projections to actual results directly. Until
+    then this is a real, growing, timestamped record -- not a metric,
+    just the raw material an honest History page will eventually need.
+    """
+    import csv
+
+    log_path = DATA_DIR / "projections_log.csv"
+    is_new = not log_path.exists()
+    with open(log_path, "a", newline="") as f:
+        writer = csv.writer(f)
+        if is_new:
+            writer.writerow([
+                "frozen_at", "week", "player", "stat", "projected",
+                "baseline", "baseline_source", "observed_2026", "n_games_2026",
+            ])
+        writer.writerow([
+            projection["frozen_at"], week, player_name, stat_col,
+            projection["projected"], projection["baseline"],
+            projection["baseline_source"], projection["observed_2026"],
+            projection["n_games_2026"],
+        ])
+
+
+def projections_logged_count() -> int:
+    log_path = DATA_DIR / "projections_log.csv"
+    if not log_path.exists():
+        return 0
+    with open(log_path) as f:
+        return max(0, sum(1 for _ in f) - 1)  # minus header
