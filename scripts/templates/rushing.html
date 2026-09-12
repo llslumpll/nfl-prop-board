@@ -26,7 +26,10 @@
     {% for r in rows %}
     <tr>
       <td>
-        <div class="player-name">{{ r.player }}</div>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ r.team_badge.color }}">{{ r.team_badge.abbr }}</span>
+          {{ r.player }}
+        </div>
         <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
         {% if r.injury %}
           <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
@@ -34,7 +37,7 @@
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num">{{ r.carries }}</td>
-      <td class="num">{{ r.rushing_yards }}</td>
+      <td class="num stat-{{ r.perf.css }}">{{ r.rushing_yards }}{% if r.perf.pct_diff %} <span style="font-size:0.75em">({{ '+' if r.perf.pct_diff > 0 }}{{ r.perf.pct_diff|int }}%)</span>{% endif %}</td>
       <td class="num">{{ r.rushing_tds }}</td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
     </tr>
