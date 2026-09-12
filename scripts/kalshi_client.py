@@ -45,13 +45,30 @@ def _looks_like_team_matchup(text: str) -> bool:
 
 def fetch_nfl_touchdown_and_game_props(max_events: int = 500, timeout: int = 15) -> dict:
     """
-    Returns {"touchdown_props": [...], "game_props": [...], "error": str|None}.
-    Never raises -- a failure here should never break the site build.
+    Returns {"touchdown_props": [...], "game_props": [...], "error": str|None,
+    "diagnostics": {...}}. Never raises -- a failure here should never
+    break the site build.
+
+    The "diagnostics" block exists specifically because the first live
+    run of this found 0 matches with no error, which is ambiguous: it
+    could mean genuinely no NFL events are open right now, or it could
+    mean the response envelope/keys don't match what's coded here. These
+    fields make that distinguishable from the logged output alone.
     """
-    result = {"touchdown_props": [], "game_props": [], "error": None}
+    result = {
+        "touchdown_props": [],
+        "game_props": [],
+        "error": None,
+        "diagnostics": {
+            "total_events_fetched": 0,
+            "response_top_level_keys": None,
+            "sample_event_titles": [],
+        },
+    }
     try:
         events = []
         cursor = None
+        raw_keys = None
         while len(events) < max_events:
             params = {"status": "open", "limit": 200, "with_nested_markets": "true"}
             if cursor:
@@ -59,11 +76,19 @@ def fetch_nfl_touchdown_and_game_props(max_events: int = 500, timeout: int = 15)
             resp = requests.get(f"{BASE_URL}/events", params=params, timeout=timeout)
             resp.raise_for_status()
             data = resp.json()
+            if raw_keys is None:
+                raw_keys = list(data.keys())
             batch = data.get("events", [])
             events.extend(batch)
             cursor = data.get("cursor")
             if not cursor or not batch:
                 break
+
+        result["diagnostics"]["total_events_fetched"] = len(events)
+        result["diagnostics"]["response_top_level_keys"] = raw_keys
+        result["diagnostics"]["sample_event_titles"] = [
+            e.get("title", "<no title field>") for e in events[:25]
+        ]
 
         for event in events:
             title = event.get("title", "") or ""
