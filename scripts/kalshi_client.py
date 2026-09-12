@@ -4,19 +4,21 @@ Kalshi integration -- scoped to touchdown props and game-level props only
 are intentionally left to PrizePicks (see prizepicks_client.py) so the
 two sources cover different, non-overlapping prop types.
 
-CONFIRMED WORKING against a real live GitHub Actions run (not a guess):
-  - KXNFLTD    -> anytime-touchdown markets (14 open events, 632 markets
-                  the day this was confirmed -- one event per game, with
-                  a market per player)
-  - KXNFLGAME  -> game-level moneyline markets (30 open events, 60
-                  markets -- two mutually exclusive YES markets per game,
-                  one per team, matching Kalshi's documented sports-game
-                  ticker pattern)
+CONFIRMED WORKING against a real live GitHub Actions run:
+  - KXNFLTD    -> anytime-touchdown markets
+  - KXNFLGAME  -> game-level moneyline markets
+Both series tickers are real and return real events/markets. However,
+the first live run pulled pricing from markets nested inside /events
+responses, and every yes_bid/yes_ask/volume came back as 0 -- this
+version queries /markets?series_ticker=X directly instead, which is
+Kalshi's dedicated live-pricing endpoint (confirmed against their
+published schema). If prices are STILL empty after this change, that's
+real information too: it means these specific markets genuinely have no
+trades yet, not a bug in this code.
 
 Two other candidates (FOOTBALLTOUCHDOWN, KXNFL) were tried and confirmed
 NOT to be the real tickers (0 events each) -- dropped rather than kept
-as dead weight. This is the real, live-verified list, not a first guess
-anymore.
+as dead weight.
 """
 
 import requests
@@ -35,11 +37,20 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
     "diagnostics": {...}}. Never raises -- a failure here should never
     break the site build.
 
+    Queries /markets?series_ticker=X directly (not /events with nested
+    markets) -- a live run found real events and real ticker names, but
+    every yes_bid/yes_ask/volume came back as 0 or null. The likely
+    cause: markets embedded inside an /events response may be a lighter
+    summary object, while /markets is Kalshi's dedicated live-pricing
+    endpoint (confirmed against their published Market schema, which
+    lists yes_bid/yes_ask/volume/liquidity as real fields there). This
+    is the fix to try; if prices are STILL empty after this, the real
+    explanation is simply that these specific markets have no trades
+    yet (genuinely illiquid), not a field-name bug.
+
     Each bucket is sorted by volume (highest-traded markets first) and
-    capped at max_per_bucket for display -- a live run found 632 raw TD
-    markets, far too many for a readable table. The uncapped, unsorted
-    full result is still written to data/kalshi_raw.json by build.py for
-    transparency; this cap only affects what's rendered on the page.
+    capped at max_per_bucket for display. The uncapped, unsorted full
+    result is still written to data/kalshi_raw.json by build.py.
     """
     result = {
         "touchdown_props": [],
@@ -52,37 +63,46 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
 
     for ticker, bucket in CANDIDATE_SERIES:
         try:
-            resp = requests.get(
-                f"{BASE_URL}/events",
-                params={"series_ticker": ticker, "status": "open", "with_nested_markets": "true", "limit": 200},
-                timeout=timeout,
-            )
-            if resp.status_code == 404:
-                result["diagnostics"]["per_series"][ticker] = "404 (series does not exist)"
-                continue
-            resp.raise_for_status()
-            data = resp.json()
-            events = data.get("events", [])
-            result["diagnostics"]["per_series"][ticker] = f"{len(events)} event(s)"
-            any_success = True
+            markets = []
+            cursor = None
+            while True:
+                params = {"series_ticker": ticker, "status": "open", "limit": 200}
+                if cursor:
+                    params["cursor"] = cursor
+                resp = requests.get(f"{BASE_URL}/markets", params=params, timeout=timeout)
+                if resp.status_code == 404:
+                    result["diagnostics"]["per_series"][ticker] = "404 (series does not exist)"
+                    break
+                resp.raise_for_status()
+                data = resp.json()
+                batch = data.get("markets", [])
+                markets.extend(batch)
+                cursor = data.get("cursor")
+                if not cursor or not batch:
+                    break
 
-            for event in events:
-                event_title = event.get("title", "") or ticker
-                for m in event.get("markets", []):
-                    record = {
-                        "event_title": event_title,
-                        "market_title": m.get("title") or event_title,
-                        "ticker": m.get("ticker"),
-                        "yes_bid": m.get("yes_bid"),
-                        "yes_ask": m.get("yes_ask"),
-                        "volume": m.get("volume") or 0,
-                        "close_time": event.get("close_time") or m.get("close_time"),
-                        "series_ticker": ticker,
-                    }
-                    if bucket == "touchdown":
-                        result["touchdown_props"].append(record)
-                    else:
-                        result["game_props"].append(record)
+            if not markets and ticker not in result["diagnostics"]["per_series"]:
+                result["diagnostics"]["per_series"][ticker] = "0 market(s)"
+                continue
+            elif markets:
+                result["diagnostics"]["per_series"][ticker] = f"{len(markets)} market(s)"
+                any_success = True
+
+            for m in markets:
+                record = {
+                    "event_title": m.get("title") or m.get("event_ticker") or ticker,
+                    "market_title": m.get("title") or m.get("subtitle") or m.get("ticker"),
+                    "ticker": m.get("ticker"),
+                    "yes_bid": m.get("yes_bid"),
+                    "yes_ask": m.get("yes_ask"),
+                    "volume": m.get("volume") or 0,
+                    "close_time": m.get("close_time"),
+                    "series_ticker": ticker,
+                }
+                if bucket == "touchdown":
+                    result["touchdown_props"].append(record)
+                else:
+                    result["game_props"].append(record)
 
         except Exception as e:
             last_error = f"{type(e).__name__}: {e}"
