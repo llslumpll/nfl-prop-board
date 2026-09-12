@@ -84,6 +84,35 @@ def team_badge(team: str) -> dict:
     return {"abbr": team, "color": TEAM_COLORS.get(team, "#5f6862")}
 
 
+def next_game_for_team(team: str) -> dict | None:
+    """Returns {"opponent", "week", "gameday"} for a team's next
+    unplayed game, or None if the season has none left. Per-team lookup
+    (not a single global "next week") so this stays correct once bye
+    weeks make different teams' next games fall on different weeks."""
+    sched = load_schedule()
+    team_games = sched.filter(
+        ((pl.col("home_team") == team) | (pl.col("away_team") == team))
+        & (pl.col("result").is_null())
+    ).sort("week")
+    if team_games.height == 0:
+        return None
+    row = team_games.row(0, named=True)
+    opponent = row["away_team"] if row["home_team"] == team else row["home_team"]
+    return {"opponent": opponent, "week": row["week"], "gameday": row.get("gameday")}
+
+
+def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | None:
+    """Combines next_game_for_team + project_stat into the single lookup
+    every stat page needs: who they play next, and the dampened
+    projection for that specific stat in that game. Returns None if
+    there's no upcoming game left to project for."""
+    game = next_game_for_team(team)
+    if game is None:
+        return None
+    projection = project_stat(player_name, stat_col)
+    return {**game, "projection": projection}
+
+
 # ---------------------------------------------------------------------------
 # Performance coloring (green/red)
 # ---------------------------------------------------------------------------
@@ -204,6 +233,7 @@ def passing_leaders(limit: int = 30) -> list[dict]:
             "passing_tds": row["passing_tds"],
             "interceptions": row["passing_interceptions"],
             "perf": performance_vs_baseline(row["player_display_name"], "passing_yards", row["passing_yards"]),
+            "next_game": next_game_projection(row["player_display_name"], row["team"], "passing_yards"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -231,6 +261,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "receiving_tds": row["receiving_tds"],
             "target_share": row.get("target_share"),
             "perf": performance_vs_baseline(row["player_display_name"], "receiving_yards", row["receiving_yards"]),
+            "next_game": next_game_projection(row["player_display_name"], row["team"], "receiving_yards"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -264,6 +295,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
                 if row.get("targets") else None
             ),
             "perf": performance_vs_baseline(row["player_display_name"], "receptions", row.get("receptions")),
+            "next_game": next_game_projection(row["player_display_name"], row["team"], "receptions"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
@@ -289,10 +321,36 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "rushing_yards": row["rushing_yards"],
             "rushing_tds": row["rushing_tds"],
             "perf": performance_vs_baseline(row["player_display_name"], "rushing_yards", row["rushing_yards"]),
+            "next_game": next_game_projection(row["player_display_name"], row["team"], "rushing_yards"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
         })
     return out
+
+
+def _project_total_td(player_name: str, team: str) -> dict | None:
+    """Touchdowns don't live in a single stat column -- sums the dampened
+    projection across passing/rushing/receiving TDs (whichever the
+    player has any real history in) paired with their next game."""
+    game = next_game_for_team(team)
+    if game is None:
+        return None
+    total_projected = 0.0
+    parts = []
+    for stat_col, label in [("passing_tds", "pass"), ("rushing_tds", "rush"), ("receiving_tds", "rec")]:
+        hist = load_historical_stats()
+        career_vals = [v for v in hist.filter(pl.col("player_display_name") == player_name)[stat_col].to_list() if v]
+        if not career_vals and stat_col != "rushing_tds":
+            # skip stat types the player has literally never recorded,
+            # rather than projecting a fake baseline for e.g. a WR's
+            # passing TDs -- rushing_tds is kept since any position can
+            # pick up a garbage-time or trick-play carry.
+            continue
+        proj = project_stat(player_name, stat_col)
+        if proj["projected"] > 0.05:
+            total_projected += proj["projected"]
+            parts.append(f"{proj['projected']} {label}")
+    return {**game, "projected_total": round(total_projected, 1), "breakdown": ", ".join(parts) or "—"}
 
 
 def touchdown_leaders(limit: int = 40) -> list[dict]:
@@ -327,6 +385,7 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "total_tds": total,
             "breakdown": ", ".join(kinds),
             "perf": {"css": "good" if total >= 2 else "neutral", "pct_diff": None},
+            "next_game": _project_total_td(row["player_display_name"], row["team"]),
             "tier": provisional_tier(1),
             "injury": injury_status_for(row["player_display_name"]),
         })
