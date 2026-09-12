@@ -28,14 +28,17 @@
     {% for r in rows %}
     <tr>
       <td>
-        <div class="player-name">{{ r.player }}</div>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ r.team_badge.color }}">{{ r.team_badge.abbr }}</span>
+          {{ r.player }}
+        </div>
         <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
         {% if r.injury %}
           <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
         {% endif %}
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
-      <td class="num">{{ r.total_tds }}</td>
+      <td class="num stat-{{ r.perf.css }}">{{ r.total_tds }}</td>
       <td class="player-sub">{{ r.breakdown }}</td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
     </tr>
