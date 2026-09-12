@@ -15,7 +15,7 @@
   </div>
   <div class="stat-block">
     <div class="num">7</div>
-    <div class="label">pages live: Matchups, Passing, Receiving, Receptions, Rushing, Kicking, Touchdowns</div>
+    <div class="label">pages live: Matchups, Passing, Receiving, Receptions, Rushing, Touchdowns</div>
   </div>
   <div class="stat-block">
     <div class="num">0</div>
@@ -25,7 +25,7 @@
 
 <h2>What's real right now</h2>
 <ul class="plain">
-  <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, Kicking, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
+  <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
   <li>Matchups page: real upcoming games from the live schedule, with each team's top passer/rusher/receiver's actual historical performance against that specific opponent (2023&ndash;2025) &mdash; or an honest "no meetings on record" where two teams haven't played recently.</li>
   <li>Injury report status pulled in per player, where reported.</li>
   <li>QB&ndash;receiver correlation flagged on Receiving and Receptions, since stacking a QB with his own WR1 is a common, easy mistake.</li>
@@ -37,5 +37,6 @@
   <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build (the sandbox this was built in can't reach those APIs; GitHub Actions runners can, so this is a natural next step).</li>
   <li>No weather factor for passing yet &mdash; needs its own wind-specific derivation per the brief, not a ported formula.</li>
   <li>History page is empty on purpose &mdash; no predictions exist yet to grade.</li>
+  <li>Kicking was dropped. Field goal attempts depend too heavily on decisions (coach's 4th-down call, weather, game script) that this build has no honest way to project yet &mdash; better to drop it than publish a number with no real basis.</li>
 </ul>
 {% endblock %}
