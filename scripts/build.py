@@ -91,8 +91,10 @@ def build():
     if kalshi_data["error"]:
         print(f"WARNING: Kalshi fetch failed ({kalshi_data['error']}); site builds without it.")
     else:
-        print(f"Kalshi: found {len(kalshi_data['touchdown_props'])} TD props, "
-              f"{len(kalshi_data['game_props'])} game props.")
+        diag = kalshi_data["diagnostics"]
+        print(f"Kalshi: found {diag.get('total_touchdown_props_found', 0)} TD props, "
+              f"{diag.get('total_game_props_found', 0)} game props "
+              f"(showing top {len(kalshi_data['touchdown_props'])}/{len(kalshi_data['game_props'])} by volume).")
     print(f"Kalshi per-series results: {kalshi_data['diagnostics']['per_series']}")
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
