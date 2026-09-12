@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prop Edge Board — NFL</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Prop Edge Board <span class="brand-sub">/ NFL</span></a>
+    <nav class="site-nav">
+      
+        <a href="index.html" class="active">Home</a>
+      
+        <a href="passing.html" class="">Passing</a>
+      
+        <a href="receiving.html" class="">Receiving</a>
+      
+        <a href="history.html" class="">History</a>
+      
+    </nav>
+  </header>
+
+  <main class="site-main">
+    
+<h1>NFL prop board, week by week</h1>
+<p class="lede">
+  Real player stats, pulled live from nflreadpy. No predictions are dressed
+  up as more certain than they are — the season is one week old, so every
+  confidence tag on this build is marked provisional rather than tuned.
+</p>
+
+<div class="stat-strip">
+  <div class="stat-block">
+    <div class="num">1</div>
+    <div class="label">week of real data loaded</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">2</div>
+    <div class="label">prop pages live: Passing, Receiving</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">0</div>
+    <div class="label">graded predictions so far &mdash; History starts honest</div>
+  </div>
+</div>
+
+<h2>What's real right now</h2>
+<ul class="plain">
+  <li>Passing and Receiving leaderboards, from live nflreadpy Week 1 data.</li>
+  <li>Injury report status pulled in per player, where reported.</li>
+  <li>QB&ndash;receiver correlation flagged on the Receiving page, since stacking a QB with his own WR1 is a common, easy mistake.</li>
+</ul>
+
+<h2>What's intentionally not faked</h2>
+<ul class="plain">
+  <li>No calibrated confidence score &mdash; MIN_SAMPLE/DAMPEN for NFL's weekly cadence is still an open design question, so tiers here are sample-size labels only, not tuned predictions.</li>
+  <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build.</li>
+  <li>No Touchdown, Rushing, Receptions, Kicking, or Teams/Matchups pages yet.</li>
+</ul>
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-row">
+      <span>Data: nflreadpy (nflverse), auto-updated.</span>
+      <span>Not connected: Kalshi, PrizePicks market lines.</span>
+    </div>
+    <div class="foot-row foot-dim">
+      Coming soon &mdash; Touchdowns, Rushing, Receptions, Kicking, Teams/Matchups
+    </div>
+    <div class="foot-row foot-dim">
+      Last built: 2026-09-12 05:33 UTC &middot; auto-rebuilds via GitHub Actions
+    </div>
+  </footer>
+</body>
+</html>

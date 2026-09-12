@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Passing — Prop Edge Board</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Prop Edge Board <span class="brand-sub">/ NFL</span></a>
+    <nav class="site-nav">
+      
+        <a href="index.html" class="">Home</a>
+      
+        <a href="passing.html" class="active">Passing</a>
+      
+        <a href="receiving.html" class="">Receiving</a>
+      
+        <a href="history.html" class="">History</a>
+      
+    </nav>
+  </header>
+
+  <main class="site-main">
+    
+<h1>Passing</h1>
+<p class="lede">Quarterback passing lines from live nflreadpy data.</p>
+
+<div class="notice">
+  <strong>Provisional tiers only.</strong> With one week of data, there isn't
+  enough sample to run a real calibrated model. The tier column reflects
+  sample size, not a tuned prediction &mdash; see the project brief's open
+  question on NFL's weekly MIN_SAMPLE/DAMPEN values.
+</div>
+
+
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Matchup</th>
+      <th class="num">Comp/Att</th>
+      <th class="num">Yards</th>
+      <th class="num">TD</th>
+      <th class="num">INT</th>
+      <th>Tier</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>
+        <div class="player-name">Brock Purdy</div>
+        <div class="player-sub">SF</div>
+        
+      </td>
+      <td>W1 vs LA</td>
+      <td class="num">25/34</td>
+      <td class="num">205</td>
+      <td class="num">3</td>
+      <td class="num">1</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Drew Lock</div>
+        <div class="player-sub">SEA</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">16/22</td>
+      <td class="num">187</td>
+      <td class="num">1</td>
+      <td class="num">0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Drake Maye</div>
+        <div class="player-sub">NE</div>
+        
+      </td>
+      <td>W1 vs SEA</td>
+      <td class="num">23/33</td>
+      <td class="num">178</td>
+      <td class="num">1</td>
+      <td class="num">3</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Matthew Stafford</div>
+        <div class="player-sub">LA</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">15/25</td>
+      <td class="num">155</td>
+      <td class="num">0</td>
+      <td class="num">1</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Sam Darnold</div>
+        <div class="player-sub">SEA</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">1/2</td>
+      <td class="num">13</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+    <tr>
+      <td>
+        <div class="player-name">Stetson Bennett</div>
+        <div class="player-sub">LA</div>
+        
+      </td>
+      <td>W1 vs SF</td>
+      <td class="num">2/3</td>
+      <td class="num">13</td>
+      <td class="num">0</td>
+      <td class="num">0</td>
+      <td><span class="tier tier-low">Provisional (low sample)</span></td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-row">
+      <span>Data: nflreadpy (nflverse), auto-updated.</span>
+      <span>Not connected: Kalshi, PrizePicks market lines.</span>
+    </div>
+    <div class="foot-row foot-dim">
+      Coming soon &mdash; Touchdowns, Rushing, Receptions, Kicking, Teams/Matchups
+    </div>
+    <div class="foot-row foot-dim">
+      Last built: 2026-09-12 05:33 UTC &middot; auto-rebuilds via GitHub Actions
+    </div>
+  </footer>
+</body>
+</html>

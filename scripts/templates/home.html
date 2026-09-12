@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Prop Edge Board — NFL{% endblock %}
+{% block content %}
+<h1>NFL prop board, week by week</h1>
+<p class="lede">
+  Real player stats, pulled live from nflreadpy. No predictions are dressed
+  up as more certain than they are — the season is one week old, so every
+  confidence tag on this build is marked provisional rather than tuned.
+</p>
+
+<div class="stat-strip">
+  <div class="stat-block">
+    <div class="num">{{ weeks|length }}</div>
+    <div class="label">week{{ 's' if weeks|length != 1 }} of real data loaded</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">2</div>
+    <div class="label">prop pages live: Passing, Receiving</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">0</div>
+    <div class="label">graded predictions so far &mdash; History starts honest</div>
+  </div>
+</div>
+
+<h2>What's real right now</h2>
+<ul class="plain">
+  <li>Passing and Receiving leaderboards, from live nflreadpy Week 1 data.</li>
+  <li>Injury report status pulled in per player, where reported.</li>
+  <li>QB&ndash;receiver correlation flagged on the Receiving page, since stacking a QB with his own WR1 is a common, easy mistake.</li>
+</ul>
+
+<h2>What's intentionally not faked</h2>
+<ul class="plain">
+  <li>No calibrated confidence score &mdash; MIN_SAMPLE/DAMPEN for NFL's weekly cadence is still an open design question, so tiers here are sample-size labels only, not tuned predictions.</li>
+  <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build.</li>
+  <li>No Touchdown, Rushing, Receptions, Kicking, or Teams/Matchups pages yet.</li>
+</ul>
+{% endblock %}

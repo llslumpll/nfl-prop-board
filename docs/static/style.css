@@ -1,0 +1,179 @@
+:root {
+  --bg: #0d1210;
+  --bg-card: #131a17;
+  --line: #2a332e;
+  --text: #eef0ea;
+  --text-dim: #9aa39c;
+  --gold: #c9a227;
+  --gold-dim: #8a7220;
+  --warn: #b6552c;
+  --green: #5c8a4a;
+  --mono: "Courier New", ui-monospace, Menlo, monospace;
+  --sans: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --display: "Arial Narrow", "Helvetica Neue Condensed", var(--sans);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a { color: var(--gold); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+.site-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--line);
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+.brand:hover { text-decoration: none; }
+.brand-sub { color: var(--gold); font-weight: 400; }
+
+.site-nav { display: flex; gap: 20px; }
+.site-nav a { color: var(--text-dim); font-size: 0.95rem; padding-bottom: 4px; border-bottom: 2px solid transparent; }
+.site-nav a.active, .site-nav a:hover { color: var(--text); border-bottom-color: var(--gold); text-decoration: none; }
+
+.site-main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.site-foot {
+  border-top: 1px solid var(--line);
+  padding: 20px 28px 40px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+.foot-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+.foot-dim { color: #5f6862; }
+
+h1 {
+  font-family: var(--display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+}
+h2 {
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 40px 0 12px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+p.lede { color: var(--text-dim); max-width: 62ch; margin: 0 0 28px; }
+
+.notice {
+  border-left: 3px solid var(--warn);
+  background: var(--bg-card);
+  padding: 12px 16px;
+  margin: 0 0 28px;
+  color: var(--text-dim);
+  font-size: 0.92rem;
+}
+.notice strong { color: var(--text); }
+
+table.stat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+table.stat-table th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-dim);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+table.stat-table td {
+  padding: 9px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: middle;
+}
+table.stat-table td.num, table.stat-table th.num {
+  font-family: var(--mono);
+  text-align: right;
+}
+table.stat-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+.player-name { font-weight: 600; }
+.player-sub { color: var(--text-dim); font-size: 0.85em; }
+
+.tier {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+.tier-low { border-color: var(--warn); color: var(--warn); }
+.tier-mid { border-color: var(--gold-dim); color: var(--gold); }
+.tier-high { border-color: var(--green); color: var(--green); }
+.tier-none { border-color: var(--line); color: var(--text-dim); }
+
+.injury-flag {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.78rem;
+  color: var(--warn);
+  border-bottom: 1px dotted var(--warn);
+}
+
+.corr-flag {
+  color: var(--gold);
+  font-size: 0.8em;
+}
+
+.empty-state {
+  border: 1px dashed var(--line);
+  padding: 32px 24px;
+  color: var(--text-dim);
+  text-align: left;
+}
+.empty-state h3 { color: var(--text); margin-top: 0; }
+
+.stat-strip {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 24px 0 8px;
+}
+.stat-block .num {
+  font-family: var(--mono);
+  font-size: 2.1rem;
+  color: var(--gold);
+  line-height: 1;
+}
+.stat-block .label { color: var(--text-dim); font-size: 0.85rem; margin-top: 4px; }
+
+ul.plain { padding-left: 20px; color: var(--text-dim); }
+ul.plain li { margin-bottom: 6px; }
+
+@media (max-width: 640px) {
+  .site-head { padding: 16px; }
+  .site-main { padding: 28px 16px 60px; }
+  table.stat-table { font-size: 0.82rem; }
+  table.stat-table th:nth-child(3), table.stat-table td:nth-child(3) { display: none; }
+}

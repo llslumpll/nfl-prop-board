@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}History — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>History</h1>
+<p class="lede">
+  The full, honest track record of graded picks &mdash; every one shown,
+  not just the hits. This is what would make an accuracy claim credible.
+</p>
+
+<div class="empty-state">
+  <h3>No graded predictions yet</h3>
+  <p>
+    This build doesn't make predictions yet &mdash; it shows real stat
+    lines only, since the calibration model (MIN_SAMPLE/DAMPEN for NFL's
+    weekly cadence) hasn't been decided. Once predictions are made and
+    graded, this page will show:
+  </p>
+  <ul class="plain">
+    <li>Every graded pick, win or loss, timestamped at the moment it was frozen.</li>
+    <li>Accuracy trend over time, week by week.</li>
+    <li>Accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
+  </ul>
+</div>
+{% endblock %}

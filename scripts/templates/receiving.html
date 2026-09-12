@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Receiving — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Receiving</h1>
+<p class="lede">
+  Receiving yardage lines from live nflreadpy data. Kept separate from
+  Receptions, since the two are priced as distinct props on both PrizePicks
+  and Kalshi.
+</p>
+
+<div class="notice">
+  <strong>Provisional tiers only.</strong> Same caveat as Passing &mdash;
+  one week of sample isn't enough for a calibrated model yet.
+  Where a receiver's own quarterback appears in the table, that pairing is
+  flagged as <span class="corr-flag">correlated</span>: their props move
+  together, so stacking both as if they were independent legs is a common
+  mistake worth catching before it happens.
+</div>
+
+{% if rows %}
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Matchup</th>
+      <th class="num">Targets</th>
+      <th class="num">Rec</th>
+      <th class="num">Yards</th>
+      <th class="num">TD</th>
+      <th>Tier</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for r in rows %}
+    <tr>
+      <td>
+        <div class="player-name">
+          {{ r.player }}
+          {% if qb_by_team.get(r.team) %}
+            <span class="corr-flag" title="Correlated with QB {{ qb_by_team[r.team] }} on the same team">&middot; corr. w/ {{ qb_by_team[r.team] }}</span>
+          {% endif %}
+        </div>
+        <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
+        {% if r.injury %}
+          <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
+        {% endif %}
+      </td>
+      <td>W{{ r.week }} vs {{ r.opponent }}</td>
+      <td class="num">{{ r.targets }}</td>
+      <td class="num">{{ r.receptions if r.receptions is not none else '—' }}</td>
+      <td class="num">{{ r.receiving_yards }}</td>
+      <td class="num">{{ r.receiving_tds }}</td>
+      <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+  <h3>No receiving data loaded</h3>
+  <p>The live data snapshot didn't return any receiver rows.</p>
+</div>
+{% endif %}
+{% endblock %}

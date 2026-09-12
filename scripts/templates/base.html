@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Prop Edge Board{% endblock %}</title>
+  <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">Prop Edge Board <span class="brand-sub">/ NFL</span></a>
+    <nav class="site-nav">
+      {% for slug, label, href in nav_pages %}
+        <a href="{{ href }}" class="{{ 'active' if current_page == slug else '' }}">{{ label }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+
+  <main class="site-main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-row">
+      <span>Data: nflreadpy (nflverse), auto-updated.</span>
+      <span>Not connected: Kalshi, PrizePicks market lines.</span>
+    </div>
+    <div class="foot-row foot-dim">
+      Coming soon &mdash; {{ coming_soon|join(', ') }}
+    </div>
+    <div class="foot-row foot-dim">
+      Last built: {{ build_time }} &middot; auto-rebuilds via GitHub Actions
+    </div>
+  </footer>
+</body>
+</html>
