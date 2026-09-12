@@ -93,6 +93,10 @@ def build():
     else:
         print(f"Kalshi: found {len(kalshi_data['touchdown_props'])} TD props, "
               f"{len(kalshi_data['game_props'])} game props.")
+        diag = kalshi_data["diagnostics"]
+        print(f"Kalshi diagnostics: total_events_fetched={diag['total_events_fetched']}, "
+              f"response_keys={diag['response_top_level_keys']}")
+        print(f"Kalshi sample event titles (first 25): {diag['sample_event_titles']}")
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
 
