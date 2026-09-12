@@ -15,6 +15,8 @@
 </div>
 
 {% if rows %}
+<div class="table-wrap">
+<div class="table-scroll">
 <table class="stat-table">
   <thead>
     <tr>
@@ -23,6 +25,7 @@
       <th class="num">Targets</th>
       <th class="num">Rec</th>
       <th class="num">Catch %</th>
+      <th>Next game proj.</th>
       <th>Tier</th>
     </tr>
   </thead>
@@ -46,11 +49,21 @@
       <td class="num">{{ r.targets }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.receptions }}</td>
       <td class="num">{{ r.catch_rate if r.catch_rate is not none else '—' }}</td>
+      <td>
+        {% if r.next_game %}
+          <span class="num">{{ r.next_game.projection.projected }}</span> rec &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
+        {% else %}
+          <span class="player-sub">season over</span>
+        {% endif %}
+      </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ rows|length }} players</div>
+</div>
 {% else %}
 <div class="empty-state">
   <h3>No receptions data loaded</h3>
