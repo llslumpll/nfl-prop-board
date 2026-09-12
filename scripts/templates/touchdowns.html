@@ -47,4 +47,44 @@
   <h3>No touchdown data loaded</h3>
 </div>
 {% endif %}
+
+<h2>Kalshi touchdown markets</h2>
+{% if kalshi_error %}
+<div class="notice">
+  <strong>Kalshi fetch failed on this build.</strong> Error: {{ kalshi_error }}
+  <br>This is the first live deployment of the Kalshi integration &mdash;
+  if this keeps failing, the request shape likely needs adjusting against
+  a real response rather than docs alone.
+</div>
+{% elif kalshi_td_props %}
+<p class="lede">
+  Live implied probability from Kalshi's real market prices (cents = %
+  chance), for direct comparison against the touchdown totals above.
+</p>
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Market</th>
+      <th class="num">Yes bid</th>
+      <th class="num">Yes ask</th>
+      <th class="num">Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for m in kalshi_td_props %}
+    <tr>
+      <td>{{ m.market_title }}</td>
+      <td class="num">{{ m.yes_bid if m.yes_bid is not none else '—' }}&cent;</td>
+      <td class="num">{{ m.yes_ask if m.yes_ask is not none else '—' }}&cent;</td>
+      <td class="num">{{ m.volume if m.volume is not none else '—' }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<div class="empty-state">
+  <h3>No Kalshi touchdown markets found this build</h3>
+  <p>Either none are open right now, or the discovery filter didn't match anything &mdash; check <code>data/kalshi_raw.json</code> for the raw response.</p>
+</div>
+{% endif %}
 {% endblock %}
