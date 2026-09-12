@@ -6,120 +6,103 @@ two sources cover different, non-overlapping prop types.
 
 IMPORTANT: this hits Kalshi's real, documented, unauthenticated public
 API (https://docs.kalshi.com/getting_started/quick_start_market_data).
-No API key needed. BUT this has never been run against a live response
-from the sandbox that built it -- that sandbox's network allowlist
-doesn't include api.elections.kalshi.com. This has only been verified
-against Kalshi's own documentation, not a live call. Treat the first
-real GitHub Actions run of this as the actual test; check the workflow
-log for what it found (or how it failed) and adjust from there, the
-same way nflreadpy was verified live before being trusted.
+No API key needed.
 
-Because of that, everything here fails soft: if Kalshi's response shape
-doesn't match what's coded here, or the request fails outright, this
-returns an empty list and the site builds anyway without Kalshi data --
-never a crash, never a fabricated number.
+REAL FINDING FROM THE FIRST LIVE RUN (not a guess): scanning /events
+broadly with no series filter returns real data (confirmed: 600 events,
+correct response shape) but pagination order surfaces long-horizon
+futures markets (politics, climate, IPOs) first -- NFL game markets
+never showed up in the first 600. Kalshi's own guidance is explicit
+about this failure mode: sports/series-based categories must be queried
+via Series -> Events -> Markets, i.e. /events?series_ticker=X, never a
+broad scan. This version does that instead.
+
+Sports game tickers follow a documented pattern of
+{SERIES}-{date}{TEAM1}{TEAM2}-{TEAM}, e.g. KXNHLGAME-25MAY12EDMORL-EDM
+for NHL. By that pattern, NFL should be KXNFLGAME. Kalshi's touchdown
+market has been independently reported (trade press, not docs) as
+ticker FOOTBALLTOUCHDOWN. Both are tried below as candidates -- this is
+still not 100% certain until a live run confirms it, so this probes
+several plausible candidates and records which ones actually returned
+events, rather than betting everything on one guess.
 """
 
 import requests
 
 BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 
-# Keywords used to classify discovered events client-side, since Kalshi
-# doesn't publish a fixed ticker-naming lookup table -- markets are meant
-# to be discovered via the /events endpoint, not guessed.
-TD_KEYWORDS = ["touchdown", " td ", "score a td", "anytime td"]
-GAME_KEYWORDS = ["spread", "moneyline", "total points", "over/under", "to win by", "final score"]
-NFL_KEYWORDS = ["nfl", "national football league"]
+# Candidate series tickers to probe. Each entry: (ticker, bucket).
+# "touchdown" -> touchdown_props, "game" -> game_props.
+CANDIDATE_SERIES = [
+    ("FOOTBALLTOUCHDOWN", "touchdown"),
+    ("KXNFLTD", "touchdown"),
+    ("KXNFLGAME", "game"),
+    ("KXNFL", "game"),
+]
 
 
-def _looks_like_nfl(text: str) -> bool:
-    t = text.lower()
-    return any(k in t for k in NFL_KEYWORDS) or _looks_like_team_matchup(t)
-
-
-def _looks_like_team_matchup(text: str) -> bool:
-    # crude fallback: "X vs Y" or "X @ Y" pattern is common in Kalshi
-    # sports event titles even when "NFL" isn't spelled out.
-    return " vs " in text.lower() or " vs. " in text.lower()
-
-
-def fetch_nfl_touchdown_and_game_props(max_events: int = 500, timeout: int = 15) -> dict:
+def fetch_nfl_touchdown_and_game_props(timeout: int = 15) -> dict:
     """
     Returns {"touchdown_props": [...], "game_props": [...], "error": str|None,
     "diagnostics": {...}}. Never raises -- a failure here should never
     break the site build.
 
-    The "diagnostics" block exists specifically because the first live
-    run of this found 0 matches with no error, which is ambiguous: it
-    could mean genuinely no NFL events are open right now, or it could
-    mean the response envelope/keys don't match what's coded here. These
-    fields make that distinguishable from the logged output alone.
+    Queries each candidate series ticker directly via
+    /events?series_ticker=X rather than scanning the full event catalog
+    (see module docstring for why the broad-scan approach failed on the
+    first live run). Per-series diagnostics record which tickers were
+    real (returned events) vs. wrong guesses (404 or empty), so the next
+    round can drop dead candidates and add better ones without more
+    guesswork.
     """
     result = {
         "touchdown_props": [],
         "game_props": [],
         "error": None,
-        "diagnostics": {
-            "total_events_fetched": 0,
-            "response_top_level_keys": None,
-            "sample_event_titles": [],
-        },
+        "diagnostics": {"per_series": {}},
     }
-    try:
-        events = []
-        cursor = None
-        raw_keys = None
-        while len(events) < max_events:
-            params = {"status": "open", "limit": 200, "with_nested_markets": "true"}
-            if cursor:
-                params["cursor"] = cursor
-            resp = requests.get(f"{BASE_URL}/events", params=params, timeout=timeout)
+    any_success = False
+    last_error = None
+
+    for ticker, bucket in CANDIDATE_SERIES:
+        try:
+            resp = requests.get(
+                f"{BASE_URL}/events",
+                params={"series_ticker": ticker, "status": "open", "with_nested_markets": "true", "limit": 200},
+                timeout=timeout,
+            )
+            if resp.status_code == 404:
+                result["diagnostics"]["per_series"][ticker] = "404 (series does not exist)"
+                continue
             resp.raise_for_status()
             data = resp.json()
-            if raw_keys is None:
-                raw_keys = list(data.keys())
-            batch = data.get("events", [])
-            events.extend(batch)
-            cursor = data.get("cursor")
-            if not cursor or not batch:
-                break
+            events = data.get("events", [])
+            result["diagnostics"]["per_series"][ticker] = f"{len(events)} event(s)"
+            any_success = True
 
-        result["diagnostics"]["total_events_fetched"] = len(events)
-        result["diagnostics"]["response_top_level_keys"] = raw_keys
-        result["diagnostics"]["sample_event_titles"] = [
-            e.get("title", "<no title field>") for e in events[:25]
-        ]
+            for event in events:
+                event_title = event.get("title", "") or ticker
+                for m in event.get("markets", []):
+                    record = {
+                        "event_title": event_title,
+                        "market_title": m.get("title") or event_title,
+                        "ticker": m.get("ticker"),
+                        "yes_bid": m.get("yes_bid"),
+                        "yes_ask": m.get("yes_ask"),
+                        "volume": m.get("volume"),
+                        "close_time": event.get("close_time") or m.get("close_time"),
+                        "series_ticker": ticker,
+                    }
+                    if bucket == "touchdown":
+                        result["touchdown_props"].append(record)
+                    else:
+                        result["game_props"].append(record)
 
-        for event in events:
-            title = event.get("title", "") or ""
-            if not _looks_like_nfl(title):
-                continue
+        except Exception as e:
+            last_error = f"{type(e).__name__}: {e}"
+            result["diagnostics"]["per_series"][ticker] = f"error: {last_error}"
 
-            markets = event.get("markets", [])
-            lower_title = title.lower()
-            is_td = any(k in lower_title for k in TD_KEYWORDS)
-            is_game = any(k in lower_title for k in GAME_KEYWORDS)
-
-            for m in markets:
-                m_title = m.get("title", "") or title
-                m_lower = m_title.lower()
-                record = {
-                    "event_title": title,
-                    "market_title": m_title,
-                    "ticker": m.get("ticker"),
-                    "yes_bid": m.get("yes_bid"),
-                    "yes_ask": m.get("yes_ask"),
-                    "volume": m.get("volume"),
-                    "close_time": event.get("close_time") or m.get("close_time"),
-                }
-                if is_td or any(k in m_lower for k in TD_KEYWORDS):
-                    result["touchdown_props"].append(record)
-                elif is_game or any(k in m_lower for k in GAME_KEYWORDS):
-                    result["game_props"].append(record)
-                # anything else (e.g. yardage props) is deliberately
-                # skipped -- out of scope per the Kalshi/PrizePicks split.
-
-    except Exception as e:
-        result["error"] = f"{type(e).__name__}: {e}"
+    if not any_success and last_error:
+        result["error"] = last_error
 
     return result
