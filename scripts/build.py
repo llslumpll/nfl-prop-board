@@ -20,6 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 import dataio  # noqa: E402
 import kalshi_client  # noqa: E402
+import prizepicks_client  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -99,6 +100,21 @@ def build():
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
 
+    # PrizePicks: unofficial, no key needed, but a documented risk of
+    # datacenter-IP blocking (see prizepicks_client.py docstring). Fails
+    # soft exactly like Kalshi. Matched against our OWN known 2026
+    # roster rather than trusting an unverified league_id.
+    print("Fetching PrizePicks player props...")
+    known_names = set(dataio.load_stats()["player_display_name"].to_list())
+    pp_data = prizepicks_client.fetch_nfl_player_props(known_names)
+    if pp_data["error"]:
+        print(f"WARNING: PrizePicks fetch failed ({pp_data['error']}); site builds without it.")
+    else:
+        print(f"PrizePicks diagnostics: {pp_data['diagnostics']}")
+    (DATA_DIR / "prizepicks_raw.json").write_text(json.dumps(pp_data, indent=2))
+    pp_props = pp_data["props"]
+    pp_error = pp_data["error"]
+
     pages = {
         "index.html": ("home", "home.html", {"weeks": dataio.weeks_available()}),
         "matchups.html": (
@@ -106,13 +122,15 @@ def build():
             "matchups.html",
             {"matchups": dataio.upcoming_matchups(), "kalshi_game_props": kalshi_data["game_props"], "kalshi_error": kalshi_data["error"]},
         ),
-        "passing.html": ("passing", "passing.html", {"rows": dataio.passing_leaders()}),
+        "passing.html": ("passing", "passing.html", {"rows": dataio.passing_leaders(), "pp_props": pp_props, "pp_error": pp_error}),
         "receiving.html": (
             "receiving",
             "receiving.html",
             {
                 "rows": dataio.receiving_leaders(),
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
+                "pp_props": pp_props,
+                "pp_error": pp_error,
             },
         ),
         "receptions.html": (
@@ -121,9 +139,11 @@ def build():
             {
                 "rows": dataio.receptions_leaders(),
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
+                "pp_props": pp_props,
+                "pp_error": pp_error,
             },
         ),
-        "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders()}),
+        "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders(), "pp_props": pp_props, "pp_error": pp_error}),
         "touchdowns.html": (
             "touchdowns",
             "touchdowns.html",
