@@ -1,5 +1,40 @@
 {
   "touchdown_props": [],
   "game_props": [],
-  "error": null
+  "error": null,
+  "diagnostics": {
+    "total_events_fetched": 600,
+    "response_top_level_keys": [
+      "cursor",
+      "events",
+      "milestones"
+    ],
+    "sample_event_titles": [
+      "Will Elon Musk visit Mars in his lifetime?",
+      "Who will be the next Secretary General of NATO?",
+      "Who will the next Pope be?",
+      "Will the world pass 2 degrees Celsius over pre-industrial levels before 2050?",
+      "Will a human land on Mars before California starts high-speed rail?",
+      "Will a supervolcano erupt before 2050?",
+      "Will humans colonize Mars before 2050?",
+      "Will Zohran Mamdani become President of the United States before 2045?",
+      "Who will be the next DNC Chair?",
+      "Who will be named as Xi Jinping's successor?",
+      "Will Nick Fuentes become President of the United States before 2045?",
+      "Who will be the next new Prime Minister of Romania?",
+      "Who will succeed Netanyahu as Prime Minister of Israel?",
+      "Which G7 leader will leave office next?",
+      "Kylian Mbappe Total FIFA World Cup Career Goals",
+      "New York J: To Break Playoff Drought",
+      "Will Ramp or Brex IPO first?",
+      "Will OpenAI or Anthropic IPO first?",
+      "When will nuclear fusion be achieved?",
+      "Will Deel or Rippling IPO first?",
+      "US real GDP growth in 2036?",
+      "US headline CPI inflation in December 2036",
+      "US nominal GDP growth in 2036",
+      "US unemployment rate at year-end 2036",
+      "US labor force participation rate at year-end 2036"
+    ]
+  }
 }
