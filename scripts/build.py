@@ -29,11 +29,16 @@ DATA_DIR = ROOT / "data"
 
 NAV_PAGES = [
     ("home", "Home", "index.html"),
+    ("matchups", "Matchups", "matchups.html"),
     ("passing", "Passing", "passing.html"),
     ("receiving", "Receiving", "receiving.html"),
+    ("receptions", "Receptions", "receptions.html"),
+    ("rushing", "Rushing", "rushing.html"),
+    ("kicking", "Kicking", "kicking.html"),
+    ("touchdowns", "Touchdowns", "touchdowns.html"),
     ("history", "History", "history.html"),
 ]
-COMING_SOON = ["Touchdowns", "Rushing", "Receptions", "Kicking", "Teams/Matchups"]
+COMING_SOON: list[str] = []
 
 
 def refresh_data():
@@ -45,6 +50,15 @@ def refresh_data():
     nfl.load_player_stats([2026]).write_parquet(DATA_DIR / "player_stats_2026.parquet")
     print("Fetching live injuries...")
     nfl.load_injuries([2026]).write_parquet(DATA_DIR / "injuries_2026.parquet")
+    print("Fetching live schedule...")
+    nfl.load_schedules([2026]).write_parquet(DATA_DIR / "schedules_2026.parquet")
+    # Historical stats (for Teams/Matchups) change slowly -- only refetch
+    # if we don't already have a cached copy, to save a bigger pull on
+    # every scheduled run.
+    hist_path = DATA_DIR / "player_stats_historical.parquet"
+    if not hist_path.exists():
+        print("Fetching historical player stats (2023-2025, one-time pull)...")
+        nfl.load_player_stats([2023, 2024, 2025]).write_parquet(hist_path)
 
 
 def build():
@@ -62,6 +76,7 @@ def build():
 
     pages = {
         "index.html": ("home", "home.html", {"weeks": dataio.weeks_available()}),
+        "matchups.html": ("matchups", "matchups.html", {"matchups": dataio.upcoming_matchups()}),
         "passing.html": ("passing", "passing.html", {"rows": dataio.passing_leaders()}),
         "receiving.html": (
             "receiving",
@@ -71,6 +86,17 @@ def build():
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
             },
         ),
+        "receptions.html": (
+            "receptions",
+            "receptions.html",
+            {
+                "rows": dataio.receptions_leaders(),
+                "qb_by_team": dataio.correlated_pairs_for_receiving(),
+            },
+        ),
+        "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders()}),
+        "kicking.html": ("kicking", "kicking.html", {"rows": dataio.kicking_leaders()}),
+        "touchdowns.html": ("touchdowns", "touchdowns.html", {"rows": dataio.touchdown_leaders()}),
         "history.html": ("history", "history.html", {}),
     }
 
