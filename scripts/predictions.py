@@ -1,0 +1,85 @@
+"""
+Frozen prediction store. One record per (player, stat, week), written
+ONCE and never overwritten -- this is what makes grading meaningful.
+
+Earlier versions of this site logged a new CSV row on every single
+build, including the odds-only refresh that runs every 20 minutes --
+that would have produced thousands of duplicate rows per player per
+week instead of one real, checkable prediction. This fixes that: a key
+that already exists is left completely alone on every subsequent call,
+exactly like the MLB site's "frozen prediction" pattern (projectedK/
+projectedOuts/reason preserved across rebuilds in run_daily.py).
+
+Each record captures the REAL market line (PrizePicks, where available)
+at the moment it was frozen, not just our own projection -- without a
+real line, there's nothing to call a hit or a miss against.
+"""
+
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+
+DATA_DIR = Path(__file__).parent.parent / "data"
+PREDICTIONS_PATH = DATA_DIR / "predictions.json"
+
+
+def load_predictions() -> dict:
+    if not PREDICTIONS_PATH.exists():
+        return {}
+    try:
+        return json.loads(PREDICTIONS_PATH.read_text())
+    except Exception:
+        return {}
+
+
+def save_predictions(preds: dict) -> None:
+    PREDICTIONS_PATH.write_text(json.dumps(preds, indent=2, default=str))
+
+
+def _key(player: str, stat: str, week: int) -> str:
+    return f"{player}|{stat}|{week}"
+
+
+def freeze_prediction(
+    player: str, team: str, opponent: str, week: int, stat: str,
+    projected: float, tier_label: str, market_line: float | None = None,
+    market_source: str | None = None,
+) -> bool:
+    """
+    Writes a new frozen prediction ONLY if this (player, stat, week)
+    combination doesn't already exist. Returns True if a new record was
+    written, False if one already existed (and was therefore left
+    untouched). Call/edge are only set when a real market line exists --
+    no market line means no call, since there's nothing to grade against.
+    """
+    preds = load_predictions()
+    key = _key(player, stat, week)
+    if key in preds:
+        return False
+
+    call = None
+    edge = None
+    if market_line is not None:
+        edge = round(projected - market_line, 1)
+        call = "OVER" if edge > 0 else "UNDER" if edge < 0 else "PUSH"
+
+    preds[key] = {
+        "player": player,
+        "team": team,
+        "opponent": opponent,
+        "week": week,
+        "stat": stat,
+        "projected": projected,
+        "tier_at_freeze": tier_label,
+        "market_line": market_line,
+        "market_source": market_source,
+        "call": call,
+        "edge": edge,
+        "frozen_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "graded": False,
+        "actual": None,
+        "hit": None,
+        "graded_at": None,
+    }
+    save_predictions(preds)
+    return True
