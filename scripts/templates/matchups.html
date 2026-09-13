@@ -16,29 +16,29 @@
 </div>
 
 <h2>Standings &amp; Recent Trend</h2>
-<p class="lede small">Record, last-5 games, and trend vs. season pace. Scroll within each list to see every team.</p>
+<p class="lede small">Record, last-5 games, and trend vs. season pace, by division. Scroll within each list to see every team.</p>
 <div class="standings-grid">
   {% for conf in ["AFC", "NFC"] %}
   <div>
     <h3 class="conf-head conf-{{ conf|lower }}">{{ conf }}</h3>
-    <div class="table-wrap">
-    <div class="table-scroll" style="max-height:340px;">
+    {% for division, teams in standings.get(conf, {}).items() %}
+    <h4 class="division-head">{{ division }}</h4>
+    <div class="table-wrap" style="margin-bottom:14px;">
     <table class="stat-table">
       <thead><tr><th>Team</th><th class="num">Record</th><th class="num">Last 5</th><th>Trend</th></tr></thead>
       <tbody>
-        {% for t in standings.get(conf, []) %}
+        {% for t in teams %}
         <tr>
           <td>
             <span class="team-badge" style="background:{{ t.team_badge.color }}">{{ t.team_badge.abbr }}</span>
             {{ t.team }}
-            <div class="player-sub">{{ t.division }}</div>
           </td>
           <td class="num">{{ t.wins }}-{{ t.losses }}{{ '-' + t.ties|string if t.ties else '' }}</td>
           <td class="num">{{ t.last5 }}</td>
           <td>
-            {% if t.trend == 'up' %}<span class="stat-good">&#9650; up</span>
-            {% elif t.trend == 'down' %}<span class="stat-bad">&#9660; down</span>
-            {% elif t.trend == 'flat' %}<span class="player-sub">&#9644; flat</span>
+            {% if t.trend == 'up' %}<span class="stat-good">&#9650;</span>
+            {% elif t.trend == 'down' %}<span class="stat-bad">&#9660;</span>
+            {% elif t.trend == 'flat' %}<span class="player-sub">&#9644;</span>
             {% else %}<span class="player-sub">--</span>{% endif %}
           </td>
         </tr>
@@ -46,13 +46,13 @@
       </tbody>
     </table>
     </div>
-    </div>
+    {% endfor %}
   </div>
   {% endfor %}
 </div>
 
 <h2>Full Team Stats</h2>
-<p class="lede small">Real season totals for every team &mdash; offense, turnovers, and defense (yards allowed derived from what opponents actually gained).</p>
+<p class="lede small">All 32 teams. Offense, turnovers, and defense (yards allowed derived from what opponents actually gained). Teams with 0 games played show real zeros, not missing rows &mdash; they simply haven't played yet.</p>
 <div class="table-wrap">
 <div class="table-scroll">
 <table class="stat-table">
