@@ -120,6 +120,8 @@ def build():
 
     # --- Matchups: single next date, with per-game Kalshi props attached ---
     matchups_data = dataio.matchups_for_next_date()
+    standings = dataio.team_standings()
+    full_team_stats = dataio.team_full_stats()
 
     def kalshi_props_for_game(game: dict) -> list[dict]:
         """Filters the full Kalshi game_props list down to just the two
@@ -164,7 +166,12 @@ def build():
         "matchups.html": (
             "matchups",
             "matchups.html",
-            {"matchups_data": matchups_data, "kalshi_error": kalshi_data["error"]},
+            {
+                "matchups_data": matchups_data,
+                "standings": standings,
+                "full_team_stats": full_team_stats,
+                "kalshi_error": kalshi_data["error"],
+            },
         ),
         "passing.html": ("passing", "passing.html", {"rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error}),
         "receiving.html": (
