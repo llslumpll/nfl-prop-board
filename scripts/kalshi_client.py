@@ -4,80 +4,72 @@ Kalshi integration -- scoped to touchdown props and game-level props only
 are intentionally left to PrizePicks (see prizepicks_client.py) so the
 two sources cover different, non-overlapping prop types.
 
-CONFIRMED WORKING against a real live GitHub Actions run:
-  - KXNFLTD    -> anytime-touchdown markets
-  - KXNFLGAME  -> game-level moneyline markets
-Both series tickers are real and return real events/markets. However,
-the first live run pulled pricing from markets nested inside /events
-responses, and every yes_bid/yes_ask/volume came back as 0 -- this
-version queries /markets?series_ticker=X directly instead, which is
-Kalshi's dedicated live-pricing endpoint (confirmed against their
-published schema). If prices are STILL empty after this change, that's
-real information too: it means these specific markets genuinely have no
-trades yet, not a bug in this code.
-
-Two other candidates (FOOTBALLTOUCHDOWN, KXNFL) were tried and confirmed
-NOT to be the real tickers (0 events each) -- dropped rather than kept
-as dead weight.
+REBUILT to match the MLB site's proven-working pattern exactly, after
+two earlier approaches both returned real markets with null prices:
+  1. /events?series_ticker=X&with_nested_markets=true -- returned real
+     events/markets but every price field was null.
+  2. /markets?series_ticker=X (bulk, whole series at once) -- same
+     result, all null, even via individual /markets/{ticker} hydration.
+The MLB script's working approach is neither of these: it fetches
+events via /events?series_ticker=X (no nested markets), then for EACH
+event makes a SEPARATE /markets?event_ticker=X&status=open call. This
+per-event-scoped markets call is the one this file never tried. Copied
+directly from that confirmed-working reference rather than guessing a
+fourth theory.
 """
 
+import time
 import requests
 
 BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 
 CANDIDATE_SERIES = [
     ("KXNFLTD", "touchdown"),
-    ("KXNFLANYTD", "touchdown"),
     ("KXNFLFIRSTTD", "touchdown"),
-    ("KXNFL2TD", "touchdown"),
     ("KXNFLGAME", "game"),
     ("KXNFLSPREAD", "game"),
     ("KXNFLTOTAL", "game"),
 ]
 
 
-def _hydrate_market_price(ticker: str, timeout: int = 10) -> tuple[dict | None, str]:
-    """
-    Fetches ONE market by its exact ticker via GET /markets/{ticker}.
-    Returns (market_dict_or_None, outcome_label) -- the label lets the
-    caller count exactly how many hydration attempts errored vs.
-    succeeded-but-still-had-no-price vs. genuinely returned a live
-    quote, since "0 hydrated quotes out of 250 attempts" is ambiguous
-    without knowing which of those it actually was.
-    """
+def _get(url, params=None, timeout=15):
+    resp = requests.get(url, params=params, timeout=timeout)
+    resp.raise_for_status()
+    return resp.json()
+
+
+def _fetch_events(series_ticker):
+    events, cursor = [], None
+    while True:
+        params = {"series_ticker": series_ticker, "status": "open", "limit": 200}
+        if cursor:
+            params["cursor"] = cursor
+        data = _get(f"{BASE_URL}/events", params=params)
+        batch = data.get("events") or []
+        events.extend(batch)
+        cursor = data.get("cursor")
+        if not cursor or not batch:
+            break
+    return events
+
+
+def _fetch_markets_for_event(event_ticker):
+    data = _get(f"{BASE_URL}/markets", params={"event_ticker": event_ticker, "status": "open"})
+    return data.get("markets") or []
+
+
+def _to_num(x):
     try:
-        resp = requests.get(f"{BASE_URL}/markets/{ticker}", timeout=timeout)
-        resp.raise_for_status()
-        market = resp.json().get("market")
-        if not market:
-            return None, "no_market_key_in_response"
-        if market.get("yes_bid") is not None or market.get("yes_ask") is not None:
-            return market, "has_price"
-        return market, "fetched_but_null_price"
-    except Exception as e:
-        return None, f"error: {type(e).__name__}: {e}"
+        return float(x)
+    except (TypeError, ValueError):
+        return None
 
 
-def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 40, max_hydrate: int = 250) -> dict:
+def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
     """
     Returns {"touchdown_props": [...], "game_props": [...], "error": str|None,
     "diagnostics": {...}}. Never raises -- a failure here should never
     break the site build.
-
-    Queries /markets?series_ticker=X directly (not /events with nested
-    markets) -- a live run found real events and real ticker names, but
-    every yes_bid/yes_ask/volume came back as 0 or null. The likely
-    cause: markets embedded inside an /events response may be a lighter
-    summary object, while /markets is Kalshi's dedicated live-pricing
-    endpoint (confirmed against their published Market schema, which
-    lists yes_bid/yes_ask/volume/liquidity as real fields there). This
-    is the fix to try; if prices are STILL empty after this, the real
-    explanation is simply that these specific markets have no trades
-    yet (genuinely illiquid), not a field-name bug.
-
-    Each bucket is sorted by volume (highest-traded markets first) and
-    capped at max_per_bucket for display. The uncapped, unsorted full
-    result is still written to data/kalshi_raw.json by build.py.
     """
     result = {
         "touchdown_props": [],
@@ -88,52 +80,60 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
     any_success = False
     last_error = None
 
-    for ticker, bucket in CANDIDATE_SERIES:
+    for series_ticker, bucket in CANDIDATE_SERIES:
         try:
-            markets = []
-            cursor = None
-            while True:
-                params = {"series_ticker": ticker, "status": "open", "limit": 200}
-                if cursor:
-                    params["cursor"] = cursor
-                resp = requests.get(f"{BASE_URL}/markets", params=params, timeout=timeout)
-                if resp.status_code == 404:
-                    result["diagnostics"]["per_series"][ticker] = "404 (series does not exist)"
-                    break
-                resp.raise_for_status()
-                data = resp.json()
-                batch = data.get("markets", [])
-                markets.extend(batch)
-                cursor = data.get("cursor")
-                if not cursor or not batch:
-                    break
+            events = _fetch_events(series_ticker)
+        except Exception as e:
+            last_error = f"{type(e).__name__}: {e}"
+            result["diagnostics"]["per_series"][series_ticker] = f"error fetching events: {last_error}"
+            continue
 
-            if not markets and ticker not in result["diagnostics"]["per_series"]:
-                result["diagnostics"]["per_series"][ticker] = "0 market(s)"
+        if not events:
+            result["diagnostics"]["per_series"][series_ticker] = "0 event(s)"
+            continue
+
+        any_success = True
+        n_markets = 0
+        for ev in events:
+            event_ticker = ev.get("event_ticker")
+            if not event_ticker:
                 continue
-            elif markets:
-                result["diagnostics"]["per_series"][ticker] = f"{len(markets)} market(s)"
-                any_success = True
-
+            try:
+                markets = _fetch_markets_for_event(event_ticker)
+            except Exception:
+                continue
             for m in markets:
+                yes_bid = _to_num(m.get("yes_bid_dollars"))
+                yes_ask = _to_num(m.get("yes_ask_dollars"))
+                # Bid/ask midpoint strips the market-maker spread back
+                # out -- same de-vig approach as the MLB reference.
+                # Falls back to whichever single side exists if a
+                # market is too thin to have both quoted.
+                if yes_bid and yes_ask:
+                    price = round((yes_bid + yes_ask) / 2, 2)
+                else:
+                    price = yes_ask or yes_bid
                 record = {
-                    "event_title": m.get("title") or m.get("event_ticker") or ticker,
-                    "market_title": m.get("title") or m.get("subtitle") or m.get("ticker"),
+                    "event_title": ev.get("title") or event_ticker,
+                    "market_title": m.get("yes_sub_title") or m.get("title") or m.get("ticker"),
                     "ticker": m.get("ticker"),
-                    "yes_bid": m.get("yes_bid"),
-                    "yes_ask": m.get("yes_ask"),
+                    "yes_bid": yes_bid,
+                    "yes_ask": yes_ask,
+                    "yes_bid_cents": round(yes_bid * 100) if yes_bid is not None else None,
+                    "yes_ask_cents": round(yes_ask * 100) if yes_ask is not None else None,
+                    "price": price,
                     "volume": m.get("volume") or 0,
-                    "close_time": m.get("close_time"),
-                    "series_ticker": ticker,
+                    "close_time": ev.get("close_time") or m.get("close_time"),
+                    "series_ticker": series_ticker,
                 }
                 if bucket == "touchdown":
                     result["touchdown_props"].append(record)
                 else:
                     result["game_props"].append(record)
+                n_markets += 1
+            time.sleep(0.1)  # be polite to a public, unauthenticated endpoint
 
-        except Exception as e:
-            last_error = f"{type(e).__name__}: {e}"
-            result["diagnostics"]["per_series"][ticker] = f"error: {last_error}"
+        result["diagnostics"]["per_series"][series_ticker] = f"{len(events)} event(s), {n_markets} market(s)"
 
     if not any_success and last_error:
         result["error"] = last_error
@@ -141,46 +141,9 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
     result["diagnostics"]["total_touchdown_props_found"] = len(result["touchdown_props"])
     result["diagnostics"]["total_game_props_found"] = len(result["game_props"])
 
-    # Hydrate real live prices via individual GET /markets/{ticker} calls
-    # -- see _hydrate_market_price docstring for why the bulk list alone
-    # isn't trustworthy for pricing. Game props first (what was
-    # specifically asked for), then touchdowns, up to max_hydrate total
-    # calls so this can't run away on a public unauthenticated endpoint.
-    hydrate_budget = max_hydrate
-    hydrate_outcomes: dict[str, int] = {}
-    sample_hydrated_market = None
-    for bucket_list in (result["game_props"], result["touchdown_props"]):
-        for record in bucket_list:
-            if hydrate_budget <= 0:
-                break
-            if not record.get("ticker"):
-                continue
-            live, outcome_label = _hydrate_market_price(record["ticker"])
-            hydrate_budget -= 1
-            key = outcome_label.split(":")[0]  # collapse "error: X: msg" variants together for counting
-            hydrate_outcomes[key] = hydrate_outcomes.get(key, 0) + 1
-            if sample_hydrated_market is None and live:
-                sample_hydrated_market = live
-            if live:
-                record["yes_bid"] = live.get("yes_bid")
-                record["yes_ask"] = live.get("yes_ask")
-                record["volume"] = live.get("volume") or 0
-                record["last_price"] = live.get("last_price")
-
-    result["diagnostics"]["markets_hydrated"] = max_hydrate - hydrate_budget
-    result["diagnostics"]["hydrate_outcomes"] = hydrate_outcomes
-    result["diagnostics"]["sample_hydrated_market"] = sample_hydrated_market
-
-    # Sorting by volume alone is meaningless when a live run found EVERY
-    # single market at volume=0, yes_bid=null, yes_ask=null before
-    # hydration -- these are real markets (real players, real matchups,
-    # real future close times) that Kalshi has listed but the bulk list
-    # response didn't carry live pricing for. Sort quoted markets first
-    # (by volume) so if ANY real quote exists anywhere in the set, it
-    # surfaces at the top instead of being buried among unquoted ones.
     def _sort_key(r):
         has_quote = r["yes_bid"] is not None or r["yes_ask"] is not None
-        return (has_quote, r["volume"] or 0)
+        return (has_quote, r["price"] or 0)
 
     result["touchdown_props"].sort(key=_sort_key, reverse=True)
     result["game_props"].sort(key=_sort_key, reverse=True)
