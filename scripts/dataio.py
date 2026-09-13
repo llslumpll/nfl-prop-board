@@ -101,6 +101,21 @@ TEAM_DIVISION = {
     "ARI": "NFC West", "LA": "NFC West", "SF": "NFC West", "SEA": "NFC West",
 }
 
+# Real team city/nickname, used only to tell a Kalshi "team total" market
+# ("Houston over 21.5 points scored") apart from a combined game total
+# ("Over 44.5 points scored") -- Kalshi phrases team-total titles with
+# the city name, not the abbreviation.
+TEAM_CITY = {
+    "ARI": "Arizona", "ATL": "Atlanta", "BAL": "Baltimore", "BUF": "Buffalo",
+    "CAR": "Carolina", "CHI": "Chicago", "CIN": "Cincinnati", "CLE": "Cleveland",
+    "DAL": "Dallas", "DEN": "Denver", "DET": "Detroit", "GB": "Green Bay",
+    "HOU": "Houston", "IND": "Indianapolis", "JAX": "Jacksonville", "KC": "Kansas City",
+    "LA": "Los Angeles Rams", "LAC": "Los Angeles Chargers", "LV": "Las Vegas", "MIA": "Miami",
+    "MIN": "Minnesota", "NE": "New England", "NO": "New Orleans", "NYG": "New York Giants",
+    "NYJ": "New York Jets", "PHI": "Philadelphia", "PIT": "Pittsburgh", "SEA": "Seattle",
+    "SF": "San Francisco", "TB": "Tampa Bay", "TEN": "Tennessee", "WAS": "Washington",
+}
+
 
 def team_badge(team: str) -> dict:
     """Color + abbreviation for a team badge chip. Falls back to a neutral
