@@ -25,7 +25,7 @@
     },
     "Derrick Henry": {
       "rushing_yards": 1499.5,
-      "receiving_yards": 2.5,
+      "receiving_yards": 1.5,
       "receptions": 0.5
     },
     "Jonathan Taylor": {
@@ -419,13 +419,13 @@
       "receiving_yards": 6.5,
       "receptions": 0.5
     },
-    "Andrei Iosivas": {
-      "receiving_yards": 3.5,
+    "Samaje Perine": {
+      "rushing_yards": 3.5,
+      "receiving_yards": 1.5,
       "receptions": 0.5
     },
-    "Samaje Perine": {
-      "receiving_yards": 1.5,
-      "rushing_yards": 3.5,
+    "Andrei Iosivas": {
+      "receiving_yards": 3.5,
       "receptions": 0.5
     },
     "Tez Johnson": {
@@ -531,7 +531,7 @@
     },
     "Christian Watson": {
       "receptions": 0.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 4.5
     },
     "Michael Wilson": {
       "receiving_yards": 4.5,
@@ -565,7 +565,7 @@
       "receptions": 0.5
     },
     "Jayden Reed": {
-      "receiving_yards": 1.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Malik Washington": {
@@ -585,7 +585,7 @@
     "Jacory Croskey-Merritt": {
       "rushing_yards": 999.5,
       "receiving_yards": 1.5,
-      "receptions": 1.5
+      "receptions": 0.5
     },
     "Jacoby Brissett": {
       "passing_yards": 14.5,
@@ -605,7 +605,7 @@
       "receptions": 0.5
     },
     "Keaton Mitchell": {
-      "rushing_yards": 11.5,
+      "rushing_yards": 9.5,
       "receiving_yards": 10.5,
       "receptions": 1.5
     },
@@ -630,6 +630,10 @@
       "receiving_yards": 0.5,
       "receptions": 0.5
     },
+    "Josh Oliver": {
+      "receiving_yards": 1.5,
+      "receptions": 0.5
+    },
     "Chris Brooks": {
       "receiving_yards": 5.5,
       "rushing_yards": 12.5,
@@ -637,10 +641,6 @@
     },
     "Jonnu Smith": {
       "receiving_yards": 3.5,
-      "receptions": 0.5
-    },
-    "Josh Oliver": {
-      "receiving_yards": 6.5,
       "receptions": 0.5
     },
     "Kirk Cousins": {
@@ -800,7 +800,7 @@
       "rushing_yards": 0.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 13.5,
+      "receiving_yards": 12.5,
       "receptions": 2.5,
       "rushing_yards": 0.5
     },
@@ -862,10 +862,12 @@
   "error": null,
   "diagnostics": {
     "status_code": 200,
-    "total_projections_returned": 34299,
-    "total_included_resources": 5055,
-    "matched_props": 5604,
+    "total_projections_returned": 34666,
+    "total_included_resources": 5154,
+    "matched_props": 5613,
     "sample_stat_types_seen": [
+      "1+2 inning pitcher strikeouts",
+      "1+2+3 inning pitcher strikeouts",
       "100+ rec yard games",
       "100+ rush yard games",
       "180's thrown",
@@ -875,6 +877,7 @@
       "1st inning runs allowed",
       "1st leg checkout total",
       "1st pit stop time (sec)",
+      "1st set aces",
       "1st set total games",
       "1st set total games won",
       "3-pt made",
@@ -882,10 +885,7 @@
       "40+ points games",
       "400+ pass yard games",
       "50+ point games",
-      "50+ yard fg made",
-      "aces",
-      "assists",
-      "asts per game"
+      "50+ yard fg made"
     ]
   }
 }
