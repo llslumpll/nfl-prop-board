@@ -22,6 +22,8 @@ import dataio  # noqa: E402
 import kalshi_client  # noqa: E402
 import prizepicks_client  # noqa: E402
 import best5  # noqa: E402
+import predictions  # noqa: E402
+import grade  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -157,6 +159,34 @@ def build():
     for g in matchups_data["games"]:
         g["kalshi_props"] = kalshi_props_for_game(g)
 
+    # --- Freeze real predictions (one per player/stat/week, never
+    # overwritten) using the real PrizePicks line as the market side.
+    # This is what makes the History page's grading meaningful -- a
+    # prediction with no real market line gets frozen too (so we can
+    # still show the projection), but never gets a call/edge, since
+    # there's nothing real to grade it against.
+    frozen_count = 0
+    for g in matchups_data["games"]:
+        for p in g["players"]:
+            market_line = pp_props.get(p["player"], {}).get(p["stat_col"])
+            wrote = predictions.freeze_prediction(
+                player=p["player"], team=p["team"], opponent=p["opponent"],
+                week=g["week"],
+                stat=p["stat_col"], projected=p["projection"]["projected"],
+                tier_label=dataio.provisional_tier(p["projection"]["n_games_2026"])["label"],
+                market_line=market_line,
+                market_source="prizepicks" if market_line is not None else None,
+            )
+            if wrote:
+                frozen_count += 1
+    print(f"Froze {frozen_count} new prediction(s) this build.")
+
+    # --- Grade any predictions whose games have now finished ---
+    grade_result = grade.grade_all()
+    print(f"Grading: {grade_result['newly_graded']} newly graded, "
+          f"{grade_result['total_pending']} still pending a final score.")
+    accuracy = grade.accuracy_summary()
+
     # --- Best 5: real edge between our projections and real market lines ---
     passing_rows = dataio.passing_leaders()
     receiving_rows = dataio.receiving_leaders()
@@ -217,7 +247,7 @@ def build():
             "touchdowns.html",
             {"rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
         ),
-        "history.html": ("history", "history.html", {"projections_logged": dataio.projections_logged_count()}),
+        "history.html": ("history", "history.html", {"accuracy": accuracy}),
     }
 
     for filename, (slug, template_name, ctx) in pages.items():
