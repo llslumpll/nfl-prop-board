@@ -3,35 +3,100 @@
 {% block content %}
 <h1>History</h1>
 <p class="lede">
-  The full, honest track record of graded picks &mdash; every one shown,
-  not just the hits. This is what would make an accuracy claim credible.
+  Every prediction is frozen the moment it's made and graded against the
+  real result once the game finishes &mdash; every graded pick shown
+  here, win or loss, not a highlight reel.
 </p>
 
 <div class="stat-strip">
   <div class="stat-block">
-    <div class="num">{{ projections_logged }}</div>
-    <div class="label">projections frozen and logged so far</div>
+    <div class="num">{{ accuracy.total_frozen }}</div>
+    <div class="label">predictions frozen total</div>
   </div>
   <div class="stat-block">
-    <div class="num">0</div>
-    <div class="label">graded predictions &mdash; nothing to grade against yet</div>
+    <div class="num">{{ accuracy.total_hit_eligible }}</div>
+    <div class="label">graded with a real market line to check against</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">{{ accuracy.overall_rate ~ '%' if accuracy.overall_rate is not none else '--' }}</div>
+    <div class="label">overall hit rate</div>
+  </div>
+  <div class="stat-block">
+    <div class="num">{{ accuracy.still_pending }}</div>
+    <div class="label">still pending a final score</div>
   </div>
 </div>
 
+{% if accuracy.total_hit_eligible == 0 %}
 <div class="empty-state">
-  <h3>Projections exist. Grading doesn't yet.</h3>
+  <h3>No graded picks with a real market line yet</h3>
   <p>
-    Every projection shown on the Matchups page gets frozen with a
-    timestamp and appended to a permanent log the moment it's built
-    &mdash; that part of the "gets better over time" promise is real and
-    running now. What's still missing is a way to call a projection a
-    hit or a miss:
+    Predictions are being frozen every build (see the count above), but
+    grading needs two things: the player's next game to actually finish,
+    and a real PrizePicks line to have existed when the prediction was
+    made. Check back after this week's games are final.
   </p>
-  <ul class="plain">
-    <li>No market line is wired in yet, so there's no over/under to grade against &mdash; a projection alone isn't a bet.</li>
-    <li>Once either a market line or a simple actual-vs-projected error metric is decided on, this page will show every graded pick, win or loss, timestamped at the moment it was frozen.</li>
-    <li>From there: accuracy trend over time, week by week, and accuracy broken down by model conviction &mdash; do higher-confidence picks actually hit more.</li>
-  </ul>
 </div>
-{% endblock %}
+{% else %}
 
+<h2>Accuracy by confidence tier</h2>
+<p class="lede small">Does higher stated confidence actually mean a higher real hit rate? Tier is the one that was in effect the moment the prediction was frozen, not recomputed after the fact.</p>
+<div class="table-wrap">
+<table class="stat-table">
+  <thead><tr><th>Tier at freeze</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
+  <tbody>
+    {% for tier, d in accuracy.by_tier.items() %}
+    <tr>
+      <td>{{ tier }}</td>
+      <td class="num">{{ d.total }}</td>
+      <td class="num">{{ d.hits }}</td>
+      <td class="num stat-{{ 'good' if d.rate and d.rate >= 55 else 'bad' if d.rate and d.rate < 45 else 'neutral' }}">{{ d.rate }}%</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>Recently graded picks</h2>
+<div class="table-wrap">
+<div class="table-scroll">
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Week</th>
+      <th>Stat</th>
+      <th class="num">Projected</th>
+      <th class="num">Line</th>
+      <th>Call</th>
+      <th class="num">Actual</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in accuracy.recent_graded %}
+    <tr>
+      <td>{{ p.player }}<div class="player-sub">{{ p.team }} vs {{ p.opponent }}</div></td>
+      <td class="num">{{ p.week }}</td>
+      <td>{{ p.stat.replace('_', ' ') }}</td>
+      <td class="num">{{ p.projected }}</td>
+      <td class="num">{{ p.market_line if p.market_line is not none else '--' }}</td>
+      <td>{{ p.call if p.call else '--' }}</td>
+      <td class="num">{{ p.actual }}</td>
+      <td>
+        {% if p.hit is none %}
+          <span class="player-sub">no market line</span>
+        {% elif p.hit %}
+          <span class="tier tier-high">HIT</span>
+        {% else %}
+          <span class="tier tier-low">MISS</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+</div>
+{% endif %}
+{% endblock %}
