@@ -2,24 +2,100 @@
 {% block title %}Matchups — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>Matchups</h1>
-<p class="lede">
-  Real games for the next date on the schedule &mdash; refreshes to the
-  following date automatically once every game here is final. Pick a
-  game below for its full breakdown: top players, real historical
-  performance vs. this exact opponent, a dampened projection, and the
-  real Kalshi market for this specific game.
+<p class="lede small">
+  Real games for the next date on the schedule &mdash; auto-advances once
+  every game here is final. Standings and full team stats below are
+  computed directly from real scores/box-score-level data, not a
+  separate standings API.
 </p>
 
-<div class="notice">
-  <strong>How the projection works.</strong> Each number blends the
-  player's career average with this season's observed average, shifted
-  only <strong>20%</strong> of the way from one to the other &mdash; the
-  same dampening principle proven on the MLB build, tuned for NFL's
-  slower weekly cadence. Frozen the moment this page was built.
+<div class="notice compact">
+  Projections blend career average with this season's observed average,
+  shifted 20% toward the new data (never a full override from one
+  game). Frozen the moment this page was built.
+</div>
+
+<h2>Standings &amp; Recent Trend</h2>
+<p class="lede small">Record, last-5 games, and trend vs. season pace. Scroll within each list to see every team.</p>
+<div class="standings-grid">
+  {% for conf in ["AFC", "NFC"] %}
+  <div>
+    <h3 class="conf-head conf-{{ conf|lower }}">{{ conf }}</h3>
+    <div class="table-wrap">
+    <div class="table-scroll" style="max-height:340px;">
+    <table class="stat-table">
+      <thead><tr><th>Team</th><th class="num">Record</th><th class="num">Last 5</th><th>Trend</th></tr></thead>
+      <tbody>
+        {% for t in standings.get(conf, []) %}
+        <tr>
+          <td>
+            <span class="team-badge" style="background:{{ t.team_badge.color }}">{{ t.team_badge.abbr }}</span>
+            {{ t.team }}
+            <div class="player-sub">{{ t.division }}</div>
+          </td>
+          <td class="num">{{ t.wins }}-{{ t.losses }}{{ '-' + t.ties|string if t.ties else '' }}</td>
+          <td class="num">{{ t.last5 }}</td>
+          <td>
+            {% if t.trend == 'up' %}<span class="stat-good">&#9650; up</span>
+            {% elif t.trend == 'down' %}<span class="stat-bad">&#9660; down</span>
+            {% elif t.trend == 'flat' %}<span class="player-sub">&#9644; flat</span>
+            {% else %}<span class="player-sub">--</span>{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<h2>Full Team Stats</h2>
+<p class="lede small">Real season totals for every team &mdash; offense, turnovers, and defense (yards allowed derived from what opponents actually gained).</p>
+<div class="table-wrap">
+<div class="table-scroll">
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th class="num">GP</th>
+      <th class="num">Total Yds</th>
+      <th class="num">Pass Yds</th>
+      <th class="num">Rush Yds</th>
+      <th class="num">Off TD</th>
+      <th class="num">TO</th>
+      <th class="num">Sacks</th>
+      <th class="num">Takeaways</th>
+      <th class="num">Yds Allowed</th>
+      <th class="num">TO Margin</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for t in full_team_stats %}
+    <tr>
+      <td><span class="team-badge" style="background:{{ t.team_badge.color }}">{{ t.team_badge.abbr }}</span> {{ t.team }}</td>
+      <td class="num">{{ t.games }}</td>
+      <td class="num">{{ t.total_yards }}</td>
+      <td class="num">{{ t.pass_yards }}</td>
+      <td class="num">{{ t.rush_yards }}</td>
+      <td class="num">{{ t.off_tds }}</td>
+      <td class="num">{{ t.turnovers }}</td>
+      <td class="num">{{ t.def_sacks }}</td>
+      <td class="num">{{ t.takeaways }}</td>
+      <td class="num">{{ t.yards_allowed }}</td>
+      <td class="num stat-{{ 'good' if t.turnover_margin > 0 else 'bad' if t.turnover_margin < 0 else 'neutral' }}">{{ '+' if t.turnover_margin > 0 }}{{ t.turnover_margin }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ full_team_stats|length }} teams</div>
 </div>
 
 {% if matchups_data.games %}
-<h2 style="margin-top:28px;">{{ matchups_data.date }}</h2>
+<h2 style="margin-top:28px;">Today's Games &mdash; {{ matchups_data.date }}</h2>
+<p class="lede small">Pick a game for its full breakdown: top players, real historical performance vs. this opponent, and the live Kalshi market.</p>
 
 <div class="game-picker" id="game-picker">
   {% for m in matchups_data.games %}
@@ -80,27 +156,79 @@
   {% if kalshi_error %}
     <div class="notice"><strong>Kalshi fetch failed on this build.</strong> Error: {{ kalshi_error }}</div>
   {% elif m.kalshi_props %}
-    <table class="stat-table">
-      <thead>
-        <tr><th>Market</th><th class="num">Yes bid</th><th class="num">Yes ask</th><th class="num">Volume</th></tr>
-      </thead>
-      <tbody>
-        {% for k in m.kalshi_props %}
-        <tr>
-          <td>{{ k.market_title }}</td>
-          {% if k.yes_bid is not none or k.yes_ask is not none %}
-            <td class="num stat-good">{{ k.yes_bid_cents if k.yes_bid_cents is not none else '—' }}&cent;</td>
-            <td class="num stat-good">{{ k.yes_ask_cents if k.yes_ask_cents is not none else '—' }}&cent;</td>
-            <td class="num">{{ k.volume if k.volume is not none else 0 }}</td>
-          {% else %}
-            <td class="player-sub">no quote yet</td>
-            <td class="player-sub">no quote yet</td>
-            <td class="num">0</td>
-          {% endif %}
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+    {% set winner_props = m.kalshi_props|selectattr("series_ticker", "equalto", "KXNFLGAME")|list %}
+    {% set spread_props = m.kalshi_props|selectattr("series_ticker", "equalto", "KXNFLSPREAD")|list %}
+    {% set total_props = m.kalshi_props|selectattr("series_ticker", "equalto", "KXNFLTOTAL")|list %}
+
+    <div class="kalshi-subsection">
+      <h5>Winner (moneyline)</h5>
+      {% if winner_props %}
+      <table class="stat-table">
+        <thead><tr><th>Market</th><th class="num">Implied %</th><th class="num">Decimal odds</th><th class="num">Volume</th></tr></thead>
+        <tbody>
+          {% for k in winner_props %}
+          <tr>
+            <td>{{ k.market_title }}</td>
+            {% if k.implied_pct is not none %}
+              <td class="num stat-good">{{ k.implied_pct }}%</td>
+              <td class="num">{{ k.decimal_odds }}x</td>
+              <td class="num">{{ k.volume }}</td>
+            {% else %}
+              <td class="player-sub">no quote yet</td><td class="player-sub">&mdash;</td><td class="num">0</td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}<p class="player-sub">No moneyline market found for this game yet.</p>{% endif %}
+    </div>
+
+    <div class="kalshi-subsection">
+      <h5>Spread</h5>
+      {% if spread_props %}
+      <table class="stat-table">
+        <thead><tr><th>Market</th><th class="num">Implied %</th><th class="num">Decimal odds</th><th class="num">Volume</th></tr></thead>
+        <tbody>
+          {% for k in spread_props %}
+          <tr>
+            <td>{{ k.market_title }}</td>
+            {% if k.implied_pct is not none %}
+              <td class="num stat-good">{{ k.implied_pct }}%</td>
+              <td class="num">{{ k.decimal_odds }}x</td>
+              <td class="num">{{ k.volume }}</td>
+            {% else %}
+              <td class="player-sub">no quote yet</td><td class="player-sub">&mdash;</td><td class="num">0</td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}<p class="player-sub">No spread market found for this game yet.</p>{% endif %}
+    </div>
+
+    <div class="kalshi-subsection">
+      <h5>Game Total</h5>
+      {% if total_props %}
+      <p class="player-sub">Higher implied % on a low point-total threshold, or high threshold pricing above 50%, points toward a high-scoring game &mdash; and vice versa for a low-scoring one.</p>
+      <table class="stat-table">
+        <thead><tr><th>Market</th><th class="num">Implied %</th><th class="num">Decimal odds</th><th class="num">Volume</th></tr></thead>
+        <tbody>
+          {% for k in total_props %}
+          <tr>
+            <td>{{ k.market_title }}</td>
+            {% if k.implied_pct is not none %}
+              <td class="num stat-good">{{ k.implied_pct }}%</td>
+              <td class="num">{{ k.decimal_odds }}x</td>
+              <td class="num">{{ k.volume }}</td>
+            {% else %}
+              <td class="player-sub">no quote yet</td><td class="player-sub">&mdash;</td><td class="num">0</td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}<p class="player-sub">No game-total market found for this game yet.</p>{% endif %}
+    </div>
   {% else %}
     <div class="empty-state"><h3>No Kalshi market found for this specific game yet</h3></div>
   {% endif %}
