@@ -27,11 +27,35 @@ BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 
 CANDIDATE_SERIES = [
     ("KXNFLTD", "touchdown"),
+    ("KXNFLANYTD", "touchdown"),
+    ("KXNFLFIRSTTD", "touchdown"),
+    ("KXNFL2TD", "touchdown"),
     ("KXNFLGAME", "game"),
+    ("KXNFLSPREAD", "game"),
+    ("KXNFLTOTAL", "game"),
 ]
 
 
-def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 40) -> dict:
+def _hydrate_market_price(ticker: str, timeout: int = 10) -> dict | None:
+    """
+    Fetches ONE market by its exact ticker via GET /markets/{ticker}.
+    A live run found that the bulk /markets?series_ticker=X list
+    endpoint returned real markets with null prices for tickers that a
+    third-party market inspector showed had real, substantial trading
+    volume -- meaning the bulk list response is likely a lighter/staler
+    projection, and the dedicated single-market endpoint is where the
+    real live yes_bid/yes_ask actually lives. Returns None on any
+    failure so a single bad ticker can't break the whole fetch.
+    """
+    try:
+        resp = requests.get(f"{BASE_URL}/markets/{ticker}", timeout=timeout)
+        resp.raise_for_status()
+        return resp.json().get("market")
+    except Exception:
+        return None
+
+
+def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 40, max_hydrate: int = 250) -> dict:
     """
     Returns {"touchdown_props": [...], "game_props": [...], "error": str|None,
     "diagnostics": {...}}. Never raises -- a failure here should never
@@ -114,8 +138,47 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
     result["diagnostics"]["total_touchdown_props_found"] = len(result["touchdown_props"])
     result["diagnostics"]["total_game_props_found"] = len(result["game_props"])
 
-    result["touchdown_props"].sort(key=lambda r: r["volume"], reverse=True)
-    result["game_props"].sort(key=lambda r: r["volume"], reverse=True)
+    # Hydrate real live prices via individual GET /markets/{ticker} calls
+    # -- see _hydrate_market_price docstring for why the bulk list alone
+    # isn't trustworthy for pricing. Game props first (what was
+    # specifically asked for), then touchdowns, up to max_hydrate total
+    # calls so this can't run away on a public unauthenticated endpoint.
+    hydrate_budget = max_hydrate
+    for bucket_list in (result["game_props"], result["touchdown_props"]):
+        for record in bucket_list:
+            if hydrate_budget <= 0:
+                break
+            if not record.get("ticker"):
+                continue
+            live = _hydrate_market_price(record["ticker"])
+            hydrate_budget -= 1
+            if live:
+                record["yes_bid"] = live.get("yes_bid")
+                record["yes_ask"] = live.get("yes_ask")
+                record["volume"] = live.get("volume") or 0
+                record["last_price"] = live.get("last_price")
+
+    result["diagnostics"]["markets_hydrated"] = max_hydrate - hydrate_budget
+
+    # Sorting by volume alone is meaningless when a live run found EVERY
+    # single market at volume=0, yes_bid=null, yes_ask=null before
+    # hydration -- these are real markets (real players, real matchups,
+    # real future close times) that Kalshi has listed but the bulk list
+    # response didn't carry live pricing for. Sort quoted markets first
+    # (by volume) so if ANY real quote exists anywhere in the set, it
+    # surfaces at the top instead of being buried among unquoted ones.
+    def _sort_key(r):
+        has_quote = r["yes_bid"] is not None or r["yes_ask"] is not None
+        return (has_quote, r["volume"] or 0)
+
+    result["touchdown_props"].sort(key=_sort_key, reverse=True)
+    result["game_props"].sort(key=_sort_key, reverse=True)
+    result["diagnostics"]["touchdown_props_with_a_quote"] = sum(
+        1 for r in result["touchdown_props"] if r["yes_bid"] is not None or r["yes_ask"] is not None
+    )
+    result["diagnostics"]["game_props_with_a_quote"] = sum(
+        1 for r in result["game_props"] if r["yes_bid"] is not None or r["yes_ask"] is not None
+    )
     result["touchdown_props"] = result["touchdown_props"][:max_per_bucket]
     result["game_props"] = result["game_props"][:max_per_bucket]
 
