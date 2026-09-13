@@ -22,7 +22,7 @@
       "receptions": 2
     },
     "George Pickens": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 67.5,
       "receptions": 5
     },
     "Cam Skattebo": {
@@ -37,31 +37,31 @@
       "receiving_yards": 30.5,
       "receptions": 3.5
     },
-    "Malachi Fields": {
-      "receiving_yards": 24.5,
-      "receptions": 2
-    },
     "Ryan Flournoy": {
       "receiving_yards": 24.5
+    },
+    "Malachi Fields": {
+      "receiving_yards": 22.5,
+      "receptions": 2
     },
     "Darnell Mooney": {
       "receiving_yards": 22.5,
       "receptions": 1.5
     },
-    "Najee Harris": {
-      "rushing_yards": 17.5,
-      "receptions": 0.5
+    "Tyrone Tracy Jr.": {
+      "rushing_yards": 19.5,
+      "receiving_yards": 10.5
     },
     "Theo Johnson": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 1.5
     },
     "Odell Beckham Jr.": {
-      "receiving_yards": 13.5
+      "receiving_yards": 9.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 8.5,
-      "rushing_yards": 4.5
+      "rushing_yards": 5.5
     },
     "Bo Nix": {
       "passing_yards": 229.5,
@@ -150,9 +150,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 1322,
+    "total_projections_returned": 1307,
     "matched_props": 67,
-    "excluded_goblin_demon_lines": 1047,
+    "excluded_goblin_demon_lines": 1034,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
