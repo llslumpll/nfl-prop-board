@@ -110,9 +110,8 @@ def team_badge(team: str) -> dict:
 
 def team_standings() -> dict:
     """
-    Real record + last-5 trend per team, grouped by conference, computed
-    directly from the live schedule's actual scores -- no external
-    standings API needed since we already have every game's final score.
+    Real record + last-5 trend per team, grouped by conference AND
+    division, computed directly from the live schedule's actual scores.
     Early in the season most teams will show 0-0 or 1-0; that's real,
     not a bug -- the table reflects however many games have actually
     been played so far.
@@ -144,7 +143,11 @@ def team_standings() -> dict:
             records[home]["results"].append("T")
             records[away]["results"].append("T")
 
-    by_conference: dict[str, list[dict]] = {"AFC": [], "NFC": []}
+    DIVISION_ORDER = ["East", "North", "South", "West"]
+    by_conference: dict[str, dict[str, list[dict]]] = {
+        "AFC": {f"AFC {d}": [] for d in DIVISION_ORDER},
+        "NFC": {f"NFC {d}": [] for d in DIVISION_ORDER},
+    }
     for team in all_teams:
         r = records[team]
         games = r["w"] + r["l"] + r["t"]
@@ -156,18 +159,24 @@ def team_standings() -> dict:
         if pct is not None and last5_pct is not None and len(last5) >= 3:
             delta = last5_pct - pct
             trend = "up" if delta > 0.15 else "down" if delta < -0.15 else "flat"
-        by_conference.setdefault(TEAM_CONFERENCE.get(team, "?"), []).append({
+        conf = TEAM_CONFERENCE.get(team, "?")
+        division = TEAM_DIVISION.get(team, f"{conf} ?")
+        entry = {
             "team": team,
             "team_badge": team_badge(team),
-            "division": TEAM_DIVISION.get(team, ""),
+            "division": division,
             "wins": r["w"], "losses": r["l"], "ties": r["t"],
             "pct": pct,
             "last5": f"{last5_w}-{len(last5) - last5_w}" if last5 else "--",
             "trend": trend,
-        })
+        }
+        by_conference.setdefault(conf, {}).setdefault(division, []).append(entry)
 
     for conf in by_conference:
-        by_conference[conf].sort(key=lambda t: (t["pct"] if t["pct"] is not None else -1), reverse=True)
+        for division in by_conference[conf]:
+            by_conference[conf][division].sort(
+                key=lambda t: (t["pct"] if t["pct"] is not None else -1), reverse=True
+            )
 
     return by_conference
 
@@ -176,16 +185,20 @@ def team_full_stats() -> list[dict]:
     """
     Real per-team offense/defense totals for every stat this build can
     actually compute from nflreadpy data -- no fabricated stat included.
-    Yards allowed is derived from what OPPONENTS gained against a team
-    (standard definition), not a separate "defense" stat category, since
-    nflreadpy's player-level rows don't carry that directly.
+    Covers ALL 32 teams (from the schedule), not just teams that have
+    already played a 2026 game -- teams with no games yet show real
+    zeros rather than being silently dropped from "every team." Yards
+    allowed is derived from what OPPONENTS gained against a team
+    (standard definition), since nflreadpy's player rows don't carry a
+    direct "yards allowed" field.
     """
     df = load_stats()
-    all_teams = sorted(set(df["team"].to_list()))
+    sched = load_schedule()
+    all_teams = sorted(set(sched["home_team"].to_list()) | set(sched["away_team"].to_list()))
     out = []
     for team in all_teams:
         off = df.filter(pl.col("team") == team)
-        opp_off = df.filter(pl.col("opponent_team") == team)  # what opponents did AGAINST this team
+        opp_off = df.filter(pl.col("opponent_team") == team)
 
         games_played = off["week"].n_unique() if off.height else 0
 
@@ -224,7 +237,7 @@ def team_full_stats() -> list[dict]:
             "yards_allowed": int(yds_allowed),
             "turnover_margin": int(takeaways - turnovers),
         })
-    out.sort(key=lambda t: -t["total_yards"])
+    out.sort(key=lambda t: (-t["games"], -t["total_yards"]))
     return out
 
 
