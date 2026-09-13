@@ -135,7 +135,7 @@
     },
     "Tyler Shough": {
       "passing_yards": 4499.5,
-      "rushing_yards": 0.5
+      "rushing_yards": 1.5
     },
     "Lamar Jackson": {
       "passing_yards": 3999.5,
@@ -307,7 +307,7 @@
     },
     "Cooper Rush": {
       "passing_yards": 14.5,
-      "rushing_yards": 0.5
+      "rushing_yards": 4.5
     },
     "Jahan Dotson": {
       "receiving_yards": 3.5,
@@ -329,12 +329,12 @@
       "receiving_yards": 4.5,
       "receptions": 0.5
     },
-    "Keenan Allen": {
-      "receiving_yards": 4.5,
-      "receptions": 0.5
-    },
     "Rashod Bateman": {
       "receiving_yards": 0.5,
+      "receptions": 0.5
+    },
+    "Keenan Allen": {
+      "receiving_yards": 4.5,
       "receptions": 0.5
     },
     "Justice Hill": {
@@ -347,7 +347,7 @@
       "receptions": 0.5
     },
     "Mo Alie-Cox": {
-      "receiving_yards": 4.5,
+      "receiving_yards": 3.5,
       "receptions": 0.5
     },
     "Adonai Mitchell": {
@@ -443,7 +443,7 @@
     },
     "Xavier Hutchinson": {
       "receiving_yards": 2.5,
-      "receptions": 1.5
+      "receptions": 0.5
     },
     "Jaylin Noel": {
       "receiving_yards": 4.5,
@@ -454,8 +454,8 @@
       "receptions": 0.5
     },
     "Keon Coleman": {
-      "receiving_yards": 10.5,
-      "receptions": 1.5
+      "receiving_yards": 1.5,
+      "receptions": 0.5
     },
     "Saquon Barkley": {
       "rushing_yards": 1499.5,
@@ -514,7 +514,7 @@
     },
     "Omarion Hampton": {
       "rushing_yards": 1499.5,
-      "receiving_yards": 3.5,
+      "receiving_yards": 2.5,
       "receptions": 0.5
     },
     "Kyler Murray": {
@@ -604,6 +604,11 @@
       "receiving_yards": 2.5,
       "receptions": 0.5
     },
+    "Keaton Mitchell": {
+      "rushing_yards": 11.5,
+      "receiving_yards": 10.5,
+      "receptions": 1.5
+    },
     "Charlie Kolar": {
       "receiving_yards": 2.5,
       "receptions": 0.5
@@ -614,11 +619,6 @@
     },
     "Elijah Higgins": {
       "receiving_yards": 9.5,
-      "receptions": 1.5
-    },
-    "Keaton Mitchell": {
-      "receiving_yards": 10.5,
-      "rushing_yards": 28.5,
       "receptions": 1.5
     },
     "MarShawn Lloyd": {
@@ -706,7 +706,7 @@
     },
     "Dak Prescott": {
       "passing_yards": 4499.5,
-      "rushing_yards": 2.5
+      "rushing_yards": 3.5
     },
     "CeeDee Lamb": {
       "receptions": 0.5,
@@ -756,12 +756,12 @@
     },
     "KaVontae Turpin": {
       "receiving_yards": 2.5,
-      "rushing_yards": 0.5,
+      "rushing_yards": 4.5,
       "receptions": 0.5
     },
     "Najee Harris": {
+      "rushing_yards": 9.5,
       "receiving_yards": 0.5,
-      "rushing_yards": 17.5,
       "receptions": 0.5
     },
     "Travis Kelce": {
@@ -821,12 +821,12 @@
       "rushing_yards": 3.5,
       "receptions": 0.5
     },
-    "Adam Trautman": {
-      "receiving_yards": 2.5,
-      "receptions": 0.5
-    },
     "Noah Gray": {
       "receiving_yards": 4.5,
+      "receptions": 0.5
+    },
+    "Adam Trautman": {
+      "receiving_yards": 2.5,
       "receptions": 0.5
     },
     "Brashard Smith": {
@@ -862,9 +862,9 @@
   "error": null,
   "diagnostics": {
     "status_code": 200,
-    "total_projections_returned": 33511,
-    "total_included_resources": 4957,
-    "matched_props": 5581,
+    "total_projections_returned": 34299,
+    "total_included_resources": 5055,
+    "matched_props": 5604,
     "sample_stat_types_seen": [
       "100+ rec yard games",
       "100+ rush yard games",

@@ -1,6 +1,26 @@
 {
   "touchdown_props": [
     {
+      "event_title": "CJ Donaldson: 1+ touchdowns",
+      "market_title": "CJ Donaldson: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP13NODET-NOCDONALDSON43-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-15T17:00:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "Tyler Conklin: 1+ touchdowns",
+      "market_title": "Tyler Conklin: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP13NODET-DETTCONKLIN83-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-15T17:00:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
       "event_title": "DET Lions D/ST: 1+ touchdowns",
       "market_title": "DET Lions D/ST: 1+ touchdowns",
       "ticker": "KXNFLTD-26SEP17DETBUF-DETDETDST-1",
@@ -374,26 +394,6 @@
       "event_title": "Rachaad White: 2+ touchdowns",
       "market_title": "Rachaad White: 2+ touchdowns",
       "ticker": "KXNFLTD-26SEP13WASPHI-WASRWHITE1-2",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Tyrone Tracy Jr.: 1+ touchdowns",
-      "market_title": "Tyrone Tracy Jr.: 1+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13DALNYG-NYGTTRACY29-1",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-16T00:20:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Rachaad White: 1+ touchdowns",
-      "market_title": "Rachaad White: 1+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13WASPHI-WASRWHITE1-1",
       "yes_bid": null,
       "yes_ask": null,
       "volume": 0,
@@ -846,15 +846,15 @@
   "error": null,
   "diagnostics": {
     "per_series": {
-      "KXNFLTD": "630 market(s)",
+      "KXNFLTD": "632 market(s)",
       "KXNFLANYTD": "0 market(s)",
-      "KXNFLFIRSTTD": "344 market(s)",
+      "KXNFLFIRSTTD": "347 market(s)",
       "KXNFL2TD": "0 market(s)",
       "KXNFLGAME": "60 market(s)",
       "KXNFLSPREAD": "379 market(s)",
       "KXNFLTOTAL": "285 market(s)"
     },
-    "total_touchdown_props_found": 974,
+    "total_touchdown_props_found": 979,
     "total_game_props_found": 724,
     "markets_hydrated": 250,
     "touchdown_props_with_a_quote": 0,
