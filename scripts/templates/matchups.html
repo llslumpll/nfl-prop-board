@@ -81,16 +81,23 @@
 {% if kalshi_error %}
 <div class="notice">
   <strong>Kalshi fetch failed on this build.</strong> Error: {{ kalshi_error }}
-  <br>First live deployment of this integration &mdash; check
-  <code>data/kalshi_raw.json</code> and the build log for the real
-  response shape if this persists.
 </div>
 {% elif kalshi_game_props %}
 <p class="lede">
-  Live spread/total/moneyline-style markets from Kalshi &mdash; useful
-  context for touchdown correlation (a high game total implies more
-  scoring opportunities league-wide).
+  Real moneyline (win probability) markets from Kalshi &mdash; one
+  contract per team, per game. Kalshi doesn't offer spread or point-total
+  markets the way a sportsbook does; these are strictly "will Team X
+  win?" contracts.
 </p>
+<div class="notice">
+  <strong>Most of these show "no quote yet," and that's expected.</strong>
+  These are real, currently-listed markets for real upcoming games, but
+  most haven't had a market maker or trader place an order yet &mdash;
+  genuine current information, not missing data. Markets with an actual
+  live price are sorted to the top.
+</div>
+<div class="table-wrap">
+<div class="table-scroll">
 <table class="stat-table">
   <thead>
     <tr>
@@ -104,13 +111,22 @@
     {% for m in kalshi_game_props %}
     <tr>
       <td>{{ m.market_title }}</td>
-      <td class="num">{{ m.yes_bid if m.yes_bid is not none else '—' }}&cent;</td>
-      <td class="num">{{ m.yes_ask if m.yes_ask is not none else '—' }}&cent;</td>
-      <td class="num">{{ m.volume if m.volume is not none else '—' }}</td>
+      {% if m.yes_bid is not none or m.yes_ask is not none %}
+        <td class="num stat-good">{{ m.yes_bid if m.yes_bid is not none else '—' }}&cent;</td>
+        <td class="num stat-good">{{ m.yes_ask if m.yes_ask is not none else '—' }}&cent;</td>
+        <td class="num">{{ m.volume if m.volume is not none else 0 }}</td>
+      {% else %}
+        <td class="player-sub">no quote yet</td>
+        <td class="player-sub">no quote yet</td>
+        <td class="num">0</td>
+      {% endif %}
     </tr>
     {% endfor %}
   </tbody>
 </table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ kalshi_game_props|length }} markets</div>
+</div>
 {% else %}
 <div class="empty-state">
   <h3>No Kalshi game props found this build</h3>
