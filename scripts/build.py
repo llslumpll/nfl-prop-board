@@ -108,10 +108,7 @@ def build():
     # soft exactly like Kalshi. Matched against our OWN known 2026
     # roster rather than trusting an unverified league_id.
     print("Fetching PrizePicks player props...")
-    known_names = set(dataio.load_stats()["player_display_name"].to_list()) | set(
-        dataio.load_historical_stats()["player_display_name"].to_list()
-    )
-    pp_data = prizepicks_client.fetch_nfl_player_props(known_names)
+    pp_data = prizepicks_client.fetch_nfl_player_props()
     if pp_data["error"]:
         print(f"WARNING: PrizePicks fetch failed ({pp_data['error']}); site builds without it.")
     else:
