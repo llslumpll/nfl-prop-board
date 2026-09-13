@@ -82,6 +82,49 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.7);
 }
 
+.game-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 28px;
+}
+.game-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  color: var(--text-dim);
+  font-family: var(--sans);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.game-tab:hover { border-color: var(--cyan); color: var(--text); }
+.game-tab.active {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 240, 255, 0.06);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+}
+.game-panel.hidden { display: none; }
+.game-panel h3 {
+  font-family: var(--display);
+  color: var(--text);
+  font-size: 1.1rem;
+  margin: 24px 0 12px;
+}
+.game-panel h4 {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--magenta);
+  margin: 28px 0 10px;
+  text-transform: uppercase;
+}
+
 .sys-tagline {
   font-family: var(--mono);
   font-size: 0.72rem;
