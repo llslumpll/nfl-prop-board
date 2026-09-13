@@ -1,6 +1,46 @@
 {
   "touchdown_props": [
     {
+      "event_title": "DET Lions D/ST: 1+ touchdowns",
+      "market_title": "DET Lions D/ST: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP17DETBUF-DETDETDST-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-20T00:15:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "BUF Bills D/ST: 1+ touchdowns",
+      "market_title": "BUF Bills D/ST: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP17DETBUF-BUFBUFDST-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-20T00:15:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "Matt Hibner: 1+ touchdowns",
+      "market_title": "Matt Hibner: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP13BALIND-BALMHIBNER88-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-15T17:00:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "Tanner Hudson: 1+ touchdowns",
+      "market_title": "Tanner Hudson: 1+ touchdowns",
+      "ticker": "KXNFLTD-26SEP13TBCIN-CINTHUDSON87-1",
+      "yes_bid": null,
+      "yes_ask": null,
+      "volume": 0,
+      "close_time": "2026-09-15T17:00:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
       "event_title": "Tom Kennedy: 1+ touchdowns",
       "market_title": "Tom Kennedy: 1+ touchdowns",
       "ticker": "KXNFLTD-26SEP13NODET-DETTKENNEDY85-1",
@@ -359,46 +399,6 @@
       "volume": 0,
       "close_time": "2026-09-15T20:25:00Z",
       "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Theo Johnson: 2+ touchdowns",
-      "market_title": "Theo Johnson: 2+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13DALNYG-NYGTJOHNSON84-2",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-16T00:20:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Treylon Burks: 2+ touchdowns",
-      "market_title": "Treylon Burks: 2+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13WASPHI-WASTBURKS13-2",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Theo Johnson: 1+ touchdowns",
-      "market_title": "Theo Johnson: 1+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13DALNYG-NYGTJOHNSON84-1",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-16T00:20:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
-      "event_title": "Treylon Burks: 1+ touchdowns",
-      "market_title": "Treylon Burks: 1+ touchdowns",
-      "ticker": "KXNFLTD-26SEP13WASPHI-WASTBURKS13-1",
-      "yes_bid": null,
-      "yes_ask": null,
-      "volume": 0,
-      "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLTD"
     }
   ],
   "game_props": [
@@ -410,7 +410,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-24T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Los Angeles R wins",
@@ -420,7 +421,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-24T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Kansas City wins",
@@ -430,7 +432,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-23T00:20:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Indianapolis wins",
@@ -440,7 +443,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-23T00:20:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Washington wins",
@@ -450,7 +454,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Dallas wins",
@@ -460,7 +465,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "San Francisco wins",
@@ -470,7 +476,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Miami wins",
@@ -480,7 +487,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Seattle wins",
@@ -490,7 +498,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Arizona wins",
@@ -500,7 +509,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Las Vegas wins",
@@ -510,7 +520,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:05:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Los Angeles C wins",
@@ -520,7 +531,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:05:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Jacksonville wins",
@@ -530,7 +542,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:05:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Denver wins",
@@ -540,7 +553,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T20:05:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Tampa Bay wins",
@@ -550,7 +564,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Cleveland wins",
@@ -560,7 +575,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Houston wins",
@@ -570,7 +586,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Cincinnati wins",
@@ -580,7 +597,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "New Orleans wins",
@@ -590,7 +608,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Baltimore wins",
@@ -600,7 +619,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "New York J wins",
@@ -610,7 +630,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Green Bay wins",
@@ -620,7 +641,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Carolina wins",
@@ -630,7 +652,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Atlanta wins",
@@ -640,7 +663,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Minnesota wins",
@@ -650,7 +674,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Chicago wins",
@@ -660,7 +685,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Pittsburgh wins",
@@ -670,7 +696,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "New England wins",
@@ -680,7 +707,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Tennessee wins",
@@ -690,7 +718,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Philadelphia wins",
@@ -700,7 +729,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Detroit wins",
@@ -710,7 +740,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-20T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Buffalo wins",
@@ -720,7 +751,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-20T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Denver vs Kansas City Pro Football game: Kansas City wins?",
@@ -730,7 +762,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-17T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Denver vs Kansas City Pro Football game: Denver wins?",
@@ -740,7 +773,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-17T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Dallas vs New York G Pro Football game: New York G wins?",
@@ -750,7 +784,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-16T00:20:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Dallas vs New York G Pro Football game: Dallas wins?",
@@ -760,7 +795,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-16T00:20:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Washington vs Philadelphia Pro Football game: Washington wins?",
@@ -770,7 +806,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Washington vs Philadelphia Pro Football game: Philadelphia wins?",
@@ -780,7 +817,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Miami vs Las Vegas Pro Football game: Miami wins?",
@@ -790,7 +828,8 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     },
     {
       "event_title": "Miami vs Las Vegas Pro Football game: Las Vegas wins?",
@@ -800,16 +839,25 @@
       "yes_ask": null,
       "volume": 0,
       "close_time": "2026-09-15T20:25:00Z",
-      "series_ticker": "KXNFLGAME"
+      "series_ticker": "KXNFLGAME",
+      "last_price": null
     }
   ],
   "error": null,
   "diagnostics": {
     "per_series": {
       "KXNFLTD": "630 market(s)",
-      "KXNFLGAME": "60 market(s)"
+      "KXNFLANYTD": "0 market(s)",
+      "KXNFLFIRSTTD": "344 market(s)",
+      "KXNFL2TD": "0 market(s)",
+      "KXNFLGAME": "60 market(s)",
+      "KXNFLSPREAD": "379 market(s)",
+      "KXNFLTOTAL": "285 market(s)"
     },
-    "total_touchdown_props_found": 630,
-    "total_game_props_found": 60
+    "total_touchdown_props_found": 974,
+    "total_game_props_found": 724,
+    "markets_hydrated": 250,
+    "touchdown_props_with_a_quote": 0,
+    "game_props_with_a_quote": 0
   }
 }
