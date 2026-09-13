@@ -122,6 +122,12 @@ def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
                     "yes_bid_cents": round(yes_bid * 100) if yes_bid is not None else None,
                     "yes_ask_cents": round(yes_ask * 100) if yes_ask is not None else None,
                     "price": price,
+                    # Decimal odds (e.g. "1.72x") -- the reciprocal of the
+                    # devigged probability, same math a sportsbook's
+                    # decimal-odds format uses. Only meaningful when price
+                    # is a real probability in (0, 1].
+                    "decimal_odds": round(1 / price, 2) if price and price > 0 else None,
+                    "implied_pct": round(price * 100, 1) if price is not None else None,
                     "volume": m.get("volume") or 0,
                     "close_time": ev.get("close_time") or m.get("close_time"),
                     "series_ticker": series_ticker,
