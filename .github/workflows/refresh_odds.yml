@@ -1,0 +1,40 @@
+name: Refresh Odds (Kalshi/PrizePicks only)
+
+on:
+  schedule:
+    # Every 20 minutes. Deliberately more frequent than the heavy daily
+    # rebuild (build.yml) -- this job skips the nflreadpy stats/schedule
+    # pull entirely (--no-fetch) and only re-fetches Kalshi and
+    # PrizePicks, then re-renders the HTML from the existing cached
+    # parquet data. Same two-tier "heavy build + frequent light odds
+    # refresh" architecture as the MLB site's run_daily.py vs.
+    # refresh_odds.py split.
+    - cron: "*/20 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh odds only (no nflreadpy pull)
+        run: python scripts/build.py --no-fetch
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          git diff --cached --quiet || git commit -m "Odds refresh: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
