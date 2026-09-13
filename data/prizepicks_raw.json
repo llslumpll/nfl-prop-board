@@ -57,7 +57,7 @@
       "receptions": 1.5
     },
     "Cole Kmet": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Tommy Tremble": {
@@ -101,7 +101,7 @@
       "receptions": 4
     },
     "Pat Freiermuth": {
-      "receiving_yards": 24.5
+      "receiving_yards": 26.5
     },
     "Brian Robinson Jr.": {
       "rushing_yards": 19.5
@@ -127,7 +127,7 @@
     },
     "Derrick Henry": {
       "rushing_yards": 78.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 76.5,
@@ -154,10 +154,10 @@
       "receiving_yards": 35.5
     },
     "Keenan Allen": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 25.5,
       "receptions": 2
     },
     "Ja'Kobi Lane": {
@@ -212,7 +212,7 @@
     },
     "Tyjae Spears": {
       "rushing_yards": 24.5,
-      "receiving_yards": 16.5,
+      "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "Gunnar Helm": {
@@ -253,7 +253,7 @@
       "receptions": 4
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 11.5,
       "receptions": 2
     },
@@ -372,7 +372,7 @@
       "receptions": 4
     },
     "Cade Otton": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3
     },
     "Kenny Gainwell": {
@@ -404,7 +404,7 @@
     },
     "Josh Allen": {
       "passing_yards": 224.5,
-      "rushing_yards": 31.5
+      "rushing_yards": 30.5
     },
     "C.J. Stroud": {
       "passing_yards": 221.5,
@@ -459,7 +459,7 @@
       "receiving_yards": 13.5
     },
     "Joshua Palmer": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Keon Coleman": {
       "receiving_yards": 11.5
@@ -724,7 +724,7 @@
       "receptions": 2
     },
     "George Pickens": {
-      "receiving_yards": 64.5,
+      "receiving_yards": 67.5,
       "receptions": 5
     },
     "Cam Skattebo": {
@@ -739,7 +739,7 @@
       "receptions": 3.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 24.5
+      "receiving_yards": 26.5
     },
     "Malachi Fields": {
       "receiving_yards": 23.5,
@@ -755,7 +755,7 @@
       "receptions": 0.5
     },
     "Theo Johnson": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Odell Beckham Jr.": {
@@ -816,7 +816,7 @@
       "receptions": 2.5
     },
     "Noah Gray": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Adam Trautman": {
       "receiving_yards": 7.5
@@ -853,9 +853,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 8770,
+    "total_projections_returned": 8773,
     "matched_props": 402,
-    "excluded_goblin_demon_lines": 6968,
+    "excluded_goblin_demon_lines": 6971,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
