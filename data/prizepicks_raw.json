@@ -37,7 +37,7 @@
     },
     "Kyle Monangai": {
       "rushing_yards": 32.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 5.5
     },
     "Jonathon Brooks": {
       "rushing_yards": 31.5,
@@ -71,7 +71,7 @@
       "rushing_yards": 0.5
     },
     "Cooper Rush": {
-      "passing_yards": 179.5
+      "passing_yards": 178.5
     },
     "Bijan Robinson": {
       "rushing_yards": 78.5,
@@ -111,7 +111,7 @@
       "receptions": 2
     },
     "Jahan Dotson": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Roman Wilson": {
@@ -158,7 +158,7 @@
       "receiving_yards": 27.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 25.5,
       "receptions": 2
     },
     "Ja'Kobi Lane": {
@@ -170,7 +170,7 @@
       "receptions": 2
     },
     "Mo Alie-Cox": {
-      "receiving_yards": 3.5
+      "receiving_yards": 4.5
     },
     "Ashton Dulin": {
       "receiving_yards": 3.5
@@ -204,7 +204,7 @@
       "receiving_yards": 38.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 33.5,
       "receptions": 2.5
     },
     "Calvin Ridley": {
@@ -249,7 +249,7 @@
       "receiving_yards": 10.5
     },
     "Parker Washington": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 53.5,
       "receptions": 4
     },
     "Bhayshul Tuten": {
@@ -335,7 +335,7 @@
       "receiving_yards": 17.5
     },
     "Bryce Lance": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Joe Burrow": {
       "passing_yards": 269.5,
@@ -394,7 +394,7 @@
       "receiving_yards": 13.5
     },
     "Erick All Jr.": {
-      "receiving_yards": 9.5,
+      "receiving_yards": 10.5,
       "receptions": 1.5
     },
     "Tez Johnson": {
@@ -471,7 +471,7 @@
       "rushing_yards": 21.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 222.5,
+      "passing_yards": 220.5,
       "rushing_yards": 10.5
     },
     "Omarion Hampton": {
@@ -486,7 +486,7 @@
       "receptions": 6
     },
     "Marvin Harrison Jr.": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 4
     },
     "Quentin Johnston": {
@@ -526,11 +526,11 @@
       "receiving_yards": 10.5
     },
     "Jordan Love": {
-      "passing_yards": 242.5,
+      "passing_yards": 239.5,
       "rushing_yards": 9.5
     },
     "Kyler Murray": {
-      "passing_yards": 220.5,
+      "passing_yards": 216.5,
       "rushing_yards": 23.5
     },
     "Justin Jefferson": {
@@ -603,11 +603,11 @@
       "receiving_yards": 17.5
     },
     "Tre Tucker": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 46.5,
       "receptions": 4
     },
     "Michael Mayer": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 41.5,
       "receptions": 4.5
     },
     "Jalen Nailor": {
@@ -619,6 +619,9 @@
       "receptions": 3,
       "rushing_yards": 0.5
     },
+    "Caleb Douglas": {
+      "receiving_yards": 27.5
+    },
     "Mike Washington Jr.": {
       "rushing_yards": 27.5,
       "receiving_yards": 3.5
@@ -626,9 +629,6 @@
     "Greg Dulcich": {
       "receiving_yards": 26.5,
       "receptions": 2.5
-    },
-    "Caleb Douglas": {
-      "receiving_yards": 26.5
     },
     "Jack Bech": {
       "receiving_yards": 18.5
@@ -663,13 +663,13 @@
       "receiving_yards": 52.5,
       "receptions": 4
     },
+    "Stefon Diggs": {
+      "receiving_yards": 42.5,
+      "receptions": 4
+    },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 40.5,
       "receiving_yards": 6.5
-    },
-    "Stefon Diggs": {
-      "receiving_yards": 40.5,
-      "receptions": 4
     },
     "Dallas Goedert": {
       "receiving_yards": 37.5,
@@ -804,7 +804,7 @@
       "receiving_yards": 36.5
     },
     "Pat Bryant": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Evan Engram": {
       "receiving_yards": 22.5
@@ -855,9 +855,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 8798,
+    "total_projections_returned": 8811,
     "matched_props": 404,
-    "excluded_goblin_demon_lines": 6983,
+    "excluded_goblin_demon_lines": 6996,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
