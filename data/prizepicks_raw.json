@@ -71,7 +71,7 @@
       "rushing_yards": 0.5
     },
     "Cooper Rush": {
-      "passing_yards": 180.5
+      "passing_yards": 178.5
     },
     "Bijan Robinson": {
       "rushing_yards": 78.5,
@@ -90,7 +90,7 @@
     },
     "Jaylen Warren": {
       "rushing_yards": 43.5,
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 38.5,
@@ -154,12 +154,12 @@
     "Mark Andrews": {
       "receiving_yards": 35.5
     },
+    "Rashod Bateman": {
+      "receiving_yards": 26.5,
+      "receptions": 2
+    },
     "Keenan Allen": {
       "receiving_yards": 26.5
-    },
-    "Rashod Bateman": {
-      "receiving_yards": 25.5,
-      "receptions": 2
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 19.5
@@ -192,7 +192,7 @@
       "receptions": 5.5
     },
     "Tony Pollard": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
@@ -216,11 +216,11 @@
       "receiving_yards": 15.5,
       "receptions": 2.5
     },
-    "Gunnar Helm": {
-      "receiving_yards": 21.5
-    },
     "Mason Taylor": {
       "receiving_yards": 21.5
+    },
+    "Gunnar Helm": {
+      "receiving_yards": 20.5
     },
     "Braelon Allen": {
       "rushing_yards": 19.5,
@@ -445,7 +445,7 @@
       "receptions": 1.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 25.5,
       "receptions": 2
     },
     "Xavier Hutchinson": {
@@ -488,12 +488,12 @@
       "receiving_yards": 47.5,
       "receptions": 4
     },
-    "Michael Wilson": {
-      "receiving_yards": 43.5,
-      "receptions": 3.5
-    },
     "Quentin Johnston": {
       "receiving_yards": 43.5
+    },
+    "Michael Wilson": {
+      "receiving_yards": 41.5,
+      "receptions": 3.5
     },
     "Jeremiyah Love": {
       "rushing_yards": 38.5,
@@ -854,9 +854,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 8769,
+    "total_projections_returned": 8772,
     "matched_props": 403,
-    "excluded_goblin_demon_lines": 6967,
+    "excluded_goblin_demon_lines": 6969,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
