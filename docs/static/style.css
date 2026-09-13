@@ -82,6 +82,33 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
   text-shadow: 0 0 6px rgba(0, 240, 255, 0.7);
 }
 
+.standings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+@media (max-width: 640px) {
+  .standings-grid { grid-template-columns: 1fr; }
+}
+.conf-head {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  margin: 0 0 8px;
+}
+.conf-head.conf-afc { color: var(--cyan); }
+.conf-head.conf-nfc { color: var(--magenta); }
+
+.kalshi-subsection { margin-bottom: 22px; }
+.kalshi-subsection h5 {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 0 0 8px;
+}
+
 .game-picker {
   display: flex;
   flex-wrap: wrap;
@@ -173,6 +200,13 @@ h2 {
   text-shadow: 0 0 8px rgba(255, 46, 196, 0.5);
 }
 p.lede { color: var(--text-dim); max-width: 64ch; margin: 0 0 28px; }
+p.lede.small { font-size: 0.85rem; margin-bottom: 14px; }
+
+.notice.compact {
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
 
 .notice {
   border-left: 3px solid var(--magenta);
