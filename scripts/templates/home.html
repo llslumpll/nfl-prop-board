@@ -23,18 +23,79 @@
   </div>
 </div>
 
+{% macro best5_section(title, link, picks, is_td=false) %}
+<h2>{{ title }} &mdash; Best 5</h2>
+{% if picks %}
+<div class="table-wrap">
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>Matchup</th>
+      {% if is_td %}
+        <th class="num">Model</th>
+        <th class="num">Market</th>
+      {% else %}
+        <th class="num">Projected</th>
+        <th class="num">Line</th>
+      {% endif %}
+      <th class="num">Edge</th>
+      <th>Call</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for p in picks %}
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ p.team_badge.color }}">{{ p.team_badge.abbr }}</span>
+          {{ p.player }}
+        </div>
+      </td>
+      <td>W{{ p.week }} vs {{ p.opponent }}</td>
+      {% if is_td %}
+        <td class="num">{{ p.model_prob }}%</td>
+        <td class="num">{{ p.market_prob }}%</td>
+        <td class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</td>
+      {% else %}
+        <td class="num">{{ p.projected }} {{ p.unit }}</td>
+        <td class="num">{{ p.market_line }} {{ p.unit }}</td>
+        <td class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }} {{ p.unit }}</td>
+      {% endif %}
+      <td><span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<p class="player-sub" style="margin:6px 0 0;"><a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
+{% else %}
+<div class="empty-state">
+  <h3>No eligible picks yet</h3>
+  <p>Needs both a real next-game projection and a real market line/quote for the same player &mdash; check back as more lines populate. <a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
+</div>
+{% endif %}
+{% endmacro %}
+
+{{ best5_section("Passing", "passing.html", best5.passing) }}
+{{ best5_section("Receiving", "receiving.html", best5.receiving) }}
+{{ best5_section("Receptions", "receptions.html", best5.receptions) }}
+{{ best5_section("Rushing", "rushing.html", best5.rushing) }}
+{{ best5_section("Touchdowns", "touchdowns.html", best5.touchdowns, is_td=true) }}
+
 <h2>What's real right now</h2>
 <ul class="plain">
   <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
-  <li>Matchups page: real upcoming games from the live schedule, with each team's top passer/rusher/receiver's actual historical performance against that specific opponent (2023&ndash;2025) &mdash; or an honest "no meetings on record" where two teams haven't played recently.</li>
+  <li>Matchups page: the next date's real games, with each team's top passer/rusher/receiver's actual historical performance against that specific opponent (2023&ndash;2025), plus the real Kalshi market for that exact game.</li>
+  <li>Best 5 above: real edge between our own dampened projection and a real market line (PrizePicks for yardage/receptions, Kalshi for touchdowns) &mdash; never shown without both sides being real.</li>
   <li>Injury report status pulled in per player, where reported.</li>
   <li>QB&ndash;receiver correlation flagged on Receiving and Receptions, since stacking a QB with his own WR1 is a common, easy mistake.</li>
 </ul>
 
 <h2>What's intentionally not faked</h2>
 <ul class="plain">
-  <li>No calibrated confidence score. A first-cut MIN_SAMPLE=30 / DAMPEN=0.20 has been reasoned out for NFL's weekly cadence (see <code>scripts/dataio.py</code>), but it hasn't been validated against real graded picks yet, so tiers shown here are still sample-size labels, not tuned predictions.</li>
-  <li>No Kalshi or PrizePicks market lines &mdash; not wired into this build (the sandbox this was built in can't reach those APIs; GitHub Actions runners can, so this is a natural next step).</li>
+  <li>No calibrated confidence score. A first-cut MIN_SAMPLE=30 / DAMPEN=0.20 has been reasoned out for NFL's weekly cadence (see <code>scripts/dataio.py</code>), but it hasn't been validated against real graded picks yet.</li>
+  <li>No grading yet. Best 5's edge is real, but nothing calls a pick a hit or miss until the underlying game finishes and a grading rule is decided.</li>
   <li>No weather factor for passing yet &mdash; needs its own wind-specific derivation per the brief, not a ported formula.</li>
   <li>History page is empty on purpose &mdash; no predictions exist yet to grade.</li>
   <li>Kicking was dropped. Field goal attempts depend too heavily on decisions (coach's 4th-down call, weather, game script) that this build has no honest way to project yet &mdash; better to drop it than publish a number with no real basis.</li>
