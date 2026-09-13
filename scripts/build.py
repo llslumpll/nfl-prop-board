@@ -128,13 +128,30 @@ def build():
         teams in this specific game, matching by ticker substring (e.g.
         'KXNFLGAME-26SEP14DENKC-KC' contains both 'DENKC' concatenated
         and the single-team suffix). Uses each game's Kalshi-aliased team
-        codes so the known LA/LAR mismatch doesn't silently drop matches."""
+        codes so the known LA/LAR mismatch doesn't silently drop matches.
+
+        Also classifies each KXNFLTOTAL record as a combined "game" total
+        or a specific "team" total -- Kalshi bundles both under the same
+        series/event (e.g. "Over 44.5 points scored" alongside "Houston
+        over 21.5 points scored"), and the only reliable way to tell them
+        apart is that a team-total market's title names a specific city,
+        while the combined one doesn't."""
         away, home = game["kalshi_away_code"], game["kalshi_home_code"]
+        away_city = dataio.TEAM_CITY.get(game["away_team"], game["away_team"])
+        home_city = dataio.TEAM_CITY.get(game["home_team"], game["home_team"])
         out = []
         for m in kalshi_data["game_props"]:
             ticker = m.get("ticker") or ""
-            if away in ticker and home in ticker:
-                out.append(m)
+            if away not in ticker or home not in ticker:
+                continue
+            record = dict(m)
+            if record.get("series_ticker") == "KXNFLTOTAL":
+                title = record.get("market_title") or ""
+                if away_city in title or home_city in title:
+                    record["total_scope"] = "team"
+                else:
+                    record["total_scope"] = "game"
+            out.append(record)
         return out
 
     for g in matchups_data["games"]:
