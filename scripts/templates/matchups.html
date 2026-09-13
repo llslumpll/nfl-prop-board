@@ -112,8 +112,8 @@
     <tr>
       <td>{{ m.market_title }}</td>
       {% if m.yes_bid is not none or m.yes_ask is not none %}
-        <td class="num stat-good">{{ m.yes_bid if m.yes_bid is not none else '—' }}&cent;</td>
-        <td class="num stat-good">{{ m.yes_ask if m.yes_ask is not none else '—' }}&cent;</td>
+        <td class="num stat-good">{{ m.yes_bid_cents if m.yes_bid_cents is not none else '—' }}&cent;</td>
+        <td class="num stat-good">{{ m.yes_ask_cents if m.yes_ask_cents is not none else '—' }}&cent;</td>
         <td class="num">{{ m.volume if m.volume is not none else 0 }}</td>
       {% else %}
         <td class="player-sub">no quote yet</td>
