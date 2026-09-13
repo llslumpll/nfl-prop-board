@@ -98,6 +98,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-
 }
 .conf-head.conf-afc { color: var(--cyan); }
 .conf-head.conf-nfc { color: var(--magenta); }
+.division-head {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 10px 0 6px;
+}
 
 .kalshi-subsection { margin-bottom: 22px; }
 .kalshi-subsection h5 {
