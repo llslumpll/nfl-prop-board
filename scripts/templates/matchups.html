@@ -208,12 +208,13 @@
 
     <div class="kalshi-subsection">
       <h5>Game Total</h5>
-      {% if total_props %}
+      {% set combined_total = total_props|selectattr("total_scope", "equalto", "game")|list %}
+      {% if combined_total %}
       <p class="player-sub">Higher implied % on a low point-total threshold, or high threshold pricing above 50%, points toward a high-scoring game &mdash; and vice versa for a low-scoring one.</p>
       <table class="stat-table">
         <thead><tr><th>Market</th><th class="num">Implied %</th><th class="num">Decimal odds</th><th class="num">Volume</th></tr></thead>
         <tbody>
-          {% for k in total_props %}
+          {% for k in combined_total %}
           <tr>
             <td>{{ k.market_title }}</td>
             {% if k.implied_pct is not none %}
@@ -227,7 +228,32 @@
           {% endfor %}
         </tbody>
       </table>
-      {% else %}<p class="player-sub">No game-total market found for this game yet.</p>{% endif %}
+      {% else %}<p class="player-sub">No combined game-total market found for this game yet.</p>{% endif %}
+    </div>
+
+    <div class="kalshi-subsection">
+      <h5>Team Totals</h5>
+      {% set team_totals = total_props|selectattr("total_scope", "equalto", "team")|list %}
+      {% if team_totals %}
+      <p class="player-sub">Each team's own point total &mdash; useful for spotting one side expected to do most of the scoring.</p>
+      <table class="stat-table">
+        <thead><tr><th>Market</th><th class="num">Implied %</th><th class="num">Decimal odds</th><th class="num">Volume</th></tr></thead>
+        <tbody>
+          {% for k in team_totals %}
+          <tr>
+            <td>{{ k.market_title }}</td>
+            {% if k.implied_pct is not none %}
+              <td class="num stat-good">{{ k.implied_pct }}%</td>
+              <td class="num">{{ k.decimal_odds }}x</td>
+              <td class="num">{{ k.volume }}</td>
+            {% else %}
+              <td class="player-sub">no quote yet</td><td class="player-sub">&mdash;</td><td class="num">0</td>
+            {% endif %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% else %}<p class="player-sub">No per-team total market found for this game yet -- Kalshi may not bundle one with this event, or it hasn't been quoted.</p>{% endif %}
     </div>
   {% else %}
     <div class="empty-state"><h3>No Kalshi market found for this specific game yet</h3></div>
