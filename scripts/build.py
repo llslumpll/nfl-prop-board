@@ -21,6 +21,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import dataio  # noqa: E402
 import kalshi_client  # noqa: E402
 import prizepicks_client  # noqa: E402
+import best5  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -117,19 +118,60 @@ def build():
     pp_props = pp_data["props"]
     pp_error = pp_data["error"]
 
+    # --- Matchups: single next date, with per-game Kalshi props attached ---
+    matchups_data = dataio.matchups_for_next_date()
+
+    def kalshi_props_for_game(game: dict) -> list[dict]:
+        """Filters the full Kalshi game_props list down to just the two
+        teams in this specific game, matching by ticker substring (e.g.
+        'KXNFLGAME-26SEP14DENKC-KC' contains both 'DENKC' concatenated
+        and the single-team suffix). Uses each game's Kalshi-aliased team
+        codes so the known LA/LAR mismatch doesn't silently drop matches."""
+        away, home = game["kalshi_away_code"], game["kalshi_home_code"]
+        out = []
+        for m in kalshi_data["game_props"]:
+            ticker = m.get("ticker") or ""
+            if away in ticker and home in ticker:
+                out.append(m)
+        return out
+
+    for g in matchups_data["games"]:
+        g["kalshi_props"] = kalshi_props_for_game(g)
+
+    # --- Best 5: real edge between our projections and real market lines ---
+    passing_rows = dataio.passing_leaders()
+    receiving_rows = dataio.receiving_leaders()
+    receptions_rows = dataio.receptions_leaders()
+    rushing_rows = dataio.rushing_leaders()
+    touchdown_rows = dataio.touchdown_leaders()
+
+    best5_data = {
+        "passing": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
+        "receiving": best5.best5_yardage(receiving_rows, pp_props, "receiving_yards", "yds"),
+        "receptions": best5.best5_yardage(receptions_rows, pp_props, "receptions", "rec"),
+        "rushing": best5.best5_yardage(rushing_rows, pp_props, "rushing_yards", "yds"),
+        "touchdowns": best5.best5_touchdowns(touchdown_rows, kalshi_data["touchdown_props"]),
+    }
+    for label, picks in best5_data.items():
+        print(f"Best 5 {label}: {len(picks)} eligible pick(s)")
+
     pages = {
-        "index.html": ("home", "home.html", {"weeks": dataio.weeks_available()}),
+        "index.html": (
+            "home",
+            "home.html",
+            {"weeks": dataio.weeks_available(), "best5": best5_data},
+        ),
         "matchups.html": (
             "matchups",
             "matchups.html",
-            {"matchups": dataio.upcoming_matchups(), "kalshi_game_props": kalshi_data["game_props"], "kalshi_error": kalshi_data["error"]},
+            {"matchups_data": matchups_data, "kalshi_error": kalshi_data["error"]},
         ),
-        "passing.html": ("passing", "passing.html", {"rows": dataio.passing_leaders(), "pp_props": pp_props, "pp_error": pp_error}),
+        "passing.html": ("passing", "passing.html", {"rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error}),
         "receiving.html": (
             "receiving",
             "receiving.html",
             {
-                "rows": dataio.receiving_leaders(),
+                "rows": receiving_rows,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
@@ -139,17 +181,17 @@ def build():
             "receptions",
             "receptions.html",
             {
-                "rows": dataio.receptions_leaders(),
+                "rows": receptions_rows,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
             },
         ),
-        "rushing.html": ("rushing", "rushing.html", {"rows": dataio.rushing_leaders(), "pp_props": pp_props, "pp_error": pp_error}),
+        "rushing.html": ("rushing", "rushing.html", {"rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error}),
         "touchdowns.html": (
             "touchdowns",
             "touchdowns.html",
-            {"rows": dataio.touchdown_leaders(), "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
+            {"rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
         ),
         "history.html": ("history", "history.html", {"projections_logged": dataio.projections_logged_count()}),
     }
