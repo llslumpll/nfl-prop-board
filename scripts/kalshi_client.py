@@ -36,23 +36,26 @@ CANDIDATE_SERIES = [
 ]
 
 
-def _hydrate_market_price(ticker: str, timeout: int = 10) -> dict | None:
+def _hydrate_market_price(ticker: str, timeout: int = 10) -> tuple[dict | None, str]:
     """
     Fetches ONE market by its exact ticker via GET /markets/{ticker}.
-    A live run found that the bulk /markets?series_ticker=X list
-    endpoint returned real markets with null prices for tickers that a
-    third-party market inspector showed had real, substantial trading
-    volume -- meaning the bulk list response is likely a lighter/staler
-    projection, and the dedicated single-market endpoint is where the
-    real live yes_bid/yes_ask actually lives. Returns None on any
-    failure so a single bad ticker can't break the whole fetch.
+    Returns (market_dict_or_None, outcome_label) -- the label lets the
+    caller count exactly how many hydration attempts errored vs.
+    succeeded-but-still-had-no-price vs. genuinely returned a live
+    quote, since "0 hydrated quotes out of 250 attempts" is ambiguous
+    without knowing which of those it actually was.
     """
     try:
         resp = requests.get(f"{BASE_URL}/markets/{ticker}", timeout=timeout)
         resp.raise_for_status()
-        return resp.json().get("market")
-    except Exception:
-        return None
+        market = resp.json().get("market")
+        if not market:
+            return None, "no_market_key_in_response"
+        if market.get("yes_bid") is not None or market.get("yes_ask") is not None:
+            return market, "has_price"
+        return market, "fetched_but_null_price"
+    except Exception as e:
+        return None, f"error: {type(e).__name__}: {e}"
 
 
 def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 40, max_hydrate: int = 250) -> dict:
@@ -144,14 +147,20 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
     # specifically asked for), then touchdowns, up to max_hydrate total
     # calls so this can't run away on a public unauthenticated endpoint.
     hydrate_budget = max_hydrate
+    hydrate_outcomes: dict[str, int] = {}
+    sample_hydrated_market = None
     for bucket_list in (result["game_props"], result["touchdown_props"]):
         for record in bucket_list:
             if hydrate_budget <= 0:
                 break
             if not record.get("ticker"):
                 continue
-            live = _hydrate_market_price(record["ticker"])
+            live, outcome_label = _hydrate_market_price(record["ticker"])
             hydrate_budget -= 1
+            key = outcome_label.split(":")[0]  # collapse "error: X: msg" variants together for counting
+            hydrate_outcomes[key] = hydrate_outcomes.get(key, 0) + 1
+            if sample_hydrated_market is None and live:
+                sample_hydrated_market = live
             if live:
                 record["yes_bid"] = live.get("yes_bid")
                 record["yes_ask"] = live.get("yes_ask")
@@ -159,6 +168,8 @@ def fetch_nfl_touchdown_and_game_props(timeout: int = 15, max_per_bucket: int = 
                 record["last_price"] = live.get("last_price")
 
     result["diagnostics"]["markets_hydrated"] = max_hydrate - hydrate_budget
+    result["diagnostics"]["hydrate_outcomes"] = hydrate_outcomes
+    result["diagnostics"]["sample_hydrated_market"] = sample_hydrated_market
 
     # Sorting by volume alone is meaningless when a live run found EVERY
     # single market at volume=0, yes_bid=null, yes_ask=null before
