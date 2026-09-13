@@ -412,27 +412,33 @@ def correlated_pairs_for_receiving(limit: int = 40) -> dict:
     return qb_by_team
 
 
-def upcoming_matchups(limit_games: int = 8) -> list[dict]:
+def matchups_for_next_date(limit_games: int = 20) -> dict:
     """
-    Real upcoming games from the live schedule, with each team's current
-    top passer/rusher/receiver's REAL historical stat line against that
-    specific opponent (2023-2025), where it exists. Honest about "no
-    history" rather than inventing a number when two teams haven't met.
+    Real games for the single nearest date with any unplayed game (not a
+    whole week) -- mirrors the MLB site's "today's games" behavior. Once
+    every game on that date is final, the next build naturally advances
+    to the next date with unplayed games, since this always looks at
+    load_schedule()'s real result column, never a hardcoded date.
+
+    Returns {"date": "YYYY-MM-DD", "games": [...]}. Each game dict is the
+    same shape as before (players, history, projections) plus a
+    "kalshi_ticker_fragment" per team so build.py can match Kalshi's
+    per-team ticker codes to this game (Kalshi uses "LAR" where our
+    schedule data uses "LA" for the Rams -- the one known team-code
+    mismatch found live; aliased below rather than assumed to be the
+    only one that will ever exist).
     """
     sched = load_schedule()
-    unplayed = sched.filter(pl.col("result").is_null()).sort(["week", "gameday"])
+    unplayed = sched.filter(pl.col("result").is_null()).sort(["gameday"])
     if unplayed.height == 0:
-        return []
-    next_week = unplayed["week"].min()
-    games = unplayed.filter(pl.col("week") == next_week)
+        return {"date": None, "games": []}
+    next_date = unplayed["gameday"].min()
+    games = unplayed.filter(pl.col("gameday") == next_date)
 
     stats_2026 = load_stats()
     hist = load_historical_stats()
 
     def top_players_for_team(team: str) -> list[tuple[str, dict, bool]]:
-        """Returns (stat_col, player_row, is_current_season) tuples.
-        Falls back to last season's leaders when the team hasn't played
-        a 2026 game yet (most teams, this early in Week 1)."""
         team_rows = stats_2026.filter(pl.col("team") == team)
         picks = []
         qb = team_rows.filter(pl.col("position") == "QB").sort("attempts", descending=True)
@@ -446,11 +452,9 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
             picks.append(("rushing_yards", rb.row(0, named=True), True))
         if wr.height:
             picks.append(("receiving_yards", wr.row(0, named=True), True))
-
         if picks:
             return picks
 
-        # Fallback: most recent historical season's team leaders.
         last_season = hist["season"].max()
         team_hist = hist.filter((pl.col("team") == team) & (pl.col("season") == last_season))
         qb_h = team_hist.filter(pl.col("position") == "QB").group_by(
@@ -468,6 +472,7 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
         ).agg(pl.col("receiving_yards").sum().alias("receiving_yards")).sort(
             "receiving_yards", descending=True
         )
+        picks = []
         if qb_h.height:
             picks.append(("passing_yards", {"player_display_name": qb_h.row(0, named=True)["player_display_name"]}, False))
         if rb_h.height:
@@ -493,15 +498,21 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
             "seasons": sorted(rows["season"].unique().to_list()),
         }
 
-    out = []
+    # Known Kalshi <-> nflreadpy team-code mismatches, found live.
+    KALSHI_TEAM_ALIAS = {"LA": "LAR"}
+
+    out_games = []
     for g in games.head(limit_games).iter_rows(named=True):
         matchup = {
             "week": g["week"],
             "gameday": g.get("gameday"),
+            "gametime": g.get("gametime"),
             "away_team": g["away_team"],
             "home_team": g["home_team"],
             "away_badge": team_badge(g["away_team"]),
             "home_badge": team_badge(g["home_team"]),
+            "kalshi_away_code": KALSHI_TEAM_ALIAS.get(g["away_team"], g["away_team"]),
+            "kalshi_home_code": KALSHI_TEAM_ALIAS.get(g["home_team"], g["home_team"]),
             "players": [],
         }
         for team, opponent in [(g["away_team"], g["home_team"]), (g["home_team"], g["away_team"])]:
@@ -520,8 +531,9 @@ def upcoming_matchups(limit_games: int = 8) -> list[dict]:
                     "based_on_current_season": is_current,
                     "projection": projection,
                 })
-        out.append(matchup)
-    return out
+        out_games.append(matchup)
+
+    return {"date": next_date, "games": out_games}
 
 
 # ---------------------------------------------------------------------------
