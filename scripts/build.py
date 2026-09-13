@@ -99,9 +99,6 @@ def build():
         print(f"Kalshi quoted markets: {diag.get('touchdown_props_with_a_quote', 0)} TD, "
               f"{diag.get('game_props_with_a_quote', 0)} game (out of the totals above -- "
               f"the rest are real listed markets with no price quoted yet).")
-        print(f"Kalshi markets hydrated via individual lookup: {diag.get('markets_hydrated', 0)}")
-        print(f"Kalshi hydration outcomes: {diag.get('hydrate_outcomes', {})}")
-        print(f"Kalshi sample hydrated market (raw): {diag.get('sample_hydrated_market')}")
     print(f"Kalshi per-series results: {kalshi_data['diagnostics']['per_series']}")
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
