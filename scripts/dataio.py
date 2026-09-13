@@ -691,13 +691,13 @@ def matchups_for_next_date(limit_games: int = 20) -> dict:
             for stat_col, prow, is_current in top_players_for_team(team):
                 hist_line = history_vs_opponent(prow["player_display_name"], stat_col, opponent)
                 projection = project_stat(prow["player_display_name"], stat_col)
-                log_projection(prow["player_display_name"], stat_col, g["week"], projection)
                 matchup["players"].append({
                     "player": prow["player_display_name"],
                     "team": team,
                     "team_badge": team_badge(team),
                     "opponent": opponent,
                     "opponent_badge": team_badge(opponent),
+                    "stat_col": stat_col,
                     "stat_label": stat_col.replace("_", " "),
                     "history": hist_line,
                     "based_on_current_season": is_current,
@@ -795,39 +795,9 @@ def project_stat(player_name: str, stat_col: str) -> dict:
         "meets_min_sample": n_games >= MIN_SAMPLE,
         "frozen_at": FROZEN_AT,
     }
-
-
-def log_projection(player_name: str, stat_col: str, week: int, projection: dict) -> None:
-    """
-    Appends a frozen projection to data/projections_log.csv, one row per
-    player/stat/week/build. This is what makes future grading possible
-    once either (a) a market line exists to define hit/miss, or (b) the
-    site starts comparing projections to actual results directly. Until
-    then this is a real, growing, timestamped record -- not a metric,
-    just the raw material an honest History page will eventually need.
-    """
-    import csv
-
-    log_path = DATA_DIR / "projections_log.csv"
-    is_new = not log_path.exists()
-    with open(log_path, "a", newline="") as f:
-        writer = csv.writer(f)
-        if is_new:
-            writer.writerow([
-                "frozen_at", "week", "player", "stat", "projected",
-                "baseline", "baseline_source", "observed_2026", "n_games_2026",
-            ])
-        writer.writerow([
-            projection["frozen_at"], week, player_name, stat_col,
-            projection["projected"], projection["baseline"],
-            projection["baseline_source"], projection["observed_2026"],
-            projection["n_games_2026"],
-        ])
-
-
-def projections_logged_count() -> int:
-    log_path = DATA_DIR / "projections_log.csv"
-    if not log_path.exists():
-        return 0
-    with open(log_path) as f:
-        return max(0, sum(1 for _ in f) - 1)  # minus header
+    # (Old CSV-based log_projection/projections_logged_count removed --
+    # replaced by scripts/predictions.py, which freezes ONE record per
+    # player/stat/week with the real market line captured at freeze
+    # time, instead of appending a new row on every single build/odds
+    # refresh. See predictions.py and grade.py for the real grading
+    # pipeline this enables.)
