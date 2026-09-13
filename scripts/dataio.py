@@ -77,11 +77,155 @@ TEAM_COLORS = {
     "SF": "#AA0000", "TB": "#D50A0A", "TEN": "#4B92DB", "WAS": "#5A1414",
 }
 
+# Real, public, stable facts -- conference/division alignment, not
+# derived from any API here since nflreadpy's schedule rows don't carry
+# it directly. Used only for grouping the standings table.
+TEAM_CONFERENCE = {
+    "BUF": "AFC", "MIA": "AFC", "NE": "AFC", "NYJ": "AFC",
+    "BAL": "AFC", "CIN": "AFC", "CLE": "AFC", "PIT": "AFC",
+    "HOU": "AFC", "IND": "AFC", "JAX": "AFC", "TEN": "AFC",
+    "DEN": "AFC", "KC": "AFC", "LV": "AFC", "LAC": "AFC",
+    "DAL": "NFC", "NYG": "NFC", "PHI": "NFC", "WAS": "NFC",
+    "CHI": "NFC", "DET": "NFC", "GB": "NFC", "MIN": "NFC",
+    "ATL": "NFC", "CAR": "NFC", "NO": "NFC", "TB": "NFC",
+    "ARI": "NFC", "LA": "NFC", "SF": "NFC", "SEA": "NFC",
+}
+TEAM_DIVISION = {
+    "BUF": "AFC East", "MIA": "AFC East", "NE": "AFC East", "NYJ": "AFC East",
+    "BAL": "AFC North", "CIN": "AFC North", "CLE": "AFC North", "PIT": "AFC North",
+    "HOU": "AFC South", "IND": "AFC South", "JAX": "AFC South", "TEN": "AFC South",
+    "DEN": "AFC West", "KC": "AFC West", "LV": "AFC West", "LAC": "AFC West",
+    "DAL": "NFC East", "NYG": "NFC East", "PHI": "NFC East", "WAS": "NFC East",
+    "CHI": "NFC North", "DET": "NFC North", "GB": "NFC North", "MIN": "NFC North",
+    "ATL": "NFC South", "CAR": "NFC South", "NO": "NFC South", "TB": "NFC South",
+    "ARI": "NFC West", "LA": "NFC West", "SF": "NFC West", "SEA": "NFC West",
+}
+
 
 def team_badge(team: str) -> dict:
     """Color + abbreviation for a team badge chip. Falls back to a neutral
     gray for anything unrecognized rather than guessing a color."""
     return {"abbr": team, "color": TEAM_COLORS.get(team, "#5f6862")}
+
+
+def team_standings() -> dict:
+    """
+    Real record + last-5 trend per team, grouped by conference, computed
+    directly from the live schedule's actual scores -- no external
+    standings API needed since we already have every game's final score.
+    Early in the season most teams will show 0-0 or 1-0; that's real,
+    not a bug -- the table reflects however many games have actually
+    been played so far.
+    """
+    sched = load_schedule()
+    played = sched.filter(pl.col("result").is_not_null()).sort("week")
+
+    all_teams = sorted(set(sched["home_team"].to_list()) | set(sched["away_team"].to_list()))
+    records = {t: {"w": 0, "l": 0, "t": 0, "results": []} for t in all_teams}
+
+    for row in played.iter_rows(named=True):
+        home, away = row["home_team"], row["away_team"]
+        home_score, away_score = row["home_score"], row["away_score"]
+        if home_score is None or away_score is None:
+            continue
+        if home_score > away_score:
+            records[home]["w"] += 1
+            records[away]["l"] += 1
+            records[home]["results"].append("W")
+            records[away]["results"].append("L")
+        elif away_score > home_score:
+            records[away]["w"] += 1
+            records[home]["l"] += 1
+            records[away]["results"].append("W")
+            records[home]["results"].append("L")
+        else:
+            records[home]["t"] += 1
+            records[away]["t"] += 1
+            records[home]["results"].append("T")
+            records[away]["results"].append("T")
+
+    by_conference: dict[str, list[dict]] = {"AFC": [], "NFC": []}
+    for team in all_teams:
+        r = records[team]
+        games = r["w"] + r["l"] + r["t"]
+        pct = round((r["w"] + 0.5 * r["t"]) / games, 3) if games else None
+        last5 = r["results"][-5:]
+        last5_w = last5.count("W")
+        last5_pct = (last5_w / len(last5)) if last5 else None
+        trend = None
+        if pct is not None and last5_pct is not None and len(last5) >= 3:
+            delta = last5_pct - pct
+            trend = "up" if delta > 0.15 else "down" if delta < -0.15 else "flat"
+        by_conference.setdefault(TEAM_CONFERENCE.get(team, "?"), []).append({
+            "team": team,
+            "team_badge": team_badge(team),
+            "division": TEAM_DIVISION.get(team, ""),
+            "wins": r["w"], "losses": r["l"], "ties": r["t"],
+            "pct": pct,
+            "last5": f"{last5_w}-{len(last5) - last5_w}" if last5 else "--",
+            "trend": trend,
+        })
+
+    for conf in by_conference:
+        by_conference[conf].sort(key=lambda t: (t["pct"] if t["pct"] is not None else -1), reverse=True)
+
+    return by_conference
+
+
+def team_full_stats() -> list[dict]:
+    """
+    Real per-team offense/defense totals for every stat this build can
+    actually compute from nflreadpy data -- no fabricated stat included.
+    Yards allowed is derived from what OPPONENTS gained against a team
+    (standard definition), not a separate "defense" stat category, since
+    nflreadpy's player-level rows don't carry that directly.
+    """
+    df = load_stats()
+    all_teams = sorted(set(df["team"].to_list()))
+    out = []
+    for team in all_teams:
+        off = df.filter(pl.col("team") == team)
+        opp_off = df.filter(pl.col("opponent_team") == team)  # what opponents did AGAINST this team
+
+        games_played = off["week"].n_unique() if off.height else 0
+
+        pass_yds = off["passing_yards"].sum() or 0
+        rush_yds = off["rushing_yards"].sum() or 0
+        total_yds = pass_yds + rush_yds
+        pass_tds = off["passing_tds"].sum() or 0
+        rush_tds = off["rushing_tds"].sum() or 0
+
+        ints_thrown = off["passing_interceptions"].sum() or 0
+        fumbles_lost = (
+            (off["sack_fumbles_lost"].sum() or 0)
+            + (off["rushing_fumbles_lost"].sum() or 0)
+            + (off["receiving_fumbles_lost"].sum() or 0)
+        )
+        turnovers = ints_thrown + fumbles_lost
+
+        def_sacks = off["def_sacks"].sum() or 0
+        def_ints = off["def_interceptions"].sum() or 0
+        def_fumbles = off["def_fumbles"].sum() or 0
+        takeaways = def_ints + def_fumbles
+
+        yds_allowed = (opp_off["passing_yards"].sum() or 0) + (opp_off["rushing_yards"].sum() or 0)
+
+        out.append({
+            "team": team,
+            "team_badge": team_badge(team),
+            "games": games_played,
+            "total_yards": int(total_yds),
+            "pass_yards": int(pass_yds),
+            "rush_yards": int(rush_yds),
+            "off_tds": int(pass_tds + rush_tds),
+            "turnovers": int(turnovers),
+            "def_sacks": int(def_sacks),
+            "takeaways": int(takeaways),
+            "yards_allowed": int(yds_allowed),
+            "turnover_margin": int(takeaways - turnovers),
+        })
+    out.sort(key=lambda t: -t["total_yards"])
+    return out
 
 
 def next_game_for_team(team: str) -> dict | None:
