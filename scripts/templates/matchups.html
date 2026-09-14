@@ -136,7 +136,7 @@
         </td>
         <td>{{ p.team }} vs {{ p.opponent }}</td>
         <td>{{ p.stat_label }}</td>
-        <td class="num" title="Baseline {{ p.projection.baseline }} ({{ p.projection.baseline_source }}){% if p.projection.observed_2026 is not none %}, 2026 avg {{ p.projection.observed_2026 }} over {{ p.projection.n_games_2026 }} game(s){% endif %} -> temporal {{ p.projection.pre_matchup_projected }} -> matchup factor {{ p.projection.matchup_factor.factor }}x -> pace factor {{ p.projection.pace_factor.factor }}x{% if p.projection.wind_factor %} -> wind factor {{ p.projection.wind_factor.factor }}x{% endif %}">
+        <td class="num" title="Baseline {{ p.projection.baseline }} ({{ p.projection.baseline_source }}){% if p.projection.observed_2026 is not none %}, 2026 avg {{ p.projection.observed_2026 }} over {{ p.projection.n_games_2026 }} game(s){% endif %} -> temporal {{ p.projection.pre_matchup_projected }} -> matchup factor {{ p.projection.matchup_factor.factor }}x -> pace factor {{ p.projection.pace_factor.factor }}x{% if p.projection.wind_factor %} -> wind factor {{ p.projection.wind_factor.factor }}x{% endif %} -> environment factor {{ p.projection.environment_factor.factor if p.projection.environment_factor else 1.0 }}x">
           {{ p.projection.projected }}
         </td>
         <td>
