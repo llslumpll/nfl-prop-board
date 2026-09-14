@@ -2,7 +2,7 @@
   "props": {
     "Bo Nix": {
       "passing_yards": 229.5,
-      "rushing_yards": 17.5
+      "rushing_yards": 16.5
     },
     "Patrick Mahomes": {
       "passing_yards": 224.5,
@@ -35,7 +35,7 @@
       "receiving_yards": 36.5
     },
     "Pat Bryant": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Evan Engram": {
@@ -73,10 +73,24 @@
       "rushing_yards": 30.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 79.5
+      "rushing_yards": 79.5,
+      "receiving_yards": 28.5
+    },
+    "Amon-Ra St. Brown": {
+      "receiving_yards": 76.5
     },
     "James Cook III": {
-      "rushing_yards": 71.5
+      "rushing_yards": 71.5,
+      "receiving_yards": 15.5
+    },
+    "Jameson Williams": {
+      "receiving_yards": 50.5
+    },
+    "Dalton Kincaid": {
+      "receiving_yards": 50.5
+    },
+    "Sam LaPorta": {
+      "receiving_yards": 42.5
     },
     "Joe Burrow": {
       "passing_yards": 260.5,
@@ -263,9 +277,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 832,
-    "matched_props": 108,
-    "excluded_goblin_demon_lines": 613,
+    "total_projections_returned": 981,
+    "matched_props": 114,
+    "excluded_goblin_demon_lines": 734,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
