@@ -335,6 +335,42 @@ def wind_factor_for_team(team: str, game_date: str | None) -> dict:
 _league_pace_avg_cache: float | None = None
 
 
+def league_avg_team_points_per_game() -> float | None:
+    """Real average points scored per team per game, from actual final
+    scores in the schedule -- used as the neutral baseline for the
+    Vegas-implied game environment factor."""
+    sched = load_schedule()
+    played = sched.filter(pl.col("result").is_not_null())
+    if played.height == 0:
+        return None
+    scores = played["home_score"].to_list() + played["away_score"].to_list()
+    scores = [s for s in scores if s is not None]
+    return round(sum(scores) / len(scores), 1) if scores else None
+
+
+def environment_factor(implied_team_total: float | None, league_avg_points: float | None) -> dict:
+    """
+    Real Vegas-implied game environment: a team implied for 27+ points
+    (from a real Kalshi Team Total market) means genuinely more expected
+    offensive opportunity than a team implied for 17 -- a signal used
+    directly by professional prop models. Only applied when a real
+    market quote exists; honestly neutral otherwise (Kalshi's team-total
+    markets are often thin right now, see kalshi_client.py). Dampened
+    and bounded the same way as every other correction on this site.
+    """
+    if implied_team_total is None or not league_avg_points:
+        return {"factor": 1.0, "implied_total": None, "league_avg_points": league_avg_points}
+    raw_factor = implied_team_total / league_avg_points
+    ENV_DAMPEN = 0.3
+    dampened = 1 + ENV_DAMPEN * (raw_factor - 1)
+    dampened = clip(dampened, 0.85, 1.15)
+    return {
+        "factor": round(dampened, 3),
+        "implied_total": implied_team_total,
+        "league_avg_points": league_avg_points,
+    }
+
+
 def team_pace_factor(team: str) -> dict:
     """
     Real offensive volume signal: this team's own plays-per-game (pass
