@@ -18,6 +18,13 @@
 </div>
 
 <div class="notice">
+  <strong>Real wind data now factors into the passing projection here
+  too</strong> &mdash; receiving depends on the same pass attempts, so
+  the same live wind adjustment applied on Passing carries through.
+  Never applied at domes/fixed-roof stadiums.
+</div>
+
+<div class="notice">
   <strong>Next-game projections are now opponent-adjusted.</strong> The
   number reflects the opponent's real yards allowed this season vs. the
   league average, dampened the same way every other correction on this
@@ -88,7 +95,7 @@
       <td class="num stat-{{ r.yac_above_exp_tier }}">{{ '+' if r.yac_above_exp and r.yac_above_exp > 0 }}{{ r.yac_above_exp if r.yac_above_exp is not none else '—' }}</td>
       <td>
         {% if r.next_game %}
-          <span class="num" title="Before matchup adjustment: {{ r.next_game.projection.pre_matchup_projected }} yds. Opponent's {{ r.next_game.opponent }} allows {{ r.next_game.projection.matchup_factor.allowed_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none else 'no data yet' }}{{ ' yds/game vs league avg ' ~ r.next_game.projection.matchup_factor.league_avg_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none }} -> matchup factor {{ r.next_game.projection.matchup_factor.factor }}x">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
+          <span class="num" title="Before matchup adjustment: {{ r.next_game.projection.pre_matchup_projected }} yds. Opponent's {{ r.next_game.opponent }} allows {{ r.next_game.projection.matchup_factor.allowed_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none else 'no data yet' }}{{ ' yds/game vs league avg ' ~ r.next_game.projection.matchup_factor.league_avg_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none }} -> matchup factor {{ r.next_game.projection.matchup_factor.factor }}x. Wind: {{ (r.next_game.projection.wind_factor.wind_mph ~ ' mph') if r.next_game.projection.wind_factor and r.next_game.projection.wind_factor.wind_mph is not none else (r.next_game.projection.wind_factor.reason if r.next_game.projection.wind_factor else 'n/a') }} -> wind factor {{ r.next_game.projection.wind_factor.factor if r.next_game.projection.wind_factor else 1.0 }}x">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
         {% else %}
           <span class="player-sub">season over</span>
         {% endif %}
