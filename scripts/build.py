@@ -68,11 +68,17 @@ def refresh_data():
 def build():
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     build_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    # A URL-safe, ever-changing value tied to this exact build -- used
+    # as a query-string cache-buster on static/style.css so every real
+    # rebuild forces browsers to fetch the new CSS instead of reusing a
+    # cached older one. Unix timestamp is simplest and always increases.
+    cache_bust = str(int(datetime.now(timezone.utc).timestamp()))
 
     common = {
         "nav_pages": NAV_PAGES,
         "coming_soon": COMING_SOON,
         "build_time": build_time,
+        "cache_bust": cache_bust,
     }
 
     DOCS.mkdir(exist_ok=True)
