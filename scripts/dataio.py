@@ -301,7 +301,7 @@ PERF_THRESHOLD = 0.15
 def performance_vs_baseline(player_name: str, stat_col: str, actual_value) -> dict:
     if actual_value is None:
         return {"css": "neutral", "pct_diff": None}
-    baseline, _source = _get_baseline(player_name, stat_col)
+    baseline, _source, _n_career = _get_baseline(player_name, stat_col)
     if not baseline:
         return {"css": "neutral", "pct_diff": None}
     pct_diff = round(100 * (actual_value - baseline) / baseline, 0)
@@ -348,21 +348,37 @@ def weeks_available() -> list[int]:
     return sorted(load_stats()["week"].unique().to_list())
 
 
-def provisional_tier(n_games: int) -> dict:
+def provisional_tier(n_games: int, has_career_history: bool = False, n_career_games: int = 0) -> dict:
     """
-    Honest, non-fabricated placeholder confidence tier based ONLY on
-    sample size seen so far THIS SEASON for a given player. This is a
-    display label about data volume, distinct from the MIN_SAMPLE/DAMPEN
-    constants above, which govern the (not-yet-built) prediction engine's
-    calibration tiers once real predictions are being graded.
+    Honest, non-fabricated confidence tier -- now based on BOTH this
+    season's sample size AND whether a real 2023-2025 career baseline
+    exists, not current-season games alone.
+
+    Why this changed: early in a season, nearly every prediction is FOR
+    a player's next game, made BEFORE that game happens -- so
+    n_games_2026 is 0 or 1 for almost everyone at the moment a
+    prediction is frozen, regardless of whether they're a rookie or a
+    10-year veteran. That collapsed the real History grading into one
+    meaningless "No data" bucket for 62 real graded picks (confirmed
+    live). A player with 45 career games behind their baseline is
+    genuinely more established than one with zero, even before their
+    2026 opener -- that's real information already used by the
+    projection engine's own baseline_source, just not reflected in the
+    tier label until now.
     """
-    if n_games < 1:
-        return {"label": "No data", "css": "tier-none"}
-    if n_games < 3:
-        return {"label": "Provisional (low sample)", "css": "tier-low"}
-    if n_games < 6:
-        return {"label": "Provisional (building sample)", "css": "tier-mid"}
-    return {"label": "Provisional (fuller sample)", "css": "tier-high"}
+    if n_games >= 6:
+        return {"label": "Established (2026 sample)", "css": "tier-high"}
+    if n_games >= 3:
+        return {"label": "Moderate 2026 sample", "css": "tier-high"}
+    if n_games >= 1:
+        return {"label": "Building 2026 sample", "css": "tier-mid"}
+    # n_games == 0 from here down -- differentiate by career history,
+    # since that's real information even with zero 2026 games played.
+    if has_career_history and n_career_games >= 20:
+        return {"label": "Career baseline (established veteran)", "css": "tier-mid"}
+    if has_career_history:
+        return {"label": "Career baseline (limited history)", "css": "tier-low"}
+    return {"label": "No data (rookie/unproven)", "css": "tier-none"}
 
 
 def injury_status_for(player_name: str) -> dict | None:
@@ -753,16 +769,20 @@ def _league_baseline(stat_col: str) -> float:
     return avg
 
 
-def _get_baseline(player_name: str, stat_col: str) -> tuple[float, str]:
+def _get_baseline(player_name: str, stat_col: str) -> tuple[float, str, int]:
     """Shared baseline logic: player's own career average, or league
     position average as fallback. Used by both project_stat() and
-    performance_vs_baseline() so the two stay consistent."""
+    performance_vs_baseline() so the two stay consistent. Now also
+    returns the real career game count behind that baseline, since
+    "has career history" alone doesn't distinguish a 3-game sample from
+    a 45-game one -- both matter for how much a tier label should trust
+    the baseline."""
     hist = load_historical_stats()
     career_rows = hist.filter(pl.col("player_display_name") == player_name)
     career_vals = [v for v in career_rows[stat_col].to_list() if v is not None]
     if career_vals:
-        return round(sum(career_vals) / len(career_vals), 1), "career (2023-2025)"
-    return _league_baseline(stat_col), "league position average"
+        return round(sum(career_vals) / len(career_vals), 1), "career (2023-2025)", len(career_vals)
+    return _league_baseline(stat_col), "league position average", 0
 
 
 def project_stat(player_name: str, stat_col: str) -> dict:
@@ -775,7 +795,7 @@ def project_stat(player_name: str, stat_col: str) -> dict:
     """
     stats_2026 = load_stats()
 
-    baseline, baseline_source = _get_baseline(player_name, stat_col)
+    baseline, baseline_source, n_career_games = _get_baseline(player_name, stat_col)
 
     season_rows = stats_2026.filter(pl.col("player_display_name") == player_name)
     season_vals = [v for v in season_rows[stat_col].to_list() if v is not None]
@@ -788,6 +808,7 @@ def project_stat(player_name: str, stat_col: str) -> dict:
         "projected": projected,
         "baseline": baseline,
         "baseline_source": baseline_source,
+        "n_career_games": n_career_games,
         "observed_2026": observed if n_games else None,
         "n_games_2026": n_games,
         "dampen": DAMPEN,
