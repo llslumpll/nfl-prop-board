@@ -165,6 +165,51 @@ def build():
     for g in matchups_data["games"]:
         g["kalshi_props"] = kalshi_props_for_game(g)
 
+    # --- Vegas-implied game environment: real Kalshi Team Total markets,
+    # where quoted, feeding a final adjustment layer onto every
+    # projection. Applied to both the Matchups page's players AND the
+    # individual stat pages' "next game" projections (see below, after
+    # the leader rows are computed), using the SAME implied totals so
+    # every page agrees with every other page.
+    import re
+
+    def extract_implied_team_total(kalshi_props_for_game_, team_city):
+        """Finds the threshold whose implied probability is closest to
+        50% among this team's real Kalshi Team Total markets -- that
+        threshold IS the market's implied point total, the same
+        convention a sportsbook's own total line uses."""
+        candidates = []
+        for m in kalshi_props_for_game_:
+            if m.get("total_scope") != "team":
+                continue
+            if team_city not in (m.get("market_title") or ""):
+                continue
+            if m.get("implied_pct") is None:
+                continue
+            match = re.search(r"(\d+\.?\d*)", m.get("market_title") or "")
+            if not match:
+                continue
+            candidates.append((abs(m["implied_pct"] - 50), float(match.group(1))))
+        if not candidates:
+            return None
+        candidates.sort(key=lambda c: c[0])
+        return candidates[0][1]
+
+    league_avg_points = dataio.league_avg_team_points_per_game()
+    implied_team_totals: dict[str, float] = {}
+    for g in matchups_data["games"]:
+        away_city = dataio.TEAM_CITY.get(g["away_team"], g["away_team"])
+        home_city = dataio.TEAM_CITY.get(g["home_team"], g["home_team"])
+        implied_team_totals[g["away_team"]] = extract_implied_team_total(g["kalshi_props"], away_city)
+        implied_team_totals[g["home_team"]] = extract_implied_team_total(g["kalshi_props"], home_city)
+        for p in g["players"]:
+            env_factor = dataio.environment_factor(implied_team_totals.get(p["team"]), league_avg_points)
+            p["projection"]["environment_factor"] = env_factor
+            p["projection"]["projected"] = round(p["projection"]["projected"] * env_factor["factor"], 1)
+
+    quoted_environments = sum(1 for v in implied_team_totals.values() if v is not None)
+    print(f"Vegas-implied game environment: {quoted_environments}/{len(implied_team_totals)} team(s) have a real quoted Kalshi Team Total.")
+
     # --- Freeze real predictions (one per player/stat/week, never
     # overwritten) using the real PrizePicks line as the market side.
     # This is what makes the History page's grading meaningful -- a
@@ -207,6 +252,20 @@ def build():
     receptions_rows = dataio.receptions_leaders()
     rushing_rows = dataio.rushing_leaders()
     touchdown_rows = dataio.touchdown_leaders()
+
+    # Apply the SAME Vegas-implied environment factors computed above to
+    # every stat page's "next game" projection, so Matchups and the
+    # individual stat pages never silently disagree on the same
+    # player/game the way they did before the matchup/pace/wind fix.
+    for rows in (passing_rows, receiving_rows, receptions_rows, rushing_rows):
+        for r in rows:
+            if not r.get("next_game"):
+                continue
+            env_factor = dataio.environment_factor(implied_team_totals.get(r["team"]), league_avg_points)
+            r["next_game"]["projection"]["environment_factor"] = env_factor
+            r["next_game"]["projection"]["projected"] = round(
+                r["next_game"]["projection"]["projected"] * env_factor["factor"], 1
+            )
 
     best5_data = {
         "passing": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
