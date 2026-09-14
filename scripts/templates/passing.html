@@ -22,6 +22,19 @@
   &plusmn;3 is a meaningful edge either direction.
 </div>
 
+<div class="notice">
+  <strong>Time to Throw, Aggressiveness, and Air Yards Differential are
+  real NFL Next Gen Stats</strong> &mdash; tracking-data-derived, a
+  separate real source from the box-score stats above.
+  <strong>Time to Throw</strong> is seconds from snap to release.
+  <strong>Aggressiveness</strong> is the share of throws into tight
+  coverage (a defender within 1 yard at the catch point) &mdash; not
+  inherently good or bad, just a real style signal. <strong>Air Yards
+  Differential</strong> is intended depth minus completed depth: a
+  strongly negative number means a QB is throwing deep more than he's
+  actually completing deep.
+</div>
+
 {% if pp_error %}
 <div class="notice">
   <strong>PrizePicks fetch failed on this build.</strong> Error: {{ pp_error }}
@@ -46,6 +59,9 @@
       <th class="num">INT</th>
       <th class="num" title="Expected Points Added per dropback -- real scoring impact, not just yards">EPA/play</th>
       <th class="num" title="Completion % Over Expected -- real accuracy, isolated from receiver separation">CPOE</th>
+      <th class="num" title="Seconds from snap to release (Next Gen Stats)">TTT</th>
+      <th class="num" title="Share of throws into tight coverage (Next Gen Stats)">Aggr.</th>
+      <th class="num" title="Intended air yards minus completed air yards (Next Gen Stats)">AY Diff</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -71,6 +87,9 @@
       <td class="num">{{ r.interceptions }}</td>
       <td class="num stat-{{ r.epa_tier }}">{{ r.epa_per_play if r.epa_per_play is not none else '—' }}</td>
       <td class="num stat-{{ r.cpoe_tier }}">{{ '+' if r.cpoe and r.cpoe > 0 }}{{ r.cpoe if r.cpoe is not none else '—' }}{{ '%' if r.cpoe is not none }}</td>
+      <td class="num">{{ r.time_to_throw if r.time_to_throw is not none else '—' }}</td>
+      <td class="num stat-{{ r.aggressiveness_tier }}">{{ r.aggressiveness if r.aggressiveness is not none else '—' }}{{ '%' if r.aggressiveness is not none }}</td>
+      <td class="num">{{ r.air_yards_diff if r.air_yards_diff is not none else '—' }}</td>
       <td>
         {% if r.next_game %}
           <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
