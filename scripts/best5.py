@@ -62,6 +62,28 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
     return candidates[:5]
 
 
+def find_kalshi_1plus_td_price(kalshi_td_props: list[dict], player_name: str) -> float | None:
+    """
+    Shared lookup: finds this player's real Kalshi "1+ touchdowns"
+    market price, matched by name (Kalshi's title format is literally
+    "{Name}: 1+ touchdowns"). Requires a real quote (yes_bid or yes_ask
+    actually present) -- an unquoted market isn't a real price. Used by
+    both best5_touchdowns (ranking) and build.py's touchdown-prediction
+    freezing (grading), so the two never disagree about what price was used.
+    """
+    for m in kalshi_td_props:
+        title = m.get("market_title") or ""
+        if ": 1+" not in title:
+            continue
+        if m.get("yes_bid") is None and m.get("yes_ask") is None:
+            continue
+        if not title.split(":")[0].strip() == player_name:
+            continue
+        if m.get("price") is not None:
+            return m["price"]
+    return None
+
+
 def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[dict]:
     """
     Converts each player's next-game projected total TDs into a Poisson
@@ -76,28 +98,12 @@ def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[d
     it's just an empty order book, and ranking by edge against it would
     be ranking by noise, not signal.
     """
-    # Index Kalshi 1+ TD markets by player name (best-effort substring
-    # match against the market_title, since Kalshi's title format is
-    # "{Name}: 1+ touchdowns").
-    kalshi_1plus_by_name = {}
-    for m in kalshi_td_props:
-        title = (m.get("market_title") or "")
-        if ": 1+" not in title:
-            continue
-        if m.get("yes_bid") is None and m.get("yes_ask") is None:
-            continue  # no real quote -- not eligible, see docstring
-        name = title.split(":")[0].strip()
-        price = m.get("price")
-        if price is None:
-            continue
-        kalshi_1plus_by_name[name] = price
-
     candidates = []
     for r in td_rows:
         next_game = r.get("next_game")
         if not next_game or not next_game.get("projected_total"):
             continue
-        market_price = kalshi_1plus_by_name.get(r["player"])
+        market_price = find_kalshi_1plus_td_price(kalshi_td_props, r["player"])
         if market_price is None:
             continue
         model_prob = poisson_prob_at_least(1, next_game["projected_total"])
