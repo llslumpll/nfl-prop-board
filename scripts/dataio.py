@@ -1282,6 +1282,26 @@ def _get_baseline(player_name: str, stat_col: str) -> tuple[float, str, int]:
     return _league_baseline(stat_col), "league position average", 0
 
 
+_calibration_cache: dict | None = None
+
+
+def _load_calibration() -> dict:
+    """Defensive read of data/calibration.json -- missing file, missing
+    key, or any parse error all fall back to an empty dict (neutral,
+    no correction applied), never a crash. Same pattern used everywhere
+    else real market/weather data is read on this site."""
+    global _calibration_cache
+    if _calibration_cache is not None:
+        return _calibration_cache
+    try:
+        import json
+        path = DATA_DIR / "calibration.json"
+        _calibration_cache = json.loads(path.read_text()) if path.exists() else {}
+    except Exception:
+        _calibration_cache = {}
+    return _calibration_cache
+
+
 def project_stat(player_name: str, stat_col: str) -> dict:
     """
     Returns a frozen-at-build-time projection for one player/stat,
@@ -1289,6 +1309,13 @@ def project_stat(player_name: str, stat_col: str) -> dict:
     immutable once built -- per the brief's "freeze predictions, never
     let them silently drift" principle, this build.py run's projection
     should not be silently recomputed intra-week.
+
+    Now includes a real, closed-loop calibration correction: if
+    scripts/calibrate.py has found (from real graded history, gated by
+    MIN_SAMPLE) that THIS tier's predictions for THIS stat run
+    systematically high or low, a dampened nudge is applied here. Reads
+    are fully defensive -- no calibration.json yet, or "insufficient
+    data" for this tier, means zero correction, not a guess.
     """
     stats_2026 = load_stats()
 
@@ -1301,6 +1328,16 @@ def project_stat(player_name: str, stat_col: str) -> dict:
 
     projected = round(baseline + DAMPEN * (observed - baseline), 1)
 
+    tier = provisional_tier(
+        n_games, has_career_history=(baseline_source == "career (2023-2025)"),
+        n_career_games=n_career_games,
+    )
+    calibration = _load_calibration()
+    tier_cal = ((calibration.get("bias") or {}).get(stat_col) or {}).get(tier["label"], {})
+    calibration_bias = tier_cal.get("bias", 0.0) if tier_cal.get("status") == "active" else 0.0
+    if calibration_bias:
+        projected = round(projected + calibration_bias, 1)
+
     return {
         "projected": projected,
         "baseline": baseline,
@@ -1311,6 +1348,8 @@ def project_stat(player_name: str, stat_col: str) -> dict:
         "dampen": DAMPEN,
         "min_sample": MIN_SAMPLE,
         "meets_min_sample": n_games >= MIN_SAMPLE,
+        "tier": tier,
+        "calibration_bias": calibration_bias,
         "frozen_at": FROZEN_AT,
     }
     # (Old CSV-based log_projection/projections_logged_count removed --
