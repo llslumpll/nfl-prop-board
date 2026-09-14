@@ -169,11 +169,16 @@ def build():
     for g in matchups_data["games"]:
         for p in g["players"]:
             market_line = pp_props.get(p["player"], {}).get(p["stat_col"])
+            tier_info = dataio.provisional_tier(
+                p["projection"]["n_games_2026"],
+                has_career_history=(p["projection"]["baseline_source"] == "career (2023-2025)"),
+                n_career_games=p["projection"].get("n_career_games", 0),
+            )
             wrote = predictions.freeze_prediction(
                 player=p["player"], team=p["team"], opponent=p["opponent"],
                 week=g["week"],
                 stat=p["stat_col"], projected=p["projection"]["projected"],
-                tier_label=dataio.provisional_tier(p["projection"]["n_games_2026"])["label"],
+                tier_label=tier_info["label"],
                 market_line=market_line,
                 market_source="prizepicks" if market_line is not None else None,
             )
@@ -182,6 +187,9 @@ def build():
     print(f"Froze {frozen_count} new prediction(s) this build.")
 
     # --- Grade any predictions whose games have now finished ---
+    migrated = predictions.migrate_stale_tiers()
+    if migrated:
+        print(f"Migrated {migrated} prediction(s) from the old flat tier label to real career-based tiers.")
     grade_result = grade.grade_all()
     print(f"Grading: {grade_result['newly_graded']} newly graded, "
           f"{grade_result['total_pending']} still pending a final score.")
