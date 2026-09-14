@@ -332,6 +332,59 @@ def wind_factor_for_team(team: str, game_date: str | None) -> dict:
     }
 
 
+_league_pace_avg_cache: float | None = None
+
+
+def team_pace_factor(team: str) -> dict:
+    """
+    Real offensive volume signal: this team's own plays-per-game (pass
+    attempts + rush carries) relative to the real league average.
+    Distinct from matchup_factor (which is about the OPPONENT's defense
+    and affects efficiency) -- this is about the player's OWN team's
+    play-calling volume, and affects opportunity, not skill. A team
+    running 64 real plays/game creates meaningfully more opportunity
+    across the board than one running 46, independent of how well
+    anyone executes those plays.
+
+    Applied the same dampened, bounded way as every other correction
+    here -- a 1-2 game sample of pace is real but still thin, so this
+    shouldn't swing projections hard yet.
+    """
+    global _league_pace_avg_cache
+    df = load_stats()
+    team_rows = df.filter(pl.col("team") == team)
+    games = team_rows["week"].n_unique() if team_rows.height else 0
+    if games == 0:
+        return {"factor": 1.0, "plays_per_game": None, "league_avg_plays_per_game": None, "games": 0}
+
+    team_plays = (team_rows["attempts"].sum() or 0) + (team_rows["carries"].sum() or 0)
+    plays_per_game = round(team_plays / games, 1)
+
+    if _league_pace_avg_cache is None:
+        league = df.group_by("team").agg(
+            (pl.col("attempts").sum() + pl.col("carries").sum()).alias("total_plays"),
+            pl.col("week").n_unique().alias("games"),
+        ).filter(pl.col("games") > 0)
+        per_game = (league["total_plays"] / league["games"]).to_list()
+        _league_pace_avg_cache = sum(per_game) / len(per_game) if per_game else 0
+    league_avg = round(_league_pace_avg_cache, 1)
+
+    if not league_avg:
+        return {"factor": 1.0, "plays_per_game": plays_per_game, "league_avg_plays_per_game": None, "games": games}
+
+    raw_factor = plays_per_game / league_avg
+    PACE_DAMPEN = 0.3
+    dampened = 1 + PACE_DAMPEN * (raw_factor - 1)
+    dampened = clip(dampened, 0.85, 1.15)
+
+    return {
+        "factor": round(dampened, 3),
+        "plays_per_game": plays_per_game,
+        "league_avg_plays_per_game": league_avg,
+        "games": games,
+    }
+
+
 def matchup_factor(opponent_team: str, stat_col: str) -> dict:
     """
     Real opponent-adjustment: how many yards this specific opponent
@@ -495,16 +548,22 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
     projection["matchup_factor"] = m_factor
     after_matchup = round(pre_matchup * m_factor["factor"], 1)
 
+    # Pace: the player's OWN team's real play volume, applied to every
+    # volume-based stat (unlike wind, which is passing-specific).
+    p_factor = team_pace_factor(team)
+    projection["pace_factor"] = p_factor
+    after_pace = round(after_matchup * p_factor["factor"], 1)
+
     # Wind only has a real, documented effect on the passing game --
     # applied to passing_yards and receiving_yards (receiving depends on
     # the same pass attempts), never to rushing_yards or receptions.
     if stat_col in ("passing_yards", "receiving_yards"):
         w_factor = wind_factor_for_team(game["venue_team"], game.get("gameday"))
         projection["wind_factor"] = w_factor
-        projection["projected"] = round(after_matchup * w_factor["factor"], 1)
+        projection["projected"] = round(after_pace * w_factor["factor"], 1)
     else:
         projection["wind_factor"] = None
-        projection["projected"] = after_matchup
+        projection["projected"] = after_pace
 
     return {**game, "projection": projection}
 
