@@ -17,6 +17,18 @@
   mistake worth catching before it happens.
 </div>
 
+<div class="notice">
+  <strong>Separation and YAC Above Expectation are real NFL Next Gen
+  Stats</strong>, tracking-data-derived. <strong>Separation</strong> is
+  real distance from the nearest defender at the catch point (NFL
+  average is roughly 2.7&ndash;3.0 yards). <strong>YAC+</strong> (Yards
+  After Catch Above Expectation) isolates a receiver's own ability to
+  create extra yards after the catch, separate from what the play design
+  or blocking gave him &mdash; a receiver can win with tight separation
+  if he creates real YAC+ on his own, which is worth reading alongside
+  separation rather than in place of it.
+</div>
+
 {% if pp_error %}
 <div class="notice">
   <strong>PrizePicks fetch failed on this build.</strong> Error: {{ pp_error }}
@@ -36,6 +48,8 @@
       <th class="num">Rec</th>
       <th class="num">Yards</th>
       <th class="num">TD</th>
+      <th class="num" title="Distance from nearest defender at the catch point (Next Gen Stats)">Sep.</th>
+      <th class="num" title="Yards After Catch Above Expectation (Next Gen Stats)">YAC+</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -62,6 +76,8 @@
       <td class="num">{{ r.receptions if r.receptions is not none else '—' }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.receiving_yards }}{% if r.perf.pct_diff %} <span style="font-size:0.75em">({{ '+' if r.perf.pct_diff > 0 }}{{ r.perf.pct_diff|int }}%)</span>{% endif %}</td>
       <td class="num">{{ r.receiving_tds }}</td>
+      <td class="num stat-{{ r.separation_tier }}" title="Cushion at snap: {{ r.cushion if r.cushion is not none else '—' }}">{{ r.separation if r.separation is not none else '—' }}</td>
+      <td class="num stat-{{ r.yac_above_exp_tier }}">{{ '+' if r.yac_above_exp and r.yac_above_exp > 0 }}{{ r.yac_above_exp if r.yac_above_exp is not none else '—' }}</td>
       <td>
         {% if r.next_game %}
           <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
