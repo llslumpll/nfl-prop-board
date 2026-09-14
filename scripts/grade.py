@@ -128,6 +128,105 @@ def accuracy_summary() -> dict:
     }
 
 
+def edge_bucket_accuracy() -> list[dict]:
+    """
+    Real version of the MLB site's "Does Edge Actually Mean Anything?"
+    check, adapted for point-projection props instead of probability
+    props: does a BIGGER edge (our projection disagreeing with the
+    market line by more, as a % of the line) actually predict a HIGHER
+    real hit rate? If this climbs going down the table, edge means
+    something real. If it stays flat or reverses, the market may
+    already be efficient here, and a big edge isn't extra signal beyond
+    what the line already reflects.
+
+    Edge is normalized as a % of the market line (not raw yards) so
+    stats on very different scales (passing yards vs. receptions) can
+    be bucketed together meaningfully.
+    """
+    preds = predictions.load_predictions()
+    graded = [
+        p for p in preds.values()
+        if p.get("graded") and p.get("hit") is not None
+        and p.get("edge") is not None and p.get("market_line")
+    ]
+    buckets = [(0, 5), (5, 15), (15, 25), (25, float("inf"))]
+    labels = ["0-5%", "5-15%", "15-25%", "25%+"]
+    result = []
+    for (lo, hi), label in zip(buckets, labels):
+        in_bucket = [
+            p for p in graded
+            if lo <= abs(p["edge"]) / p["market_line"] * 100 < hi
+        ]
+        if not in_bucket:
+            result.append({"bucket": label, "total": 0, "hits": 0, "rate": None})
+            continue
+        hits = sum(1 for p in in_bucket if p["hit"])
+        result.append({
+            "bucket": label, "total": len(in_bucket), "hits": hits,
+            "rate": round(100 * hits / len(in_bucket), 1),
+        })
+    return result
+
+
+def weekly_breakdown() -> list[dict]:
+    """
+    Real week-by-week record -- the NFL-cadence equivalent of the MLB
+    site's Day By Day tab. Every frozen prediction shown, most recent
+    week first, with real hit/miss/pending status -- not a highlight
+    reel.
+    """
+    preds = predictions.load_predictions()
+    by_week: dict[int, list[dict]] = {}
+    for p in preds.values():
+        by_week.setdefault(p["week"], []).append(p)
+
+    out = []
+    for week in sorted(by_week.keys(), reverse=True):
+        entries = sorted(by_week[week], key=lambda p: p["player"])
+        graded = [p for p in entries if p.get("graded") and p.get("hit") is not None]
+        hits = sum(1 for p in graded if p["hit"])
+        out.append({
+            "week": week,
+            "total": len(entries),
+            "graded": len(graded),
+            "hits": hits,
+            "rate": round(100 * hits / len(graded), 1) if graded else None,
+            "entries": entries,
+        })
+    return out
+
+
+def accuracy_trend_by_stat() -> dict:
+    """
+    Real rolling accuracy per stat type, per week -- the NFL-cadence
+    equivalent of the MLB site's daily rolling-accuracy charts. Will
+    naturally start as a short series (one point per week played so
+    far) and fill in as real weeks accumulate -- this is honest given
+    NFL's weekly (not daily) cadence, not a shorter/lesser version of
+    the same idea.
+    """
+    preds = predictions.load_predictions()
+    stats = sorted(set(p["stat"] for p in preds.values()))
+    weeks = sorted(set(p["week"] for p in preds.values()))
+
+    trend = {}
+    for stat in stats:
+        series = []
+        for week in weeks:
+            graded = [
+                p for p in preds.values()
+                if p["stat"] == stat and p["week"] == week
+                and p.get("graded") and p.get("hit") is not None
+            ]
+            if not graded:
+                series.append(None)
+                continue
+            hits = sum(1 for p in graded if p["hit"])
+            series.append(round(100 * hits / len(graded), 1))
+        trend[stat] = {"weeks": weeks, "rates": series}
+    return trend
+
+
 if __name__ == "__main__":
     result = grade_all()
     print(f"Graded {result['newly_graded']} newly-finished prediction(s); "
