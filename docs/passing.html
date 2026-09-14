@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Passing — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1789407245">
+  <link rel="stylesheet" href="static/style.css?v=1789408039">
 </head>
 <body>
   <header class="site-head">
@@ -62,6 +62,19 @@
   &plusmn;3 is a meaningful edge either direction.
 </div>
 
+<div class="notice">
+  <strong>Time to Throw, Aggressiveness, and Air Yards Differential are
+  real NFL Next Gen Stats</strong> &mdash; tracking-data-derived, a
+  separate real source from the box-score stats above.
+  <strong>Time to Throw</strong> is seconds from snap to release.
+  <strong>Aggressiveness</strong> is the share of throws into tight
+  coverage (a defender within 1 yard at the catch point) &mdash; not
+  inherently good or bad, just a real style signal. <strong>Air Yards
+  Differential</strong> is intended depth minus completed depth: a
+  strongly negative number means a QB is throwing deep more than he's
+  actually completing deep.
+</div>
+
 
 
 
@@ -78,6 +91,9 @@
       <th class="num">INT</th>
       <th class="num" title="Expected Points Added per dropback -- real scoring impact, not just yards">EPA/play</th>
       <th class="num" title="Completion % Over Expected -- real accuracy, isolated from receiver separation">CPOE</th>
+      <th class="num" title="Seconds from snap to release (Next Gen Stats)">TTT</th>
+      <th class="num" title="Share of throws into tight coverage (Next Gen Stats)">Aggr.</th>
+      <th class="num" title="Intended air yards minus completed air yards (Next Gen Stats)">AY Diff</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -101,6 +117,9 @@
       <td class="num">2</td>
       <td class="num stat-bad">-0.018</td>
       <td class="num stat-neutral">-1.2%</td>
+      <td class="num">2.6</td>
+      <td class="num stat-neutral">14.3%</td>
+      <td class="num">-0.2</td>
       <td>
         
           <span class="num">255.4</span> yds &middot; W2 vs BAL
@@ -134,6 +153,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.064</td>
       <td class="num stat-bad">-9.7%</td>
+      <td class="num">2.56</td>
+      <td class="num stat-neutral">9.5%</td>
+      <td class="num">-0.3</td>
       <td>
         
           <span class="num">264.5</span> yds &middot; W2 vs NYJ
@@ -167,6 +189,9 @@
       <td class="num">1</td>
       <td class="num stat-good">0.419</td>
       <td class="num stat-good">+6.6%</td>
+      <td class="num">3.02</td>
+      <td class="num stat-neutral">16.2%</td>
+      <td class="num">-1.3</td>
       <td>
         
           <span class="num">217.8</span> yds &middot; W2 vs ATL
@@ -200,6 +225,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.501</td>
       <td class="num stat-good">+8.1%</td>
+      <td class="num">3.11</td>
+      <td class="num stat-neutral">6.9%</td>
+      <td class="num">-2.1</td>
       <td>
         
           <span class="num">256.6</span> yds &middot; W2 vs DET
@@ -233,6 +261,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.414</td>
       <td class="num stat-good">+4.8%</td>
+      <td class="num">3.3</td>
+      <td class="num stat-neutral">16.0%</td>
+      <td class="num">-1.9</td>
       <td>
         
           <span class="num">244.8</span> yds &middot; W2 vs NO
@@ -266,6 +297,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.244</td>
       <td class="num stat-good">+4.6%</td>
+      <td class="num">2.56</td>
+      <td class="num stat-good">21.6%</td>
+      <td class="num">-1.2</td>
       <td>
         
           <span class="num">209.0</span> yds &middot; W2 vs SEA
@@ -299,6 +333,9 @@
       <td class="num">0</td>
       <td class="num stat-neutral">0.039</td>
       <td class="num stat-good">+3.2%</td>
+      <td class="num">2.79</td>
+      <td class="num stat-good">21.1%</td>
+      <td class="num">-1.8</td>
       <td>
         
           <span class="num">244.2</span> yds &middot; W2 vs CIN
@@ -332,6 +369,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.64</td>
       <td class="num stat-good">+16.6%</td>
+      <td class="num">3.16</td>
+      <td class="num stat-neutral">13.8%</td>
+      <td class="num">-1.7</td>
       <td>
         
           <span class="num">233.8</span> yds &middot; W2 vs MIN
@@ -365,6 +405,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.075</td>
       <td class="num stat-good">+6.4%</td>
+      <td class="num">2.54</td>
+      <td class="num stat-neutral">14.3%</td>
+      <td class="num">-2.3</td>
       <td>
         
           <span class="num">257.4</span> yds &middot; W2 vs HOU
@@ -398,6 +441,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.827</td>
       <td class="num stat-good">+22.3%</td>
+      <td class="num">2.98</td>
+      <td class="num stat-neutral">13.0%</td>
+      <td class="num">-0.0</td>
       <td>
         
           <span class="num">235.8</span> yds &middot; W2 vs DEN
@@ -431,6 +477,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.756</td>
       <td class="num stat-good">+13.4%</td>
+      <td class="num">2.64</td>
+      <td class="num stat-neutral">17.2%</td>
+      <td class="num">-2.4</td>
       <td>
         
           <span class="num">175.8</span> yds &middot; W2 vs LA
@@ -464,6 +513,9 @@
       <td class="num">0</td>
       <td class="num stat-bad">-0.196</td>
       <td class="num stat-neutral">+1.2%</td>
+      <td class="num">2.95</td>
+      <td class="num stat-neutral">15.0%</td>
+      <td class="num">-5.7</td>
       <td>
         
           <span class="num">212.5</span> yds &middot; W2 vs NE
@@ -497,6 +549,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.203</td>
       <td class="num stat-bad">-8.9%</td>
+      <td class="num">3.21</td>
+      <td class="num stat-good">22.2%</td>
+      <td class="num">-4.3</td>
       <td>
         
           <span class="num">113.8</span> yds &middot; W2 vs SF
@@ -530,6 +585,9 @@
       <td class="num">0</td>
       <td class="num stat-bad">-0.193</td>
       <td class="num stat-good">+14.0%</td>
+      <td class="num">2.88</td>
+      <td class="num stat-neutral">10.7%</td>
+      <td class="num">-2.7</td>
       <td>
         
           <span class="num">237.4</span> yds &middot; W2 vs CLE
@@ -563,6 +621,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.406</td>
       <td class="num stat-good">+12.8%</td>
+      <td class="num">3.04</td>
+      <td class="num stat-neutral">12.5%</td>
+      <td class="num">0.3</td>
       <td>
         
           <span class="num">229.7</span> yds &middot; W2 vs GB
@@ -596,6 +657,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.208</td>
       <td class="num stat-bad">-6.2%</td>
+      <td class="num">2.73</td>
+      <td class="num stat-good">18.5%</td>
+      <td class="num">-3.2</td>
       <td>
         
           <span class="num">227.3</span> yds &middot; W2 vs LV
@@ -629,6 +693,9 @@
       <td class="num">0</td>
       <td class="num stat-neutral">0.15</td>
       <td class="num stat-neutral">-2.9%</td>
+      <td class="num">2.66</td>
+      <td class="num stat-neutral">15.4%</td>
+      <td class="num">-2.0</td>
       <td>
         
           <span class="num">258.2</span> yds &middot; W2 vs BUF
@@ -662,6 +729,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.253</td>
       <td class="num stat-good">+10.3%</td>
+      <td class="num">3.04</td>
+      <td class="num stat-neutral">13.6%</td>
+      <td class="num">-3.7</td>
       <td>
         
           <span class="num">180.3</span> yds &middot; W2 vs TB
@@ -695,6 +765,9 @@
       <td class="num">1</td>
       <td class="num stat-neutral">0.142</td>
       <td class="num stat-neutral">+0.8%</td>
+      <td class="num">2.69</td>
+      <td class="num stat-neutral">17.6%</td>
+      <td class="num">-0.8</td>
       <td>
         
           <span class="num">245.2</span> yds &middot; W2 vs MIA
@@ -728,6 +801,9 @@
       <td class="num">0</td>
       <td class="num stat-neutral">0.051</td>
       <td class="num stat-neutral">+0.9%</td>
+      <td class="num">3.26</td>
+      <td class="num stat-neutral">8.0%</td>
+      <td class="num">0.2</td>
       <td>
         
           <span class="num">205.5</span> yds &middot; W2 vs TEN
@@ -761,6 +837,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.293</td>
       <td class="num stat-good">+4.8%</td>
+      <td class="num">2.77</td>
+      <td class="num stat-neutral">13.6%</td>
+      <td class="num">-1.0</td>
       <td>
         
           <span class="num">130.5</span> yds &middot; W2 vs ARI
@@ -791,6 +870,9 @@
       <td class="num">3</td>
       <td class="num stat-bad">-0.14</td>
       <td class="num stat-good">+6.0%</td>
+      <td class="num">2.82</td>
+      <td class="num stat-neutral">6.1%</td>
+      <td class="num">-3.3</td>
       <td>
         
           <span class="num">212.0</span> yds &middot; W2 vs PIT
@@ -824,6 +906,9 @@
       <td class="num">1</td>
       <td class="num stat-good">0.305</td>
       <td class="num stat-good">+7.7%</td>
+      <td class="num">2.75</td>
+      <td class="num stat-neutral">14.7%</td>
+      <td class="num">-4.3</td>
       <td>
         
           <span class="num">248.0</span> yds &middot; W2 vs WAS
@@ -857,6 +942,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.31</td>
       <td class="num stat-bad">-5.1%</td>
+      <td class="num">2.84</td>
+      <td class="num stat-neutral">12.9%</td>
+      <td class="num">-1.9</td>
       <td>
         
           <span class="num">201.0</span> yds &middot; W2 vs KC
@@ -890,6 +978,9 @@
       <td class="num">0</td>
       <td class="num stat-neutral">0.115</td>
       <td class="num stat-bad">-3.4%</td>
+      <td class="num">3.41</td>
+      <td class="num stat-neutral">14.7%</td>
+      <td class="num">-3.7</td>
       <td>
         
           <span class="num">200.2</span> yds &middot; W2 vs DAL
@@ -923,6 +1014,9 @@
       <td class="num">2</td>
       <td class="num stat-neutral">0.013</td>
       <td class="num stat-neutral">+0.7%</td>
+      <td class="num">2.9</td>
+      <td class="num stat-neutral">10.0%</td>
+      <td class="num">-3.5</td>
       <td>
         
           <span class="num">221.0</span> yds &middot; W2 vs LAC
@@ -956,6 +1050,9 @@
       <td class="num">1</td>
       <td class="num stat-bad">-0.224</td>
       <td class="num stat-bad">-4.7%</td>
+      <td class="num">2.87</td>
+      <td class="num stat-good">20.0%</td>
+      <td class="num">-4.3</td>
       <td>
         
           <span class="num">242.4</span> yds &middot; W2 vs NYG
@@ -989,6 +1086,9 @@
       <td class="num">2</td>
       <td class="num stat-bad">-0.717</td>
       <td class="num stat-bad">-10.4%</td>
+      <td class="num">2.65</td>
+      <td class="num stat-neutral">4.5%</td>
+      <td class="num">-1.4</td>
       <td>
         
           <span class="num">108.3</span> yds &middot; W2 vs CAR
@@ -1019,6 +1119,9 @@
       <td class="num">0</td>
       <td class="num stat-bad">-0.23</td>
       <td class="num stat-neutral">+0.4%</td>
+      <td class="num">2.9</td>
+      <td class="num stat-neutral">6.2%</td>
+      <td class="num">-2.3</td>
       <td>
         
           <span class="num">177.1</span> yds &middot; W2 vs PHI
@@ -1052,6 +1155,9 @@
       <td class="num">0</td>
       <td class="num stat-good">0.262</td>
       <td class="num stat-bad">-7.3%</td>
+      <td class="num">2.76</td>
+      <td class="num stat-neutral">10.5%</td>
+      <td class="num">0.9</td>
       <td>
         
           <span class="num">176.3</span> yds &middot; W2 vs CHI
@@ -1081,7 +1187,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-14 17:34 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-14 17:47 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
