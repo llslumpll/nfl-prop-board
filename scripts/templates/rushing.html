@@ -2,12 +2,24 @@
 {% block title %}Rushing — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>Rushing</h1>
-<p class="lede">Carries and rushing yardage from live nflreadpy data.</p>
+<p class="lede">Carries and rushing yardage from live nflreadpy data, plus Rushing Yards Over Expected &mdash; isolates a back's own vision and speed from the quality of his blocking.</p>
 
 <div class="notice">
   <strong>Provisional tiers only.</strong> One week of sample isn't enough
   for a calibrated model yet &mdash; see the Home page for what's real
   and what's not.
+</div>
+
+<div class="notice">
+  <strong>RYOE (Rushing Yards Over Expected) is a real NFL Next Gen
+  Stat</strong>, not a derived guess &mdash; a tracking-data model
+  predicts expected yards for every carry based on the blocking/space
+  actually created, and RYOE is the real gap between that and what the
+  back actually gained. Positive means he's outrunning his blocking;
+  negative means he's underperforming it, regardless of the raw yardage
+  total. Stacked-box % shows how often he faced 8+ defenders in the
+  box &mdash; useful context for reading RYOE (succeeding despite a
+  stacked box is a stronger signal than the same RYOE against a light box).
 </div>
 
 {% if pp_error %}
@@ -28,6 +40,8 @@
       <th class="num">Carries</th>
       <th class="num">Yards</th>
       <th class="num">TD</th>
+      <th class="num" title="Rushing Yards Over Expected, per carry (Next Gen Stats)">RYOE/att</th>
+      <th class="num" title="Share of carries into a stacked box (8+ defenders)">Stacked box</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -50,6 +64,8 @@
       <td class="num">{{ r.carries }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.rushing_yards }}{% if r.perf.pct_diff %} <span style="font-size:0.75em">({{ '+' if r.perf.pct_diff > 0 }}{{ r.perf.pct_diff|int }}%)</span>{% endif %}</td>
       <td class="num">{{ r.rushing_tds }}</td>
+      <td class="num stat-{{ r.ryoe_tier }}" title="Total RYOE: {{ r.ryoe if r.ryoe is not none else '—' }}">{{ '+' if r.ryoe_per_att and r.ryoe_per_att > 0 }}{{ r.ryoe_per_att if r.ryoe_per_att is not none else '—' }}</td>
+      <td class="num">{{ r.stacked_box_pct if r.stacked_box_pct is not none else '—' }}{{ '%' if r.stacked_box_pct is not none }}</td>
       <td>
         {% if r.next_game %}
           <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
