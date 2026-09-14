@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Rushing — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1789408039">
+  <link rel="stylesheet" href="static/style.css?v=1789408850">
 </head>
 <body>
   <header class="site-head">
@@ -42,12 +42,24 @@
   <main class="site-main">
     
 <h1>Rushing</h1>
-<p class="lede">Carries and rushing yardage from live nflreadpy data.</p>
+<p class="lede">Carries and rushing yardage from live nflreadpy data, plus Rushing Yards Over Expected &mdash; isolates a back's own vision and speed from the quality of his blocking.</p>
 
 <div class="notice">
   <strong>Provisional tiers only.</strong> One week of sample isn't enough
   for a calibrated model yet &mdash; see the Home page for what's real
   and what's not.
+</div>
+
+<div class="notice">
+  <strong>RYOE (Rushing Yards Over Expected) is a real NFL Next Gen
+  Stat</strong>, not a derived guess &mdash; a tracking-data model
+  predicts expected yards for every carry based on the blocking/space
+  actually created, and RYOE is the real gap between that and what the
+  back actually gained. Positive means he's outrunning his blocking;
+  negative means he's underperforming it, regardless of the raw yardage
+  total. Stacked-box % shows how often he faced 8+ defenders in the
+  box &mdash; useful context for reading RYOE (succeeding despite a
+  stacked box is a stronger signal than the same RYOE against a light box).
 </div>
 
 
@@ -63,6 +75,8 @@
       <th class="num">Carries</th>
       <th class="num">Yards</th>
       <th class="num">TD</th>
+      <th class="num" title="Rushing Yards Over Expected, per carry (Next Gen Stats)">RYOE/att</th>
+      <th class="num" title="Share of carries into a stacked box (8+ defenders)">Stacked box</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -83,6 +97,8 @@
       <td class="num">29</td>
       <td class="num stat-good">156 <span style="font-size:0.75em">(+116%)</span></td>
       <td class="num">2</td>
+      <td class="num stat-neutral" title="Total RYOE: 22.8">+0.79</td>
+      <td class="num">20.7%</td>
       <td>
         
           <span class="num">89.0</span> yds &middot; W2 vs BUF
@@ -91,7 +107,7 @@
       <td>
         
         
-          <span class="num">79.5</span> yds
+          <span class="num">86.5</span> yds
           
             <span class="player-sub">(us: 89.0)</span>
           
@@ -113,6 +129,8 @@
       <td class="num">24</td>
       <td class="num stat-good">144 <span style="font-size:0.75em">(+54%)</span></td>
       <td class="num">3</td>
+      <td class="num stat-good" title="Total RYOE: 29.6">+1.29</td>
+      <td class="num">50.0%</td>
       <td>
         
           <span class="num">103.6</span> yds &middot; W2 vs NO
@@ -143,6 +161,8 @@
       <td class="num">18</td>
       <td class="num stat-good">124 <span style="font-size:0.75em">(+98%)</span></td>
       <td class="num">3</td>
+      <td class="num stat-good" title="Total RYOE: 27.5">+1.62</td>
+      <td class="num">5.6%</td>
       <td>
         
           <span class="num">75.0</span> yds &middot; W2 vs MIN
@@ -175,6 +195,8 @@
       <td class="num">22</td>
       <td class="num stat-good">102 <span style="font-size:0.75em">(+70%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: 0.5">+0.02</td>
+      <td class="num">22.7%</td>
       <td>
         
           <span class="num">68.3</span> yds &middot; W2 vs GB
@@ -207,6 +229,8 @@
       <td class="num">23</td>
       <td class="num stat-good">102 <span style="font-size:0.75em">(+78%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 13.3">+0.58</td>
+      <td class="num">34.8%</td>
       <td>
         
           <span class="num">66.3</span> yds &middot; W2 vs LAC
@@ -237,6 +261,8 @@
       <td class="num">10</td>
       <td class="num stat-good">100 <span style="font-size:0.75em">(+125%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-good" title="Total RYOE: 50.5">+5.05</td>
+      <td class="num">20.0%</td>
       <td>
         
           <span class="num">55.6</span> yds &middot; W2 vs MIN
@@ -264,6 +290,8 @@
       <td class="num">19</td>
       <td class="num stat-neutral">98 <span style="font-size:0.75em">(+7%)</span></td>
       <td class="num">2</td>
+      <td class="num stat-neutral" title="Total RYOE: 10.4">+0.55</td>
+      <td class="num">21.1%</td>
       <td>
         
           <span class="num">92.9</span> yds &middot; W2 vs KC
@@ -294,6 +322,8 @@
       <td class="num">15</td>
       <td class="num stat-neutral">83 <span style="font-size:0.75em">(-10%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-good" title="Total RYOE: 26.6">+1.9</td>
+      <td class="num">6.7%</td>
       <td>
         
           <span class="num">90.5</span> yds &middot; W2 vs TEN
@@ -324,6 +354,8 @@
       <td class="num">21</td>
       <td class="num stat-neutral">83 <span style="font-size:0.75em">(+8%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-bad" title="Total RYOE: -7.6">-0.42</td>
+      <td class="num">4.8%</td>
       <td>
         
           <span class="num">78.0</span> yds &middot; W2 vs CAR
@@ -354,6 +386,8 @@
       <td class="num">18</td>
       <td class="num stat-good">81 <span style="font-size:0.75em">(+58%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-good" title="Total RYOE: 24.9">+1.38</td>
+      <td class="num">22.2%</td>
       <td>
         
           <span class="num">57.2</span> yds &middot; W2 vs LA
@@ -384,6 +418,8 @@
       <td class="num">10</td>
       <td class="num stat-neutral">68 <span style="font-size:0.75em">(-11%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-good" title="Total RYOE: 16.2">+1.62</td>
+      <td class="num">0.0%</td>
       <td>
         
           <span class="num">74.8</span> yds &middot; W2 vs MIA
@@ -411,6 +447,8 @@
       <td class="num">15</td>
       <td class="num stat-good">66 <span style="font-size:0.75em">(+195%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 5.3">+0.35</td>
+      <td class="num">26.7%</td>
       <td>
         
           <span class="num">31.1</span> yds &middot; W2 vs DEN
@@ -441,6 +479,8 @@
       <td class="num">10</td>
       <td class="num stat-good">65 <span style="font-size:0.75em">(+150%)</span></td>
       <td class="num">2</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">33.8</span> yds &middot; W2 vs MIN
@@ -471,6 +511,8 @@
       <td class="num">14</td>
       <td class="num stat-good">65 <span style="font-size:0.75em">(+50%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-bad" title="Total RYOE: -5.3">-0.38</td>
+      <td class="num">0.0%</td>
       <td>
         
           <span class="num">47.7</span> yds &middot; W2 vs MIA
@@ -500,6 +542,8 @@
       <td class="num">16</td>
       <td class="num stat-good">63 <span style="font-size:0.75em">(+33%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-bad" title="Total RYOE: -8.5">-0.53</td>
+      <td class="num">6.2%</td>
       <td>
         
           <span class="num">50.5</span> yds &middot; W2 vs DAL
@@ -530,6 +574,8 @@
       <td class="num">17</td>
       <td class="num stat-good">61 <span style="font-size:0.75em">(+69%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-bad" title="Total RYOE: -7.1">-0.42</td>
+      <td class="num">29.4%</td>
       <td>
         
           <span class="num">41.1</span> yds &middot; W2 vs SEA
@@ -557,6 +603,8 @@
       <td class="num">20</td>
       <td class="num stat-neutral">60 <span style="font-size:0.75em">(+8%)</span></td>
       <td class="num">2</td>
+      <td class="num stat-bad" title="Total RYOE: -8.3">-0.41</td>
+      <td class="num">35.0%</td>
       <td>
         
           <span class="num">56.3</span> yds &middot; W2 vs CIN
@@ -587,6 +635,8 @@
       <td class="num">15</td>
       <td class="num stat-good">59 <span style="font-size:0.75em">(+48%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: 2.8">+0.19</td>
+      <td class="num">20.0%</td>
       <td>
         
           <span class="num">43.6</span> yds &middot; W2 vs CHI
@@ -614,6 +664,8 @@
       <td class="num">13</td>
       <td class="num stat-bad">57 <span style="font-size:0.75em">(-25%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 6.9">+0.53</td>
+      <td class="num">7.7%</td>
       <td>
         
           <span class="num">72.1</span> yds &middot; W2 vs DET
@@ -641,6 +693,8 @@
       <td class="num">16</td>
       <td class="num stat-good">56 <span style="font-size:0.75em">(+15%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-bad" title="Total RYOE: -6.3">-0.4</td>
+      <td class="num">50.0%</td>
       <td>
         
           <span class="num">50.1</span> yds &middot; W2 vs HOU
@@ -671,6 +725,8 @@
       <td class="num">10</td>
       <td class="num stat-good">54 <span style="font-size:0.75em">(+76%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 0.7">+0.07</td>
+      <td class="num">10.0%</td>
       <td>
         
           <span class="num">35.3</span> yds &middot; W2 vs NYG
@@ -698,6 +754,8 @@
       <td class="num">11</td>
       <td class="num stat-good">54 <span style="font-size:0.75em">(+55%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">38.6</span> yds &middot; W2 vs LA
@@ -728,6 +786,8 @@
       <td class="num">10</td>
       <td class="num stat-good">52 <span style="font-size:0.75em">(+20%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 6.8">+0.68</td>
+      <td class="num">40.0%</td>
       <td>
         
           <span class="num">45.1</span> yds &middot; W2 vs ARI
@@ -755,6 +815,8 @@
       <td class="num">18</td>
       <td class="num stat-neutral">51 <span style="font-size:0.75em">(+2%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-bad" title="Total RYOE: -22.1">-1.23</td>
+      <td class="num">16.7%</td>
       <td>
         
           <span class="num">50.0</span> yds &middot; W2 vs PIT
@@ -782,6 +844,8 @@
       <td class="num">10</td>
       <td class="num stat-neutral">49 <span style="font-size:0.75em">(-11%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-good" title="Total RYOE: 13.3">+1.33</td>
+      <td class="num">10.0%</td>
       <td>
         
           <span class="num">54.0</span> yds &middot; W2 vs ATL
@@ -812,6 +876,8 @@
       <td class="num">7</td>
       <td class="num stat-good">47 <span style="font-size:0.75em">(+52%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">34.1</span> yds &middot; W2 vs PIT
@@ -842,6 +908,8 @@
       <td class="num">7</td>
       <td class="num stat-good">46 <span style="font-size:0.75em">(+33%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">36.9</span> yds &middot; W2 vs TEN
@@ -872,6 +940,8 @@
       <td class="num">9</td>
       <td class="num stat-bad">46 <span style="font-size:0.75em">(-16%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">53.0</span> yds &middot; W2 vs BAL
@@ -899,6 +969,8 @@
       <td class="num">10</td>
       <td class="num stat-neutral">46</td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 5.7">+0.57</td>
+      <td class="num">30.0%</td>
       <td>
         
           <span class="num">45.9</span> yds &middot; W2 vs NE
@@ -929,6 +1001,8 @@
       <td class="num">8</td>
       <td class="num stat-bad">45 <span style="font-size:0.75em">(-29%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">60.0</span> yds &middot; W2 vs CLE
@@ -959,6 +1033,8 @@
       <td class="num">12</td>
       <td class="num stat-bad">43 <span style="font-size:0.75em">(-21%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-bad" title="Total RYOE: -8.6">-0.72</td>
+      <td class="num">8.3%</td>
       <td>
         
           <span class="num">52.1</span> yds &middot; W2 vs LV
@@ -989,6 +1065,8 @@
       <td class="num">9</td>
       <td class="num stat-neutral">42 <span style="font-size:0.75em">(-9%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">45.4</span> yds &middot; W2 vs CIN
@@ -1016,6 +1094,8 @@
       <td class="num">12</td>
       <td class="num stat-bad">41 <span style="font-size:0.75em">(-18%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: 3.7">+0.31</td>
+      <td class="num">25.0%</td>
       <td>
         
           <span class="num">48.4</span> yds &middot; W2 vs WAS
@@ -1046,6 +1126,8 @@
       <td class="num">11</td>
       <td class="num stat-bad">41 <span style="font-size:0.75em">(-49%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-bad" title="Total RYOE: -7.8">-0.71</td>
+      <td class="num">18.2%</td>
       <td>
         
           <span class="num">72.8</span> yds &middot; W2 vs NYG
@@ -1076,6 +1158,8 @@
       <td class="num">7</td>
       <td class="num stat-neutral">41 <span style="font-size:0.75em">(-6%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">42.9</span> yds &middot; W2 vs LAC
@@ -1105,6 +1189,8 @@
       <td class="num">11</td>
       <td class="num stat-neutral">41 <span style="font-size:0.75em">(-6%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: 10.1">+0.92</td>
+      <td class="num">0.0%</td>
       <td>
         
           <span class="num">42.9</span> yds &middot; W2 vs SEA
@@ -1135,6 +1221,8 @@
       <td class="num">12</td>
       <td class="num stat-bad">40 <span style="font-size:0.75em">(-34%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-bad" title="Total RYOE: -0.5">-0.04</td>
+      <td class="num">8.3%</td>
       <td>
         
           <span class="num">56.6</span> yds &middot; W2 vs CHI
@@ -1162,6 +1250,8 @@
       <td class="num">7</td>
       <td class="num stat-bad">40 <span style="font-size:0.75em">(-15%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">45.8</span> yds &middot; W2 vs NO
@@ -1192,6 +1282,8 @@
       <td class="num">10</td>
       <td class="num stat-good">40 <span style="font-size:0.75em">(+105%)</span></td>
       <td class="num">0</td>
+      <td class="num stat-neutral" title="Total RYOE: 3.9">+0.39</td>
+      <td class="num">10.0%</td>
       <td>
         
           <span class="num">23.6</span> yds &middot; W2 vs GB
@@ -1219,6 +1311,8 @@
       <td class="num">6</td>
       <td class="num stat-good">39 <span style="font-size:0.75em">(+66%)</span></td>
       <td class="num">1</td>
+      <td class="num stat-neutral" title="Total RYOE: —">—</td>
+      <td class="num">—</td>
       <td>
         
           <span class="num">26.6</span> yds &middot; W2 vs SF
@@ -1251,7 +1345,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-14 17:47 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-14 18:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

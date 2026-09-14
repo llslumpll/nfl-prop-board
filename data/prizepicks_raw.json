@@ -70,28 +70,28 @@
     },
     "Josh Allen": {
       "passing_yards": 239.5,
-      "rushing_yards": 30.5
+      "rushing_yards": 31.5
+    },
+    "James Cook III": {
+      "rushing_yards": 87.5,
+      "receiving_yards": 16.5,
+      "receptions": 2.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 79.5,
+      "rushing_yards": 86.5,
       "receiving_yards": 29.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 75.5
     },
-    "James Cook III": {
-      "rushing_yards": 71.5,
-      "receiving_yards": 16.5,
-      "receptions": 2.5
-    },
-    "Dalton Kincaid": {
-      "receiving_yards": 52.5
-    },
     "Jameson Williams": {
       "receiving_yards": 51.5
     },
+    "Dalton Kincaid": {
+      "receiving_yards": 50.5
+    },
     "Sam LaPorta": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Joe Burrow": {
       "passing_yards": 260.5,
@@ -278,7 +278,7 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 997,
+    "total_projections_returned": 996,
     "matched_props": 115,
     "excluded_goblin_demon_lines": 748,
     "sample_stat_types_seen": [
