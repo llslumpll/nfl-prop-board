@@ -6,7 +6,7 @@
     },
     "Patrick Mahomes": {
       "passing_yards": 224.5,
-      "rushing_yards": 13.5
+      "rushing_yards": 14.5
     },
     "Kenneth Walker III": {
       "rushing_yards": 61.5,
@@ -50,7 +50,7 @@
       "receptions": 2.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 12.5
+      "rushing_yards": 14.5
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 11.5
@@ -211,7 +211,7 @@
     },
     "Brock Purdy": {
       "passing_yards": 242.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 20.5
     },
     "Malik Willis": {
       "passing_yards": 186.5,
@@ -263,9 +263,9 @@
   "diagnostics": {
     "total_leagues": 134,
     "nfl_league_id": "9",
-    "total_projections_returned": 830,
+    "total_projections_returned": 833,
     "matched_props": 108,
-    "excluded_goblin_demon_lines": 612,
+    "excluded_goblin_demon_lines": 611,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
