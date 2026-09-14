@@ -286,6 +286,81 @@ def build():
     for label, picks in best5_data.items():
         print(f"Best 5 {label}: {len(picks)} eligible pick(s)")
 
+    # --- Freeze Receptions predictions too. Real bug fixed here: these
+    # were never being frozen at all before, since Receptions isn't one
+    # of the 3 marquee stats (passing/rushing/receiving) the Matchups
+    # page shows per game -- meaning that entire prop type could never
+    # show up in History no matter how long the season ran. ---
+    receptions_frozen = 0
+    for r in receptions_rows:
+        ng = r.get("next_game")
+        if not ng:
+            continue
+        market_line = pp_props.get(r["player"], {}).get("receptions")
+        tier_info = dataio.provisional_tier(
+            ng["projection"]["n_games_2026"],
+            has_career_history=(ng["projection"]["baseline_source"] == "career (2023-2025)"),
+            n_career_games=ng["projection"].get("n_career_games", 0),
+        )
+        wrote = predictions.freeze_prediction(
+            player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
+            stat="receptions", projected=ng["projection"]["projected"], tier_label=tier_info["label"],
+            market_line=market_line, market_source="prizepicks" if market_line is not None else None,
+        )
+        if wrote:
+            receptions_frozen += 1
+    print(f"Froze {receptions_frozen} new receptions prediction(s) this build.")
+
+    # --- Freeze Touchdown predictions too. Structurally different from
+    # yardage props: there's no real "line" to beat, so this uses a
+    # synthetic 0.5-TD threshold (the real breakeven point for "does
+    # this player score at all") and calls OVER/UNDER based on whether
+    # our model's probability of 1+ TD is higher or lower than Kalshi's
+    # real quoted price for the exact same market -- same comparison
+    # Best 5 Touchdowns already makes, just frozen for later grading
+    # instead of only shown live. ---
+    td_frozen = 0
+    for r in touchdown_rows:
+        ng = r.get("next_game")
+        if not ng or not ng.get("projected_total"):
+            continue
+        market_price = best5.find_kalshi_1plus_td_price(kalshi_data["touchdown_props"], r["player"])
+        model_prob = best5.poisson_prob_at_least(1, ng["projected_total"])
+        wrote = predictions.freeze_prediction(
+            player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
+            stat="any_td", projected=ng["projected_total"],
+            tier_label=dataio.provisional_tier(1)["label"],
+            market_line=0.5 if market_price is not None else None,
+            market_source="kalshi_1plus_td" if market_price is not None else None,
+        )
+        # freeze_prediction sets call from projected vs market_line, but
+        # for touchdowns the real comparison is model_prob vs the
+        # market's own probability, not the raw point estimate vs 0.5 --
+        # overwrite the call/edge with the correct comparison right after
+        # freezing, only on the write path (never touches an
+        # already-frozen entry).
+        if wrote and market_price is not None:
+            preds = predictions.load_predictions()
+            key = f"{r['player']}|any_td|{ng['week']}"
+            if key in preds:
+                edge = round(model_prob - market_price, 3)
+                preds[key]["call"] = "OVER" if edge > 0 else "UNDER"
+                preds[key]["edge"] = round(edge * 100, 1)
+                preds[key]["model_prob"] = round(model_prob * 100, 1)
+                preds[key]["market_prob"] = round(market_price * 100, 1)
+                predictions.save_predictions(preds)
+        if wrote:
+            td_frozen += 1
+    print(f"Froze {td_frozen} new touchdown prediction(s) this build.")
+
+    # Re-grade immediately in case any of the newly-frozen Receptions/TD
+    # predictions belong to an already-finished game (only realistic
+    # right after a code deploy adds a new stat type mid-week).
+    grade_result2 = grade.grade_all()
+    if grade_result2["newly_graded"]:
+        print(f"Grading (2nd pass, new stat types): {grade_result2['newly_graded']} newly graded.")
+        accuracy = grade.accuracy_summary()
+
     pages = {
         "index.html": (
             "home",
