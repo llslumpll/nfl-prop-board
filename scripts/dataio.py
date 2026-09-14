@@ -431,6 +431,71 @@ def _ngs_row_for(player_name: str, week: int) -> dict | None:
     return rows.row(0, named=True)
 
 
+_ngs_rushing_cache = None
+_ngs_receiving_cache = None
+
+
+def load_nextgen_rushing():
+    global _ngs_rushing_cache
+    if _ngs_rushing_cache is None:
+        import nflreadpy as nfl
+        _ngs_rushing_cache = nfl.load_nextgen_stats(stat_type="rushing", seasons=[2026])
+    return _ngs_rushing_cache
+
+
+def load_nextgen_receiving():
+    global _ngs_receiving_cache
+    if _ngs_receiving_cache is None:
+        import nflreadpy as nfl
+        _ngs_receiving_cache = nfl.load_nextgen_stats(stat_type="receiving", seasons=[2026])
+    return _ngs_receiving_cache
+
+
+def _ngs_lookup(df, player_name: str, week: int) -> dict | None:
+    rows = df.filter((pl.col("player_display_name") == player_name) & (pl.col("week") == week))
+    if rows.height == 0:
+        return None
+    return rows.row(0, named=True)
+
+
+def _ryoe_tier(ryoe_per_att: float | None) -> str:
+    """Real RYOE/att scale -- roughly centered at 0 (replacement-level
+    back gains about what's blocked for him); +1.0/att or better is a
+    real, elite vision/speed signal, isolated from O-line quality."""
+    if ryoe_per_att is None:
+        return "neutral"
+    if ryoe_per_att >= 1.0:
+        return "good"
+    if ryoe_per_att < 0:
+        return "bad"
+    return "neutral"
+
+
+def _separation_tier(sep: float | None) -> str:
+    """Real tracking-data separation scale -- NFL average is roughly
+    2.7-3.0 yards at the catch point."""
+    if sep is None:
+        return "neutral"
+    if sep >= 3.0:
+        return "good"
+    if sep < 2.0:
+        return "bad"
+    return "neutral"
+
+
+def _yac_above_exp_tier(yac_ax: float | None) -> str:
+    """Positive = this receiver personally created more yards after
+    catch than an average receiver would have on the same catch, given
+    the same blocking/space -- a real, isolated skill signal."""
+    if yac_ax is None:
+        return "neutral"
+    if yac_ax >= 1.5:
+        return "good"
+    if yac_ax <= -1.5:
+        return "bad"
+    return "neutral"
+
+
 def _aggressiveness_tier(agg: float | None) -> str:
     """Real NGS scale -- 'aggressiveness' is the share of throws into
     tight coverage (a defender within 1 yard at the catch point). No
@@ -518,9 +583,15 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
     rec = df.filter(pl.col("position").is_in(["WR", "TE", "RB"])).sort(
         "receiving_yards", descending=True
     )
+    ngs_rec = load_nextgen_receiving()
     out = []
     for row in rec.head(limit).iter_rows(named=True):
         n_games = 1
+        ngs_row = _ngs_lookup(ngs_rec, row["player_display_name"], row["week"])
+        separation = round(ngs_row["avg_separation"], 1) if ngs_row and ngs_row.get("avg_separation") is not None else None
+        cushion = round(ngs_row["avg_cushion"], 1) if ngs_row and ngs_row.get("avg_cushion") is not None else None
+        yac_above_exp = round(ngs_row["avg_yac_above_expectation"], 1) if ngs_row and ngs_row.get("avg_yac_above_expectation") is not None else None
+        air_yards_share = round(ngs_row["percent_share_of_intended_air_yards"], 1) if ngs_row and ngs_row.get("percent_share_of_intended_air_yards") is not None else None
         out.append({
             "player": row["player_display_name"],
             "position": row["position"],
@@ -533,6 +604,12 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "receiving_yards": row["receiving_yards"],
             "receiving_tds": row["receiving_tds"],
             "target_share": row.get("target_share"),
+            "separation": separation,
+            "separation_tier": _separation_tier(separation),
+            "cushion": cushion,
+            "yac_above_exp": yac_above_exp,
+            "yac_above_exp_tier": _yac_above_exp_tier(yac_above_exp),
+            "air_yards_share": air_yards_share,
             "perf": performance_vs_baseline(row["player_display_name"], "receiving_yards", row["receiving_yards"]),
             "next_game": next_game_projection(row["player_display_name"], row["team"], "receiving_yards"),
             "tier": provisional_tier(n_games),
@@ -580,9 +657,14 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
     rush = df.filter(pl.col("position").is_in(["RB", "QB", "WR"])).filter(
         pl.col("rushing_yards") > 0
     ).sort("rushing_yards", descending=True)
+    ngs_rush = load_nextgen_rushing()
     out = []
     for row in rush.head(limit).iter_rows(named=True):
         n_games = 1
+        ngs_row = _ngs_lookup(ngs_rush, row["player_display_name"], row["week"])
+        ryoe = round(ngs_row["rush_yards_over_expected"], 1) if ngs_row and ngs_row.get("rush_yards_over_expected") is not None else None
+        ryoe_per_att = round(ngs_row["rush_yards_over_expected_per_att"], 2) if ngs_row and ngs_row.get("rush_yards_over_expected_per_att") is not None else None
+        stacked_box_pct = round(ngs_row["percent_attempts_gte_eight_defenders"], 1) if ngs_row and ngs_row.get("percent_attempts_gte_eight_defenders") is not None else None
         out.append({
             "player": row["player_display_name"],
             "position": row["position"],
@@ -593,6 +675,10 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "carries": row.get("carries"),
             "rushing_yards": row["rushing_yards"],
             "rushing_tds": row["rushing_tds"],
+            "ryoe": ryoe,
+            "ryoe_per_att": ryoe_per_att,
+            "ryoe_tier": _ryoe_tier(ryoe_per_att),
+            "stacked_box_pct": stacked_box_pct,
             "perf": performance_vs_baseline(row["player_display_name"], "rushing_yards", row["rushing_yards"]),
             "next_game": next_game_projection(row["player_display_name"], row["team"], "rushing_yards"),
             "tier": provisional_tier(n_games),
