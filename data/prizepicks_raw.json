@@ -9,16 +9,17 @@
       "rushing_yards": 13.5
     },
     "Kenneth Walker III": {
-      "rushing_yards": 61.5,
-      "receiving_yards": 19.5,
+      "rushing_yards": 63.5,
+      "receiving_yards": 20.5,
       "receptions": 3
     },
     "Jaylen Waddle": {
-      "receiving_yards": 57.5,
+      "receiving_yards": 58.5,
       "receptions": 4.5
     },
     "Rashee Rice": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 5
     },
     "J.K. Dobbins": {
       "rushing_yards": 50.5,
@@ -32,7 +33,8 @@
       "receptions": 4
     },
     "Xavier Worthy": {
-      "receiving_yards": 36.5
+      "receiving_yards": 36.5,
+      "receptions": 3
     },
     "Pat Bryant": {
       "receiving_yards": 25.5,
@@ -70,28 +72,29 @@
     },
     "Josh Allen": {
       "passing_yards": 239.5,
-      "rushing_yards": 31.5
+      "rushing_yards": 32.5
     },
     "James Cook III": {
-      "rushing_yards": 87.5,
+      "rushing_yards": 86.5,
       "receiving_yards": 16.5,
       "receptions": 2.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 86.5,
-      "receiving_yards": 29.5
+      "rushing_yards": 85.5,
+      "receiving_yards": 28.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 75.5
-    },
-    "Jameson Williams": {
-      "receiving_yards": 51.5
+      "receiving_yards": 76.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 50.5
     },
+    "Jameson Williams": {
+      "receiving_yards": 49.5,
+      "receptions": 3.5
+    },
     "Sam LaPorta": {
-      "receiving_yards": 41.5
+      "receiving_yards": 42.5
     },
     "Joe Burrow": {
       "passing_yards": 260.5,
@@ -276,11 +279,11 @@
   },
   "error": null,
   "diagnostics": {
-    "total_leagues": 134,
+    "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 996,
-    "matched_props": 115,
-    "excluded_goblin_demon_lines": 748,
+    "total_projections_returned": 1004,
+    "matched_props": 118,
+    "excluded_goblin_demon_lines": 752,
     "sample_stat_types_seen": [
       "completion percentage",
       "completions in first 10 pass attempts",
