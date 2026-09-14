@@ -36,6 +36,39 @@ def save_predictions(preds: dict) -> None:
     PREDICTIONS_PATH.write_text(json.dumps(preds, indent=2, default=str))
 
 
+def migrate_stale_tiers() -> int:
+    """
+    One-time self-healing pass: any prediction frozen under the OLD flat
+    tier logic (labeled exactly "No data", back when the tier only
+    looked at n_games_2026 and ignored career history) gets its tier
+    label recomputed using real, static 2023-2025 historical data --
+    never touching projected/actual/market_line/hit, since those are the
+    actual frozen prediction and must never silently change. Only the
+    informational label was wrong; this fixes the label, once, safely.
+    Safe to run every build -- already-migrated entries won't match the
+    old label string again, so this naturally becomes a no-op after the
+    first run.
+    """
+    import dataio
+
+    preds = load_predictions()
+    migrated = 0
+    for p in preds.values():
+        if p.get("tier_at_freeze") != "No data":
+            continue
+        _baseline, source, n_career = dataio._get_baseline(p["player"], p["stat"])
+        has_career = source == "career (2023-2025)"
+        # These were all frozen for a player's next (at-the-time-unplayed)
+        # game, so n_games_2026 at freeze time was 0 in every real case
+        # this migration applies to.
+        new_tier = dataio.provisional_tier(0, has_career_history=has_career, n_career_games=n_career)
+        p["tier_at_freeze"] = new_tier["label"]
+        migrated += 1
+    if migrated:
+        save_predictions(preds)
+    return migrated
+
+
 def _key(player: str, stat: str, week: int) -> str:
     return f"{player}|{stat}|{week}"
 
