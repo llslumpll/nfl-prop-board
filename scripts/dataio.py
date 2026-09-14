@@ -1160,7 +1160,14 @@ def matchups_for_next_date(limit_games: int = 20) -> dict:
         for team, opponent in [(g["away_team"], g["home_team"]), (g["home_team"], g["away_team"])]:
             for stat_col, prow, is_current in top_players_for_team(team):
                 hist_line = history_vs_opponent(prow["player_display_name"], stat_col, opponent)
-                projection = project_stat(prow["player_display_name"], stat_col)
+                # Use the SAME fully-adjusted projection (matchup + pace
+                # + wind, where applicable) as the individual stat pages
+                # -- previously called raw project_stat() here, which
+                # meant this page silently showed a different, less
+                # complete number than Passing/Receiving/etc. for the
+                # exact same player/stat/game. Real bug, now fixed.
+                ngp = next_game_projection(prow["player_display_name"], team, stat_col)
+                projection = ngp["projection"] if ngp else project_stat(prow["player_display_name"], stat_col)
                 matchup["players"].append({
                     "player": prow["player_display_name"],
                     "team": team,
