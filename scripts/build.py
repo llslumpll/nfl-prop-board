@@ -24,6 +24,8 @@ import prizepicks_client  # noqa: E402
 import best5  # noqa: E402
 import predictions  # noqa: E402
 import grade  # noqa: E402
+import pipeline_health  # noqa: E402
+import svgchart  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
 
@@ -67,6 +69,7 @@ def refresh_data():
 
 def build():
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
+    env.globals["line_chart"] = svgchart.line_chart
     build_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     # A URL-safe, ever-changing value tied to this exact build -- used
     # as a query-string cache-buster on static/style.css so every real
@@ -236,6 +239,12 @@ def build():
             if wrote:
                 frozen_count += 1
     print(f"Froze {frozen_count} new prediction(s) this build.")
+    matched_count = sum(
+        1 for g in matchups_data["games"] for p in g["players"]
+        if pp_props.get(p["player"], {}).get(p["stat_col"]) is not None
+    )
+    total_this_build = sum(len(g["players"]) for g in matchups_data["games"])
+    pipeline_health.log_health(total_this_build, matched_count, len(predictions.load_predictions()))
 
     # --- Grade any predictions whose games have now finished ---
     migrated = predictions.migrate_stale_tiers()
@@ -320,7 +329,18 @@ def build():
             "touchdowns.html",
             {"rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
         ),
-        "history.html": ("history", "history.html", {"accuracy": accuracy}),
+        "history.html": (
+            "history",
+            "history.html",
+            {
+                "accuracy": accuracy,
+                "edge_buckets": grade.edge_bucket_accuracy(),
+                "weekly": grade.weekly_breakdown(),
+                "trend": grade.accuracy_trend_by_stat(),
+                "health_log": pipeline_health.load_health(),
+                "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
+            },
+        ),
     }
 
     for filename, (slug, template_name, ctx) in pages.items():
