@@ -196,6 +196,71 @@ def team_standings() -> dict:
     return by_conference
 
 
+def clip(v: float, lo: float, hi: float) -> float:
+    return max(lo, min(hi, v))
+
+
+_league_defense_avg_cache: dict[str, float] = {}
+
+
+def matchup_factor(opponent_team: str, stat_col: str) -> dict:
+    """
+    Real opponent-adjustment: how many yards this specific opponent
+    actually allows in this stat, relative to the real league average,
+    computed directly from nflreadpy player rows (opponent_team ==
+    this team = what offenses did AGAINST them). Bounded and dampened,
+    same "never a full override, shrink toward neutral" philosophy as
+    every other correction on this site -- with only 1-4 real games
+    played leaguewide right now, a defense's own sample is tiny, so this
+    stays close to 1.0 (neutral) until more weeks accumulate.
+
+    receiving_yards uses the same defensive allowance as passing_yards,
+    since a "yards allowed through the air" defense is the same real
+    thing whether you're looking at it from the passer's or receiver's
+    side of the stat.
+    """
+    defense_stat_col = "passing_yards" if stat_col == "receiving_yards" else stat_col
+    if defense_stat_col not in ("passing_yards", "rushing_yards"):
+        return {"factor": 1.0, "games": 0, "allowed_per_game": None, "league_avg_per_game": None}
+
+    df = load_stats()
+    opp_off = df.filter(pl.col("opponent_team") == opponent_team)
+    games = opp_off["week"].n_unique() if opp_off.height else 0
+    if games == 0:
+        return {"factor": 1.0, "games": 0, "allowed_per_game": None, "league_avg_per_game": None}
+
+    allowed_per_game = round((opp_off[defense_stat_col].sum() or 0) / games, 1)
+
+    cache_key = defense_stat_col
+    if cache_key not in _league_defense_avg_cache:
+        league = df.group_by("opponent_team").agg(
+            pl.col(defense_stat_col).sum().alias("total"),
+            pl.col("week").n_unique().alias("games"),
+        ).filter(pl.col("games") > 0)
+        per_game = (league["total"] / league["games"]).to_list()
+        _league_defense_avg_cache[cache_key] = sum(per_game) / len(per_game) if per_game else 0
+    league_avg_per_game = round(_league_defense_avg_cache[cache_key], 1)
+
+    if not league_avg_per_game:
+        return {"factor": 1.0, "games": games, "allowed_per_game": allowed_per_game, "league_avg_per_game": None}
+
+    raw_factor = allowed_per_game / league_avg_per_game
+    # Heavier dampening (0.3) than the temporal DAMPEN (0.2) is
+    # deliberate, not a typo -- a defense's own sample this early in the
+    # season is even thinner than a player's, so the correction should
+    # move even less until real sample size builds up.
+    MATCHUP_DAMPEN = 0.3
+    dampened = 1 + MATCHUP_DAMPEN * (raw_factor - 1)
+    dampened = clip(dampened, 0.85, 1.15)
+
+    return {
+        "factor": round(dampened, 3),
+        "games": games,
+        "allowed_per_game": allowed_per_game,
+        "league_avg_per_game": league_avg_per_game,
+    }
+
+
 def team_full_stats() -> list[dict]:
     """
     Real per-team offense/defense totals for every stat this build can
@@ -276,12 +341,24 @@ def next_game_for_team(team: str) -> dict | None:
 def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | None:
     """Combines next_game_for_team + project_stat into the single lookup
     every stat page needs: who they play next, and the dampened
-    projection for that specific stat in that game. Returns None if
-    there's no upcoming game left to project for."""
+    projection for that specific stat in that game -- now also adjusted
+    for real opponent matchup difficulty (see matchup_factor). Returns
+    None if there's no upcoming game left to project for.
+
+    projection["projected"] is the FINAL number (temporal dampening,
+    then matchup-adjusted) -- this is what every downstream consumer
+    (Best 5, History freezing, display) should use. The pre-adjustment
+    value is kept as pre_matchup_projected for transparency, alongside
+    the real matchup_factor data behind the adjustment."""
     game = next_game_for_team(team)
     if game is None:
         return None
     projection = project_stat(player_name, stat_col)
+    m_factor = matchup_factor(game["opponent"], stat_col)
+    pre_matchup = projection["projected"]
+    projection["pre_matchup_projected"] = pre_matchup
+    projection["matchup_factor"] = m_factor
+    projection["projected"] = round(pre_matchup * m_factor["factor"], 1)
     return {**game, "projection": projection}
 
 
