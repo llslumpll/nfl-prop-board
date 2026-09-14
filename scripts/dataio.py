@@ -403,6 +403,47 @@ def injury_status_for(player_name: str) -> dict | None:
     }
 
 
+_ngs_passing_cache = None
+
+
+def load_nextgen_passing():
+    """Real NFL Next Gen Stats for passing (avg_time_to_throw,
+    aggressiveness, avg_air_yards_differential) -- a genuinely separate
+    data source from load_player_stats, tracking-data-derived rather
+    than box-score-derived. Cached in-process since build.py calls the
+    passing leaders function once per build."""
+    global _ngs_passing_cache
+    if _ngs_passing_cache is None:
+        import nflreadpy as nfl
+        _ngs_passing_cache = nfl.load_nextgen_stats(stat_type="passing", seasons=[2026])
+    return _ngs_passing_cache
+
+
+def _ngs_row_for(player_name: str, week: int) -> dict | None:
+    """Looks up this player's real Next Gen Stats row for this exact
+    week. NGS also carries a week=0 row per player that duplicates the
+    same numbers as their first real week -- filtered out here so a
+    genuine week is always matched, never that placeholder."""
+    ngs = load_nextgen_passing()
+    rows = ngs.filter((pl.col("player_display_name") == player_name) & (pl.col("week") == week))
+    if rows.height == 0:
+        return None
+    return rows.row(0, named=True)
+
+
+def _aggressiveness_tier(agg: float | None) -> str:
+    """Real NGS scale -- 'aggressiveness' is the share of throws into
+    tight coverage (a defender within 1 yard at the catch point). No
+    universal 'good/bad' here (a gunslinger and a checkdown merchant can
+    both win), so this only flags the extremes worth noticing, not a
+    quality judgment."""
+    if agg is None:
+        return "neutral"
+    if agg >= 18:
+        return "good"  # notably aggressive -- context-dependent, not inherently "better"
+    return "neutral"
+
+
 def _epa_tier(epa_per_play: float | None) -> str:
     """Real thresholds, not arbitrary -- league-average QB EPA/play runs
     roughly 0.00-0.10; elite is 0.25+; a negative value means the offense
@@ -440,6 +481,10 @@ def passing_leaders(limit: int = 30) -> list[dict]:
         epa_per_play = round(row["passing_epa"] / attempts, 3) if attempts and row.get("passing_epa") is not None else None
         cpoe = round(row["passing_cpoe"], 1) if row.get("passing_cpoe") is not None else None
         pacr = round(row["pacr"], 2) if row.get("pacr") is not None else None
+        ngs_row = _ngs_row_for(row["player_display_name"], row["week"])
+        time_to_throw = round(ngs_row["avg_time_to_throw"], 2) if ngs_row and ngs_row.get("avg_time_to_throw") is not None else None
+        aggressiveness = round(ngs_row["aggressiveness"], 1) if ngs_row and ngs_row.get("aggressiveness") is not None else None
+        air_yards_diff = round(ngs_row["avg_air_yards_differential"], 1) if ngs_row and ngs_row.get("avg_air_yards_differential") is not None else None
         out.append({
             "player": row["player_display_name"],
             "team": row["team"],
@@ -456,6 +501,10 @@ def passing_leaders(limit: int = 30) -> list[dict]:
             "cpoe": cpoe,
             "cpoe_tier": _cpoe_tier(cpoe),
             "pacr": pacr,
+            "time_to_throw": time_to_throw,
+            "aggressiveness": aggressiveness,
+            "aggressiveness_tier": _aggressiveness_tier(aggressiveness),
+            "air_yards_diff": air_yards_diff,
             "perf": performance_vs_baseline(row["player_display_name"], "passing_yards", row["passing_yards"]),
             "next_game": next_game_projection(row["player_display_name"], row["team"], "passing_yards"),
             "tier": provisional_tier(n_games),
