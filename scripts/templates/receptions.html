@@ -14,6 +14,12 @@
   flagged as <span class="corr-flag">correlated</span>.
 </div>
 
+<div class="notice">
+  <strong>Projections also factor in real team pace</strong> (plays per
+  game) &mdash; a team running 64 real plays creates meaningfully more
+  opportunity than one running 46, independent of matchup or wind.
+</div>
+
 {% if pp_error %}
 <div class="notice">
   <strong>PrizePicks fetch failed on this build.</strong> Error: {{ pp_error }}
@@ -59,7 +65,7 @@
       <td class="num">{{ r.catch_rate if r.catch_rate is not none else '—' }}</td>
       <td>
         {% if r.next_game %}
-          <span class="num">{{ r.next_game.projection.projected }}</span> rec &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
+          <span class="num" title="Team pace: {{ r.next_game.projection.pace_factor.plays_per_game if r.next_game.projection.pace_factor.plays_per_game is not none else 'no data yet' }}{{ ' plays/game vs league avg ' ~ r.next_game.projection.pace_factor.league_avg_plays_per_game if r.next_game.projection.pace_factor.plays_per_game is not none }} -> pace factor {{ r.next_game.projection.pace_factor.factor }}x">{{ r.next_game.projection.projected }}</span> rec &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
         {% else %}
           <span class="player-sub">season over</span>
         {% endif %}
