@@ -196,11 +196,140 @@ def team_standings() -> dict:
     return by_conference
 
 
+# Real NFL stadium coordinates and roof type -- used only to fetch real
+# weather for outdoor games. Retractable-roof stadiums are conservatively
+# marked climate_controlled=True (they're closed more often than not in
+# practice, especially in bad weather -- exactly when it would matter
+# most), since there's no real-time source here for a specific game's
+# actual roof decision. This is a documented simplification, not a
+# fabricated data point: no wind factor is ever applied to a stadium
+# marked climate-controlled, so the failure mode of this approximation
+# is "misses a real open-roof game," never "invents wind that isn't there."
+STADIUMS = {
+    "ARI": {"lat": 33.5276, "lon": -112.2626, "climate_controlled": True},   # retractable, usually closed
+    "ATL": {"lat": 33.7554, "lon": -84.4008, "climate_controlled": True},    # retractable, usually closed
+    "BAL": {"lat": 39.2780, "lon": -76.6227, "climate_controlled": False},
+    "BUF": {"lat": 42.7738, "lon": -78.7870, "climate_controlled": False},
+    "CAR": {"lat": 35.2258, "lon": -80.8528, "climate_controlled": False},
+    "CHI": {"lat": 41.8623, "lon": -87.6167, "climate_controlled": False},
+    "CIN": {"lat": 39.0954, "lon": -84.5160, "climate_controlled": False},
+    "CLE": {"lat": 41.5061, "lon": -81.6995, "climate_controlled": False},
+    "DAL": {"lat": 32.7473, "lon": -97.0945, "climate_controlled": True},    # retractable, usually closed
+    "DEN": {"lat": 39.7439, "lon": -105.0201, "climate_controlled": False},
+    "DET": {"lat": 42.3400, "lon": -83.0456, "climate_controlled": True},    # fixed dome
+    "GB": {"lat": 44.5013, "lon": -88.0622, "climate_controlled": False},
+    "HOU": {"lat": 29.6847, "lon": -95.4107, "climate_controlled": True},    # retractable, usually closed
+    "IND": {"lat": 39.7601, "lon": -86.1639, "climate_controlled": True},    # retractable, usually closed
+    "JAX": {"lat": 30.3239, "lon": -81.6373, "climate_controlled": False},
+    "KC": {"lat": 39.0489, "lon": -94.4839, "climate_controlled": False},
+    "LV": {"lat": 36.0909, "lon": -115.1833, "climate_controlled": True},    # fixed dome
+    "LA": {"lat": 33.9535, "lon": -118.3392, "climate_controlled": True},    # SoFi, fixed roof
+    "LAC": {"lat": 33.9535, "lon": -118.3392, "climate_controlled": True},   # SoFi, fixed roof
+    "MIA": {"lat": 25.9580, "lon": -80.2389, "climate_controlled": False},
+    "MIN": {"lat": 44.9735, "lon": -93.2575, "climate_controlled": True},    # fixed dome
+    "NE": {"lat": 42.0909, "lon": -71.2643, "climate_controlled": False},
+    "NO": {"lat": 29.9511, "lon": -90.0812, "climate_controlled": True},     # fixed dome
+    "NYG": {"lat": 40.8135, "lon": -74.0745, "climate_controlled": False},
+    "NYJ": {"lat": 40.8135, "lon": -74.0745, "climate_controlled": False},
+    "PHI": {"lat": 39.9008, "lon": -75.1675, "climate_controlled": False},
+    "PIT": {"lat": 40.4468, "lon": -80.0158, "climate_controlled": False},
+    "SEA": {"lat": 47.5952, "lon": -122.3316, "climate_controlled": False},
+    "SF": {"lat": 37.4032, "lon": -121.9698, "climate_controlled": False},
+    "TB": {"lat": 27.9759, "lon": -82.5033, "climate_controlled": False},
+    "TEN": {"lat": 36.1665, "lon": -86.7713, "climate_controlled": False},
+    "WAS": {"lat": 38.9077, "lon": -76.8645, "climate_controlled": False},
+}
+
+
 def clip(v: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, v))
 
 
 _league_defense_avg_cache: dict[str, float] = {}
+
+
+OPEN_METEO = "https://api.open-meteo.com/v1/forecast"
+
+_weather_cache: dict[str, dict | None] = {}
+
+
+def fetch_weather(lat: float, lon: float, game_date: str) -> dict | None:
+    """
+    Real forecast weather for a specific stadium/date, using the exact
+    same free, no-key Open-Meteo mechanism already proven working in
+    production on the MLB site (common.py's fetch_weather). Fails soft:
+    any error returns None, never a fabricated weather reading.
+    """
+    key = f"{lat}_{lon}_{game_date}"
+    if key in _weather_cache:
+        return _weather_cache[key]
+    try:
+        import requests
+        resp = requests.get(OPEN_METEO, params={
+            "latitude": lat, "longitude": lon,
+            "hourly": "temperature_2m,windspeed_10m,winddirection_10m,relative_humidity_2m",
+            "temperature_unit": "fahrenheit", "windspeed_unit": "mph",
+            "timezone": "auto", "start_date": game_date, "end_date": game_date,
+        }, timeout=15)
+        resp.raise_for_status()
+        data = resp.json()
+        hourly = data.get("hourly")
+        if not hourly or not hourly.get("windspeed_10m"):
+            _weather_cache[key] = None
+            return None
+        # Use the midday forecast value as a reasonable stand-in for
+        # kickoff conditions -- this build doesn't have each game's
+        # exact kickoff hour wired through to this function yet.
+        idx = len(hourly["windspeed_10m"]) // 2
+        result = {
+            "tempF": hourly["temperature_2m"][idx],
+            "windMph": hourly["windspeed_10m"][idx],
+            "humidity": hourly["relative_humidity_2m"][idx],
+        }
+        _weather_cache[key] = result
+        return result
+    except Exception:
+        _weather_cache[key] = None
+        return None
+
+
+def wind_factor_for_team(team: str, game_date: str | None) -> dict:
+    """
+    Real wind-based passing-efficiency adjustment -- NFL's own tracking
+    of passing stats shows meaningful efficiency drops once wind gets
+    above roughly 15-20 mph, more pronounced on deeper throws. Below
+    10 mph, no real effect. The exact coefficient below is a reasoned
+    first cut (documented as such, same honesty standard as MIN_SAMPLE/
+    DAMPEN elsewhere on this site), not empirically fit against this
+    site's own graded history yet -- worth revisiting once real graded
+    passing predictions accumulate across enough windy games to check it.
+
+    Never applied to a climate-controlled stadium, and always fails soft
+    to neutral (1.0) if weather can't be fetched, a game date isn't
+    known yet, or the stadium isn't in STADIUMS.
+    """
+    stadium = STADIUMS.get(team)
+    if not stadium:
+        return {"factor": 1.0, "wind_mph": None, "climate_controlled": None, "reason": "unknown stadium"}
+    if stadium["climate_controlled"]:
+        return {"factor": 1.0, "wind_mph": None, "climate_controlled": True, "reason": "climate-controlled venue"}
+    if not game_date:
+        return {"factor": 1.0, "wind_mph": None, "climate_controlled": False, "reason": "no game date yet"}
+
+    weather = fetch_weather(stadium["lat"], stadium["lon"], game_date)
+    if not weather or weather.get("windMph") is None:
+        return {"factor": 1.0, "wind_mph": None, "climate_controlled": False, "reason": "weather unavailable"}
+
+    wind = weather["windMph"]
+    raw_factor = 1.0 - max(0.0, wind - 10.0) * 0.008
+    factor = clip(raw_factor, 0.85, 1.0)  # wind only ever hurts passing here, never helps
+    return {
+        "factor": round(factor, 3),
+        "wind_mph": round(wind, 1),
+        "temp_f": weather.get("tempF"),
+        "climate_controlled": False,
+        "reason": None,
+    }
 
 
 def matchup_factor(opponent_team: str, stat_col: str) -> dict:
@@ -322,10 +451,13 @@ def team_full_stats() -> list[dict]:
 
 
 def next_game_for_team(team: str) -> dict | None:
-    """Returns {"opponent", "week", "gameday"} for a team's next
-    unplayed game, or None if the season has none left. Per-team lookup
-    (not a single global "next week") so this stays correct once bye
-    weeks make different teams' next games fall on different weeks."""
+    """Returns {"opponent", "week", "gameday", "venue_team"} for a
+    team's next unplayed game, or None if the season has none left.
+    Per-team lookup (not a single global "next week") so this stays
+    correct once bye weeks make different teams' next games fall on
+    different weeks. venue_team is always the home team -- needed so
+    weather gets fetched for the STADIUM the game is actually played at,
+    not wherever the player's own team happens to be based."""
     sched = load_schedule()
     team_games = sched.filter(
         ((pl.col("home_team") == team) | (pl.col("away_team") == team))
@@ -335,7 +467,10 @@ def next_game_for_team(team: str) -> dict | None:
         return None
     row = team_games.row(0, named=True)
     opponent = row["away_team"] if row["home_team"] == team else row["home_team"]
-    return {"opponent": opponent, "week": row["week"], "gameday": row.get("gameday")}
+    return {
+        "opponent": opponent, "week": row["week"], "gameday": row.get("gameday"),
+        "venue_team": row["home_team"],
+    }
 
 
 def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | None:
@@ -358,7 +493,19 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
     pre_matchup = projection["projected"]
     projection["pre_matchup_projected"] = pre_matchup
     projection["matchup_factor"] = m_factor
-    projection["projected"] = round(pre_matchup * m_factor["factor"], 1)
+    after_matchup = round(pre_matchup * m_factor["factor"], 1)
+
+    # Wind only has a real, documented effect on the passing game --
+    # applied to passing_yards and receiving_yards (receiving depends on
+    # the same pass attempts), never to rushing_yards or receptions.
+    if stat_col in ("passing_yards", "receiving_yards"):
+        w_factor = wind_factor_for_team(game["venue_team"], game.get("gameday"))
+        projection["wind_factor"] = w_factor
+        projection["projected"] = round(after_matchup * w_factor["factor"], 1)
+    else:
+        projection["wind_factor"] = None
+        projection["projected"] = after_matchup
+
     return {**game, "projection": projection}
 
 
