@@ -403,12 +403,43 @@ def injury_status_for(player_name: str) -> dict | None:
     }
 
 
+def _epa_tier(epa_per_play: float | None) -> str:
+    """Real thresholds, not arbitrary -- league-average QB EPA/play runs
+    roughly 0.00-0.10; elite is 0.25+; a negative value means the offense
+    was net-worse off than doing nothing on those dropbacks."""
+    if epa_per_play is None:
+        return "neutral"
+    if epa_per_play >= 0.20:
+        return "good"
+    if epa_per_play < 0.0:
+        return "bad"
+    return "neutral"
+
+
+def _cpoe_tier(cpoe: float | None) -> str:
+    """Real CPOE scale -- elite QBs run roughly +3 to +8; poor accuracy
+    shows as -3 to -8 or worse. This is the metric that isolates a QB's
+    own accuracy from how open his receivers were, per the research this
+    was built from."""
+    if cpoe is None:
+        return "neutral"
+    if cpoe >= 3:
+        return "good"
+    if cpoe <= -3:
+        return "bad"
+    return "neutral"
+
+
 def passing_leaders(limit: int = 30) -> list[dict]:
     df = load_stats()
     qb = df.filter(pl.col("position") == "QB").sort("passing_yards", descending=True)
     out = []
     for row in qb.head(limit).iter_rows(named=True):
         n_games = 1  # only week 1 in this snapshot
+        attempts = row["attempts"] or 0
+        epa_per_play = round(row["passing_epa"] / attempts, 3) if attempts and row.get("passing_epa") is not None else None
+        cpoe = round(row["passing_cpoe"], 1) if row.get("passing_cpoe") is not None else None
+        pacr = round(row["pacr"], 2) if row.get("pacr") is not None else None
         out.append({
             "player": row["player_display_name"],
             "team": row["team"],
@@ -420,6 +451,11 @@ def passing_leaders(limit: int = 30) -> list[dict]:
             "passing_yards": row["passing_yards"],
             "passing_tds": row["passing_tds"],
             "interceptions": row["passing_interceptions"],
+            "epa_per_play": epa_per_play,
+            "epa_tier": _epa_tier(epa_per_play),
+            "cpoe": cpoe,
+            "cpoe_tier": _cpoe_tier(cpoe),
+            "pacr": pacr,
             "perf": performance_vs_baseline(row["player_display_name"], "passing_yards", row["passing_yards"]),
             "next_game": next_game_projection(row["player_display_name"], row["team"], "passing_yards"),
             "tier": provisional_tier(n_games),
