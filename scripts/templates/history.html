@@ -2,101 +2,209 @@
 {% block title %}History — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>History</h1>
-<p class="lede">
-  Every prediction is frozen the moment it's made and graded against the
-  real result once the game finishes &mdash; every graded pick shown
-  here, win or loss, not a highlight reel.
+<p class="lede small">
+  Every prediction frozen the moment it's made, graded against the real
+  result once the game finishes &mdash; every graded pick shown, win or
+  loss, not a highlight reel.
 </p>
 
 <div class="stat-strip">
-  <div class="stat-block">
-    <div class="num">{{ accuracy.total_frozen }}</div>
-    <div class="label">predictions frozen total</div>
+  <div class="stat-block"><div class="num">{{ accuracy.total_frozen }}</div><div class="label">predictions frozen total</div></div>
+  <div class="stat-block"><div class="num">{{ accuracy.total_hit_eligible }}</div><div class="label">graded with a real market line</div></div>
+  <div class="stat-block"><div class="num">{{ accuracy.overall_rate ~ '%' if accuracy.overall_rate is not none else '--' }}</div><div class="label">overall hit rate</div></div>
+  <div class="stat-block"><div class="num">{{ accuracy.still_pending }}</div><div class="label">still pending a final score</div></div>
+</div>
+
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Pipeline Health</button>
+  <button class="game-tab" data-game-idx="1">Accuracy Trends</button>
+  <button class="game-tab" data-game-idx="2">Confidence &amp; Conviction</button>
+  <button class="game-tab" data-game-idx="3">Week by Week</button>
+</div>
+
+<!-- ============ TAB 0: PIPELINE HEALTH ============ -->
+<div class="game-panel" data-game-panel="0">
+  <h2>Pipeline Health</h2>
+  <p class="lede small">Is the pipeline actually working day to day, separate from whether the predictions are good. A real PrizePicks match needs a real player+line to exist at freeze time -- this tracks whether that's happening, not whether picks are winning.</p>
+
+  {% if health_log and health_log|length > 1 %}
+  <h3 class="division-head">PrizePicks match rate (% of frozen predictions with a real line), per build</h3>
+  {{ line_chart(
+       series=[{"points": health_log|map(attribute='match_rate')|list, "color": "#00f0ff"}],
+       y_min=0, y_max=100, reference_line=50,
+       x_labels=(health_log[0].date, health_log[-1].date)
+     )|safe }}
+  {% else %}
+  <div class="empty-state">
+    <h3>Not enough builds logged yet</h3>
+    <p>This chart needs at least two real builds to show a trend &mdash; check back after a few more scheduled runs. Each build's match rate is logged automatically, real numbers only.</p>
   </div>
-  <div class="stat-block">
-    <div class="num">{{ accuracy.total_hit_eligible }}</div>
-    <div class="label">graded with a real market line to check against</div>
-  </div>
-  <div class="stat-block">
-    <div class="num">{{ accuracy.overall_rate ~ '%' if accuracy.overall_rate is not none else '--' }}</div>
-    <div class="label">overall hit rate</div>
-  </div>
-  <div class="stat-block">
-    <div class="num">{{ accuracy.still_pending }}</div>
-    <div class="label">still pending a final score</div>
+  {% endif %}
+
+  <h3 class="division-head">Recent builds</h3>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Date</th><th class="num">Frozen this build</th><th class="num">Matched w/ real line</th><th class="num">Match rate</th></tr></thead>
+    <tbody>
+      {% for h in health_log[-14:]|reverse %}
+      <tr>
+        <td>{{ h.date }}</td>
+        <td class="num">{{ h.frozen_this_build }}</td>
+        <td class="num">{{ h.matched_with_market_line }}</td>
+        <td class="num">{{ h.match_rate ~ '%' if h.match_rate is not none else '--' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
   </div>
 </div>
 
-{% if accuracy.total_hit_eligible == 0 %}
-<div class="empty-state">
-  <h3>No graded picks with a real market line yet</h3>
-  <p>
-    Predictions are being frozen every build (see the count above), but
-    grading needs two things: the player's next game to actually finish,
-    and a real PrizePicks line to have existed when the prediction was
-    made. Check back after this week's games are final.
-  </p>
-</div>
-{% else %}
+<!-- ============ TAB 1: ACCURACY TRENDS ============ -->
+<div class="game-panel hidden" data-game-panel="1">
+  <h2>Prediction Accuracy Over Time</h2>
+  <p class="lede small">The dashed line marks 50% -- a coin flip. If the model is genuinely useful, dots should trend up and away from it as more weeks accumulate, not stay flat around it. NFL's weekly cadence means this fills in one point per week, not per day -- an honestly short series right now, not a lesser one.</p>
 
-<h2>Accuracy by confidence tier</h2>
-<p class="lede small">Does higher stated confidence actually mean a higher real hit rate? Tier is the one that was in effect the moment the prediction was frozen, not recomputed after the fact.</p>
-<div class="table-wrap">
-<table class="stat-table">
-  <thead><tr><th>Tier at freeze</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
-  <tbody>
-    {% for tier, d in accuracy.by_tier.items() %}
-    <tr>
-      <td>{{ tier }}</td>
-      <td class="num">{{ d.total }}</td>
-      <td class="num">{{ d.hits }}</td>
-      <td class="num stat-{{ 'good' if d.rate and d.rate >= 55 else 'bad' if d.rate and d.rate < 45 else 'neutral' }}">{{ d.rate }}%</td>
-    </tr>
+  {% for stat, d in trend.items() %}
+    {% if d.weeks|length > 1 %}
+    <h3 class="division-head">{{ stat.replace('_', ' ')|title }} &mdash; weekly accuracy</h3>
+    {{ line_chart(
+         series=[{"points": d.rates, "color": "#39ff8c"}],
+         y_min=0, y_max=100, reference_line=50,
+         x_labels=("W" ~ d.weeks[0], "W" ~ d.weeks[-1])
+       )|safe }}
+    {% endif %}
+  {% endfor %}
+
+  {% if not has_multi_week_trend %}
+  <div class="empty-state">
+    <h3>Needs at least 2 graded weeks to show a trend</h3>
+    <p>Real per-week accuracy is being computed and logged already (see Week by Week) &mdash; this chart activates once a second week is graded.</p>
+  </div>
+  {% endif %}
+</div>
+
+<!-- ============ TAB 2: CONFIDENCE & CONVICTION ============ -->
+<div class="game-panel hidden" data-game-panel="2">
+  <h2>Accuracy by Confidence Tier</h2>
+  <p class="lede small">Does higher stated confidence actually mean a higher real hit rate? Tier is the one in effect the moment the prediction was frozen, not recomputed after the fact.</p>
+  {% if accuracy.total_hit_eligible == 0 %}
+  <div class="empty-state">
+    <h3>No graded picks with a real market line yet</h3>
+  </div>
+  {% else %}
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Tier at freeze</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
+    <tbody>
+      {% for tier, d in accuracy.by_tier.items() %}
+      <tr>
+        <td>{{ tier }}</td>
+        <td class="num">{{ d.total }}</td>
+        <td class="num">{{ d.hits }}</td>
+        <td class="num stat-{{ 'good' if d.rate and d.rate >= 55 else 'bad' if d.rate and d.rate < 45 else 'neutral' }}">{{ d.rate }}%</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% endif %}
+
+  <h2>Does Edge Actually Mean Anything?</h2>
+  <p class="lede small">Does a BIGGER edge (our projection disagreeing with the market line by more, as a % of the line) actually predict a HIGHER real hit rate? If this climbs going down the table, edge is real signal. If it stays flat or reverses, the market may already be efficient here.</p>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Model's edge over line</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
+    <tbody>
+      {% for b in edge_buckets %}
+      <tr>
+        <td>{{ b.bucket }}</td>
+        <td class="num">{{ b.total }}</td>
+        <td class="num">{{ b.hits }}</td>
+        <td class="num">{{ b.rate ~ '%' if b.rate is not none else '--' }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- ============ TAB 3: WEEK BY WEEK ============ -->
+<div class="game-panel hidden" data-game-panel="3">
+  <h2>Week by Week</h2>
+  <p class="lede small">Every frozen prediction, every week, win or loss. Pick a week below.</p>
+
+  {% if weekly %}
+  <div class="game-picker" id="week-picker">
+    {% for w in weekly %}
+    <button class="game-tab{{ ' active' if loop.first }}" data-week-idx="{{ loop.index0 }}">
+      Week {{ w.week }} &middot; {{ w.graded }}/{{ w.total }} graded{% if w.rate is not none %} &middot; {{ w.rate }}%{% endif %}
+    </button>
     {% endfor %}
-  </tbody>
-</table>
+  </div>
+
+  {% for w in weekly %}
+  <div class="week-panel{{ '' if loop.first else ' hidden' }}" data-week-panel="{{ loop.index0 }}">
+    <div class="table-wrap">
+    <div class="table-scroll">
+    <table class="stat-table">
+      <thead>
+        <tr><th>Player</th><th>Stat</th><th class="num">Projected</th><th class="num">Line</th><th>Call</th><th class="num">Actual</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        {% for p in w.entries %}
+        <tr>
+          <td>{{ p.player }}<div class="player-sub">{{ p.team }} vs {{ p.opponent }}</div></td>
+          <td>{{ p.stat.replace('_', ' ') }}</td>
+          <td class="num">{{ p.projected }}</td>
+          <td class="num">{{ p.market_line if p.market_line is not none else '--' }}</td>
+          <td>{{ p.call if p.call else '--' }}</td>
+          <td class="num">{{ p.actual if p.actual is not none else '--' }}</td>
+          <td>
+            {% if not p.graded %}<span class="player-sub">pending</span>
+            {% elif p.hit is none %}<span class="player-sub">no market line</span>
+            {% elif p.hit %}<span class="tier tier-high">HIT</span>
+            {% else %}<span class="tier tier-low">MISS</span>{% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    <div class="scroll-hint">{{ w.entries|length }} predictions this week</div>
+    </div>
+  </div>
+  {% endfor %}
+  {% else %}
+  <div class="empty-state"><h3>No predictions frozen yet</h3></div>
+  {% endif %}
 </div>
 
-<h2>Recently graded picks</h2>
-<div class="table-wrap">
-<div class="table-scroll">
-<table class="stat-table">
-  <thead>
-    <tr>
-      <th>Player</th>
-      <th>Week</th>
-      <th>Stat</th>
-      <th class="num">Projected</th>
-      <th class="num">Line</th>
-      <th>Call</th>
-      <th class="num">Actual</th>
-      <th>Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for p in accuracy.recent_graded %}
-    <tr>
-      <td>{{ p.player }}<div class="player-sub">{{ p.team }} vs {{ p.opponent }}</div></td>
-      <td class="num">{{ p.week }}</td>
-      <td>{{ p.stat.replace('_', ' ') }}</td>
-      <td class="num">{{ p.projected }}</td>
-      <td class="num">{{ p.market_line if p.market_line is not none else '--' }}</td>
-      <td>{{ p.call if p.call else '--' }}</td>
-      <td class="num">{{ p.actual }}</td>
-      <td>
-        {% if p.hit is none %}
-          <span class="player-sub">no market line</span>
-        {% elif p.hit %}
-          <span class="tier tier-high">HIT</span>
-        {% else %}
-          <span class="tier tier-low">MISS</span>
-        {% endif %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
-</div>
-</div>
-{% endif %}
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+  var wtabs = document.querySelectorAll('#week-picker .game-tab');
+  var wpanels = document.querySelectorAll('.week-panel[data-week-panel]');
+  wtabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-week-idx');
+      wtabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      wpanels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-week-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
 {% endblock %}
