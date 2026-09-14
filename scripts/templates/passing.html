@@ -12,6 +12,15 @@
 </div>
 
 <div class="notice">
+  <strong>Next-game projections are now opponent-adjusted.</strong> The
+  number reflects the opponent's real yards allowed this season vs. the
+  league average, dampened the same way every other correction on this
+  site is (never a full override, especially with defenses still on a
+  1-2 game sample). Hover the projected number for the pre-adjustment
+  value and the real numbers behind the factor.
+</div>
+
+<div class="notice">
   <strong>EPA/play and CPOE are real advanced metrics</strong>, not
   derived guesses &mdash; nflreadpy provides both directly. <strong>EPA/play</strong>
   (Expected Points Added per dropback) measures real scoring impact, not
@@ -92,7 +101,7 @@
       <td class="num">{{ r.air_yards_diff if r.air_yards_diff is not none else '—' }}</td>
       <td>
         {% if r.next_game %}
-          <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
+          <span class="num" title="Before matchup adjustment: {{ r.next_game.projection.pre_matchup_projected }} yds. Opponent's {{ r.next_game.opponent }} allows {{ r.next_game.projection.matchup_factor.allowed_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none else 'no data yet' }}{{ ' yds/game vs league avg ' ~ r.next_game.projection.matchup_factor.league_avg_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none }} -> matchup factor {{ r.next_game.projection.matchup_factor.factor }}x">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
         {% else %}
           <span class="player-sub">season over</span>
         {% endif %}
