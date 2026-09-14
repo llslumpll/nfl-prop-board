@@ -2,13 +2,24 @@
 {% block title %}Passing — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>Passing</h1>
-<p class="lede">Quarterback passing lines from live nflreadpy data.</p>
+<p class="lede">Quarterback passing lines from live nflreadpy data, plus real advanced efficiency stats &mdash; raw yardage alone can be misleading (garbage-time volume vs. genuine quality).</p>
 
 <div class="notice">
   <strong>Provisional tiers only.</strong> With one week of data, there isn't
   enough sample to run a real calibrated model. The tier column reflects
   sample size, not a tuned prediction &mdash; see the project brief's open
   question on NFL's weekly MIN_SAMPLE/DAMPEN values.
+</div>
+
+<div class="notice">
+  <strong>EPA/play and CPOE are real advanced metrics</strong>, not
+  derived guesses &mdash; nflreadpy provides both directly. <strong>EPA/play</strong>
+  (Expected Points Added per dropback) measures real scoring impact, not
+  just yards: a 3-yard gain on 3rd-and-2 helps a lot; the same 3 yards on
+  3rd-and-10 doesn't. <strong>CPOE</strong> (Completion % Over Expected)
+  isolates a QB's own accuracy from how open his receivers were.
+  League-average EPA/play runs roughly 0.00&ndash;0.10; CPOE roughly
+  &plusmn;3 is a meaningful edge either direction.
 </div>
 
 {% if pp_error %}
@@ -33,6 +44,8 @@
       <th class="num">Yards</th>
       <th class="num">TD</th>
       <th class="num">INT</th>
+      <th class="num" title="Expected Points Added per dropback -- real scoring impact, not just yards">EPA/play</th>
+      <th class="num" title="Completion % Over Expected -- real accuracy, isolated from receiver separation">CPOE</th>
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
@@ -56,6 +69,8 @@
       <td class="num stat-{{ r.perf.css }}">{{ r.passing_yards }}{% if r.perf.pct_diff %} <span style="font-size:0.75em">({{ '+' if r.perf.pct_diff > 0 }}{{ r.perf.pct_diff|int }}%)</span>{% endif %}</td>
       <td class="num">{{ r.passing_tds }}</td>
       <td class="num">{{ r.interceptions }}</td>
+      <td class="num stat-{{ r.epa_tier }}">{{ r.epa_per_play if r.epa_per_play is not none else '—' }}</td>
+      <td class="num stat-{{ r.cpoe_tier }}">{{ '+' if r.cpoe and r.cpoe > 0 }}{{ r.cpoe if r.cpoe is not none else '—' }}{{ '%' if r.cpoe is not none }}</td>
       <td>
         {% if r.next_game %}
           <span class="num">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
