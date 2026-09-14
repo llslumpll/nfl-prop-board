@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1789413003">
+  <link rel="stylesheet" href="static/style.css?v=1789413985">
 </head>
 <body>
   <header class="site-head">
@@ -42,381 +42,1267 @@
   <main class="site-main">
     
 <h1>History</h1>
-<p class="lede">
-  Every prediction is frozen the moment it's made and graded against the
-  real result once the game finishes &mdash; every graded pick shown
-  here, win or loss, not a highlight reel.
+<p class="lede small">
+  Every prediction frozen the moment it's made, graded against the real
+  result once the game finishes &mdash; every graded pick shown, win or
+  loss, not a highlight reel.
 </p>
 
 <div class="stat-strip">
-  <div class="stat-block">
-    <div class="num">84</div>
-    <div class="label">predictions frozen total</div>
+  <div class="stat-block"><div class="num">84</div><div class="label">predictions frozen total</div></div>
+  <div class="stat-block"><div class="num">62</div><div class="label">graded with a real market line</div></div>
+  <div class="stat-block"><div class="num">46.8%</div><div class="label">overall hit rate</div></div>
+  <div class="stat-block"><div class="num">6</div><div class="label">still pending a final score</div></div>
+</div>
+
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Pipeline Health</button>
+  <button class="game-tab" data-game-idx="1">Accuracy Trends</button>
+  <button class="game-tab" data-game-idx="2">Confidence &amp; Conviction</button>
+  <button class="game-tab" data-game-idx="3">Week by Week</button>
+</div>
+
+<!-- ============ TAB 0: PIPELINE HEALTH ============ -->
+<div class="game-panel" data-game-panel="0">
+  <h2>Pipeline Health</h2>
+  <p class="lede small">Is the pipeline actually working day to day, separate from whether the predictions are good. A real PrizePicks match needs a real player+line to exist at freeze time -- this tracks whether that's happening, not whether picks are winning.</p>
+
+  
+  <div class="empty-state">
+    <h3>Not enough builds logged yet</h3>
+    <p>This chart needs at least two real builds to show a trend &mdash; check back after a few more scheduled runs. Each build's match rate is logged automatically, real numbers only.</p>
   </div>
-  <div class="stat-block">
-    <div class="num">62</div>
-    <div class="label">graded with a real market line to check against</div>
-  </div>
-  <div class="stat-block">
-    <div class="num">46.8%</div>
-    <div class="label">overall hit rate</div>
-  </div>
-  <div class="stat-block">
-    <div class="num">6</div>
-    <div class="label">still pending a final score</div>
+  
+
+  <h3 class="division-head">Recent builds</h3>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Date</th><th class="num">Frozen this build</th><th class="num">Matched w/ real line</th><th class="num">Match rate</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>2026-09-14</td>
+        <td class="num">6</td>
+        <td class="num">5</td>
+        <td class="num">83.3%</td>
+      </tr>
+      
+    </tbody>
+  </table>
   </div>
 </div>
 
+<!-- ============ TAB 1: ACCURACY TRENDS ============ -->
+<div class="game-panel hidden" data-game-panel="1">
+  <h2>Prediction Accuracy Over Time</h2>
+  <p class="lede small">The dashed line marks 50% -- a coin flip. If the model is genuinely useful, dots should trend up and away from it as more weeks accumulate, not stay flat around it. NFL's weekly cadence means this fills in one point per week, not per day -- an honestly short series right now, not a lesser one.</p>
 
+  
+    
+  
+    
+  
+    
+  
 
-<h2>Accuracy by confidence tier</h2>
-<p class="lede small">Does higher stated confidence actually mean a higher real hit rate? Tier is the one that was in effect the moment the prediction was frozen, not recomputed after the fact.</p>
-<div class="table-wrap">
-<table class="stat-table">
-  <thead><tr><th>Tier at freeze</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
-  <tbody>
-    
-    <tr>
-      <td>Career baseline (established veteran)</td>
-      <td class="num">51</td>
-      <td class="num">24</td>
-      <td class="num stat-neutral">47.1%</td>
-    </tr>
-    
-    <tr>
-      <td>Career baseline (limited history)</td>
-      <td class="num">11</td>
-      <td class="num">5</td>
-      <td class="num stat-neutral">45.5%</td>
-    </tr>
-    
-  </tbody>
-</table>
+  
+  <div class="empty-state">
+    <h3>Needs at least 2 graded weeks to show a trend</h3>
+    <p>Real per-week accuracy is being computed and logged already (see Week by Week) &mdash; this chart activates once a second week is graded.</p>
+  </div>
+  
 </div>
 
-<h2>Recently graded picks</h2>
-<div class="table-wrap">
-<div class="table-scroll">
-<table class="stat-table">
-  <thead>
-    <tr>
-      <th>Player</th>
-      <th>Week</th>
-      <th>Stat</th>
-      <th class="num">Projected</th>
-      <th class="num">Line</th>
-      <th>Call</th>
-      <th class="num">Actual</th>
-      <th>Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    
-    <tr>
-      <td>Caleb Williams<div class="player-sub">CHI vs CAR</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">225.0</td>
-      <td class="num">229.5</td>
-      <td>UNDER</td>
-      <td class="num">269</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>D'Andre Swift<div class="player-sub">CHI vs CAR</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">62.7</td>
-      <td class="num">59.5</td>
-      <td>OVER</td>
-      <td class="num">124</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Colston Loveland<div class="player-sub">CHI vs CAR</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">50.3</td>
-      <td class="num">54.5</td>
-      <td>UNDER</td>
-      <td class="num">0</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Bryce Young<div class="player-sub">CAR vs CHI</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">182.0</td>
-      <td class="num">209.5</td>
-      <td>UNDER</td>
-      <td class="num">361</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Rico Dowdle<div class="player-sub">CAR vs CHI</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">49.7</td>
-      <td class="num">46.5</td>
-      <td>OVER</td>
-      <td class="num">15</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Tetairoa McMillan<div class="player-sub">CAR vs CHI</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">60.8</td>
-      <td class="num">60.5</td>
-      <td>OVER</td>
-      <td class="num">75</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Baker Mayfield<div class="player-sub">TB vs CIN</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">242.7</td>
-      <td class="num">230.5</td>
-      <td>OVER</td>
-      <td class="num">216</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Bucky Irving<div class="player-sub">TB vs CIN</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">63.8</td>
-      <td class="num">57.5</td>
-      <td>OVER</td>
-      <td class="num">45</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Emeka Egbuka<div class="player-sub">TB vs CIN</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">55.2</td>
-      <td class="num">57.5</td>
-      <td>UNDER</td>
-      <td class="num">63</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Joe Burrow<div class="player-sub">CIN vs TB</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">258.2</td>
-      <td class="num">269.5</td>
-      <td>UNDER</td>
-      <td class="num">254</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Chase Brown<div class="player-sub">CIN vs TB</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">48.6</td>
-      <td class="num">56.5</td>
-      <td>UNDER</td>
-      <td class="num">56</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Ja'Marr Chase<div class="player-sub">CIN vs TB</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">88.5</td>
-      <td class="num">86.5</td>
-      <td>OVER</td>
-      <td class="num">12</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Tyler Shough<div class="player-sub">NO vs DET</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">216.7</td>
-      <td class="num">246.5</td>
-      <td>UNDER</td>
-      <td class="num">410</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Alvin Kamara<div class="player-sub">NO vs DET</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">55.7</td>
-      <td class="num">--</td>
-      <td>--</td>
-      <td class="num">0</td>
-      <td>
-        
-          <span class="player-sub">no market line</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Chris Olave<div class="player-sub">NO vs DET</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">67.2</td>
-      <td class="num">76.5</td>
-      <td>UNDER</td>
-      <td class="num">182</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Jared Goff<div class="player-sub">DET vs NO</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">271.2</td>
-      <td class="num">262.5</td>
-      <td>OVER</td>
-      <td class="num">206</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Jahmyr Gibbs<div class="player-sub">DET vs NO</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">72.2</td>
-      <td class="num">84.5</td>
-      <td>UNDER</td>
-      <td class="num">156</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Amon-Ra St. Brown<div class="player-sub">DET vs NO</div></td>
-      <td class="num">1</td>
-      <td>receiving yards</td>
-      <td class="num">85.0</td>
-      <td class="num">78.5</td>
-      <td>OVER</td>
-      <td class="num">67</td>
-      <td>
-        
-          <span class="tier tier-low">MISS</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>Josh Allen<div class="player-sub">BUF vs HOU</div></td>
-      <td class="num">1</td>
-      <td>passing yards</td>
-      <td class="num">237.2</td>
-      <td class="num">224.5</td>
-      <td>OVER</td>
-      <td class="num">334</td>
-      <td>
-        
-          <span class="tier tier-high">HIT</span>
-        
-      </td>
-    </tr>
-    
-    <tr>
-      <td>James Cook<div class="player-sub">BUF vs HOU</div></td>
-      <td class="num">1</td>
-      <td>rushing yards</td>
-      <td class="num">75.9</td>
-      <td class="num">--</td>
-      <td>--</td>
-      <td class="num">57</td>
-      <td>
-        
-          <span class="player-sub">no market line</span>
-        
-      </td>
-    </tr>
-    
-  </tbody>
-</table>
-</div>
+<!-- ============ TAB 2: CONFIDENCE & CONVICTION ============ -->
+<div class="game-panel hidden" data-game-panel="2">
+  <h2>Accuracy by Confidence Tier</h2>
+  <p class="lede small">Does higher stated confidence actually mean a higher real hit rate? Tier is the one in effect the moment the prediction was frozen, not recomputed after the fact.</p>
+  
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Tier at freeze</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>Career baseline (established veteran)</td>
+        <td class="num">51</td>
+        <td class="num">24</td>
+        <td class="num stat-neutral">47.1%</td>
+      </tr>
+      
+      <tr>
+        <td>Career baseline (limited history)</td>
+        <td class="num">11</td>
+        <td class="num">5</td>
+        <td class="num stat-neutral">45.5%</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
+  
+
+  <h2>Does Edge Actually Mean Anything?</h2>
+  <p class="lede small">Does a BIGGER edge (our projection disagreeing with the market line by more, as a % of the line) actually predict a HIGHER real hit rate? If this climbs going down the table, edge is real signal. If it stays flat or reverses, the market may already be efficient here.</p>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Model's edge over line</th><th class="num">Graded</th><th class="num">Hits</th><th class="num">Hit rate</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>0-5%</td>
+        <td class="num">19</td>
+        <td class="num">6</td>
+        <td class="num">31.6%</td>
+      </tr>
+      
+      <tr>
+        <td>5-15%</td>
+        <td class="num">28</td>
+        <td class="num">14</td>
+        <td class="num">50.0%</td>
+      </tr>
+      
+      <tr>
+        <td>15-25%</td>
+        <td class="num">8</td>
+        <td class="num">5</td>
+        <td class="num">62.5%</td>
+      </tr>
+      
+      <tr>
+        <td>25%+</td>
+        <td class="num">7</td>
+        <td class="num">4</td>
+        <td class="num">57.1%</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
 </div>
 
+<!-- ============ TAB 3: WEEK BY WEEK ============ -->
+<div class="game-panel hidden" data-game-panel="3">
+  <h2>Week by Week</h2>
+  <p class="lede small">Every frozen prediction, every week, win or loss. Pick a week below.</p>
+
+  
+  <div class="game-picker" id="week-picker">
+    
+    <button class="game-tab active" data-week-idx="0">
+      Week 1 &middot; 62/84 graded &middot; 46.8%
+    </button>
+    
+  </div>
+
+  
+  <div class="week-panel" data-week-panel="0">
+    <div class="table-wrap">
+    <div class="table-scroll">
+    <table class="stat-table">
+      <thead>
+        <tr><th>Player</th><th>Stat</th><th class="num">Projected</th><th class="num">Line</th><th>Call</th><th class="num">Actual</th><th>Result</th></tr>
+      </thead>
+      <tbody>
+        
+        <tr>
+          <td>Aaron Rodgers<div class="player-sub">PIT vs ATL</div></td>
+          <td>passing yards</td>
+          <td class="num">210.4</td>
+          <td class="num">212.5</td>
+          <td>UNDER</td>
+          <td class="num">221</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Alec Pierce<div class="player-sub">IND vs BAL</div></td>
+          <td>receiving yards</td>
+          <td class="num">48.8</td>
+          <td class="num">43.5</td>
+          <td>OVER</td>
+          <td class="num">61</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Alvin Kamara<div class="player-sub">NO vs DET</div></td>
+          <td>rushing yards</td>
+          <td class="num">55.7</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Amon-Ra St. Brown<div class="player-sub">DET vs NO</div></td>
+          <td>receiving yards</td>
+          <td class="num">85.0</td>
+          <td class="num">78.5</td>
+          <td>OVER</td>
+          <td class="num">67</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Ashton Jeanty<div class="player-sub">LV vs MIA</div></td>
+          <td>rushing yards</td>
+          <td class="num">57.4</td>
+          <td class="num">58.5</td>
+          <td>UNDER</td>
+          <td class="num">102</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Baker Mayfield<div class="player-sub">TB vs CIN</div></td>
+          <td>passing yards</td>
+          <td class="num">242.7</td>
+          <td class="num">230.5</td>
+          <td>OVER</td>
+          <td class="num">216</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Bijan Robinson<div class="player-sub">ATL vs PIT</div></td>
+          <td>rushing yards</td>
+          <td class="num">76.7</td>
+          <td class="num">78.5</td>
+          <td>UNDER</td>
+          <td class="num">83</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Bo Nix<div class="player-sub">DEN vs KC</div></td>
+          <td>passing yards</td>
+          <td class="num">225.8</td>
+          <td class="num">229.5</td>
+          <td>UNDER</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Breece Hall<div class="player-sub">NYJ vs TEN</div></td>
+          <td>rushing yards</td>
+          <td class="num">59.9</td>
+          <td class="num">63.5</td>
+          <td>UNDER</td>
+          <td class="num">102</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Bryce Young<div class="player-sub">CAR vs CHI</div></td>
+          <td>passing yards</td>
+          <td class="num">182.0</td>
+          <td class="num">209.5</td>
+          <td>UNDER</td>
+          <td class="num">361</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Bucky Irving<div class="player-sub">TB vs CIN</div></td>
+          <td>rushing yards</td>
+          <td class="num">63.8</td>
+          <td class="num">57.5</td>
+          <td>OVER</td>
+          <td class="num">45</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>C.J. Stroud<div class="player-sub">HOU vs BUF</div></td>
+          <td>passing yards</td>
+          <td class="num">236.8</td>
+          <td class="num">221.5</td>
+          <td>OVER</td>
+          <td class="num">274</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Caleb Williams<div class="player-sub">CHI vs CAR</div></td>
+          <td>passing yards</td>
+          <td class="num">225.0</td>
+          <td class="num">229.5</td>
+          <td>UNDER</td>
+          <td class="num">269</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Cam Ward<div class="player-sub">TEN vs NYJ</div></td>
+          <td>passing yards</td>
+          <td class="num">186.4</td>
+          <td class="num">203.5</td>
+          <td>UNDER</td>
+          <td class="num">140</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Chase Brown<div class="player-sub">CIN vs TB</div></td>
+          <td>rushing yards</td>
+          <td class="num">48.6</td>
+          <td class="num">56.5</td>
+          <td>UNDER</td>
+          <td class="num">56</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Chig Okonkwo<div class="player-sub">TEN vs NYJ</div></td>
+          <td>receiving yards</td>
+          <td class="num">31.3</td>
+          <td class="num">25.5</td>
+          <td>OVER</td>
+          <td class="num">16</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Chris Olave<div class="player-sub">NO vs DET</div></td>
+          <td>receiving yards</td>
+          <td class="num">67.2</td>
+          <td class="num">76.5</td>
+          <td>UNDER</td>
+          <td class="num">182</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Colston Loveland<div class="player-sub">CHI vs CAR</div></td>
+          <td>receiving yards</td>
+          <td class="num">50.3</td>
+          <td class="num">54.5</td>
+          <td>UNDER</td>
+          <td class="num">0</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Courtland Sutton<div class="player-sub">DEN vs KC</div></td>
+          <td>receiving yards</td>
+          <td class="num">58.0</td>
+          <td class="num">42.5</td>
+          <td>OVER</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>D'Andre Swift<div class="player-sub">CHI vs CAR</div></td>
+          <td>rushing yards</td>
+          <td class="num">62.7</td>
+          <td class="num">59.5</td>
+          <td>OVER</td>
+          <td class="num">124</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>DK Metcalf<div class="player-sub">PIT vs ATL</div></td>
+          <td>receiving yards</td>
+          <td class="num">63.8</td>
+          <td class="num">48.5</td>
+          <td>OVER</td>
+          <td class="num">40</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Dak Prescott<div class="player-sub">DAL vs NYG</div></td>
+          <td>passing yards</td>
+          <td class="num">266.3</td>
+          <td class="num">261.5</td>
+          <td>OVER</td>
+          <td class="num">175</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Daniel Jones<div class="player-sub">IND vs BAL</div></td>
+          <td>passing yards</td>
+          <td class="num">209.7</td>
+          <td class="num">232.5</td>
+          <td>UNDER</td>
+          <td class="num">166</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>De'Von Achane<div class="player-sub">MIA vs LV</div></td>
+          <td>rushing yards</td>
+          <td class="num">68.1</td>
+          <td class="num">69.5</td>
+          <td>UNDER</td>
+          <td class="num">36</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>DeVonta Smith<div class="player-sub">PHI vs WAS</div></td>
+          <td>receiving yards</td>
+          <td class="num">63.8</td>
+          <td class="num">67.5</td>
+          <td>UNDER</td>
+          <td class="num">53</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Deebo Samuel Sr.<div class="player-sub">WAS vs PHI</div></td>
+          <td>receiving yards</td>
+          <td class="num">49.4</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">48</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Derrick Henry<div class="player-sub">BAL vs IND</div></td>
+          <td>rushing yards</td>
+          <td class="num">93.5</td>
+          <td class="num">78.5</td>
+          <td>OVER</td>
+          <td class="num">144</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Emeka Egbuka<div class="player-sub">TB vs CIN</div></td>
+          <td>receiving yards</td>
+          <td class="num">55.2</td>
+          <td class="num">57.5</td>
+          <td>UNDER</td>
+          <td class="num">63</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Garrett Wilson<div class="player-sub">NYJ vs TEN</div></td>
+          <td>receiving yards</td>
+          <td class="num">62.0</td>
+          <td class="num">62.5</td>
+          <td>UNDER</td>
+          <td class="num">79</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Geno Smith<div class="player-sub">LV vs MIA</div></td>
+          <td>passing yards</td>
+          <td class="num">233.4</td>
+          <td class="num">209.5</td>
+          <td>OVER</td>
+          <td class="num">215</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>George Pickens<div class="player-sub">DAL vs NYG</div></td>
+          <td>receiving yards</td>
+          <td class="num">72.1</td>
+          <td class="num">66.5</td>
+          <td>OVER</td>
+          <td class="num">28</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Harold Fannin Jr.<div class="player-sub">CLE vs JAX</div></td>
+          <td>receiving yards</td>
+          <td class="num">45.7</td>
+          <td class="num">37.5</td>
+          <td>OVER</td>
+          <td class="num">21</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>J.J. McCarthy<div class="player-sub">MIN vs GB</div></td>
+          <td>passing yards</td>
+          <td class="num">163.2</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>J.K. Dobbins<div class="player-sub">DEN vs KC</div></td>
+          <td>rushing yards</td>
+          <td class="num">69.0</td>
+          <td class="num">50.5</td>
+          <td>OVER</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Ja'Marr Chase<div class="player-sub">CIN vs TB</div></td>
+          <td>receiving yards</td>
+          <td class="num">88.5</td>
+          <td class="num">86.5</td>
+          <td>OVER</td>
+          <td class="num">12</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jacoby Brissett<div class="player-sub">ARI vs LAC</div></td>
+          <td>passing yards</td>
+          <td class="num">192.0</td>
+          <td class="num">221.5</td>
+          <td>UNDER</td>
+          <td class="num">277</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jacory Croskey-Merritt<div class="player-sub">WAS vs PHI</div></td>
+          <td>rushing yards</td>
+          <td class="num">47.4</td>
+          <td class="num">40.5</td>
+          <td>OVER</td>
+          <td class="num">63</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jahmyr Gibbs<div class="player-sub">DET vs NO</div></td>
+          <td>rushing yards</td>
+          <td class="num">72.2</td>
+          <td class="num">84.5</td>
+          <td>UNDER</td>
+          <td class="num">156</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jalen Hurts<div class="player-sub">PHI vs WAS</div></td>
+          <td>passing yards</td>
+          <td class="num">206.1</td>
+          <td class="num">215.5</td>
+          <td>UNDER</td>
+          <td class="num">203</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>James Cook<div class="player-sub">BUF vs HOU</div></td>
+          <td>rushing yards</td>
+          <td class="num">75.9</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">57</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jared Goff<div class="player-sub">DET vs NO</div></td>
+          <td>passing yards</td>
+          <td class="num">271.2</td>
+          <td class="num">262.5</td>
+          <td>OVER</td>
+          <td class="num">206</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Javonte Williams<div class="player-sub">DAL vs NYG</div></td>
+          <td>rushing yards</td>
+          <td class="num">50.3</td>
+          <td class="num">74.5</td>
+          <td>UNDER</td>
+          <td class="num">41</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jaxson Dart<div class="player-sub">NYG vs DAL</div></td>
+          <td>passing yards</td>
+          <td class="num">162.3</td>
+          <td class="num">213.5</td>
+          <td>UNDER</td>
+          <td class="num">230</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jaylen Waddle<div class="player-sub">MIA vs LV</div></td>
+          <td>receiving yards</td>
+          <td class="num">58.7</td>
+          <td class="num">55.5</td>
+          <td>OVER</td>
+          <td class="num">0</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jaylen Warren<div class="player-sub">PIT vs ATL</div></td>
+          <td>rushing yards</td>
+          <td class="num">45.9</td>
+          <td class="num">43.5</td>
+          <td>OVER</td>
+          <td class="num">46</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Joe Burrow<div class="player-sub">CIN vs TB</div></td>
+          <td>passing yards</td>
+          <td class="num">258.2</td>
+          <td class="num">269.5</td>
+          <td>UNDER</td>
+          <td class="num">254</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jonathan Taylor<div class="player-sub">IND vs BAL</div></td>
+          <td>rushing yards</td>
+          <td class="num">91.6</td>
+          <td class="num">76.5</td>
+          <td>OVER</td>
+          <td class="num">98</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jordan Love<div class="player-sub">GB vs MIN</div></td>
+          <td>passing yards</td>
+          <td class="num">233.9</td>
+          <td class="num">242.5</td>
+          <td>UNDER</td>
+          <td class="num">387</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Jordan Mason<div class="player-sub">MIN vs GB</div></td>
+          <td>rushing yards</td>
+          <td class="num">39.8</td>
+          <td class="num">43.5</td>
+          <td>UNDER</td>
+          <td class="num">59</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Josh Allen<div class="player-sub">BUF vs HOU</div></td>
+          <td>passing yards</td>
+          <td class="num">237.2</td>
+          <td class="num">224.5</td>
+          <td>OVER</td>
+          <td class="num">334</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Josh Jacobs<div class="player-sub">GB vs MIN</div></td>
+          <td>rushing yards</td>
+          <td class="num">68.1</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Justin Fields<div class="player-sub">NYJ vs TEN</div></td>
+          <td>passing yards</td>
+          <td class="num">149.3</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Justin Herbert<div class="player-sub">LAC vs ARI</div></td>
+          <td>passing yards</td>
+          <td class="num">231.9</td>
+          <td class="num">237.5</td>
+          <td>UNDER</td>
+          <td class="num">209</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Justin Jefferson<div class="player-sub">MIN vs GB</div></td>
+          <td>receiving yards</td>
+          <td class="num">82.5</td>
+          <td class="num">73.5</td>
+          <td>OVER</td>
+          <td class="num">92</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Kareem Hunt<div class="player-sub">KC vs DEN</div></td>
+          <td>rushing yards</td>
+          <td class="num">38.6</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Khalil Shakir<div class="player-sub">BUF vs HOU</div></td>
+          <td>receiving yards</td>
+          <td class="num">47.4</td>
+          <td class="num">36.5</td>
+          <td>OVER</td>
+          <td class="num">50</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Kimani Vidal<div class="player-sub">LAC vs ARI</div></td>
+          <td>rushing yards</td>
+          <td class="num">36.0</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Kyle Pitts<div class="player-sub">ATL vs PIT</div></td>
+          <td>receiving yards</td>
+          <td class="num">43.1</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Ladd McConkey<div class="player-sub">LAC vs ARI</div></td>
+          <td>receiving yards</td>
+          <td class="num">63.7</td>
+          <td class="num">57.5</td>
+          <td>OVER</td>
+          <td class="num">82</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Lamar Jackson<div class="player-sub">BAL vs IND</div></td>
+          <td>passing yards</td>
+          <td class="num">225.0</td>
+          <td class="num">219.5</td>
+          <td>OVER</td>
+          <td class="num">324</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Marcus Mariota<div class="player-sub">WAS vs PHI</div></td>
+          <td>passing yards</td>
+          <td class="num">130.8</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Michael Carter<div class="player-sub">ARI vs LAC</div></td>
+          <td>rushing yards</td>
+          <td class="num">21.0</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Michael Penix Jr.<div class="player-sub">ATL vs PIT</div></td>
+          <td>passing yards</td>
+          <td class="num">196.9</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Nico Collins<div class="player-sub">HOU vs BUF</div></td>
+          <td>receiving yards</td>
+          <td class="num">81.0</td>
+          <td class="num">69.5</td>
+          <td>OVER</td>
+          <td class="num">75</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Parker Washington<div class="player-sub">JAX vs CLE</div></td>
+          <td>receiving yards</td>
+          <td class="num">37.8</td>
+          <td class="num">53.5</td>
+          <td>UNDER</td>
+          <td class="num">83</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Patrick Mahomes<div class="player-sub">KC vs DEN</div></td>
+          <td>passing yards</td>
+          <td class="num">253.4</td>
+          <td class="num">224.5</td>
+          <td>OVER</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Quinshon Judkins<div class="player-sub">CLE vs JAX</div></td>
+          <td>rushing yards</td>
+          <td class="num">59.1</td>
+          <td class="num">57.5</td>
+          <td>OVER</td>
+          <td class="num">33</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Rico Dowdle<div class="player-sub">CAR vs CHI</div></td>
+          <td>rushing yards</td>
+          <td class="num">49.7</td>
+          <td class="num">46.5</td>
+          <td>OVER</td>
+          <td class="num">15</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Romeo Doubs<div class="player-sub">GB vs MIN</div></td>
+          <td>receiving yards</td>
+          <td class="num">37.9</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Saquon Barkley<div class="player-sub">PHI vs WAS</div></td>
+          <td>rushing yards</td>
+          <td class="num">92.4</td>
+          <td class="num">76.5</td>
+          <td>OVER</td>
+          <td class="num">83</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Shedeur Sanders<div class="player-sub">CLE vs JAX</div></td>
+          <td>passing yards</td>
+          <td class="num">175.0</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tetairoa McMillan<div class="player-sub">CAR vs CHI</div></td>
+          <td>receiving yards</td>
+          <td class="num">60.8</td>
+          <td class="num">60.5</td>
+          <td>OVER</td>
+          <td class="num">75</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tony Pollard<div class="player-sub">TEN vs NYJ</div></td>
+          <td>rushing yards</td>
+          <td class="num">63.2</td>
+          <td class="num">50.5</td>
+          <td>OVER</td>
+          <td class="num">35</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Travis Etienne<div class="player-sub">JAX vs CLE</div></td>
+          <td>rushing yards</td>
+          <td class="num">54.8</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">46</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Travis Kelce<div class="player-sub">KC vs DEN</div></td>
+          <td>receiving yards</td>
+          <td class="num">58.0</td>
+          <td class="num">41.5</td>
+          <td>OVER</td>
+          <td class="num">--</td>
+          <td>
+            <span class="player-sub">pending</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tre Tucker<div class="player-sub">LV vs MIA</div></td>
+          <td>receiving yards</td>
+          <td class="num">33.3</td>
+          <td class="num">45.5</td>
+          <td>UNDER</td>
+          <td class="num">27</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Trevor Lawrence<div class="player-sub">JAX vs CLE</div></td>
+          <td>passing yards</td>
+          <td class="num">233.5</td>
+          <td class="num">236.5</td>
+          <td>UNDER</td>
+          <td class="num">245</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Trey McBride<div class="player-sub">ARI vs LAC</div></td>
+          <td>receiving yards</td>
+          <td class="num">64.2</td>
+          <td class="num">56.5</td>
+          <td>OVER</td>
+          <td class="num">95</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tua Tagovailoa<div class="player-sub">MIA vs LV</div></td>
+          <td>passing yards</td>
+          <td class="num">240.7</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">0</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tyler Shough<div class="player-sub">NO vs DET</div></td>
+          <td>passing yards</td>
+          <td class="num">216.7</td>
+          <td class="num">246.5</td>
+          <td>UNDER</td>
+          <td class="num">410</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Tyrone Tracy Jr.<div class="player-sub">NYG vs DAL</div></td>
+          <td>rushing yards</td>
+          <td class="num">49.3</td>
+          <td class="num">--</td>
+          <td>--</td>
+          <td class="num">14</td>
+          <td>
+            <span class="player-sub">no market line</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Wan'Dale Robinson<div class="player-sub">NYG vs DAL</div></td>
+          <td>receiving yards</td>
+          <td class="num">46.6</td>
+          <td class="num">41.5</td>
+          <td>OVER</td>
+          <td class="num">38</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Woody Marks<div class="player-sub">HOU vs BUF</div></td>
+          <td>rushing yards</td>
+          <td class="num">46.2</td>
+          <td class="num">27.5</td>
+          <td>OVER</td>
+          <td class="num">42</td>
+          <td>
+            <span class="tier tier-high">HIT</span>
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td>Zay Flowers<div class="player-sub">BAL vs IND</div></td>
+          <td>receiving yards</td>
+          <td class="num">63.2</td>
+          <td class="num">66.5</td>
+          <td>UNDER</td>
+          <td class="num">150</td>
+          <td>
+            <span class="tier tier-low">MISS</span>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    <div class="scroll-hint">84 predictions this week</div>
+    </div>
+  </div>
+  
+  
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+  var wtabs = document.querySelectorAll('#week-picker .game-tab');
+  var wpanels = document.querySelectorAll('.week-panel[data-week-panel]');
+  wtabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-week-idx');
+      wtabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      wpanels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-week-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
 
   </main>
 
@@ -426,7 +1312,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-14 19:10 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-14 19:26 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
