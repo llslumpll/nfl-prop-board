@@ -23,6 +23,7 @@ import kalshi_client  # noqa: E402
 import prizepicks_client  # noqa: E402
 import best5  # noqa: E402
 import predictions  # noqa: E402
+import calibrate  # noqa: E402
 import grade  # noqa: E402
 import pipeline_health  # noqa: E402
 import svgchart  # noqa: E402
@@ -223,16 +224,11 @@ def build():
     for g in matchups_data["games"]:
         for p in g["players"]:
             market_line = pp_props.get(p["player"], {}).get(p["stat_col"])
-            tier_info = dataio.provisional_tier(
-                p["projection"]["n_games_2026"],
-                has_career_history=(p["projection"]["baseline_source"] == "career (2023-2025)"),
-                n_career_games=p["projection"].get("n_career_games", 0),
-            )
             wrote = predictions.freeze_prediction(
                 player=p["player"], team=p["team"], opponent=p["opponent"],
                 week=g["week"],
                 stat=p["stat_col"], projected=p["projection"]["projected"],
-                tier_label=tier_info["label"],
+                tier_label=p["projection"]["tier"]["label"],
                 market_line=market_line,
                 market_source="prizepicks" if market_line is not None else None,
             )
@@ -254,6 +250,23 @@ def build():
     print(f"Grading: {grade_result['newly_graded']} newly graded, "
           f"{grade_result['total_pending']} still pending a final score.")
     accuracy = grade.accuracy_summary()
+
+    # --- Recalibrate from graded history for the NEXT build to use.
+    # Same lag-by-one-cycle pattern as the MLB site's run_daily.py: THIS
+    # build's projections already used whatever calibration.json existed
+    # from the previous build (project_stat() reads it at call time,
+    # earlier in this same build, before fresh grading happened) --
+    # recalibrating now, after fresh grading, produces the corrected
+    # file the NEXT build will read. Gated by MIN_SAMPLE the same way
+    # everywhere else on this site is; "insufficient data" is a real,
+    # honest, expected status early in a season, not a bug. ---
+    calibration_result = calibrate.run()
+    active_bias_tiers = sum(
+        1 for stat_cal in calibration_result["bias"].values()
+        for tier_cal in stat_cal.values() if tier_cal.get("status") == "active"
+    )
+    print(f"Calibration: {active_bias_tiers} stat/tier combination(s) have enough graded "
+          f"history (MIN_SAMPLE={dataio.MIN_SAMPLE}) to apply a real bias correction.")
 
     # --- Best 5: real edge between our projections and real market lines ---
     passing_rows = dataio.passing_leaders()
@@ -297,14 +310,9 @@ def build():
         if not ng:
             continue
         market_line = pp_props.get(r["player"], {}).get("receptions")
-        tier_info = dataio.provisional_tier(
-            ng["projection"]["n_games_2026"],
-            has_career_history=(ng["projection"]["baseline_source"] == "career (2023-2025)"),
-            n_career_games=ng["projection"].get("n_career_games", 0),
-        )
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
-            stat="receptions", projected=ng["projection"]["projected"], tier_label=tier_info["label"],
+            stat="receptions", projected=ng["projection"]["projected"], tier_label=ng["projection"]["tier"]["label"],
             market_line=market_line, market_source="prizepicks" if market_line is not None else None,
         )
         if wrote:
@@ -414,6 +422,7 @@ def build():
                 "trend": grade.accuracy_trend_by_stat(),
                 "health_log": pipeline_health.load_health(),
                 "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
+                "calibration": calibration_result,
             },
         ),
     }
