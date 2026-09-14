@@ -57,6 +57,37 @@
     </tbody>
   </table>
   </div>
+
+  <h2>Model Calibration</h2>
+  <p class="lede small">
+    This isn't machine learning &mdash; it's a straightforward check: does
+    each confidence tier's real bias (actual minus projected) get fed
+    back into future projections? Only after MIN_SAMPLE={{ calibration.min_sample }}
+    real graded entries for that exact stat+tier, and even then only by
+    {{ (calibration.dampen * 100)|int }}% of the measured gap (never a
+    full overcorrection off one hot or cold stretch).
+  </p>
+  {% for stat, tiers in calibration.bias.items() %}
+    {% if tiers %}
+    <h3 class="division-head">{{ stat.replace('_', ' ')|title }}</h3>
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Tier</th><th class="num">Sample</th><th class="num">Correction</th><th>Status</th></tr></thead>
+      <tbody>
+        {% for tier, d in tiers.items() %}
+        <tr>
+          <td>{{ tier }}</td>
+          <td class="num">{{ d.sample_size }}/{{ calibration.min_sample }}</td>
+          <td class="num">{{ ('+' if d.bias > 0 else '') ~ d.bias if d.status == 'active' else '--' }}</td>
+          <td>{% if d.status == 'active' %}<span class="stat-good">active</span>{% else %}<span class="player-sub">insufficient data</span>{% endif %}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% endif %}
+  {% endfor %}
+  <p class="lede small">Touchdown probability shrink: {{ calibration.touchdown_prob_shrink.shrink_factor }}x ({{ calibration.touchdown_prob_shrink.sample_size }}/{{ calibration.min_sample }} graded, {{ calibration.touchdown_prob_shrink.status }}).</p>
 </div>
 
 <!-- ============ TAB 1: ACCURACY TRENDS ============ -->
