@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1789414374">
+  <link rel="stylesheet" href="static/style.css?v=1789414732">
 </head>
 <body>
   <header class="site-head">
@@ -49,10 +49,10 @@
 </p>
 
 <div class="stat-strip">
-  <div class="stat-block"><div class="num">84</div><div class="label">predictions frozen total</div></div>
+  <div class="stat-block"><div class="num">164</div><div class="label">predictions frozen total</div></div>
   <div class="stat-block"><div class="num">62</div><div class="label">graded with a real market line</div></div>
   <div class="stat-block"><div class="num">46.8%</div><div class="label">overall hit rate</div></div>
-  <div class="stat-block"><div class="num">6</div><div class="label">still pending a final score</div></div>
+  <div class="stat-block"><div class="num">86</div><div class="label">still pending a final score</div></div>
 </div>
 
 <div class="game-picker">
@@ -90,6 +90,98 @@
     </tbody>
   </table>
   </div>
+
+  <h2>Model Calibration</h2>
+  <p class="lede small">
+    This isn't machine learning &mdash; it's a straightforward check: does
+    each confidence tier's real bias (actual minus projected) get fed
+    back into future projections? Only after MIN_SAMPLE=30
+    real graded entries for that exact stat+tier, and even then only by
+    30% of the measured gap (never a
+    full overcorrection off one hot or cold stretch).
+  </p>
+  
+    
+    <h3 class="division-head">Passing Yards</h3>
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Tier</th><th class="num">Sample</th><th class="num">Correction</th><th>Status</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Career baseline (established veteran)</td>
+          <td class="num">17/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+        <tr>
+          <td>Career baseline (limited history)</td>
+          <td class="num">3/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    
+  
+    
+    <h3 class="division-head">Rushing Yards</h3>
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Tier</th><th class="num">Sample</th><th class="num">Correction</th><th>Status</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Career baseline (established veteran)</td>
+          <td class="num">15/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+        <tr>
+          <td>Career baseline (limited history)</td>
+          <td class="num">4/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    
+  
+    
+    <h3 class="division-head">Receiving Yards</h3>
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Tier</th><th class="num">Sample</th><th class="num">Correction</th><th>Status</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          <td>Career baseline (limited history)</td>
+          <td class="num">4/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+        <tr>
+          <td>Career baseline (established veteran)</td>
+          <td class="num">19/30</td>
+          <td class="num">--</td>
+          <td><span class="player-sub">insufficient data</span></td>
+        </tr>
+        
+      </tbody>
+    </table>
+    </div>
+    
+  
+    
+  
+  <p class="lede small">Touchdown probability shrink: 1.0x (0/30 graded, insufficient data).</p>
 </div>
 
 <!-- ============ TAB 1: ACCURACY TRENDS ============ -->
@@ -2386,7 +2478,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-14 19:32 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-14 19:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
