@@ -52,7 +52,17 @@ def grade_all() -> dict:
         player_rows = stats.filter(
             (pl.col("player_display_name") == p["player"]) & (pl.col("week") == p["week"])
         )
-        if player_rows.height == 0:
+        if p["stat"] == "any_td":
+            # Touchdowns aren't a single load_stats() column -- real
+            # actual is the sum of passing/rushing/receiving TDs for
+            # that player/week, matching how the projection itself
+            # (_project_total_td in dataio.py) combines them.
+            if player_rows.height == 0:
+                actual = 0
+            else:
+                row0 = player_rows.row(0, named=True)
+                actual = (row0.get("passing_tds") or 0) + (row0.get("rushing_tds") or 0) + (row0.get("receiving_tds") or 0)
+        elif player_rows.height == 0:
             # Game is final but this player has no stat row for that week
             # -- most likely inactive/didn't play. Grade as final with a
             # real actual of 0 rather than leaving it pending forever.
