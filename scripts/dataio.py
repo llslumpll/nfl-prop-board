@@ -667,6 +667,64 @@ def weeks_available() -> list[int]:
     return sorted(load_stats()["week"].unique().to_list())
 
 
+def _join_list(items: list[str]) -> str:
+    if not items:
+        return ""
+    if len(items) == 1:
+        return items[0]
+    if len(items) == 2:
+        return f"{items[0]} and {items[1]}"
+    return ", ".join(items[:-1]) + f", and {items[-1]}"
+
+
+def reason_text(projection: dict, stat_label: str) -> str:
+    """
+    Real narrative sentence built directly from the same factors already
+    computed for this projection -- matchup, pace, wind, and Vegas
+    environment. No factor is mentioned unless its real value actually
+    moved the projection meaningfully; a neutral (near-1.0) factor is
+    silently omitted rather than padded in as filler.
+    """
+    positives, negatives = [], []
+
+    mf = projection.get("matchup_factor") or {}
+    if mf.get("factor", 1.0) > 1.05:
+        positives.append("a favorable matchup (this opponent allows more than average)")
+    elif mf.get("factor", 1.0) < 0.95:
+        negatives.append("a tough matchup (this opponent allows less than average)")
+
+    pf = projection.get("pace_factor") or {}
+    if pf.get("factor", 1.0) > 1.05:
+        positives.append("a fast-paced offense")
+    elif pf.get("factor", 1.0) < 0.95:
+        negatives.append("a slower-paced offense")
+
+    wf = projection.get("wind_factor")
+    if wf and wf.get("wind_mph") is not None and wf["wind_mph"] >= 15:
+        negatives.append(f"{wf['wind_mph']} mph wind at kickoff")
+
+    ef = projection.get("environment_factor") or {}
+    if ef.get("factor", 1.0) > 1.05:
+        positives.append("a high Vegas-implied team total")
+    elif ef.get("factor", 1.0) < 0.95:
+        negatives.append("a low Vegas-implied team total")
+
+    tier_label = (projection.get("tier") or {}).get("label", "")
+    if "Established" in tier_label or "Moderate" in tier_label:
+        base = f"A real, growing {stat_label} sample this season"
+    elif "career" in tier_label.lower():
+        base = f"A real career {stat_label} baseline"
+    else:
+        base = f"An early, provisional {stat_label} projection"
+
+    sentence = base
+    if positives:
+        sentence += f", boosted by {_join_list(positives)}"
+    if negatives:
+        sentence += ("; " if positives else ", ") + f"tempered by {_join_list(negatives)}"
+    return sentence + "."
+
+
 def provisional_tier(n_games: int, has_career_history: bool = False, n_career_games: int = 0) -> dict:
     """
     Honest, non-fabricated confidence tier -- now based on BOTH this
