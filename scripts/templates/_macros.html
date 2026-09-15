@@ -1,0 +1,45 @@
+{% macro factor_chip(label, factor_dict) %}
+  {% if factor_dict %}
+  <div class="factor">
+    <div class="fval stat-{{ 'good' if factor_dict.factor > 1.02 else 'bad' if factor_dict.factor < 0.98 else 'neutral' }}">{{ factor_dict.factor }}&times;</div>
+    <div class="flabel">{{ label }}</div>
+  </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro why_row(idx, next_game, colspan) %}
+<tr class="why-detail hidden" data-why-panel="why-{{ idx }}">
+  <td colspan="{{ colspan }}">
+    {% if next_game %}
+    <p class="why-reason">{{ next_game.reason }}</p>
+    {% if next_game.projection %}
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">{{ next_game.projection.baseline }}</div>
+        <div class="flabel">Baseline{{ ' (career)' if next_game.projection.baseline_source == 'career (2023-2025)' else '' }}</div>
+      </div>
+      {% if next_game.projection.observed_2026 is not none %}
+      <div class="factor">
+        <div class="fval">{{ next_game.projection.observed_2026 }}</div>
+        <div class="flabel">2026 avg ({{ next_game.projection.n_games_2026 }}gm)</div>
+      </div>
+      {% endif %}
+      {{ factor_chip("Matchup", next_game.projection.matchup_factor) }}
+      {{ factor_chip("Pace", next_game.projection.pace_factor) }}
+      {{ factor_chip("Wind", next_game.projection.wind_factor) }}
+      {{ factor_chip("Environment", next_game.projection.environment_factor) }}
+    </div>
+    {% if next_game.projection.tier %}
+    <span class="tier {{ next_game.projection.tier.css }}">{{ next_game.projection.tier.label }}</span>
+    {% endif %}
+    {% else %}
+    <div class="factor-grid">
+      <div class="factor"><div class="fval">{{ next_game.breakdown }}</div><div class="flabel">TD breakdown</div></div>
+    </div>
+    {% endif %}
+    {% else %}
+    <p class="why-reason">No upcoming game to project -- season over for this team, or no schedule data yet.</p>
+    {% endif %}
+  </td>
+</tr>
+{% endmacro %}
