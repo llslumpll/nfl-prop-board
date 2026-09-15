@@ -29,6 +29,17 @@
     {% block content %}{% endblock %}
   </main>
 
+  <script>
+    function toggleWhy(id, btn) {
+      var panel = document.querySelector('[data-why-panel="' + id + '"]');
+      if (!panel) return;
+      var isHidden = panel.classList.contains('hidden');
+      panel.classList.toggle('hidden', !isHidden);
+      btn.classList.toggle('open', isHidden);
+      btn.textContent = isHidden ? 'hide' : 'why';
+    }
+  </script>
+
   <footer class="site-foot">
     <div class="foot-row">
       <span>DATA: nflreadpy (nflverse) &middot; KALSHI public markets. All unofficial.</span>
