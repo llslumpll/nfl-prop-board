@@ -289,6 +289,25 @@ def build():
                 r["next_game"]["projection"]["projected"] * env_factor["factor"], 1
             )
 
+    # --- Real "why" reasoning for EVERY row on every stat page, not just
+    # Best 5 -- same reason_text() used there, applied consistently so
+    # every prop on the site follows the same explain-yourself pattern. ---
+    STAT_LABELS = {
+        "passing_yards": "passing yards", "rushing_yards": "rushing yards",
+        "receiving_yards": "receiving yards", "receptions": "receptions",
+    }
+    for rows, stat_col in (
+        (passing_rows, "passing_yards"), (receiving_rows, "receiving_yards"),
+        (receptions_rows, "receptions"), (rushing_rows, "rushing_yards"),
+    ):
+        for r in rows:
+            if r.get("next_game"):
+                r["next_game"]["reason"] = dataio.reason_text(r["next_game"]["projection"], STAT_LABELS[stat_col])
+    for r in touchdown_rows:
+        ng = r.get("next_game")
+        if ng and ng.get("projected_total"):
+            r["next_game"]["reason"] = f"Projected {ng['projected_total']} total TDs ({ng.get('breakdown', '—')}), summed from real per-stat career and season-to-date baselines."
+
     best5_data = {
         "passing": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
         "receiving": best5.best5_yardage(receiving_rows, pp_props, "receiving_yards", "yds"),
