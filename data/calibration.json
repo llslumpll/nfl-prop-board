@@ -1,12 +1,12 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-09-15 11:53 UTC",
+  "generated_at": "2026-09-15 14:09 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
         "bias": 0.0,
-        "sample_size": 17,
+        "sample_size": 19,
         "status": "insufficient data"
       },
       "Career baseline (limited history)": {
@@ -18,7 +18,7 @@
     "rushing_yards": {
       "Career baseline (established veteran)": {
         "bias": 0.0,
-        "sample_size": 15,
+        "sample_size": 16,
         "status": "insufficient data"
       },
       "Career baseline (limited history)": {
@@ -35,7 +35,7 @@
       },
       "Career baseline (established veteran)": {
         "bias": 0.0,
-        "sample_size": 19,
+        "sample_size": 21,
         "status": "insufficient data"
       }
     },
