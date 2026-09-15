@@ -1090,6 +1090,39 @@ def correlated_pairs_for_receiving(limit: int = 40) -> dict:
     return qb_by_team
 
 
+_depth_chart_cache = None
+
+
+def load_depth_charts():
+    """Real, current depth charts -- updates multiple times per week per
+    team. Filtered to the single most recent snapshot only (the raw data
+    has ~178 historical timestamps; using anything but the latest would
+    mean validating against a stale depth chart, defeating the point)."""
+    global _depth_chart_cache
+    if _depth_chart_cache is None:
+        import nflreadpy as nfl
+        dc = nfl.load_depth_charts([2026])
+        latest_dt = dc["dt"].max()
+        _depth_chart_cache = dc.filter(pl.col("dt") == latest_dt)
+    return _depth_chart_cache
+
+
+def current_starter(team: str, pos_abb: str) -> str | None:
+    """Real, current #1 on the depth chart at this position for this
+    team -- reflects an injury/benching THIS WEEK, unlike a season-long
+    stat leaderboard, which can stay stuck on a player who's no longer
+    actually starting. Returns None if depth chart data doesn't cover
+    this team/position (fails soft, never blocks the existing
+    stat-leader fallback)."""
+    dc = load_depth_charts()
+    rows = dc.filter(
+        (pl.col("team") == team) & (pl.col("pos_abb") == pos_abb) & (pl.col("pos_rank") == 1)
+    )
+    if rows.height == 0:
+        return None
+    return rows.row(0, named=True)["player_name"]
+
+
 def matchups_for_next_date(limit_games: int = 20) -> dict:
     """
     Real games for the single nearest date with any unplayed game (not a
@@ -1124,12 +1157,39 @@ def matchups_for_next_date(limit_games: int = 20) -> dict:
         wr = team_rows.filter(pl.col("position").is_in(["WR", "TE"])).sort(
             "receiving_yards", descending=True
         )
-        if qb.height:
-            picks.append(("passing_yards", qb.row(0, named=True), True))
-        if rb.height:
-            picks.append(("rushing_yards", rb.row(0, named=True), True))
-        if wr.height:
-            picks.append(("receiving_yards", wr.row(0, named=True), True))
+
+        def pick_with_depth_chart_check(stat_col, pos_abb, ranked_rows):
+            """Cross-checks the season stat leader against the REAL,
+            current depth chart starter. A season-long stat leaderboard
+            can stay stuck on a player who's no longer actually starting
+            (injury, benching) -- the depth chart reflects this week's
+            actual reality, not an accumulated total. Falls back to the
+            stat leader if depth chart data doesn't cover this team/
+            position, or if it agrees with the stat leader anyway."""
+            real_starter = current_starter(team, pos_abb)
+            if ranked_rows.height:
+                stat_leader = ranked_rows.row(0, named=True)
+                if real_starter and real_starter != stat_leader["player_display_name"]:
+                    swap = ranked_rows.filter(pl.col("player_display_name") == real_starter)
+                    if swap.height:
+                        return (stat_col, swap.row(0, named=True), True)
+                    # Real current starter has zero 2026 stat rows yet
+                    # (a genuine, fresh starter change) -- still give
+                    # project_stat a real name to fall back to career
+                    # history with, rather than silently keeping the
+                    # no-longer-starting player.
+                    return (stat_col, {"player_display_name": real_starter}, False)
+                return (stat_col, stat_leader, True)
+            if real_starter:
+                return (stat_col, {"player_display_name": real_starter}, False)
+            return None
+
+        for stat_col, pos_abb, rows in (
+            ("passing_yards", "QB", qb), ("rushing_yards", "RB", rb), ("receiving_yards", "WR", wr),
+        ):
+            pick = pick_with_depth_chart_check(stat_col, pos_abb, rows)
+            if pick:
+                picks.append(pick)
         if picks:
             return picks
 
