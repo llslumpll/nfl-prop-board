@@ -169,13 +169,13 @@
       "event_title": "Detroit vs Buffalo: Touchdowns",
       "market_title": "Keon Coleman: 1+",
       "ticker": "KXNFLTD-26SEP17DETBUF-BUFKCOLEMAN0-1",
-      "yes_bid": 0.11,
+      "yes_bid": 0.13,
       "yes_ask": 0.15,
-      "yes_bid_cents": 11,
+      "yes_bid_cents": 13,
       "yes_ask_cents": 15,
-      "price": 0.13,
-      "decimal_odds": 7.69,
-      "implied_pct": 13.0,
+      "price": 0.14,
+      "decimal_odds": 7.14,
+      "implied_pct": 14.0,
       "volume": 0,
       "close_time": "2026-09-20T00:15:00Z",
       "series_ticker": "KXNFLTD"
@@ -678,21 +678,6 @@
       "series_ticker": "KXNFLSPREAD"
     },
     {
-      "event_title": "Cleveland vs Tampa Bay: Spread",
-      "market_title": "Tampa Bay wins by over 1.5 points",
-      "ticker": "KXNFLSPREAD-26SEP20CLETB-TB2",
-      "yes_bid": 0.75,
-      "yes_ask": 0.78,
-      "yes_bid_cents": 75,
-      "yes_ask_cents": 78,
-      "price": 0.77,
-      "decimal_odds": 1.3,
-      "implied_pct": 77.0,
-      "volume": 0,
-      "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLSPREAD"
-    },
-    {
       "event_title": "New Orleans vs Baltimore: Spread",
       "market_title": "Baltimore wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26SEP20NOBAL-BAL2",
@@ -721,6 +706,21 @@
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
       "series_ticker": "KXNFLGAME"
+    },
+    {
+      "event_title": "Cleveland vs Tampa Bay: Spread",
+      "market_title": "Tampa Bay wins by over 1.5 points",
+      "ticker": "KXNFLSPREAD-26SEP20CLETB-TB2",
+      "yes_bid": 0.75,
+      "yes_ask": 0.77,
+      "yes_bid_cents": 75,
+      "yes_ask_cents": 77,
+      "price": 0.76,
+      "decimal_odds": 1.32,
+      "implied_pct": 76.0,
+      "volume": 0,
+      "close_time": "2026-09-22T17:00:00Z",
+      "series_ticker": "KXNFLSPREAD"
     },
     {
       "event_title": "Miami vs San Francisco: Spread",
@@ -888,6 +888,21 @@
       "series_ticker": "KXNFLSPREAD"
     },
     {
+      "event_title": "Indianapolis vs Kansas City: Spread",
+      "market_title": "Kansas City wins by over 1.5 points",
+      "ticker": "KXNFLSPREAD-26SEP20INDKC-KC2",
+      "yes_bid": 0.7,
+      "yes_ask": 0.72,
+      "yes_bid_cents": 70,
+      "yes_ask_cents": 72,
+      "price": 0.71,
+      "decimal_odds": 1.41,
+      "implied_pct": 71.0,
+      "volume": 0,
+      "close_time": "2026-09-23T00:20:00Z",
+      "series_ticker": "KXNFLSPREAD"
+    },
+    {
       "event_title": "Philadelphia vs Tennessee: Spread",
       "market_title": "Philadelphia wins by over 2.5 points",
       "ticker": "KXNFLSPREAD-26SEP20PHITEN-PHI3",
@@ -978,6 +993,36 @@
       "series_ticker": "KXNFLGAME"
     },
     {
+      "event_title": "New York J vs Detroit",
+      "market_title": "Detroit",
+      "ticker": "KXNFLGAME-26SEP27NYJDET-DET",
+      "yes_bid": 0.68,
+      "yes_ask": 0.69,
+      "yes_bid_cents": 68,
+      "yes_ask_cents": 69,
+      "price": 0.69,
+      "decimal_odds": 1.45,
+      "implied_pct": 69.0,
+      "volume": 0,
+      "close_time": "2026-09-29T17:00:00Z",
+      "series_ticker": "KXNFLGAME"
+    },
+    {
+      "event_title": "Indianapolis vs Kansas City: Spread",
+      "market_title": "Kansas City wins by over 2.5 points",
+      "ticker": "KXNFLSPREAD-26SEP20INDKC-KC3",
+      "yes_bid": 0.68,
+      "yes_ask": 0.7,
+      "yes_bid_cents": 68,
+      "yes_ask_cents": 70,
+      "price": 0.69,
+      "decimal_odds": 1.45,
+      "implied_pct": 69.0,
+      "volume": 0,
+      "close_time": "2026-09-23T00:20:00Z",
+      "series_ticker": "KXNFLSPREAD"
+    },
+    {
       "event_title": "DET Lions vs BUF Bills",
       "market_title": "Buffalo",
       "ticker": "KXNFLGAME-26SEP17DETBUF-BUF",
@@ -990,21 +1035,6 @@
       "implied_pct": 68.0,
       "volume": 0,
       "close_time": "2026-09-20T00:15:00Z",
-      "series_ticker": "KXNFLGAME"
-    },
-    {
-      "event_title": "New York J vs Detroit",
-      "market_title": "Detroit",
-      "ticker": "KXNFLGAME-26SEP27NYJDET-DET",
-      "yes_bid": 0.67,
-      "yes_ask": 0.68,
-      "yes_bid_cents": 67,
-      "yes_ask_cents": 68,
-      "price": 0.68,
-      "decimal_odds": 1.47,
-      "implied_pct": 68.0,
-      "volume": 0,
-      "close_time": "2026-09-29T17:00:00Z",
       "series_ticker": "KXNFLGAME"
     },
     {
@@ -1083,6 +1113,21 @@
       "series_ticker": "KXNFLGAME"
     },
     {
+      "event_title": "Kansas City vs Miami",
+      "market_title": "Kansas City",
+      "ticker": "KXNFLGAME-26SEP27KCMIA-KC",
+      "yes_bid": 0.65,
+      "yes_ask": 0.66,
+      "yes_bid_cents": 65,
+      "yes_ask_cents": 66,
+      "price": 0.66,
+      "decimal_odds": 1.52,
+      "implied_pct": 66.0,
+      "volume": 0,
+      "close_time": "2026-09-29T17:00:00Z",
+      "series_ticker": "KXNFLGAME"
+    },
+    {
       "event_title": "Minnesota vs Chicago: Spread",
       "market_title": "Chicago wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26SEP20MINCHI-CHI2",
@@ -1141,51 +1186,6 @@
       "volume": 0,
       "close_time": "2026-09-22T17:00:00Z",
       "series_ticker": "KXNFLSPREAD"
-    },
-    {
-      "event_title": "Detroit vs Buffalo: Spread",
-      "market_title": "Buffalo wins by over 1.5 points",
-      "ticker": "KXNFLSPREAD-26SEP17DETBUF-BUF2",
-      "yes_bid": 0.63,
-      "yes_ask": 0.64,
-      "yes_bid_cents": 63,
-      "yes_ask_cents": 64,
-      "price": 0.64,
-      "decimal_odds": 1.56,
-      "implied_pct": 64.0,
-      "volume": 0,
-      "close_time": "2026-09-20T00:15:00Z",
-      "series_ticker": "KXNFLSPREAD"
-    },
-    {
-      "event_title": "Pittsburgh vs New England: Spread",
-      "market_title": "New England wins by over 2.5 points",
-      "ticker": "KXNFLSPREAD-26SEP20PITNE-NE3",
-      "yes_bid": 0.63,
-      "yes_ask": 0.64,
-      "yes_bid_cents": 63,
-      "yes_ask_cents": 64,
-      "price": 0.64,
-      "decimal_odds": 1.56,
-      "implied_pct": 64.0,
-      "volume": 0,
-      "close_time": "2026-09-22T17:00:00Z",
-      "series_ticker": "KXNFLSPREAD"
-    },
-    {
-      "event_title": "Miami vs San Francisco: Spread",
-      "market_title": "San Francisco wins by over 7.5 points",
-      "ticker": "KXNFLSPREAD-26SEP20MIASF-SF8",
-      "yes_bid": 0.63,
-      "yes_ask": 0.64,
-      "yes_bid_cents": 63,
-      "yes_ask_cents": 64,
-      "price": 0.64,
-      "decimal_odds": 1.56,
-      "implied_pct": 64.0,
-      "volume": 0,
-      "close_time": "2026-09-22T20:25:00Z",
-      "series_ticker": "KXNFLSPREAD"
     }
   ],
   "error": null,
@@ -1194,12 +1194,12 @@
       "KXNFLTD": "1 event(s), 20 market(s)",
       "KXNFLFIRSTTD": "1 event(s), 19 market(s)",
       "KXNFLGAME": "32 event(s), 64 market(s)",
-      "KXNFLSPREAD": "16 event(s), 388 market(s)",
+      "KXNFLSPREAD": "16 event(s), 415 market(s)",
       "KXNFLTOTAL": "error fetching events: HTTPError: 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXNFLTOTAL&status=open&limit=200"
     },
     "total_touchdown_props_found": 39,
-    "total_game_props_found": 452,
+    "total_game_props_found": 479,
     "touchdown_props_with_a_quote": 39,
-    "game_props_with_a_quote": 452
+    "game_props_with_a_quote": 479
   }
 }
