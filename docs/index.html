@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prop Edge Board — NFL</title>
-  <link rel="stylesheet" href="static/style.css?v=1789489875">
+  <link rel="stylesheet" href="static/style.css?v=1789490281">
 </head>
 <body>
   <header class="site-head">
@@ -1853,13 +1853,24 @@
 
   </main>
 
+  <script>
+    function toggleWhy(id, btn) {
+      var panel = document.querySelector('[data-why-panel="' + id + '"]');
+      if (!panel) return;
+      var isHidden = panel.classList.contains('hidden');
+      panel.classList.toggle('hidden', !isHidden);
+      btn.classList.toggle('open', isHidden);
+      btn.textContent = isHidden ? 'hide' : 'why';
+    }
+  </script>
+
   <footer class="site-foot">
     <div class="foot-row">
       <span>DATA: nflreadpy (nflverse) &middot; KALSHI public markets. All unofficial.</span>
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-15 16:31 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-15 16:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
