@@ -19,7 +19,7 @@
     <a class="brand" href="index.html">PROP EDGE BOARD <span class="brand-sub">// NFL</span></a>
     <nav class="site-nav">
       {% for slug, label, href in nav_pages %}
-        <a href="{{ href }}" class="{{ 'active' if current_page == slug else '' }}">[{{ '%02d'|format(loop.index) }}] {{ label }}</a>
+        <a href="{{ href }}" class="{{ 'active' if current_page == slug else '' }}">{{ label }}</a>
       {% endfor %}
     </nav>
   </header>
