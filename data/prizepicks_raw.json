@@ -6,7 +6,7 @@
     },
     "Josh Allen": {
       "passing_yards": 249.5,
-      "rushing_yards": 31.5
+      "rushing_yards": 30.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
@@ -29,11 +29,11 @@
       "receiving_yards": 57.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 49.5,
       "receptions": 4
     },
     "Sam LaPorta": {
-      "receiving_yards": 46.5
+      "receiving_yards": 45.5
     },
     "Khalil Shakir": {
       "receiving_yards": 44.5
@@ -457,9 +457,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 2037,
+    "total_projections_returned": 2077,
     "matched_props": 192,
-    "excluded_goblin_demon_lines": 1627,
+    "excluded_goblin_demon_lines": 1638,
     "sample_stat_types_seen": [
       "completion percentage",
       "fantasy score",
@@ -483,14 +483,14 @@
       "rec tds",
       "receiving yards",
       "receiving yards (combo)",
+      "receiving yards in first 2 receptions",
       "receptions",
       "rush attempts",
       "rush tds",
       "rush yards",
       "rush yards (combo)",
       "rush yards in first 5 attempts",
-      "rush yards per carry",
-      "rush+rec yds"
+      "rush yards per carry"
     ],
     "sample_odds_types_seen": [
       "demon",

@@ -3102,5 +3102,41 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "James Cook III|rushing_yards|2": {
+    "player": "James Cook III",
+    "team": "BUF",
+    "opponent": "DET",
+    "week": 2,
+    "stat": "rushing_yards",
+    "projected": 38.4,
+    "tier_at_freeze": "No data (rookie/unproven)",
+    "market_line": 75.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -37.1,
+    "frozen_at": "2026-09-15 15:47 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "DJ Moore|receiving_yards|2": {
+    "player": "DJ Moore",
+    "team": "BUF",
+    "opponent": "DET",
+    "week": 2,
+    "stat": "receiving_yards",
+    "projected": 73.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 60.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.4,
+    "frozen_at": "2026-09-15 15:47 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
