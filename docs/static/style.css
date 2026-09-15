@@ -401,6 +401,21 @@ ul.plain li { margin-bottom: 6px; }
   border: 1px solid var(--line); white-space: nowrap;
 }
 
+.why-btn {
+  font-family: var(--mono); font-size: 0.68rem; color: var(--text-dim);
+  background: var(--bg-card); border: 1px solid var(--line);
+  padding: 3px 10px; cursor: pointer; white-space: nowrap;
+}
+.why-btn:hover { border-color: var(--green); color: var(--green); }
+.why-btn.open { border-color: var(--green); color: var(--green); background: rgba(57,255,140,0.06); }
+tr.why-detail.hidden { display: none; }
+tr.why-detail td {
+  background: rgba(57, 255, 140, 0.02);
+  padding: 14px 16px 16px !important;
+  border-bottom: 1px solid var(--line);
+}
+.why-reason { color: var(--text-dim); font-size: 0.85rem; margin: 0 0 10px; line-height: 1.55; }
+
 @media (max-width: 640px) {
   .site-head { padding: 16px; }
   .site-main { padding: 28px 16px 60px; }
