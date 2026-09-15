@@ -23,52 +23,81 @@
   </div>
 </div>
 
+{% macro factor_chip(label, factor_dict) %}
+  {% if factor_dict %}
+  <div class="factor">
+    <div class="fval stat-{{ 'good' if factor_dict.factor > 1.02 else 'bad' if factor_dict.factor < 0.98 else 'neutral' }}">{{ factor_dict.factor }}&times;</div>
+    <div class="flabel">{{ label }}</div>
+  </div>
+  {% endif %}
+{% endmacro %}
+
 {% macro best5_section(title, link, picks, is_td=false) %}
 <h2>{{ title }} &mdash; Best 5</h2>
 {% if picks %}
-<div class="table-wrap">
-<table class="stat-table">
-  <thead>
-    <tr>
-      <th>Player</th>
-      <th>Matchup</th>
-      {% if is_td %}
-        <th class="num">Model</th>
-        <th class="num">Market</th>
-      {% else %}
-        <th class="num">Projected</th>
-        <th class="num">Line</th>
-      {% endif %}
-      <th class="num">Edge</th>
-      <th>Call</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for p in picks %}
-    <tr>
-      <td>
+<div class="prop-cards">
+  {% for p in picks %}
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
         <div class="player-name">
           <span class="team-badge" style="background:{{ p.team_badge.color }}">{{ p.team_badge.abbr }}</span>
           {{ p.player }}
         </div>
-      </td>
-      <td>W{{ p.week }} vs {{ p.opponent }}</td>
-      {% if is_td %}
-        <td class="num">{{ p.model_prob }}%</td>
-        <td class="num">{{ p.market_prob }}%</td>
-        <td class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</td>
-      {% else %}
-        <td class="num">{{ p.projected }} {{ p.unit }}</td>
-        <td class="num">{{ p.market_line }} {{ p.unit }}</td>
-        <td class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }} {{ p.unit }}</td>
+        <div class="player-sub">W{{ p.week }} vs {{ p.opponent }}</div>
+      </div>
+      <div class="prop-card-edge">
+        {% if is_td %}
+          <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</div>
+          <div class="label">MODEL {{ p.model_prob }}% vs MKT {{ p.market_prob }}%</div>
+        {% else %}
+          <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }} {{ p.unit }}</div>
+          <div class="label">EDGE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
+        {% endif %}
+      </div>
+    </div>
+
+    <p class="prop-card-reason">{{ p.reason }}</p>
+
+    <div class="prop-card-tags">
+      {% if p.tier %}<span class="tier {{ p.tier.css }}">{{ p.tier.label }}</span>{% endif %}
+      <span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>
+    </div>
+
+    {% if not is_td %}
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">{{ p.baseline }}</div>
+        <div class="flabel">Baseline{{ ' (career)' if p.baseline_source == 'career (2023-2025)' else '' }}</div>
+      </div>
+      {% if p.observed_2026 is not none %}
+      <div class="factor">
+        <div class="fval">{{ p.observed_2026 }}</div>
+        <div class="flabel">2026 avg ({{ p.n_games_2026 }}gm)</div>
+      </div>
       {% endif %}
-      <td><span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      {{ factor_chip("Matchup", p.matchup_factor) }}
+      {{ factor_chip("Pace", p.pace_factor) }}
+      {{ factor_chip("Wind", p.wind_factor) }}
+      {{ factor_chip("Environment", p.environment_factor) }}
+    </div>
+    {% else %}
+    <div class="factor-grid">
+      <div class="factor"><div class="fval">{{ p.breakdown }}</div><div class="flabel">TD breakdown</div></div>
+    </div>
+    {% endif %}
+
+    {% if p.advanced %}
+    <div class="adv-row">
+      {% for a in p.advanced %}
+      <span class="adv-chip stat-{{ a.tier }}">{{ a.label }}: {{ a.value }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
 </div>
-<p class="player-sub" style="margin:6px 0 0;"><a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
+<p class="player-sub" style="margin:10px 0 0;"><a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
 {% else %}
 <div class="empty-state">
   <h3>No eligible picks yet</h3>
@@ -86,18 +115,16 @@
 <h2>What's real right now</h2>
 <ul class="plain">
   <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
-  <li>Matchups page: the next date's real games, with each team's top passer/rusher/receiver's actual historical performance against that specific opponent (2023&ndash;2025), plus the real Kalshi market for that exact game.</li>
-  <li>Best 5 above: real edge between our own dampened projection and a real market line (PrizePicks for yardage/receptions, Kalshi for touchdowns) &mdash; never shown without both sides being real.</li>
-  <li>Injury report status pulled in per player, where reported.</li>
-  <li>QB&ndash;receiver correlation flagged on Receiving and Receptions, since stacking a QB with his own WR1 is a common, easy mistake.</li>
+  <li>Every projection runs through five real, dampened layers: temporal (career + season blend), opponent matchup, team pace, wind (passing/receiving), and Vegas-implied game environment &mdash; see the factor breakdown on every Best 5 card above.</li>
+  <li>Real advanced stats throughout: EPA/CPOE for passing, RYOE for rushing, separation/YAC for receiving &mdash; all genuine tracking-data metrics, not derived guesses.</li>
+  <li>Full grading system live: every prediction frozen once, graded against the real result, with a real calibration loop feeding corrections back into future projections once enough graded history exists.</li>
+  <li>Matchups page: the next date's real games, with real historical performance vs. that exact opponent, depth-chart-validated starters, and the real Kalshi market for that specific game.</li>
 </ul>
 
 <h2>What's intentionally not faked</h2>
 <ul class="plain">
-  <li>No calibrated confidence score. A first-cut MIN_SAMPLE=30 / DAMPEN=0.20 has been reasoned out for NFL's weekly cadence (see <code>scripts/dataio.py</code>), but it hasn't been validated against real graded picks yet.</li>
-  <li>No grading yet. Best 5's edge is real, but nothing calls a pick a hit or miss until the underlying game finishes and a grading rule is decided.</li>
-  <li>No weather factor for passing yet &mdash; needs its own wind-specific derivation per the brief, not a ported formula.</li>
-  <li>History page is empty on purpose &mdash; no predictions exist yet to grade.</li>
+  <li>Most calibration corrections still show "insufficient data" &mdash; MIN_SAMPLE=30 real graded entries per stat/tier are required before a correction applies, and the season is still young.</li>
   <li>Kicking was dropped. Field goal attempts depend too heavily on decisions (coach's 4th-down call, weather, game script) that this build has no honest way to project yet &mdash; better to drop it than publish a number with no real basis.</li>
+  <li>Touchdown grading uses a synthetic 0.5-TD breakeven threshold rather than a real market line, since Kalshi's touchdown markets are probability-based, not point-value lines.</li>
 </ul>
 {% endblock %}
