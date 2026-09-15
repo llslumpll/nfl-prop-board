@@ -260,7 +260,7 @@ table.stat-table tr:hover td { background: rgba(57, 255, 140, 0.025); }
   border: 1px solid var(--line);
   margin-bottom: 8px;
 }
-.table-scroll { max-height: 520px; overflow-x: auto; overflow-y: auto; }
+.table-scroll { max-height: 860px; overflow-x: auto; overflow-y: auto; }
 .table-scroll table.stat-table { margin: 0; }
 .table-scroll thead th {
   position: sticky;
@@ -414,6 +414,20 @@ tr.why-detail td {
   border-bottom: 1px solid var(--line);
 }
 .why-reason { color: var(--text-dim); font-size: 0.85rem; margin: 0 0 10px; line-height: 1.55; }
+
+details.info-collapse { margin-bottom: 24px; }
+details.info-collapse summary {
+  cursor: pointer; font-family: var(--mono); font-size: 0.78rem; color: var(--text-dim);
+  padding: 9px 14px; border: 1px solid var(--line); background: var(--bg-card);
+  list-style: none; user-select: none;
+}
+details.info-collapse summary::-webkit-details-marker { display: none; }
+details.info-collapse summary::before { content: '\25B8  '; color: var(--green); }
+details.info-collapse[open] summary::before { content: '\25BE  '; }
+details.info-collapse summary:hover { border-color: rgba(57,255,140,0.4); color: var(--text); }
+details.info-collapse[open] summary { border-bottom: none; }
+details.info-collapse .notice:first-of-type { margin-top: 10px; }
+details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 
 @media (max-width: 640px) {
   .site-head { padding: 16px; }
