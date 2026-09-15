@@ -173,7 +173,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 }
 
 .site-main {
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 40px 24px 80px;
 }
@@ -258,10 +258,9 @@ table.stat-table tr:hover td { background: rgba(57, 255, 140, 0.025); }
 
 .table-wrap {
   border: 1px solid var(--line);
-  overflow: hidden;
   margin-bottom: 8px;
 }
-.table-scroll { max-height: 520px; overflow-y: auto; }
+.table-scroll { max-height: 520px; overflow-x: auto; overflow-y: auto; }
 .table-scroll table.stat-table { margin: 0; }
 .table-scroll thead th {
   position: sticky;
