@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1789425853">
+  <link rel="stylesheet" href="static/style.css?v=1789434908">
 </head>
 <body>
   <header class="site-head">
@@ -68,10 +68,8 @@
   <p class="lede small">Is the pipeline actually working day to day, separate from whether the predictions are good. A real PrizePicks match needs a real player+line to exist at freeze time -- this tracks whether that's happening, not whether picks are winning.</p>
 
   
-  <div class="empty-state">
-    <h3>Not enough builds logged yet</h3>
-    <p>This chart needs at least two real builds to show a trend &mdash; check back after a few more scheduled runs. Each build's match rate is logged automatically, real numbers only.</p>
-  </div>
+  <h3 class="division-head">PrizePicks match rate (% of frozen predictions with a real line), per build</h3>
+  <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;"><line x1="42" y1="192.0" x2="624" y2="192.0" stroke="rgba(0,240,255,0.08)" stroke-width="1"/><text x="34" y="196.0" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">0</text><line x1="42" y1="148.0" x2="624" y2="148.0" stroke="rgba(0,240,255,0.08)" stroke-width="1"/><text x="34" y="152.0" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">25</text><line x1="42" y1="104.0" x2="624" y2="104.0" stroke="rgba(0,240,255,0.08)" stroke-width="1"/><text x="34" y="108.0" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">50</text><line x1="42" y1="60.0" x2="624" y2="60.0" stroke="rgba(0,240,255,0.08)" stroke-width="1"/><text x="34" y="64.0" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">75</text><line x1="42" y1="16.0" x2="624" y2="16.0" stroke="rgba(0,240,255,0.08)" stroke-width="1"/><text x="34" y="20.0" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">100</text><line x1="42" y1="104.0" x2="624" y2="104.0" stroke="#ffb020" stroke-width="1" stroke-dasharray="4,3"/><path d="M42.0,45.4 L624.0,192.0" fill="none" stroke="#00f0ff" stroke-width="2"/><circle cx="42.0" cy="45.4" r="3" fill="#00f0ff"/><circle cx="624.0" cy="192.0" r="3" fill="#00f0ff"/><text x="42" y="214" font-size="10" fill="#6c8a94" font-family="monospace">2026-09-14</text><text x="624" y="214" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">2026-09-15</text></svg>
   
 
   <h3 class="division-head">Recent builds</h3>
@@ -79,6 +77,13 @@
   <table class="stat-table">
     <thead><tr><th>Date</th><th class="num">Frozen this build</th><th class="num">Matched w/ real line</th><th class="num">Match rate</th></tr></thead>
     <tbody>
+      
+      <tr>
+        <td>2026-09-15</td>
+        <td class="num">6</td>
+        <td class="num">0</td>
+        <td class="num">0.0%</td>
+      </tr>
       
       <tr>
         <td>2026-09-14</td>
@@ -2478,7 +2483,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-14 22:44 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-15 01:15 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
