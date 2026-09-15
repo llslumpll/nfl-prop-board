@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "_macros.html" as macros %}
 {% block title %}Receiving — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>Receiving</h1>
@@ -68,6 +69,7 @@
       <th>Next game proj.</th>
       <th>PrizePicks line</th>
       <th>Tier</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -112,7 +114,9 @@
         {% endif %}
       </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
+      <td><button class="why-btn" data-why-target="why-{{ loop.index }}" onclick="toggleWhy('why-{{ loop.index }}', this)">why</button></td>
     </tr>
+    {{ macros.why_row(loop.index, r.next_game, 12) }}
     {% endfor %}
   </tbody>
 </table>
