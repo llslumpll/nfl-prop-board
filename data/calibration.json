@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-09-18 11:27 UTC",
+  "generated_at": "2026-09-18 13:23 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -12,6 +12,11 @@
       "Career baseline (limited history)": {
         "bias": 0.0,
         "sample_size": 3,
+        "status": "insufficient data"
+      },
+      "Building 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 2,
         "status": "insufficient data"
       }
     },
@@ -25,6 +30,16 @@
         "bias": 0.0,
         "sample_size": 4,
         "status": "insufficient data"
+      },
+      "Building 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 1,
+        "status": "insufficient data"
+      },
+      "No data (rookie/unproven)": {
+        "bias": 0.0,
+        "sample_size": 1,
+        "status": "insufficient data"
       }
     },
     "receiving_yards": {
@@ -37,13 +52,18 @@
         "bias": 0.0,
         "sample_size": 21,
         "status": "insufficient data"
+      },
+      "Building 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 3,
+        "status": "insufficient data"
       }
     },
     "receptions": {}
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 0,
+    "sample_size": 4,
     "status": "insufficient data"
   }
 }
