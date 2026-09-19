@@ -35,20 +35,18 @@
       "receptions": 3
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
+      "receiving_yards": 29.5
     },
     "Woody Marks": {
       "rushing_yards": 28.5,
       "receiving_yards": 10.5
     },
-    "Mike Gesicki": {
-      "receiving_yards": 25.5,
-      "receptions": 2.5
-    },
     "Jaylin Noel": {
       "receiving_yards": 25.5,
       "receptions": 2.5
+    },
+    "Mike Gesicki": {
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 17.5,
@@ -59,7 +57,7 @@
       "receptions": 1.5
     },
     "Jared Wayne": {
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Drew Sample": {
       "receiving_yards": 7.5
@@ -186,7 +184,7 @@
       "receptions": 1.5
     },
     "Josh Oliver": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Jalen Hurts": {
       "passing_yards": 206.5,
@@ -213,7 +211,7 @@
       "receiving_yards": 40.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Wan'Dale Robinson": {
@@ -239,11 +237,11 @@
       "receiving_yards": 16.5,
       "receptions": 2.5
     },
-    "Elic Ayomanor": {
-      "receiving_yards": 10.5
-    },
     "Tank Bigsby": {
       "rushing_yards": 9.5
+    },
+    "Elic Ayomanor": {
+      "receiving_yards": 9.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 3.5
@@ -284,12 +282,12 @@
     },
     "Jonathon Brooks": {
       "rushing_yards": 21.5,
-      "receiving_yards": 8.5
-    },
-    "Darren Waller": {
-      "receiving_yards": 18.5
+      "receiving_yards": 7.5
     },
     "Jahan Dotson": {
+      "receiving_yards": 17.5
+    },
+    "Darren Waller": {
       "receiving_yards": 17.5
     },
     "Xavier Legette": {
@@ -336,7 +334,7 @@
       "receiving_yards": 35.5
     },
     "LaJohntay Wester": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Devontez Walker": {
       "receiving_yards": 19.5,
@@ -346,7 +344,7 @@
       "receiving_yards": 17.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 15.5,
+      "rushing_yards": 16.5,
       "receiving_yards": 12.5
     },
     "Justice Hill": {
@@ -543,7 +541,7 @@
       "receiving_yards": 3.5
     },
     "Justin Herbert": {
-      "passing_yards": 224.5,
+      "passing_yards": 226.5,
       "rushing_yards": 21.5
     },
     "Kirk Cousins": {
@@ -616,7 +614,8 @@
       "receptions": 4.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 30.5
+      "receiving_yards": 30.5,
+      "receptions": 2.5
     },
     "Antonio Williams": {
       "receiving_yards": 26.5
@@ -625,8 +624,8 @@
       "receiving_yards": 26.5
     },
     "Rachaad White": {
-      "rushing_yards": 22.5,
-      "receiving_yards": 11.5,
+      "rushing_yards": 21.5,
+      "receiving_yards": 12.5,
       "receptions": 2
     },
     "John Bates": {
@@ -671,13 +670,13 @@
       "receiving_yards": 41.5,
       "receptions": 3.5
     },
-    "Kaelon Black": {
-      "rushing_yards": 39.5,
-      "receiving_yards": 2.5
-    },
     "Caleb Douglas": {
       "receiving_yards": 38.5,
       "receptions": 3
+    },
+    "Kaelon Black": {
+      "rushing_yards": 37.5,
+      "receiving_yards": 2.5
     },
     "Malik Washington": {
       "receiving_yards": 33.5,
@@ -853,7 +852,7 @@
       "rushing_yards": 45.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Terrance Ferguson": {
       "receiving_yards": 20.5
@@ -889,9 +888,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 8322,
-    "matched_props": 413,
-    "excluded_goblin_demon_lines": 6640,
+    "total_projections_returned": 8499,
+    "matched_props": 412,
+    "excluded_goblin_demon_lines": 6815,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -901,6 +900,9 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
+      "halves with 25+ receiving yards",
+      "halves with 25+ rush yards",
+      "halves with 40+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -918,11 +920,8 @@
       "punt touchbacks (combo)",
       "punts",
       "punts inside 20",
-      "quarters with 25+ pass yards",
-      "rec targets",
-      "rec tds",
-      "receiving yards",
-      "receiving yards (combo)"
+      "quarters with 1+ reception",
+      "quarters with 10+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
