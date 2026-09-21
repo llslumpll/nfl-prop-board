@@ -2,10 +2,10 @@
   "props": {
     "Patrick Mahomes": {
       "passing_yards": 221.5,
-      "rushing_yards": 17.5
+      "rushing_yards": 18.5
     },
     "Daniel Jones": {
-      "passing_yards": 218.5,
+      "passing_yards": 216.5,
       "rushing_yards": 8.5
     },
     "Kenneth Walker III": {
@@ -14,7 +14,7 @@
       "receptions": 3
     },
     "Jonathan Taylor": {
-      "rushing_yards": 82.5,
+      "rushing_yards": 81.5,
       "receiving_yards": 16.5,
       "receptions": 2.5
     },
@@ -23,37 +23,36 @@
       "receptions": 4.5
     },
     "Alec Pierce": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 45.5,
       "receptions": 3
     },
     "Tyler Warren": {
       "receiving_yards": 42.5,
       "receptions": 4.5
     },
-    "Travis Kelce": {
+    "Josh Downs": {
       "receiving_yards": 42.5,
       "receptions": 4
     },
-    "Josh Downs": {
-      "receiving_yards": 40.5,
+    "Travis Kelce": {
+      "receiving_yards": 39.5,
       "receptions": 4
     },
     "Xavier Worthy": {
       "receiving_yards": 38.5
-    },
-    "Keenan Allen": {
-      "receiving_yards": 30.5,
-      "receptions": 3.5
     },
     "Emmett Johnson": {
       "rushing_yards": 17.5,
       "receiving_yards": 7.5
     },
     "Tyquan Thornton": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Noah Gray": {
       "receiving_yards": 11.5
+    },
+    "Seth McGowan": {
+      "rushing_yards": 5.5
     },
     "Mo Alie-Cox": {
       "receiving_yards": 0.5
@@ -80,7 +79,7 @@
       "rushing_yards": 31.5
     },
     "Puka Nacua": {
-      "receiving_yards": 80.5,
+      "receiving_yards": 77.5,
       "receptions": 6.5,
       "rushing_yards": 0.5
     },
@@ -111,7 +110,7 @@
       "receiving_yards": 32.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Odell Beckham Jr.": {
       "receiving_yards": 5.5
@@ -144,12 +143,13 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1120,
-    "matched_props": 64,
-    "excluded_goblin_demon_lines": 881,
+    "total_projections_returned": 1126,
+    "matched_props": 63,
+    "excluded_goblin_demon_lines": 880,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
+      "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
       "fg made (combo)",
@@ -176,8 +176,7 @@
       "punts",
       "punts inside 20",
       "quarters with 1+ reception",
-      "quarters with 10+ rush yards",
-      "quarters with 25+ pass yards"
+      "quarters with 10+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
