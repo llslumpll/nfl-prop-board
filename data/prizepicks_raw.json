@@ -4,15 +4,12 @@
       "receiving_yards": 26.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 16.5
+      "receiving_yards": 19.5,
+      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 14.5,
-      "receiving_yards": 6.5
-    },
-    "Tyler Higbee": {
-      "receiving_yards": 14.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Konata Mumpfield": {
       "receiving_yards": 14.5,
@@ -21,31 +18,30 @@
     "Xavier Smith": {
       "receiving_yards": 14.5
     },
+    "Tyler Higbee": {
+      "receiving_yards": 13.5
+    },
     "Theo Johnson": {
       "receiving_yards": 8.5
+    },
+    "Blake Corum": {
+      "receiving_yards": 3.5,
+      "rushing_yards": 48.5
     },
     "Colby Parkinson": {
       "receptions": 3,
       "receiving_yards": 28.5
     },
-    "Blake Corum": {
-      "receiving_yards": 2.5,
-      "rushing_yards": 47.5
-    },
     "Odell Beckham Jr.": {
       "receptions": 0.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Matthew Stafford": {
-      "passing_yards": 238.5
+      "passing_yards": 239.5
     },
     "Jaxson Dart": {
       "passing_yards": 213.5,
-      "rushing_yards": 33.5
-    },
-    "Malik Nabers": {
-      "receiving_yards": 64.5,
-      "receptions": 5.5
+      "rushing_yards": 34.5
     },
     "Kyren Williams": {
       "rushing_yards": 63.5,
@@ -54,6 +50,10 @@
     "Davante Adams": {
       "receiving_yards": 62.5,
       "receptions": 5
+    },
+    "Malik Nabers": {
+      "receiving_yards": 61.5,
+      "receptions": 5.5
     },
     "Cam Skattebo": {
       "rushing_yards": 52.5,
@@ -64,15 +64,14 @@
       "receptions": 4.5
     },
     "Terrance Ferguson": {
-      "receiving_yards": 32.5,
-      "receptions": 2.5
+      "receiving_yards": 34.5
     },
     "Jordan Love": {
-      "passing_yards": 233.5,
+      "passing_yards": 229.5,
       "rushing_yards": 8.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 202.5,
+      "passing_yards": 204.5,
       "rushing_yards": 4.5
     },
     "Bijan Robinson": {
@@ -80,33 +79,31 @@
       "receiving_yards": 40.5
     },
     "Christian Watson": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 66.5,
       "receptions": 4.5
     },
     "Drake London": {
-      "receiving_yards": 59.5
+      "receiving_yards": 62.5
     },
     "Matthew Golden": {
       "receiving_yards": 52.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 41.5,
-      "receptions": 3.5
+      "receiving_yards": 46.5
+    },
+    "Kaleb Johnson": {
+      "rushing_yards": 35.5
     },
     "Kyle Pitts Sr.": {
       "receiving_yards": 34.5,
       "receptions": 3.5
     },
-    "Kaleb Johnson": {
-      "rushing_yards": 32.5
-    },
     "MarShawn Lloyd": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 29.5,
       "receiving_yards": 5.5
     },
     "Brian Robinson Jr.": {
       "rushing_yards": 22.5,
-      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Jahan Dotson": {
@@ -437,16 +434,15 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1406,
-    "matched_props": 180,
-    "excluded_goblin_demon_lines": 1046,
+    "total_projections_returned": 1566,
+    "matched_props": 177,
+    "excluded_goblin_demon_lines": 1204,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
       "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
-      "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
@@ -470,7 +466,8 @@
       "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards"
+      "quarters with 5+ receiving yards",
+      "quarters with 5+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
