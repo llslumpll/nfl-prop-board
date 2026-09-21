@@ -1,67 +1,10 @@
 {
   "props": {
-    "Patrick Mahomes": {
-      "passing_yards": 221.5,
-      "rushing_yards": 18.5
-    },
-    "Daniel Jones": {
-      "passing_yards": 216.5,
-      "rushing_yards": 8.5
-    },
-    "Kenneth Walker III": {
-      "rushing_yards": 83.5,
-      "receiving_yards": 20.5,
-      "receptions": 3
-    },
-    "Jonathan Taylor": {
-      "rushing_yards": 81.5,
-      "receiving_yards": 16.5,
-      "receptions": 2.5
-    },
-    "Rashee Rice": {
-      "receiving_yards": 48.5,
-      "receptions": 4.5
-    },
-    "Alec Pierce": {
-      "receiving_yards": 45.5,
-      "receptions": 3
-    },
-    "Tyler Warren": {
-      "receiving_yards": 42.5,
-      "receptions": 4.5
-    },
-    "Josh Downs": {
-      "receiving_yards": 42.5,
-      "receptions": 4
-    },
-    "Travis Kelce": {
-      "receiving_yards": 39.5,
-      "receptions": 4
-    },
-    "Xavier Worthy": {
-      "receiving_yards": 38.5
-    },
-    "Emmett Johnson": {
-      "rushing_yards": 17.5,
-      "receiving_yards": 7.5
-    },
-    "Tyquan Thornton": {
-      "receiving_yards": 16.5
-    },
-    "Noah Gray": {
-      "receiving_yards": 11.5
-    },
-    "Seth McGowan": {
-      "rushing_yards": 5.5
-    },
-    "Mo Alie-Cox": {
-      "receiving_yards": 0.5
-    },
     "Malachi Fields": {
       "receiving_yards": 26.5
     },
     "Devin Singletary": {
-      "rushing_yards": 16.5,
+      "rushing_yards": 14.5,
       "receiving_yards": 4.5
     },
     "Tyler Higbee": {
@@ -69,7 +12,10 @@
       "receptions": 1.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
+    },
+    "Theo Johnson": {
+      "receiving_yards": 7.5
     },
     "Matthew Stafford": {
       "passing_yards": 238.5
@@ -100,7 +46,7 @@
       "receiving_yards": 11.5
     },
     "Blake Corum": {
-      "rushing_yards": 48.5
+      "rushing_yards": 47.5
     },
     "Isaiah Likely": {
       "receiving_yards": 45.5,
@@ -115,6 +61,33 @@
     "Odell Beckham Jr.": {
       "receiving_yards": 5.5
     },
+    "Jordan Love": {
+      "passing_yards": 226.5
+    },
+    "Michael Penix Jr.": {
+      "passing_yards": 200.5
+    },
+    "Bijan Robinson": {
+      "rushing_yards": 77.5,
+      "receiving_yards": 40.5
+    },
+    "Christian Watson": {
+      "receiving_yards": 65.5,
+      "receptions": 4.5
+    },
+    "Drake London": {
+      "receiving_yards": 61.5
+    },
+    "Matthew Golden": {
+      "receiving_yards": 51.5
+    },
+    "Tucker Kraft": {
+      "receiving_yards": 41.5,
+      "receptions": 3.5
+    },
+    "Kyle Pitts Sr.": {
+      "receiving_yards": 37.5
+    },
     "Josh Allen": {
       "passing_yards": 246.5,
       "rushing_yards": 34.5
@@ -125,10 +98,6 @@
     "Jared Goff": {
       "passing_yards": 248.5
     },
-    "Jahmyr Gibbs": {
-      "rushing_yards": 92.5,
-      "receiving_yards": 30.5
-    },
     "Amon-Ra St. Brown": {
       "receiving_yards": 76.5
     },
@@ -137,27 +106,32 @@
     },
     "Sam LaPorta": {
       "receiving_yards": 44.5
+    },
+    "Jahmyr Gibbs": {
+      "receiving_yards": 30.5
+    },
+    "Brock Purdy": {
+      "passing_yards": 244.5,
+      "rushing_yards": 19.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1126,
-    "matched_props": 63,
-    "excluded_goblin_demon_lines": 880,
+    "total_projections_returned": 744,
+    "matched_props": 48,
+    "excluded_goblin_demon_lines": 594,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
       "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
-      "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
-      "halves with 40+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -176,7 +150,9 @@
       "punts",
       "punts inside 20",
       "quarters with 1+ reception",
-      "quarters with 10+ rush yards"
+      "quarters with 25+ pass yards",
+      "quarters with 5+ receiving yards",
+      "quarters with 5+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
