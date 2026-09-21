@@ -4830,5 +4830,23 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Parker Washington|receiving_yards|2": {
+    "player": "Parker Washington",
+    "team": "JAX",
+    "opponent": "DEN",
+    "week": 2,
+    "stat": "receiving_yards",
+    "projected": 43.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 61.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.0,
+    "frozen_at": "2026-09-21 16:50 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
