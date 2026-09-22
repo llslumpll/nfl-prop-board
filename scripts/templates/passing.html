@@ -5,6 +5,27 @@
 <h1>Passing</h1>
 <p class="lede">Quarterback passing lines from live nflreadpy data, plus real advanced efficiency stats &mdash; raw yardage alone can be misleading (garbage-time volume vs. genuine quality).</p>
 
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Best 5</button>
+  <button class="game-tab" data-game-idx="1">Best Value</button>
+  <button class="game-tab" data-game-idx="2">Projections</button>
+</div>
+
+<div class="game-panel" data-game-panel="0">
+  <p class="lede small">The 5 QBs the model is most confident in this week &mdash; ranked by real probability (using each QB's own real game-to-game passing variance), not by how big the market gap is. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  {{ macros.prop_card_list(best5_confidence, "highest_confidence", "passing.html") }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="1">
+  <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong, not just the highest-confidence picks. A different ranking from Best 5 and can (and often will) name different players.</p>
+  {{ macros.prop_card_list(best5_value, "best_value", "passing.html") }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="2">
+
+<details class="info-collapse">
+<summary>How this page works &amp; what's real (click to expand)</summary>
+
 <div class="notice">
   <strong>Provisional tiers only.</strong> With one week of data, there isn't
   enough sample to run a real calibrated model. The tier column reflects
@@ -63,6 +84,7 @@
   Check <code>data/prizepicks_raw.json</code> and the build log for details.
 </div>
 {% endif %}
+</details>
 
 {% if rows %}
 <div class="table-wrap">
@@ -144,4 +166,23 @@
   <p>The live data snapshot didn't return any quarterback rows.</p>
 </div>
 {% endif %}
+
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
 {% endblock %}
