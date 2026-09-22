@@ -178,6 +178,51 @@ def edge_bucket_accuracy() -> list[dict]:
     return result
 
 
+def best5_track_record(stat: str, list_name: str) -> dict:
+    """
+    Real week-by-week track record for ONE Best 5 list (e.g.
+    passing_yards + "highest_confidence"), using the best5_tags metadata
+    written at build time. Only predictions actually tagged into this
+    specific list AND actually graded count toward the hit rate -- an
+    untagged or ungraded prediction never counts, whether it would have
+    helped or hurt the number.
+    """
+    preds = predictions.load_predictions()
+    tagged = [
+        p for p in preds.values()
+        if p["stat"] == stat and list_name in (p.get("best5_tags") or [])
+    ]
+    by_week: dict[int, list[dict]] = {}
+    for p in tagged:
+        by_week.setdefault(p["week"], []).append(p)
+
+    weekly = []
+    total_hits = total_graded = 0
+    for week in sorted(by_week.keys(), reverse=True):
+        entries = sorted(by_week[week], key=lambda p: p["player"])
+        graded = [p for p in entries if p.get("graded") and p.get("hit") is not None]
+        hits = sum(1 for p in graded if p["hit"])
+        weekly.append({
+            "week": week, "picks": entries,
+            "graded": len(graded), "hits": hits,
+            "rate": round(100 * hits / len(graded), 1) if graded else None,
+        })
+        total_hits += hits
+        total_graded += len(graded)
+
+    trend_weeks = [w["week"] for w in reversed(weekly) if w["graded"] > 0]
+    trend_rates = [w["rate"] for w in reversed(weekly) if w["graded"] > 0]
+
+    return {
+        "weekly": weekly,
+        "total_hits": total_hits,
+        "total_graded": total_graded,
+        "overall_rate": round(100 * total_hits / total_graded, 1) if total_graded else None,
+        "trend_weeks": trend_weeks,
+        "trend_rates": trend_rates,
+    }
+
+
 def weekly_breakdown() -> list[dict]:
     """
     Real week-by-week record -- the NFL-cadence equivalent of the MLB
