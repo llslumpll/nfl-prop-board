@@ -308,15 +308,52 @@ def build():
         if ng and ng.get("projected_total"):
             r["next_game"]["reason"] = f"Projected {ng['projected_total']} total TDs ({ng.get('breakdown', '—')}), summed from real per-stat career and season-to-date baselines."
 
+    # --- Best 5: TWO genuinely different rankings per prop, same split
+    # as the MLB site -- "Best Value" (biggest edge vs the market line)
+    # and "Highest Confidence" (real model probability, via a normal-
+    # approximation using real per-player game-to-game variance for
+    # yardage stats, or real Poisson probability for touchdowns). These
+    # can and often will name different players for the same week.
     best5_data = {
-        "passing": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
-        "receiving": best5.best5_yardage(receiving_rows, pp_props, "receiving_yards", "yds"),
-        "receptions": best5.best5_yardage(receptions_rows, pp_props, "receptions", "rec"),
-        "rushing": best5.best5_yardage(rushing_rows, pp_props, "rushing_yards", "yds"),
-        "touchdowns": best5.best5_touchdowns(touchdown_rows, kalshi_data["touchdown_props"]),
+        "passing": {
+            "best_value": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
+            "highest_confidence": best5.best5_highest_confidence(passing_rows, pp_props, "passing_yards", "yds", "QB"),
+        },
+        "receiving": {
+            "best_value": best5.best5_yardage(receiving_rows, pp_props, "receiving_yards", "yds"),
+            "highest_confidence": best5.best5_highest_confidence(receiving_rows, pp_props, "receiving_yards", "yds", "WR"),
+        },
+        "receptions": {
+            "best_value": best5.best5_yardage(receptions_rows, pp_props, "receptions", "rec"),
+            "highest_confidence": best5.best5_highest_confidence(receptions_rows, pp_props, "receptions", "rec", "WR"),
+        },
+        "rushing": {
+            "best_value": best5.best5_yardage(rushing_rows, pp_props, "rushing_yards", "yds"),
+            "highest_confidence": best5.best5_highest_confidence(rushing_rows, pp_props, "rushing_yards", "yds", "RB"),
+        },
+        "touchdowns": {
+            "best_value": best5.best5_touchdowns(touchdown_rows, kalshi_data["touchdown_props"]),
+            "highest_confidence": best5.best5_touchdowns_most_likely(touchdown_rows),
+        },
     }
-    for label, picks in best5_data.items():
-        print(f"Best 5 {label}: {len(picks)} eligible pick(s)")
+    for label, rankings in best5_data.items():
+        for rank_type, picks in rankings.items():
+            print(f"Best 5 {label} ({rank_type}): {len(picks)} eligible pick(s)")
+
+    # Tag each Best 5 pick's ALREADY-frozen individual prediction with
+    # which list(s) it belonged to this week -- metadata only, doesn't
+    # touch the frozen prediction itself. This is what lets History
+    # compute a real week-by-week Best 5 hit rate later, just by
+    # querying graded predictions filtered by this tag.
+    STAT_COL_BY_LABEL = {
+        "passing": "passing_yards", "receiving": "receiving_yards",
+        "receptions": "receptions", "rushing": "rushing_yards", "touchdowns": "any_td",
+    }
+    for label, rankings in best5_data.items():
+        stat_col = STAT_COL_BY_LABEL[label]
+        for rank_type, picks in rankings.items():
+            for p in picks:
+                predictions.tag_best5(p["player"], stat_col, p["week"], rank_type)
 
     # --- Freeze Receptions predictions too. Real bug fixed here: these
     # were never being frozen at all before, since Receptions isn't one
@@ -442,6 +479,28 @@ def build():
                 "health_log": pipeline_health.load_health(),
                 "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
                 "calibration": calibration_result,
+                "best5_track": {
+                    "passing": {
+                        "highest_confidence": grade.best5_track_record("passing_yards", "highest_confidence"),
+                        "best_value": grade.best5_track_record("passing_yards", "best_value"),
+                    },
+                    "receiving": {
+                        "highest_confidence": grade.best5_track_record("receiving_yards", "highest_confidence"),
+                        "best_value": grade.best5_track_record("receiving_yards", "best_value"),
+                    },
+                    "receptions": {
+                        "highest_confidence": grade.best5_track_record("receptions", "highest_confidence"),
+                        "best_value": grade.best5_track_record("receptions", "best_value"),
+                    },
+                    "rushing": {
+                        "highest_confidence": grade.best5_track_record("rushing_yards", "highest_confidence"),
+                        "best_value": grade.best5_track_record("rushing_yards", "best_value"),
+                    },
+                    "touchdowns": {
+                        "highest_confidence": grade.best5_track_record("any_td", "highest_confidence"),
+                        "best_value": grade.best5_track_record("any_td", "best_value"),
+                    },
+                },
             },
         ),
     }
