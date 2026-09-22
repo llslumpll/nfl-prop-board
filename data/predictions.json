@@ -2665,7 +2665,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Christian Watson|any_td|2": {
     "player": "Christian Watson",
@@ -4775,7 +4778,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jared Goff|any_td|3": {
     "player": "Jared Goff",
@@ -5405,7 +5411,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Christian Watson|receptions|3": {
     "player": "Christian Watson",
@@ -5423,7 +5433,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Michael Mayer|receptions|3": {
     "player": "Michael Mayer",
@@ -5585,7 +5599,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Kirk Cousins|any_td|3": {
     "player": "Kirk Cousins",
@@ -5711,7 +5728,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Brock Purdy|any_td|3": {
     "player": "Brock Purdy",
@@ -5729,7 +5749,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Tyler Shough|any_td|3": {
     "player": "Tyler Shough",
