@@ -8,6 +8,10 @@ on:
     - cron: "0 9 * * 2,3,4,5,6,0"
   workflow_dispatch: {}   # lets you trigger a manual rebuild from the Actions tab
 
+concurrency:
+  group: nfl-site-repo-write
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -33,4 +37,14 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs data
           git diff --cached --quiet || git commit -m "Auto-rebuild: $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          # Rebase onto whatever's already on origin/main before pushing --
+          # without this, if refresh_odds.yml (runs every 20 min) or another
+          # instance of this same workflow pushed in the time it took this
+          # run to build, a plain `git push` fails outright (non-fast-
+          # forward) and this entire run's update is silently lost. Retried
+          # a few times since a rebase can itself lose a very tight race.
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "push attempt $i failed, retrying..."
+            sleep $((RANDOM % 15 + 5))
+          done
