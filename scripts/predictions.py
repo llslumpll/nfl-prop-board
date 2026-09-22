@@ -73,6 +73,28 @@ def _key(player: str, stat: str, week: int) -> str:
     return f"{player}|{stat}|{week}"
 
 
+def tag_best5(player: str, stat: str, week: int, list_name: str) -> bool:
+    """
+    Marks an ALREADY-frozen prediction as having been part of a specific
+    week's Best 5 list (e.g. "highest_confidence" or "best_value") --
+    metadata only, never touches the actual projected/market_line/call/
+    actual/hit fields, since Best 5 selection happens after individual
+    predictions are already frozen for the week. Safe to call multiple
+    times (idempotent) and safe if the prediction doesn't exist yet
+    (returns False rather than erroring, matching this module's
+    fail-soft pattern).
+    """
+    preds = load_predictions()
+    key = _key(player, stat, week)
+    if key not in preds:
+        return False
+    tags = preds[key].setdefault("best5_tags", [])
+    if list_name not in tags:
+        tags.append(list_name)
+        save_predictions(preds)
+    return True
+
+
 def freeze_prediction(
     player: str, team: str, opponent: str, week: int, stat: str,
     projected: float, tier_label: str, market_line: float | None = None,
