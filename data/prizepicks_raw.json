@@ -1,78 +1,5 @@
 {
   "props": {
-    "Matthew Stafford": {
-      "passing_yards": 239.5
-    },
-    "Jaxson Dart": {
-      "passing_yards": 213.5,
-      "rushing_yards": 34.5
-    },
-    "Davante Adams": {
-      "receiving_yards": 64.5,
-      "receptions": 5
-    },
-    "Kyren Williams": {
-      "rushing_yards": 63.5,
-      "receiving_yards": 16.5,
-      "receptions": 2.5
-    },
-    "Malik Nabers": {
-      "receiving_yards": 61.5,
-      "receptions": 5.5
-    },
-    "Cam Skattebo": {
-      "rushing_yards": 50.5,
-      "receiving_yards": 11.5
-    },
-    "Blake Corum": {
-      "rushing_yards": 48.5,
-      "receiving_yards": 3.5
-    },
-    "Isaiah Likely": {
-      "receiving_yards": 43.5,
-      "receptions": 4.5
-    },
-    "Terrance Ferguson": {
-      "receiving_yards": 34.5
-    },
-    "Colby Parkinson": {
-      "receiving_yards": 30.5,
-      "receptions": 3
-    },
-    "Malachi Fields": {
-      "receiving_yards": 26.5
-    },
-    "Darnell Mooney": {
-      "receiving_yards": 19.5,
-      "receptions": 1.5
-    },
-    "Konata Mumpfield": {
-      "receiving_yards": 16.5,
-      "receptions": 1.5
-    },
-    "Xavier Smith": {
-      "receiving_yards": 14.5
-    },
-    "Devin Singletary": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 7.5
-    },
-    "Tyler Higbee": {
-      "receiving_yards": 11.5
-    },
-    "Theo Johnson": {
-      "receiving_yards": 9.5
-    },
-    "Tutu Atwell": {
-      "receiving_yards": 6.5
-    },
-    "Davis Allen": {
-      "receiving_yards": 4.5
-    },
-    "Odell Beckham Jr.": {
-      "receiving_yards": 3.5,
-      "receptions": 0.5
-    },
     "Jordan Love": {
       "passing_yards": 228.5,
       "rushing_yards": 8.5
@@ -454,23 +381,18 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1807,
-    "matched_props": 187,
-    "excluded_goblin_demon_lines": 1405,
+    "total_projections_returned": 1098,
+    "matched_props": 154,
+    "excluded_goblin_demon_lines": 837,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
       "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
-      "field goal yards (combo)",
-      "halves with 100+ pass yards",
-      "halves with 25+ receiving yards",
-      "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
-      "longest fg made yds (combo)",
       "longest reception",
       "longest rush",
       "pass attempts",
@@ -479,15 +401,18 @@
       "pass yards",
       "pass yards (combo)",
       "pass+rush yds",
-      "pass+rush+rec tds",
-      "player touchdowns (combo)",
-      "punt touchbacks (combo)",
-      "punts",
-      "punts inside 20",
-      "quarters with 1+ reception",
-      "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards",
-      "quarters with 5+ rush yards"
+      "rec targets",
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions",
+      "rush attempts",
+      "rush yards",
+      "rush yards in first 5 attempts",
+      "rush yards per carry",
+      "rush+rec yds",
+      "sacks",
+      "tackles+ast",
+      "yards on first reception"
     ],
     "sample_odds_types_seen": [
       "demon",
