@@ -223,6 +223,20 @@ def best5_track_record(stat: str, list_name: str) -> dict:
     }
 
 
+def recent_graded_results(limit: int = 8) -> list[dict]:
+    """Most recently graded predictions across every prop type, most
+    recent first -- real results only (a real market line and a real
+    hit/miss), matching the compact 'Recent Results' feed on the MLB
+    site's Home page."""
+    preds = predictions.load_predictions()
+    graded = [
+        p for p in preds.values()
+        if p.get("graded") and p.get("hit") is not None and p.get("graded_at")
+    ]
+    graded.sort(key=lambda p: p["graded_at"], reverse=True)
+    return graded[:limit]
+
+
 def weekly_breakdown() -> list[dict]:
     """
     Real week-by-week record -- the NFL-cadence equivalent of the MLB
