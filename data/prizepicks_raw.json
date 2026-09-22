@@ -7,21 +7,21 @@
       "passing_yards": 213.5,
       "rushing_yards": 34.5
     },
+    "Davante Adams": {
+      "receiving_yards": 64.5,
+      "receptions": 5
+    },
     "Kyren Williams": {
       "rushing_yards": 63.5,
       "receiving_yards": 16.5,
       "receptions": 2.5
-    },
-    "Davante Adams": {
-      "receiving_yards": 62.5,
-      "receptions": 5
     },
     "Malik Nabers": {
       "receiving_yards": 61.5,
       "receptions": 5.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 11.5
     },
     "Blake Corum": {
@@ -29,7 +29,7 @@
       "receiving_yards": 3.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 43.5,
       "receptions": 4.5
     },
     "Terrance Ferguson": {
@@ -63,6 +63,9 @@
     "Theo Johnson": {
       "receiving_yards": 9.5
     },
+    "Tutu Atwell": {
+      "receiving_yards": 6.5
+    },
     "Davis Allen": {
       "receiving_yards": 4.5
     },
@@ -70,15 +73,12 @@
       "receiving_yards": 3.5,
       "receptions": 0.5
     },
-    "Tutu Atwell": {
-      "receiving_yards": 3.5
-    },
     "Jordan Love": {
       "passing_yards": 228.5,
       "rushing_yards": 8.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 207.5,
+      "passing_yards": 205.5,
       "rushing_yards": 3.5
     },
     "Bijan Robinson": {
@@ -86,7 +86,7 @@
       "receiving_yards": 40.5
     },
     "Christian Watson": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 64.5,
       "receptions": 4.5
     },
     "Drake London": {
@@ -98,12 +98,12 @@
     "Tucker Kraft": {
       "receiving_yards": 46.5
     },
+    "Kaleb Johnson": {
+      "rushing_yards": 37.5
+    },
     "Kyle Pitts Sr.": {
       "receiving_yards": 34.5,
       "receptions": 3.5
-    },
-    "Kaleb Johnson": {
-      "rushing_yards": 34.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 29.5,
@@ -118,7 +118,7 @@
     },
     "Chris Brooks": {
       "rushing_yards": 15.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Josh Allen": {
       "passing_yards": 246.5,
@@ -454,9 +454,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1808,
+    "total_projections_returned": 1807,
     "matched_props": 187,
-    "excluded_goblin_demon_lines": 1404,
+    "excluded_goblin_demon_lines": 1405,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",

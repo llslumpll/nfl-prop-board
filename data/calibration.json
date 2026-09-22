@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-09-21 23:54 UTC",
+  "generated_at": "2026-09-22 00:09 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -16,7 +16,7 @@
       },
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 2,
+        "sample_size": 27,
         "status": "insufficient data"
       }
     },
@@ -33,12 +33,12 @@
       },
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 1,
+        "sample_size": 27,
         "status": "insufficient data"
       },
       "No data (rookie/unproven)": {
         "bias": 0.0,
-        "sample_size": 1,
+        "sample_size": 3,
         "status": "insufficient data"
       }
     },
@@ -55,7 +55,7 @@
       },
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 3,
+        "sample_size": 29,
         "status": "insufficient data"
       }
     },
