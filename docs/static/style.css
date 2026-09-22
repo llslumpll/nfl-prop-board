@@ -364,6 +364,11 @@ ul.plain li { margin-bottom: 6px; }
 .prop-card-reason { color: var(--text-dim); font-size: 0.85rem; margin: 12px 0; line-height: 1.55; }
 .prop-card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
 .prop-card-spark { margin: 8px 0 12px; }
+.spark-legend { display: flex; flex-direction: column; gap: 3px; margin-top: 6px; }
+.spark-legend span { display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 0.7rem; color: var(--text-dim); }
+.spark-dot { display: inline-block; width: 14px; height: 2px; flex-shrink: 0; }
+.spark-dot-line { background: var(--orange); }
+.spark-dot-dash { background: repeating-linear-gradient(90deg, var(--text) 0 4px, transparent 4px 7px); }
 
 .factor-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
