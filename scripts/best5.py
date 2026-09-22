@@ -134,6 +134,90 @@ def find_kalshi_1plus_td_price(kalshi_td_props: list[dict], player_name: str) ->
     return None
 
 
+def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, unit: str, position: str) -> list[dict]:
+    """
+    A genuinely DIFFERENT ranking from best5_yardage (Best Value): this
+    ranks by real model confidence (distance from a coinflip), using
+    dataio.model_prob_over's normal-approximation probability model --
+    NOT by edge size. A pick can have huge edge but still be a coinflip
+    if the stat's real variance is wide; a pick can have modest edge but
+    very high real confidence if the stat is normally tight (e.g.
+    receptions). These two rankings can and often will name different
+    players for the same week, same as the MLB site's "Most Likely" vs
+    "Best Value" split.
+    """
+    import dataio
+
+    STAT_LABELS = {
+        "passing_yards": "passing yards", "rushing_yards": "rushing yards",
+        "receiving_yards": "receiving yards", "receptions": "receptions",
+    }
+    candidates = []
+    for r in rows:
+        next_game = r.get("next_game")
+        if not next_game:
+            continue
+        pp_line = pp_props.get(r["player"], {}).get(stat_col)
+        if pp_line is None:
+            continue
+        projection = next_game["projection"]
+        projected = projection["projected"]
+        std_dev = dataio.player_std_dev(r["player"], stat_col, position)
+        model_prob = dataio.model_prob_over(projected, pp_line, std_dev)
+        if model_prob is None:
+            continue
+        confidence = max(model_prob, 1 - model_prob)
+        edge = round(projected - pp_line, 1)
+        candidates.append({
+            "player": r["player"],
+            "team_badge": r.get("team_badge"),
+            "team": r.get("team"),
+            "opponent": next_game["opponent"],
+            "week": next_game["week"],
+            "projected": projected,
+            "market_line": pp_line,
+            "edge": edge,
+            "model_prob": round(model_prob * 100, 1),
+            "confidence": round(confidence * 100, 1),
+            "std_dev": round(std_dev, 1),
+            "call": "OVER" if model_prob >= 0.5 else "UNDER",
+            "unit": unit,
+            "reason": dataio.reason_text(projection, STAT_LABELS.get(stat_col, stat_col)),
+            "tier": projection.get("tier", {}),
+        })
+    candidates.sort(key=lambda c: c["confidence"], reverse=True)
+    return candidates[:5]
+
+
+def best5_touchdowns_most_likely(td_rows: list[dict]) -> list[dict]:
+    """
+    Real "Most Likely to Score" ranking -- sorted by raw model_prob
+    (probability of 1+ TD from our own Poisson projection), independent
+    of whether a Kalshi market even exists or agrees. Directly analogous
+    to the MLB site's "Most Likely to Homer" ranking (raw probability,
+    not edge), and doesn't require a real market quote the way
+    best5_touchdowns (edge-ranked) does -- every player with a real
+    next-game TD projection is eligible here.
+    """
+    candidates = []
+    for r in td_rows:
+        next_game = r.get("next_game")
+        if not next_game or not next_game.get("projected_total"):
+            continue
+        model_prob = poisson_prob_at_least(1, next_game["projected_total"])
+        candidates.append({
+            "player": r["player"],
+            "team_badge": r.get("team_badge"),
+            "opponent": next_game["opponent"],
+            "week": next_game["week"],
+            "model_prob": round(model_prob * 100, 1),
+            "breakdown": next_game.get("breakdown"),
+            "reason": f"Projected {next_game['projected_total']} total TDs ({next_game.get('breakdown', '—')}).",
+        })
+    candidates.sort(key=lambda c: c["model_prob"], reverse=True)
+    return candidates[:5]
+
+
 def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[dict]:
     """
     Converts each player's next-game projected total TDs into a Poisson
