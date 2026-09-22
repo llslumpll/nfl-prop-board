@@ -739,6 +739,26 @@ def _join_list(items: list[str]) -> str:
     return ", ".join(items[:-1]) + f", and {items[-1]}"
 
 
+def player_weekly_series(player_name: str, stat_col: str) -> list[dict]:
+    """
+    Real per-week values for this player's 2026 season so far, in week
+    order -- NOT the single averaged "observed_2026" number used
+    elsewhere. This is what lets a chart actually grow week by week as
+    the season progresses, instead of staying a fixed 3-point shape all
+    year. Uses load_stats() directly (every week, unlike the
+    _latest_week_per_player-filtered leaderboards) since the whole point
+    here is every real week, not just the most recent one.
+    """
+    df = load_stats()
+    rows = df.filter(pl.col("player_display_name") == player_name).sort("week")
+    out = []
+    for row in rows.iter_rows(named=True):
+        val = row.get(stat_col)
+        if val is not None:
+            out.append({"week": row["week"], "value": val})
+    return out
+
+
 def reason_text(projection: dict, stat_label: str) -> str:
     """
     Real narrative sentence built directly from the same factors already
