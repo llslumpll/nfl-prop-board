@@ -16,15 +16,14 @@
 </head>
 <body>
   <header class="site-head">
-    <a class="brand" href="index.html">PROP EDGE BOARD <span class="brand-sub">NFL</span></a>
+    <a class="brand" href="index.html">PROP_EDGE <span class="brand-sub">//NFL</span></a>
     <nav class="site-nav">
       {% for slug, label, href in nav_pages %}
         <a href="{{ href }}" class="{{ 'active' if current_page == slug else '' }}">{{ label }}</a>
       {% endfor %}
     </nav>
   </header>
-  <div class="grid-floor"></div>
-  <div class="sys-tagline">AUTO-BUILD &middot; NO HUMAN IN THE LOOP &middot; NFL EDGE BOARD</div>
+  <div class="sys-tagline">AUTO-BUILD // LIVE TELEMETRY // NO HUMAN IN THE LOOP</div>
 
   <main class="site-main">
     {% block content %}{% endblock %}
