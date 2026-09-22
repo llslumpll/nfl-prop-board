@@ -9,6 +9,27 @@
   and Kalshi.
 </p>
 
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Best 5</button>
+  <button class="game-tab" data-game-idx="1">Best Value</button>
+  <button class="game-tab" data-game-idx="2">Projections</button>
+</div>
+
+<div class="game-panel" data-game-panel="0">
+  <p class="lede small">The 5 receivers the model is most confident in this week &mdash; ranked by real probability, not market gap size. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  {{ macros.prop_card_list(best5_confidence, "highest_confidence", "receiving.html") }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="1">
+  <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong. A different ranking from Best 5.</p>
+  {{ macros.prop_card_list(best5_value, "best_value", "receiving.html") }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="2">
+
+<details class="info-collapse">
+<summary>How this page works &amp; what's real (click to expand)</summary>
+
 <div class="notice">
   <strong>Provisional tiers only.</strong> Same caveat as Passing &mdash;
   one week of sample isn't enough for a calibrated model yet.
@@ -51,6 +72,7 @@
   <br>Unofficial endpoint, known to block datacenter IPs like GitHub Actions.
 </div>
 {% endif %}
+</details>
 
 {% if rows %}
 <div class="table-wrap">
@@ -129,4 +151,23 @@
   <p>The live data snapshot didn't return any receiver rows.</p>
 </div>
 {% endif %}
+
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
 {% endblock %}
