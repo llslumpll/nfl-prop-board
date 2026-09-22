@@ -32,8 +32,8 @@
   {% endif %}
 {% endmacro %}
 
-{% macro best5_section(title, link, picks, is_td=false) %}
-<h2>{{ title }} &mdash; Best 5</h2>
+{% macro best5_section(title, link, picks, rank_type, is_td=false) %}
+<h2>{{ title }}</h2>
 {% if picks %}
 <div class="prop-cards">
   {% for p in picks %}
@@ -47,7 +47,15 @@
         <div class="player-sub">W{{ p.week }} vs {{ p.opponent }}</div>
       </div>
       <div class="prop-card-edge">
-        {% if is_td %}
+        {% if rank_type == 'highest_confidence' %}
+          {% if is_td %}
+            <div class="num stat-good">{{ p.model_prob }}%</div>
+            <div class="label">MODEL PROBABILITY (1+ TD)</div>
+          {% else %}
+            <div class="num stat-good">{{ p.confidence }}%</div>
+            <div class="label">CONFIDENCE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
+          {% endif %}
+        {% elif is_td %}
           <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</div>
           <div class="label">MODEL {{ p.model_prob }}% vs MKT {{ p.market_prob }}%</div>
         {% else %}
@@ -61,7 +69,7 @@
 
     <div class="prop-card-tags">
       {% if p.tier %}<span class="tier {{ p.tier.css }}">{{ p.tier.label }}</span>{% endif %}
-      <span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>
+      {% if p.call %}<span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>{% endif %}
     </div>
 
     {% if not is_td %}
@@ -75,6 +83,9 @@
         <div class="fval">{{ p.observed_2026 }}</div>
         <div class="flabel">2026 avg ({{ p.n_games_2026 }}gm)</div>
       </div>
+      {% endif %}
+      {% if rank_type == 'highest_confidence' and p.std_dev %}
+      <div class="factor"><div class="fval">&plusmn;{{ p.std_dev }}</div><div class="flabel">Real std dev</div></div>
       {% endif %}
       {{ factor_chip("Matchup", p.matchup_factor) }}
       {{ factor_chip("Pace", p.pace_factor) }}
@@ -97,20 +108,34 @@
   </div>
   {% endfor %}
 </div>
-<p class="player-sub" style="margin:10px 0 0;"><a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
+<p class="player-sub" style="margin:10px 0 0;"><a href="{{ link }}">Full board &rarr;</a> &middot; <a href="history.html">Track record in History &rarr;</a></p>
 {% else %}
 <div class="empty-state">
   <h3>No eligible picks yet</h3>
-  <p>Needs both a real next-game projection and a real market line/quote for the same player &mdash; check back as more lines populate. <a href="{{ link }}">Full {{ title|lower }} board &rarr;</a></p>
+  <p>Needs both a real next-game projection and a real market line/quote for the same player &mdash; check back as more lines populate. <a href="{{ link }}">Full board &rarr;</a></p>
 </div>
 {% endif %}
 {% endmacro %}
 
-{{ best5_section("Passing", "passing.html", best5.passing) }}
-{{ best5_section("Receiving", "receiving.html", best5.receiving) }}
-{{ best5_section("Receptions", "receptions.html", best5.receptions) }}
-{{ best5_section("Rushing", "rushing.html", best5.rushing) }}
-{{ best5_section("Touchdowns", "touchdowns.html", best5.touchdowns, is_td=true) }}
+<div class="notice compact">
+  <strong>Two different rankings, on purpose.</strong> "Highest Confidence" ranks by real model probability
+  (using each player's own real game-to-game variance, or touchdowns' real Poisson probability) &mdash; the
+  pick most likely to actually happen. "Best Value" ranks by the biggest gap between our projection and the
+  real market line &mdash; the pick where the market looks most wrong. These are different questions and can
+  (and often will) name different players. Both are tracked and graded week over week on
+  <a href="history.html">History</a>.
+</div>
+
+{{ best5_section("Passing — Highest Confidence", "passing.html", best5.passing.highest_confidence, "highest_confidence") }}
+{{ best5_section("Passing — Best Value", "passing.html", best5.passing.best_value, "best_value") }}
+{{ best5_section("Receiving — Highest Confidence", "receiving.html", best5.receiving.highest_confidence, "highest_confidence") }}
+{{ best5_section("Receiving — Best Value", "receiving.html", best5.receiving.best_value, "best_value") }}
+{{ best5_section("Receptions — Highest Confidence", "receptions.html", best5.receptions.highest_confidence, "highest_confidence") }}
+{{ best5_section("Receptions — Best Value", "receptions.html", best5.receptions.best_value, "best_value") }}
+{{ best5_section("Rushing — Highest Confidence", "rushing.html", best5.rushing.highest_confidence, "highest_confidence") }}
+{{ best5_section("Rushing — Best Value", "rushing.html", best5.rushing.best_value, "best_value") }}
+{{ best5_section("Touchdowns — Most Likely to Score", "touchdowns.html", best5.touchdowns.highest_confidence, "highest_confidence", is_td=true) }}
+{{ best5_section("Touchdowns — Best Value", "touchdowns.html", best5.touchdowns.best_value, "best_value", is_td=true) }}
 
 <h2>What's real right now</h2>
 <ul class="plain">
