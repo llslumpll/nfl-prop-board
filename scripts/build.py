@@ -429,7 +429,11 @@ def build():
         "index.html": (
             "home",
             "home.html",
-            {"weeks": dataio.weeks_available(), "best5": best5_data},
+            {
+                "weeks": dataio.weeks_available(),
+                "best5": best5_data,
+                "recent_results": grade.recent_graded_results(),
+            },
         ),
         "matchups.html": (
             "matchups",
@@ -441,7 +445,14 @@ def build():
                 "kalshi_error": kalshi_data["error"],
             },
         ),
-        "passing.html": ("passing", "passing.html", {"rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error}),
+        "passing.html": (
+            "passing", "passing.html",
+            {
+                "rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "best5_confidence": best5_data["passing"]["highest_confidence"],
+                "best5_value": best5_data["passing"]["best_value"],
+            },
+        ),
         "receiving.html": (
             "receiving",
             "receiving.html",
@@ -450,6 +461,8 @@ def build():
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
+                "best5_confidence": best5_data["receiving"]["highest_confidence"],
+                "best5_value": best5_data["receiving"]["best_value"],
             },
         ),
         "receptions.html": (
@@ -460,13 +473,26 @@ def build():
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
+                "best5_confidence": best5_data["receptions"]["highest_confidence"],
+                "best5_value": best5_data["receptions"]["best_value"],
             },
         ),
-        "rushing.html": ("rushing", "rushing.html", {"rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error}),
+        "rushing.html": (
+            "rushing", "rushing.html",
+            {
+                "rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "best5_confidence": best5_data["rushing"]["highest_confidence"],
+                "best5_value": best5_data["rushing"]["best_value"],
+            },
+        ),
         "touchdowns.html": (
             "touchdowns",
             "touchdowns.html",
-            {"rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"]},
+            {
+                "rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"],
+                "best5_confidence": best5_data["touchdowns"]["highest_confidence"],
+                "best5_value": best5_data["touchdowns"]["best_value"],
+            },
         ),
         "history.html": (
             "history",
