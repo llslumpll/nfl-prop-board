@@ -24,7 +24,7 @@
       "receiving_yards": 52.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 46.5,
       "receptions": 4
     },
     "Kaleb Johnson": {
@@ -36,7 +36,7 @@
     },
     "MarShawn Lloyd": {
       "rushing_yards": 29.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Brian Robinson Jr.": {
       "rushing_yards": 22.5,
@@ -48,6 +48,9 @@
     "Chris Brooks": {
       "rushing_yards": 15.5,
       "receiving_yards": 7.5
+    },
+    "Jonnu Smith": {
+      "receiving_yards": 9.5
     },
     "Josh Allen": {
       "passing_yards": 246.5,
@@ -367,7 +370,8 @@
       "passing_yards": 213.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 66.5
+      "receiving_yards": 66.5,
+      "receptions": 5.5
     },
     "Colston Loveland": {
       "receiving_yards": 43.5
@@ -377,22 +381,29 @@
       "receptions": 2.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 41.5
+      "rushing_yards": 42.5
     },
     "Luther Burden III": {
-      "receiving_yards": 37.5
+      "receiving_yards": 36.5
+    },
+    "Dontayvion Wicks": {
+      "receiving_yards": 35.5
     },
     "Kalif Raymond": {
       "receiving_yards": 28.5
+    },
+    "Makai Lemon": {
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1245,
-    "matched_props": 159,
-    "excluded_goblin_demon_lines": 954,
+    "total_projections_returned": 1320,
+    "matched_props": 164,
+    "excluded_goblin_demon_lines": 1013,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
