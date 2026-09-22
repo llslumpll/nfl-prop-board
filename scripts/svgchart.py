@@ -75,6 +75,7 @@ def bar_chart_with_threshold(
     height: int = 200,
     y_min: float = 0,
     y_max: float | None = None,
+    career_baseline: float | None = None,
 ) -> str:
     """
     Real per-game performance-vs-line chart, PrizePicks-style but grown
@@ -85,7 +86,16 @@ def bar_chart_with_threshold(
     or low relative to recent form, not just whether it hit.
 
     bars: [{"label": "W1", "value": 205, "threshold": 220.5 | None,
-            "status": "hit" | "miss" | "pending" | "no_line"}, ...]
+            "status": "hit" | "miss" | "pending" | "no_line" | "projection"},
+           ...]
+    A "projection" bar (the upcoming, not-yet-played week) renders as a
+    hollow/outlined bar instead of a solid one, since it's a real
+    forecast, not a real result yet.
+
+    career_baseline, if given, draws a single dashed reference line
+    across the whole chart (a real career average, distinct in style
+    from the per-week market-line ticks) so recent real form can be read
+    against a real long-run norm at a glance.
     """
     pad_l, pad_r, pad_t, pad_b = 34, 12, 14, 24
     plot_w = width - pad_l - pad_r
@@ -94,12 +104,12 @@ def bar_chart_with_threshold(
 
     COLORS = {
         "hit": "#3ddc97", "miss": "#ff3b5c",
-        "pending": "#ff6a3d", "no_line": "#3a3a3a",
+        "pending": "#ff6a3d", "no_line": "#3a3a3a", "projection": "#ff6a3d",
     }
 
     values = [b["value"] for b in bars if b.get("value") is not None]
     thresholds = [b["threshold"] for b in bars if b.get("threshold") is not None]
-    all_vals = values + thresholds
+    all_vals = values + thresholds + ([career_baseline] if career_baseline is not None else [])
     if y_max is None:
         y_max = max(all_vals) * 1.15 if all_vals else 100
 
@@ -118,13 +128,21 @@ def bar_chart_with_threshold(
         parts.append(f'<line x1="{pad_l}" y1="{y:.1f}" x2="{width - pad_r}" y2="{y:.1f}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>')
         parts.append(f'<text x="{pad_l - 6}" y="{y + 3:.1f}" text-anchor="end" font-size="9" fill="#767676" font-family="monospace">{val:.0f}</text>')
 
+    if career_baseline is not None:
+        by = y_at(career_baseline)
+        parts.append(f'<line x1="{pad_l}" y1="{by:.1f}" x2="{width - pad_r}" y2="{by:.1f}" stroke="#767676" stroke-width="1.5" stroke-dasharray="2,3"/>')
+
     for i, b in enumerate(bars):
         cx = pad_l + gap * i + gap / 2
         color = COLORS.get(b.get("status"), "#3a3a3a")
         val = b.get("value")
         if val is not None:
             by = y_at(val)
-            parts.append(f'<rect x="{cx - bar_w/2:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{(pad_t + plot_h - by):.1f}" fill="{color}" opacity="0.85" rx="2"/>')
+            bh = pad_t + plot_h - by
+            if b.get("status") == "projection":
+                parts.append(f'<rect x="{cx - bar_w/2:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" fill="none" stroke="{color}" stroke-width="2" stroke-dasharray="3,3" rx="2"/>')
+            else:
+                parts.append(f'<rect x="{cx - bar_w/2:.1f}" y="{by:.1f}" width="{bar_w:.1f}" height="{bh:.1f}" fill="{color}" opacity="0.85" rx="2"/>')
         thr = b.get("threshold")
         if thr is not None:
             ty = y_at(thr)
