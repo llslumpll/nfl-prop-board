@@ -113,6 +113,7 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
             "wind_factor": projection.get("wind_factor"),
             "environment_factor": projection.get("environment_factor"),
             "advanced": _advanced_stats_for(r, stat_col),
+            "weekly_series": dataio.player_weekly_series(r["player"], stat_col),
         })
     candidates.sort(key=lambda c: abs(c["edge"]), reverse=True)
     return candidates[:5]
@@ -200,6 +201,7 @@ def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, un
             "wind_factor": projection.get("wind_factor"),
             "environment_factor": projection.get("environment_factor"),
             "advanced": _advanced_stats_for(r, stat_col),
+            "weekly_series": dataio.player_weekly_series(r["player"], stat_col),
         })
     candidates.sort(key=lambda c: c["confidence"], reverse=True)
     return candidates[:5]
