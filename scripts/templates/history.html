@@ -20,6 +20,7 @@
   <button class="game-tab" data-game-idx="1">Accuracy Trends</button>
   <button class="game-tab" data-game-idx="2">Confidence &amp; Conviction</button>
   <button class="game-tab" data-game-idx="3">Week by Week</button>
+  <button class="game-tab" data-game-idx="4">Best 5 Track Record</button>
 </div>
 
 <!-- ============ TAB 0: PIPELINE HEALTH ============ -->
@@ -208,6 +209,65 @@
   {% else %}
   <div class="empty-state"><h3>No predictions frozen yet</h3></div>
   {% endif %}
+</div>
+
+<!-- ============ TAB 4: BEST 5 TRACK RECORD ============ -->
+<div class="game-panel hidden" data-game-panel="4">
+  <h2>Best 5 Track Record</h2>
+  <p class="lede small">
+    Two different questions, tracked separately, same as the accuracy-by-tier split above.
+    <strong>Highest Confidence</strong> is the model's own most-likely-to-hit ranking &mdash; real probability,
+    using each player's own game-to-game variance (or real Poisson probability for touchdowns). <strong>Best
+    Value</strong> is the biggest gap between our projection and the real market line &mdash; where the market
+    looks most wrong. These can and often will name different players in the same week. The goal stated in the
+    project brief: watch these numbers climb toward a consistent 4/5 or 5/5 week over week, not just show a
+    good week once.
+  </p>
+
+  {% for label, rankings in best5_track.items() %}
+  <h3 class="division-head">{{ label|title }}</h3>
+  <div class="standings-grid">
+    {% for rank_type, track in rankings.items() %}
+    <div>
+      <h4 style="font-family:var(--display);font-size:0.85rem;color:var(--text);margin:0 0 8px;text-transform:none;">
+        {{ 'Highest Confidence' if rank_type == 'highest_confidence' else 'Best Value' }}
+        {% if track.total_graded %}
+        <span class="tier {{ 'tier-high' if track.overall_rate >= 55 else 'tier-low' if track.overall_rate < 45 else 'tier-mid' }}">{{ track.total_hits }}/{{ track.total_graded }} ({{ track.overall_rate }}%)</span>
+        {% endif %}
+      </h4>
+      {% if track.trend_rates|length > 1 %}
+      {{ line_chart(
+           series=[{"points": track.trend_rates, "color": "#ff3cac" if rank_type == 'best_value' else "#2be8d9"}],
+           y_min=0, y_max=100, reference_line=50,
+           x_labels=("W" ~ track.trend_weeks[0], "W" ~ track.trend_weeks[-1]), height=140
+         )|safe }}
+      {% endif %}
+      {% if track.weekly %}
+      <div class="table-wrap" style="margin-top:8px;">
+      <table class="stat-table">
+        <thead><tr><th>Week</th><th>Result</th><th>Picks</th></tr></thead>
+        <tbody>
+          {% for w in track.weekly[:6] %}
+          <tr>
+            <td class="num">W{{ w.week }}</td>
+            <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% else %}<span class="player-sub">pending</span>{% endif %}</td>
+            <td style="font-size:0.78rem;">
+              {% for p in w.picks %}
+                <span title="{{ p.player }}">{{ p.player.split(' ')|last }}{% if p.graded and p.hit is not none %}{{ ' \u2713' if p.hit else ' \u2717' }}{% endif %}</span>{{ ', ' if not loop.last }}
+              {% endfor %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+      {% else %}
+      <div class="empty-state"><h3>No picks tagged yet</h3></div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
 
 <script>
