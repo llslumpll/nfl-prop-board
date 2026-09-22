@@ -9,10 +9,31 @@
   of living inside one of the stat-specific pages.
 </p>
 
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Best 5</button>
+  <button class="game-tab" data-game-idx="1">Best Value</button>
+  <button class="game-tab" data-game-idx="2">Projections</button>
+</div>
+
+<div class="game-panel" data-game-panel="0">
+  <p class="lede small">The 5 players most likely to score, by real Poisson probability &mdash; doesn't require a Kalshi quote to rank, only a real projection. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  {{ macros.prop_card_list(best5_confidence, "highest_confidence", "touchdowns.html", is_td=true) }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="1">
+  <p class="lede small">The 5 biggest gaps between our model's probability and Kalshi's real quoted 1+ TD price &mdash; where the market looks most wrong. Requires a real, quoted market.</p>
+  {{ macros.prop_card_list(best5_value, "best_value", "touchdowns.html", is_td=true) }}
+</div>
+
+<div class="game-panel hidden" data-game-panel="2">
+
+<details class="info-collapse">
+<summary>How this page works &amp; what's real (click to expand)</summary>
 <div class="notice">
   <strong>Provisional tiers only.</strong> One week of sample isn't enough
   for a calibrated model yet.
 </div>
+</details>
 
 {% if rows %}
 <div class="table-wrap">
@@ -123,4 +144,23 @@
   <p>Either none are open right now, or the discovery filter didn't match anything &mdash; check <code>data/kalshi_raw.json</code> for the raw response.</p>
 </div>
 {% endif %}
+
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
 {% endblock %}
