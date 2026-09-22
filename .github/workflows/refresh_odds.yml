@@ -12,6 +12,15 @@ on:
     - cron: "*/20 * * * *"
   workflow_dispatch: {}
 
+# Same concurrency group as build.yml, deliberately -- without this, a
+# refresh_odds run and the heavy build.yml run (or two refresh_odds runs
+# in a row, if one takes close to 20 minutes) can race to push to main
+# at the same time. `cancel-in-progress: false` means a second run
+# QUEUES behind the first rather than getting killed mid-build.
+concurrency:
+  group: nfl-site-repo-write
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -37,4 +46,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs data
           git diff --cached --quiet || git commit -m "Odds refresh: $(date -u +'%Y-%m-%d %H:%M UTC')"
-          git push
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && git push && break
+            echo "push attempt $i failed, retrying..."
+            sleep $((RANDOM % 15 + 5))
+          done
