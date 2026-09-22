@@ -6513,7 +6513,10 @@
     "hit": null,
     "graded_at": null,
     "model_prob": 18.1,
-    "market_prob": 10.0
+    "market_prob": 10.0,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Nico Collins|any_td|3": {
     "player": "Nico Collins",
@@ -6641,7 +6644,10 @@
     "hit": null,
     "graded_at": null,
     "model_prob": 59.3,
-    "market_prob": 38.0
+    "market_prob": 38.0,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kyle Juszczyk|any_td|3": {
     "player": "Kyle Juszczyk",
