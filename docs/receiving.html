@@ -1,34 +1,53 @@
-{% extends "base.html" %}
-{% import "_macros.html" as macros %}
-{% block title %}Receiving — Prop Edge Board{% endblock %}
-{% block content %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Discourage browsers from serving a stale cached copy of this
+       page. GitHub Pages itself may still cache for a short window at
+       its CDN layer (outside anything we control from HTML alone), but
+       this stops the LOCAL browser from being the reason someone has
+       to hard-refresh to see a build that already happened. -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Receiving — Prop Edge Board</title>
+  <link rel="stylesheet" href="static/style.css?v=1790040483">
+</head>
+<body>
+  <header class="site-head">
+    <a class="brand" href="index.html">PROP EDGE BOARD <span class="brand-sub">NFL</span></a>
+    <nav class="site-nav">
+      
+        <a href="index.html" class="">Home</a>
+      
+        <a href="matchups.html" class="">Matchups</a>
+      
+        <a href="passing.html" class="">Passing</a>
+      
+        <a href="receiving.html" class="active">Receiving</a>
+      
+        <a href="receptions.html" class="">Receptions</a>
+      
+        <a href="rushing.html" class="">Rushing</a>
+      
+        <a href="touchdowns.html" class="">Touchdowns</a>
+      
+        <a href="history.html" class="">History</a>
+      
+    </nav>
+  </header>
+  <div class="grid-floor"></div>
+  <div class="sys-tagline">AUTO-BUILD &middot; NO HUMAN IN THE LOOP &middot; NFL EDGE BOARD</div>
+
+  <main class="site-main">
+    
 <h1>Receiving</h1>
 <p class="lede">
   Receiving yardage lines from live nflreadpy data. Kept separate from
   Receptions, since the two are priced as distinct props on both PrizePicks
   and Kalshi.
 </p>
-
-<div class="game-picker">
-  <button class="game-tab active" data-game-idx="0">Best 5</button>
-  <button class="game-tab" data-game-idx="1">Best Value</button>
-  <button class="game-tab" data-game-idx="2">Projections</button>
-</div>
-
-<div class="game-panel" data-game-panel="0">
-  <p class="lede small">The 5 receivers the model is most confident in this week &mdash; ranked by real probability, not market gap size. Tracked and graded week over week on <a href="history.html">History</a>.</p>
-  {{ macros.prop_card_list(best5_confidence, "highest_confidence", "receiving.html") }}
-</div>
-
-<div class="game-panel hidden" data-game-panel="1">
-  <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong. A different ranking from Best 5.</p>
-  {{ macros.prop_card_list(best5_value, "best_value", "receiving.html") }}
-</div>
-
-<div class="game-panel hidden" data-game-panel="2">
-
-<details class="info-collapse">
-<summary>How this page works &amp; what's real (click to expand)</summary>
 
 <div class="notice">
   <strong>Provisional tiers only.</strong> Same caveat as Passing &mdash;
@@ -66,15 +85,9 @@
   separation rather than in place of it.
 </div>
 
-{% if pp_error %}
-<div class="notice">
-  <strong>PrizePicks fetch failed on this build.</strong> Error: {{ pp_error }}
-  <br>Unofficial endpoint, known to block datacenter IPs like GitHub Actions.
-</div>
-{% endif %}
-</details>
 
-{% if rows %}
+
+
 <div class="table-wrap">
 <div class="table-scroll">
 <table class="stat-table">
@@ -95,79 +108,3813 @@
     </tr>
   </thead>
   <tbody>
-    {% for r in rows %}
+    
     <tr>
       <td>
         <div class="player-name">
-          <span class="team-badge" style="background:{{ r.team_badge.color }}">{{ r.team_badge.abbr }}</span>
-          {{ r.player }}
-          {% if qb_by_team.get(r.team) %}
-            <span class="corr-flag" title="Correlated with QB {{ qb_by_team[r.team] }} on the same team">&middot; corr. w/ {{ qb_by_team[r.team] }}</span>
-          {% endif %}
+          <span class="team-badge" style="background:#D3BC8D">NO</span>
+          Chris Olave
+          
+            <span class="corr-flag" title="Correlated with QB Tyler Shough on the same team">&middot; corr. w/ Tyler Shough</span>
+          
         </div>
-        <div class="player-sub">{{ r.team }} &middot; {{ r.position }}</div>
-        {% if r.injury %}
-          <span class="injury-flag" title="{{ r.injury.primary_injury or '' }}">{{ r.injury.report_status }}</span>
-        {% endif %}
+        <div class="player-sub">NO &middot; WR</div>
+        
+          <span class="injury-flag" title="Hamstring">Questionable</span>
+        
       </td>
-      <td>W{{ r.week }} vs {{ r.opponent }}</td>
-      <td class="num">{{ r.targets }}</td>
-      <td class="num">{{ r.receptions if r.receptions is not none else '—' }}</td>
-      <td class="num stat-{{ r.perf.css }}">{{ r.receiving_yards }}{% if r.perf.pct_diff %} <span style="font-size:0.75em">({{ '+' if r.perf.pct_diff > 0 }}{{ r.perf.pct_diff|int }}%)</span>{% endif %}</td>
-      <td class="num">{{ r.receiving_tds }}</td>
-      <td class="num stat-{{ r.separation_tier }}" title="Cushion at snap: {{ r.cushion if r.cushion is not none else '—' }}">{{ r.separation if r.separation is not none else '—' }}</td>
-      <td class="num stat-{{ r.yac_above_exp_tier }}">{{ '+' if r.yac_above_exp and r.yac_above_exp > 0 }}{{ r.yac_above_exp if r.yac_above_exp is not none else '—' }}</td>
+      <td>W1 vs DET</td>
+      <td class="num">13</td>
+      <td class="num">10</td>
+      <td class="num stat-good">182 <span style="font-size:0.75em">(+171%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 6.0">3.3</td>
+      <td class="num stat-bad">-1.9</td>
       <td>
-        {% if r.next_game %}
-          <span class="num" title="Before matchup adjustment: {{ r.next_game.projection.pre_matchup_projected }} yds. Opponent's {{ r.next_game.opponent }} allows {{ r.next_game.projection.matchup_factor.allowed_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none else 'no data yet' }}{{ ' yds/game vs league avg ' ~ r.next_game.projection.matchup_factor.league_avg_per_game if r.next_game.projection.matchup_factor.allowed_per_game is not none }} -> matchup factor {{ r.next_game.projection.matchup_factor.factor }}x. Pace: {{ r.next_game.projection.pace_factor.plays_per_game if r.next_game.projection.pace_factor.plays_per_game is not none else 'no data yet' }}{{ ' plays/game vs league avg ' ~ r.next_game.projection.pace_factor.league_avg_plays_per_game if r.next_game.projection.pace_factor.plays_per_game is not none }} -> pace factor {{ r.next_game.projection.pace_factor.factor }}x. Environment: {{ r.next_game.projection.environment_factor.implied_total if r.next_game.projection.environment_factor and r.next_game.projection.environment_factor.implied_total is not none else 'no quote yet' }}{{ ' implied pts vs league avg ' ~ r.next_game.projection.environment_factor.league_avg_points if r.next_game.projection.environment_factor and r.next_game.projection.environment_factor.implied_total is not none }} -> environment factor {{ r.next_game.projection.environment_factor.factor if r.next_game.projection.environment_factor else 1.0 }}x. Wind: {{ (r.next_game.projection.wind_factor.wind_mph ~ ' mph') if r.next_game.projection.wind_factor and r.next_game.projection.wind_factor.wind_mph is not none else (r.next_game.projection.wind_factor.reason if r.next_game.projection.wind_factor else 'n/a') }} -> wind factor {{ r.next_game.projection.wind_factor.factor if r.next_game.projection.wind_factor else 1.0 }}x">{{ r.next_game.projection.projected }}</span> yds &middot; W{{ r.next_game.week }} vs {{ r.next_game.opponent }}
-        {% else %}
-          <span class="player-sub">season over</span>
-        {% endif %}
+        
+          <span class="num" title="Before matchup adjustment: 80.6 yds. Opponent's LV allows 206.0 yds/game vs league avg 226.0 -> matchup factor 0.973x. Pace: 71.0 plays/game vs league avg 58.7 -> pace factor 1.063x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">83.3</span> yds &middot; W3 vs LV
+        
       </td>
       <td>
-        {% set pp_line = pp_props.get(r.player, {}).get('receiving_yards') %}
-        {% if pp_line %}
-          <span class="num">{{ pp_line }}</span> yds
-          {% if r.next_game %}
-            <span class="player-sub">(us: {{ r.next_game.projection.projected }})</span>
-          {% endif %}
-        {% else %}
-          <span class="player-sub">no line found</span>
-        {% endif %}
+        
+        
+          <span class="num">74.5</span> yds
+          
+            <span class="player-sub">(us: 83.3)</span>
+          
+        
       </td>
-      <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
-      <td><button class="why-btn" data-why-target="why-{{ loop.index }}" onclick="toggleWhy('why-{{ loop.index }}', this)">why</button></td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-1" onclick="toggleWhy('why-1', this)">why</button></td>
     </tr>
-    {{ macros.why_row(loop.index, r.next_game, 12) }}
-    {% endfor %}
+    
+<tr class="why-detail hidden" data-why-panel="why-1">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">67.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">134.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.973&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.063&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#69BE28">SEA</span>
+          Jaxon Smith-Njigba
+          
+            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+          
+        </div>
+        <div class="player-sub">SEA &middot; WR</div>
+        
+      </td>
+      <td>W2 vs ARI</td>
+      <td class="num">11</td>
+      <td class="num">9</td>
+      <td class="num stat-good">155 <span style="font-size:0.75em">(+123%)</span></td>
+      <td class="num">3</td>
+      <td class="num stat-neutral" title="Cushion at snap: 6.1">2.5</td>
+      <td class="num stat-neutral">+0.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 83.2 yds. Opponent's WAS allows 241.0 yds/game vs league avg 226.0 -> matchup factor 1.02x. Pace: 56.0 plays/game vs league avg 58.7 -> pace factor 0.986x. Environment: no quote yet -> environment factor 1.0x. Wind: 9.9 mph -> wind factor 1.0x">83.7</span> yds &middot; W3 vs WAS
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">84.5</span> yds
+          
+            <span class="player-sub">(us: 83.7)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-2" onclick="toggleWhy('why-2', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-2">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">69.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">138.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.02&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.986&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#041E42">DAL</span>
+          CeeDee Lamb
+          
+            <span class="corr-flag" title="Correlated with QB Dak Prescott on the same team">&middot; corr. w/ Dak Prescott</span>
+          
+        </div>
+        <div class="player-sub">DAL &middot; WR</div>
+        
+      </td>
+      <td>W2 vs WAS</td>
+      <td class="num">9</td>
+      <td class="num">8</td>
+      <td class="num stat-good">153 <span style="font-size:0.75em">(+70%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.0">2.9</td>
+      <td class="num stat-neutral">+0.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 91.5 yds. Opponent's BAL allows 209.0 yds/game vs league avg 226.0 -> matchup factor 0.977x. Pace: 52.0 plays/game vs league avg 58.7 -> pace factor 0.966x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">86.4</span> yds &middot; W3 vs BAL
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">79.5</span> yds
+          
+            <span class="player-sub">(us: 86.4)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-3" onclick="toggleWhy('why-3', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-3">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">89.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">98.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.977&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.966&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#241773">BAL</span>
+          Zay Flowers
+          
+            <span class="corr-flag" title="Correlated with QB Lamar Jackson on the same team">&middot; corr. w/ Lamar Jackson</span>
+          
+        </div>
+        <div class="player-sub">BAL &middot; WR</div>
+        
+          <span class="injury-flag" title="Hamstring">Doubtful</span>
+        
+      </td>
+      <td>W1 vs IND</td>
+      <td class="num">6</td>
+      <td class="num">5</td>
+      <td class="num stat-good">150 <span style="font-size:0.75em">(+137%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 3.7">2.4</td>
+      <td class="num stat-good">+9.7</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 80.6 yds. Opponent's DAL allows 218.5 yds/game vs league avg 226.0 -> matchup factor 0.99x. Pace: 57.5 plays/game vs league avg 58.7 -> pace factor 0.994x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">79.3</span> yds &middot; W3 vs DAL
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-4" onclick="toggleWhy('why-4', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-4">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">63.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">150.0</div>
+        <div class="flabel">2026 avg (1gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.99&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.994&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#203731">GB</span>
+          Christian Watson
+          
+            <span class="corr-flag" title="Correlated with QB Jordan Love on the same team">&middot; corr. w/ Jordan Love</span>
+          
+        </div>
+        <div class="player-sub">GB &middot; WR</div>
+        
+      </td>
+      <td>W1 vs MIN</td>
+      <td class="num">8</td>
+      <td class="num">6</td>
+      <td class="num stat-good">147 <span style="font-size:0.75em">(+209%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-neutral" title="Cushion at snap: 9.0">2.5</td>
+      <td class="num stat-good">+8.2</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 56.8 yds. Opponent's ATL allows 254.0 yds/game vs league avg 226.0 -> matchup factor 1.037x. Pace: 55.0 plays/game vs league avg 58.7 -> pace factor 0.981x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.4 mph -> wind factor 1.0x">57.8</span> yds &middot; W3 vs ATL
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">64.5</span> yds
+          
+            <span class="player-sub">(us: 57.8)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-5" onclick="toggleWhy('why-5', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-5">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">47.5</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">94.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.037&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.981&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0076B6">DET</span>
+          Amon-Ra St. Brown
+          
+            <span class="corr-flag" title="Correlated with QB Jared Goff on the same team">&middot; corr. w/ Jared Goff</span>
+          
+        </div>
+        <div class="player-sub">DET &middot; WR</div>
+        
+      </td>
+      <td>W2 vs BUF</td>
+      <td class="num">13</td>
+      <td class="num">9</td>
+      <td class="num stat-good">142 <span style="font-size:0.75em">(+67%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.6">2.2</td>
+      <td class="num stat-neutral">+1.1</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 88.9 yds. Opponent's NYJ allows 142.5 yds/game vs league avg 226.0 -> matchup factor 0.889x. Pace: 65.0 plays/game vs league avg 58.7 -> pace factor 1.032x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">81.5</span> yds &middot; W3 vs NYJ
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">76.5</span> yds
+          
+            <span class="player-sub">(us: 81.5)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-6" onclick="toggleWhy('why-6', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-6">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">85.0</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">104.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.889&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.032&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#03202F">HOU</span>
+          Dalton Schultz
+          
+            <span class="corr-flag" title="Correlated with QB C.J. Stroud on the same team">&middot; corr. w/ C.J. Stroud</span>
+          
+        </div>
+        <div class="player-sub">HOU &middot; TE</div>
+        
+          <span class="injury-flag" title="Not injury related - resting player">Did Not Participate In Practice</span>
+        
+      </td>
+      <td>W2 vs CIN</td>
+      <td class="num">14</td>
+      <td class="num">12</td>
+      <td class="num stat-good">140 <span style="font-size:0.75em">(+255%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 7.8">3.9</td>
+      <td class="num stat-neutral">+0.2</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 49.0 yds. Opponent's IND allows 353.0 yds/game vs league avg 226.0 -> matchup factor 1.15x. Pace: 72.0 plays/game vs league avg 58.7 -> pace factor 1.068x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">60.1</span> yds &middot; W3 vs IND
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-7" onclick="toggleWhy('why-7', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-7">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average) and a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">39.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">87.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.15&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.068&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0085CA">CAR</span>
+          Jalen Coker
+          
+            <span class="corr-flag" title="Correlated with QB Bryce Young on the same team">&middot; corr. w/ Bryce Young</span>
+          
+        </div>
+        <div class="player-sub">CAR &middot; WR</div>
+        
+          <span class="injury-flag" title="Ankle">Full Participation in Practice</span>
+        
+      </td>
+      <td>W1 vs CHI</td>
+      <td class="num">9</td>
+      <td class="num">8</td>
+      <td class="num stat-good">138 <span style="font-size:0.75em">(+216%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-bad" title="Cushion at snap: 6.7">1.9</td>
+      <td class="num stat-neutral">+0.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 55.4 yds. Opponent's CLE allows 213.5 yds/game vs league avg 226.0 -> matchup factor 0.983x. Pace: 59.0 plays/game vs league avg 58.7 -> pace factor 1.002x. Environment: no quote yet -> environment factor 1.0x. Wind: 6.1 mph -> wind factor 1.0x">54.6</span> yds &middot; W3 vs CLE
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">50.5</span> yds
+          
+            <span class="player-sub">(us: 54.6)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-8" onclick="toggleWhy('why-8', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-8">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">43.7</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">102.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.983&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.002&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#FB4F14">DEN</span>
+          Jaylen Waddle
+          
+            <span class="corr-flag" title="Correlated with QB Bo Nix on the same team">&middot; corr. w/ Bo Nix</span>
+          
+        </div>
+        <div class="player-sub">DEN &middot; WR</div>
+        
+      </td>
+      <td>W2 vs JAX</td>
+      <td class="num">10</td>
+      <td class="num">8</td>
+      <td class="num stat-good">138 <span style="font-size:0.75em">(+135%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 9.6">4.7</td>
+      <td class="num stat-neutral">-0.5</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 61.0 yds. Opponent's LA allows 205.0 yds/game vs league avg 226.0 -> matchup factor 0.972x. Pace: 51.0 plays/game vs league avg 58.7 -> pace factor 0.961x. Environment: no quote yet -> environment factor 1.0x. Wind: 4.0 mph -> wind factor 1.0x">57.0</span> yds &middot; W3 vs LA
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">60.5</span> yds
+          
+            <span class="player-sub">(us: 57.0)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-9" onclick="toggleWhy('why-9', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-9">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">58.7</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">70.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.972&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.961&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#00338D">BUF</span>
+          Dalton Kincaid
+          
+            <span class="corr-flag" title="Correlated with QB Josh Allen on the same team">&middot; corr. w/ Josh Allen</span>
+          
+        </div>
+        <div class="player-sub">BUF &middot; TE</div>
+        
+      </td>
+      <td>W1 vs HOU</td>
+      <td class="num">6</td>
+      <td class="num">5</td>
+      <td class="num stat-good">130 <span style="font-size:0.75em">(+216%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: 6.8">2.0</td>
+      <td class="num stat-good">+4.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 55.5 yds. Opponent's LAC allows 265.0 yds/game vs league avg 226.0 -> matchup factor 1.052x. Pace: 58.5 plays/game vs league avg 58.7 -> pace factor 0.999x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.0 mph -> wind factor 1.0x">58.3</span> yds &middot; W3 vs LAC
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-10" onclick="toggleWhy('why-10', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-10">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">41.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">112.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.052&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.999&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#69BE28">SEA</span>
+          Jaxon Smith-Njigba
+          
+            <span class="corr-flag" title="Correlated with QB Drew Lock on the same team">&middot; corr. w/ Drew Lock</span>
+          
+        </div>
+        <div class="player-sub">SEA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs NE</td>
+      <td class="num">11</td>
+      <td class="num">8</td>
+      <td class="num stat-good">122 <span style="font-size:0.75em">(+76%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-good" title="Cushion at snap: 6.2">3.1</td>
+      <td class="num stat-good">+4.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 83.2 yds. Opponent's WAS allows 241.0 yds/game vs league avg 226.0 -> matchup factor 1.02x. Pace: 56.0 plays/game vs league avg 58.7 -> pace factor 0.986x. Environment: no quote yet -> environment factor 1.0x. Wind: 9.9 mph -> wind factor 1.0x">83.7</span> yds &middot; W3 vs WAS
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">84.5</span> yds
+          
+            <span class="player-sub">(us: 83.7)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-11" onclick="toggleWhy('why-11', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-11">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">69.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">138.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.02&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.986&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#000000">LV</span>
+          Tre Tucker
+          
+            <span class="corr-flag" title="Correlated with QB Kirk Cousins on the same team">&middot; corr. w/ Kirk Cousins</span>
+          
+        </div>
+        <div class="player-sub">LV &middot; WR</div>
+        
+      </td>
+      <td>W2 vs LAC</td>
+      <td class="num">7</td>
+      <td class="num">5</td>
+      <td class="num stat-good">119 <span style="font-size:0.75em">(+257%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-bad" title="Cushion at snap: 5.7">1.8</td>
+      <td class="num stat-neutral">-0.6</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 41.2 yds. Opponent's NO allows 220.5 yds/game vs league avg 226.0 -> matchup factor 0.993x. Pace: 62.5 plays/game vs league avg 58.7 -> pace factor 1.019x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">41.7</span> yds &middot; W3 vs NO
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-12" onclick="toggleWhy('why-12', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-12">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">33.3</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">73.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.993&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.019&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#004C54">PHI</span>
+          DeVonta Smith
+          
+            <span class="corr-flag" title="Correlated with QB Jalen Hurts on the same team">&middot; corr. w/ Jalen Hurts</span>
+          
+        </div>
+        <div class="player-sub">PHI &middot; WR</div>
+        
+      </td>
+      <td>W2 vs TEN</td>
+      <td class="num">13</td>
+      <td class="num">10</td>
+      <td class="num stat-good">117 <span style="font-size:0.75em">(+83%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.5">2.7</td>
+      <td class="num stat-neutral">-0.6</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 68.0 yds. Opponent's CHI allows 252.0 yds/game vs league avg 226.0 -> matchup factor 1.035x. Pace: 59.5 plays/game vs league avg 58.7 -> pace factor 1.004x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.9 mph -> wind factor 1.0x">70.7</span> yds &middot; W3 vs CHI
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">66.5</span> yds
+          
+            <span class="player-sub">(us: 70.7)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-13" onclick="toggleWhy('why-13', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-13">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">63.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">85.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.035&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.004&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#E31837">KC</span>
+          Travis Kelce
+          
+            <span class="corr-flag" title="Correlated with QB Patrick Mahomes on the same team">&middot; corr. w/ Patrick Mahomes</span>
+          
+        </div>
+        <div class="player-sub">KC &middot; TE</div>
+        
+      </td>
+      <td>W2 vs IND</td>
+      <td class="num">11</td>
+      <td class="num">9</td>
+      <td class="num stat-good">101 <span style="font-size:0.75em">(+74%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-good" title="Cushion at snap: 6.4">3.2</td>
+      <td class="num stat-good">+1.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 63.6 yds. Opponent's MIA allows 223.5 yds/game vs league avg 226.0 -> matchup factor 0.997x. Pace: 70.5 plays/game vs league avg 58.7 -> pace factor 1.06x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.3 mph -> wind factor 1.0x">67.2</span> yds &middot; W3 vs MIA
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">42.5</span> yds
+          
+            <span class="player-sub">(us: 67.2)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-14" onclick="toggleWhy('why-14', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-14">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">58.0</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">86.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.997&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.06&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0085CA">CAR</span>
+          Tetairoa McMillan
+          
+            <span class="corr-flag" title="Correlated with QB Bryce Young on the same team">&middot; corr. w/ Bryce Young</span>
+          
+        </div>
+        <div class="player-sub">CAR &middot; WR</div>
+        
+      </td>
+      <td>W2 vs ATL</td>
+      <td class="num">10</td>
+      <td class="num">5</td>
+      <td class="num stat-good">101 <span style="font-size:0.75em">(+66%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: 4.9">2.5</td>
+      <td class="num stat-neutral">+1.2</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 66.2 yds. Opponent's CLE allows 213.5 yds/game vs league avg 226.0 -> matchup factor 0.983x. Pace: 59.0 plays/game vs league avg 58.7 -> pace factor 1.002x. Environment: no quote yet -> environment factor 1.0x. Wind: 6.1 mph -> wind factor 1.0x">65.2</span> yds &middot; W3 vs CLE
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">57.5</span> yds
+          
+            <span class="player-sub">(us: 65.2)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-15" onclick="toggleWhy('why-15', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-15">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">60.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">88.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.983&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.002&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#00338D">BUF</span>
+          DJ Moore
+          
+            <span class="corr-flag" title="Correlated with QB Josh Allen on the same team">&middot; corr. w/ Josh Allen</span>
+          
+        </div>
+        <div class="player-sub">BUF &middot; WR</div>
+        
+      </td>
+      <td>W1 vs HOU</td>
+      <td class="num">8</td>
+      <td class="num">5</td>
+      <td class="num stat-good">100 <span style="font-size:0.75em">(+69%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 9.0">2.8</td>
+      <td class="num stat-good">+3.7</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 57.2 yds. Opponent's LAC allows 265.0 yds/game vs league avg 226.0 -> matchup factor 1.052x. Pace: 58.5 plays/game vs league avg 58.7 -> pace factor 0.999x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.0 mph -> wind factor 1.0x">60.1</span> yds &middot; W3 vs LAC
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-16" onclick="toggleWhy('why-16', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-16">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">59.0</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">50.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.052&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.999&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#101820">JAX</span>
+          Parker Washington
+          
+            <span class="corr-flag" title="Correlated with QB Trevor Lawrence on the same team">&middot; corr. w/ Trevor Lawrence</span>
+          
+        </div>
+        <div class="player-sub">JAX &middot; WR</div>
+        
+      </td>
+      <td>W2 vs DEN</td>
+      <td class="num">12</td>
+      <td class="num">7</td>
+      <td class="num stat-good">98 <span style="font-size:0.75em">(+159%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: 7.1">2.1</td>
+      <td class="num stat-neutral">-0.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 48.3 yds. Opponent's NE allows 193.5 yds/game vs league avg 226.0 -> matchup factor 0.957x. Pace: 54.0 plays/game vs league avg 58.7 -> pace factor 0.976x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.8 mph -> wind factor 1.0x">45.1</span> yds &middot; W3 vs NE
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">61.5</span> yds
+          
+            <span class="player-sub">(us: 45.1)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-17" onclick="toggleWhy('why-17', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-17">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">37.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">90.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.957&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.976&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#002244">NE</span>
+          Romeo Doubs
+          
+            <span class="corr-flag" title="Correlated with QB Drake Maye on the same team">&middot; corr. w/ Drake Maye</span>
+          
+        </div>
+        <div class="player-sub">NE &middot; WR</div>
+        
+      </td>
+      <td>W2 vs PIT</td>
+      <td class="num">4</td>
+      <td class="num">3</td>
+      <td class="num stat-good">96 <span style="font-size:0.75em">(+103%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: —">—</td>
+      <td class="num stat-neutral">—</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 47.5 yds. Opponent's JAX allows 246.5 yds/game vs league avg 226.0 -> matchup factor 1.027x. Pace: 57.0 plays/game vs league avg 58.7 -> pace factor 0.991x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.8 mph -> wind factor 1.0x">48.4</span> yds &middot; W3 vs JAX
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">43.5</span> yds
+          
+            <span class="player-sub">(us: 48.4)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-18" onclick="toggleWhy('why-18', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-18">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">47.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">48.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.027&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.991&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#97233F">ARI</span>
+          Trey McBride
+          
+            <span class="corr-flag" title="Correlated with QB Jacoby Brissett on the same team">&middot; corr. w/ Jacoby Brissett</span>
+          
+        </div>
+        <div class="player-sub">ARI &middot; TE</div>
+        
+          <span class="injury-flag" title="Not injury related - resting player">Full Participation in Practice</span>
+        
+      </td>
+      <td>W1 vs LAC</td>
+      <td class="num">13</td>
+      <td class="num">9</td>
+      <td class="num stat-good">95 <span style="font-size:0.75em">(+48%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.4">2.8</td>
+      <td class="num stat-neutral">+0.7</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 65.0 yds. Opponent's SF allows 182.5 yds/game vs league avg 226.0 -> matchup factor 0.942x. Pace: 58.0 plays/game vs league avg 58.7 -> pace factor 0.996x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.7 mph -> wind factor 1.0x">61.0</span> yds &middot; W3 vs SF
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">61.5</span> yds
+          
+            <span class="player-sub">(us: 61.0)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-19" onclick="toggleWhy('why-19', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-19">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">64.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">68.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.942&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.996&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#203731">GB</span>
+          Matthew Golden
+          
+            <span class="corr-flag" title="Correlated with QB Jordan Love on the same team">&middot; corr. w/ Jordan Love</span>
+          
+        </div>
+        <div class="player-sub">GB &middot; WR</div>
+        
+      </td>
+      <td>W1 vs MIN</td>
+      <td class="num">12</td>
+      <td class="num">6</td>
+      <td class="num stat-good">95 <span style="font-size:0.75em">(+220%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: 6.5">2.5</td>
+      <td class="num stat-neutral">+1.1</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 39.1 yds. Opponent's ATL allows 254.0 yds/game vs league avg 226.0 -> matchup factor 1.037x. Pace: 55.0 plays/game vs league avg 58.7 -> pace factor 0.981x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.4 mph -> wind factor 1.0x">39.7</span> yds &middot; W3 vs ATL
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">52.5</span> yds
+          
+            <span class="player-sub">(us: 39.7)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-20" onclick="toggleWhy('why-20', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-20">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">29.7</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">76.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.037&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.981&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#FB4F14">CIN</span>
+          Tee Higgins
+          
+            <span class="corr-flag" title="Correlated with QB Joe Burrow on the same team">&middot; corr. w/ Joe Burrow</span>
+          
+        </div>
+        <div class="player-sub">CIN &middot; WR</div>
+        
+          <span class="injury-flag" title="Foot">Full Participation in Practice</span>
+        
+      </td>
+      <td>W2 vs HOU</td>
+      <td class="num">10</td>
+      <td class="num">5</td>
+      <td class="num stat-good">95 <span style="font-size:0.75em">(+53%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 7.5">3.0</td>
+      <td class="num stat-neutral">+0.5</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 64.9 yds. Opponent's PIT allows 175.5 yds/game vs league avg 226.0 -> matchup factor 0.933x. Pace: 58.0 plays/game vs league avg 58.7 -> pace factor 0.996x. Environment: no quote yet -> environment factor 1.0x. Wind: 2.9 mph -> wind factor 1.0x">60.4</span> yds &middot; W3 vs PIT
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">58.5</span> yds
+          
+            <span class="player-sub">(us: 60.4)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-21" onclick="toggleWhy('why-21', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-21">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">61.9</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">77.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.933&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.996&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#00338D">BUF</span>
+          Dalton Kincaid
+          
+            <span class="corr-flag" title="Correlated with QB Josh Allen on the same team">&middot; corr. w/ Josh Allen</span>
+          
+        </div>
+        <div class="player-sub">BUF &middot; TE</div>
+        
+      </td>
+      <td>W2 vs DET</td>
+      <td class="num">8</td>
+      <td class="num">7</td>
+      <td class="num stat-good">95 <span style="font-size:0.75em">(+131%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-good" title="Cushion at snap: 6.1">4.1</td>
+      <td class="num stat-neutral">+1.0</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 55.5 yds. Opponent's LAC allows 265.0 yds/game vs league avg 226.0 -> matchup factor 1.052x. Pace: 58.5 plays/game vs league avg 58.7 -> pace factor 0.999x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.0 mph -> wind factor 1.0x">58.3</span> yds &middot; W3 vs LAC
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-22" onclick="toggleWhy('why-22', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-22">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">41.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">112.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.052&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.999&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#311D00">CLE</span>
+          Denzel Boston
+          
+            <span class="corr-flag" title="Correlated with QB Deshaun Watson on the same team">&middot; corr. w/ Deshaun Watson</span>
+          
+        </div>
+        <div class="player-sub">CLE &middot; WR</div>
+        
+      </td>
+      <td>W2 vs TB</td>
+      <td class="num">7</td>
+      <td class="num">5</td>
+      <td class="num stat-good">95 <span style="font-size:0.75em">(+113%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 4.3">2.4</td>
+      <td class="num stat-good">+7.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 51.0 yds. Opponent's CAR allows 207.0 yds/game vs league avg 226.0 -> matchup factor 0.975x. Pace: 48.5 plays/game vs league avg 58.7 -> pace factor 0.948x. Environment: no quote yet -> environment factor 1.0x. Wind: 6.1 mph -> wind factor 1.0x">47.1</span> yds &middot; W3 vs CAR
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">34.5</span> yds
+          
+            <span class="player-sub">(us: 47.1)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-23" onclick="toggleWhy('why-23', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-23">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a slower-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">44.5</div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">77.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.975&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.948&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#008E97">MIA</span>
+          Caleb Douglas
+          
+            <span class="corr-flag" title="Correlated with QB Malik Willis on the same team">&middot; corr. w/ Malik Willis</span>
+          
+        </div>
+        <div class="player-sub">MIA &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LV</td>
+      <td class="num">7</td>
+      <td class="num">5</td>
+      <td class="num stat-good">94 <span style="font-size:0.75em">(+111%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 4.5">5.3</td>
+      <td class="num stat-neutral">+0.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 46.9 yds. Opponent's KC allows 170.5 yds/game vs league avg 226.0 -> matchup factor 0.926x. Pace: 48.5 plays/game vs league avg 58.7 -> pace factor 0.948x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.3 mph -> wind factor 1.0x">41.1</span> yds &middot; W3 vs KC
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-24" onclick="toggleWhy('why-24', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-24">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average) and a slower-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">44.5</div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">56.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.926&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.948&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#4F2683">MIN</span>
+          Justin Jefferson
+          
+            <span class="corr-flag" title="Correlated with QB Carson Wentz on the same team">&middot; corr. w/ Carson Wentz</span>
+          
+        </div>
+        <div class="player-sub">MIN &middot; WR</div>
+        
+      </td>
+      <td>W1 vs GB</td>
+      <td class="num">9</td>
+      <td class="num">8</td>
+      <td class="num stat-neutral">92 <span style="font-size:0.75em">(+12%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-good" title="Cushion at snap: 4.6">3.0</td>
+      <td class="num stat-neutral">+1.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 80.7 yds. Opponent's TB allows 246.0 yds/game vs league avg 226.0 -> matchup factor 1.027x. Pace: 53.0 plays/game vs league avg 58.7 -> pace factor 0.971x. Environment: no quote yet -> environment factor 1.0x. Wind: 9.1 mph -> wind factor 1.0x">80.5</span> yds &middot; W3 vs TB
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">76.5</span> yds
+          
+            <span class="player-sub">(us: 80.5)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-25" onclick="toggleWhy('why-25', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-25">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">82.5</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">73.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.027&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.971&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#A71930">ATL</span>
+          Bijan Robinson
+          
+            <span class="corr-flag" title="Correlated with QB Cooper Rush on the same team">&middot; corr. w/ Cooper Rush</span>
+          
+        </div>
+        <div class="player-sub">ATL &middot; RB</div>
+        
+      </td>
+      <td>W1 vs PIT</td>
+      <td class="num">10</td>
+      <td class="num">8</td>
+      <td class="num stat-good">90 <span style="font-size:0.75em">(+164%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: —">—</td>
+      <td class="num stat-neutral">—</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 37.2 yds. Opponent's GB allows 199.0 yds/game vs league avg 226.0 -> matchup factor 0.964x. Pace: 58.5 plays/game vs league avg 58.7 -> pace factor 0.999x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.4 mph -> wind factor 1.0x">35.9</span> yds &middot; W3 vs GB
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">40.5</span> yds
+          
+            <span class="player-sub">(us: 35.9)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-26" onclick="toggleWhy('why-26', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-26">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">34.1</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">49.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.964&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.999&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#241773">BAL</span>
+          Rashod Bateman
+          
+            <span class="corr-flag" title="Correlated with QB Lamar Jackson on the same team">&middot; corr. w/ Lamar Jackson</span>
+          
+        </div>
+        <div class="player-sub">BAL &middot; WR</div>
+        
+      </td>
+      <td>W2 vs NO</td>
+      <td class="num">9</td>
+      <td class="num">7</td>
+      <td class="num stat-good">88 <span style="font-size:0.75em">(+186%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-good" title="Cushion at snap: 8.2">3.4</td>
+      <td class="num stat-neutral">-0.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 33.4 yds. Opponent's DAL allows 218.5 yds/game vs league avg 226.0 -> matchup factor 0.99x. Pace: 57.5 plays/game vs league avg 58.7 -> pace factor 0.994x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">32.9</span> yds &middot; W3 vs DAL
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-27" onclick="toggleWhy('why-27', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-27">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">30.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">44.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.99&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.994&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#D3BC8D">NO</span>
+          Chris Olave
+          
+            <span class="corr-flag" title="Correlated with QB Tyler Shough on the same team">&middot; corr. w/ Tyler Shough</span>
+          
+        </div>
+        <div class="player-sub">NO &middot; WR</div>
+        
+          <span class="injury-flag" title="Hamstring">Questionable</span>
+        
+      </td>
+      <td>W2 vs BAL</td>
+      <td class="num">10</td>
+      <td class="num">8</td>
+      <td class="num stat-good">86 <span style="font-size:0.75em">(+28%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.7">2.2</td>
+      <td class="num stat-neutral">+0.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 80.6 yds. Opponent's LV allows 206.0 yds/game vs league avg 226.0 -> matchup factor 0.973x. Pace: 71.0 plays/game vs league avg 58.7 -> pace factor 1.063x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">83.3</span> yds &middot; W3 vs LV
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">74.5</span> yds
+          
+            <span class="player-sub">(us: 83.3)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-28" onclick="toggleWhy('why-28', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-28">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">67.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">134.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.973&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.063&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#E31837">KC</span>
+          Tyquan Thornton
+          
+            <span class="corr-flag" title="Correlated with QB Patrick Mahomes on the same team">&middot; corr. w/ Patrick Mahomes</span>
+          
+        </div>
+        <div class="player-sub">KC &middot; WR</div>
+        
+      </td>
+      <td>W2 vs IND</td>
+      <td class="num">4</td>
+      <td class="num">4</td>
+      <td class="num stat-good">86 <span style="font-size:0.75em">(+274%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-neutral" title="Cushion at snap: —">—</td>
+      <td class="num stat-neutral">—</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 27.0 yds. Opponent's MIA allows 223.5 yds/game vs league avg 226.0 -> matchup factor 0.997x. Pace: 70.5 plays/game vs league avg 58.7 -> pace factor 1.06x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.3 mph -> wind factor 1.0x">28.5</span> yds &middot; W3 vs MIA
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-29" onclick="toggleWhy('why-29', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-29">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">23.0</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">43.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.997&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.06&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0B162A">CHI</span>
+          Kalif Raymond
+          
+            <span class="corr-flag" title="Correlated with QB Caleb Williams on the same team">&middot; corr. w/ Caleb Williams</span>
+          
+        </div>
+        <div class="player-sub">CHI &middot; WR</div>
+        
+      </td>
+      <td>W1 vs CAR</td>
+      <td class="num">9</td>
+      <td class="num">8</td>
+      <td class="num stat-good">84 <span style="font-size:0.75em">(+267%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 8.2">3.7</td>
+      <td class="num stat-neutral">-1.1</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 30.7 yds. Opponent's PHI allows 173.5 yds/game vs league avg 226.0 -> matchup factor 0.93x. Pace: 67.0 plays/game vs league avg 58.7 -> pace factor 1.042x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.9 mph -> wind factor 1.0x">29.8</span> yds &middot; W3 vs PHI
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">28.5</span> yds
+          
+            <span class="player-sub">(us: 29.8)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-30" onclick="toggleWhy('why-30', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-30">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">22.9</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">62.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.93&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.042&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#101820">JAX</span>
+          Parker Washington
+          
+            <span class="corr-flag" title="Correlated with QB Trevor Lawrence on the same team">&middot; corr. w/ Trevor Lawrence</span>
+          
+        </div>
+        <div class="player-sub">JAX &middot; WR</div>
+        
+      </td>
+      <td>W1 vs CLE</td>
+      <td class="num">6</td>
+      <td class="num">5</td>
+      <td class="num stat-good">83 <span style="font-size:0.75em">(+120%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 4.4">2.9</td>
+      <td class="num stat-bad">-4.5</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 48.3 yds. Opponent's NE allows 193.5 yds/game vs league avg 226.0 -> matchup factor 0.957x. Pace: 54.0 plays/game vs league avg 58.7 -> pace factor 0.976x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.8 mph -> wind factor 1.0x">45.1</span> yds &middot; W3 vs NE
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">61.5</span> yds
+          
+            <span class="player-sub">(us: 45.1)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-31" onclick="toggleWhy('why-31', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-31">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">37.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">90.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.957&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.976&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#E31837">KC</span>
+          Rashee Rice
+          
+            <span class="corr-flag" title="Correlated with QB Patrick Mahomes on the same team">&middot; corr. w/ Patrick Mahomes</span>
+          
+        </div>
+        <div class="player-sub">KC &middot; WR</div>
+        
+          <span class="injury-flag" title="Knee">Full Participation in Practice</span>
+        
+      </td>
+      <td>W2 vs IND</td>
+      <td class="num">6</td>
+      <td class="num">4</td>
+      <td class="num stat-good">83 <span style="font-size:0.75em">(+29%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 5.5">4.0</td>
+      <td class="num stat-good">+3.1</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 61.6 yds. Opponent's MIA allows 223.5 yds/game vs league avg 226.0 -> matchup factor 0.997x. Pace: 70.5 plays/game vs league avg 58.7 -> pace factor 1.06x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.3 mph -> wind factor 1.0x">65.1</span> yds &middot; W3 vs MIA
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">51.5</span> yds
+          
+            <span class="player-sub">(us: 65.1)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-32" onclick="toggleWhy('why-32', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-32">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a fast-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">64.3</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">51.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.997&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.06&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0080C6">LAC</span>
+          Ladd McConkey
+          
+            <span class="corr-flag" title="Correlated with QB Justin Herbert on the same team">&middot; corr. w/ Justin Herbert</span>
+          
+        </div>
+        <div class="player-sub">LAC &middot; WR</div>
+        
+          <span class="injury-flag" title="Rib">Questionable</span>
+        
+      </td>
+      <td>W1 vs ARI</td>
+      <td class="num">7</td>
+      <td class="num">5</td>
+      <td class="num stat-good">82 <span style="font-size:0.75em">(+29%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 7.4">2.7</td>
+      <td class="num stat-neutral">-0.5</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 62.7 yds. Opponent's BUF allows 300.5 yds/game vs league avg 226.0 -> matchup factor 1.099x. Pace: 53.5 plays/game vs league avg 58.7 -> pace factor 0.973x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.0 mph -> wind factor 1.0x">67.0</span> yds &middot; W3 vs BUF
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">53.5</span> yds
+          
+            <span class="player-sub">(us: 67.0)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-33" onclick="toggleWhy('why-33', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-33">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">63.7</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">58.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.099&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.973&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#AA0000">SF</span>
+          George Kittle
+          
+            <span class="corr-flag" title="Correlated with QB Brock Purdy on the same team">&middot; corr. w/ Brock Purdy</span>
+          
+        </div>
+        <div class="player-sub">SF &middot; TE</div>
+        
+          <span class="injury-flag" title="Achilles">Full Participation in Practice</span>
+        
+      </td>
+      <td>W2 vs MIA</td>
+      <td class="num">4</td>
+      <td class="num">4</td>
+      <td class="num stat-good">80 <span style="font-size:0.75em">(+28%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: —">—</td>
+      <td class="num stat-neutral">—</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 59.1 yds. Opponent's ARI allows 222.0 yds/game vs league avg 226.0 -> matchup factor 0.995x. Pace: 56.5 plays/game vs league avg 58.7 -> pace factor 0.989x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.7 mph -> wind factor 1.0x">58.2</span> yds &middot; W3 vs ARI
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">44.5</span> yds
+          
+            <span class="player-sub">(us: 58.2)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-34" onclick="toggleWhy('why-34', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-34">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">62.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">46.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.995&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.989&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#125740">NYJ</span>
+          Garrett Wilson
+          
+            <span class="corr-flag" title="Correlated with QB Geno Smith on the same team">&middot; corr. w/ Geno Smith</span>
+          
+        </div>
+        <div class="player-sub">NYJ &middot; WR</div>
+        
+      </td>
+      <td>W1 vs TEN</td>
+      <td class="num">7</td>
+      <td class="num">6</td>
+      <td class="num stat-good">79 <span style="font-size:0.75em">(+27%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 4.9">3.0</td>
+      <td class="num stat-neutral">-1.1</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 63.2 yds. Opponent's DET allows 329.0 yds/game vs league avg 226.0 -> matchup factor 1.137x. Pace: 65.5 plays/game vs league avg 58.7 -> pace factor 1.035x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">74.4</span> yds &middot; W3 vs DET
+        
+      </td>
+      <td>
+        
+        
+          <span class="num">65.5</span> yds
+          
+            <span class="player-sub">(us: 74.4)</span>
+          
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-35" onclick="toggleWhy('why-35', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-35">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">62.0</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">68.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.137&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.035&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#FB4F14">CIN</span>
+          Mike Gesicki
+          
+            <span class="corr-flag" title="Correlated with QB Joe Burrow on the same team">&middot; corr. w/ Joe Burrow</span>
+          
+        </div>
+        <div class="player-sub">CIN &middot; TE</div>
+        
+      </td>
+      <td>W1 vs TB</td>
+      <td class="num">7</td>
+      <td class="num">5</td>
+      <td class="num stat-good">78 <span style="font-size:0.75em">(+176%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: 5.0">2.6</td>
+      <td class="num stat-neutral">+0.4</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 38.2 yds. Opponent's PIT allows 175.5 yds/game vs league avg 226.0 -> matchup factor 0.933x. Pace: 58.0 plays/game vs league avg 58.7 -> pace factor 0.996x. Environment: no quote yet -> environment factor 1.0x. Wind: 2.9 mph -> wind factor 1.0x">35.5</span> yds &middot; W3 vs PIT
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-36" onclick="toggleWhy('why-36', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-36">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">28.3</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">78.0</div>
+        <div class="flabel">2026 avg (1gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.933&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.996&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#0B2265">NYG</span>
+          Isaiah Likely
+          
+            <span class="corr-flag" title="Correlated with QB Jaxson Dart on the same team">&middot; corr. w/ Jaxson Dart</span>
+          
+        </div>
+        <div class="player-sub">NYG &middot; TE</div>
+        
+      </td>
+      <td>W1 vs DAL</td>
+      <td class="num">8</td>
+      <td class="num">8</td>
+      <td class="num stat-good">78 <span style="font-size:0.75em">(+156%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-good" title="Cushion at snap: 3.4">3.0</td>
+      <td class="num stat-neutral">+0.3</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 40.0 yds. Opponent's LA allows 205.0 yds/game vs league avg 226.0 -> matchup factor 0.972x. Pace: 66.0 plays/game vs league avg 58.7 -> pace factor 1.037x. Environment: no quote yet -> environment factor 1.0x. Wind: climate-controlled venue -> wind factor 1.0x">40.3</span> yds &middot; W2 vs LA
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-37" onclick="toggleWhy('why-37', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-37">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">30.5</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">78.0</div>
+        <div class="flabel">2026 avg (1gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.972&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.037&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#004C54">PHI</span>
+          Dallas Goedert
+          
+            <span class="corr-flag" title="Correlated with QB Jalen Hurts on the same team">&middot; corr. w/ Jalen Hurts</span>
+          
+        </div>
+        <div class="player-sub">PHI &middot; TE</div>
+        
+      </td>
+      <td>W1 vs WAS</td>
+      <td class="num">5</td>
+      <td class="num">4</td>
+      <td class="num stat-good">77 <span style="font-size:0.75em">(+78%)</span></td>
+      <td class="num">2</td>
+      <td class="num stat-good" title="Cushion at snap: 3.2">3.2</td>
+      <td class="num stat-good">+3.8</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 42.7 yds. Opponent's CHI allows 252.0 yds/game vs league avg 226.0 -> matchup factor 1.035x. Pace: 59.5 plays/game vs league avg 58.7 -> pace factor 1.004x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.9 mph -> wind factor 1.0x">44.4</span> yds &middot; W3 vs CHI
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-38" onclick="toggleWhy('why-38', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-38">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">43.3</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">40.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.035&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.004&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#008E97">MIA</span>
+          Ryan Miller
+          
+            <span class="corr-flag" title="Correlated with QB Malik Willis on the same team">&middot; corr. w/ Malik Willis</span>
+          
+        </div>
+        <div class="player-sub">MIA &middot; WR</div>
+        
+      </td>
+      <td>W2 vs SF</td>
+      <td class="num">1</td>
+      <td class="num">1</td>
+      <td class="num stat-good">77 <span style="font-size:0.75em">(+806%)</span></td>
+      <td class="num">1</td>
+      <td class="num stat-neutral" title="Cushion at snap: —">—</td>
+      <td class="num stat-neutral">—</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 22.2 yds. Opponent's KC allows 170.5 yds/game vs league avg 226.0 -> matchup factor 0.926x. Pace: 48.5 plays/game vs league avg 58.7 -> pace factor 0.948x. Environment: no quote yet -> environment factor 1.0x. Wind: 8.3 mph -> wind factor 1.0x">19.5</span> yds &middot; W3 vs KC
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-39" onclick="toggleWhy('why-39', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-39">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average) and a slower-paced offense.</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">8.5</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">77.0</div>
+        <div class="flabel">2026 avg (1gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.926&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.948&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:#97233F">ARI</span>
+          Kendrick Bourne
+          
+            <span class="corr-flag" title="Correlated with QB Jacoby Brissett on the same team">&middot; corr. w/ Jacoby Brissett</span>
+          
+        </div>
+        <div class="player-sub">ARI &middot; WR</div>
+        
+      </td>
+      <td>W1 vs LAC</td>
+      <td class="num">8</td>
+      <td class="num">8</td>
+      <td class="num stat-good">75 <span style="font-size:0.75em">(+108%)</span></td>
+      <td class="num">0</td>
+      <td class="num stat-good" title="Cushion at snap: 6.9">3.4</td>
+      <td class="num stat-neutral">+0.5</td>
+      <td>
+        
+          <span class="num" title="Before matchup adjustment: 37.5 yds. Opponent's SF allows 182.5 yds/game vs league avg 226.0 -> matchup factor 0.942x. Pace: 58.0 plays/game vs league avg 58.7 -> pace factor 0.996x. Environment: no quote yet -> environment factor 1.0x. Wind: 5.7 mph -> wind factor 1.0x">35.2</span> yds &middot; W3 vs SF
+        
+      </td>
+      <td>
+        
+        
+          <span class="player-sub">no line found</span>
+        
+      </td>
+      <td><span class="tier tier-mid">Building 2026 sample</span></td>
+      <td><button class="why-btn" data-why-target="why-40" onclick="toggleWhy('why-40', this)">why</button></td>
+    </tr>
+    
+<tr class="why-detail hidden" data-why-panel="why-40">
+  <td colspan="12">
+    
+    <p class="why-reason">An early, provisional receiving yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">36.1</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">43.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.942&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.996&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+    <span class="tier tier-mid">Building 2026 sample</span>
+    
+    
+    
+  </td>
+</tr>
+
+    
   </tbody>
 </table>
 </div>
-<div class="scroll-hint">scroll for more &middot; {{ rows|length }} players</div>
-</div>
-{% else %}
-<div class="empty-state">
-  <h3>No receiving data loaded</h3>
-  <p>The live data snapshot didn't return any receiver rows.</p>
-</div>
-{% endif %}
-
+<div class="scroll-hint">scroll for more &middot; 40 players</div>
 </div>
 
-<script>
-(function() {
-  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
-  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
-  tabs.forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      var idx = tab.getAttribute('data-game-idx');
-      tabs.forEach(function(t) { t.classList.remove('active'); });
-      tab.classList.add('active');
-      panels.forEach(function(p) {
-        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
-      });
-    });
-  });
-})();
-</script>
-{% endblock %}
+
+  </main>
+
+  <script>
+    function toggleWhy(id, btn) {
+      var panel = document.querySelector('[data-why-panel="' + id + '"]');
+      if (!panel) return;
+      var isHidden = panel.classList.contains('hidden');
+      panel.classList.toggle('hidden', !isHidden);
+      btn.classList.toggle('open', isHidden);
+      btn.textContent = isHidden ? 'hide' : 'why';
+    }
+  </script>
+
+  <footer class="site-foot">
+    <div class="foot-row">
+      <span>DATA: nflreadpy (nflverse) &middot; KALSHI public markets. All unofficial.</span>
+    </div>
+    
+    <div class="foot-row foot-dim">
+      BUILD: 2026-09-22 01:28 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+    </div>
+  </footer>
+</body>
+</html>
