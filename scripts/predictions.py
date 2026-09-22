@@ -138,3 +138,33 @@ def freeze_prediction(
     }
     save_predictions(preds)
     return True
+
+
+def player_prop_history(player: str, stat: str) -> list[dict]:
+    """
+    Every real frozen prediction for this player/stat, across every
+    week, sorted by week -- the real data behind a PrizePicks-style
+    'value vs. line, per game' chart, except it grows across the WHOLE
+    season instead of staying a fixed last-5. Each entry carries its own
+    real, frozen market line (the actual line that was posted that
+    specific week, not today's current one) and real hit/miss status
+    once that week's game is graded.
+    """
+    preds = load_predictions()
+    matches = [p for p in preds.values() if p["player"] == player and p["stat"] == stat]
+    matches.sort(key=lambda p: p["week"])
+    out = []
+    for p in matches:
+        if not p.get("graded"):
+            status = "pending"
+        elif p.get("hit") is None:
+            status = "no_line"
+        elif p["hit"]:
+            status = "hit"
+        else:
+            status = "miss"
+        out.append({
+            "week": p["week"], "value": p.get("actual"), "threshold": p.get("market_line"),
+            "call": p.get("call"), "status": status,
+        })
+    return out
