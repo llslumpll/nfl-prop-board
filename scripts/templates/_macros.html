@@ -41,6 +41,22 @@
 
     <p class="prop-card-reason">{{ p.reason }}</p>
 
+    {% if not is_td and p.baseline is not none %}
+    {% set spark_points = [p.baseline] %}
+    {% set spark_labels = ['CAREER'] %}
+    {% if p.observed_2026 is not none %}
+      {% set _ = spark_points.append(p.observed_2026) %}
+      {% set _ = spark_labels.append('2026') %}
+    {% endif %}
+    {% set _ = spark_points.append(p.projected) %}
+    {% set _ = spark_labels.append('PROJ') %}
+    {% set spark_min = (spark_points|min) * 0.85 %}
+    {% set spark_max = (spark_points|max) * 1.15 %}
+    <div class="prop-card-spark">
+      {{ line_chart(series=[{"points": spark_points, "color": "#ff6a3d"}], y_min=spark_min, y_max=spark_max, height=70, x_labels=(spark_labels[0], spark_labels[-1]))|safe }}
+    </div>
+    {% endif %}
+
     <div class="prop-card-tags">
       {% if p.tier %}<span class="tier {{ p.tier.css }}">{{ p.tier.label }}</span>{% endif %}
       {% if p.call %}<span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>{% endif %}
