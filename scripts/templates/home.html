@@ -18,129 +18,75 @@
     <div class="label">pages live: Matchups, Passing, Receiving, Receptions, Rushing, Touchdowns</div>
   </div>
   <div class="stat-block">
-    <div class="num">0</div>
-    <div class="label">graded predictions so far &mdash; History starts honest</div>
+    <div class="num">{{ recent_results|length }}</div>
+    <div class="label">graded predictions shown below &mdash; full history on the History page</div>
   </div>
 </div>
 
-{% macro factor_chip(label, factor_dict) %}
-  {% if factor_dict %}
-  <div class="factor">
-    <div class="fval stat-{{ 'good' if factor_dict.factor > 1.02 else 'bad' if factor_dict.factor < 0.98 else 'neutral' }}">{{ factor_dict.factor }}&times;</div>
-    <div class="flabel">{{ label }}</div>
-  </div>
+<p class="lede small" style="margin-top:24px;">
+  Top 5 by real model confidence, per prop. Each links to its full page,
+  where you'll also find a Best Value (market-mispriced) view and the
+  complete Projections table with a "why" breakdown for every player.
+</p>
+
+{% macro rank_list(title, sub, picks, link, is_td=false) %}
+<div class="summary-card">
+  <h3>{{ title }}</h3>
+  <div class="sub-note">{{ sub }}</div>
+  {% if picks %}
+    {% for p in picks %}
+    <div class="rank-row">
+      <span class="rank-num">{{ loop.index }}</span>
+      <span class="rank-name">
+        <span class="team-badge" style="background:{{ p.team_badge.color }}">{{ p.team_badge.abbr }}</span>
+        {{ p.player }}
+      </span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:{{ p.model_prob if is_td else p.confidence }}%;"></span></span>
+      <span class="rank-val">{{ p.model_prob if is_td else p.confidence }}%</span>
+    </div>
+    {% endfor %}
+  {% else %}
+    <p class="player-sub">No eligible picks yet this build.</p>
   {% endif %}
+  <p class="player-sub" style="margin-top:10px;"><a href="{{ link }}">Full board &rarr;</a></p>
+</div>
 {% endmacro %}
 
-{% macro best5_section(title, link, picks, rank_type, is_td=false) %}
-<h2>{{ title }}</h2>
-{% if picks %}
-<div class="prop-cards">
-  {% for p in picks %}
-  <div class="prop-card">
-    <div class="prop-card-head">
-      <div>
-        <div class="player-name">
-          <span class="team-badge" style="background:{{ p.team_badge.color }}">{{ p.team_badge.abbr }}</span>
-          {{ p.player }}
+<div class="summary-grid">
+  {{ rank_list("Passing — Top 5", "Highest real model confidence, this week", best5.passing.highest_confidence, "passing.html") }}
+  {{ rank_list("Rushing — Top 5", "Highest real model confidence, this week", best5.rushing.highest_confidence, "rushing.html") }}
+</div>
+<div class="summary-grid">
+  {{ rank_list("Receiving — Top 5", "Highest real model confidence, this week", best5.receiving.highest_confidence, "receiving.html") }}
+  {{ rank_list("Receptions — Top 5", "Highest real model confidence, this week", best5.receptions.highest_confidence, "receptions.html") }}
+</div>
+<div class="summary-grid">
+  {{ rank_list("Touchdowns — Top 5", "Most likely to score, real Poisson probability", best5.touchdowns.highest_confidence, "touchdowns.html", is_td=true) }}
+
+  <div class="summary-card">
+    <h3>Recent Results</h3>
+    <div class="sub-note">Real graded outcomes, most recent first.</div>
+    {% if recent_results %}
+      {% for r in recent_results %}
+      <div class="result-row">
+        <div>
+          <div class="rr-name">{{ r.player }}</div>
+          <div class="rr-sub">{{ r.stat.replace('_', ' ') }} &middot; {{ r.call }} {{ r.market_line }} &middot; W{{ r.week }}</div>
         </div>
-        <div class="player-sub">W{{ p.week }} vs {{ p.opponent }}</div>
+        {% if r.hit %}<span class="tier tier-high">HIT</span>{% else %}<span class="tier tier-low">MISS</span>{% endif %}
       </div>
-      <div class="prop-card-edge">
-        {% if rank_type == 'highest_confidence' %}
-          {% if is_td %}
-            <div class="num stat-good">{{ p.model_prob }}%</div>
-            <div class="label">MODEL PROBABILITY (1+ TD)</div>
-          {% else %}
-            <div class="num stat-good">{{ p.confidence }}%</div>
-            <div class="label">CONFIDENCE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
-          {% endif %}
-        {% elif is_td %}
-          <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</div>
-          <div class="label">MODEL {{ p.model_prob }}% vs MKT {{ p.market_prob }}%</div>
-        {% else %}
-          <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }} {{ p.unit }}</div>
-          <div class="label">EDGE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
-        {% endif %}
-      </div>
-    </div>
-
-    <p class="prop-card-reason">{{ p.reason }}</p>
-
-    <div class="prop-card-tags">
-      {% if p.tier %}<span class="tier {{ p.tier.css }}">{{ p.tier.label }}</span>{% endif %}
-      {% if p.call %}<span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>{% endif %}
-    </div>
-
-    {% if not is_td %}
-    <div class="factor-grid">
-      <div class="factor">
-        <div class="fval">{{ p.baseline }}</div>
-        <div class="flabel">Baseline{{ ' (career)' if p.baseline_source == 'career (2023-2025)' else '' }}</div>
-      </div>
-      {% if p.observed_2026 is not none %}
-      <div class="factor">
-        <div class="fval">{{ p.observed_2026 }}</div>
-        <div class="flabel">2026 avg ({{ p.n_games_2026 }}gm)</div>
-      </div>
-      {% endif %}
-      {% if rank_type == 'highest_confidence' and p.std_dev %}
-      <div class="factor"><div class="fval">&plusmn;{{ p.std_dev }}</div><div class="flabel">Real std dev</div></div>
-      {% endif %}
-      {{ factor_chip("Matchup", p.matchup_factor) }}
-      {{ factor_chip("Pace", p.pace_factor) }}
-      {{ factor_chip("Wind", p.wind_factor) }}
-      {{ factor_chip("Environment", p.environment_factor) }}
-    </div>
-    {% else %}
-    <div class="factor-grid">
-      <div class="factor"><div class="fval">{{ p.breakdown }}</div><div class="flabel">TD breakdown</div></div>
-    </div>
-    {% endif %}
-
-    {% if p.advanced %}
-    <div class="adv-row">
-      {% for a in p.advanced %}
-      <span class="adv-chip stat-{{ a.tier }}">{{ a.label }}: {{ a.value }}</span>
       {% endfor %}
-    </div>
+    {% else %}
+      <p class="player-sub">No graded results yet &mdash; check back once this week's games finish. <a href="history.html">History &rarr;</a></p>
     {% endif %}
+    <p class="player-sub" style="margin-top:10px;"><a href="history.html">Full history &amp; track record &rarr;</a></p>
   </div>
-  {% endfor %}
 </div>
-<p class="player-sub" style="margin:10px 0 0;"><a href="{{ link }}">Full board &rarr;</a> &middot; <a href="history.html">Track record in History &rarr;</a></p>
-{% else %}
-<div class="empty-state">
-  <h3>No eligible picks yet</h3>
-  <p>Needs both a real next-game projection and a real market line/quote for the same player &mdash; check back as more lines populate. <a href="{{ link }}">Full board &rarr;</a></p>
-</div>
-{% endif %}
-{% endmacro %}
-
-<div class="notice compact">
-  <strong>Two different rankings, on purpose.</strong> "Highest Confidence" ranks by real model probability
-  (using each player's own real game-to-game variance, or touchdowns' real Poisson probability) &mdash; the
-  pick most likely to actually happen. "Best Value" ranks by the biggest gap between our projection and the
-  real market line &mdash; the pick where the market looks most wrong. These are different questions and can
-  (and often will) name different players. Both are tracked and graded week over week on
-  <a href="history.html">History</a>.
-</div>
-
-{{ best5_section("Passing — Highest Confidence", "passing.html", best5.passing.highest_confidence, "highest_confidence") }}
-{{ best5_section("Passing — Best Value", "passing.html", best5.passing.best_value, "best_value") }}
-{{ best5_section("Receiving — Highest Confidence", "receiving.html", best5.receiving.highest_confidence, "highest_confidence") }}
-{{ best5_section("Receiving — Best Value", "receiving.html", best5.receiving.best_value, "best_value") }}
-{{ best5_section("Receptions — Highest Confidence", "receptions.html", best5.receptions.highest_confidence, "highest_confidence") }}
-{{ best5_section("Receptions — Best Value", "receptions.html", best5.receptions.best_value, "best_value") }}
-{{ best5_section("Rushing — Highest Confidence", "rushing.html", best5.rushing.highest_confidence, "highest_confidence") }}
-{{ best5_section("Rushing — Best Value", "rushing.html", best5.rushing.best_value, "best_value") }}
-{{ best5_section("Touchdowns — Most Likely to Score", "touchdowns.html", best5.touchdowns.highest_confidence, "highest_confidence", is_td=true) }}
-{{ best5_section("Touchdowns — Best Value", "touchdowns.html", best5.touchdowns.best_value, "best_value", is_td=true) }}
 
 <h2>What's real right now</h2>
 <ul class="plain">
-  <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, and a cross-position Touchdowns board &mdash; all from live nflreadpy data.</li>
-  <li>Every projection runs through five real, dampened layers: temporal (career + season blend), opponent matchup, team pace, wind (passing/receiving), and Vegas-implied game environment &mdash; see the factor breakdown on every Best 5 card above.</li>
+  <li>Full stat-page coverage: Passing, Receiving, Receptions, Rushing, and a cross-position Touchdowns board &mdash; all from live nflreadpy data, each with its own Best 5, Best Value, and full Projections views.</li>
+  <li>Every projection runs through five real, dampened layers: temporal (career + season blend), opponent matchup, team pace, wind (passing/receiving), and Vegas-implied game environment.</li>
   <li>Real advanced stats throughout: EPA/CPOE for passing, RYOE for rushing, separation/YAC for receiving &mdash; all genuine tracking-data metrics, not derived guesses.</li>
   <li>Full grading system live: every prediction frozen once, graded against the real result, with a real calibration loop feeding corrections back into future projections once enough graded history exists.</li>
   <li>Matchups page: the next date's real games, with real historical performance vs. that exact opponent, depth-chart-validated starters, and the real Kalshi market for that specific game.</li>
