@@ -38,12 +38,12 @@ def line_chart(
     for frac in (0, 0.25, 0.5, 0.75, 1.0):
         val = y_min + (y_max - y_min) * frac
         y = y_at(val)
-        parts.append(f'<line x1="{pad_l}" y1="{y:.1f}" x2="{width - pad_r}" y2="{y:.1f}" stroke="rgba(0,240,255,0.08)" stroke-width="1"/>')
-        parts.append(f'<text x="{pad_l - 8}" y="{y + 4:.1f}" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">{val:.0f}</text>')
+        parts.append(f'<line x1="{pad_l}" y1="{y:.1f}" x2="{width - pad_r}" y2="{y:.1f}" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>')
+        parts.append(f'<text x="{pad_l - 8}" y="{y + 4:.1f}" text-anchor="end" font-size="10" fill="#767676" font-family="monospace">{val:.0f}</text>')
 
     if reference_line is not None:
         ry = y_at(reference_line)
-        parts.append(f'<line x1="{pad_l}" y1="{ry:.1f}" x2="{width - pad_r}" y2="{ry:.1f}" stroke="#ffb020" stroke-width="1" stroke-dasharray="4,3"/>')
+        parts.append(f'<line x1="{pad_l}" y1="{ry:.1f}" x2="{width - pad_r}" y2="{ry:.1f}" stroke="#f0f0ee" stroke-width="1.5" stroke-dasharray="5,4"/>')
 
     for s in series:
         pts = s.get("points", [])
@@ -62,8 +62,8 @@ def line_chart(
             parts.append(f'<circle cx="{x_at(i, n):.1f}" cy="{y_at(v):.1f}" r="3" fill="{color}"/>')
 
     if x_labels:
-        parts.append(f'<text x="{pad_l}" y="{height - 6}" font-size="10" fill="#6c8a94" font-family="monospace">{x_labels[0]}</text>')
-        parts.append(f'<text x="{width - pad_r}" y="{height - 6}" text-anchor="end" font-size="10" fill="#6c8a94" font-family="monospace">{x_labels[1]}</text>')
+        parts.append(f'<text x="{pad_l}" y="{height - 6}" font-size="10" fill="#767676" font-family="monospace">{x_labels[0]}</text>')
+        parts.append(f'<text x="{width - pad_r}" y="{height - 6}" text-anchor="end" font-size="10" fill="#767676" font-family="monospace">{x_labels[1]}</text>')
 
     parts.append("</svg>")
     return "".join(parts)
