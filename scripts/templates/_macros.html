@@ -42,35 +42,16 @@
     <p class="prop-card-reason">{{ p.reason }}</p>
 
     {% if not is_td and p.baseline is not none %}
-    {% set spark_points = [p.baseline] %}
-    {% set spark_labels = ['CAREER'] %}
-    {% for wk in (p.weekly_series or []) %}
-      {% set _ = spark_points.append(wk.value) %}
-      {% set _ = spark_labels.append('W' ~ wk.week) %}
+    {% set bars = [] %}
+    {% for h in (p.prop_history or []) %}
+      {% set _ = bars.append({"label": "W" ~ h.week, "value": h.value, "threshold": h.threshold, "status": h.status}) %}
     {% endfor %}
-    {% set _ = spark_points.append(p.projected) %}
-    {% set _ = spark_labels.append('PROJ') %}
-    {% set range_points = spark_points + [p.market_line] if p.market_line is not none else spark_points %}
-    {% set spark_min = (range_points|min) * 0.85 %}
-    {% set spark_max = (range_points|max) * 1.15 %}
+    {% set _ = bars.append({"label": "PROJ", "value": p.projected, "threshold": p.market_line, "status": "projection"}) %}
     <div class="prop-card-spark">
-      {{ line_chart(series=[{"points": spark_points, "color": "#ff6a3d"}], y_min=spark_min, y_max=spark_max, height=170, reference_line=p.market_line, x_labels=(spark_labels[0], spark_labels[-1]))|safe }}
+      {{ bar_chart_with_threshold(bars=bars, height=170, career_baseline=p.baseline)|safe }}
       <div class="spark-legend">
-        <span><i class="spark-dot spark-dot-line"></i> Real trajectory: career &rarr; {{ p.weekly_series|length }} real week{{ 's' if p.weekly_series|length != 1 }} played this season &rarr; final projection. Grows one real point every week.</span>
-        {% if p.market_line is not none %}<span><i class="spark-dot spark-dot-dash"></i> Real market line ({{ p.market_line }} {{ p.unit }}) &mdash; {{ 'our number lands above it (OVER)' if p.projected > p.market_line else 'our number lands below it (UNDER)' }}</span>{% endif %}
-      </div>
-    </div>
-    {% endif %}
-
-    {% if not is_td and p.prop_history %}
-    <div class="prop-card-spark">
-      {% set bars = [] %}
-      {% for h in p.prop_history %}
-        {% set _ = bars.append({"label": "W" ~ h.week, "value": h.value, "threshold": h.threshold, "status": h.status}) %}
-      {% endfor %}
-      {{ bar_chart_with_threshold(bars=bars, height=150)|safe }}
-      <div class="spark-legend">
-        <span><i class="spark-dot spark-dot-hit"></i> Hit &nbsp; <i class="spark-dot spark-dot-miss"></i> Miss &nbsp; <i class="spark-dot spark-dot-pending"></i> Pending &mdash; bar = real result that week, white tick = the real line posted that specific week (not today's line)</span>
+        <span><i class="spark-dot spark-dot-hit"></i> Hit &nbsp; <i class="spark-dot spark-dot-miss"></i> Miss &nbsp; <i class="spark-dot spark-dot-pending"></i> Upcoming (outlined) &mdash; solid bar = real result that week, white tick = the real line posted that specific week</span>
+        <span><i class="spark-dot spark-dot-dash"></i> Career baseline ({{ p.baseline }} {{ p.unit }}) &mdash; dotted line for reading recent form against a real long-run norm</span>
       </div>
     </div>
     {% endif %}
