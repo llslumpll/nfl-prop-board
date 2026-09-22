@@ -975,8 +975,27 @@ def _cpoe_tier(cpoe: float | None) -> str:
     return "neutral"
 
 
+def _latest_week_per_player(df):
+    """
+    Real bug fix: load_stats() returns one row per player PER WEEK, not
+    one row per player. Every leaders() function below used to sort/
+    filter that multi-week table directly, which was invisible with only
+    one week of data cached but produces a real, confirmed duplicate-row
+    bug the moment a second week exists -- the same player shows up
+    twice (once per week they've played), each with an identical Best 5
+    confidence, since next_game_projection looks up the same real
+    upcoming game regardless of which week's row triggered it.
+
+    This filters down to each player's single most recent real week
+    before any leaderboard sorting happens, matching what "this week's
+    leaderboard" should actually mean.
+    """
+    latest_week = df.group_by("player_display_name").agg(pl.col("week").max().alias("latest_week"))
+    return df.join(latest_week, on="player_display_name").filter(pl.col("week") == pl.col("latest_week")).drop("latest_week")
+
+
 def passing_leaders(limit: int = 30) -> list[dict]:
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     qb = df.filter(pl.col("position") == "QB").sort("passing_yards", descending=True)
     out = []
     for row in qb.head(limit).iter_rows(named=True):
@@ -1018,7 +1037,7 @@ def passing_leaders(limit: int = 30) -> list[dict]:
 
 
 def receiving_leaders(limit: int = 40) -> list[dict]:
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     rec = df.filter(pl.col("position").is_in(["WR", "TE", "RB"])).sort(
         "receiving_yards", descending=True
     )
@@ -1063,7 +1082,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
     distinct prop on PrizePicks/Kalshi (brief's explicit instruction not
     to merge these pages), so it gets its own sort order and page.
     """
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     rec = df.filter(pl.col("position").is_in(["WR", "TE", "RB"])).sort(
         "receptions", descending=True
     )
@@ -1092,7 +1111,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
 
 
 def rushing_leaders(limit: int = 40) -> list[dict]:
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     rush = df.filter(pl.col("position").is_in(["RB", "QB", "WR"])).filter(
         pl.col("rushing_yards") > 0
     ).sort("rushing_yards", descending=True)
@@ -1157,7 +1176,7 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
     hence their own page). Combines passing/rushing/receiving TDs into
     one 'anytime TD' style total per player, tagged with which kind.
     """
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     out = []
     for row in df.iter_rows(named=True):
         pass_td = row.get("passing_tds") or 0
@@ -1197,7 +1216,7 @@ def correlated_pairs_for_receiving(limit: int = 40) -> dict:
     same team + same game = correlated legs. This is a flag only, not
     a computed correlation coefficient (needs a real sample to compute).
     """
-    df = load_stats()
+    df = _latest_week_per_player(load_stats())
     qbs = (
         df.filter(pl.col("position") == "QB")
         .sort("attempts", descending=True)
