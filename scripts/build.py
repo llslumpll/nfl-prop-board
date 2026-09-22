@@ -71,6 +71,7 @@ def refresh_data():
 def build():
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     env.globals["line_chart"] = svgchart.line_chart
+    env.globals["bar_chart_with_threshold"] = svgchart.bar_chart_with_threshold
     build_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     # A URL-safe, ever-changing value tied to this exact build -- used
     # as a query-string cache-buster on static/style.css so every real
