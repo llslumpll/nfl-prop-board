@@ -241,6 +241,68 @@ STADIUMS = {
 }
 
 
+import math
+
+_player_std_cache: dict[str, float] = {}
+_position_avg_std_cache: dict[str, float] = {}
+
+
+def _position_avg_std(stat_col: str, position: str) -> float:
+    """Real average per-player game-to-game standard deviation for a
+    stat/position, computed from actual historical variance (players
+    with 8+ games only, so one wild game doesn't dominate). This is the
+    fallback used for a player without enough of their own games yet --
+    deliberately NOT the pooled league-wide std, which mixes in
+    between-player skill differences and overstates true game-to-game
+    uncertainty for any one player."""
+    key = f"{stat_col}_{position}"
+    if key not in _position_avg_std_cache:
+        hist = load_historical_stats()
+        rows = hist.filter(pl.col("position") == position).group_by("player_display_name").agg(
+            pl.col(stat_col).std().alias("std"), pl.col(stat_col).count().alias("n")
+        ).filter((pl.col("n") >= 8) & (pl.col("std").is_not_null()))
+        _position_avg_std_cache[key] = rows["std"].mean() if rows.height else None
+    return _position_avg_std_cache[key]
+
+
+def player_std_dev(player_name: str, stat_col: str, position: str) -> float | None:
+    """Real per-player game-to-game standard deviation when there's
+    enough real career sample (8+ games) to trust it; otherwise falls
+    back to the real position-level average computed above. Returns
+    None only if neither is available (a brand-new stat/position combo)."""
+    key = f"{player_name}_{stat_col}"
+    if key not in _player_std_cache:
+        hist = load_historical_stats()
+        rows = hist.filter(pl.col("player_display_name") == player_name)
+        vals = [v for v in rows[stat_col].to_list() if v is not None]
+        if len(vals) >= 8:
+            mean = sum(vals) / len(vals)
+            variance = sum((v - mean) ** 2 for v in vals) / (len(vals) - 1)
+            _player_std_cache[key] = math.sqrt(variance)
+        else:
+            _player_std_cache[key] = _position_avg_std(stat_col, position)
+    return _player_std_cache[key]
+
+
+def model_prob_over(projected: float, market_line: float, std_dev: float | None) -> float | None:
+    """
+    Real probability the actual result clears the market line, using a
+    normal-distribution approximation: our projection as the mean, real
+    per-player (or position-average) game-to-game standard deviation as
+    the spread. Standard, legitimate statistical technique for turning a
+    point projection into a probability -- same idea as MLB's Poisson
+    model for strikeouts, just using a normal approximation since
+    yardage totals are continuous, not count data.
+
+    Returns None (never a fabricated 50/50) if std_dev isn't available.
+    """
+    if std_dev is None or std_dev <= 0:
+        return None
+    z = (projected - market_line) / std_dev
+    prob = 0.5 * (1 + math.erf(z / math.sqrt(2)))
+    return max(0.01, min(0.99, prob))
+
+
 def clip(v: float, lo: float, hi: float) -> float:
     return max(lo, min(hi, v))
 
