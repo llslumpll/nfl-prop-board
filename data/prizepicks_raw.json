@@ -17,13 +17,15 @@
       "receptions": 4.5
     },
     "Drake London": {
-      "receiving_yards": 62.5
+      "receiving_yards": 62.5,
+      "receptions": 5
     },
     "Matthew Golden": {
       "receiving_yards": 52.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 46.5
+      "receiving_yards": 46.5,
+      "receptions": 4
     },
     "Kaleb Johnson": {
       "rushing_yards": 36.5
@@ -381,9 +383,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 1098,
-    "matched_props": 154,
-    "excluded_goblin_demon_lines": 837,
+    "total_projections_returned": 1100,
+    "matched_props": 156,
+    "excluded_goblin_demon_lines": 836,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
