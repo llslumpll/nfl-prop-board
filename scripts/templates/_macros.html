@@ -62,6 +62,19 @@
     </div>
     {% endif %}
 
+    {% if not is_td and p.prop_history %}
+    <div class="prop-card-spark">
+      {% set bars = [] %}
+      {% for h in p.prop_history %}
+        {% set _ = bars.append({"label": "W" ~ h.week, "value": h.value, "threshold": h.threshold, "status": h.status}) %}
+      {% endfor %}
+      {{ bar_chart_with_threshold(bars=bars, height=150)|safe }}
+      <div class="spark-legend">
+        <span><i class="spark-dot spark-dot-hit"></i> Hit &nbsp; <i class="spark-dot spark-dot-miss"></i> Miss &nbsp; <i class="spark-dot spark-dot-pending"></i> Pending &mdash; bar = real result that week, white tick = the real line posted that specific week (not today's line)</span>
+      </div>
+    </div>
+    {% endif %}
+
     <div class="prop-card-tags">
       {% if p.tier %}<span class="tier {{ p.tier.css }}">{{ p.tier.label }}</span>{% endif %}
       {% if p.call %}<span class="tier {{ 'tier-high' if p.call == 'OVER' else 'tier-low' }}">{{ p.call }}</span>{% endif %}
