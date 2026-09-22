@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Passing — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1790041123">
+  <link rel="stylesheet" href="static/style.css?v=1790041790">
 </head>
 <body>
   <header class="site-head">
@@ -44,6 +44,751 @@
     
 <h1>Passing</h1>
 <p class="lede">Quarterback passing lines from live nflreadpy data, plus real advanced efficiency stats &mdash; raw yardage alone can be misleading (garbage-time volume vs. genuine quality).</p>
+
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Best 5</button>
+  <button class="game-tab" data-game-idx="1">Best Value</button>
+  <button class="game-tab" data-game-idx="2">Projections</button>
+</div>
+
+<div class="game-panel" data-game-panel="0">
+  <p class="lede small">The 5 QBs the model is most confident in this week &mdash; ranked by real probability (using each QB's own real game-to-game passing variance), not by how big the market gap is. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  
+
+<div class="prop-cards">
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#03202F">HOU</span>
+          C.J. Stroud
+        </div>
+        <div class="player-sub">W3 vs IND</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">87.7%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 309.6 vs LINE 220.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a favorable matchup (this opponent allows more than average) and a fast-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;76.8</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#008E97">MIA</span>
+          Malik Willis
+        </div>
+        <div class="player-sub">W3 vs KC</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">82.5%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 97.8 vs LINE 182.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, tempered by a tough matchup (this opponent allows less than average) and a slower-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-low">UNDER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;90.7</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#5A1414">WAS</span>
+          Marcus Mariota
+        </div>
+        <div class="player-sub">W3 vs SEA</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">82.4%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 116.2 vs LINE 205.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-low">UNDER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;96.0</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#E31837">KC</span>
+          Patrick Mahomes
+        </div>
+        <div class="player-sub">W3 vs MIA</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">79.4%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 274.0 vs LINE 228.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a fast-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;55.4</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#125740">NYJ</span>
+          Geno Smith
+        </div>
+        <div class="player-sub">W3 vs DET</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">74.7%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 274.1 vs LINE 221.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;79.0</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+</div>
+<p class="player-sub" style="margin:10px 0 0;"><a href="history.html">Track record in History &rarr;</a></p>
+
+
+</div>
+
+<div class="game-panel hidden" data-game-panel="1">
+  <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong, not just the highest-confidence picks. A different ranking from Best 5 and can (and often will) name different players.</p>
+  
+
+<div class="prop-cards">
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#5A1414">WAS</span>
+          Marcus Mariota
+        </div>
+        <div class="player-sub">W3 vs SEA</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-bad">-89.3 yds</div>
+          <div class="label">EDGE &middot; PROJ 116.2 vs LINE 205.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, tempered by a tough matchup (this opponent allows less than average).</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-low">UNDER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">130.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">111.0</div>
+        <div class="flabel">2026 avg (1gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.881&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.04&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-good">EPA/play: 0.421</span>
+      
+      <span class="adv-chip stat-good">CPOE: +8.0%</span>
+      
+    </div>
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#03202F">HOU</span>
+          C.J. Stroud
+        </div>
+        <div class="player-sub">W3 vs IND</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-good">+89.1 yds</div>
+          <div class="label">EDGE &middot; PROJ 309.6 vs LINE 220.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a favorable matchup (this opponent allows more than average) and a fast-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">236.8</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">313.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.15&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.068&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-bad">EPA/play: -0.116</span>
+      
+      <span class="adv-chip stat-bad">CPOE: -8.4%</span>
+      
+    </div>
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#008E97">MIA</span>
+          Malik Willis
+        </div>
+        <div class="player-sub">W3 vs KC</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-bad">-84.7 yds</div>
+          <div class="label">EDGE &middot; PROJ 97.8 vs LINE 182.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, tempered by a tough matchup (this opponent allows less than average) and a slower-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-low">UNDER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">87.2</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">208.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.926&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-bad">0.948&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-neutral">EPA/play: 0.194</span>
+      
+      <span class="adv-chip stat-bad">CPOE: -8.6%</span>
+      
+    </div>
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#125740">NYJ</span>
+          Geno Smith
+        </div>
+        <div class="player-sub">W3 vs DET</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-good">+52.6 yds</div>
+          <div class="label">EDGE &middot; PROJ 274.1 vs LINE 221.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a favorable matchup (this opponent allows more than average).</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">233.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">231.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.137&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.035&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-neutral">EPA/play: 0.104</span>
+      
+      <span class="adv-chip stat-good">CPOE: +5.9%</span>
+      
+    </div>
+    
+  </div>
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#E31837">KC</span>
+          Patrick Mahomes
+        </div>
+        <div class="player-sub">W3 vs MIA</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-good">+45.5 yds</div>
+          <div class="label">EDGE &middot; PROJ 274.0 vs LINE 228.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional passing yards projection, boosted by a fast-paced offense.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">253.4</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">283.0</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">0.997&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.06&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Wind</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-good">EPA/play: 0.286</span>
+      
+      <span class="adv-chip stat-good">CPOE: +3.7%</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+<p class="player-sub" style="margin:10px 0 0;"><a href="history.html">Track record in History &rarr;</a></p>
+
+
+</div>
+
+<div class="game-panel hidden" data-game-panel="2">
+
+<details class="info-collapse">
+<summary>How this page works &amp; what's real (click to expand)</summary>
 
 <div class="notice">
   <strong>Provisional tiers only.</strong> With one week of data, there isn't
@@ -95,6 +840,7 @@
 </div>
 
 
+</details>
 
 
 <div class="table-wrap">
@@ -2971,6 +3717,25 @@
 </div>
 
 
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
+
   </main>
 
   <script>
@@ -2990,7 +3755,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-22 01:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-22 01:49 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

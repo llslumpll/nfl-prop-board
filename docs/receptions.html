@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Receptions — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1790041123">
+  <link rel="stylesheet" href="static/style.css?v=1790041790">
 </head>
 <body>
   <header class="site-head">
@@ -49,6 +49,178 @@
   so they're not merged here.
 </p>
 
+<div class="game-picker">
+  <button class="game-tab active" data-game-idx="0">Best 5</button>
+  <button class="game-tab" data-game-idx="1">Best Value</button>
+  <button class="game-tab" data-game-idx="2">Projections</button>
+</div>
+
+<div class="game-panel" data-game-panel="0">
+  <p class="lede small">The 5 receivers the model is most confident in this week for receptions &mdash; ranked by real probability, not market gap size. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  
+
+<div class="prop-cards">
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#125740">NYJ</span>
+          Garrett Wilson
+        </div>
+        <div class="player-sub">W3 vs DET</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          
+            <div class="num stat-good">56.1%</div>
+            <div class="label">CONFIDENCE &middot; PROJ 5.9 vs LINE 5.5</div>
+          
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional receptions projection.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">Baseline</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval"></div>
+        <div class="flabel">2026 avg (gm)</div>
+      </div>
+      
+      
+      <div class="factor"><div class="fval">&plusmn;2.6</div><div class="flabel">Real std dev</div></div>
+      
+      
+  
+
+      
+  
+
+      
+  
+
+      
+  
+
+    </div>
+    
+
+    
+  </div>
+  
+</div>
+<p class="player-sub" style="margin:10px 0 0;"><a href="history.html">Track record in History &rarr;</a></p>
+
+
+</div>
+
+<div class="game-panel hidden" data-game-panel="1">
+  <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong. A different ranking from Best 5.</p>
+  
+
+<div class="prop-cards">
+  
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:#125740">NYJ</span>
+          Garrett Wilson
+        </div>
+        <div class="player-sub">W3 vs DET</div>
+      </div>
+      <div class="prop-card-edge">
+        
+          <div class="num stat-good">+0.4 rec</div>
+          <div class="label">EDGE &middot; PROJ 5.9 vs LINE 5.5</div>
+        
+      </div>
+    </div>
+
+    <p class="prop-card-reason">An early, provisional receptions projection.</p>
+
+    <div class="prop-card-tags">
+      <span class="tier tier-mid">Building 2026 sample</span>
+      <span class="tier tier-high">OVER</span>
+    </div>
+
+    
+    <div class="factor-grid">
+      <div class="factor">
+        <div class="fval">5.7</div>
+        <div class="flabel">Baseline (career)</div>
+      </div>
+      
+      <div class="factor">
+        <div class="fval">5.5</div>
+        <div class="flabel">2026 avg (2gm)</div>
+      </div>
+      
+      
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Matchup</div>
+  </div>
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-good">1.035&times;</div>
+    <div class="flabel">Pace</div>
+  </div>
+  
+
+      
+  
+
+      
+  
+  <div class="factor">
+    <div class="fval stat-neutral">1.0&times;</div>
+    <div class="flabel">Environment</div>
+  </div>
+  
+
+    </div>
+    
+
+    
+    <div class="adv-row">
+      
+      <span class="adv-chip stat-neutral">Catch rate: 71.4%</span>
+      
+      <span class="adv-chip stat-neutral">Targets: 7</span>
+      
+    </div>
+    
+  </div>
+  
+</div>
+<p class="player-sub" style="margin:10px 0 0;"><a href="history.html">Track record in History &rarr;</a></p>
+
+
+</div>
+
+<div class="game-panel hidden" data-game-panel="2">
+
+<details class="info-collapse">
+<summary>How this page works &amp; what's real (click to expand)</summary>
+
 <div class="notice">
   <strong>Provisional tiers only.</strong> Same caveat as the other prop
   pages. Where a receiver's own quarterback appears, that pairing is
@@ -62,6 +234,7 @@
 </div>
 
 
+</details>
 
 
 <div class="table-wrap">
@@ -3478,6 +3651,25 @@
 </div>
 
 
+</div>
+
+<script>
+(function() {
+  var tabs = document.querySelectorAll('.game-picker > .game-tab[data-game-idx]');
+  var panels = document.querySelectorAll('.game-panel[data-game-panel]');
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var idx = tab.getAttribute('data-game-idx');
+      tabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx);
+      });
+    });
+  });
+})();
+</script>
+
   </main>
 
   <script>
@@ -3497,7 +3689,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-22 01:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-22 01:49 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
