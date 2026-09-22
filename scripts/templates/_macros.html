@@ -50,10 +50,15 @@
     {% endif %}
     {% set _ = spark_points.append(p.projected) %}
     {% set _ = spark_labels.append('PROJ') %}
-    {% set spark_min = (spark_points|min) * 0.85 %}
-    {% set spark_max = (spark_points|max) * 1.15 %}
+    {% set range_points = spark_points + [p.market_line] if p.market_line is not none else spark_points %}
+    {% set spark_min = (range_points|min) * 0.85 %}
+    {% set spark_max = (range_points|max) * 1.15 %}
     <div class="prop-card-spark">
-      {{ line_chart(series=[{"points": spark_points, "color": "#ff6a3d"}], y_min=spark_min, y_max=spark_max, height=70, x_labels=(spark_labels[0], spark_labels[-1]))|safe }}
+      {{ line_chart(series=[{"points": spark_points, "color": "#ff6a3d"}], y_min=spark_min, y_max=spark_max, height=170, reference_line=p.market_line, x_labels=(spark_labels[0], spark_labels[-1]))|safe }}
+      <div class="spark-legend">
+        <span><i class="spark-dot spark-dot-line"></i> Our trajectory (career &rarr; 2026 &rarr; final projection)</span>
+        {% if p.market_line is not none %}<span><i class="spark-dot spark-dot-dash"></i> Real market line ({{ p.market_line }} {{ p.unit }}) &mdash; {{ 'our number lands above it (OVER)' if p.projected > p.market_line else 'our number lands below it (UNDER)' }}</span>{% endif %}
+      </div>
     </div>
     {% endif %}
 
