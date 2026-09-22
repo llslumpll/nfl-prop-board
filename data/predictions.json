@@ -5184,7 +5184,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaylen Waddle|receptions|3": {
     "player": "Jaylen Waddle",
@@ -6303,7 +6307,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Stefon Diggs|any_td|3": {
     "player": "Stefon Diggs",
