@@ -25,6 +25,34 @@ def poisson_prob_at_least(threshold: int, lam: float) -> float:
     return max(0.001, min(0.999, 1 - cum))
 
 
+def _advanced_stats_for(r: dict, stat_col: str) -> list[dict]:
+    """Shared position-specific advanced-stat chips, used by BOTH Best
+    Value and Best 5 (Highest Confidence) cards so they show identical
+    real context, just ranked differently."""
+    advanced = []
+    if stat_col == "passing_yards":
+        if r.get("epa_per_play") is not None:
+            advanced.append({"label": "EPA/play", "value": r["epa_per_play"], "tier": r.get("epa_tier", "neutral")})
+        if r.get("cpoe") is not None:
+            advanced.append({"label": "CPOE", "value": f"{'+' if r['cpoe']>0 else ''}{r['cpoe']}%", "tier": r.get("cpoe_tier", "neutral")})
+    elif stat_col == "rushing_yards":
+        if r.get("ryoe_per_att") is not None:
+            advanced.append({"label": "RYOE/att", "value": r["ryoe_per_att"], "tier": r.get("ryoe_tier", "neutral")})
+        if r.get("stacked_box_pct") is not None:
+            advanced.append({"label": "Stacked box", "value": f"{r['stacked_box_pct']}%", "tier": "neutral"})
+    elif stat_col == "receiving_yards":
+        if r.get("separation") is not None:
+            advanced.append({"label": "Separation", "value": r["separation"], "tier": r.get("separation_tier", "neutral")})
+        if r.get("yac_above_exp") is not None:
+            advanced.append({"label": "YAC+", "value": f"{'+' if r['yac_above_exp']>0 else ''}{r['yac_above_exp']}", "tier": r.get("yac_above_exp_tier", "neutral")})
+    elif stat_col == "receptions":
+        if r.get("catch_rate") is not None:
+            advanced.append({"label": "Catch rate", "value": f"{r['catch_rate']}%", "tier": "neutral"})
+        if r.get("targets") is not None:
+            advanced.append({"label": "Targets", "value": r["targets"], "tier": "neutral"})
+    return advanced
+
+
 def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) -> list[dict]:
     """
     rows: output of a leaders function (passing_leaders, etc.) -- each
@@ -62,28 +90,6 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
         projected = projection["projected"]
         edge = round(projected - pp_line, 1)
 
-        advanced = []
-        if stat_col == "passing_yards":
-            if r.get("epa_per_play") is not None:
-                advanced.append({"label": "EPA/play", "value": r["epa_per_play"], "tier": r.get("epa_tier", "neutral")})
-            if r.get("cpoe") is not None:
-                advanced.append({"label": "CPOE", "value": f"{'+' if r['cpoe']>0 else ''}{r['cpoe']}%", "tier": r.get("cpoe_tier", "neutral")})
-        elif stat_col == "rushing_yards":
-            if r.get("ryoe_per_att") is not None:
-                advanced.append({"label": "RYOE/att", "value": r["ryoe_per_att"], "tier": r.get("ryoe_tier", "neutral")})
-            if r.get("stacked_box_pct") is not None:
-                advanced.append({"label": "Stacked box", "value": f"{r['stacked_box_pct']}%", "tier": "neutral"})
-        elif stat_col == "receiving_yards":
-            if r.get("separation") is not None:
-                advanced.append({"label": "Separation", "value": r["separation"], "tier": r.get("separation_tier", "neutral")})
-            if r.get("yac_above_exp") is not None:
-                advanced.append({"label": "YAC+", "value": f"{'+' if r['yac_above_exp']>0 else ''}{r['yac_above_exp']}", "tier": r.get("yac_above_exp_tier", "neutral")})
-        elif stat_col == "receptions":
-            if r.get("catch_rate") is not None:
-                advanced.append({"label": "Catch rate", "value": f"{r['catch_rate']}%", "tier": "neutral"})
-            if r.get("targets") is not None:
-                advanced.append({"label": "Targets", "value": r["targets"], "tier": "neutral"})
-
         candidates.append({
             "player": r["player"],
             "team_badge": r.get("team_badge"),
@@ -106,7 +112,7 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
             "pace_factor": projection.get("pace_factor"),
             "wind_factor": projection.get("wind_factor"),
             "environment_factor": projection.get("environment_factor"),
-            "advanced": advanced,
+            "advanced": _advanced_stats_for(r, stat_col),
         })
     candidates.sort(key=lambda c: abs(c["edge"]), reverse=True)
     return candidates[:5]
@@ -184,6 +190,16 @@ def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, un
             "unit": unit,
             "reason": dataio.reason_text(projection, STAT_LABELS.get(stat_col, stat_col)),
             "tier": projection.get("tier", {}),
+            "baseline": projection.get("baseline"),
+            "baseline_source": projection.get("baseline_source"),
+            "observed_2026": projection.get("observed_2026"),
+            "n_games_2026": projection.get("n_games_2026"),
+            "pre_matchup_projected": projection.get("pre_matchup_projected"),
+            "matchup_factor": projection.get("matchup_factor"),
+            "pace_factor": projection.get("pace_factor"),
+            "wind_factor": projection.get("wind_factor"),
+            "environment_factor": projection.get("environment_factor"),
+            "advanced": _advanced_stats_for(r, stat_col),
         })
     candidates.sort(key=lambda c: c["confidence"], reverse=True)
     return candidates[:5]
