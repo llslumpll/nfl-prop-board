@@ -44,10 +44,10 @@
     {% if not is_td and p.baseline is not none %}
     {% set spark_points = [p.baseline] %}
     {% set spark_labels = ['CAREER'] %}
-    {% if p.observed_2026 is not none %}
-      {% set _ = spark_points.append(p.observed_2026) %}
-      {% set _ = spark_labels.append('2026') %}
-    {% endif %}
+    {% for wk in (p.weekly_series or []) %}
+      {% set _ = spark_points.append(wk.value) %}
+      {% set _ = spark_labels.append('W' ~ wk.week) %}
+    {% endfor %}
     {% set _ = spark_points.append(p.projected) %}
     {% set _ = spark_labels.append('PROJ') %}
     {% set range_points = spark_points + [p.market_line] if p.market_line is not none else spark_points %}
@@ -56,7 +56,7 @@
     <div class="prop-card-spark">
       {{ line_chart(series=[{"points": spark_points, "color": "#ff6a3d"}], y_min=spark_min, y_max=spark_max, height=170, reference_line=p.market_line, x_labels=(spark_labels[0], spark_labels[-1]))|safe }}
       <div class="spark-legend">
-        <span><i class="spark-dot spark-dot-line"></i> Our trajectory (career &rarr; 2026 &rarr; final projection)</span>
+        <span><i class="spark-dot spark-dot-line"></i> Real trajectory: career &rarr; {{ p.weekly_series|length }} real week{{ 's' if p.weekly_series|length != 1 }} played this season &rarr; final projection. Grows one real point every week.</span>
         {% if p.market_line is not none %}<span><i class="spark-dot spark-dot-dash"></i> Real market line ({{ p.market_line }} {{ p.unit }}) &mdash; {{ 'our number lands above it (OVER)' if p.projected > p.market_line else 'our number lands below it (UNDER)' }}</span>{% endif %}
       </div>
     </div>
