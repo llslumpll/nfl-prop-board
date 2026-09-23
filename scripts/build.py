@@ -221,10 +221,15 @@ def build():
     # prediction with no real market line gets frozen too (so we can
     # still show the projection), but never gets a call/edge, since
     # there's nothing real to grade it against.
+    STAT_TO_POSITION = {"passing_yards": "QB", "rushing_yards": "RB", "receiving_yards": "WR", "receptions": "WR"}
     frozen_count = 0
     for g in matchups_data["games"]:
         for p in g["players"]:
             market_line = pp_props.get(p["player"], {}).get(p["stat_col"])
+            m_prob = None
+            if market_line is not None:
+                std_dev = dataio.player_std_dev(p["player"], p["stat_col"], STAT_TO_POSITION.get(p["stat_col"], "WR"))
+                m_prob = dataio.model_prob_over(p["projection"]["projected"], market_line, std_dev)
             wrote = predictions.freeze_prediction(
                 player=p["player"], team=p["team"], opponent=p["opponent"],
                 week=g["week"],
@@ -232,6 +237,7 @@ def build():
                 tier_label=p["projection"]["tier"]["label"],
                 market_line=market_line,
                 market_source="prizepicks" if market_line is not None else None,
+                model_prob=m_prob,
             )
             if wrote:
                 frozen_count += 1
@@ -367,10 +373,15 @@ def build():
         if not ng:
             continue
         market_line = pp_props.get(r["player"], {}).get("receptions")
+        m_prob = None
+        if market_line is not None:
+            std_dev = dataio.player_std_dev(r["player"], "receptions", "WR")
+            m_prob = dataio.model_prob_over(ng["projection"]["projected"], market_line, std_dev)
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
             stat="receptions", projected=ng["projection"]["projected"], tier_label=ng["projection"]["tier"]["label"],
             market_line=market_line, market_source="prizepicks" if market_line is not None else None,
+            model_prob=m_prob,
         )
         if wrote:
             receptions_frozen += 1
