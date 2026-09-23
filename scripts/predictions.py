@@ -99,6 +99,7 @@ def freeze_prediction(
     player: str, team: str, opponent: str, week: int, stat: str,
     projected: float, tier_label: str, market_line: float | None = None,
     market_source: str | None = None, model_prob: float | None = None,
+    signals: dict | None = None,
 ) -> bool:
     """
     Writes a new frozen prediction ONLY if this (player, stat, week)
@@ -112,6 +113,14 @@ def freeze_prediction(
     it can later be checked against the real graded outcome, the same
     way MLB's probShrink calibration works: is an "80% confident" pick
     actually hitting 80% of the time, or is the model overconfident.
+
+    signals, if given, is a real snapshot of which context flags were
+    active at freeze time (e.g. {"usage_trend_up": true, "opponent_recent_form_worse":
+    false, ...}) -- stored so grade.py can later check whether a pick
+    tagged with a given signal actually hit more or less often than one
+    without it. This is what lets a signal graduate from "shown as
+    context" to "validated and folded into the real math" later, once
+    enough graded history exists to check it honestly.
     """
     preds = load_predictions()
     key = _key(player, stat, week)
@@ -137,6 +146,7 @@ def freeze_prediction(
         "call": call,
         "edge": edge,
         "model_prob": round(model_prob, 4) if model_prob is not None else None,
+        "signals": signals or {},
         "frozen_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "graded": False,
         "actual": None,
