@@ -9,6 +9,16 @@
   so they're not merged here.
 </p>
 
+{% set my_maturity = maturity.tiers|selectattr('stat', 'equalto', 'receptions')|selectattr('kind', 'equalto', 'confidence calibration')|list|first %}
+{% if my_maturity %}
+<p class="lede small">
+  Confidence calibration for this stat: {{ my_maturity.sample_size }}/{{ my_maturity.min_sample }} real graded picks
+  {% if my_maturity.status == 'active' %}&mdash; <span class="stat-good">active</span>, corrections applied.
+  {% else %}&mdash; still building, no correction applied yet.{% endif %}
+  <a href="index.html">Site-wide maturity on Home &rarr;</a>
+</p>
+{% endif %}
+
 <div class="game-picker">
   <button class="game-tab active" data-game-idx="0">Best 5</button>
   <button class="game-tab" data-game-idx="1">Best Value</button>
