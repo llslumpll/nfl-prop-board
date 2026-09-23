@@ -10,7 +10,7 @@
       "rushing_yards": 8.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 205.5,
+      "passing_yards": 204.5,
       "rushing_yards": 3.5
     },
     "Christian Watson": {
@@ -36,8 +36,8 @@
       "receptions": 3.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 27.5,
-      "receiving_yards": 5.5
+      "rushing_yards": 28.5,
+      "receiving_yards": 6.5
     },
     "Brian Robinson Jr.": {
       "rushing_yards": 22.5,
@@ -50,10 +50,10 @@
       "rushing_yards": 16.5,
       "receiving_yards": 7.5
     },
-    "Skyy Moore": {
-      "receiving_yards": 10.5
-    },
     "Olamide Zaccheaus": {
+      "receiving_yards": 9.5
+    },
+    "Skyy Moore": {
       "receiving_yards": 9.5
     },
     "Jonnu Smith": {
@@ -143,8 +143,7 @@
       "receiving_yards": 54.5
     },
     "DK Metcalf": {
-      "receiving_yards": 53.5,
-      "receptions": 4.5
+      "receiving_yards": 53.5
     },
     "Jaylen Warren": {
       "rushing_yards": 50.5,
@@ -273,7 +272,7 @@
       "receptions": 4.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 44.5,
       "receptions": 3.5
     },
     "Kenyon Sadiq": {
@@ -433,7 +432,7 @@
       "rushing_yards": 16.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 76.5
+      "receiving_yards": 70.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 68.5,
@@ -447,9 +446,6 @@
       "receiving_yards": 54.5,
       "receptions": 3.5
     },
-    "T.J. Hockenson": {
-      "receiving_yards": 32.5
-    },
     "Cade Otton": {
       "receiving_yards": 32.5,
       "receptions": 3.5
@@ -458,8 +454,11 @@
       "receiving_yards": 32.5
     },
     "Jordan Addison": {
-      "receiving_yards": 32.5,
-      "receptions": 2.5
+      "receiving_yards": 32.5
+    },
+    "T.J. Hockenson": {
+      "receiving_yards": 30.5,
+      "receptions": 3.5
     },
     "Josh Oliver": {
       "receiving_yards": 9.5
@@ -541,7 +540,7 @@
     },
     "Lamar Jackson": {
       "passing_yards": 236.5,
-      "rushing_yards": 36.5
+      "rushing_yards": 37.5
     },
     "Derrick Henry": {
       "rushing_yards": 89.5,
@@ -559,7 +558,7 @@
       "receptions": 5
     },
     "Javonte Williams": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 16.5
     },
     "Mark Andrews": {
@@ -570,7 +569,7 @@
       "receiving_yards": 41.5
     },
     "Jake Ferguson": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 27.5,
       "receptions": 3.5
     },
     "Ryan Flournoy": {
@@ -610,8 +609,8 @@
       "rushing_yards": 24.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 74.5,
-      "receiving_yards": 13.5
+      "rushing_yards": 75.5,
+      "receiving_yards": 14.5
     },
     "DeVonta Smith": {
       "receiving_yards": 72.5,
@@ -646,9 +645,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4511,
-    "matched_props": 292,
-    "excluded_goblin_demon_lines": 3703,
+    "total_projections_returned": 4538,
+    "matched_props": 291,
+    "excluded_goblin_demon_lines": 3731,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
