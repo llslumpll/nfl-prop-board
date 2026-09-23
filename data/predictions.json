@@ -6229,7 +6229,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Alvin Kamara|receptions|3": {
     "player": "Alvin Kamara",
