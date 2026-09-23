@@ -89,6 +89,32 @@
     {% endif %}
   {% endfor %}
   <p class="lede small">Touchdown probability shrink: {{ calibration.touchdown_prob_shrink.shrink_factor }}x ({{ calibration.touchdown_prob_shrink.sample_size }}/{{ calibration.min_sample }} graded, {{ calibration.touchdown_prob_shrink.status }}).</p>
+
+  <h3 class="division-head">Confidence calibration (Highest Confidence ranking)</h3>
+  <p class="lede small">
+    Checks whether the stated confidence on Best 5 picks actually means
+    what it claims -- does an "80% confident" pick really hit 80% of the
+    time, or is the model running overconfident? Same real technique as
+    touchdown probability shrink above, applied to each yardage stat's
+    real graded history. A shrink factor below 1.0x means real results
+    have been less extreme than the raw math claimed, and the displayed
+    confidence gets pulled back toward 50% by that real amount.
+  </p>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Stat</th><th class="num">Sample</th><th class="num">Shrink factor</th><th>Status</th></tr></thead>
+    <tbody>
+      {% for stat, d in calibration.confidence_shrink.items() %}
+      <tr>
+        <td>{{ stat.replace('_', ' ')|title }}</td>
+        <td class="num">{{ d.sample_size }}/{{ calibration.min_sample }}</td>
+        <td class="num">{{ d.shrink_factor }}x</td>
+        <td>{% if d.status == 'active' %}<span class="stat-good">active</span>{% else %}<span class="player-sub">insufficient data</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <!-- ============ TAB 1: ACCURACY TRENDS ============ -->
