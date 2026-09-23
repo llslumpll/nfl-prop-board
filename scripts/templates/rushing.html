@@ -5,6 +5,16 @@
 <h1>Rushing</h1>
 <p class="lede">Carries and rushing yardage from live nflreadpy data, plus Rushing Yards Over Expected &mdash; isolates a back's own vision and speed from the quality of his blocking.</p>
 
+{% set my_maturity = maturity.tiers|selectattr('stat', 'equalto', 'rushing_yards')|selectattr('kind', 'equalto', 'confidence calibration')|list|first %}
+{% if my_maturity %}
+<p class="lede small">
+  Confidence calibration for this stat: {{ my_maturity.sample_size }}/{{ my_maturity.min_sample }} real graded picks
+  {% if my_maturity.status == 'active' %}&mdash; <span class="stat-good">active</span>, corrections applied.
+  {% else %}&mdash; still building, no correction applied yet.{% endif %}
+  <a href="index.html">Site-wide maturity on Home &rarr;</a>
+</p>
+{% endif %}
+
 <div class="game-picker">
   <button class="game-tab active" data-game-idx="0">Best 5</button>
   <button class="game-tab" data-game-idx="1">Best Value</button>
