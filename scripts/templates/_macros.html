@@ -80,6 +80,7 @@
       {{ factor_chip("Pace", p.pace_factor) }}
       {{ factor_chip("Wind", p.wind_factor) }}
       {{ factor_chip("Environment", p.environment_factor) }}
+      {% if p.injury_factor and p.injury_factor.status %}{{ factor_chip("Injury (" ~ p.injury_factor.status ~ ")", p.injury_factor) }}{% endif %}
     </div>
     {% else %}
     <div class="factor-grid">
@@ -127,6 +128,7 @@
       {{ factor_chip("Pace", next_game.projection.pace_factor) }}
       {{ factor_chip("Wind", next_game.projection.wind_factor) }}
       {{ factor_chip("Environment", next_game.projection.environment_factor) }}
+      {% if next_game.projection.injury_factor and next_game.projection.injury_factor.status %}{{ factor_chip("Injury (" ~ next_game.projection.injury_factor.status ~ ")", next_game.projection.injury_factor) }}{% endif %}
     </div>
     {% if next_game.projection.tier %}
     <span class="tier {{ next_game.projection.tier.css }}">{{ next_game.projection.tier.label }}</span>
