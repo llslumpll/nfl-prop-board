@@ -437,6 +437,16 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .result-row .rr-name { font-weight: 600; font-size: 0.86rem; }
 .result-row .rr-sub { color: var(--text-dim); font-size: 0.74rem; margin-top: 1px; }
 
+.corr-warning {
+  border: 1px solid var(--amber);
+  background: rgba(255, 176, 32, 0.06);
+  color: var(--amber);
+  padding: 10px 14px;
+  font-size: 0.82rem;
+  margin: 0 0 16px;
+}
+.corr-warning::before { content: '\26A0  '; }
+
 @media (max-width: 640px) {
   .site-head { padding: 15px 16px; }
   .site-main { padding: 28px 16px 60px; }
