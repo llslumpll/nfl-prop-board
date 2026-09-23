@@ -143,6 +143,27 @@ def find_kalshi_1plus_td_price(kalshi_td_props: list[dict], player_name: str) ->
     return None
 
 
+def _confidence_shrink_factor(stat_col: str) -> float:
+    """Defensive read of the real confidence-calibration shrink factor
+    computed by calibrate.py -- missing file, missing key, or
+    'insufficient data' status all fall back to 1.0 (no adjustment,
+    trust the raw probability), never a guess. Pulls the raw probability
+    itself toward 50% when real graded history shows the model has been
+    running overconfident for this stat, same technique already proven
+    working for touchdowns."""
+    try:
+        import json
+        from pathlib import Path
+        cal_path = Path(__file__).parent.parent / "data" / "calibration.json"
+        cal = json.loads(cal_path.read_text()) if cal_path.exists() else {}
+        entry = (cal.get("confidence_shrink") or {}).get(stat_col) or {}
+        if entry.get("status") == "active":
+            return entry.get("shrink_factor", 1.0)
+    except Exception:
+        pass
+    return 1.0
+
+
 def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, unit: str, position: str) -> list[dict]:
     """
     A genuinely DIFFERENT ranking from best5_yardage (Best Value): this
@@ -173,9 +194,11 @@ def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, un
         projection = next_game["projection"]
         projected = projection["projected"]
         std_dev = dataio.player_std_dev(r["player"], stat_col, position)
-        model_prob = dataio.model_prob_over(projected, pp_line, std_dev)
-        if model_prob is None:
+        raw_model_prob = dataio.model_prob_over(projected, pp_line, std_dev)
+        if raw_model_prob is None:
             continue
+        shrink = _confidence_shrink_factor(stat_col)
+        model_prob = 0.5 + (raw_model_prob - 0.5) * shrink
         confidence = max(model_prob, 1 - model_prob)
         edge = round(projected - pp_line, 1)
         candidates.append({
