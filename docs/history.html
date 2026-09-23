@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1790135501">
+  <link rel="stylesheet" href="static/style.css?v=1790152050">
 </head>
 <body>
   <header class="site-head">
@@ -272,6 +272,53 @@
     
   
   <p class="lede small">Touchdown probability shrink: 1.0x (6/30 graded, insufficient data).</p>
+
+  <h3 class="division-head">Confidence calibration (Highest Confidence ranking)</h3>
+  <p class="lede small">
+    Checks whether the stated confidence on Best 5 picks actually means
+    what it claims -- does an "80% confident" pick really hit 80% of the
+    time, or is the model running overconfident? Same real technique as
+    touchdown probability shrink above, applied to each yardage stat's
+    real graded history. A shrink factor below 1.0x means real results
+    have been less extreme than the raw math claimed, and the displayed
+    confidence gets pulled back toward 50% by that real amount.
+  </p>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Stat</th><th class="num">Sample</th><th class="num">Shrink factor</th><th>Status</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>Passing Yards</td>
+        <td class="num">0/30</td>
+        <td class="num">1.0x</td>
+        <td><span class="player-sub">insufficient data</span></td>
+      </tr>
+      
+      <tr>
+        <td>Rushing Yards</td>
+        <td class="num">0/30</td>
+        <td class="num">1.0x</td>
+        <td><span class="player-sub">insufficient data</span></td>
+      </tr>
+      
+      <tr>
+        <td>Receiving Yards</td>
+        <td class="num">0/30</td>
+        <td class="num">1.0x</td>
+        <td><span class="player-sub">insufficient data</span></td>
+      </tr>
+      
+      <tr>
+        <td>Receptions</td>
+        <td class="num">0/30</td>
+        <td class="num">1.0x</td>
+        <td><span class="player-sub">insufficient data</span></td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <!-- ============ TAB 1: ACCURACY TRENDS ============ -->
@@ -5470,6 +5517,8 @@
             <td><span class="player-sub">pending</span></td>
             <td style="font-size:0.78rem;">
               
+                <span title="Adonai Mitchell">Mitchell</span>, 
+              
                 <span title="Cade Otton">Otton</span>, 
               
                 <span title="CeeDee Lamb">Lamb</span>, 
@@ -5487,6 +5536,8 @@
                 <span title="Mark Andrews">Andrews</span>, 
               
                 <span title="Parker Washington">Washington</span>, 
+              
+                <span title="Sam LaPorta">LaPorta</span>, 
               
                 <span title="Stefon Diggs">Diggs</span>
               
@@ -5516,6 +5567,8 @@
             <td><span class="player-sub">pending</span></td>
             <td style="font-size:0.78rem;">
               
+                <span title="Adonai Mitchell">Mitchell</span>, 
+              
                 <span title="Cade Otton">Otton</span>, 
               
                 <span title="CeeDee Lamb">Lamb</span>, 
@@ -5533,6 +5586,8 @@
                 <span title="Mark Andrews">Andrews</span>, 
               
                 <span title="Parker Washington">Washington</span>, 
+              
+                <span title="Sam LaPorta">LaPorta</span>, 
               
                 <span title="Stefon Diggs">Diggs</span>
               
@@ -5699,7 +5754,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-23 03:51 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-23 08:27 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

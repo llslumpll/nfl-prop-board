@@ -4706,7 +4706,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jahmyr Gibbs|receptions|3": {
     "player": "Jahmyr Gibbs",
@@ -6121,7 +6125,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Warren|receptions|3": {
     "player": "Tyler Warren",
