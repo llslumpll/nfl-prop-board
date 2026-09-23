@@ -82,6 +82,14 @@
       {{ factor_chip("Environment", p.environment_factor) }}
       {% if p.injury_factor and p.injury_factor.status %}{{ factor_chip("Injury (" ~ p.injury_factor.status ~ ")", p.injury_factor) }}{% endif %}
     </div>
+    {% if p.opponent_recent_form %}
+    {% set rf = p.opponent_recent_form %}
+    <p class="why-reason" style="margin-top:0;">
+      <strong>Context, not baked into the number above:</strong> this opponent has allowed
+      {{ rf.pct_change }}% {{ 'more' if rf.direction == 'worse' else 'less' }} than their own season
+      average over their last {{ rf.recent_games }} games &mdash; real recent form, {{ 'a softer' if rf.direction == 'worse' else 'a tougher' }} matchup than the season-long factor alone suggests.
+    </p>
+    {% endif %}
     {% else %}
     <div class="factor-grid">
       <div class="factor"><div class="fval">{{ p.breakdown }}</div><div class="flabel">TD breakdown</div></div>
@@ -130,6 +138,16 @@
       {{ factor_chip("Environment", next_game.projection.environment_factor) }}
       {% if next_game.projection.injury_factor and next_game.projection.injury_factor.status %}{{ factor_chip("Injury (" ~ next_game.projection.injury_factor.status ~ ")", next_game.projection.injury_factor) }}{% endif %}
     </div>
+    {% if next_game.projection.opponent_recent_form %}
+    {% set rf = next_game.projection.opponent_recent_form %}
+    <p class="why-reason" style="margin-top:0;">
+      <strong>Context, not baked into the number above:</strong> this opponent has allowed
+      {{ rf.pct_change }}% {{ 'more' if rf.direction == 'worse' else 'less' }} than their own season
+      average over their last {{ rf.recent_games }} games ({{ rf.recent_avg }} vs {{ rf.season_avg }}
+      season avg) &mdash; real recent form, {{ 'a softer' if rf.direction == 'worse' else 'a tougher' }}
+      matchup than the season-long matchup factor alone suggests.
+    </p>
+    {% endif %}
     {% if next_game.projection.tier %}
     <span class="tier {{ next_game.projection.tier.css }}">{{ next_game.projection.tier.label }}</span>
     {% endif %}
