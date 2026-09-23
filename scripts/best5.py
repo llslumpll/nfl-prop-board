@@ -88,6 +88,11 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
         if pp_line is None:
             continue
         projection = next_game["projection"]
+        # A player reported Out will not play -- ranking them here would
+        # be presenting a normal-looking pick for something that isn't
+        # a real bet at all, worse than just excluding them honestly.
+        if (projection.get("injury_factor") or {}).get("is_out"):
+            continue
         projected = projection["projected"]
         edge = round(projected - pp_line, 1)
 
@@ -113,6 +118,7 @@ def best5_yardage(rows: list[dict], pp_props: dict, stat_col: str, unit: str) ->
             "pace_factor": projection.get("pace_factor"),
             "wind_factor": projection.get("wind_factor"),
             "environment_factor": projection.get("environment_factor"),
+            "injury_factor": projection.get("injury_factor"),
             "advanced": _advanced_stats_for(r, stat_col),
             "weekly_series": dataio.player_weekly_series(r["player"], stat_col),
             "prop_history": predictions.player_prop_history(r["player"], stat_col),
@@ -192,6 +198,8 @@ def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, un
         if pp_line is None:
             continue
         projection = next_game["projection"]
+        if (projection.get("injury_factor") or {}).get("is_out"):
+            continue
         projected = projection["projected"]
         std_dev = dataio.player_std_dev(r["player"], stat_col, position)
         raw_model_prob = dataio.model_prob_over(projected, pp_line, std_dev)
@@ -226,6 +234,7 @@ def best5_highest_confidence(rows: list[dict], pp_props: dict, stat_col: str, un
             "pace_factor": projection.get("pace_factor"),
             "wind_factor": projection.get("wind_factor"),
             "environment_factor": projection.get("environment_factor"),
+            "injury_factor": projection.get("injury_factor"),
             "advanced": _advanced_stats_for(r, stat_col),
             "weekly_series": dataio.player_weekly_series(r["player"], stat_col),
             "prop_history": predictions.player_prop_history(r["player"], stat_col),
@@ -248,6 +257,9 @@ def best5_touchdowns_most_likely(td_rows: list[dict]) -> list[dict]:
     for r in td_rows:
         next_game = r.get("next_game")
         if not next_game or not next_game.get("projected_total"):
+            continue
+        import dataio
+        if dataio.injury_factor(dataio.injury_status_for(r["player"])).get("is_out"):
             continue
         model_prob = poisson_prob_at_least(1, next_game["projected_total"])
         candidates.append({
@@ -281,6 +293,9 @@ def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[d
     for r in td_rows:
         next_game = r.get("next_game")
         if not next_game or not next_game.get("projected_total"):
+            continue
+        import dataio
+        if dataio.injury_factor(dataio.injury_status_for(r["player"])).get("is_out"):
             continue
         market_price = find_kalshi_1plus_td_price(kalshi_td_props, r["player"])
         if market_price is None:
