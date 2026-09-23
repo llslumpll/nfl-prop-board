@@ -67,6 +67,9 @@
         {% if r.usage_trend %}
           <span class="usage-flag usage-{{ r.usage_trend.direction }}" title="Real offensive snap share: {{ r.usage_trend.previous_pct }}% (W{{ r.usage_trend.previous_week }}) -> {{ r.usage_trend.latest_pct }}% (W{{ r.usage_trend.latest_week }})">{{ '▲' if r.usage_trend.direction == 'up' else '▼' }} Snaps {{ r.usage_trend.previous_pct }}%&rarr;{{ r.usage_trend.latest_pct }}%</span>
         {% endif %}
+        {% if r.target_share_trend %}
+          <span class="usage-flag usage-{{ r.target_share_trend.direction }}" title="Real target share: {{ r.target_share_trend.previous_pct }}% (W{{ r.target_share_trend.previous_week }}) -> {{ r.target_share_trend.latest_pct }}% (W{{ r.target_share_trend.latest_week }})">{{ '▲' if r.target_share_trend.direction == 'up' else '▼' }} Targets {{ r.target_share_trend.previous_pct }}%&rarr;{{ r.target_share_trend.latest_pct }}%</span>
+        {% endif %}
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.total_tds }}</td>
