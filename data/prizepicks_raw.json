@@ -32,11 +32,11 @@
       "receiving_yards": 0.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 6.5
     },
     "Brian Robinson Jr.": {
@@ -645,7 +645,7 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4571,
+    "total_projections_returned": 4575,
     "matched_props": 291,
     "excluded_goblin_demon_lines": 3730,
     "sample_stat_types_seen": [
@@ -671,14 +671,14 @@
       "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
+      "punt touchbacks (combo)",
+      "punts",
+      "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 25+ pass yards",
       "quarters with 5+ receiving yards",
       "quarters with 5+ rush yards",
-      "rec targets",
-      "rec tds",
-      "receiving yards",
-      "receiving yards (combo)"
+      "rec targets"
     ],
     "sample_odds_types_seen": [
       "demon",
