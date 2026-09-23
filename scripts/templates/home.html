@@ -23,6 +23,40 @@
   </div>
 </div>
 
+<div class="notice" style="margin-top:16px;">
+  <strong>Model maturity: {{ maturity.active_count }}/{{ maturity.total_count }} calibration checks active.</strong>
+  Each needs {{ maturity.min_sample }} real graded predictions in that exact stat/tier before it's trusted to self-correct &mdash;
+  this is genuinely early, and most of the site is still labeled "Building 2026 sample" for a real reason, not caution
+  for its own sake. See real trust status per tier below.
+  {% if maturity.closest and maturity.closest.status != 'active' %}
+  Closest to activating: <strong>{{ maturity.closest.stat.replace('_',' ')|title }}{{ ' (' ~ maturity.closest.tier ~ ')' if maturity.closest.tier }}</strong>
+  at {{ maturity.closest.sample_size }}/{{ maturity.closest.min_sample }}.
+  {% endif %}
+  <a href="history.html">Full calibration table on History &rarr;</a>
+</div>
+
+{% if maturity.tiers %}
+<details class="info-collapse" style="margin-top:0;">
+<summary>Real calibration status, every tier (click to expand)</summary>
+<div class="table-wrap" style="margin-top:10px;">
+<table class="stat-table">
+  <thead><tr><th>Stat</th><th>Tier</th><th>Check</th><th class="num">Sample</th><th>Status</th></tr></thead>
+  <tbody>
+    {% for t in maturity.tiers %}
+    <tr>
+      <td>{{ t.stat.replace('_', ' ')|title }}</td>
+      <td>{{ t.tier or '&mdash;' }}</td>
+      <td class="player-sub">{{ t.kind }}</td>
+      <td class="num">{{ t.sample_size }}/{{ t.min_sample }}</td>
+      <td>{% if t.status == 'active' %}<span class="stat-good">active</span>{% else %}<span class="player-sub">insufficient data</span>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+</details>
+{% endif %}
+
 <p class="lede small" style="margin-top:24px;">
   Top 5 by real model confidence, per prop. Each links to its full page,
   where you'll also find a Best Value (market-mispriced) view and the
