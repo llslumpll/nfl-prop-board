@@ -98,7 +98,7 @@ def tag_best5(player: str, stat: str, week: int, list_name: str) -> bool:
 def freeze_prediction(
     player: str, team: str, opponent: str, week: int, stat: str,
     projected: float, tier_label: str, market_line: float | None = None,
-    market_source: str | None = None,
+    market_source: str | None = None, model_prob: float | None = None,
 ) -> bool:
     """
     Writes a new frozen prediction ONLY if this (player, stat, week)
@@ -106,6 +106,12 @@ def freeze_prediction(
     written, False if one already existed (and was therefore left
     untouched). Call/edge are only set when a real market line exists --
     no market line means no call, since there's nothing to grade against.
+
+    model_prob (0-1) is the real normal-approximation probability of
+    clearing the market line at freeze time, when available -- stored so
+    it can later be checked against the real graded outcome, the same
+    way MLB's probShrink calibration works: is an "80% confident" pick
+    actually hitting 80% of the time, or is the model overconfident.
     """
     preds = load_predictions()
     key = _key(player, stat, week)
@@ -130,6 +136,7 @@ def freeze_prediction(
         "market_source": market_source,
         "call": call,
         "edge": edge,
+        "model_prob": round(model_prob, 4) if model_prob is not None else None,
         "frozen_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "graded": False,
         "actual": None,
