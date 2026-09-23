@@ -312,6 +312,17 @@ table.stat-table tr:hover td { background: rgba(255, 106, 61, 0.025); }
   border-bottom: 1px dotted var(--amber);
 }
 
+.usage-flag {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  font-family: var(--mono);
+  padding: 1px 6px;
+  border: 1px solid;
+}
+.usage-flag.usage-up { color: var(--green); border-color: var(--green); }
+.usage-flag.usage-down { color: var(--red); border-color: var(--red); }
+
 .corr-flag {
   color: var(--amber);
   font-size: 0.8em;
