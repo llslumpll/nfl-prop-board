@@ -1500,6 +1500,9 @@ def matchups_for_next_date(limit_games: int = 20) -> dict:
                     "history": hist_line,
                     "based_on_current_season": is_current,
                     "projection": projection,
+                    "usage_trend": usage_trend(prow["player_display_name"]) if stat_col != "passing_yards" else None,
+                    "target_share_trend": target_share_trend(prow["player_display_name"]) if stat_col == "receiving_yards" else None,
+                    "opportunity_signal": opportunity_signal(prow["player_display_name"], team, {"passing_yards": "QB", "rushing_yards": "RB", "receiving_yards": "WR"}.get(stat_col, "WR")) if stat_col != "passing_yards" else None,
                 })
         out_games.append(matchup)
 
