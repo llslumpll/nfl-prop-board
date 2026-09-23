@@ -396,12 +396,12 @@
       "receiving_yards": 14.5,
       "receptions": 2.5
     },
+    "TreVeyon Henderson": {
+      "rushing_yards": 40.5,
+      "receiving_yards": 8.5
+    },
     "Hunter Henry": {
       "receiving_yards": 39.5
-    },
-    "TreVeyon Henderson": {
-      "rushing_yards": 39.5,
-      "receiving_yards": 8.5
     },
     "Brian Thomas Jr.": {
       "receiving_yards": 37.5
@@ -641,9 +641,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4404,
+    "total_projections_returned": 4406,
     "matched_props": 290,
-    "excluded_goblin_demon_lines": 3605,
+    "excluded_goblin_demon_lines": 3607,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
