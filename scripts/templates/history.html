@@ -115,6 +115,44 @@
     </tbody>
   </table>
   </div>
+
+  <h3 class="division-head">Signal effectiveness</h3>
+  <p class="lede small">
+    Real check on whether the newer context signals (usage trend, target share trend,
+    next-man-up flags, recent-form matchups, injury status) actually correlate with real
+    outcomes -- not assumed, checked directly. Compares the real hit rate of picks tagged
+    with each signal against picks without it, requiring at least 20 real graded picks on
+    <strong>both</strong> sides before showing a real difference. Once a signal shows a
+    genuine, repeatable gap here, it's a real candidate to fold into the actual projection
+    math -- until then, it stays informational only, same discipline as every other
+    calibration check on this page.
+  </p>
+  {% if signal_effectiveness %}
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Signal</th><th class="num">With / Without (n)</th><th class="num">Hit rate with</th><th class="num">Hit rate without</th><th class="num">Real difference</th><th>Status</th></tr></thead>
+    <tbody>
+      {% for s in signal_effectiveness %}
+      <tr>
+        <td>{{ s.signal.replace('_', ' ')|title }}{{ ' (' ~ s.value ~ ')' if s.value is string else '' }}</td>
+        <td class="num">{{ s.n_with }} / {{ s.n_without }}</td>
+        {% if s.status == 'active' %}
+        <td class="num">{{ s.hit_rate_with }}%</td>
+        <td class="num">{{ s.hit_rate_without }}%</td>
+        <td class="num stat-{{ 'good' if s.difference_pp > 0 else 'bad' if s.difference_pp < 0 else 'neutral' }}">{{ '+' if s.difference_pp > 0 }}{{ s.difference_pp }}pp</td>
+        <td><span class="stat-good">active</span></td>
+        {% else %}
+        <td class="num player-sub">&ndash;</td><td class="num player-sub">&ndash;</td><td class="num player-sub">&ndash;</td>
+        <td><span class="player-sub">insufficient data (need 20+ each side)</span></td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <div class="empty-state"><h3>No signal data yet</h3><p>Builds up as real predictions carrying a signal snapshot get graded.</p></div>
+  {% endif %}
 </div>
 
 <!-- ============ TAB 1: ACCURACY TRENDS ============ -->
