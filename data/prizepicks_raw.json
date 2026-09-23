@@ -31,14 +31,16 @@
       "receptions": 3.5
     },
     "Kaleb Johnson": {
-      "rushing_yards": 34.5
+      "rushing_yards": 34.5,
+      "receiving_yards": 0.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 25.5,
       "receiving_yards": 5.5
     },
     "Brian Robinson Jr.": {
-      "rushing_yards": 22.5
+      "rushing_yards": 22.5,
+      "receiving_yards": 0.5
     },
     "Jahan Dotson": {
       "receiving_yards": 17.5
@@ -55,6 +57,10 @@
     },
     "Jonnu Smith": {
       "receiving_yards": 7.5
+    },
+    "Austin Hooper": {
+      "receptions": 0.5,
+      "receiving_yards": 0.5
     },
     "Josh Allen": {
       "passing_yards": 240.5,
@@ -448,7 +454,7 @@
       "rushing_yards": 11.5
     },
     "Trey McBride": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 66.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -618,9 +624,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4592,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 3738,
+    "total_projections_returned": 4648,
+    "matched_props": 288,
+    "excluded_goblin_demon_lines": 3785,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
