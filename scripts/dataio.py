@@ -1145,6 +1145,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
+            "target_share_trend": target_share_trend(row["player_display_name"]),
         })
     return out
 
@@ -1180,6 +1181,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
+            "target_share_trend": target_share_trend(row["player_display_name"]),
         })
     return out
 
@@ -1281,6 +1283,7 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "tier": provisional_tier(1),
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
+            "target_share_trend": target_share_trend(row["player_display_name"]),
         })
     out.sort(key=lambda r: r["total_tds"], reverse=True)
     return out[:limit]
@@ -1679,4 +1682,48 @@ def usage_trend(player_name: str) -> dict | None:
         "latest_pct": round(latest_pct * 100, 1),
         "previous_week": previous["week"],
         "previous_pct": round(prev_pct * 100, 1),
+    }
+
+
+def target_share_trend(player_name: str) -> dict | None:
+    """
+    Real week-over-week TARGET share change (this player's real targets
+    divided by his team's real total targets that week) -- complements
+    usage_trend (snap share): a player's snaps can hold steady while his
+    target trust within those snaps rises or falls, which is often the
+    more direct signal for receiving/reception props specifically than
+    snap share alone.
+
+    Flags changes of 10+ percentage points -- a slightly lower bar than
+    snap share's 15pp, since target share naturally swings a bit more
+    game to game (game script, matchup, etc.) even for a stable role.
+    """
+    df = load_stats()
+    rows = df.filter(pl.col("player_display_name") == player_name).sort("week")
+    if rows.height < 2:
+        return None
+    team_targets = df.group_by(["team", "week"]).agg(pl.col("targets").sum().alias("team_targets"))
+    weeks = rows.to_dicts()
+    latest, previous = weeks[-1], weeks[-2]
+
+    def share(row):
+        tt = team_targets.filter((pl.col("team") == row["team"]) & (pl.col("week") == row["week"]))
+        if tt.height == 0 or tt["team_targets"][0] in (None, 0):
+            return None
+        targets = row.get("targets")
+        if targets is None:
+            return None
+        return targets / tt["team_targets"][0]
+
+    latest_share, prev_share = share(latest), share(previous)
+    if latest_share is None or prev_share is None:
+        return None
+    delta = round((latest_share - prev_share) * 100, 1)
+    if abs(delta) < 10:
+        return None
+    return {
+        "direction": "up" if delta > 0 else "down",
+        "delta_pp": abs(delta),
+        "latest_week": latest["week"], "latest_pct": round(latest_share * 100, 1),
+        "previous_week": previous["week"], "previous_pct": round(prev_share * 100, 1),
     }
