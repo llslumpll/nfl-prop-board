@@ -5,6 +5,16 @@
 <h1>Passing</h1>
 <p class="lede">Quarterback passing lines from live nflreadpy data, plus real advanced efficiency stats &mdash; raw yardage alone can be misleading (garbage-time volume vs. genuine quality).</p>
 
+{% set my_maturity = maturity.tiers|selectattr('stat', 'equalto', 'passing_yards')|selectattr('kind', 'equalto', 'confidence calibration')|list|first %}
+{% if my_maturity %}
+<p class="lede small">
+  Confidence calibration for this stat: {{ my_maturity.sample_size }}/{{ my_maturity.min_sample }} real graded picks
+  {% if my_maturity.status == 'active' %}&mdash; <span class="stat-good">active</span>, corrections applied.
+  {% else %}&mdash; still building, no correction applied yet.{% endif %}
+  <a href="index.html">Site-wide maturity on Home &rarr;</a>
+</p>
+{% endif %}
+
 <div class="game-picker">
   <button class="game-tab active" data-game-idx="0">Best 5</button>
   <button class="game-tab" data-game-idx="1">Best Value</button>
@@ -13,11 +23,13 @@
 
 <div class="game-panel" data-game-panel="0">
   <p class="lede small">The 5 QBs the model is most confident in this week &mdash; ranked by real probability (using each QB's own real game-to-game passing variance), not by how big the market gap is. Tracked and graded week over week on <a href="history.html">History</a>.</p>
+  {% if best5_confidence_warning %}<div class="corr-warning">{{ best5_confidence_warning }}</div>{% endif %}
   {{ macros.prop_card_list(best5_confidence, "highest_confidence", "passing.html") }}
 </div>
 
 <div class="game-panel hidden" data-game-panel="1">
   <p class="lede small">The 5 biggest gaps between our projection and the real PrizePicks line &mdash; where the market looks most wrong, not just the highest-confidence picks. A different ranking from Best 5 and can (and often will) name different players.</p>
+  {% if best5_value_warning %}<div class="corr-warning">{{ best5_value_warning }}</div>{% endif %}
   {{ macros.prop_card_list(best5_value, "best_value", "passing.html") }}
 </div>
 
