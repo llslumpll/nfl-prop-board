@@ -509,6 +509,9 @@
       "receiving_yards": 21.5,
       "receptions": 3.5
     },
+    "Brock Bowers": {
+      "receiving_yards": 54.5
+    },
     "Devaughn Vele": {
       "receiving_yards": 43.5
     },
@@ -624,9 +627,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4648,
-    "matched_props": 288,
-    "excluded_goblin_demon_lines": 3785,
+    "total_projections_returned": 4667,
+    "matched_props": 289,
+    "excluded_goblin_demon_lines": 3801,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
