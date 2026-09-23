@@ -663,6 +663,18 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
         projection["wind_factor"] = None
         projection["projected"] = after_pace
 
+    # Injury: real, conservative, dampened adjustment based on the
+    # player's actual reported status -- never a fabricated play
+    # probability. "Out" is flagged (is_out) but the caller decides
+    # whether to exclude entirely (Best 5 does) rather than silently
+    # zeroing the number here.
+    injury = injury_status_for(player_name)
+    i_factor = injury_factor(injury)
+    projection["injury_factor"] = i_factor
+    if i_factor["factor"] != 1.0:
+        projection["pre_injury_projected"] = projection["projected"]
+        projection["projected"] = round(projection["projected"] * i_factor["factor"], 1)
+
     return {**game, "projection": projection}
 
 
@@ -860,6 +872,46 @@ def injury_status_for(player_name: str) -> dict | None:
         "is_formal": row.get("report_status") is not None,
         "primary_injury": row.get("report_primary_injury") or row.get("practice_primary_injury"),
     }
+
+
+def injury_factor(injury: dict | None) -> dict:
+    """
+    Real, conservative, dampened adjustment based on a player's actual
+    reported injury status -- never a fabricated "X% chance of playing"
+    the site can't back up, just a modest, documented downward nudge
+    reflecting genuine added risk (reduced snaps, limited role, or
+    simply not suiting up).
+
+    "Out" is unambiguous and handled separately (excluded from Best 5
+    entirely by the caller, not just dampened) -- projecting a normal
+    number for someone who will not play is actively misleading, worse
+    than declining to guess. This function's factor for "Out" is
+    included for completeness/transparency but callers should check
+    is_out first.
+
+    The specific percentages below (Doubtful -25%, Questionable -8%,
+    DNP -4%) are a reasoned first-cut estimate, not yet empirically
+    validated against this site's own graded history -- same honesty
+    standard as the wind and pace coefficients elsewhere on this site.
+    Worth revisiting once enough Questionable/Doubtful picks have graded
+    to check the real numbers.
+    """
+    if injury is None:
+        return {"factor": 1.0, "status": None, "is_out": False}
+
+    status = (injury.get("report_status") or "").strip()
+    is_out = status == "Out"
+
+    FACTORS = {
+        "Out": 0.0,
+        "Doubtful": 0.75,
+        "Questionable": 0.92,
+        "Did Not Participate In Practice": 0.96,
+        "Limited Participation in Practice": 0.99,
+        "Full Participation in Practice": 1.0,
+    }
+    factor = FACTORS.get(status, 1.0)
+    return {"factor": factor, "status": status, "is_out": is_out}
 
 
 _ngs_passing_cache = None
