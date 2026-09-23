@@ -159,6 +159,60 @@ def run() -> dict:
     return calibration
 
 
+def maturity_summary() -> dict:
+    """
+    Real, honest rollup of calibration progress across the whole site --
+    used for the maturity indicator shown on Home and each stat page, so
+    "is this trustworthy yet" has a real, visible answer instead of
+    requiring a trip to History's calibration table. Reads the same
+    calibration.json every other calibration display reads; no separate
+    computation, so it can never say something different from History.
+    """
+    DATA_DIR = Path(__file__).parent.parent / "data"
+    cal_path = DATA_DIR / "calibration.json"
+    if not cal_path.exists():
+        return {"tiers": [], "active_count": 0, "total_count": 0, "closest": None}
+
+    cal = json.loads(cal_path.read_text())
+    min_sample = cal.get("min_sample", 30)
+    tiers = []
+
+    for stat, by_tier in (cal.get("bias") or {}).items():
+        for tier_label, d in by_tier.items():
+            tiers.append({
+                "stat": stat, "tier": tier_label, "kind": "projection bias",
+                "sample_size": d.get("sample_size", 0), "min_sample": min_sample,
+                "status": d.get("status", "insufficient data"),
+            })
+
+    for stat, d in (cal.get("confidence_shrink") or {}).items():
+        tiers.append({
+            "stat": stat, "tier": None, "kind": "confidence calibration",
+            "sample_size": d.get("sample_size", 0), "min_sample": min_sample,
+            "status": d.get("status", "insufficient data"),
+        })
+
+    td = cal.get("touchdown_prob_shrink")
+    if td:
+        tiers.append({
+            "stat": "any_td", "tier": None, "kind": "touchdown probability",
+            "sample_size": td.get("sample_size", 0), "min_sample": min_sample,
+            "status": td.get("status", "insufficient data"),
+        })
+
+    active_count = sum(1 for t in tiers if t["status"] == "active")
+    pending = [t for t in tiers if t["status"] != "active"]
+    closest = max(pending, key=lambda t: t["sample_size"]) if pending else None
+
+    return {
+        "tiers": sorted(tiers, key=lambda t: t["sample_size"], reverse=True),
+        "active_count": active_count,
+        "total_count": len(tiers),
+        "closest": closest,
+        "min_sample": min_sample,
+    }
+
+
 if __name__ == "__main__":
     result = run()
     print(json.dumps(result, indent=2))
