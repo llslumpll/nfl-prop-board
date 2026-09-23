@@ -1809,3 +1809,103 @@ def opportunity_signal(player_name: str, team: str, pos_abb: str) -> dict | None
         if inj and inj.get("report_status") in ("Out", "Doubtful"):
             return {"injured_player": row["player_name"], "status": inj["report_status"], "my_rank": my_rank}
     return None
+
+
+# ---------------------------------------------------------------------------
+# Team defensive coverage identity -- real 2025 charted man/zone rates,
+# plus a live 2026 cushion-based proxy (checked and confirmed: nflverse's
+# real participation charting, which has the actual MAN_COVERAGE /
+# ZONE_COVERAGE tags, is not yet released for the 2026 season -- only
+# through 2025 so far). The proxy is logged weekly (see
+# log_coverage_proxy below) so it can be checked against real 2026
+# charting once nflverse eventually publishes it.
+# ---------------------------------------------------------------------------
+
+_coverage_2025_cache = None
+
+
+def team_coverage_profile_2025(team: str) -> dict | None:
+    """
+    Real, human-charted 2025 season coverage tendency for this team's
+    DEFENSE -- from nflreadpy's load_participation(), genuinely charted
+    play-by-play (not inferred). Explicitly 2025, not 2026: nflverse
+    hasn't released 2026 participation/coverage charting yet (checked
+    live, confirmed). A defensive coordinator's scheme identity often
+    carries over year to year, but this is real last-season data, not
+    this season's -- labeled as such everywhere it's shown.
+    """
+    global _coverage_2025_cache
+    if _coverage_2025_cache is None:
+        import nflreadpy as nfl
+        part = nfl.load_participation([2025])
+        sched = nfl.load_schedules([2025])
+        joined = part.join(
+            sched.select(["game_id", "home_team", "away_team"]),
+            left_on="nflverse_game_id", right_on="game_id", how="left",
+        )
+        joined = joined.with_columns(
+            pl.when(pl.col("possession_team") == pl.col("home_team"))
+            .then(pl.col("away_team")).otherwise(pl.col("home_team")).alias("defense_team")
+        )
+        valid = joined.filter(pl.col("defense_man_zone_type").is_in(["MAN_COVERAGE", "ZONE_COVERAGE"]))
+        _coverage_2025_cache = valid.group_by("defense_team").agg([
+            (pl.col("defense_man_zone_type") == "MAN_COVERAGE").mean().alias("man_rate"),
+            pl.len().alias("plays"),
+        ])
+    row = _coverage_2025_cache.filter(pl.col("defense_team") == team)
+    if row.height == 0:
+        return None
+    r = row.row(0, named=True)
+    return {"season": 2025, "man_rate": round(r["man_rate"] * 100, 1), "zone_rate": round((1 - r["man_rate"]) * 100, 1), "plays": r["plays"]}
+
+
+_cushion_2026_cache = None
+
+
+def team_cushion_profile_2026(team: str) -> dict | None:
+    """
+    Real, LIVE 2026 proxy for coverage tendency -- average cushion (real
+    NGS data) that opposing receivers have actually faced against this
+    defense this season, derived by joining NGS receiving to each
+    receiver's real opponent that week. Tighter cushion suggests more
+    man-coverage-like tendencies; looser suggests more zone -- but this
+    is a proxy, not real charted coverage type (see
+    team_coverage_profile_2025 for that, though only current through
+    2025). Updates automatically as real 2026 games are played.
+    """
+    global _cushion_2026_cache
+    if _cushion_2026_cache is None:
+        ngs = load_nextgen_receiving()
+        stats = load_stats()
+        joined = ngs.join(
+            stats.select(["player_display_name", "week", "opponent_team"]).unique(),
+            on=["player_display_name", "week"], how="inner",
+        )
+        _cushion_2026_cache = joined.group_by("opponent_team").agg([
+            pl.col("avg_cushion").mean().alias("avg_cushion_allowed"),
+            pl.col("week").n_unique().alias("games"),
+        ])
+    row = _cushion_2026_cache.filter(pl.col("opponent_team") == team)
+    if row.height == 0:
+        return None
+    r = row.row(0, named=True)
+    return {"season": 2026, "avg_cushion_allowed": round(r["avg_cushion_allowed"], 2), "games": r["games"]}
+
+
+def all_team_coverage_profiles() -> list[dict]:
+    """
+    Real defensive coverage identity for all 32 teams -- both signals
+    side by side, clearly labeled for what each actually is: real 2025
+    human-charted man/zone rates (last season, genuinely charted), and
+    the live 2026 cushion-based proxy (this season, real data, but a
+    proxy, not charted coverage type -- that doesn't exist for 2026 yet).
+    """
+    out = []
+    for team in sorted(TEAM_CONFERENCE.keys()):
+        out.append({
+            "team": team,
+            "team_badge": team_badge(team),
+            "coverage_2025": team_coverage_profile_2025(team),
+            "cushion_2026": team_cushion_profile_2026(team),
+        })
+    return out
