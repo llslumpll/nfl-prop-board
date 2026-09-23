@@ -362,6 +362,14 @@ def build():
             for p in picks:
                 predictions.tag_best5(p["player"], stat_col, p["week"], rank_type)
 
+    # Real correlation check across each finished Best 5 list -- same
+    # team or same game showing up twice in one list of 5, flagged
+    # explicitly rather than left for the person to notice on their own.
+    best5_correlation_warnings = {
+        label: {rank_type: best5.flag_correlated_picks(picks) for rank_type, picks in rankings.items()}
+        for label, rankings in best5_data.items()
+    }
+
     # --- Freeze Receptions predictions too. Real bug fixed here: these
     # were never being frozen at all before, since Receptions isn't one
     # of the 3 marquee stats (passing/rushing/receiving) the Matchups
@@ -463,6 +471,8 @@ def build():
                 "rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error,
                 "best5_confidence": best5_data["passing"]["highest_confidence"],
                 "best5_value": best5_data["passing"]["best_value"],
+                "best5_confidence_warning": best5_correlation_warnings["passing"]["highest_confidence"],
+                "best5_value_warning": best5_correlation_warnings["passing"]["best_value"],
             },
         ),
         "receiving.html": (
@@ -475,6 +485,8 @@ def build():
                 "pp_error": pp_error,
                 "best5_confidence": best5_data["receiving"]["highest_confidence"],
                 "best5_value": best5_data["receiving"]["best_value"],
+                "best5_confidence_warning": best5_correlation_warnings["receiving"]["highest_confidence"],
+                "best5_value_warning": best5_correlation_warnings["receiving"]["best_value"],
             },
         ),
         "receptions.html": (
@@ -487,6 +499,8 @@ def build():
                 "pp_error": pp_error,
                 "best5_confidence": best5_data["receptions"]["highest_confidence"],
                 "best5_value": best5_data["receptions"]["best_value"],
+                "best5_confidence_warning": best5_correlation_warnings["receptions"]["highest_confidence"],
+                "best5_value_warning": best5_correlation_warnings["receptions"]["best_value"],
             },
         ),
         "rushing.html": (
@@ -495,6 +509,8 @@ def build():
                 "rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error,
                 "best5_confidence": best5_data["rushing"]["highest_confidence"],
                 "best5_value": best5_data["rushing"]["best_value"],
+                "best5_confidence_warning": best5_correlation_warnings["rushing"]["highest_confidence"],
+                "best5_value_warning": best5_correlation_warnings["rushing"]["best_value"],
             },
         ),
         "touchdowns.html": (
@@ -504,6 +520,8 @@ def build():
                 "rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"],
                 "best5_confidence": best5_data["touchdowns"]["highest_confidence"],
                 "best5_value": best5_data["touchdowns"]["best_value"],
+                "best5_confidence_warning": best5_correlation_warnings["touchdowns"]["highest_confidence"],
+                "best5_value_warning": best5_correlation_warnings["touchdowns"]["best_value"],
             },
         ),
         "history.html": (
