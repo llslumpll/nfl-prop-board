@@ -27,13 +27,13 @@
       "receiving_yards": 46.5,
       "receptions": 4
     },
-    "Kaleb Johnson": {
-      "rushing_yards": 36.5,
-      "receiving_yards": 0.5
-    },
     "Kyle Pitts Sr.": {
       "receiving_yards": 35.5,
       "receptions": 3.5
+    },
+    "Kaleb Johnson": {
+      "rushing_yards": 35.5,
+      "receiving_yards": 0.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 27.5,
@@ -41,8 +41,7 @@
     },
     "Brian Robinson Jr.": {
       "rushing_yards": 22.5,
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Jahan Dotson": {
       "receiving_yards": 19.5
@@ -429,8 +428,8 @@
       "rushing_yards": 17.5
     },
     "Kyler Murray": {
-      "passing_yards": 207.5,
-      "rushing_yards": 16.5
+      "passing_yards": 205.5,
+      "rushing_yards": 20.5
     },
     "Justin Jefferson": {
       "receiving_yards": 70.5
@@ -445,10 +444,10 @@
     },
     "Emeka Egbuka": {
       "receiving_yards": 54.5,
-      "receptions": 3.5
+      "receptions": 4
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5
+      "receiving_yards": 35.5
     },
     "Jordan Addison": {
       "receiving_yards": 32.5
@@ -645,9 +644,9 @@
   "diagnostics": {
     "total_leagues": 136,
     "nfl_league_id": "9",
-    "total_projections_returned": 4704,
-    "matched_props": 291,
-    "excluded_goblin_demon_lines": 3833,
+    "total_projections_returned": 4759,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 3878,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
