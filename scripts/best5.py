@@ -265,6 +265,7 @@ def best5_touchdowns_most_likely(td_rows: list[dict]) -> list[dict]:
         candidates.append({
             "player": r["player"],
             "team_badge": r.get("team_badge"),
+            "team": r.get("team"),
             "opponent": next_game["opponent"],
             "week": next_game["week"],
             "model_prob": round(model_prob * 100, 1),
@@ -305,6 +306,7 @@ def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[d
         candidates.append({
             "player": r["player"],
             "team_badge": r.get("team_badge"),
+            "team": r.get("team"),
             "opponent": next_game["opponent"],
             "week": next_game["week"],
             "model_prob": round(model_prob * 100, 1),
@@ -316,3 +318,33 @@ def best5_touchdowns(td_rows: list[dict], kalshi_td_props: list[dict]) -> list[d
         })
     candidates.sort(key=lambda c: abs(c["edge"]), reverse=True)
     return candidates[:5]
+
+
+def flag_correlated_picks(candidates: list[dict]) -> str | None:
+    """
+    Real correlation check across a finished Best 5 list -- not a single
+    player's own correlation tag (that's handled elsewhere, on the
+    stat-page tables), but whether two DIFFERENT picks in the SAME list
+    are secretly linked: same team (share the same offense/game script,
+    so a bad week for the team can sink both at once) or same game
+    (opposing teams playing each other this week, so the game's overall
+    pace/script affects both sides together). Matches the MLB site's
+    "these picks can win or lose together, not separately" banner.
+
+    Returns a real, specific warning sentence naming the actual pairs
+    found, or None if the 5 picks are genuinely independent of each
+    other by this check.
+    """
+    warnings = []
+    for i in range(len(candidates)):
+        for j in range(i + 1, len(candidates)):
+            a, b = candidates[i], candidates[j]
+            a_team, b_team = a.get("team"), b.get("team")
+            a_opp, b_opp = a.get("opponent"), b.get("opponent")
+            if a_team and b_team and a_team == b_team:
+                warnings.append(f"{a['player']} & {b['player']} (both {a_team}, same game)")
+            elif a_team and b_opp and a_team == b_opp and b_team and a_opp and b_team == a_opp:
+                warnings.append(f"{a['player']} & {b['player']} (opposite sides of {a_team} vs {b_team})")
+    if not warnings:
+        return None
+    return "Not fully independent: " + "; ".join(warnings) + " -- these picks can win or lose together, not separately."
