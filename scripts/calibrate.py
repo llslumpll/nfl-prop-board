@@ -107,6 +107,44 @@ def calibrate_touchdown_shrink() -> dict:
     return {"shrink_factor": round(dampened, 3), "sample_size": n, "raw_shrink_factor": round(raw_shrink, 3), "status": "active"}
 
 
+def calibrate_yardage_prob_shrink(stat: str) -> dict:
+    """
+    Same real technique as calibrate_touchdown_shrink, generalized to
+    yardage/receptions props -- checks whether the "Highest Confidence"
+    ranking's stated probability actually matches real outcomes (is an
+    "80% confident" pick really hitting 80% of the time), using the real
+    model_prob frozen alongside each prediction at freeze time. Note:
+    yardage model_prob is stored as a 0-1 fraction (not the 0-100 scale
+    touchdowns use), so no /100 conversion here.
+    """
+    preds = predictions.load_predictions()
+    valid = [
+        p for p in preds.values()
+        if p["stat"] == stat and p.get("graded") and p.get("hit") is not None
+        and p.get("model_prob") is not None and p.get("call") in ("OVER", "UNDER")
+    ]
+    n = len(valid)
+    if n < dataio.MIN_SAMPLE:
+        return {"shrink_factor": 1.0, "sample_size": n, "status": "insufficient data"}
+
+    sum_xy, sum_xx = 0.0, 0.0
+    for p in valid:
+        prob = p["model_prob"]
+        call_confidence = prob if p["call"] == "OVER" else (1 - prob)
+        x = call_confidence - 0.5
+        y = (1.0 if p["hit"] else 0.0) - 0.5
+        sum_xy += x * y
+        sum_xx += x * x
+
+    if sum_xx <= 0:
+        return {"shrink_factor": 1.0, "sample_size": n, "status": "insufficient data"}
+
+    raw_shrink = sum_xy / sum_xx
+    dampened = 1 + CALIBRATION_DAMPEN * (raw_shrink - 1)
+    dampened = max(PROB_SHRINK_BOUNDS[0], min(PROB_SHRINK_BOUNDS[1], dampened))
+    return {"shrink_factor": round(dampened, 3), "sample_size": n, "raw_shrink_factor": round(raw_shrink, 3), "status": "active"}
+
+
 def run() -> dict:
     calibration = {
         "min_sample": dataio.MIN_SAMPLE,
@@ -114,6 +152,7 @@ def run() -> dict:
         "generated_at": dataio.FROZEN_AT,
         "bias": {stat: calibrate_stat_bias(stat) for stat in YARDAGE_STATS},
         "touchdown_prob_shrink": calibrate_touchdown_shrink(),
+        "confidence_shrink": {stat: calibrate_yardage_prob_shrink(stat) for stat in YARDAGE_STATS},
     }
     DATA_DIR = Path(__file__).parent.parent / "data"
     (DATA_DIR / "calibration.json").write_text(json.dumps(calibration, indent=2))
