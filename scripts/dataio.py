@@ -644,6 +644,10 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
     pre_matchup = projection["projected"]
     projection["pre_matchup_projected"] = pre_matchup
     projection["matchup_factor"] = m_factor
+    # Real, separate context signal (not folded into the point
+    # projection) -- is this specific opponent's defense trending better
+    # or worse lately than its own season-long average.
+    projection["opponent_recent_form"] = opponent_recent_form(game["opponent"], stat_col)
     after_matchup = round(pre_matchup * m_factor["factor"], 1)
 
     # Pace: the player's OWN team's real play volume, applied to every
@@ -1726,4 +1730,46 @@ def target_share_trend(player_name: str) -> dict | None:
         "delta_pp": abs(delta),
         "latest_week": latest["week"], "latest_pct": round(latest_share * 100, 1),
         "previous_week": previous["week"], "previous_pct": round(prev_share * 100, 1),
+    }
+
+
+def opponent_recent_form(opponent_team: str, stat_col: str) -> dict | None:
+    """
+    Real check on whether a defense has been trending better or worse
+    lately, compared to its own full-season average -- a separate,
+    transparent signal from matchup_factor (which uses the full-season
+    average for the actual projection math). This doesn't feed into the
+    point projection; it's context for reading a matchup with more
+    current information than a single season-long number gives.
+
+    Requires at least 3 real weeks played by this defense before
+    flagging anything -- with fewer games, "their last 1-2 games" is too
+    small a sample to call a real trend rather than noise, same
+    real-sample-size discipline used everywhere else on this site.
+    """
+    defense_stat_col = "passing_yards" if stat_col == "receiving_yards" else stat_col
+    if defense_stat_col not in ("passing_yards", "rushing_yards"):
+        return None
+    df = load_stats()
+    opp_off = df.filter(pl.col("opponent_team") == opponent_team)
+    if opp_off.height == 0:
+        return None
+    weekly = opp_off.group_by("week").agg(pl.col(defense_stat_col).sum().alias("allowed")).sort("week")
+    if weekly.height < 3:
+        return None
+    weeks = weekly.to_dicts()
+    recent = weeks[-2:]
+    recent_avg = sum(w["allowed"] for w in recent) / len(recent)
+    season_avg = sum(w["allowed"] for w in weeks) / len(weeks)
+    if season_avg == 0:
+        return None
+    pct_change = round((recent_avg - season_avg) / season_avg * 100, 1)
+    if abs(pct_change) < 15:
+        return None
+    return {
+        "direction": "worse" if pct_change > 0 else "better",
+        "pct_change": abs(pct_change),
+        "recent_avg": round(recent_avg, 1),
+        "season_avg": round(season_avg, 1),
+        "recent_games": len(recent),
     }
