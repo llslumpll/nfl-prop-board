@@ -223,6 +223,21 @@ def build():
     # still show the projection), but never gets a call/edge, since
     # there's nothing real to grade it against.
     STAT_TO_POSITION = {"passing_yards": "QB", "rushing_yards": "RB", "receiving_yards": "WR", "receptions": "WR"}
+
+    def _signals_snapshot(projection: dict) -> dict:
+        """Real snapshot of which context signals were active at freeze
+        time, from whatever the projection already carries -- used later
+        by grade.py to check whether picks tagged with a given signal
+        actually hit more or less often than picks without it."""
+        snap = {}
+        inj = projection.get("injury_factor") or {}
+        if inj.get("status"):
+            snap["injury_flagged"] = inj["status"]
+        rf = projection.get("opponent_recent_form")
+        if rf:
+            snap["opponent_recent_form"] = rf["direction"]
+        return snap
+
     frozen_count = 0
     for g in matchups_data["games"]:
         for p in g["players"]:
@@ -239,6 +254,7 @@ def build():
                 market_line=market_line,
                 market_source="prizepicks" if market_line is not None else None,
                 model_prob=m_prob,
+                signals=_signals_snapshot(p["projection"]),
             )
             if wrote:
                 frozen_count += 1
@@ -384,6 +400,22 @@ def build():
     # of the 3 marquee stats (passing/rushing/receiving) the Matchups
     # page shows per game -- meaning that entire prop type could never
     # show up in History no matter how long the season ran. ---
+    def _full_signals_snapshot(projection: dict, row: dict) -> dict:
+        """Fuller version of _signals_snapshot -- also captures the
+        usage/target-share trend and next-man-up flags available on
+        leaders() rows (receptions/receiving/rushing), which the main
+        matchups freeze loop above doesn't have access to."""
+        snap = _signals_snapshot(projection)
+        ut = row.get("usage_trend")
+        if ut:
+            snap["usage_trend"] = ut["direction"]
+        tst = row.get("target_share_trend")
+        if tst:
+            snap["target_share_trend"] = tst["direction"]
+        if row.get("opportunity_signal"):
+            snap["opportunity_signal"] = True
+        return snap
+
     receptions_frozen = 0
     for r in receptions_rows:
         ng = r.get("next_game")
@@ -399,6 +431,7 @@ def build():
             stat="receptions", projected=ng["projection"]["projected"], tier_label=ng["projection"]["tier"]["label"],
             market_line=market_line, market_source="prizepicks" if market_line is not None else None,
             model_prob=m_prob,
+            signals=_full_signals_snapshot(ng["projection"], r),
         )
         if wrote:
             receptions_frozen += 1
@@ -419,12 +452,22 @@ def build():
             continue
         market_price = best5.find_kalshi_1plus_td_price(kalshi_data["touchdown_props"], r["player"])
         model_prob = best5.poisson_prob_at_least(1, ng["projected_total"])
+        td_signals = {}
+        if r.get("usage_trend"):
+            td_signals["usage_trend"] = r["usage_trend"]["direction"]
+        if r.get("target_share_trend"):
+            td_signals["target_share_trend"] = r["target_share_trend"]["direction"]
+        if r.get("opportunity_signal"):
+            td_signals["opportunity_signal"] = True
+        if (r.get("injury") or {}).get("report_status"):
+            td_signals["injury_flagged"] = r["injury"]["report_status"]
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
             stat="any_td", projected=ng["projected_total"],
             tier_label=dataio.provisional_tier(1)["label"],
             market_line=0.5 if market_price is not None else None,
             market_source="kalshi_1plus_td" if market_price is not None else None,
+            signals=td_signals,
         )
         # freeze_prediction sets call from projected vs market_line, but
         # for touchdowns the real comparison is model_prob vs the
@@ -551,6 +594,7 @@ def build():
                 "health_log": pipeline_health.load_health(),
                 "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
                 "calibration": calibration_result,
+                "signal_effectiveness": grade.signal_effectiveness(),
                 "best5_track": {
                     "passing": {
                         "highest_confidence": grade.best5_track_record("passing_yards", "highest_confidence"),
