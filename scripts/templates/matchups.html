@@ -93,6 +93,52 @@
 <div class="scroll-hint">scroll for more &middot; {{ full_team_stats|length }} teams</div>
 </div>
 
+<h3 class="division-head">Defensive coverage identity</h3>
+<p class="lede small">
+  Two different, clearly separate signals. <strong>2025 Man/Zone</strong> is real,
+  human-charted coverage data from last season (nflverse/FTN charting) &mdash; genuinely
+  measured, not inferred, but not this season's numbers, since nflverse hasn't released
+  2026 coverage charting yet. <strong>2026 Cushion</strong> is a live, real proxy updating
+  every week this season &mdash; the actual average distance opposing receivers have faced
+  at the snap against this defense. Tighter cushion generally suggests more man-coverage-like
+  tendencies; looser suggests more zone. It's a real number, but a proxy, not charted coverage
+  type. Logged weekly so it can be checked against real 2026 charting once nflverse publishes it.
+</p>
+<div class="table-wrap">
+<div class="table-scroll">
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th class="num">2025 Man%</th>
+      <th class="num">2025 Zone%</th>
+      <th class="num">2026 Cushion (live)</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for c in coverage_profiles %}
+    <tr>
+      <td><span class="team-badge" style="background:{{ c.team_badge.color }}">{{ c.team_badge.abbr }}</span> {{ c.team }}</td>
+      {% if c.coverage_2025 %}
+      <td class="num">{{ c.coverage_2025.man_rate }}%</td>
+      <td class="num">{{ c.coverage_2025.zone_rate }}%</td>
+      {% else %}
+      <td class="num player-sub">&ndash;</td><td class="num player-sub">&ndash;</td>
+      {% endif %}
+      {% if c.cushion_2026 %}
+      <td class="num">{{ c.cushion_2026.avg_cushion_allowed }} yds ({{ c.cushion_2026.games }}gm)</td>
+      {% else %}
+      <td class="num player-sub">no 2026 data yet</td>
+      {% endif %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="scroll-hint">scroll for more &middot; {{ coverage_profiles|length }} teams</div>
+</div>
+
+
 {% if matchups_data.games %}
 <h2 style="margin-top:28px;">Today's Games &mdash; {{ matchups_data.date }}</h2>
 <p class="lede small">Pick a game for its full breakdown: top players, real historical performance vs. this opponent, and the live Kalshi market.</p>
