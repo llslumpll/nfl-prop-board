@@ -1150,6 +1150,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
             "target_share_trend": target_share_trend(row["player_display_name"]),
+            "opportunity_signal": opportunity_signal(row["player_display_name"], row["team"], row["position"]),
         })
     return out
 
@@ -1186,6 +1187,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
             "target_share_trend": target_share_trend(row["player_display_name"]),
+            "opportunity_signal": opportunity_signal(row["player_display_name"], row["team"], row["position"]),
         })
     return out
 
@@ -1222,6 +1224,7 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
+            "opportunity_signal": opportunity_signal(row["player_display_name"], row["team"], row["position"]),
         })
     return out
 
@@ -1773,3 +1776,36 @@ def opponent_recent_form(opponent_team: str, stat_col: str) -> dict | None:
         "season_avg": round(season_avg, 1),
         "recent_games": len(recent),
     }
+
+
+def opportunity_signal(player_name: str, team: str, pos_abb: str) -> dict | None:
+    """
+    Real "next man up" flag -- when a teammate ranked HIGHER on the real
+    depth chart at the same position is reported Out or Doubtful, this
+    surfaces the real fact (who's hurt, their real status, and that this
+    player now sits higher in the real pecking order) WITHOUT fabricating
+    a specific magnitude of expected increased usage. We have no honest
+    way to quantify "how much more" precisely -- the real signal is
+    *that* the door has opened, not a made-up percentage of how far.
+
+    Only checks teammates ranked ABOVE this player at the same position
+    (pos_rank < this player's own rank) -- a backup below them being
+    hurt doesn't open anything up.
+    """
+    dc = load_depth_charts()
+    my_row = dc.filter(
+        (pl.col("team") == team) & (pl.col("pos_abb") == pos_abb) & (pl.col("player_name") == player_name)
+    )
+    if my_row.height == 0:
+        return None
+    my_rank = my_row.row(0, named=True)["pos_rank"]
+    if my_rank is None or my_rank <= 1:
+        return None
+    higher_ranked = dc.filter(
+        (pl.col("team") == team) & (pl.col("pos_abb") == pos_abb) & (pl.col("pos_rank") < my_rank)
+    ).sort("pos_rank")
+    for row in higher_ranked.iter_rows(named=True):
+        inj = injury_status_for(row["player_name"])
+        if inj and inj.get("report_status") in ("Out", "Doubtful"):
+            return {"injured_player": row["player_name"], "status": inj["report_status"], "my_rank": my_rank}
+    return None
