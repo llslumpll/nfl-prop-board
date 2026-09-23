@@ -303,3 +303,52 @@ if __name__ == "__main__":
     summary = accuracy_summary()
     print(f"Accuracy: {summary['hits']}/{summary['total_hit_eligible']} "
           f"({summary['overall_rate']}%) across all graded picks with a real market line.")
+
+
+def signal_effectiveness(min_sample: int = 20) -> list[dict]:
+    """
+    Real check on whether each context signal (usage trend, target
+    share trend, opportunity flag, recent-form matchup context, injury
+    status) actually correlates with real graded outcomes -- not
+    assumed, checked. For each real signal value seen at freeze time,
+    compares the real hit rate of picks tagged with it against picks
+    without it, gated by a real minimum sample on BOTH sides so an early
+    read isn't mistaken for a real finding.
+
+    This is what lets a signal graduate from "shown as context" to
+    "worth folding into the real projection math" -- but only once
+    there's a real, checkable difference, never assumed in advance.
+    """
+    preds = predictions.load_predictions()
+    graded = [p for p in preds.values() if p.get("graded") and p.get("hit") is not None]
+    if not graded:
+        return []
+
+    # Collect every distinct (signal_key, signal_value) pair seen
+    seen = set()
+    for p in graded:
+        for k, v in (p.get("signals") or {}).items():
+            seen.add((k, v))
+
+    results = []
+    for key, value in sorted(seen):
+        with_signal = [p for p in graded if (p.get("signals") or {}).get(key) == value]
+        without_signal = [p for p in graded if key not in (p.get("signals") or {})]
+        n_with, n_without = len(with_signal), len(without_signal)
+        if n_with < min_sample or n_without < min_sample:
+            results.append({
+                "signal": key, "value": value,
+                "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
+                "status": "insufficient data",
+            })
+            continue
+        hit_rate_with = round(100 * sum(1 for p in with_signal if p["hit"]) / n_with, 1)
+        hit_rate_without = round(100 * sum(1 for p in without_signal if p["hit"]) / n_without, 1)
+        results.append({
+            "signal": key, "value": value,
+            "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
+            "hit_rate_with": hit_rate_with, "hit_rate_without": hit_rate_without,
+            "difference_pp": round(hit_rate_with - hit_rate_without, 1),
+            "status": "active",
+        })
+    return results
