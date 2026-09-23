@@ -26,6 +26,7 @@ import predictions  # noqa: E402
 import calibrate  # noqa: E402
 import grade  # noqa: E402
 import pipeline_health  # noqa: E402
+import coverage_log  # noqa: E402
 import svgchart  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
@@ -249,6 +250,14 @@ def build():
     total_this_build = sum(len(g["players"]) for g in matchups_data["games"])
     pipeline_health.log_health(total_this_build, matched_count, len(predictions.load_predictions()))
 
+    # Real, live 2026 cushion-based coverage-tendency proxy, logged
+    # once per team per week -- not verified yet (real 2026 man/zone
+    # charting isn't released by nflverse, checked and confirmed), but
+    # gives an honest trail to check it against once that real data
+    # does land.
+    n_logged = coverage_log.log_all_teams(list(dataio.TEAM_CONFERENCE.keys()), dataio.team_cushion_profile_2026)
+    print(f"Logged coverage proxy for {n_logged} team(s) this build.")
+
     # --- Grade any predictions whose games have now finished ---
     migrated = predictions.migrate_stale_tiers()
     if migrated:
@@ -462,6 +471,7 @@ def build():
                 "matchups_data": matchups_data,
                 "standings": standings,
                 "full_team_stats": full_team_stats,
+                "coverage_profiles": dataio.all_team_coverage_profiles(),
                 "kalshi_error": kalshi_data["error"],
             },
         ),
