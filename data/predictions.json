@@ -4670,7 +4670,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Dalton Kincaid|receptions|3": {
     "player": "Dalton Kincaid",
@@ -4784,7 +4787,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Jared Goff|any_td|3": {
@@ -5066,7 +5070,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaxon Smith-Njigba|receptions|3": {
     "player": "Jaxon Smith-Njigba",
@@ -5891,7 +5899,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jordan Love|any_td|3": {
     "player": "Jordan Love",
@@ -6201,7 +6212,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Puka Nacua|receptions|2": {
     "player": "Puka Nacua",
@@ -6479,7 +6494,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jake Ferguson|any_td|3": {
     "player": "Jake Ferguson",
@@ -6723,7 +6741,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Geno Smith|any_td|3": {
     "player": "Geno Smith",
@@ -6975,7 +6996,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jacoby Brissett|any_td|3": {
     "player": "Jacoby Brissett",
