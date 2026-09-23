@@ -462,6 +462,7 @@ def build():
                 "weeks": dataio.weeks_available(),
                 "best5": best5_data,
                 "recent_results": grade.recent_graded_results(),
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "matchups.html": (
@@ -483,6 +484,7 @@ def build():
                 "best5_value": best5_data["passing"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["passing"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["passing"]["best_value"],
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "receiving.html": (
@@ -497,6 +499,7 @@ def build():
                 "best5_value": best5_data["receiving"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["receiving"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["receiving"]["best_value"],
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "receptions.html": (
@@ -511,6 +514,7 @@ def build():
                 "best5_value": best5_data["receptions"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["receptions"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["receptions"]["best_value"],
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "rushing.html": (
@@ -521,6 +525,7 @@ def build():
                 "best5_value": best5_data["rushing"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["rushing"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["rushing"]["best_value"],
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "touchdowns.html": (
@@ -532,6 +537,7 @@ def build():
                 "best5_value": best5_data["touchdowns"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["touchdowns"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["touchdowns"]["best_value"],
+                "maturity": calibrate.maturity_summary(),
             },
         ),
         "history.html": (
