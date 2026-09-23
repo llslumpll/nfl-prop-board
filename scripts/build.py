@@ -224,11 +224,12 @@ def build():
     # there's nothing real to grade it against.
     STAT_TO_POSITION = {"passing_yards": "QB", "rushing_yards": "RB", "receiving_yards": "WR", "receptions": "WR"}
 
-    def _signals_snapshot(projection: dict) -> dict:
+    def _signals_snapshot(projection: dict, row: dict | None = None) -> dict:
         """Real snapshot of which context signals were active at freeze
-        time, from whatever the projection already carries -- used later
-        by grade.py to check whether picks tagged with a given signal
-        actually hit more or less often than picks without it."""
+        time, from whatever the projection (and now, the matchups player
+        row itself) carries -- used later by grade.py to check whether
+        picks tagged with a given signal actually hit more or less often
+        than picks without it."""
         snap = {}
         inj = projection.get("injury_factor") or {}
         if inj.get("status"):
@@ -236,6 +237,15 @@ def build():
         rf = projection.get("opponent_recent_form")
         if rf:
             snap["opponent_recent_form"] = rf["direction"]
+        if row:
+            ut = row.get("usage_trend")
+            if ut:
+                snap["usage_trend"] = ut["direction"]
+            tst = row.get("target_share_trend")
+            if tst:
+                snap["target_share_trend"] = tst["direction"]
+            if row.get("opportunity_signal"):
+                snap["opportunity_signal"] = True
         return snap
 
     frozen_count = 0
@@ -254,7 +264,7 @@ def build():
                 market_line=market_line,
                 market_source="prizepicks" if market_line is not None else None,
                 model_prob=m_prob,
-                signals=_signals_snapshot(p["projection"]),
+                signals=_signals_snapshot(p["projection"], p),
             )
             if wrote:
                 frozen_count += 1
@@ -400,21 +410,6 @@ def build():
     # of the 3 marquee stats (passing/rushing/receiving) the Matchups
     # page shows per game -- meaning that entire prop type could never
     # show up in History no matter how long the season ran. ---
-    def _full_signals_snapshot(projection: dict, row: dict) -> dict:
-        """Fuller version of _signals_snapshot -- also captures the
-        usage/target-share trend and next-man-up flags available on
-        leaders() rows (receptions/receiving/rushing), which the main
-        matchups freeze loop above doesn't have access to."""
-        snap = _signals_snapshot(projection)
-        ut = row.get("usage_trend")
-        if ut:
-            snap["usage_trend"] = ut["direction"]
-        tst = row.get("target_share_trend")
-        if tst:
-            snap["target_share_trend"] = tst["direction"]
-        if row.get("opportunity_signal"):
-            snap["opportunity_signal"] = True
-        return snap
 
     receptions_frozen = 0
     for r in receptions_rows:
@@ -431,7 +426,7 @@ def build():
             stat="receptions", projected=ng["projection"]["projected"], tier_label=ng["projection"]["tier"]["label"],
             market_line=market_line, market_source="prizepicks" if market_line is not None else None,
             model_prob=m_prob,
-            signals=_full_signals_snapshot(ng["projection"], r),
+            signals=_signals_snapshot(ng["projection"], r),
         )
         if wrote:
             receptions_frozen += 1
