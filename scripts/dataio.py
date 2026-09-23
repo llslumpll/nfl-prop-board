@@ -1144,6 +1144,7 @@ def receiving_leaders(limit: int = 40) -> list[dict]:
             "next_game": next_game_projection(row["player_display_name"], row["team"], "receiving_yards"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
+            "usage_trend": usage_trend(row["player_display_name"]),
         })
     return out
 
@@ -1178,6 +1179,7 @@ def receptions_leaders(limit: int = 40) -> list[dict]:
             "next_game": next_game_projection(row["player_display_name"], row["team"], "receptions"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
+            "usage_trend": usage_trend(row["player_display_name"]),
         })
     return out
 
@@ -1213,6 +1215,7 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "next_game": next_game_projection(row["player_display_name"], row["team"], "rushing_yards"),
             "tier": provisional_tier(n_games),
             "injury": injury_status_for(row["player_display_name"]),
+            "usage_trend": usage_trend(row["player_display_name"]),
         })
     return out
 
@@ -1277,6 +1280,7 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "next_game": _project_total_td(row["player_display_name"], row["team"]),
             "tier": provisional_tier(1),
             "injury": injury_status_for(row["player_display_name"]),
+            "usage_trend": usage_trend(row["player_display_name"]),
         })
     out.sort(key=lambda r: r["total_tds"], reverse=True)
     return out[:limit]
@@ -1629,3 +1633,50 @@ def project_stat(player_name: str, stat_col: str) -> dict:
     # time, instead of appending a new row on every single build/odds
     # refresh. See predictions.py and grade.py for the real grading
     # pipeline this enables.)
+
+
+_snap_counts_cache = None
+
+
+def load_snap_counts():
+    global _snap_counts_cache
+    if _snap_counts_cache is None:
+        import nflreadpy as nfl
+        _snap_counts_cache = nfl.load_snap_counts([2026])
+    return _snap_counts_cache
+
+
+def usage_trend(player_name: str) -> dict | None:
+    """
+    Real week-over-week offensive snap share change, detected directly
+    from real per-game snap count data (nflreadpy's load_snap_counts) --
+    NOT a narrative guess at *why* a role changed (a coach's decision,
+    another player's injury, game script), just the real, quantified
+    fact that it did. This is the honest version of "hints of someone
+    getting more touches": real numbers, no fabricated commentary.
+
+    Only flags a change of 15+ percentage points -- smaller week-to-week
+    swings are normal noise for most players and not a real signal.
+    Returns None if there's under 2 real weeks to compare, or the
+    change is too small to be meaningful.
+    """
+    snaps = load_snap_counts()
+    rows = snaps.filter(pl.col("player") == player_name).sort("week")
+    if rows.height < 2:
+        return None
+    weeks = rows.to_dicts()
+    latest, previous = weeks[-1], weeks[-2]
+    latest_pct, prev_pct = latest.get("offense_pct"), previous.get("offense_pct")
+    if latest_pct is None or prev_pct is None:
+        return None
+    delta = round((latest_pct - prev_pct) * 100, 1)
+    if abs(delta) < 15:
+        return None
+    return {
+        "direction": "up" if delta > 0 else "down",
+        "delta_pp": abs(delta),
+        "latest_week": latest["week"],
+        "latest_pct": round(latest_pct * 100, 1),
+        "previous_week": previous["week"],
+        "previous_pct": round(prev_pct * 100, 1),
+    }
