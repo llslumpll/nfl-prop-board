@@ -334,6 +334,17 @@ table.stat-table tr:hover td { background: rgba(255, 106, 61, 0.025); }
   color: var(--amber);
 }
 
+.rz-flag {
+  display: inline-block;
+  margin-left: 6px;
+  margin-top: 3px;
+  font-size: 0.7rem;
+  font-family: var(--mono);
+  padding: 1px 6px;
+  border: 1px solid var(--green);
+  color: var(--green);
+}
+
 .corr-flag {
   color: var(--amber);
   font-size: 0.8em;
