@@ -5225,7 +5225,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Nico Collins|receptions|3": {
     "player": "Nico Collins",
