@@ -86,6 +86,14 @@
         {% if r.red_zone_target_share and r.red_zone_target_share.share_pct >= 20 %}
           <span class="rz-flag" title="Real red-zone target share: {{ r.red_zone_target_share.rz_touches }} of the team's {{ r.red_zone_target_share.team_rz_touches }} real red-zone targets this season -- the most well-documented real predictor of TD scoring.">&#9733; RZ Target {{ r.red_zone_target_share.share_pct }}%</span>
         {% endif %}
+        {% if r.goal_line_rush_share and r.goal_line_rush_share.share_pct >= 40 %}
+          <span class="rz-flag" title="Real goal-line (inside the 5) rush share: {{ r.goal_line_rush_share.gl_touches }} of the team's {{ r.goal_line_rush_share.team_gl_touches }} real goal-line carries this season -- the shortest path to six.">&#9733; Goal Line {{ r.goal_line_rush_share.share_pct }}%</span>
+        {% endif %}
+        {% if r.reason_tags %}
+        <div class="reason-tags">
+          {% for tag in r.reason_tags %}<span class="reason-tag">{{ tag }}</span>{% endfor %}
+        </div>
+        {% endif %}
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.total_tds }}</td>
