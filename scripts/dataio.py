@@ -1291,6 +1291,8 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
             "target_share_trend": target_share_trend(row["player_display_name"]),
+            "red_zone_rush_share": red_zone_share(row["player_display_name"], "rushing_yards"),
+            "red_zone_target_share": red_zone_share(row["player_display_name"], "receiving_yards"),
         })
     out.sort(key=lambda r: r["total_tds"], reverse=True)
     return out[:limit]
@@ -1912,3 +1914,56 @@ def all_team_coverage_profiles() -> list[dict]:
             "cushion_2026": team_cushion_profile_2026(team),
         })
     return out
+
+
+_pbp_2026_cache = None
+
+
+def load_pbp_2026():
+    global _pbp_2026_cache
+    if _pbp_2026_cache is None:
+        import nflreadpy as nfl
+        _pbp_2026_cache = nfl.load_pbp([2026])
+    return _pbp_2026_cache
+
+
+def red_zone_share(player_name: str, stat_col: str) -> dict | None:
+    """
+    Real red-zone usage share -- this player's real red-zone touches
+    (targets for receiving_yards/receptions, carries for rushing_yards)
+    divided by his team's real total red-zone touches of that type this
+    season. The single most well-documented real predictor of
+    touchdown-scoring in football analytics: touchdowns are fundamentally
+    about who gets the ball near the goal line, which season-long volume
+    stats don't capture on their own. Joined via real player_id (GSIS
+    format), not fragile name matching -- confirmed the same ID format
+    is used in both load_stats() and load_pbp().
+    """
+    stats = load_stats()
+    my_row = stats.filter(pl.col("player_display_name") == player_name)
+    if my_row.height == 0:
+        return None
+    row = my_row.row(0, named=True)
+    player_id, team = row.get("player_id"), row.get("team")
+    if not player_id or not team:
+        return None
+
+    pbp = load_pbp_2026()
+    red_zone = pbp.filter(pl.col("yardline_100") <= 20)
+
+    if stat_col in ("receiving_yards", "receptions"):
+        my_rz = red_zone.filter(pl.col("receiver_player_id") == player_id).height
+        team_rz = red_zone.filter((pl.col("posteam") == team) & (pl.col("play_type") == "pass")).height
+    elif stat_col == "rushing_yards":
+        my_rz = red_zone.filter(pl.col("rusher_player_id") == player_id).height
+        team_rz = red_zone.filter((pl.col("posteam") == team) & (pl.col("play_type") == "run")).height
+    else:
+        return None
+
+    if team_rz == 0:
+        return None
+    return {
+        "rz_touches": my_rz,
+        "team_rz_touches": team_rz,
+        "share_pct": round(100 * my_rz / team_rz, 1),
+    }
