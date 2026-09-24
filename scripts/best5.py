@@ -264,6 +264,13 @@ def best5_touchdowns_most_likely(td_rows: list[dict]) -> list[dict]:
         if dataio.injury_factor(dataio.injury_status_for(r["player"])).get("is_out"):
             continue
         model_prob = poisson_prob_at_least(1, next_game["projected_total"])
+        rz_rush = r.get("red_zone_rush_share")
+        rz_target = r.get("red_zone_target_share")
+        rz_note = ""
+        if rz_rush and rz_rush["share_pct"] >= 20:
+            rz_note = f" Real red-zone rush share: {rz_rush['share_pct']}% of the team's red-zone carries this season -- the most well-documented real predictor of TD scoring."
+        elif rz_target and rz_target["share_pct"] >= 20:
+            rz_note = f" Real red-zone target share: {rz_target['share_pct']}% of the team's red-zone targets this season -- the most well-documented real predictor of TD scoring."
         candidates.append({
             "player": r["player"],
             "team_badge": r.get("team_badge"),
@@ -272,7 +279,9 @@ def best5_touchdowns_most_likely(td_rows: list[dict]) -> list[dict]:
             "week": next_game["week"],
             "model_prob": round(model_prob * 100, 1),
             "breakdown": next_game.get("breakdown"),
-            "reason": f"Projected {next_game['projected_total']} total TDs ({next_game.get('breakdown', '—')}).",
+            "red_zone_rush_share": rz_rush,
+            "red_zone_target_share": rz_target,
+            "reason": f"Projected {next_game['projected_total']} total TDs ({next_game.get('breakdown', '—')}).{rz_note}",
         })
     candidates.sort(key=lambda c: c["model_prob"], reverse=True)
     return candidates[:5]
