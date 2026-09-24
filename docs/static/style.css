@@ -345,6 +345,17 @@ table.stat-table tr:hover td { background: rgba(255, 106, 61, 0.025); }
   color: var(--green);
 }
 
+.reason-tags { margin-top: 5px; display: flex; gap: 5px; flex-wrap: wrap; }
+.reason-tag {
+  font-size: 0.66rem;
+  font-family: var(--mono);
+  padding: 2px 7px;
+  background: rgba(255, 106, 61, 0.08);
+  border: 1px solid var(--orange);
+  color: var(--orange);
+  border-radius: 20px;
+}
+
 .corr-flag {
   color: var(--amber);
   font-size: 0.8em;
