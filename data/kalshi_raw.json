@@ -286,21 +286,6 @@
       "series_ticker": "KXNFLTD"
     },
     {
-      "event_title": "Cincinnati vs Pittsburgh: Touchdowns",
-      "market_title": "Jaylen Warren: 1+",
-      "ticker": "KXNFLTD-26SEP27CINPIT-PITJWARREN30-1",
-      "yes_bid": 0.42,
-      "yes_ask": 0.46,
-      "yes_bid_cents": 42,
-      "yes_ask_cents": 46,
-      "price": 0.44,
-      "decimal_odds": 2.27,
-      "implied_pct": 44.0,
-      "volume": 0,
-      "close_time": "2026-09-29T17:00:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
       "event_title": "Tennessee vs New York G: Touchdowns",
       "market_title": "Cam Skattebo: 1+",
       "ticker": "KXNFLTD-26SEP27TENNYG-NYGCSKATTEBO44-1",
@@ -323,6 +308,21 @@
       "yes_ask": 0.44,
       "yes_bid_cents": 42,
       "yes_ask_cents": 44,
+      "price": 0.43,
+      "decimal_odds": 2.33,
+      "implied_pct": 43.0,
+      "volume": 0,
+      "close_time": "2026-09-29T17:00:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "Cincinnati vs Pittsburgh: Touchdowns",
+      "market_title": "Jaylen Warren: 1+",
+      "ticker": "KXNFLTD-26SEP27CINPIT-PITJWARREN30-1",
+      "yes_bid": 0.41,
+      "yes_ask": 0.45,
+      "yes_bid_cents": 41,
+      "yes_ask_cents": 45,
       "price": 0.43,
       "decimal_odds": 2.33,
       "implied_pct": 43.0,
@@ -406,27 +406,12 @@
       "series_ticker": "KXNFLTD"
     },
     {
-      "event_title": "Los Angeles R vs Denver: Touchdowns",
-      "market_title": "Davante Adams: 1+",
-      "ticker": "KXNFLTD-26SEP27LARDEN-LARDADAMS17-1",
-      "yes_bid": 0.37,
-      "yes_ask": 0.41,
-      "yes_bid_cents": 37,
-      "yes_ask_cents": 41,
-      "price": 0.39,
-      "decimal_odds": 2.56,
-      "implied_pct": 39.0,
-      "volume": 0,
-      "close_time": "2026-09-30T00:20:00Z",
-      "series_ticker": "KXNFLTD"
-    },
-    {
       "event_title": "Philadelphia vs Chicago: Touchdowns",
       "market_title": "D'Andre Swift: 1+",
       "ticker": "KXNFLTD-26SEP28PHICHI-CHIDSWIFT4-1",
-      "yes_bid": 0.31,
+      "yes_bid": 0.32,
       "yes_ask": 0.46,
-      "yes_bid_cents": 31,
+      "yes_bid_cents": 32,
       "yes_ask_cents": 46,
       "price": 0.39,
       "decimal_odds": 2.56,
@@ -493,6 +478,21 @@
       "implied_pct": 38.0,
       "volume": 0,
       "close_time": "2026-10-01T00:15:00Z",
+      "series_ticker": "KXNFLTD"
+    },
+    {
+      "event_title": "Los Angeles R vs Denver: Touchdowns",
+      "market_title": "Davante Adams: 1+",
+      "ticker": "KXNFLTD-26SEP27LARDEN-LARDADAMS17-1",
+      "yes_bid": 0.35,
+      "yes_ask": 0.39,
+      "yes_bid_cents": 35,
+      "yes_ask_cents": 39,
+      "price": 0.37,
+      "decimal_odds": 2.7,
+      "implied_pct": 37.0,
+      "volume": 0,
+      "close_time": "2026-09-30T00:20:00Z",
       "series_ticker": "KXNFLTD"
     },
     {
@@ -618,21 +618,6 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "CIN Bengals vs PIT Steelers: Total Points",
-      "market_title": "Over 22.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27CINPIT-23",
-      "yes_bid": 0.95,
-      "yes_ask": 0.97,
-      "yes_bid_cents": 95,
-      "yes_ask_cents": 97,
-      "price": 0.96,
-      "decimal_odds": 1.04,
-      "implied_pct": 96.0,
-      "volume": 0,
-      "close_time": "2026-09-29T17:00:00Z",
-      "series_ticker": "KXNFLTOTAL"
-    },
-    {
       "event_title": "LA Chargers vs BUF Bills: Total Points",
       "market_title": "Over 29.5 points scored",
       "ticker": "KXNFLTOTAL-26SEP27LACBUF-30",
@@ -753,13 +738,13 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "CIN Bengals vs PIT Steelers: Total Points",
-      "market_title": "Over 25.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27CINPIT-26",
-      "yes_bid": 0.93,
-      "yes_ask": 0.94,
-      "yes_bid_cents": 93,
-      "yes_ask_cents": 94,
+      "event_title": "HOU Texans vs IND Colts: Total Points",
+      "market_title": "Over 24.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP27HOUIND-25",
+      "yes_bid": 0.94,
+      "yes_ask": 0.95,
+      "yes_bid_cents": 94,
+      "yes_ask_cents": 95,
       "price": 0.94,
       "decimal_odds": 1.06,
       "implied_pct": 94.0,
@@ -873,13 +858,13 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "LA Chargers vs BUF Bills: Total Points",
-      "market_title": "Over 32.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27LACBUF-33",
-      "yes_bid": 0.91,
-      "yes_ask": 0.92,
-      "yes_bid_cents": 91,
-      "yes_ask_cents": 92,
+      "event_title": "HOU Texans vs IND Colts: Total Points",
+      "market_title": "Over 27.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP27HOUIND-28",
+      "yes_bid": 0.9,
+      "yes_ask": 0.93,
+      "yes_bid_cents": 90,
+      "yes_ask_cents": 93,
       "price": 0.92,
       "decimal_odds": 1.09,
       "implied_pct": 92.0,
@@ -888,9 +873,9 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "TEN Titans vs NY Giants: Total Points",
-      "market_title": "Over 22.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27TENNYG-23",
+      "event_title": "LA Chargers vs BUF Bills: Total Points",
+      "market_title": "Over 32.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP27LACBUF-33",
       "yes_bid": 0.91,
       "yes_ask": 0.92,
       "yes_bid_cents": 91,
@@ -1008,21 +993,6 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "CIN Bengals vs PIT Steelers: Total Points",
-      "market_title": "Over 28.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27CINPIT-29",
-      "yes_bid": 0.88,
-      "yes_ask": 0.89,
-      "yes_bid_cents": 88,
-      "yes_ask_cents": 89,
-      "price": 0.89,
-      "decimal_odds": 1.12,
-      "implied_pct": 89.0,
-      "volume": 0,
-      "close_time": "2026-09-29T17:00:00Z",
-      "series_ticker": "KXNFLTOTAL"
-    },
-    {
       "event_title": "LV Raiders vs NO Saints: Total Points",
       "market_title": "Over 29.5 points scored",
       "ticker": "KXNFLTOTAL-26SEP27LVNO-30",
@@ -1098,21 +1068,6 @@
       "series_ticker": "KXNFLTOTAL"
     },
     {
-      "event_title": "TEN Titans vs NY Giants: Total Points",
-      "market_title": "Over 25.5 points scored",
-      "ticker": "KXNFLTOTAL-26SEP27TENNYG-26",
-      "yes_bid": 0.86,
-      "yes_ask": 0.87,
-      "yes_bid_cents": 86,
-      "yes_ask_cents": 87,
-      "price": 0.86,
-      "decimal_odds": 1.16,
-      "implied_pct": 86.0,
-      "volume": 0,
-      "close_time": "2026-09-29T17:00:00Z",
-      "series_ticker": "KXNFLTOTAL"
-    },
-    {
       "event_title": "Kansas City vs Miami",
       "market_title": "Kansas City",
       "ticker": "KXNFLGAME-26SEP27KCMIA-KC",
@@ -1158,6 +1113,21 @@
       "series_ticker": "KXNFLGAME"
     },
     {
+      "event_title": "HOU Texans vs IND Colts: Total Points",
+      "market_title": "Over 30.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP27HOUIND-31",
+      "yes_bid": 0.84,
+      "yes_ask": 0.85,
+      "yes_bid_cents": 84,
+      "yes_ask_cents": 85,
+      "price": 0.84,
+      "decimal_odds": 1.19,
+      "implied_pct": 84.0,
+      "volume": 0,
+      "close_time": "2026-09-29T17:00:00Z",
+      "series_ticker": "KXNFLTOTAL"
+    },
+    {
       "event_title": "KC Chiefs vs MIA Dolphins: Total Points",
       "market_title": "Over 33.5 points scored",
       "ticker": "KXNFLTOTAL-26SEP27KCMIA-34",
@@ -1201,6 +1171,36 @@
       "volume": 0,
       "close_time": "2026-09-29T20:05:00Z",
       "series_ticker": "KXNFLTOTAL"
+    },
+    {
+      "event_title": "PHI Eagles vs CHI Bears: Total Points",
+      "market_title": "Over 29.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP28PHICHI-30",
+      "yes_bid": 0.83,
+      "yes_ask": 0.85,
+      "yes_bid_cents": 83,
+      "yes_ask_cents": 85,
+      "price": 0.84,
+      "decimal_odds": 1.19,
+      "implied_pct": 84.0,
+      "volume": 0,
+      "close_time": "2026-10-01T00:15:00Z",
+      "series_ticker": "KXNFLTOTAL"
+    },
+    {
+      "event_title": "MIN Vikings vs TB Buccaneers: Total Points",
+      "market_title": "Over 30.5 points scored",
+      "ticker": "KXNFLTOTAL-26SEP27MINTB-31",
+      "yes_bid": 0.82,
+      "yes_ask": 0.85,
+      "yes_bid_cents": 82,
+      "yes_ask_cents": 85,
+      "price": 0.83,
+      "decimal_odds": 1.2,
+      "implied_pct": 83.0,
+      "volume": 0,
+      "close_time": "2026-09-29T20:05:00Z",
+      "series_ticker": "KXNFLTOTAL"
     }
   ],
   "error": null,
@@ -1209,12 +1209,12 @@
       "KXNFLTD": "16 event(s), 576 market(s)",
       "KXNFLFIRSTTD": "16 event(s), 315 market(s)",
       "KXNFLGAME": "32 event(s), 64 market(s)",
-      "KXNFLSPREAD": "16 event(s), 414 market(s)",
-      "KXNFLTOTAL": "16 event(s), 228 market(s)"
+      "KXNFLSPREAD": "16 event(s), 312 market(s)",
+      "KXNFLTOTAL": "16 event(s), 209 market(s)"
     },
     "total_touchdown_props_found": 891,
-    "total_game_props_found": 706,
+    "total_game_props_found": 585,
     "touchdown_props_with_a_quote": 891,
-    "game_props_with_a_quote": 706
+    "game_props_with_a_quote": 585
   }
 }
