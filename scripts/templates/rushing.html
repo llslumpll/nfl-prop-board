@@ -109,6 +109,10 @@
         {% if r.opportunity_signal %}
           <span class="opportunity-flag" title="Real depth chart: {{ r.player }} is now ahead of an injured teammate">&#9679; {{ r.opportunity_signal.injured_player }} ({{ r.opportunity_signal.status }}) &mdash; real next-man-up, no fabricated magnitude</span>
         {% endif %}
+        {% set bc = r.box_count_splits %}
+        {% if bc and bc.light and bc.stacked and bc.light.carries >= 5 and bc.stacked.carries >= 3 and (bc.light.ypc - bc.stacked.ypc) >= 1.5 %}
+          <span class="rz-flag" title="Real YPC by real charted defensive box count: {{ bc.light.ypc }} YPC vs light boxes ({{ bc.light.carries }} carries) vs {{ bc.stacked.ypc }} YPC vs stacked boxes ({{ bc.stacked.carries }} carries)">&#9733; Light-Box Feaster ({{ bc.light.ypc }} vs {{ bc.stacked.ypc }} YPC)</span>
+        {% endif %}
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num">{{ r.carries }}</td>
