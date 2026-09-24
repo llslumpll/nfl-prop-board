@@ -22,7 +22,7 @@
       "receptions": 5.5
     },
     "Matthew Golden": {
-      "receiving_yards": 55.5
+      "receiving_yards": 56.5
     },
     "Tucker Kraft": {
       "receiving_yards": 46.5,
@@ -63,8 +63,7 @@
       "receiving_yards": 5.5
     },
     "Bo Melton": {
-      "receptions": 0.5,
-      "receiving_yards": 0.5
+      "receptions": 0.5
     },
     "Josh Allen": {
       "passing_yards": 240.5,
@@ -104,7 +103,7 @@
       "receiving_yards": 35.5
     },
     "Tre' Harris": {
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 14.5
@@ -820,7 +819,7 @@
       "receptions": 3.5
     },
     "Makai Lemon": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "D'Andre Swift": {
@@ -835,9 +834,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 6813,
-    "matched_props": 383,
-    "excluded_goblin_demon_lines": 5446,
+    "total_projections_returned": 6812,
+    "matched_props": 382,
+    "excluded_goblin_demon_lines": 5447,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
