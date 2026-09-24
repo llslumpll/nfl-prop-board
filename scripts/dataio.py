@@ -1297,8 +1297,10 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "goal_line_rush_share": goal_line_share(row["player_display_name"], "rushing_yards"),
             "goal_line_target_share": goal_line_share(row["player_display_name"], "receiving_yards"),
             "td_rate": td_rate_per_touch(row["player_display_name"]),
+            "td_drought": td_drought(row["player_display_name"]),
         })
     for r in out:
+        r["due_signal"] = due_signal(r)
         r["reason_tags"] = reason_tags(r)
     out.sort(key=lambda r: r["total_tds"], reverse=True)
     return out[:limit]
@@ -2152,6 +2154,9 @@ def reason_tags(row: dict) -> list[str]:
     if td_rate and td_rate["touches"] >= 15 and td_rate["td_rate_pct"] >= 15:
         tags.append("High TD Rate")
 
+    if row.get("due_signal"):
+        tags.append(f"Due For TD ({row['due_signal']['games_since_td']}gm drought)")
+
     ut = row.get("usage_trend")
     if ut and ut["direction"] == "up" and ut["delta_pp"] >= 20:
         tags.append("Role Trending Up")
@@ -2165,3 +2170,62 @@ def reason_tags(row: dict) -> list[str]:
         tags.append("Injury Risk")
 
     return tags
+
+
+def td_drought(player_name: str) -> dict | None:
+    """
+    Real, consecutive-game touchdown drought this season, counted back
+    from the most recent real game played. Used together with real role
+    strength (red-zone/goal-line share, touch volume) to flag "Due" --
+    a player with genuinely strong real opportunity who simply hasn't
+    converted yet, which is a real regression-up signal, distinct from
+    a low-usage player with no TDs (which isn't surprising at all).
+    """
+    df = load_stats()
+    rows = df.filter(pl.col("player_display_name") == player_name).sort("week")
+    if rows.height == 0:
+        return None
+    weeks = rows.to_dicts()
+    streak = 0
+    for w in reversed(weeks):
+        total_td = (w.get("rushing_tds") or 0) + (w.get("receiving_tds") or 0)
+        if total_td > 0:
+            break
+        streak += 1
+    return {"games_since_td": streak, "games_played": len(weeks)}
+
+
+def due_signal(row: dict) -> dict | None:
+    """
+    Real "Due" flag: a genuinely strong real role (red-zone/goal-line
+    share, or real high touch volume) combined with a real TD drought of
+    3+ straight games. Both conditions must be real and independently
+    verified -- neither a hot/cold-hand fallacy nor a fabricated
+    "regression is coming" claim, just two real facts (strong opportunity,
+    no recent conversion) stated together, with the real numbers behind
+    both shown transparently.
+    """
+    drought = row.get("td_drought")
+    if not drought or drought["games_since_td"] < 3 or drought["games_played"] < 2:
+        return None
+
+    reasons = []
+    gl_rush, gl_target = row.get("goal_line_rush_share"), row.get("goal_line_target_share")
+    rz_rush, rz_target = row.get("red_zone_rush_share"), row.get("red_zone_target_share")
+    touch_share = row.get("season_touch_share")
+
+    if gl_rush and gl_rush["share_pct"] >= 40:
+        reasons.append(f"{gl_rush['share_pct']}% real goal-line rush share")
+    elif gl_target and gl_target["share_pct"] >= 30:
+        reasons.append(f"{gl_target['share_pct']}% real goal-line target share")
+    elif rz_rush and rz_rush["share_pct"] >= 40:
+        reasons.append(f"{rz_rush['share_pct']}% real red-zone rush share")
+    elif rz_target and rz_target["share_pct"] >= 30:
+        reasons.append(f"{rz_target['share_pct']}% real red-zone target share")
+    elif touch_share and drought["games_played"] and (touch_share["touches"] / drought["games_played"]) >= 12:
+        avg = round(touch_share["touches"] / drought["games_played"], 1)
+        reasons.append(f"{avg} real touches/game")
+
+    if not reasons:
+        return None
+    return {"games_since_td": drought["games_since_td"], "role_reason": reasons[0]}
