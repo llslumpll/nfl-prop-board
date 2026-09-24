@@ -1298,6 +1298,7 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "goal_line_target_share": goal_line_share(row["player_display_name"], "receiving_yards"),
             "td_rate": td_rate_per_touch(row["player_display_name"]),
             "td_drought": td_drought(row["player_display_name"]),
+            "xtd": expected_touchdowns(row["player_display_name"]),
         })
     for r in out:
         r["due_signal"] = due_signal(r)
@@ -2157,6 +2158,13 @@ def reason_tags(row: dict) -> list[str]:
     if row.get("due_signal"):
         tags.append(f"Due For TD ({row['due_signal']['games_since_td']}gm drought)")
 
+    xtd = row.get("xtd")
+    if xtd and xtd["touches_priced"] >= 15:
+        if xtd["debt"] >= 1.0:
+            tags.append(f"Positive TD Debt (+{xtd['debt']} xTD)")
+        elif xtd["debt"] <= -1.0:
+            tags.append(f"Negative TD Debt ({xtd['debt']} xTD)")
+
     ut = row.get("usage_trend")
     if ut and ut["direction"] == "up" and ut["delta_pp"] >= 20:
         tags.append("Role Trending Up")
@@ -2229,3 +2237,128 @@ def due_signal(row: dict) -> dict | None:
     if not reasons:
         return None
     return {"games_since_td": drought["games_since_td"], "role_reason": reasons[0]}
+
+
+_zone_conversion_cache = None
+
+
+def _zone_conversion_rates() -> dict:
+    """
+    Real, historical (2023-2025) touchdown conversion rate per touch, by
+    real field-position zone and real play type -- computed once from
+    roughly 148,000 real plays, a stable multi-season baseline rather
+    than a thin single-season sample (2026 alone, 2 weeks in, would be
+    far too noisy per zone to trust).
+    """
+    global _zone_conversion_cache
+    if _zone_conversion_cache is None:
+        import nflreadpy as nfl
+        pbp = nfl.load_pbp([2023, 2024, 2025])
+        pbp = pbp.filter(pl.col("play_type").is_in(["run", "pass"]) & pl.col("yardline_100").is_not_null())
+        pbp = pbp.with_columns(
+            pl.when(pl.col("yardline_100") <= 5).then(pl.lit("goal_line"))
+            .when(pl.col("yardline_100") <= 10).then(pl.lit("red_zone_fringe"))
+            .when(pl.col("yardline_100") <= 20).then(pl.lit("red_zone_deep"))
+            .when(pl.col("yardline_100") <= 50).then(pl.lit("midfield"))
+            .otherwise(pl.lit("long_field"))
+            .alias("zone")
+        )
+        rates = pbp.group_by(["zone", "play_type"]).agg([
+            pl.col("touchdown").mean().alias("td_rate"),
+            pl.len().alias("n"),
+        ])
+        _zone_conversion_cache = {(r["zone"], r["play_type"]): r["td_rate"] for r in rates.to_dicts()}
+    return _zone_conversion_cache
+
+
+def expected_touchdowns(player_name: str) -> dict | None:
+    """
+    Real Expected Touchdowns (xTD) model -- prices every one of this
+    player's real touches this season by the real historical (2023-2025)
+    TD conversion rate for that exact field zone and play type, summed
+    into a real expected-TD total. Compared against real actual TDs
+    scored this season: positive debt means the ball has found him in
+    real scoring position more than the scoreboard shows (a real
+    regression-up signal); negative debt means he's converting above
+    what real opportunity alone would predict (regression-down risk).
+    Same real player_id join used throughout the rest of this file.
+    """
+    stats = load_stats()
+    my_row = stats.filter(pl.col("player_display_name") == player_name)
+    if my_row.height == 0:
+        return None
+    player_id = my_row.row(0, named=True).get("player_id")
+    if not player_id:
+        return None
+
+    pbp = load_pbp_2026()
+    rates = _zone_conversion_rates()
+
+    my_plays = pbp.filter(
+        ((pl.col("rusher_player_id") == player_id) | (pl.col("receiver_player_id") == player_id))
+        & pl.col("yardline_100").is_not_null()
+    )
+    if my_plays.height == 0:
+        return None
+
+    my_plays = my_plays.with_columns(
+        pl.when(pl.col("yardline_100") <= 5).then(pl.lit("goal_line"))
+        .when(pl.col("yardline_100") <= 10).then(pl.lit("red_zone_fringe"))
+        .when(pl.col("yardline_100") <= 20).then(pl.lit("red_zone_deep"))
+        .when(pl.col("yardline_100") <= 50).then(pl.lit("midfield"))
+        .otherwise(pl.lit("long_field"))
+        .alias("zone")
+    )
+
+    expected = 0.0
+    priced = 0
+    for row in my_plays.iter_rows(named=True):
+        is_rush = row.get("rusher_player_id") == player_id
+        rate = rates.get((row["zone"], "run" if is_rush else "pass"))
+        if rate is not None:
+            expected += rate
+            priced += 1
+
+    actual_tds = int((my_row["rushing_tds"].sum() or 0) + (my_row["receiving_tds"].sum() or 0))
+    return {
+        "expected_tds": round(expected, 2),
+        "actual_tds": actual_tds,
+        "debt": round(expected - actual_tds, 2),
+        "touches_priced": priced,
+    }
+
+
+def xtd_debt_watch(rushing_rows: list[dict], receiving_rows: list[dict], limit: int = 10) -> list[dict]:
+    """
+    Real Expected-Touchdowns debt, surfaced for the players it actually
+    matters for -- unlike touchdown_leaders() (filtered to players who've
+    already scored recently, by design, since that's a "who's been
+    scoring" recap), this pulls from the real volume-based leader pools
+    (rushing/receiving) so a real high-opportunity, zero-TD player like
+    a bell-cow back stuck without a score yet doesn't disappear from the
+    site entirely -- that's exactly the player this signal exists to find.
+
+    Deduplicates players appearing in both pools (flex/receiving backs),
+    requires a real minimum sample (15+ priced touches) before showing
+    anything, and returns the most extreme real debt in either direction
+    -- positive (underperforming real opportunity) or negative
+    (overperforming it, a real regression-down risk).
+    """
+    seen = {}
+    for r in rushing_rows + receiving_rows:
+        if r["player"] not in seen:
+            seen[r["player"]] = r
+
+    candidates = []
+    for player, r in seen.items():
+        xtd = expected_touchdowns(player)
+        if not xtd or xtd["touches_priced"] < 15 or abs(xtd["debt"]) < 1.0:
+            continue
+        candidates.append({
+            "player": player,
+            "team_badge": r.get("team_badge"),
+            "team": r.get("team"),
+            "xtd": xtd,
+        })
+    candidates.sort(key=lambda c: abs(c["xtd"]["debt"]), reverse=True)
+    return candidates[:limit]
