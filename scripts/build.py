@@ -456,6 +456,12 @@ def build():
             td_signals["opportunity_signal"] = True
         if (r.get("injury") or {}).get("report_status"):
             td_signals["injury_flagged"] = r["injury"]["report_status"]
+        rz_rush = r.get("red_zone_rush_share")
+        if rz_rush and rz_rush["share_pct"] >= 20:
+            td_signals["red_zone_rush_share_high"] = True
+        rz_target = r.get("red_zone_target_share")
+        if rz_target and rz_target["share_pct"] >= 20:
+            td_signals["red_zone_target_share_high"] = True
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
             stat="any_td", projected=ng["projected_total"],
