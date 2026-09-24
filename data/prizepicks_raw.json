@@ -10,7 +10,7 @@
       "rushing_yards": 7.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 206.5,
+      "passing_yards": 207.5,
       "rushing_yards": 4.5
     },
     "Christian Watson": {
@@ -28,12 +28,12 @@
       "receiving_yards": 46.5,
       "receptions": 4
     },
-    "Kaleb Johnson": {
-      "rushing_yards": 38.5
-    },
     "Kyle Pitts Sr.": {
       "receiving_yards": 37.5,
       "receptions": 3.5
+    },
+    "Kaleb Johnson": {
+      "rushing_yards": 36.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 24.5,
@@ -181,7 +181,7 @@
       "receiving_yards": 53.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 33.5
+      "receiving_yards": 35.5
     },
     "Mike Gesicki": {
       "receiving_yards": 23.5,
@@ -468,7 +468,7 @@
       "receiving_yards": 15.5
     },
     "Jared Wayne": {
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Foster Moreau": {
       "receiving_yards": 5.5
@@ -834,9 +834,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 6822,
+    "total_projections_returned": 6824,
     "matched_props": 382,
-    "excluded_goblin_demon_lines": 5454,
+    "excluded_goblin_demon_lines": 5456,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
