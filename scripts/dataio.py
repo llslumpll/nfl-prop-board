@@ -1225,6 +1225,7 @@ def rushing_leaders(limit: int = 40) -> list[dict]:
             "injury": injury_status_for(row["player_display_name"]),
             "usage_trend": usage_trend(row["player_display_name"]),
             "opportunity_signal": opportunity_signal(row["player_display_name"], row["team"], row["position"]),
+            "box_count_splits": box_count_splits(row["player_display_name"]),
         })
     return out
 
@@ -1293,7 +1294,12 @@ def touchdown_leaders(limit: int = 40) -> list[dict]:
             "target_share_trend": target_share_trend(row["player_display_name"]),
             "red_zone_rush_share": red_zone_share(row["player_display_name"], "rushing_yards"),
             "red_zone_target_share": red_zone_share(row["player_display_name"], "receiving_yards"),
+            "goal_line_rush_share": goal_line_share(row["player_display_name"], "rushing_yards"),
+            "goal_line_target_share": goal_line_share(row["player_display_name"], "receiving_yards"),
+            "td_rate": td_rate_per_touch(row["player_display_name"]),
         })
+    for r in out:
+        r["reason_tags"] = reason_tags(r)
     out.sort(key=lambda r: r["total_tds"], reverse=True)
     return out[:limit]
 
@@ -1967,3 +1973,195 @@ def red_zone_share(player_name: str, stat_col: str) -> dict | None:
         "team_rz_touches": team_rz,
         "share_pct": round(100 * my_rz / team_rz, 1),
     }
+
+
+def goal_line_share(player_name: str, stat_col: str) -> dict | None:
+    """
+    Real goal-line (inside the 5-yard line, not just the 20) touch
+    share -- an even tighter, more predictive cut of red_zone_share.
+    Shortest path to six; goal-line role concentration is one of the
+    strongest real signals for TD scoring specifically. Same real
+    player_id join as red_zone_share.
+    """
+    stats = load_stats()
+    my_row = stats.filter(pl.col("player_display_name") == player_name)
+    if my_row.height == 0:
+        return None
+    row = my_row.row(0, named=True)
+    player_id, team = row.get("player_id"), row.get("team")
+    if not player_id or not team:
+        return None
+    pbp = load_pbp_2026()
+    goal_line = pbp.filter(pl.col("yardline_100") <= 5)
+    if stat_col in ("receiving_yards", "receptions"):
+        my_gl = goal_line.filter(pl.col("receiver_player_id") == player_id).height
+        team_gl = goal_line.filter((pl.col("posteam") == team) & (pl.col("play_type") == "pass")).height
+    elif stat_col == "rushing_yards":
+        my_gl = goal_line.filter(pl.col("rusher_player_id") == player_id).height
+        team_gl = goal_line.filter((pl.col("posteam") == team) & (pl.col("play_type") == "run")).height
+    else:
+        return None
+    if team_gl == 0:
+        return None
+    return {"gl_touches": my_gl, "team_gl_touches": team_gl, "share_pct": round(100 * my_gl / team_gl, 1)}
+
+
+def td_rate_per_touch(player_name: str) -> dict | None:
+    """Real touchdowns per touch (carries + targets) this season --
+    a real, simple efficiency-at-scoring measure, independent of volume."""
+    df = load_stats()
+    rows = df.filter(pl.col("player_display_name") == player_name)
+    if rows.height == 0:
+        return None
+    agg = rows.select([
+        pl.col("rushing_tds").sum().alias("rush_td"),
+        pl.col("receiving_tds").sum().alias("rec_td"),
+        pl.col("carries").sum().alias("carries"),
+        pl.col("targets").sum().alias("targets"),
+    ]).row(0, named=True)
+    touches = (agg["carries"] or 0) + (agg["targets"] or 0)
+    tds = (agg["rush_td"] or 0) + (agg["rec_td"] or 0)
+    if touches == 0:
+        return None
+    return {"td_rate_pct": round(100 * tds / touches, 1), "touches": touches, "tds": tds}
+
+
+def season_touch_share(player_name: str, stat_col: str) -> dict | None:
+    """
+    Real, static season-long share of the team's touches this player
+    has gotten (targets for receiving/receptions, carries for rushing)
+    -- complements the week-over-week TREND version (target_share_trend/
+    usage_trend) with the actual current baseline level, not just
+    whether it's moving.
+    """
+    df = load_stats()
+    my_row = df.filter(pl.col("player_display_name") == player_name)
+    if my_row.height == 0:
+        return None
+    team = my_row.row(0, named=True).get("team")
+    if not team:
+        return None
+    touch_col = "targets" if stat_col in ("receiving_yards", "receptions") else "carries"
+    my_touches = my_row[touch_col].sum()
+    team_touches = df.filter(pl.col("team") == team)[touch_col].sum()
+    if not team_touches:
+        return None
+    return {"share_pct": round(100 * my_touches / team_touches, 1), "touches": my_touches, "team_touches": team_touches}
+
+
+def tds_allowed_to_position(opponent_team: str, position: str) -> dict | None:
+    """
+    Real touchdowns allowed by this opponent's defense to a specific
+    position group, per real game -- a more directly relevant number
+    for touchdown props than yards allowed (matchup_factor's measure),
+    since a defense can bend for yards while tightening up in the red
+    zone, or vice versa. Compared against the real league average for
+    the same position.
+    """
+    df = load_stats()
+    against = df.filter((pl.col("opponent_team") == opponent_team) & (pl.col("position") == position))
+    if against.height == 0:
+        return None
+    total_tds = (against["rushing_tds"].sum() or 0) + (against["receiving_tds"].sum() or 0)
+    games = against["week"].n_unique()
+    if games == 0:
+        return None
+    per_game = round(total_tds / games, 2)
+
+    league = df.filter(pl.col("position") == position)
+    league_total_tds = (league["rushing_tds"].sum() or 0) + (league["receiving_tds"].sum() or 0)
+    league_games = league.select(["opponent_team", "week"]).unique().height
+    league_avg = round(league_total_tds / league_games, 2) if league_games else None
+
+    return {"tds_allowed_per_game": per_game, "games": games, "league_avg_per_game": league_avg}
+
+
+_ftn_2026_cache = None
+
+
+def load_ftn_2026():
+    global _ftn_2026_cache
+    if _ftn_2026_cache is None:
+        import nflreadpy as nfl
+        _ftn_2026_cache = nfl.load_ftn_charting([2026])
+    return _ftn_2026_cache
+
+
+def box_count_splits(player_name: str) -> dict | None:
+    """
+    Real yards-per-carry split by real defensive box count (FTN
+    charting, confirmed live for the current 2026 season) -- light box
+    (<=6 defenders), neutral (7), stacked (8+). A real, meaningful
+    efficiency signal beyond aggregate YPC: some backs feast when the
+    box is light; some grind regardless. Joined via real player_id +
+    game/play IDs, not name matching.
+    """
+    stats = load_stats()
+    my_row = stats.filter(pl.col("player_display_name") == player_name)
+    if my_row.height == 0:
+        return None
+    player_id = my_row.row(0, named=True).get("player_id")
+    if not player_id:
+        return None
+
+    pbp = load_pbp_2026()
+    ftn = load_ftn_2026()
+    my_runs = pbp.filter((pl.col("rusher_player_id") == player_id) & (pl.col("play_type") == "run")) \
+        .with_columns(pl.col("play_id").cast(pl.Int32))
+    joined = my_runs.join(
+        ftn.select(["nflverse_game_id", "nflverse_play_id", "n_defense_box"]),
+        left_on=["game_id", "play_id"], right_on=["nflverse_game_id", "nflverse_play_id"], how="inner",
+    ).filter(pl.col("n_defense_box").is_not_null())
+
+    if joined.height == 0:
+        return None
+
+    def bucket_stats(rows):
+        if rows.height == 0:
+            return None
+        return {"carries": rows.height, "ypc": round(rows["rushing_yards"].sum() / rows.height, 2)}
+
+    light = bucket_stats(joined.filter(pl.col("n_defense_box") <= 6))
+    neutral = bucket_stats(joined.filter(pl.col("n_defense_box") == 7))
+    stacked = bucket_stats(joined.filter(pl.col("n_defense_box") >= 8))
+    return {"light": light, "neutral": neutral, "stacked": stacked, "total_charted_carries": joined.height}
+
+
+def reason_tags(row: dict) -> list[str]:
+    """
+    Real, punchy categorical tags summarizing the strongest drivers
+    behind a touchdown projection -- complements the existing prose
+    reason with quick-scan labels. Every tag maps to a real threshold
+    already computed elsewhere on this site, never invented ad hoc for
+    this display.
+    """
+    tags = []
+    gl_rush, gl_target = row.get("goal_line_rush_share"), row.get("goal_line_target_share")
+    rz_rush, rz_target = row.get("red_zone_rush_share"), row.get("red_zone_target_share")
+
+    if gl_rush and gl_rush["share_pct"] >= 50:
+        tags.append("Goal Line Back")
+    elif rz_rush and rz_rush["share_pct"] >= 40:
+        tags.append("Elite Red Zone Role")
+    if gl_target and gl_target["share_pct"] >= 40:
+        tags.append("Target Monster")
+    elif rz_target and rz_target["share_pct"] >= 30:
+        tags.append("Elite Red Zone Role")
+
+    td_rate = row.get("td_rate")
+    if td_rate and td_rate["touches"] >= 15 and td_rate["td_rate_pct"] >= 15:
+        tags.append("High TD Rate")
+
+    ut = row.get("usage_trend")
+    if ut and ut["direction"] == "up" and ut["delta_pp"] >= 20:
+        tags.append("Role Trending Up")
+
+    rf = (row.get("next_game") or {}).get("opponent_recent_form")
+    if rf and rf["direction"] == "worse":
+        tags.append("Soft Recent Matchup")
+
+    inj = row.get("injury") or {}
+    if inj.get("report_status") in ("Out", "Doubtful"):
+        tags.append("Injury Risk")
+
+    return tags
