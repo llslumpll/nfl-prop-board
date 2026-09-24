@@ -28,7 +28,7 @@
       "receptions": 4
     },
     "Kaleb Johnson": {
-      "rushing_yards": 38.5
+      "rushing_yards": 39.5
     },
     "Kyle Pitts Sr.": {
       "receiving_yards": 37.5,
@@ -43,7 +43,7 @@
       "receptions": 0.5
     },
     "Jahan Dotson": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Chris Brooks": {
       "rushing_yards": 14.5,
@@ -62,8 +62,7 @@
       "receiving_yards": 5.5
     },
     "Bo Melton": {
-      "receptions": 0.5,
-      "receiving_yards": 0.5
+      "receptions": 0.5
     },
     "Josh Allen": {
       "passing_yards": 240.5,
@@ -197,7 +196,7 @@
       "receiving_yards": 6.5
     },
     "Erick All Jr.": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Patrick Mahomes": {
       "passing_yards": 235.5,
@@ -265,7 +264,7 @@
       "receiving_yards": 6.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 39.5
+      "receiving_yards": 40.5
     },
     "Carnell Tate": {
       "receiving_yards": 37.5
@@ -705,7 +704,7 @@
       "receptions": 3
     },
     "Rashod Bateman": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 47.5,
       "receptions": 3.5
     },
     "Mark Andrews": {
@@ -718,9 +717,18 @@
       "receiving_yards": 28.5,
       "receptions": 3.5
     },
+    "Chris Moore": {
+      "receiving_yards": 21.5
+    },
+    "LaJohntay Wester": {
+      "receiving_yards": 20.5
+    },
     "Justice Hill": {
       "receiving_yards": 13.5,
       "rushing_yards": 10.5
+    },
+    "Emari Demercado": {
+      "rushing_yards": 7.5
     },
     "Matthew Stafford": {
       "passing_yards": 243.5
@@ -814,9 +822,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 6595,
-    "matched_props": 368,
-    "excluded_goblin_demon_lines": 5296,
+    "total_projections_returned": 6669,
+    "matched_props": 370,
+    "excluded_goblin_demon_lines": 5357,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
