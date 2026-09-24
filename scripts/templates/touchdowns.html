@@ -19,6 +19,46 @@
 </p>
 {% endif %}
 
+{% if xtd_debt_watch %}
+<h2>xTD Debt Watch</h2>
+<p class="lede small">
+  Real Expected Touchdowns (xTD): every one of a player's real touches this season, priced by the
+  real historical (2023-2025) TD conversion rate for that exact field position and play type, summed
+  and compared against real actual TDs scored. Pulled from the full real rushing/receiving volume
+  pools, not just recent scorers &mdash; a real high-opportunity player stuck at zero TDs is exactly
+  who this exists to find, and wouldn't otherwise show up anywhere on this page. Positive debt = the
+  ball has found him in scoring position more than the scoreboard shows (regression-up). Negative =
+  he's converting above what real opportunity alone predicts (regression-down risk). Requires 15+
+  real priced touches and a 1.0+ real gap before showing anything.
+</p>
+<div class="prop-cards">
+  {% for c in xtd_debt_watch %}
+  <div class="prop-card">
+    <div class="prop-card-head">
+      <div>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ c.team_badge.color }}">{{ c.team_badge.abbr }}</span>
+          {{ c.player }}
+        </div>
+        <div class="player-sub">{{ c.xtd.touches_priced }} real touches priced this season</div>
+      </div>
+      <div class="prop-card-edge">
+        <div class="num stat-{{ 'good' if c.xtd.debt > 0 else 'bad' }}">{{ '+' if c.xtd.debt > 0 }}{{ c.xtd.debt }} xTD</div>
+        <div class="label">{{ c.xtd.expected_tds }} EXPECTED vs {{ c.xtd.actual_tds }} ACTUAL</div>
+      </div>
+    </div>
+    <p class="prop-card-reason">
+      {% if c.xtd.debt > 0 %}
+      Real opportunity has priced out to {{ c.xtd.expected_tds }} expected TDs from his real touches this season, but he's scored {{ c.xtd.actual_tds }} &mdash; a real gap worth watching for regression up.
+      {% else %}
+      He's scored {{ c.xtd.actual_tds }} real TDs against {{ c.xtd.expected_tds }} expected from his real touches this season &mdash; converting above what real opportunity alone predicts, a real regression-down risk.
+      {% endif %}
+    </p>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
 <div class="game-picker">
   <button class="game-tab active" data-game-idx="0">Best 5</button>
   <button class="game-tab" data-game-idx="1">Best Value</button>
