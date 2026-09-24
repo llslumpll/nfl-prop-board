@@ -582,6 +582,7 @@ def build():
                 "best5_confidence_warning": best5_correlation_warnings["touchdowns"]["highest_confidence"],
                 "best5_value_warning": best5_correlation_warnings["touchdowns"]["best_value"],
                 "maturity": calibrate.maturity_summary(),
+                "xtd_debt_watch": dataio.xtd_debt_watch(rushing_rows, receiving_rows),
             },
         ),
         "history.html": (
