@@ -462,6 +462,20 @@ def build():
         rz_target = r.get("red_zone_target_share")
         if rz_target and rz_target["share_pct"] >= 20:
             td_signals["red_zone_target_share_high"] = True
+        gl_rush = r.get("goal_line_rush_share")
+        if gl_rush and gl_rush["share_pct"] >= 40:
+            td_signals["goal_line_rush_share_high"] = True
+        gl_target = r.get("goal_line_target_share")
+        if gl_target and gl_target["share_pct"] >= 30:
+            td_signals["goal_line_target_share_high"] = True
+        xtd = r.get("xtd")
+        if xtd and xtd["touches_priced"] >= 15:
+            if xtd["debt"] >= 1.0:
+                td_signals["xtd_debt"] = "positive"
+            elif xtd["debt"] <= -1.0:
+                td_signals["xtd_debt"] = "negative"
+        if r.get("due_signal"):
+            td_signals["due_for_td"] = True
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
             stat="any_td", projected=ng["projected_total"],
