@@ -80,6 +80,12 @@
         {% if r.target_share_trend %}
           <span class="usage-flag usage-{{ r.target_share_trend.direction }}" title="Real target share: {{ r.target_share_trend.previous_pct }}% (W{{ r.target_share_trend.previous_week }}) -> {{ r.target_share_trend.latest_pct }}% (W{{ r.target_share_trend.latest_week }})">{{ '▲' if r.target_share_trend.direction == 'up' else '▼' }} Targets {{ r.target_share_trend.previous_pct }}%&rarr;{{ r.target_share_trend.latest_pct }}%</span>
         {% endif %}
+        {% if r.red_zone_rush_share and r.red_zone_rush_share.share_pct >= 20 %}
+          <span class="rz-flag" title="Real red-zone rush share: {{ r.red_zone_rush_share.rz_touches }} of the team's {{ r.red_zone_rush_share.team_rz_touches }} real red-zone carries this season -- the most well-documented real predictor of TD scoring.">&#9733; RZ Rush {{ r.red_zone_rush_share.share_pct }}%</span>
+        {% endif %}
+        {% if r.red_zone_target_share and r.red_zone_target_share.share_pct >= 20 %}
+          <span class="rz-flag" title="Real red-zone target share: {{ r.red_zone_target_share.rz_touches }} of the team's {{ r.red_zone_target_share.team_rz_touches }} real red-zone targets this season -- the most well-documented real predictor of TD scoring.">&#9733; RZ Target {{ r.red_zone_target_share.share_pct }}%</span>
+        {% endif %}
       </td>
       <td>W{{ r.week }} vs {{ r.opponent }}</td>
       <td class="num stat-{{ r.perf.css }}">{{ r.total_tds }}</td>
