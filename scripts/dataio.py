@@ -597,6 +597,41 @@ def team_full_stats() -> list[dict]:
             "yards_allowed": int(yds_allowed),
             "turnover_margin": int(takeaways - turnovers),
         })
+
+    # Real color coding vs. the real league average -- compared as
+    # PER-GAME rates, not raw season totals, since teams have played a
+    # different real number of games this early in the season (a team
+    # with 2 games naturally has ~2x the total yards of a team with 1,
+    # which isn't "better," just more games played). Teams with 0 real
+    # games yet get no color at all -- there's no real basis to judge
+    # them, not a default "bad."
+    HIGHER_IS_BETTER = ["total_yards", "pass_yards", "rush_yards", "off_tds", "def_sacks", "takeaways"]
+    LOWER_IS_BETTER = ["turnovers", "yards_allowed"]
+    played = [t for t in out if t["games"] > 0]
+    league_avg_per_game = {}
+    for stat in HIGHER_IS_BETTER + LOWER_IS_BETTER:
+        rates = [t[stat] / t["games"] for t in played]
+        league_avg_per_game[stat] = sum(rates) / len(rates) if rates else None
+
+    for t in out:
+        t["stat_css"] = {}
+        if t["games"] == 0:
+            continue
+        for stat in HIGHER_IS_BETTER + LOWER_IS_BETTER:
+            avg = league_avg_per_game.get(stat)
+            if avg is None or avg == 0:
+                continue
+            per_game = t[stat] / t["games"]
+            diff_pct = (per_game - avg) / avg
+            if stat in LOWER_IS_BETTER:
+                diff_pct = -diff_pct
+            if diff_pct >= 0.08:
+                t["stat_css"][stat] = "good"
+            elif diff_pct <= -0.08:
+                t["stat_css"][stat] = "bad"
+            else:
+                t["stat_css"][stat] = "neutral"
+
     out.sort(key=lambda t: (-t["games"], -t["total_yards"]))
     return out
 
