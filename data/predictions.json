@@ -6290,7 +6290,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "D'Andre Swift|receptions|3": {
     "player": "D'Andre Swift",
@@ -7984,7 +7988,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Chase Brown|rushing_yards|3": {
