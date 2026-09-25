@@ -158,6 +158,38 @@
 
   <h3>{{ m.away_team }} @ {{ m.home_team }}{% if m.gameday %} &mdash; {{ m.gameday }}{% endif %}</h3>
 
+  <div class="standings-grid" style="margin-bottom:20px;">
+    <div class="summary-card">
+      <h3 style="margin:0 0 8px;">{{ m.away_team }} (away)</h3>
+      <div class="sub-note" style="margin-bottom:8px;">Real scheme identity from live 2026 charted plays{% if m.away_identity.off_stats %} ({{ m.away_identity.off_stats.plays_charted }} offensive plays charted this season){% endif %}.</div>
+      <strong style="font-size:0.85rem;color:var(--cyan);">Offense:</strong>
+      {% if m.away_identity.offense %}
+        {% for tag in m.away_identity.offense %}<span class="reason-tag">{{ tag }}</span>{% endfor %}
+      {% else %}<span class="player-sub">no notable tags vs. league average yet</span>{% endif %}
+      <br><br>
+      <strong style="font-size:0.85rem;color:var(--cyan);">Defense:</strong>
+      {% if m.away_identity.defense %}
+        {% for tag in m.away_identity.defense %}<span class="reason-tag">{{ tag }}</span>{% endfor %}
+      {% else %}<span class="player-sub">no notable tags vs. league average yet</span>{% endif %}
+    </div>
+    <div class="summary-card">
+      <h3 style="margin:0 0 8px;">{{ m.home_team }} (home)</h3>
+      <div class="sub-note" style="margin-bottom:8px;">Real scheme identity from live 2026 charted plays{% if m.home_identity.off_stats %} ({{ m.home_identity.off_stats.plays_charted }} offensive plays charted this season){% endif %}.</div>
+      <strong style="font-size:0.85rem;color:var(--cyan);">Offense:</strong>
+      {% if m.home_identity.offense %}
+        {% for tag in m.home_identity.offense %}<span class="reason-tag">{{ tag }}</span>{% endfor %}
+      {% else %}<span class="player-sub">no notable tags vs. league average yet</span>{% endif %}
+      <br><br>
+      <strong style="font-size:0.85rem;color:var(--cyan);">Defense:</strong>
+      {% if m.home_identity.defense %}
+        {% for tag in m.home_identity.defense %}<span class="reason-tag">{{ tag }}</span>{% endfor %}
+      {% else %}<span class="player-sub">no notable tags vs. league average yet</span>{% endif %}
+    </div>
+  </div>
+  <p class="lede small" style="margin-top:-10px;">
+    Tags only appear when a team's real rate is meaningfully above the real league average (coverage tags use real 2025 charted data, since 2026 coverage charting isn't released yet; everything else is live 2026). This is the plain-language version of the real matchup/pace factors already baked into every projection below &mdash; a defense tagged "Light Blitz" or missing a coverage tag isn't stacking the deck against a receiver the way an "Aggressive Blitz" defense might, for example.
+  </p>
+
   <table class="stat-table">
     <thead>
       <tr>
