@@ -512,6 +512,15 @@ def build():
         print(f"Grading (2nd pass, new stat types): {grade_result2['newly_graded']} newly graded.")
         accuracy = grade.accuracy_summary()
 
+    # Real per-game grouping for each stat page's Projections tab --
+    # computed once here so both the game list and the "no upcoming
+    # game" leftover list are available without recomputing per page.
+    passing_games, passing_no_game = dataio.group_rows_by_game(passing_rows)
+    receiving_games, receiving_no_game = dataio.group_rows_by_game(receiving_rows)
+    receptions_games, receptions_no_game = dataio.group_rows_by_game(receptions_rows)
+    rushing_games, rushing_no_game = dataio.group_rows_by_game(rushing_rows)
+    touchdown_games, touchdown_no_game = dataio.group_rows_by_game(touchdown_rows)
+
     pages = {
         "index.html": (
             "home",
@@ -538,6 +547,7 @@ def build():
             "passing", "passing.html",
             {
                 "rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "games": passing_games, "no_game_players": passing_no_game,
                 "best5_confidence": best5_data["passing"]["highest_confidence"],
                 "best5_value": best5_data["passing"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["passing"]["highest_confidence"],
@@ -550,6 +560,7 @@ def build():
             "receiving.html",
             {
                 "rows": receiving_rows,
+                "games": receiving_games, "no_game_players": receiving_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
@@ -565,6 +576,7 @@ def build():
             "receptions.html",
             {
                 "rows": receptions_rows,
+                "games": receptions_games, "no_game_players": receptions_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
                 "pp_error": pp_error,
@@ -579,6 +591,7 @@ def build():
             "rushing", "rushing.html",
             {
                 "rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "games": rushing_games, "no_game_players": rushing_no_game,
                 "best5_confidence": best5_data["rushing"]["highest_confidence"],
                 "best5_value": best5_data["rushing"]["best_value"],
                 "best5_confidence_warning": best5_correlation_warnings["rushing"]["highest_confidence"],
@@ -590,6 +603,7 @@ def build():
             "touchdowns",
             "touchdowns.html",
             {
+                "games": touchdown_games, "no_game_players": touchdown_no_game,
                 "rows": touchdown_rows, "kalshi_td_props": kalshi_data["touchdown_props"], "kalshi_error": kalshi_data["error"],
                 "best5_confidence": best5_data["touchdowns"]["highest_confidence"],
                 "best5_value": best5_data["touchdowns"]["best_value"],
