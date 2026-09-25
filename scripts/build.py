@@ -344,7 +344,8 @@ def build():
     ):
         for r in rows:
             if r.get("next_game"):
-                r["next_game"]["reason"] = dataio.reason_text(r["next_game"]["projection"], STAT_LABELS[stat_col])
+                base_reason = dataio.reason_text(r["next_game"]["projection"], STAT_LABELS[stat_col])
+                r["next_game"]["reason"] = dataio.enhance_reason_with_track_record(base_reason, r)
     for r in touchdown_rows:
         ng = r.get("next_game")
         if ng and ng.get("projected_total"):
