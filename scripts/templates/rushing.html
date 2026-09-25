@@ -72,7 +72,10 @@
 {% endif %}
 </details>
 
-{% if rows %}
+{% if games or no_game_players %}
+{% set ns = namespace(idx=0) %}
+{% for game in games %}
+<h3 class="division-head">{{ game.teams[0] }} @ {{ game.teams[1] }} &mdash; {{ game.start_str or 'kickoff time TBD' }}</h3>
 <div class="table-wrap">
 <div class="table-scroll">
 <table class="stat-table">
@@ -92,7 +95,8 @@
     </tr>
   </thead>
   <tbody>
-    {% for r in rows %}
+    {% for r in game.players %}
+    {% set ns.idx = ns.idx + 1 %}
     <tr>
       <td>
         <div class="player-name">
@@ -139,15 +143,22 @@
         {% endif %}
       </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
-      <td><button class="why-btn" data-why-target="why-{{ loop.index }}" onclick="toggleWhy('why-{{ loop.index }}', this)">why</button></td>
+      <td><button class="why-btn" data-why-target="why-{{ ns.idx }}" onclick="toggleWhy('why-{{ ns.idx }}', this)">why</button></td>
     </tr>
-    {{ macros.why_row(loop.index, r.next_game, 11) }}
+    {{ macros.why_row(ns.idx, r.next_game, 11) }}
     {% endfor %}
   </tbody>
 </table>
 </div>
-<div class="scroll-hint">scroll for more &middot; {{ rows|length }} players</div>
+<div class="scroll-hint">{{ game.players|length }} player{{ 's' if game.players|length != 1 }} in this game</div>
 </div>
+{% endfor %}
+
+{% if no_game_players %}
+<h3 class="division-head">No upcoming game scheduled</h3>
+<p class="lede small">{{ no_game_players|length }} player{{ 's' if no_game_players|length != 1 }} whose team has no real next game on the schedule yet (bye week or season over).</p>
+{% endif %}
+
 {% else %}
 <div class="empty-state">
   <h3>No rushing data loaded</h3>
