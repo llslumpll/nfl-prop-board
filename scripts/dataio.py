@@ -2596,3 +2596,100 @@ def team_identity_tags(team: str) -> dict:
                 def_tags.append(f"Zone Coverage ({cov['zone_rate']}%, 2025)")
 
     return {"offense": off_tags, "defense": def_tags, "off_stats": off, "def_stats": dfn}
+
+
+def current_row_signals(row: dict) -> dict:
+    """
+    Real snapshot of which context signals are CURRENTLY active for
+    this leader row -- same shape/logic as the signals frozen at
+    prediction time (see build.py's _signals_snapshot), but computed
+    directly from a live row so it can be reused for both freezing AND
+    for enhancing reason text with real, validated track record. Single
+    source of truth for "what does this signal dict look like" so the
+    two never drift out of sync with each other.
+    """
+    signals = {}
+    ng = row.get("next_game") or {}
+    proj = ng.get("projection") or {}
+    inj = proj.get("injury_factor") or {}
+    if inj.get("status"):
+        signals["injury_flagged"] = inj["status"]
+    rf = proj.get("opponent_recent_form")
+    if rf:
+        signals["opponent_recent_form"] = rf["direction"]
+    ut = row.get("usage_trend")
+    if ut:
+        signals["usage_trend"] = ut["direction"]
+    tst = row.get("target_share_trend")
+    if tst:
+        signals["target_share_trend"] = tst["direction"]
+    if row.get("opportunity_signal"):
+        signals["opportunity_signal"] = True
+    rz_rush = row.get("red_zone_rush_share")
+    if rz_rush and rz_rush["share_pct"] >= 20:
+        signals["red_zone_rush_share_high"] = True
+    rz_target = row.get("red_zone_target_share")
+    if rz_target and rz_target["share_pct"] >= 20:
+        signals["red_zone_target_share_high"] = True
+    gl_rush = row.get("goal_line_rush_share")
+    if gl_rush and gl_rush["share_pct"] >= 40:
+        signals["goal_line_rush_share_high"] = True
+    gl_target = row.get("goal_line_target_share")
+    if gl_target and gl_target["share_pct"] >= 30:
+        signals["goal_line_target_share_high"] = True
+    xtd = row.get("xtd")
+    if xtd and xtd["touches_priced"] >= 15:
+        if xtd["debt"] >= 1.0:
+            signals["xtd_debt"] = "positive"
+        elif xtd["debt"] <= -1.0:
+            signals["xtd_debt"] = "negative"
+    if row.get("due_signal"):
+        signals["due_for_td"] = True
+    return signals
+
+
+_signal_track_record_cache = None
+
+
+def real_signal_track_record() -> dict:
+    """
+    Real, cached lookup of VALIDATED signal effectiveness -- only
+    signals with a real, gated (20+ picks each side) track record from
+    grade.signal_effectiveness(), keyed by (signal, value). This is what
+    lets reasoning text cite real historical performance instead of
+    describing every signal the same way regardless of whether it's
+    actually been shown to predict anything.
+    """
+    global _signal_track_record_cache
+    if _signal_track_record_cache is None:
+        import grade
+        results = grade.signal_effectiveness()
+        _signal_track_record_cache = {(r["signal"], r["value"]): r for r in results if r.get("status") == "active"}
+    return _signal_track_record_cache
+
+
+def enhance_reason_with_track_record(base_reason: str, row: dict) -> str:
+    """
+    Real, honest enhancement of a reason sentence: if any of this
+    player's CURRENT real signals have a validated, real track record
+    (signal_effectiveness, gated at 20+ real graded picks on both
+    sides), cites the actual real numbers behind it. A signal with no
+    real track record yet is left alone -- the write-up only gets more
+    specific and confident as real validation accumulates over the
+    season, never claims validation it doesn't have.
+    """
+    row_signals = current_row_signals(row)
+    track_record = real_signal_track_record()
+    additions = []
+    for key, value in row_signals.items():
+        record = track_record.get((key, value))
+        if not record:
+            continue
+        sign = "+" if record["difference_pp"] > 0 else ""
+        additions.append(
+            f"{key.replace('_', ' ')} has real-world tracked {sign}{record['difference_pp']}pp "
+            f"hit-rate difference this season ({record['n_with']} graded picks with it vs {record['n_without']} without)"
+        )
+    if not additions:
+        return base_reason
+    return base_reason + " Real track record: " + "; ".join(additions) + "."
