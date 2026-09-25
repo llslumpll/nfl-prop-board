@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prop Edge Board — NFL</title>
-  <link rel="stylesheet" href="static/style.css?v=1790297262">
+  <link rel="stylesheet" href="static/style.css?v=1790314826">
 </head>
 <body>
   <header class="site-head">
@@ -50,7 +50,7 @@
 
 <div class="stat-strip">
   <div class="stat-block">
-    <div class="num">2</div>
+    <div class="num">3</div>
     <div class="label">weeks of real 2026 data loaded</div>
   </div>
   <div class="stat-block">
@@ -64,13 +64,13 @@
 </div>
 
 <div class="notice" style="margin-top:16px;">
-  <strong>Model maturity: 1/15 calibration checks active.</strong>
+  <strong>Model maturity: 3/16 calibration checks active.</strong>
   Each needs 30 real graded predictions in that exact stat/tier before it's trusted to self-correct &mdash;
   this is genuinely early, and most of the site is still labeled "Building 2026 sample" for a real reason, not caution
   for its own sake. See real trust status per tier below.
   
-  Closest to activating: <strong>Passing Yards (Building 2026 sample)</strong>
-  at 29/30.
+  Closest to activating: <strong>Receiving Yards (Career baseline (established veteran))</strong>
+  at 21/30.
   
   <a href="history.html">Full calibration table on History &rarr;</a>
 </div>
@@ -87,7 +87,15 @@
       <td>Receiving Yards</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">30/30</td>
+      <td class="num">32/30</td>
+      <td><span class="stat-good">active</span></td>
+    </tr>
+    
+    <tr>
+      <td>Rushing Yards</td>
+      <td>Building 2026 sample</td>
+      <td class="player-sub">projection bias</td>
+      <td class="num">31/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -95,16 +103,8 @@
       <td>Passing Yards</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">29/30</td>
-      <td><span class="player-sub">insufficient data</span></td>
-    </tr>
-    
-    <tr>
-      <td>Rushing Yards</td>
-      <td>Building 2026 sample</td>
-      <td class="player-sub">projection bias</td>
-      <td class="num">29/30</td>
-      <td><span class="player-sub">insufficient data</span></td>
+      <td class="num">30/30</td>
+      <td><span class="stat-good">active</span></td>
     </tr>
     
     <tr>
@@ -140,6 +140,14 @@
     </tr>
     
     <tr>
+      <td>Passing Yards</td>
+      <td>Career baseline (limited history)</td>
+      <td class="player-sub">projection bias</td>
+      <td class="num">4/30</td>
+      <td><span class="player-sub">insufficient data</span></td>
+    </tr>
+    
+    <tr>
       <td>Rushing Yards</td>
       <td>Career baseline (limited history)</td>
       <td class="player-sub">projection bias</td>
@@ -156,18 +164,18 @@
     </tr>
     
     <tr>
-      <td>Passing Yards</td>
-      <td>Career baseline (limited history)</td>
+      <td>Rushing Yards</td>
+      <td>No data (rookie/unproven)</td>
       <td class="player-sub">projection bias</td>
       <td class="num">3/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
     
     <tr>
-      <td>Rushing Yards</td>
-      <td>No data (rookie/unproven)</td>
+      <td>Receptions</td>
+      <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">3/30</td>
+      <td class="num">1/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
     
@@ -230,8 +238,8 @@
         <span class="team-badge" style="background:#03202F">HOU</span>
         C.J. Stroud
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:83.7%;"></span></span>
-      <span class="rank-val">83.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:83.6%;"></span></span>
+      <span class="rank-val">83.6%</span>
     </div>
     
     <div class="rank-row">
@@ -240,8 +248,8 @@
         <span class="team-badge" style="background:#008E97">MIA</span>
         Malik Willis
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:81.3%;"></span></span>
-      <span class="rank-val">81.3%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:81.4%;"></span></span>
+      <span class="rank-val">81.4%</span>
     </div>
     
     <div class="rank-row">
@@ -250,8 +258,8 @@
         <span class="team-badge" style="background:#E31837">KC</span>
         Patrick Mahomes
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:74.5%;"></span></span>
-      <span class="rank-val">74.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:74.1%;"></span></span>
+      <span class="rank-val">74.1%</span>
     </div>
     
     <div class="rank-row">
@@ -260,18 +268,18 @@
         <span class="team-badge" style="background:#125740">NYJ</span>
         Geno Smith
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:73.7%;"></span></span>
-      <span class="rank-val">73.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:73.4%;"></span></span>
+      <span class="rank-val">73.4%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">5</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#5A1414">WAS</span>
-        Marcus Mariota
+        <span class="team-badge" style="background:#0B2265">NYG</span>
+        Jameis Winston
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:72.7%;"></span></span>
-      <span class="rank-val">72.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.2%;"></span></span>
+      <span class="rank-val">69.2%</span>
     </div>
     
   
@@ -300,8 +308,8 @@
         <span class="team-badge" style="background:#003594">LA</span>
         Kyren Williams
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:88.3%;"></span></span>
-      <span class="rank-val">88.3%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:88.1%;"></span></span>
+      <span class="rank-val">88.1%</span>
     </div>
     
     <div class="rank-row">
@@ -310,8 +318,8 @@
         <span class="team-badge" style="background:#5A1414">WAS</span>
         Rachaad White
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:79.2%;"></span></span>
-      <span class="rank-val">79.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.2%;"></span></span>
+      <span class="rank-val">80.2%</span>
     </div>
     
     <div class="rank-row">
@@ -320,8 +328,8 @@
         <span class="team-badge" style="background:#FFB612">PIT</span>
         Jaylen Warren
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.6%;"></span></span>
-      <span class="rank-val">69.6%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.8%;"></span></span>
+      <span class="rank-val">69.8%</span>
     </div>
     
     <div class="rank-row">
@@ -330,8 +338,8 @@
         <span class="team-badge" style="background:#041E42">DAL</span>
         Javonte Williams
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.5%;"></span></span>
-      <span class="rank-val">69.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.7%;"></span></span>
+      <span class="rank-val">69.7%</span>
     </div>
     
   
@@ -362,8 +370,8 @@
         <span class="team-badge" style="background:#4B92DB">TEN</span>
         Elic Ayomanor
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:87.5%;"></span></span>
-      <span class="rank-val">87.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:83.0%;"></span></span>
+      <span class="rank-val">83.0%</span>
     </div>
     
     <div class="rank-row">
@@ -372,8 +380,8 @@
         <span class="team-badge" style="background:#0085CA">CAR</span>
         Xavier Legette
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:77.0%;"></span></span>
-      <span class="rank-val">77.0%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:78.3%;"></span></span>
+      <span class="rank-val">78.3%</span>
     </div>
     
     <div class="rank-row">
@@ -382,8 +390,8 @@
         <span class="team-badge" style="background:#125740">NYJ</span>
         Breece Hall
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:75.4%;"></span></span>
-      <span class="rank-val">75.4%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:75.3%;"></span></span>
+      <span class="rank-val">75.3%</span>
     </div>
     
     <div class="rank-row">
@@ -392,8 +400,8 @@
         <span class="team-badge" style="background:#E31837">KC</span>
         Travis Kelce
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.5%;"></span></span>
-      <span class="rank-val">70.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.3%;"></span></span>
+      <span class="rank-val">70.3%</span>
     </div>
     
   
@@ -432,8 +440,8 @@
         <span class="team-badge" style="background:#E31837">KC</span>
         Travis Kelce
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:72.9%;"></span></span>
-      <span class="rank-val">72.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:71.7%;"></span></span>
+      <span class="rank-val">71.7%</span>
     </div>
     
     <div class="rank-row">
@@ -530,66 +538,66 @@
       
       <div class="result-row">
         <div>
+          <div class="rr-name">Christian Watson</div>
+          <div class="rr-sub">receptions &middot; UNDER 4.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Michael Penix Jr.</div>
+          <div class="rr-sub">passing yards &middot; UNDER 206.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Bijan Robinson</div>
+          <div class="rr-sub">rushing yards &middot; UNDER 78.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Drake London</div>
+          <div class="rr-sub">receiving yards &middot; UNDER 62.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Jordan Love</div>
+          <div class="rr-sub">passing yards &middot; OVER 228.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">MarShawn Lloyd</div>
+          <div class="rr-sub">rushing yards &middot; UNDER 28.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Christian Watson</div>
+          <div class="rr-sub">receiving yards &middot; UNDER 66.5 &middot; W3</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
           <div class="rr-name">Jaxson Dart</div>
           <div class="rr-sub">passing yards &middot; UNDER 213.5 &middot; W2</div>
         </div>
         <span class="tier tier-high">HIT</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Cam Skattebo</div>
-          <div class="rr-sub">rushing yards &middot; OVER 50.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Malik Nabers</div>
-          <div class="rr-sub">receiving yards &middot; OVER 61.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Matthew Stafford</div>
-          <div class="rr-sub">passing yards &middot; UNDER 239.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Kyren Williams</div>
-          <div class="rr-sub">rushing yards &middot; OVER 63.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-high">HIT</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Devin Singletary</div>
-          <div class="rr-sub">any td &middot; OVER 0.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Cam Skattebo</div>
-          <div class="rr-sub">any td &middot; OVER 0.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Bryce Young</div>
-          <div class="rr-sub">passing yards &middot; UNDER 222.5 &middot; W2</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
       </div>
       
     
@@ -632,7 +640,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-09-25 00:47 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-09-25 05:40 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

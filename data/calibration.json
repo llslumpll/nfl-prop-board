@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-09-25 00:47 UTC",
+  "generated_at": "2026-09-25 05:40 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -11,13 +11,14 @@
       },
       "Career baseline (limited history)": {
         "bias": 0.0,
-        "sample_size": 3,
+        "sample_size": 4,
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 0.0,
-        "sample_size": 29,
-        "status": "insufficient data"
+        "bias": 1.43,
+        "sample_size": 30,
+        "avg_raw_bias": 4.75,
+        "status": "active"
       }
     },
     "rushing_yards": {
@@ -32,9 +33,10 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 0.0,
-        "sample_size": 29,
-        "status": "insufficient data"
+        "bias": -1.37,
+        "sample_size": 31,
+        "avg_raw_bias": -4.55,
+        "status": "active"
       },
       "No data (rookie/unproven)": {
         "bias": 0.0,
@@ -54,13 +56,19 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 1.96,
-        "sample_size": 30,
-        "avg_raw_bias": 6.54,
+        "bias": 3.45,
+        "sample_size": 32,
+        "avg_raw_bias": 11.49,
         "status": "active"
       }
     },
-    "receptions": {}
+    "receptions": {
+      "Building 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 1,
+        "status": "insufficient data"
+      }
+    }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
