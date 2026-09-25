@@ -52,7 +52,7 @@
 </div>
 
 <h2>Full Team Stats</h2>
-<p class="lede small">All 32 teams. Offense, turnovers, and defense (yards allowed derived from what opponents actually gained). Teams with 0 games played show real zeros, not missing rows &mdash; they simply haven't played yet.</p>
+<p class="lede small">All 32 teams. Offense, turnovers, and defense (yards allowed derived from what opponents actually gained). Teams with 0 games played show real zeros, not missing rows &mdash; they simply haven't played yet. <span class="stat-good">Green</span>/<span class="stat-bad">red</span> compares each team's real per-game rate against the real league average per-game rate (not raw season totals, since teams have played a different number of games this early on) &mdash; teams with 0 games get no color at all, since there's no real basis to judge them yet.</p>
 <div class="table-wrap">
 <div class="table-scroll">
 <table class="stat-table">
@@ -76,14 +76,14 @@
     <tr>
       <td><span class="team-badge" style="background:{{ t.team_badge.color }}">{{ t.team_badge.abbr }}</span> {{ t.team }}</td>
       <td class="num">{{ t.games }}</td>
-      <td class="num">{{ t.total_yards }}</td>
-      <td class="num">{{ t.pass_yards }}</td>
-      <td class="num">{{ t.rush_yards }}</td>
-      <td class="num">{{ t.off_tds }}</td>
-      <td class="num">{{ t.turnovers }}</td>
-      <td class="num">{{ t.def_sacks }}</td>
-      <td class="num">{{ t.takeaways }}</td>
-      <td class="num">{{ t.yards_allowed }}</td>
+      <td class="num stat-{{ t.stat_css.total_yards or 'neutral' }}">{{ t.total_yards }}</td>
+      <td class="num stat-{{ t.stat_css.pass_yards or 'neutral' }}">{{ t.pass_yards }}</td>
+      <td class="num stat-{{ t.stat_css.rush_yards or 'neutral' }}">{{ t.rush_yards }}</td>
+      <td class="num stat-{{ t.stat_css.off_tds or 'neutral' }}">{{ t.off_tds }}</td>
+      <td class="num stat-{{ t.stat_css.turnovers or 'neutral' }}">{{ t.turnovers }}</td>
+      <td class="num stat-{{ t.stat_css.def_sacks or 'neutral' }}">{{ t.def_sacks }}</td>
+      <td class="num stat-{{ t.stat_css.takeaways or 'neutral' }}">{{ t.takeaways }}</td>
+      <td class="num stat-{{ t.stat_css.yards_allowed or 'neutral' }}">{{ t.yards_allowed }}</td>
       <td class="num stat-{{ 'good' if t.turnover_margin > 0 else 'bad' if t.turnover_margin < 0 else 'neutral' }}">{{ '+' if t.turnover_margin > 0 }}{{ t.turnover_margin }}</td>
     </tr>
     {% endfor %}
