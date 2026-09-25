@@ -810,37 +810,49 @@ def player_weekly_series(player_name: str, stat_col: str) -> list[dict]:
     return out
 
 
-def reason_text(projection: dict, stat_label: str) -> str:
+def reason_text(projection: dict, stat_label: str, row: dict | None = None) -> str:
     """
-    Real narrative sentence built directly from the same factors already
-    computed for this projection -- matchup, pace, wind, and Vegas
-    environment. No factor is mentioned unless its real value actually
-    moved the projection meaningfully; a neutral (near-1.0) factor is
-    silently omitted rather than padded in as filler.
+    Real narrative write-up built directly from the same factors already
+    computed for this projection. The core sentence (matchup, pace,
+    wind, environment) is always built the same way as before -- no
+    factor mentioned unless it actually moved the projection.
+
+    When a full leader row is also passed, this expands into a real,
+    longer write-up citing the actual numbers behind each real signal
+    already computed elsewhere on the site (advanced stats, usage/target
+    trend, injury status, recent-form matchup context) -- nothing
+    invented for the write-up specifically, every sentence traceable to
+    a real field already shown elsewhere on the page.
     """
     positives, negatives = [], []
 
     mf = projection.get("matchup_factor") or {}
     if mf.get("factor", 1.0) > 1.05:
-        positives.append("a favorable matchup (this opponent allows more than average)")
+        detail = f" ({mf['allowed_per_game']} {stat_label.split()[-1] if ' ' in stat_label else stat_label}/gm allowed vs {mf['league_avg_per_game']} league avg)" if mf.get("allowed_per_game") is not None else ""
+        positives.append(f"a favorable matchup{detail}")
     elif mf.get("factor", 1.0) < 0.95:
-        negatives.append("a tough matchup (this opponent allows less than average)")
+        detail = f" ({mf['allowed_per_game']}/gm allowed vs {mf['league_avg_per_game']} league avg)" if mf.get("allowed_per_game") is not None else ""
+        negatives.append(f"a tough matchup{detail}")
 
     pf = projection.get("pace_factor") or {}
     if pf.get("factor", 1.0) > 1.05:
-        positives.append("a fast-paced offense")
+        detail = f" ({pf['plays_per_game']} real plays/gm vs {pf['league_avg_plays_per_game']} league avg)" if pf.get("plays_per_game") is not None else ""
+        positives.append(f"a fast-paced offense{detail}")
     elif pf.get("factor", 1.0) < 0.95:
-        negatives.append("a slower-paced offense")
+        detail = f" ({pf['plays_per_game']} real plays/gm vs {pf['league_avg_plays_per_game']} league avg)" if pf.get("plays_per_game") is not None else ""
+        negatives.append(f"a slower-paced offense{detail}")
 
     wf = projection.get("wind_factor")
     if wf and wf.get("wind_mph") is not None and wf["wind_mph"] >= 15:
-        negatives.append(f"{wf['wind_mph']} mph wind at kickoff")
+        negatives.append(f"{wf['wind_mph']} mph real wind at kickoff")
 
     ef = projection.get("environment_factor") or {}
     if ef.get("factor", 1.0) > 1.05:
-        positives.append("a high Vegas-implied team total")
+        detail = f" ({ef['implied_total']} implied pts vs {ef['league_avg_points']} league avg)" if ef.get("implied_total") is not None else ""
+        positives.append(f"a high Vegas-implied team total{detail}")
     elif ef.get("factor", 1.0) < 0.95:
-        negatives.append("a low Vegas-implied team total")
+        detail = f" ({ef['implied_total']} implied pts vs {ef['league_avg_points']} league avg)" if ef.get("implied_total") is not None else ""
+        negatives.append(f"a low Vegas-implied team total{detail}")
 
     tier_label = (projection.get("tier") or {}).get("label", "")
     if "Established" in tier_label or "Moderate" in tier_label:
@@ -855,7 +867,66 @@ def reason_text(projection: dict, stat_label: str) -> str:
         sentence += f", boosted by {_join_list(positives)}"
     if negatives:
         sentence += ("; " if positives else ", ") + f"tempered by {_join_list(negatives)}"
-    return sentence + "."
+    sentence += "."
+
+    if not row:
+        return sentence
+
+    extra = []
+
+    baseline, obs = projection.get("baseline"), projection.get("observed_2026")
+    if baseline is not None and obs is not None and projection.get("n_games_2026"):
+        direction = "up from" if obs > baseline else "down from" if obs < baseline else "matching"
+        extra.append(
+            f"His real {projection['n_games_2026']}-game 2026 average of {obs} is {direction} his real "
+            f"{baseline} career baseline."
+        )
+
+    adv_bits = []
+    for key, label_fmt in [
+        ("epa_per_play", "a real EPA/play of {}"),
+        ("cpoe", "real CPOE of {}%"),
+        ("ryoe_per_att", "real RYOE/att of {}"),
+        ("separation", "real separation of {} yards"),
+        ("yac_above_exp", "real YAC+ of {}"),
+        ("catch_rate", "a real catch rate of {}%"),
+    ]:
+        val = row.get(key)
+        if val is not None:
+            adv_bits.append(label_fmt.format(val))
+    if adv_bits:
+        extra.append(f"Real advanced tracking data this season: {_join_list(adv_bits)}.")
+
+    ut = row.get("usage_trend")
+    if ut:
+        extra.append(
+            f"Real offensive snap share has moved {ut['previous_pct']}% to {ut['latest_pct']}% "
+            f"between W{ut['previous_week']} and W{ut['latest_week']}."
+        )
+    tst = row.get("target_share_trend")
+    if tst:
+        extra.append(
+            f"Real target share has moved {tst['previous_pct']}% to {tst['latest_pct']}% over the same span."
+        )
+
+    rf = projection.get("opponent_recent_form")
+    if rf:
+        extra.append(
+            f"This opponent's defense has allowed {rf['pct_change']}% "
+            f"{'more' if rf['direction'] == 'worse' else 'less'} than their own season average over "
+            f"their last {rf['recent_games']} real games."
+        )
+
+    inj = row.get("injury")
+    if inj and inj.get("report_status"):
+        extra.append(
+            f"Real injury designation: {inj['report_status']}"
+            f"{' (' + inj['primary_injury'] + ')' if inj.get('primary_injury') else ''}."
+        )
+
+    if extra:
+        sentence += " " + " ".join(extra)
+    return sentence
 
 
 def provisional_tier(n_games: int, has_career_history: bool = False, n_career_games: int = 0) -> dict:
