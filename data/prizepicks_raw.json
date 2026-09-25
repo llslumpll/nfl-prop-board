@@ -563,9 +563,6 @@
     "George Kittle": {
       "receiving_yards": 45.5
     },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 45.5
-    },
     "Michael Wilson": {
       "receiving_yards": 43.5,
       "receptions": 4
@@ -574,6 +571,9 @@
       "rushing_yards": 38.5,
       "receiving_yards": 14.5,
       "receptions": 2.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 38.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 33.5,
@@ -591,7 +591,7 @@
       "receiving_yards": 19.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Tyler Shough": {
       "passing_yards": 252.5,
@@ -775,9 +775,6 @@
       "receiving_yards": 22.5,
       "receptions": 2.5
     },
-    "D'Andre Swift": {
-      "receiving_yards": 12.5
-    },
     "Johnny Mundt": {
       "receiving_yards": 12.5,
       "receptions": 1.5
@@ -787,9 +784,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 6681,
-    "matched_props": 358,
-    "excluded_goblin_demon_lines": 5391,
+    "total_projections_returned": 6676,
+    "matched_props": 357,
+    "excluded_goblin_demon_lines": 5389,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
