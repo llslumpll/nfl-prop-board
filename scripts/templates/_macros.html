@@ -106,6 +106,13 @@
       already corrected for in the number above.
     </p>
     {% endif %}
+    {% if p.line_movement and p.line_movement.moved %}
+    {% set lm = p.line_movement %}
+    <div class="notice compact">
+      &#8646; Real line movement: opened at {{ lm.opening_line }}, now {{ lm.current_line }}
+      ({{ '+' if lm.change > 0 }}{{ lm.change }} since {{ lm.opening_seen_at }}).
+    </div>
+    {% endif %}
     {% else %}
     <div class="factor-grid">
       <div class="factor"><div class="fval">{{ p.breakdown }}</div><div class="flabel">TD breakdown</div></div>
@@ -185,6 +192,13 @@
     <div class="notice compact">
       Predicted at <strong>{{ fp.frozen_at }}</strong> and never recalculated after that
       {% if fp.market_line %}&mdash; real PrizePicks line at freeze time: {{ fp.market_line }} ({{ fp.call }}){% endif %}.
+    </div>
+    {% endif %}
+    {% if next_game.projection.line_movement and next_game.projection.line_movement.moved %}
+    {% set lm = next_game.projection.line_movement %}
+    <div class="notice compact">
+      &#8646; Real line movement: opened at {{ lm.opening_line }}, now {{ lm.current_line }}
+      ({{ '+' if lm.change > 0 }}{{ lm.change }} since {{ lm.opening_seen_at }}).
     </div>
     {% endif %}
     {% if next_game.projection.tier %}
