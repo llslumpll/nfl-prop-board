@@ -68,8 +68,9 @@
         <div class="flabel">Baseline{{ ' (career)' if p.baseline_source == 'career (2023-2025)' else '' }}</div>
       </div>
       {% if p.observed_2026 is not none %}
+      {% set obs_diff = ((p.observed_2026 - p.baseline) / p.baseline) if p.baseline else 0 %}
       <div class="factor">
-        <div class="fval">{{ p.observed_2026 }}</div>
+        <div class="fval stat-{{ 'good' if obs_diff >= 0.05 else 'bad' if obs_diff <= -0.05 else 'neutral' }}">{{ p.observed_2026 }}</div>
         <div class="flabel">2026 avg ({{ p.n_games_2026 }}gm)</div>
       </div>
       {% endif %}
@@ -127,8 +128,9 @@
         <div class="flabel">Baseline{{ ' (career)' if next_game.projection.baseline_source == 'career (2023-2025)' else '' }}</div>
       </div>
       {% if next_game.projection.observed_2026 is not none %}
+      {% set obs_diff = ((next_game.projection.observed_2026 - next_game.projection.baseline) / next_game.projection.baseline) if next_game.projection.baseline else 0 %}
       <div class="factor">
-        <div class="fval">{{ next_game.projection.observed_2026 }}</div>
+        <div class="fval stat-{{ 'good' if obs_diff >= 0.05 else 'bad' if obs_diff <= -0.05 else 'neutral' }}">{{ next_game.projection.observed_2026 }}</div>
         <div class="flabel">2026 avg ({{ next_game.projection.n_games_2026 }}gm)</div>
       </div>
       {% endif %}
