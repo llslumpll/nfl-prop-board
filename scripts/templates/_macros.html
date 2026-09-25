@@ -91,6 +91,21 @@
       average over their last {{ rf.recent_games }} games &mdash; real recent form, {{ 'a softer' if rf.direction == 'worse' else 'a tougher' }} matchup than the season-long factor alone suggests.
     </p>
     {% endif %}
+    {% if p.opponent_history %}
+    {% set oh = p.opponent_history %}
+    <div class="notice compact">
+      Real career vs. this opponent: {{ oh.games }} game{{ 's' if oh.games != 1 }} ({{ oh.seasons|join(', ') }}),
+      averaging {{ oh.avg }} {{ p.unit }}, best game {{ oh.best }} {{ p.unit }}.
+    </div>
+    {% endif %}
+    {% if p.calibration_bias and p.calibration_bias != 0 %}
+    <p class="why-reason" style="margin-top:0;">
+      <strong>Calibration:</strong> real graded history for this tier has run
+      {{ 'low' if p.calibration_bias > 0 else 'high' }} by {{ p.calibration_bias|abs }} {{ p.unit }}
+      on average{{ ' (n=' ~ p.calibration_sample_size ~ ')' if p.calibration_sample_size }} &mdash;
+      already corrected for in the number above.
+    </p>
+    {% endif %}
     {% else %}
     <div class="factor-grid">
       <div class="factor"><div class="fval">{{ p.breakdown }}</div><div class="flabel">TD breakdown</div></div>
@@ -149,6 +164,28 @@
       season avg) &mdash; real recent form, {{ 'a softer' if rf.direction == 'worse' else 'a tougher' }}
       matchup than the season-long matchup factor alone suggests.
     </p>
+    {% endif %}
+    {% if next_game.projection.opponent_history %}
+    {% set oh = next_game.projection.opponent_history %}
+    <div class="notice compact">
+      Real career vs. this opponent: {{ oh.games }} game{{ 's' if oh.games != 1 }} ({{ oh.seasons|join(', ') }}),
+      averaging {{ oh.avg }}, best game {{ oh.best }}.
+    </div>
+    {% endif %}
+    {% if next_game.projection.calibration_bias and next_game.projection.calibration_bias != 0 %}
+    <p class="why-reason" style="margin-top:0;">
+      <strong>Calibration:</strong> real graded history for this tier has run
+      {{ 'low' if next_game.projection.calibration_bias > 0 else 'high' }} by {{ next_game.projection.calibration_bias|abs }}
+      on average{{ ' (n=' ~ next_game.projection.calibration_sample_size ~ ')' if next_game.projection.calibration_sample_size }}
+      &mdash; already corrected for in the number above.
+    </p>
+    {% endif %}
+    {% if next_game.projection.frozen_prediction %}
+    {% set fp = next_game.projection.frozen_prediction %}
+    <div class="notice compact">
+      Predicted at <strong>{{ fp.frozen_at }}</strong> and never recalculated after that
+      {% if fp.market_line %}&mdash; real PrizePicks line at freeze time: {{ fp.market_line }} ({{ fp.call }}){% endif %}.
+    </div>
     {% endif %}
     {% if next_game.projection.tier %}
     <span class="tier {{ next_game.projection.tier.css }}">{{ next_game.projection.tier.label }}</span>
