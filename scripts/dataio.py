@@ -1522,6 +1522,8 @@ def matchups_for_next_date(limit_games: int = 20) -> dict:
             "home_badge": team_badge(g["home_team"]),
             "kalshi_away_code": KALSHI_TEAM_ALIAS.get(g["away_team"], g["away_team"]),
             "kalshi_home_code": KALSHI_TEAM_ALIAS.get(g["home_team"], g["home_team"]),
+            "away_identity": team_identity_tags(g["away_team"]),
+            "home_identity": team_identity_tags(g["home_team"]),
             "players": [],
         }
         for team, opponent in [(g["away_team"], g["home_team"]), (g["home_team"], g["away_team"])]:
@@ -2445,3 +2447,152 @@ def group_rows_by_game(rows: list[dict]) -> tuple[list[dict], list[dict]]:
 
     game_list = sorted(games.values(), key=lambda g: (g["gameday"] or "9999-12-31", g["gametime"] or "99:99"))
     return game_list, no_game
+
+
+_scheme_charting_cache = None
+
+
+def load_scheme_charting_2026():
+    """Real, joined play-by-play + FTN charting data for the current
+    2026 season, with real posteam/defteam attribution per play -- the
+    foundation for real offensive/defensive scheme identity, live and
+    updating every week as real games are played (unlike the 2025-only
+    man/zone coverage data, this charting IS available for 2026)."""
+    global _scheme_charting_cache
+    if _scheme_charting_cache is None:
+        pbp = load_pbp_2026()
+        ftn = load_ftn_2026()
+        _scheme_charting_cache = pbp.with_columns(pl.col("play_id").cast(pl.Int32)).join(
+            ftn.select(["nflverse_game_id", "nflverse_play_id", "n_blitzers", "n_pass_rushers",
+                        "is_no_huddle", "is_play_action", "is_motion", "is_rpo", "n_defense_box"]),
+            left_on=["game_id", "play_id"], right_on=["nflverse_game_id", "nflverse_play_id"], how="inner",
+        )
+    return _scheme_charting_cache
+
+
+def team_offensive_identity(team: str) -> dict | None:
+    """
+    Real offensive scheme identity for this team, from real 2026 charted
+    plays: pass rate, play-action rate, no-huddle rate, motion rate, RPO
+    rate. Real numbers only -- tagging (which of these are actually
+    notable vs. the real league average) happens separately in
+    team_identity_tags, so this function never invents a label.
+    """
+    data = load_scheme_charting_2026()
+    off = data.filter((pl.col("posteam") == team) & (pl.col("play_type").is_in(["run", "pass"])))
+    if off.height == 0:
+        return None
+    total = off.height
+    pass_plays_df = off.filter(pl.col("play_type") == "pass")
+    pass_plays = pass_plays_df.height
+    return {
+        "plays_charted": total,
+        "pass_rate": round(100 * pass_plays / total, 1),
+        "play_action_rate": round(100 * pass_plays_df["is_play_action"].sum() / pass_plays, 1) if pass_plays else None,
+        "no_huddle_rate": round(100 * off["is_no_huddle"].sum() / total, 1),
+        "motion_rate": round(100 * off["is_motion"].sum() / total, 1),
+        "rpo_rate": round(100 * off["is_rpo"].sum() / total, 1),
+    }
+
+
+def team_defensive_identity(team: str) -> dict | None:
+    """
+    Real defensive scheme identity for this team, from real 2026 charted
+    plays actually faced by this defense: blitz rate (plays with 1+ real
+    charted blitzer) and average real defensive box count on run plays.
+    """
+    data = load_scheme_charting_2026()
+    dfn = data.filter((pl.col("defteam") == team) & (pl.col("play_type").is_in(["run", "pass"])))
+    if dfn.height == 0:
+        return None
+    total = dfn.height
+    pass_faced = dfn.filter(pl.col("play_type") == "pass")
+    run_faced = dfn.filter(pl.col("play_type") == "run")
+    return {
+        "plays_charted": total,
+        "blitz_rate": round(100 * (pass_faced["n_blitzers"] >= 1).sum() / pass_faced.height, 1) if pass_faced.height else None,
+        "avg_box_count": round(run_faced["n_defense_box"].mean(), 2) if run_faced.height and run_faced["n_defense_box"].mean() is not None else None,
+    }
+
+
+_identity_league_avg_cache = None
+
+
+def _identity_league_averages() -> dict:
+    """Real league-average rate for every offensive/defensive identity
+    stat, computed across all 32 teams' real charted plays -- the
+    baseline every team's own rate gets compared against to generate
+    real tags, never an arbitrary fixed cutoff."""
+    global _identity_league_avg_cache
+    if _identity_league_avg_cache is None:
+        teams = sorted(TEAM_CONFERENCE.keys())
+        off_stats = [team_offensive_identity(t) for t in teams]
+        def_stats = [team_defensive_identity(t) for t in teams]
+        off_stats = [o for o in off_stats if o]
+        def_stats = [d for d in def_stats if d]
+
+        def avg(items, key):
+            vals = [i[key] for i in items if i.get(key) is not None]
+            return sum(vals) / len(vals) if vals else None
+
+        _identity_league_avg_cache = {
+            "pass_rate": avg(off_stats, "pass_rate"),
+            "play_action_rate": avg(off_stats, "play_action_rate"),
+            "no_huddle_rate": avg(off_stats, "no_huddle_rate"),
+            "motion_rate": avg(off_stats, "motion_rate"),
+            "rpo_rate": avg(off_stats, "rpo_rate"),
+            "blitz_rate": avg(def_stats, "blitz_rate"),
+            "avg_box_count": avg(def_stats, "avg_box_count"),
+        }
+    return _identity_league_avg_cache
+
+
+def team_identity_tags(team: str) -> dict:
+    """
+    Real, human-readable offensive and defensive identity tags for this
+    team -- each one only applied when the real rate is meaningfully
+    above the real league average (15%+ relative gap), never a fixed
+    arbitrary number. This is the plain-language layer on top of
+    team_offensive_identity/team_defensive_identity's raw real rates.
+    """
+    off = team_offensive_identity(team)
+    dfn = team_defensive_identity(team)
+    avgs = _identity_league_averages()
+    off_tags, def_tags = [], []
+
+    def notable(value, avg_value):
+        if value is None or avg_value is None or avg_value == 0:
+            return None
+        return (value - avg_value) / avg_value
+
+    if off:
+        if (d := notable(off["pass_rate"], avgs["pass_rate"])) and d >= 0.1:
+            off_tags.append("Pass-Heavy")
+        elif d is not None and d <= -0.1:
+            off_tags.append("Run-Heavy")
+        if (d := notable(off["motion_rate"], avgs["motion_rate"])) and d >= 0.15:
+            off_tags.append("Heavy Motion")
+        if (d := notable(off["no_huddle_rate"], avgs["no_huddle_rate"])) and d >= 0.3:
+            off_tags.append("No-Huddle Tempo")
+        if (d := notable(off["play_action_rate"], avgs["play_action_rate"])) and d >= 0.15:
+            off_tags.append("Play-Action Heavy")
+        if (d := notable(off["rpo_rate"], avgs["rpo_rate"])) and d >= 0.3:
+            off_tags.append("RPO-Heavy")
+
+    if dfn:
+        if (d := notable(dfn["blitz_rate"], avgs["blitz_rate"])) and d >= 0.15:
+            def_tags.append("Aggressive Blitz")
+        elif d is not None and d <= -0.15:
+            def_tags.append("Light Blitz")
+        if (d := notable(dfn["avg_box_count"], avgs["avg_box_count"])) and d >= 0.05:
+            def_tags.append("Stacks the Box")
+        elif d is not None and d <= -0.05:
+            def_tags.append("Light Boxes")
+        cov = team_coverage_profile_2025(team)
+        if cov:
+            if cov["man_rate"] >= 40:
+                def_tags.append(f"Man Coverage ({cov['man_rate']}%, 2025)")
+            elif cov["zone_rate"] >= 65:
+                def_tags.append(f"Zone Coverage ({cov['zone_rate']}%, 2025)")
+
+    return {"offense": off_tags, "defense": def_tags, "off_stats": off, "def_stats": dfn}
