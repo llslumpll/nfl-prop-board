@@ -697,6 +697,14 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
     except Exception:
         frozen = None
     projection["frozen_prediction"] = frozen
+    # Real line movement (opening vs. current), from real logged
+    # observations over time -- None if we haven't logged this
+    # player/stat/week combination yet.
+    try:
+        import line_movement_log as _lm_mod
+        projection["line_movement"] = _lm_mod.get_line_movement(player_name, stat_col, game["week"])
+    except Exception:
+        projection["line_movement"] = None
     after_matchup = round(pre_matchup * m_factor["factor"], 1)
 
     # Pace: the player's OWN team's real play volume, applied to every
