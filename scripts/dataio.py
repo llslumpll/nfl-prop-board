@@ -683,6 +683,20 @@ def next_game_projection(player_name: str, team: str, stat_col: str) -> dict | N
     # projection) -- is this specific opponent's defense trending better
     # or worse lately than its own season-long average.
     projection["opponent_recent_form"] = opponent_recent_form(game["opponent"], stat_col)
+    # Real career performance vs this SPECIFIC upcoming opponent --
+    # same data already shown on Matchups, now also available directly
+    # in this player's own projection reasoning.
+    projection["opponent_history"] = player_history_vs_opponent(player_name, stat_col, game["opponent"])
+    # Real frozen-prediction info for THIS specific upcoming week, if it
+    # was already frozen in an earlier build -- the real "predicted at
+    # X, never recalculated after that" transparency, using the actual
+    # frozen record, not a guess.
+    try:
+        import predictions as _predictions_mod
+        frozen = _predictions_mod.load_predictions().get(f"{player_name}|{stat_col}|{game['week']}")
+    except Exception:
+        frozen = None
+    projection["frozen_prediction"] = frozen
     after_matchup = round(pre_matchup * m_factor["factor"], 1)
 
     # Pace: the player's OWN team's real play volume, applied to every
@@ -1757,6 +1771,7 @@ def project_stat(player_name: str, stat_col: str) -> dict:
         "meets_min_sample": n_games >= MIN_SAMPLE,
         "tier": tier,
         "calibration_bias": calibration_bias,
+        "calibration_sample_size": tier_cal.get("sample_size") if calibration_bias else None,
         "frozen_at": FROZEN_AT,
     }
     # (Old CSV-based log_projection/projections_logged_count removed --
@@ -2764,3 +2779,29 @@ def enhance_reason_with_track_record(base_reason: str, row: dict) -> str:
     if not additions:
         return base_reason
     return base_reason + " Real track record: " + "; ".join(additions) + "."
+
+
+def player_history_vs_opponent(player_name: str, stat_col: str, opponent: str) -> dict | None:
+    """
+    Real career (2023-2025) performance for this player against this
+    SPECIFIC upcoming opponent -- same real logic already used on the
+    Matchups page, exposed as a standalone function so it can also be
+    pulled directly into a stat page's own "why" write-up. Returns None
+    honestly when there's no real prior meeting on record, rather than
+    guessing.
+    """
+    hist = load_historical_stats()
+    rows = hist.filter(
+        (pl.col("player_display_name") == player_name) & (pl.col("opponent_team") == opponent)
+    )
+    if rows.height == 0:
+        return None
+    vals = [v for v in rows[stat_col].to_list() if v is not None]
+    if not vals:
+        return None
+    return {
+        "games": len(vals),
+        "avg": round(sum(vals) / len(vals), 1),
+        "best": max(vals),
+        "seasons": sorted(rows["season"].unique().to_list()),
+    }
