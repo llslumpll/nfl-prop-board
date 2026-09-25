@@ -27,6 +27,7 @@ import calibrate  # noqa: E402
 import grade  # noqa: E402
 import pipeline_health  # noqa: E402
 import coverage_log  # noqa: E402
+import line_movement_log  # noqa: E402
 import svgchart  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
@@ -316,6 +317,22 @@ def build():
     receptions_rows = dataio.receptions_leaders()
     rushing_rows = dataio.rushing_leaders()
     touchdown_rows = dataio.touchdown_leaders()
+
+    # Real line-movement logging -- records the real current PrizePicks
+    # line for every player with real next-game data this build, so
+    # movement (current vs. real opening line) can be computed honestly
+    # once enough real observations exist to compare.
+    _lm_players = []
+    for rows, stat_col in [
+        (passing_rows, "passing_yards"), (receiving_rows, "receiving_yards"),
+        (receptions_rows, "receptions"), (rushing_rows, "rushing_yards"),
+    ]:
+        for r in rows:
+            ng = r.get("next_game")
+            if ng:
+                _lm_players.append((r["player"], stat_col, ng["week"]))
+    n_lines_logged = line_movement_log.log_all(pp_props, _lm_players)
+    print(f"Logged {n_lines_logged} real line observation(s) this build.")
 
     # Apply the SAME Vegas-implied environment factors computed above to
     # every stat page's "next game" projection, so Matchups and the
