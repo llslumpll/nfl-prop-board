@@ -620,7 +620,7 @@ def next_game_for_team(team: str) -> dict | None:
     opponent = row["away_team"] if row["home_team"] == team else row["home_team"]
     return {
         "opponent": opponent, "week": row["week"], "gameday": row.get("gameday"),
-        "venue_team": row["home_team"],
+        "gametime": row.get("gametime"), "venue_team": row["home_team"],
     }
 
 
@@ -2362,3 +2362,51 @@ def xtd_debt_watch(rushing_rows: list[dict], receiving_rows: list[dict], limit: 
         })
     candidates.sort(key=lambda c: abs(c["xtd"]["debt"]), reverse=True)
     return candidates[:limit]
+
+
+def format_game_time(gameday: str | None, gametime: str | None) -> str | None:
+    """Real, human-readable kickoff time from real schedule data
+    (nflreadpy's gameday/gametime fields), e.g. 'Sun 9/20, 4:25 PM ET'."""
+    if not gameday or not gametime:
+        return None
+    from datetime import datetime
+    try:
+        dt = datetime.strptime(f"{gameday} {gametime}", "%Y-%m-%d %H:%M")
+        return dt.strftime("%a %-m/%-d, %-I:%M %p ET")
+    except Exception:
+        return f"{gameday} {gametime}"
+
+
+def group_rows_by_game(rows: list[dict]) -> tuple[list[dict], list[dict]]:
+    """
+    Groups leader rows by their real upcoming game (both teams' players
+    land in the same group, since it's one real matchup), sorted by real
+    kickoff time -- earliest game first. Players with no real upcoming
+    game (bye week, season over for their team) are returned separately
+    rather than silently dropped or given a fabricated time.
+    """
+    games: dict[tuple, dict] = {}
+    no_game = []
+    for r in rows:
+        ng = r.get("next_game")
+        if not ng:
+            no_game.append(r)
+            continue
+        team, opp, week = r.get("team"), ng.get("opponent"), ng.get("week")
+        if not team or not opp:
+            no_game.append(r)
+            continue
+        key = (week, tuple(sorted([team, opp])))
+        if key not in games:
+            games[key] = {
+                "week": week,
+                "teams": tuple(sorted([team, opp])),
+                "gameday": ng.get("gameday"),
+                "gametime": ng.get("gametime"),
+                "start_str": format_game_time(ng.get("gameday"), ng.get("gametime")),
+                "players": [],
+            }
+        games[key]["players"].append(r)
+
+    game_list = sorted(games.values(), key=lambda g: (g["gameday"] or "9999-12-31", g["gametime"] or "99:99"))
+    return game_list, no_game
