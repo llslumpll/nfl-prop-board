@@ -321,7 +321,7 @@ table.stat-table tr:hover td { background: #1a1a2e; }
 
 .stat-good { color: var(--green); font-weight: 400; }
 .stat-bad { color: var(--red); font-weight: 400; }
-.stat-neutral { color: var(--text); }
+.stat-neutral { color: var(--text-dim); }
 
 .tier {
   display: inline-block;
