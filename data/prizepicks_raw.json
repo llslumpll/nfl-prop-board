@@ -29,12 +29,12 @@
       "receiving_yards": 43.5,
       "receptions": 4
     },
+    "Oronde Gadsden II": {
+      "receiving_yards": 37.5
+    },
     "Quentin Johnston": {
       "receiving_yards": 35.5,
       "receptions": 3
-    },
-    "Oronde Gadsden II": {
-      "receiving_yards": 35.5
     },
     "Tre' Harris": {
       "receiving_yards": 31.5
@@ -214,7 +214,7 @@
       "receptions": 1.5
     },
     "Kevin Coleman Jr.": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 8.5
@@ -259,12 +259,8 @@
       "receptions": 2
     },
     "Gunnar Helm": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
-    },
-    "Devin Singletary": {
-      "rushing_yards": 21.5,
-      "receiving_yards": 3.5
     },
     "Tyjae Spears": {
       "rushing_yards": 18.5,
@@ -282,6 +278,9 @@
     },
     "Theo Johnson": {
       "receiving_yards": 7.5
+    },
+    "Devin Singletary": {
+      "receiving_yards": 4.5
     },
     "Jared Goff": {
       "passing_yards": 258.5
@@ -316,7 +315,7 @@
       "receptions": 4.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Kenyon Sadiq": {
@@ -712,10 +711,6 @@
       "receiving_yards": 84.5,
       "receptions": 6.5
     },
-    "Zay Flowers": {
-      "receiving_yards": 72.5,
-      "receptions": 5
-    },
     "George Pickens": {
       "receiving_yards": 60.5,
       "receptions": 5
@@ -741,7 +736,7 @@
       "receptions": 3.5
     },
     "Chris Moore": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "LaJohntay Wester": {
       "receiving_yards": 17.5
@@ -788,12 +783,12 @@
     "Courtland Sutton": {
       "receiving_yards": 38.5
     },
+    "Pat Bryant": {
+      "receiving_yards": 25.5,
+      "receptions": 2.5
+    },
     "Colby Parkinson": {
       "receiving_yards": 25.5
-    },
-    "Pat Bryant": {
-      "receiving_yards": 24.5,
-      "receptions": 2.5
     },
     "Evan Engram": {
       "receiving_yards": 20.5,
@@ -801,7 +796,7 @@
     },
     "RJ Harvey": {
       "rushing_yards": 19.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 16.5,
       "receptions": 2.5
     },
     "Adam Trautman": {
@@ -858,7 +853,7 @@
       "receptions": 1.5
     },
     "Zach Ertz": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 10.5,
       "receptions": 1.5
     },
     "Cole Kmet": {
@@ -872,9 +867,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 8110,
-    "matched_props": 405,
-    "excluded_goblin_demon_lines": 6476,
+    "total_projections_returned": 8077,
+    "matched_props": 402,
+    "excluded_goblin_demon_lines": 6452,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
