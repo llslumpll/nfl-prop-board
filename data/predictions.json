@@ -6932,7 +6932,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Terrance Ferguson|receptions|3": {
     "player": "Terrance Ferguson",
@@ -8802,7 +8806,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kyren Williams|rushing_yards|3": {
     "player": "Kyren Williams",
@@ -8894,7 +8902,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jaylen Waddle|receiving_yards|3": {
     "player": "Jaylen Waddle",
@@ -8916,7 +8927,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Drake London|receptions|4": {
     "player": "Drake London",
