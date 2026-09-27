@@ -6478,7 +6478,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Joe Burrow|any_td|3": {
     "player": "Joe Burrow",
@@ -6571,7 +6574,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Devin Singletary|any_td|2": {
     "player": "Devin Singletary",
@@ -7059,7 +7065,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Justin Herbert|passing_yards|3": {
     "player": "Justin Herbert",
@@ -8324,7 +8333,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Christian McCaffrey|rushing_yards|3": {
     "player": "Christian McCaffrey",
@@ -8453,7 +8466,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Bucky Irving|rushing_yards|3": {
     "player": "Bucky Irving",
@@ -8539,7 +8556,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Zay Flowers|receiving_yards|3": {
@@ -8582,7 +8600,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Javonte Williams|rushing_yards|3": {
     "player": "Javonte Williams",
@@ -8626,7 +8648,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kirk Cousins|passing_yards|3": {
     "player": "Kirk Cousins",
@@ -8646,7 +8672,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ashton Jeanty|rushing_yards|3": {
     "player": "Ashton Jeanty",
@@ -8838,7 +8868,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "J.K. Dobbins|rushing_yards|3": {
     "player": "J.K. Dobbins",
