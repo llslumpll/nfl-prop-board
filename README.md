@@ -102,6 +102,40 @@ project them. Rather than publish a number with no real basis, the page
 was removed entirely -- `scripts/build.py` also cleans up the old
 `docs/kicking.html` file so it doesn't linger as an orphaned URL.
 
+## FanDuel lines via The Odds API (moneylines + player props)
+
+FanDuel has no public API. Its lines come through [The Odds API](https://the-odds-api.com), a licensed
+aggregator (not a scraper), on the free plan of **500 credits/month**.
+
+**Setup:** add a repository secret named `ODDS_API_KEY` (Settings > Secrets and variables > Actions).
+Never paste the key into a file or chat.
+
+**Cadence** (`.github/workflows/weekly_oddsapi.yml`; deliberately separate from the 20-minute refresh):
+
+| When | Command | Credits |
+|---|---|---|
+| Thursday 14:00 UTC, and any manual run | `build.py --pull-oddsapi` (moneylines + props) | ~1 + 4 per game, roughly 55-60 |
+| Every other day 14:00 UTC | `build.py --no-fetch --pull-oddsapi-moneylines` | 1 |
+
+Every other build (including the 20-minute refresh) makes **no** Odds API calls; it renders from the last
+cached pull in `data/oddsapi_moneylines.json` and `data/oddsapi_props.json`. Roughly 250-300 credits/month.
+
+**Safeguards:** props pull fewer games (soonest first) rather than dip under a 60-credit reserve; a failed
+or empty pull never overwrites the last good cache; if the moneyline call fails, the props pull is skipped;
+cached lines for games that have already started are dropped at render time; error text is scrubbed of the
+API key before anything is saved (`data/` is committed). Real credit usage is logged to
+`data/oddsapi_usage_log.json` from the API's own response headers.
+
+**Where it shows up:** a FanDuel moneyline block per game on Matchups (with vig-removed win %), and a
+"FanDuel: <line>" note under the PrizePicks line in each stat page's Projections table, labelled with the
+date it was pulled. FanDuel is display-only context: Best 5 edges and History grading still use PrizePicks.
+
+**Not requested on purpose:** anytime-TD (each extra market costs a credit per game and nothing displays it yet).
+
+**After the first real run, check the log for:** `FanDuel props diagnostics` (were props posted yet? if
+`lines_found` is low, move the Thursday cron later), `book mode` (`bookmakers` is expected; `regions` means the
+API rejected `bookmakers=fanduel`), and `name matching` (`unknown`/`ambiguous` should be small).
+
 ## Page-by-page notes
 
 - **Matchups** — real upcoming games from the live schedule, now with a

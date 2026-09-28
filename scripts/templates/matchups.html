@@ -230,6 +230,33 @@
     </tbody>
   </table>
 
+  <h4>FanDuel moneyline</h4>
+  {% if m.fanduel_moneyline %}
+    {% set fm = m.fanduel_moneyline %}
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Team</th><th class="num">Moneyline</th><th class="num">Implied win % (vig removed)</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="team-badge" style="background:{{ m.away_badge.color }}">{{ m.away_badge.abbr }}</span> <span class="player-sub">away</span></td>
+          <td class="num">{{ fm.away_price_str }}</td>
+          <td class="num">{{ fm.away_prob }}%</td>
+        </tr>
+        <tr>
+          <td><span class="team-badge" style="background:{{ m.home_badge.color }}">{{ m.home_badge.abbr }}</span> <span class="player-sub">home</span></td>
+          <td class="num">{{ fm.home_price_str }}</td>
+          <td class="num">{{ fm.home_prob }}%</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="player-sub">FanDuel via The Odds API{% if oddsapi_status.moneyline_pulled_label %}, last pulled {{ oddsapi_status.moneyline_pulled_label }}{% endif %} &mdash; refreshed on a schedule, not live. Implied % removes FanDuel's margin so the two sides sum to 100%.</p>
+  {% elif not oddsapi_status.has_moneyline_cache %}
+    <p class="player-sub">No FanDuel data pulled yet &mdash; the first scheduled pull will fill this in.</p>
+  {% else %}
+    <p class="player-sub">FanDuel has no moneyline on file for this game.</p>
+  {% endif %}
+
   <h4>Kalshi market for this game</h4>
   {% if kalshi_error %}
     <div class="notice"><strong>Kalshi fetch failed on this build.</strong> Error: {{ kalshi_error }}</div>

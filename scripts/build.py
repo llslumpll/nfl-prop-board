@@ -9,6 +9,8 @@ Pages just serves whatever this script last wrote to docs/.
 Usage:
     python scripts/build.py            # refresh data from nflreadpy, then build
     python scripts/build.py --no-fetch # rebuild from the cached parquet only
+    python scripts/build.py --pull-oddsapi              # + pull FanDuel moneylines AND props (uses credits)
+    python scripts/build.py --pull-oddsapi-moneylines   # + pull FanDuel moneylines only (1 credit)
 """
 
 import argparse
@@ -21,6 +23,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 import dataio  # noqa: E402
 import kalshi_client  # noqa: E402
 import prizepicks_client  # noqa: E402
+import oddsapi_client  # noqa: E402
 import best5  # noqa: E402
 import predictions  # noqa: E402
 import calibrate  # noqa: E402
@@ -70,7 +73,7 @@ def refresh_data():
         nfl.load_player_stats([2023, 2024, 2025]).write_parquet(hist_path)
 
 
-def build():
+def build(oddsapi_mode: str | None = None):
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     env.globals["line_chart"] = svgchart.line_chart
     env.globals["bar_chart_with_threshold"] = svgchart.bar_chart_with_threshold
@@ -133,6 +136,82 @@ def build():
     pp_props = pp_data["props"]
     pp_error = pp_data["error"]
 
+    # --- FanDuel lines via The Odds API (moneylines + player props) ---
+    # A licensed aggregator on a 500-credit/month free plan, so this is
+    # NOT fetched on every build. oddsapi_mode is set only by the scheduled
+    # weekly workflows:
+    #   "all"        -> moneylines (1 credit) + player props (~4 credits per game)
+    #   "moneylines" -> moneylines only (1 credit)
+    #   None         -> no API call at all; render from the last cached pull.
+    # That last case covers the every-20-minutes odds refresh, which is why
+    # cached data lives in data/ and is drawn from here on every build.
+    # A failed or empty pull never overwrites the last good cached data.
+    ML_PATH = DATA_DIR / "oddsapi_moneylines.json"
+    PROPS_PATH = DATA_DIR / "oddsapi_props.json"
+
+    def _load_cached_json(path):
+        try:
+            return json.loads(path.read_text()) if path.exists() else None
+        except Exception:
+            return None
+
+    if oddsapi_mode:
+        print("Pulling FanDuel moneylines from The Odds API (1 credit)...")
+        ml_pull = oddsapi_client.fetch_moneylines()
+        if ml_pull["error"]:
+            print(f"WARNING: FanDuel moneyline pull failed ({ml_pull['error']}); keeping last cached data, "
+                  "and skipping the player-props pull rather than risk spending credits on a broken key/quota.")
+        else:
+            ML_PATH.write_text(json.dumps(ml_pull, indent=2))
+            d = ml_pull["diagnostics"]
+            print(f"FanDuel moneylines: {d['games_with_fanduel_line']}/{d['games_returned']} upcoming games have a "
+                  f"FanDuel line (book mode: {ml_pull['book_mode']}).")
+
+            if oddsapi_mode == "all":
+                usage = d.get("usage") or {}
+                print("Pulling FanDuel player props from The Odds API (real per-game credit cost)...")
+                props_pull = oddsapi_client.fetch_player_props(
+                    book_mode=ml_pull["book_mode"], remaining_credits=usage.get("requests_remaining"))
+                pd_ = props_pull["diagnostics"]
+                print(f"FanDuel props diagnostics: {pd_}")
+                if props_pull["error"]:
+                    print(f"WARNING: FanDuel player-props pull failed ({props_pull['error']}); keeping last cached data.")
+                elif not props_pull["lines"]:
+                    print("FanDuel has no player props posted for the upcoming games yet; keeping last cached data.")
+                else:
+                    PROPS_PATH.write_text(json.dumps(props_pull, indent=2))
+        latest = oddsapi_client.current_usage()
+        if latest:
+            print(f"The Odds API credits: {latest['requests_used']} used, {latest['requests_remaining']} remaining this month.")
+
+    ml_cache = _load_cached_json(ML_PATH)
+    props_cache = _load_cached_json(PROPS_PATH)
+    # Drop anything whose game has already kicked off, so a cached line from
+    # last week can never be displayed against this week's game.
+    fd_games = oddsapi_client.upcoming_only((ml_cache or {}).get("games", []))
+    fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
+    known_player_names = (
+        set(dataio.load_stats()["player_display_name"].to_list())
+        | set(dataio.load_historical_stats()["player_display_name"].to_list())
+    )
+    fanduel_props, fd_name_stats = oddsapi_client.canonicalize_props(
+        oddsapi_client.lines_to_props(fd_lines), known_player_names)
+
+    def _pulled_label(ts):
+        try:
+            return datetime.strptime(ts, "%Y-%m-%d %H:%M UTC").strftime("%a %-m/%-d")
+        except Exception:
+            return None
+
+    fanduel_pulled_label = _pulled_label((props_cache or {}).get("pulled_at"))
+    oddsapi_status = {
+        "has_moneyline_cache": ml_cache is not None,
+        "moneyline_pulled_label": _pulled_label((ml_cache or {}).get("pulled_at")),
+        "has_props_cache": props_cache is not None,
+    }
+    print(f"FanDuel (cached): {len(fd_games)} upcoming moneyline game(s), {len(fd_lines)} prop line(s) "
+          f"for {len(fanduel_props)} player(s); name matching {fd_name_stats}.")
+
     # --- Matchups: single next date, with per-game Kalshi props attached ---
     matchups_data = dataio.matchups_for_next_date()
     standings = dataio.team_standings()
@@ -171,6 +250,9 @@ def build():
 
     for g in matchups_data["games"]:
         g["kalshi_props"] = kalshi_props_for_game(g)
+        # Real FanDuel moneyline for this exact game, or None -- shown
+        # honestly as "no line" rather than ever being estimated.
+        g["fanduel_moneyline"] = oddsapi_client.moneyline_for_game(fd_games, g["home_team"], g["away_team"])
 
     # --- Vegas-implied game environment: real Kalshi Team Total markets,
     # where quoted, feeding a final adjustment layer onto every
@@ -317,6 +399,14 @@ def build():
     receptions_rows = dataio.receptions_leaders()
     rushing_rows = dataio.rushing_leaders()
     touchdown_rows = dataio.touchdown_leaders()
+
+    fd_row_hits = sum(
+        1 for rows_, stat_ in ((passing_rows, 'passing_yards'), (receiving_rows, 'receiving_yards'),
+                               (receptions_rows, 'receptions'), (rushing_rows, 'rushing_yards'))
+        for r_ in rows_ if fanduel_props.get(r_['player'], {}).get(stat_) is not None
+    )
+    fd_row_total = len(passing_rows) + len(receiving_rows) + len(receptions_rows) + len(rushing_rows)
+    print(f"FanDuel line matched for {fd_row_hits}/{fd_row_total} stat-page rows.")
 
     # Real line-movement logging -- records the real current PrizePicks
     # line for every player with real next-game data this build, so
@@ -559,12 +649,14 @@ def build():
                 "full_team_stats": full_team_stats,
                 "coverage_profiles": dataio.all_team_coverage_profiles(),
                 "kalshi_error": kalshi_data["error"],
+                "oddsapi_status": oddsapi_status,
             },
         ),
         "passing.html": (
             "passing", "passing.html",
             {
                 "rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": passing_games, "no_game_players": passing_no_game,
                 "best5_confidence": best5_data["passing"]["highest_confidence"],
                 "best5_value": best5_data["passing"]["best_value"],
@@ -578,6 +670,7 @@ def build():
             "receiving.html",
             {
                 "rows": receiving_rows,
+                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": receiving_games, "no_game_players": receiving_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
@@ -594,6 +687,7 @@ def build():
             "receptions.html",
             {
                 "rows": receptions_rows,
+                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": receptions_games, "no_game_players": receptions_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
@@ -609,6 +703,7 @@ def build():
             "rushing", "rushing.html",
             {
                 "rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error,
+                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": rushing_games, "no_game_players": rushing_no_game,
                 "best5_confidence": best5_data["rushing"]["highest_confidence"],
                 "best5_value": best5_data["rushing"]["best_value"],
@@ -688,6 +783,10 @@ def build():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-fetch", action="store_true", help="skip live data refresh, use cached parquet")
+    parser.add_argument("--pull-oddsapi", action="store_true",
+                        help="pull fresh FanDuel moneylines + player props from The Odds API (spends credits; weekly workflow only)")
+    parser.add_argument("--pull-oddsapi-moneylines", action="store_true",
+                        help="pull fresh FanDuel moneylines only (1 credit)")
     args = parser.parse_args()
 
     if not args.no_fetch:
@@ -700,4 +799,5 @@ if __name__ == "__main__":
     dataio._stats_cache = None
     dataio._injuries_cache = None
 
-    build()
+    oddsapi_mode = "all" if args.pull_oddsapi else "moneylines" if args.pull_oddsapi_moneylines else None
+    build(oddsapi_mode=oddsapi_mode)
