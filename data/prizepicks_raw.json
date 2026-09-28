@@ -46,9 +46,8 @@
     "Kalif Raymond": {
       "receiving_yards": 24.5
     },
-    "Johnny Mundt": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
+    "Tank Bigsby": {
+      "rushing_yards": 11.5
     },
     "Zach Ertz": {
       "receiving_yards": 9.5
@@ -57,8 +56,11 @@
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
+    "Johnny Mundt": {
+      "receiving_yards": 5.5
+    },
     "Will Shipley": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Jordan Love": {
       "passing_yards": 239.5
@@ -84,9 +86,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 508,
+    "total_projections_returned": 568,
     "matched_props": 35,
-    "excluded_goblin_demon_lines": 394,
+    "excluded_goblin_demon_lines": 453,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -94,6 +96,7 @@
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
+      "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
       "int",
       "kicking points",
@@ -111,13 +114,12 @@
       "punt touchbacks (combo)",
       "punts",
       "punts inside 20",
+      "quarters with 1+ reception",
+      "quarters with 25+ pass yards",
+      "quarters with 5+ receiving yards",
       "quarters with 5+ rush yards",
       "rec targets",
-      "receiving yards",
-      "receptions",
-      "rush attempts",
-      "rush tds",
-      "rush yards"
+      "receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
