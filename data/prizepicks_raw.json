@@ -5,20 +5,22 @@
       "rushing_yards": 24.5
     },
     "Case Keenum": {
-      "passing_yards": 165.5,
-      "rushing_yards": 5.5
+      "passing_yards": 167.5,
+      "rushing_yards": 4.5
     },
     "DeVonta Smith": {
       "receiving_yards": 72.5,
       "receptions": 5.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 71.5,
-      "receiving_yards": 12.5
+      "rushing_yards": 72.5,
+      "receiving_yards": 12.5,
+      "receptions": 2
     },
     "D'Andre Swift": {
       "rushing_yards": 61.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 2
     },
     "Dontayvion Wicks": {
       "receiving_yards": 42.5,
@@ -29,18 +31,17 @@
       "receiving_yards": 8.5
     },
     "Luther Burden III": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Colston Loveland": {
       "receiving_yards": 33.5
     },
-    "Rome Odunze": {
-      "receiving_yards": 27.5
-    },
     "Makai Lemon": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 28.5
+    },
+    "Rome Odunze": {
+      "receiving_yards": 25.5
     },
     "Kalif Raymond": {
       "receiving_yards": 24.5,
@@ -52,13 +53,14 @@
     "Zach Ertz": {
       "receiving_yards": 10.5
     },
+    "Johnny Mundt": {
+      "receiving_yards": 8.5
+    },
     "Cole Kmet": {
       "receiving_yards": 8.5
     },
-    "Johnny Mundt": {
-      "receiving_yards": 6.5
-    },
     "Will Shipley": {
+      "rushing_yards": 3.5,
       "receiving_yards": 2.5
     },
     "Aaron Rodgers": {
@@ -75,27 +77,27 @@
     "Quinshon Judkins": {
       "rushing_yards": 55.5
     },
-    "Harold Fannin Jr.": {
-      "receiving_yards": 40.5,
-      "receptions": 4.5
-    },
     "DK Metcalf": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
+    },
+    "Harold Fannin Jr.": {
+      "receiving_yards": 39.5,
+      "receptions": 4.5
     },
     "Denzel Boston": {
       "receiving_yards": 35.5
     },
     "Michael Pittman Jr.": {
-      "receiving_yards": 34.5
+      "receiving_yards": 33.5,
+      "receptions": 3.5
     },
     "KC Concepcion Jr.": {
       "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 27.5,
-      "receptions": 3.5
+      "receiving_yards": 27.5
     },
     "Darnell Washington": {
       "receiving_yards": 15.5
@@ -127,11 +129,12 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 1010,
-    "matched_props": 52,
-    "excluded_goblin_demon_lines": 872,
+    "total_projections_returned": 1081,
+    "matched_props": 54,
+    "excluded_goblin_demon_lines": 927,
     "sample_stat_types_seen": [
       "anytime tds",
+      "anytime tds (combo)",
       "completion percentage",
       "fantasy score",
       "fg made",
@@ -159,8 +162,7 @@
       "quarters with 25+ pass yards",
       "quarters with 5+ receiving yards",
       "quarters with 5+ rush yards",
-      "rec targets",
-      "receiving yards"
+      "rec targets"
     ],
     "sample_odds_types_seen": [
       "demon",
