@@ -9889,7 +9889,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Darren Waller|receptions|4": {
     "player": "Darren Waller",
@@ -9979,7 +9983,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Tyler Shough|any_td|4": {
     "player": "Tyler Shough",
@@ -10150,7 +10157,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Trevor Lawrence|any_td|4": {
     "player": "Trevor Lawrence",
@@ -10284,7 +10294,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "George Kittle|any_td|4": {
     "player": "George Kittle",
@@ -10401,7 +10414,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Noah Fant|any_td|4": {
     "player": "Noah Fant",
@@ -10594,7 +10610,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "market_prob": 33.0
+    "market_prob": 33.0,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Josh Palmer|any_td|4": {
     "player": "Josh Palmer",
@@ -10640,7 +10659,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "market_prob": 12.0
+    "market_prob": 12.0,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Blake Whiteheart|any_td|4": {
     "player": "Blake Whiteheart",
