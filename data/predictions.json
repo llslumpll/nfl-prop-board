@@ -9347,7 +9347,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Higbee|receptions|4": {
     "player": "Tyler Higbee",
@@ -9663,7 +9667,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "George Kittle|receptions|4": {
     "player": "George Kittle",
