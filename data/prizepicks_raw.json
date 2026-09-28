@@ -5,7 +5,7 @@
       "rushing_yards": 24.5
     },
     "Case Keenum": {
-      "passing_yards": 167.5,
+      "passing_yards": 171.5,
       "rushing_yards": 4.5
     },
     "DeVonta Smith": {
@@ -61,10 +61,11 @@
     },
     "Will Shipley": {
       "rushing_yards": 3.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Aaron Rodgers": {
-      "passing_yards": 210.5
+      "passing_yards": 212.5,
+      "rushing_yards": 1.5
     },
     "Deshaun Watson": {
       "passing_yards": 187.5,
@@ -72,37 +73,69 @@
     },
     "Jaylen Warren": {
       "rushing_yards": 65.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 55.5
+      "rushing_yards": 55.5,
+      "receiving_yards": 12.5
     },
     "DK Metcalf": {
       "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 40.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
       "receiving_yards": 35.5
     },
     "Michael Pittman Jr.": {
-      "receiving_yards": 33.5,
-      "receptions": 3.5
+      "receiving_yards": 33.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 31.5,
-      "receptions": 3.5
+      "receiving_yards": 33.5,
+      "receptions": 3.5,
+      "rushing_yards": 0.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 27.5
+      "receiving_yards": 27.5,
+      "receptions": 3.5
     },
     "Darnell Washington": {
       "receiving_yards": 15.5
     },
     "Jerry Jeudy": {
+      "receiving_yards": 13.5
+    },
+    "Cam Ward": {
+      "passing_yards": 191.5,
+      "rushing_yards": 10.5
+    },
+    "Tony Pollard": {
+      "rushing_yards": 52.5,
+      "receiving_yards": 10.5
+    },
+    "Carnell Tate": {
+      "receiving_yards": 40.5
+    },
+    "Wan'Dale Robinson": {
+      "receiving_yards": 34.5
+    },
+    "Gunnar Helm": {
+      "receiving_yards": 18.5,
+      "receptions": 2.5
+    },
+    "Calvin Ridley": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
+    },
+    "Elic Ayomanor": {
+      "receiving_yards": 15.5,
+      "receptions": 1.5
+    },
+    "Tyjae Spears": {
+      "rushing_yards": 14.5,
       "receiving_yards": 13.5
     },
     "Jordan Love": {
@@ -129,9 +162,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 1081,
-    "matched_props": 54,
-    "excluded_goblin_demon_lines": 927,
+    "total_projections_returned": 1296,
+    "matched_props": 71,
+    "excluded_goblin_demon_lines": 1083,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
