@@ -1,69 +1,12 @@
 {
   "props": {
-    "Matthew Stafford": {
-      "passing_yards": 236.5
-    },
-    "Bo Nix": {
-      "passing_yards": 213.5,
-      "rushing_yards": 16.5
-    },
-    "Davante Adams": {
-      "receiving_yards": 70.5,
-      "receptions": 5.5
-    },
-    "Jaylen Waddle": {
-      "receiving_yards": 60.5,
-      "receptions": 5
-    },
-    "Kyren Williams": {
-      "rushing_yards": 54.5,
-      "receiving_yards": 12.5,
-      "receptions": 2
-    },
-    "J.K. Dobbins": {
-      "rushing_yards": 52.5,
-      "receptions": 0.5
-    },
-    "Terrance Ferguson": {
-      "receiving_yards": 50.5,
-      "receptions": 4
-    },
-    "Blake Corum": {
-      "rushing_yards": 48.5
-    },
-    "Courtland Sutton": {
-      "receiving_yards": 37.5
-    },
-    "Pat Bryant": {
-      "receiving_yards": 25.5
-    },
-    "Evan Engram": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
-    },
-    "RJ Harvey": {
-      "rushing_yards": 19.5,
-      "receiving_yards": 16.5
-    },
-    "Colby Parkinson": {
-      "receiving_yards": 17.5,
-      "receptions": 2.5
-    },
-    "Adam Trautman": {
-      "receiving_yards": 6.5
-    },
-    "Troy Franklin": {
-      "receiving_yards": 5.5
-    },
-    "Nate Adkins": {
-      "receiving_yards": 0.5
-    },
     "Jalen Hurts": {
       "passing_yards": 219.5,
       "rushing_yards": 24.5
     },
     "Case Keenum": {
-      "passing_yards": 165.5
+      "passing_yards": 165.5,
+      "rushing_yards": 7.5
     },
     "DeVonta Smith": {
       "receiving_yards": 72.5,
@@ -94,7 +37,7 @@
       "receptions": 3.5
     },
     "Rome Odunze": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Makai Lemon": {
       "receiving_yards": 26.5,
@@ -108,7 +51,7 @@
       "receptions": 1.5
     },
     "Zach Ertz": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Cole Kmet": {
       "receiving_yards": 9.5,
@@ -127,10 +70,10 @@
       "receiving_yards": 59.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 212.5
+      "passing_yards": 214.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 83.5,
+      "rushing_yards": 84.5,
       "receiving_yards": 36.5
     },
     "Drake London": {
@@ -141,21 +84,17 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 1135,
-    "matched_props": 61,
-    "excluded_goblin_demon_lines": 904,
+    "total_projections_returned": 508,
+    "matched_props": 35,
+    "excluded_goblin_demon_lines": 394,
     "sample_stat_types_seen": [
       "anytime tds",
-      "anytime tds (combo)",
       "completion percentage",
       "fantasy score",
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
-      "halves with 100+ pass yards",
-      "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
-      "halves with 40+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -172,9 +111,13 @@
       "punt touchbacks (combo)",
       "punts",
       "punts inside 20",
-      "quarters with 1+ reception",
-      "quarters with 10+ receiving yards",
-      "quarters with 25+ pass yards"
+      "quarters with 5+ rush yards",
+      "rec targets",
+      "receiving yards",
+      "receptions",
+      "rush attempts",
+      "rush tds",
+      "rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
