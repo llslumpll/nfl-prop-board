@@ -62,6 +62,38 @@
     "Will Shipley": {
       "receiving_yards": 2.5
     },
+    "Aaron Rodgers": {
+      "passing_yards": 209.5
+    },
+    "Deshaun Watson": {
+      "passing_yards": 187.5
+    },
+    "Quinshon Judkins": {
+      "rushing_yards": 55.5
+    },
+    "Harold Fannin Jr.": {
+      "receiving_yards": 38.5,
+      "receptions": 4.5
+    },
+    "DK Metcalf": {
+      "receiving_yards": 37.5,
+      "receptions": 3.5
+    },
+    "Michael Pittman Jr.": {
+      "receiving_yards": 35.5,
+      "receptions": 3.5
+    },
+    "Denzel Boston": {
+      "receiving_yards": 35.5
+    },
+    "KC Concepcion Jr.": {
+      "receiving_yards": 33.5,
+      "receptions": 3.5
+    },
+    "Pat Freiermuth": {
+      "receiving_yards": 25.5,
+      "receptions": 3.5
+    },
     "Jordan Love": {
       "passing_yards": 239.5
     },
@@ -86,9 +118,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 566,
-    "matched_props": 35,
-    "excluded_goblin_demon_lines": 452,
+    "total_projections_returned": 715,
+    "matched_props": 49,
+    "excluded_goblin_demon_lines": 585,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",

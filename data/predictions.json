@@ -9582,7 +9582,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kenyon Sadiq|receptions|4": {
     "player": "Kenyon Sadiq",
@@ -10049,7 +10053,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kirk Cousins|any_td|4": {
     "player": "Kirk Cousins",
@@ -10345,7 +10352,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Patrick Mahomes|any_td|4": {
     "player": "Patrick Mahomes",
