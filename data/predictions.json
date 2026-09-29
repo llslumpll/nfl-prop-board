@@ -9576,7 +9576,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Harold Fannin Jr.|receptions|4": {
     "player": "Harold Fannin Jr.",
@@ -9719,7 +9722,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "DJ Moore|receptions|4": {
     "player": "DJ Moore",
