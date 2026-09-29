@@ -9286,7 +9286,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Chris Olave|receptions|4": {
     "player": "Chris Olave",
@@ -10316,7 +10319,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jared Goff|any_td|4": {
     "player": "Jared Goff",
@@ -10437,7 +10443,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Josh Allen|any_td|4": {
