@@ -18,10 +18,11 @@
 <h2>Best 5 Team Picks</h2>
 <p class="lede small">
   This week's biggest real disagreements between our real net-points-per-game model and FanDuel's real
-  posted line, across moneyline, spread and total, all real games. Edge is our real projected value minus
-  FanDuel's real line (percentage points for moneyline, real points for spread/total) &mdash; a bigger
-  number means a bigger real gap between what our model thinks and what the market is pricing, not a
-  promise either side is right. Real track record so far: moneyline
+  posted line, ranked SEPARATELY within moneyline, spread and total (never pooled together &mdash;
+  percentage points and real points aren't the same unit, so mixing them would let whichever scale is
+  naturally larger crowd out the other two). Edge is our real projected value minus FanDuel's real line
+  &mdash; a bigger number means a bigger real gap between what our model thinks and what the market is
+  pricing, not a promise either side is right. Real track record so far: moneyline
   {{ team_track.team_moneyline.our_hit_rate }}{{ '%' if team_track.team_moneyline.our_hit_rate is not none }}
   ({{ team_track.team_moneyline.n }} graded), spread
   {{ team_track.team_spread.our_hit_rate }}{{ '%' if team_track.team_spread.our_hit_rate is not none }}
@@ -29,26 +30,34 @@
   {{ team_track.team_total.our_hit_rate }}{{ '%' if team_track.team_total.our_hit_rate is not none }}
   ({{ team_track.team_total.n }} graded) &mdash; full week-by-week record on <a href="history.html">History</a>.
 </p>
-{% if team_best_picks %}
+{% if team_best_picks.team_moneyline or team_best_picks.team_spread or team_best_picks.team_total %}
+{% for market, label, unit in [('team_moneyline','Best Moneyline Picks','%'), ('team_spread','Best Spread Picks',''), ('team_total','Best Total Picks','')] %}
+<div class="kalshi-subsection">
+<h5>{{ label }}</h5>
+{% if team_best_picks[market] %}
 <div class="table-wrap">
 <table class="stat-table">
   <thead>
-    <tr><th>Matchup</th><th>Market</th><th>Our pick</th><th class="num">Our value</th><th class="num">FanDuel</th><th class="num">Edge</th></tr>
+    <tr><th>Matchup</th><th>Our pick</th><th class="num">Our value</th><th class="num">FanDuel</th><th class="num">Edge</th></tr>
   </thead>
   <tbody>
-    {% for p in team_best_picks %}
+    {% for p in team_best_picks[market] %}
     <tr>
       <td>{{ p.away_team }} @ {{ p.home_team }} <span class="player-sub">W{{ p.week }}</span></td>
-      <td class="player-sub">{{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[p.market] }}</td>
       <td><span class="tier tier-mid">{{ p.our_call }}</span></td>
-      <td class="num">{{ p.our_value }}{{ '%' if p.market == 'team_moneyline' }}</td>
-      <td class="num">{{ p.market_line }}{{ '%' if p.market == 'team_moneyline' }}</td>
-      <td class="num stat-good">{{ p.edge }}</td>
+      <td class="num">{{ p.our_value }}{{ unit }}</td>
+      <td class="num">{{ p.market_line }}{{ unit }}</td>
+      <td class="num stat-good">{{ p.edge }}{{ unit }}</td>
     </tr>
     {% endfor %}
   </tbody>
 </table>
 </div>
+{% else %}
+<p class="player-sub">No real picks with a FanDuel line to compare yet.</p>
+{% endif %}
+</div>
+{% endfor %}
 {% else %}
 <div class="empty-state"><h3>No real team picks with a FanDuel line to compare yet</h3></div>
 {% endif %}
