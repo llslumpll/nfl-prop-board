@@ -252,7 +252,7 @@ def build(oddsapi_mode: str | None = None):
         g["kalshi_props"] = kalshi_props_for_game(g)
         # Real FanDuel moneyline for this exact game, or None -- shown
         # honestly as "no line" rather than ever being estimated.
-        g["fanduel_moneyline"] = oddsapi_client.moneyline_for_game(fd_games, g["home_team"], g["away_team"])
+        g["fanduel_odds"] = oddsapi_client.odds_for_game(fd_games, g["home_team"], g["away_team"])
 
     # --- Vegas-implied game environment: real Kalshi Team Total markets,
     # where quoted, feeding a final adjustment layer onto every
