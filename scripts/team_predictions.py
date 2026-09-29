@@ -239,3 +239,46 @@ def predictions_for_game(home_team: str, away_team: str, week: int) -> dict:
         if p:
             out[market] = {**p, "edge": _edge(p)}
     return out
+
+
+def market_track_record(market: str) -> dict:
+    """
+    Real week-by-week track record for one team market, in the exact
+    same shape as grade.best5_track_record() (weekly/total_hits/
+    total_graded/overall_rate/trend_weeks/trend_rates) so History can
+    render it with the same proven pattern already used for player-prop
+    Best 5. A graded pick with no real callable side (a tie for
+    moneyline, or a missing market line) counts toward "graded" for
+    pending-vs-done bookkeeping but never toward the hit rate -- same
+    "never silently guess" rule as everywhere else this gets graded.
+    """
+    preds = [p for p in load_team_predictions().values() if p["market"] == market]
+    by_week: dict[int, list[dict]] = {}
+    for p in preds:
+        by_week.setdefault(p["week"], []).append(p)
+
+    weekly = []
+    total_hits = total_graded = 0
+    for week in sorted(by_week.keys(), reverse=True):
+        entries = sorted(by_week[week], key=lambda p: (p["home_team"], p["away_team"]))
+        gradeable = [p for p in entries if p.get("graded") and p.get("our_correct") is not None]
+        hits = sum(1 for p in gradeable if p["our_correct"])
+        weekly.append({
+            "week": week, "picks": entries,
+            "graded": len(gradeable), "hits": hits,
+            "rate": round(100 * hits / len(gradeable), 1) if gradeable else None,
+        })
+        total_hits += hits
+        total_graded += len(gradeable)
+
+    trend_weeks = [w["week"] for w in reversed(weekly) if w["graded"] > 0]
+    trend_rates = [w["rate"] for w in reversed(weekly) if w["graded"] > 0]
+
+    return {
+        "weekly": weekly,
+        "total_hits": total_hits,
+        "total_graded": total_graded,
+        "overall_rate": round(100 * total_hits / total_graded, 1) if total_graded else None,
+        "trend_weeks": trend_weeks,
+        "trend_rates": trend_rates,
+    }
