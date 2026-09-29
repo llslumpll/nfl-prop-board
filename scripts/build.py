@@ -247,7 +247,7 @@ def build(oddsapi_mode: str | None = None):
           f"{team_grade_result['still_pending']} still pending a final score.")
     team_track = {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}
     print(f"Team-market track record so far: {team_track}")
-    team_best_picks = team_predictions.best_picks(limit=5)
+    team_best_picks = team_predictions.best_picks_by_market(limit_per_market=3)
     team_market_history = {m: team_predictions.market_track_record(m) for m in team_predictions.MARKETS}
 
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
