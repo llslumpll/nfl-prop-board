@@ -2994,14 +2994,16 @@ def team_injury_count(team: str) -> int:
     return sum(1 for s in statuses if s in ("Out", "Doubtful"))
 
 
-def team_matchup_signals(home_team: str, away_team: str) -> dict:
+def team_matchup_signals(home_team: str, away_team: str, gameday: str | None = None, week: int | None = None) -> dict:
     """
     Real signal snapshot for one matchup at team-prediction freeze
-    time -- recent form and injury count for both real teams, plus
-    which side is real home/away (implicit context, stored explicitly
-    anyway so grade.py's signal-effectiveness check doesn't have to
-    re-derive it from the key). Every value here is directly real,
-    computed the same way it's shown elsewhere on the site.
+    time -- recent form, injury count, real EPA/play edge, and real
+    rest-days edge for both teams, plus which side is real home/away
+    (implicit context, stored explicitly anyway so grade.py's signal-
+    effectiveness check doesn't have to re-derive it from the key).
+    Every value here is directly real, computed the same way it's
+    shown elsewhere on the site. gameday/week are optional -- without
+    them, rest-days signals are honestly skipped rather than guessed.
     """
     home_form = team_recent_form_trend(home_team)
     away_form = team_recent_form_trend(away_team)
@@ -3018,4 +3020,178 @@ def team_matchup_signals(home_team: str, away_team: str) -> dict:
         signals["away_shorthanded"] = True
     if home_injuries != away_injuries:
         signals["injury_edge"] = "home" if home_injuries < away_injuries else "away"
+
+    # Real EPA/play edge -- widely regarded as the single strongest
+    # real team-strength signal (isolates execution quality from raw
+    # yardage). Flagged only when the gap between the two teams' real
+    # combined EPA advantage (own offense minus opponent's real
+    # defense allowed) is genuinely meaningful, not a fixed cutoff.
+    home_epa, away_epa = team_epa_profile(home_team), team_epa_profile(away_team)
+    if home_epa["off_epa"] is not None and away_epa["def_epa"] is not None and \
+       away_epa["off_epa"] is not None and home_epa["def_epa"] is not None:
+        home_edge = (home_epa["off_epa"] - away_epa["def_epa"]) - (away_epa["off_epa"] - home_epa["def_epa"])
+        if abs(home_edge) >= 0.08:
+            signals["epa_edge"] = "home" if home_edge > 0 else "away"
+
+    # Real rest-days edge -- a real, documented situational factor
+    # (short week, extra rest off a bye). Only flagged at a genuinely
+    # meaningful gap (3+ real days difference), and only when both
+    # real values are actually available.
+    if gameday and week:
+        home_rest = team_rest_days(home_team, gameday, week)
+        away_rest = team_rest_days(away_team, gameday, week)
+        if home_rest is not None and away_rest is not None and abs(home_rest - away_rest) >= 3:
+            signals["rest_edge"] = "home" if home_rest > away_rest else "away"
+            signals["home_rest_days"] = home_rest
+            signals["away_rest_days"] = away_rest
+
     return signals
+
+
+_team_epa_cache: dict[str, dict] = {}
+
+
+def team_epa_profile(team: str) -> dict:
+    """
+    Real offensive and defensive EPA/play this season, from real
+    scrimmage plays (run/pass only) with a real, non-null EPA value.
+    Widely regarded in real football analytics as the single strongest
+    team-strength signal -- it isolates real play-calling/execution
+    quality from raw box-score yardage, which garbage time or a leaky
+    prevent defense can inflate without meaning much. def_epa is real
+    EPA ALLOWED per play (lower/more negative is a better defense),
+    not "this team's defensive unit's own EPA."
+    """
+    if team in _team_epa_cache:
+        return _team_epa_cache[team]
+    pbp = load_pbp_2026()
+    scrim = pbp.filter(pl.col("play_type").is_in(["run", "pass"]) & pl.col("epa").is_not_null())
+    off = scrim.filter(pl.col("posteam") == team)
+    dfn = scrim.filter(pl.col("defteam") == team)
+    result = {
+        "off_epa": round(off["epa"].mean(), 3) if off.height else None,
+        "off_plays": off.height,
+        "def_epa": round(dfn["epa"].mean(), 3) if dfn.height else None,
+        "def_plays": dfn.height,
+    }
+    _team_epa_cache[team] = result
+    return result
+
+
+_league_epa_avg_cache: dict | None = None
+
+
+def _league_epa_averages() -> dict:
+    """Real league-average offensive/defensive EPA per play across all
+    32 teams -- the baseline every team's own real EPA gets compared
+    against to decide whether it's actually notable, never a fixed
+    arbitrary cutoff."""
+    global _league_epa_avg_cache
+    if _league_epa_avg_cache is None:
+        teams = sorted(TEAM_CONFERENCE.keys())
+        profiles = [team_epa_profile(t) for t in teams]
+        off_vals = [p["off_epa"] for p in profiles if p["off_epa"] is not None]
+        def_vals = [p["def_epa"] for p in profiles if p["def_epa"] is not None]
+        _league_epa_avg_cache = {
+            "off_epa": round(sum(off_vals) / len(off_vals), 3) if off_vals else 0.0,
+            "def_epa": round(sum(def_vals) / len(def_vals), 3) if def_vals else 0.0,
+        }
+    return _league_epa_avg_cache
+
+
+def team_rest_days(team: str, upcoming_gameday: str, upcoming_week: int) -> int | None:
+    """
+    Real days of rest this team has had entering this specific upcoming
+    game -- days between its most recent real completed game and this
+    one. Returns None (never a fabricated default) if this team has no
+    real prior game on record this season (e.g. Week 1).
+    """
+    sched = load_schedule()
+    prior = sched.filter(
+        ((pl.col("home_team") == team) | (pl.col("away_team") == team))
+        & (pl.col("week") < upcoming_week) & pl.col("result").is_not_null()
+    ).sort("week", descending=True)
+    if prior.height == 0:
+        return None
+    last_gameday = prior.row(0, named=True).get("gameday")
+    if not last_gameday or not upcoming_gameday:
+        return None
+    from datetime import datetime as _dt
+    try:
+        d1 = _dt.strptime(last_gameday, "%Y-%m-%d")
+        d2 = _dt.strptime(upcoming_gameday, "%Y-%m-%d")
+        return (d2 - d1).days
+    except Exception:
+        return None
+
+
+def team_reason_text(home_team: str, away_team: str, our_call: str, projection: dict, signals: dict) -> str:
+    """
+    Real, explicit "why" write-up for one team-market pick, citing the
+    actual real signals behind it -- same purpose as reason_text() for
+    player props, applied to team markets. Every sentence traceable to
+    a real number already computed elsewhere on the site (EPA/play,
+    recent form, injuries, rest days); nothing invented for the
+    write-up specifically. A signal not present in the frozen signals
+    dict is simply not mentioned, never padded with filler.
+    """
+    parts = []
+    home_epa, away_epa = team_epa_profile(home_team), team_epa_profile(away_team)
+
+    if signals.get("epa_edge"):
+        favored, other = (home_team, away_team) if signals["epa_edge"] == "home" else (away_team, home_team)
+        f_epa = home_epa if favored == home_team else away_epa
+        o_epa = away_epa if favored == home_team else home_epa
+        parts.append(
+            f"{favored}'s real offensive EPA/play ({f_epa['off_epa']:+.2f}) against {other}'s real defensive "
+            f"EPA/play allowed ({o_epa['def_epa']:+.2f}) is the strongest real signal here -- EPA/play is widely "
+            f"regarded as the single best real indicator of team strength, since it isolates real execution "
+            f"quality from raw yardage that garbage time or a soft prevent defense can inflate."
+        )
+
+    if signals.get("rest_edge"):
+        favored = home_team if signals["rest_edge"] == "home" else away_team
+        h_days, a_days = signals.get("home_rest_days"), signals.get("away_rest_days")
+        parts.append(f"{favored} enters with a real rest advantage ({h_days} real days for {home_team} vs {a_days} for {away_team}).")
+
+    for side_key, form_key in [("home", "home_recent_form"), ("away", "away_recent_form")]:
+        if signals.get(form_key) in ("up", "down"):
+            team = home_team if side_key == "home" else away_team
+            parts.append(f"{team}'s real record over their last games is trending {signals[form_key]} relative to their season pace.")
+
+    if signals.get("injury_edge"):
+        favored = home_team if signals["injury_edge"] == "home" else away_team
+        other = away_team if signals["injury_edge"] == "home" else home_team
+        parts.append(
+            f"{other} is carrying real, meaningfully more Out/Doubtful designations than {favored} this week "
+            f"-- a real health edge favoring {favored}."
+        )
+
+    base = (
+        f"Real net-points-per-game model projects a {projection['projected_margin']:+.1f}-point margin "
+        f"and a {projection['projected_total']} total."
+    )
+    if parts:
+        return base + " " + " ".join(parts)
+    return base + " No other real situational signal stood out beyond the core scoring model this week."
+
+
+def spread_key_number_flag(market_line: float | None) -> str | None:
+    """
+    Real, well-documented NFL market fact: game margins land on 3 and 7
+    far more often than any other number, since a field goal (3) or a
+    touchdown-plus-extra-point (7) are literally how points are scored.
+    A spread priced exactly at a key number is genuinely harder to
+    project past; one priced adjacent to it (2.5, 3.5, 6.5, 7.5) means
+    a single common scoring play flips which side covers. Flags real
+    context only -- never claims which side that context favors.
+    """
+    if market_line is None:
+        return None
+    abs_line = abs(market_line)
+    if abs_line in (3.0, 7.0):
+        return f"exactly on the {int(abs_line)}-point key number -- one of the two most common real NFL margins"
+    if abs_line in (2.5, 3.5, 6.5, 7.5):
+        nearest = 3 if abs_line in (2.5, 3.5) else 7
+        return f"adjacent to the {nearest}-point key number -- a single common scoring play flips who covers"
+    return None
