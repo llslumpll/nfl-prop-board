@@ -88,7 +88,12 @@ def _now() -> datetime:
 
 
 def _api_key() -> str | None:
-    return os.environ.get("ODDS_API_KEY") or None
+    """The key from the ODDS_API_KEY secret, with stray whitespace/newlines
+    and wrapping quotes removed (a common copy-paste artifact that makes an
+    otherwise valid key come back as HTTP 401)."""
+    raw = os.environ.get("ODDS_API_KEY") or ""
+    key = raw.strip().strip("'\"").strip()
+    return key or None
 
 
 def _clean(text) -> str:
@@ -120,8 +125,23 @@ def _get(path: str, params: dict | None = None):
         resp.raise_for_status()
         return resp.json(), resp.headers
     except Exception as e:  # noqa: BLE001 -- everything must be sanitised
-        status = getattr(getattr(e, "response", None), "status_code", None)
-        raise OddsApiError(_clean(f"{type(e).__name__}{f' (HTTP {status})' if status else ''}: {e}"), status) from None
+        resp_obj = getattr(e, "response", None)
+        status = getattr(resp_obj, "status_code", None)
+        # The API explains WHY it refused (bad key vs. quota used up vs.
+        # disabled key) in the response body -- surface that, or a 401 is
+        # impossible to diagnose from the log.
+        detail = ""
+        if resp_obj is not None:
+            try:
+                body = resp_obj.json()
+                if isinstance(body, dict):
+                    bits = [str(body[k]) for k in ("error_code", "message") if body.get(k)]
+                    if bits:
+                        detail = " | API says: " + " - ".join(bits)
+            except Exception:
+                pass
+        raise OddsApiError(
+            _clean(f"{type(e).__name__}{f' (HTTP {status})' if status else ''}: {e}{detail}"), status) from None
 
 
 # --------------------------------------------------------------------------
