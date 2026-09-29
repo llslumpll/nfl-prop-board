@@ -230,31 +230,94 @@
     </tbody>
   </table>
 
-  <h4>FanDuel moneyline</h4>
-  {% if m.fanduel_moneyline %}
-    {% set fm = m.fanduel_moneyline %}
-    <div class="table-wrap">
-    <table class="stat-table">
-      <thead><tr><th>Team</th><th class="num">Moneyline</th><th class="num">Implied win % (vig removed)</th></tr></thead>
-      <tbody>
-        <tr>
-          <td><span class="team-badge" style="background:{{ m.away_badge.color }}">{{ m.away_badge.abbr }}</span> <span class="player-sub">away</span></td>
-          <td class="num">{{ fm.away_price_str }}</td>
-          <td class="num">{{ fm.away_prob }}%</td>
-        </tr>
-        <tr>
-          <td><span class="team-badge" style="background:{{ m.home_badge.color }}">{{ m.home_badge.abbr }}</span> <span class="player-sub">home</span></td>
-          <td class="num">{{ fm.home_price_str }}</td>
-          <td class="num">{{ fm.home_prob }}%</td>
-        </tr>
-      </tbody>
-    </table>
-    </div>
-    <p class="player-sub">FanDuel via The Odds API{% if oddsapi_status.moneyline_pulled_label %}, last pulled {{ oddsapi_status.moneyline_pulled_label }}{% endif %} &mdash; refreshed on a schedule, not live. Implied % removes FanDuel's margin so the two sides sum to 100%.</p>
-  {% elif not oddsapi_status.has_moneyline_cache %}
+  <h4>FanDuel market for this game</h4>
+  {% if not oddsapi_status.has_moneyline_cache %}
     <p class="player-sub">No FanDuel data pulled yet &mdash; the first scheduled pull will fill this in.</p>
+  {% elif not m.fanduel_odds %}
+    <p class="player-sub">FanDuel has no market on file for this game yet.</p>
   {% else %}
-    <p class="player-sub">FanDuel has no moneyline on file for this game.</p>
+    {% set fo = m.fanduel_odds %}
+    <p class="player-sub">FanDuel via The Odds API{% if oddsapi_status.moneyline_pulled_label %}, last pulled {{ oddsapi_status.moneyline_pulled_label }}{% endif %} &mdash; refreshed on a schedule, not live. Implied % removes FanDuel's margin so each market's sides sum to 100%.</p>
+
+    <div class="kalshi-subsection">
+    <h5>Winner (moneyline)</h5>
+    {% if fo.moneyline %}
+      {% set fm = fo.moneyline %}
+      <div class="table-wrap">
+      <table class="stat-table">
+        <thead><tr><th>Team</th><th class="num">Moneyline</th><th class="num">Implied win %</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="team-badge" style="background:{{ m.away_badge.color }}">{{ m.away_badge.abbr }}</span> <span class="player-sub">away</span></td>
+            <td class="num">{{ fm.away_price_str }}</td>
+            <td class="num">{{ fm.away_prob }}%</td>
+          </tr>
+          <tr>
+            <td><span class="team-badge" style="background:{{ m.home_badge.color }}">{{ m.home_badge.abbr }}</span> <span class="player-sub">home</span></td>
+            <td class="num">{{ fm.home_price_str }}</td>
+            <td class="num">{{ fm.home_prob }}%</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="player-sub">No moneyline posted for this game yet.</p>
+    {% endif %}
+    </div>
+
+    <div class="kalshi-subsection">
+    <h5>Spread</h5>
+    {% if fo.spread %}
+      {% set fs = fo.spread %}
+      <div class="table-wrap">
+      <table class="stat-table">
+        <thead><tr><th>Team</th><th class="num">Spread</th><th class="num">Price</th><th class="num">Implied cover %</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="team-badge" style="background:{{ m.away_badge.color }}">{{ m.away_badge.abbr }}</span> <span class="player-sub">away</span></td>
+            <td class="num">{{ fs.away_point_str }}</td>
+            <td class="num">{{ fs.away_price_str }}</td>
+            <td class="num">{{ fs.away_prob if fs.away_prob is not none else '--' }}{{ '%' if fs.away_prob is not none }}</td>
+          </tr>
+          <tr>
+            <td><span class="team-badge" style="background:{{ m.home_badge.color }}">{{ m.home_badge.abbr }}</span> <span class="player-sub">home</span></td>
+            <td class="num">{{ fs.home_point_str }}</td>
+            <td class="num">{{ fs.home_price_str }}</td>
+            <td class="num">{{ fs.home_prob if fs.home_prob is not none else '--' }}{{ '%' if fs.home_prob is not none }}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="player-sub">No spread posted for this game yet.</p>
+    {% endif %}
+    </div>
+
+    <div class="kalshi-subsection">
+    <h5>Game total</h5>
+    {% if fo.total %}
+      {% set ft = fo.total %}
+      <div class="table-wrap">
+      <table class="stat-table">
+        <thead><tr><th>Line</th><th class="num">Price</th><th class="num">Implied %</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>Over {{ ft.point }}</td>
+            <td class="num">{{ ft.over_price_str }}</td>
+            <td class="num">{{ ft.over_prob if ft.over_prob is not none else '--' }}{{ '%' if ft.over_prob is not none }}</td>
+          </tr>
+          <tr>
+            <td>Under {{ ft.point }}</td>
+            <td class="num">{{ ft.under_price_str }}</td>
+            <td class="num">{{ ft.under_prob if ft.under_prob is not none else '--' }}{{ '%' if ft.under_prob is not none }}</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    {% else %}
+      <p class="player-sub">No total posted for this game yet.</p>
+    {% endif %}
+    </div>
   {% endif %}
 
   <h4>Kalshi market for this game</h4>
