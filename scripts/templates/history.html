@@ -21,6 +21,7 @@
   <button class="game-tab" data-game-idx="2">Confidence &amp; Conviction</button>
   <button class="game-tab" data-game-idx="3">Week by Week</button>
   <button class="game-tab" data-game-idx="4">Best 5 Track Record</button>
+  <button class="game-tab" data-game-idx="5">Team Markets</button>
 </div>
 
 <!-- ============ TAB 0: PIPELINE HEALTH ============ -->
@@ -330,6 +331,61 @@
       {% endif %}
     </div>
     {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- ============ TAB 5: TEAM MARKETS ============ -->
+<div class="game-panel hidden" data-game-panel="5">
+  <h2>Team Markets</h2>
+  <p class="lede small">
+    Real game-outcome predictions &mdash; moneyline, spread and total &mdash; frozen from our own real
+    net-points-per-game model against FanDuel's real line at that same moment, then graded against the
+    real final score once the game finishes. A real tie (moneyline) or a pick frozen with no real FanDuel
+    line to compare against counts as graded once the game is final, but never counts toward the hit rate
+    &mdash; there's nothing real to call it right or wrong against. This week's ranked picks live on
+    <a href="matchups.html">Matchups</a>; this is the full real history.
+  </p>
+
+  {% for market, track in team_market_history.items() %}
+  <h3 class="division-head">{{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[market] }}</h3>
+  <div>
+    <h4 style="font-family:var(--display);font-size:0.85rem;color:var(--text);margin:0 0 8px;text-transform:none;">
+      {% if track.total_graded %}
+      <span class="tier {{ 'tier-high' if track.overall_rate >= 55 else 'tier-low' if track.overall_rate < 45 else 'tier-mid' }}">{{ track.total_hits }}/{{ track.total_graded }} ({{ track.overall_rate }}%)</span>
+      {% else %}
+      <span class="player-sub">no real graded picks yet</span>
+      {% endif %}
+    </h4>
+    {% if track.trend_rates|length > 1 %}
+    {{ line_chart(
+         series=[{"points": track.trend_rates, "color": "#2be8d9"}],
+         y_min=0, y_max=100, reference_line=50,
+         x_labels=("W" ~ track.trend_weeks[0], "W" ~ track.trend_weeks[-1]), height=140
+       )|safe }}
+    {% endif %}
+    {% if track.weekly %}
+    <div class="table-wrap" style="margin-top:8px;">
+    <table class="stat-table">
+      <thead><tr><th>Week</th><th>Result</th><th>Games</th></tr></thead>
+      <tbody>
+        {% for w in track.weekly[:6] %}
+        <tr>
+          <td class="num">W{{ w.week }}</td>
+          <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% else %}<span class="player-sub">pending</span>{% endif %}</td>
+          <td style="font-size:0.78rem;">
+            {% for p in w.picks %}
+              <span title="{{ p.away_team }} @ {{ p.home_team }}">{{ p.away_team }}@{{ p.home_team }}{% if p.graded and p.our_correct is not none %}{{ ' \u2713' if p.our_correct else ' \u2717' }}{% endif %}</span>{{ ', ' if not loop.last }}
+            {% endfor %}
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% else %}
+    <div class="empty-state"><h3>No real picks frozen for this market yet</h3></div>
+    {% endif %}
   </div>
   {% endfor %}
 </div>
