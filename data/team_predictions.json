@@ -1,0 +1,311 @@
+{
+  "PIT@CLE|team_moneyline|4": {
+    "away_team": "PIT",
+    "home_team": "CLE",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 55.4,
+    "market_line": 43.3,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "IND@WAS|team_moneyline|4": {
+    "away_team": "IND",
+    "home_team": "WAS",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 58.8,
+    "market_line": 39.3,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "TEN@BAL|team_moneyline|4": {
+    "away_team": "TEN",
+    "home_team": "BAL",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 67.9,
+    "market_line": 84.8,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "NE@BUF|team_moneyline|4": {
+    "away_team": "NE",
+    "home_team": "BUF",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 68.4,
+    "market_line": 74.0,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "NYJ@CHI|team_moneyline|4": {
+    "away_team": "NYJ",
+    "home_team": "CHI",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 61.8,
+    "market_line": 59.7,
+    "market_source": "fanduel",
+    "signals": {
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "JAX@CIN|team_moneyline|4": {
+    "away_team": "JAX",
+    "home_team": "CIN",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 50.0,
+    "market_line": 53.7,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "DAL@HOU|team_moneyline|4": {
+    "away_team": "DAL",
+    "home_team": "HOU",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 50.5,
+    "market_line": 55.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "ARI@NYG|team_moneyline|4": {
+    "away_team": "ARI",
+    "home_team": "NYG",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 60.7,
+    "market_line": 50.0,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "LA@PHI|team_moneyline|4": {
+    "away_team": "LA",
+    "home_team": "PHI",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 60.5,
+    "market_line": 44.2,
+    "market_source": "fanduel",
+    "signals": {
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "GB@TB|team_moneyline|4": {
+    "away_team": "GB",
+    "home_team": "TB",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 63.2,
+    "market_line": 38.2,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "MIA@MIN|team_moneyline|4": {
+    "away_team": "MIA",
+    "home_team": "MIN",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 77.8,
+    "market_line": 82.8,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "KC@LV|team_moneyline|4": {
+    "away_team": "KC",
+    "home_team": "LV",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 57.1,
+    "market_line": 34.4,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "LAC@SEA|team_moneyline|4": {
+    "away_team": "LAC",
+    "home_team": "SEA",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 72.9,
+    "market_line": 73.7,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "home"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "DEN@SF|team_moneyline|4": {
+    "away_team": "DEN",
+    "home_team": "SF",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 73.1,
+    "market_line": 56.3,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "DET@CAR|team_moneyline|4": {
+    "away_team": "DET",
+    "home_team": "CAR",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 60.5,
+    "market_line": 37.0,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "away_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  },
+  "ATL@NO|team_moneyline|4": {
+    "away_team": "ATL",
+    "home_team": "NO",
+    "week": 4,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 62.3,
+    "market_line": 57.4,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away"
+    },
+    "frozen_at": "2026-09-29 00:56 UTC",
+    "result": null,
+    "graded": false
+  }
+}
