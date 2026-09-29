@@ -53,7 +53,7 @@
     },
     "Daniel Jones": {
       "passing_yards": 229.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 12.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 92.5,
@@ -77,7 +77,7 @@
       "receiving_yards": 36.5
     },
     "Keenan Allen": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Dak Prescott": {
@@ -391,9 +391,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 1286,
+    "total_projections_returned": 1291,
     "matched_props": 162,
-    "excluded_goblin_demon_lines": 1028,
+    "excluded_goblin_demon_lines": 1033,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
