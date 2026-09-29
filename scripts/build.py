@@ -248,6 +248,7 @@ def build(oddsapi_mode: str | None = None):
     team_track = {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}
     print(f"Team-market track record so far: {team_track}")
     team_best_picks = team_predictions.best_picks(limit=5)
+    team_market_history = {m: team_predictions.market_track_record(m) for m in team_predictions.MARKETS}
 
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
@@ -804,6 +805,7 @@ def build(oddsapi_mode: str | None = None):
                 "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
                 "calibration": calibration_result,
                 "signal_effectiveness": grade.signal_effectiveness(),
+                "team_market_history": team_market_history,
                 "best5_track": {
                     "passing": {
                         "highest_confidence": grade.best5_track_record("passing_yards", "highest_confidence"),
