@@ -282,3 +282,18 @@ def market_track_record(market: str) -> dict:
         "trend_weeks": trend_weeks,
         "trend_rates": trend_rates,
     }
+
+
+def best_picks_by_market(limit_per_market: int = 3) -> dict:
+    """
+    Real top picks by edge, ranked SEPARATELY within each market and
+    never pooled together. Moneyline edge is in percentage points and
+    spread/total edge is in real points -- different units that happen
+    to land in similar numeric ranges, so a single pooled ranking would
+    let whichever unit's natural scale is larger crowd out the other
+    two, not because it's a genuinely bigger real disagreement. Ranking
+    within each market keeps every comparison apples-to-apples, same
+    principle as Kalshi/FanDuel showing Winner/Spread/Total as separate
+    sections rather than one merged list.
+    """
+    return {m: best_picks(market=m, limit=limit_per_market) for m in MARKETS}
