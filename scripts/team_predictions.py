@@ -48,7 +48,7 @@ def save_team_predictions(preds: dict) -> None:
 def freeze_team_prediction(
     away_team: str, home_team: str, week: int, market: str,
     our_call: str, our_value: float, market_line: float | None,
-    market_source: str | None, signals: dict,
+    market_source: str | None, signals: dict, reason: str | None = None,
 ) -> bool:
     """
     Freezes ONE real prediction for (away@home, market, week) if it
@@ -72,7 +72,7 @@ def freeze_team_prediction(
         "away_team": away_team, "home_team": home_team, "week": week, "market": market,
         "our_call": our_call, "our_value": our_value,
         "market_line": market_line, "market_source": market_source,
-        "signals": signals or {},
+        "signals": signals or {}, "reason": reason,
         "frozen_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "result": None, "graded": False,
     }
@@ -297,3 +297,49 @@ def best_picks_by_market(limit_per_market: int = 3) -> dict:
     sections rather than one merged list.
     """
     return {m: best_picks(market=m, limit=limit_per_market) for m in MARKETS}
+
+
+def signal_effectiveness(min_sample: int = 20) -> list[dict]:
+    """
+    Real check on whether each team-market context signal (EPA edge,
+    recent form, injury edge, rest edge) actually correlates with real
+    graded outcomes -- not assumed, checked. Same exact real pattern
+    and gating as grade.signal_effectiveness() for player props, applied
+    to team_correct instead of player-prop hit. This is the direct real
+    answer to "did the reasoning actually predict anything, or did a
+    pick just happen to win for an unrelated reason" -- the core idea
+    behind treating a correct pick and a correct process as separate
+    real questions.
+    """
+    graded = [p for p in load_team_predictions().values() if p.get("graded") and p.get("our_correct") is not None]
+    if not graded:
+        return []
+
+    seen = set()
+    for p in graded:
+        for k, v in (p.get("signals") or {}).items():
+            if isinstance(v, (str, bool)):
+                seen.add((k, v))
+
+    results = []
+    for key, value in sorted(seen, key=lambda kv: (kv[0], str(kv[1]))):
+        with_signal = [p for p in graded if (p.get("signals") or {}).get(key) == value]
+        without_signal = [p for p in graded if key not in (p.get("signals") or {})]
+        n_with, n_without = len(with_signal), len(without_signal)
+        if n_with < min_sample or n_without < min_sample:
+            results.append({
+                "signal": key, "value": value,
+                "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
+                "status": "insufficient data",
+            })
+            continue
+        hit_rate_with = round(100 * sum(1 for p in with_signal if p["our_correct"]) / n_with, 1)
+        hit_rate_without = round(100 * sum(1 for p in without_signal if p["our_correct"]) / n_without, 1)
+        results.append({
+            "signal": key, "value": value,
+            "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
+            "hit_rate_with": hit_rate_with, "hit_rate_without": hit_rate_without,
+            "difference_pp": round(hit_rate_with - hit_rate_without, 1),
+            "status": "active",
+        })
+    return results
