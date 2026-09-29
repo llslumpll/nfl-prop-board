@@ -248,7 +248,8 @@ def build(oddsapi_mode: str | None = None):
             if not odds:
                 continue
             proj = dataio.project_matchup(home, away)
-            signals = dataio.team_matchup_signals(home, away)
+            signals = dataio.team_matchup_signals(home, away, gameday=row.get("gameday"), week=week)
+            reason = dataio.team_reason_text(home, away, None, proj, signals)
 
             if odds.get("moneyline"):
                 fd_home_prob = oddsapi_client.no_vig_pair(
@@ -257,15 +258,19 @@ def build(oddsapi_mode: str | None = None):
                 if team_predictions.freeze_team_prediction(
                     away, home, week, "team_moneyline", our_call, proj["home_win_prob"],
                     round(fd_home_prob * 100, 1) if fd_home_prob is not None else None,
-                    "fanduel", signals,
+                    "fanduel", signals, reason=reason,
                 ):
                     frozen += 1
 
             if odds.get("spread"):
                 our_call = "HOME" if proj["projected_margin"] >= 0 else "AWAY"
+                spread_reason = reason
+                key_note = dataio.spread_key_number_flag(odds["spread"]["home_point"])
+                if key_note:
+                    spread_reason = f"{reason} FanDuel's real line is {key_note}."
                 if team_predictions.freeze_team_prediction(
                     away, home, week, "team_spread", our_call, proj["projected_margin"],
-                    odds["spread"]["home_point"], "fanduel", signals,
+                    odds["spread"]["home_point"], "fanduel", signals, reason=spread_reason,
                 ):
                     frozen += 1
 
@@ -273,7 +278,7 @@ def build(oddsapi_mode: str | None = None):
                 our_call = "OVER" if proj["projected_total"] >= odds["total"]["point"] else "UNDER"
                 if team_predictions.freeze_team_prediction(
                     away, home, week, "team_total", our_call, proj["projected_total"],
-                    odds["total"]["point"], "fanduel", signals,
+                    odds["total"]["point"], "fanduel", signals, reason=reason,
                 ):
                     frozen += 1
         return frozen
@@ -288,6 +293,8 @@ def build(oddsapi_mode: str | None = None):
           f"{team_grade_result['still_pending']} still pending a final score.")
     team_track = {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}
     print(f"Team-market track record so far: {team_track}")
+    team_signal_effectiveness = team_predictions.signal_effectiveness()
+    print(f"Team-market signal effectiveness: {team_signal_effectiveness}")
     team_best_picks = team_predictions.best_picks_by_market(limit_per_market=3)
     team_market_history = {m: team_predictions.market_track_record(m) for m in team_predictions.MARKETS}
 
@@ -883,6 +890,7 @@ def build(oddsapi_mode: str | None = None):
                 "calibration": calibration_result,
                 "signal_effectiveness": grade.signal_effectiveness(),
                 "team_market_history": team_market_history,
+                "team_signal_effectiveness": team_signal_effectiveness,
                 "best5_track": {
                     "passing": {
                         "highest_confidence": grade.best5_track_record("passing_yards", "highest_confidence"),
