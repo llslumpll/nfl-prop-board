@@ -278,25 +278,55 @@ def _book_params(book_mode: str) -> dict:
     return {"bookmakers": BOOKMAKER} if book_mode == "bookmakers" else {"regions": "us"}
 
 
-def _distill_moneylines(raw_games: list) -> list[dict]:
+def _distill_games(raw_games: list) -> list[dict]:
+    """One real entry per game with whatever FanDuel markets it has --
+    h2h, spreads, totals -- each parsed independently so a game missing
+    one market (e.g. totals not posted yet) still keeps the others."""
     games = []
     for g in raw_games:
+        home, away = g.get("home_team"), g.get("away_team")
+        entry = {
+            "id": g.get("id"), "home_team": home, "away_team": away,
+            "commence_time": g.get("commence_time"),
+            "home_price": None, "away_price": None, "h2h_update": None,
+            "home_spread": None, "away_spread": None,
+            "home_spread_price": None, "away_spread_price": None, "spread_update": None,
+            "total_point": None, "over_price": None, "under_price": None, "total_update": None,
+        }
+        has_any = False
         for book in g.get("bookmakers", []):
             if book.get("key") != BOOKMAKER:
                 continue
             for market in book.get("markets", []):
-                if market.get("key") != "h2h":
-                    continue
-                prices = {o.get("name"): o.get("price") for o in market.get("outcomes", [])}
-                games.append({
-                    "id": g.get("id"),
-                    "home_team": g.get("home_team"),
-                    "away_team": g.get("away_team"),
-                    "commence_time": g.get("commence_time"),
-                    "home_price": prices.get(g.get("home_team")),
-                    "away_price": prices.get(g.get("away_team")),
-                    "last_update": market.get("last_update") or book.get("last_update"),
-                })
+                key = market.get("key")
+                if key == "h2h":
+                    prices = {o.get("name"): o.get("price") for o in market.get("outcomes", [])}
+                    entry["home_price"] = prices.get(home)
+                    entry["away_price"] = prices.get(away)
+                    entry["h2h_update"] = market.get("last_update") or book.get("last_update")
+                    has_any = True
+                elif key == "spreads":
+                    pts = {o.get("name"): o.get("point") for o in market.get("outcomes", [])}
+                    prices = {o.get("name"): o.get("price") for o in market.get("outcomes", [])}
+                    entry["home_spread"] = pts.get(home)
+                    entry["away_spread"] = pts.get(away)
+                    entry["home_spread_price"] = prices.get(home)
+                    entry["away_spread_price"] = prices.get(away)
+                    entry["spread_update"] = market.get("last_update") or book.get("last_update")
+                    has_any = True
+                elif key == "totals":
+                    for o in market.get("outcomes", []):
+                        side = str(o.get("name", "")).lower()
+                        if side == "over":
+                            entry["total_point"] = o.get("point")
+                            entry["over_price"] = o.get("price")
+                            has_any = True
+                        elif side == "under":
+                            entry["under_price"] = o.get("price")
+                            entry["total_update"] = market.get("last_update") or book.get("last_update")
+                            has_any = True
+        if has_any:
+            games.append(entry)
     return games
 
 
@@ -315,7 +345,7 @@ def fetch_moneylines() -> dict:
     for mode in ("bookmakers", "regions"):
         try:
             raw, headers = _get(f"/sports/{SPORT}/odds",
-                                {**_book_params(mode), "markets": "h2h", "oddsFormat": "american"})
+                                {**_book_params(mode), "markets": "h2h,spreads,totals", "oddsFormat": "american"})
             result["book_mode"] = mode
             result["diagnostics"]["usage"] = _log_usage(f"moneylines[{mode}]", headers)
             break
@@ -330,7 +360,7 @@ def fetch_moneylines() -> dict:
         result["error"] = last_err
         return result
 
-    result["games"] = _distill_moneylines(raw)
+    result["games"] = _distill_games(raw)
     result["diagnostics"]["games_returned"] = len(raw)
     result["diagnostics"]["games_with_fanduel_line"] = len(result["games"])
     return result
@@ -456,22 +486,68 @@ def lines_to_props(lines: list[dict]) -> dict:
     return props
 
 
-def moneyline_for_game(games: list[dict], home_abbr: str, away_abbr: str) -> dict | None:
-    """FanDuel moneyline for one real matchup, matched on exact team
-    names (never substrings). None if FanDuel has no line for it."""
+def fmt_point(pt) -> str:
+    if pt is None:
+        return "--"
+    return f"+{pt:g}" if pt > 0 else f"{pt:g}"
+
+
+def odds_for_game(games: list[dict], home_abbr: str, away_abbr: str) -> dict | None:
+    """
+    Real FanDuel moneyline, spread and total for one matchup, matched on
+    exact team names (never substrings). Each of the three sub-dicts is
+    None independently when FanDuel hasn't posted that specific market
+    yet, so e.g. a game with a moneyline but no total posted still shows
+    the moneyline. None (the whole thing) only when FanDuel has nothing
+    at all for this game.
+    """
     home_name, away_name = TEAM_NAMES.get(home_abbr), TEAM_NAMES.get(away_abbr)
     if not home_name or not away_name:
         return None
-    for g in games:
-        if g.get("home_team") == home_name and g.get("away_team") == away_name:
-            hp, ap = g.get("home_price"), g.get("away_price")
-            if hp is None or ap is None:
-                return None
-            p_home, p_away = no_vig_pair(hp, ap)
-            return {
-                "home_price": hp, "away_price": ap,
-                "home_prob": round(p_home * 100, 1), "away_prob": round(p_away * 100, 1),
-                "home_price_str": fmt_price(hp), "away_price_str": fmt_price(ap),
-                "last_update": g.get("last_update"),
-            }
-    return None
+    g = next((g for g in games if g.get("home_team") == home_name and g.get("away_team") == away_name), None)
+    if g is None:
+        return None
+
+    moneyline = None
+    if g.get("home_price") is not None and g.get("away_price") is not None:
+        p_home, p_away = no_vig_pair(g["home_price"], g["away_price"])
+        moneyline = {
+            "home_price": g["home_price"], "away_price": g["away_price"],
+            "home_prob": round(p_home * 100, 1), "away_prob": round(p_away * 100, 1),
+            "home_price_str": fmt_price(g["home_price"]), "away_price_str": fmt_price(g["away_price"]),
+            "last_update": g.get("h2h_update"),
+        }
+
+    spread = None
+    if g.get("home_spread") is not None and g.get("away_spread") is not None:
+        p_home, p_away = no_vig_pair(g.get("home_spread_price"), g.get("away_spread_price"))
+        spread = {
+            "home_point": g["home_spread"], "away_point": g["away_spread"],
+            "home_point_str": fmt_point(g["home_spread"]), "away_point_str": fmt_point(g["away_spread"]),
+            "home_price_str": fmt_price(g.get("home_spread_price")), "away_price_str": fmt_price(g.get("away_spread_price")),
+            "home_prob": round(p_home * 100, 1) if p_home is not None else None,
+            "away_prob": round(p_away * 100, 1) if p_away is not None else None,
+            "last_update": g.get("spread_update"),
+        }
+
+    total = None
+    if g.get("total_point") is not None:
+        p_over, p_under = no_vig_pair(g.get("over_price"), g.get("under_price"))
+        total = {
+            "point": g["total_point"],
+            "over_price_str": fmt_price(g.get("over_price")), "under_price_str": fmt_price(g.get("under_price")),
+            "over_prob": round(p_over * 100, 1) if p_over is not None else None,
+            "under_prob": round(p_under * 100, 1) if p_under is not None else None,
+            "last_update": g.get("total_update"),
+        }
+
+    if moneyline is None and spread is None and total is None:
+        return None
+    return {"moneyline": moneyline, "spread": spread, "total": total}
+
+
+def moneyline_for_game(games: list[dict], home_abbr: str, away_abbr: str) -> dict | None:
+    """Back-compat shim: the old moneyline-only shape, built from
+    odds_for_game(). Kept in case anything still calls this directly."""
+    full = odds_for_game(games, home_abbr, away_abbr)
+    return full["moneyline"] if full else None
