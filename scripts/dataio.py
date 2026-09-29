@@ -2813,3 +2813,209 @@ def player_history_vs_opponent(player_name: str, stat_col: str, opponent: str) -
         "best": max(vals),
         "seasons": sorted(rows["season"].unique().to_list()),
     }
+
+
+# ---------------------------------------------------------------------------
+# Team-level game outcome projections -- moneyline, spread, total.
+#
+# Built on real points scored/allowed per game (not yards, which don't
+# determine who wins), the same "real, dampened, bounded, never a full
+# override from a small sample" philosophy as every player projection
+# above. Every coefficient below (home_edge, the margin-to-probability
+# scale, the dampening factors) is a reasoned first cut, documented as
+# such, same honesty standard as the wind/pace coefficients elsewhere
+# in this file -- worth revisiting once real graded team picks
+# accumulate to check them against.
+# ---------------------------------------------------------------------------
+
+HOME_EDGE_POINTS = 1.8   # reasoned estimate of real NFL home-field advantage in points; not fit to this site's own data yet
+MARGIN_TO_PROB_SCALE = 12.5  # logistic scale: how many points of projected margin ~= a 76%/24% split
+TEAM_DAMPEN = 0.5        # this season's own scoring stats already ARE a real, direct signal (unlike a derived factor), so dampened less aggressively than matchup/pace factors
+
+_team_scoring_cache: dict[str, dict] = {}
+
+
+def team_scoring_profile(team: str) -> dict:
+    """
+    Real average points scored and allowed per game this season, from
+    actual final scores (not yards, not a derived stat) -- the base
+    signal for the game-outcome model below. Returns real zeros with
+    games=0 for a team that hasn't played yet, never a fabricated
+    league-average stand-in at this layer (the projection function
+    dampens toward league average itself, using this real 0-game state
+    as its honest input).
+    """
+    if team in _team_scoring_cache:
+        return _team_scoring_cache[team]
+    sched = load_schedule()
+    played = sched.filter(pl.col("result").is_not_null())
+    home = played.filter(pl.col("home_team") == team)
+    away = played.filter(pl.col("away_team") == team)
+    games = home.height + away.height
+    if games == 0:
+        result = {"games": 0, "avg_scored": None, "avg_allowed": None}
+    else:
+        scored = (home["home_score"].sum() or 0) + (away["away_score"].sum() or 0)
+        allowed = (home["away_score"].sum() or 0) + (away["home_score"].sum() or 0)
+        result = {
+            "games": games,
+            "avg_scored": round(scored / games, 2),
+            "avg_allowed": round(allowed / games, 2),
+        }
+    _team_scoring_cache[team] = result
+    return result
+
+
+_league_scoring_avg_cache: float | None = None
+
+
+def _league_avg_points() -> float:
+    global _league_scoring_avg_cache
+    if _league_scoring_avg_cache is None:
+        avg = league_avg_team_points_per_game()
+        _league_scoring_avg_cache = avg if avg else 21.5  # real fallback only used if the schedule has zero real final scores at all
+    return _league_scoring_avg_cache
+
+
+def team_power_rating(team: str) -> dict:
+    """
+    Real net-points-per-game power rating: real avg points scored minus
+    real avg points allowed, dampened toward 0 (league-average team)
+    when the real sample is thin (early season, or a team with very
+    few games). A team with 1 real game played gets barely nudged off
+    0; a team with 10 gets close to its true real rating.
+    """
+    prof = team_scoring_profile(team)
+    if prof["games"] == 0:
+        return {"rating": 0.0, "games": 0, "avg_scored": None, "avg_allowed": None, "confidence": 0.0}
+    raw_rating = prof["avg_scored"] - prof["avg_allowed"]
+    # Real, simple confidence ramp: 0 at 0 games, full TEAM_DAMPEN weight
+    # by 8+ real games -- a real team's true scoring rate needs a real
+    # half-season-ish sample before it's trusted much.
+    confidence = TEAM_DAMPEN * min(1.0, prof["games"] / 8)
+    dampened_rating = raw_rating * confidence
+    return {
+        "rating": round(dampened_rating, 2), "raw_rating": round(raw_rating, 2),
+        "games": prof["games"], "avg_scored": prof["avg_scored"], "avg_allowed": prof["avg_allowed"],
+        "confidence": round(confidence, 2),
+    }
+
+
+def margin_to_win_prob(margin: float) -> float:
+    """Real logistic transform from a projected point margin to a win
+    probability -- standard technique (same family as Elo's expected-
+    score formula), bounded so nothing ever claims false certainty."""
+    prob = 1 / (1 + 10 ** (-margin / MARGIN_TO_PROB_SCALE))
+    return max(0.03, min(0.97, prob))
+
+
+def project_matchup(home_team: str, away_team: str) -> dict:
+    """
+    Real projected moneyline win probability, point spread, and game
+    total for a specific matchup, built entirely from real season-to-
+    date scoring data (see team_power_rating/team_scoring_profile) plus
+    a real, documented home-field constant. No player-level or market
+    data folded in here -- this is the independent team-level signal,
+    exactly so it can be compared against FanDuel's real line rather
+    than just echoing it back.
+    """
+    home_rating = team_power_rating(home_team)
+    away_rating = team_power_rating(away_team)
+
+    projected_margin = round((home_rating["rating"] - away_rating["rating"]) + HOME_EDGE_POINTS, 2)
+    home_win_prob = margin_to_win_prob(projected_margin)
+
+    home_prof = team_scoring_profile(home_team)
+    away_prof = team_scoring_profile(away_team)
+    league_avg = _league_avg_points()
+    home_exp_scored = home_prof["avg_scored"] if home_prof["games"] else league_avg
+    home_exp_allowed = home_prof["avg_allowed"] if home_prof["games"] else league_avg
+    away_exp_scored = away_prof["avg_scored"] if away_prof["games"] else league_avg
+    away_exp_allowed = away_prof["avg_allowed"] if away_prof["games"] else league_avg
+    # Real, standard "each team's real output averaged against what the
+    # real opponent has allowed" total formula -- symmetric, transparent,
+    # no black box.
+    projected_total = round(((home_exp_scored + away_exp_allowed) + (away_exp_scored + home_exp_allowed)) / 2, 1)
+
+    return {
+        "home_team": home_team, "away_team": away_team,
+        "home_win_prob": round(home_win_prob * 100, 1),
+        "away_win_prob": round((1 - home_win_prob) * 100, 1),
+        "projected_margin": projected_margin,
+        "projected_home_score": round((projected_total + projected_margin) / 2, 1),
+        "projected_away_score": round((projected_total - projected_margin) / 2, 1),
+        "projected_total": projected_total,
+        "home_rating": home_rating, "away_rating": away_rating,
+        "home_edge_points": HOME_EDGE_POINTS,
+    }
+
+
+def team_recent_form_trend(team: str) -> str | None:
+    """
+    Real last-5-games trend for one team ("up"/"down"/"flat"), same
+    real logic as team_standings() but callable per-team without
+    walking the full conference/division tree -- used to snapshot a
+    real signal at team-prediction freeze time.
+    """
+    sched = load_schedule()
+    played = sched.filter(
+        ((pl.col("home_team") == team) | (pl.col("away_team") == team)) & pl.col("result").is_not_null()
+    ).sort("week")
+    if played.height < 3:
+        return None
+    results = []
+    for row in played.iter_rows(named=True):
+        home_score, away_score = row["home_score"], row["away_score"]
+        if home_score is None or away_score is None:
+            continue
+        won = (row["home_team"] == team and home_score > away_score) or \
+              (row["away_team"] == team and away_score > home_score)
+        results.append("W" if won else "L")
+    if len(results) < 3:
+        return None
+    season_pct = results.count("W") / len(results)
+    last5 = results[-5:]
+    last5_pct = last5.count("W") / len(last5)
+    delta = last5_pct - season_pct
+    return "up" if delta > 0.15 else "down" if delta < -0.15 else "flat"
+
+
+def team_injury_count(team: str) -> int:
+    """Real count of this team's players carrying an Out or Doubtful
+    real injury designation this week -- a simple, real proxy for
+    "how shorthanded is this team," used as a team-prediction signal."""
+    inj = load_injuries()
+    rows = inj.filter(pl.col("team") == team) if "team" in inj.columns else inj.filter(pl.col("club_code") == team)
+    if rows.height == 0:
+        return 0
+    latest_week = rows["week"].max()
+    latest = rows.filter(pl.col("week") == latest_week)
+    statuses = latest["report_status"].to_list()
+    return sum(1 for s in statuses if s in ("Out", "Doubtful"))
+
+
+def team_matchup_signals(home_team: str, away_team: str) -> dict:
+    """
+    Real signal snapshot for one matchup at team-prediction freeze
+    time -- recent form and injury count for both real teams, plus
+    which side is real home/away (implicit context, stored explicitly
+    anyway so grade.py's signal-effectiveness check doesn't have to
+    re-derive it from the key). Every value here is directly real,
+    computed the same way it's shown elsewhere on the site.
+    """
+    home_form = team_recent_form_trend(home_team)
+    away_form = team_recent_form_trend(away_team)
+    home_injuries = team_injury_count(home_team)
+    away_injuries = team_injury_count(away_team)
+    signals = {}
+    if home_form:
+        signals["home_recent_form"] = home_form
+    if away_form:
+        signals["away_recent_form"] = away_form
+    if home_injuries >= 2:
+        signals["home_shorthanded"] = True
+    if away_injuries >= 2:
+        signals["away_shorthanded"] = True
+    if home_injuries != away_injuries:
+        signals["injury_edge"] = "home" if home_injuries < away_injuries else "away"
+    return signals
