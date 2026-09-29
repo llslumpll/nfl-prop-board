@@ -15,6 +15,44 @@
   game). Frozen the moment this page was built.
 </div>
 
+<h2>Best 5 Team Picks</h2>
+<p class="lede small">
+  This week's biggest real disagreements between our real net-points-per-game model and FanDuel's real
+  posted line, across moneyline, spread and total, all real games. Edge is our real projected value minus
+  FanDuel's real line (percentage points for moneyline, real points for spread/total) &mdash; a bigger
+  number means a bigger real gap between what our model thinks and what the market is pricing, not a
+  promise either side is right. Real track record so far: moneyline
+  {{ team_track.team_moneyline.our_hit_rate }}{{ '%' if team_track.team_moneyline.our_hit_rate is not none }}
+  ({{ team_track.team_moneyline.n }} graded), spread
+  {{ team_track.team_spread.our_hit_rate }}{{ '%' if team_track.team_spread.our_hit_rate is not none }}
+  ({{ team_track.team_spread.n }} graded), total
+  {{ team_track.team_total.our_hit_rate }}{{ '%' if team_track.team_total.our_hit_rate is not none }}
+  ({{ team_track.team_total.n }} graded) &mdash; full week-by-week record on <a href="history.html">History</a>.
+</p>
+{% if team_best_picks %}
+<div class="table-wrap">
+<table class="stat-table">
+  <thead>
+    <tr><th>Matchup</th><th>Market</th><th>Our pick</th><th class="num">Our value</th><th class="num">FanDuel</th><th class="num">Edge</th></tr>
+  </thead>
+  <tbody>
+    {% for p in team_best_picks %}
+    <tr>
+      <td>{{ p.away_team }} @ {{ p.home_team }} <span class="player-sub">W{{ p.week }}</span></td>
+      <td class="player-sub">{{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[p.market] }}</td>
+      <td><span class="tier tier-mid">{{ p.our_call }}</span></td>
+      <td class="num">{{ p.our_value }}{{ '%' if p.market == 'team_moneyline' }}</td>
+      <td class="num">{{ p.market_line }}{{ '%' if p.market == 'team_moneyline' }}</td>
+      <td class="num stat-good">{{ p.edge }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+{% else %}
+<div class="empty-state"><h3>No real team picks with a FanDuel line to compare yet</h3></div>
+{% endif %}
+
 <h2>Standings &amp; Recent Trend</h2>
 <p class="lede small">Record, last-5 games, and trend vs. season pace, by division. Scroll within each list to see every team.</p>
 <div class="standings-grid">
@@ -229,6 +267,40 @@
       {% endfor %}
     </tbody>
   </table>
+
+  <h4>Our pick for this game</h4>
+  {% if m.our_picks %}
+    <p class="player-sub">Real model output, frozen at prediction time and never recalculated &mdash; compared against FanDuel's real line at that same moment (see "Real line movement" note below if it's since moved).</p>
+    <div class="table-wrap">
+    <table class="stat-table">
+      <thead><tr><th>Market</th><th>Our pick</th><th class="num">Our value</th><th class="num">FanDuel (at freeze)</th><th class="num">Edge</th></tr></thead>
+      <tbody>
+        {% for market, p in m.our_picks.items() %}
+        <tr>
+          <td class="player-sub">{{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[market] }}</td>
+          <td><span class="tier tier-mid">{{ p.our_call }}</span></td>
+          <td class="num">{{ p.our_value }}{{ '%' if market == 'team_moneyline' }}</td>
+          <td class="num">{{ p.market_line if p.market_line is not none else '--' }}{{ '%' if market == 'team_moneyline' and p.market_line is not none }}</td>
+          <td class="num">{{ p.edge if p.edge is not none else '--' }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    {% if m.our_picks.values()|selectattr('graded')|list %}
+      {% for market, p in m.our_picks.items() %}
+        {% if p.graded and p.our_correct is not none %}
+          <div class="notice compact">
+            {{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[market] }} graded:
+            <strong class="{{ 'stat-good' if p.our_correct else 'stat-bad' }}">{{ 'we got it right' if p.our_correct else 'we got it wrong' }}</strong>
+            &mdash; real final score {{ p.actual_result.home_score }}-{{ p.actual_result.away_score }}.
+          </div>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <p class="player-sub">No real prediction frozen for this game yet.</p>
+  {% endif %}
 
   <h4>FanDuel market for this game</h4>
   {% if not oddsapi_status.has_moneyline_cache %}
