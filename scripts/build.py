@@ -247,6 +247,8 @@ def build(oddsapi_mode: str | None = None):
           f"{team_grade_result['still_pending']} still pending a final score.")
     team_track = {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}
     print(f"Team-market track record so far: {team_track}")
+    team_best_picks = team_predictions.best_picks(limit=5)
+
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
         set(dataio.load_stats()["player_display_name"].to_list())
@@ -311,6 +313,10 @@ def build(oddsapi_mode: str | None = None):
         # Real FanDuel moneyline for this exact game, or None -- shown
         # honestly as "no line" rather than ever being estimated.
         g["fanduel_odds"] = oddsapi_client.odds_for_game(fd_games, g["home_team"], g["away_team"])
+        # Real frozen predictions for this specific game (per-game "Our
+        # Pick" display) -- read from what team-market freezing already
+        # wrote above, never recomputed here.
+        g["our_picks"] = team_predictions.predictions_for_game(g["home_team"], g["away_team"], g["week"])
 
     # --- Vegas-implied game environment: real Kalshi Team Total markets,
     # where quoted, feeding a final adjustment layer onto every
@@ -708,6 +714,8 @@ def build(oddsapi_mode: str | None = None):
                 "coverage_profiles": dataio.all_team_coverage_profiles(),
                 "kalshi_error": kalshi_data["error"],
                 "oddsapi_status": oddsapi_status,
+                "team_best_picks": team_best_picks,
+                "team_track": team_track,
             },
         ),
         "passing.html": (
