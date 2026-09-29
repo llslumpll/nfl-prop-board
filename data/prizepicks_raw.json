@@ -17,26 +17,25 @@
       "receiving_yards": 12.5
     },
     "DK Metcalf": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 40.5,
       "receptions": 4.5
     },
+    "KC Concepcion Jr.": {
+      "receiving_yards": 35.5,
+      "rushing_yards": 0.5
+    },
     "Denzel Boston": {
       "receiving_yards": 35.5
-    },
-    "KC Concepcion Jr.": {
-      "receiving_yards": 33.5,
-      "rushing_yards": 0.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 32.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 29.5,
-      "receptions": 3.5
+      "receiving_yards": 28.5
     },
     "Roman Wilson": {
       "receiving_yards": 22.5
@@ -48,7 +47,7 @@
       "receiving_yards": 13.5
     },
     "Raheim Sanders": {
-      "receiving_yards": 12.5,
+      "receiving_yards": 11.5,
       "rushing_yards": 6.5
     },
     "Germie Bernard": {
@@ -63,8 +62,7 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 92.5,
-      "receiving_yards": 18.5,
-      "receptions": 2.5
+      "receiving_yards": 18.5
     },
     "Josh Downs": {
       "receiving_yards": 63.5
@@ -78,11 +76,11 @@
       "receiving_yards": 3.5
     },
     "Tyler Warren": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 46.5,
       "receptions": 5.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 36.5
+      "receiving_yards": 41.5
     },
     "Keenan Allen": {
       "receiving_yards": 33.5,
@@ -197,7 +195,7 @@
       "receiving_yards": 18.5
     },
     "Malik Nabers": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Michael Wilson": {
@@ -267,7 +265,7 @@
     },
     "Jalon Daniels": {
       "passing_yards": 177.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 30.5
     },
     "Christian Watson": {
       "receiving_yards": 65.5,
@@ -275,7 +273,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 58.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Matthew Golden": {
       "receiving_yards": 56.5,
@@ -285,8 +283,7 @@
       "receiving_yards": 52.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 36.5,
-      "receptions": 3.5
+      "receiving_yards": 36.5
     },
     "Cade Otton": {
       "receiving_yards": 30.5
@@ -478,9 +475,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 2569,
-    "matched_props": 205,
-    "excluded_goblin_demon_lines": 2116,
+    "total_projections_returned": 2682,
+    "matched_props": 202,
+    "excluded_goblin_demon_lines": 2210,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",

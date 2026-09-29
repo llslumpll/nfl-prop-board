@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-09-29 14:08 UTC",
+  "generated_at": "2026-09-29 15:21 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -15,9 +15,9 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 4.91,
-        "sample_size": 57,
-        "avg_raw_bias": 16.37,
+        "bias": 4.48,
+        "sample_size": 58,
+        "avg_raw_bias": 14.95,
         "status": "active"
       }
     },
@@ -33,9 +33,9 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": -0.11,
-        "sample_size": 55,
-        "avg_raw_bias": -0.36,
+        "bias": -0.04,
+        "sample_size": 57,
+        "avg_raw_bias": -0.15,
         "status": "active"
       },
       "No data (rookie/unproven)": {
@@ -56,44 +56,44 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 1.98,
-        "sample_size": 58,
-        "avg_raw_bias": 6.59,
+        "bias": 1.86,
+        "sample_size": 60,
+        "avg_raw_bias": 6.2,
         "status": "active"
       }
     },
     "receptions": {
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 2,
+        "sample_size": 3,
         "status": "insufficient data"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 6,
+    "sample_size": 8,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
       "shrink_factor": 1.0,
-      "sample_size": 27,
+      "sample_size": 28,
       "status": "insufficient data"
     },
     "rushing_yards": {
       "shrink_factor": 1.0,
-      "sample_size": 26,
+      "sample_size": 28,
       "status": "insufficient data"
     },
     "receiving_yards": {
       "shrink_factor": 1.0,
-      "sample_size": 26,
+      "sample_size": 28,
       "status": "insufficient data"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 0,
+      "sample_size": 1,
       "status": "insufficient data"
     }
   }
