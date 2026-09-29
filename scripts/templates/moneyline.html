@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Moneyline — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Moneyline</h1>
+<p class="lede small">
+  Every real upcoming game with a real moneyline from FanDuel and/or Kalshi, side by side &mdash; the two
+  are genuinely independent real sources (a sportsbook vs. a regulated prediction market), so they can and
+  sometimes will disagree. A blank side means that source hasn't posted a real line for this game yet, never
+  a fabricated stand-in. "Our pick" (when a real prediction has been frozen for this game) is our own real
+  net-points-per-game model's call, tracked and graded on <a href="history.html">History</a> &mdash;
+  included for context, not as a third market.
+</p>
+
+{% if kalshi_error %}
+<div class="notice compact"><strong>Kalshi fetch failed on this build.</strong> Error: {{ kalshi_error }}</div>
+{% endif %}
+{% if not oddsapi_status.has_moneyline_cache %}
+<div class="notice compact">No FanDuel data pulled yet &mdash; the first scheduled pull will fill that column in.</div>
+{% elif oddsapi_status.moneyline_pulled_label %}
+<div class="notice compact">FanDuel lines last pulled {{ oddsapi_status.moneyline_pulled_label }} &mdash; refreshed on a schedule, not live.</div>
+{% endif %}
+
+{% if games %}
+<div class="table-wrap">
+<div class="table-scroll">
+<table class="stat-table">
+  <thead>
+    <tr>
+      <th>Game</th>
+      <th>Kickoff</th>
+      <th class="num">FanDuel (away)</th>
+      <th class="num">FanDuel (home)</th>
+      <th class="num">Kalshi (away)</th>
+      <th class="num">Kalshi (home)</th>
+      <th>Our pick</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for g in games %}
+    <tr>
+      <td>
+        <div class="player-name">
+          <span class="team-badge" style="background:{{ g.away_badge.color }}">{{ g.away_badge.abbr }}</span>
+          {{ g.away_team }} @
+          <span class="team-badge" style="background:{{ g.home_badge.color }}">{{ g.home_badge.abbr }}</span>
+          {{ g.home_team }}
+        </div>
+        <div class="player-sub">W{{ g.week }}</div>
+      </td>
+      <td class="player-sub">{{ g.start_str or 'TBD' }}</td>
+      {% if g.fanduel %}
+      <td class="num">{{ g.fanduel.away_price_str }} <span class="player-sub">({{ g.fanduel.away_prob }}%)</span></td>
+      <td class="num">{{ g.fanduel.home_price_str }} <span class="player-sub">({{ g.fanduel.home_prob }}%)</span></td>
+      {% else %}
+      <td class="player-sub">no line</td><td class="player-sub">no line</td>
+      {% endif %}
+      {% if g.kalshi %}
+      <td class="num">{{ g.kalshi.away_price_pct if g.kalshi.away_price_pct is not none else '--' }}{{ '%' if g.kalshi.away_price_pct is not none }}</td>
+      <td class="num">{{ g.kalshi.home_price_pct if g.kalshi.home_price_pct is not none else '--' }}{{ '%' if g.kalshi.home_price_pct is not none }}</td>
+      {% else %}
+      <td class="player-sub">no line</td><td class="player-sub">no line</td>
+      {% endif %}
+      <td>
+        {% if g.our_pick %}
+          <span class="tier tier-mid">{{ g.our_pick.our_call }}</span> <span class="player-sub">{{ g.our_pick.our_value }}%</span>
+        {% else %}
+          <span class="player-sub">not frozen</span>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="scroll-hint">{{ games|length }} real game{{ 's' if games|length != 1 }} with a real line from at least one source</div>
+</div>
+{% else %}
+<div class="empty-state"><h3>No real moneylines from either source yet</h3></div>
+{% endif %}
+
+{% endblock %}
