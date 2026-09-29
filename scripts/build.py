@@ -43,6 +43,7 @@ DATA_DIR = ROOT / "data"
 
 NAV_PAGES = [
     ("home", "Home", "index.html"),
+    ("moneyline", "Moneyline", "moneyline.html"),
     ("matchups", "Matchups", "matchups.html"),
     ("passing", "Passing", "passing.html"),
     ("receiving", "Receiving", "receiving.html"),
@@ -122,6 +123,46 @@ def build(oddsapi_mode: str | None = None):
     print(f"Kalshi per-series results: {kalshi_data['diagnostics']['per_series']}")
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
+
+    # Known Kalshi <-> nflreadpy team-code mismatches. Defined here
+    # (right after kalshi_data exists) rather than near its first use,
+    # since it's needed by two separate places later in this function:
+    # the existing per-game Matchups loop, and the new Moneyline page.
+    KALSHI_TEAM_ALIAS = {"LA": "LAR"}
+
+    def kalshi_moneyline_for_game(home_team: str, away_team: str) -> dict | None:
+        """
+        Real Kalshi KXNFLGAME (moneyline) prices for one specific game,
+        matched by real ticker substring + suffix (e.g.
+        'KXNFLGAME-26SEP14DENKC-KC' -> this record is for KC winning).
+        Independent of FanDuel entirely -- returns None honestly if
+        Kalshi hasn't listed or quoted this market for this game yet.
+        """
+        away_code = KALSHI_TEAM_ALIAS.get(away_team, away_team)
+        home_code = KALSHI_TEAM_ALIAS.get(home_team, home_team)
+        by_team = {}
+        for m in kalshi_data["game_props"]:
+            if m.get("series_ticker") != "KXNFLGAME":
+                continue
+            ticker = m.get("ticker") or ""
+            if away_code not in ticker or home_code not in ticker:
+                continue
+            team_suffix = ticker.rsplit("-", 1)[-1]
+            if team_suffix == home_code:
+                by_team["home"] = m
+            elif team_suffix == away_code:
+                by_team["away"] = m
+        if not by_team:
+            return None
+        home_m, away_m = by_team.get("home"), by_team.get("away")
+        return {
+            "home_price_pct": home_m["implied_pct"] if home_m else None,
+            "away_price_pct": away_m["implied_pct"] if away_m else None,
+            "home_decimal_odds": home_m.get("decimal_odds") if home_m else None,
+            "away_decimal_odds": away_m.get("decimal_odds") if away_m else None,
+            "home_volume": home_m.get("volume") if home_m else None,
+            "away_volume": away_m.get("volume") if away_m else None,
+        }
 
     # PrizePicks: unofficial, no key needed, but a documented risk of
     # datacenter-IP blocking (see prizepicks_client.py docstring). Fails
@@ -250,6 +291,28 @@ def build(oddsapi_mode: str | None = None):
     team_best_picks = team_predictions.best_picks_by_market(limit_per_market=3)
     team_market_history = {m: team_predictions.market_track_record(m) for m in team_predictions.MARKETS}
 
+    # --- Dedicated Moneyline page: every real unplayed schedule game
+    # with a real moneyline from FanDuel and/or Kalshi, side by side.
+    # Independent sources -- a game missing one still shows the other,
+    # never a fabricated stand-in for whichever side is silent.
+    moneyline_games = []
+    for row in dataio.load_schedule().filter(pl.col("result").is_null()).sort(["gameday", "gametime"]).iter_rows(named=True):
+        home, away = row["home_team"], row["away_team"]
+        fd = oddsapi_client.odds_for_game(fd_games, home, away)
+        fd_ml = fd["moneyline"] if fd else None
+        kalshi_ml = kalshi_moneyline_for_game(home, away)
+        our_pick = team_predictions.predictions_for_game(home, away, row["week"]).get("team_moneyline")
+        if not fd_ml and not kalshi_ml:
+            continue
+        moneyline_games.append({
+            "home_team": home, "away_team": away, "week": row["week"],
+            "home_badge": dataio.team_badge(home), "away_badge": dataio.team_badge(away),
+            "gameday": row.get("gameday"), "gametime": row.get("gametime"),
+            "start_str": dataio.format_game_time(row.get("gameday"), row.get("gametime")),
+            "fanduel": fd_ml, "kalshi": kalshi_ml, "our_pick": our_pick,
+        })
+    print(f"Moneyline page: {len(moneyline_games)} real game(s) with a real FanDuel and/or Kalshi moneyline.")
+
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
         set(dataio.load_stats()["player_display_name"].to_list())
@@ -309,6 +372,11 @@ def build(oddsapi_mode: str | None = None):
             out.append(record)
         return out
 
+    # Known Kalshi <-> nflreadpy team-code mismatches -- same alias
+    # dataio.matchups_for_next_date() uses internally, needed again here
+    # since this builds its own game dicts for the dedicated Moneyline
+    # page (which covers every real upcoming game, not just the single
+    # next date matchups_data is scoped to).
     for g in matchups_data["games"]:
         g["kalshi_props"] = kalshi_props_for_game(g)
         # Real FanDuel moneyline for this exact game, or None -- shown
@@ -703,6 +771,15 @@ def build(oddsapi_mode: str | None = None):
                 "best5": best5_data,
                 "recent_results": grade.recent_graded_results(),
                 "maturity": calibrate.maturity_summary(),
+            },
+        ),
+        "moneyline.html": (
+            "moneyline",
+            "moneyline.html",
+            {
+                "games": moneyline_games,
+                "oddsapi_status": oddsapi_status,
+                "kalshi_error": kalshi_data["error"],
             },
         ),
         "matchups.html": (
