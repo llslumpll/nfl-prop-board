@@ -177,3 +177,65 @@ def track_record(market: str | None = None) -> dict:
         "market_n": len(market_graded),
         "market_hit_rate": round(100 * market_hits / len(market_graded), 1) if market_graded else None,
     }
+
+
+def _edge(p: dict) -> float | None:
+    """
+    Real disagreement between our frozen call and FanDuel's real line,
+    in a comparable unit per market -- percentage points for moneyline,
+    points for spread/total. None (not zero) when there's no real
+    market line to compare against, so an unranked pick is never
+    silently treated as a zero-edge one.
+    """
+    if p.get("market_line") is None:
+        return None
+    if p["market"] == "team_moneyline":
+        return round(abs(p["our_value"] - p["market_line"]), 1)
+    if p["market"] == "team_spread":
+        return round(abs(p["our_value"] - p["market_line"]), 1)
+    if p["market"] == "team_total":
+        return round(abs(p["our_value"] - p["market_line"]), 1)
+    return None
+
+
+def best_picks(market: str | None = None, limit: int = 5) -> list[dict]:
+    """
+    Real, current-week ranking of the frozen team predictions with the
+    biggest real disagreement from FanDuel's real line -- the team-
+    market analog of player-prop Best 5. Only ever pulls from what's
+    already frozen (the same "a frozen prediction is the official
+    record" principle as the rest of this site), never recomputes a
+    fresh projection at display time. Ungraded picks only -- once a
+    game is graded it belongs in the track record, not a "picks to
+    watch" list.
+    """
+    preds = load_team_predictions()
+    candidates = []
+    for key, p in preds.items():
+        if p.get("graded"):
+            continue
+        if market and p["market"] != market:
+            continue
+        edge = _edge(p)
+        if edge is None:
+            continue
+        candidates.append({**p, "edge": edge})
+    candidates.sort(key=lambda p: p["edge"], reverse=True)
+    return candidates[:limit]
+
+
+def predictions_for_game(home_team: str, away_team: str, week: int) -> dict:
+    """
+    Real frozen predictions (moneyline/spread/total) for one specific
+    game, each with its real edge vs FanDuel attached -- what the
+    Matchups page's per-game "Our Pick" section reads from. Any market
+    not yet frozen for this game is simply absent from the dict (never
+    a fabricated placeholder), so the template can check for each key.
+    """
+    preds = load_team_predictions()
+    out = {}
+    for market in MARKETS:
+        p = preds.get(_key(away_team, home_team, market, week))
+        if p:
+            out[market] = {**p, "edge": _edge(p)}
+    return out
