@@ -17,7 +17,7 @@
       "receiving_yards": 12.5
     },
     "DK Metcalf": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Harold Fannin Jr.": {
@@ -27,12 +27,12 @@
     "Denzel Boston": {
       "receiving_yards": 35.5
     },
+    "Michael Pittman Jr.": {
+      "receiving_yards": 34.5
+    },
     "KC Concepcion Jr.": {
       "receiving_yards": 34.5,
       "rushing_yards": 1.5
-    },
-    "Michael Pittman Jr.": {
-      "receiving_yards": 32.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 28.5
@@ -44,7 +44,7 @@
       "receiving_yards": 15.5
     },
     "Jerry Jeudy": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Raheim Sanders": {
       "receiving_yards": 11.5,
@@ -128,14 +128,14 @@
       "passing_yards": 254.5
     },
     "Jalen Hurts": {
-      "passing_yards": 203.5,
+      "passing_yards": 202.5,
       "rushing_yards": 24.5
     },
     "Saquon Barkley": {
       "rushing_yards": 78.5
     },
     "Davante Adams": {
-      "receiving_yards": 74.5
+      "receiving_yards": 73.5
     },
     "DeVonta Smith": {
       "receiving_yards": 68.5
@@ -185,14 +185,14 @@
       "receiving_yards": 32.5
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Mike Gesicki": {
       "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 19.5
@@ -202,7 +202,7 @@
       "receiving_yards": 10.5
     },
     "Drew Sample": {
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Jameis Winston": {
       "passing_yards": 234.5,
@@ -348,7 +348,7 @@
       "receptions": 3.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 33.5,
       "receptions": 3.5
     },
     "DeMario Douglas": {
@@ -455,7 +455,8 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 96.5,
-      "receiving_yards": 35.5
+      "receiving_yards": 35.5,
+      "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 76.5,
@@ -465,7 +466,7 @@
       "receiving_yards": 68.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 67.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 18.5
     },
     "Jameson Williams": {
@@ -505,9 +506,9 @@
   "diagnostics": {
     "total_leagues": 138,
     "nfl_league_id": "9",
-    "total_projections_returned": 2905,
-    "matched_props": 214,
-    "excluded_goblin_demon_lines": 2387,
+    "total_projections_returned": 2962,
+    "matched_props": 215,
+    "excluded_goblin_demon_lines": 2441,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
