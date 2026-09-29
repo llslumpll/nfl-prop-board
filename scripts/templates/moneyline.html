@@ -63,6 +63,9 @@
       <td>
         {% if g.our_pick %}
           <span class="tier tier-mid">{{ g.our_pick.our_call }}</span> <span class="player-sub">{{ g.our_pick.our_value }}%</span>
+          {% if g.our_pick.reason %}
+          <div class="why-reason" style="margin:6px 0 0; max-width:340px;">{{ g.our_pick.reason }}</div>
+          {% endif %}
         {% else %}
           <span class="player-sub">not frozen</span>
         {% endif %}
