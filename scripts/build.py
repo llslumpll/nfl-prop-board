@@ -24,6 +24,7 @@ import dataio  # noqa: E402
 import kalshi_client  # noqa: E402
 import prizepicks_client  # noqa: E402
 import oddsapi_client  # noqa: E402
+import team_predictions  # noqa: E402
 import best5  # noqa: E402
 import predictions  # noqa: E402
 import calibrate  # noqa: E402
@@ -189,6 +190,63 @@ def build(oddsapi_mode: str | None = None):
     # Drop anything whose game has already kicked off, so a cached line from
     # last week can never be displayed against this week's game.
     fd_games = oddsapi_client.upcoming_only((ml_cache or {}).get("games", []))
+
+    # --- Real team-market predictions (moneyline, spread, total). Scope
+    # is every real unplayed schedule game that FanDuel actually has data
+    # for right now -- NOT "next unplayed week" by itself, which can be
+    # stale (a game whose real kickoff has passed but whose real
+    # schedule `result` hasn't posted yet still counts as "unplayed" by
+    # that field alone; gating on real FanDuel data naturally excludes
+    # it, the same honest behavior as the player-prop side of the site).
+    def _freeze_team_predictions():
+        sched_unplayed = dataio.load_schedule().filter(pl.col("result").is_null())
+        frozen = 0
+        for row in sched_unplayed.iter_rows(named=True):
+            home, away, week = row["home_team"], row["away_team"], row["week"]
+            odds = oddsapi_client.odds_for_game(fd_games, home, away)
+            if not odds:
+                continue
+            proj = dataio.project_matchup(home, away)
+            signals = dataio.team_matchup_signals(home, away)
+
+            if odds.get("moneyline"):
+                fd_home_prob = oddsapi_client.no_vig_pair(
+                    odds["moneyline"]["home_price"], odds["moneyline"]["away_price"])[0]
+                our_call = "HOME" if proj["home_win_prob"] >= 50 else "AWAY"
+                if team_predictions.freeze_team_prediction(
+                    away, home, week, "team_moneyline", our_call, proj["home_win_prob"],
+                    round(fd_home_prob * 100, 1) if fd_home_prob is not None else None,
+                    "fanduel", signals,
+                ):
+                    frozen += 1
+
+            if odds.get("spread"):
+                our_call = "HOME" if proj["projected_margin"] >= 0 else "AWAY"
+                if team_predictions.freeze_team_prediction(
+                    away, home, week, "team_spread", our_call, proj["projected_margin"],
+                    odds["spread"]["home_point"], "fanduel", signals,
+                ):
+                    frozen += 1
+
+            if odds.get("total"):
+                our_call = "OVER" if proj["projected_total"] >= odds["total"]["point"] else "UNDER"
+                if team_predictions.freeze_team_prediction(
+                    away, home, week, "team_total", our_call, proj["projected_total"],
+                    odds["total"]["point"], "fanduel", signals,
+                ):
+                    frozen += 1
+        return frozen
+
+    import polars as pl  # noqa: E402 (local import: build.py doesn't otherwise touch polars directly)
+    n_team_frozen = _freeze_team_predictions()
+    print(f"Froze {n_team_frozen} new team-market prediction(s) this build "
+          f"({len(team_predictions.load_team_predictions())} total on file).")
+
+    team_grade_result = team_predictions.grade_all(dataio.load_schedule())
+    print(f"Team-market grading: {team_grade_result['newly_graded']} newly graded, "
+          f"{team_grade_result['still_pending']} still pending a final score.")
+    team_track = {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}
+    print(f"Team-market track record so far: {team_track}")
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
         set(dataio.load_stats()["player_display_name"].to_list())
