@@ -9559,7 +9559,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jahmyr Gibbs|receptions|4": {
     "player": "Jahmyr Gibbs",
@@ -10250,7 +10254,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Bo Nix|any_td|4": {
     "player": "Bo Nix",
