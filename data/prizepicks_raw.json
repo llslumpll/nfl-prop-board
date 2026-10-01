@@ -1,7 +1,7 @@
 {
   "props": {
     "Aaron Rodgers": {
-      "passing_yards": 215.5,
+      "passing_yards": 214.5,
       "rushing_yards": 1.5
     },
     "Deshaun Watson": {
@@ -143,7 +143,7 @@
       "receiving_yards": 10.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 43.5
+      "receiving_yards": 42.5
     },
     "Woody Marks": {
       "rushing_yards": 34.5,
@@ -253,7 +253,7 @@
       "receiving_yards": 14.5
     },
     "Blake Corum": {
-      "rushing_yards": 40.5
+      "rushing_yards": 41.5
     },
     "Dontayvion Wicks": {
       "receiving_yards": 40.5,
@@ -267,7 +267,8 @@
       "rushing_yards": 10.5
     },
     "Zach Ertz": {
-      "receiving_yards": 10.5
+      "receiving_yards": 10.5,
+      "receptions": 1.5
     },
     "Johnny Mundt": {
       "receiving_yards": 7.5
@@ -330,7 +331,7 @@
       "receiving_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 231.5,
+      "passing_yards": 229.5,
       "rushing_yards": 7.5
     },
     "Jameis Winston": {
@@ -351,7 +352,7 @@
       "receptions": 2.5
     },
     "Michael Wilson": {
-      "receiving_yards": 57.5
+      "receiving_yards": 58.5
     },
     "Malik Nabers": {
       "receiving_yards": 54.5
@@ -370,14 +371,14 @@
       "rushing_yards": 23.5,
       "receiving_yards": 3.5
     },
-    "Darnell Mooney": {
-      "receiving_yards": 20.5
-    },
     "Kendrick Bourne": {
       "receiving_yards": 19.5
     },
+    "Darnell Mooney": {
+      "receiving_yards": 19.5
+    },
     "Tyler Allgeier": {
-      "rushing_yards": 19.5,
+      "rushing_yards": 18.5,
       "receiving_yards": 7.5
     },
     "Devin Singletary": {
@@ -599,7 +600,7 @@
     },
     "Omarion Hampton": {
       "rushing_yards": 45.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 5.5
     },
     "Jadarian Price": {
       "rushing_yards": 41.5,
@@ -632,7 +633,9 @@
       "receiving_yards": 21.5
     },
     "Keaton Mitchell": {
-      "rushing_yards": 16.5
+      "rushing_yards": 16.5,
+      "receiving_yards": 9.5,
+      "receptions": 1.5
     },
     "Tory Horton": {
       "receiving_yards": 11.5
@@ -855,9 +858,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 7496,
-    "matched_props": 386,
-    "excluded_goblin_demon_lines": 6162,
+    "total_projections_returned": 7514,
+    "matched_props": 389,
+    "excluded_goblin_demon_lines": 6175,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
