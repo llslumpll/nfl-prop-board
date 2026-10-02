@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-10-02 08:41 UTC",
+  "generated_at": "2026-10-02 15:23 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -19,6 +19,11 @@
         "sample_size": 58,
         "avg_raw_bias": 14.95,
         "status": "active"
+      },
+      "Moderate 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 2,
+        "status": "insufficient data"
       }
     },
     "rushing_yards": {
@@ -42,6 +47,11 @@
         "bias": 0.0,
         "sample_size": 5,
         "status": "insufficient data"
+      },
+      "Moderate 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 2,
+        "status": "insufficient data"
       }
     },
     "receiving_yards": {
@@ -60,6 +70,11 @@
         "sample_size": 60,
         "avg_raw_bias": 6.2,
         "status": "active"
+      },
+      "Moderate 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 2,
+        "status": "insufficient data"
       }
     },
     "receptions": {
@@ -77,19 +92,22 @@
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 1.0,
-      "sample_size": 28,
-      "status": "insufficient data"
+      "shrink_factor": 0.764,
+      "sample_size": 30,
+      "raw_shrink_factor": 0.215,
+      "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 1.0,
-      "sample_size": 28,
-      "status": "insufficient data"
+      "shrink_factor": 0.654,
+      "sample_size": 30,
+      "raw_shrink_factor": -0.153,
+      "status": "active"
     },
     "receiving_yards": {
       "shrink_factor": 1.0,
-      "sample_size": 28,
-      "status": "insufficient data"
+      "sample_size": 30,
+      "raw_shrink_factor": 1.018,
+      "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
