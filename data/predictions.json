@@ -9417,7 +9417,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Nico Collins|receptions|4": {
     "player": "Nico Collins",
@@ -10662,7 +10665,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jordan Mason|any_td|4": {
     "player": "Jordan Mason",
@@ -12748,7 +12754,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Sam Darnold|passing_yards|4": {
     "player": "Sam Darnold",
