@@ -323,14 +323,14 @@
       "rushing_yards": 18.5,
       "receiving_yards": 8.5
     },
+    "Theo Johnson": {
+      "receiving_yards": 8.5
+    },
     "Devin Singletary": {
       "rushing_yards": 5.5
     },
     "Elijah Higgins": {
       "receiving_yards": 5.5
-    },
-    "Theo Johnson": {
-      "receiving_yards": 3.5
     },
     "Lamar Jackson": {
       "passing_yards": 223.5,
@@ -770,7 +770,7 @@
     },
     "Sione Vaki": {
       "rushing_yards": 11.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 0.5
     },
     "Brock Wright": {
       "receiving_yards": 5.5
@@ -834,9 +834,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 7411,
+    "total_projections_returned": 7413,
     "matched_props": 377,
-    "excluded_goblin_demon_lines": 5951,
+    "excluded_goblin_demon_lines": 5952,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
