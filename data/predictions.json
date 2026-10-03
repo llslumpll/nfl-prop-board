@@ -9466,7 +9466,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jakobi Meyers|receptions|4": {
     "player": "Jakobi Meyers",
@@ -12212,7 +12216,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jalen Hurts|passing_yards|4": {
