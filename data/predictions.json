@@ -9251,7 +9251,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Brock Bowers|receptions|4": {
@@ -9274,7 +9275,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Ja'Marr Chase|receptions|4": {
     "player": "Ja'Marr Chase",
@@ -9420,7 +9424,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Nico Collins|receptions|4": {
@@ -9744,7 +9749,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Mack Hollins|receptions|4": {
     "player": "Mack Hollins",
@@ -9904,7 +9913,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Carnell Tate|receptions|4": {
     "player": "Carnell Tate",
@@ -12595,7 +12607,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Kenneth Walker III|rushing_yards|4": {
@@ -12618,7 +12631,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Rashee Rice|receiving_yards|4": {
     "player": "Rashee Rice",
@@ -12798,7 +12815,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jadarian Price|rushing_yards|4": {
@@ -12844,7 +12862,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Bo Nix|passing_yards|4": {
     "player": "Bo Nix",
@@ -12864,7 +12885,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "J.K. Dobbins|rushing_yards|4": {
     "player": "J.K. Dobbins",
@@ -12958,7 +12983,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Mike Evans|receiving_yards|4": {
     "player": "Mike Evans",
