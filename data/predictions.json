@@ -9668,7 +9668,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Adonai Mitchell|receptions|4": {
     "player": "Adonai Mitchell",
@@ -13215,6 +13219,28 @@
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-02 15:23 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Emanuel Wilson|rushing_yards|4": {
+    "player": "Emanuel Wilson",
+    "team": "SEA",
+    "opponent": "LAC",
+    "week": 4,
+    "stat": "rushing_yards",
+    "projected": 28.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 49.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -21.1,
+    "model_prob": 0.1886,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-10-04 06:19 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
