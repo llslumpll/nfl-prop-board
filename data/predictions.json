@@ -10104,7 +10104,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Drew Lock|any_td|4": {
     "player": "Drew Lock",
@@ -10583,7 +10586,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kenneth Walker III|any_td|4": {
     "player": "Kenneth Walker III",
@@ -13059,7 +13065,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Amon-Ra St. Brown|receiving_yards|4": {
     "player": "Amon-Ra St. Brown",
@@ -13104,7 +13114,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chuba Hubbard|rushing_yards|4": {
     "player": "Chuba Hubbard",
