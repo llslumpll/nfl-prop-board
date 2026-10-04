@@ -12658,7 +12658,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kirk Cousins|passing_yards|4": {
     "player": "Kirk Cousins",
@@ -12864,7 +12868,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Bo Nix|passing_yards|4": {
@@ -13122,7 +13127,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tetairoa McMillan|receiving_yards|4": {
     "player": "Tetairoa McMillan",
