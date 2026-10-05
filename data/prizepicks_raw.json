@@ -1,68 +1,5 @@
 {
   "props": {
-    "Jared Goff": {
-      "passing_yards": 257.5,
-      "rushing_yards": 1.5
-    },
-    "Bryce Young": {
-      "passing_yards": 244.5,
-      "rushing_yards": 12.5
-    },
-    "Jahmyr Gibbs": {
-      "rushing_yards": 95.5,
-      "receiving_yards": 36.5,
-      "receptions": 4.5
-    },
-    "Amon-Ra St. Brown": {
-      "receiving_yards": 76.5,
-      "receptions": 7
-    },
-    "Tetairoa McMillan": {
-      "receiving_yards": 72.5,
-      "receptions": 5
-    },
-    "Chuba Hubbard": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 18.5,
-      "receptions": 3
-    },
-    "Jameson Williams": {
-      "receiving_yards": 50.5,
-      "receptions": 3.5
-    },
-    "Sam LaPorta": {
-      "receiving_yards": 47.5
-    },
-    "Darren Waller": {
-      "receiving_yards": 37.5,
-      "receptions": 3.5
-    },
-    "Brycen Tremayne": {
-      "receiving_yards": 33.5,
-      "receptions": 2.5
-    },
-    "John Metchie III": {
-      "receiving_yards": 20.5
-    },
-    "Isaac TeSlaa": {
-      "receiving_yards": 17.5
-    },
-    "Tommy Tremble": {
-      "receiving_yards": 13.5
-    },
-    "AJ Dillon": {
-      "rushing_yards": 12.5
-    },
-    "Sione Vaki": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 0.5
-    },
-    "Mitchell Evans": {
-      "receiving_yards": 7.5
-    },
-    "Brock Wright": {
-      "receiving_yards": 5.5
-    },
     "Tyler Shough": {
       "passing_yards": 254.5,
       "rushing_yards": 17.5
@@ -96,11 +33,11 @@
       "receiving_yards": 15.5,
       "receptions": 3
     },
+    "Kyle Pitts Sr.": {
+      "receiving_yards": 29.5
+    },
     "Brian Robinson Jr.": {
       "rushing_yards": 29.5
-    },
-    "Kyle Pitts Sr.": {
-      "receiving_yards": 28.5
     },
     "Kendre Miller": {
       "rushing_yards": 25.5
@@ -109,7 +46,7 @@
       "receiving_yards": 18.5
     },
     "Noah Fant": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 2
     },
     "Austin Hooper": {
@@ -144,22 +81,17 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 1115,
-    "matched_props": 61,
-    "excluded_goblin_demon_lines": 891,
+    "total_projections_returned": 516,
+    "matched_props": 32,
+    "excluded_goblin_demon_lines": 409,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
       "fantasy score",
-      "fg made",
-      "field goal yards (combo)",
       "halves with 100+ pass yards",
-      "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
       "int",
-      "kicking points",
       "longest completion",
-      "longest fg made yds (combo)",
       "longest reception",
       "longest rush",
       "pass attempts",
@@ -175,9 +107,14 @@
       "punts (combo)",
       "punts inside 20",
       "quarters with 1+ reception",
-      "quarters with 10+ receiving yards",
       "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards"
+      "quarters with 5+ receiving yards",
+      "quarters with 5+ rush yards",
+      "rec targets",
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions",
+      "rush attempts"
     ],
     "sample_odds_types_seen": [
       "demon",
