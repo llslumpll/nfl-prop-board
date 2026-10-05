@@ -1,7 +1,7 @@
 {
   "props": {
     "Tyler Shough": {
-      "passing_yards": 254.5,
+      "passing_yards": 256.5,
       "rushing_yards": 17.5
     },
     "Michael Penix Jr.": {
@@ -25,7 +25,7 @@
       "receptions": 4
     },
     "Juwan Johnson": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Alvin Kamara": {
@@ -42,12 +42,12 @@
     "Kendre Miller": {
       "rushing_yards": 25.5
     },
-    "Jahan Dotson": {
-      "receiving_yards": 18.5
-    },
     "Noah Fant": {
       "receiving_yards": 16.5,
       "receptions": 2
+    },
+    "Jahan Dotson": {
+      "receiving_yards": 16.5
     },
     "Austin Hooper": {
       "receiving_yards": 10.5
@@ -57,6 +57,47 @@
     },
     "Zachariah Branch": {
       "receiving_yards": 4.5
+    },
+    "Dak Prescott": {
+      "passing_yards": 255.5,
+      "rushing_yards": 9.5
+    },
+    "Jalon Daniels": {
+      "passing_yards": 174.5,
+      "rushing_yards": 41.5
+    },
+    "CeeDee Lamb": {
+      "receiving_yards": 77.5,
+      "receptions": 5.5
+    },
+    "Javonte Williams": {
+      "rushing_yards": 73.5,
+      "receiving_yards": 14.5,
+      "receptions": 2.5
+    },
+    "George Pickens": {
+      "receiving_yards": 60.5,
+      "receptions": 4.5
+    },
+    "Bucky Irving": {
+      "rushing_yards": 56.5,
+      "receiving_yards": 13.5
+    },
+    "Ryan Flournoy": {
+      "receiving_yards": 33.5
+    },
+    "Emeka Egbuka": {
+      "receiving_yards": 30.5
+    },
+    "Cade Otton": {
+      "receiving_yards": 28.5
+    },
+    "Chris Godwin Jr.": {
+      "receiving_yards": 27.5
+    },
+    "Jake Ferguson": {
+      "receiving_yards": 24.5,
+      "receptions": 3.5
     },
     "Deshaun Watson": {
       "passing_yards": 186.5
@@ -81,9 +122,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 516,
-    "matched_props": 32,
-    "excluded_goblin_demon_lines": 409,
+    "total_projections_returned": 823,
+    "matched_props": 51,
+    "excluded_goblin_demon_lines": 675,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",

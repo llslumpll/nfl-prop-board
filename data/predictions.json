@@ -9525,7 +9525,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "George Pickens|receptions|4": {
@@ -9546,7 +9547,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Wan'Dale Robinson|receptions|4": {
     "player": "Wan'Dale Robinson",
@@ -11936,7 +11941,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Javonte Williams|rushing_yards|4": {
     "player": "Javonte Williams",
@@ -11956,7 +11965,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "CeeDee Lamb|receiving_yards|4": {
     "player": "CeeDee Lamb",
@@ -12432,7 +12445,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Emeka Egbuka|receiving_yards|4": {
     "player": "Emeka Egbuka",
@@ -13283,7 +13300,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Emanuel Wilson|rushing_yards|4": {
     "player": "Emanuel Wilson",
@@ -13302,6 +13322,26 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-10-04 06:19 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Ollie Gordon II|rushing_yards|4": {
+    "player": "Ollie Gordon II",
+    "team": "MIA",
+    "opponent": "MIN",
+    "week": 4,
+    "stat": "rushing_yards",
+    "projected": 12.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-10-05 09:13 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
