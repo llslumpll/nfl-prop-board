@@ -1,7 +1,7 @@
 {
   "props": {
     "Dak Prescott": {
-      "passing_yards": 263.5,
+      "passing_yards": 265.5,
       "rushing_yards": 9.5
     },
     "Jalon Daniels": {
@@ -54,7 +54,7 @@
       "receiving_yards": 10.5
     },
     "Tez Johnson": {
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Trevor Lawrence": {
       "passing_yards": 229.5,
@@ -108,12 +108,24 @@
     "Tre Tucker": {
       "receiving_yards": 40.5
     },
+    "Tyler Shough": {
+      "passing_yards": 252.5,
+      "rushing_yards": 7.5
+    },
     "Kyler Murray": {
       "passing_yards": 219.5,
       "rushing_yards": 19.5
     },
+    "Chris Olave": {
+      "receiving_yards": 79.5,
+      "receptions": 6.5
+    },
     "Aaron Jones Sr.": {
       "rushing_yards": 62.5
+    },
+    "Devaughn Vele": {
+      "receiving_yards": 37.5,
+      "receptions": 3.5
     },
     "Joe Burrow": {
       "passing_yards": 250.5,
@@ -468,9 +480,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 2748,
-    "matched_props": 201,
-    "excluded_goblin_demon_lines": 2246,
+    "total_projections_returned": 2874,
+    "matched_props": 207,
+    "excluded_goblin_demon_lines": 2349,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
