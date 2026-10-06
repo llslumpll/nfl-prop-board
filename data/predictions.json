@@ -9230,7 +9230,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaxon Smith-Njigba|receptions|4": {
     "player": "Jaxon Smith-Njigba",
@@ -11679,7 +11683,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Breece Hall|rushing_yards|4": {
     "player": "Breece Hall",
