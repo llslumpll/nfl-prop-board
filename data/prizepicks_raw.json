@@ -5,7 +5,7 @@
       "rushing_yards": 9.5
     },
     "Jalon Daniels": {
-      "passing_yards": 178.5,
+      "passing_yards": 179.5,
       "rushing_yards": 41.5
     },
     "CeeDee Lamb": {
@@ -31,10 +31,10 @@
     "Emeka Egbuka": {
       "receiving_yards": 30.5
     },
-    "Chris Godwin Jr.": {
-      "receiving_yards": 27.5
-    },
     "Cade Otton": {
+      "receiving_yards": 28.5
+    },
+    "Chris Godwin Jr.": {
       "receiving_yards": 27.5
     },
     "Jake Ferguson": {
@@ -49,17 +49,19 @@
       "receiving_yards": 2.5
     },
     "Tez Johnson": {
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Kenny Gainwell": {
-      "rushing_yards": 9.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5,
+      "rushing_yards": 9.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 229.5
+      "passing_yards": 229.5,
+      "rushing_yards": 7.5
     },
     "Jalen Hurts": {
-      "passing_yards": 195.5
+      "passing_yards": 194.5,
+      "rushing_yards": 31.5
     },
     "Parker Washington": {
       "receiving_yards": 60.5,
@@ -75,11 +77,12 @@
       "receptions": 3.5
     },
     "Brenton Strange": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 2
     },
     "Drake Maye": {
       "passing_yards": 228.5,
@@ -208,7 +211,7 @@
       "receptions": 3.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Gunnar Helm": {
       "receiving_yards": 15.5
@@ -228,10 +231,12 @@
       "rushing_yards": 8.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 88.5
+      "rushing_yards": 88.5,
+      "receiving_yards": 17.5
     },
     "Tyler Warren": {
-      "receiving_yards": 50.5
+      "receiving_yards": 50.5,
+      "receptions": 5.5
     },
     "DK Metcalf": {
       "receiving_yards": 49.5
@@ -295,7 +300,7 @@
     },
     "Brock Purdy": {
       "passing_yards": 225.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Jaxon Smith-Njigba": {
       "receiving_yards": 93.5,
@@ -371,9 +376,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 1230,
-    "matched_props": 155,
-    "excluded_goblin_demon_lines": 956,
+    "total_projections_returned": 1496,
+    "matched_props": 160,
+    "excluded_goblin_demon_lines": 1165,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -389,12 +394,16 @@
       "pass completions",
       "pass tds",
       "pass yards",
+      "pass yards (combo)",
       "pass+rush yds",
+      "pass+rush+rec tds",
       "rec targets",
       "receiving yards",
+      "receiving yards (combo)",
       "receptions",
       "rush attempts",
       "rush yards",
+      "rush yards (combo)",
       "rush yards in first 5 attempts",
       "rush yards per carry",
       "rush+rec yds"

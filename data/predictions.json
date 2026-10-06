@@ -13367,5 +13367,28 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "MarShawn Lloyd|rushing_yards|4": {
+    "player": "MarShawn Lloyd",
+    "team": "GB",
+    "opponent": "TB",
+    "week": 4,
+    "stat": "rushing_yards",
+    "projected": 14.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-06 06:34 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
