@@ -5,7 +5,7 @@
       "rushing_yards": 9.5
     },
     "Jalon Daniels": {
-      "passing_yards": 179.5,
+      "passing_yards": 180.5,
       "rushing_yards": 43.5
     },
     "CeeDee Lamb": {
@@ -14,7 +14,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 73.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "George Pickens": {
@@ -36,7 +36,7 @@
       "receiving_yards": 28.5
     },
     "Cade Otton": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Jake Ferguson": {
       "receiving_yards": 26.5,
@@ -47,21 +47,21 @@
     },
     "Tyler Goodson": {
       "rushing_yards": 16.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 1.5
+    },
+    "Tez Johnson": {
+      "receiving_yards": 13.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 12.5,
       "receiving_yards": 10.5
-    },
-    "Tez Johnson": {
-      "receiving_yards": 11.5
     },
     "Trevor Lawrence": {
       "passing_yards": 229.5,
       "rushing_yards": 13.5
     },
     "Jalen Hurts": {
-      "passing_yards": 193.5,
+      "passing_yards": 192.5,
       "rushing_yards": 27.5
     },
     "Parker Washington": {
@@ -77,7 +77,7 @@
       "receiving_yards": 43.5
     },
     "Brenton Strange": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Chris Rodriguez Jr.": {
@@ -212,7 +212,7 @@
     },
     "Cam Skattebo": {
       "rushing_yards": 63.5,
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Malik Nabers": {
       "receiving_yards": 63.5
@@ -221,7 +221,7 @@
       "receiving_yards": 44.5
     },
     "Malachi Fields": {
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Najee Harris": {
       "rushing_yards": 20.5,
@@ -239,7 +239,7 @@
     },
     "Deshaun Watson": {
       "passing_yards": 202.5,
-      "rushing_yards": 25.5
+      "rushing_yards": 26.5
     },
     "Garrett Wilson": {
       "receiving_yards": 69.5,
@@ -257,10 +257,10 @@
     "Denzel Boston": {
       "receiving_yards": 47.5
     },
-    "Harold Fannin Jr.": {
-      "receiving_yards": 36.5
-    },
     "KC Concepcion Jr.": {
+      "receiving_yards": 37.5
+    },
+    "Harold Fannin Jr.": {
       "receiving_yards": 36.5
     },
     "Isaiah Davis": {
@@ -299,14 +299,14 @@
       "receiving_yards": 18.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Tyjae Spears": {
       "receiving_yards": 11.5,
       "rushing_yards": 11.5
     },
     "Calvin Ridley": {
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "Aaron Rodgers": {
       "passing_yards": 220.5
@@ -447,15 +447,15 @@
       "rushing_yards": 1.5
     },
     "Tyler Huntley": {
-      "passing_yards": 173.5
-    },
-    "Derrick Henry": {
-      "rushing_yards": 91.5,
-      "receiving_yards": 5.5
+      "passing_yards": 174.5
     },
     "Bijan Robinson": {
       "rushing_yards": 89.5,
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
+    },
+    "Derrick Henry": {
+      "rushing_yards": 87.5,
+      "receiving_yards": 5.5
     },
     "Drake London": {
       "receiving_yards": 82.5,
@@ -526,9 +526,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 3550,
+    "total_projections_returned": 3594,
     "matched_props": 229,
-    "excluded_goblin_demon_lines": 2883,
+    "excluded_goblin_demon_lines": 2930,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
