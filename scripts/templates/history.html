@@ -161,6 +161,7 @@
   <h2>Prediction Accuracy Over Time</h2>
   <p class="lede small">The dashed line marks 50% -- a coin flip. If the model is genuinely useful, dots should trend up and away from it as more weeks accumulate, not stay flat around it. NFL's weekly cadence means this fills in one point per week, not per day -- an honestly short series right now, not a lesser one.</p>
 
+  {% if projection_error is defined %}
   <h3 class="division-head">Projection accuracy &mdash; every player who played</h3>
   <p class="lede small">
     Hit/miss needs a market line, and some picks never get one. This scores <em>all</em> of them on how close
@@ -200,6 +201,8 @@
   </div>
   {% else %}
   <div class="empty-state"><h3>No graded picks for players who played yet</h3></div>
+  {% endif %}
+
   {% endif %}
 
   {% for stat, d in trend.items() %}
