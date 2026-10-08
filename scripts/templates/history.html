@@ -315,7 +315,8 @@
           {% for w in track.weekly[:6] %}
           <tr>
             <td class="num">W{{ w.week }}</td>
-            <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% else %}<span class="player-sub">pending</span>{% endif %}</td>
+            {% set finalized = w.picks|selectattr('graded')|list|length %}
+            <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% if finalized > w.graded %}<div class="player-sub">{{ finalized - w.graded }} more final, no market line</div>{% endif %}{% if finalized < w.picks|length %}<div class="player-sub">{{ w.picks|length - finalized }} pending</div>{% endif %}{% elif finalized and finalized == w.picks|length %}<span class="player-sub">final &mdash; no market line to grade</span>{% elif finalized %}<span class="player-sub">{{ finalized }} final (no line), {{ w.picks|length - finalized }} pending</span>{% else %}<span class="player-sub">pending</span>{% endif %}</td>
             <td style="font-size:0.78rem;">
               {% for p in w.picks %}
                 <span title="{{ p.player }}">{{ p.player.split(' ')|last }}{% if p.graded and p.hit is not none %}{{ ' \u2713' if p.hit else ' \u2717' }}{% endif %}</span>{{ ', ' if not loop.last }}
@@ -411,7 +412,8 @@
         {% for w in track.weekly[:6] %}
         <tr>
           <td class="num">W{{ w.week }}</td>
-          <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% else %}<span class="player-sub">pending</span>{% endif %}</td>
+          {% set finalized = w.picks|selectattr('graded')|list|length %}
+          <td>{% if w.graded %}{{ w.hits }}/{{ w.graded }}{% if finalized > w.graded %}<div class="player-sub">{{ finalized - w.graded }} more final (tie / no result)</div>{% endif %}{% if finalized < w.picks|length %}<div class="player-sub">{{ w.picks|length - finalized }} pending</div>{% endif %}{% elif finalized and finalized == w.picks|length %}<span class="player-sub">final &mdash; tie / nothing to grade</span>{% elif finalized %}<span class="player-sub">{{ finalized }} final (no result), {{ w.picks|length - finalized }} pending</span>{% else %}<span class="player-sub">pending</span>{% endif %}</td>
           <td style="font-size:0.78rem;">
             {% for p in w.picks %}
               <span title="{{ p.away_team }} @ {{ p.home_team }}">{{ p.away_team }}@{{ p.home_team }}{% if p.graded and p.our_correct is not none %}{{ ' \u2713' if p.our_correct else ' \u2717' }}{% endif %}</span>{{ ', ' if not loop.last }}
