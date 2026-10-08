@@ -303,43 +303,53 @@ def signal_effectiveness(min_sample: int = 20) -> list[dict]:
     """
     Real check on whether each team-market context signal (EPA edge,
     recent form, injury edge, rest edge) actually correlates with real
-    graded outcomes -- not assumed, checked. Same exact real pattern
-    and gating as grade.signal_effectiveness() for player props, applied
-    to team_correct instead of player-prop hit. This is the direct real
-    answer to "did the reasoning actually predict anything, or did a
-    pick just happen to win for an unrelated reason" -- the core idea
-    behind treating a correct pick and a correct process as separate
-    real questions.
+    graded outcomes -- not assumed, checked.
+
+    Honesty rules (fixed Oct 2026):
+      * The three markets for one game share the same game-level signals, so
+        counting rows triple-counted every game. The gate and the hit rates
+        now count each UNIQUE GAME once; a game's outcome is the share of its
+        graded picks that were correct.
+      * "Without" means a game whose signal differs from this value (or lacks
+        it). If every game carries the same value, the signal cannot be tested
+        at all, and that is reported as "untestable" instead of "insufficient
+        data" (which would wrongly imply more games will fix it).
     """
     graded = [p for p in load_team_predictions().values() if p.get("graded") and p.get("our_correct") is not None]
     if not graded:
         return []
 
-    seen = set()
+    games: dict[tuple, dict] = {}
     for p in graded:
+        gk = (p["away_team"], p["home_team"], p["week"])
+        g = games.setdefault(gk, {"signals": {}, "hits": []})
         for k, v in (p.get("signals") or {}).items():
             if isinstance(v, (str, bool)):
-                seen.add((k, v))
+                g["signals"].setdefault(k, v)
+        g["hits"].append(1.0 if p["our_correct"] else 0.0)
+    for g in games.values():
+        g["score"] = sum(g["hits"]) / len(g["hits"])
+
+    seen = set()
+    for g in games.values():
+        for k, v in g["signals"].items():
+            seen.add((k, v))
 
     results = []
     for key, value in sorted(seen, key=lambda kv: (kv[0], str(kv[1]))):
-        with_signal = [p for p in graded if (p.get("signals") or {}).get(key) == value]
-        without_signal = [p for p in graded if key not in (p.get("signals") or {})]
-        n_with, n_without = len(with_signal), len(without_signal)
-        if n_with < min_sample or n_without < min_sample:
-            results.append({
-                "signal": key, "value": value,
-                "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
-                "status": "insufficient data",
-            })
+        with_g = [g for g in games.values() if g["signals"].get(key) == value]
+        without_g = [g for g in games.values() if g["signals"].get(key) != value]
+        n_with, n_without = len(with_g), len(without_g)
+        base = {"signal": key, "value": value, "n_with": n_with,
+                "n_without": n_without, "min_sample": min_sample, "unit": "games"}
+        if n_without == 0:
+            results.append({**base, "status": "untestable"})
             continue
-        hit_rate_with = round(100 * sum(1 for p in with_signal if p["our_correct"]) / n_with, 1)
-        hit_rate_without = round(100 * sum(1 for p in without_signal if p["our_correct"]) / n_without, 1)
-        results.append({
-            "signal": key, "value": value,
-            "n_with": n_with, "n_without": n_without, "min_sample": min_sample,
-            "hit_rate_with": hit_rate_with, "hit_rate_without": hit_rate_without,
-            "difference_pp": round(hit_rate_with - hit_rate_without, 1),
-            "status": "active",
-        })
+        if n_with < min_sample or n_without < min_sample:
+            results.append({**base, "status": "insufficient data"})
+            continue
+        hr_with = round(100 * sum(g["score"] for g in with_g) / n_with, 1)
+        hr_without = round(100 * sum(g["score"] for g in without_g) / n_without, 1)
+        results.append({**base, "hit_rate_with": hr_with, "hit_rate_without": hr_without,
+                        "difference_pp": round(hr_with - hr_without, 1), "status": "active"})
     return results
