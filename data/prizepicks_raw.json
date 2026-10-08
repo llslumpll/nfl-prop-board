@@ -62,7 +62,7 @@
       "rushing_yards": 11.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 1.5,
+      "receiving_yards": 3.5,
       "receptions": 0.5
     },
     "KaVontae Turpin": {
@@ -136,7 +136,7 @@
       "receptions": 3.5
     },
     "Romeo Doubs": {
-      "receiving_yards": 53.5
+      "receiving_yards": 51.5
     },
     "Tre Tucker": {
       "receiving_yards": 40.5
@@ -424,7 +424,7 @@
       "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
-      "passing_yards": 224.5,
+      "passing_yards": 222.5,
       "rushing_yards": 0.5
     },
     "Daniel Jones": {
@@ -445,7 +445,7 @@
       "receptions": 5
     },
     "DK Metcalf": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 53.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -468,7 +468,7 @@
       "receiving_yards": 22.5
     },
     "Germie Bernard": {
-      "receiving_yards": 17.5
+      "receiving_yards": 18.5
     },
     "Bo Nix": {
       "passing_yards": 223.5,
@@ -701,9 +701,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 6214,
+    "total_projections_returned": 6234,
     "matched_props": 316,
-    "excluded_goblin_demon_lines": 5152,
+    "excluded_goblin_demon_lines": 5165,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
