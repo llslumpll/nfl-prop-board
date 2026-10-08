@@ -32,6 +32,8 @@ import grade  # noqa: E402
 import pipeline_health  # noqa: E402
 import coverage_log  # noqa: E402
 import line_movement_log  # noqa: E402
+import line_attach  # noqa: E402
+import projection_error  # noqa: E402
 import svgchart  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
@@ -513,10 +515,21 @@ def build(oddsapi_mode: str | None = None):
                 snap["opportunity_signal"] = True
         return snap
 
+    def _pick_line(player: str, stat: str):
+        """(line, source): PrizePicks first, FanDuel only when PrizePicks has
+        none, so the two are never mixed within one pick."""
+        pp = pp_props.get(player, {}).get(stat)
+        if pp is not None:
+            return pp, "prizepicks"
+        fd = fanduel_props.get(player, {}).get(stat)
+        if fd is not None:
+            return fd, "fanduel"
+        return None, None
+
     frozen_count = 0
     for g in matchups_data["games"]:
         for p in g["players"]:
-            market_line = pp_props.get(p["player"], {}).get(p["stat_col"])
+            market_line, line_source = _pick_line(p["player"], p["stat_col"])
             m_prob = None
             if market_line is not None:
                 std_dev = dataio.player_std_dev(p["player"], p["stat_col"], STAT_TO_POSITION.get(p["stat_col"], "WR"))
@@ -527,7 +540,7 @@ def build(oddsapi_mode: str | None = None):
                 stat=p["stat_col"], projected=p["projection"]["projected"],
                 tier_label=p["projection"]["tier"]["label"],
                 market_line=market_line,
-                market_source="prizepicks" if market_line is not None else None,
+                market_source=line_source,
                 model_prob=m_prob,
                 signals=_signals_snapshot(p["projection"], p),
             )
@@ -646,26 +659,36 @@ def build(oddsapi_mode: str | None = None):
     # approximation using real per-player game-to-game variance for
     # yardage stats, or real Poisson probability for touchdowns). These
     # can and often will name different players for the same week.
+    # Best 5 must be gradeable: Highest Confidence only considers players who
+    # have a real line (PrizePicks, else FanDuel) and touchdown picks need a
+    # real Kalshi 1+ TD price. Best Value already requires a PrizePicks line.
+    def _with_line(rows_, stat_):
+        return [r for r in rows_ if _pick_line(r["player"], stat_)[0] is not None]
+
+    def _with_td_price(rows_):
+        return [r for r in rows_
+                if best5.find_kalshi_1plus_td_price(kalshi_data["touchdown_props"], r["player"]) is not None]
+
     best5_data = {
         "passing": {
             "best_value": best5.best5_yardage(passing_rows, pp_props, "passing_yards", "yds"),
-            "highest_confidence": best5.best5_highest_confidence(passing_rows, pp_props, "passing_yards", "yds", "QB"),
+            "highest_confidence": best5.best5_highest_confidence(_with_line(passing_rows, "passing_yards"), pp_props, "passing_yards", "yds", "QB"),
         },
         "receiving": {
             "best_value": best5.best5_yardage(receiving_rows, pp_props, "receiving_yards", "yds"),
-            "highest_confidence": best5.best5_highest_confidence(receiving_rows, pp_props, "receiving_yards", "yds", "WR"),
+            "highest_confidence": best5.best5_highest_confidence(_with_line(receiving_rows, "receiving_yards"), pp_props, "receiving_yards", "yds", "WR"),
         },
         "receptions": {
             "best_value": best5.best5_yardage(receptions_rows, pp_props, "receptions", "rec"),
-            "highest_confidence": best5.best5_highest_confidence(receptions_rows, pp_props, "receptions", "rec", "WR"),
+            "highest_confidence": best5.best5_highest_confidence(_with_line(receptions_rows, "receptions"), pp_props, "receptions", "rec", "WR"),
         },
         "rushing": {
             "best_value": best5.best5_yardage(rushing_rows, pp_props, "rushing_yards", "yds"),
-            "highest_confidence": best5.best5_highest_confidence(rushing_rows, pp_props, "rushing_yards", "yds", "RB"),
+            "highest_confidence": best5.best5_highest_confidence(_with_line(rushing_rows, "rushing_yards"), pp_props, "rushing_yards", "yds", "RB"),
         },
         "touchdowns": {
             "best_value": best5.best5_touchdowns(touchdown_rows, kalshi_data["touchdown_props"]),
-            "highest_confidence": best5.best5_touchdowns_most_likely(touchdown_rows),
+            "highest_confidence": best5.best5_touchdowns_most_likely(_with_td_price(touchdown_rows)),
         },
     }
     for label, rankings in best5_data.items():
@@ -706,7 +729,7 @@ def build(oddsapi_mode: str | None = None):
         ng = r.get("next_game")
         if not ng:
             continue
-        market_line = pp_props.get(r["player"], {}).get("receptions")
+        market_line, line_source = _pick_line(r["player"], "receptions")
         m_prob = None
         if market_line is not None:
             std_dev = dataio.player_std_dev(r["player"], "receptions", "WR")
@@ -714,7 +737,7 @@ def build(oddsapi_mode: str | None = None):
         wrote = predictions.freeze_prediction(
             player=r["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
             stat="receptions", projected=ng["projection"]["projected"], tier_label=ng["projection"]["tier"]["label"],
-            market_line=market_line, market_source="prizepicks" if market_line is not None else None,
+            market_line=market_line, market_source=line_source,
             model_prob=m_prob,
             signals=_signals_snapshot(ng["projection"], r),
         )
@@ -793,6 +816,11 @@ def build(oddsapi_mode: str | None = None):
         if wrote:
             td_frozen += 1
     print(f"Froze {td_frozen} new touchdown prediction(s) this build.")
+
+    # Let picks frozen without a line pick up their first real line, but only
+    # before kickoff (see line_attach.py). PrizePicks preferred over FanDuel.
+    attach_result = line_attach.attach_lines([("prizepicks", pp_props), ("fanduel", fanduel_props)])
+    print(f"Line attach: {attach_result}")
 
     # Re-grade immediately in case any of the newly-frozen Receptions/TD
     # predictions belong to an already-finished game (only realistic
@@ -931,6 +959,7 @@ def build(oddsapi_mode: str | None = None):
                 "has_multi_week_trend": any(len(d["weeks"]) > 1 for d in grade.accuracy_trend_by_stat().values()),
                 "calibration": calibration_result,
                 "signal_effectiveness": grade.signal_effectiveness(),
+                "projection_error": projection_error.projection_error_summary(),
                 "team_market_history": team_market_history,
                 "team_signal_effectiveness": team_signal_effectiveness,
                 "best5_track": {
