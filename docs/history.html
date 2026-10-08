@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>History — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1791488295">
+  <link rel="stylesheet" href="static/style.css?v=1791491286">
 </head>
 <body>
   <header class="site-head">
@@ -537,6 +537,86 @@
   <p class="lede small">The dashed line marks 50% -- a coin flip. If the model is genuinely useful, dots should trend up and away from it as more weeks accumulate, not stay flat around it. NFL's weekly cadence means this fills in one point per week, not per day -- an honestly short series right now, not a lesser one.</p>
 
   
+  <h3 class="division-head">Projection accuracy &mdash; every player who played</h3>
+  <p class="lede small">
+    Hit/miss needs a market line, and some picks never get one. This scores <em>all</em> of them on how close
+    our projection was to what really happened. <strong>Typical miss</strong> is the average gap
+    (smaller is better); <strong>bias</strong> is the average signed gap (positive = we projected too low).
+    Players who did not play are left out rather than scored as a 0
+    (69 excluded so far).
+    The trend compares the first and latest week only, so with a few weeks of data treat it as a hint, not a verdict.
+  </p>
+  
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Stat</th><th class="num">Players scored</th><th class="num">Typical miss</th><th class="num">Bias</th><th>Week by week (typical miss)</th><th>Trend</th></tr></thead>
+    <tbody>
+      
+      <tr>
+        <td>Passing yards</td>
+        <td class="num">108</td>
+        <td class="num">65.71</td>
+        <td class="num">+21.89</td>
+        <td class="player-sub">W1: 66.51 (22) &rarr; W2: 64.17 (29) &rarr; W3: 59.04 (30) &rarr; W4: 74.15 (27)</td>
+        <td><span class="stat-bad">worse</span></td>
+      </tr>
+      
+      
+      <tr>
+        <td>Rushing yards</td>
+        <td class="num">111</td>
+        <td class="num">26.93</td>
+        <td class="num">+2.23</td>
+        <td class="player-sub">W1: 25.92 (23) &rarr; W2: 27.61 (30) &rarr; W3: 25.63 (29) &rarr; W4: 28.33 (29)</td>
+        <td><span class="stat-bad">worse</span></td>
+      </tr>
+      
+      
+      <tr>
+        <td>Receiving yards</td>
+        <td class="num">115</td>
+        <td class="num">34.46</td>
+        <td class="num">+5.65</td>
+        <td class="player-sub">W1: 30.17 (28) &rarr; W2: 37.76 (31) &rarr; W3: 28.39 (30) &rarr; W4: 42.12 (26)</td>
+        <td><span class="stat-bad">worse</span></td>
+      </tr>
+      
+      
+      <tr>
+        <td>Receptions</td>
+        <td class="num">124</td>
+        <td class="num">2.03</td>
+        <td class="num">+0.06</td>
+        <td class="player-sub">W2: 1.93 (37) &rarr; W3: 1.78 (53) &rarr; W4: 2.52 (34)</td>
+        <td><span class="stat-bad">worse</span></td>
+      </tr>
+      
+      
+      <tr>
+        <td>Touchdowns</td>
+        <td class="num">127</td>
+        <td class="num">0.78</td>
+        <td class="num">-0.01</td>
+        <td class="player-sub">W2: 0.91 (44) &rarr; W3: 0.78 (49) &rarr; W4: 0.62 (34)</td>
+        <td><span class="stat-good">improving</span></td>
+      </tr>
+      
+      <tr>
+        <td class="player-sub" colspan="6">
+          Touchdowns, chance of scoring 1+ (any type): model score 0.1737 vs 0.2331 for a naive
+          &ldquo;everyone gets the same average rate (63.0% of these picks scored)&rdquo; guess &mdash; lower is better.
+          <span class="stat-good">The model is beating the naive guess.</span>
+          
+        </td>
+      </tr>
+      
+      
+    </tbody>
+  </table>
+  </div>
+  
+
+  
 
   
     
@@ -865,8 +945,8 @@
           <td>Amon-Ra St. Brown<div class="player-sub">DET vs ARI</div></td>
           <td>receptions</td>
           <td class="num">7.4</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">6.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -878,8 +958,8 @@
           <td>Ashton Jeanty<div class="player-sub">LV vs NE</div></td>
           <td>receptions</td>
           <td class="num">3.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -956,8 +1036,8 @@
           <td>Brock Bowers<div class="player-sub">LV vs NE</div></td>
           <td>receptions</td>
           <td class="num">6.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">6.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1073,8 +1153,8 @@
           <td>Chris Godwin Jr.<div class="player-sub">TB vs DAL</div></td>
           <td>receptions</td>
           <td class="num">4.7</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1099,8 +1179,8 @@
           <td>Chris Olave<div class="player-sub">NO vs MIN</div></td>
           <td>receptions</td>
           <td class="num">6.0</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">6.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1112,8 +1192,8 @@
           <td>Colston Loveland<div class="player-sub">CHI vs GB</div></td>
           <td>receptions</td>
           <td class="num">3.9</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1151,8 +1231,8 @@
           <td>Devaughn Vele<div class="player-sub">NO vs MIN</div></td>
           <td>receptions</td>
           <td class="num">3.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1229,8 +1309,8 @@
           <td>Greg Dulcich<div class="player-sub">MIA vs CIN</div></td>
           <td>receptions</td>
           <td class="num">2.3</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">2.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1242,8 +1322,8 @@
           <td>Isaiah Likely<div class="player-sub">NYG vs WAS</div></td>
           <td>receptions</td>
           <td class="num">3.0</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">4.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1307,8 +1387,8 @@
           <td>Jameson Williams<div class="player-sub">DET vs ARI</div></td>
           <td>receptions</td>
           <td class="num">3.5</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>PUSH</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1437,8 +1517,8 @@
           <td>Juwan Johnson<div class="player-sub">NO vs MIN</div></td>
           <td>receptions</td>
           <td class="num">4.1</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">4.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1450,8 +1530,8 @@
           <td>Keenan Allen<div class="player-sub">IND vs PIT</div></td>
           <td>receptions</td>
           <td class="num">5.0</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">2.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1528,8 +1608,8 @@
           <td>Kyren Williams<div class="player-sub">LA vs BUF</div></td>
           <td>receptions</td>
           <td class="num">3.0</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">2.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1567,8 +1647,8 @@
           <td>Malik Nabers<div class="player-sub">NYG vs WAS</div></td>
           <td>receptions</td>
           <td class="num">6.2</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">5.0</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1580,8 +1660,8 @@
           <td>Michael Mayer<div class="player-sub">LV vs NE</div></td>
           <td>receptions</td>
           <td class="num">2.9</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1593,8 +1673,8 @@
           <td>Michael Wilson<div class="player-sub">ARI vs DET</div></td>
           <td>receptions</td>
           <td class="num">4.1</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">6.0</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1606,8 +1686,8 @@
           <td>Nico Collins<div class="player-sub">HOU vs TEN</div></td>
           <td>receptions</td>
           <td class="num">5.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">5.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1658,8 +1738,8 @@
           <td>Quinshon Judkins<div class="player-sub">CLE vs NYJ</div></td>
           <td>receptions</td>
           <td class="num">2.2</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">2.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1671,8 +1751,8 @@
           <td>RJ Harvey<div class="player-sub">DEN vs LAC</div></td>
           <td>receptions</td>
           <td class="num">3.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">4.0</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1684,8 +1764,8 @@
           <td>Rome Odunze<div class="player-sub">CHI vs GB</div></td>
           <td>receptions</td>
           <td class="num">3.2</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">2.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1697,8 +1777,8 @@
           <td>Romeo Doubs<div class="player-sub">NE vs LV</div></td>
           <td>receptions</td>
           <td class="num">3.5</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">3.5</td>
+          <td>PUSH</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1736,8 +1816,8 @@
           <td>Sam LaPorta<div class="player-sub">DET vs ARI</div></td>
           <td>receptions</td>
           <td class="num">4.9</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">4.5</td>
+          <td>OVER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1788,8 +1868,8 @@
           <td>Trey McBride<div class="player-sub">ARI vs DET</div></td>
           <td>receptions</td>
           <td class="num">6.9</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">8.0</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1801,8 +1881,8 @@
           <td>Tucker Kraft<div class="player-sub">GB vs CHI</div></td>
           <td>receptions</td>
           <td class="num">3.1</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">4.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -1814,8 +1894,8 @@
           <td>Zay Flowers<div class="player-sub">BAL vs ATL</div></td>
           <td>receptions</td>
           <td class="num">4.6</td>
-          <td class="num">--</td>
-          <td>--</td>
+          <td class="num">5.5</td>
+          <td>UNDER</td>
           <td class="num">--</td>
           <td>
             <span class="player-sub">pending</span>
@@ -11141,13 +11221,21 @@
             <td><span class="player-sub">pending</span></td>
             <td style="font-size:0.78rem;">
               
+                <span title="Bijan Robinson">Robinson</span>, 
+              
                 <span title="Brock Purdy">Purdy</span>, 
               
                 <span title="Jalen Hurts">Hurts</span>, 
               
+                <span title="Javonte Williams">Williams</span>, 
+              
                 <span title="Joe Burrow">Burrow</span>, 
               
+                <span title="Jonathan Taylor">Taylor</span>, 
+              
                 <span title="Josh Allen">Allen</span>, 
+              
+                <span title="Kyren Williams">Williams</span>, 
               
                 <span title="Lamar Jackson">Jackson</span>
               
@@ -11949,7 +12037,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-10-08 19:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-10-08 20:28 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

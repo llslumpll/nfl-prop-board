@@ -13226,10 +13226,10 @@
     "stat": "receptions",
     "projected": 2.2,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -13244,7 +13244,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-02 15:23 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Aaron Rodgers|any_td|5": {
     "player": "Aaron Rodgers",
@@ -13665,10 +13667,10 @@
     "stat": "receptions",
     "projected": 3.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.5,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13677,7 +13679,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "RJ Harvey|receptions|5": {
     "player": "RJ Harvey",
@@ -13687,10 +13691,10 @@
     "stat": "receptions",
     "projected": 3.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -13699,7 +13703,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Puka Nacua|receptions|5": {
     "player": "Puka Nacua",
@@ -13762,10 +13768,10 @@
     "stat": "receptions",
     "projected": 7.4,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.9,
     "model_prob": null,
     "signals": {
       "usage_trend": "up"
@@ -13774,7 +13780,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Chris Olave|receptions|5": {
     "player": "Chris Olave",
@@ -13784,10 +13792,10 @@
     "stat": "receptions",
     "projected": 6.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -13800,7 +13808,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Zay Flowers|receptions|5": {
     "player": "Zay Flowers",
@@ -13810,10 +13820,10 @@
     "stat": "receptions",
     "projected": 4.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -13827,7 +13837,9 @@
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Sam LaPorta|receptions|5": {
     "player": "Sam LaPorta",
@@ -13837,10 +13849,10 @@
     "stat": "receptions",
     "projected": 4.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.4,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13849,7 +13861,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Michael Mayer|receptions|5": {
     "player": "Michael Mayer",
@@ -13859,10 +13873,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.6,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13875,7 +13889,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rashee Rice|receptions|6": {
     "player": "Rashee Rice",
@@ -13909,10 +13925,10 @@
     "stat": "receptions",
     "projected": 5.6,
     "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -13921,7 +13937,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Khalil Shakir|receptions|5": {
     "player": "Khalil Shakir",
@@ -13953,10 +13971,10 @@
     "stat": "receptions",
     "projected": 6.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 8.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -13970,7 +13988,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Isaiah Likely|receptions|5": {
     "player": "Isaiah Likely",
@@ -13980,10 +14000,10 @@
     "stat": "receptions",
     "projected": 3.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.5,
     "model_prob": null,
     "signals": {
       "usage_trend": "down",
@@ -13997,7 +14017,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Michael Wilson|receptions|5": {
     "player": "Michael Wilson",
@@ -14007,10 +14029,10 @@
     "stat": "receptions",
     "projected": 4.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.9,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
@@ -14021,7 +14043,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Brenton Strange|receptions|5": {
     "player": "Brenton Strange",
@@ -14103,10 +14127,10 @@
     "stat": "receptions",
     "projected": 5.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 2.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -14116,7 +14140,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Terry McLaurin|receptions|5": {
     "player": "Terry McLaurin",
@@ -14170,10 +14196,10 @@
     "stat": "receptions",
     "projected": 4.7,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 1.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -14187,7 +14213,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Juwan Johnson|receptions|5": {
     "player": "Juwan Johnson",
@@ -14197,10 +14225,10 @@
     "stat": "receptions",
     "projected": 4.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -14210,7 +14238,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Jameson Williams|receptions|5": {
     "player": "Jameson Williams",
@@ -14220,10 +14250,10 @@
     "stat": "receptions",
     "projected": 3.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "PUSH",
+    "edge": 0.0,
     "model_prob": null,
     "signals": {
       "usage_trend": "up"
@@ -14232,7 +14262,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Romeo Doubs|receptions|5": {
     "player": "Romeo Doubs",
@@ -14242,10 +14274,10 @@
     "stat": "receptions",
     "projected": 3.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "PUSH",
+    "edge": 0.0,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -14254,7 +14286,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tucker Kraft|receptions|5": {
     "player": "Tucker Kraft",
@@ -14264,10 +14298,10 @@
     "stat": "receptions",
     "projected": 3.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -1.4,
     "model_prob": null,
     "signals": {
       "usage_trend": "up"
@@ -14280,7 +14314,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Malik Nabers|receptions|5": {
     "player": "Malik Nabers",
@@ -14290,10 +14326,10 @@
     "stat": "receptions",
     "projected": 6.2,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.0,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -14306,7 +14342,9 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Brock Bowers|receptions|5": {
     "player": "Brock Bowers",
@@ -14316,10 +14354,10 @@
     "stat": "receptions",
     "projected": 6.6,
     "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -14329,7 +14367,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Devaughn Vele|receptions|5": {
     "player": "Devaughn Vele",
@@ -14339,17 +14379,19 @@
     "stat": "receptions",
     "projected": 3.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Keon Coleman|receptions|5": {
     "player": "Keon Coleman",
@@ -14383,10 +14425,10 @@
     "stat": "receptions",
     "projected": 3.2,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.7,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -14395,7 +14437,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Ashton Jeanty|receptions|5": {
     "player": "Ashton Jeanty",
@@ -14405,10 +14449,10 @@
     "stat": "receptions",
     "projected": 3.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -14418,7 +14462,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Colston Loveland|receptions|5": {
     "player": "Colston Loveland",
@@ -14428,10 +14474,10 @@
     "stat": "receptions",
     "projected": 3.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.4,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -14440,7 +14486,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Greg Dulcich|receptions|5": {
     "player": "Greg Dulcich",
@@ -14450,10 +14498,10 @@
     "stat": "receptions",
     "projected": 2.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.2,
     "model_prob": null,
     "signals": {
       "usage_trend": "down"
@@ -14462,7 +14510,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-08 20:28 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Drew Lock|any_td|5": {
     "player": "Drew Lock",
@@ -14550,7 +14600,8 @@
     "graded_at": null,
     "market_prob": 69.0,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Brian Robinson|any_td|5": {
@@ -14818,7 +14869,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jordan Love|any_td|5": {
@@ -15017,7 +15069,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Tyquan Thornton|any_td|6": {
     "player": "Tyquan Thornton",
@@ -15092,7 +15147,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Emanuel Wilson|any_td|5": {
