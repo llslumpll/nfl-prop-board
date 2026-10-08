@@ -658,7 +658,7 @@
     },
     "Justice Hill": {
       "rushing_yards": 11.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Matthew Stafford": {
       "passing_yards": 280.5,
@@ -703,9 +703,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 6268,
+    "total_projections_returned": 6267,
     "matched_props": 318,
-    "excluded_goblin_demon_lines": 5188,
+    "excluded_goblin_demon_lines": 5185,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
