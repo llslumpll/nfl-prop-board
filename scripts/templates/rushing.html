@@ -143,7 +143,8 @@
         {% endif %}
         {% set fd_line = (fanduel_props or {}).get(r.player, {}).get('rushing_yards') %}
         {% if fd_line %}
-          <div class="player-sub" title="FanDuel line via The Odds API, pulled on a schedule (not live){% if fanduel_pulled_label %} -- last pulled {{ fanduel_pulled_label }}{% endif %}">FanDuel: <span class="num">{{ fd_line }}</span>{% if fanduel_pulled_label %} ({{ fanduel_pulled_label }}){% endif %}</div>
+        {% set fd_price = (fanduel_prices or {}).get(r.player, {}).get('rushing_yards') %}
+          <div class="player-sub" title="FanDuel line + real American odds via The Odds API, pulled on a schedule (not live){% if fanduel_pulled_label %} -- last pulled {{ fanduel_pulled_label }}{% endif %}">FanDuel: <span class="num">{{ fd_line }}</span>{% if fd_price %} <span class="num">(o{{ fd_price.over_price_str }}/u{{ fd_price.under_price_str }})</span>{% endif %}{% if fanduel_pulled_label %} ({{ fanduel_pulled_label }}){% endif %}</div>
         {% endif %}
       </td>
       <td><span class="tier {{ r.tier.css }}">{{ r.tier.label }}</span></td>
