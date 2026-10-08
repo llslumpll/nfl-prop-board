@@ -603,6 +603,40 @@ def build(oddsapi_mode: str | None = None):
     fd_row_total = len(passing_rows) + len(receiving_rows) + len(receptions_rows) + len(rushing_rows)
     print(f"FanDuel line matched for {fd_row_hits}/{fd_row_total} stat-page rows.")
 
+    # Why did the rest not match? Separate "FanDuel doesn't price this stat for
+    # him" from "FanDuel doesn't list him at all" from a likely name mismatch,
+    # so a naming bug can be told apart from simple lack of coverage.
+    def _name_key(n):
+        parts = (n or "").lower().replace(".", "").split()
+        return (parts[0][:1] if parts else "", parts[-1] if parts else "")
+
+    _fd_by_key = {}
+    for _n in fanduel_props:
+        _fd_by_key.setdefault(_name_key(_n), []).append(_n)
+
+    fd_unmatched = []
+    for rows_, stat_ in ((passing_rows, 'passing_yards'), (receiving_rows, 'receiving_yards'),
+                         (receptions_rows, 'receptions'), (rushing_rows, 'rushing_yards')):
+        for r_ in rows_:
+            if fanduel_props.get(r_['player'], {}).get(stat_) is not None:
+                continue
+            if r_['player'] in fanduel_props:
+                why = "FanDuel prices this player, but not this stat"
+            else:
+                near = [n for n in _fd_by_key.get(_name_key(r_['player']), []) if n != r_['player']]
+                why = (f"possible name mismatch: FanDuel has '{near[0]}'" if near
+                       else "FanDuel lists no props for this player")
+            fd_unmatched.append({"player": r_['player'], "team": r_.get('team'), "stat": stat_, "why": why})
+    _why_counts = {}
+    for u in fd_unmatched:
+        _k = u["why"].split(":")[0]
+        _why_counts[_k] = _why_counts.get(_k, 0) + 1
+    print(f"FanDuel unmatched breakdown: {_why_counts}")
+    for u in fd_unmatched:
+        print(f"  FD unmatched | {u['player']} ({u['team']}) | {u['stat']} | {u['why']}")
+    import json as _json
+    (DATA_DIR / "fanduel_unmatched.json").write_text(_json.dumps(fd_unmatched, indent=2))
+
     # Real line-movement logging -- records the real current PrizePicks
     # line for every player with real next-game data this build, so
     # movement (current vs. real opening line) can be computed honestly
