@@ -13822,7 +13822,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Sam LaPorta|receptions|5": {
     "player": "Sam LaPorta",
@@ -14758,7 +14761,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Sam Darnold|any_td|5": {
