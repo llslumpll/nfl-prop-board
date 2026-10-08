@@ -3,7 +3,7 @@
     {
       "player": "Dak Prescott",
       "stat": "passing_yards",
-      "line": 267.5,
+      "line": 268.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -21,7 +21,7 @@
     {
       "player": "Ted Hurst III",
       "stat": "receiving_yards",
-      "line": 20.5,
+      "line": 16.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -30,7 +30,7 @@
     {
       "player": "Tez Johnson",
       "stat": "receiving_yards",
-      "line": 13.5,
+      "line": 12.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -102,7 +102,7 @@
     {
       "player": "Bucky Irving",
       "stat": "receiving_yards",
-      "line": 12.5,
+      "line": 13.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -129,7 +129,7 @@
     {
       "player": "Chris Godwin",
       "stat": "receiving_yards",
-      "line": 28.5,
+      "line": 31.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -229,8 +229,8 @@
       "player": "Ted Hurst III",
       "stat": "receptions",
       "line": 1.5,
-      "over_price": -140,
-      "under_price": 106,
+      "over_price": -102,
+      "under_price": -130,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
       "commence_time": "2026-10-09T00:15:00Z"
     },
@@ -256,8 +256,8 @@
       "player": "Chris Godwin",
       "stat": "receptions",
       "line": 3.5,
-      "over_price": -114,
-      "under_price": -114,
+      "over_price": -138,
+      "under_price": 104,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
       "commence_time": "2026-10-09T00:15:00Z"
     },
@@ -273,7 +273,7 @@
     {
       "player": "Tyler Goodson",
       "stat": "rushing_yards",
-      "line": 16.5,
+      "line": 15.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -282,7 +282,7 @@
     {
       "player": "Sean Tucker",
       "stat": "rushing_yards",
-      "line": 11.5,
+      "line": 9.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -300,7 +300,7 @@
     {
       "player": "Jalon Daniels",
       "stat": "rushing_yards",
-      "line": 44.5,
+      "line": 43.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -318,7 +318,7 @@
     {
       "player": "Javonte Williams",
       "stat": "rushing_yards",
-      "line": 70.5,
+      "line": 66.5,
       "over_price": -113,
       "under_price": -113,
       "event_id": "259b5df9aa0d10257f56de78523495e0",
@@ -757,36 +757,9 @@
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
-      "player": "Kyle Monangai",
-      "stat": "rushing_yards",
-      "line": 51.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "2caea57b1e5cfbba1334cfbfd46f6771",
-      "commence_time": "2026-10-11T17:00:00Z"
-    },
-    {
-      "player": "Kaleb Johnson",
-      "stat": "rushing_yards",
-      "line": 36.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "2caea57b1e5cfbba1334cfbfd46f6771",
-      "commence_time": "2026-10-11T17:00:00Z"
-    },
-    {
       "player": "Jordan Love",
       "stat": "rushing_yards",
       "line": 6.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "2caea57b1e5cfbba1334cfbfd46f6771",
-      "commence_time": "2026-10-11T17:00:00Z"
-    },
-    {
-      "player": "D'Andre Swift",
-      "stat": "rushing_yards",
-      "line": 61.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "2caea57b1e5cfbba1334cfbfd46f6771",
@@ -802,9 +775,18 @@
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
+      "player": "Kaleb Johnson",
+      "stat": "rushing_yards",
+      "line": 36.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2caea57b1e5cfbba1334cfbfd46f6771",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
       "player": "Joe Burrow",
       "stat": "passing_yards",
-      "line": 235.5,
+      "line": 242.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "c4647ca1201e6768501877267ca8251b",
@@ -840,7 +822,7 @@
     {
       "player": "Greg Dulcich",
       "stat": "receiving_yards",
-      "line": 27.5,
+      "line": 25.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "c4647ca1201e6768501877267ca8251b",
@@ -868,8 +850,8 @@
       "player": "Greg Dulcich",
       "stat": "receptions",
       "line": 2.5,
-      "over_price": -172,
-      "under_price": 128,
+      "over_price": -138,
+      "under_price": 104,
       "event_id": "c4647ca1201e6768501877267ca8251b",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -885,7 +867,7 @@
     {
       "player": "Ollie Gordon II",
       "stat": "rushing_yards",
-      "line": 45.5,
+      "line": 43.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "c4647ca1201e6768501877267ca8251b",
@@ -1146,7 +1128,7 @@
     {
       "player": "Nico Collins",
       "stat": "receiving_yards",
-      "line": 79.5,
+      "line": 77.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "cc52bba56e74f5cddbe9011046181c3d",
@@ -1300,8 +1282,8 @@
       "player": "Nico Collins",
       "stat": "receptions",
       "line": 5.5,
-      "over_price": -122,
-      "under_price": -108,
+      "over_price": -114,
+      "under_price": -114,
       "event_id": "cc52bba56e74f5cddbe9011046181c3d",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -1380,7 +1362,7 @@
     {
       "player": "David Montgomery",
       "stat": "rushing_yards",
-      "line": 46.5,
+      "line": 44.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "cc52bba56e74f5cddbe9011046181c3d",
@@ -1432,9 +1414,27 @@
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
+      "player": "Germie Bernard",
+      "stat": "receiving_yards",
+      "line": 18.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
       "player": "Jonathan Taylor",
       "stat": "receiving_yards",
       "line": 15.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
+      "player": "Roman Wilson",
+      "stat": "receiving_yards",
+      "line": 41.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "448d7cf18c6db4c811ed82ded1b72867",
@@ -1461,7 +1461,7 @@
     {
       "player": "DK Metcalf",
       "stat": "receiving_yards",
-      "line": 51.5,
+      "line": 53.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "448d7cf18c6db4c811ed82ded1b72867",
@@ -1470,9 +1470,18 @@
     {
       "player": "DK Metcalf",
       "stat": "receptions",
+      "line": 4.5,
+      "over_price": 114,
+      "under_price": -152,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
+      "player": "Roman Wilson",
+      "stat": "receptions",
       "line": 3.5,
-      "over_price": -180,
-      "under_price": 134,
+      "over_price": 106,
+      "under_price": -140,
       "event_id": "448d7cf18c6db4c811ed82ded1b72867",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -1480,8 +1489,8 @@
       "player": "Darnell Washington",
       "stat": "receptions",
       "line": 2.5,
-      "over_price": 124,
-      "under_price": -166,
+      "over_price": 120,
+      "under_price": -160,
       "event_id": "448d7cf18c6db4c811ed82ded1b72867",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -1491,6 +1500,15 @@
       "line": 2.5,
       "over_price": -192,
       "under_price": 142,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
+      "player": "Germie Bernard",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 144,
+      "under_price": -194,
       "event_id": "448d7cf18c6db4c811ed82ded1b72867",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -1531,6 +1549,24 @@
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
+      "player": "Jaylen Warren",
+      "stat": "rushing_yards",
+      "line": 64.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
+      "player": "Aaron Rodgers",
+      "stat": "rushing_yards",
+      "line": 0.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "448d7cf18c6db4c811ed82ded1b72867",
+      "commence_time": "2026-10-11T17:00:00Z"
+    },
+    {
       "player": "Daniel Jones",
       "stat": "rushing_yards",
       "line": 10.5,
@@ -1549,18 +1585,18 @@
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
-      "player": "Kirk Cousins",
+      "player": "Drake Maye",
       "stat": "passing_yards",
-      "line": 233.5,
+      "line": 226.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "6b024bad1abb54f597225e4ab9b39d89",
       "commence_time": "2026-10-11T17:00:00Z"
     },
     {
-      "player": "Drake Maye",
+      "player": "Kirk Cousins",
       "stat": "passing_yards",
-      "line": 226.5,
+      "line": 233.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "6b024bad1abb54f597225e4ab9b39d89",
@@ -1578,7 +1614,7 @@
     {
       "player": "DeMario Douglas",
       "stat": "receiving_yards",
-      "line": 23.5,
+      "line": 25.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "6b024bad1abb54f597225e4ab9b39d89",
@@ -1660,8 +1696,8 @@
       "player": "DeMario Douglas",
       "stat": "receptions",
       "line": 2.5,
-      "over_price": -114,
-      "under_price": -114,
+      "over_price": -122,
+      "under_price": -106,
       "event_id": "6b024bad1abb54f597225e4ab9b39d89",
       "commence_time": "2026-10-11T17:00:00Z"
     },
@@ -2073,7 +2109,7 @@
     {
       "player": "RJ Harvey",
       "stat": "receiving_yards",
-      "line": 26.5,
+      "line": 27.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "d1d408fdfd272046fb517fe992a1c5a0",
@@ -2163,7 +2199,7 @@
     {
       "player": "Bo Nix",
       "stat": "rushing_yards",
-      "line": 14.5,
+      "line": 13.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "d1d408fdfd272046fb517fe992a1c5a0",
@@ -2190,7 +2226,7 @@
     {
       "player": "RJ Harvey",
       "stat": "rushing_yards",
-      "line": 18.5,
+      "line": 19.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "d1d408fdfd272046fb517fe992a1c5a0",
@@ -2262,7 +2298,7 @@
     {
       "player": "Tyler Allgeier",
       "stat": "receiving_yards",
-      "line": 11.5,
+      "line": 9.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "f8e7f43f73aa983c5c99c189587f0118",
@@ -2371,8 +2407,8 @@
       "player": "Tyler Allgeier",
       "stat": "receptions",
       "line": 2.5,
-      "over_price": 154,
-      "under_price": -210,
+      "over_price": 162,
+      "under_price": -220,
       "event_id": "f8e7f43f73aa983c5c99c189587f0118",
       "commence_time": "2026-10-11T20:25:00Z"
     },
@@ -2442,7 +2478,7 @@
     {
       "player": "Jacoby Brissett",
       "stat": "rushing_yards",
-      "line": 6.5,
+      "line": 8.5,
       "over_price": -114,
       "under_price": -114,
       "event_id": "f8e7f43f73aa983c5c99c189587f0118",
@@ -3062,21 +3098,21 @@
     }
   ],
   "error": null,
-  "pulled_at": "2026-10-08 16:05 UTC",
+  "pulled_at": "2026-10-08 19:38 UTC",
   "diagnostics": {
     "events_listed": 29,
     "events_in_window": 15,
-    "credits_remaining_before": 412,
+    "credits_remaining_before": 349,
     "events_attempted": 15,
     "usage": {
       "call": "event-odds:e6d00eedd87d367e510314bd8cab8f6f",
-      "requests_remaining": 352,
-      "requests_used": 148,
+      "requests_remaining": 289,
+      "requests_used": 211,
       "requests_last": 4,
-      "logged_at": "2026-10-08 16:05 UTC"
+      "logged_at": "2026-10-08 19:38 UTC"
     },
     "events_with_fanduel_lines": 15,
     "events_failed": 0,
-    "lines_found": 340
+    "lines_found": 344
   }
 }
