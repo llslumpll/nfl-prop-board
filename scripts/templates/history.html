@@ -161,6 +161,47 @@
   <h2>Prediction Accuracy Over Time</h2>
   <p class="lede small">The dashed line marks 50% -- a coin flip. If the model is genuinely useful, dots should trend up and away from it as more weeks accumulate, not stay flat around it. NFL's weekly cadence means this fills in one point per week, not per day -- an honestly short series right now, not a lesser one.</p>
 
+  <h3 class="division-head">Projection accuracy &mdash; every player who played</h3>
+  <p class="lede small">
+    Hit/miss needs a market line, and some picks never get one. This scores <em>all</em> of them on how close
+    our projection was to what really happened. <strong>Typical miss</strong> is the average gap
+    (smaller is better); <strong>bias</strong> is the average signed gap (positive = we projected too low).
+    Players who did not play are left out rather than scored as a 0
+    ({{ projection_error.excluded_did_not_play }} excluded so far).
+    The trend compares the first and latest week only, so with a few weeks of data treat it as a hint, not a verdict.
+  </p>
+  {% if projection_error.by_stat %}
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Stat</th><th class="num">Players scored</th><th class="num">Typical miss</th><th class="num">Bias</th><th>Week by week (typical miss)</th><th>Trend</th></tr></thead>
+    <tbody>
+      {% for stat, e in projection_error.by_stat.items() %}
+      <tr>
+        <td>{{ e.label }}</td>
+        <td class="num">{{ e.n }}</td>
+        <td class="num">{{ e.mae }}</td>
+        <td class="num">{{ '+' if e.bias > 0 }}{{ e.bias }}</td>
+        <td class="player-sub">{% for w in e.weekly %}W{{ w.week }}: {{ w.mae }} ({{ w.n }}){{ ' &rarr; '|safe if not loop.last }}{% endfor %}</td>
+        <td>{% if e.trend == 'improving' %}<span class="stat-good">improving</span>{% elif e.trend == 'worse' %}<span class="stat-bad">worse</span>{% elif e.trend == 'flat' %}<span class="player-sub">flat</span>{% else %}<span class="player-sub">need 2+ weeks</span>{% endif %}</td>
+      </tr>
+      {% if e.brier is defined %}
+      <tr>
+        <td class="player-sub" colspan="6">
+          Touchdowns, chance of scoring 1+ (any type): model score {{ e.brier }} vs {{ e.brier_naive }} for a naive
+          &ldquo;everyone gets the same average rate ({{ e.td_rate }}% of these picks scored)&rdquo; guess &mdash; lower is better.
+          {% if e.beats_naive %}<span class="stat-good">The model is beating the naive guess.</span>
+          {% else %}<span class="stat-bad">The model is not beating the naive guess yet.</span>{% endif %}
+        </td>
+      </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% else %}
+  <div class="empty-state"><h3>No graded picks for players who played yet</h3></div>
+  {% endif %}
+
   {% for stat, d in trend.items() %}
     {% if d.weeks|length > 1 %}
     <h3 class="division-head">{{ stat.replace('_', ' ')|title }} &mdash; weekly accuracy</h3>
