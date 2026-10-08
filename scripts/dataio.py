@@ -410,6 +410,18 @@ def league_avg_team_points_per_game() -> float | None:
     return round(sum(scores) / len(scores), 1) if scores else None
 
 
+def implied_team_totals_from_lines(home_spread: float | None, game_total: float | None) -> tuple[float, float] | None:
+    """
+    Real implied team scores from a book's spread and game total:
+    home = (total - home_spread) / 2, away = (total + home_spread) / 2
+    (home_spread is the HOME team's point, so -3.5 means home favored by 3.5).
+    Returns (home_implied, away_implied), or None unless BOTH lines exist.
+    """
+    if home_spread is None or game_total is None:
+        return None
+    return round((game_total - home_spread) / 2, 2), round((game_total + home_spread) / 2, 2)
+
+
 def environment_factor(implied_team_total: float | None, league_avg_points: float | None) -> dict:
     """
     Real Vegas-implied game environment: a team implied for 27+ points
