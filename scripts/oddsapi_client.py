@@ -486,6 +486,25 @@ def lines_to_props(lines: list[dict]) -> dict:
     return props
 
 
+def lines_to_prices(lines: list[dict]) -> dict:
+    """
+    [{player, stat, line, over_price, under_price,...}] -> {player:
+    {stat: {"over_price_str", "under_price_str"}}} -- the real American
+    odds FanDuel actually prices this line at (e.g. -115/-105), kept
+    separate from lines_to_props() (which only carries the line itself)
+    so existing scalar-line template code doesn't need to change shape.
+    Formatted with fmt_price so a page just drops these strings in
+    directly.
+    """
+    prices: dict[str, dict] = {}
+    for ln in lines:
+        prices.setdefault(ln["player"], {})[ln["stat"]] = {
+            "over_price_str": fmt_price(ln.get("over_price")),
+            "under_price_str": fmt_price(ln.get("under_price")),
+        }
+    return prices
+
+
 def fmt_point(pt) -> str:
     if pt is None:
         return "--"
