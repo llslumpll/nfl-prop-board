@@ -54,8 +54,8 @@
       "receiving_yards": 13.5
     },
     "Kenny Gainwell": {
+      "receiving_yards": 12.5,
       "rushing_yards": 12.5,
-      "receiving_yards": 11.5,
       "receptions": 2
     },
     "Sean Tucker": {
@@ -394,7 +394,7 @@
     },
     "Woody Marks": {
       "rushing_yards": 28.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Kayshon Boutte": {
@@ -690,9 +690,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 5921,
+    "total_projections_returned": 5926,
     "matched_props": 311,
-    "excluded_goblin_demon_lines": 4931,
+    "excluded_goblin_demon_lines": 4936,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
