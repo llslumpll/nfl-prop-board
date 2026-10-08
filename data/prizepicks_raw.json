@@ -254,14 +254,15 @@
       "receiving_yards": 37.5
     },
     "Kaleb Johnson": {
-      "rushing_yards": 36.5
+      "rushing_yards": 36.5,
+      "receptions": 0.5
     },
     "Kalif Raymond": {
       "receiving_yards": 28.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 27.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Skyy Moore": {
       "receiving_yards": 11.5
@@ -425,7 +426,7 @@
     },
     "Aaron Rodgers": {
       "passing_yards": 224.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 0.5
     },
     "Daniel Jones": {
       "passing_yards": 216.5,
@@ -699,9 +700,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 5979,
-    "matched_props": 314,
-    "excluded_goblin_demon_lines": 4984,
+    "total_projections_returned": 5997,
+    "matched_props": 315,
+    "excluded_goblin_demon_lines": 4993,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
