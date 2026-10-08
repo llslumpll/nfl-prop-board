@@ -351,13 +351,14 @@
   <p class="lede small">
     Does a real context signal (EPA edge, recent form, injury edge, rest edge) actually predict which real
     picks hit, or does it just look plausible? Compares the real hit rate of graded picks WITH each signal
-    against picks WITHOUT it, gated at 20+ real graded picks on both sides &mdash; a signal shown here as
-    "insufficient data" isn't wrong, it just doesn't have enough real history yet to say either way.
+    against picks WITHOUT it, gated at 20+ real graded GAMES on both sides (each game counts once, even though it carries a moneyline, spread
+    and total pick). "Insufficient data" just means not enough real games yet; "untestable" means every game so far
+    has had the same value, so there is nothing to compare against until that changes.
   </p>
   {% if team_signal_effectiveness %}
   <div class="table-wrap">
   <table class="stat-table">
-    <thead><tr><th>Signal</th><th>Value</th><th class="num">With</th><th class="num">Without</th><th class="num">Hit rate (with)</th><th class="num">Hit rate (without)</th><th class="num">Difference</th></tr></thead>
+    <thead><tr><th>Signal</th><th>Value</th><th class="num">Games with</th><th class="num">Games without</th><th class="num">Hit rate (with)</th><th class="num">Hit rate (without)</th><th class="num">Difference</th></tr></thead>
     <tbody>
       {% for r in team_signal_effectiveness %}
       <tr>
@@ -370,7 +371,11 @@
         <td class="num">{{ r.hit_rate_without }}%</td>
         <td class="num stat-{{ 'good' if r.difference_pp > 5 else 'bad' if r.difference_pp < -5 else 'neutral' }}">{{ '+' if r.difference_pp > 0 }}{{ r.difference_pp }}pp</td>
         {% else %}
-        <td class="player-sub" colspan="3">insufficient data (needs {{ r.min_sample }}+ on both sides)</td>
+        {% if r.status == 'untestable' %}
+        <td class="player-sub" colspan="3">untestable &mdash; every game so far has this same value</td>
+        {% else %}
+        <td class="player-sub" colspan="3">insufficient data (needs {{ r.min_sample }}+ games on both sides)</td>
+        {% endif %}
         {% endif %}
       </tr>
       {% endfor %}
