@@ -428,18 +428,58 @@ def build(oddsapi_mode: str | None = None):
 
     league_avg_points = dataio.league_avg_team_points_per_game()
     implied_team_totals: dict[str, float] = {}
+    implied_total_source: dict[str, str] = {}
     for g in matchups_data["games"]:
         away_city = dataio.TEAM_CITY.get(g["away_team"], g["away_team"])
         home_city = dataio.TEAM_CITY.get(g["home_team"], g["home_team"])
         implied_team_totals[g["away_team"]] = extract_implied_team_total(g["kalshi_props"], away_city)
         implied_team_totals[g["home_team"]] = extract_implied_team_total(g["kalshi_props"], home_city)
+        for _t in (g["away_team"], g["home_team"]):
+            if implied_team_totals[_t] is not None:
+                implied_total_source[_t] = "kalshi"
+        # Fallback: FanDuel's real spread + total imply each team's score.
+        # One source per team (Kalshi wins when it has a real quote), so the
+        # two never stack; the source is recorded for later effectiveness checks.
+        _fd = g.get("fanduel_odds") or {}
+        _sp, _tot = (_fd.get("spread") or {}), (_fd.get("total") or {})
+        _derived = dataio.implied_team_totals_from_lines(_sp.get("home_point"), _tot.get("point"))
+        if _derived is not None:
+            if implied_team_totals[g["home_team"]] is None:
+                implied_team_totals[g["home_team"]] = _derived[0]
+                implied_total_source[g["home_team"]] = "fanduel_derived"
+            if implied_team_totals[g["away_team"]] is None:
+                implied_team_totals[g["away_team"]] = _derived[1]
+                implied_total_source[g["away_team"]] = "fanduel_derived"
         for p in g["players"]:
             env_factor = dataio.environment_factor(implied_team_totals.get(p["team"]), league_avg_points)
+            env_factor["source"] = implied_total_source.get(p["team"])
             p["projection"]["environment_factor"] = env_factor
             p["projection"]["projected"] = round(p["projection"]["projected"] * env_factor["factor"], 1)
 
+    # The matchups loop above only covers the single nearest date, but the
+    # stat pages project every team's next game. Cover every other unplayed
+    # game that has a real FanDuel spread + total too, still never overriding
+    # a team that already has a real Kalshi quote (one source per team).
+    for _row in dataio.load_schedule().filter(pl.col("result").is_null()).sort(["gameday"]).iter_rows(named=True):
+        _h, _a = _row["home_team"], _row["away_team"]
+        if implied_team_totals.get(_h) is not None and implied_team_totals.get(_a) is not None:
+            continue
+        _fd = oddsapi_client.odds_for_game(fd_games, _h, _a) or {}
+        _derived = dataio.implied_team_totals_from_lines(
+            (_fd.get("spread") or {}).get("home_point"), (_fd.get("total") or {}).get("point"))
+        if _derived is None:
+            continue
+        if implied_team_totals.get(_h) is None:
+            implied_team_totals[_h] = _derived[0]
+            implied_total_source[_h] = "fanduel_derived"
+        if implied_team_totals.get(_a) is None:
+            implied_team_totals[_a] = _derived[1]
+            implied_total_source[_a] = "fanduel_derived"
+
     quoted_environments = sum(1 for v in implied_team_totals.values() if v is not None)
-    print(f"Vegas-implied game environment: {quoted_environments}/{len(implied_team_totals)} team(s) have a real quoted Kalshi Team Total.")
+    _n_k = sum(1 for s in implied_total_source.values() if s == "kalshi")
+    _n_f = sum(1 for s in implied_total_source.values() if s == "fanduel_derived")
+    print(f"Vegas-implied game environment: {quoted_environments}/{len(implied_team_totals)} team(s) covered ({_n_k} real Kalshi Team Total, {_n_f} derived from FanDuel spread+total).")
 
     # --- Freeze real predictions (one per player/stat/week, never
     # overwritten) using the real PrizePicks line as the market side.
