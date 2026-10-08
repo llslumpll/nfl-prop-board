@@ -6,7 +6,7 @@
     },
     "Jalon Daniels": {
       "passing_yards": 183.5,
-      "rushing_yards": 46.5
+      "rushing_yards": 45.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 84.5,
@@ -54,12 +54,12 @@
       "receiving_yards": 13.5
     },
     "Kenny Gainwell": {
-      "receiving_yards": 12.5,
       "rushing_yards": 12.5,
+      "receiving_yards": 11.5,
       "receptions": 2
     },
     "Sean Tucker": {
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 3.5,
@@ -93,13 +93,13 @@
       "receiving_yards": 43.5,
       "receptions": 3.5
     },
-    "Will Shipley": {
-      "rushing_yards": 37.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
-    },
     "Brenton Strange": {
       "receiving_yards": 34.5
+    },
+    "Will Shipley": {
+      "rushing_yards": 34.5,
+      "receiving_yards": 13.5,
+      "receptions": 2.5
     },
     "Makai Lemon": {
       "receiving_yards": 32.5,
@@ -124,7 +124,7 @@
     },
     "Drake Maye": {
       "passing_yards": 227.5,
-      "rushing_yards": 28.5
+      "rushing_yards": 31.5
     },
     "Brock Bowers": {
       "receiving_yards": 71.5,
@@ -160,7 +160,7 @@
       "receiving_yards": 16.5
     },
     "Tyler Shough": {
-      "passing_yards": 238.5,
+      "passing_yards": 237.5,
       "rushing_yards": 9.5
     },
     "Kyler Murray": {
@@ -178,7 +178,7 @@
       "receiving_yards": 42.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Joe Burrow": {
       "passing_yards": 235.5,
@@ -290,11 +290,12 @@
       "receptions": 5
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 8.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 40.5
+      "receiving_yards": 40.5,
+      "receptions": 4.5
     },
     "Najee Harris": {
       "rushing_yards": 30.5,
@@ -307,7 +308,7 @@
       "receiving_yards": 26.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Theo Johnson": {
@@ -619,8 +620,8 @@
       "rushing_yards": 0.5
     },
     "Tyler Huntley": {
-      "passing_yards": 173.5,
-      "rushing_yards": 23.5
+      "passing_yards": 174.5,
+      "rushing_yards": 25.5
     },
     "Bijan Robinson": {
       "rushing_yards": 89.5,
@@ -639,7 +640,8 @@
       "receptions": 5.5
     },
     "Brian Robinson Jr.": {
-      "rushing_yards": 35.5
+      "rushing_yards": 35.5,
+      "receptions": 0.5
     },
     "Mark Andrews": {
       "receiving_yards": 29.5,
@@ -656,7 +658,7 @@
     },
     "Justice Hill": {
       "rushing_yards": 11.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Matthew Stafford": {
       "passing_yards": 280.5,
@@ -701,9 +703,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 6234,
-    "matched_props": 316,
-    "excluded_goblin_demon_lines": 5165,
+    "total_projections_returned": 6268,
+    "matched_props": 318,
+    "excluded_goblin_demon_lines": 5188,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
