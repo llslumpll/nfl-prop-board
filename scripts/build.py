@@ -327,6 +327,8 @@ def build(oddsapi_mode: str | None = None):
     )
     fanduel_props, fd_name_stats = oddsapi_client.canonicalize_props(
         oddsapi_client.lines_to_props(fd_lines), known_player_names)
+    fanduel_prices, _ = oddsapi_client.canonicalize_props(
+        oddsapi_client.lines_to_prices(fd_lines), known_player_names)
 
     def _pulled_label(ts):
         try:
@@ -807,7 +809,7 @@ def build(oddsapi_mode: str | None = None):
             "passing", "passing.html",
             {
                 "rows": passing_rows, "pp_props": pp_props, "pp_error": pp_error,
-                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
+                "fanduel_props": fanduel_props, "fanduel_prices": fanduel_prices, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": passing_games, "no_game_players": passing_no_game,
                 "best5_confidence": best5_data["passing"]["highest_confidence"],
                 "best5_value": best5_data["passing"]["best_value"],
@@ -821,7 +823,7 @@ def build(oddsapi_mode: str | None = None):
             "receiving.html",
             {
                 "rows": receiving_rows,
-                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
+                "fanduel_props": fanduel_props, "fanduel_prices": fanduel_prices, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": receiving_games, "no_game_players": receiving_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
@@ -838,7 +840,7 @@ def build(oddsapi_mode: str | None = None):
             "receptions.html",
             {
                 "rows": receptions_rows,
-                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
+                "fanduel_props": fanduel_props, "fanduel_prices": fanduel_prices, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": receptions_games, "no_game_players": receptions_no_game,
                 "qb_by_team": dataio.correlated_pairs_for_receiving(),
                 "pp_props": pp_props,
@@ -854,7 +856,7 @@ def build(oddsapi_mode: str | None = None):
             "rushing", "rushing.html",
             {
                 "rows": rushing_rows, "pp_props": pp_props, "pp_error": pp_error,
-                "fanduel_props": fanduel_props, "fanduel_pulled_label": fanduel_pulled_label,
+                "fanduel_props": fanduel_props, "fanduel_prices": fanduel_prices, "fanduel_pulled_label": fanduel_pulled_label,
                 "games": rushing_games, "no_game_players": rushing_no_game,
                 "best5_confidence": best5_data["rushing"]["highest_confidence"],
                 "best5_value": best5_data["rushing"]["best_value"],
