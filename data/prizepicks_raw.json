@@ -461,6 +461,9 @@
     "Darnell Washington": {
       "receiving_yards": 22.5
     },
+    "Germie Bernard": {
+      "receiving_yards": 20.5
+    },
     "Bo Nix": {
       "passing_yards": 223.5,
       "rushing_yards": 14.5
@@ -690,8 +693,8 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 5929,
-    "matched_props": 311,
+    "total_projections_returned": 5930,
+    "matched_props": 312,
     "excluded_goblin_demon_lines": 4939,
     "sample_stat_types_seen": [
       "anytime tds",
