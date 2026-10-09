@@ -16818,9 +16818,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jacoby Brissett|passing_yards|5": {
     "player": "Jacoby Brissett",
@@ -16888,8 +16886,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Brock Purdy|passing_yards|5": {
@@ -17009,8 +17006,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jaxon Smith-Njigba|receiving_yards|5": {
@@ -17265,5 +17261,212 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Tyson Bagent|passing_yards|5": {
+    "player": "Tyson Bagent",
+    "team": "CHI",
+    "opponent": "GB",
+    "week": 5,
+    "stat": "passing_yards",
+    "projected": 96.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 217.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -121.0,
+    "model_prob": 0.0964,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Matthew Stafford|passing_yards|5": {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "opponent": "BUF",
+    "week": 5,
+    "stat": "passing_yards",
+    "projected": 318.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 278.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 40.1,
+    "model_prob": 0.7167,
+    "signals": {},
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Puka Nacua|receiving_yards|5": {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "opponent": "BUF",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 117.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 92.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 24.8,
+    "model_prob": 0.6899,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Roman Wilson|receiving_yards|5": {
+    "player": "Roman Wilson",
+    "team": "PIT",
+    "opponent": "IND",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 25.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 40.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -15.1,
+    "model_prob": 0.2605,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Isaiah Williams|receiving_yards|5": {
+    "player": "Isaiah Williams",
+    "team": "NYJ",
+    "opponent": "CLE",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 12.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 21.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -8.6,
+    "model_prob": 0.2798,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Tyler Higbee|receiving_yards|5": {
+    "player": "Tyler Higbee",
+    "team": "LA",
+    "opponent": "BUF",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 38.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 25.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.6,
+    "model_prob": 0.7123,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Braelon Allen|rushing_yards|5": {
+    "player": "Braelon Allen",
+    "team": "NYJ",
+    "opponent": "CLE",
+    "week": 5,
+    "stat": "rushing_yards",
+    "projected": 20.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 71.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -51.1,
+    "model_prob": 0.01,
+    "signals": {
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Kaleb Johnson|rushing_yards|5": {
+    "player": "Kaleb Johnson",
+    "team": "GB",
+    "opponent": "CHI",
+    "week": 5,
+    "stat": "rushing_yards",
+    "projected": 9.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 34.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -25.4,
+    "model_prob": 0.01,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-10-09 21:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
