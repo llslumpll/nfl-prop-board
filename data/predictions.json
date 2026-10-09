@@ -14780,7 +14780,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Lamar Jackson|any_td|5": {
     "player": "Lamar Jackson",
