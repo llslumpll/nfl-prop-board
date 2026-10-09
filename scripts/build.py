@@ -740,11 +740,25 @@ def build(oddsapi_mode: str | None = None):
         "passing": "passing_yards", "receiving": "receiving_yards",
         "receptions": "receptions", "rushing": "rushing_yards", "touchdowns": "any_td",
     }
+    # Each list is kept at exactly 5. A better pick may replace a weaker one
+    # until that player's game kicks off; after kickoff the pick is locked in.
+    _sched = dataio.load_schedule()
+    _now = datetime.now(timezone.utc)
+
+    def _game_started(pred):
+        ko = line_attach._kickoff_utc(pred["team"], pred["week"], _sched)
+        return ko is None or _now >= ko  # unknown kickoff -> treat as locked
+
     for label, rankings in best5_data.items():
         stat_col = STAT_COL_BY_LABEL[label]
         for rank_type, picks in rankings.items():
-            for p in picks:
-                predictions.tag_best5(p["player"], stat_col, p["week"], rank_type)
+            for wk in sorted({p["week"] for p in picks}):
+                res = predictions.sync_best5(
+                    stat_col, wk, rank_type, [p for p in picks if p["week"] == wk], _game_started
+                )
+                if res["added"] or res["removed"]:
+                    print(f"Best 5 {label} ({rank_type}) W{wk}: +{res['added']} -{res['removed']} "
+                          f"({res['locked']} locked, {res['size']}/5)")
 
     # Real correlation check across each finished Best 5 list -- same
     # team or same game showing up twice in one list of 5, flagged
