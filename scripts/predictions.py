@@ -73,26 +73,54 @@ def _key(player: str, stat: str, week: int) -> str:
     return f"{player}|{stat}|{week}"
 
 
-def tag_best5(player: str, stat: str, week: int, list_name: str) -> bool:
+BEST5_SIZE = 5
+
+
+def sync_best5(stat: str, week: int, list_name: str, picks: list[dict], is_locked) -> dict:
     """
-    Marks an ALREADY-frozen prediction as having been part of a specific
-    week's Best 5 list (e.g. "highest_confidence" or "best_value") --
-    metadata only, never touches the actual projected/market_line/call/
-    actual/hit fields, since Best 5 selection happens after individual
-    predictions are already frozen for the week. Safe to call multiple
-    times (idempotent) and safe if the prediction doesn't exist yet
-    (returns False rather than erroring, matching this module's
-    fail-soft pattern).
+    Keeps a week's Best 5 list at exactly BEST5_SIZE picks while still letting
+    a better pick replace a weaker one -- but only BEFORE that game starts.
+
+      * A tagged pick whose game has started (is_locked(pred) is True, or it
+        is already graded) is locked in: it can never be removed.
+      * The remaining open slots go to the best-ranked picks (`picks`, best
+        first) whose games have not started. A tagged pick that fell out of
+        the open slots loses its tag; a new one gains it.
+    Metadata only -- projected/line/call/actual/hit are never touched.
+    Returns {"added": n, "removed": n, "locked": n, "size": n}.
     """
     preds = load_predictions()
-    key = _key(player, stat, week)
-    if key not in preds:
-        return False
-    tags = preds[key].setdefault("best5_tags", [])
-    if list_name not in tags:
-        tags.append(list_name)
+    tagged = [
+        k for k, p in preds.items()
+        if p.get("stat") == stat and p.get("week") == week and list_name in (p.get("best5_tags") or [])
+    ]
+    locked = [k for k in tagged if preds[k].get("graded") or is_locked(preds[k])]
+    open_slots = max(BEST5_SIZE - len(locked), 0)
+
+    keep_open = []
+    for pk in picks:
+        if len(keep_open) >= open_slots:
+            break
+        k = _key(pk["player"], stat, week)
+        p = preds.get(k)
+        if p is None or k in locked or p.get("graded") or is_locked(p):
+            continue
+        keep_open.append(k)
+
+    final = set(locked) | set(keep_open)
+    added = removed = 0
+    for k in tagged:
+        if k not in final:
+            preds[k]["best5_tags"].remove(list_name)
+            removed += 1
+    for k in final:
+        tags = preds[k].setdefault("best5_tags", [])
+        if list_name not in tags:
+            tags.append(list_name)
+            added += 1
+    if added or removed:
         save_predictions(preds)
-    return True
+    return {"added": added, "removed": removed, "locked": len(locked), "size": len(final)}
 
 
 def freeze_prediction(
