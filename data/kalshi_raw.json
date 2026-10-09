@@ -184,9 +184,9 @@
       "event_title": "Buffalo vs Los Angeles R: Touchdowns",
       "market_title": "James Cook III: 1+",
       "ticker": "KXNFLTD-26OCT12BUFLAR-BUFJCOOK4-1",
-      "yes_bid": 0.48,
+      "yes_bid": 0.49,
       "yes_ask": 0.5,
-      "yes_bid_cents": 48,
+      "yes_bid_cents": 49,
       "yes_ask_cents": 50,
       "price": 0.49,
       "decimal_odds": 2.04,
@@ -1098,6 +1098,21 @@
       "series_ticker": "KXNFLSPREAD"
     },
     {
+      "event_title": "BAL Ravens vs ATL Falcons: Spread",
+      "market_title": "ATL Falcons wins by over 1.5 points",
+      "ticker": "KXNFLSPREAD-26OCT11BALATL-ATL2",
+      "yes_bid": 0.59,
+      "yes_ask": 0.61,
+      "yes_bid_cents": 59,
+      "yes_ask_cents": 61,
+      "price": 0.6,
+      "decimal_odds": 1.67,
+      "implied_pct": 60.0,
+      "volume": 0,
+      "close_time": "2026-10-14T00:20:00Z",
+      "series_ticker": "KXNFLSPREAD"
+    },
+    {
       "event_title": "DEN Broncos vs LA Chargers: Spread",
       "market_title": "DEN Broncos wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26OCT11DENLAC-DEN2",
@@ -1110,21 +1125,6 @@
       "implied_pct": 59.0,
       "volume": 0,
       "close_time": "2026-10-13T20:05:00Z",
-      "series_ticker": "KXNFLSPREAD"
-    },
-    {
-      "event_title": "SF 49ers vs SEA Seahawks: Spread",
-      "market_title": "SEA Seahawks wins by over 1.5 points",
-      "ticker": "KXNFLSPREAD-26OCT11SFSEA-SEA2",
-      "yes_bid": 0.59,
-      "yes_ask": 0.6,
-      "yes_bid_cents": 59,
-      "yes_ask_cents": 60,
-      "price": 0.59,
-      "decimal_odds": 1.69,
-      "implied_pct": 59.0,
-      "volume": 0,
-      "close_time": "2026-10-13T20:25:00Z",
       "series_ticker": "KXNFLSPREAD"
     },
     {
@@ -1209,12 +1209,12 @@
       "KXNFLTD": "14 event(s), 620 market(s)",
       "KXNFLFIRSTTD": "14 event(s), 358 market(s)",
       "KXNFLGAME": "28 event(s), 56 market(s)",
-      "KXNFLSPREAD": "15 event(s), 301 market(s)",
+      "KXNFLSPREAD": "15 event(s), 326 market(s)",
       "KXNFLTOTAL": "error fetching events: HTTPError: 429 Client Error: Too Many Requests for url: https://api.elections.kalshi.com/trade-api/v2/events?series_ticker=KXNFLTOTAL&status=open&limit=200"
     },
     "total_touchdown_props_found": 978,
-    "total_game_props_found": 357,
+    "total_game_props_found": 382,
     "touchdown_props_with_a_quote": 978,
-    "game_props_with_a_quote": 357
+    "game_props_with_a_quote": 382
   }
 }
