@@ -14150,7 +14150,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-08 20:28 UTC",
-    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Terry McLaurin|receptions|5": {
     "player": "Terry McLaurin",
