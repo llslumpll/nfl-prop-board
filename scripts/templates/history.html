@@ -360,6 +360,188 @@
   </div>
   {% endif %}
 
+  {% if everything_else is defined %}
+  <style>
+    .b5-chip { display:inline-block; vertical-align:top; margin:4px 8px 4px 0; padding:6px 10px; border:2px solid var(--line); background:var(--bg-card); min-width:150px; }
+    .b5-chip .b5-name { font-size:1.05rem; color:var(--text); }
+    .b5-chip .b5-sub { font-size:0.82rem; color:var(--text-dim); margin-top:2px; }
+    .b5-chip.b5-hit { border-color:#39ff8c; }
+    .b5-chip.b5-miss { border-color:#ff3c5f; }
+    .b5-weekrow td { background:#14141f; color:var(--yellow); font-family:var(--display); font-size:0.8rem; padding:10px 8px; border-top:3px solid var(--line); }
+    .b5-weekrow .b5-weekmeta { color:var(--text-dim); font-family:var(--mono); font-size:0.85rem; margin-left:8px; }
+    .b5-legend { font-size:0.95rem; color:var(--text-dim); margin:6px 0 10px; }
+    .b5-section { margin-bottom:28px; }
+    .b5-overall { font-size:1.05rem; margin:4px 0 8px; }
+  </style>
+
+  {% macro b5_icon(p) %}{% if not p.graded %}&#9203;{% elif p.hit is none %}&#10134;{% elif p.hit %}&#9989;{% else %}&#10060;{% endif %}{% endmacro %}
+
+  {% macro src_tag(p) %}{% if p.market_source == 'prizepicks' %}PrizePicks{% elif p.market_source == 'fanduel' %}FanDuel{% elif p.market_source == 'kalshi_1plus_td' %}Kalshi{% endif %}{% endmacro %}
+
+  {% macro pick_chip(p, is_td) %}
+  <div class="b5-chip {{ 'b5-hit' if p.graded and p.hit else 'b5-miss' if p.graded and p.hit is not none and not p.hit else '' }}" title="{{ p.team }} vs {{ p.opponent }}">
+    <div class="b5-name">{{ p.player }} {{ b5_icon(p) }}</div>
+    <div class="b5-sub">
+      {% if is_td %}
+        {% if p.market_prob is defined and p.market_prob is not none %}{{ p.call }} &middot; model {{ p.model_prob }}% vs mkt {{ p.market_prob }}%{% else %}proj {{ p.projected }} TD &middot; no market price{% endif %}
+      {% else %}
+        {% if p.market_line is not none %}{{ p.call }} {{ p.market_line }}{% else %}no line{% endif %} &middot; proj {{ p.projected }}
+      {% endif %}
+      {% if p.actual is not none %}&middot; actual {{ p.actual }}{% endif %}
+    </div>
+  </div>
+  {% endmacro %}
+
+  <h3 class="division-head">Pick a prop, then choose what to see</h3>
+  <div class="game-picker" id="b5-prop-picker">
+    {% for key, ev in everything_else.items() %}
+    <button class="game-tab{{ ' active' if loop.first }}" data-b5-prop="{{ key }}">{{ ev.label }}</button>
+    {% endfor %}
+  </div>
+  <div class="game-picker" id="b5-view-picker">
+    <button class="game-tab active" data-b5-view="best5">Best 5 &mdash; what the site chose</button>
+    <button class="game-tab" data-b5-view="rest">Everything else &mdash; every other pick</button>
+  </div>
+
+  {% for key, rankings in best5_track.items() %}
+  {% set ev = everything_else[key] %}
+  {% set is_td = (key == 'touchdowns') %}
+
+  <!-- ===== {{ key }}: BEST 5 ===== -->
+  <div class="b5-panel{{ '' if loop.first else ' hidden' }}" data-b5-panel="{{ key }}|best5">
+    {% for rank_type in ['highest_confidence', 'best_value'] %}
+    {% set track = rankings[rank_type] %}
+    <div class="b5-section">
+      <h3 class="division-head">{{ ev.label }} Best 5 &mdash; {{ 'Highest Confidence' if rank_type == 'highest_confidence' else 'Best Value (Market Mispriced)' }}</h3>
+      <p class="lede small">
+        {% if rank_type == 'highest_confidence' %}
+        The 5 picks the model thought were most likely to hit, each week: real probability from each player's own game-to-game variance{% if is_td %} (real Poisson probability for touchdowns){% endif %}.
+        {% else %}
+        The 5 picks with the biggest gap between our projection and the real market {{ 'price' if is_td else 'line' }} &mdash; where the market looked most wrong. Can name different players than the other list.
+        {% endif %}
+      </p>
+      {% if track.total_graded %}
+      <div class="b5-overall"><strong>Overall: {{ track.total_hits }}/{{ track.total_graded }} ({{ track.overall_rate }}%)</strong> across {{ track.trend_weeks|length }} graded week{{ 's' if track.trend_weeks|length != 1 }}</div>
+      {% else %}
+      <div class="b5-overall"><strong>Nothing graded yet</strong> &mdash; these picks are waiting on games or on a real line.</div>
+      {% endif %}
+      {% if track.trend_rates|length > 1 %}
+      {{ line_chart(
+           series=[{"points": track.trend_rates, "color": "#ff3cac" if rank_type == 'best_value' else "#2be8d9"}],
+           y_min=0, y_max=100, reference_line=50,
+           x_labels=("W" ~ track.trend_weeks[0], "W" ~ track.trend_weeks[-1]), height=160
+         )|safe }}
+      {% endif %}
+      <div class="b5-legend">Week by week, most recent first &mdash; &#9989; hit &nbsp; &#10060; miss &nbsp; &#9203; game not final yet &nbsp; &#10134; final but no real line to grade</div>
+      {% if track.weekly %}
+      <div class="table-wrap"><div class="table-scroll" style="max-height:640px;">
+      <table class="stat-table">
+        <thead><tr><th>Week</th><th>Result</th><th>The picks</th></tr></thead>
+        <tbody>
+          {% for w in track.weekly %}
+          {% set finalized = w.picks|selectattr('graded')|list|length %}
+          <tr>
+            <td class="num">W{{ w.week }}</td>
+            <td style="white-space:nowrap;">{% if w.graded %}<strong>{{ w.hits }}/{{ w.graded }}</strong>{% if finalized > w.graded %}<div class="player-sub">{{ finalized - w.graded }} final, no line</div>{% endif %}{% if finalized < w.picks|length %}<div class="player-sub">{{ w.picks|length - finalized }} pending</div>{% endif %}{% elif finalized and finalized == w.picks|length %}<span class="player-sub">final &mdash; no line to grade</span>{% elif finalized %}<span class="player-sub">{{ finalized }} final (no line), {{ w.picks|length - finalized }} pending</span>{% else %}<span class="player-sub">pending</span>{% endif %}</td>
+            <td>{% for p in w.picks %}{{ pick_chip(p, is_td) }}{% endfor %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      </div></div>
+      {% else %}
+      <div class="empty-state"><h3>No Best 5 picks tagged yet for this list</h3></div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- ===== {{ key }}: EVERYTHING ELSE ===== -->
+  <div class="b5-panel hidden" data-b5-panel="{{ key }}|rest">
+    <div class="b5-section">
+      <h3 class="division-head">{{ ev.label }} &mdash; Everything Else</h3>
+      <p class="lede small">
+        Every other {{ ev.label|lower }} pick the site made that was <em>not</em> in either Best 5 list, newest week first.
+        Picks with a real line are listed first (biggest edge on top); picks with no line can't be graded hit/miss and sit below them.
+      </p>
+      {% if ev.total_tracked %}
+      <div class="b5-overall">
+        <strong>Overall: {% if ev.total_graded %}{{ ev.total_hits }}/{{ ev.total_graded }} ({{ ev.overall_rate }}%){% else %}nothing graded yet{% endif %}</strong>
+        &nbsp;&middot;&nbsp; {{ ev.total_tracked }} picks tracked
+        &nbsp;&middot;&nbsp; {{ ev.total_no_line }} final with no line
+        &nbsp;&middot;&nbsp; {{ ev.total_pending }} pending
+      </div>
+      <div class="b5-legend">&#9989; hit &nbsp; &#10060; miss &nbsp; &#9203; game not final yet &nbsp; &#10134; final but no real line to grade</div>
+      <div class="table-wrap"><div class="table-scroll" style="max-height:760px;">
+      <table class="stat-table">
+        <thead>
+          <tr>
+            <th>Player</th><th class="num">Projected</th>
+            <th class="num">{{ 'Market price' if is_td else 'Line' }}</th><th class="num">Edge</th>
+            <th>Call</th><th class="num">Actual</th><th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for w in ev.weeks %}
+          <tr class="b5-weekrow"><td colspan="7">Week {{ w.week }}<span class="b5-weekmeta">{{ w.tracked }} tracked{% if w.graded %} &middot; {{ w.hits }}/{{ w.graded }} hit ({{ w.rate }}%){% endif %}{% if w.no_line %} &middot; {{ w.no_line }} no line{% endif %}{% if w.pending %} &middot; {{ w.pending }} pending{% endif %}</span></td></tr>
+          {% for p in w.picks %}
+          <tr>
+            <td>{{ p.player }}<div class="player-sub">{{ p.team }} vs {{ p.opponent }}</div></td>
+            <td class="num">{{ p.projected }}{% if is_td %}<div class="player-sub">exp. TDs</div>{% endif %}</td>
+            <td class="num">
+              {% if is_td %}{% if p.market_prob is defined and p.market_prob is not none %}{{ p.market_prob }}%{% else %}--{% endif %}
+              {% else %}{{ p.market_line if p.market_line is not none else '--' }}{% endif %}
+              {% set st = src_tag(p)|trim %}{% if st %}<div class="player-sub">{{ st }}</div>{% endif %}
+            </td>
+            <td class="num {% if p.edge is not none and p.market_line is not none %}stat-{{ 'good' if p.edge > 0 else 'bad' if p.edge < 0 else 'neutral' }}{% endif %}">{% if p.edge is not none and p.market_line is not none %}{{ '+' if p.edge > 0 }}{{ p.edge }}{{ 'pp' if is_td }}{% else %}--{% endif %}</td>
+            <td>{{ p.call if p.call else '--' }}</td>
+            <td class="num">{{ p.actual if p.actual is not none else '--' }}</td>
+            <td style="white-space:nowrap;">
+              {% if p.result == 'hit' %}<span class="stat-good">&#9989; HIT</span>
+              {% elif p.result == 'miss' %}<span class="stat-bad">&#10060; MISS</span>
+              {% elif p.result == 'no_line' %}<span class="player-sub">&#10134; no line</span>
+              {% else %}<span class="player-sub">&#9203; pending</span>{% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+      </div>
+      <div class="scroll-hint">{{ ev.total_tracked }} picks &middot; scroll for older weeks</div>
+      </div>
+      {% else %}
+      <div class="empty-state"><h3>No other {{ ev.label|lower }} picks yet</h3></div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+
+  <script>
+  (function() {
+    var prop = null, view = 'best5';
+    var pbtns = document.querySelectorAll('#b5-prop-picker .game-tab');
+    var vbtns = document.querySelectorAll('#b5-view-picker .game-tab');
+    var panels = document.querySelectorAll('.b5-panel[data-b5-panel]');
+    if (!pbtns.length) return;
+    prop = pbtns[0].getAttribute('data-b5-prop');
+    function show() {
+      panels.forEach(function(p) {
+        p.classList.toggle('hidden', p.getAttribute('data-b5-panel') !== prop + '|' + view);
+      });
+    }
+    pbtns.forEach(function(b) { b.addEventListener('click', function() {
+      pbtns.forEach(function(x) { x.classList.remove('active'); }); b.classList.add('active');
+      prop = b.getAttribute('data-b5-prop'); show();
+    }); });
+    vbtns.forEach(function(b) { b.addEventListener('click', function() {
+      vbtns.forEach(function(x) { x.classList.remove('active'); }); b.classList.add('active');
+      view = b.getAttribute('data-b5-view'); show();
+    }); });
+    show();
+  })();
+  </script>
+  {% else %}
   {% for label, rankings in best5_track.items() %}
   <h3 class="division-head">{{ label|title }}</h3>
   <div class="standings-grid">
@@ -405,6 +587,7 @@
     {% endfor %}
   </div>
   {% endfor %}
+  {% endif %}
 </div>
 
 <!-- ============ TAB 5: TEAM MARKETS ============ -->
