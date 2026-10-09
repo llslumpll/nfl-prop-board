@@ -13600,10 +13600,10 @@
     "stat": "receptions",
     "projected": 4.8,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.3,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13612,7 +13612,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-09 14:13 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-09 14:13 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tee Higgins|receptions|5": {
     "player": "Tee Higgins",
@@ -13782,7 +13784,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-08 20:28 UTC",
-    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chris Olave|receptions|5": {
     "player": "Chris Olave",
