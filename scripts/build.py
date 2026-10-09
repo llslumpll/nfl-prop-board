@@ -34,6 +34,7 @@ import coverage_log  # noqa: E402
 import line_movement_log  # noqa: E402
 import line_attach  # noqa: E402
 import projection_error  # noqa: E402
+import best5_vs_rest  # noqa: E402
 import svgchart  # noqa: E402
 
 from jinja2 import Environment, FileSystemLoader
@@ -994,6 +995,7 @@ def build(oddsapi_mode: str | None = None):
                 "calibration": calibration_result,
                 "signal_effectiveness": grade.signal_effectiveness(),
                 "projection_error": projection_error.projection_error_summary(),
+                "best5_vs_rest": best5_vs_rest.best5_vs_rest(),
                 "team_market_history": team_market_history,
                 "team_signal_effectiveness": team_signal_effectiveness,
                 "best5_track": {
