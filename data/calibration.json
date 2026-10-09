@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-10-09 14:12 UTC",
+  "generated_at": "2026-10-09 15:49 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -22,7 +22,7 @@
       },
       "Moderate 2026 sample": {
         "bias": 0.0,
-        "sample_size": 24,
+        "sample_size": 25,
         "status": "insufficient data"
       }
     },
@@ -50,7 +50,7 @@
       },
       "Moderate 2026 sample": {
         "bias": 0.0,
-        "sample_size": 26,
+        "sample_size": 28,
         "status": "insufficient data"
       }
     },
@@ -73,7 +73,7 @@
       },
       "Moderate 2026 sample": {
         "bias": 0.0,
-        "sample_size": 24,
+        "sample_size": 26,
         "status": "insufficient data"
       }
     },
@@ -82,36 +82,41 @@
         "bias": 0.0,
         "sample_size": 3,
         "status": "insufficient data"
+      },
+      "Moderate 2026 sample": {
+        "bias": 0.0,
+        "sample_size": 2,
+        "status": "insufficient data"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 8,
+    "sample_size": 9,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.679,
-      "sample_size": 55,
-      "raw_shrink_factor": -0.072,
+      "shrink_factor": 0.677,
+      "sample_size": 56,
+      "raw_shrink_factor": -0.076,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.704,
-      "sample_size": 56,
-      "raw_shrink_factor": 0.012,
+      "shrink_factor": 0.73,
+      "sample_size": 58,
+      "raw_shrink_factor": 0.098,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.952,
-      "sample_size": 55,
-      "raw_shrink_factor": 0.839,
+      "shrink_factor": 0.949,
+      "sample_size": 57,
+      "raw_shrink_factor": 0.831,
       "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 1,
+      "sample_size": 2,
       "status": "insufficient data"
     }
   }

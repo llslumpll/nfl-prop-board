@@ -1,13 +1,13 @@
 [
   {
-    "player": "Dak Prescott",
-    "team": "DAL",
+    "player": "Bryce Young",
+    "team": "CAR",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Bryce Young",
-    "team": "CAR",
+    "player": "Dak Prescott",
+    "team": "DAL",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -42,6 +42,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Jalon Daniels",
+    "team": "TB",
+    "stat": "passing_yards",
+    "why": "possible name mismatch: FanDuel has 'Jayden Daniels'"
+  },
+  {
     "player": "Athan Kaliakmanis",
     "team": "WAS",
     "stat": "passing_yards",
@@ -54,14 +60,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "CeeDee Lamb",
-    "team": "DAL",
+    "player": "Tee Higgins",
+    "team": "CIN",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Tee Higgins",
-    "team": "CIN",
+    "player": "George Pickens",
+    "team": "DAL",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -80,6 +86,12 @@
   {
     "player": "Tyquan Thornton",
     "team": "KC",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Ryan Flournoy",
+    "team": "DAL",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -108,12 +120,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "George Pickens",
-    "team": "DAL",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Isaiah Williams",
     "team": "NYJ",
     "stat": "receiving_yards",
@@ -135,12 +141,6 @@
     "player": "Tyler Higbee",
     "team": "LA",
     "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "CeeDee Lamb",
-    "team": "DAL",
-    "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
   {
@@ -166,6 +166,12 @@
     "team": "CIN",
     "stat": "receptions",
     "why": "FanDuel prices this player, but not this stat"
+  },
+  {
+    "player": "George Pickens",
+    "team": "DAL",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Rashee Rice",
@@ -204,12 +210,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Chris Godwin Jr.",
-    "team": "TB",
-    "stat": "receptions",
-    "why": "possible name mismatch: FanDuel has 'Chris Rodriguez Jr.'"
-  },
-  {
     "player": "Keon Coleman",
     "team": "BUF",
     "stat": "receptions",
@@ -222,8 +222,20 @@
     "why": "FanDuel prices this player, but not this stat"
   },
   {
+    "player": "Emeka Egbuka",
+    "team": "TB",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Kenneth Walker III",
     "team": "KC",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Bucky Irving",
+    "team": "TB",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -236,18 +248,6 @@
   {
     "player": "Chuba Hubbard",
     "team": "CAR",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Javonte Williams",
-    "team": "DAL",
-    "stat": "rushing_yards",
-    "why": "possible name mismatch: FanDuel has 'Jameson Williams'"
-  },
-  {
-    "player": "Bucky Irving",
-    "team": "TB",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -276,16 +276,16 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Jalon Daniels",
-    "team": "TB",
-    "stat": "rushing_yards",
-    "why": "possible name mismatch: FanDuel has 'Jayden Daniels'"
-  },
-  {
     "player": "Rhamondre Stevenson",
     "team": "NE",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Javonte Williams",
+    "team": "DAL",
+    "stat": "rushing_yards",
+    "why": "possible name mismatch: FanDuel has 'Jameson Williams'"
   },
   {
     "player": "Caleb Williams",
@@ -296,6 +296,12 @@
   {
     "player": "TreVeyon Henderson",
     "team": "NE",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jonah Coleman",
+    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }

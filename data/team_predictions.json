@@ -1356,7 +1356,14 @@
     "reason": "Real net-points-per-game model projects a +3.2-point margin and a 51.8 total. DAL's real offensive EPA/play (+0.17) against TB's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. DAL is carrying real, meaningfully more Out/Doubtful designations than TB this week -- a real health edge favoring TB.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 16,
+      "away_score": 24,
+      "winner": "AWAY"
+    },
+    "our_correct": false,
+    "market_correct": false
   },
   "TB@DAL|team_spread|5": {
     "away_team": "TB",
@@ -1378,7 +1385,14 @@
     "reason": "Real net-points-per-game model projects a +3.2-point margin and a 51.8 total. DAL's real offensive EPA/play (+0.17) against TB's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. DAL is carrying real, meaningfully more Out/Doubtful designations than TB this week -- a real health edge favoring TB.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 16,
+      "away_score": 24,
+      "actual_margin": -8
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "TB@DAL|team_total|5": {
     "away_team": "TB",
@@ -1400,7 +1414,14 @@
     "reason": "Real net-points-per-game model projects a +3.2-point margin and a 51.8 total. DAL's real offensive EPA/play (+0.17) against TB's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. DAL is carrying real, meaningfully more Out/Doubtful designations than TB this week -- a real health edge favoring TB.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 16,
+      "away_score": 24,
+      "actual_total": 40
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "PHI@JAX|team_moneyline|5": {
     "away_team": "PHI",
