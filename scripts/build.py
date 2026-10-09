@@ -740,6 +740,50 @@ def build(oddsapi_mode: str | None = None):
         "passing": "passing_yards", "receiving": "receiving_yards",
         "receptions": "receptions", "rushing": "rushing_yards", "touchdowns": "any_td",
     }
+    # A Best 5 pick must have a frozen prediction to be tracked, graded and
+    # tagged. The main freeze loop only covers the nearest game date, so a
+    # pick from a later game (e.g. a Sunday QB while Thursday is nearest) had
+    # no record and was silently dropped from the list. Freeze any such pick
+    # now, from the same projection the page shows, BEFORE the game starts.
+    _rows_by_label = {
+        "passing": passing_rows, "receiving": receiving_rows,
+        "receptions": receptions_rows, "rushing": rushing_rows,
+    }
+    _all_preds = predictions.load_predictions()
+    _best5_frozen = 0
+    for label, rankings in best5_data.items():
+        if label not in _rows_by_label:
+            continue
+        stat_col = STAT_COL_BY_LABEL[label]
+        _by_player = {r["player"]: r for r in _rows_by_label[label]}
+        for rank_type, picks in rankings.items():
+            for pk in picks:
+                if f"{pk['player']}|{stat_col}|{pk['week']}" in _all_preds:
+                    continue
+                r = _by_player.get(pk["player"])
+                ng = (r or {}).get("next_game")
+                if not ng:
+                    continue
+                ko = line_attach._kickoff_utc(r["team"], ng["week"], dataio.load_schedule())
+                if ko is None or datetime.now(timezone.utc) >= ko:
+                    continue  # never freeze a projection after kickoff
+                market_line, line_source = _pick_line(pk["player"], stat_col)
+                m_prob = None
+                if market_line is not None:
+                    std_dev = dataio.player_std_dev(pk["player"], stat_col, STAT_TO_POSITION.get(stat_col, "WR"))
+                    m_prob = dataio.model_prob_over(ng["projection"]["projected"], market_line, std_dev)
+                if predictions.freeze_prediction(
+                    player=pk["player"], team=r["team"], opponent=ng["opponent"], week=ng["week"],
+                    stat=stat_col, projected=ng["projection"]["projected"],
+                    tier_label=ng["projection"]["tier"]["label"],
+                    market_line=market_line, market_source=line_source, model_prob=m_prob,
+                    signals=_signals_snapshot(ng["projection"], r),
+                ):
+                    _best5_frozen += 1
+                    _all_preds = predictions.load_predictions()
+    if _best5_frozen:
+        print(f"Froze {_best5_frozen} Best 5 pick(s) that had no prediction on file yet.")
+
     # Each list is kept at exactly 5. A better pick may replace a weaker one
     # until that player's game kicks off; after kickoff the pick is locked in.
     _sched = dataio.load_schedule()
