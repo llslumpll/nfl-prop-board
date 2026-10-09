@@ -756,6 +756,10 @@ def build(oddsapi_mode: str | None = None):
                 res = predictions.sync_best5(
                     stat_col, wk, rank_type, [p for p in picks if p["week"] == wk], _game_started
                 )
+                if res["size"] < 5:
+                    print(f"Best 5 {label} ({rank_type}) W{wk}: only {res['size']}/5 -- "
+                          f"not frozen: {res['skipped']['not_frozen']}, "
+                          f"game already started (can't add): {res['skipped']['game_started']}")
                 if res["added"] or res["removed"]:
                     print(f"Best 5 {label} ({rank_type}) W{wk}: +{res['added']} -{res['removed']} "
                           f"({res['locked']} locked, {res['size']}/5)")
