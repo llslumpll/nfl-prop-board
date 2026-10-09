@@ -98,12 +98,19 @@ def sync_best5(stat: str, week: int, list_name: str, picks: list[dict], is_locke
     open_slots = max(BEST5_SIZE - len(locked), 0)
 
     keep_open = []
+    skipped = {"not_frozen": [], "game_started": []}
     for pk in picks:
         if len(keep_open) >= open_slots:
             break
         k = _key(pk["player"], stat, week)
         p = preds.get(k)
-        if p is None or k in locked or p.get("graded") or is_locked(p):
+        if p is None:
+            skipped["not_frozen"].append(pk["player"])
+            continue
+        if k in locked:
+            continue
+        if p.get("graded") or is_locked(p):
+            skipped["game_started"].append(pk["player"])
             continue
         keep_open.append(k)
 
@@ -120,7 +127,7 @@ def sync_best5(stat: str, week: int, list_name: str, picks: list[dict], is_locke
             added += 1
     if added or removed:
         save_predictions(preds)
-    return {"added": added, "removed": removed, "locked": len(locked), "size": len(final)}
+    return {"added": added, "removed": removed, "locked": len(locked), "size": len(final), "skipped": skipped}
 
 
 def freeze_prediction(
