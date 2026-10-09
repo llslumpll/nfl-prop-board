@@ -44,7 +44,7 @@ jobs:
           # forward) and this entire run's update is silently lost. Retried
           # a few times since a rebase can itself lose a very tight race.
           for i in 1 2 3 4 5; do
-            git pull --rebase --autostash origin main && git push && break
+            git pull --rebase -X theirs --autostash origin main && git push && break
             echo "push attempt $i failed, retrying..."
             sleep $((RANDOM % 15 + 5))
           done
