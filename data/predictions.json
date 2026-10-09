@@ -14413,10 +14413,10 @@
     "stat": "receptions",
     "projected": 2.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -14427,7 +14427,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-09 21:13 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-09 21:13 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rome Odunze|receptions|5": {
     "player": "Rome Odunze",
@@ -15766,10 +15768,10 @@
     "stat": "receiving_yards",
     "projected": 81.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 75.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 6.0,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -15780,7 +15782,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-09 21:13 UTC",
+    "line_attach_note": "Projection frozen 2026-10-09 15:49 UTC; this prizepicks line was first seen 2026-10-09 21:13 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Malik Willis|passing_yards|5": {
     "player": "Malik Willis",
