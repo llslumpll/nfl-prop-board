@@ -6,7 +6,7 @@
     },
     "Jalen Hurts": {
       "passing_yards": 186.5,
-      "rushing_yards": 26.5
+      "rushing_yards": 27.5
     },
     "Bhayshul Tuten": {
       "rushing_yards": 65.5,
@@ -45,13 +45,12 @@
       "receiving_yards": 24.5,
       "receptions": 2
     },
-    "Darius Cooper": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
-    },
     "Dameon Pierce": {
       "rushing_yards": 20.5,
       "receptions": 0.5
+    },
+    "Darius Cooper": {
+      "receiving_yards": 19.5
     },
     "Josh Cameron": {
       "receiving_yards": 11.5
@@ -65,7 +64,7 @@
       "rushing_yards": 31.5
     },
     "Brock Bowers": {
-      "receiving_yards": 73.5,
+      "receiving_yards": 72.5,
       "receptions": 6.5
     },
     "Romeo Doubs": {
@@ -100,7 +99,7 @@
       "receiving_yards": 24.5
     },
     "Cody White": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Kyle Williams": {
       "receiving_yards": 11.5
@@ -132,12 +131,12 @@
     "Juwan Johnson": {
       "receiving_yards": 42.5
     },
-    "Jordan Addison": {
-      "receiving_yards": 40.5
-    },
     "Devaughn Vele": {
       "receiving_yards": 39.5,
       "receptions": 4
+    },
+    "Jordan Addison": {
+      "receiving_yards": 39.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 36.5
@@ -376,7 +375,8 @@
       "receptions": 2
     },
     "Isaiah Davis": {
-      "rushing_yards": 10.5
+      "rushing_yards": 10.5,
+      "receptions": 0.5
     },
     "Sterling Shepard": {
       "receiving_yards": 7.5
@@ -493,7 +493,7 @@
       "receptions": 2
     },
     "Laquon Treadwell": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 16.5,
       "receptions": 1.5
     },
     "Bo Nix": {
@@ -531,7 +531,7 @@
     },
     "RJ Harvey": {
       "receiving_yards": 27.5,
-      "rushing_yards": 21.5,
+      "rushing_yards": 24.5,
       "receptions": 4
     },
     "Troy Franklin": {
@@ -549,7 +549,7 @@
       "rushing_yards": 0.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 266.5,
+      "passing_yards": 268.5,
       "rushing_yards": 7.5
     },
     "Jahmyr Gibbs": {
@@ -594,7 +594,7 @@
       "receiving_yards": 24.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Sione Vaki": {
       "rushing_yards": 6.5
@@ -774,7 +774,7 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 7309,
+    "total_projections_returned": 7311,
     "matched_props": 357,
     "excluded_goblin_demon_lines": 5873,
     "sample_stat_types_seen": [
