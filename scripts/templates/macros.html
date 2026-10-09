@@ -191,7 +191,7 @@
     {% set fp = next_game.projection.frozen_prediction %}
     <div class="notice compact">
       Predicted at <strong>{{ fp.frozen_at }}</strong> and never recalculated after that
-      {% if fp.market_line %}&mdash; real PrizePicks line at freeze time: {{ fp.market_line }} ({{ fp.call }}){% endif %}.
+      {% if fp.market_line is not none %}&mdash; real {{ {'prizepicks': 'PrizePicks', 'fanduel': 'FanDuel', 'kalshi_1plus_td': 'Kalshi 1+ TD'}.get(fp.market_source, 'market') }} line {% if fp.line_attached_at %}first seen {{ fp.line_attached_at }} (before kickoff, after the projection was frozen){% else %}at freeze time{% endif %}: {{ fp.market_line }} ({{ fp.call }}){% endif %}.
     </div>
     {% endif %}
     {% if next_game.projection.line_movement and next_game.projection.line_movement.moved %}
