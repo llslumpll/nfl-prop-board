@@ -1,5 +1,11 @@
 [
   {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Bryce Young",
     "team": "CAR",
     "stat": "passing_yards",
@@ -44,6 +50,12 @@
   {
     "player": "Tetairoa McMillan",
     "team": "CAR",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "CeeDee Lamb",
+    "team": "DAL",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -96,6 +108,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "George Pickens",
+    "team": "DAL",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Isaiah Williams",
     "team": "NYJ",
     "stat": "receiving_yards",
@@ -117,6 +135,12 @@
     "player": "Tyler Higbee",
     "team": "LA",
     "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "CeeDee Lamb",
+    "team": "DAL",
+    "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
   {
@@ -180,6 +204,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Chris Godwin Jr.",
+    "team": "TB",
+    "stat": "receptions",
+    "why": "possible name mismatch: FanDuel has 'Chris Rodriguez Jr.'"
+  },
+  {
     "player": "Keon Coleman",
     "team": "BUF",
     "stat": "receptions",
@@ -210,6 +240,18 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Javonte Williams",
+    "team": "DAL",
+    "stat": "rushing_yards",
+    "why": "possible name mismatch: FanDuel has 'Jameson Williams'"
+  },
+  {
+    "player": "Bucky Irving",
+    "team": "TB",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jordan Mason",
     "team": "MIN",
     "stat": "rushing_yards",
@@ -232,6 +274,12 @@
     "team": "PHI",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jalon Daniels",
+    "team": "TB",
+    "stat": "rushing_yards",
+    "why": "possible name mismatch: FanDuel has 'Jayden Daniels'"
   },
   {
     "player": "Rhamondre Stevenson",
