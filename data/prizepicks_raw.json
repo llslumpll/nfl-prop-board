@@ -25,7 +25,7 @@
       "receptions": 3.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 40.5
+      "receiving_yards": 41.5
     },
     "Will Shipley": {
       "rushing_yards": 35.5,
@@ -370,14 +370,14 @@
     "Mason Taylor": {
       "receiving_yards": 13.5
     },
+    "Isaiah Davis": {
+      "rushing_yards": 11.5,
+      "receptions": 0.5
+    },
     "Raheim Sanders": {
       "receiving_yards": 11.5,
       "rushing_yards": 4.5,
       "receptions": 2
-    },
-    "Isaiah Davis": {
-      "rushing_yards": 10.5,
-      "receptions": 0.5
     },
     "Sterling Shepard": {
       "receiving_yards": 7.5
@@ -414,7 +414,7 @@
       "receptions": 4
     },
     "Woody Marks": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 34.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
@@ -741,7 +741,7 @@
       "receptions": 4.5
     },
     "Keon Coleman": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 37.5,
       "receptions": 3
     },
     "Blake Corum": {
@@ -775,9 +775,9 @@
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 7315,
+    "total_projections_returned": 7317,
     "matched_props": 358,
-    "excluded_goblin_demon_lines": 5876,
+    "excluded_goblin_demon_lines": 5877,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
