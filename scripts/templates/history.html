@@ -333,6 +333,33 @@
     good week once.
   </p>
 
+  {% if best5_vs_rest is defined %}
+  <h3 class="division-head">Is the Best 5 actually better than the site's other picks?</h3>
+  <p class="lede small">
+    For each prop, the hit rate of the Best 5 picks next to every other graded pick that had a real line.
+    If Best 5 is genuinely finding the better calls, its number should sit clearly above the other one.
+    With fewer than {{ best5_vs_rest[0].min_per_side if best5_vs_rest else 20 }} picks on either side the gap is mostly luck,
+    so the page says &ldquo;too early&rdquo; instead of declaring a winner.
+  </p>
+  <div class="table-wrap">
+  <table class="stat-table">
+    <thead><tr><th>Prop</th><th>List</th><th class="num">Best 5</th><th class="num">Everything else</th><th class="num">Gap</th><th>Read</th></tr></thead>
+    <tbody>
+      {% for r in best5_vs_rest %}
+      <tr>
+        <td>{{ r.stat_label }}</td>
+        <td>{{ r.list_label }}</td>
+        <td class="num">{% if r.best_n %}{{ r.best_rate }}% <span class="player-sub">({{ r.best_hits }}/{{ r.best_n }})</span>{% else %}--{% endif %}</td>
+        <td class="num">{% if r.rest_n %}{{ r.rest_rate }}% <span class="player-sub">({{ r.rest_hits }}/{{ r.rest_n }})</span>{% else %}--{% endif %}</td>
+        <td class="num {% if r.gap_pp is not none %}stat-{{ 'good' if r.gap_pp > 5 else 'bad' if r.gap_pp < -5 else 'neutral' }}{% endif %}">{% if r.gap_pp is not none %}{{ '+' if r.gap_pp > 0 }}{{ r.gap_pp }}pp{% else %}--{% endif %}</td>
+        <td>{% if r.verdict == 'Best 5 is clearly better' %}<span class="stat-good">{{ r.verdict }}</span>{% elif r.verdict == 'Best 5 is clearly worse' %}<span class="stat-bad">{{ r.verdict }}</span>{% else %}<span class="player-sub">{{ r.verdict }}</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  {% endif %}
+
   {% for label, rankings in best5_track.items() %}
   <h3 class="division-head">{{ label|title }}</h3>
   <div class="standings-grid">
