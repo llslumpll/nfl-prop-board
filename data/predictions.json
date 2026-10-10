@@ -13751,7 +13751,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Amon-Ra St. Brown|receptions|5": {
     "player": "Amon-Ra St. Brown",
@@ -14025,8 +14028,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ],
     "line_attached_at": "2026-10-08 20:28 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -14124,9 +14126,7 @@
     "graded_at": null,
     "line_attached_at": "2026-10-08 20:28 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Terry McLaurin|receptions|5": {
     "player": "Terry McLaurin",
@@ -15569,10 +15569,10 @@
     "stat": "rushing_yards",
     "projected": 74.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 83.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -8.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -15583,7 +15583,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-10 15:04 UTC",
+    "line_attach_note": "Projection frozen 2026-10-09 15:49 UTC; this prizepicks line was first seen 2026-10-10 15:04 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rome Odunze|receiving_yards|5": {
     "player": "Rome Odunze",
