@@ -14027,9 +14027,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-08 20:28 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -14126,7 +14124,9 @@
     "graded_at": null,
     "line_attached_at": "2026-10-08 20:28 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Terry McLaurin|receptions|5": {
     "player": "Terry McLaurin",
@@ -15629,7 +15629,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "MarShawn Lloyd|rushing_yards|5": {
     "player": "MarShawn Lloyd",
@@ -16501,8 +16504,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Cam Skattebo|rushing_yards|5": {
@@ -16887,9 +16889,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Brock Purdy|passing_yards|5": {
     "player": "Brock Purdy",
@@ -17416,7 +17416,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Braelon Allen|rushing_yards|5": {
