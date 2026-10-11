@@ -17042,7 +17042,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Lamar Jackson|passing_yards|5": {
     "player": "Lamar Jackson",
@@ -17368,10 +17370,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Williams|receiving_yards|5": {
     "player": "Isaiah Williams",
@@ -17395,7 +17394,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Tyler Higbee|receiving_yards|5": {
     "player": "Tyler Higbee",
