@@ -17523,5 +17523,48 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Josh Allen|passing_yards|5": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "LA",
+    "week": 5,
+    "stat": "passing_yards",
+    "projected": 220.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 245.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -24.9,
+    "model_prob": 0.3629,
+    "signals": {},
+    "frozen_at": "2026-10-11 18:31 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tyler Allgeier|rushing_yards|5": {
+    "player": "Tyler Allgeier",
+    "team": "ARI",
+    "opponent": "DET",
+    "week": 5,
+    "stat": "rushing_yards",
+    "projected": 36.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 27.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 9.1,
+    "model_prob": 0.6544,
+    "signals": {
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-11 18:31 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
