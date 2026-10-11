@@ -17568,5 +17568,51 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Khalil Shakir|receiving_yards|5": {
+    "player": "Khalil Shakir",
+    "team": "BUF",
+    "opponent": "LA",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 42.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 46.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -3.9,
+    "model_prob": 0.4495,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-11 23:08 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Keon Coleman|receiving_yards|5": {
+    "player": "Keon Coleman",
+    "team": "BUF",
+    "opponent": "LA",
+    "week": 5,
+    "stat": "receiving_yards",
+    "projected": 35.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 38.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -3.5,
+    "model_prob": 0.4522,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-11 23:08 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
