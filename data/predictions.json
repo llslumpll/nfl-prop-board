@@ -13646,10 +13646,10 @@
     "stat": "receptions",
     "projected": 3.4,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.1,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13658,7 +13658,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-11 14:45 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-11 14:45 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Kyren Williams|receptions|5": {
     "player": "Kyren Williams",
@@ -16106,7 +16108,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -16780,7 +16781,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Jahmyr Gibbs|rushing_yards|5": {
@@ -16894,7 +16896,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Brock Purdy|passing_yards|5": {
@@ -17392,9 +17395,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Tyler Higbee|receiving_yards|5": {
     "player": "Tyler Higbee",
@@ -17499,5 +17500,27 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Kyren Williams|rushing_yards|5": {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "opponent": "BUF",
+    "week": 5,
+    "stat": "rushing_yards",
+    "projected": 89.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 69.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 20.3,
+    "model_prob": 0.764,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-11 14:45 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
