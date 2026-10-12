@@ -18,7 +18,7 @@
     },
     "Kyren Williams": {
       "rushing_yards": 68.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Davante Adams": {
       "receiving_yards": 62.5
@@ -32,15 +32,15 @@
       "receptions": 4.5
     },
     "Keon Coleman": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 39.5,
       "receptions": 3
     },
     "Blake Corum": {
-      "rushing_yards": 36.5,
-      "receiving_yards": 3.5
+      "rushing_yards": 35.5,
+      "receiving_yards": 2.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Colby Parkinson": {
@@ -64,10 +64,11 @@
       "receiving_yards": 5.5
     },
     "Sam Darnold": {
-      "passing_yards": 225.5
+      "passing_yards": 215.5,
+      "rushing_yards": 4.5
     },
     "Bo Nix": {
-      "passing_yards": 212.5,
+      "passing_yards": 204.5,
       "rushing_yards": 14.5
     },
     "Jaxon Smith-Njigba": {
@@ -75,53 +76,60 @@
       "receptions": 6.5
     },
     "Emanuel Wilson": {
-      "rushing_yards": 62.5,
-      "receiving_yards": 10.5
+      "rushing_yards": 64.5,
+      "receiving_yards": 9.5,
+      "receptions": 1.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 51.5,
-      "receptions": 4.5
+      "receiving_yards": 51.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 49.5
+      "rushing_yards": 45.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 35.5
+      "receiving_yards": 32.5
     },
-    "RJ Harvey": {
-      "receiving_yards": 25.5
-    },
-    "AJ Barner": {
-      "receiving_yards": 22.5,
-      "receptions": 2.5
+    "Rashid Shaheed": {
+      "receiving_yards": 22.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 21.5
+    },
+    "AJ Barner": {
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
-    },
-    "Rashid Shaheed": {
       "receiving_yards": 20.5
+    },
+    "RJ Harvey": {
+      "receiving_yards": 19.5,
+      "rushing_yards": 16.5,
+      "receptions": 3.5
     },
     "Troy Franklin": {
-      "receiving_yards": 20.5
+      "receiving_yards": 17.5
+    },
+    "George Holani": {
+      "rushing_yards": 14.5
+    },
+    "Marvin Mims Jr.": {
+      "receiving_yards": 13.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 877,
-    "matched_props": 49,
-    "excluded_goblin_demon_lines": 731,
+    "total_projections_returned": 1025,
+    "matched_props": 53,
+    "excluded_goblin_demon_lines": 856,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
       "fantasy score",
       "fg made",
+      "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
@@ -146,8 +154,7 @@
       "quarters with 5+ rush yards",
       "rec targets",
       "receiving yards",
-      "receiving yards (combo)",
-      "receptions"
+      "receiving yards (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
