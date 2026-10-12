@@ -1,62 +1,5 @@
 {
   "props": {
-    "Michael Penix Jr.": {
-      "passing_yards": 221.5,
-      "rushing_yards": 0.5
-    },
-    "Tyler Huntley": {
-      "passing_yards": 179.5,
-      "rushing_yards": 29.5
-    },
-    "Bijan Robinson": {
-      "rushing_yards": 88.5,
-      "receiving_yards": 27.5
-    },
-    "Drake London": {
-      "receiving_yards": 80.5,
-      "receptions": 6
-    },
-    "Derrick Henry": {
-      "rushing_yards": 79.5,
-      "receiving_yards": 4.5
-    },
-    "Zay Flowers": {
-      "receiving_yards": 69.5,
-      "receptions": 5.5
-    },
-    "Brian Robinson Jr.": {
-      "rushing_yards": 35.5
-    },
-    "Mark Andrews": {
-      "receiving_yards": 30.5,
-      "receptions": 4
-    },
-    "Kyle Pitts Sr.": {
-      "receiving_yards": 25.5
-    },
-    "Jahan Dotson": {
-      "receiving_yards": 20.5
-    },
-    "Rashod Bateman": {
-      "receiving_yards": 17.5
-    },
-    "Justice Hill": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
-    },
-    "Devontez Walker": {
-      "receiving_yards": 8.5
-    },
-    "Olamide Zaccheaus": {
-      "receiving_yards": 7.5
-    },
-    "Matt Hibner": {
-      "receiving_yards": 6.5
-    },
-    "Austin Hooper": {
-      "receiving_yards": 6.5
-    },
     "Matthew Stafford": {
       "passing_yards": 278.5,
       "rushing_yards": 0.5
@@ -71,8 +14,7 @@
     },
     "James Cook III": {
       "rushing_yards": 75.5,
-      "receiving_yards": 9.5,
-      "receptions": 1.5
+      "receiving_yards": 9.5
     },
     "Kyren Williams": {
       "rushing_yards": 68.5,
@@ -94,11 +36,11 @@
       "receptions": 3
     },
     "Blake Corum": {
-      "rushing_yards": 35.5,
+      "rushing_yards": 36.5,
       "receiving_yards": 3.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 23.5,
+      "receiving_yards": 22.5,
       "receptions": 2.5
     },
     "Colby Parkinson": {
@@ -120,27 +62,69 @@
     },
     "Jordan Whittington": {
       "receiving_yards": 5.5
+    },
+    "Sam Darnold": {
+      "passing_yards": 225.5
+    },
+    "Bo Nix": {
+      "passing_yards": 212.5,
+      "rushing_yards": 14.5
+    },
+    "Jaxon Smith-Njigba": {
+      "receiving_yards": 88.5,
+      "receptions": 6.5
+    },
+    "Emanuel Wilson": {
+      "rushing_yards": 62.5,
+      "receiving_yards": 10.5
+    },
+    "Jaylen Waddle": {
+      "receiving_yards": 51.5,
+      "receptions": 4.5
+    },
+    "J.K. Dobbins": {
+      "rushing_yards": 49.5
+    },
+    "Courtland Sutton": {
+      "receiving_yards": 35.5
+    },
+    "RJ Harvey": {
+      "receiving_yards": 25.5
+    },
+    "AJ Barner": {
+      "receiving_yards": 22.5,
+      "receptions": 2.5
+    },
+    "Cooper Kupp": {
+      "receiving_yards": 22.5,
+      "receptions": 2.5
+    },
+    "Evan Engram": {
+      "receiving_yards": 21.5,
+      "receptions": 2.5
+    },
+    "Rashid Shaheed": {
+      "receiving_yards": 20.5
+    },
+    "Troy Franklin": {
+      "receiving_yards": 20.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 140,
     "nfl_league_id": "9",
-    "total_projections_returned": 1246,
-    "matched_props": 55,
-    "excluded_goblin_demon_lines": 1012,
+    "total_projections_returned": 877,
+    "matched_props": 49,
+    "excluded_goblin_demon_lines": 731,
     "sample_stat_types_seen": [
       "anytime tds",
-      "anytime tds (combo)",
       "completion percentage",
-      "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
-      "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
-      "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -156,10 +140,14 @@
       "passer rating",
       "punts",
       "punts (combo)",
-      "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
-      "quarters with 10+ rush yards"
+      "quarters with 25+ pass yards",
+      "quarters with 5+ rush yards",
+      "rec targets",
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions"
     ],
     "sample_odds_types_seen": [
       "demon",
