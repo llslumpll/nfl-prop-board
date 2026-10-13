@@ -14981,7 +14981,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Romeo Doubs|any_td|5": {
@@ -15103,7 +15104,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Bijan Robinson|any_td|5": {
     "player": "Bijan Robinson",
@@ -17218,10 +17223,10 @@
     "stat": "receptions",
     "projected": 3.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "PUSH",
+    "edge": 0.0,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -17231,7 +17236,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-13 21:48 UTC",
+    "line_attach_note": "Projection frozen 2026-10-09 15:50 UTC; this prizepicks line was first seen 2026-10-13 21:48 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Bucky Irving|any_td|6": {
     "player": "Bucky Irving",
@@ -17665,9 +17672,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -17782,8 +17787,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Sam Darnold|passing_yards|6": {
@@ -17808,9 +17812,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Brock Purdy|passing_yards|6": {
     "player": "Brock Purdy",
@@ -17910,8 +17912,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Brenton Strange|receiving_yards|6": {
@@ -18106,7 +18107,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -18132,9 +18132,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Malik Nabers|receptions|6": {
     "player": "Malik Nabers",
@@ -18306,10 +18304,10 @@
     "stat": "receptions",
     "projected": 5.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.2,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -18318,7 +18316,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-13 21:48 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 21:48 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Brenton Strange|receptions|6": {
     "player": "Brenton Strange",
@@ -18361,10 +18365,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-13 19:59 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 19:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -18808,10 +18809,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jared Goff|any_td|7": {
     "player": "Jared Goff",
@@ -19074,10 +19072,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jaylen Warren|any_td|6": {
     "player": "Jaylen Warren",
@@ -19245,7 +19240,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "DeMario Douglas|any_td|6": {
     "player": "DeMario Douglas",
@@ -19545,9 +19542,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Bo Nix|passing_yards|6": {
     "player": "Bo Nix",
@@ -19690,9 +19685,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Puka Nacua|receptions|6": {
     "player": "Puka Nacua",
@@ -19919,9 +19912,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Woody Marks|rushing_yards|6": {
     "player": "Woody Marks",
@@ -19945,10 +19936,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Caleb Williams|rushing_yards|6": {
     "player": "Caleb Williams",
@@ -19972,8 +19960,184 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
+    "best5_tags": []
+  },
+  "Matthew Stafford|passing_yards|6": {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "passing_yards",
+    "projected": 338.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 282.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 55.8,
+    "model_prob": 0.7874,
+    "signals": {},
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Josh Allen|passing_yards|6": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "LV",
+    "week": 6,
+    "stat": "passing_yards",
+    "projected": 269.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 231.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 38.2,
+    "model_prob": 0.7047,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Puka Nacua|receiving_yards|6": {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 120.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 92.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 28.2,
+    "model_prob": 0.7135,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Tyler Higbee|receiving_yards|6": {
+    "player": "Tyler Higbee",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 41.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 29.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.3,
+    "model_prob": 0.7077,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Kyren Williams|rushing_yards|6": {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 97.2,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 73.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 23.7,
+    "model_prob": 0.7994,
+    "signals": {},
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Rhamondre Stevenson|rushing_yards|6": {
+    "player": "Rhamondre Stevenson",
+    "team": "NE",
+    "opponent": "NYJ",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 48.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 70.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -21.6,
+    "model_prob": 0.2378,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jaylen Warren|rushing_yards|6": {
+    "player": "Jaylen Warren",
+    "team": "PIT",
+    "opponent": "TB",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 43.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 61.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -17.9,
+    "model_prob": 0.2838,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-10-13 21:48 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
