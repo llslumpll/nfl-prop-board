@@ -1,5 +1,11 @@
 [
   {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Drake Maye",
     "team": "NE",
     "stat": "passing_yards",
@@ -30,12 +36,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Matthew Stafford",
-    "team": "LA",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Dak Prescott",
     "team": "DAL",
     "stat": "passing_yards",
@@ -62,12 +62,6 @@
   {
     "player": "C.J. Stroud",
     "team": "HOU",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Josh Allen",
-    "team": "BUF",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -122,6 +116,12 @@
   {
     "player": "Baker Mayfield",
     "team": "TB",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Josh Allen",
+    "team": "BUF",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -192,14 +192,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "George Pickens",
-    "team": "DAL",
+    "player": "Puka Nacua",
+    "team": "LA",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Puka Nacua",
-    "team": "LA",
+    "player": "George Pickens",
+    "team": "DAL",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -224,12 +224,6 @@
   {
     "player": "Drake London",
     "team": "ATL",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Keon Coleman",
-    "team": "BUF",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -300,6 +294,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Tyler Higbee",
+    "team": "LA",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tyler Warren",
     "team": "IND",
     "stat": "receiving_yards",
@@ -336,6 +336,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Ty Johnson",
+    "team": "BUF",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Darius Cooper",
     "team": "PHI",
     "stat": "receiving_yards",
@@ -362,18 +368,6 @@
   {
     "player": "Brenton Strange",
     "team": "JAX",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Tyler Higbee",
-    "team": "LA",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Kyren Williams",
-    "team": "LA",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -420,6 +414,18 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Adonai Mitchell",
+    "team": "NYJ",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tetairoa McMillan",
     "team": "CAR",
     "stat": "receptions",
@@ -434,18 +440,6 @@
   {
     "player": "Malik Nabers",
     "team": "NYG",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Kyren Williams",
-    "team": "LA",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Puka Nacua",
-    "team": "LA",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -482,12 +476,6 @@
   {
     "player": "Rashee Rice",
     "team": "KC",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Khalil Shakir",
-    "team": "BUF",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -534,12 +522,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Keon Coleman",
-    "team": "BUF",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Dallas Goedert",
     "team": "PHI",
     "stat": "receptions",
@@ -566,6 +548,12 @@
   {
     "player": "Jaylen Warren",
     "team": "PIT",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Kyren Williams",
+    "team": "LA",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -624,12 +612,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Tyler Higbee",
-    "team": "LA",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Tyquan Thornton",
     "team": "KC",
     "stat": "receptions",
@@ -638,6 +620,18 @@
   {
     "player": "Keenan Allen",
     "team": "IND",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Davante Adams",
+    "team": "LA",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Tyler Higbee",
+    "team": "LA",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -656,6 +650,12 @@
   {
     "player": "Rashod Bateman",
     "team": "BAL",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Nico Collins",
+    "team": "HOU",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -690,6 +690,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Braelon Allen",
     "team": "NYJ",
     "stat": "rushing_yards",
@@ -698,6 +704,12 @@
   {
     "player": "Aaron Jones",
     "team": "MIN",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "James Cook",
+    "team": "BUF",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -734,18 +746,6 @@
   {
     "player": "Jacory Croskey-Merritt",
     "team": "WAS",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Kyren Williams",
-    "team": "LA",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "James Cook",
-    "team": "BUF",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -858,6 +858,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jonathan Taylor",
     "team": "IND",
     "stat": "rushing_yards",
@@ -890,12 +896,6 @@
   {
     "player": "Deshaun Watson",
     "team": "CLE",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Jonah Coleman",
-    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }

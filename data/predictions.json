@@ -13679,10 +13679,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 6,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "line_attached_at": "2026-10-08 20:28 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-08 20:28 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -13728,10 +13728,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 17,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": []
   },
   "Carnell Tate|receptions|5": {
@@ -13950,10 +13950,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 3,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "line_attached_at": "2026-10-09 19:36 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-09 19:36 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -14397,10 +14397,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "line_attached_at": "2026-10-09 21:13 UTC",
     "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this prizepicks line was first seen 2026-10-09 21:13 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -14802,10 +14802,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 2,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
@@ -15045,10 +15045,10 @@
       "goal_line_rush_share_high": true
     },
     "frozen_at": "2026-10-06 15:41 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -17316,10 +17316,10 @@
     "model_prob": 0.7167,
     "signals": {},
     "frozen_at": "2026-10-09 21:52 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 383,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -17343,10 +17343,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-10-09 21:52 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 138,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "best_value"
     ]
@@ -17418,10 +17418,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-10-09 21:52 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 83,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -17521,10 +17521,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-10-11 14:45 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 49,
+    "hit": false,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Josh Allen|passing_yards|5": {
     "player": "Josh Allen",
@@ -17541,10 +17541,10 @@
     "model_prob": 0.3629,
     "signals": {},
     "frozen_at": "2026-10-11 18:31 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 210,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Tyler Allgeier|rushing_yards|5": {
     "player": "Tyler Allgeier",
@@ -17586,10 +17586,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-11 23:08 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 80,
+    "hit": false,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Keon Coleman|receiving_yards|5": {
     "player": "Keon Coleman",
@@ -17610,10 +17610,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-11 23:08 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 7,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Dak Prescott|passing_yards|6": {
     "player": "Dak Prescott",
@@ -17634,7 +17634,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Patrick Mahomes|passing_yards|6": {
     "player": "Patrick Mahomes",
@@ -17658,9 +17660,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -17701,10 +17701,10 @@
     "model_prob": 0.062,
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 0,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "DJ Moore|receiving_yards|5": {
     "player": "DJ Moore",
@@ -17724,10 +17724,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-10-12 23:04 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Jacoby Brissett|passing_yards|6": {
     "player": "Jacoby Brissett",
@@ -17903,8 +17903,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Brenton Strange|receiving_yards|6": {
@@ -17928,10 +17927,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receptions|6": {
     "player": "Isaiah Likely",
@@ -18025,10 +18021,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-10-12 23:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 5,
+    "hit": true,
+    "graded_at": "2026-10-13 16:43 UTC"
   },
   "Bhayshul Tuten|rushing_yards|6": {
     "player": "Bhayshul Tuten",
@@ -18683,10 +18679,10 @@
     "stat": "receptions",
     "projected": 5.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -18696,7 +18692,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-13 16:43 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 16:43 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "George Kittle|receptions|6": {
     "player": "George Kittle",
@@ -19051,7 +19053,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaylen Warren|any_td|6": {
     "player": "Jaylen Warren",
@@ -19211,7 +19217,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "DeMario Douglas|any_td|6": {
     "player": "DeMario Douglas",
@@ -19442,10 +19452,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Mike Evans|receiving_yards|6": {
     "player": "Mike Evans",
@@ -19468,10 +19475,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "J.K. Dobbins|rushing_yards|6": {
     "player": "J.K. Dobbins",
@@ -19523,5 +19527,359 @@
     "best5_tags": [
       "best_value"
     ]
+  },
+  "Bo Nix|passing_yards|6": {
+    "player": "Bo Nix",
+    "team": "DEN",
+    "opponent": "SEA",
+    "week": 6,
+    "stat": "passing_yards",
+    "projected": 179.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 202.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -23.1,
+    "model_prob": 0.3679,
+    "signals": {},
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jaylen Waddle|receiving_yards|6": {
+    "player": "Jaylen Waddle",
+    "team": "DEN",
+    "opponent": "SEA",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 44.2,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 49.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -5.3,
+    "model_prob": 0.4406,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Matthew Golden|receiving_yards|6": {
+    "player": "Matthew Golden",
+    "team": "GB",
+    "opponent": "DAL",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 37.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 61.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -23.8,
+    "model_prob": 0.2161,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Trey McBride|receiving_yards|6": {
+    "player": "Trey McBride",
+    "team": "ARI",
+    "opponent": "LA",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 57.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 74.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -17.5,
+    "model_prob": 0.3097,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Isaiah Likely|receiving_yards|6": {
+    "player": "Isaiah Likely",
+    "team": "NYG",
+    "opponent": "NO",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 35.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 52.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -16.6,
+    "model_prob": 0.2693,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Garrett Wilson|receiving_yards|6": {
+    "player": "Garrett Wilson",
+    "team": "NYJ",
+    "opponent": "NE",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 57.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 71.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -13.6,
+    "model_prob": 0.323,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Puka Nacua|receptions|6": {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receptions",
+    "projected": 9.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Kyren Williams|receptions|6": {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receptions",
+    "projected": 3.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Davante Adams|receptions|6": {
+    "player": "Davante Adams",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receptions",
+    "projected": 6.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tyler Higbee|receptions|6": {
+    "player": "Tyler Higbee",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "receptions",
+    "projected": 3.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Nico Collins|receptions|6": {
+    "player": "Nico Collins",
+    "team": "HOU",
+    "opponent": "JAX",
+    "week": 6,
+    "stat": "receptions",
+    "projected": 5.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Matthew Stafford|any_td|6": {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "any_td",
+    "projected": 1.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Davante Adams|any_td|6": {
+    "player": "Davante Adams",
+    "team": "LA",
+    "opponent": "ARI",
+    "week": 6,
+    "stat": "any_td",
+    "projected": 0.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_target_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Josh Allen|any_td|6": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "LV",
+    "week": 6,
+    "stat": "any_td",
+    "projected": 2.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "James Cook|any_td|6": {
+    "player": "James Cook",
+    "team": "BUF",
+    "opponent": "LV",
+    "week": 6,
+    "stat": "any_td",
+    "projected": 0.8,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-10-13 16:43 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }

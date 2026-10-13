@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prop Edge Board — NFL</title>
-  <link rel="stylesheet" href="static/style.css?v=1791882308">
+  <link rel="stylesheet" href="static/style.css?v=1791909804">
 </head>
 <body>
   <header class="site-head">
@@ -66,13 +66,13 @@
 </div>
 
 <div class="notice" style="margin-top:16px;">
-  <strong>Model maturity: 9/20 calibration checks active.</strong>
+  <strong>Model maturity: 10/20 calibration checks active.</strong>
   Each needs 30 real graded predictions in that exact stat/tier before it's trusted to self-correct &mdash;
   this is genuinely early, and most of the site is still labeled "Building 2026 sample" for a real reason, not caution
   for its own sake. See real trust status per tier below.
   
-  Closest to activating: <strong>Receptions (Moderate 2026 sample)</strong>
-  at 29/30.
+  Closest to activating: <strong>Receiving Yards (Career baseline (established veteran))</strong>
+  at 21/30.
   
   <a href="history.html">Full calibration table on History &rarr;</a>
 </div>
@@ -89,36 +89,36 @@
       <td>Rushing Yards</td>
       <td>&mdash;</td>
       <td class="player-sub">confidence calibration</td>
+      <td class="num">85/30</td>
+      <td><span class="stat-good">active</span></td>
+    </tr>
+    
+    <tr>
+      <td>Receiving Yards</td>
+      <td>&mdash;</td>
+      <td class="player-sub">confidence calibration</td>
+      <td class="num">84/30</td>
+      <td><span class="stat-good">active</span></td>
+    </tr>
+    
+    <tr>
+      <td>Passing Yards</td>
+      <td>&mdash;</td>
+      <td class="player-sub">confidence calibration</td>
       <td class="num">83/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
     <tr>
-      <td>Passing Yards</td>
-      <td>&mdash;</td>
-      <td class="player-sub">confidence calibration</td>
-      <td class="num">81/30</td>
-      <td><span class="stat-good">active</span></td>
-    </tr>
-    
-    <tr>
       <td>Receiving Yards</td>
-      <td>&mdash;</td>
-      <td class="player-sub">confidence calibration</td>
-      <td class="num">80/30</td>
-      <td><span class="stat-good">active</span></td>
-    </tr>
-    
-    <tr>
-      <td>Passing Yards</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">64/30</td>
+      <td class="num">65/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
     <tr>
-      <td>Receiving Yards</td>
+      <td>Passing Yards</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
       <td class="num">64/30</td>
@@ -134,18 +134,18 @@
     </tr>
     
     <tr>
-      <td>Rushing Yards</td>
+      <td>Receiving Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">54/30</td>
+      <td class="num">56/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
     <tr>
-      <td>Receiving Yards</td>
+      <td>Rushing Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">53/30</td>
+      <td class="num">55/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -153,7 +153,7 @@
       <td>Passing Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">47/30</td>
+      <td class="num">49/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -161,8 +161,8 @@
       <td>Receptions</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">29/30</td>
-      <td><span class="player-sub">insufficient data</span></td>
+      <td class="num">33/30</td>
+      <td><span class="stat-good">active</span></td>
     </tr>
     
     <tr>
@@ -201,7 +201,7 @@
       <td>Rushing Yards</td>
       <td>No data (rookie/unproven)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">8/30</td>
+      <td class="num">9/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
     
@@ -209,7 +209,15 @@
       <td>Receptions</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">5/30</td>
+      <td class="num">6/30</td>
+      <td><span class="player-sub">insufficient data</span></td>
+    </tr>
+    
+    <tr>
+      <td>Receptions</td>
+      <td>&mdash;</td>
+      <td class="player-sub">confidence calibration</td>
+      <td class="num">6/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
     
@@ -233,14 +241,6 @@
       <td>Receiving Yards</td>
       <td>Career baseline (limited history)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">4/30</td>
-      <td><span class="player-sub">insufficient data</span></td>
-    </tr>
-    
-    <tr>
-      <td>Receptions</td>
-      <td>&mdash;</td>
-      <td class="player-sub">confidence calibration</td>
       <td class="num">4/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
@@ -272,8 +272,8 @@
         <span class="team-badge" style="background:#97233F">ARI</span>
         Jacoby Brissett
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.6%;"></span></span>
-      <span class="rank-val">67.6%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.8%;"></span></span>
+      <span class="rank-val">67.8%</span>
     </div>
     
     <div class="rank-row">
@@ -282,28 +282,28 @@
         <span class="team-badge" style="background:#AA0000">SF</span>
         Brock Purdy
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.0%;"></span></span>
-      <span class="rank-val">66.0%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.3%;"></span></span>
+      <span class="rank-val">65.3%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">3</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#E31837">KC</span>
-        Patrick Mahomes
+        <span class="team-badge" style="background:#203731">GB</span>
+        Jordan Love
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:62.2%;"></span></span>
-      <span class="rank-val">62.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:63.4%;"></span></span>
+      <span class="rank-val">63.4%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">4</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#203731">GB</span>
-        Jordan Love
+        <span class="team-badge" style="background:#041E42">DAL</span>
+        Dak Prescott
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:60.7%;"></span></span>
-      <span class="rank-val">60.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:60.5%;"></span></span>
+      <span class="rank-val">60.5%</span>
     </div>
     
     <div class="rank-row">
@@ -312,8 +312,8 @@
         <span class="team-badge" style="background:#0B2265">NYG</span>
         Jameis Winston
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:59.8%;"></span></span>
-      <span class="rank-val">59.8%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:60.3%;"></span></span>
+      <span class="rank-val">60.3%</span>
     </div>
     
   
@@ -332,8 +332,8 @@
         <span class="team-badge" style="background:#101820">JAX</span>
         Bhayshul Tuten
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:81.7%;"></span></span>
-      <span class="rank-val">81.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:82.1%;"></span></span>
+      <span class="rank-val">82.1%</span>
     </div>
     
     <div class="rank-row">
@@ -342,8 +342,8 @@
         <span class="team-badge" style="background:#69BE28">SEA</span>
         Emanuel Wilson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:77.9%;"></span></span>
-      <span class="rank-val">77.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:78.3%;"></span></span>
+      <span class="rank-val">78.3%</span>
     </div>
     
     <div class="rank-row">
@@ -352,8 +352,8 @@
         <span class="team-badge" style="background:#5A1414">WAS</span>
         Jayden Daniels
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:68.7%;"></span></span>
-      <span class="rank-val">68.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.4%;"></span></span>
+      <span class="rank-val">66.4%</span>
     </div>
     
     <div class="rank-row">
@@ -362,8 +362,8 @@
         <span class="team-badge" style="background:#AA0000">SF</span>
         Christian McCaffrey
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:62.0%;"></span></span>
-      <span class="rank-val">62.0%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:61.9%;"></span></span>
+      <span class="rank-val">61.9%</span>
     </div>
     
     <div class="rank-row">
@@ -372,8 +372,8 @@
         <span class="team-badge" style="background:#FB4F14">DEN</span>
         J.K. Dobbins
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:60.7%;"></span></span>
-      <span class="rank-val">60.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:61.6%;"></span></span>
+      <span class="rank-val">61.6%</span>
     </div>
     
   
@@ -391,51 +391,51 @@
     <div class="rank-row">
       <span class="rank-num">1</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#101820">JAX</span>
-        Parker Washington
+        <span class="team-badge" style="background:#203731">GB</span>
+        Matthew Golden
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.9%;"></span></span>
-      <span class="rank-val">65.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:75.4%;"></span></span>
+      <span class="rank-val">75.4%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">2</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#69BE28">SEA</span>
-        Jaxon Smith-Njigba
+        <span class="team-badge" style="background:#0B2265">NYG</span>
+        Isaiah Likely
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:64.2%;"></span></span>
-      <span class="rank-val">64.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.7%;"></span></span>
+      <span class="rank-val">70.7%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">3</span>
       <span class="rank-name">
         <span class="team-badge" style="background:#101820">JAX</span>
-        Brenton Strange
+        Parker Washington
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:57.0%;"></span></span>
-      <span class="rank-val">57.0%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.0%;"></span></span>
+      <span class="rank-val">67.0%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">4</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#AA0000">SF</span>
-        Mike Evans
+        <span class="team-badge" style="background:#97233F">ARI</span>
+        Trey McBride
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:51.5%;"></span></span>
-      <span class="rank-val">51.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.0%;"></span></span>
+      <span class="rank-val">67.0%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">5</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#041E42">DAL</span>
-        George Pickens
+        <span class="team-badge" style="background:#125740">NYJ</span>
+        Garrett Wilson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:50.9%;"></span></span>
-      <span class="rank-val">50.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.9%;"></span></span>
+      <span class="rank-val">65.9%</span>
     </div>
     
   
@@ -464,8 +464,8 @@
         <span class="team-badge" style="background:#203731">GB</span>
         Christian Watson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:75.2%;"></span></span>
-      <span class="rank-val">75.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:78.9%;"></span></span>
+      <span class="rank-val">78.9%</span>
     </div>
     
     <div class="rank-row">
@@ -476,6 +476,16 @@
       </span>
       <span class="rank-bar-wrap"><span class="rank-bar" style="width:72.5%;"></span></span>
       <span class="rank-val">72.5%</span>
+    </div>
+    
+    <div class="rank-row">
+      <span class="rank-num">4</span>
+      <span class="rank-name">
+        <span class="team-badge" style="background:#002C5F">IND</span>
+        Keenan Allen
+      </span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.9%;"></span></span>
+      <span class="rank-val">70.9%</span>
     </div>
     
   
@@ -489,7 +499,27 @@
   <h3>Touchdowns — Top 5</h3>
   <div class="sub-note">Most likely to score, real Poisson probability</div>
   
-    <p class="player-sub">No eligible picks yet this build.</p>
+    
+    <div class="rank-row">
+      <span class="rank-num">1</span>
+      <span class="rank-name">
+        <span class="team-badge" style="background:#101820">JAX</span>
+        Trevor Lawrence
+      </span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:85.0%;"></span></span>
+      <span class="rank-val">85.0%</span>
+    </div>
+    
+    <div class="rank-row">
+      <span class="rank-num">2</span>
+      <span class="rank-name">
+        <span class="team-badge" style="background:#101820">JAX</span>
+        Parker Washington
+      </span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:33.0%;"></span></span>
+      <span class="rank-val">33.0%</span>
+    </div>
+    
   
   <p class="player-sub" style="margin-top:10px;"><a href="touchdowns.html">Full board &rarr;</a></p>
 </div>
@@ -502,47 +532,23 @@
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Quinshon Judkins</div>
-          <div class="rr-sub">receptions &middot; UNDER 2.5 &middot; W5</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">T.J. Hockenson</div>
-          <div class="rr-sub">receptions &middot; OVER 4.5 &middot; W5</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Tee Higgins</div>
-          <div class="rr-sub">receptions &middot; OVER 4.5 &middot; W5</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Chase Brown</div>
-          <div class="rr-sub">receptions &middot; UNDER 3.5 &middot; W5</div>
+          <div class="rr-name">Kyren Williams</div>
+          <div class="rr-sub">receptions &middot; OVER 2.5 &middot; W5</div>
         </div>
         <span class="tier tier-high">HIT</span>
       </div>
       
       <div class="result-row">
         <div>
-          <div class="rr-name">RJ Harvey</div>
-          <div class="rr-sub">receptions &middot; UNDER 4.0 &middot; W5</div>
+          <div class="rr-name">Puka Nacua</div>
+          <div class="rr-sub">receptions &middot; OVER 7 &middot; W5</div>
         </div>
         <span class="tier tier-high">HIT</span>
       </div>
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Carnell Tate</div>
+          <div class="rr-name">Khalil Shakir</div>
           <div class="rr-sub">receptions &middot; UNDER 4.5 &middot; W5</div>
         </div>
         <span class="tier tier-high">HIT</span>
@@ -550,18 +556,42 @@
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Amon-Ra St. Brown</div>
-          <div class="rr-sub">receptions &middot; OVER 6.5 &middot; W5</div>
+          <div class="rr-name">Keon Coleman</div>
+          <div class="rr-sub">receptions &middot; UNDER 3.0 &middot; W5</div>
         </div>
-        <span class="tier tier-low">MISS</span>
+        <span class="tier tier-high">HIT</span>
       </div>
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Chris Olave</div>
-          <div class="rr-sub">receptions &middot; UNDER 6.5 &middot; W5</div>
+          <div class="rr-name">Matthew Stafford</div>
+          <div class="rr-sub">passing yards &middot; OVER 278.5 &middot; W5</div>
         </div>
         <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Puka Nacua</div>
+          <div class="rr-sub">receiving yards &middot; OVER 92.5 &middot; W5</div>
+        </div>
+        <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Tyler Higbee</div>
+          <div class="rr-sub">receiving yards &middot; OVER 25.5 &middot; W5</div>
+        </div>
+        <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Kyren Williams</div>
+          <div class="rr-sub">rushing yards &middot; OVER 69.5 &middot; W5</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
       </div>
       
     
@@ -605,7 +635,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-10-13 09:05 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-10-13 16:43 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

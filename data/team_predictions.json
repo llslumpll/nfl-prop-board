@@ -2537,7 +2537,14 @@
     "reason": "Real net-points-per-game model projects a +0.2-point margin and a 50.5 total. BUF's real offensive EPA/play (+0.22) against LA's real defensive EPA/play allowed (-0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 34,
+      "away_score": 37,
+      "winner": "AWAY"
+    },
+    "our_correct": false,
+    "market_correct": false
   },
   "BUF@LA|team_spread|5": {
     "away_team": "BUF",
@@ -2558,7 +2565,14 @@
     "reason": "Real net-points-per-game model projects a +0.2-point margin and a 50.5 total. BUF's real offensive EPA/play (+0.22) against LA's real defensive EPA/play allowed (-0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 34,
+      "away_score": 37,
+      "actual_margin": -3
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "BUF@LA|team_total|5": {
     "away_team": "BUF",
@@ -2579,7 +2593,14 @@
     "reason": "Real net-points-per-game model projects a +0.2-point margin and a 50.5 total. BUF's real offensive EPA/play (+0.22) against LA's real defensive EPA/play allowed (-0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate.",
     "frozen_at": "2026-09-30 18:38 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 34,
+      "away_score": 37,
+      "actual_total": 71
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "SEA@DEN|team_moneyline|6": {
     "away_team": "SEA",
