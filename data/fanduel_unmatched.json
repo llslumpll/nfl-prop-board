@@ -30,6 +30,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Dak Prescott",
     "team": "DAL",
     "stat": "passing_yards",
@@ -56,6 +62,12 @@
   {
     "player": "C.J. Stroud",
     "team": "HOU",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Josh Allen",
+    "team": "BUF",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -186,6 +198,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Parker Washington",
     "team": "JAX",
     "stat": "receiving_yards",
@@ -255,7 +273,7 @@
     "player": "Kyle Williams",
     "team": "NE",
     "stat": "receiving_yards",
-    "why": "possible name mismatch: FanDuel has 'Kyren Williams'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Ryan Flournoy",
@@ -354,6 +372,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Trey McBride",
     "team": "ARI",
     "stat": "receiving_yards",
@@ -410,6 +434,18 @@
   {
     "player": "Malik Nabers",
     "team": "NYG",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Puka Nacua",
+    "team": "LA",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -698,6 +734,18 @@
   {
     "player": "Jacory Croskey-Merritt",
     "team": "WAS",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "James Cook",
+    "team": "BUF",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },

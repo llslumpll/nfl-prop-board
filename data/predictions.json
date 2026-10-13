@@ -17661,7 +17661,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -17825,7 +17827,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Jordan Love|passing_yards|6": {
@@ -19416,5 +19419,85 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "George Pickens|receiving_yards|6": {
+    "player": "George Pickens",
+    "team": "DAL",
+    "opponent": "GB",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 64.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 68.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -3.8,
+    "model_prob": 0.4665,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-13 01:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Mike Evans|receiving_yards|6": {
+    "player": "Mike Evans",
+    "team": "SF",
+    "opponent": "WAS",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 75.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 77.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.8,
+    "model_prob": 0.4832,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-10-13 01:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "J.K. Dobbins|rushing_yards|6": {
+    "player": "J.K. Dobbins",
+    "team": "DEN",
+    "opponent": "SEA",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 59.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 47.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.2,
+    "model_prob": 0.6566,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-13 01:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
