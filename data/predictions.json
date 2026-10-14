@@ -17957,7 +17957,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|6": {
     "player": "Matthew Golden",
@@ -18168,10 +18171,10 @@
     "stat": "receptions",
     "projected": 6.7,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -18181,7 +18184,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-14 11:40 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 11:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyjae Spears|receptions|6": {
     "player": "Tyjae Spears",
@@ -18286,17 +18291,19 @@
     "stat": "receptions",
     "projected": 5.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.7,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-14 11:40 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 11:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Garrett Wilson|receptions|6": {
     "player": "Garrett Wilson",
@@ -18319,10 +18326,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-13 21:48 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 21:48 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -19710,10 +19714,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-14 05:58 UTC",
     "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this prizepicks line was first seen 2026-10-14 05:58 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -19792,10 +19793,10 @@
     "stat": "receptions",
     "projected": 5.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice"
@@ -19804,7 +19805,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-14 11:40 UTC",
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this prizepicks line was first seen 2026-10-14 11:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Matthew Stafford|any_td|6": {
     "player": "Matthew Stafford",
