@@ -14981,8 +14981,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Romeo Doubs|any_td|5": {
@@ -15232,9 +15231,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kyle Monangai|any_td|5": {
     "player": "Kyle Monangai",
@@ -17264,9 +17261,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Baker Mayfield|any_td|6": {
     "player": "Baker Mayfield",
@@ -17814,9 +17809,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Brock Purdy|passing_yards|6": {
     "player": "Brock Purdy",
@@ -18198,10 +18191,10 @@
     "stat": "receptions",
     "projected": 2.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "PUSH",
+    "edge": 0.0,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -18212,7 +18205,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-14 05:58 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 05:58 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Zay Flowers|receptions|6": {
     "player": "Zay Flowers",
@@ -18257,10 +18252,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-14 00:57 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 00:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -19172,10 +19164,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Christian Watson|any_td|6": {
     "player": "Christian Watson",
@@ -19200,7 +19189,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Malik Willis|any_td|7": {
     "player": "Malik Willis",
@@ -19247,9 +19240,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "DeMario Douglas|any_td|6": {
     "player": "DeMario Douglas",
@@ -19340,7 +19331,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jayden Daniels|any_td|6": {
     "player": "Jayden Daniels",
@@ -19641,9 +19635,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receiving_yards|6": {
     "player": "Isaiah Likely",
@@ -19692,7 +19684,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Puka Nacua|receptions|6": {
@@ -19703,10 +19696,10 @@
     "stat": "receptions",
     "projected": 9.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -19716,7 +19709,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-14 05:58 UTC",
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this prizepicks line was first seen 2026-10-14 05:58 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Kyren Williams|receptions|6": {
     "player": "Kyren Williams",
@@ -19852,7 +19851,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Josh Allen|any_td|6": {
     "player": "Josh Allen",
@@ -19876,7 +19878,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "James Cook|any_td|6": {
     "player": "James Cook",
@@ -20016,7 +20022,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Puka Nacua|receiving_yards|6": {
