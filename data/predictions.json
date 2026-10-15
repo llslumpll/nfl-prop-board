@@ -13575,10 +13575,10 @@
     "stat": "receptions",
     "projected": 4.8,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.7,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -13587,7 +13587,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-06 15:41 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "T.J. Hockenson|receptions|5": {
     "player": "T.J. Hockenson",
@@ -17197,10 +17199,10 @@
     "stat": "receptions",
     "projected": 4.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.6,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -17209,7 +17211,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-09 15:50 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Emeka Egbuka|receptions|6": {
     "player": "Emeka Egbuka",
@@ -18343,10 +18347,10 @@
     "stat": "receptions",
     "projected": 3.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.5,
     "model_prob": null,
     "signals": {
       "target_share_trend": "down"
@@ -18355,7 +18359,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyler Warren|receptions|6": {
     "player": "Tyler Warren",
@@ -18549,17 +18555,19 @@
     "stat": "receptions",
     "projected": 4.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 1.0,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Christian Watson|receptions|6": {
     "player": "Christian Watson",
@@ -18736,10 +18744,10 @@
     "stat": "receptions",
     "projected": 4.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -18748,7 +18756,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Kendrick Bourne|receptions|6": {
     "player": "Kendrick Bourne",
@@ -18758,10 +18768,10 @@
     "stat": "receptions",
     "projected": 3.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "usage_trend": "down",
@@ -18771,7 +18781,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rashod Bateman|receptions|6": {
     "player": "Rashod Bateman",
@@ -19734,10 +19746,10 @@
     "stat": "receptions",
     "projected": 3.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.2,
     "model_prob": null,
     "signals": {
       "target_share_trend": "down"
@@ -19746,7 +19758,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Davante Adams|receptions|6": {
     "player": "Davante Adams",
@@ -19756,10 +19770,10 @@
     "stat": "receptions",
     "projected": 6.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 1.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -19769,7 +19783,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyler Higbee|receptions|6": {
     "player": "Tyler Higbee",
@@ -19779,10 +19795,10 @@
     "stat": "receptions",
     "projected": 3.7,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 1.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Did Not Participate In Practice"
@@ -19791,7 +19807,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-15 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Nico Collins|receptions|6": {
     "player": "Nico Collins",
