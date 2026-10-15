@@ -17669,7 +17669,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -17809,9 +17811,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Brock Purdy|passing_yards|6": {
     "player": "Brock Purdy",
@@ -17859,7 +17859,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|6": {
@@ -18005,7 +18006,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Higbee|receptions|5": {
     "player": "Tyler Higbee",
@@ -19812,10 +19816,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-14 11:40 UTC",
     "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this prizepicks line was first seen 2026-10-14 11:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -20159,7 +20160,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Christian Watson|receiving_yards|6": {
     "player": "Christian Watson",
@@ -20207,9 +20211,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Braelon Allen|rushing_yards|6": {
     "player": "Braelon Allen",
@@ -20233,9 +20235,6 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   }
 }
