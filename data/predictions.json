@@ -17669,9 +17669,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -20160,10 +20158,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Christian Watson|receiving_yards|6": {
     "player": "Christian Watson",
@@ -20211,7 +20206,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Braelon Allen|rushing_yards|6": {
     "player": "Braelon Allen",
@@ -20235,6 +20232,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
