@@ -17836,7 +17836,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Jordan Love|passing_yards|6": {
@@ -17861,8 +17862,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Parker Washington|receiving_yards|6": {
@@ -18284,10 +18284,7 @@
     "graded_at": null,
     "line_attached_at": "2026-10-14 14:20 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 14:20 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Drake London|receptions|6": {
     "player": "Drake London",
@@ -18333,7 +18330,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-13 21:48 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 21:48 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -18437,10 +18437,10 @@
     "stat": "receptions",
     "projected": 3.8,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -18451,7 +18451,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-16 22:12 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-16 22:12 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Justin Jefferson|receptions|7": {
     "player": "Justin Jefferson",
@@ -20206,8 +20208,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Aaron Rodgers|passing_yards|6": {
@@ -21550,6 +21551,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Khalil Shakir|receiving_yards|6": {
+    "player": "Khalil Shakir",
+    "team": "BUF",
+    "opponent": "LV",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 53.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 37.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.1,
+    "model_prob": 0.7,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-16 22:12 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "highest_confidence"
     ]
   }
