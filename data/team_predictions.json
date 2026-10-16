@@ -2621,7 +2621,14 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 43.2 total. DEN's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.14) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SEA is carrying real, meaningfully more Out/Doubtful designations than DEN this week -- a real health edge favoring DEN.",
     "frozen_at": "2026-10-07 19:37 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 17,
+      "away_score": 14,
+      "winner": "HOME"
+    },
+    "our_correct": false,
+    "market_correct": false
   },
   "SEA@DEN|team_spread|6": {
     "away_team": "SEA",
@@ -2642,7 +2649,14 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 43.2 total. DEN's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.14) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SEA is carrying real, meaningfully more Out/Doubtful designations than DEN this week -- a real health edge favoring DEN. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-07 19:37 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 17,
+      "away_score": 14,
+      "actual_margin": 3
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "SEA@DEN|team_total|6": {
     "away_team": "SEA",
@@ -2663,7 +2677,14 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 43.2 total. DEN's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.14) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SEA is carrying real, meaningfully more Out/Doubtful designations than DEN this week -- a real health edge favoring DEN.",
     "frozen_at": "2026-10-07 19:37 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 17,
+      "away_score": 14,
+      "actual_total": 31
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "HOU@JAX|team_moneyline|6": {
     "away_team": "HOU",

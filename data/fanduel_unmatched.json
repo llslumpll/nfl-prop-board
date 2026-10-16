@@ -1,5 +1,11 @@
 [
   {
+    "player": "Sam Darnold",
+    "team": "SEA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jared Goff",
     "team": "DET",
     "stat": "passing_yards",
@@ -42,12 +48,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Sam Darnold",
-    "team": "SEA",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Joe Burrow",
     "team": "CIN",
     "stat": "passing_yards",
@@ -60,14 +60,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Tyquan Thornton",
-    "team": "KC",
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Jaxon Smith-Njigba",
-    "team": "SEA",
+    "player": "Tyquan Thornton",
+    "team": "KC",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -132,6 +132,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Rashid Shaheed",
+    "team": "SEA",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "DeVonta Smith",
     "team": "PHI",
     "stat": "receiving_yards",
@@ -162,9 +168,9 @@
     "why": "possible name mismatch: FanDuel has 'Ty Johnson'"
   },
   {
-    "player": "Adonai Mitchell",
-    "team": "NYJ",
-    "stat": "receiving_yards",
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
   {
@@ -300,18 +306,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "J.K. Dobbins",
-    "team": "DEN",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Emanuel Wilson",
-    "team": "SEA",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Jordan Mason",
     "team": "MIN",
     "stat": "rushing_yards",
@@ -330,6 +324,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Emanuel Wilson",
+    "team": "SEA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Kyler Murray",
     "team": "MIN",
     "stat": "rushing_yards",
@@ -338,6 +338,12 @@
   {
     "player": "Quinshon Judkins",
     "team": "CLE",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "J.K. Dobbins",
+    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }
