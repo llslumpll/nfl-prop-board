@@ -18011,10 +18011,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Tyler Higbee|receptions|5": {
     "player": "Tyler Higbee",
@@ -18289,7 +18286,10 @@
     "graded_at": null,
     "line_attached_at": "2026-10-14 14:20 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 14:20 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Drake London|receptions|6": {
     "player": "Drake London",
