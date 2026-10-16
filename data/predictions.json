@@ -17673,7 +17673,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Bryce Young|passing_yards|6": {
     "player": "Bryce Young",
@@ -18310,7 +18312,10 @@
     "graded_at": null,
     "line_attached_at": "2026-10-14 11:40 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-14 11:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Garrett Wilson|receptions|6": {
     "player": "Garrett Wilson",
@@ -18763,10 +18768,7 @@
     "graded_at": null,
     "line_attached_at": "2026-10-15 17:59 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kendrick Bourne|receptions|6": {
     "player": "Kendrick Bourne",
@@ -20227,9 +20229,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Braelon Allen|rushing_yards|6": {
     "player": "Braelon Allen",
@@ -20257,5 +20257,27 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Josh Allen|rushing_yards|6": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "LV",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 45.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 33.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 11.6,
+    "model_prob": 0.7066,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-16 01:30 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }

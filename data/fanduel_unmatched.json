@@ -42,6 +42,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Sam Darnold",
+    "team": "SEA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Joe Burrow",
     "team": "CIN",
     "stat": "passing_yards",
@@ -56,6 +62,12 @@
   {
     "player": "Tyquan Thornton",
     "team": "KC",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -284,6 +296,18 @@
   {
     "player": "Samaje Perine",
     "team": "CIN",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "J.K. Dobbins",
+    "team": "DEN",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Emanuel Wilson",
+    "team": "SEA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
