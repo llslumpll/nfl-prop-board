@@ -17766,7 +17766,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jameis Winston|passing_yards|6": {
@@ -17861,9 +17862,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Parker Washington|receiving_yards|6": {
     "player": "Parker Washington",
@@ -18547,7 +18546,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ],
     "line_attached_at": "2026-10-15 20:24 UTC",
@@ -18768,7 +18766,9 @@
     "graded_at": null,
     "line_attached_at": "2026-10-15 17:59 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kendrick Bourne|receptions|6": {
     "player": "Kendrick Bourne",
@@ -19693,7 +19693,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Garrett Wilson|receiving_yards|6": {
@@ -20013,7 +20014,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Matthew Stafford|passing_yards|6": {
     "player": "Matthew Stafford",
@@ -20207,9 +20210,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Aaron Rodgers|passing_yards|6": {
     "player": "Aaron Rodgers",
@@ -20280,9 +20281,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "C.J. Stroud|passing_yards|6": {
     "player": "C.J. Stroud",
