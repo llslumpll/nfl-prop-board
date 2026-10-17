@@ -17886,8 +17886,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jaxon Smith-Njigba|receiving_yards|6": {
@@ -21600,6 +21599,52 @@
     "model_prob": 0.6919,
     "signals": {},
     "frozen_at": "2026-10-17 16:30 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": []
+  },
+  "Kyle Williams|receiving_yards|6": {
+    "player": "Kyle Williams",
+    "team": "NE",
+    "opponent": "NYJ",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 16.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 1.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 15.2,
+    "model_prob": 0.7747,
+    "signals": {},
+    "frozen_at": "2026-10-17 23:14 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Tez Johnson|receiving_yards|6": {
+    "player": "Tez Johnson",
+    "team": "TB",
+    "opponent": "PIT",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 21.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.9,
+    "model_prob": 0.7361,
+    "signals": {
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-10-17 23:14 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
