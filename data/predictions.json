@@ -17985,7 +17985,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Parker Washington|receptions|6": {
     "player": "Parker Washington",
@@ -18329,10 +18332,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-13 21:48 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 21:48 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -18545,9 +18545,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-15 20:24 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-15 20:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -18594,7 +18592,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-13 09:05 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 09:05 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -18737,8 +18737,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ],
     "line_attached_at": "2026-10-13 16:43 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 16:43 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -18766,9 +18765,7 @@
     "graded_at": null,
     "line_attached_at": "2026-10-15 17:59 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Kendrick Bourne|receptions|6": {
     "player": "Kendrick Bourne",
@@ -19693,8 +19690,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Garrett Wilson|receiving_yards|6": {
@@ -19794,7 +19790,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-15 17:59 UTC",
-    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Higbee|receptions|6": {
     "player": "Tyler Higbee",
@@ -20210,7 +20210,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Aaron Rodgers|passing_yards|6": {
     "player": "Aaron Rodgers",
@@ -21050,10 +21052,10 @@
     "stat": "receiving_yards",
     "projected": 59.9,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 55.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 4.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice"
@@ -21062,7 +21064,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-17 04:58 UTC",
+    "line_attach_note": "Projection frozen 2026-10-16 13:44 UTC; this prizepicks line was first seen 2026-10-17 04:58 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "DK Metcalf|receiving_yards|6": {
     "player": "DK Metcalf",
