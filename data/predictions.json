@@ -20579,10 +20579,10 @@
     "stat": "rushing_yards",
     "projected": 49.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 47.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 2.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Did Not Participate In Practice"
@@ -20591,7 +20591,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-17 18:49 UTC",
+    "line_attach_note": "Projection frozen 2026-10-16 13:44 UTC; this prizepicks line was first seen 2026-10-17 18:49 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Denzel Boston|receiving_yards|6": {
     "player": "Denzel Boston",
