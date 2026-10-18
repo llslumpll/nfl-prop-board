@@ -19891,8 +19891,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Josh Allen|any_td|6": {
@@ -21718,5 +21717,48 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Tucker Kraft|receiving_yards|6": {
+    "player": "Tucker Kraft",
+    "team": "GB",
+    "opponent": "DAL",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 39.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 52.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -13.1,
+    "model_prob": 0.3401,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-10-18 17:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Kimani Vidal|rushing_yards|6": {
+    "player": "Kimani Vidal",
+    "team": "LAC",
+    "opponent": "KC",
+    "week": 6,
+    "stat": "rushing_yards",
+    "projected": 30.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 16.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.5,
+    "model_prob": 0.6354,
+    "signals": {},
+    "frozen_at": "2026-10-18 17:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
