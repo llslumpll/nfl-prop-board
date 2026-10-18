@@ -20013,9 +20013,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Stafford|passing_yards|6": {
     "player": "Matthew Stafford",
@@ -20184,7 +20182,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Christian Watson|receiving_yards|6": {
@@ -21652,5 +21651,47 @@
     "best5_tags": [
       "highest_confidence"
     ]
+  },
+  "A.J. Brown|receiving_yards|6": {
+    "player": "A.J. Brown",
+    "team": "NE",
+    "opponent": "NYJ",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 60.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 49.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 11.4,
+    "model_prob": 0.6037,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-10-18 06:03 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tanner McKee|passing_yards|6": {
+    "player": "Tanner McKee",
+    "team": "PHI",
+    "opponent": "CAR",
+    "week": 6,
+    "stat": "passing_yards",
+    "projected": 90.8,
+    "tier_at_freeze": "Career baseline (limited history)",
+    "market_line": 198.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -107.7,
+    "model_prob": 0.104,
+    "signals": {},
+    "frozen_at": "2026-10-18 06:03 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
