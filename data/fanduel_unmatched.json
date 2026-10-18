@@ -60,10 +60,16 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Kirk Cousins",
+    "team": "LV",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Michael Penix Jr.",
     "team": "ATL",
     "stat": "passing_yards",
-    "why": "possible name mismatch: FanDuel has 'Mike Washington Jr.'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Drew Lock",
@@ -84,6 +90,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Lamar Jackson",
     "team": "BAL",
     "stat": "passing_yards",
@@ -98,6 +110,12 @@
   {
     "player": "Baker Mayfield",
     "team": "TB",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Josh Allen",
+    "team": "BUF",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -180,6 +198,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Garrett Wilson",
     "team": "NYJ",
     "stat": "receiving_yards",
@@ -258,8 +282,20 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Ty Johnson",
+    "team": "BUF",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Darius Cooper",
     "team": "PHI",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Xavier Worthy",
+    "team": "KC",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -321,7 +357,7 @@
     "player": "Tez Johnson",
     "team": "TB",
     "stat": "receiving_yards",
-    "why": "possible name mismatch: FanDuel has 'Ty Johnson'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Puka Nacua",
@@ -368,6 +404,12 @@
   {
     "player": "Zay Flowers",
     "team": "BAL",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Brock Bowers",
+    "team": "LV",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -528,6 +570,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Kenneth Walker III",
+    "team": "KC",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Bucky Irving",
     "team": "TB",
     "stat": "rushing_yards",
@@ -552,6 +600,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Braelon Allen",
     "team": "NYJ",
     "stat": "rushing_yards",
@@ -560,6 +614,12 @@
   {
     "player": "Aaron Jones",
     "team": "MIN",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "James Cook",
+    "team": "BUF",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -642,8 +702,20 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Kimani Vidal",
+    "team": "LAC",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tank Bigsby",
     "team": "PHI",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Justin Herbert",
+    "team": "LAC",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },

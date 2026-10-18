@@ -1,131 +1,5 @@
 {
   "props": {
-    "Patrick Mahomes": {
-      "passing_yards": 223.5,
-      "rushing_yards": 15.5
-    },
-    "Justin Herbert": {
-      "passing_yards": 192.5,
-      "rushing_yards": 24.5
-    },
-    "Kenneth Walker III": {
-      "rushing_yards": 92.5,
-      "receiving_yards": 20.5,
-      "receptions": 3
-    },
-    "Travis Kelce": {
-      "receiving_yards": 50.5,
-      "receptions": 4.5
-    },
-    "Xavier Worthy": {
-      "receiving_yards": 48.5,
-      "receptions": 4.5
-    },
-    "Ladd McConkey": {
-      "receiving_yards": 42.5,
-      "receptions": 3.5
-    },
-    "Quentin Johnston": {
-      "receiving_yards": 35.5,
-      "receptions": 2.5
-    },
-    "Omarion Hampton": {
-      "rushing_yards": 34.5,
-      "receiving_yards": 5.5
-    },
-    "Jalen Royals": {
-      "receiving_yards": 24.5
-    },
-    "Charlie Kolar": {
-      "receiving_yards": 21.5
-    },
-    "Keaton Mitchell": {
-      "rushing_yards": 18.5,
-      "receiving_yards": 15.5
-    },
-    "Kimani Vidal": {
-      "rushing_yards": 16.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
-    },
-    "Oronde Gadsden II": {
-      "receiving_yards": 15.5
-    },
-    "Noah Gray": {
-      "receiving_yards": 14.5,
-      "receptions": 1.5
-    },
-    "Emmett Johnson": {
-      "rushing_yards": 13.5,
-      "receiving_yards": 5.5
-    },
-    "Cyrus Allen": {
-      "receiving_yards": 12.5
-    },
-    "Kirk Cousins": {
-      "passing_yards": 248.5,
-      "rushing_yards": 0.5
-    },
-    "Josh Allen": {
-      "passing_yards": 241.5,
-      "rushing_yards": 33.5
-    },
-    "James Cook III": {
-      "rushing_yards": 93.5,
-      "receiving_yards": 7.5
-    },
-    "Brock Bowers": {
-      "receiving_yards": 81.5,
-      "receptions": 6.5
-    },
-    "Ashton Jeanty": {
-      "rushing_yards": 55.5,
-      "receiving_yards": 26.5
-    },
-    "Dalton Kincaid": {
-      "receiving_yards": 52.5,
-      "receptions": 4.5
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 45.5
-    },
-    "Tre Tucker": {
-      "receiving_yards": 39.5,
-      "receptions": 3.5
-    },
-    "Keon Coleman": {
-      "receiving_yards": 39.5
-    },
-    "Michael Mayer": {
-      "receiving_yards": 27.5,
-      "receptions": 3
-    },
-    "Jalen Nailor": {
-      "receiving_yards": 20.5
-    },
-    "Joshua Palmer": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
-    "Ty Johnson": {
-      "receiving_yards": 15.5,
-      "receptions": 2
-    },
-    "Mike Washington Jr.": {
-      "rushing_yards": 14.5
-    },
-    "Cody White": {
-      "receiving_yards": 13.5
-    },
-    "Dawson Knox": {
-      "receiving_yards": 12.5
-    },
-    "Skyler Bell": {
-      "receiving_yards": 12.5
-    },
-    "Ray Davis": {
-      "rushing_yards": 9.5
-    },
     "Dak Prescott": {
       "passing_yards": 278.5,
       "rushing_yards": 10.5
@@ -156,7 +30,7 @@
       "receptions": 5
     },
     "Tucker Kraft": {
-      "receiving_yards": 51.5
+      "receiving_yards": 50.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 43.5,
@@ -193,7 +67,7 @@
       "receiving_yards": 3.5
     },
     "Savion Williams": {
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "Brock Purdy": {
       "passing_yards": 246.5,
@@ -245,9 +119,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 2460,
-    "matched_props": 110,
-    "excluded_goblin_demon_lines": 2006,
+    "total_projections_returned": 1129,
+    "matched_props": 52,
+    "excluded_goblin_demon_lines": 919,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -278,7 +152,7 @@
       "punts (combo)",
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
-      "quarters with 10+ rush yards"
+      "quarters with 25+ pass yards"
     ],
     "sample_odds_types_seen": [
       "demon",

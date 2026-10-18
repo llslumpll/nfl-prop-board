@@ -19168,7 +19168,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Isaiah Likely|any_td|6": {
     "player": "Isaiah Likely",
@@ -19360,9 +19364,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jayden Daniels|any_td|6": {
     "player": "Jayden Daniels",
@@ -19389,8 +19391,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jordan Mason|any_td|7": {
@@ -21782,6 +21783,48 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-10-18 20:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jayden Daniels|passing_yards|6": {
+    "player": "Jayden Daniels",
+    "team": "WAS",
+    "opponent": "SF",
+    "week": 6,
+    "stat": "passing_yards",
+    "projected": 198.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 206.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -7.9,
+    "model_prob": 0.4568,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-10-18 22:28 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Ryan Flournoy|receiving_yards|6": {
+    "player": "Ryan Flournoy",
+    "team": "DAL",
+    "opponent": "GB",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 26.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 31.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.6,
+    "model_prob": 0.4438,
+    "signals": {},
+    "frozen_at": "2026-10-18 22:28 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
