@@ -17960,7 +17960,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|6": {
     "player": "Matthew Golden",
@@ -18735,9 +18738,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-13 16:43 UTC",
     "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-13 16:43 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -19791,8 +19792,7 @@
     "line_attached_at": "2026-10-15 17:59 UTC",
     "line_attach_note": "Projection frozen 2026-10-13 16:43 UTC; this fanduel line was first seen 2026-10-15 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Tyler Higbee|receptions|6": {
@@ -20085,8 +20085,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Tyler Higbee|receiving_yards|6": {
@@ -20181,10 +20180,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Christian Watson|receiving_yards|6": {
     "player": "Christian Watson",
@@ -20208,9 +20204,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Aaron Rodgers|passing_yards|6": {
     "player": "Aaron Rodgers",
@@ -20930,7 +20924,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Malik Nabers|receiving_yards|6": {
     "player": "Malik Nabers",
@@ -21693,5 +21691,32 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Isaiah Bond|receiving_yards|6": {
+    "player": "Isaiah Bond",
+    "team": "CLE",
+    "opponent": "BAL",
+    "week": 6,
+    "stat": "receiving_yards",
+    "projected": 22.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 20.2,
+    "model_prob": 0.7814,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-18 16:59 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
