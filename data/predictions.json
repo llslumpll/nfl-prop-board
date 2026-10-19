@@ -18608,17 +18608,23 @@
     "stat": "receptions",
     "projected": 2.7,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.8,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-19 19:33 UTC",
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-19 19:33 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Germie Bernard|receptions|6": {
     "player": "Germie Bernard",
@@ -21477,10 +21483,10 @@
     "stat": "receptions",
     "projected": 6.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -21489,7 +21495,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-19 19:33 UTC",
+    "line_attach_note": "Projection frozen 2026-10-16 13:45 UTC; this prizepicks line was first seen 2026-10-19 19:33 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Drew Lock|any_td|7": {
     "player": "Drew Lock",
@@ -21831,5 +21843,139 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Sam Darnold|passing_yards|7": {
+    "player": "Sam Darnold",
+    "team": "SEA",
+    "opponent": "KC",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 204.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 224.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -19.9,
+    "model_prob": 0.4267,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-19 19:33 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Rashid Shaheed|receiving_yards|7": {
+    "player": "Rashid Shaheed",
+    "team": "SEA",
+    "opponent": "KC",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 39.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 23.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.0,
+    "model_prob": 0.6712,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-19 19:33 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jaxon Smith-Njigba|receiving_yards|7": {
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "opponent": "KC",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 77.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 88.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -10.8,
+    "model_prob": 0.4055,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-19 19:33 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Ollie Gordon II|rushing_yards|7": {
+    "player": "Ollie Gordon II",
+    "team": "MIA",
+    "opponent": "NYJ",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 20.5,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 54.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -34.0,
+    "model_prob": 0.0166,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-19 19:33 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Malik Willis|rushing_yards|7": {
+    "player": "Malik Willis",
+    "team": "MIA",
+    "opponent": "NYJ",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 24.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 39.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -14.6,
+    "model_prob": 0.2818,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-19 19:33 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
