@@ -1,74 +1,5 @@
 {
   "props": {
-    "Dak Prescott": {
-      "passing_yards": 278.5,
-      "rushing_yards": 10.5
-    },
-    "Jordan Love": {
-      "passing_yards": 274.5,
-      "rushing_yards": 6.5
-    },
-    "CeeDee Lamb": {
-      "receiving_yards": 81.5,
-      "receptions": 6.5
-    },
-    "Christian Watson": {
-      "receiving_yards": 75.5,
-      "receptions": 5
-    },
-    "George Pickens": {
-      "receiving_yards": 70.5,
-      "receptions": 5
-    },
-    "Javonte Williams": {
-      "rushing_yards": 68.5,
-      "receiving_yards": 14.5,
-      "receptions": 2.5
-    },
-    "Matthew Golden": {
-      "receiving_yards": 65.5,
-      "receptions": 5
-    },
-    "Tucker Kraft": {
-      "receiving_yards": 50.5
-    },
-    "MarShawn Lloyd": {
-      "rushing_yards": 43.5,
-      "receiving_yards": 10.5,
-      "receptions": 2
-    },
-    "Ryan Flournoy": {
-      "receiving_yards": 31.5,
-      "receptions": 3
-    },
-    "Jake Ferguson": {
-      "receiving_yards": 24.5
-    },
-    "Pierre Strong Jr.": {
-      "rushing_yards": 16.5,
-      "receiving_yards": 11.5
-    },
-    "Kaleb Johnson": {
-      "rushing_yards": 11.5
-    },
-    "Tyler Goodson": {
-      "rushing_yards": 8.5
-    },
-    "Bo Melton": {
-      "receiving_yards": 7.5
-    },
-    "Jonnu Smith": {
-      "receiving_yards": 6.5
-    },
-    "KaVontae Turpin": {
-      "receiving_yards": 5.5
-    },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 3.5
-    },
-    "Savion Williams": {
-      "receiving_yards": 2.5
-    },
     "Brock Purdy": {
       "passing_yards": 246.5,
       "rushing_yards": 19.5
@@ -82,7 +13,7 @@
       "receptions": 5.5
     },
     "George Kittle": {
-      "receiving_yards": 63.5,
+      "receiving_yards": 65.5,
       "receptions": 5.5
     },
     "Christian McCaffrey": {
@@ -95,14 +26,15 @@
       "receiving_yards": 12.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 41.5
+      "receiving_yards": 41.5,
+      "receptions": 4
+    },
+    "Kaelon Black": {
+      "rushing_yards": 24.5,
+      "receptions": 0.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 24.5
-    },
-    "Kaelon Black": {
-      "rushing_yards": 23.5,
-      "receptions": 0.5
     },
     "Antonio Williams": {
       "receiving_yards": 20.5
@@ -119,9 +51,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 1129,
-    "matched_props": 52,
-    "excluded_goblin_demon_lines": 919,
+    "total_projections_returned": 447,
+    "matched_props": 22,
+    "excluded_goblin_demon_lines": 360,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -129,10 +61,7 @@
       "fantasy score",
       "fg made",
       "fg made (combo)",
-      "field goal yards (combo)",
       "halves with 100+ pass yards",
-      "halves with 25+ receiving yards",
-      "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -147,12 +76,15 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
-      "punt touchbacks (combo)",
-      "punts",
-      "punts (combo)",
-      "quarters with 1+ reception",
-      "quarters with 10+ receiving yards",
-      "quarters with 25+ pass yards"
+      "quarters with 25+ pass yards",
+      "rec targets",
+      "rec tds",
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions",
+      "rush attempts",
+      "rush tds",
+      "rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
