@@ -2,15 +2,14 @@
   "props": {
     "Brock Purdy": {
       "passing_yards": 246.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 19.5
     },
     "Jayden Daniels": {
       "passing_yards": 207.5,
       "rushing_yards": 37.5
     },
     "Mike Evans": {
-      "receiving_yards": 70.5,
-      "receptions": 5.5
+      "receiving_yards": 71.5
     },
     "George Kittle": {
       "receiving_yards": 65.5,
@@ -21,41 +20,45 @@
       "receiving_yards": 39.5,
       "receptions": 4.5
     },
+    "Terry McLaurin": {
+      "receiving_yards": 47.5,
+      "receptions": 3.5
+    },
     "Rachaad White": {
-      "rushing_yards": 47.5,
-      "receiving_yards": 12.5
+      "rushing_yards": 46.5,
+      "receiving_yards": 13.5
     },
     "Stefon Diggs": {
       "receiving_yards": 41.5,
       "receptions": 4
     },
+    "Brandin Cooks": {
+      "receiving_yards": 27.5
+    },
     "Chig Okonkwo": {
       "receiving_yards": 24.5
     },
     "Kaelon Black": {
-      "rushing_yards": 23.5
+      "rushing_yards": 23.5,
+      "receptions": 0.5
     },
     "Antonio Williams": {
-      "receiving_yards": 20.5
+      "receiving_yards": 22.5
     },
     "Austin Ekeler": {
       "rushing_yards": 19.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
-    "Terry McLaurin": {
-      "receptions": 3.5
+    "Caleb Williams": {
+      "passing_yards": 241.5,
+      "rushing_yards": 17.5
     },
     "Drake Maye": {
       "passing_yards": 236.5,
       "rushing_yards": 29.5
     },
-    "Caleb Williams": {
-      "passing_yards": 236.5,
-      "rushing_yards": 17.5
-    },
     "D'Andre Swift": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 17.5
     },
     "A.J. Brown": {
@@ -66,7 +69,7 @@
       "receptions": 4.5
     },
     "Rome Odunze": {
-      "receiving_yards": 44.5
+      "receiving_yards": 45.5
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 42.5,
@@ -82,23 +85,19 @@
       "rushing_yards": 29.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 27.5
     },
     "DeMario Douglas": {
       "receiving_yards": 27.5
-    },
-    "Efton Chism III": {
-      "receiving_yards": 18.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 831,
-    "matched_props": 41,
-    "excluded_goblin_demon_lines": 686,
+    "total_projections_returned": 892,
+    "matched_props": 40,
+    "excluded_goblin_demon_lines": 755,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
