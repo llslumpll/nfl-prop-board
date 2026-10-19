@@ -21867,7 +21867,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -21920,10 +21919,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|7": {
     "player": "Ollie Gordon II",
@@ -21976,6 +21972,31 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
+    ]
+  },
+  "Joe Burrow|passing_yards|7": {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opponent": "BAL",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 252.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 274.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -22.5,
+    "model_prob": 0.4005,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-10-19 21:45 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
