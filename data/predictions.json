@@ -22311,9 +22311,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Michael Mayer|receiving_yards|7": {
     "player": "Michael Mayer",
@@ -22471,8 +22469,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Tetairoa McMillan|receptions|7": {
@@ -22497,7 +22494,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -22616,9 +22612,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Malik Nabers|receptions|7": {
     "player": "Malik Nabers",
@@ -23056,10 +23050,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -2.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -23068,7 +23062,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-20 19:53 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-20 19:53 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Zay Flowers|receptions|7": {
     "player": "Zay Flowers",
@@ -23355,10 +23355,7 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 21.0,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Penix Jr.|any_td|7": {
     "player": "Michael Penix Jr.",
@@ -23964,5 +23961,57 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "George Pickens|receiving_yards|7": {
+    "player": "George Pickens",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 75.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 62.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.8,
+    "model_prob": 0.6114,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-10-20 19:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Christian McCaffrey|rushing_yards|7": {
+    "player": "Christian McCaffrey",
+    "team": "SF",
+    "opponent": "ATL",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 69.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 53.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 15.8,
+    "model_prob": 0.6775,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-20 19:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   }
 }
