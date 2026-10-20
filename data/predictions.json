@@ -19326,7 +19326,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "C.J. Stroud|any_td|6": {
     "player": "C.J. Stroud",
@@ -21966,7 +21970,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Joe Burrow|passing_yards|7": {
@@ -21990,10 +21995,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Drake Maye|passing_yards|7": {
     "player": "Drake Maye",
@@ -22363,7 +22365,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Carnell Tate|receptions|7": {
@@ -22388,10 +22391,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jalen Coker|receptions|7": {
     "player": "Jalen Coker",
@@ -22416,10 +22416,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Mayer|receptions|7": {
     "player": "Michael Mayer",
@@ -22469,7 +22466,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Tetairoa McMillan|receptions|7": {
@@ -22494,7 +22492,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Luther Burden III|receptions|7": {
@@ -22516,7 +22515,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kenneth Walker III|rushing_yards|7": {
     "player": "Kenneth Walker III",
@@ -23984,9 +23986,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Christian McCaffrey|rushing_yards|7": {
     "player": "Christian McCaffrey",
@@ -24010,8 +24010,30 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
+    "best5_tags": []
+  },
+  "Brock Purdy|passing_yards|7": {
+    "player": "Brock Purdy",
+    "team": "SF",
+    "opponent": "ATL",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 270.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 240.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 29.7,
+    "model_prob": 0.6677,
+    "signals": {},
+    "frozen_at": "2026-10-20 23:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
