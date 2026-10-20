@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-10-20 11:06 UTC",
+  "generated_at": "2026-10-20 14:06 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -11,19 +11,19 @@
       },
       "Career baseline (limited history)": {
         "bias": 0.0,
-        "sample_size": 4,
+        "sample_size": 5,
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 5.63,
-        "sample_size": 64,
-        "avg_raw_bias": 18.78,
+        "bias": 5.95,
+        "sample_size": 66,
+        "avg_raw_bias": 19.82,
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 7.77,
-        "sample_size": 51,
-        "avg_raw_bias": 25.91,
+        "bias": 6.65,
+        "sample_size": 73,
+        "avg_raw_bias": 22.15,
         "status": "active"
       }
     },
@@ -39,20 +39,20 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": -0.1,
-        "sample_size": 58,
-        "avg_raw_bias": -0.35,
+        "bias": -0.23,
+        "sample_size": 59,
+        "avg_raw_bias": -0.78,
         "status": "active"
       },
       "No data (rookie/unproven)": {
         "bias": 0.0,
-        "sample_size": 9,
+        "sample_size": 10,
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
-        "bias": 1.45,
-        "sample_size": 57,
-        "avg_raw_bias": 4.84,
+        "bias": -0.15,
+        "sample_size": 83,
+        "avg_raw_bias": -0.5,
         "status": "active"
       }
     },
@@ -68,15 +68,15 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 2.23,
-        "sample_size": 65,
-        "avg_raw_bias": 7.42,
+        "bias": 2.04,
+        "sample_size": 66,
+        "avg_raw_bias": 6.8,
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 1.01,
-        "sample_size": 58,
-        "avg_raw_bias": 3.38,
+        "bias": 1.05,
+        "sample_size": 96,
+        "avg_raw_bias": 3.5,
         "status": "active"
       }
     },
@@ -87,9 +87,9 @@
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
-        "bias": -0.01,
-        "sample_size": 33,
-        "avg_raw_bias": -0.04,
+        "bias": 0.09,
+        "sample_size": 63,
+        "avg_raw_bias": 0.3,
         "status": "active"
       }
     }
@@ -101,26 +101,26 @@
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.71,
-      "sample_size": 85,
-      "raw_shrink_factor": 0.032,
+      "shrink_factor": 0.72,
+      "sample_size": 110,
+      "raw_shrink_factor": 0.066,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.702,
-      "sample_size": 87,
-      "raw_shrink_factor": 0.007,
+      "shrink_factor": 0.719,
+      "sample_size": 114,
+      "raw_shrink_factor": 0.062,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.883,
-      "sample_size": 86,
-      "raw_shrink_factor": 0.609,
+      "shrink_factor": 0.794,
+      "sample_size": 122,
+      "raw_shrink_factor": 0.313,
       "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 6,
+      "sample_size": 9,
       "status": "insufficient data"
     }
   }
