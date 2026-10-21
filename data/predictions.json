@@ -21918,7 +21918,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Ollie Gordon II|rushing_yards|7": {
@@ -21969,10 +21970,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|passing_yards|7": {
     "player": "Joe Burrow",
@@ -22235,10 +22233,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Golden|receiving_yards|7": {
     "player": "Matthew Golden",
@@ -22337,9 +22332,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Carnell Tate|receiving_yards|7": {
     "player": "Carnell Tate",
@@ -22365,7 +22358,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Carnell Tate|receptions|7": {
@@ -23064,10 +23058,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-20 19:53 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-20 19:53 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23101,10 +23092,10 @@
     "stat": "receptions",
     "projected": 8.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -23114,7 +23105,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-21 06:34 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 06:34 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Colston Loveland|receptions|7": {
     "player": "Colston Loveland",
@@ -23124,17 +23121,19 @@
     "stat": "receptions",
     "projected": 4.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.0,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.2,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-21 06:34 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 06:34 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Matthew Golden|receptions|7": {
     "player": "Matthew Golden",
@@ -23711,7 +23710,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tre Tucker|any_td|7": {
     "player": "Tre Tucker",
@@ -24062,8 +24065,60 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
+    "best5_tags": []
+  },
+  "Bryce Young|passing_yards|7": {
+    "player": "Bryce Young",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 223.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 249.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -25.8,
+    "model_prob": 0.3704,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-21 06:34 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Mike Washington Jr.|rushing_yards|7": {
+    "player": "Mike Washington Jr.",
+    "team": "LV",
+    "opponent": "LA",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 41.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 20.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 21.4,
+    "model_prob": 0.8308,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-21 06:34 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
