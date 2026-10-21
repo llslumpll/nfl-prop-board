@@ -22365,8 +22365,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Carnell Tate|receptions|7": {
@@ -22391,7 +22390,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jalen Coker|receptions|7": {
     "player": "Jalen Coker",
@@ -22465,10 +22467,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Tetairoa McMillan|receptions|7": {
     "player": "Tetairoa McMillan",
@@ -23540,7 +23539,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Josh Allen|any_td|8": {
     "player": "Josh Allen",
@@ -24034,6 +24037,33 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
+    ]
+  },
+  "Keenan Allen|receiving_yards|7": {
+    "player": "Keenan Allen",
+    "team": "IND",
+    "opponent": "MIN",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 52.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 39.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.1,
+    "model_prob": 0.6233,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-21 01:29 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
