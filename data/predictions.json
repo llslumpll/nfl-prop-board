@@ -21918,8 +21918,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Ollie Gordon II|rushing_yards|7": {
@@ -21970,7 +21969,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Joe Burrow|passing_yards|7": {
     "player": "Joe Burrow",
@@ -22412,7 +22414,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Michael Mayer|receptions|7": {
     "player": "Michael Mayer",
@@ -22484,10 +22489,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Luther Burden III|receptions|7": {
     "player": "Luther Burden III",
@@ -22508,10 +22510,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kenneth Walker III|rushing_yards|7": {
     "player": "Kenneth Walker III",
@@ -22532,10 +22531,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kendre Miller|rushing_yards|7": {
     "player": "Kendre Miller",
@@ -22729,10 +22725,10 @@
     "stat": "receptions",
     "projected": 5.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -22742,7 +22738,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-21 12:23 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 12:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rashee Rice|receptions|7": {
     "player": "Rashee Rice",
@@ -24118,6 +24120,34 @@
     "graded_at": null,
     "best5_tags": [
       "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jalen Coker|receiving_yards|7": {
+    "player": "Jalen Coker",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 54.2,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 65.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -11.3,
+    "model_prob": 0.3692,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-21 12:23 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "highest_confidence"
     ]
   }
