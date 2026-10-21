@@ -23,14 +23,14 @@
     "Rome Odunze": {
       "receiving_yards": 45.5
     },
-    "Colston Loveland": {
-      "receiving_yards": 44.5,
-      "receptions": 4
-    },
     "Rhamondre Stevenson": {
       "rushing_yards": 42.5,
       "receiving_yards": 18.5,
       "receptions": 2.5
+    },
+    "Colston Loveland": {
+      "receiving_yards": 41.5,
+      "receptions": 4
     },
     "DeMario Douglas": {
       "receiving_yards": 37.5
@@ -43,7 +43,7 @@
       "receptions": 2.5
     },
     "TreVeyon Henderson": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 22.5,
       "receiving_yards": 2.5
     },
     "Efton Chism III": {
@@ -57,6 +57,9 @@
     },
     "Cole Kmet": {
       "receiving_yards": 8.5
+    },
+    "Sam Roush": {
+      "receiving_yards": 0.5
     },
     "Aaron Rodgers": {
       "passing_yards": 233.5,
@@ -75,7 +78,7 @@
       "receiving_yards": 26.5
     },
     "DK Metcalf": {
-      "receiving_yards": 59.5
+      "receiving_yards": 58.5
     },
     "Germie Bernard": {
       "receiving_yards": 52.5
@@ -88,7 +91,8 @@
       "receiving_yards": 39.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 33.5
+      "receiving_yards": 33.5,
+      "receptions": 3.5
     },
     "Rico Dowdle": {
       "rushing_yards": 31.5,
@@ -96,10 +100,12 @@
     },
     "Alvin Kamara": {
       "rushing_yards": 16.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 12.5,
+      "receptions": 2.5
     },
     "Noah Fant": {
-      "receiving_yards": 11.5
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Deshaun Watson": {
       "passing_yards": 203.5,
@@ -110,29 +116,50 @@
       "rushing_yards": 11.5
     },
     "Tony Pollard": {
-      "rushing_yards": 67.5
+      "rushing_yards": 67.5,
+      "receiving_yards": 9.5
     },
     "Carnell Tate": {
-      "receiving_yards": 53.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
       "receiving_yards": 50.5
     },
+    "Wan'Dale Robinson": {
+      "receiving_yards": 36.5
+    },
     "KC Concepcion Jr.": {
       "receiving_yards": 36.5,
       "receptions": 4.5
-    },
-    "Wan'Dale Robinson": {
-      "receiving_yards": 34.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 30.5,
       "receptions": 3.5
     },
+    "Gunnar Helm": {
+      "receiving_yards": 15.5
+    },
+    "Calvin Ridley": {
+      "receiving_yards": 13.5
+    },
+    "Elic Ayomanor": {
+      "receiving_yards": 13.5,
+      "receptions": 1.5
+    },
+    "Tyjae Spears": {
+      "receiving_yards": 12.5,
+      "rushing_yards": 10.5
+    },
+    "Daniel Bellinger": {
+      "receiving_yards": 7.5
+    },
     "Joe Burrow": {
       "passing_yards": 259.5,
       "rushing_yards": 8.5
+    },
+    "Lamar Jackson": {
+      "passing_yards": 228.5
     },
     "Derrick Henry": {
       "rushing_yards": 86.5,
@@ -148,8 +175,18 @@
       "receiving_yards": 65.5
     },
     "Chase Brown": {
-      "rushing_yards": 49.5,
-      "receiving_yards": 22.5
+      "rushing_yards": 50.5,
+      "receiving_yards": 22.5,
+      "receptions": 3.5
+    },
+    "Mike Gesicki": {
+      "receiving_yards": 20.5
+    },
+    "Erick All Jr.": {
+      "receiving_yards": 9.5
+    },
+    "Drew Sample": {
+      "receiving_yards": 6.5
     },
     "C.J. Stroud": {
       "passing_yards": 253.5,
@@ -162,23 +199,35 @@
       "receiving_yards": 74.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 56.5
+      "receiving_yards": 56.5,
+      "receptions": 5.5
+    },
+    "Cam Skattebo": {
+      "rushing_yards": 34.5,
+      "receiving_yards": 7.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 31.5
+    },
+    "Dalton Schultz": {
+      "receiving_yards": 28.5
+    },
+    "Jaylin Noel": {
+      "receiving_yards": 23.5
     },
     "Kyler Murray": {
       "passing_yards": 204.5,
       "rushing_yards": 18.5
     },
     "Daniel Jones": {
-      "passing_yards": 199.5
+      "passing_yards": 199.5,
+      "rushing_yards": 9.5
     },
     "Justin Jefferson": {
       "receiving_yards": 73.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 69.5,
+      "rushing_yards": 71.5,
       "receiving_yards": 16.5
     },
     "Josh Downs": {
@@ -191,7 +240,7 @@
       "receiving_yards": 42.5
     },
     "Keenan Allen": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 4.5
     },
     "T.J. Hockenson": {
@@ -199,7 +248,7 @@
       "receptions": 4.5
     },
     "Brock Purdy": {
-      "passing_yards": 243.5,
+      "passing_yards": 241.5,
       "rushing_yards": 18.5
     },
     "Michael Penix Jr.": {
@@ -238,7 +287,7 @@
       "rushing_yards": 9.5
     },
     "Baker Mayfield": {
-      "passing_yards": 213.5
+      "passing_yards": 214.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 70.5,
@@ -319,12 +368,18 @@
     "Courtland Sutton": {
       "receiving_yards": 35.5
     },
+    "Tyler Allgeier": {
+      "rushing_yards": 35.5,
+      "receiving_yards": 9.5
+    },
+    "RJ Harvey": {
+      "receiving_yards": 24.5,
+      "rushing_yards": 17.5,
+      "receptions": 3.5
+    },
     "Evan Engram": {
       "receiving_yards": 22.5,
       "receptions": 2.5
-    },
-    "RJ Harvey": {
-      "rushing_yards": 18.5
     },
     "Elijah Higgins": {
       "receiving_yards": 17.5
@@ -333,14 +388,12 @@
       "receiving_yards": 17.5
     },
     "Troy Franklin": {
-      "receiving_yards": 15.5
+      "receiving_yards": 15.5,
+      "receptions": 1.5
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 12.5,
       "receptions": 1.5
-    },
-    "Tyler Allgeier": {
-      "receiving_yards": 9.5
     },
     "Jared Goff": {
       "passing_yards": 278.5,
@@ -369,10 +422,14 @@
       "receiving_yards": 54.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 51.5
+      "receiving_yards": 50.5
     },
     "Tucker Kraft": {
       "receiving_yards": 48.5
+    },
+    "Josh Jacobs": {
+      "rushing_yards": 42.5,
+      "receiving_yards": 12.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 23.5
@@ -409,7 +466,7 @@
     },
     "Blake Corum": {
       "rushing_yards": 38.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Tyler Higbee": {
       "receiving_yards": 34.5,
@@ -420,7 +477,7 @@
       "receptions": 3.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 20.5
+      "rushing_yards": 21.5
     },
     "Colby Parkinson": {
       "receiving_yards": 19.5
@@ -459,7 +516,8 @@
       "receiving_yards": 11.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 8.5
+      "rushing_yards": 8.5,
+      "receiving_yards": 5.5
     },
     "Dak Prescott": {
       "passing_yards": 266.5,
@@ -479,11 +537,11 @@
       "receiving_yards": 66.5
     },
     "George Pickens": {
-      "receiving_yards": 61.5,
+      "receiving_yards": 62.5,
       "receptions": 5
     },
     "Dallas Goedert": {
-      "receiving_yards": 40.5
+      "receiving_yards": 42.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 32.5
@@ -497,11 +555,12 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 3445,
-    "matched_props": 211,
-    "excluded_goblin_demon_lines": 2951,
+    "total_projections_returned": 4181,
+    "matched_props": 241,
+    "excluded_goblin_demon_lines": 3515,
     "sample_stat_types_seen": [
       "anytime tds",
+      "consecutive pass completions",
       "fantasy score",
       "fg made",
       "field goal yards (combo)",
@@ -520,17 +579,16 @@
       "pass yards",
       "pass yards (combo)",
       "pass+rush yds",
+      "passer rating",
+      "punt touchbacks (combo)",
+      "punts",
+      "punts (combo)",
+      "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 25+ pass yards",
       "quarters with 5+ receiving yards",
       "quarters with 5+ rush yards",
-      "receiving yards",
-      "receiving yards (combo)",
-      "receptions",
-      "rush attempts",
-      "rush yards",
-      "rush yards (combo)",
-      "rush yards in first 5 attempts"
+      "receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
