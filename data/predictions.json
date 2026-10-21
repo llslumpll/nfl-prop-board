@@ -22211,8 +22211,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Kirk Cousins|passing_yards|7": {
@@ -22739,7 +22738,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-21 12:23 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 12:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23035,10 +23037,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receptions|7": {
     "player": "Isaiah Likely",
@@ -23061,7 +23060,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-20 19:53 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-20 19:53 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23134,10 +23136,7 @@
     "graded_at": null,
     "line_attached_at": "2026-10-21 06:34 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 06:34 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Golden|receptions|7": {
     "player": "Matthew Golden",
@@ -23996,7 +23995,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Christian McCaffrey|rushing_yards|7": {
     "player": "Christian McCaffrey",
@@ -24042,7 +24043,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -24093,7 +24093,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Mike Washington Jr.|rushing_yards|7": {
     "player": "Mike Washington Jr.",
@@ -24221,9 +24224,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Braelon Allen|rushing_yards|7": {
     "player": "Braelon Allen",
