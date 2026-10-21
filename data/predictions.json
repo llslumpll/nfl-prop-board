@@ -18525,7 +18525,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-20 11:06 UTC",
-    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-20 11:06 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-12 23:04 UTC; this prizepicks line was first seen 2026-10-20 11:06 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaylen Warren|receptions|6": {
     "player": "Jaylen Warren",
@@ -21969,10 +21973,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|passing_yards|7": {
     "player": "Joe Burrow",
@@ -22283,7 +22284,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -22414,10 +22414,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Mayer|receptions|7": {
     "player": "Michael Mayer",
@@ -22440,10 +22437,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Trey McBride|receptions|7": {
     "player": "Trey McBride",
@@ -22613,10 +22607,10 @@
     "stat": "receptions",
     "projected": 6.3,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -22625,7 +22619,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-21 17:39 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 17:39 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "DK Metcalf|receptions|7": {
     "player": "DK Metcalf",
@@ -22739,10 +22739,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-21 12:23 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 12:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23037,7 +23034,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Isaiah Likely|receptions|7": {
     "player": "Isaiah Likely",
@@ -23060,10 +23061,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-20 19:53 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-20 19:53 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23135,7 +23133,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-21 06:34 UTC",
-    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 06:34 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 06:34 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|7": {
     "player": "Matthew Golden",
@@ -24091,10 +24093,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Mike Washington Jr.|rushing_yards|7": {
     "player": "Mike Washington Jr.",
@@ -24173,5 +24172,83 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "J.J. McCarthy|passing_yards|7": {
+    "player": "J.J. McCarthy",
+    "team": "NYG",
+    "opponent": "HOU",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 155.8,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 195.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -39.7,
+    "model_prob": 0.2254,
+    "signals": {},
+    "frozen_at": "2026-10-21 17:39 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "CeeDee Lamb|receiving_yards|7": {
+    "player": "CeeDee Lamb",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 95.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 82.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.9,
+    "model_prob": 0.6161,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-21 17:39 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Braelon Allen|rushing_yards|7": {
+    "player": "Braelon Allen",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 25.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 71.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -46.3,
+    "model_prob": 0.01,
+    "signals": {
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-10-21 17:39 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
