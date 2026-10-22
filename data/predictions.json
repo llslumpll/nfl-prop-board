@@ -24253,10 +24253,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jerry Jeudy|receiving_yards|7": {
     "player": "Jerry Jeudy",
@@ -24282,6 +24279,56 @@
     "graded_at": null,
     "best5_tags": [
       "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Rico Dowdle|rushing_yards|7": {
+    "player": "Rico Dowdle",
+    "team": "PIT",
+    "opponent": "NO",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 44.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 28.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.3,
+    "model_prob": 0.638,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-10-22 03:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Roschon Johnson|rushing_yards|7": {
+    "player": "Roschon Johnson",
+    "team": "CHI",
+    "opponent": "NE",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 16.5,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 25.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.0,
+    "model_prob": 0.2472,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-10-22 03:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "highest_confidence"
     ]
   }
