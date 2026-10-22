@@ -132,7 +132,7 @@
       "rushing_yards": 29.5
     },
     "Cam Ward": {
-      "passing_yards": 186.5,
+      "passing_yards": 187.5,
       "rushing_yards": 9.5
     },
     "Tony Pollard": {
@@ -148,7 +148,7 @@
       "receiving_yards": 51.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 42.5,
+      "rushing_yards": 41.5,
       "receiving_yards": 16.5,
       "receptions": 2.5
     },
@@ -180,7 +180,7 @@
       "receiving_yards": 12.5
     },
     "Daniel Bellinger": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Joe Burrow": {
       "passing_yards": 262.5,
@@ -532,7 +532,7 @@
     },
     "Savion Williams": {
       "receiving_yards": 20.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 0.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 12.5,
@@ -544,7 +544,11 @@
       "receptions": 1.5
     },
     "Sione Vaki": {
-      "rushing_yards": 8.5
+      "rushing_yards": 8.5,
+      "receiving_yards": 0.5
+    },
+    "Brock Wright": {
+      "receiving_yards": 5.5
     },
     "Jonnu Smith": {
       "receiving_yards": 4.5
@@ -593,7 +597,7 @@
       "rushing_yards": 20.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 18.5
+      "receiving_yards": 20.5
     },
     "Davis Allen": {
       "receiving_yards": 8.5
@@ -675,7 +679,7 @@
       "receptions": 4.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Jake Ferguson": {
       "receiving_yards": 19.5,
@@ -686,9 +690,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 5919,
-    "matched_props": 304,
-    "excluded_goblin_demon_lines": 4820,
+    "total_projections_returned": 5951,
+    "matched_props": 306,
+    "excluded_goblin_demon_lines": 4848,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
