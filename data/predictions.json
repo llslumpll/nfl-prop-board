@@ -22383,10 +22383,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jalen Coker|receptions|7": {
     "player": "Jalen Coker",
@@ -22523,7 +22520,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Kendre Miller|rushing_yards|7": {
@@ -22548,9 +22546,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kyren Williams|rushing_yards|7": {
     "player": "Kyren Williams",
@@ -22619,7 +22615,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ],
     "line_attached_at": "2026-10-21 17:39 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 17:39 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -23032,7 +23029,8 @@
     "line_attached_at": "2026-10-21 23:55 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 23:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "George Pickens|receptions|7": {
@@ -23079,10 +23077,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-20 19:53 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-20 19:53 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -23107,7 +23102,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-21 20:54 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-21 20:54 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
