@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-10-23 11:12 UTC",
+  "generated_at": "2026-10-23 14:03 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -21,10 +21,15 @@
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 6.65,
-        "sample_size": 73,
-        "avg_raw_bias": 22.15,
+        "bias": 6.85,
+        "sample_size": 74,
+        "avg_raw_bias": 22.83,
         "status": "active"
+      },
+      "Established (2026 sample)": {
+        "bias": 0.0,
+        "sample_size": 1,
+        "status": "insufficient data"
       }
     },
     "rushing_yards": {
@@ -50,10 +55,15 @@
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
-        "bias": -0.15,
-        "sample_size": 83,
-        "avg_raw_bias": -0.5,
+        "bias": -0.16,
+        "sample_size": 84,
+        "avg_raw_bias": -0.54,
         "status": "active"
+      },
+      "Established (2026 sample)": {
+        "bias": 0.0,
+        "sample_size": 2,
+        "status": "insufficient data"
       }
     },
     "receiving_yards": {
@@ -68,9 +78,9 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 2.04,
-        "sample_size": 66,
-        "avg_raw_bias": 6.8,
+        "bias": 1.94,
+        "sample_size": 67,
+        "avg_raw_bias": 6.48,
         "status": "active"
       },
       "Moderate 2026 sample": {
@@ -78,6 +88,11 @@
         "sample_size": 96,
         "avg_raw_bias": 3.5,
         "status": "active"
+      },
+      "Established (2026 sample)": {
+        "bias": 0.0,
+        "sample_size": 1,
+        "status": "insufficient data"
       }
     },
     "receptions": {
@@ -91,36 +106,41 @@
         "sample_size": 63,
         "avg_raw_bias": 0.3,
         "status": "active"
+      },
+      "Established (2026 sample)": {
+        "bias": 0.0,
+        "sample_size": 3,
+        "status": "insufficient data"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 10,
+    "sample_size": 12,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.72,
-      "sample_size": 110,
-      "raw_shrink_factor": 0.066,
+      "shrink_factor": 0.712,
+      "sample_size": 112,
+      "raw_shrink_factor": 0.041,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.719,
-      "sample_size": 114,
-      "raw_shrink_factor": 0.062,
+      "shrink_factor": 0.726,
+      "sample_size": 117,
+      "raw_shrink_factor": 0.086,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.794,
-      "sample_size": 122,
-      "raw_shrink_factor": 0.313,
+      "shrink_factor": 0.8,
+      "sample_size": 124,
+      "raw_shrink_factor": 0.333,
       "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 9,
+      "sample_size": 10,
       "status": "insufficient data"
     }
   }

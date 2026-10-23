@@ -3806,7 +3806,14 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 41.9 total. NE is carrying real, meaningfully more Out/Doubtful designations than CHI this week -- a real health edge favoring CHI.",
     "frozen_at": "2026-10-13 19:58 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 30,
+      "away_score": 24,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": true
   },
   "NE@CHI|team_spread|7": {
     "away_team": "NE",
@@ -3827,7 +3834,14 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 41.9 total. NE is carrying real, meaningfully more Out/Doubtful designations than CHI this week -- a real health edge favoring CHI. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-13 19:58 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 30,
+      "away_score": 24,
+      "actual_margin": 6
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "NE@CHI|team_total|7": {
     "away_team": "NE",
@@ -3848,7 +3862,14 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 41.9 total. NE is carrying real, meaningfully more Out/Doubtful designations than CHI this week -- a real health edge favoring CHI.",
     "frozen_at": "2026-10-13 19:58 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 30,
+      "away_score": 24,
+      "actual_total": 54
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "PIT@NO|team_moneyline|7": {
     "away_team": "PIT",

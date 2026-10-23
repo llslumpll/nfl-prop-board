@@ -1,13 +1,19 @@
 [
   {
-    "player": "Trevor Lawrence",
-    "team": "JAX",
+    "player": "Drake Maye",
+    "team": "NE",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Caleb Williams",
     "team": "CHI",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Trevor Lawrence",
+    "team": "JAX",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -26,12 +32,6 @@
   {
     "player": "Drew Lock",
     "team": "SEA",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Drake Maye",
-    "team": "NE",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -60,6 +60,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Luther Burden III",
+    "team": "CHI",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tyquan Thornton",
     "team": "KC",
     "stat": "receiving_yards",
@@ -72,26 +78,20 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Luther Burden III",
-    "team": "CHI",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Mike Evans",
     "team": "SF",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Rashee Rice",
-    "team": "KC",
+    "player": "Rhamondre Stevenson",
+    "team": "NE",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "DeMario Douglas",
-    "team": "NE",
+    "player": "Rashee Rice",
+    "team": "KC",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -126,32 +126,32 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Hunter Henry",
+    "team": "NE",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Chig Okonkwo",
     "team": "WAS",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Treylon Burks",
-    "team": "WAS",
+    "player": "Rome Odunze",
+    "team": "CHI",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Charlie Jones",
-    "team": "NYG",
+    "player": "Colston Loveland",
+    "team": "CHI",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Keenan Allen",
     "team": "IND",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Luther Burden III",
-    "team": "CHI",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -174,12 +174,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "DeMario Douglas",
-    "team": "NE",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Dalton Kincaid",
     "team": "BUF",
     "stat": "receptions",
@@ -194,6 +188,18 @@
   {
     "player": "Emeka Egbuka",
     "team": "TB",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Hunter Henry",
+    "team": "NE",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Colston Loveland",
+    "team": "CHI",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -216,12 +222,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Colston Loveland",
-    "team": "CHI",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Omar Cooper Jr.",
     "team": "NYJ",
     "stat": "receptions",
@@ -236,6 +236,12 @@
   {
     "player": "Tyquan Thornton",
     "team": "KC",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Gavin Bartholomew",
+    "team": "MIN",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -276,6 +282,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "D'Andre Swift",
+    "team": "CHI",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jordan Mason",
     "team": "MIN",
     "stat": "rushing_yards",
@@ -284,12 +296,6 @@
   {
     "player": "Travis Etienne",
     "team": "NO",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Corey Kiner",
-    "team": "NE",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -318,20 +324,8 @@
     "why": "FanDuel prices this player, but not this stat"
   },
   {
-    "player": "Roschon Johnson",
-    "team": "CHI",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Quinshon Judkins",
     "team": "CLE",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "D'Andre Swift",
-    "team": "CHI",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -344,6 +338,12 @@
   {
     "player": "Jaleel McLaughlin",
     "team": "CLE",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jonah Coleman",
+    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }
