@@ -24151,9 +24151,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jalen Coker|receiving_yards|7": {
     "player": "Jalen Coker",
@@ -25366,9 +25364,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jaylen Waddle|receiving_yards|7": {
     "player": "Jaylen Waddle",
@@ -25678,7 +25674,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-23 17:59 UTC",
-    "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-10-23 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-10-23 17:59 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Hunter Henry|receptions|8": {
     "player": "Hunter Henry",
