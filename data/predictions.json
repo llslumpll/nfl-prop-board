@@ -21507,9 +21507,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-19 19:33 UTC",
     "line_attach_note": "Projection frozen 2026-10-16 13:45 UTC; this prizepicks line was first seen 2026-10-19 19:33 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -22388,7 +22386,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jalen Coker|receptions|7": {
     "player": "Jalen Coker",
@@ -22548,7 +22549,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Kyren Williams|rushing_yards|7": {
     "player": "Kyren Williams",
@@ -22934,9 +22937,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-22 14:21 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-22 14:21 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -24152,10 +24153,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jalen Coker|receiving_yards|7": {
     "player": "Jalen Coker",
@@ -24710,10 +24708,10 @@
     "stat": "passing_yards",
     "projected": 239.7,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 226.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -24723,7 +24721,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-23 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-10-23 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Derrick Henry|rushing_yards|7": {
     "player": "Derrick Henry",
@@ -25367,8 +25367,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jaylen Waddle|receiving_yards|7": {
@@ -25663,10 +25662,10 @@
     "stat": "rushing_yards",
     "projected": 29.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 27.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.7,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -25677,7 +25676,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-23 17:59 UTC",
+    "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-10-23 17:59 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Hunter Henry|receptions|8": {
     "player": "Hunter Henry",
@@ -25813,5 +25814,32 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Jonah Coleman|rushing_yards|7": {
+    "player": "Jonah Coleman",
+    "team": "DEN",
+    "opponent": "ARI",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 39.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 15.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 23.7,
+    "model_prob": 0.8554,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-23 17:59 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
