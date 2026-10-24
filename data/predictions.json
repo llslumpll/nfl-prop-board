@@ -22284,8 +22284,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Puka Nacua|receiving_yards|7": {
@@ -22361,7 +22360,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Carnell Tate|receptions|7": {
@@ -24151,9 +24151,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jalen Coker|receiving_yards|7": {
     "player": "Jalen Coker",
@@ -24374,9 +24372,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Xavier Worthy|receiving_yards|7": {
     "player": "Xavier Worthy",
@@ -25841,7 +25837,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Bam Knight|rushing_yards|7": {
     "player": "Bam Knight",
