@@ -22386,7 +22386,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jalen Coker|receptions|7": {
     "player": "Jalen Coker",
@@ -23204,10 +23207,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-22 22:12 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-22 22:12 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -25862,5 +25862,28 @@
       "highest_confidence",
       "best_value"
     ]
+  },
+  "Samaje Perine|rushing_yards|7": {
+    "player": "Samaje Perine",
+    "team": "CIN",
+    "opponent": "BAL",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 14.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 28.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -14.2,
+    "model_prob": 0.2157,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-24 14:53 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
