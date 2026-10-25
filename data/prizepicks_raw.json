@@ -26,7 +26,7 @@
     },
     "Zonovan Knight": {
       "rushing_yards": 38.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Courtland Sutton": {
       "receiving_yards": 35.5,
@@ -55,11 +55,11 @@
       "receiving_yards": 16.5,
       "receptions": 1.5
     },
-    "Troy Franklin": {
-      "receiving_yards": 14.5,
+    "Elijah Higgins": {
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
-    "Elijah Higgins": {
+    "Troy Franklin": {
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
@@ -68,7 +68,6 @@
       "receptions": 1.5
     },
     "Adam Trautman": {
-      "receiving_yards": 1.5,
       "receptions": 0.5
     },
     "Lil'Jordan Humphrey": {
@@ -88,13 +87,13 @@
       "receiving_yards": 39.5,
       "receptions": 5
     },
+    "Amon-Ra St. Brown": {
+      "receiving_yards": 80.5,
+      "receptions": 7.5
+    },
     "Christian Watson": {
       "receiving_yards": 78.5,
       "receptions": 4.5
-    },
-    "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5,
-      "receptions": 7.5
     },
     "Jameson Williams": {
       "receiving_yards": 54.5
@@ -145,7 +144,7 @@
     },
     "Kirk Cousins": {
       "passing_yards": 236.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 0.5
     },
     "Puka Nacua": {
       "receiving_yards": 83.5
@@ -332,9 +331,9 @@
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 3150,
-    "matched_props": 153,
-    "excluded_goblin_demon_lines": 2541,
+    "total_projections_returned": 3151,
+    "matched_props": 152,
+    "excluded_goblin_demon_lines": 2544,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",

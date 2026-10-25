@@ -19163,7 +19163,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Brock Purdy|any_td|6": {
     "player": "Brock Purdy",
@@ -25905,6 +25909,28 @@
     "model_prob": 0.6168,
     "signals": {},
     "frozen_at": "2026-10-25 17:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Dak Prescott|passing_yards|7": {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 7,
+    "stat": "passing_yards",
+    "projected": 280.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 263.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.7,
+    "model_prob": 0.584,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-10-25 18:14 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
