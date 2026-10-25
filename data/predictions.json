@@ -22257,10 +22257,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receiving_yards|7": {
     "player": "Isaiah Likely",
@@ -24252,7 +24249,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Braelon Allen|rushing_yards|7": {
     "player": "Braelon Allen",
@@ -24397,7 +24396,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Omar Cooper Jr.|receiving_yards|7": {
     "player": "Omar Cooper Jr.",
@@ -25888,5 +25889,25 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": []
+  },
+  "Sam LaPorta|receiving_yards|7": {
+    "player": "Sam LaPorta",
+    "team": "DET",
+    "opponent": "GB",
+    "week": 7,
+    "stat": "receiving_yards",
+    "projected": 57.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 49.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 8.3,
+    "model_prob": 0.6168,
+    "signals": {},
+    "frozen_at": "2026-10-25 17:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
