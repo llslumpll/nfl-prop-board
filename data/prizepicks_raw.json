@@ -1,7 +1,7 @@
 {
   "props": {
     "Dak Prescott": {
-      "passing_yards": 263.5,
+      "passing_yards": 268.5,
       "rushing_yards": 8.5
     },
     "Tanner McKee": {
@@ -17,13 +17,13 @@
       "receiving_yards": 13.5,
       "receptions": 2.5
     },
-    "Javonte Williams": {
-      "rushing_yards": 64.5,
-      "receiving_yards": 12.5
-    },
     "George Pickens": {
       "receiving_yards": 64.5,
       "receptions": 5
+    },
+    "Javonte Williams": {
+      "rushing_yards": 63.5,
+      "receiving_yards": 12.5
     },
     "Dallas Goedert": {
       "receiving_yards": 48.5,
@@ -47,25 +47,65 @@
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 11.5,
-      "receptions": 1.5
-    },
     "Marquise Brown": {
       "receiving_yards": 10.5
     },
     "Tyler Goodson": {
       "rushing_yards": 10.5,
       "receptions": 0.5
+    },
+    "Brevyn Spann-Ford": {
+      "receiving_yards": 7.5
+    },
+    "Jordan Love": {
+      "passing_yards": 258.5,
+      "rushing_yards": 4.5
+    },
+    "Bryce Young": {
+      "passing_yards": 239.5,
+      "rushing_yards": 9.5
+    },
+    "Tetairoa McMillan": {
+      "receiving_yards": 72.5
+    },
+    "Chuba Hubbard": {
+      "rushing_yards": 69.5,
+      "receiving_yards": 13.5
+    },
+    "Christian Watson": {
+      "receiving_yards": 66.5
+    },
+    "Matthew Golden": {
+      "receiving_yards": 64.5
+    },
+    "Jalen Coker": {
+      "receiving_yards": 62.5
+    },
+    "Josh Jacobs": {
+      "rushing_yards": 57.5,
+      "receiving_yards": 14.5,
+      "receptions": 2.5
+    },
+    "Tucker Kraft": {
+      "receiving_yards": 41.5
+    },
+    "Savion Williams": {
+      "receiving_yards": 21.5
+    },
+    "MarShawn Lloyd": {
+      "rushing_yards": 19.5
+    },
+    "Darren Waller": {
+      "receiving_yards": 18.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 139,
     "nfl_league_id": "9",
-    "total_projections_returned": 501,
-    "matched_props": 28,
-    "excluded_goblin_demon_lines": 392,
+    "total_projections_returned": 847,
+    "matched_props": 44,
+    "excluded_goblin_demon_lines": 702,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
