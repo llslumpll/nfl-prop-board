@@ -23608,7 +23608,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Foster Moreau|any_td|7": {
     "player": "Foster Moreau",
@@ -23874,7 +23878,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Chris Moore|any_td|7": {
     "player": "Chris Moore",
@@ -25958,7 +25965,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jakobi Meyers|receiving_yards|8": {
     "player": "Jakobi Meyers",
@@ -26247,9 +26256,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Michael Penix Jr.|passing_yards|8": {
     "player": "Michael Penix Jr.",
@@ -26452,10 +26459,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jakobi Meyers|receptions|8": {
     "player": "Jakobi Meyers",
@@ -26529,10 +26533,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|8": {
     "player": "Ollie Gordon II",
@@ -26629,7 +26630,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -26681,7 +26681,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Bo Nix|rushing_yards|8": {
@@ -27738,7 +27739,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jameson Williams|any_td|8": {
     "player": "Jameson Williams",
@@ -27761,7 +27765,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Davis Allen|any_td|8": {
     "player": "Davis Allen",
@@ -27831,7 +27839,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Bo Nix|any_td|8": {
     "player": "Bo Nix",
@@ -27899,7 +27911,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chris Moore|any_td|8": {
     "player": "Chris Moore",
