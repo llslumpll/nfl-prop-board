@@ -25966,7 +25966,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jakobi Meyers|receiving_yards|8": {
@@ -26111,10 +26112,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Josh Jacobs|rushing_yards|8": {
     "player": "Josh Jacobs",
@@ -26280,7 +26278,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26354,8 +26354,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Carnell Tate|receiving_yards|8": {
@@ -26407,9 +26406,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Omar Cooper Jr.|receiving_yards|8": {
     "player": "Omar Cooper Jr.",
@@ -26703,9 +26700,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Trey McBride|receptions|8": {
     "player": "Trey McBride",
@@ -27189,10 +27184,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice"
@@ -27201,7 +27196,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-27 23:12 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-27 23:12 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyquan Thornton|receptions|8": {
     "player": "Tyquan Thornton",
@@ -27535,7 +27536,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Malik Willis|any_td|8": {
     "player": "Malik Willis",
@@ -27765,10 +27770,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Davis Allen|any_td|8": {
     "player": "Davis Allen",
@@ -28074,5 +28076,55 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "CeeDee Lamb|receiving_yards|8": {
+    "player": "CeeDee Lamb",
+    "team": "DAL",
+    "opponent": "ARI",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 101.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 78.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 22.7,
+    "model_prob": 0.6984,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-10-27 23:12 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Javonte Williams|rushing_yards|8": {
+    "player": "Javonte Williams",
+    "team": "DAL",
+    "opponent": "ARI",
+    "week": 8,
+    "stat": "rushing_yards",
+    "projected": 61.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 74.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -12.6,
+    "model_prob": 0.3468,
+    "signals": {},
+    "frozen_at": "2026-10-27 23:12 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
