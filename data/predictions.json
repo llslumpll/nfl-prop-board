@@ -25993,5 +25993,28 @@
       "highest_confidence",
       "best_value"
     ]
+  },
+  "Jordan Mason|rushing_yards|7": {
+    "player": "Jordan Mason",
+    "team": "MIN",
+    "opponent": "IND",
+    "week": 7,
+    "stat": "rushing_yards",
+    "projected": 40.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-10-27 08:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
