@@ -26485,10 +26485,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Josh Jacobs|receptions|8": {
     "player": "Josh Jacobs",
@@ -26630,8 +26627,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Rico Dowdle|rushing_yards|8": {
@@ -28136,7 +28132,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Dak Prescott|passing_yards|8": {
     "player": "Dak Prescott",
@@ -28178,8 +28177,6 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   }
 }
