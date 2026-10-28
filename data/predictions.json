@@ -22891,7 +22891,10 @@
     "graded_at": null,
     "line_attached_at": "2026-10-26 19:33 UTC",
     "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this prizepicks line was first seen 2026-10-26 19:33 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ryan Flournoy|receptions|7": {
     "player": "Ryan Flournoy",
@@ -26278,9 +26281,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26600,9 +26601,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jaylen Warren|rushing_yards|8": {
     "player": "Jaylen Warren",
@@ -26626,7 +26625,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Rico Dowdle|rushing_yards|8": {
@@ -26732,17 +26732,23 @@
     "stat": "receptions",
     "projected": 7.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.1,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-28 02:23 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "George Kittle|receptions|9": {
     "player": "George Kittle",
@@ -26774,10 +26780,10 @@
     "stat": "receptions",
     "projected": 5.1,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice"
@@ -26786,7 +26792,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-28 02:23 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Puka Nacua|receptions|8": {
     "player": "Puka Nacua",
@@ -28125,6 +28133,29 @@
     "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Dak Prescott|passing_yards|8": {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "opponent": "ARI",
+    "week": 8,
+    "stat": "passing_yards",
+    "projected": 297.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 270.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 27.4,
+    "model_prob": 0.636,
+    "signals": {},
+    "frozen_at": "2026-10-28 02:23 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
