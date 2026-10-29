@@ -26281,7 +26281,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26303,8 +26306,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Parker Washington|receiving_yards|8": {
@@ -26618,7 +26620,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Rico Dowdle|rushing_yards|8": {
@@ -26643,9 +26645,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Kyren Williams|rushing_yards|8": {
     "player": "Kyren Williams",
@@ -26874,10 +26874,10 @@
     "stat": "receptions",
     "projected": 0.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Out",
@@ -26888,7 +26888,12 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ],
+    "line_attached_at": "2026-10-29 23:34 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 23:34 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyler Warren|receptions|8": {
     "player": "Tyler Warren",
@@ -26959,7 +26964,6 @@
     "line_attached_at": "2026-10-29 00:39 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 00:39 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -28274,9 +28278,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Mason Taylor|receiving_yards|8": {
     "player": "Mason Taylor",
@@ -28325,6 +28327,29 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Seth McGowan|rushing_yards|8": {
+    "player": "Seth McGowan",
+    "team": "IND",
+    "opponent": "JAX",
+    "week": 8,
+    "stat": "rushing_yards",
+    "projected": 32.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 19.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.3,
+    "model_prob": 0.724,
+    "signals": {},
+    "frozen_at": "2026-10-29 23:34 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
     ]
   }
 }
