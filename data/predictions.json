@@ -26277,9 +26277,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26498,10 +26496,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Harold Fannin Jr.|receptions|8": {
     "player": "Harold Fannin Jr.",
@@ -26717,10 +26712,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-29 00:39 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 00:39 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -26794,7 +26786,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-10-28 02:23 UTC",
-    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Puka Nacua|receptions|8": {
     "player": "Puka Nacua",
@@ -26992,10 +26988,10 @@
     "stat": "receptions",
     "projected": 5.1,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -27005,7 +27001,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-29 13:42 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 13:42 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Malik Nabers|receptions|9": {
     "player": "Malik Nabers",
@@ -27108,10 +27110,10 @@
     "stat": "receptions",
     "projected": 4.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -27122,7 +27124,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 13:42 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 13:42 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Chris Olave|receptions|9": {
     "player": "Chris Olave",
@@ -28260,7 +28264,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Mason Taylor|receiving_yards|8": {
