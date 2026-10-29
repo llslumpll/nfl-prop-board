@@ -74,19 +74,19 @@
     },
     "Dak Prescott": {
       "passing_yards": 276.5,
-      "rushing_yards": 9.5
+      "rushing_yards": 8.5
     },
     "Jacoby Brissett": {
       "passing_yards": 258.5,
       "rushing_yards": 8.5
     },
+    "CeeDee Lamb": {
+      "receiving_yards": 81.5,
+      "receptions": 6.5
+    },
     "Javonte Williams": {
       "rushing_yards": 78.5,
       "receiving_yards": 11.5
-    },
-    "CeeDee Lamb": {
-      "receiving_yards": 78.5,
-      "receptions": 6.5
     },
     "Trey McBride": {
       "receiving_yards": 72.5,
@@ -157,7 +157,7 @@
       "receptions": 2.5
     },
     "Samaje Perine": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 7.5
     },
     "Elic Ayomanor": {
@@ -688,9 +688,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 6110,
+    "total_projections_returned": 6115,
     "matched_props": 308,
-    "excluded_goblin_demon_lines": 4968,
+    "excluded_goblin_demon_lines": 4971,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
