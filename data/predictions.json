@@ -22830,10 +22830,10 @@
     "stat": "receptions",
     "projected": 3.3,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -22842,7 +22842,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 19:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this fanduel line was first seen 2026-10-29 19:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "DeMario Douglas|receptions|7": {
     "player": "DeMario Douglas",
@@ -22998,10 +23000,10 @@
     "stat": "receptions",
     "projected": 5.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -23010,7 +23012,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 19:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-20 14:06 UTC; this fanduel line was first seen 2026-10-29 19:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Dallas Goedert|receptions|7": {
     "player": "Dallas Goedert",
@@ -26277,9 +26281,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26301,7 +26303,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|8": {
@@ -26847,10 +26850,10 @@
     "stat": "receptions",
     "projected": 1.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -3.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -26859,7 +26862,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 19:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this fanduel line was first seen 2026-10-29 19:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rashee Rice|receptions|8": {
     "player": "Rashee Rice",
@@ -27281,17 +27286,19 @@
     "stat": "receptions",
     "projected": 3.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.3,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 19:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this fanduel line was first seen 2026-10-29 19:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "KeAndre Lambert-Smith|receptions|8": {
     "player": "KeAndre Lambert-Smith",
@@ -27420,10 +27427,10 @@
     "stat": "receptions",
     "projected": 2.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -27433,7 +27440,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 19:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 19:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Joe Burrow|any_td|8": {
     "player": "Joe Burrow",
