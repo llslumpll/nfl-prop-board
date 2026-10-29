@@ -25714,10 +25714,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-28 08:58 UTC",
     "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-10-28 08:58 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -26303,8 +26300,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Parker Washington|receiving_yards|8": {
@@ -26527,7 +26523,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -26709,10 +26704,10 @@
     "stat": "receptions",
     "projected": 7.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -26721,7 +26716,12 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ],
+    "line_attached_at": "2026-10-29 00:39 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 00:39 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Amon-Ra St. Brown|receptions|8": {
     "player": "Amon-Ra St. Brown",
@@ -26742,7 +26742,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-10-28 02:23 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -26941,10 +26944,10 @@
     "stat": "receptions",
     "projected": 0.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Out"
@@ -26953,7 +26956,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-10-29 00:39 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 00:39 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Alvin Kamara|receptions|9": {
     "player": "Alvin Kamara",
@@ -27162,10 +27167,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-10-28 20:51 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 20:51 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -27383,10 +27385,10 @@
     "stat": "receptions",
     "projected": 7.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -27396,7 +27398,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-10-29 00:39 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-29 00:39 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rhamondre Stevenson|receptions|8": {
     "player": "Rhamondre Stevenson",
@@ -28225,6 +28233,52 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-10-28 20:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": []
+  },
+  "Matthew Stafford|passing_yards|8": {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "opponent": "LAC",
+    "week": 8,
+    "stat": "passing_yards",
+    "projected": 281.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 248.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 32.5,
+    "model_prob": 0.6788,
+    "signals": {},
+    "frozen_at": "2026-10-29 00:39 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Mason Taylor|receiving_yards|8": {
+    "player": "Mason Taylor",
+    "team": "NYJ",
+    "opponent": "LV",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 28.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 20.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 8.2,
+    "model_prob": 0.649,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-10-29 00:39 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
