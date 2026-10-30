@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-10-30 09:45 UTC",
+  "generated_at": "2026-10-30 15:31 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -28,7 +28,7 @@
       },
       "Established (2026 sample)": {
         "bias": 0.0,
-        "sample_size": 15,
+        "sample_size": 17,
         "status": "insufficient data"
       }
     },
@@ -44,9 +44,9 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": -0.16,
-        "sample_size": 60,
-        "avg_raw_bias": -0.52,
+        "bias": -0.31,
+        "sample_size": 61,
+        "avg_raw_bias": -1.03,
         "status": "active"
       },
       "No data (rookie/unproven)": {
@@ -62,7 +62,7 @@
       },
       "Established (2026 sample)": {
         "bias": 0.0,
-        "sample_size": 16,
+        "sample_size": 17,
         "status": "insufficient data"
       }
     },
@@ -91,14 +91,14 @@
       },
       "Established (2026 sample)": {
         "bias": 0.0,
-        "sample_size": 21,
+        "sample_size": 23,
         "status": "insufficient data"
       }
     },
     "receptions": {
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 8,
+        "sample_size": 9,
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
@@ -109,38 +109,38 @@
       },
       "Established (2026 sample)": {
         "bias": 0.0,
-        "sample_size": 15,
+        "sample_size": 16,
         "status": "insufficient data"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 12,
+    "sample_size": 13,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.705,
-      "sample_size": 137,
-      "raw_shrink_factor": 0.016,
+      "shrink_factor": 0.71,
+      "sample_size": 139,
+      "raw_shrink_factor": 0.032,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.712,
-      "sample_size": 146,
-      "raw_shrink_factor": 0.041,
+      "shrink_factor": 0.707,
+      "sample_size": 148,
+      "raw_shrink_factor": 0.024,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.819,
-      "sample_size": 158,
-      "raw_shrink_factor": 0.396,
+      "shrink_factor": 0.816,
+      "sample_size": 160,
+      "raw_shrink_factor": 0.385,
       "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 17,
+      "sample_size": 18,
       "status": "insufficient data"
     }
   }

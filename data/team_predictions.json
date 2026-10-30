@@ -5010,7 +5010,14 @@
     "reason": "Real net-points-per-game model projects a +0.5-point margin and a 47.9 total. CAR's real offensive EPA/play (+0.12) against GB's real defensive EPA/play allowed (-0.06) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. GB is carrying real, meaningfully more Out/Doubtful designations than CAR this week -- a real health edge favoring CAR.",
     "frozen_at": "2026-10-21 18:17 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 19,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": true
   },
   "CAR@GB|team_spread|8": {
     "away_team": "CAR",
@@ -5032,7 +5039,14 @@
     "reason": "Real net-points-per-game model projects a +0.5-point margin and a 47.9 total. CAR's real offensive EPA/play (+0.12) against GB's real defensive EPA/play allowed (-0.06) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. GB is carrying real, meaningfully more Out/Doubtful designations than CAR this week -- a real health edge favoring CAR. FanDuel's real line is exactly on the 3-point key number -- one of the two most common real NFL margins.",
     "frozen_at": "2026-10-21 18:17 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 19,
+      "actual_margin": 8
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "CAR@GB|team_total|8": {
     "away_team": "CAR",
@@ -5054,7 +5068,14 @@
     "reason": "Real net-points-per-game model projects a +0.5-point margin and a 47.9 total. CAR's real offensive EPA/play (+0.12) against GB's real defensive EPA/play allowed (-0.06) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. GB is carrying real, meaningfully more Out/Doubtful designations than CAR this week -- a real health edge favoring CAR.",
     "frozen_at": "2026-10-21 18:17 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 19,
+      "actual_total": 46
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "BAL@BUF|team_moneyline|8": {
     "away_team": "BAL",
