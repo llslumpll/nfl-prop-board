@@ -26281,10 +26281,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|passing_yards|8": {
     "player": "Cam Ward",
@@ -26306,7 +26303,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|8": {
@@ -26385,7 +26383,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Puka Nacua|receiving_yards|8": {
@@ -26619,7 +26618,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Rico Dowdle|rushing_yards|8": {
     "player": "Rico Dowdle",
@@ -28163,10 +28165,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Dak Prescott|passing_yards|8": {
     "player": "Dak Prescott",
@@ -28276,7 +28275,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Mason Taylor|receiving_yards|8": {
     "player": "Mason Taylor",
@@ -28323,9 +28324,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Seth McGowan|rushing_yards|8": {
     "player": "Seth McGowan",
