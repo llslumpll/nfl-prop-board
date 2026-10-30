@@ -24,6 +24,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Jordan Love",
+    "team": "GB",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Sam Darnold",
     "team": "SEA",
     "stat": "passing_yards",
@@ -81,7 +87,7 @@
     "player": "Mike Evans",
     "team": "SF",
     "stat": "receiving_yards",
-    "why": "possible name mismatch: FanDuel has 'Mitchell Evans'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Rashee Rice",
@@ -222,6 +228,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Matthew Golden",
+    "team": "GB",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tyquan Thornton",
     "team": "KC",
     "stat": "receptions",
@@ -248,6 +260,12 @@
   {
     "player": "Dalton Schultz",
     "team": "HOU",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Josh Jacobs",
+    "team": "GB",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -327,7 +345,7 @@
     "player": "Travis Etienne",
     "team": "NO",
     "stat": "rushing_yards",
-    "why": "possible name mismatch: FanDuel has 'Trevor Etienne'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Tank Bigsby",
