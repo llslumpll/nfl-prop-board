@@ -25734,10 +25734,10 @@
     "stat": "receptions",
     "projected": 4.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.0,
+    "market_source": "prizepicks",
+    "call": "PUSH",
+    "edge": 0.0,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -25746,7 +25746,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-01 06:24 UTC",
+    "line_attach_note": "Projection frozen 2026-10-23 14:04 UTC; this prizepicks line was first seen 2026-11-01 06:24 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Gavin Bartholomew|receptions|7": {
     "player": "Gavin Bartholomew",
@@ -26457,7 +26459,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jakobi Meyers|receptions|8": {
     "player": "Jakobi Meyers",
@@ -26788,7 +26792,6 @@
     "line_attached_at": "2026-10-28 02:23 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-10-28 02:23 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -28377,8 +28380,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Lamar Jackson|passing_yards|8": {
@@ -28899,7 +28901,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Geno Smith|passing_yards|8": {
     "player": "Geno Smith",
@@ -29283,9 +29287,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bo Nix|passing_yards|8": {
     "player": "Bo Nix",
@@ -29468,7 +29470,8 @@
     "line_attached_at": "2026-10-30 18:55 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-10-30 18:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "DeVonta Smith|receiving_yards|8": {
