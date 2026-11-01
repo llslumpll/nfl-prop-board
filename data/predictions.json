@@ -26360,8 +26360,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Carnell Tate|receiving_yards|8": {
@@ -29283,7 +29282,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Bo Nix|passing_yards|8": {
@@ -29468,7 +29468,9 @@
     "graded_at": null,
     "line_attached_at": "2026-10-30 18:55 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-10-30 18:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "DeVonta Smith|receiving_yards|8": {
     "player": "DeVonta Smith",
@@ -29784,9 +29786,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Braelon Allen|rushing_yards|8": {
     "player": "Braelon Allen",
@@ -29813,5 +29813,118 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Luther Burden III|receiving_yards|8": {
+    "player": "Luther Burden III",
+    "team": "CHI",
+    "opponent": "SEA",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 44.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 52.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -8.1,
+    "model_prob": 0.4167,
+    "signals": {
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-01 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Caleb Douglas|receiving_yards|8": {
+    "player": "Caleb Douglas",
+    "team": "MIA",
+    "opponent": "NE",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 43.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 36.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 6.6,
+    "model_prob": 0.6137,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-01 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Makai Lemon|receiving_yards|8": {
+    "player": "Makai Lemon",
+    "team": "PHI",
+    "opponent": "WAS",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 39.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 43.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.5,
+    "model_prob": 0.4219,
+    "signals": {
+      "target_share_trend": "up",
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-01 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Blake Corum|rushing_yards|8": {
+    "player": "Blake Corum",
+    "team": "LA",
+    "opponent": "LAC",
+    "week": 8,
+    "stat": "rushing_yards",
+    "projected": 37.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 47.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -10.3,
+    "model_prob": 0.3561,
+    "signals": {
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-01 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jonah Coleman|rushing_yards|8": {
+    "player": "Jonah Coleman",
+    "team": "DEN",
+    "opponent": "KC",
+    "week": 8,
+    "stat": "rushing_yards",
+    "projected": 34.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 44.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.9,
+    "model_prob": 0.329,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-01 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
