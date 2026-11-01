@@ -29926,5 +29926,74 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Treylon Burks|receiving_yards|8": {
+    "player": "Treylon Burks",
+    "team": "WAS",
+    "opponent": "PHI",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 19.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 21.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -2.4,
+    "model_prob": 0.4553,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-01 22:38 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Rome Odunze|receiving_yards|8": {
+    "player": "Rome Odunze",
+    "team": "CHI",
+    "opponent": "SEA",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 41.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 40.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.4,
+    "model_prob": 0.517,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-01 22:38 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "D'Andre Swift|rushing_yards|8": {
+    "player": "D'Andre Swift",
+    "team": "CHI",
+    "opponent": "SEA",
+    "week": 8,
+    "stat": "rushing_yards",
+    "projected": 61.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 61.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.4,
+    "model_prob": 0.5046,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-01 22:38 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
