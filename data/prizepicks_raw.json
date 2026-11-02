@@ -9,18 +9,18 @@
       "rushing_yards": 22.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 99.5,
+      "receiving_yards": 101.5,
       "receptions": 7
     },
     "D'Andre Swift": {
       "rushing_yards": 61.5,
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 3
     },
     "Luther Burden III": {
       "receiving_yards": 52.5,
-      "receptions": 4,
-      "rushing_yards": 3.5
+      "rushing_yards": 4.5,
+      "receptions": 4
     },
     "Colston Loveland": {
       "receiving_yards": 42.5,
@@ -31,7 +31,7 @@
       "receptions": 3
     },
     "Zach Charbonnet": {
-      "rushing_yards": 32.5,
+      "rushing_yards": 33.5,
       "receiving_yards": 7.5
     },
     "Cooper Kupp": {
@@ -45,30 +45,74 @@
       "receiving_yards": 4.5,
       "receptions": 1.5
     },
+    "Tory Horton": {
+      "receiving_yards": 21.5
+    },
     "Emanuel Wilson": {
       "rushing_yards": 19.5
     },
-    "Tory Horton": {
-      "receiving_yards": 19.5
-    },
     "Kalif Raymond": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Roschon Johnson": {
       "rushing_yards": 12.5,
       "receptions": 0.5
     },
     "Sam Roush": {
-      "receiving_yards": 5.5
+      "receiving_yards": 8.5
+    },
+    "Trevor Lawrence": {
+      "passing_yards": 242.5
+    },
+    "Joe Fagnano": {
+      "passing_yards": 169.5
+    },
+    "Derrick Henry": {
+      "rushing_yards": 74.5,
+      "receiving_yards": 8.5,
+      "receptions": 1.5
+    },
+    "Parker Washington": {
+      "receiving_yards": 67.5,
+      "receptions": 4.5
+    },
+    "Bhayshul Tuten": {
+      "rushing_yards": 65.5,
+      "receiving_yards": 11.5
+    },
+    "Zay Flowers": {
+      "receiving_yards": 45.5
+    },
+    "Jakobi Meyers": {
+      "receiving_yards": 41.5
+    },
+    "Brenton Strange": {
+      "receiving_yards": 33.5
+    },
+    "Chris Rodriguez Jr.": {
+      "rushing_yards": 27.5
+    },
+    "Mark Andrews": {
+      "receiving_yards": 19.5
+    },
+    "Justice Hill": {
+      "rushing_yards": 16.5,
+      "receiving_yards": 13.5
+    },
+    "Rashod Bateman": {
+      "receiving_yards": 16.5
+    },
+    "Ja'Kobi Lane": {
+      "receiving_yards": 16.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 618,
-    "matched_props": 29,
-    "excluded_goblin_demon_lines": 493,
+    "total_projections_returned": 887,
+    "matched_props": 47,
+    "excluded_goblin_demon_lines": 734,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
