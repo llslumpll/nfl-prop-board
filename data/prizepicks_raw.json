@@ -1,68 +1,11 @@
 {
   "props": {
-    "Tanner McKee": {
-      "passing_yards": 202.5,
-      "rushing_yards": 0.5
-    },
-    "Jayden Daniels": {
-      "passing_yards": 198.5,
-      "rushing_yards": 36.5
-    },
-    "Dallas Goedert": {
-      "receiving_yards": 45.5
-    },
-    "Saquon Barkley": {
-      "rushing_yards": 44.5,
-      "receiving_yards": 11.5,
-      "receptions": 2
-    },
-    "Makai Lemon": {
-      "receiving_yards": 43.5,
-      "receptions": 4.5
-    },
-    "Stefon Diggs": {
-      "receiving_yards": 42.5,
-      "receptions": 4
-    },
-    "Rachaad White": {
-      "rushing_yards": 41.5,
-      "receiving_yards": 13.5
-    },
-    "Antonio Williams": {
-      "receiving_yards": 37.5
-    },
-    "Chig Okonkwo": {
-      "receiving_yards": 32.5
-    },
-    "Elijah Mitchell": {
-      "rushing_yards": 29.5,
-      "receiving_yards": 6.5
-    },
-    "Darius Cooper": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
-    },
-    "Hollywood Brown": {
-      "receiving_yards": 22.5
-    },
-    "Treylon Burks": {
-      "receiving_yards": 21.5
-    },
-    "Jeremy McNichols": {
-      "rushing_yards": 19.5
-    },
-    "Dyami Brown": {
-      "receiving_yards": 12.5
-    },
-    "John Bates": {
-      "receiving_yards": 0.5
-    },
     "Sam Darnold": {
       "passing_yards": 237.5,
       "rushing_yards": 4.5
     },
     "Caleb Williams": {
-      "passing_yards": 226.5,
+      "passing_yards": 228.5,
       "rushing_yards": 22.5
     },
     "Jaxon Smith-Njigba": {
@@ -102,11 +45,11 @@
       "receiving_yards": 4.5,
       "receptions": 1.5
     },
-    "Tory Horton": {
-      "receiving_yards": 20.5
-    },
     "Emanuel Wilson": {
-      "rushing_yards": 18.5
+      "rushing_yards": 19.5
+    },
+    "Tory Horton": {
+      "receiving_yards": 19.5
     },
     "Kalif Raymond": {
       "receiving_yards": 16.5
@@ -123,9 +66,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1187,
-    "matched_props": 54,
-    "excluded_goblin_demon_lines": 963,
+    "total_projections_returned": 618,
+    "matched_props": 29,
+    "excluded_goblin_demon_lines": 493,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -154,9 +97,9 @@
       "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
-      "quarters with 25+ pass yards",
       "quarters with 5+ rush yards",
-      "rec targets"
+      "rec targets",
+      "receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",

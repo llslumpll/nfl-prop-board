@@ -29995,5 +29995,28 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Colston Loveland|receiving_yards|8": {
+    "player": "Colston Loveland",
+    "team": "CHI",
+    "opponent": "SEA",
+    "week": 8,
+    "stat": "receiving_yards",
+    "projected": 43.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 42.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.3,
+    "model_prob": 0.5138,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-02 01:50 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
