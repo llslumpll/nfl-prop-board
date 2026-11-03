@@ -29649,10 +29649,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-02 19:26 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-11-02 19:26 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -29750,7 +29747,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Warren|receiving_yards|8": {
     "player": "Tyler Warren",
@@ -30530,8 +30531,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Denzel Boston|receptions|9": {
@@ -30581,7 +30581,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Omar Cooper Jr.|receptions|9": {
     "player": "Omar Cooper Jr.",
@@ -30604,7 +30607,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ja'Marr Chase|receptions|9": {
     "player": "Ja'Marr Chase",
@@ -30628,8 +30634,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Garrett Wilson|receptions|9": {
@@ -30653,10 +30658,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|9": {
     "player": "Ollie Gordon II",
@@ -31014,10 +31016,10 @@
     "stat": "receptions",
     "projected": 6.1,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -31027,7 +31029,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-03 22:22 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-03 22:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Adonai Mitchell|receptions|9": {
     "player": "Adonai Mitchell",
@@ -31129,10 +31133,10 @@
     "stat": "receptions",
     "projected": 6.4,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -31143,7 +31147,12 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-03 22:22 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-03 22:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Dylan Sampson|receptions|9": {
     "player": "Dylan Sampson",
@@ -32080,6 +32089,33 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
+    ]
+  },
+  "Jaxon Smith-Njigba|receiving_yards|9": {
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "opponent": "ARI",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 82.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 101.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -19.1,
+    "model_prob": 0.3362,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-03 22:22 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
