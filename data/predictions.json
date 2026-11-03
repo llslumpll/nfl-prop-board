@@ -30178,5 +30178,25 @@
     "best5_tags": [
       "highest_confidence"
     ]
+  },
+  "Gardner Minshew II|passing_yards|8": {
+    "player": "Gardner Minshew II",
+    "team": "ARI",
+    "opponent": "DAL",
+    "week": 8,
+    "stat": "passing_yards",
+    "projected": 229.0,
+    "tier_at_freeze": "No data (rookie/unproven)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-03 09:09 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
