@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-11-03 09:08 UTC",
+  "generated_at": "2026-11-03 16:49 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -15,21 +15,22 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 6.59,
-        "sample_size": 68,
-        "avg_raw_bias": 21.98,
+        "bias": 6.89,
+        "sample_size": 69,
+        "avg_raw_bias": 22.96,
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 5.46,
-        "sample_size": 84,
-        "avg_raw_bias": 18.19,
+        "bias": 4.04,
+        "sample_size": 90,
+        "avg_raw_bias": 13.48,
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.0,
-        "sample_size": 17,
-        "status": "insufficient data"
+        "bias": 4.75,
+        "sample_size": 36,
+        "avg_raw_bias": 15.83,
+        "status": "active"
       }
     },
     "rushing_yards": {
@@ -44,26 +45,27 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": -0.31,
-        "sample_size": 61,
-        "avg_raw_bias": -1.03,
+        "bias": -0.39,
+        "sample_size": 62,
+        "avg_raw_bias": -1.3,
         "status": "active"
       },
       "No data (rookie/unproven)": {
         "bias": 0.0,
-        "sample_size": 11,
+        "sample_size": 12,
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
-        "bias": 0.28,
-        "sample_size": 97,
-        "avg_raw_bias": 0.95,
+        "bias": 0.3,
+        "sample_size": 103,
+        "avg_raw_bias": 1.01,
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.0,
-        "sample_size": 17,
-        "status": "insufficient data"
+        "bias": 3.92,
+        "sample_size": 41,
+        "avg_raw_bias": 13.08,
+        "status": "active"
       }
     },
     "receiving_yards": {
@@ -84,15 +86,16 @@
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 0.32,
-        "sample_size": 109,
-        "avg_raw_bias": 1.07,
+        "bias": 0.11,
+        "sample_size": 121,
+        "avg_raw_bias": 0.36,
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.0,
-        "sample_size": 23,
-        "status": "insufficient data"
+        "bias": -1.45,
+        "sample_size": 46,
+        "avg_raw_bias": -4.85,
+        "status": "active"
       }
     },
     "receptions": {
@@ -102,15 +105,16 @@
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
-        "bias": 0.02,
-        "sample_size": 79,
-        "avg_raw_bias": 0.06,
+        "bias": 0.05,
+        "sample_size": 87,
+        "avg_raw_bias": 0.17,
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.0,
-        "sample_size": 16,
-        "status": "insufficient data"
+        "bias": 0.18,
+        "sample_size": 35,
+        "avg_raw_bias": 0.61,
+        "status": "active"
       }
     }
   },
@@ -121,26 +125,26 @@
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.71,
-      "sample_size": 139,
-      "raw_shrink_factor": 0.032,
+      "shrink_factor": 0.688,
+      "sample_size": 165,
+      "raw_shrink_factor": -0.039,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.707,
-      "sample_size": 148,
-      "raw_shrink_factor": 0.024,
+      "shrink_factor": 0.671,
+      "sample_size": 177,
+      "raw_shrink_factor": -0.098,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.816,
-      "sample_size": 160,
-      "raw_shrink_factor": 0.385,
+      "shrink_factor": 0.801,
+      "sample_size": 194,
+      "raw_shrink_factor": 0.338,
       "status": "active"
     },
     "receptions": {
       "shrink_factor": 1.0,
-      "sample_size": 18,
+      "sample_size": 22,
       "status": "insufficient data"
     }
   }
