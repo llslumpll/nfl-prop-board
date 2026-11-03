@@ -30170,7 +30170,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Gardner Minshew II|passing_yards|8": {
     "player": "Gardner Minshew II",
@@ -30424,10 +30426,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Emmett Johnson|receiving_yards|9": {
     "player": "Emmett Johnson",
@@ -30503,9 +30502,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Omar Cooper Jr.|receiving_yards|9": {
     "player": "Omar Cooper Jr.",
@@ -30529,7 +30526,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Denzel Boston|receptions|9": {
@@ -30579,10 +30577,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Omar Cooper Jr.|receptions|9": {
     "player": "Omar Cooper Jr.",
@@ -30605,10 +30600,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ja'Marr Chase|receptions|9": {
     "player": "Ja'Marr Chase",
@@ -30632,7 +30624,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Garrett Wilson|receptions|9": {
@@ -30657,7 +30650,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Ollie Gordon II|rushing_yards|9": {
@@ -31008,7 +31002,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Brock Bowers|receptions|9": {
     "player": "Brock Bowers",
@@ -31458,7 +31456,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "market_prob": 21.0
+    "market_prob": 21.0,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Drake Maye|any_td|9": {
     "player": "Drake Maye",
@@ -31666,7 +31668,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "market_prob": 39.0
+    "market_prob": 39.0,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Allgeier|any_td|9": {
     "player": "Tyler Allgeier",
@@ -31806,7 +31812,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "market_prob": 46.0
+    "market_prob": 46.0,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chris Moore|any_td|9": {
     "player": "Chris Moore",
@@ -32029,5 +32039,30 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Patrick Mahomes|passing_yards|9": {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "opponent": "NYJ",
+    "week": 9,
+    "stat": "passing_yards",
+    "projected": 265.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 231.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 34.3,
+    "model_prob": 0.7323,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-03 17:09 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
