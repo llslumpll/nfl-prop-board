@@ -29690,10 +29690,10 @@
     "stat": "receptions",
     "projected": 4.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "usage_trend": "up",
@@ -29703,7 +29703,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-03 01:47 UTC",
+    "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-11-03 01:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Jordan Love|any_td|9": {
     "player": "Jordan Love",
