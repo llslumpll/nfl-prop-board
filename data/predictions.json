@@ -30126,10 +30126,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bryce Young|passing_yards|9": {
     "player": "Bryce Young",
@@ -30531,7 +30528,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Denzel Boston|receptions|9": {
@@ -30555,10 +30553,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Amon-Ra St. Brown|receptions|9": {
     "player": "Amon-Ra St. Brown",
@@ -30770,10 +30765,10 @@
     "stat": "receptions",
     "projected": 7.7,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 8.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Did Not Participate In Practice",
@@ -30783,7 +30778,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-04 16:50 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tee Higgins|receptions|9": {
     "player": "Tee Higgins",
@@ -30837,10 +30834,10 @@
     "stat": "receptions",
     "projected": 3.7,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Limited Participation in Practice",
@@ -30850,7 +30847,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-04 16:50 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Chase Brown|receptions|9": {
     "player": "Chase Brown",
@@ -30947,10 +30946,10 @@
     "stat": "receptions",
     "projected": 7.7,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -30959,7 +30958,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-04 16:50 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Trey McBride|receptions|9": {
     "player": "Trey McBride",
@@ -30969,10 +30974,10 @@
     "stat": "receptions",
     "projected": 6.4,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 7.0,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -30982,7 +30987,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-04 16:50 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rashee Rice|receptions|9": {
     "player": "Rashee Rice",
@@ -32096,9 +32103,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jaxon Smith-Njigba|receiving_yards|9": {
     "player": "Jaxon Smith-Njigba",
@@ -32173,6 +32178,55 @@
     "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Treylon Burks|receiving_yards|9": {
+    "player": "Treylon Burks",
+    "team": "WAS",
+    "opponent": "LA",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 17.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 29.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -12.3,
+    "model_prob": 0.2827,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-04 16:50 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Blake Corum|rushing_yards|9": {
+    "player": "Blake Corum",
+    "team": "LA",
+    "opponent": "WAS",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 39.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 50.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -11.2,
+    "model_prob": 0.3442,
+    "signals": {},
+    "frozen_at": "2026-11-04 16:50 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
