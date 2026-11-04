@@ -27076,10 +27076,10 @@
     "stat": "receptions",
     "projected": 5.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -27090,7 +27090,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-04 20:35 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 20:35 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Rico Dowdle|receptions|8": {
     "player": "Rico Dowdle",
@@ -29679,7 +29685,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ],
     "line_attached_at": "2026-11-02 19:26 UTC",
@@ -30357,10 +30362,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Malik Willis|passing_yards|9": {
     "player": "Malik Willis",
@@ -30605,7 +30607,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ja'Marr Chase|receptions|9": {
     "player": "Ja'Marr Chase",
@@ -30959,8 +30964,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ],
     "line_attached_at": "2026-11-04 16:50 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -31063,10 +31067,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -32280,6 +32281,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Drew Lock|passing_yards|9": {
+    "player": "Drew Lock",
+    "team": "SEA",
+    "opponent": "ARI",
+    "week": 9,
+    "stat": "passing_yards",
+    "projected": 134.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 210.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -76.4,
+    "model_prob": 0.2534,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-04 20:35 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
