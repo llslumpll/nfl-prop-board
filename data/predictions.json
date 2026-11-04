@@ -27019,10 +27019,10 @@
     "stat": "receptions",
     "projected": 6.8,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -27031,7 +27031,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-04 18:14 UTC",
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Makai Lemon|receptions|8": {
     "player": "Makai Lemon",
@@ -30527,10 +30533,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Denzel Boston|receptions|9": {
     "player": "Denzel Boston",
@@ -30625,9 +30628,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Garrett Wilson|receptions|9": {
     "player": "Garrett Wilson",
@@ -30650,9 +30651,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|9": {
     "player": "Ollie Gordon II",
@@ -31049,10 +31048,10 @@
     "stat": "receptions",
     "projected": 2.1,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -31063,7 +31062,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-04 18:14 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Colston Loveland|receptions|9": {
     "player": "Colston Loveland",
@@ -31156,10 +31161,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-03 22:22 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-03 22:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -32221,6 +32223,57 @@
     "model_prob": 0.3442,
     "signals": {},
     "frozen_at": "2026-11-04 16:50 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": []
+  },
+  "Adonai Mitchell|receiving_yards|9": {
+    "player": "Adonai Mitchell",
+    "team": "NYJ",
+    "opponent": "KC",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 29.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 44.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -15.4,
+    "model_prob": 0.2823,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-04 18:14 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Tyler Allgeier|rushing_yards|9": {
+    "player": "Tyler Allgeier",
+    "team": "ARI",
+    "opponent": "SEA",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 36.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 48.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -12.3,
+    "model_prob": 0.2957,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-11-04 18:14 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
