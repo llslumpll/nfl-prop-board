@@ -30175,7 +30175,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Gardner Minshew II|passing_yards|8": {
@@ -32096,8 +32097,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jaxon Smith-Njigba|receiving_yards|9": {
@@ -32144,6 +32144,29 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-04 02:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": []
+  },
+  "Sione Vaki|rushing_yards|9": {
+    "player": "Sione Vaki",
+    "team": "DET",
+    "opponent": "MIA",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 9.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 15.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -6.5,
+    "model_prob": 0.01,
+    "signals": {
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-04 10:37 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
