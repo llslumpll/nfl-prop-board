@@ -30175,8 +30175,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Gardner Minshew II|passing_yards|8": {
@@ -30607,10 +30606,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ja'Marr Chase|receptions|9": {
     "player": "Ja'Marr Chase",
@@ -30658,7 +30654,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Ollie Gordon II|rushing_yards|9": {
     "player": "Ollie Gordon II",
@@ -30794,10 +30792,10 @@
     "stat": "receptions",
     "projected": 4.7,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -30806,7 +30804,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-04 02:41 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 02:41 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Harold Fannin Jr.|receptions|9": {
     "player": "Harold Fannin Jr.",
@@ -31149,7 +31149,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ],
     "line_attached_at": "2026-11-03 22:22 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-03 22:22 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -31440,7 +31441,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Trevor Lawrence|any_td|9": {
     "player": "Trevor Lawrence",
@@ -31747,7 +31752,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Bo Nix|any_td|9": {
     "player": "Bo Nix",
@@ -32116,6 +32125,31 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Jordan Love|passing_yards|9": {
+    "player": "Jordan Love",
+    "team": "GB",
+    "opponent": "NE",
+    "week": 9,
+    "stat": "passing_yards",
+    "projected": 235.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 276.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -41.5,
+    "model_prob": 0.2555,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-04 02:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
     ]
   }
 }
