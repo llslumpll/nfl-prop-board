@@ -30412,7 +30412,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Deshaun Watson|passing_yards|9": {
@@ -30485,8 +30486,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Ladd McConkey|receiving_yards|9": {
@@ -32333,9 +32333,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Travis Kelce|receiving_yards|9": {
     "player": "Travis Kelce",
@@ -32358,8 +32356,80 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
+    "best5_tags": []
+  },
+  "Joe Fagnano|passing_yards|9": {
+    "player": "Joe Fagnano",
+    "team": "BAL",
+    "opponent": "JAX",
+    "week": 9,
+    "stat": "passing_yards",
+    "projected": 186.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 160.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 25.7,
+    "model_prob": 0.6181,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-05 14:14 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Ja'Marr Chase|receiving_yards|9": {
+    "player": "Ja'Marr Chase",
+    "team": "CIN",
+    "opponent": "ATL",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 88.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 75.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.3,
+    "model_prob": 0.5994,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-05 14:16 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Ashton Jeanty|receiving_yards|9": {
+    "player": "Ashton Jeanty",
+    "team": "LV",
+    "opponent": "SF",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 23.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 35.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -11.8,
+    "model_prob": 0.2783,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-05 14:16 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
     ]
   }
 }
