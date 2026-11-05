@@ -30412,7 +30412,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -30735,8 +30734,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Javonte Williams|rushing_yards|9": {
@@ -31414,7 +31412,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Gardner Minshew|any_td|9": {
     "player": "Gardner Minshew",
@@ -31771,7 +31773,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -31844,8 +31845,7 @@
     "graded_at": null,
     "market_prob": 46.0,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Chris Moore|any_td|9": {
@@ -32137,9 +32137,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordan Love|passing_yards|9": {
     "player": "Jordan Love",
@@ -32286,7 +32284,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Drew Lock|passing_yards|9": {
@@ -32313,6 +32312,54 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
+    ]
+  },
+  "Matthew Stafford|passing_yards|9": {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "opponent": "WAS",
+    "week": 9,
+    "stat": "passing_yards",
+    "projected": 295.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 252.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 42.5,
+    "model_prob": 0.7282,
+    "signals": {},
+    "frozen_at": "2026-11-05 05:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Travis Kelce|receiving_yards|9": {
+    "player": "Travis Kelce",
+    "team": "KC",
+    "opponent": "NYJ",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 58.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 45.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.9,
+    "model_prob": 0.6442,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-05 05:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
