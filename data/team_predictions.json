@@ -7941,5 +7941,125 @@
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
     "graded": false
+  },
+  "NE@DET|team_moneyline|10": {
+    "away_team": "NE",
+    "home_team": "DET",
+    "week": 10,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 58.5,
+    "market_line": 50.4,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "up",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +1.9-point margin and a 49.0 total. DET's real offensive EPA/play (+0.11) against NE's real defensive EPA/play allowed (+0.01) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE's real record over their last games is trending up relative to their season pace.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
+  },
+  "NE@DET|team_spread|10": {
+    "away_team": "NE",
+    "home_team": "DET",
+    "week": 10,
+    "market": "team_spread",
+    "our_call": "HOME",
+    "our_value": 1.86,
+    "market_line": -1.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "up",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +1.9-point margin and a 49.0 total. DET's real offensive EPA/play (+0.11) against NE's real defensive EPA/play allowed (+0.01) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE's real record over their last games is trending up relative to their season pace.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
+  },
+  "NE@DET|team_total|10": {
+    "away_team": "NE",
+    "home_team": "DET",
+    "week": 10,
+    "market": "team_total",
+    "our_call": "UNDER",
+    "our_value": 49.0,
+    "market_line": 50.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "up",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +1.9-point margin and a 49.0 total. DET's real offensive EPA/play (+0.11) against NE's real defensive EPA/play allowed (+0.01) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE's real record over their last games is trending up relative to their season pace.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
+  },
+  "LAC@BAL|team_moneyline|10": {
+    "away_team": "LAC",
+    "home_team": "BAL",
+    "week": 10,
+    "market": "team_moneyline",
+    "our_call": "HOME",
+    "our_value": 71.7,
+    "market_line": 54.9,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +5.0-point margin and a 43.4 total. BAL's real offensive EPA/play (+0.02) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BAL is carrying real, meaningfully more Out/Doubtful designations than LAC this week -- a real health edge favoring LAC.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
+  },
+  "LAC@BAL|team_spread|10": {
+    "away_team": "LAC",
+    "home_team": "BAL",
+    "week": 10,
+    "market": "team_spread",
+    "our_call": "HOME",
+    "our_value": 5.05,
+    "market_line": -2.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +5.0-point margin and a 43.4 total. BAL's real offensive EPA/play (+0.02) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BAL is carrying real, meaningfully more Out/Doubtful designations than LAC this week -- a real health edge favoring LAC. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
+  },
+  "LAC@BAL|team_total|10": {
+    "away_team": "LAC",
+    "home_team": "BAL",
+    "week": 10,
+    "market": "team_total",
+    "our_call": "OVER",
+    "our_value": 43.4,
+    "market_line": 38.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "flat",
+      "away_recent_form": "flat",
+      "home_shorthanded": true,
+      "injury_edge": "away",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a +5.0-point margin and a 43.4 total. BAL's real offensive EPA/play (+0.02) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BAL is carrying real, meaningfully more Out/Doubtful designations than LAC this week -- a real health edge favoring LAC.",
+    "frozen_at": "2026-11-05 20:55 UTC",
+    "result": null,
+    "graded": false
   }
 }
