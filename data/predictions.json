@@ -31042,9 +31042,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Javonte Williams|rushing_yards|9": {
     "player": "Javonte Williams",
@@ -34298,5 +34296,30 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Devin Singletary|rushing_yards|9": {
+    "player": "Devin Singletary",
+    "team": "NYG",
+    "opponent": "PHI",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 35.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 56.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -21.2,
+    "model_prob": 0.2529,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-06 22:09 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   }
 }
