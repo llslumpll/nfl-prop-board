@@ -30653,8 +30653,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Ladd McConkey|receiving_yards|9": {
@@ -32386,7 +32385,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Blake Corum|rushing_yards|9": {
     "player": "Blake Corum",

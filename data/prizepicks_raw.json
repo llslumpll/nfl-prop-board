@@ -106,7 +106,7 @@
       "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 98.5,
+      "rushing_yards": 97.5,
       "receiving_yards": 34.5
     },
     "Amon-Ra St. Brown": {
@@ -139,7 +139,7 @@
       "receiving_yards": 23.5
     },
     "Sione Vaki": {
-      "rushing_yards": 19.5,
+      "rushing_yards": 20.5,
       "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
@@ -228,11 +228,11 @@
       "receptions": 3
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 43.5,
       "receptions": 4.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 42.5,
       "receptions": 4.5
     },
     "Kendre Miller": {
@@ -247,7 +247,7 @@
     },
     "Alvin Kamara": {
       "rushing_yards": 25.5,
-      "receiving_yards": 18.5
+      "receiving_yards": 16.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 20.5
@@ -283,7 +283,7 @@
       "receptions": 3.5
     },
     "Omar Cooper Jr.": {
-      "receiving_yards": 48.5
+      "receiving_yards": 46.5
     },
     "Travis Kelce": {
       "receiving_yards": 45.5,
@@ -330,7 +330,7 @@
       "passing_yards": 252.5
     },
     "Jayden Daniels": {
-      "passing_yards": 215.5,
+      "passing_yards": 211.5,
       "rushing_yards": 38.5
     },
     "Puka Nacua": {
@@ -514,7 +514,7 @@
       "receiving_yards": 16.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 41.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
@@ -562,13 +562,13 @@
       "receiving_yards": 35.5,
       "rushing_yards": 28.5
     },
+    "Mike Washington Jr.": {
+      "rushing_yards": 31.5,
+      "receiving_yards": 0.5
+    },
     "Demarcus Robinson": {
       "receiving_yards": 31.5,
       "receptions": 2.5
-    },
-    "Mike Washington Jr.": {
-      "rushing_yards": 30.5,
-      "receiving_yards": 0.5
     },
     "Michael Mayer": {
       "receiving_yards": 29.5
@@ -596,10 +596,10 @@
       "rushing_yards": 24.5
     },
     "Christian Watson": {
-      "receiving_yards": 73.5
+      "receiving_yards": 72.5
     },
     "Matthew Golden": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 66.5,
       "receptions": 5
     },
     "Rhamondre Stevenson": {
@@ -622,7 +622,7 @@
       "rushing_yards": 21.5
     },
     "Savion Williams": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "rushing_yards": 3.5
     },
     "MarShawn Lloyd": {
@@ -648,12 +648,12 @@
       "rushing_yards": 65.5,
       "receiving_yards": 21.5
     },
+    "Colston Loveland": {
+      "receiving_yards": 54.5
+    },
     "Emeka Egbuka": {
       "receiving_yards": 51.5,
       "receptions": 4
-    },
-    "Colston Loveland": {
-      "receiving_yards": 51.5
     },
     "Rome Odunze": {
       "receiving_yards": 48.5,
@@ -754,9 +754,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 6699,
+    "total_projections_returned": 6698,
     "matched_props": 347,
-    "excluded_goblin_demon_lines": 5374,
+    "excluded_goblin_demon_lines": 5375,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
