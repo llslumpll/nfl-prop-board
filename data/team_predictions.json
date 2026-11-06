@@ -6313,7 +6313,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 45.9,
+    "our_value": 40.7,
     "market_line": 39.0,
     "market_source": "fanduel",
     "signals": {
@@ -6326,14 +6326,16 @@
     "reason": "Real net-points-per-game model projects a -0.9-point margin and a 48.3 total. CIN's real offensive EPA/play (+0.11) against ATL's real defensive EPA/play allowed (-0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. ATL's real record over their last games is trending up relative to their season pace. ATL is carrying real, meaningfully more Out/Doubtful designations than CIN this week -- a real health edge favoring CIN.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 45.9,
+    "rule": "2026-11-06"
   },
   "CIN@ATL|team_spread|9": {
     "away_team": "CIN",
     "home_team": "ATL",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -0.89,
     "market_line": 3.0,
     "market_source": "fanduel",
@@ -6347,7 +6349,8 @@
     "reason": "Real net-points-per-game model projects a -0.9-point margin and a 48.3 total. CIN's real offensive EPA/play (+0.11) against ATL's real defensive EPA/play allowed (-0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. ATL's real record over their last games is trending up relative to their season pace. ATL is carrying real, meaningfully more Out/Doubtful designations than CIN this week -- a real health edge favoring CIN. FanDuel's real line is exactly on the 3-point key number -- one of the two most common real NFL margins.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "CIN@ATL|team_total|9": {
     "away_team": "CIN",
@@ -6375,8 +6378,8 @@
     "home_team": "CAR",
     "week": 9,
     "market": "team_moneyline",
-    "our_call": "HOME",
-    "our_value": 55.4,
+    "our_call": "AWAY",
+    "our_value": 47.0,
     "market_line": 44.2,
     "market_source": "fanduel",
     "signals": {
@@ -6389,7 +6392,9 @@
     "reason": "Real net-points-per-game model projects a +1.2-point margin and a 47.4 total. CAR's real offensive EPA/play (+0.06) against DEN's real defensive EPA/play allowed (-0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. DEN is carrying real, meaningfully more Out/Doubtful designations than CAR this week -- a real health edge favoring CAR.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 55.4,
+    "rule": "2026-11-06"
   },
   "DEN@CAR|team_spread|9": {
     "away_team": "DEN",
@@ -6410,7 +6415,8 @@
     "reason": "Real net-points-per-game model projects a +1.2-point margin and a 47.4 total. CAR's real offensive EPA/play (+0.06) against DEN's real defensive EPA/play allowed (-0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. DEN is carrying real, meaningfully more Out/Doubtful designations than CAR this week -- a real health edge favoring CAR. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "DEN@CAR|team_total|9": {
     "away_team": "DEN",
@@ -6439,7 +6445,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 48.3,
+    "our_value": 37.5,
     "market_line": 33.9,
     "market_source": "fanduel",
     "signals": {
@@ -6453,14 +6459,16 @@
     "reason": "Real net-points-per-game model projects a -0.4-point margin and a 50.2 total. DAL's real offensive EPA/play (+0.11) against IND's real defensive EPA/play allowed (+0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. IND is carrying real, meaningfully more Out/Doubtful designations than DAL this week -- a real health edge favoring DAL.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 48.3,
+    "rule": "2026-11-06"
   },
   "DAL@IND|team_spread|9": {
     "away_team": "DAL",
     "home_team": "IND",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -0.38,
     "market_line": 4.5,
     "market_source": "fanduel",
@@ -6475,7 +6483,8 @@
     "reason": "Real net-points-per-game model projects a -0.4-point margin and a 50.2 total. DAL's real offensive EPA/play (+0.11) against IND's real defensive EPA/play allowed (+0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. IND is carrying real, meaningfully more Out/Doubtful designations than DAL this week -- a real health edge favoring DAL.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "DAL@IND|team_total|9": {
     "away_team": "DAL",
@@ -6505,7 +6514,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 71.9,
+    "our_value": 78.9,
     "market_line": 81.2,
     "market_source": "fanduel",
     "signals": {
@@ -6517,14 +6526,16 @@
     "reason": "Real net-points-per-game model projects a +5.1-point margin and a 41.0 total. No other real situational signal stood out beyond the core scoring model this week.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 71.9,
+    "rule": "2026-11-06"
   },
   "NYJ@KC|team_spread|9": {
     "away_team": "NYJ",
     "home_team": "KC",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 5.11,
     "market_line": -8.5,
     "market_source": "fanduel",
@@ -6537,7 +6548,8 @@
     "reason": "Real net-points-per-game model projects a +5.1-point margin and a 41.0 total. No other real situational signal stood out beyond the core scoring model this week.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "NYJ@KC|team_total|9": {
     "away_team": "NYJ",
@@ -6565,7 +6577,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 36.2,
+    "our_value": 25.1,
     "market_line": 21.4,
     "market_source": "fanduel",
     "signals": {
@@ -6578,14 +6590,16 @@
     "reason": "Real net-points-per-game model projects a -3.1-point margin and a 50.3 total. DET's real offensive EPA/play (+0.14) against MIA's real defensive EPA/play allowed (+0.13) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. MIA is carrying real, meaningfully more Out/Doubtful designations than DET this week -- a real health edge favoring DET.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 36.2,
+    "rule": "2026-11-06"
   },
   "DET@MIA|team_spread|9": {
     "away_team": "DET",
     "home_team": "MIA",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -3.08,
     "market_line": 8.5,
     "market_source": "fanduel",
@@ -6599,7 +6613,8 @@
     "reason": "Real net-points-per-game model projects a -3.1-point margin and a 50.3 total. DET's real offensive EPA/play (+0.14) against MIA's real defensive EPA/play allowed (+0.13) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. MIA is carrying real, meaningfully more Out/Doubtful designations than DET this week -- a real health edge favoring DET.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "DET@MIA|team_total|9": {
     "away_team": "DET",
@@ -6628,7 +6643,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 52.8,
+    "our_value": 56.0,
     "market_line": 57.1,
     "market_source": "fanduel",
     "signals": {
@@ -6641,14 +6656,16 @@
     "reason": "Real net-points-per-game model projects a +0.6-point margin and a 45.4 total. NO's real offensive EPA/play (-0.04) against CLE's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. CLE is carrying real, meaningfully more Out/Doubtful designations than NO this week -- a real health edge favoring NO.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 52.8,
+    "rule": "2026-11-06"
   },
   "CLE@NO|team_spread|9": {
     "away_team": "CLE",
     "home_team": "NO",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 0.61,
     "market_line": -2.5,
     "market_source": "fanduel",
@@ -6662,7 +6679,8 @@
     "reason": "Real net-points-per-game model projects a +0.6-point margin and a 45.4 total. NO's real offensive EPA/play (-0.04) against CLE's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. CLE is carrying real, meaningfully more Out/Doubtful designations than NO this week -- a real health edge favoring NO. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "CLE@NO|team_total|9": {
     "away_team": "CLE",
@@ -6691,7 +6709,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 43.9,
+    "our_value": 47.4,
     "market_line": 48.5,
     "market_source": "fanduel",
     "signals": {
@@ -6703,14 +6721,16 @@
     "reason": "Real net-points-per-game model projects a -1.3-point margin and a 44.7 total. PHI's real record over their last games is trending down relative to their season pace.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 43.9,
+    "rule": "2026-11-06"
   },
   "NYG@PHI|team_spread|9": {
     "away_team": "NYG",
     "home_team": "PHI",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -1.33,
     "market_line": 1.5,
     "market_source": "fanduel",
@@ -6723,7 +6743,8 @@
     "reason": "Real net-points-per-game model projects a -1.3-point margin and a 44.7 total. PHI's real record over their last games is trending down relative to their season pace.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "NYG@PHI|team_total|9": {
     "away_team": "NYG",
@@ -6751,7 +6772,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 43.6,
+    "our_value": 36.7,
     "market_line": 34.4,
     "market_source": "fanduel",
     "signals": {
@@ -6766,14 +6787,16 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 48.8 total. WAS enters with a real rest advantage (20 real days for WAS vs 14 for LA). WAS is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 43.6,
+    "rule": "2026-11-06"
   },
   "LA@WAS|team_spread|9": {
     "away_team": "LA",
     "home_team": "WAS",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -1.39,
     "market_line": 5.5,
     "market_source": "fanduel",
@@ -6789,7 +6812,8 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 48.8 total. WAS enters with a real rest advantage (20 real days for WAS vs 14 for LA). WAS is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "LA@WAS|team_total|9": {
     "away_team": "LA",
@@ -6820,7 +6844,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 42.2,
+    "our_value": 39.6,
     "market_line": 38.7,
     "market_source": "fanduel",
     "signals": {
@@ -6837,14 +6861,16 @@
     "reason": "Real net-points-per-game model projects a -1.7-point margin and a 44.0 total. HOU's real offensive EPA/play (+0.03) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LAC enters with a real rest advantage (21 real days for LAC vs 14 for HOU). LAC is carrying real, meaningfully more Out/Doubtful designations than HOU this week -- a real health edge favoring HOU.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 42.2,
+    "rule": "2026-11-06"
   },
   "HOU@LAC|team_spread|9": {
     "away_team": "HOU",
     "home_team": "LAC",
     "week": 9,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -1.7,
     "market_line": 3.5,
     "market_source": "fanduel",
@@ -6862,7 +6888,8 @@
     "reason": "Real net-points-per-game model projects a -1.7-point margin and a 44.0 total. HOU's real offensive EPA/play (+0.03) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LAC enters with a real rest advantage (21 real days for LAC vs 14 for HOU). LAC is carrying real, meaningfully more Out/Doubtful designations than HOU this week -- a real health edge favoring HOU. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "HOU@LAC|team_total|9": {
     "away_team": "HOU",
@@ -6895,7 +6922,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 76.1,
+    "our_value": 80.2,
     "market_line": 81.5,
     "market_source": "fanduel",
     "signals": {
@@ -6909,14 +6936,16 @@
     "reason": "Real net-points-per-game model projects a +6.3-point margin and a 51.1 total. SF's real offensive EPA/play (+0.18) against LV's real defensive EPA/play allowed (+0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LV's real record over their last games is trending down relative to their season pace. SF is carrying real, meaningfully more Out/Doubtful designations than LV this week -- a real health edge favoring LV.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 76.1,
+    "rule": "2026-11-06"
   },
   "LV@SF|team_spread|9": {
     "away_team": "LV",
     "home_team": "SF",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 6.3,
     "market_line": -9.5,
     "market_source": "fanduel",
@@ -6931,7 +6960,8 @@
     "reason": "Real net-points-per-game model projects a +6.3-point margin and a 51.1 total. SF's real offensive EPA/play (+0.18) against LV's real defensive EPA/play allowed (+0.05) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LV's real record over their last games is trending down relative to their season pace. SF is carrying real, meaningfully more Out/Doubtful designations than LV this week -- a real health edge favoring LV.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "LV@SF|team_total|9": {
     "away_team": "LV",
@@ -6961,7 +6991,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 63.1,
+    "our_value": 59.9,
     "market_line": 58.9,
     "market_source": "fanduel",
     "signals": {
@@ -6977,14 +7007,16 @@
     "reason": "Real net-points-per-game model projects a +2.9-point margin and a 42.3 total. NE's real offensive EPA/play (+0.06) against GB's real defensive EPA/play allowed (-0.06) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE enters with a real rest advantage (17 real days for NE vs 14 for GB). NE is carrying real, meaningfully more Out/Doubtful designations than GB this week -- a real health edge favoring GB.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 63.1,
+    "rule": "2026-11-06"
   },
   "GB@NE|team_spread|9": {
     "away_team": "GB",
     "home_team": "NE",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 2.92,
     "market_line": -3.0,
     "market_source": "fanduel",
@@ -7001,7 +7033,8 @@
     "reason": "Real net-points-per-game model projects a +2.9-point margin and a 42.3 total. NE's real offensive EPA/play (+0.06) against GB's real defensive EPA/play allowed (-0.06) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE enters with a real rest advantage (17 real days for NE vs 14 for GB). NE is carrying real, meaningfully more Out/Doubtful designations than GB this week -- a real health edge favoring GB. FanDuel's real line is exactly on the 3-point key number -- one of the two most common real NFL margins.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "GB@NE|team_total|9": {
     "away_team": "GB",
@@ -7033,7 +7066,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 83.0,
+    "our_value": 84.8,
     "market_line": 85.4,
     "market_source": "fanduel",
     "signals": {
@@ -7047,14 +7080,16 @@
     "reason": "Real net-points-per-game model projects a +8.6-point margin and a 45.9 total. ARI's real offensive EPA/play (-0.03) against SEA's real defensive EPA/play allowed (-0.13) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SEA's real record over their last games is trending down relative to their season pace. ARI is carrying real, meaningfully more Out/Doubtful designations than SEA this week -- a real health edge favoring SEA.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 83.0,
+    "rule": "2026-11-06"
   },
   "ARI@SEA|team_spread|9": {
     "away_team": "ARI",
     "home_team": "SEA",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 8.61,
     "market_line": -11.5,
     "market_source": "fanduel",
@@ -7069,7 +7104,8 @@
     "reason": "Real net-points-per-game model projects a +8.6-point margin and a 45.9 total. ARI's real offensive EPA/play (-0.03) against SEA's real defensive EPA/play allowed (-0.13) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SEA's real record over their last games is trending down relative to their season pace. ARI is carrying real, meaningfully more Out/Doubtful designations than SEA this week -- a real health edge favoring SEA.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "ARI@SEA|team_total|9": {
     "away_team": "ARI",
@@ -7099,7 +7135,7 @@
     "week": 9,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 65.2,
+    "our_value": 67.7,
     "market_line": 68.5,
     "market_source": "fanduel",
     "signals": {
@@ -7115,14 +7151,16 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 45.4 total. CHI's real offensive EPA/play (+0.05) against TB's real defensive EPA/play allowed (-0.11) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. CHI enters with a real rest advantage (17 real days for CHI vs 14 for TB).",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 65.2,
+    "rule": "2026-11-06"
   },
   "TB@CHI|team_spread|9": {
     "away_team": "TB",
     "home_team": "CHI",
     "week": 9,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 3.42,
     "market_line": -5.5,
     "market_source": "fanduel",
@@ -7139,7 +7177,8 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 45.4 total. CHI's real offensive EPA/play (+0.05) against TB's real defensive EPA/play allowed (-0.11) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. CHI enters with a real rest advantage (17 real days for CHI vs 14 for TB).",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "TB@CHI|team_total|9": {
     "away_team": "TB",
@@ -7170,8 +7209,8 @@
     "home_team": "MIN",
     "week": 9,
     "market": "team_moneyline",
-    "our_call": "HOME",
-    "our_value": 65.0,
+    "our_call": "AWAY",
+    "our_value": 49.4,
     "market_line": 44.2,
     "market_source": "fanduel",
     "signals": {
@@ -7185,7 +7224,9 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.2 total. BUF's real offensive EPA/play (+0.20) against MIN's real defensive EPA/play allowed (-0.19) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BUF enters with a real rest advantage (15 real days for MIN vs 22 for BUF).",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 65.0,
+    "rule": "2026-11-06"
   },
   "BUF@MIN|team_spread|9": {
     "away_team": "BUF",
@@ -7207,7 +7248,8 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.2 total. BUF's real offensive EPA/play (+0.20) against MIN's real defensive EPA/play allowed (-0.19) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BUF enters with a real rest advantage (15 real days for MIN vs 22 for BUF). FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "BUF@MIN|team_total|9": {
     "away_team": "BUF",
@@ -7237,7 +7279,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 65.0,
+    "our_value": 55.5,
     "market_line": 52.4,
     "market_source": "fanduel",
     "signals": {
@@ -7253,7 +7295,9 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.5 total. NYG enters with a real rest advantage (18 real days for NYG vs 11 for WAS). NYG is carrying real, meaningfully more Out/Doubtful designations than WAS this week -- a real health edge favoring WAS.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 65.0,
+    "rule": "2026-11-06"
   },
   "WAS@NYG|team_spread|10": {
     "away_team": "WAS",
@@ -7277,7 +7321,8 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.5 total. NYG enters with a real rest advantage (18 real days for NYG vs 11 for WAS). NYG is carrying real, meaningfully more Out/Doubtful designations than WAS this week -- a real health edge favoring WAS.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "WAS@NYG|team_total|10": {
     "away_team": "WAS",
@@ -7309,7 +7354,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 42.8,
+    "our_value": 39.4,
     "market_line": 38.2,
     "market_source": "fanduel",
     "signals": {
@@ -7320,14 +7365,16 @@
     "reason": "Real net-points-per-game model projects a -1.6-point margin and a 43.8 total. KC's real offensive EPA/play (+0.13) against ATL's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 42.8,
+    "rule": "2026-11-06"
   },
   "KC@ATL|team_spread|10": {
     "away_team": "KC",
     "home_team": "ATL",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -1.57,
     "market_line": 3.5,
     "market_source": "fanduel",
@@ -7339,7 +7386,8 @@
     "reason": "Real net-points-per-game model projects a -1.6-point margin and a 43.8 total. KC's real offensive EPA/play (+0.13) against ATL's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "KC@ATL|team_total|10": {
     "away_team": "KC",
@@ -7365,8 +7413,8 @@
     "home_team": "CLE",
     "week": 10,
     "market": "team_moneyline",
-    "our_call": "HOME",
-    "our_value": 50.0,
+    "our_call": "AWAY",
+    "our_value": 42.3,
     "market_line": 39.7,
     "market_source": "fanduel",
     "signals": {
@@ -7382,14 +7430,16 @@
     "reason": "Real net-points-per-game model projects a -0.0-point margin and a 43.4 total. HOU's real offensive EPA/play (+0.03) against CLE's real defensive EPA/play allowed (-0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. HOU enters with a real rest advantage (14 real days for CLE vs 21 for HOU). HOU is carrying real, meaningfully more Out/Doubtful designations than CLE this week -- a real health edge favoring CLE.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 50.0,
+    "rule": "2026-11-06"
   },
   "HOU@CLE|team_spread|10": {
     "away_team": "HOU",
     "home_team": "CLE",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -0.01,
     "market_line": 3.5,
     "market_source": "fanduel",
@@ -7406,7 +7456,8 @@
     "reason": "Real net-points-per-game model projects a -0.0-point margin and a 43.4 total. HOU's real offensive EPA/play (+0.03) against CLE's real defensive EPA/play allowed (-0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. HOU enters with a real rest advantage (14 real days for CLE vs 21 for HOU). HOU is carrying real, meaningfully more Out/Doubtful designations than CLE this week -- a real health edge favoring CLE. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "HOU@CLE|team_total|10": {
     "away_team": "HOU",
@@ -7437,8 +7488,8 @@
     "home_team": "GB",
     "week": 10,
     "market": "team_moneyline",
-    "our_call": "AWAY",
-    "our_value": 46.8,
+    "our_call": "HOME",
+    "our_value": 53.9,
     "market_line": 56.3,
     "market_source": "fanduel",
     "signals": {
@@ -7454,7 +7505,9 @@
     "reason": "Real net-points-per-game model projects a -0.7-point margin and a 37.6 total. GB's real offensive EPA/play (+0.01) against MIN's real defensive EPA/play allowed (-0.17) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. GB enters with a real rest advantage (17 real days for GB vs 14 for MIN). GB's real record over their last games is trending up relative to their season pace. GB is carrying real, meaningfully more Out/Doubtful designations than MIN this week -- a real health edge favoring MIN.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 46.8,
+    "rule": "2026-11-06"
   },
   "MIN@GB|team_spread|10": {
     "away_team": "MIN",
@@ -7478,7 +7531,8 @@
     "reason": "Real net-points-per-game model projects a -0.7-point margin and a 37.6 total. GB's real offensive EPA/play (+0.01) against MIN's real defensive EPA/play allowed (-0.17) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. GB enters with a real rest advantage (17 real days for GB vs 14 for MIN). GB's real record over their last games is trending up relative to their season pace. GB is carrying real, meaningfully more Out/Doubtful designations than MIN this week -- a real health edge favoring MIN. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "MIN@GB|team_total|10": {
     "away_team": "MIN",
@@ -7510,7 +7564,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 59.1,
+    "our_value": 54.1,
     "market_line": 52.4,
     "market_source": "fanduel",
     "signals": {
@@ -7523,7 +7577,9 @@
     "reason": "Real net-points-per-game model projects a +2.0-point margin and a 45.2 total. MIA's real offensive EPA/play (-0.04) against IND's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. IND is carrying real, meaningfully more Out/Doubtful designations than MIA this week -- a real health edge favoring MIA.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 59.1,
+    "rule": "2026-11-06"
   },
   "MIA@IND|team_spread|10": {
     "away_team": "MIA",
@@ -7544,7 +7600,8 @@
     "reason": "Real net-points-per-game model projects a +2.0-point margin and a 45.2 total. MIA's real offensive EPA/play (-0.04) against IND's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. IND is carrying real, meaningfully more Out/Doubtful designations than MIA this week -- a real health edge favoring MIA.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "MIA@IND|team_total|10": {
     "away_team": "MIA",
@@ -7573,7 +7630,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 53.4,
+    "our_value": 50.2,
     "market_line": 49.1,
     "market_source": "fanduel",
     "signals": {
@@ -7588,7 +7645,9 @@
     "reason": "Real net-points-per-game model projects a +0.7-point margin and a 51.9 total. NO enters with a real rest advantage (21 real days for NO vs 17 for CAR). CAR is carrying real, meaningfully more Out/Doubtful designations than NO this week -- a real health edge favoring NO.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 53.4,
+    "rule": "2026-11-06"
   },
   "CAR@NO|team_spread|10": {
     "away_team": "CAR",
@@ -7611,7 +7670,8 @@
     "reason": "Real net-points-per-game model projects a +0.7-point margin and a 51.9 total. NO enters with a real rest advantage (21 real days for NO vs 17 for CAR). CAR is carrying real, meaningfully more Out/Doubtful designations than NO this week -- a real health edge favoring NO.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "CAR@NO|team_total|10": {
     "away_team": "CAR",
@@ -7642,7 +7702,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 38.4,
+    "our_value": 24.7,
     "market_line": 20.1,
     "market_source": "fanduel",
     "signals": {
@@ -7655,14 +7715,16 @@
     "reason": "Real net-points-per-game model projects a -2.6-point margin and a 52.0 total. BUF's real offensive EPA/play (+0.17) against NYJ's real defensive EPA/play allowed (+0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NYJ is carrying real, meaningfully more Out/Doubtful designations than BUF this week -- a real health edge favoring BUF.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 38.4,
+    "rule": "2026-11-06"
   },
   "BUF@NYJ|team_spread|10": {
     "away_team": "BUF",
     "home_team": "NYJ",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -2.57,
     "market_line": 7.5,
     "market_source": "fanduel",
@@ -7676,7 +7738,8 @@
     "reason": "Real net-points-per-game model projects a -2.6-point margin and a 52.0 total. BUF's real offensive EPA/play (+0.17) against NYJ's real defensive EPA/play allowed (+0.02) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NYJ is carrying real, meaningfully more Out/Doubtful designations than BUF this week -- a real health edge favoring BUF. FanDuel's real line is adjacent to the 7-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "BUF@NYJ|team_total|10": {
     "away_team": "BUF",
@@ -7705,7 +7768,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 21.8,
+    "our_value": 19.0,
     "market_line": 18.1,
     "market_source": "fanduel",
     "signals": {
@@ -7718,14 +7781,16 @@
     "reason": "Real net-points-per-game model projects a -7.0-point margin and a 43.4 total. JAX's real offensive EPA/play (+0.16) against TEN's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. TEN is carrying real, meaningfully more Out/Doubtful designations than JAX this week -- a real health edge favoring JAX.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 21.8,
+    "rule": "2026-11-06"
   },
   "JAX@TEN|team_spread|10": {
     "away_team": "JAX",
     "home_team": "TEN",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -6.95,
     "market_line": 9.5,
     "market_source": "fanduel",
@@ -7739,7 +7804,8 @@
     "reason": "Real net-points-per-game model projects a -7.0-point margin and a 43.4 total. JAX's real offensive EPA/play (+0.16) against TEN's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. TEN is carrying real, meaningfully more Out/Doubtful designations than JAX this week -- a real health edge favoring JAX.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "JAX@TEN|team_total|10": {
     "away_team": "JAX",
@@ -7768,7 +7834,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 33.3,
+    "our_value": 27.1,
     "market_line": 25.0,
     "market_source": "fanduel",
     "signals": {
@@ -7781,14 +7847,16 @@
     "reason": "Real net-points-per-game model projects a -3.8-point margin and a 48.4 total. ARI's real offensive EPA/play (-0.02) against LA's real defensive EPA/play allowed (-0.10) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. ARI is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 33.3,
+    "rule": "2026-11-06"
   },
   "LA@ARI|team_spread|10": {
     "away_team": "LA",
     "home_team": "ARI",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -3.76,
     "market_line": 7.5,
     "market_source": "fanduel",
@@ -7802,7 +7870,8 @@
     "reason": "Real net-points-per-game model projects a -3.8-point margin and a 48.4 total. ARI's real offensive EPA/play (-0.02) against LA's real defensive EPA/play allowed (-0.10) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. ARI is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA. FanDuel's real line is adjacent to the 7-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "LA@ARI|team_total|10": {
     "away_team": "LA",
@@ -7831,7 +7900,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "AWAY",
-    "our_value": 43.4,
+    "our_value": 36.9,
     "market_line": 34.8,
     "market_source": "fanduel",
     "signals": {
@@ -7848,14 +7917,16 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 51.0 total. DAL's real offensive EPA/play (+0.09) against SF's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SF enters with a real rest advantage (14 real days for DAL vs 21 for SF). SF is carrying real, meaningfully more Out/Doubtful designations than DAL this week -- a real health edge favoring DAL.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 43.4,
+    "rule": "2026-11-06"
   },
   "SF@DAL|team_spread|10": {
     "away_team": "SF",
     "home_team": "DAL",
     "week": 10,
     "market": "team_spread",
-    "our_call": "AWAY",
+    "our_call": "HOME",
     "our_value": -1.44,
     "market_line": 4.5,
     "market_source": "fanduel",
@@ -7873,7 +7944,8 @@
     "reason": "Real net-points-per-game model projects a -1.4-point margin and a 51.0 total. DAL's real offensive EPA/play (+0.09) against SF's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. SF enters with a real rest advantage (14 real days for DAL vs 21 for SF). SF is carrying real, meaningfully more Out/Doubtful designations than DAL this week -- a real health edge favoring DAL.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "SF@DAL|team_total|10": {
     "away_team": "SF",
@@ -7906,7 +7978,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 61.5,
+    "our_value": 60.6,
     "market_line": 60.3,
     "market_source": "fanduel",
     "signals": {
@@ -7919,14 +7991,16 @@
     "reason": "Real net-points-per-game model projects a +2.5-point margin and a 46.2 total. CIN's real offensive EPA/play (+0.12) against PIT's real defensive EPA/play allowed (-0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. PIT is carrying real, meaningfully more Out/Doubtful designations than CIN this week -- a real health edge favoring CIN.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 61.5,
+    "rule": "2026-11-06"
   },
   "PIT@CIN|team_spread|10": {
     "away_team": "PIT",
     "home_team": "CIN",
     "week": 10,
     "market": "team_spread",
-    "our_call": "HOME",
+    "our_call": "AWAY",
     "our_value": 2.55,
     "market_line": -3.5,
     "market_source": "fanduel",
@@ -7940,7 +8014,8 @@
     "reason": "Real net-points-per-game model projects a +2.5-point margin and a 46.2 total. CIN's real offensive EPA/play (+0.12) against PIT's real defensive EPA/play allowed (-0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. PIT is carrying real, meaningfully more Out/Doubtful designations than CIN this week -- a real health edge favoring CIN. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "PIT@CIN|team_total|10": {
     "away_team": "PIT",
@@ -7969,7 +8044,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 58.5,
+    "our_value": 52.4,
     "market_line": 50.4,
     "market_source": "fanduel",
     "signals": {
@@ -7980,7 +8055,9 @@
     "reason": "Real net-points-per-game model projects a +1.9-point margin and a 49.0 total. DET's real offensive EPA/play (+0.11) against NE's real defensive EPA/play allowed (+0.01) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE's real record over their last games is trending up relative to their season pace.",
     "frozen_at": "2026-11-05 20:55 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 58.5,
+    "rule": "2026-11-06"
   },
   "NE@DET|team_spread|10": {
     "away_team": "NE",
@@ -7999,7 +8076,8 @@
     "reason": "Real net-points-per-game model projects a +1.9-point margin and a 49.0 total. DET's real offensive EPA/play (+0.11) against NE's real defensive EPA/play allowed (+0.01) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. NE's real record over their last games is trending up relative to their season pace.",
     "frozen_at": "2026-11-05 20:55 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "NE@DET|team_total|10": {
     "away_team": "NE",
@@ -8026,7 +8104,7 @@
     "week": 10,
     "market": "team_moneyline",
     "our_call": "HOME",
-    "our_value": 71.7,
+    "our_value": 59.1,
     "market_line": 54.9,
     "market_source": "fanduel",
     "signals": {
@@ -8039,7 +8117,9 @@
     "reason": "Real net-points-per-game model projects a +5.0-point margin and a 43.4 total. BAL's real offensive EPA/play (+0.02) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BAL is carrying real, meaningfully more Out/Doubtful designations than LAC this week -- a real health edge favoring LAC.",
     "frozen_at": "2026-11-05 20:55 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "model_value": 71.7,
+    "rule": "2026-11-06"
   },
   "LAC@BAL|team_spread|10": {
     "away_team": "LAC",
@@ -8060,7 +8140,8 @@
     "reason": "Real net-points-per-game model projects a +5.0-point margin and a 43.4 total. BAL's real offensive EPA/play (+0.02) against LAC's real defensive EPA/play allowed (-0.04) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. BAL is carrying real, meaningfully more Out/Doubtful designations than LAC this week -- a real health edge favoring LAC. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-05 20:55 UTC",
     "result": null,
-    "graded": false
+    "graded": false,
+    "rule": "2026-11-06"
   },
   "LAC@BAL|team_total|10": {
     "away_team": "LAC",
