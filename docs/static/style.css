@@ -811,3 +811,4 @@ table.stat-table tr:hover td { background: #172c52; }
 /* OVER = green, UNDER = red, everywhere a call is shown (Nov 2026) */
 .c-over { color: var(--green) !important; font-weight: 800; }
 .c-under { color: var(--red) !important; font-weight: 800; }
+.pk-weak { color: #fff; background: var(--red); border-color: var(--red); }

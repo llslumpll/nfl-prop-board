@@ -53,7 +53,8 @@
     {% set prv = (pick_rec or {}).get(lv_stat ~ '|' ~ p.call) %}
     {% set lm = p.line_movement %}
     <div class="pk-tags">
-      {% if prv and prv.n >= 30 and prv.rate >= 54.2 %}<span class="pk-tag pk-proven">&#9733; PROVEN &middot; {{ p.call }}S {{ prv.rate }}% ({{ prv.n }})</span>{% endif %}
+      {% if prv and prv.n >= 30 and prv.rate >= 54.2 %}<span class="pk-tag pk-proven">&#9733; PROVEN &middot; {{ p.call }}S {{ prv.rate }}% ({{ prv.n }})</span>
+      {% elif prv and prv.n >= 100 and prv.rate <= 45 %}<span class="pk-tag pk-weak">&#9888; WEAK &middot; {{ p.call }}S LIKE THIS HIT {{ prv.rate }}% ({{ prv.n }})</span>{% endif %}
       {% if not lm or not lm.moved %}<span class="pk-tag pk-early">LINE HASN'T MOVED &middot; BET EARLY</span>
       {% elif (lm.change > 0) == (p.call == 'OVER') %}<span class="pk-tag pk-toward">LINE MOVED OUR WAY ({{ lm.opening_line }} &rarr; {{ lm.current_line }})</span>
       {% else %}<span class="pk-tag pk-against">LINE MOVED AGAINST US ({{ lm.opening_line }} &rarr; {{ lm.current_line }})</span>{% endif %}

@@ -11,6 +11,7 @@ What gets sent (each once; data/alerts_state.json remembers what went out):
     hasn't moved yet (bet early), and the site's parlays with units
   * week recap, once every pick of the week is graded: props, Best 5, game picks, parlays (units and dollars,
     1U = $100), news plays
+  * bet early: when a PROVEN kind of pick gets its first line and it hasn't moved yet (each pick once)
   * a one-time "connected" message the first time the secret works
 """
 
@@ -122,6 +123,57 @@ def sunday_card(week: int | None, now: datetime) -> list[tuple[str, str]]:
     return out
 
 
+def early_lines(week: int | None, now: datetime, sent: dict) -> tuple[list[str], str] | None:
+    """Bet-early alert: a PROVEN kind of pick whose line just posted and hasn't moved yet, before kickoff. Picks the
+    market later moved toward hit 61.8% at the line we picked, so the value is in getting the first line. One
+    message per build with every new one (each pick alerted once)."""
+    if week is None:
+        return None
+    import dataio
+    import grade
+    import line_attach
+    import line_movement_log
+    import predictions
+    rec = grade.pick_records()
+    log = line_movement_log._load()
+    sched = dataio.load_schedule()
+    new = []
+    for p in predictions.load_predictions().values():
+        if p["week"] != week or p.get("graded") or p["stat"] not in SHORT or p.get("market_line") is None \
+                or p.get("call") not in ("OVER", "UNDER"):
+            continue
+        key = f"early|{week}|{p['player']}|{p['stat']}"
+        if key in sent:
+            continue
+        r = rec.get(f"{p['stat']}|{p['call']}")
+        if not r or r["n"] < 30 or r["rate"] < 54.2:
+            continue
+        e = log.get(f"{p['player']}|{p['stat']}|{week}")
+        if e and e["current_line"] != p["market_line"]:
+            continue
+        k = line_attach._kickoff_utc(p["team"], week, sched)
+        if k is None or now >= k:
+            continue
+        new.append((key, r, p, k))
+    if not new:
+        return None
+    new.sort(key=lambda x: (-x[1]["rate"], x[3], x[2]["player"]))
+    lines = [f"⏰ **Bet early: {len(new)} new line{'s' if len(new) != 1 else ''} on proven picks** (Week {week})",
+             "These kinds of picks have beaten break-even all season, and the line hasn't moved yet:"]
+    shown = 0
+    for key, r, p, k in new:
+        row = (f"• **{p['player']} {p['call']} {p['market_line']:g} {SHORT[p['stat']]}** · {p['team']} "
+               f"{k.astimezone(CT):%a %-I:%M %p} · {p['call'].lower()}s like this {r['rate']:.0f}% ({r['n']})")
+        if sum(len(x) + 1 for x in lines) + len(row) > MAX_LEN - 120:
+            break
+        lines.append(row)
+        shown += 1
+    if shown < len(new):
+        lines.append(f"+{len(new) - shown} more on the Picks page")
+    lines.append(SITE + "picks.html")
+    return [x[0] for x in new], "\n".join(lines)
+
+
 def recap_message(now: datetime) -> tuple[str, str] | None:
     """The most recent week whose picks with lines are all graded, once."""
     import news_nfl
@@ -176,6 +228,15 @@ def run(week: int | None, now: datetime | None = None) -> dict:
             print(f"Alert check failed: {e}")
     n = 0
     stamp = now.strftime("%Y-%m-%d %H:%M UTC")
+    try:
+        el = early_lines(week, now, sent)
+    except Exception as e:  # noqa: BLE001
+        print(f"Alert check failed: {e}")
+        el = None
+    if el and st.get("connected") and _post(url, el[1]):
+        for k in el[0]:
+            sent[k] = stamp
+        n += 1
     for key, text in msgs:
         if key in sent:
             continue
