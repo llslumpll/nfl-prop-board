@@ -30148,7 +30148,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Bryce Young|passing_yards|9": {
     "player": "Bryce Young",
@@ -30193,10 +30195,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Gardner Minshew II|passing_yards|8": {
     "player": "Gardner Minshew II",
@@ -30620,10 +30619,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ja'Marr Chase|receptions|9": {
     "player": "Ja'Marr Chase",
@@ -31085,7 +31081,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -32229,9 +32228,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Blake Corum|rushing_yards|9": {
     "player": "Blake Corum",
@@ -32303,9 +32300,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Drew Lock|passing_yards|9": {
     "player": "Drew Lock",
@@ -32352,7 +32347,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Travis Kelce|receiving_yards|9": {
     "player": "Travis Kelce",
@@ -32447,6 +32445,33 @@
     "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Kaelon Black|rushing_yards|9": {
+    "player": "Kaelon Black",
+    "team": "SF",
+    "opponent": "LV",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 51.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 36.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 14.8,
+    "model_prob": 0.746,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-06 01:38 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
