@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Receptions — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1793984303">
+  <link rel="stylesheet" href="static/style.css?v=1793985359">
 </head>
 <body>
   <header class="site-head">
@@ -27,13 +27,7 @@
       
         <a href="games.html" class="">Games</a>
       
-        <a href="passing.html" class="">Passing</a>
-      
-        <a href="receiving.html" class="">Receiving</a>
-      
-        <a href="receptions.html" class="active">Receptions</a>
-      
-        <a href="rushing.html" class="">Rushing</a>
+        <a href="picks.html" class="">Picks</a>
       
         <a href="touchdowns.html" class="">Touchdowns</a>
       
@@ -47,6 +41,8 @@
 
   <main class="site-main">
     
+
+
 <h1>Receptions</h1>
 <p class="lede">
   Reception count, kept as its own page &mdash; Receiving Yards and
@@ -1866,6 +1862,13 @@
       &mdash; real PrizePicks line at freeze time: 3.5 (OVER).
     </div>
     
+    
+    
+    <div class="notice compact">
+      &#8646; Real line movement: opened at 3.5, now 4
+      (+0.5 since 2026-11-03 16:49 UTC).
+      
+    </div>
     
     
     <span class="tier tier-high">Established (2026 sample)</span>
@@ -3870,6 +3873,13 @@
     
     
     
+    <div class="notice compact">
+      &#8646; Real line movement: opened at 4.5, now 5
+      (+0.5 since 2026-11-03 01:47 UTC).
+      
+    </div>
+    
+    
     <span class="tier tier-high">Established (2026 sample)</span>
     
     
@@ -5092,6 +5102,13 @@
     
     
     
+    <div class="notice compact">
+      &#8646; Real line movement: opened at 4.5, now 5
+      (+0.5 since 2026-11-04 20:35 UTC).
+      
+    </div>
+    
+    
     <span class="tier tier-high">Established (2026 sample)</span>
     
     
@@ -6180,6 +6197,13 @@
     
     
     
+    <div class="notice compact">
+      &#8646; Real line movement: opened at 7.5, now 7
+      (-0.5 since 2026-11-03 22:22 UTC).
+      
+    </div>
+    
+    
     <span class="tier tier-high">Established (2026 sample)</span>
     
     
@@ -6919,7 +6943,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv],[data-lvg]') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -6988,6 +7012,7 @@
         today.hidden = false;
       }
       var wk = null, timer = null;
+      window.peLiveRefresh = function () { load(); };  // Picks boards load later
       function load() {
         var pw = today && !wk ? fetch('static/week.json?t=' + Math.floor(Date.now() / 300000), {cache: 'no-store'})
           .then(function (r) { return r.ok ? r.json() : null; }).then(function (j) { wk = j; }).catch(function () {}) : Promise.resolve();
@@ -7021,7 +7046,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 16:58 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 17:15 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
