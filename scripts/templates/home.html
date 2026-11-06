@@ -23,6 +23,14 @@
       {% if t.sub %}<small>{{ t.sub }}</small>{% endif %}
     </a>
     {% endfor %}
+    {% if track.clv and track.clv.pct is not none %}
+    <a class="trk-tile" href="history.html">
+      <em>BEAT THE CLOSE</em>
+      <b>{{ track.clv.pct }}%</b>
+      <span class="{{ 'stat-good' if track.clv.pct > 50 else 'stat-bad' }}">of lines that moved went our way</span>
+      <small>{{ track.clv.toward }} toward, {{ track.clv.away }} against. At the line we picked, those hit {{ track.clv.toward_hit }}% vs {{ track.clv.away_hit }}%: the edge is in betting early, before the line moves.</small>
+    </a>
+    {% endif %}
   </div>
   <p class="trk-all">Green = at or above {{ track.need }}%, what a pick has to hit to break even on a PrizePicks 5- or 6-pick flex. Players who don't play are voided, like the books do.</p>
 </section>

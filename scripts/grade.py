@@ -407,4 +407,50 @@ def home_track_record() -> dict:
                   "rn": len(gr), "rh": sum(1 for g in gr if g["our_correct"]),
                   "rrate": round(100 * sum(1 for g in gr if g["our_correct"]) / len(gr)) if gr else None,
                   "sub": (f"moneyline, spread & total; the betting favorite won {fav} of {len(ml)} games" if ml else None)})
-    return {"tiles": tiles, "need": PP_BREAK_EVEN, "recent_weeks": sorted(recent)}
+    try:
+        clv = clv_summary()
+    except Exception:  # noqa: BLE001
+        clv = None
+    return {"tiles": tiles, "need": PP_BREAK_EVEN, "recent_weeks": sorted(recent), "clv": clv}
+
+
+def pick_records() -> dict:
+    """Real hit rate by stat and side ("receptions|OVER"), voids excluded: the honest number shown on cards in
+    place of the model's confidence, which has run far ahead of reality (60-80% claimed, about 50% hit)."""
+    out = {}
+    for p in predictions.load_predictions().values():
+        if not p.get("graded") or p.get("hit") is None or p.get("void") or p["stat"] == "any_td" \
+                or p.get("market_line") is None or p.get("call") not in ("OVER", "UNDER"):
+            continue
+        r = out.setdefault(f"{p['stat']}|{p['call']}", {"n": 0, "h": 0})
+        r["n"] += 1
+        r["h"] += bool(p["hit"])
+    for r in out.values():
+        r["rate"] = round(100 * r["h"] / r["n"], 1)
+    return out
+
+
+def clv_summary() -> dict:
+    """Beat the closing line: for picks whose line moved between our pick (frozen at the first line seen) and the
+    last line seen before kickoff, how often it moved our way -- and how picks did at the line we picked."""
+    import line_movement_log
+    log = line_movement_log._load()
+    c = {"toward": [0, 0, 0], "away": [0, 0, 0], "flat": [0, 0, 0]}   # [picks, graded, hits]
+    for p in predictions.load_predictions().values():
+        if p.get("market_line") is None or p.get("call") not in ("OVER", "UNDER") or p["stat"] == "any_td":
+            continue
+        e = log.get(f"{p['player']}|{p['stat']}|{p['week']}")
+        if not e:
+            continue
+        mv = e["current_line"] - p["market_line"]
+        k = "flat" if mv == 0 else ("toward" if (mv > 0) == (p["call"] == "OVER") else "away")
+        c[k][0] += 1
+        if p.get("graded") and p.get("hit") is not None and not p.get("void"):
+            c[k][1] += 1
+            c[k][2] += bool(p["hit"])
+    moved = c["toward"][0] + c["away"][0]
+    rate = lambda k: round(100 * c[k][2] / c[k][1], 1) if c[k][1] else None  # noqa: E731
+    return {"moved": moved, "toward": c["toward"][0], "away": c["away"][0],
+            "pct": round(100 * c["toward"][0] / moved) if moved else None,
+            "toward_hit": rate("toward"), "away_hit": rate("away"), "flat_hit": rate("flat"),
+            "toward_n": c["toward"][1], "away_n": c["away"][1]}

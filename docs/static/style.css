@@ -585,7 +585,7 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .trk-h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 12px; }
 .trk-h span { font-family: var(--pixel); font-size: 0.9rem; color: var(--yellow); }
 .trk-h a { font-size: 1.1rem; color: var(--text-dim); } .trk-h a:hover { color: var(--yellow); }
-.trk-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.trk-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
 .trk-tile { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 3px solid var(--line); background: var(--bg-card); color: var(--text); text-decoration: none; }
 .trk-tile:hover { border-color: var(--yellow); box-shadow: 4px 4px 0 var(--pink); }
 .trk-tile em { font-style: normal; font-family: var(--pixel); font-size: 0.6rem; color: var(--cyan); line-height: 1.5; }

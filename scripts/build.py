@@ -135,6 +135,12 @@ def build(oddsapi_mode: str | None = None):
     env = Environment(loader=FileSystemLoader(str(TEMPLATES)))
     env.globals["line_chart"] = svgchart.line_chart
     env.globals["bar_chart_with_threshold"] = svgchart.bar_chart_with_threshold
+    try:  # honest numbers for the cards: real hit rate by stat & side, and how lines moved after our picks
+        env.globals["pick_rec"] = grade.pick_records()
+        env.globals["clv"] = grade.clv_summary()
+    except Exception as e:  # noqa: BLE001
+        print(f"Pick records failed: {e}")
+        env.globals["pick_rec"], env.globals["clv"] = {}, None
     build_time = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     # A URL-safe, ever-changing value tied to this exact build -- used
     # as a query-string cache-buster on static/style.css so every real

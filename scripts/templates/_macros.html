@@ -26,8 +26,15 @@
             <div class="num stat-good">{{ p.model_prob }}%</div>
             <div class="label">MODEL PROBABILITY (1+ TD)</div>
           {% else %}
+            {% set card_stat = {'passing.html': 'passing_yards', 'receiving.html': 'receiving_yards', 'receptions.html': 'receptions', 'rushing.html': 'rushing_yards'}.get(link) %}
+            {% set pr = (pick_rec or {}).get((card_stat or '') ~ '|' ~ (p.call or '')) %}
+            {% if pr and pr.n >= 20 %}
+            <div class="num stat-{{ 'good' if pr.rate >= 54.2 else 'bad' }}">{{ pr.rate }}%</div>
+            <div class="label">REAL HIT RATE &middot; {{ p.call }}S LIKE THIS ({{ pr.h }}/{{ pr.n }}) &middot; MODEL SAYS {{ p.confidence }}%</div>
+            {% else %}
             <div class="num stat-good">{{ p.confidence }}%</div>
             <div class="label">CONFIDENCE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
+            {% endif %}
           {% endif %}
         {% elif is_td %}
           <div class="num stat-{{ 'good' if p.edge > 0 else 'bad' }}">{{ '+' if p.edge > 0 }}{{ p.edge }}pp</div>
@@ -113,6 +120,9 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at {{ lm.opening_line }}, now {{ lm.current_line }}
       ({{ '+' if lm.change > 0 }}{{ lm.change }} since {{ lm.opening_seen_at }}).
+      {% if p is defined and p.call in ('OVER', 'UNDER') %}{% set ours = (lm.change > 0) == (p.call == 'OVER') %}
+      <b class="{{ 'stat-good' if ours else 'stat-bad' }}">{{ 'The market moved toward our pick.' if ours else 'The market moved against our pick.' }}</b>
+      {% if clv and clv.toward_hit is not none %}Picks the market moved toward have hit {{ clv.toward_hit }}% at the line we picked; against, {{ clv.away_hit }}%.{% endif %}{% endif %}
     </div>
     {% endif %}
     {% else %}
@@ -201,6 +211,9 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at {{ lm.opening_line }}, now {{ lm.current_line }}
       ({{ '+' if lm.change > 0 }}{{ lm.change }} since {{ lm.opening_seen_at }}).
+      {% if p is defined and p.call in ('OVER', 'UNDER') %}{% set ours = (lm.change > 0) == (p.call == 'OVER') %}
+      <b class="{{ 'stat-good' if ours else 'stat-bad' }}">{{ 'The market moved toward our pick.' if ours else 'The market moved against our pick.' }}</b>
+      {% if clv and clv.toward_hit is not none %}Picks the market moved toward have hit {{ clv.toward_hit }}% at the line we picked; against, {{ clv.away_hit }}%.{% endif %}{% endif %}
     </div>
     {% endif %}
     {% if next_game.projection.tier %}
