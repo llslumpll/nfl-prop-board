@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Receiving — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1794001436">
+  <link rel="stylesheet" href="static/style.css?v=1794002421">
 </head>
 <body>
   <header class="site-head">
@@ -2702,8 +2702,8 @@
     
     
     <div class="notice compact">
-      &#8646; Real line movement: opened at 28.5, now 49.5
-      (+21.0 since 2026-11-03 16:49 UTC).
+      &#8646; Real line movement: opened at 28.5, now 48.5
+      (+20.0 since 2026-11-03 16:49 UTC).
       
     </div>
     
@@ -4653,8 +4653,8 @@
     
     
     <div class="notice compact">
-      &#8646; Real line movement: opened at 71.5, now 76.5
-      (+5.0 since 2026-11-03 16:49 UTC).
+      &#8646; Real line movement: opened at 71.5, now 75.5
+      (+4.0 since 2026-11-03 16:49 UTC).
       
     </div>
     
@@ -7443,7 +7443,7 @@
       <td class="num stat-good">+7.3</td>
       <td>
         
-          <span class="num" title="Before matchup adjustment: 19.6 yds. Opponent's CIN allows 261.0 yds/game vs league avg 233.4 -> matchup factor 1.035x. Pace: 60.4 plays/game vs league avg 60.0 -> pace factor 1.002x. Environment: 22.0 implied pts vs league avg 23.0 -> environment factor 0.987x. Wind: 7.0 mph -> wind factor 1.0x">20.0</span> yds &middot; W10 vs CIN
+          <span class="num" title="Before matchup adjustment: 19.6 yds. Opponent's CIN allows 261.0 yds/game vs league avg 233.4 -> matchup factor 1.035x. Pace: 60.4 plays/game vs league avg 60.0 -> pace factor 1.002x. Environment: 22.0 implied pts vs league avg 23.0 -> environment factor 0.987x. Wind: weather unavailable -> wind factor 1.0x">20.0</span> yds &middot; W10 vs CIN
         
       </td>
       <td>
@@ -7634,7 +7634,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat,#gm-live') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -7721,6 +7721,7 @@
               el.hidden = false;
             });
             drawToday(d, wk);
+            try { window.dispatchEvent(new CustomEvent('pe-live', {detail: d})); } catch (e) {}  // Games page Live tab
             var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
             if (on && !timer) timer = setInterval(load, 60000);
             if (!on && timer) { clearInterval(timer); timer = null; }
@@ -7737,7 +7738,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 21:43 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 22:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

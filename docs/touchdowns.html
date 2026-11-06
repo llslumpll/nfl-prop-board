@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Touchdowns — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1794001436">
+  <link rel="stylesheet" href="static/style.css?v=1794002421">
 </head>
 <body>
   <header class="site-head">
@@ -2968,8 +2968,8 @@
     <tr>
       <td>Jahmyr Gibbs: 1+</td>
       
-        <td class="num stat-good">76&cent;</td>
-        <td class="num stat-good">78&cent;</td>
+        <td class="num stat-good">75&cent;</td>
+        <td class="num stat-good">77&cent;</td>
         <td class="num">0</td>
       
     </tr>
@@ -2977,7 +2977,7 @@
     <tr>
       <td>Bijan Robinson: 1+</td>
       
-        <td class="num stat-good">67&cent;</td>
+        <td class="num stat-good">68&cent;</td>
         <td class="num stat-good">69&cent;</td>
         <td class="num">0</td>
       
@@ -2986,8 +2986,8 @@
     <tr>
       <td>Kenneth Walker III: 1+</td>
       
-        <td class="num stat-good">65&cent;</td>
         <td class="num stat-good">66&cent;</td>
+        <td class="num stat-good">67&cent;</td>
         <td class="num">0</td>
       
     </tr>
@@ -3104,7 +3104,7 @@
       <td>Amon-Ra St. Brown: 1+</td>
       
         <td class="num stat-good">50&cent;</td>
-        <td class="num stat-good">51&cent;</td>
+        <td class="num stat-good">52&cent;</td>
         <td class="num">0</td>
       
     </tr>
@@ -3137,19 +3137,19 @@
     </tr>
     
     <tr>
-      <td>Devin Singletary: 1+</td>
+      <td>Bucky Irving: 1+</td>
       
-        <td class="num stat-good">45&cent;</td>
         <td class="num stat-good">46&cent;</td>
+        <td class="num stat-good">48&cent;</td>
         <td class="num">0</td>
       
     </tr>
     
     <tr>
-      <td>Bucky Irving: 1+</td>
+      <td>Devin Singletary: 1+</td>
       
+        <td class="num stat-good">45&cent;</td>
         <td class="num stat-good">46&cent;</td>
-        <td class="num stat-good">47&cent;</td>
         <td class="num">0</td>
       
     </tr>
@@ -3299,6 +3299,15 @@
     </tr>
     
     <tr>
+      <td>Justin Jefferson: 1+</td>
+      
+        <td class="num stat-good">36&cent;</td>
+        <td class="num stat-good">38&cent;</td>
+        <td class="num">0</td>
+      
+    </tr>
+    
+    <tr>
       <td>Nico Collins: 1+</td>
       
         <td class="num stat-good">36&cent;</td>
@@ -3309,15 +3318,6 @@
     
     <tr>
       <td>Colston Loveland: 1+</td>
-      
-        <td class="num stat-good">36&cent;</td>
-        <td class="num stat-good">37&cent;</td>
-        <td class="num">0</td>
-      
-    </tr>
-    
-    <tr>
-      <td>Justin Jefferson: 1+</td>
       
         <td class="num stat-good">36&cent;</td>
         <td class="num stat-good">37&cent;</td>
@@ -3403,7 +3403,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat,#gm-live') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -3490,6 +3490,7 @@
               el.hidden = false;
             });
             drawToday(d, wk);
+            try { window.dispatchEvent(new CustomEvent('pe-live', {detail: d})); } catch (e) {}  // Games page Live tab
             var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
             if (on && !timer) timer = setInterval(load, 60000);
             if (!on && timer) { clearInterval(timer); timer = null; }
@@ -3506,7 +3507,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 21:43 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 22:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
