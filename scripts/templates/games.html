@@ -106,6 +106,7 @@
     <div class="gm-prop{% if p.graded and p.hit is not none %} {{ 'gm-hit' if p.hit else 'gm-miss' }}{% endif %}">
       <a href="{{ p.page }}">{{ p.player }}</a> <span class="dim">{{ p.team }}</span>
       {% if p.best5 %}<span class="gm-b5">BEST 5</span>{% endif %}
+      {% set prv = (pick_rec or {}).get(p.stat ~ '|' ~ p.call) %}{% if prv and prv.n >= 30 and prv.rate >= 54.2 %}<span class="pk-tag pk-proven">&#9733; PROVEN</span>{% endif %}
       <span class="gm-call {{ 'stat-good' if p.call == 'OVER' else 'stat-bad' }}">{{ p.call }} {{ p.market_line }} {{ p.short }}</span>
       <span class="dim">proj {{ p.projected }}</span>
       {% if p.graded and p.hit is not none %}<i>{{ '&#10004;'|safe if p.hit else '&#10008;'|safe }} {{ p.actual }}</i>{% elif p.void %}<i class="dim">void</i>{% endif %}

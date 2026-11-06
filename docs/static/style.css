@@ -658,3 +658,9 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .nw-play b { font-weight: 400; color: var(--green); } .nw-play i { font-style: normal; }
 .nw-play.gm-hit i { color: var(--green); } .nw-play.gm-miss i { color: var(--red); }
 .nw-play .lv { flex-basis: 100%; margin: 4px 0 0; }
+/* Pick tags: PROVEN kinds of picks, and where the line stands vs when we picked (Nov 2026) */
+.pk-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; }
+.pk-tag { font-size: 0.95rem; padding: 2px 8px; border: 2px solid currentColor; white-space: nowrap; }
+.pk-proven { color: #0a0a0f; background: var(--green); border-color: var(--green); }
+.pk-early { color: var(--cyan); } .pk-toward { color: var(--green); } .pk-against { color: var(--red); }
+.gm-prop .pk-tag { font-size: 0.85rem; padding: 1px 6px; }
