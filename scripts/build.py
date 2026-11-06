@@ -57,6 +57,7 @@ NAV_PAGES = [
     ("history", "History", "history.html"),
 ]
 COMING_SOON: list[str] = []
+ML_MODEL_W = 0.25  # moneyline: weight on our own win probability vs FanDuel's no-vig price (see _freeze_team_predictions)
 
 
 def refresh_data():
@@ -258,16 +259,24 @@ def build(oddsapi_mode: str | None = None):
             if odds.get("moneyline"):
                 fd_home_prob = oddsapi_client.no_vig_pair(
                     odds["moneyline"]["home_price"], odds["moneyline"]["away_price"])[0]
-                our_call = "HOME" if proj["home_win_prob"] >= 50 else "AWAY"
+                # Blended with FanDuel's no-vig price (Nov 6 2026): when the model alone disagreed with the
+                # betting favorite it was right 4 of 18 times; 25% model / 75% market went 45/73 (61.6%) on the
+                # graded weeks vs 37/73 for the model alone. Same lesson as the NBA site: the price knows a lot.
+                win_p = (round(ML_MODEL_W * proj["home_win_prob"] + (1 - ML_MODEL_W) * 100 * fd_home_prob, 1)
+                         if fd_home_prob is not None else proj["home_win_prob"])
+                our_call = "HOME" if win_p >= 50 else "AWAY"
                 if team_predictions.freeze_team_prediction(
-                    away, home, week, "team_moneyline", our_call, proj["home_win_prob"],
+                    away, home, week, "team_moneyline", our_call, win_p,
                     round(fd_home_prob * 100, 1) if fd_home_prob is not None else None,
                     "fanduel", signals, reason=reason,
                 ):
                     frozen += 1
 
             if odds.get("spread"):
-                our_call = "HOME" if proj["projected_margin"] >= 0 else "AWAY"
+                # FIXED Nov 6 2026: the call used to ignore the line (HOME whenever we had the home team winning,
+                # even when it was giving 11.5). Home covers when margin + home spread > 0, so we take HOME when
+                # our projected margin beats the spread. Re-checked on the graded weeks: 37/72 vs 30/74.
+                our_call = "HOME" if proj["projected_margin"] + odds["spread"]["home_point"] > 0 else "AWAY"
                 spread_reason = reason
                 key_note = dataio.spread_key_number_flag(odds["spread"]["home_point"])
                 if key_note:
@@ -289,6 +298,15 @@ def build(oddsapi_mode: str | None = None):
 
     import polars as pl  # noqa: E402 (local import: build.py doesn't otherwise touch polars directly)
     n_team_frozen = _freeze_team_predictions()
+    try:  # open picks frozen under the old spread / moneyline rules get the fixed rule, before kickoff only
+        _sched_fix, _now_fix = dataio.load_schedule(), datetime.now(timezone.utc)
+
+        def _started(p):
+            ko = line_attach._kickoff_utc(p["home_team"], p["week"], _sched_fix)
+            return ko is None or _now_fix >= ko
+        print(f"Game-pick rule fix: {team_predictions.apply_rule_fix(_started, ML_MODEL_W)} open pick(s) re-decided")
+    except Exception as e:  # noqa: BLE001
+        print(f"Game-pick rule fix failed: {e}")
     print(f"Froze {n_team_frozen} new team-market prediction(s) this build "
           f"({len(team_predictions.load_team_predictions())} total on file).")
 

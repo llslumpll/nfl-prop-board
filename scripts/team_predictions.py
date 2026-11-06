@@ -74,10 +74,34 @@ def freeze_team_prediction(
         "market_line": market_line, "market_source": market_source,
         "signals": signals or {}, "reason": reason,
         "frozen_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "result": None, "graded": False,
+        "result": None, "graded": False, "rule": "2026-11-06",
     }
     save_team_predictions(preds)
     return True
+
+
+def apply_rule_fix(is_started, ml_model_w: float) -> int:
+    """One-time, before kickoff only (Nov 6 2026): open spread picks frozen under the old rule (which ignored the
+    spread) and open moneyline picks (model only) are re-decided from their own stored numbers -- the spread
+    side from margin + line, the moneyline from the 25/75 model/market blend. Started or graded games are never
+    touched; each record is fixed once and marked rule="2026-11-06"."""
+    preds = load_team_predictions()
+    n = 0
+    for p in preds.values():
+        if p.get("graded") or p.get("rule") or p["market"] not in ("team_spread", "team_moneyline") \
+                or p.get("market_line") is None or is_started(p):
+            continue
+        if p["market"] == "team_spread":
+            p["our_call"] = "HOME" if p["our_value"] + p["market_line"] > 0 else "AWAY"
+        else:
+            p["model_value"] = p["our_value"]
+            p["our_value"] = round(ml_model_w * p["our_value"] + (1 - ml_model_w) * p["market_line"], 1)
+            p["our_call"] = "HOME" if p["our_value"] >= 50 else "AWAY"
+        p["rule"] = "2026-11-06"
+        n += 1
+    if n:
+        save_team_predictions(preds)
+    return n
 
 
 def ungraded_predictions() -> list[dict]:
@@ -192,7 +216,8 @@ def _edge(p: dict) -> float | None:
     if p["market"] == "team_moneyline":
         return round(abs(p["our_value"] - p["market_line"]), 1)
     if p["market"] == "team_spread":
-        return round(abs(p["our_value"] - p["market_line"]), 1)
+        # market_line is the HOME spread (-11.5 = home favored by 11.5), so the market's margin is -line
+        return round(abs(p["our_value"] + p["market_line"]), 1)
     if p["market"] == "team_total":
         return round(abs(p["our_value"] - p["market_line"]), 1)
     return None
