@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}Picks — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Picks</h1>
+<p class="lede">Every player-prop pick in one place: pick a stat, then <b>Best 5</b>, <b>Best Value</b>, or every
+  <b>projection</b>, grouped by game in kickoff order. Touchdowns keep <a href="touchdowns.html">their own page</a>.</p>
+
+<div class="pk-bar" role="tablist">
+  {% for key, label in stat_tabs %}
+  <button class="pk-stat-btn{% if loop.first %} active{% endif %}" data-pk="{{ key }}" role="tab">{{ label }}</button>
+  {% endfor %}
+</div>
+
+{% for key, label in stat_tabs %}
+<section class="pk-stat{% if not loop.first %} hidden{% endif %}" data-pk-panel="{{ key }}" data-src="picks-{{ key }}.html">
+  <p class="small dim pk-wait">Loading {{ label|lower }}&hellip;</p>
+</section>
+{% endfor %}
+
+<script>
+(function () {
+  // Each stat's board is its own file (~0.2 MB), fetched the first time its tab opens, so Picks opens fast.
+  var btns = document.querySelectorAll('.pk-stat-btn'), panels = document.querySelectorAll('.pk-stat');
+  function load(p) {
+    if (p.getAttribute('data-loaded')) return;
+    p.setAttribute('data-loaded', '1');
+    fetch(p.getAttribute('data-src') + '?t=' + Math.floor(Date.now() / 60000)).then(function (r) { if (!r.ok) throw r.status; return r.text(); })
+      .then(function (html) { p.innerHTML = html; if (window.peLiveRefresh) window.peLiveRefresh(); })
+      .catch(function () { p.removeAttribute('data-loaded'); p.innerHTML = '<p class="small dim">Couldn\'t load this board. <a href="" onclick="location.reload();return false;">Reload</a></p>'; });
+  }
+  function show(key) {
+    btns.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-pk') === key); });
+    panels.forEach(function (p) { var on = p.getAttribute('data-pk-panel') === key; p.classList.toggle('hidden', !on); if (on) load(p); });
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-pk')); history.replaceState(null, '', '#' + b.getAttribute('data-pk')); }); });
+  // Best 5 / Best Value / Projections inside each board
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('.pk-stat .game-picker > .game-tab[data-game-idx]'); if (!t) return;
+    var box = t.closest('.pk-stat'), idx = t.getAttribute('data-game-idx');
+    box.querySelectorAll('.game-picker > .game-tab[data-game-idx]').forEach(function (x) { x.classList.toggle('active', x === t); });
+    box.querySelectorAll('.game-panel[data-game-panel]').forEach(function (p) { p.classList.toggle('hidden', p.getAttribute('data-game-panel') !== idx); });
+  });
+  var h = (location.hash || '').slice(1);
+  show(document.querySelector('[data-pk="' + h + '"]') ? h : btns[0].getAttribute('data-pk'));
+})();
+</script>
+{% endblock %}

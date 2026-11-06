@@ -753,3 +753,14 @@ table.stat-table tr:hover td { background: #172c52; }
   .sys-tagline { font-size: 0.95rem; letter-spacing: 1px; } h1 { font-size: 2.2rem; } .site-nav a { font-size: 1.15rem; min-width: 0; } }
 .gm-b5 { font-family: var(--sans); font-weight: 800; font-size: 0.7rem; letter-spacing: .5px; color: #0b162a; background: #fff; padding: 2px 6px; }
 @media (max-width: 760px) { body::before { opacity: 0.14; } }
+
+/* Picks tab (Nov 2026): stat bar + one board per stat */
+.pk-bar { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 18px; }
+.pk-stat-btn { font-family: var(--pixel); font-size: 1.5rem; padding: 6px 18px; border: 3px solid var(--line); background: #10203d; color: var(--text-dim); transform: skewX(-8deg); cursor: pointer; text-transform: uppercase; }
+.pk-stat-btn:hover { border-color: #fff; color: #fff; }
+.pk-stat-btn.active { background: var(--pink); border-color: #fff; color: #fff; box-shadow: 3px 3px 0 #5a1a00; }
+.pk-stat.hidden { display: none; }
+.pk-stat > h1 { display: none; }
+.pk-wait { padding: 30px 0; text-align: center; }
+@media (max-width: 640px) { .pk-stat-btn { font-size: 1.2rem; padding: 4px 12px; } }
+@media (max-width: 640px) { .pk-bar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .pk-stat-btn { text-align: center; } }

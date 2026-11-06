@@ -48,10 +48,7 @@ DATA_DIR = ROOT / "data"
 NAV_PAGES = [
     ("home", "Home", "index.html"),
     ("games", "Games", "games.html"),
-    ("passing", "Passing", "passing.html"),
-    ("receiving", "Receiving", "receiving.html"),
-    ("receptions", "Receptions", "receptions.html"),
-    ("rushing", "Rushing", "rushing.html"),
+    ("picks", "Picks", "picks.html"),
     ("touchdowns", "Touchdowns", "touchdowns.html"),
     ("parlays", "Parlays", "parlays.html"),
     ("history", "History", "history.html"),
@@ -82,8 +79,8 @@ def refresh_data():
 
 STAT_SHORT = {"passing_yards": "PASS YDS", "rushing_yards": "RUSH YDS", "receiving_yards": "REC YDS", "receptions": "REC",
               "any_td": "ANY TD"}
-STAT_PAGE = {"passing_yards": "passing.html", "rushing_yards": "rushing.html", "receiving_yards": "receiving.html",
-             "receptions": "receptions.html", "any_td": "touchdowns.html"}
+STAT_PAGE = {"passing_yards": "picks.html#passing", "rushing_yards": "picks.html#rushing",
+             "receiving_yards": "picks.html#receiving", "receptions": "picks.html#receptions", "any_td": "touchdowns.html"}
 
 
 def _games_page(fd_games) -> dict:
@@ -1214,6 +1211,17 @@ def build(oddsapi_mode: str | None = None):
         html = template.render(current_page=slug, **common, **ctx)
         (DOCS / filename).write_text(html)
         print(f"wrote {filename}")
+
+    # Picks tab (Nov 2026): passing / receiving / receptions / rushing on one page. Each stat's board (Best 5,
+    # Best Value, every projection by game in kickoff order) is its own small file, loaded when its tab opens.
+    pk_tabs = [("passing", "Passing"), ("receiving", "Receiving"), ("receptions", "Receptions"), ("rushing", "Rushing")]
+    frag = env.get_template("picks_fragment.html")
+    for i, (key, _label) in enumerate(pk_tabs):
+        _slug, _tpl, ctx = pages[f"{key}.html"]
+        (DOCS / f"picks-{key}.html").write_text(frag.render(current_page="picks", body_template=f"{key}_body.html",
+                                                             idx_base=(i + 1) * 10000, **common, **ctx))
+    (DOCS / "picks.html").write_text(env.get_template("picks.html").render(current_page="picks", stat_tabs=pk_tabs, **common))
+    print("wrote picks.html (+4 boards)")
 
     static_src = TEMPLATES.parent.parent / "docs" / "static"
     static_dst = DOCS / "static"

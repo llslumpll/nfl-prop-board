@@ -83,7 +83,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv],[data-lvg]') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg],.pk-stat') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -152,6 +152,7 @@
         today.hidden = false;
       }
       var wk = null, timer = null;
+      window.peLiveRefresh = function () { load(); };  // Picks boards load later
       function load() {
         var pw = today && !wk ? fetch('static/week.json?t=' + Math.floor(Date.now() / 300000), {cache: 'no-store'})
           .then(function (r) { return r.ok ? r.json() : null; }).then(function (j) { wk = j; }).catch(function () {}) : Promise.resolve();
