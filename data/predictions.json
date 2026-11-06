@@ -30722,8 +30722,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Deshaun Watson|passing_yards|9": {
@@ -30796,7 +30795,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Ladd McConkey|receiving_yards|9": {
@@ -30895,8 +30895,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Omar Cooper Jr.|receptions|9": {
@@ -31043,9 +31042,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Javonte Williams|rushing_yards|9": {
     "player": "Javonte Williams",
@@ -31279,9 +31276,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-04 16:50 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31519,10 +31514,10 @@
     "stat": "receptions",
     "projected": 1.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -3.3,
     "model_prob": null,
     "signals": {
       "opportunity_signal": true
@@ -31531,7 +31526,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-06 20:08 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-06 20:08 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyquan Thornton|receptions|9": {
     "player": "Tyquan Thornton",
@@ -31789,7 +31790,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Sione Vaki|rushing_yards|9": {
     "player": "Sione Vaki",
@@ -31838,9 +31842,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Blake Corum|rushing_yards|9": {
     "player": "Blake Corum",
@@ -31912,7 +31914,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Drew Lock|passing_yards|9": {
     "player": "Drew Lock",
@@ -31960,8 +31964,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Travis Kelce|receiving_yards|9": {
@@ -33539,7 +33542,11 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 54.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Gardner Minshew|any_td|9": {
     "player": "Gardner Minshew",
@@ -33609,7 +33616,11 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 60.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Drake Maye|any_td|9": {
     "player": "Drake Maye",
@@ -33847,7 +33858,11 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 49.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tee Higgins|any_td|9": {
     "player": "Tee Higgins",
@@ -33872,7 +33887,11 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 43.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyler Allgeier|any_td|9": {
     "player": "Tyler Allgeier",
@@ -33947,7 +33966,10 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 45.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Bo Nix|any_td|9": {
     "player": "Bo Nix",

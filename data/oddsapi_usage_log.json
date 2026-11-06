@@ -1154,6 +1154,13 @@
       "requests_used": 75,
       "requests_last": 4,
       "logged_at": "2026-11-05 20:55 UTC"
+    },
+    {
+      "call": "moneylines[bookmakers]",
+      "requests_remaining": 422,
+      "requests_used": 78,
+      "requests_last": 3,
+      "logged_at": "2026-11-06 20:08 UTC"
     }
   ]
 }
