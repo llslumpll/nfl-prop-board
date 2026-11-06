@@ -52,6 +52,14 @@ def grade_all() -> dict:
         player_rows = stats.filter(
             (pl.col("player_display_name") == p["player"]) & (pl.col("week") == p["week"])
         )
+        if player_rows.height == 0:
+            # Game is final but the player has no stat row that week: he didn't play. PrizePicks and the
+            # books void a prop for a player who doesn't play, so this is void too -- not a 0 that hands
+            # every UNDER a free win (and every OVER a loss). Fixed Nov 6 2026 (33 such picks had been graded).
+            p.update(actual=None, hit=None, void="did not play", graded=True,
+                     graded_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
+            newly_graded += 1
+            continue
         if p["stat"] == "any_td":
             # Touchdowns aren't a single load_stats() column -- real
             # actual is the sum of passing/rushing/receiving TDs for
@@ -85,10 +93,20 @@ def grade_all() -> dict:
         p["graded_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
         newly_graded += 1
 
-    if newly_graded:
+    # Picks graded before that fix: a player with no stat row that week is re-marked void (once).
+    played = {(r[0], r[1]) for r in stats.select("player_display_name", "week").iter_rows()}
+    finals = {(r[0], r[2]) for r in sched.filter(pl.col("result").is_not_null()).select("home_team", "away_team", "week").iter_rows()} | \
+             {(r[1], r[2]) for r in sched.filter(pl.col("result").is_not_null()).select("home_team", "away_team", "week").iter_rows()}
+    revoided = 0
+    for p in preds.values():
+        if p.get("graded") and not p.get("void") and (p["player"], p["week"]) not in played and (p["team"], p["week"]) in finals:
+            p.update(actual=None, hit=None, void="did not play")
+            revoided += 1
+
+    if newly_graded or revoided:
         predictions.save_predictions(preds)
 
-    return {"newly_graded": newly_graded, "total_pending": still_pending}
+    return {"newly_graded": newly_graded, "total_pending": still_pending, "voided_dnp": revoided}
 
 
 def accuracy_summary() -> dict:
