@@ -1219,6 +1219,11 @@ def build(oddsapi_mode: str | None = None):
         for f in static_src.glob("*"):
             shutil.copy(f, static_dst / f.name)
 
+    try:  # Discord alerts (alerts_nfl.py); needs the DISCORD_WEBHOOK secret, otherwise does nothing
+        import alerts_nfl
+        print(f"Alerts: {alerts_nfl.run(games_page.get('week'))}")
+    except Exception as e:  # noqa: BLE001
+        print(f"Alerts failed: {e}")
     print(f"Build complete at {build_time}")
 
 
