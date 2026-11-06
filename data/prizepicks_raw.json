@@ -89,8 +89,7 @@
       "receiving_yards": 43.5
     },
     "Makai Lemon": {
-      "receiving_yards": 39.5,
-      "receptions": 4.5
+      "receiving_yards": 39.5
     },
     "Dallas Goedert": {
       "receiving_yards": 35.5
@@ -114,6 +113,9 @@
     },
     "Gregory Desrosiers Jr.": {
       "rushing_yards": 9.5
+    },
+    "Theo Johnson": {
+      "receiving_yards": 8.5
     },
     "Eli Stowers": {
       "receiving_yards": 5.5
@@ -373,12 +375,12 @@
       "receptions": 2.5
     },
     "Blake Corum": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
       "receiving_yards": 48.5,
-      "receptions": 4
+      "receptions": 4.5
     },
     "Stefon Diggs": {
       "receiving_yards": 46.5,
@@ -420,7 +422,7 @@
       "rushing_yards": 7.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 83.5,
       "receptions": 6.5
     },
     "Javonte Williams": {
@@ -488,12 +490,12 @@
     "Dalton Schultz": {
       "receiving_yards": 33.5
     },
-    "Tre' Harris": {
-      "receiving_yards": 32.5,
-      "receptions": 2.5
-    },
     "Quentin Johnston": {
       "receiving_yards": 31.5,
+      "receptions": 2.5
+    },
+    "Tre' Harris": {
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
     "Marvin Harrison Jr.": {
@@ -583,11 +585,11 @@
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 246.5,
+      "passing_yards": 243.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 74.5,
       "receptions": 6.5
     },
     "George Kittle": {
@@ -595,7 +597,7 @@
       "receptions": 6
     },
     "Christian McCaffrey": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 39.5,
       "receptions": 5
     },
@@ -619,7 +621,8 @@
       "receptions": 2.5
     },
     "Michael Mayer": {
-      "receiving_yards": 29.5
+      "receiving_yards": 29.5,
+      "receptions": 3.5
     },
     "Jordan Watkins": {
       "receiving_yards": 23.5
@@ -702,7 +705,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 65.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Luther Burden III": {
       "receiving_yards": 65.5
@@ -712,14 +715,15 @@
       "receiving_yards": 20.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 5.5
     },
     "Emeka Egbuka": {
       "receiving_yards": 51.5,
       "receptions": 4
     },
     "Rome Odunze": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 48.5,
       "receptions": 3
     },
     "Chris Godwin Jr.": {
@@ -815,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7463,
-    "matched_props": 370,
-    "excluded_goblin_demon_lines": 6088,
+    "total_projections_returned": 7480,
+    "matched_props": 372,
+    "excluded_goblin_demon_lines": 6105,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -856,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-06T23:20:45.213038+00:00"
+  "fetched_at": "2026-11-06T23:40:40.889974+00:00"
 }

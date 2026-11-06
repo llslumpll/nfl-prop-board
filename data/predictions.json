@@ -30494,7 +30494,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Gardner Minshew II|passing_yards|8": {
     "player": "Gardner Minshew II",
@@ -30895,7 +30898,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Omar Cooper Jr.|receptions|9": {
@@ -31276,7 +31280,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-04 16:50 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31527,10 +31533,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-06 20:08 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-06 20:08 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31791,7 +31794,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -31961,8 +31963,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Travis Kelce|receiving_yards|9": {
@@ -33887,7 +33888,8 @@
     "market_prob": 43.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Tyler Allgeier|any_td|9": {
@@ -34294,7 +34296,6 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
