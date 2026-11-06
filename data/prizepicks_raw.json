@@ -302,12 +302,12 @@
       "receiving_yards": 59.5,
       "receptions": 5
     },
-    "Omar Cooper Jr.": {
-      "receiving_yards": 49.5
-    },
     "Adonai Mitchell": {
       "receiving_yards": 48.5,
       "receptions": 3.5
+    },
+    "Omar Cooper Jr.": {
+      "receiving_yards": 48.5
     },
     "Travis Kelce": {
       "receiving_yards": 45.5,
@@ -354,7 +354,7 @@
       "passing_yards": 252.5
     },
     "Jayden Daniels": {
-      "passing_yards": 212.5,
+      "passing_yards": 211.5,
       "rushing_yards": 37.5
     },
     "Puka Nacua": {
@@ -404,7 +404,7 @@
       "receiving_yards": 10.5
     },
     "John Bates": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Dak Prescott": {
       "passing_yards": 263.5,
@@ -556,7 +556,7 @@
       "receptions": 1.5
     },
     "AJ Barner": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Cooper Kupp": {
       "receiving_yards": 19.5
@@ -579,7 +579,7 @@
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
-      "receiving_yards": 76.5,
+      "receiving_yards": 75.5,
       "receptions": 6.5
     },
     "George Kittle": {
@@ -587,13 +587,13 @@
       "receptions": 6
     },
     "Christian McCaffrey": {
-      "rushing_yards": 60.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 40.5,
       "receptions": 5
     },
     "Kaelon Black": {
       "rushing_yards": 42.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Tre Tucker": {
       "receiving_yards": 37.5
@@ -625,7 +625,7 @@
       "receptions": 1.5
     },
     "Jack Bech": {
-      "receiving_yards": 13.5,
+      "receiving_yards": 14.5,
       "receptions": 1.5
     },
     "Kyle Juszczyk": {
@@ -691,8 +691,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 65.5,
-      "receiving_yards": 14.5,
-      "receptions": 2.5
+      "receiving_yards": 13.5
     },
     "Luther Burden III": {
       "receiving_yards": 65.5
@@ -726,13 +725,13 @@
     "Ted Hurst III": {
       "receiving_yards": 20.5
     },
+    "Roschon Johnson": {
+      "rushing_yards": 16.5,
+      "receiving_yards": 3.5
+    },
     "Kalif Raymond": {
       "receiving_yards": 15.5,
       "receptions": 2
-    },
-    "Roschon Johnson": {
-      "rushing_yards": 15.5,
-      "receiving_yards": 3.5
     },
     "Tez Johnson": {
       "receiving_yards": 14.5
@@ -806,8 +805,8 @@
     "total_leagues": 141,
     "nfl_league_id": "9",
     "total_projections_returned": 7229,
-    "matched_props": 366,
-    "excluded_goblin_demon_lines": 5863,
+    "matched_props": 365,
+    "excluded_goblin_demon_lines": 5865,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -846,5 +845,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-06T21:40:35.593233+00:00"
+  "fetched_at": "2026-11-06T21:44:09.614337+00:00"
 }
