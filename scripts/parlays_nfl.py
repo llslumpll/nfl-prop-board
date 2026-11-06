@@ -2,7 +2,7 @@
 The site's own weekly parlays, with units (rebuilt Nov 2026 to work like the NBA site's Parlays tab).
 
 Families
-  props  "Best props"     2, 3, 4 legs   player props (passing / rushing / receiving yards, receptions), the kinds of
+  props  "Safest props"   2, 3, 4 legs   player props (passing / rushing / receiving yards, receptions), the kinds of
                                          pick with the best real hit rate first (stat & side, graded history), then
                                          the model's confidence. Paid like a PrizePicks Power Play: 3x / 6x / 10x.
   value  "Good price"     2, 3 legs      only props whose kind of pick has actually hit above what that Power Play
@@ -45,7 +45,7 @@ PATH = Path(__file__).parent.parent / "data" / "parlays.json"
 SHORT = {"passing_yards": "PASS YDS", "rushing_yards": "RUSH YDS", "receiving_yards": "REC YDS", "receptions": "REC"}
 PP_POWER = {2: 3.0, 3: 6.0, 4: 10.0}            # PrizePicks Power Play payouts (prizepicks.com help center, Nov 2026)
 FAMILIES = [
-    ("props", "Best props", (2, 3, 4), "The player props with the best real track record for their kind of pick, one per game. Paid like a PrizePicks Power Play (3x, 6x, 10x)."),
+    ("props", "Safest props", (2, 3, 4), "The highest-chance player props on the board, one per game, like the NBA site. Chance = how often that kind of pick has really hit this season (NFL model confidence runs too high to trust on its own). Paid like a PrizePicks Power Play (3x, 6x, 10x)."),
     ("value", "Good price", (2, 3), "Only props whose kind of pick has actually hit above what a Power Play needs per leg (57.7% for 2, 55.0% for 3) over 30+ graded picks."),
     ("ml", "Moneyline", (2, 3, 4), "The most likely winners by our blended chance (25% model, 75% FanDuel's price), one per game, at FanDuel's real prices."),
     ("td", "Touchdowns", (1, 2, 3, 4), "Anytime touchdown scorers (rushing or receiving) with a Kalshi price. Legs where our chance beats the price come first; a player can be in more than one TD parlay."),

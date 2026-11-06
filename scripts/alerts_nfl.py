@@ -108,7 +108,7 @@ def sunday_card(week: int | None, now: datetime) -> list[tuple[str, str]]:
         out.append((f"card|{week}", "\n".join(lines + [SITE])))
     lines = [f"🎟️ **Week {week} parlays** (locked at first kickoff)"]
     pz = parlays_nfl.load().get(str(week), {})
-    names = {"props": "props", "value": "good-price props", "ml": "moneyline", "td": "touchdown"}
+    names = {"props": "safest props", "value": "good-price props", "ml": "moneyline", "td": "touchdown"}
     for pid in ("props-2", "value-2", "ml-2", "ml-3", "td-1", "td-2", "td-3", "td-4"):
         par = pz.get(pid)
         if par and par["status"] == "pending" and par.get("decimal"):
