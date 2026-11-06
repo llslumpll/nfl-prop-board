@@ -594,3 +594,56 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .trk-tile small { font-size: 1rem; color: var(--text-dim); line-height: 1.25; }
 .trk-all { margin: 10px 2px 0; font-size: 1rem; color: var(--text-dim); }
 @media (max-width: 900px) { .trk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* Games page (ported from the NBA site, Nov 2026) */
+.gm-rec { color: var(--text-dim); margin: 0 0 16px; } .gm-rec b { color: var(--cyan); font-weight: 400; }
+.gm-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 16px; }
+.gm-card { border: 3px solid var(--line); background: var(--bg-card); padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.gm-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.gm-teams { display: flex; align-items: center; gap: 8px; }
+.gm-at { font-family: var(--pixel); font-size: 0.7rem; color: var(--text-dim); }
+.gm-when { font-size: 1.2rem; color: var(--yellow); } .gm-when b { font-family: var(--pixel); font-size: 0.65rem; font-weight: 400; margin-right: 6px; }
+.gm-card em { font-style: normal; font-family: var(--pixel); font-size: 0.55rem; color: var(--cyan); display: block; margin-bottom: 4px; letter-spacing: 1px; }
+.gm-proj { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.gm-proj b { font-weight: 400; font-size: 1.15rem; color: #fff; }
+.gm-picks { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.gm-pick { border: 2px solid var(--line); padding: 8px; display: flex; flex-direction: column; gap: 2px; }
+.gm-pick b { font-weight: 400; font-size: 1.35rem; color: var(--yellow); }
+.gm-pick span { font-size: 0.95rem; color: var(--text-dim); }
+.gm-pick i, .gm-prop i { font-style: normal; font-size: 1rem; }
+.gm-hit { border-color: var(--green); } .gm-hit i { color: var(--green); }
+.gm-miss { border-color: var(--red); } .gm-miss i { color: var(--red); }
+.gm-inj span { display: block; font-size: 1rem; color: var(--text-dim); } .gm-inj b { color: var(--text); font-weight: 400; }
+.gm-props { border-top: 2px dashed var(--line); padding-top: 10px; }
+.gm-prop { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
+.gm-prop.gm-hit, .gm-prop.gm-miss { border-color: var(--line); }
+.gm-prop a { color: #fff; } .gm-prop .lv { flex-basis: 100%; margin: 4px 0 2px; }
+.gm-call { white-space: nowrap; }
+.gm-b5 { font-family: var(--pixel); font-size: 0.5rem; color: #0a0a0f; background: var(--cyan); padding: 3px 5px; }
+.lv-game { font-size: 1.15rem; gap: 8px; margin: 0; }
+.lv-game b { font-weight: 400; color: #fff; }
+.lv-in .lv-dot { background: var(--red); box-shadow: 0 0 6px var(--red); animation: lvblink 1.4s infinite; }
+@media (max-width: 520px) { .gm-grid { grid-template-columns: 1fr; } .gm-proj { grid-template-columns: 1fr; } }
+.gm-team { font-family: var(--pixel); font-size: 0.75rem; color: #fff; padding: 8px 10px; border: 2px solid rgba(255,255,255,0.35); text-shadow: 1px 1px 0 #000; }
+/* Parlays page (ported from the NBA site, Nov 2026) */
+.pz-rec { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0 0 18px; }
+.pz-rtile { border: 2px solid var(--line); background: var(--bg-card); padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; }
+.pz-rtile em, .pz-nums em { font-style: normal; font-family: var(--pixel); font-size: 0.5rem; color: var(--cyan); letter-spacing: 1px; }
+.pz-rtile b { font-family: var(--pixel); font-weight: 400; font-size: 1rem; color: #fff; }
+.pz-rtile span { font-size: 1rem; }
+.pz-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 16px; }
+.pz-card { border: 3px solid var(--line); background: var(--bg-card); padding: 14px 16px; display: flex; flex-direction: column; gap: 12px; }
+.pz-hit { border-color: var(--green); box-shadow: 4px 4px 0 var(--green); } .pz-miss { border-color: var(--red); opacity: 0.85; }
+.pz-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pz-name { font-family: var(--pixel); font-size: 0.7rem; color: var(--yellow); }
+.pz-state { font-size: 1rem; color: var(--text-dim); border: 2px solid var(--line); padding: 2px 8px; }
+.pz-hit .pz-state { color: var(--green); border-color: var(--green); } .pz-miss .pz-state { color: var(--red); border-color: var(--red); }
+.pz-nums { display: flex; flex-wrap: wrap; gap: 18px; }
+.pz-nums div { display: flex; flex-direction: column; gap: 2px; }
+.pz-nums b { font-weight: 400; font-size: 1.6rem; color: #fff; }
+.pz-legs { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+.pz-legs li { font-size: 1.15rem; } .pz-legs li b { font-weight: 400; color: #fff; display: block; }
+.pz-legs li span.dim { font-size: 1rem; }
+.pz-legs li i { font-style: normal; margin-left: 6px; } .pz-legs li.gm-hit i { color: var(--green); } .pz-legs li.gm-miss i { color: var(--red); }
+.pz-legs .lv { margin: 6px 0 0; }
+@media (max-width: 760px) { .pz-rec { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pz-grid { grid-template-columns: 1fr; } }

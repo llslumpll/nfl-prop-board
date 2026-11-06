@@ -47,7 +47,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv]') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg]') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -124,6 +124,14 @@
           .then(function (d) {
             if (!d || !d.games) return;
             document.querySelectorAll('[data-lv]').forEach(function (el) { card(el, d); });
+            document.querySelectorAll('[data-lvg]').forEach(function (el) {  // Games page: live score per game
+              var gid = (d.t || {})[el.getAttribute('data-lvg')], g = gid && d.games[gid];
+              if (!g || g.s === 'pre' || g.hs == null) { el.hidden = true; return; }
+              el.className = 'lv lv-game' + (g.s === 'in' ? ' lv-in' : '');
+              el.innerHTML = '<span class="lv-dot"></span><b></b>';
+              el.lastChild.textContent = g.a + ' ' + g['as'] + ' – ' + g.h + ' ' + g.hs + ' · ' + (g.s === 'post' ? 'FINAL' : g.d);
+              el.hidden = false;
+            });
             drawToday(d, wk);
             var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
             if (on && !timer) timer = setInterval(load, 60000);

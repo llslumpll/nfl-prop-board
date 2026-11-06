@@ -47,6 +47,7 @@ DATA_DIR = ROOT / "data"
 
 NAV_PAGES = [
     ("home", "Home", "index.html"),
+    ("games", "Games", "games.html"),
     ("moneyline", "Moneyline", "moneyline.html"),
     ("matchups", "Matchups", "matchups.html"),
     ("passing", "Passing", "passing.html"),
@@ -54,6 +55,7 @@ NAV_PAGES = [
     ("receptions", "Receptions", "receptions.html"),
     ("rushing", "Rushing", "rushing.html"),
     ("touchdowns", "Touchdowns", "touchdowns.html"),
+    ("parlays", "Parlays", "parlays.html"),
     ("history", "History", "history.html"),
 ]
 COMING_SOON: list[str] = []
@@ -78,6 +80,55 @@ def refresh_data():
     if not hist_path.exists():
         print("Fetching historical player stats (2023-2025, one-time pull)...")
         nfl.load_player_stats([2023, 2024, 2025]).write_parquet(hist_path)
+
+
+STAT_SHORT = {"passing_yards": "PASS YDS", "rushing_yards": "RUSH YDS", "receiving_yards": "REC YDS", "receptions": "REC",
+              "any_td": "ANY TD"}
+STAT_PAGE = {"passing_yards": "passing.html", "rushing_yards": "rushing.html", "receiving_yards": "receiving.html",
+             "receptions": "receptions.html", "any_td": "touchdowns.html"}
+
+
+def _games_page(fd_games) -> dict:
+    import polars as pl
+    sched = dataio.load_schedule()
+    open_weeks = sched.filter(pl.col("result").is_null())["week"].to_list()
+    if not open_weeks:
+        return {"week": None, "games": []}
+    week = min(open_weeks)
+    inj = dataio.load_injuries()
+    team_col = "team" if "team" in inj.columns else "club_code"
+    out_by_team = {}
+    if inj.height:
+        latest = inj.filter(pl.col("week") == inj["week"].max())
+        for r in latest.filter(pl.col("report_status").is_in(["Out", "Doubtful"])).iter_rows(named=True):
+            out_by_team.setdefault(r[team_col], []).append(
+                {"name": r.get("full_name") or r.get("player_name") or "?", "pos": r.get("position"),
+                 "status": r.get("report_status")})
+    preds = [p for p in predictions.load_predictions().values() if p["week"] == week]
+    games = []
+    for row in sched.filter(pl.col("week") == week).sort(["gameday", "gametime"]).iter_rows(named=True):
+        home, away = row["home_team"], row["away_team"]
+        props = []
+        for p in preds:
+            if p["team"] not in (home, away) or p.get("market_line") is None or p.get("call") not in ("OVER", "UNDER"):
+                continue
+            props.append({**p, "short": STAT_SHORT.get(p["stat"], p["stat"]), "page": STAT_PAGE.get(p["stat"], "index.html"),
+                          "best5": bool(p.get("best5_tags")),
+                          "gap": abs((p.get("projected") or 0) - p["market_line"]) / max(1.0, p["market_line"])})
+        props.sort(key=lambda p: (not p["best5"], -p["gap"]))
+        final = row.get("result") is not None
+        games.append({
+            "home": home, "away": away, "home_badge": dataio.team_badge(home), "away_badge": dataio.team_badge(away),
+            "start_str": dataio.format_game_time(row.get("gameday"), row.get("gametime")),
+            "final": final, "home_score": row.get("home_score"), "away_score": row.get("away_score"),
+            "proj": dataio.project_matchup(home, away),
+            "odds": oddsapi_client.odds_for_game(fd_games, home, away) or {},
+            "picks": team_predictions.predictions_for_game(home, away, week),
+            "injuries": {t: out_by_team.get(t, []) for t in (away, home)},
+            "props": props, "roof": (row.get("roof") or ""),
+        })
+    return {"week": week, "games": games,
+            "track": {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}}
 
 
 def build(oddsapi_mode: str | None = None):
@@ -341,6 +392,18 @@ def build(oddsapi_mode: str | None = None):
             "fanduel": fd_ml, "kalshi": kalshi_ml, "our_pick": our_pick,
         })
     print(f"Moneyline page: {len(moneyline_games)} real game(s) with a real FanDuel and/or Kalshi moneyline.")
+
+    # --- Games page (ported from the NBA site, Nov 2026): one card per game this week -- our projected
+    # score, FanDuel's lines, our three game picks, injuries, and every player pick in that game.
+    games_page = _games_page(fd_games)
+    print(f"Games page: week {games_page['week']}, {len(games_page['games'])} game(s).")
+    try:  # the site's own weekly parlays (parlays_nfl.py)
+        import parlays_nfl
+        print(f"Parlays: {parlays_nfl.sync(games_page['week'], fd_games)}")
+        parlays_page = parlays_nfl.page(games_page["week"])
+    except Exception as e:  # noqa: BLE001
+        print(f"Parlays failed: {type(e).__name__}: {e}")
+        parlays_page = {"week": games_page["week"], "now": [], "types": {}, "record": {}, "past": [], "error": str(e)[:200]}
 
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
@@ -966,6 +1029,16 @@ def build(oddsapi_mode: str | None = None):
                 "maturity": calibrate.maturity_summary(),
                 "track": grade.home_track_record(),
             },
+        ),
+        "games.html": (
+            "games",
+            "games.html",
+            {"gp": games_page},
+        ),
+        "parlays.html": (
+            "parlays",
+            "parlays.html",
+            {"pz": parlays_page},
         ),
         "moneyline.html": (
             "moneyline",

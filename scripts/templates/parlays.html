@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block title %}Parlays — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Week {{ pz.week }} parlays</h1>
+<p class="lede small">
+  The site's own parlays, four a week: 2- and 3-leg <b>moneyline</b> parlays from the most likely winners
+  (our blended win chance, 25% model and 75% FanDuel's price), and 2- and 3-leg <b>player-prop</b> parlays from
+  this week's Best 5. One leg per game. Each one is rebuilt from the best open picks until its first leg kicks
+  off, then it locks and gets graded like everything else. <b>Tracking only:</b> no stakes until a type proves
+  itself here.
+</p>
+{% if pz.error %}<div class="notice compact">Parlays didn't build this time: {{ pz.error }}</div>{% endif %}
+
+{% if pz.record %}
+<div class="pz-rec">
+  {% for pid, t in pz.types.items() %}{% set r = pz.record.get(pid) %}
+  <div class="pz-rtile"><em>{{ t[0]|upper }} &middot; {{ t[1] }}-LEG</em>
+    {% if r %}<b>{{ r.hits }}&ndash;{{ r.n - r.hits }}</b>{% if r.priced %}<span class="{{ 'stat-good' if r.units > 0 else 'stat-bad' if r.units < 0 }}">{{ '%+.2f'|format(r.units) }}U at FanDuel prices</span>{% endif %}
+    {% else %}<b>&ndash;</b><span class="dim">none graded yet</span>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if pz.now %}
+<div class="pz-grid">
+{% for par in pz.now %}
+<article class="pz-card pz-{{ par.status }}">
+  <header class="pz-head">
+    <span class="pz-name">{{ par.family|upper }} &middot; {{ par.size }}-LEG</span>
+    <span class="pz-state">{% if par.status == 'hit' %}&#10004; CASHED{% elif par.status == 'miss' %}&#10008; MISSED{% elif par.status == 'void' %}VOID{% elif par.locked %}LOCKED{% else %}UPDATES TILL KICKOFF{% endif %}</span>
+  </header>
+  <div class="pz-nums">
+    <div><em>CHANCE</em><b>{{ (par.chance * 100)|round(1) }}%</b></div>
+    {% if par.decimal %}<div><em>PAYS (FANDUEL)</em><b>{{ '%.2f'|format(par.decimal) }}x</b></div>{% endif %}
+    {% if par.family == 'Player props' %}<div><em>PER-LEG CHANCE</em><b>{{ (par.legs[0].chance * 100)|round|int }}%</b><span class="dim small">Best 5's real hit rate</span></div>{% endif %}
+  </div>
+  <ol class="pz-legs">
+    {% for l in par.legs %}
+    <li class="{{ 'gm-hit' if l.result == 'hit' else 'gm-miss' if l.result == 'miss' else '' }}">
+      <b>{{ l.label }}</b>
+      <span class="dim">{% if l.kind == 'ml' %}{{ l.away }} @ {{ l.home }} &middot; {{ (l.chance * 100)|round|int }}% to win{% if l.price is not none %} &middot; {{ '+' if l.price > 0 }}{{ l.price }}{% endif %}{% else %}{{ l.team }} &middot; proj {{ l.projected }}{% endif %}</span>
+      {% if l.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[l.result]|safe }}{% if l.actual is defined and l.actual is not none %} {{ l.actual }}{% endif %}</i>
+      {% elif l.kind == 'prop' %}<span class="lv" hidden data-lv="{{ l.team }}|{{ l.player }}|{{ l.stat }}|{{ l.line }}|{{ l.call }}|{{ l.projected }}"></span>
+      {% else %}<span class="lv lv-game" hidden data-lvg="{{ l.home }}"></span>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+</article>
+{% endfor %}
+</div>
+{% else %}
+<div class="notice">No parlays yet this week. They build once there are enough open picks with lines (player lines usually post later in the week).</div>
+{% endif %}
+
+{% if pz.past %}
+<h2>Graded parlays</h2>
+<div class="table-wrap"><div class="table-scroll">
+<table class="stat-table">
+  <thead><tr><th>Week</th><th>Parlay</th><th>Legs</th><th>Result</th></tr></thead>
+  <tbody>
+  {% for par in pz.past %}
+  <tr>
+    <td>W{{ par.week }}</td>
+    <td>{{ par.family }} &middot; {{ par.size }}-leg</td>
+    <td class="small">{% for l in par.legs %}<span class="{{ 'stat-good' if l.result == 'hit' else 'stat-bad' if l.result == 'miss' else 'dim' }}">{{ l.label }}</span>{% if not loop.last %} &middot; {% endif %}{% endfor %}</td>
+    <td class="{{ 'stat-good' if par.status == 'hit' else 'stat-bad' if par.status == 'miss' else '' }}">{{ par.status|upper }}{% if par.units is defined and par.units is not none %} ({{ '%+.2f'|format(par.units) }}U){% endif %}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div></div>
+{% endif %}
+{% endblock %}

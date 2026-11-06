@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Games — Prop Edge Board{% endblock %}
+{% block content %}
+<h1>Week {{ gp.week }} games</h1>
+<p class="lede small">
+  Every game this week on one card: our projected score next to FanDuel's lines, our three game picks
+  (moneyline, spread, total), who's out, and every player pick in that game. During games each card shows the
+  live score, and each player pick shows where it stands. Picks are frozen before kickoff and graded on
+  <a href="history.html">History</a>.
+</p>
+{% if gp.track %}
+<p class="gm-rec small">Game picks so far:
+  {% for m, label in [('team_moneyline', 'moneyline'), ('team_spread', 'spread'), ('team_total', 'total')] %}{% set t = gp.track[m] %}{% if t and t.n %}<b>{{ label }}</b> {{ t.our_hit_rate }}% of {{ t.n }}{% if not loop.last %} &middot; {% endif %}{% endif %}{% endfor %}.
+  Moneyline picks lean on FanDuel's price (25% our model, 75% the market); spread picks compare our projected
+  margin with the spread.</p>
+{% endif %}
+
+{% if gp.games %}
+<div class="gm-grid">
+{% for g in gp.games %}
+{% set ml = g.picks.team_moneyline %}{% set sp = g.picks.team_spread %}{% set tt = g.picks.team_total %}
+{% set o = g.odds %}
+<article class="gm-card" id="g-{{ g.away }}-{{ g.home }}">
+  <header class="gm-head">
+    <div class="gm-teams">
+      <span class="gm-team" style="background:{{ g.away_badge.color }}">{{ g.away }}</span>
+      <span class="gm-at">@</span>
+      <span class="gm-team" style="background:{{ g.home_badge.color }}">{{ g.home }}</span>
+    </div>
+    <div class="gm-when">
+      {% if g.final %}<b>FINAL</b> {{ g.away }} {{ g.away_score }} &ndash; {{ g.home }} {{ g.home_score }}
+      {% else %}{{ g.start_str or 'kickoff TBD' }}{% endif %}
+    </div>
+  </header>
+  {% if not g.final %}<span class="lv lv-game" hidden data-lvg="{{ g.home }}"></span>{% endif %}
+
+  <div class="gm-proj">
+    <div><em>OUR PROJECTION</em><b>{{ g.away }} {{ g.proj.projected_away_score }} &ndash; {{ g.home }} {{ g.proj.projected_home_score }}</b></div>
+    <div><em>FANDUEL</em><b>
+      {% if o.spread %}{{ g.home }} {{ o.spread.home_point_str }}{% else %}no spread{% endif %}
+      &middot; {% if o.total %}O/U {{ o.total.point }}{% else %}no total{% endif %}
+      {% if o.moneyline %}&middot; {{ g.away }} {{ o.moneyline.away_price_str }} / {{ g.home }} {{ o.moneyline.home_price_str }}{% endif %}
+    </b></div>
+  </div>
+
+  <div class="gm-picks">
+    {% for p, label in [(ml, 'MONEYLINE'), (sp, 'SPREAD'), (tt, 'TOTAL')] %}
+    <div class="gm-pick{% if p and p.graded and p.our_correct is not none %} {{ 'gm-hit' if p.our_correct else 'gm-miss' }}{% endif %}">
+      <em>{{ label }}</em>
+      {% if p %}
+        {% if p.market == 'team_moneyline' %}
+          {% set side = g.home if p.our_call == 'HOME' else g.away %}
+          {% set pct = p.our_value if p.our_call == 'HOME' else (100 - p.our_value)|round(1) %}
+          <b>{{ side }}</b><span>{{ pct }}% to win</span>
+        {% elif p.market == 'team_spread' %}
+          {% set side = g.home if p.our_call == 'HOME' else g.away %}
+          {% set pts = p.market_line if p.our_call == 'HOME' else -p.market_line %}
+          {% set m = p.our_value %}
+          <b>{{ side }} {{ '+' if pts > 0 }}{{ pts }}</b><span>{% if m|abs < 0.05 %}we have it even{% else %}we have {{ g.home if m > 0 else g.away }} by {{ m|abs|round(1) }}{% endif %}</span>
+        {% else %}
+          <b>{{ p.our_call }} {{ p.market_line }}</b><span>we project {{ p.our_value }}</span>
+        {% endif %}
+        {% if p.graded and p.our_correct is not none %}<i>{{ '&#10004; HIT'|safe if p.our_correct else '&#10008; MISS'|safe }}</i>{% endif %}
+      {% else %}<span class="dim">no line yet</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  {% set outs = g.injuries[g.away] + g.injuries[g.home] %}
+  {% if outs %}
+  <div class="gm-inj"><em>OUT / DOUBTFUL</em>
+    {% for t in [g.away, g.home] %}{% if g.injuries[t] %}<span><b>{{ t }}:</b> {% for i in g.injuries[t][:6] %}{{ i.name }}{% if i.pos %} ({{ i.pos }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% if g.injuries[t]|length > 6 %} +{{ g.injuries[t]|length - 6 }} more{% endif %}</span>{% endif %}{% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="gm-props">
+    <em>PLAYER PICKS IN THIS GAME{% if g.props %} ({{ g.props|length }}){% endif %}</em>
+    {% if g.props %}
+    {% for p in g.props[:10] %}
+    <div class="gm-prop{% if p.graded and p.hit is not none %} {{ 'gm-hit' if p.hit else 'gm-miss' }}{% endif %}">
+      <a href="{{ p.page }}">{{ p.player }}</a> <span class="dim">{{ p.team }}</span>
+      {% if p.best5 %}<span class="gm-b5">BEST 5</span>{% endif %}
+      <span class="gm-call {{ 'stat-good' if p.call == 'OVER' else 'stat-bad' }}">{{ p.call }} {{ p.market_line }} {{ p.short }}</span>
+      <span class="dim">proj {{ p.projected }}</span>
+      {% if p.graded and p.hit is not none %}<i>{{ '&#10004;'|safe if p.hit else '&#10008;'|safe }} {{ p.actual }}</i>{% elif p.void %}<i class="dim">void</i>{% endif %}
+      {% if p.stat != 'any_td' and not p.graded %}<span class="lv" hidden data-lv="{{ p.team }}|{{ p.player }}|{{ p.stat }}|{{ p.market_line }}|{{ p.call }}|{{ p.projected }}"></span>{% endif %}
+    </div>
+    {% endfor %}
+    {% if g.props|length > 10 %}<p class="small dim">+{{ g.props|length - 10 }} more on the stat pages</p>{% endif %}
+    {% else %}
+    <p class="small dim">No player lines yet. PrizePicks usually posts them later in the week; picks freeze as soon as a line appears.</p>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}
+</div>
+{% else %}
+<div class="notice">No games left on the schedule.</div>
+{% endif %}
+{% endblock %}
