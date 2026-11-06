@@ -33887,7 +33887,6 @@
     "market_prob": 43.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -33965,9 +33964,7 @@
     "graded_at": null,
     "market_prob": 45.0,
     "td_rule": "scoring",
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Bo Nix|any_td|9": {
     "player": "Bo Nix",
@@ -34295,7 +34292,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Devin Singletary|rushing_yards|9": {
     "player": "Devin Singletary",
