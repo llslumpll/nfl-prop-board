@@ -232,11 +232,25 @@ def build(oddsapi_mode: str | None = None):
     # roster rather than trusting an unverified league_id.
     print("Fetching PrizePicks player props...")
     pp_data = prizepicks_client.fetch_nfl_player_props()
-    if pp_data["error"]:
-        print(f"WARNING: PrizePicks fetch failed ({pp_data['error']}); site builds without it.")
+    _pp_now = datetime.now(timezone.utc)
+    if pp_data["error"] or not pp_data["props"]:
+        # PrizePicks sometimes doesn't answer GitHub's servers for a build or two ("no leagues returned"). Don't let
+        # one bad fetch blank every pick card: keep using the last good lines if they're under 36 hours old.
+        print(f"WARNING: PrizePicks fetch failed ({pp_data['error'] or 'no props'}).")
+        try:
+            _last = json.loads((DATA_DIR / "prizepicks_raw.json").read_text())
+            _at = _last.get("fetched_at")
+            _age = (_pp_now - datetime.fromisoformat(_at)).total_seconds() / 3600 if _at else 0
+            if _last.get("props") and not _last.get("error") and _age < 36:
+                print(f"Using the last good PrizePicks lines ({_at or 'previous build'}, {_age:.1f}h old).")
+                pp_data = _last
+        except Exception as e:  # noqa: BLE001
+            print(f"No usable earlier PrizePicks lines: {e}")
     else:
+        pp_data["fetched_at"] = _pp_now.isoformat()
         print(f"PrizePicks diagnostics: {pp_data['diagnostics']}")
-    (DATA_DIR / "prizepicks_raw.json").write_text(json.dumps(pp_data, indent=2))
+    if pp_data.get("fetched_at"):   # only good pulls overwrite the saved lines
+        (DATA_DIR / "prizepicks_raw.json").write_text(json.dumps(pp_data, indent=2))
     pp_props = pp_data["props"]
     pp_error = pp_data["error"]
 
