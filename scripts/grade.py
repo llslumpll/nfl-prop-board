@@ -370,3 +370,41 @@ def signal_effectiveness(min_sample: int = 20) -> list[dict]:
             "status": "active",
         })
     return results
+
+
+PP_BREAK_EVEN = 54.2  # % a pick has to hit to break even on a PrizePicks 5/6-pick flex
+
+
+def home_track_record() -> dict:
+    """Home "Track record" tiles (ported from the NBA site, Nov 2026): the lists the site stands behind first,
+    every pick and the game picks after, each all season and over the last two weeks. Voided picks (player
+    didn't play) never count."""
+    import team_predictions
+    preds = [p for p in predictions.load_predictions().values()
+             if p.get("graded") and p.get("hit") is not None and not p.get("void") and p["stat"] != "any_td"]
+    weeks = sorted({p["week"] for p in preds})
+    recent = set(weeks[-2:])
+
+    def tile(label, rows, sub=None):
+        n, h = len(rows), sum(1 for p in rows if p["hit"])
+        rn = [p for p in rows if p["week"] in recent]
+        rh = sum(1 for p in rn if p["hit"])
+        return {"label": label, "n": n, "hits": h, "rate": round(100 * h / n, 1) if n else None,
+                "rn": len(rn), "rh": rh, "rrate": round(100 * rh / len(rn)) if rn else None, "sub": sub}
+
+    tiles = [tile("Best 5", [p for p in preds if "highest_confidence" in (p.get("best5_tags") or [])]),
+             tile("Best Value", [p for p in preds if "best_value" in (p.get("best5_tags") or [])]),
+             tile("Every prop pick", preds, f"each player & stat with a line, not bets")]
+    games = [g for g in team_predictions.load_team_predictions().values()
+             if g.get("graded") and g.get("our_correct") is not None]
+    gw = sorted({g["week"] for g in games})
+    grecent = set(gw[-2:])
+    gn, gh = len(games), sum(1 for g in games if g["our_correct"])
+    gr = [g for g in games if g["week"] in grecent]
+    ml = [g for g in games if g["market"] == "team_moneyline"]
+    fav = sum(1 for g in ml if g.get("market_correct"))
+    tiles.append({"label": "Game picks", "n": gn, "hits": gh, "rate": round(100 * gh / gn, 1) if gn else None,
+                  "rn": len(gr), "rh": sum(1 for g in gr if g["our_correct"]),
+                  "rrate": round(100 * sum(1 for g in gr if g["our_correct"]) / len(gr)) if gr else None,
+                  "sub": (f"moneyline, spread & total; the betting favorite won {fav} of {len(ml)} games" if ml else None)})
+    return {"tiles": tiles, "need": PP_BREAK_EVEN, "recent_weeks": sorted(recent)}

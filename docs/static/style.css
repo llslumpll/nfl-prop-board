@@ -579,3 +579,18 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .tn-b5 { margin-top: 10px; font-size: 1.2rem; } .tn-b5 b { font-family: var(--pixel); font-size: 0.7rem; font-weight: 400; color: var(--cyan); margin-right: 8px; }
 .tn-foot { margin-top: 8px; font-size: 1rem; color: var(--text-dim); }
 @media (prefers-reduced-motion: reduce) { .tn-on { animation: none; } }
+
+/* Home: track record (ported from the NBA site, Nov 2026) */
+.trk { margin: 18px 0 8px; }
+.trk-h { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 12px; }
+.trk-h span { font-family: var(--pixel); font-size: 0.9rem; color: var(--yellow); }
+.trk-h a { font-size: 1.1rem; color: var(--text-dim); } .trk-h a:hover { color: var(--yellow); }
+.trk-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.trk-tile { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px; border: 3px solid var(--line); background: var(--bg-card); color: var(--text); text-decoration: none; }
+.trk-tile:hover { border-color: var(--yellow); box-shadow: 4px 4px 0 var(--pink); }
+.trk-tile em { font-style: normal; font-family: var(--pixel); font-size: 0.6rem; color: var(--cyan); line-height: 1.5; }
+.trk-tile b { font-family: var(--pixel); font-weight: 400; font-size: 1.3rem; color: #fff; line-height: 1.2; }
+.trk-tile > span { font-size: 1.5rem; }
+.trk-tile small { font-size: 1rem; color: var(--text-dim); line-height: 1.25; }
+.trk-all { margin: 10px 2px 0; font-size: 1rem; color: var(--text-dim); }
+@media (max-width: 900px) { .trk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

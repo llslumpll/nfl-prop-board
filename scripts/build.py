@@ -946,6 +946,7 @@ def build(oddsapi_mode: str | None = None):
                 "best5": best5_data,
                 "recent_results": grade.recent_graded_results(),
                 "maturity": calibrate.maturity_summary(),
+                "track": grade.home_track_record(),
             },
         ),
         "moneyline.html": (

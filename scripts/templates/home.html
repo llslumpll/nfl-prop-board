@@ -9,6 +9,25 @@
   the same way PrizePicks and the books handle it.
 </p>
 
+{# Track record: the lists the site stands behind first, every pick and game picks after (from the NBA site) #}
+{% if track and track.tiles %}
+<section class="trk">
+  <div class="trk-h"><span>TRACK RECORD</span><a href="history.html">full history &rarr;</a></div>
+  <div class="trk-grid">
+    {% for t in track.tiles %}
+    <a class="trk-tile" href="history.html">
+      <em>{{ t.label|upper }}</em>
+      <b>{{ t.hits }}&ndash;{{ t.n - t.hits }}</b>
+      {% if t.rate is not none %}<span class="{{ 'stat-good' if t.rate >= track.need else 'stat-bad' }}">{{ t.rate }}%</span>{% endif %}
+      {% if t.rn %}<small>last 2 weeks: {{ t.rh }}&ndash;{{ t.rn - t.rh }} ({{ t.rrate }}%)</small>{% endif %}
+      {% if t.sub %}<small>{{ t.sub }}</small>{% endif %}
+    </a>
+    {% endfor %}
+  </div>
+  <p class="trk-all">Green = at or above {{ track.need }}%, what a pick has to hit to break even on a PrizePicks 5- or 6-pick flex. Players who don't play are voided, like the books do.</p>
+</section>
+{% endif %}
+
 {# Today so far: every pick with a line this week, scored live from static/live.json once games kick off #}
 <section id="today" class="tonight" hidden aria-live="polite"></section>
 
