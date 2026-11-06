@@ -15,6 +15,32 @@
   margin with the spread.</p>
 {% endif %}
 
+{% set nw = gp.news %}
+{% if nw %}
+<section class="nw">
+  <div class="nw-h"><span>&#128680; INJURY NEWS PLAYS</span>
+    <span class="small">{% if nw.summary.n %}so far {{ nw.summary.hits }}/{{ nw.summary.n }} ({{ nw.summary.rate }}%){% else %}none graded yet{% endif %} &middot; tracking only, no stakes</span></div>
+  <p class="small dim">When a starter is ruled OUT, teammates who did better in this season's games without him get an OVER at the
+    line as it stood when the news hit. On the graded weeks, teammates of a ruled-out starter whose line hadn't moved went over 62% of the
+    time (38/61) &mdash; a small sample, so these are tracked before they're trusted.</p>
+  {% for ev in nw.events %}
+  <div class="nw-ev">
+    <div class="nw-out"><b>{{ ev.out }}</b>{% if ev.pos %} ({{ ev.pos }}){% endif %} &middot; {{ ev.team }} vs {{ ev.opp }} &middot; <span class="stat-bad">OUT</span> <span class="dim small">seen {{ ev.seen }}</span></div>
+    {% for b in ev.plays %}
+    <div class="nw-play{% if b.result == 'hit' %} gm-hit{% elif b.result == 'miss' %} gm-miss{% endif %}">
+      <b>{{ b.player }} OVER {{ b.line }} {{ b.short }}</b>
+      <span class="dim">{{ b.without }} without him vs {{ b.with }} with (+{{ b.bump }}%, {{ b.n_wo }} game{{ 's' if b.n_wo != 1 }})</span>
+      {% if b.moved %}<span class="small {{ 'stat-good' if b.now > b.line else 'stat-bad' }}">line now {{ b.now }}</span>{% elif b.now is defined %}<span class="small dim">line hasn't moved</span>{% endif %}
+      {% if b.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[b.result]|safe }}{% if b.actual is not none %} {{ b.actual }}{% endif %}</i>
+      {% else %}<span class="lv" hidden data-lv="{{ ev.team }}|{{ b.player }}|{{ b.stat }}|{{ b.line }}|OVER|{{ b.without }}"></span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  {% if not nw.events %}<p class="small dim">No news plays this week yet. They appear when a starter is ruled out and a teammate's line is up.{% if nw.quiet %} Ruled out so far with no qualifying teammate play: {% for e in nw.quiet %}{{ e.out }} ({{ e.team }}){% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>{% endif %}
+</section>
+{% endif %}
+
 {% if gp.games %}
 <div class="gm-grid">
 {% for g in gp.games %}

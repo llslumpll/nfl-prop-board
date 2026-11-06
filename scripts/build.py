@@ -127,7 +127,12 @@ def _games_page(fd_games) -> dict:
             "injuries": {t: out_by_team.get(t, []) for t in (away, home)},
             "props": props, "roof": (row.get("roof") or ""),
         })
-    return {"week": week, "games": games,
+    try:
+        import news_nfl
+        news = news_nfl.page(week)
+    except Exception:  # noqa: BLE001
+        news = None
+    return {"week": week, "games": games, "news": news,
             "track": {m: team_predictions.track_record(m) for m in team_predictions.MARKETS}}
 
 
@@ -742,6 +747,14 @@ def build(oddsapi_mode: str | None = None):
     n_lines_logged = line_movement_log.log_all(pp_props, _lm_players)
     print(f"Logged {n_lines_logged} real line observation(s) this build.")
 
+    try:  # injury-news plays (news_nfl.py): tracking only
+        import news_nfl
+        import polars as pl
+        _open = dataio.load_schedule().filter(pl.col("result").is_null())["week"].to_list()
+        print(f"News plays: {news_nfl.sync(min(_open) if _open else None, pp_props)}")
+    except Exception as e:  # noqa: BLE001
+        print(f"News plays failed: {type(e).__name__}: {e}")
+
     # Apply the SAME Vegas-implied environment factors computed above to
     # every stat page's "next game" projection, so Matchups and the
     # individual stat pages never silently disagree on the same
@@ -1223,6 +1236,13 @@ if __name__ == "__main__":
             refresh_data()
         except Exception as e:
             print(f"WARNING: live data refresh failed ({e}); building from cached data.")
+
+    else:
+        try:  # odds refreshes: keep the injury report fresh Thu-Sun for injury-news plays (news_nfl.py)
+            import news_nfl
+            print(f"Injury report: {news_nfl.refresh_injuries()}")
+        except Exception as e:  # noqa: BLE001
+            print(f"Injury report refresh failed: {e}")
 
     # invalidate dataio's in-memory cache in case refresh_data ran
     dataio._stats_cache = None

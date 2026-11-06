@@ -647,3 +647,14 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .pz-legs li i { font-style: normal; margin-left: 6px; } .pz-legs li.gm-hit i { color: var(--green); } .pz-legs li.gm-miss i { color: var(--red); }
 .pz-legs .lv { margin: 6px 0 0; }
 @media (max-width: 760px) { .pz-rec { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pz-grid { grid-template-columns: 1fr; } }
+
+/* Injury-news plays (ported from the NBA site, Nov 2026) */
+.nw { border: 3px solid var(--red); background: var(--bg-card); padding: 14px 16px; margin: 0 0 18px; }
+.nw-h { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 12px; }
+.nw-h span:first-child { font-family: var(--pixel); font-size: 0.75rem; color: var(--red); }
+.nw-ev { border-top: 2px dashed var(--line); padding-top: 8px; margin-top: 10px; }
+.nw-out { font-size: 1.2rem; } .nw-out b { color: #fff; font-weight: 400; }
+.nw-play { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; padding: 6px 0 6px 14px; font-size: 1.1rem; }
+.nw-play b { font-weight: 400; color: var(--green); } .nw-play i { font-style: normal; }
+.nw-play.gm-hit i { color: var(--green); } .nw-play.gm-miss i { color: var(--red); }
+.nw-play .lv { flex-basis: 100%; margin: 4px 0 0; }
