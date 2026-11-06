@@ -39,7 +39,7 @@ jobs:
 
       - name: Refresh odds only (no nflreadpy pull)
         run: python scripts/build.py --no-fetch
-                env:
+        env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Commit and push if changed
