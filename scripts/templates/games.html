@@ -14,8 +14,10 @@
   <div class="gpk-tags">
     {% if p.good %}<span class="gp-chip">GOOD PRICE</span>{% endif %}
     {% if p.market != 'moneyline' and not p.weight %}<span class="pk-tag">LEAN</span>{% endif %}
+    {% if p.reason %}<button class="why-btn" type="button" onclick="this.closest('.gpk').classList.toggle('gpk-open'); this.classList.toggle('open')">why</button>{% endif %}
     {% if p.result %}<span class="pk-tag {{ 'pk-proven' if p.result == 'hit' else 'pk-weak' }}">{{ '&#10004; HIT'|safe if p.result == 'hit' else '&#10008; MISS'|safe }}</span>{% elif p.locked %}<span class="pk-tag">&#128274; KICKED OFF</span>{% else %}<span class="pk-tag">&#10052; FROZEN</span>{% endif %}
   </div>
+  {% if p.reason %}<p class="gpk-reason">{{ p.reason }}</p>{% endif %}
 </div>
 {% endmacro %}
 {% macro plist(rows, empty) %}{% if rows %}<div class="gpk-list">{% for p in rows %}{{ gpick(p) }}{% endfor %}</div>{% else %}<p class="notice compact">{{ empty }}</p>{% endif %}{% endmacro %}
@@ -125,6 +127,119 @@
 {% endif %}
 
 <section data-gp="all"{% if x %} hidden{% endif %}>
+{% set nw = gp.news %}
+{% if nw %}
+<section class="nw">
+  <div class="nw-h"><span>&#128680; INJURY NEWS PLAYS</span>
+    <span class="small">{% if nw.summary.n %}so far {{ nw.summary.hits }}/{{ nw.summary.n }} ({{ nw.summary.rate }}%){% else %}none graded yet{% endif %} &middot; tracking only, no stakes</span></div>
+  <p class="small dim">When a starter is ruled OUT, teammates who did better in this season's games without him get an <span class="c-over">OVER</span> at the
+    line as it stood when the news hit. On the graded weeks, teammates of a ruled-out starter whose line hadn't moved went over 62% of the
+    time (38/61) &mdash; a small sample, so these are tracked before they're trusted.</p>
+  {% for ev in nw.events %}
+  <div class="nw-ev">
+    <div class="nw-out"><b>{{ ev.out }}</b>{% if ev.pos %} ({{ ev.pos }}){% endif %} &middot; {{ ev.team }} vs {{ ev.opp }} &middot; <span class="stat-bad">OUT</span> <span class="dim small">seen {{ ev.seen }}</span></div>
+    {% for b in ev.plays %}
+    <div class="nw-play{% if b.result == 'hit' %} gm-hit{% elif b.result == 'miss' %} gm-miss{% endif %}">
+      <b>{{ b.player }} <span class="c-over">OVER</span> {{ b.line }} {{ b.short }}</b>
+      <span class="dim">{{ b.without }} without him vs {{ b.with }} with (+{{ b.bump }}%, {{ b.n_wo }} game{{ 's' if b.n_wo != 1 }})</span>
+      {% if b.moved %}<span class="small {{ 'stat-good' if b.now > b.line else 'stat-bad' }}">line now {{ b.now }}</span>{% elif b.now is defined %}<span class="small dim">line hasn't moved</span>{% endif %}
+      {% if b.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[b.result]|safe }}{% if b.actual is not none %} {{ b.actual }}{% endif %}</i>
+      {% else %}<span class="lv" hidden data-lv="{{ ev.team }}|{{ b.player }}|{{ b.stat }}|{{ b.line }}|OVER|{{ b.without }}"></span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  {% if not nw.events %}<p class="small dim">No news plays this week yet. They appear when a starter is ruled out and a teammate's line is up.{% if nw.quiet %} Ruled out so far with no qualifying teammate play: {% for e in nw.quiet %}{{ e.out }} ({{ e.team }}){% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>{% endif %}
+</section>
+{% endif %}
+
+{% if gp.games %}
+<div class="gm-grid">
+{% for g in gp.games %}
+{% set ml = g.picks.team_moneyline %}{% set sp = g.picks.team_spread %}{% set tt = g.picks.team_total %}
+{% set o = g.odds %}
+<article class="gm-card" id="g-{{ g.away }}-{{ g.home }}">
+  <header class="gm-head">
+    <div class="gm-teams">
+      <span class="gm-team" style="background:{{ g.away_badge.color }}">{{ g.away }}</span>
+      <span class="gm-at">@</span>
+      <span class="gm-team" style="background:{{ g.home_badge.color }}">{{ g.home }}</span>
+    </div>
+    <div class="gm-when">
+      {% if g.final %}<b>FINAL</b> {{ g.away }} {{ g.away_score }} &ndash; {{ g.home }} {{ g.home_score }}
+      {% else %}{{ g.start_str or 'kickoff TBD' }}{% endif %}
+    </div>
+  </header>
+  {% if not g.final %}<span class="lv lv-game" hidden data-lvg="{{ g.home }}"></span>{% endif %}
+
+  <div class="gm-proj">
+    <div><em>OUR PROJECTION</em><b>{{ g.away }} {{ g.proj.projected_away_score }} &ndash; {{ g.home }} {{ g.proj.projected_home_score }}</b></div>
+    <div><em>FANDUEL</em><b>
+      {% if o.spread %}{{ g.home }} {{ o.spread.home_point_str }}{% else %}no spread{% endif %}
+      &middot; {% if o.total %}O/U {{ o.total.point }}{% else %}no total{% endif %}
+      {% if o.moneyline %}&middot; {{ g.away }} {{ o.moneyline.away_price_str }} / {{ g.home }} {{ o.moneyline.home_price_str }}{% endif %}
+    </b></div>
+  </div>
+
+  <div class="gm-picks">
+    {% for p, label in [(ml, 'MONEYLINE'), (sp, 'SPREAD'), (tt, 'TOTAL')] %}
+    <div class="gm-pick{% if p and p.graded and p.our_correct is not none %} {{ 'gm-hit' if p.our_correct else 'gm-miss' }}{% endif %}">
+      <em>{{ label }}</em>
+      {% if p %}
+        {% if p.market == 'team_moneyline' %}
+          {% set side = g.home if p.our_call == 'HOME' else g.away %}
+          {% set pct = p.our_value if p.our_call == 'HOME' else (100 - p.our_value)|round(1) %}
+          <b>{{ side }}</b><span>{{ pct }}% to win</span>
+        {% elif p.market == 'team_spread' %}
+          {% set side = g.home if p.our_call == 'HOME' else g.away %}
+          {% set pts = p.market_line if p.our_call == 'HOME' else -p.market_line %}
+          {% set m = p.our_value %}
+          <b>{{ side }} {{ '+' if pts > 0 }}{{ pts }}</b><span>{% if m|abs < 0.05 %}we have it even{% else %}we have {{ g.home if m > 0 else g.away }} by {{ m|abs|round(1) }}{% endif %}</span>
+        {% else %}
+          <b><span class="{{ 'c-over' if p.our_call == 'OVER' else 'c-under' }}">{{ p.our_call }}</span> {{ p.market_line }}</b><span>we project {{ p.our_value }}</span>
+        {% endif %}
+        {% if p.graded and p.our_correct is not none %}<i>{{ '&#10004; HIT'|safe if p.our_correct else '&#10008; MISS'|safe }}</i>{% endif %}
+      {% else %}<span class="dim">no line yet</span>{% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+  {% set _r = (ml or sp or tt) %}{% if _r and _r.reason %}
+  <details class="gm-why"><summary>WHY THESE PICKS</summary><p>{{ _r.reason }}</p></details>
+  {% endif %}
+
+  {% set outs = g.injuries[g.away] + g.injuries[g.home] %}
+  {% if outs %}
+  <div class="gm-inj"><em>OUT / DOUBTFUL</em>
+    {% for t in [g.away, g.home] %}{% if g.injuries[t] %}<span><b>{{ t }}:</b> {% for i in g.injuries[t][:6] %}{{ i.name }}{% if i.pos %} ({{ i.pos }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% if g.injuries[t]|length > 6 %} +{{ g.injuries[t]|length - 6 }} more{% endif %}</span>{% endif %}{% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="gm-props">
+    <em>PLAYER PICKS IN THIS GAME{% if g.props %} ({{ g.props|length }}){% endif %}</em>
+    {% if g.props %}
+    {% for p in g.props[:10] %}
+    <div class="gm-prop{% if p.graded and p.hit is not none %} {{ 'gm-hit' if p.hit else 'gm-miss' }}{% endif %}">
+      <a href="{{ p.page }}">{{ p.player }}</a> <span class="dim">{{ p.team }}</span>
+      {% if p.best5 %}<span class="gm-b5">BEST 5</span>{% endif %}
+      {% set prv = (pick_rec or {}).get(p.stat ~ '|' ~ p.call) %}{% if prv and prv.n >= 30 and prv.rate >= 54.2 %}<span class="pk-tag pk-proven">&#9733; PROVEN</span>{% elif prv and prv.n >= 100 and prv.rate <= 45 %}<span class="pk-tag pk-weak">&#9888; WEAK</span>{% endif %}
+      <span class="gm-call {{ 'stat-good' if p.call == 'OVER' else 'stat-bad' }}">{{ p.call }} {{ p.market_line }} {{ p.short }}</span>
+      <span class="dim">proj {{ p.projected }}</span>
+      {% if p.graded and p.hit is not none %}<i>{{ '&#10004;'|safe if p.hit else '&#10008;'|safe }} {{ p.actual }}</i>{% elif p.void %}<i class="dim">void</i>{% endif %}
+      {% if p.stat != 'any_td' and not p.graded %}<span class="lv" hidden data-lv="{{ p.team }}|{{ p.player }}|{{ p.stat }}|{{ p.market_line }}|{{ p.call }}|{{ p.projected }}"></span>{% endif %}
+    </div>
+    {% endfor %}
+    {% if g.props|length > 10 %}<p class="small dim">+{{ g.props|length - 10 }} more on the stat pages</p>{% endif %}
+    {% else %}
+    <p class="small dim">No player lines yet. PrizePicks usually posts them later in the week; picks freeze as soon as a line appears.</p>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}
+</div>
+{% else %}
+<div class="notice">No games left on the schedule.</div>
+{% endif %}
 </section>
 <script>
 (function () {

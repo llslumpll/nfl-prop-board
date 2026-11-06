@@ -851,3 +851,9 @@ table.stat-table tr:hover td { background: #172c52; }
 .gl-bad { border-left-color: var(--red); } .gl-bad span { color: var(--red); }
 @media (max-width: 900px) { .gm-board { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gpk { grid-template-columns: minmax(0, 1fr) 90px 110px; } .gpk-tags { grid-column: 1 / -1; justify-content: flex-start; } }
 @media (max-width: 520px) { .gpk { grid-template-columns: 1fr 1fr; } .gpk-l { grid-column: 1 / -1; } .gpk-pick { font-size: 1.6rem; } .gm-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+/* Games: the written reasoning behind each game pick */
+.gpk-reason { display: none; grid-column: 1 / -1; margin: 4px 0 0; padding-top: 8px; border-top: 2px dashed #24406e; font-size: 0.9rem; color: var(--text); }
+.gpk-open .gpk-reason { display: block; }
+.gm-why { margin: 8px 0; }
+.gm-why summary { cursor: pointer; font-family: var(--sans); font-weight: 800; font-size: 0.75rem; letter-spacing: 1px; color: var(--yellow); }
+.gm-why p { margin: 6px 0 0; font-size: 0.9rem; }
