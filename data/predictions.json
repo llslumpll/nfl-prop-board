@@ -2259,11 +2259,12 @@
     "edge": 50.5,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 5,
+    "actual": 2,
     "hit": true,
     "graded_at": "2026-09-18 13:23 UTC",
     "model_prob": 94.5,
-    "market_prob": 44.0
+    "market_prob": 44.0,
+    "td_rule": "scoring"
   },
   "Trevor Lawrence|any_td|2": {
     "player": "Trevor Lawrence",
@@ -2281,7 +2282,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Bryce Young|any_td|2": {
     "player": "Bryce Young",
@@ -2297,9 +2299,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Caleb Williams|any_td|2": {
     "player": "Caleb Williams",
@@ -2317,7 +2320,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Kirk Cousins|any_td|2": {
     "player": "Kirk Cousins",
@@ -2333,9 +2337,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Derrick Henry|any_td|2": {
     "player": "Derrick Henry",
@@ -2353,7 +2358,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Carson Wentz|any_td|2": {
     "player": "Carson Wentz",
@@ -2371,7 +2377,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "David Montgomery|any_td|2": {
     "player": "David Montgomery",
@@ -2389,7 +2396,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "D'Andre Swift|any_td|2": {
     "player": "D'Andre Swift",
@@ -2407,7 +2415,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jalen Hurts|any_td|2": {
     "player": "Jalen Hurts",
@@ -2423,9 +2432,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Brock Purdy|any_td|2": {
     "player": "Brock Purdy",
@@ -2441,9 +2451,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jaxson Dart|any_td|2": {
     "player": "Jaxson Dart",
@@ -2461,7 +2472,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 13:48 UTC"
+    "graded_at": "2026-09-22 13:48 UTC",
+    "td_rule": "scoring"
   },
   "Tyler Shough|any_td|2": {
     "player": "Tyler Shough",
@@ -2477,9 +2489,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Dak Prescott|any_td|2": {
     "player": "Dak Prescott",
@@ -2495,9 +2508,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jared Goff|any_td|2": {
     "player": "Jared Goff",
@@ -2513,9 +2527,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-18 13:23 UTC"
+    "graded_at": "2026-09-18 13:23 UTC",
+    "td_rule": "scoring"
   },
   "Dallas Goedert|any_td|2": {
     "player": "Dallas Goedert",
@@ -2533,7 +2548,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|2": {
     "player": "Lamar Jackson",
@@ -2549,9 +2565,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jonathan Taylor|any_td|2": {
     "player": "Jonathan Taylor",
@@ -2569,7 +2586,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jordan Love|any_td|2": {
     "player": "Jordan Love",
@@ -2585,9 +2603,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Justin Jefferson|any_td|2": {
     "player": "Justin Jefferson",
@@ -2605,7 +2624,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Chuba Hubbard|any_td|2": {
     "player": "Chuba Hubbard",
@@ -2623,7 +2643,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Amon-Ra St. Brown|any_td|2": {
     "player": "Amon-Ra St. Brown",
@@ -2643,7 +2664,8 @@
     "hit": true,
     "graded_at": "2026-09-18 13:23 UTC",
     "model_prob": 59.3,
-    "market_prob": 38.0
+    "market_prob": 38.0,
+    "td_rule": "scoring"
   },
   "Javonte Williams|any_td|2": {
     "player": "Javonte Williams",
@@ -2661,7 +2683,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Isaiah Likely|any_td|2": {
     "player": "Isaiah Likely",
@@ -2682,7 +2705,8 @@
     "graded_at": "2026-09-22 13:48 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Christian Watson|any_td|2": {
     "player": "Christian Watson",
@@ -2700,7 +2724,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jahmyr Gibbs|any_td|2": {
     "player": "Jahmyr Gibbs",
@@ -2720,7 +2745,8 @@
     "hit": true,
     "graded_at": "2026-09-18 13:23 UTC",
     "model_prob": 69.9,
-    "market_prob": 63.0
+    "market_prob": 63.0,
+    "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|2": {
     "player": "C.J. Stroud",
@@ -2738,7 +2764,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jalen Coker|any_td|2": {
     "player": "Jalen Coker",
@@ -2756,7 +2783,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|2": {
     "player": "Jayden Daniels",
@@ -2772,9 +2800,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Ashton Jeanty|any_td|2": {
     "player": "Ashton Jeanty",
@@ -2792,7 +2821,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Aaron Rodgers|any_td|2": {
     "player": "Aaron Rodgers",
@@ -2810,7 +2840,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Mike Evans|any_td|2": {
     "player": "Mike Evans",
@@ -2828,7 +2859,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Stefon Diggs|any_td|2": {
     "player": "Stefon Diggs",
@@ -2846,7 +2878,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Demarcus Robinson|any_td|2": {
     "player": "Demarcus Robinson",
@@ -2864,7 +2897,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Jacoby Brissett|any_td|2": {
     "player": "Jacoby Brissett",
@@ -2880,9 +2914,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Aaron Jones|any_td|2": {
     "player": "Aaron Jones",
@@ -2900,7 +2935,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Deshaun Watson|any_td|2": {
     "player": "Deshaun Watson",
@@ -2916,9 +2952,10 @@
     "edge": null,
     "frozen_at": "2026-09-14 19:33 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Cooper Rush|any_td|2": {
     "player": "Cooper Rush",
@@ -2936,7 +2973,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "DJ Moore|any_td|2": {
     "player": "DJ Moore",
@@ -2956,7 +2994,8 @@
     "hit": false,
     "graded_at": "2026-09-18 13:23 UTC",
     "model_prob": 39.3,
-    "market_prob": 33.0
+    "market_prob": 33.0,
+    "td_rule": "scoring"
   },
   "Mike Gesicki|any_td|2": {
     "player": "Mike Gesicki",
@@ -3099,9 +3138,10 @@
     "edge": null,
     "frozen_at": "2026-09-15 14:10 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "Kenneth Walker III|any_td|2": {
     "player": "Kenneth Walker III",
@@ -3119,7 +3159,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-22 00:09 UTC"
+    "graded_at": "2026-09-22 00:09 UTC",
+    "td_rule": "scoring"
   },
   "James Cook III|rushing_yards|2": {
     "player": "James Cook III",
@@ -4812,7 +4853,8 @@
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jared Goff|any_td|3": {
     "player": "Jared Goff",
@@ -4828,12 +4870,13 @@
     "edge": null,
     "frozen_at": "2026-09-18 13:23 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Amon-Ra St. Brown|any_td|3": {
     "player": "Amon-Ra St. Brown",
@@ -4854,7 +4897,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jahmyr Gibbs|any_td|3": {
     "player": "Jahmyr Gibbs",
@@ -4872,7 +4916,8 @@
     "graded": true,
     "actual": 3,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Parker Washington|receiving_yards|2": {
     "player": "Parker Washington",
@@ -5626,9 +5671,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Bryce Young|any_td|3": {
     "player": "Bryce Young",
@@ -5644,9 +5690,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Caleb Williams|any_td|3": {
     "player": "Caleb Williams",
@@ -5681,12 +5728,13 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Kirk Cousins|any_td|3": {
     "player": "Kirk Cousins",
@@ -5702,9 +5750,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Derrick Henry|any_td|3": {
     "player": "Derrick Henry",
@@ -5722,7 +5771,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Carson Wentz|any_td|3": {
     "player": "Carson Wentz",
@@ -5757,9 +5807,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "David Montgomery|any_td|3": {
     "player": "David Montgomery",
@@ -5777,7 +5828,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "D'Andre Swift|any_td|3": {
     "player": "D'Andre Swift",
@@ -5795,7 +5847,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-29 15:21 UTC"
+    "graded_at": "2026-09-29 15:21 UTC",
+    "td_rule": "scoring"
   },
   "Jalen Hurts|any_td|3": {
     "player": "Jalen Hurts",
@@ -5817,7 +5870,8 @@
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Brock Purdy|any_td|3": {
     "player": "Brock Purdy",
@@ -5833,12 +5887,13 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Tyler Shough|any_td|3": {
     "player": "Tyler Shough",
@@ -5854,9 +5909,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Drew Lock|any_td|3": {
     "player": "Drew Lock",
@@ -5893,7 +5949,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Dallas Goedert|any_td|3": {
     "player": "Dallas Goedert",
@@ -5928,9 +5985,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Jonathan Taylor|any_td|3": {
     "player": "Jonathan Taylor",
@@ -5951,7 +6009,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jordan Love|any_td|3": {
     "player": "Jordan Love",
@@ -5967,9 +6026,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-25 05:40 UTC"
+    "graded_at": "2026-09-25 05:40 UTC",
+    "td_rule": "scoring"
   },
   "Justin Jefferson|any_td|3": {
     "player": "Justin Jefferson",
@@ -5987,7 +6047,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Chuba Hubbard|any_td|3": {
     "player": "Chuba Hubbard",
@@ -6005,7 +6066,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Javonte Williams|any_td|3": {
     "player": "Javonte Williams",
@@ -6023,7 +6085,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Christian Watson|any_td|3": {
     "player": "Christian Watson",
@@ -6041,7 +6104,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-25 05:40 UTC"
+    "graded_at": "2026-09-25 05:40 UTC",
+    "td_rule": "scoring"
   },
   "Kenneth Walker III|any_td|3": {
     "player": "Kenneth Walker III",
@@ -6059,7 +6123,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|3": {
     "player": "C.J. Stroud",
@@ -6075,9 +6140,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 00:10 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Jalen Coker|any_td|3": {
     "player": "Jalen Coker",
@@ -6095,7 +6161,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|3": {
     "player": "Jayden Daniels",
@@ -6428,7 +6495,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Darren Waller|any_td|3": {
     "player": "Darren Waller",
@@ -6446,7 +6514,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Christian McCaffrey|any_td|3": {
     "player": "Christian McCaffrey",
@@ -6464,7 +6533,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Deshaun Watson|any_td|3": {
     "player": "Deshaun Watson",
@@ -6480,9 +6550,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 01:35 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Cody White|any_td|3": {
     "player": "Cody White",
@@ -6500,7 +6571,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "CeeDee Lamb|any_td|3": {
     "player": "CeeDee Lamb",
@@ -6521,7 +6593,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Joe Burrow|any_td|3": {
     "player": "Joe Burrow",
@@ -6537,9 +6610,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 01:35 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Ja'Marr Chase|any_td|3": {
     "player": "Ja'Marr Chase",
@@ -6560,7 +6634,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jake Ferguson|any_td|3": {
     "player": "Jake Ferguson",
@@ -6578,7 +6653,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Cam Ward|any_td|3": {
     "player": "Cam Ward",
@@ -6594,9 +6670,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 01:35 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Mike Gesicki|any_td|3": {
     "player": "Mike Gesicki",
@@ -6617,7 +6694,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Devin Singletary|any_td|2": {
     "player": "Devin Singletary",
@@ -6640,7 +6718,8 @@
     "market_prob": 10.0,
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Nico Collins|any_td|3": {
     "player": "Nico Collins",
@@ -6696,7 +6775,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-22 13:48 UTC"
+    "graded_at": "2026-09-22 13:48 UTC",
+    "td_rule": "scoring"
   },
   "Kendre Miller|any_td|3": {
     "player": "Kendre Miller",
@@ -6714,7 +6794,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Zay Flowers|any_td|3": {
     "player": "Zay Flowers",
@@ -6732,7 +6813,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Jahdae Walker|any_td|3": {
     "player": "Jahdae Walker",
@@ -6774,7 +6856,8 @@
     "market_prob": 38.0,
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Kyle Juszczyk|any_td|3": {
     "player": "Kyle Juszczyk",
@@ -6792,7 +6875,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Travis Kelce|any_td|3": {
     "player": "Travis Kelce",
@@ -6813,7 +6897,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Geno Smith|any_td|3": {
     "player": "Geno Smith",
@@ -6829,9 +6914,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 01:35 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Marcus Mariota|any_td|3": {
     "player": "Marcus Mariota",
@@ -6847,9 +6933,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 01:35 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Michael Penix Jr.|passing_yards|3": {
     "player": "Michael Penix Jr.",
@@ -7054,9 +7141,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 13:49 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "Davante Adams|any_td|3": {
     "player": "Davante Adams",
@@ -7077,7 +7165,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jacoby Brissett|any_td|3": {
     "player": "Jacoby Brissett",
@@ -7093,9 +7182,10 @@
     "edge": null,
     "frozen_at": "2026-09-22 13:49 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-09-28 05:02 UTC"
+    "graded_at": "2026-09-28 05:02 UTC",
+    "td_rule": "scoring"
   },
   "George Kittle|any_td|3": {
     "player": "George Kittle",
@@ -7116,7 +7206,8 @@
     "graded_at": "2026-09-28 05:02 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Justin Herbert|passing_yards|3": {
     "player": "Justin Herbert",
@@ -9052,9 +9143,10 @@
     "signals": {},
     "frozen_at": "2026-09-25 05:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Bijan Robinson|any_td|4": {
     "player": "Bijan Robinson",
@@ -9081,7 +9173,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jalen Hurts|passing_yards|3": {
     "player": "Jalen Hurts",
@@ -10118,9 +10211,10 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Brock Purdy|any_td|4": {
     "player": "Brock Purdy",
@@ -10140,12 +10234,13 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Tyler Shough|any_td|4": {
     "player": "Tyler Shough",
@@ -10166,12 +10261,13 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Drew Lock|any_td|4": {
     "player": "Drew Lock",
@@ -10210,12 +10306,13 @@
     "signals": {},
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-02 15:23 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Kirk Cousins|any_td|4": {
     "player": "Kirk Cousins",
@@ -10233,9 +10330,10 @@
     "signals": {},
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Geno Smith|any_td|4": {
     "player": "Geno Smith",
@@ -10253,9 +10351,10 @@
     "signals": {},
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Marcus Mariota|any_td|4": {
     "player": "Marcus Mariota",
@@ -10280,7 +10379,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jacoby Brissett|any_td|4": {
     "player": "Jacoby Brissett",
@@ -10301,9 +10401,10 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Joe Burrow|any_td|4": {
     "player": "Joe Burrow",
@@ -10324,12 +10425,13 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Trevor Lawrence|any_td|4": {
     "player": "Trevor Lawrence",
@@ -10347,9 +10449,10 @@
     "signals": {},
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Jahmyr Gibbs|any_td|4": {
     "player": "Jahmyr Gibbs",
@@ -10377,7 +10480,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Bo Nix|any_td|4": {
     "player": "Bo Nix",
@@ -10397,9 +10501,10 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Matthew Stafford|any_td|4": {
     "player": "Matthew Stafford",
@@ -10422,7 +10527,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Derrick Henry|any_td|4": {
     "player": "Derrick Henry",
@@ -10449,7 +10555,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jared Goff|any_td|4": {
     "player": "Jared Goff",
@@ -10467,12 +10574,13 @@
     "signals": {},
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "George Kittle|any_td|4": {
     "player": "George Kittle",
@@ -10499,7 +10607,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Deshaun Watson|any_td|4": {
     "player": "Deshaun Watson",
@@ -10521,12 +10630,13 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-02 15:23 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Patrick Mahomes|any_td|4": {
     "player": "Patrick Mahomes",
@@ -10547,9 +10657,10 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|4": {
     "player": "Lamar Jackson",
@@ -10569,13 +10680,14 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Josh Allen|any_td|4": {
     "player": "Josh Allen",
@@ -10597,13 +10709,14 @@
     },
     "frozen_at": "2026-09-28 05:02 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Noah Fant|any_td|4": {
     "player": "Noah Fant",
@@ -10658,7 +10771,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Kenneth Walker III|any_td|4": {
     "player": "Kenneth Walker III",
@@ -10687,7 +10801,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jaxon Smith-Njigba|any_td|4": {
     "player": "Jaxon Smith-Njigba",
@@ -10716,7 +10831,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Harold Fannin Jr.|any_td|4": {
     "player": "Harold Fannin Jr.",
@@ -10743,7 +10859,8 @@
     "graded_at": "2026-10-02 15:23 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Nico Collins|any_td|4": {
     "player": "Nico Collins",
@@ -10768,7 +10885,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jordan Mason|any_td|4": {
     "player": "Jordan Mason",
@@ -10819,7 +10937,8 @@
     "market_prob": 33.0,
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Josh Palmer|any_td|4": {
     "player": "Josh Palmer",
@@ -10839,7 +10958,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Tank Bigsby|any_td|3": {
     "player": "Tank Bigsby",
@@ -10868,7 +10988,8 @@
     "market_prob": 12.0,
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Blake Whiteheart|any_td|4": {
     "player": "Blake Whiteheart",
@@ -10891,7 +11012,8 @@
     "graded_at": "2026-10-02 15:23 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|4": {
     "player": "Jayden Daniels",
@@ -11268,7 +11390,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Mike Evans|any_td|4": {
     "player": "Mike Evans",
@@ -11293,7 +11416,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Austin Hooper|any_td|4": {
     "player": "Austin Hooper",
@@ -11320,7 +11444,8 @@
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Daniel Jones|passing_yards|4": {
     "player": "Daniel Jones",
@@ -13332,9 +13457,10 @@
     },
     "frozen_at": "2026-10-02 15:23 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Chris Moore|any_td|4": {
     "player": "Chris Moore",
@@ -13377,7 +13503,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-06 15:41 UTC"
+    "graded_at": "2026-10-06 15:41 UTC",
+    "td_rule": "scoring"
   },
   "Dak Prescott|any_td|4": {
     "player": "Dak Prescott",
@@ -13395,12 +13522,13 @@
     "signals": {},
     "frozen_at": "2026-10-02 15:23 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-06 15:41 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Emanuel Wilson|rushing_yards|4": {
     "player": "Emanuel Wilson",
@@ -14617,7 +14745,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jameis Winston|any_td|5": {
     "player": "Jameis Winston",
@@ -14635,9 +14764,10 @@
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Javonte Williams|any_td|5": {
     "player": "Javonte Williams",
@@ -14665,7 +14795,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Brian Robinson|any_td|5": {
     "player": "Brian Robinson",
@@ -14692,7 +14823,8 @@
     "graded_at": "2026-10-12 23:04 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Drake Maye|any_td|5": {
     "player": "Drake Maye",
@@ -14716,9 +14848,10 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 5,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Noah Fant|any_td|5": {
     "player": "Noah Fant",
@@ -14741,7 +14874,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Kirk Cousins|any_td|5": {
     "player": "Kirk Cousins",
@@ -14759,9 +14893,10 @@
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jacoby Brissett|any_td|5": {
     "player": "Jacoby Brissett",
@@ -14783,9 +14918,10 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Patrick Mahomes|any_td|6": {
     "player": "Patrick Mahomes",
@@ -14808,7 +14944,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Alvin Kamara|any_td|5": {
     "player": "Alvin Kamara",
@@ -14833,7 +14970,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-12 23:04 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|5": {
     "player": "Lamar Jackson",
@@ -14880,13 +15018,14 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
     "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Sam Darnold|any_td|5": {
     "player": "Sam Darnold",
@@ -14906,9 +15045,10 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jonathan Taylor|any_td|5": {
     "player": "Jonathan Taylor",
@@ -14936,7 +15076,8 @@
     "graded_at": "2026-10-12 23:04 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jordan Love|any_td|5": {
     "player": "Jordan Love",
@@ -14954,9 +15095,10 @@
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jalen Hurts|any_td|5": {
     "player": "Jalen Hurts",
@@ -14977,11 +15119,12 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 1,
-    "hit": true,
+    "actual": 0,
+    "hit": false,
     "graded_at": "2026-10-12 23:04 UTC",
     "market_prob": 30.0,
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Joe Burrow|any_td|5": {
     "player": "Joe Burrow",
@@ -15002,10 +15145,11 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-12 23:04 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Nico Collins|any_td|5": {
     "player": "Nico Collins",
@@ -15031,7 +15175,8 @@
     "graded_at": "2026-10-12 23:04 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Chuba Hubbard|any_td|6": {
     "player": "Chuba Hubbard",
@@ -15059,7 +15204,8 @@
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Romeo Doubs|any_td|5": {
     "player": "Romeo Doubs",
@@ -15083,7 +15229,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-12 23:04 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Brock Purdy|any_td|5": {
     "player": "Brock Purdy",
@@ -15101,10 +15248,11 @@
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-12 23:04 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Kyren Williams|any_td|5": {
     "player": "Kyren Williams",
@@ -15131,7 +15279,8 @@
     "graded_at": "2026-10-13 16:43 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Tyquan Thornton|any_td|6": {
     "player": "Tyquan Thornton",
@@ -15185,7 +15334,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Bijan Robinson|any_td|5": {
     "player": "Bijan Robinson",
@@ -15212,7 +15362,8 @@
     "graded_at": "2026-10-12 23:04 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Emanuel Wilson|any_td|5": {
     "player": "Emanuel Wilson",
@@ -15242,7 +15393,8 @@
     "graded_at": "2026-10-12 23:04 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Bryce Young|any_td|6": {
     "player": "Bryce Young",
@@ -15262,9 +15414,10 @@
     },
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|5": {
     "player": "C.J. Stroud",
@@ -15282,9 +15435,10 @@
     "signals": {},
     "frozen_at": "2026-10-06 15:41 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Tetairoa McMillan|any_td|6": {
     "player": "Tetairoa McMillan",
@@ -15309,7 +15463,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Kyle Monangai|any_td|5": {
     "player": "Kyle Monangai",
@@ -15378,7 +15533,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|5": {
     "player": "Jayden Daniels",
@@ -15402,7 +15558,8 @@
     "graded": true,
     "actual": 2,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Jonah Coleman|any_td|5": {
     "player": "Jonah Coleman",
@@ -15451,7 +15608,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-12 23:04 UTC"
+    "graded_at": "2026-10-12 23:04 UTC",
+    "td_rule": "scoring"
   },
   "Chris Moore|any_td|5": {
     "player": "Chris Moore",
@@ -17353,7 +17511,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Baker Mayfield|any_td|6": {
     "player": "Baker Mayfield",
@@ -18946,10 +19105,11 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Jared Goff|any_td|7": {
     "player": "Jared Goff",
@@ -18967,9 +19127,10 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Joe Burrow|any_td|7": {
     "player": "Joe Burrow",
@@ -18990,9 +19151,10 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Drew Lock|any_td|6": {
     "player": "Drew Lock",
@@ -19034,9 +19196,10 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Jameis Winston|any_td|6": {
     "player": "Jameis Winston",
@@ -19054,9 +19217,10 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Jacoby Brissett|any_td|6": {
     "player": "Jacoby Brissett",
@@ -19079,7 +19243,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Tyler Huntley|any_td|6": {
     "player": "Tyler Huntley",
@@ -19099,9 +19264,10 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|6": {
     "player": "Lamar Jackson",
@@ -19168,9 +19334,10 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Pat Freiermuth|any_td|6": {
     "player": "Pat Freiermuth",
@@ -19194,7 +19361,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Trevor Lawrence|any_td|6": {
     "player": "Trevor Lawrence",
@@ -19212,10 +19380,11 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Jaylen Warren|any_td|6": {
     "player": "Jaylen Warren",
@@ -19241,7 +19410,8 @@
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jameson Williams|any_td|7": {
     "player": "Jameson Williams",
@@ -19265,7 +19435,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Brock Purdy|any_td|6": {
     "player": "Brock Purdy",
@@ -19283,13 +19454,14 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Isaiah Likely|any_td|6": {
     "player": "Isaiah Likely",
@@ -19316,7 +19488,8 @@
     "actual": 1,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Christian Watson|any_td|6": {
     "player": "Christian Watson",
@@ -19342,7 +19515,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Malik Willis|any_td|7": {
     "player": "Malik Willis",
@@ -19362,9 +19536,10 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Parker Washington|any_td|6": {
     "player": "Parker Washington",
@@ -19389,7 +19564,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "DeMario Douglas|any_td|6": {
     "player": "DeMario Douglas",
@@ -19411,7 +19587,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Jahmyr Gibbs|any_td|7": {
     "player": "Jahmyr Gibbs",
@@ -19440,7 +19617,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|6": {
     "player": "C.J. Stroud",
@@ -19458,9 +19636,10 @@
     "signals": {},
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "MarShawn Lloyd|any_td|6": {
     "player": "MarShawn Lloyd",
@@ -19485,7 +19664,8 @@
     "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|6": {
     "player": "Jayden Daniels",
@@ -19508,12 +19688,13 @@
     },
     "frozen_at": "2026-10-12 23:04 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jordan Mason|any_td|7": {
     "player": "Jordan Mason",
@@ -19536,7 +19717,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Jonah Coleman|any_td|6": {
     "player": "Jonah Coleman",
@@ -19989,9 +20171,10 @@
     },
     "frozen_at": "2026-10-13 16:43 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Davante Adams|any_td|6": {
     "player": "Davante Adams",
@@ -20019,7 +20202,8 @@
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Josh Allen|any_td|6": {
     "player": "Josh Allen",
@@ -20041,13 +20225,14 @@
     },
     "frozen_at": "2026-10-13 16:43 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-20 14:06 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "James Cook|any_td|6": {
     "player": "James Cook",
@@ -20070,7 +20255,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-20 14:06 UTC"
+    "graded_at": "2026-10-20 14:06 UTC",
+    "td_rule": "scoring"
   },
   "Drake London|receiving_yards|6": {
     "player": "Drake London",
@@ -21673,7 +21859,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Tyler Huntley|passing_yards|6": {
     "player": "Tyler Huntley",
@@ -23453,9 +23640,10 @@
     "signals": {},
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Tyler Shough|any_td|7": {
     "player": "Tyler Shough",
@@ -23476,10 +23664,11 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
     "graded_at": "2026-10-27 15:07 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|7": {
     "player": "C.J. Stroud",
@@ -23497,9 +23686,10 @@
     "signals": {},
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Drake Maye|any_td|7": {
     "player": "Drake Maye",
@@ -23521,11 +23711,12 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": true,
     "graded_at": "2026-10-23 14:04 UTC",
     "market_prob": 21.0,
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Michael Penix Jr.|any_td|7": {
     "player": "Michael Penix Jr.",
@@ -23545,9 +23736,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|7": {
     "player": "Lamar Jackson",
@@ -23642,9 +23834,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Matthew Stafford|any_td|7": {
     "player": "Matthew Stafford",
@@ -23662,9 +23855,10 @@
     "signals": {},
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Kirk Cousins|any_td|7": {
     "player": "Kirk Cousins",
@@ -23684,9 +23878,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Christian McCaffrey|any_td|7": {
     "player": "Christian McCaffrey",
@@ -23715,7 +23910,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Josh Allen|any_td|8": {
     "player": "Josh Allen",
@@ -23737,13 +23933,14 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": null,
     "graded_at": "2026-11-03 16:49 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Foster Moreau|any_td|7": {
     "player": "Foster Moreau",
@@ -23785,9 +23982,10 @@
     "signals": {},
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "D'Andre Swift|any_td|7": {
     "player": "D'Andre Swift",
@@ -23817,7 +24015,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Kyle Pitts|any_td|7": {
     "player": "Kyle Pitts",
@@ -23840,7 +24039,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Tommy Tremble|any_td|7": {
     "player": "Tommy Tremble",
@@ -23864,7 +24064,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Kenneth Walker III|any_td|7": {
     "player": "Kenneth Walker III",
@@ -23892,7 +24093,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Tre Tucker|any_td|7": {
     "player": "Tre Tucker",
@@ -23914,7 +24116,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Bryce Young|any_td|7": {
     "player": "Bryce Young",
@@ -23937,9 +24140,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Tyrone Tracy Jr.|any_td|7": {
     "player": "Tyrone Tracy Jr.",
@@ -23963,7 +24167,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Jayden Daniels|any_td|8": {
     "player": "Jayden Daniels",
@@ -23985,9 +24190,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Bhayshul Tuten|any_td|8": {
     "player": "Bhayshul Tuten",
@@ -24013,7 +24219,8 @@
     "graded_at": "2026-11-03 16:49 UTC",
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Chris Moore|any_td|7": {
     "player": "Chris Moore",
@@ -24057,9 +24264,10 @@
     },
     "frozen_at": "2026-10-20 14:06 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Jeremy Ruckert|any_td|7": {
     "player": "Jeremy Ruckert",
@@ -24081,7 +24289,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Nate Adkins|any_td|7": {
     "player": "Nate Adkins",
@@ -24101,7 +24310,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Aaron Jones|any_td|7": {
     "player": "Aaron Jones",
@@ -24126,7 +24336,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "Samaje Perine|any_td|7": {
     "player": "Samaje Perine",
@@ -24150,7 +24361,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-10-27 15:07 UTC"
+    "graded_at": "2026-10-27 15:07 UTC",
+    "td_rule": "scoring"
   },
   "George Pickens|receiving_yards|7": {
     "player": "George Pickens",
@@ -25927,9 +26139,10 @@
     },
     "frozen_at": "2026-10-23 14:04 UTC",
     "graded": true,
-    "actual": 3,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Kyle Monangai|any_td|8": {
     "player": "Kyle Monangai",
@@ -25974,9 +26187,10 @@
     },
     "frozen_at": "2026-10-23 14:04 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Jonah Coleman|rushing_yards|7": {
     "player": "Jonah Coleman",
@@ -27624,9 +27838,10 @@
     },
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 6,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Drew Lock|any_td|8": {
     "player": "Drew Lock",
@@ -27667,9 +27882,10 @@
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Geno Smith|any_td|8": {
     "player": "Geno Smith",
@@ -27687,9 +27903,10 @@
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Dak Prescott|any_td|8": {
     "player": "Dak Prescott",
@@ -27709,9 +27926,10 @@
     },
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Tony Pollard|any_td|8": {
     "player": "Tony Pollard",
@@ -27740,7 +27958,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Malik Willis|any_td|8": {
     "player": "Malik Willis",
@@ -27761,9 +27980,10 @@
     },
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Michael Penix Jr.|any_td|8": {
     "player": "Michael Penix Jr.",
@@ -27785,7 +28005,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Lamar Jackson|any_td|8": {
     "player": "Lamar Jackson",
@@ -27808,7 +28029,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Tyquan Thornton|any_td|8": {
     "player": "Tyquan Thornton",
@@ -27835,28 +28057,6 @@
     "graded_at": "2026-11-03 16:49 UTC",
     "void": "did not play"
   },
-  "Foster Moreau|any_td|9": {
-    "player": "Foster Moreau",
-    "team": "HOU",
-    "opponent": "LAC",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.3,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down"
-    },
-    "frozen_at": "2026-10-27 15:08 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
   "Kirk Cousins|any_td|8": {
     "player": "Kirk Cousins",
     "team": "LV",
@@ -27873,9 +28073,10 @@
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 4,
+    "actual": 1,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Jared Goff|any_td|8": {
     "player": "Jared Goff",
@@ -27893,9 +28094,10 @@
     "signals": {},
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Jordan Love|any_td|8": {
     "player": "Jordan Love",
@@ -27915,10 +28117,11 @@
     },
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 3,
-    "hit": true,
+    "actual": 0,
+    "hit": false,
     "graded_at": "2026-10-30 15:32 UTC",
-    "market_prob": 10.0
+    "market_prob": 10.0,
+    "td_rule": "scoring"
   },
   "CeeDee Lamb|any_td|8": {
     "player": "CeeDee Lamb",
@@ -27948,7 +28151,8 @@
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Jameson Williams|any_td|8": {
     "player": "Jameson Williams",
@@ -27972,7 +28176,8 @@
     "actual": 1,
     "hit": null,
     "graded_at": "2026-11-03 16:49 UTC",
-    "best5_tags": []
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Davis Allen|any_td|8": {
     "player": "Davis Allen",
@@ -27996,27 +28201,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
-  },
-  "C.J. Stroud|any_td|9": {
-    "player": "C.J. Stroud",
-    "team": "HOU",
-    "opponent": "LAC",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.5,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-10-27 15:08 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Bucky Irving|any_td|8": {
     "player": "Bucky Irving",
@@ -28046,7 +28232,8 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Bo Nix|any_td|8": {
     "player": "Bo Nix",
@@ -28066,9 +28253,10 @@
     },
     "frozen_at": "2026-10-27 15:08 UTC",
     "graded": true,
-    "actual": 2,
+    "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Mason Taylor|any_td|8": {
     "player": "Mason Taylor",
@@ -28090,7 +28278,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Quinshon Judkins|any_td|8": {
     "player": "Quinshon Judkins",
@@ -28117,7 +28306,8 @@
     "graded_at": "2026-11-03 16:49 UTC",
     "best5_tags": [
       "highest_confidence"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Chris Moore|any_td|8": {
     "player": "Chris Moore",
@@ -28209,7 +28399,8 @@
     "graded": true,
     "actual": 0,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "Jacory Croskey-Merritt|any_td|8": {
     "player": "Jacory Croskey-Merritt",
@@ -28257,7 +28448,8 @@
     "graded": true,
     "actual": 1,
     "hit": null,
-    "graded_at": "2026-11-03 16:49 UTC"
+    "graded_at": "2026-11-03 16:49 UTC",
+    "td_rule": "scoring"
   },
   "DeVonta Smith|any_td|8": {
     "player": "DeVonta Smith",
@@ -29880,55 +30072,6 @@
     "line_attached_at": "2026-11-03 01:47 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-11-03 01:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
-  "Jordan Love|any_td|9": {
-    "player": "Jordan Love",
-    "team": "GB",
-    "opponent": "NE",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.9,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice"
-    },
-    "frozen_at": "2026-10-30 15:32 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Josh Jacobs|any_td|9": {
-    "player": "Josh Jacobs",
-    "team": "GB",
-    "opponent": "NE",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.9,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "up",
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-10-30 15:32 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
-  },
   "Tyler Warren|receiving_yards|8": {
     "player": "Tyler Warren",
     "team": "IND",
@@ -31478,169 +31621,6 @@
     "hit": null,
     "graded_at": null
   },
-  "Joe Burrow|any_td|9": {
-    "player": "Joe Burrow",
-    "team": "CIN",
-    "opponent": "ATL",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 2.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Questionable",
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Kirk Cousins|any_td|9": {
-    "player": "Kirk Cousins",
-    "team": "LV",
-    "opponent": "SF",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.6,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Drew Lock|any_td|9": {
-    "player": "Drew Lock",
-    "team": "SEA",
-    "opponent": "ARI",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.0,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Questionable"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Patrick Mahomes|any_td|9": {
-    "player": "Patrick Mahomes",
-    "team": "KC",
-    "opponent": "NYJ",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.8,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Josh Allen|any_td|9": {
-    "player": "Josh Allen",
-    "team": "BUF",
-    "opponent": "MIN",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 2.7,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true,
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
-  },
-  "Gardner Minshew|any_td|9": {
-    "player": "Gardner Minshew",
-    "team": "ARI",
-    "opponent": "SEA",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.3,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "D'Andre Swift|any_td|9": {
-    "player": "D'Andre Swift",
-    "team": "CHI",
-    "opponent": "TB",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.6,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice",
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
-  },
   "Trevor Lawrence|any_td|9": {
     "player": "Trevor Lawrence",
     "team": "JAX",
@@ -31659,341 +31639,12 @@
     },
     "frozen_at": "2026-11-03 16:49 UTC",
     "graded": true,
-    "actual": 1,
-    "hit": true,
+    "actual": 0,
+    "hit": false,
     "graded_at": "2026-11-06 06:39 UTC",
     "market_prob": 21.0,
-    "best5_tags": []
-  },
-  "Drake Maye|any_td|9": {
-    "player": "Drake Maye",
-    "team": "NE",
-    "opponent": "GB",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.8,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice",
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true,
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Tyquan Thornton|any_td|9": {
-    "player": "Tyquan Thornton",
-    "team": "KC",
-    "opponent": "NYJ",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.2,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "up",
-      "target_share_trend": "up",
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Kyle Monangai|any_td|9": {
-    "player": "Kyle Monangai",
-    "team": "CHI",
-    "opponent": "TB",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "up",
-      "injury_flagged": "Out"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Geno Smith|any_td|9": {
-    "player": "Geno Smith",
-    "team": "NYJ",
-    "opponent": "KC",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Dak Prescott|any_td|9": {
-    "player": "Dak Prescott",
-    "team": "DAL",
-    "opponent": "IND",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 2.0,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Sam Darnold|any_td|9": {
-    "player": "Sam Darnold",
-    "team": "SEA",
-    "opponent": "ARI",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Kyler Murray|any_td|9": {
-    "player": "Kyler Murray",
-    "team": "MIN",
-    "opponent": "BUF",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.3,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Out",
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true,
-      "xtd_debt": "positive",
-      "due_for_td": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Tony Pollard|any_td|10": {
-    "player": "Tony Pollard",
-    "team": "TEN",
-    "opponent": "JAX",
-    "week": 10,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice",
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Tee Higgins|any_td|9": {
-    "player": "Tee Higgins",
-    "team": "CIN",
-    "opponent": "ATL",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.7,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": 0.5,
-    "market_source": "kalshi_1plus_td",
-    "call": "OVER",
-    "edge": 11.3,
-    "model_prob": 50.3,
-    "signals": {
-      "injury_flagged": "Questionable",
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
-    "market_prob": 39.0,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
-  },
-  "Tyler Allgeier|any_td|9": {
-    "player": "Tyler Allgeier",
-    "team": "ARI",
-    "opponent": "SEA",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.3,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Limited Participation in Practice",
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Malik Willis|any_td|9": {
-    "player": "Malik Willis",
-    "team": "MIA",
-    "opponent": "DET",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.8,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice",
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Brock Bowers|any_td|9": {
-    "player": "Brock Bowers",
-    "team": "LV",
-    "opponent": "SF",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.5,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "target_share_trend": "up",
-      "injury_flagged": "Full Participation in Practice",
-      "red_zone_target_share_high": true,
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
-  },
-  "Bo Nix|any_td|9": {
-    "player": "Bo Nix",
-    "team": "DEN",
-    "opponent": "CAR",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.7,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Cam Ward|any_td|10": {
-    "player": "Cam Ward",
-    "team": "TEN",
-    "opponent": "JAX",
-    "week": 10,
-    "stat": "any_td",
-    "projected": 1.0,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "best5_tags": [],
+    "td_rule": "scoring"
   },
   "Bhayshul Tuten|any_td|9": {
     "player": "Bhayshul Tuten",
@@ -32021,7 +31672,8 @@
     "market_prob": 46.0,
     "best5_tags": [
       "best_value"
-    ]
+    ],
+    "td_rule": "scoring"
   },
   "Chris Moore|any_td|9": {
     "player": "Chris Moore",
@@ -32046,205 +31698,6 @@
     "hit": null,
     "graded_at": "2026-11-06 06:39 UTC",
     "void": "did not play"
-  },
-  "Tanner Hudson|any_td|9": {
-    "player": "Tanner Hudson",
-    "team": "CIN",
-    "opponent": "ATL",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.1,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Jalen Hurts|any_td|9": {
-    "player": "Jalen Hurts",
-    "team": "PHI",
-    "opponent": "NYG",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 2.1,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Out"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Jacory Croskey-Merritt|any_td|9": {
-    "player": "Jacory Croskey-Merritt",
-    "team": "WAS",
-    "opponent": "LA",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.5,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "target_share_trend": "down",
-      "injury_flagged": "Out",
-      "red_zone_rush_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "DeVonta Smith|any_td|9": {
-    "player": "DeVonta Smith",
-    "team": "PHI",
-    "opponent": "NYG",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down",
-      "injury_flagged": "Out"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Romeo Doubs|any_td|9": {
-    "player": "Romeo Doubs",
-    "team": "NE",
-    "opponent": "GB",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down",
-      "xtd_debt": "negative"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Audric Estim\u00e9|any_td|9": {
-    "player": "Audric Estim\u00e9",
-    "team": "CLE",
-    "opponent": "NO",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Out"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Jawhar Jordan|any_td|9": {
-    "player": "Jawhar Jordan",
-    "team": "HOU",
-    "opponent": "LAC",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.2,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {},
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Emeka Egbuka|any_td|9": {
-    "player": "Emeka Egbuka",
-    "team": "TB",
-    "opponent": "CHI",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.4,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Out",
-      "goal_line_target_share_high": true
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Kyle Juszczyk|any_td|9": {
-    "player": "Kyle Juszczyk",
-    "team": "SF",
-    "opponent": "LV",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 0.2,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "injury_flagged": "Full Participation in Practice"
-    },
-    "frozen_at": "2026-11-03 16:49 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
   },
   "Patrick Mahomes|passing_yards|9": {
     "player": "Patrick Mahomes",
@@ -33969,77 +33422,6 @@
     "hit": null,
     "graded_at": null
   },
-  "Chris Moore|any_td|10": {
-    "player": "Chris Moore",
-    "team": "BAL",
-    "opponent": "LAC",
-    "week": 10,
-    "stat": "any_td",
-    "projected": 0.1,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down",
-      "injury_flagged": "Full Participation in Practice"
-    },
-    "frozen_at": "2026-11-06 06:39 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Jameis Winston|any_td|9": {
-    "player": "Jameis Winston",
-    "team": "NYG",
-    "opponent": "PHI",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.1,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down"
-    },
-    "frozen_at": "2026-11-06 06:39 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
-  "Christian McCaffrey|any_td|9": {
-    "player": "Christian McCaffrey",
-    "team": "SF",
-    "opponent": "LV",
-    "week": 9,
-    "stat": "any_td",
-    "projected": 1.1,
-    "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
-    "model_prob": null,
-    "signals": {
-      "usage_trend": "down",
-      "target_share_trend": "down",
-      "injury_flagged": "Did Not Participate In Practice",
-      "red_zone_rush_share_high": true,
-      "goal_line_rush_share_high": true
-    },
-    "frozen_at": "2026-11-06 06:39 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
-  },
   "Keenan Allen|receiving_yards|9": {
     "player": "Keenan Allen",
     "team": "IND",
@@ -34062,5 +33444,837 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": []
+  },
+  "Joe Burrow|any_td|9": {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opponent": "ATL",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Drew Lock|any_td|9": {
+    "player": "Drew Lock",
+    "team": "SEA",
+    "opponent": "ARI",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Patrick Mahomes|any_td|9": {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "opponent": "NYJ",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Josh Allen|any_td|9": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "MIN",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 1.0,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "OVER",
+    "edge": 9.2,
+    "model_prob": 63.2,
+    "signals": {
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 54.0,
+    "td_rule": "scoring"
+  },
+  "Gardner Minshew|any_td|9": {
+    "player": "Gardner Minshew",
+    "team": "ARI",
+    "opponent": "SEA",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jordan Love|any_td|9": {
+    "player": "Jordan Love",
+    "team": "GB",
+    "opponent": "NE",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "D'Andre Swift|any_td|9": {
+    "player": "D'Andre Swift",
+    "team": "CHI",
+    "opponent": "TB",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -14.9,
+    "model_prob": 45.1,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 60.0,
+    "td_rule": "scoring"
+  },
+  "Drake Maye|any_td|9": {
+    "player": "Drake Maye",
+    "team": "NE",
+    "opponent": "GB",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Tyquan Thornton|any_td|9": {
+    "player": "Tyquan Thornton",
+    "team": "KC",
+    "opponent": "NYJ",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kyle Monangai|any_td|9": {
+    "player": "Kyle Monangai",
+    "team": "CHI",
+    "opponent": "TB",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Foster Moreau|any_td|9": {
+    "player": "Foster Moreau",
+    "team": "HOU",
+    "opponent": "LAC",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "C.J. Stroud|any_td|9": {
+    "player": "C.J. Stroud",
+    "team": "HOU",
+    "opponent": "LAC",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Geno Smith|any_td|9": {
+    "player": "Geno Smith",
+    "team": "NYJ",
+    "opponent": "KC",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Dak Prescott|any_td|9": {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "opponent": "IND",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kyler Murray|any_td|9": {
+    "player": "Kyler Murray",
+    "team": "MIN",
+    "opponent": "BUF",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "positive",
+      "due_for_td": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Tony Pollard|any_td|10": {
+    "player": "Tony Pollard",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Josh Jacobs|any_td|9": {
+    "player": "Josh Jacobs",
+    "team": "GB",
+    "opponent": "NE",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "OVER",
+    "edge": 10.3,
+    "model_prob": 59.3,
+    "signals": {
+      "usage_trend": "up",
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 49.0,
+    "td_rule": "scoring"
+  },
+  "Tee Higgins|any_td|9": {
+    "player": "Tee Higgins",
+    "team": "CIN",
+    "opponent": "ATL",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.7,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "OVER",
+    "edge": 7.3,
+    "model_prob": 50.3,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 43.0,
+    "td_rule": "scoring"
+  },
+  "Tyler Allgeier|any_td|9": {
+    "player": "Tyler Allgeier",
+    "team": "ARI",
+    "opponent": "SEA",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Malik Willis|any_td|9": {
+    "player": "Malik Willis",
+    "team": "MIA",
+    "opponent": "DET",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Brock Bowers|any_td|9": {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "opponent": "SF",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -5.7,
+    "model_prob": 39.3,
+    "signals": {
+      "target_share_trend": "up",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_target_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 45.0,
+    "td_rule": "scoring"
+  },
+  "Bo Nix|any_td|9": {
+    "player": "Bo Nix",
+    "team": "DEN",
+    "opponent": "CAR",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Cam Ward|any_td|10": {
+    "player": "Cam Ward",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Chris Moore|any_td|10": {
+    "player": "Chris Moore",
+    "team": "BAL",
+    "opponent": "LAC",
+    "week": 10,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Tanner Hudson|any_td|9": {
+    "player": "Tanner Hudson",
+    "team": "CIN",
+    "opponent": "ATL",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jalen Hurts|any_td|9": {
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "NYG",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.7,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jacory Croskey-Merritt|any_td|9": {
+    "player": "Jacory Croskey-Merritt",
+    "team": "WAS",
+    "opponent": "LA",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "down",
+      "injury_flagged": "Out",
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "DeVonta Smith|any_td|9": {
+    "player": "DeVonta Smith",
+    "team": "PHI",
+    "opponent": "NYG",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Romeo Doubs|any_td|9": {
+    "player": "Romeo Doubs",
+    "team": "NE",
+    "opponent": "GB",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Audric Estim\u00e9|any_td|9": {
+    "player": "Audric Estim\u00e9",
+    "team": "CLE",
+    "opponent": "NO",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jawhar Jordan|any_td|9": {
+    "player": "Jawhar Jordan",
+    "team": "HOU",
+    "opponent": "LAC",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Emeka Egbuka|any_td|9": {
+    "player": "Emeka Egbuka",
+    "team": "TB",
+    "opponent": "CHI",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "goal_line_target_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kyle Juszczyk|any_td|9": {
+    "player": "Kyle Juszczyk",
+    "team": "SF",
+    "opponent": "LV",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jameis Winston|any_td|9": {
+    "player": "Jameis Winston",
+    "team": "NYG",
+    "opponent": "PHI",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Christian McCaffrey|any_td|9": {
+    "player": "Christian McCaffrey",
+    "team": "SF",
+    "opponent": "LV",
+    "week": 9,
+    "stat": "any_td",
+    "projected": 1.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "target_share_trend": "down",
+      "injury_flagged": "Limited Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-06 17:56 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
   }
 }
