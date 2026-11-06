@@ -417,6 +417,22 @@ def build(oddsapi_mode: str | None = None):
     # score, FanDuel's lines, our three game picks, injuries, and every player pick in that game.
     games_page = _games_page(fd_games)
     print(f"Games page: week {games_page['week']}, {len(games_page['games'])} game(s).")
+    # NBA-style tabs: game picks with chances + price checks, Edges (Kalshi vs FanDuel), live tracker
+    try:
+        import edges_nfl
+        import games_nfl
+        _sched = dataio.load_schedule()
+        _ng = edges_nfl.grade(_sched)
+        games_page["x"] = games_nfl.build(games_page, fd_games, _sched,
+                                          kalshi_data.get("game_all") or kalshi_data.get("game_props") or [])
+        _ed = games_page["x"]["edges"]
+        print(f"Edges: {len(_ed.get('edges', []))} +EV, {len(_ed.get('arbs', []))} arbitrage, "
+              f"{len(_ed.get('middles', []))} middles ({_ed.get('checked', 0)} checked, {_ed.get('stale_fd', 0)} games with old "
+              f"FanDuel prices skipped); {_ed.get('recorded_new', 0)} newly recorded, {_ng} graded.")
+    except Exception:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
+        games_page["x"] = None
     # header search (every page): this week's players with a pick -> their game card on the Games tab
     _idx = sorted({(p["player"], f"games.html#g-{g['away']}-{g['home']}", p["team"])
                    for g in games_page["games"] for p in g["props"]})

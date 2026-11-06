@@ -1,128 +1,196 @@
 {% extends "base.html" %}
 {% block title %}Games — Prop Edge Board{% endblock %}
 {% block content %}
-<h1>Week {{ gp.week }} games</h1>
-<p class="lede small">
-  Every game this week on one card: our projected score next to FanDuel's lines, our three game picks
-  (moneyline, spread, total), who's out, and every player pick in that game. During games each card shows the
-  live score, and each player pick shows where it stands. Picks are frozen before kickoff and graded on
-  <a href="history.html">History</a>. The full <a href="moneyline.html">moneyline board</a> and
-  <a href="matchups.html">matchup breakdowns</a> are still here too.
-</p>
-{% if gp.track %}
-<p class="gm-rec small">Game picks so far:
-  {% for m, label in [('team_moneyline', 'moneyline'), ('team_spread', 'spread'), ('team_total', 'total')] %}{% set t = gp.track[m] %}{% if t and t.n %}<b>{{ label }}</b> {{ t.our_hit_rate }}% of {{ t.n }}{% if not loop.last %} &middot; {% endif %}{% endif %}{% endfor %}.
-  Moneyline picks lean on FanDuel's price (25% our model, 75% the market); spread picks compare our projected
-  margin with the spread.</p>
-{% endif %}
-
-{% set nw = gp.news %}
-{% if nw %}
-<section class="nw">
-  <div class="nw-h"><span>&#128680; INJURY NEWS PLAYS</span>
-    <span class="small">{% if nw.summary.n %}so far {{ nw.summary.hits }}/{{ nw.summary.n }} ({{ nw.summary.rate }}%){% else %}none graded yet{% endif %} &middot; tracking only, no stakes</span></div>
-  <p class="small dim">When a starter is ruled OUT, teammates who did better in this season's games without him get an <span class="c-over">OVER</span> at the
-    line as it stood when the news hit. On the graded weeks, teammates of a ruled-out starter whose line hadn't moved went over 62% of the
-    time (38/61) &mdash; a small sample, so these are tracked before they're trusted.</p>
-  {% for ev in nw.events %}
-  <div class="nw-ev">
-    <div class="nw-out"><b>{{ ev.out }}</b>{% if ev.pos %} ({{ ev.pos }}){% endif %} &middot; {{ ev.team }} vs {{ ev.opp }} &middot; <span class="stat-bad">OUT</span> <span class="dim small">seen {{ ev.seen }}</span></div>
-    {% for b in ev.plays %}
-    <div class="nw-play{% if b.result == 'hit' %} gm-hit{% elif b.result == 'miss' %} gm-miss{% endif %}">
-      <b>{{ b.player }} <span class="c-over">OVER</span> {{ b.line }} {{ b.short }}</b>
-      <span class="dim">{{ b.without }} without him vs {{ b.with }} with (+{{ b.bump }}%, {{ b.n_wo }} game{{ 's' if b.n_wo != 1 }})</span>
-      {% if b.moved %}<span class="small {{ 'stat-good' if b.now > b.line else 'stat-bad' }}">line now {{ b.now }}</span>{% elif b.now is defined %}<span class="small dim">line hasn't moved</span>{% endif %}
-      {% if b.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[b.result]|safe }}{% if b.actual is not none %} {{ b.actual }}{% endif %}</i>
-      {% else %}<span class="lv" hidden data-lv="{{ ev.team }}|{{ b.player }}|{{ b.stat }}|{{ b.line }}|OVER|{{ b.without }}"></span>{% endif %}
-    </div>
-    {% endfor %}
+{% set x = gp.x %}
+{% macro gpick(p) %}
+<div class="gpk{% if p.result == 'hit' %} gm-hit{% elif p.result == 'miss' %} gm-miss{% endif %}{% if p.good %} gpk-good{% endif %}">
+  <div class="gpk-l">
+    <span class="gpk-mkt">{{ p.mlabel|upper }} &middot; {{ p.game }}</span>
+    <b class="gpk-pick">{% if p.side == 'OVER' %}<span class="c-over">OVER</span> {{ p.line }}{% elif p.side == 'UNDER' %}<span class="c-under">UNDER</span> {{ p.line }}{% else %}{{ p.pick }}{% endif %}</b>
+    <span class="gpk-why">{% if p.now %}frozen at this number &middot; {% endif %}{{ p.note }}{% if p.market != 'moneyline' and p.model is not none and not p.weight %} &middot; our model alone: {{ (p.model * 100)|round|int }}%, not trusted yet{% endif %}</span>
   </div>
+  <div class="gpk-n"><b>{{ (p.chance * 100)|round|int }}%</b><span>CHANCE</span></div>
+  <div class="gpk-n">{% if p.price_str %}<b>{{ p.price_str }}</b><span>NEEDS {{ (p.be * 100)|round(1) }}%</span>{% else %}<b class="dim">&ndash;</b><span>{% if p.now %}LINE MOVED &middot; FANDUEL NOW {{ p.now }}{% else %}NO PRICE YET{% endif %}</span>{% endif %}</div>
+  <div class="gpk-tags">
+    {% if p.good %}<span class="gp-chip">GOOD PRICE</span>{% endif %}
+    {% if p.market != 'moneyline' and not p.weight %}<span class="pk-tag">LEAN</span>{% endif %}
+    {% if p.result %}<span class="pk-tag {{ 'pk-proven' if p.result == 'hit' else 'pk-weak' }}">{{ '&#10004; HIT'|safe if p.result == 'hit' else '&#10008; MISS'|safe }}</span>{% elif p.locked %}<span class="pk-tag">&#128274; KICKED OFF</span>{% else %}<span class="pk-tag">&#10052; FROZEN</span>{% endif %}
+  </div>
+</div>
+{% endmacro %}
+{% macro plist(rows, empty) %}{% if rows %}<div class="gpk-list">{% for p in rows %}{{ gpick(p) }}{% endfor %}</div>{% else %}<p class="notice compact">{{ empty }}</p>{% endif %}{% endmacro %}
+
+<h1>Week {{ gp.week }} games</h1>
+<p class="lede small">Moneyline, spread and total for every game this week: our picks with a chance and FanDuel's price,
+  market <b>edges</b> between Kalshi and FanDuel, every game card, and a <b>live</b> scoreboard on game day. Game picks
+  freeze before kickoff and are graded on <a href="history.html">History</a>.</p>
+
+{% if x %}
+<div class="pz-board gm-board">
+  {% for key in ['moneyline', 'spread', 'total'] %}{% set mk = x.mkts[key] %}{% set t = mk.track %}
+  <div class="pz-fam"><em>{{ mk.label|upper }} PICKS</em>
+    {% if t and t.n %}<b>{{ t.our_hits if t.our_hits is defined else ((t.our_hit_rate * t.n / 100)|round|int) }}&ndash;{{ t.n - (t.our_hits if t.our_hits is defined else ((t.our_hit_rate * t.n / 100)|round|int)) }}</b><span class="{{ 'stat-good' if t.our_hit_rate >= 52.4 else 'stat-bad' }}">{{ t.our_hit_rate }}%</span>{% else %}<b>0&ndash;0</b>{% endif %}
+    <small>{% if key == 'moneyline' %}25% our model, 75% FanDuel's price{% elif mk.weight %}model trusted {{ (mk.weight * 100)|round|int }}%{% else %}lean: chances come from FanDuel until it hits 50%+{% endif %}</small></div>
   {% endfor %}
-  {% if not nw.events %}<p class="small dim">No news plays this week yet. They appear when a starter is ruled out and a teammate's line is up.{% if nw.quiet %} Ruled out so far with no qualifying teammate play: {% for e in nw.quiet %}{{ e.out }} ({{ e.team }}){% if not loop.last %}, {% endif %}{% endfor %}.{% endif %}</p>{% endif %}
+  {% set eds = x.eds %}
+  <a class="pz-fam" href="#edges" data-goto="edges"><em>EDGES</em>{% if eds.n %}<b>{{ eds.hits }}&ndash;{{ eds.n - eds.hits }}</b><span class="{{ 'stat-good' if eds.units > 0 else 'stat-bad' if eds.units < 0 }}">{{ '%+.2f'|format(eds.units) }}U</span>{% else %}<b>0&ndash;0</b><span class="dim">{{ eds.pending }} pending</span>{% endif %}<small>1U each at Kalshi's price</small></a>
+</div>
+
+<div class="pk-bar gm-tabs" role="tablist">
+  <button class="pk-stat-btn active" data-gt="top">TOP PICKS</button>
+  <button class="pk-stat-btn" data-gt="moneyline">MONEYLINE</button>
+  <button class="pk-stat-btn" data-gt="spread">SPREAD</button>
+  <button class="pk-stat-btn" data-gt="total">TOTAL</button>
+  <button class="pk-stat-btn" data-gt="edges">EDGES{% if x.edges.edges %} ({{ x.edges.edges|length }}){% endif %}</button>
+  <button class="pk-stat-btn" data-gt="all">ALL GAMES</button>
+  <button class="pk-stat-btn gm-live-btn" data-gt="live"><i class="live-dot"></i>LIVE</button>
+</div>
+
+<section data-gp="top">
+  <div class="gm-sub" data-sub="top"><button class="active" data-st="best5">BEST 5</button><button data-st="value">BEST VALUE</button></div>
+  <div data-sp="top:best5"><p class="small dim">All three markets together: the five game picks with the highest chance, one per game. Game picks freeze once, earlier in the week, and are graded after the game.</p>
+    {{ plist(x.top.best5, "No open game picks with a FanDuel price right now.") }}</div>
+  <div data-sp="top:value" hidden><p class="small dim">Picks whose chance beats what FanDuel's price needs, biggest gap first, one per game.</p>
+    {{ plist(x.top.value, "No game pick beats its price right now. Spread and total chances come from FanDuel until our model earns trust, so most value here will be moneylines.") }}</div>
+</section>
+
+{% for key in ['moneyline', 'spread', 'total'] %}{% set mk = x.mkts[key] %}
+<section data-gp="{{ key }}" hidden>
+  <div class="gm-sub" data-sub="{{ key }}"><button class="active" data-st="best5">BEST 5</button><button data-st="value">BEST VALUE</button></div>
+  <div data-sp="{{ key }}:best5"><p class="small dim">The five {{ mk.label|lower }} picks with the highest chance, one per game.{% if key != 'moneyline' %} Chances start from FanDuel's no-vig price and only move toward our model as far as its graded record has earned ({{ mk.track.our_hit_rate if mk.track and mk.track.n else '–' }}% so far, so {{ (mk.weight * 100)|round|int }}% today).{% endif %}</p>
+    {{ plist(mk.best5, "No open " ~ mk.label|lower ~ " picks right now.") }}</div>
+  <div data-sp="{{ key }}:value" hidden><p class="small dim">{{ mk.label }} picks whose chance beats the price. {{ mk.n_good }} of {{ mk.n }} priced picks this week.</p>
+    {{ plist(mk.value, "None beat their price right now.") }}</div>
+</section>
+{% endfor %}
+
+{% set ed = x.edges %}{% set eds = x.eds %}
+<section data-gp="edges" hidden>
+  <div class="notice compact"><b>WHAT THIS IS:</b> market math, no projection. FanDuel's two-sided price with its cut removed gives a
+    <b>fair chance</b>; when Kalshi sells the same outcome for less (its fee included), that's a <b>+EV</b> buy. <b>Arbitrage</b> = both
+    sides across Kalshi and FanDuel for less than the payout. <b>Middle</b> = different numbers on each, and both bets win if the score lands
+    in between. FanDuel updates about once a day here, so prices older than {{ x.fd_max_age|int }} hours are skipped. Treat edges as leads; every one
+    is recorded and graded below, 1U each.</div>
+  {% if eds.n %}<div class="pz-board gm-board">
+    <div class="pz-fam"><em>EDGES RECORD</em><b>{{ eds.hits }}&ndash;{{ eds.n - eds.hits }}</b><small>{{ eds.pending }} pending</small></div>
+    <div class="pz-fam"><em>UNITS</em><b class="{{ 'stat-good' if eds.units > 0 else 'stat-bad' if eds.units < 0 }}">{{ '%+.2f'|format(eds.units) }}U</b><small>{{ '%+.1f'|format(eds.roi) }}% per unit</small></div>
+    <div class="pz-fam"><em>HIT RATE</em><b>{{ eds.rate }}%</b><small>vs {{ eds.fair_avg }}% fair</small></div>
+    <div class="pz-fam"><em>MODEL AGREED</em><b>{{ eds.agree.hits }}&ndash;{{ eds.agree.n - eds.agree.hits }}</b><small>{{ '%+.2f'|format(eds.agree.units) }}U</small></div>
+  </div>{% else %}<p class="small dim">The record starts with the first graded edge{% if eds.pending %} ({{ eds.pending }} pending){% endif %}.</p>{% endif %}
+  {% if ed.error %}<p class="notice compact">Edges didn't build this time: {{ ed.error }}</p>{% endif %}
+
+  <h3>+EV on Kalshi</h3>
+  {% if ed.edges %}
+  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
+    <thead><tr><th>Bet</th><th class="num">Better than fair</th><th class="num">Real chance</th><th class="hide-sm">Our model</th><th class="hide-sm">Fair from</th></tr></thead>
+    <tbody>{% for e in ed.edges %}<tr>
+      <td><b>{{ e.label }}</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: {{ e.kalshi }}</div></td>
+      <td class="num stat-good"><b>about {{ '%.0f'|format(e.ev * 100) }}%</b></td>
+      <td class="num">{{ (e.fair * 100)|round|int }}%</td>
+      <td class="hide-sm small">{% if e.model is not none %}<span class="{{ 'stat-good' if e.model_agrees else 'stat-bad' }}">{{ (e.model * 100)|round|int }}% {{ '&#10004; agrees'|safe if e.model_agrees else 'disagrees' }}</span>{% else %}<span class="dim">&mdash;</span>{% endif %}</td>
+      <td class="hide-sm small dim">{{ e.ref }}</td></tr>{% endfor %}</tbody>
+  </table></div></div>
+  <p class="small dim">Checked {{ ed.checked }} Kalshi bets that FanDuel also prices. Listed: Kalshi's price, fee included, at least 2% cheaper than the bet is really worth. <b>Real chance</b> = FanDuel's odds with their cut removed. <b>Better than fair</b> = roughly what each unit returns on average over many bets.</p>
+  {% else %}<p class="notice compact">No +EV prices right now{% if ed.checked %}: Kalshi and FanDuel agree within the fee on all {{ ed.checked }} matched bets{% endif %}.{% if ed.stale_fd %} {{ ed.stale_fd }} game{{ 's' if ed.stale_fd != 1 }} skipped because FanDuel's price is over {{ x.fd_max_age|int }} hours old.{% endif %} Refreshes every 20 minutes.</p>{% endif %}
+
+  {% if ed.suspect %}<details class="info-collapse"><summary>Too good to be true ({{ ed.suspect|length }}): check by hand</summary>
+    <p class="small dim">Gaps this big are almost always a stale or thin Kalshi price. Not recorded or graded.</p>
+    <ul class="plain small">{% for e in ed.suspect %}<li>{{ e.label }} &middot; {{ e.kalshi }} &middot; real chance {{ (e.fair * 100)|round|int }}% ({{ '%+.0f'|format(e.ev * 100) }}%)</li>{% endfor %}</ul></details>{% endif %}
+
+  <h3>Arbitrage</h3>
+  {% if ed.arbs %}{% for a in ed.arbs %}<div class="notice compact"><strong>{{ a.label }}:</strong> {{ a.kalshi }} on Kalshi + {{ a.other }} wins about {{ '%.1f'|format((1 / a.both - 1) * 100) }}% whatever happens. Prices move fast; check both before betting.</div>{% endfor %}
+  {% else %}<p class="small dim">None right now.{% if ed.closest_arb %} Closest: {{ '%.1f'|format((ed.closest_arb - 1) * 100) }}% short of a sure profit.{% endif %}</p>{% endif %}
+
+  {% if ed.middles %}<h3>Middles</h3>
+  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
+    <thead><tr><th>Two bets</th><th class="num">Both win if</th><th class="num">Chance both win</th><th class="num">Edge (1U each)</th></tr></thead>
+    <tbody>{% for m in ed.middles %}<tr><td><b>{{ m.label }}</b></td><td class="num">{{ m.window }}</td><td class="num">{{ (m.both * 100)|round(1) }}%</td><td class="num stat-good">{{ '%+.1f'|format(m.ev * 100) }}%</td></tr>{% endfor %}</tbody>
+  </table></div></div>{% endif %}
+
+  {% if eds.recent %}<details class="info-collapse"><summary>Recorded edges ({{ eds.recent|length }} most recent)</summary>
+  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
+    <thead><tr><th>Week</th><th>Bet</th><th class="num">Edge when seen</th><th>Result</th><th class="num">Units</th></tr></thead>
+    <tbody>{% for e in eds.recent %}<tr><td>W{{ e.week }}</td><td>{{ e.label }} <span class="dim small">{{ e.kalshi }}</span></td><td class="num">{{ '%+.1f'|format((e.first_ev or 0) * 100) }}%</td>
+      <td class="{{ 'stat-good' if e.hit else 'stat-bad' if e.status == 'graded' }}">{{ 'HIT' if e.hit else 'MISS' if e.status == 'graded' else e.status|upper }}</td>
+      <td class="num">{% if e.units is defined %}{{ '%+.2f'|format(e.units) }}U{% else %}&ndash;{% endif %}</td></tr>{% endfor %}</tbody>
+  </table></div></div></details>{% endif %}
+</section>
+
+<section data-gp="live" hidden>
+  <p class="small dim">Every game this week with the score, the quarter and where each of our three game picks stands right now:
+    <span class="stat-good">green</span> = winning, <span class="stat-bad">red</span> = losing. Scores come from ESPN with each refresh (about every 20 minutes).</p>
+  <div id="gm-live" class="gl-grid"></div>
+  <script>window.PE_GAMES = {{ x.live_json|safe }};</script>
 </section>
 {% endif %}
 
-{% if gp.games %}
-<div class="gm-grid">
-{% for g in gp.games %}
-{% set ml = g.picks.team_moneyline %}{% set sp = g.picks.team_spread %}{% set tt = g.picks.team_total %}
-{% set o = g.odds %}
-<article class="gm-card" id="g-{{ g.away }}-{{ g.home }}">
-  <header class="gm-head">
-    <div class="gm-teams">
-      <span class="gm-team" style="background:{{ g.away_badge.color }}">{{ g.away }}</span>
-      <span class="gm-at">@</span>
-      <span class="gm-team" style="background:{{ g.home_badge.color }}">{{ g.home }}</span>
-    </div>
-    <div class="gm-when">
-      {% if g.final %}<b>FINAL</b> {{ g.away }} {{ g.away_score }} &ndash; {{ g.home }} {{ g.home_score }}
-      {% else %}{{ g.start_str or 'kickoff TBD' }}{% endif %}
-    </div>
-  </header>
-  {% if not g.final %}<span class="lv lv-game" hidden data-lvg="{{ g.home }}"></span>{% endif %}
-
-  <div class="gm-proj">
-    <div><em>OUR PROJECTION</em><b>{{ g.away }} {{ g.proj.projected_away_score }} &ndash; {{ g.home }} {{ g.proj.projected_home_score }}</b></div>
-    <div><em>FANDUEL</em><b>
-      {% if o.spread %}{{ g.home }} {{ o.spread.home_point_str }}{% else %}no spread{% endif %}
-      &middot; {% if o.total %}O/U {{ o.total.point }}{% else %}no total{% endif %}
-      {% if o.moneyline %}&middot; {{ g.away }} {{ o.moneyline.away_price_str }} / {{ g.home }} {{ o.moneyline.home_price_str }}{% endif %}
-    </b></div>
-  </div>
-
-  <div class="gm-picks">
-    {% for p, label in [(ml, 'MONEYLINE'), (sp, 'SPREAD'), (tt, 'TOTAL')] %}
-    <div class="gm-pick{% if p and p.graded and p.our_correct is not none %} {{ 'gm-hit' if p.our_correct else 'gm-miss' }}{% endif %}">
-      <em>{{ label }}</em>
-      {% if p %}
-        {% if p.market == 'team_moneyline' %}
-          {% set side = g.home if p.our_call == 'HOME' else g.away %}
-          {% set pct = p.our_value if p.our_call == 'HOME' else (100 - p.our_value)|round(1) %}
-          <b>{{ side }}</b><span>{{ pct }}% to win</span>
-        {% elif p.market == 'team_spread' %}
-          {% set side = g.home if p.our_call == 'HOME' else g.away %}
-          {% set pts = p.market_line if p.our_call == 'HOME' else -p.market_line %}
-          {% set m = p.our_value %}
-          <b>{{ side }} {{ '+' if pts > 0 }}{{ pts }}</b><span>{% if m|abs < 0.05 %}we have it even{% else %}we have {{ g.home if m > 0 else g.away }} by {{ m|abs|round(1) }}{% endif %}</span>
-        {% else %}
-          <b><span class="{{ 'c-over' if p.our_call == 'OVER' else 'c-under' }}">{{ p.our_call }}</span> {{ p.market_line }}</b><span>we project {{ p.our_value }}</span>
-        {% endif %}
-        {% if p.graded and p.our_correct is not none %}<i>{{ '&#10004; HIT'|safe if p.our_correct else '&#10008; MISS'|safe }}</i>{% endif %}
-      {% else %}<span class="dim">no line yet</span>{% endif %}
-    </div>
-    {% endfor %}
-  </div>
-
-  {% set outs = g.injuries[g.away] + g.injuries[g.home] %}
-  {% if outs %}
-  <div class="gm-inj"><em>OUT / DOUBTFUL</em>
-    {% for t in [g.away, g.home] %}{% if g.injuries[t] %}<span><b>{{ t }}:</b> {% for i in g.injuries[t][:6] %}{{ i.name }}{% if i.pos %} ({{ i.pos }}){% endif %}{% if not loop.last %}, {% endif %}{% endfor %}{% if g.injuries[t]|length > 6 %} +{{ g.injuries[t]|length - 6 }} more{% endif %}</span>{% endif %}{% endfor %}
-  </div>
-  {% endif %}
-
-  <div class="gm-props">
-    <em>PLAYER PICKS IN THIS GAME{% if g.props %} ({{ g.props|length }}){% endif %}</em>
-    {% if g.props %}
-    {% for p in g.props[:10] %}
-    <div class="gm-prop{% if p.graded and p.hit is not none %} {{ 'gm-hit' if p.hit else 'gm-miss' }}{% endif %}">
-      <a href="{{ p.page }}">{{ p.player }}</a> <span class="dim">{{ p.team }}</span>
-      {% if p.best5 %}<span class="gm-b5">BEST 5</span>{% endif %}
-      {% set prv = (pick_rec or {}).get(p.stat ~ '|' ~ p.call) %}{% if prv and prv.n >= 30 and prv.rate >= 54.2 %}<span class="pk-tag pk-proven">&#9733; PROVEN</span>{% elif prv and prv.n >= 100 and prv.rate <= 45 %}<span class="pk-tag pk-weak">&#9888; WEAK</span>{% endif %}
-      <span class="gm-call {{ 'stat-good' if p.call == 'OVER' else 'stat-bad' }}">{{ p.call }} {{ p.market_line }} {{ p.short }}</span>
-      <span class="dim">proj {{ p.projected }}</span>
-      {% if p.graded and p.hit is not none %}<i>{{ '&#10004;'|safe if p.hit else '&#10008;'|safe }} {{ p.actual }}</i>{% elif p.void %}<i class="dim">void</i>{% endif %}
-      {% if p.stat != 'any_td' and not p.graded %}<span class="lv" hidden data-lv="{{ p.team }}|{{ p.player }}|{{ p.stat }}|{{ p.market_line }}|{{ p.call }}|{{ p.projected }}"></span>{% endif %}
-    </div>
-    {% endfor %}
-    {% if g.props|length > 10 %}<p class="small dim">+{{ g.props|length - 10 }} more on the stat pages</p>{% endif %}
-    {% else %}
-    <p class="small dim">No player lines yet. PrizePicks usually posts them later in the week; picks freeze as soon as a line appears.</p>
-    {% endif %}
-  </div>
-</article>
-{% endfor %}
-</div>
-{% else %}
-<div class="notice">No games left on the schedule.</div>
-{% endif %}
+<section data-gp="all"{% if x %} hidden{% endif %}>
+</section>
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.gm-tabs [data-gt]');
+  if (!tabs.length) return;
+  function show(k) {
+    tabs.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-gt') === k); });
+    document.querySelectorAll('[data-gp]').forEach(function (s) { s.hidden = s.getAttribute('data-gp') !== k; });
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { var k = b.getAttribute('data-gt'); show(k); history.replaceState(null, '', '#' + k); }); });
+  document.querySelectorAll('[data-goto]').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault(); show(a.getAttribute('data-goto')); }); });
+  document.querySelectorAll('.gm-sub').forEach(function (bar) {
+    var g = bar.getAttribute('data-sub');
+    bar.querySelectorAll('[data-st]').forEach(function (b) { b.addEventListener('click', function () {
+      bar.querySelectorAll('[data-st]').forEach(function (x) { x.classList.toggle('active', x === b); });
+      document.querySelectorAll('[data-sp^="' + g + ':"]').forEach(function (p) { p.hidden = p.getAttribute('data-sp') !== g + ':' + b.getAttribute('data-st'); });
+    }); });
+  });
+  function fromHash() {
+    var h = location.hash.slice(1);
+    if (h.indexOf('g-') === 0) { show('all'); var el = document.getElementById(h); if (el) setTimeout(function () { el.scrollIntoView(); }, 50); }
+    else if (document.querySelector('[data-gt="' + h + '"]')) show(h);
+  }
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
+  // Live tab: one tile per game, drawn from static/live.json (base.html loads it and fires 'pe-live')
+  var box = document.getElementById('gm-live'), G = window.PE_GAMES || [];
+  function tile(gm, g) {
+    var st = !g || g.s === 'pre' || g.hs == null ? 'pre' : g.s, hs = g && g.hs, as = g && g['as'];
+    var head = st === 'pre' ? (gm.ko ? new Date(gm.ko).toLocaleString([], {weekday: 'short', hour: 'numeric', minute: '2-digit'}) : 'kickoff TBD')
+      : (st === 'post' ? 'FINAL' : g.d);
+    var rows = gm.p.map(function (p) {
+      var cls = '', txt = 'not started';
+      if (st !== 'pre') {
+        var tot = hs + as, mine = p.s === gm.h ? hs - as : as - hs;
+        if (p.m === 'moneyline') { cls = mine > 0 ? 'good' : mine < 0 ? 'bad' : ''; txt = mine > 0 ? 'winning by ' + mine : mine < 0 ? 'losing by ' + (-mine) : 'tied'; }
+        else if (p.m === 'spread') { var c = mine + p.l; cls = c > 0 ? 'good' : c < 0 ? 'bad' : ''; txt = c > 0 ? 'covering by ' + c : c < 0 ? 'short by ' + (-c) : 'right on the number'; }
+        else { var over = p.s === 'OVER', left = Math.round((p.l - tot) * 10) / 10;
+          var q = Math.min(g.q || 1, 4), cl = (g.clock || '15:00').split(':'), mins = (q - 1) * 15 + (15 - (+cl[0] + (+cl[1] || 0) / 60));
+          var pace = st === 'post' || mins < 3 ? null : Math.round(tot * 60 / mins);
+          var ok = st === 'post' ? (over ? tot > p.l : tot < p.l) : (over ? (pace != null ? pace > p.l : null) : (pace != null ? pace < p.l : null));
+          cls = ok == null ? '' : ok ? 'good' : 'bad';
+          txt = tot + ' scored' + (st === 'post' ? '' : (left > 0 ? ', ' + left + ' to the line' : ', over the line') + (pace != null ? ' · on pace for ' + pace : '')); }
+        if (st === 'post') txt = (cls === 'good' ? '✔ HIT · ' : cls === 'bad' ? '✘ MISS · ' : '') + txt;
+      }
+      var lab = p.s === 'OVER' ? '<span class="c-over">OVER</span> ' + p.l : p.s === 'UNDER' ? '<span class="c-under">UNDER</span> ' + p.l : p.t;
+      return '<div class="gl-p gl-' + (cls || 'n') + '"><em>' + p.m.toUpperCase() + '</em><b>' + lab + '</b><span>' + txt + '</span></div>';
+    }).join('');
+    return '<article class="gl-card gl-' + st + '"><header><span class="gl-t">' + gm.a + (st === 'pre' ? '' : ' <b>' + as + '</b>') + '</span><span class="gl-at">@</span><span class="gl-t">' + gm.h
+      + (st === 'pre' ? '' : ' <b>' + hs + '</b>') + '</span><span class="gl-st">' + (st === 'in' ? '<i class="live-dot"></i>' : '') + head + '</span></header>'
+      + (rows || '<div class="gl-p gl-n"><span>no game picks for this one</span></div>') + '</article>';
+  }
+  function draw(d) {
+    if (!box) return;
+    var order = {in: 0, pre: 1, post: 2};
+    var items = G.map(function (gm) { var gid = d && (d.t || {})[gm.h], g = gid && d.games[gid];
+      if (g && g.h !== gm.h) g = null;   // live.json can be another week's games
+      return [gm, g]; });
+    items.sort(function (a, b) { var sa = a[1] && a[1].hs != null ? a[1].s : 'pre', sb = b[1] && b[1].hs != null ? b[1].s : 'pre';
+      return (order[sa] - order[sb]) || ((a[0].ko || '') < (b[0].ko || '') ? -1 : 1); });
+    box.innerHTML = items.map(function (x) { return tile(x[0], x[1]); }).join('');
+    var any = items.some(function (x) { return x[1] && x[1].s === 'in'; });
+    var lb = document.querySelector('.gm-live-btn'); if (lb) lb.classList.toggle('is-live', any);
+  }
+  draw(null);
+  window.addEventListener('pe-live', function (e) { draw(e.detail); });
+})();
+</script>
 {% endblock %}

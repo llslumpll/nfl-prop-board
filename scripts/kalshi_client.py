@@ -23,19 +23,32 @@ import requests
 
 BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 
+# Game markets first: they're few, and the touchdown series (900+ markets) used to burn through Kalshi's rate limit
+# before the spread and total series were reached.
 CANDIDATE_SERIES = [
-    ("KXNFLTD", "touchdown"),
-    ("KXNFLFIRSTTD", "touchdown"),
     ("KXNFLGAME", "game"),
     ("KXNFLSPREAD", "game"),
     ("KXNFLTOTAL", "game"),
+    ("KXNFLTD", "touchdown"),
+    ("KXNFLFIRSTTD", "touchdown"),
 ]
+MAX_GAME_PROPS = 800   # every moneyline, spread and total rung, kept in game_all for the Edges tab
 
 
 def _get(url, params=None, timeout=15):
-    resp = requests.get(url, params=params, timeout=timeout)
-    resp.raise_for_status()
-    return resp.json()
+    """GET with a polite retry: Kalshi answers HTTP 429 when asked too fast (it was cutting off the spread and
+    total series every build). Waits Retry-After or 1.5s, 3s, 6s, like the NBA site."""
+    for attempt in range(4):
+        resp = requests.get(url, params=params, timeout=timeout)
+        if resp.status_code == 429 and attempt < 3:
+            try:
+                wait = float(resp.headers.get("Retry-After") or 0)
+            except ValueError:
+                wait = 0
+            time.sleep(max(wait, 1.5 * 2 ** attempt))
+            continue
+        resp.raise_for_status()
+        return resp.json()
 
 
 def _fetch_events(series_ticker):
@@ -131,6 +144,7 @@ def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
                     "volume": m.get("volume") or 0,
                     "close_time": ev.get("close_time") or m.get("close_time"),
                     "series_ticker": series_ticker,
+                    "floor_strike": _to_num(m.get("floor_strike")),
                 }
                 if bucket == "touchdown":
                     result["touchdown_props"].append(record)
@@ -160,6 +174,9 @@ def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
         1 for r in result["game_props"] if r["yes_bid"] is not None or r["yes_ask"] is not None
     )
     result["touchdown_props"] = result["touchdown_props"][:max_per_bucket]
+    # game_all: every game market, for the Games page's Edges tab. game_props stays the top 40 exactly as before, so
+    # the Matchups page and the projections' implied team totals don't change.
+    result["game_all"] = result["game_props"][:MAX_GAME_PROPS]
     result["game_props"] = result["game_props"][:max_per_bucket]
 
     return result

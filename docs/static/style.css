@@ -812,3 +812,42 @@ table.stat-table tr:hover td { background: #172c52; }
 .c-over { color: var(--green) !important; font-weight: 800; }
 .c-under { color: var(--red) !important; font-weight: 800; }
 .pk-weak { color: #fff; background: var(--red); border-color: var(--red); }
+
+/* ==== Games page v2: NBA-style tabs, game picks, edges, live (Nov 2026) ==== */
+.gm-board { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gm-board .pz-fam small { color: var(--text-dim); font-size: 0.8rem; }
+.gm-tabs .pk-stat-btn { font-size: 1.3rem; padding: 5px 14px; }
+.live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--red); margin-right: 6px; vertical-align: 1px; }
+.gm-live-btn.is-live .live-dot { animation: gl-pulse 1.2s infinite; }
+@keyframes gl-pulse { 50% { opacity: 0.25; } }
+.gm-sub { display: inline-flex; gap: 0; margin: 4px 0 10px; border: 3px solid var(--line); }
+.gm-sub button { font-family: var(--sans); font-weight: 800; letter-spacing: 1px; font-size: 0.85rem; padding: 6px 14px; background: transparent; color: var(--text-dim); border: 0; cursor: pointer; }
+.gm-sub button.active { background: var(--yellow); color: #0b162a; }
+.gpk-list { display: flex; flex-direction: column; gap: 10px; }
+.gpk { display: grid; grid-template-columns: minmax(0, 1fr) 110px 130px 210px; align-items: center; gap: 12px; padding: 12px 16px; background: var(--bg-card); border: 3px solid var(--line); border-left: 8px solid var(--line); box-shadow: 5px 5px 0 #050b17; }
+.gpk-good { border-left-color: var(--green); }
+.gpk.gm-hit { border-color: var(--green); } .gpk.gm-miss { border-color: var(--red); opacity: 0.85; }
+.gpk-l { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.gpk-mkt { font-family: var(--sans); font-weight: 800; font-size: 0.72rem; letter-spacing: 1px; color: var(--yellow); }
+.gpk-pick { font-family: var(--pixel); font-weight: 400; font-size: 1.9rem; line-height: 1.05; color: #fff; }
+.gpk-why { font-size: 0.82rem; color: var(--text-dim); }
+.gpk-n { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.gpk-n b { font-family: var(--pixel); font-weight: 400; font-size: 1.9rem; line-height: 1; color: #fff; }
+.gpk-n span { font-family: var(--sans); font-weight: 800; font-size: 0.66rem; letter-spacing: 1px; color: var(--text-dim); }
+.gpk-tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.gl-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+.gl-card { background: var(--bg-card); border: 3px solid var(--line); box-shadow: 5px 5px 0 #050b17; }
+.gl-card.gl-in { border-color: var(--pink); box-shadow: 5px 5px 0 #5a1a00; }
+.gl-card header { display: flex; align-items: baseline; gap: 8px; padding: 10px 14px; background: #0e1b35; border-bottom: 3px solid var(--line); }
+.gl-t { font-family: var(--pixel); font-size: 1.6rem; color: #fff; } .gl-t b { font-weight: 400; color: var(--yellow); margin-left: 4px; }
+.gl-at { color: var(--text-dim); }
+.gl-st { margin-left: auto; font-family: var(--sans); font-weight: 800; font-size: 0.78rem; letter-spacing: 1px; color: var(--text-dim); white-space: nowrap; }
+.gl-in .gl-st { color: #fff; }
+.gl-p { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 0 10px; padding: 8px 14px; border-bottom: 2px dashed #24406e; border-left: 6px solid transparent; }
+.gl-p:last-child { border-bottom: 0; }
+.gl-p em { font-style: normal; font-family: var(--sans); font-weight: 800; font-size: 0.7rem; letter-spacing: 1px; color: var(--text-dim); grid-row: span 2; align-self: center; }
+.gl-p b { color: #fff; } .gl-p span { font-size: 0.85rem; color: var(--text-dim); }
+.gl-good { border-left-color: var(--green); } .gl-good span { color: var(--green); }
+.gl-bad { border-left-color: var(--red); } .gl-bad span { color: var(--red); }
+@media (max-width: 900px) { .gm-board { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gpk { grid-template-columns: minmax(0, 1fr) 90px 110px; } .gpk-tags { grid-column: 1 / -1; justify-content: flex-start; } }
+@media (max-width: 520px) { .gpk { grid-template-columns: 1fr 1fr; } .gpk-l { grid-column: 1 / -1; } .gpk-pick { font-size: 1.6rem; } .gm-tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
