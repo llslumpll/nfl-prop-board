@@ -30,7 +30,7 @@ jobs:
 
       - name: Build site (fetches live nflreadpy data)
         run: python scripts/build.py
-                env:
+        env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
 
       - name: Commit and push if changed
