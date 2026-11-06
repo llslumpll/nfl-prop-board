@@ -6236,7 +6236,14 @@
     "reason": "Real net-points-per-game model projects a -1.2-point margin and a 45.5 total. JAX enters with a real rest advantage (11 real days for BAL vs 18 for JAX). BAL is carrying real, meaningfully more Out/Doubtful designations than JAX this week -- a real health edge favoring JAX.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 10,
+      "away_score": 33,
+      "winner": "AWAY"
+    },
+    "our_correct": true,
+    "market_correct": false
   },
   "JAX@BAL|team_spread|9": {
     "away_team": "JAX",
@@ -6260,7 +6267,14 @@
     "reason": "Real net-points-per-game model projects a -1.2-point margin and a 45.5 total. JAX enters with a real rest advantage (11 real days for BAL vs 18 for JAX). BAL is carrying real, meaningfully more Out/Doubtful designations than JAX this week -- a real health edge favoring JAX. FanDuel's real line is exactly on the 3-point key number -- one of the two most common real NFL margins.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 10,
+      "away_score": 33,
+      "actual_margin": -23
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "JAX@BAL|team_total|9": {
     "away_team": "JAX",
@@ -6284,7 +6298,14 @@
     "reason": "Real net-points-per-game model projects a -1.2-point margin and a 45.5 total. JAX enters with a real rest advantage (11 real days for BAL vs 18 for JAX). BAL is carrying real, meaningfully more Out/Doubtful designations than JAX this week -- a real health edge favoring JAX.",
     "frozen_at": "2026-10-28 19:10 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 10,
+      "away_score": 33,
+      "actual_total": 43
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "CIN@ATL|team_moneyline|9": {
     "away_team": "CIN",

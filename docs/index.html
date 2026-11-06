@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prop Edge Board — NFL</title>
-  <link rel="stylesheet" href="static/style.css?v=1793929073">
+  <link rel="stylesheet" href="static/style.css?v=1793947130">
 </head>
 <body>
   <header class="site-head">
@@ -46,13 +46,17 @@
 <h1>NFL prop board, week by week</h1>
 <p class="lede">
   Real player stats, pulled live from nflreadpy. No predictions are dressed
-  up as more certain than they are — the season is one week old, so every
-  confidence tag on this build is marked provisional rather than tuned.
+  up as more certain than they are: every pick is frozen before kickoff and
+  graded after, misses included, and a player who doesn't play is voided,
+  the same way PrizePicks and the books handle it.
 </p>
+
+
+<section id="today" class="tonight" hidden aria-live="polite"></section>
 
 <div class="stat-strip">
   <div class="stat-block">
-    <div class="num">8</div>
+    <div class="num">9</div>
     <div class="label">weeks of real 2026 data loaded</div>
   </div>
   <div class="stat-block">
@@ -66,7 +70,7 @@
 </div>
 
 <div class="notice" style="margin-top:16px;">
-  <strong>Model maturity: 14/24 calibration checks active.</strong>
+  <strong>Model maturity: 14/23 calibration checks active.</strong>
   Each needs 30 real graded predictions in that exact stat/tier before it's trusted to self-correct &mdash;
   this is genuinely early, and most of the site is still labeled "Building 2026 sample" for a real reason, not caution
   for its own sake. See real trust status per tier below.
@@ -89,15 +93,7 @@
       <td>Receiving Yards</td>
       <td>&mdash;</td>
       <td class="player-sub">confidence calibration</td>
-      <td class="num">194/30</td>
-      <td><span class="stat-good">active</span></td>
-    </tr>
-    
-    <tr>
-      <td>Rushing Yards</td>
-      <td>&mdash;</td>
-      <td class="player-sub">confidence calibration</td>
-      <td class="num">177/30</td>
+      <td class="num">187/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -105,7 +101,15 @@
       <td>Passing Yards</td>
       <td>&mdash;</td>
       <td class="player-sub">confidence calibration</td>
-      <td class="num">165/30</td>
+      <td class="num">167/30</td>
+      <td><span class="stat-good">active</span></td>
+    </tr>
+    
+    <tr>
+      <td>Rushing Yards</td>
+      <td>&mdash;</td>
+      <td class="player-sub">confidence calibration</td>
+      <td class="num">166/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -113,7 +117,7 @@
       <td>Receiving Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">121/30</td>
+      <td class="num">114/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -121,7 +125,7 @@
       <td>Rushing Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">103/30</td>
+      <td class="num">99/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -129,7 +133,7 @@
       <td>Passing Yards</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">90/30</td>
+      <td class="num">89/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -137,7 +141,7 @@
       <td>Receptions</td>
       <td>Moderate 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">87/30</td>
+      <td class="num">84/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -145,7 +149,7 @@
       <td>Passing Yards</td>
       <td>Building 2026 sample</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">69/30</td>
+      <td class="num">70/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -169,7 +173,7 @@
       <td>Receiving Yards</td>
       <td>Established (2026 sample)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">46/30</td>
+      <td class="num">45/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -177,7 +181,7 @@
       <td>Rushing Yards</td>
       <td>Established (2026 sample)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">41/30</td>
+      <td class="num">42/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -185,7 +189,7 @@
       <td>Passing Yards</td>
       <td>Established (2026 sample)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">36/30</td>
+      <td class="num">37/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -193,7 +197,7 @@
       <td>Receptions</td>
       <td>Established (2026 sample)</td>
       <td class="player-sub">projection bias</td>
-      <td class="num">35/30</td>
+      <td class="num">33/30</td>
       <td><span class="stat-good">active</span></td>
     </tr>
     
@@ -233,15 +237,7 @@
       <td>Any Td</td>
       <td>&mdash;</td>
       <td class="player-sub">touchdown probability</td>
-      <td class="num">13/30</td>
-      <td><span class="player-sub">insufficient data</span></td>
-    </tr>
-    
-    <tr>
-      <td>Rushing Yards</td>
-      <td>No data (rookie/unproven)</td>
-      <td class="player-sub">projection bias</td>
-      <td class="num">12/30</td>
+      <td class="num">15/30</td>
       <td><span class="player-sub">insufficient data</span></td>
     </tr>
     
@@ -304,8 +300,8 @@
         <span class="team-badge" style="background:#008E97">MIA</span>
         Malik Willis
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:73.9%;"></span></span>
-      <span class="rank-val">73.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:73.8%;"></span></span>
+      <span class="rank-val">73.8%</span>
     </div>
     
     <div class="rank-row">
@@ -324,8 +320,8 @@
         <span class="team-badge" style="background:#69BE28">SEA</span>
         Drew Lock
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:68.9%;"></span></span>
-      <span class="rank-val">68.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:68.7%;"></span></span>
+      <span class="rank-val">68.7%</span>
     </div>
     
     <div class="rank-row">
@@ -334,8 +330,8 @@
         <span class="team-badge" style="background:#0076B6">DET</span>
         Jared Goff
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.2%;"></span></span>
-      <span class="rank-val">66.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.4%;"></span></span>
+      <span class="rank-val">66.4%</span>
     </div>
     
     <div class="rank-row">
@@ -344,8 +340,8 @@
         <span class="team-badge" style="background:#003594">LA</span>
         Matthew Stafford
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.5%;"></span></span>
-      <span class="rank-val">65.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.9%;"></span></span>
+      <span class="rank-val">65.9%</span>
     </div>
     
   
@@ -364,8 +360,8 @@
         <span class="team-badge" style="background:#008E97">MIA</span>
         Ollie Gordon II
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:82.9%;"></span></span>
-      <span class="rank-val">82.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.1%;"></span></span>
+      <span class="rank-val">80.1%</span>
     </div>
     
     <div class="rank-row">
@@ -374,8 +370,8 @@
         <span class="team-badge" style="background:#0076B6">DET</span>
         Sione Vaki
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:82.9%;"></span></span>
-      <span class="rank-val">82.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.1%;"></span></span>
+      <span class="rank-val">80.1%</span>
     </div>
     
     <div class="rank-row">
@@ -384,28 +380,28 @@
         <span class="team-badge" style="background:#003594">LA</span>
         Kyren Williams
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.4%;"></span></span>
-      <span class="rank-val">70.4%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:68.8%;"></span></span>
+      <span class="rank-val">68.8%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">4</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#FB4F14">DEN</span>
-        Jonah Coleman
+        <span class="team-badge" style="background:#AA0000">SF</span>
+        Christian McCaffrey
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.8%;"></span></span>
-      <span class="rank-val">66.8%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.9%;"></span></span>
+      <span class="rank-val">66.9%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">5</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#AA0000">SF</span>
-        Kaelon Black
+        <span class="team-badge" style="background:#FB4F14">DEN</span>
+        Jonah Coleman
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.5%;"></span></span>
-      <span class="rank-val">66.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.4%;"></span></span>
+      <span class="rank-val">65.4%</span>
     </div>
     
   
@@ -426,8 +422,8 @@
         <span class="team-badge" style="background:#E31837">KC</span>
         Emmett Johnson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.4%;"></span></span>
-      <span class="rank-val">80.4%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:81.7%;"></span></span>
+      <span class="rank-val">81.7%</span>
     </div>
     
     <div class="rank-row">
@@ -436,8 +432,8 @@
         <span class="team-badge" style="background:#203731">GB</span>
         Matthew Golden
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:79.7%;"></span></span>
-      <span class="rank-val">79.7%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.9%;"></span></span>
+      <span class="rank-val">80.9%</span>
     </div>
     
     <div class="rank-row">
@@ -446,18 +442,18 @@
         <span class="team-badge" style="background:#125740">NYJ</span>
         Adonai Mitchell
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:72.8%;"></span></span>
-      <span class="rank-val">72.8%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:73.8%;"></span></span>
+      <span class="rank-val">73.8%</span>
     </div>
     
     <div class="rank-row">
       <span class="rank-num">4</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#000000">LV</span>
-        Ashton Jeanty
+        <span class="team-badge" style="background:#203731">GB</span>
+        Christian Watson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.3%;"></span></span>
-      <span class="rank-val">69.3%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.8%;"></span></span>
+      <span class="rank-val">67.8%</span>
     </div>
     
     <div class="rank-row">
@@ -466,8 +462,8 @@
         <span class="team-badge" style="background:#0B2265">NYG</span>
         Malachi Fields
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.0%;"></span></span>
-      <span class="rank-val">69.0%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.4%;"></span></span>
+      <span class="rank-val">67.4%</span>
     </div>
     
   
@@ -516,8 +512,8 @@
         <span class="team-badge" style="background:#0076B6">DET</span>
         Amon-Ra St. Brown
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:69.5%;"></span></span>
-      <span class="rank-val">69.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:70.6%;"></span></span>
+      <span class="rank-val">70.6%</span>
     </div>
     
     <div class="rank-row">
@@ -604,66 +600,66 @@
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Chig Okonkwo</div>
-          <div class="rr-sub">receptions &middot; UNDER 3.5 &middot; W8</div>
+          <div class="rr-name">Trevor Lawrence</div>
+          <div class="rr-sub">passing yards &middot; OVER 237.5 &middot; W9</div>
         </div>
         <span class="tier tier-high">HIT</span>
       </div>
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Dalton Kincaid</div>
-          <div class="rr-sub">receptions &middot; OVER 3.5 &middot; W8</div>
+          <div class="rr-name">Bhayshul Tuten</div>
+          <div class="rr-sub">rushing yards &middot; UNDER 67.5 &middot; W9</div>
         </div>
         <span class="tier tier-high">HIT</span>
       </div>
       
       <div class="result-row">
         <div>
-          <div class="rr-name">Stefon Diggs</div>
-          <div class="rr-sub">receptions &middot; OVER 4.5 &middot; W8</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Hunter Henry</div>
-          <div class="rr-sub">receptions &middot; OVER 3.5 &middot; W8</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Caleb Williams</div>
-          <div class="rr-sub">passing yards &middot; UNDER 229.5 &middot; W8</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Jakobi Meyers</div>
-          <div class="rr-sub">receiving yards &middot; OVER 38.5 &middot; W8</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Malik Willis</div>
-          <div class="rr-sub">passing yards &middot; UNDER 185.5 &middot; W8</div>
-        </div>
-        <span class="tier tier-low">MISS</span>
-      </div>
-      
-      <div class="result-row">
-        <div>
-          <div class="rr-name">Jacoby Brissett</div>
-          <div class="rr-sub">passing yards &middot; UNDER 264.5 &middot; W8</div>
+          <div class="rr-name">Parker Washington</div>
+          <div class="rr-sub">receiving yards &middot; UNDER 63.5 &middot; W9</div>
         </div>
         <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Derrick Henry</div>
+          <div class="rr-sub">rushing yards &middot; OVER 70.5 &middot; W9</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Zay Flowers</div>
+          <div class="rr-sub">receiving yards &middot; OVER 42.5 &middot; W9</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Trevor Lawrence</div>
+          <div class="rr-sub">any td &middot; OVER 0.5 &middot; W9</div>
+        </div>
+        <span class="tier tier-high">HIT</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Bhayshul Tuten</div>
+          <div class="rr-sub">any td &middot; UNDER 0.5 &middot; W9</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
+      </div>
+      
+      <div class="result-row">
+        <div>
+          <div class="rr-name">Joe Fagnano</div>
+          <div class="rr-sub">passing yards &middot; OVER 160.5 &middot; W9</div>
+        </div>
+        <span class="tier tier-low">MISS</span>
       </div>
       
     
@@ -701,13 +697,108 @@
     }
   </script>
 
+
+  <script>
+    // Live pick tracker (from the NBA site): once a game kicks off, each pick shows its stat so far, where it's
+    // headed and whether it's on track; Home counts every pick this week. Data: static/live.json + static/week.json,
+    // written by every build (about every 20 minutes).
+    (function () {
+      var today = document.getElementById('today');
+      if (!document.querySelector('[data-lv]') && !today) return;
+      var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
+      var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
+      function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
+      function elapsed(g) {  // share of regulation played, from quarter and clock
+        if (g.s === 'post') return 1;
+        var q = g.q || 1, c = String(g.clock || '15:00').split(':'), left = (+c[0] || 0) + (+c[1] || 0) / 60;
+        if (q > 4) return 1;
+        return Math.min(1, Math.max(0, ((q - 1) * 15 + (15 - left)) / 60));
+      }
+      function judge(cur, line, over, fin, proj, frac) {
+        var exp = fin ? cur : (proj > 0 ? cur + proj * (1 - frac) : null), cls, tag;
+        if (fin && cur === line) { cls = 'push'; tag = 'PUSH'; }
+        else if (over && cur > line) { cls = 'hit'; tag = fin ? '✔ HIT' : '✔ CASHED'; }
+        else if (!over && cur > line) { cls = 'miss'; tag = '✘ MISSED'; }
+        else if (fin) { cls = over ? 'miss' : 'hit'; tag = over ? '✘ MISSED' : '✔ HIT'; }
+        else if (exp == null) { cls = 'live'; tag = 'LIVE'; }
+        else if (over ? exp >= line : exp < line) { cls = 'good'; tag = 'ON PACE'; }
+        else { cls = 'bad'; tag = 'BEHIND'; }
+        return {exp: exp, cls: cls, tag: tag};
+      }
+      function lookup(d, team, name) {
+        var gid = (d.t || {})[team], g = gid && d.games[gid];
+        return {g: g, v: g ? (d.p || {})[team + '|' + norm(name)] || (d.p || {})[team + '|' + name] : null};
+      }
+      function card(el, d) {
+        var f = el.getAttribute('data-lv').split('|'), team = f[0], st = f[2], line = parseFloat(f[3]), over = f[4] === 'OVER', proj = parseFloat(f[5]);
+        var r = lookup(d, team, f[1]), g = r.g;
+        if (!g || g.s === 'pre') { el.hidden = true; return; }
+        var fin = g.s === 'post', clock = fin ? 'FINAL' : g.d;
+        if (!r.v) { el.className = 'lv lv-wait'; el.innerHTML = '<span class="lv-txt"></span>'; el.firstChild.textContent = (fin ? 'No stats recorded · ' : 'No stats yet · ') + clock; el.hidden = false; return; }
+        var cur = r.v[SLOT[st]], j = judge(cur, line, over, fin, proj, elapsed(g)), top = Math.max(line * 1.5, cur, j.exp || 0, 1);
+        el.className = 'lv lv-' + j.cls; el.hidden = false;
+        el.innerHTML = '<span class="lv-now"><b></b><em></em></span><span class="lv-bar"><i class="lv-exp"></i><i class="lv-cur"></i><s></s></span><span class="lv-tag"></span><span class="lv-txt"></span>';
+        el.querySelector('.lv-now b').textContent = cur;
+        el.querySelector('.lv-now em').textContent = NAME[st];
+        el.querySelector('.lv-cur').style.width = (100 * Math.min(cur, top) / top) + '%';
+        el.querySelector('.lv-exp').style.width = (100 * Math.min(j.exp == null ? cur : j.exp, top) / top) + '%';
+        el.querySelector('.lv-bar s').style.left = (100 * line / top) + '%';
+        el.querySelector('.lv-tag').textContent = j.tag;
+        el.querySelector('.lv-txt').textContent = g.a + ' ' + g['as'] + ' @ ' + g.h + ' ' + g.hs + ' · ' + clock
+          + (j.exp != null && !fin && j.cls !== 'hit' && j.cls !== 'miss' ? ' · headed for ' + Math.round(j.exp) : '');
+      }
+      function drawToday(d, wk) {
+        if (!today || !wk || wk.week !== d.week) return;
+        var c = {hit: 0, miss: 0, push: 0, good: 0, bad: 0, live: 0, wait: 0, pre: 0}, b = {hit: 0, miss: 0, live: 0, pre: 0, push: 0}, started = false;
+        wk.picks.forEach(function (pk) {
+          var r = lookup(d, pk[0], pk[1]), g = r.g, cls;
+          if (!g || g.s === 'pre') cls = 'pre';
+          else if (!r.v) cls = g.s === 'post' ? 'void' : 'wait';
+          else cls = judge(r.v[SLOT[pk[2]]], pk[3], pk[4] === 'OVER', g.s === 'post', pk[5], elapsed(g)).cls;
+          if (g && g.s !== 'pre') started = true;
+          if (cls in c) c[cls]++;
+          if (pk[6] && cls !== 'void') b[(cls in b) ? cls : 'live']++;
+        });
+        if (!started) { today.hidden = true; return; }
+        var dec = c.hit + c.miss, live = c.good + c.bad + c.live + c.wait;
+        function chip(cl, n, label) { return n ? '<span class="tn-chip tn-' + cl + '"><b>' + n + '</b> ' + label + '</span>' : ''; }
+        var bp = [b.hit ? b.hit + ' hit' : '', b.miss ? b.miss + ' missed' : '', b.push ? b.push + ' push' : '', b.live ? b.live + ' live' : '', b.pre ? b.pre + ' to kick off' : ''].filter(Boolean);
+        var t = new Date(d.at), at = isNaN(t) ? '' : t.toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'});
+        today.innerHTML = '<div class="tn-head"><span class="tn-title"><span class="lv-dot' + (live ? ' tn-on' : '') + '"></span>WEEK ' + d.week + ' SO FAR</span>'
+          + (dec ? '<span class="tn-rate">' + Math.round(100 * c.hit / dec) + '% of decided picks hit</span>' : '') + '</div>'
+          + '<div class="tn-chips">' + chip('hit', c.hit, '✔ HIT') + chip('miss', c.miss, '✘ MISSED') + chip('push', c.push, 'PUSH')
+          + chip('good', c.good, 'ON PACE') + chip('bad', c.bad, 'BEHIND') + chip('live', c.live + c.wait, 'LIVE / NO STATS YET') + chip('pre', c.pre, 'TO KICK OFF') + '</div>'
+          + (bp.length ? '<div class="tn-b5"><b>BEST 5</b> ' + bp.join(' · ') + '</div>' : '')
+          + '<div class="tn-foot">Live stats from ESPN, updated with each build' + (at ? ' · last ' + at : '') + '. Official grades land on <a href="history.html">History</a> the next morning.</div>';
+        today.hidden = false;
+      }
+      var wk = null, timer = null;
+      function load() {
+        var pw = today && !wk ? fetch('static/week.json?t=' + Math.floor(Date.now() / 300000), {cache: 'no-store'})
+          .then(function (r) { return r.ok ? r.json() : null; }).then(function (j) { wk = j; }).catch(function () {}) : Promise.resolve();
+        pw.then(function () { return fetch('static/live.json?t=' + Date.now(), {cache: 'no-store'}); })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) {
+            if (!d || !d.games) return;
+            document.querySelectorAll('[data-lv]').forEach(function (el) { card(el, d); });
+            drawToday(d, wk);
+            var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
+            if (on && !timer) timer = setInterval(load, 60000);
+            if (!on && timer) { clearInterval(timer); timer = null; }
+          }).catch(function () {});
+      }
+      load();
+      document.addEventListener('visibilitychange', function () { if (!document.hidden) load(); });
+    })();
+  </script>
+
   <footer class="site-foot">
     <div class="foot-row">
       <span>DATA: nflreadpy (nflverse) &middot; KALSHI public markets. All unofficial.</span>
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 01:37 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 06:38 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
