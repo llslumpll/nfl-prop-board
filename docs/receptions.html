@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Receptions — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1793953813">
+  <link rel="stylesheet" href="static/style.css?v=1793981692">
 </head>
 <body>
   <header class="site-head">
@@ -20,6 +20,8 @@
     <nav class="site-nav">
       
         <a href="index.html" class="">Home</a>
+      
+        <a href="games.html" class="">Games</a>
       
         <a href="moneyline.html" class="">Moneyline</a>
       
@@ -34,6 +36,8 @@
         <a href="rushing.html" class="">Rushing</a>
       
         <a href="touchdowns.html" class="">Touchdowns</a>
+      
+        <a href="parlays.html" class="">Parlays</a>
       
         <a href="history.html" class="">History</a>
       
@@ -84,8 +88,12 @@
       <div class="prop-card-edge">
         
           
-            <div class="num stat-good">86.8%</div>
-            <div class="label">CONFIDENCE &middot; PROJ 1.3 vs LINE 3</div>
+            
+            
+            
+            <div class="num stat-good">58.4%</div>
+            <div class="label">REAL HIT RATE &middot; UNDERS LIKE THIS (45/77) &middot; MODEL SAYS 86.8%</div>
+            
           
         
       </div>
@@ -182,6 +190,9 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at 3.5, now 3
       (-0.5 since 2026-11-03 16:49 UTC).
+      
+      <b class="stat-good">The market moved toward our pick.</b>
+      Picks the market moved toward have hit 61.8% at the line we picked; against, 42.0%.
     </div>
     
     
@@ -209,8 +220,12 @@
       <div class="prop-card-edge">
         
           
-            <div class="num stat-good">76.6%</div>
-            <div class="label">CONFIDENCE &middot; PROJ 2.1 vs LINE 3.5</div>
+            
+            
+            
+            <div class="num stat-good">58.4%</div>
+            <div class="label">REAL HIT RATE &middot; UNDERS LIKE THIS (45/77) &middot; MODEL SAYS 76.6%</div>
+            
           
         
       </div>
@@ -338,8 +353,12 @@
       <div class="prop-card-edge">
         
           
-            <div class="num stat-good">74.8%</div>
-            <div class="label">CONFIDENCE &middot; PROJ 3.3 vs LINE 4.5</div>
+            
+            
+            
+            <div class="num stat-good">58.4%</div>
+            <div class="label">REAL HIT RATE &middot; UNDERS LIKE THIS (45/77) &middot; MODEL SAYS 74.8%</div>
+            
           
         
       </div>
@@ -452,8 +471,12 @@
       <div class="prop-card-edge">
         
           
-            <div class="num stat-good">70.6%</div>
-            <div class="label">CONFIDENCE &middot; PROJ 8.1 vs LINE 6.5</div>
+            
+            
+            
+            <div class="num stat-good">57.1%</div>
+            <div class="label">REAL HIT RATE &middot; OVERS LIKE THIS (24/42) &middot; MODEL SAYS 70.6%</div>
+            
           
         
       </div>
@@ -581,8 +604,12 @@
       <div class="prop-card-edge">
         
           
-            <div class="num stat-good">68.7%</div>
-            <div class="label">CONFIDENCE &middot; PROJ 6.8 vs LINE 5.5</div>
+            
+            
+            
+            <div class="num stat-good">57.1%</div>
+            <div class="label">REAL HIT RATE &middot; OVERS LIKE THIS (24/42) &middot; MODEL SAYS 68.7%</div>
+            
           
         
       </div>
@@ -821,6 +848,9 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at 3.5, now 3
       (-0.5 since 2026-11-03 16:49 UTC).
+      
+      <b class="stat-good">The market moved toward our pick.</b>
+      Picks the market moved toward have hit 61.8% at the line we picked; against, 42.0%.
     </div>
     
     
@@ -2672,6 +2702,7 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at 3.5, now 3
       (-0.5 since 2026-11-03 16:49 UTC).
+      
     </div>
     
     
@@ -4047,6 +4078,7 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at 5.5, now 5
       (-0.5 since 2026-11-03 16:49 UTC).
+      
     </div>
     
     
@@ -4545,6 +4577,7 @@
     <div class="notice compact">
       &#8646; Real line movement: opened at 2.5, now 3.5
       (+1.0 since 2026-11-03 16:49 UTC).
+      
     </div>
     
     
@@ -6737,7 +6770,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv]') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg]') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -6814,6 +6847,14 @@
           .then(function (d) {
             if (!d || !d.games) return;
             document.querySelectorAll('[data-lv]').forEach(function (el) { card(el, d); });
+            document.querySelectorAll('[data-lvg]').forEach(function (el) {  // Games page: live score per game
+              var gid = (d.t || {})[el.getAttribute('data-lvg')], g = gid && d.games[gid];
+              if (!g || g.s === 'pre' || g.hs == null) { el.hidden = true; return; }
+              el.className = 'lv lv-game' + (g.s === 'in' ? ' lv-in' : '');
+              el.innerHTML = '<span class="lv-dot"></span><b></b>';
+              el.lastChild.textContent = g.a + ' ' + g['as'] + ' – ' + g.h + ' ' + g.hs + ' · ' + (g.s === 'post' ? 'FINAL' : g.d);
+              el.hidden = false;
+            });
             drawToday(d, wk);
             var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
             if (on && !timer) timer = setInterval(load, 60000);
@@ -6831,7 +6872,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 08:30 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 16:14 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

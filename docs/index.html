@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Prop Edge Board — NFL</title>
-  <link rel="stylesheet" href="static/style.css?v=1793953813">
+  <link rel="stylesheet" href="static/style.css?v=1793981692">
 </head>
 <body>
   <header class="site-head">
@@ -20,6 +20,8 @@
     <nav class="site-nav">
       
         <a href="index.html" class="active">Home</a>
+      
+        <a href="games.html" class="">Games</a>
       
         <a href="moneyline.html" class="">Moneyline</a>
       
@@ -34,6 +36,8 @@
         <a href="rushing.html" class="">Rushing</a>
       
         <a href="touchdowns.html" class="">Touchdowns</a>
+      
+        <a href="parlays.html" class="">Parlays</a>
       
         <a href="history.html" class="">History</a>
       
@@ -87,6 +91,14 @@
       <span class="stat-bad">44.8%</span>
       <small>last 2 weeks: 24&ndash;21 (53%)</small>
       <small>moneyline, spread & total; the betting favorite won 47 of 73 games</small>
+    </a>
+    
+    
+    <a class="trk-tile" href="history.html">
+      <em>BEAT THE CLOSE</em>
+      <b>57%</b>
+      <span class="stat-good">of lines that moved went our way</span>
+      <small>235 toward, 174 against. At the line we picked, those hit 61.8% vs 42.0%: the edge is in betting early, before the line moves.</small>
     </a>
     
   </div>
@@ -353,8 +365,8 @@
         <span class="team-badge" style="background:#0B2265">NYG</span>
         J.J. McCarthy
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:71.5%;"></span></span>
-      <span class="rank-val">71.5%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:71.6%;"></span></span>
+      <span class="rank-val">71.6%</span>
     </div>
     
     <div class="rank-row">
@@ -383,8 +395,8 @@
         <span class="team-badge" style="background:#003594">LA</span>
         Matthew Stafford
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.9%;"></span></span>
-      <span class="rank-val">65.9%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:66.2%;"></span></span>
+      <span class="rank-val">66.2%</span>
     </div>
     
   
@@ -440,11 +452,11 @@
     <div class="rank-row">
       <span class="rank-num">5</span>
       <span class="rank-name">
-        <span class="team-badge" style="background:#AA0000">SF</span>
-        Kaelon Black
+        <span class="team-badge" style="background:#FB4F14">DEN</span>
+        Jonah Coleman
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.2%;"></span></span>
-      <span class="rank-val">65.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:65.0%;"></span></span>
+      <span class="rank-val">65.0%</span>
     </div>
     
   
@@ -475,8 +487,8 @@
         <span class="team-badge" style="background:#203731">GB</span>
         Matthew Golden
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.6%;"></span></span>
-      <span class="rank-val">80.6%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:80.3%;"></span></span>
+      <span class="rank-val">80.3%</span>
     </div>
     
     <div class="rank-row">
@@ -505,8 +517,8 @@
         <span class="team-badge" style="background:#203731">GB</span>
         Christian Watson
       </span>
-      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.2%;"></span></span>
-      <span class="rank-val">67.2%</span>
+      <span class="rank-bar-wrap"><span class="rank-bar" style="width:67.6%;"></span></span>
+      <span class="rank-val">67.6%</span>
     </div>
     
   
@@ -747,7 +759,7 @@
     // written by every build (about every 20 minutes).
     (function () {
       var today = document.getElementById('today');
-      if (!document.querySelector('[data-lv]') && !today) return;
+      if (!document.querySelector('[data-lv],[data-lvg]') && !today) return;
       var NAME = {passing_yards: 'PASS YDS', rushing_yards: 'RUSH YDS', receiving_yards: 'REC YDS', receptions: 'REC'};
       var SLOT = {passing_yards: 0, rushing_yards: 1, receiving_yards: 2, receptions: 3};
       function norm(n) { return (n || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\b(jr|sr|ii|iii|iv|v)\b/g, '').replace(/\s+/g, ' ').trim(); }
@@ -824,6 +836,14 @@
           .then(function (d) {
             if (!d || !d.games) return;
             document.querySelectorAll('[data-lv]').forEach(function (el) { card(el, d); });
+            document.querySelectorAll('[data-lvg]').forEach(function (el) {  // Games page: live score per game
+              var gid = (d.t || {})[el.getAttribute('data-lvg')], g = gid && d.games[gid];
+              if (!g || g.s === 'pre' || g.hs == null) { el.hidden = true; return; }
+              el.className = 'lv lv-game' + (g.s === 'in' ? ' lv-in' : '');
+              el.innerHTML = '<span class="lv-dot"></span><b></b>';
+              el.lastChild.textContent = g.a + ' ' + g['as'] + ' – ' + g.h + ' ' + g.hs + ' · ' + (g.s === 'post' ? 'FINAL' : g.d);
+              el.hidden = false;
+            });
             drawToday(d, wk);
             var on = Object.keys(d.games).some(function (k) { return d.games[k].s === 'in'; });
             if (on && !timer) timer = setInterval(load, 60000);
@@ -841,7 +861,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-06 08:30 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-06 16:14 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

@@ -30899,7 +30899,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Javonte Williams|rushing_yards|9": {
     "player": "Javonte Williams",
@@ -32309,9 +32311,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordan Love|passing_yards|9": {
     "player": "Jordan Love",
@@ -32623,9 +32623,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|passing_yards|9": {
     "player": "Joe Burrow",
@@ -34037,5 +34035,30 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Keenan Allen|receiving_yards|9": {
+    "player": "Keenan Allen",
+    "team": "IND",
+    "opponent": "DAL",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 56.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 41.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 14.6,
+    "model_prob": 0.6369,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-11-06 16:15 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   }
 }

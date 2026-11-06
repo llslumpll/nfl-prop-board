@@ -1,0 +1,182 @@
+{
+ "9": {
+  "ml2": {
+   "chance": 0.6801,
+   "decimal": 1.462,
+   "family": "Moneyline",
+   "id": "ml2",
+   "legs": [
+    {
+     "away": "ARI",
+     "call": "HOME",
+     "chance": 0.848,
+     "game": "ARI@SEA",
+     "home": "SEA",
+     "kickoff": "2026-11-08T21:25:00+00:00",
+     "kind": "ml",
+     "label": "SEA to win",
+     "price": -450,
+     "team": "SEA"
+    },
+    {
+     "away": "LV",
+     "call": "HOME",
+     "chance": 0.802,
+     "game": "LV@SF",
+     "home": "SF",
+     "kickoff": "2026-11-08T21:05:00+00:00",
+     "kind": "ml",
+     "label": "SF to win",
+     "price": -510,
+     "team": "SF"
+    }
+   ],
+   "size": 2,
+   "status": "pending",
+   "updated": "2026-11-06 16:15 UTC",
+   "week": 9
+  },
+  "ml3": {
+   "chance": 0.5366,
+   "decimal": 1.728,
+   "family": "Moneyline",
+   "id": "ml3",
+   "legs": [
+    {
+     "away": "ARI",
+     "call": "HOME",
+     "chance": 0.848,
+     "game": "ARI@SEA",
+     "home": "SEA",
+     "kickoff": "2026-11-08T21:25:00+00:00",
+     "kind": "ml",
+     "label": "SEA to win",
+     "price": -450,
+     "team": "SEA"
+    },
+    {
+     "away": "LV",
+     "call": "HOME",
+     "chance": 0.802,
+     "game": "LV@SF",
+     "home": "SF",
+     "kickoff": "2026-11-08T21:05:00+00:00",
+     "kind": "ml",
+     "label": "SF to win",
+     "price": -510,
+     "team": "SF"
+    },
+    {
+     "away": "NYJ",
+     "call": "HOME",
+     "chance": 0.789,
+     "game": "NYJ@KC",
+     "home": "KC",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "ml",
+     "label": "KC to win",
+     "price": -550,
+     "team": "KC"
+    }
+   ],
+   "size": 3,
+   "status": "pending",
+   "updated": "2026-11-06 16:15 UTC",
+   "week": 9
+  },
+  "prop2": {
+   "chance": 0.2652,
+   "decimal": null,
+   "family": "Player props",
+   "id": "prop2",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.515,
+     "conf": 0.99,
+     "game": "DET@MIA",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Ollie Gordon II UNDER 70.5 RUSH YDS",
+     "line": 70.5,
+     "player": "Ollie Gordon II",
+     "projected": 20.9,
+     "stat": "rushing_yards",
+     "team": "MIA"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.515,
+     "conf": 0.9423,
+     "game": "CLE@NO",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Denzel Boston UNDER 3.5 REC",
+     "line": 3.5,
+     "player": "Denzel Boston",
+     "projected": 1.1,
+     "stat": "receptions",
+     "team": "CLE"
+    }
+   ],
+   "size": 2,
+   "status": "pending",
+   "updated": "2026-11-06 16:15 UTC",
+   "week": 9
+  },
+  "prop3": {
+   "chance": 0.1366,
+   "decimal": null,
+   "family": "Player props",
+   "id": "prop3",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.515,
+     "conf": 0.99,
+     "game": "DET@MIA",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Ollie Gordon II UNDER 70.5 RUSH YDS",
+     "line": 70.5,
+     "player": "Ollie Gordon II",
+     "projected": 20.9,
+     "stat": "rushing_yards",
+     "team": "MIA"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.515,
+     "conf": 0.9423,
+     "game": "CLE@NO",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Denzel Boston UNDER 3.5 REC",
+     "line": 3.5,
+     "player": "Denzel Boston",
+     "projected": 1.1,
+     "stat": "receptions",
+     "team": "CLE"
+    },
+    {
+     "call": "OVER",
+     "chance": 0.515,
+     "conf": 0.9258,
+     "game": "KC@NYJ",
+     "kickoff": "2026-11-08T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Emmett Johnson OVER 10.5 REC YDS",
+     "line": 10.5,
+     "player": "Emmett Johnson",
+     "projected": 43.5,
+     "stat": "receiving_yards",
+     "team": "KC"
+    }
+   ],
+   "size": 3,
+   "status": "pending",
+   "updated": "2026-11-06 16:15 UTC",
+   "week": 9
+  }
+ }
+}
