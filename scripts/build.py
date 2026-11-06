@@ -1088,6 +1088,13 @@ def build(oddsapi_mode: str | None = None):
         ),
     }
 
+    # Live pick tracker: ESPN scores + this week's picks, read by the pages in the browser (live_nfl.py)
+    try:
+        import live_nfl
+        print(f"Live tracker: {live_nfl.refresh(DOCS, predictions.load_predictions())}")
+    except Exception as e:  # noqa: BLE001  (never let the tracker stop a build)
+        print(f"Live tracker failed: {type(e).__name__}: {str(e)[:150]}")
+
     for filename, (slug, template_name, ctx) in pages.items():
         template = env.get_template(template_name)
         html = template.render(current_page=slug, **common, **ctx)

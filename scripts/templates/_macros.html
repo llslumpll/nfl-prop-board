@@ -39,6 +39,8 @@
       </div>
     </div>
 
+    {% set lv_stat = {'passing.html': 'passing_yards', 'receiving.html': 'receiving_yards', 'receptions.html': 'receptions', 'rushing.html': 'rushing_yards'}.get(link) %}
+    {% if lv_stat and not is_td and p.call in ('OVER', 'UNDER') and p.market_line is not none %}<span class="lv" hidden data-lv="{{ p.team }}|{{ p.player }}|{{ lv_stat }}|{{ p.market_line }}|{{ p.call }}|{{ p.projected }}"></span>{% endif %}
     <p class="prop-card-reason">{{ p.reason }}</p>
 
     {% if not is_td and p.baseline is not none %}
