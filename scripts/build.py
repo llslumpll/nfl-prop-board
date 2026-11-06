@@ -408,13 +408,6 @@ def build(oddsapi_mode: str | None = None):
                    for g in games_page["games"] for p in g["props"]})
     import json as _pjson
     (DOCS / "static" / "players.js").write_text("window.PE_PLAYERS=" + _pjson.dumps([list(x) for x in _idx], separators=(",", ":")) + ";\n")
-    try:  # the site's own weekly parlays (parlays_nfl.py)
-        import parlays_nfl
-        print(f"Parlays: {parlays_nfl.sync(games_page['week'], fd_games)}")
-        parlays_page = parlays_nfl.page(games_page["week"])
-    except Exception as e:  # noqa: BLE001
-        print(f"Parlays failed: {type(e).__name__}: {e}")
-        parlays_page = {"week": games_page["week"], "now": [], "types": {}, "record": {}, "past": [], "error": str(e)[:200]}
 
     fd_lines = oddsapi_client.upcoming_only((props_cache or {}).get("lines", []))
     known_player_names = (
@@ -952,6 +945,22 @@ def build(oddsapi_mode: str | None = None):
     # Best 5 Touchdowns already makes, just frozen for later grading
     # instead of only shown live. ---
     td_frozen = 0
+    # Touchdown picks frozen under the old rule (passing TDs counted) for games that haven't kicked off are
+    # dropped once so they re-freeze below with the scoring-TD projection (Nov 6 2026).
+    try:
+        _pr, _sch, _nw, _drop = predictions.load_predictions(), dataio.load_schedule(), datetime.now(timezone.utc), []
+        for _k, _p in _pr.items():
+            if _p["stat"] == "any_td" and not _p.get("graded") and not _p.get("td_rule"):
+                _ko = line_attach._kickoff_utc(_p["team"], _p["week"], _sch)
+                if _ko is not None and _nw < _ko:
+                    _drop.append(_k)
+        if _drop:
+            for _k in _drop:
+                del _pr[_k]
+            predictions.save_predictions(_pr)
+            print(f"Touchdown picks re-freezing under the scoring-TD rule: {len(_drop)}")
+    except Exception as e:  # noqa: BLE001
+        print(f"TD re-freeze skipped: {e}")
     for r in touchdown_rows:
         ng = r.get("next_game")
         if not ng or not ng.get("projected_total"):
@@ -1013,7 +1022,43 @@ def build(oddsapi_mode: str | None = None):
                 predictions.save_predictions(preds)
         if wrote:
             td_frozen += 1
+            _pr2 = predictions.load_predictions()
+            _k2 = f"{r['player']}|any_td|{ng['week']}"
+            if _k2 in _pr2:
+                _pr2[_k2]["td_rule"] = "scoring"   # frozen with scoring TDs only (see the re-freeze note above)
+                predictions.save_predictions(_pr2)
     print(f"Froze {td_frozen} new touchdown prediction(s) this build.")
+
+    # The site's own weekly parlays with units (parlays_nfl.py). Touchdown legs: chance of scoring (rushing or
+    # receiving) from the projection, against Kalshi's real 1+ TD price.
+    try:
+        import math as _m
+        import parlays_nfl
+        # Pool = every player Kalshi prices for 1+ TD (not just the Touchdowns page's top 40).
+        _team = {row["player_display_name"]: row["team"]
+                 for row in dataio._latest_week_per_player(dataio.load_stats()).iter_rows(named=True)}
+        _names = []
+        for m in kalshi_data["touchdown_props"]:
+            nm = (m.get("market_title") or "").split(":")[0].strip()
+            if ": 1+" in (m.get("market_title") or "") and nm and nm not in _names:
+                _names.append(nm)
+        _td = []
+        for nm in _names:
+            if nm not in _team or dataio.injury_factor(dataio.injury_status_for(nm)).get("is_out"):
+                continue
+            price = best5.find_kalshi_1plus_td_price(kalshi_data["touchdown_props"], nm)
+            ng = dataio._project_total_td(nm, _team[nm])
+            if not price or not ng or not ng.get("projected_total"):
+                continue
+            _td.append({"player": nm, "team": _team[nm], "opp": ng.get("opponent"),
+                        "chance": 1 - _m.exp(-ng["projected_total"]), "price": price})
+        print(f"Parlays: {parlays_nfl.sync(games_page['week'], fd_games, _td)} ({len(_td)} TD legs priced)")
+        parlays_page = parlays_nfl.page(games_page["week"])
+    except Exception as e:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
+        parlays_page = {"week": games_page["week"], "families": [], "record": {}, "total": {}, "past": [], "names": {},
+                        "error": f"{type(e).__name__}: {str(e)[:200]}"}
 
     # Let picks frozen without a line pick up their first real line, but only
     # before kickoff (see line_attach.py). PrizePicks preferred over FanDuel.

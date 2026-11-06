@@ -2,69 +2,94 @@
 {% block title %}Parlays — Prop Edge Board{% endblock %}
 {% block content %}
 <h1>Week {{ pz.week }} parlays</h1>
-<p class="lede small">
-  The site's own parlays, four a week: 2- and 3-leg <b>moneyline</b> parlays from the most likely winners
-  (our blended win chance, 25% model and 75% FanDuel's price), and 2- and 3-leg <b>player-prop</b> parlays from
-  this week's Best 5. One leg per game. Each one is rebuilt from the best open picks until its first leg kicks
-  off, then it locks and gets graded like everything else. <b>Tracking only:</b> no stakes until a type proves
-  itself here.
-</p>
+<p class="lede">The site builds its own parlays every week, with a stake in units, locks each one when its first leg
+  kicks off, and grades it like everything else. <b>Player props</b> pay like a PrizePicks Power Play
+  ({% for n, x in pz.pp.items() %}{{ n }} legs {{ x|round|int }}x{% if not loop.last %}, {% endif %}{% endfor %}),
+  <b>moneylines</b> at FanDuel's prices, <b>touchdowns</b> at Kalshi's. <span class="gp-chip">GOOD PRICE</span> means
+  every leg's chance beats what its price needs.</p>
 {% if pz.error %}<div class="notice compact">Parlays didn't build this time: {{ pz.error }}</div>{% endif %}
 
-{% if pz.record %}
-<div class="pz-rec">
-  {% for pid, t in pz.types.items() %}{% set r = pz.record.get(pid) %}
-  <div class="pz-rtile"><em>{{ t[0]|upper }} &middot; {{ t[1] }}-LEG</em>
-    {% if r %}<b>{{ r.hits }}&ndash;{{ r.n - r.hits }}</b>{% if r.priced %}<span class="{{ 'stat-good' if r.units > 0 else 'stat-bad' if r.units < 0 }}">{{ '%+.2f'|format(r.units) }}U at FanDuel prices</span>{% endif %}
-    {% else %}<b>&ndash;</b><span class="dim">none graded yet</span>{% endif %}
+{# --- scoreboard: record and units by family --- #}
+<div class="pz-board">
+  <div class="pz-tot">
+    <em>ALL PARLAYS</em>
+    <b>{{ pz.total.hits or 0 }}&ndash;{{ (pz.total.n or 0) - (pz.total.hits or 0) }}</b>
+    <span class="{{ 'stat-good' if (pz.total.units or 0) > 0 else 'stat-bad' if (pz.total.units or 0) < 0 }}">{{ '%+.2f'|format(pz.total.units or 0) }}U</span>
+    <small>{{ pz.total.risked or 0 }}U risked &middot; {{ pz.open_stake }}U riding this week</small>
   </div>
+  {% for f in pz.families %}{% set r = pz.record.get(f.key) %}
+  <a class="pz-fam" href="#fam-{{ f.key }}">
+    <em>{{ f.name|upper }}</em>
+    {% if r %}<b>{{ r.hits }}&ndash;{{ r.n - r.hits }}</b><span class="{{ 'stat-good' if r.units > 0 else 'stat-bad' if r.units < 0 }}">{{ '%+.2f'|format(r.units) }}U</span>
+    {% else %}<b>0&ndash;0</b><span class="dim">no results yet</span>{% endif %}
+  </a>
   {% endfor %}
 </div>
-{% endif %}
 
-{% if pz.now %}
-<div class="pz-grid">
-{% for par in pz.now %}
-<article class="pz-card pz-{{ par.status }}">
-  <header class="pz-head">
-    <span class="pz-name">{{ par.family|upper }} &middot; {{ par.size }}-LEG</span>
-    <span class="pz-state">{% if par.status == 'hit' %}&#10004; CASHED{% elif par.status == 'miss' %}&#10008; MISSED{% elif par.status == 'void' %}VOID{% elif par.locked %}LOCKED{% else %}UPDATES TILL KICKOFF{% endif %}</span>
-  </header>
-  <div class="pz-nums">
-    <div><em>CHANCE</em><b>{{ (par.chance * 100)|round(1) }}%</b></div>
-    {% if par.decimal %}<div><em>PAYS (FANDUEL)</em><b>{{ '%.2f'|format(par.decimal) }}x</b></div>{% endif %}
-    {% if par.family == 'Player props' %}<div><em>PER-LEG CHANCE</em><b>{{ (par.legs[0].chance * 100)|round|int }}%</b><span class="dim small">Best 5's real hit rate</span></div>{% endif %}
+{% for f in pz.families %}
+<section class="pz-sec" id="fam-{{ f.key }}">
+  <h2>{{ f.name }}</h2>
+  <p class="small dim">{{ f.desc }}</p>
+  {% if f.parlays %}
+  <div class="tk-grid">
+  {% for par in f.parlays %}
+  <article class="tk tk-{{ par.status }}{% if par.good %} tk-good{% endif %}">
+    <header class="tk-head">
+      <span class="tk-name">{{ 'SINGLE' if par.size == 1 else par.size ~ '-MAN' }}</span>
+      {% if par.good %}<span class="gp-chip">GOOD PRICE</span>{% endif %}
+      <span class="tk-state">{% if par.status == 'hit' %}&#10004; CASHED{% elif par.status == 'miss' %}&#10008; LOST{% elif par.status == 'void' %}VOID{% elif par.locked %}&#128274; LOCKED{% else %}UPDATES TILL KICKOFF{% endif %}</span>
+    </header>
+    <ol class="tk-legs">
+      {% for l in par.legs %}
+      <li class="{{ 'gm-hit' if l.result == 'hit' else 'gm-miss' if l.result == 'miss' else '' }}">
+        <div class="tk-leg">
+          <b>{% if l.kind == 'prop' %}{{ (l.label|e)|replace(' ' ~ l.call ~ ' ', ' <span class="' ~ ('c-over' if l.call == 'OVER' else 'c-under') ~ '">' ~ l.call ~ '</span> ')|safe }}{% else %}{{ l.label }}{% endif %}</b>
+          {% if l.kind == 'ml' %}<span class="tk-px">{% if l.price is not none %}{{ '+' if l.price > 0 }}{{ l.price }}{% endif %}</span>
+          {% elif l.kind == 'td' and l.price %}<span class="tk-px">{% if l.price >= 0.5 %}-{{ (100 * l.price / (1 - l.price))|round|int }}{% else %}+{{ (100 * (1 - l.price) / l.price)|round|int }}{% endif %}</span>{% endif %}
+          {% if l.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[l.result]|safe }}{% if l.actual is defined and l.actual is not none %} {{ l.actual }}{% endif %}</i>{% endif %}
+        </div>
+        <div class="tk-sub">
+          {% if l.kind == 'ml' %}{{ l.away }} @ {{ l.home }} &middot; {{ (l.chance * 100)|round|int }}% to win{% if l.good %} &middot; <span class="stat-good">beats the price</span>{% endif %}
+          {% elif l.kind == 'td' %}{{ l.team }} &middot; our chance {{ (l.chance * 100)|round|int }}% vs Kalshi {{ (l.price * 100)|round|int }}%{% if l.good %} &middot; <span class="stat-good">good price</span>{% endif %}
+          {% else %}{{ l.team }} &middot; proj {{ l.projected }} &middot; {{ l.call|lower }}s like this hit {{ (l.chance * 100)|round(1) }}%{% if l.n %} ({{ l.n }}){% endif %}{% endif %}
+        </div>
+        {% if not l.result %}
+          {% if l.kind == 'prop' %}<span class="lv" hidden data-lv="{{ l.team }}|{{ l.player }}|{{ l.stat }}|{{ l.line }}|{{ l.call }}|{{ l.projected }}"></span>
+          {% else %}<span class="lv lv-game" hidden data-lvg="{{ l.home if l.kind == 'ml' else l.team }}"></span>{% endif %}
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    <footer class="tk-foot">
+      <div><em>STAKE</em><b>{{ par.stake|round(2) }}U</b></div>
+      <div><em>CHANCE</em><b>{{ (par.chance * 100)|round(1) }}%</b></div>
+      <div><em>PAYS</em><b>{% if par.decimal %}{{ '%.2f'|format(par.decimal) }}x{% else %}&ndash;{% endif %}</b></div>
+      <div><em>{{ 'RESULT' if par.status in ('hit', 'miss', 'void') else 'TO WIN' }}</em>
+        <b class="{{ 'stat-good' if par.status == 'hit' else 'stat-bad' if par.status == 'miss' }}">{% if par.status in ('hit', 'miss', 'void') %}{{ '%+.2f'|format(par.units or 0) }}U{% elif par.decimal %}+{{ '%.2f'|format(par.stake * (par.decimal - 1)) }}U{% else %}&ndash;{% endif %}</b></div>
+    </footer>
+    {% if par.status in ('hit', 'miss') %}<div class="tk-stamp">{{ 'CASHED' if par.status == 'hit' else 'LOST' }}</div>{% endif %}
+  </article>
+  {% endfor %}
   </div>
-  <ol class="pz-legs">
-    {% for l in par.legs %}
-    <li class="{{ 'gm-hit' if l.result == 'hit' else 'gm-miss' if l.result == 'miss' else '' }}">
-      <b>{{ l.label }}</b>
-      <span class="dim">{% if l.kind == 'ml' %}{{ l.away }} @ {{ l.home }} &middot; {{ (l.chance * 100)|round|int }}% to win{% if l.price is not none %} &middot; {{ '+' if l.price > 0 }}{{ l.price }}{% endif %}{% else %}{{ l.team }} &middot; proj {{ l.projected }}{% endif %}</span>
-      {% if l.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[l.result]|safe }}{% if l.actual is defined and l.actual is not none %} {{ l.actual }}{% endif %}</i>
-      {% elif l.kind == 'prop' %}<span class="lv" hidden data-lv="{{ l.team }}|{{ l.player }}|{{ l.stat }}|{{ l.line }}|{{ l.call }}|{{ l.projected }}"></span>
-      {% else %}<span class="lv lv-game" hidden data-lvg="{{ l.home }}"></span>{% endif %}
-    </li>
-    {% endfor %}
-  </ol>
-</article>
+  {% else %}
+  <p class="notice compact">Not enough open legs for this one yet{% if f.key in ('props', 'value') %} (player lines usually post later in the week){% elif f.key == 'td' %} (needs Kalshi touchdown prices){% endif %}.</p>
+  {% endif %}
+</section>
 {% endfor %}
-</div>
-{% else %}
-<div class="notice">No parlays yet this week. They build once there are enough open picks with lines (player lines usually post later in the week).</div>
-{% endif %}
 
 {% if pz.past %}
 <h2>Graded parlays</h2>
 <div class="table-wrap"><div class="table-scroll">
 <table class="stat-table">
-  <thead><tr><th>Week</th><th>Parlay</th><th>Legs</th><th>Result</th></tr></thead>
+  <thead><tr><th>Week</th><th>Parlay</th><th>Legs</th><th>Stake</th><th>Result</th></tr></thead>
   <tbody>
   {% for par in pz.past %}
   <tr>
     <td>W{{ par.week }}</td>
-    <td>{{ par.family }} &middot; {{ par.size }}-leg</td>
+    <td>{{ pz.names.get(par.family, par.family) }} &middot; {{ 'single' if par.size == 1 else par.size ~ '-man' }}</td>
     <td class="small">{% for l in par.legs %}<span class="{{ 'stat-good' if l.result == 'hit' else 'stat-bad' if l.result == 'miss' else 'dim' }}">{{ l.label }}</span>{% if not loop.last %} &middot; {% endif %}{% endfor %}</td>
-    <td class="{{ 'stat-good' if par.status == 'hit' else 'stat-bad' if par.status == 'miss' else '' }}">{{ par.status|upper }}{% if par.units is defined and par.units is not none %} ({{ '%+.2f'|format(par.units) }}U){% endif %}</td>
+    <td>{{ (par.stake or 0)|round(2) }}U</td>
+    <td class="{{ 'stat-good' if par.status == 'hit' else 'stat-bad' if par.status == 'miss' else '' }}">{{ par.status|upper }}{% if par.units is not none %} ({{ '%+.2f'|format(par.units) }}U){% endif %}</td>
   </tr>
   {% endfor %}
   </tbody>

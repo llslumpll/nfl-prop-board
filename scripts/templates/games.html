@@ -21,7 +21,7 @@
 <section class="nw">
   <div class="nw-h"><span>&#128680; INJURY NEWS PLAYS</span>
     <span class="small">{% if nw.summary.n %}so far {{ nw.summary.hits }}/{{ nw.summary.n }} ({{ nw.summary.rate }}%){% else %}none graded yet{% endif %} &middot; tracking only, no stakes</span></div>
-  <p class="small dim">When a starter is ruled OUT, teammates who did better in this season's games without him get an OVER at the
+  <p class="small dim">When a starter is ruled OUT, teammates who did better in this season's games without him get an <span class="c-over">OVER</span> at the
     line as it stood when the news hit. On the graded weeks, teammates of a ruled-out starter whose line hadn't moved went over 62% of the
     time (38/61) &mdash; a small sample, so these are tracked before they're trusted.</p>
   {% for ev in nw.events %}
@@ -29,7 +29,7 @@
     <div class="nw-out"><b>{{ ev.out }}</b>{% if ev.pos %} ({{ ev.pos }}){% endif %} &middot; {{ ev.team }} vs {{ ev.opp }} &middot; <span class="stat-bad">OUT</span> <span class="dim small">seen {{ ev.seen }}</span></div>
     {% for b in ev.plays %}
     <div class="nw-play{% if b.result == 'hit' %} gm-hit{% elif b.result == 'miss' %} gm-miss{% endif %}">
-      <b>{{ b.player }} OVER {{ b.line }} {{ b.short }}</b>
+      <b>{{ b.player }} <span class="c-over">OVER</span> {{ b.line }} {{ b.short }}</b>
       <span class="dim">{{ b.without }} without him vs {{ b.with }} with (+{{ b.bump }}%, {{ b.n_wo }} game{{ 's' if b.n_wo != 1 }})</span>
       {% if b.moved %}<span class="small {{ 'stat-good' if b.now > b.line else 'stat-bad' }}">line now {{ b.now }}</span>{% elif b.now is defined %}<span class="small dim">line hasn't moved</span>{% endif %}
       {% if b.result %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void'}[b.result]|safe }}{% if b.actual is not none %} {{ b.actual }}{% endif %}</i>
@@ -85,7 +85,7 @@
           {% set m = p.our_value %}
           <b>{{ side }} {{ '+' if pts > 0 }}{{ pts }}</b><span>{% if m|abs < 0.05 %}we have it even{% else %}we have {{ g.home if m > 0 else g.away }} by {{ m|abs|round(1) }}{% endif %}</span>
         {% else %}
-          <b>{{ p.our_call }} {{ p.market_line }}</b><span>we project {{ p.our_value }}</span>
+          <b><span class="{{ 'c-over' if p.our_call == 'OVER' else 'c-under' }}">{{ p.our_call }}</span> {{ p.market_line }}</b><span>we project {{ p.our_value }}</span>
         {% endif %}
         {% if p.graded and p.our_correct is not none %}<i>{{ '&#10004; HIT'|safe if p.our_correct else '&#10008; MISS'|safe }}</i>{% endif %}
       {% else %}<span class="dim">no line yet</span>{% endif %}

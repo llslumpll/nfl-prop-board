@@ -298,7 +298,7 @@
           <td>{{ p.stat.replace('_', ' ') }}</td>
           <td class="num">{{ p.projected }}</td>
           <td class="num">{{ p.market_line if p.market_line is not none else '--' }}</td>
-          <td>{{ p.call if p.call else '--' }}</td>
+          <td>{% if p.call %}<span class="{{ 'c-over' if p.call == 'OVER' else 'c-under' if p.call == 'UNDER' }}">{{ p.call }}</span>{% else %}--{% endif %}</td>
           <td class="num">{{ p.actual if p.actual is not none else '--' }}</td>
           <td>
             {% if not p.graded %}<span class="player-sub">pending</span>
@@ -383,9 +383,9 @@
     <div class="b5-name">{{ p.player }} {{ b5_icon(p) }}</div>
     <div class="b5-sub">
       {% if is_td %}
-        {% if p.market_prob is defined and p.market_prob is not none %}{{ p.call }} &middot; model {{ p.model_prob }}% vs mkt {{ p.market_prob }}%{% else %}proj {{ p.projected }} TD &middot; no market price{% endif %}
+        {% if p.market_prob is defined and p.market_prob is not none %}<span class="{{ 'c-over' if p.call == 'OVER' else 'c-under' if p.call == 'UNDER' }}">{{ p.call }}</span> &middot; model {{ p.model_prob }}% vs mkt {{ p.market_prob }}%{% else %}proj {{ p.projected }} TD &middot; no market price{% endif %}
       {% else %}
-        {% if p.market_line is not none %}{{ p.call }} {{ p.market_line }}{% else %}no line{% endif %} &middot; proj {{ p.projected }}
+        {% if p.market_line is not none %}<span class="{{ 'c-over' if p.call == 'OVER' else 'c-under' if p.call == 'UNDER' }}">{{ p.call }}</span> {{ p.market_line }}{% else %}no line{% endif %} &middot; proj {{ p.projected }}
       {% endif %}
       {% if p.actual is not none %}&middot; actual {{ p.actual }}{% endif %}
     </div>
@@ -494,7 +494,7 @@
               {% set st = src_tag(p)|trim %}{% if st %}<div class="player-sub">{{ st }}</div>{% endif %}
             </td>
             <td class="num {% if p.edge is not none and p.market_line is not none %}stat-{{ 'good' if p.edge > 0 else 'bad' if p.edge < 0 else 'neutral' }}{% endif %}">{% if p.edge is not none and p.market_line is not none %}{{ '+' if p.edge > 0 }}{{ p.edge }}{{ 'pp' if is_td }}{% else %}--{% endif %}</td>
-            <td>{{ p.call if p.call else '--' }}</td>
+            <td>{% if p.call %}<span class="{{ 'c-over' if p.call == 'OVER' else 'c-under' if p.call == 'UNDER' }}">{{ p.call }}</span>{% else %}--{% endif %}</td>
             <td class="num">{{ p.actual if p.actual is not none else '--' }}</td>
             <td style="white-space:nowrap;">
               {% if p.result == 'hit' %}<span class="stat-good">&#9989; HIT</span>

@@ -136,7 +136,7 @@
       <div class="result-row">
         <div>
           <div class="rr-name">{{ r.player }}</div>
-          <div class="rr-sub">{{ r.stat.replace('_', ' ') }} &middot; {{ r.call }} {{ r.market_line }} &middot; W{{ r.week }}</div>
+          <div class="rr-sub">{{ r.stat.replace('_', ' ') }} &middot; <span class="{{ 'c-over' if r.call == 'OVER' else 'c-under' if r.call == 'UNDER' }}">{{ r.call }}</span> {{ r.market_line }} &middot; W{{ r.week }}</div>
         </div>
         {% if r.hit %}<span class="tier tier-high">HIT</span>{% else %}<span class="tier tier-low">MISS</span>{% endif %}
       </div>

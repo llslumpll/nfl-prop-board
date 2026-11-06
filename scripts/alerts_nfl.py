@@ -8,7 +8,7 @@ alerts (nothing breaks). The URL lives only in that secret.
 What gets sent (each once; data/alerts_state.json remembers what went out):
   * injury news: a starter newly ruled OUT, with the teammate OVER plays (news_nfl.py)
   * Sunday card (first build after 9 AM CT Sunday): this week's Best 5 still open, the PROVEN picks whose line
-    hasn't moved yet (bet early), and the site's moneyline parlays
+    hasn't moved yet (bet early), and the site's parlays with units
   * week recap, once every pick of the week is graded: props, Best 5, game picks, parlays (units and dollars,
     1U = $100), news plays
   * a one-time "connected" message the first time the secret works
@@ -76,10 +76,10 @@ def news_messages(week: int | None) -> list[tuple[str, str]]:
     return out
 
 
-def sunday_card(week: int | None, now: datetime) -> tuple[str, str] | None:
+def sunday_card(week: int | None, now: datetime) -> list[tuple[str, str]]:
     local = now.astimezone(CT)
     if week is None or local.weekday() != 6 or local.hour < 9:
-        return None
+        return []
     import grade
     import line_movement_log
     import parlays_nfl
@@ -103,17 +103,23 @@ def sunday_card(week: int | None, now: datetime) -> tuple[str, str] | None:
         lines.append("**★ Proven, line hasn't moved (bet early):**")
         lines += [f"• {p['player']} {p['call']} {p['market_line']:g} {SHORT[p['stat']]} ({r:.0f}% for picks like this)"
                   for r, p in sorted(proven, key=lambda x: -x[0])[:8]]
+    out = []
+    if len(lines) > 1:
+        out.append((f"card|{week}", "\n".join(lines + [SITE])))
+    lines = [f"🎟️ **Week {week} parlays** (locked at first kickoff)"]
     pz = parlays_nfl.load().get(str(week), {})
-    for pid in ("ml2", "ml3"):
+    names = {"props": "props", "value": "good-price props", "ml": "moneyline", "td": "touchdown"}
+    for pid in ("props-2", "value-2", "ml-2", "ml-3", "td-1", "td-2", "td-3", "td-4"):
         par = pz.get(pid)
-        if par and par["status"] == "pending":
-            legs = " + ".join(l["team"] for l in par["legs"])
-            pays = f" at {par['decimal']:.2f}x" if par.get("decimal") else ""
-            lines.append(f"🎟️ {par['size']}-leg moneyline: {legs} · {100 * par['chance']:.0f}% to cash{pays} (tracking)")
-    if len(lines) == 1:
-        return None
-    lines.append(SITE)
-    return (f"card|{week}", "\n".join(lines))
+        if par and par["status"] == "pending" and par.get("decimal"):
+            kind = "single" if par["size"] == 1 else f"{par['size']}-leg"
+            legs = " + ".join(l["label"] for l in par["legs"])
+            gp = " · GOOD PRICE" if par.get("good") else ""
+            lines.append(f"• {kind} {names.get(par['family'], par['family'])}: {legs} · {par['stake']:g}U at "
+                         f"{par['decimal']:.2f}x · {100 * par['chance']:.0f}% to cash{gp}")
+    if len(lines) > 1:
+        out.append((f"parlays|{week}", "\n".join(lines + [SITE + "parlays.html"])))
+    return out
 
 
 def recap_message(now: datetime) -> tuple[str, str] | None:
@@ -140,8 +146,8 @@ def recap_message(now: datetime) -> tuple[str, str] | None:
     if pz:
         u = sum(p.get("units") or 0 for p in pz if p.get("units") is not None)
         priced = any(p.get("units") is not None for p in pz)
-        lines.append(f"Parlays (tracking): {sum(1 for p in pz if p['status'] == 'hit')}/{len(pz)} cashed"
-                     + (f" · moneyline parlays {_money(u)}" if priced else ""))
+        lines.append(f"Parlays: {sum(1 for p in pz if p['status'] == 'hit')}/{len(pz)} cashed"
+                     + (f" · {_money(u)}" if priced else ""))
     nd = [b for ev in news_nfl.load().get(str(w), {}).values() for b in ev["plays"] if b.get("result") in ("hit", "miss")]
     if nd:
         lines.append(f"News plays: {sum(1 for b in nd if b['result'] == 'hit')}/{len(nd)}")
@@ -163,7 +169,7 @@ def run(week: int | None, now: datetime | None = None) -> dict:
     if not st.get("connected"):
         msgs.append(("connected", "✅ Prop Edge NFL alerts are connected. You'll get injury-news plays, the Sunday card "
                                   f"and a recap when each week is graded.\n{SITE}"))
-    for fn in (lambda: news_messages(week), lambda: [sunday_card(week, now)], lambda: [recap_message(now)]):
+    for fn in (lambda: news_messages(week), lambda: sunday_card(week, now), lambda: [recap_message(now)]):
         try:
             msgs += [m for m in fn() if m]
         except Exception as e:  # noqa: BLE001

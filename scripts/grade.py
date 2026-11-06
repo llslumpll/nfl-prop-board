@@ -69,7 +69,8 @@ def grade_all() -> dict:
                 actual = 0
             else:
                 row0 = player_rows.row(0, named=True)
-                actual = (row0.get("passing_tds") or 0) + (row0.get("rushing_tds") or 0) + (row0.get("receiving_tds") or 0)
+                actual = (row0.get("rushing_tds") or 0) + (row0.get("receiving_tds") or 0)  # scoring TDs only
+                p["td_rule"] = "scoring"
         elif player_rows.height == 0:
             # Game is final but this player has no stat row for that week
             # -- most likely inactive/didn't play. Grade as final with a
@@ -102,6 +103,22 @@ def grade_all() -> dict:
         if p.get("graded") and not p.get("void") and (p["player"], p["week"]) not in played and (p["team"], p["week"]) in finals:
             p.update(actual=None, hit=None, void="did not play")
             revoided += 1
+
+    # Touchdown picks graded before Nov 6 2026 counted a QB's passing TDs; re-count them as scoring TDs (once).
+    retd = 0
+    for p in preds.values():
+        if p["stat"] != "any_td" or not p.get("graded") or p.get("void") or p.get("td_rule") == "scoring":
+            continue
+        row = stats.filter((pl.col("player_display_name") == p["player"]) & (pl.col("week") == p["week"]))
+        if not row.height:
+            continue
+        r0 = row.row(0, named=True)
+        p["actual"] = (r0.get("rushing_tds") or 0) + (r0.get("receiving_tds") or 0)
+        if p.get("market_line") is not None and p.get("call") in ("OVER", "UNDER"):
+            p["hit"] = p["actual"] > p["market_line"] if p["call"] == "OVER" else p["actual"] < p["market_line"]
+        p["td_rule"] = "scoring"
+        retd += 1
+    revoided += retd
 
     if newly_graded or revoided:
         predictions.save_predictions(preds)

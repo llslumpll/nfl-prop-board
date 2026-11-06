@@ -44,7 +44,7 @@
     {% for p in team_best_picks[market] %}
     <tr>
       <td>{{ p.away_team }} @ {{ p.home_team }} <span class="player-sub">W{{ p.week }}</span></td>
-      <td><span class="tier tier-mid">{{ p.our_call }}</span></td>
+      <td><span class="tier {{ 'tier-high' if p.our_call == 'OVER' else 'tier-low' if p.our_call == 'UNDER' else 'tier-mid' }}">{{ p.our_call }}</span></td>
       <td class="num">{{ p.our_value }}{{ unit }}</td>
       <td class="num">{{ p.market_line }}{{ unit }}</td>
       <td class="num stat-good">{{ p.edge }}{{ unit }}</td>
@@ -287,7 +287,7 @@
         {% for market, p in m.our_picks.items() %}
         <tr>
           <td class="player-sub">{{ {'team_moneyline':'Moneyline','team_spread':'Spread','team_total':'Total'}[market] }}</td>
-          <td><span class="tier tier-mid">{{ p.our_call }}</span></td>
+          <td><span class="tier {{ 'tier-high' if p.our_call == 'OVER' else 'tier-low' if p.our_call == 'UNDER' else 'tier-mid' }}">{{ p.our_call }}</span></td>
           <td class="num">{{ p.our_value }}{{ '%' if market == 'team_moneyline' }}</td>
           <td class="num">{{ p.market_line if p.market_line is not none else '--' }}{{ '%' if market == 'team_moneyline' and p.market_line is not none }}</td>
           <td class="num">{{ p.edge if p.edge is not none else '--' }}</td>

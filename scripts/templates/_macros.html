@@ -30,7 +30,7 @@
             {% set pr = (pick_rec or {}).get((card_stat or '') ~ '|' ~ (p.call or '')) %}
             {% if pr and pr.n >= 20 %}
             <div class="num stat-{{ 'good' if pr.rate >= 54.2 else 'bad' }}">{{ pr.rate }}%</div>
-            <div class="label">REAL HIT RATE &middot; {{ p.call }}S LIKE THIS ({{ pr.h }}/{{ pr.n }}) &middot; MODEL SAYS {{ p.confidence }}%</div>
+            <div class="label">REAL HIT RATE &middot; <span class="{{ 'c-over' if p.call == 'OVER' else 'c-under' }}">{{ p.call }}S</span> LIKE THIS ({{ pr.h }}/{{ pr.n }}) &middot; MODEL SAYS {{ p.confidence }}%</div>
             {% else %}
             <div class="num stat-good">{{ p.confidence }}%</div>
             <div class="label">CONFIDENCE &middot; PROJ {{ p.projected }} vs LINE {{ p.market_line }}</div>
@@ -214,7 +214,7 @@
     {% set fp = next_game.projection.frozen_prediction %}
     <div class="notice compact">
       Predicted at <strong>{{ fp.frozen_at }}</strong> and never recalculated after that
-      {% if fp.market_line is not none %}&mdash; real {{ {'prizepicks': 'PrizePicks', 'fanduel': 'FanDuel', 'kalshi_1plus_td': 'Kalshi 1+ TD'}.get(fp.market_source, 'market') }} line {% if fp.line_attached_at %}first seen {{ fp.line_attached_at }} (before kickoff, after the projection was frozen){% else %}at freeze time{% endif %}: {{ fp.market_line }} ({{ fp.call }}){% endif %}.
+      {% if fp.market_line is not none %}&mdash; real {{ {'prizepicks': 'PrizePicks', 'fanduel': 'FanDuel', 'kalshi_1plus_td': 'Kalshi 1+ TD'}.get(fp.market_source, 'market') }} line {% if fp.line_attached_at %}first seen {{ fp.line_attached_at }} (before kickoff, after the projection was frozen){% else %}at freeze time{% endif %}: {{ fp.market_line }} (<span class="{{ 'c-over' if fp.call == 'OVER' else 'c-under' if fp.call == 'UNDER' }}">{{ fp.call }}</span>){% endif %}.
     </div>
     {% endif %}
     {% if next_game.projection.line_movement and next_game.projection.line_movement.moved %}

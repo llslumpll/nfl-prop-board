@@ -1379,7 +1379,10 @@ def _project_total_td(player_name: str, team: str) -> dict | None:
         return None
     total_projected = 0.0
     parts = []
-    for stat_col, label in [("passing_tds", "pass"), ("rushing_tds", "rush"), ("receiving_tds", "rec")]:
+    # Scoring touchdowns only (Nov 6 2026): an "anytime touchdown" -- Kalshi's touchdown markets, every sportsbook --
+    # means the player scores it, by rushing or receiving. A QB's passing TDs used to be added in, which made
+    # every QB look like a near-certain scorer (and graded those picks against the wrong number).
+    for stat_col, label in [("rushing_tds", "rush"), ("receiving_tds", "rec")]:
         hist = load_historical_stats()
         career_vals = [v for v in hist.filter(pl.col("player_display_name") == player_name)[stat_col].to_list() if v]
         if not career_vals and stat_col != "rushing_tds":

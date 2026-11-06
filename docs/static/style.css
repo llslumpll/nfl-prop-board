@@ -764,3 +764,50 @@ table.stat-table tr:hover td { background: #172c52; }
 .pk-wait { padding: 30px 0; text-align: center; }
 @media (max-width: 640px) { .pk-stat-btn { font-size: 1.2rem; padding: 4px 12px; } }
 @media (max-width: 640px) { .pk-bar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .pk-stat-btn { text-align: center; } }
+
+/* ==== Parlays v2: arcade tickets with units (Nov 2026) ==== */
+.gp-chip { display: inline-block; font-family: var(--sans); font-weight: 800; font-size: 0.75rem; letter-spacing: 1px; color: #0b162a; background: var(--green); padding: 2px 7px; box-shadow: 2px 2px 0 #0a3d1f; vertical-align: 2px; }
+.pz-board { display: grid; grid-template-columns: 1.4fr repeat(4, 1fr); gap: 10px; margin: 6px 0 26px; }
+.pz-tot, .pz-fam { display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; background: var(--bg-card); border: 3px solid var(--line); box-shadow: 5px 5px 0 #050b17; color: var(--text); text-decoration: none; }
+.pz-tot { background: var(--pink); border-color: #fff; box-shadow: 5px 5px 0 #5a1a00; }
+.pz-tot em, .pz-fam em { font-style: normal; font-family: var(--pixel); font-size: 1.15rem; letter-spacing: 1px; color: var(--yellow); }
+.pz-tot em { color: #fff; }
+.pz-tot b, .pz-fam b { font-family: var(--pixel); font-weight: 400; font-size: 2.4rem; line-height: 1; color: #fff; text-shadow: 2px 2px 0 #6b1d00; }
+.pz-tot > span { font-family: var(--pixel); font-size: 1.7rem; color: #fff !important; }
+.pz-tot small { color: #ffe3d2; font-size: 0.85rem; }
+.pz-fam:hover { border-color: #fff; text-decoration: none; color: var(--text); }
+.pz-fam > span { font-weight: 800; }
+.pz-sec { margin-bottom: 18px; }
+.tk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 18px; }
+.tk { position: relative; overflow: hidden; background: linear-gradient(180deg, #16294d, var(--bg-card)); border: 3px solid var(--line); border-top: 8px solid var(--pink); box-shadow: 6px 6px 0 #050b17; display: flex; flex-direction: column; }
+.tk::before, .tk::after { content: ""; position: absolute; top: 50%; width: 22px; height: 22px; border-radius: 50%; background: var(--bg); border: 3px solid var(--line); }
+.tk::before { left: -14px; } .tk::after { right: -14px; }
+.tk-good { border-top-color: var(--green); }
+.tk-hit { border-color: var(--green); box-shadow: 6px 6px 0 #0a3d1f, 0 0 18px rgba(61,255,143,.25); }
+.tk-miss { opacity: 0.8; }
+.tk-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 12px 16px 8px; }
+.tk-name { font-family: var(--pixel); font-size: 1.9rem; line-height: 1; color: #fff; text-shadow: 2px 2px 0 var(--pink); margin-right: auto; }
+.tk-state { font-family: var(--sans); font-weight: 800; font-size: 0.75rem; letter-spacing: 1px; color: var(--text-dim); border: 2px solid var(--line); padding: 2px 7px; }
+.tk-hit .tk-state { color: var(--green); border-color: var(--green); } .tk-miss .tk-state { color: var(--red); border-color: var(--red); }
+.tk-legs { list-style: none; margin: 0; padding: 0 16px; counter-reset: leg; flex: 1; }
+.tk-legs li { counter-increment: leg; position: relative; padding: 9px 0 9px 34px; border-bottom: 2px dashed #24406e; }
+.tk-legs li::before { content: counter(leg); position: absolute; left: 0; top: 9px; width: 24px; height: 24px; display: grid; place-items: center; font-family: var(--pixel); font-size: 1.15rem; color: #0b162a; background: var(--yellow); }
+.tk-legs li.gm-hit::before { background: var(--green); content: "\2714"; } .tk-legs li.gm-miss::before { background: var(--red); color: #fff; content: "\2718"; }
+.tk-leg { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.tk-leg b { font-weight: 800; color: #fff; font-size: 1.05rem; }
+.tk-leg i { font-style: normal; font-weight: 800; margin-left: auto; }
+.tk-legs li.gm-hit i { color: var(--green); } .tk-legs li.gm-miss i { color: var(--red); }
+.tk-px { font-family: var(--pixel); font-size: 1.3rem; color: var(--yellow); }
+.tk-sub { font-size: 0.85rem; color: var(--text-dim); margin-top: 2px; }
+.tk-legs .lv { margin: 6px 0 0; }
+.tk-foot { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 10px; padding: 10px 16px 12px; background: #0e1b35; border-top: 3px solid var(--line); }
+.tk-foot em { display: block; font-style: normal; font-family: var(--sans); font-weight: 800; font-size: 0.68rem; letter-spacing: 1px; color: var(--text-dim); }
+.tk-foot b { font-family: var(--pixel); font-weight: 400; font-size: 1.6rem; line-height: 1.1; color: #fff; }
+.tk-stamp { position: absolute; right: 18px; top: 54px; transform: rotate(-14deg); font-family: var(--pixel); font-size: 2.6rem; letter-spacing: 2px; padding: 2px 12px; border: 4px solid currentColor; opacity: 0.85; pointer-events: none; }
+.tk-hit .tk-stamp { color: var(--green); } .tk-miss .tk-stamp { color: var(--red); }
+@media (max-width: 900px) { .pz-board { grid-template-columns: repeat(2, minmax(0, 1fr)); } .pz-tot { grid-column: 1 / -1; } }
+@media (max-width: 520px) { .tk-grid { grid-template-columns: 1fr; } .tk-foot b { font-size: 1.3rem; } }
+
+/* OVER = green, UNDER = red, everywhere a call is shown (Nov 2026) */
+.c-over { color: var(--green) !important; font-weight: 800; }
+.c-under { color: var(--red) !important; font-weight: 800; }
