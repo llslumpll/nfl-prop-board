@@ -664,3 +664,92 @@ details.info-collapse .notice:last-of-type { margin-bottom: 0; }
 .pk-proven { color: #0a0a0f; background: var(--green); border-color: var(--green); }
 .pk-early { color: var(--cyan); } .pk-toward { color: var(--green); } .pk-against { color: var(--red); }
 .gm-prop .pk-tag { font-size: 0.85rem; padding: 1px 6px; }
+
+/* Illuminated football field behind everything (Nov 2026, matches the NBA site's court) */
+body::before { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: url("field.svg") center / cover no-repeat; opacity: 0.2; }
+@media (max-width: 760px) { body::before { opacity: 0.13; } }
+.site-head { background: rgba(10, 10, 15, 0.92); backdrop-filter: blur(4px); align-items: center; }
+.site-main, .sys-tagline { position: relative; }
+
+/* Header player search (Nov 2026) */
+.psrch { position: relative; flex: 0 1 250px; min-width: 190px; }
+.psrch input { width: 100%; font-family: var(--mono); font-size: 1.15rem; color: #fff; background: var(--bg-card); border: 3px solid var(--line); padding: 4px 10px; outline: none; }
+.psrch input::placeholder { color: var(--text-dim); }
+.psrch input:focus { border-color: var(--yellow); box-shadow: 3px 3px 0 var(--pink); }
+.psrch-list { position: absolute; left: 0; right: 0; top: calc(100% + 6px); z-index: 60; list-style: none; margin: 0; padding: 0; background: #0f0f18; border: 3px solid var(--yellow); box-shadow: 4px 4px 0 var(--pink); max-height: 340px; overflow-y: auto; }
+.psrch-list.hidden { display: none; }
+.psrch-list li { display: flex; justify-content: space-between; gap: 10px; padding: 6px 12px; font-size: 1.15rem; cursor: pointer; border-bottom: 1px solid var(--line); }
+.psrch-list li b { font-weight: 400; color: var(--cyan); }
+.psrch-list li.on, .psrch-list li:hover { background: var(--pink); color: #fff; } .psrch-list li.on b, .psrch-list li:hover b { color: var(--yellow); }
+.psrch-list li.none { color: var(--text-dim); cursor: default; } .psrch-list li.none:hover { background: none; }
+.gm-card:target { border-color: var(--yellow); box-shadow: 0 0 0 3px var(--yellow), 6px 6px 0 var(--pink); }
+
+/* Phones: menu on one swipeable row */
+@media (max-width: 760px) {
+  .site-head { padding: 12px 14px; gap: 10px; }
+  .site-nav { flex-wrap: nowrap; overflow-x: auto; width: 100%; padding-bottom: 4px; scrollbar-width: none; }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { flex: 0 0 auto; }
+  .psrch { flex: 1 1 100%; } .psrch input { font-size: 16px; }
+}
+html { background: var(--bg); }
+body { background: transparent; }
+.psrch { min-width: 260px; }
+.trk-tile > span.trk-small { font-size: 1.15rem; }
+
+/* ==== NFL look: "Monsters of the Midway" arcade (Bears navy & orange). Matches the NBA site's layout. ==== */
+@font-face { font-family: "Jersey 10"; src: url("fonts/jersey-10-latin-400-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Oxanium"; font-weight: 600; src: url("fonts/oxanium-latin-600-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Oxanium"; font-weight: 700; src: url("fonts/oxanium-latin-700-normal.woff2") format("woff2"); font-display: block; }
+@font-face { font-family: "Oxanium"; font-weight: 800; src: url("fonts/oxanium-latin-800-normal.woff2") format("woff2"); font-display: block; }
+:root {
+  --bg: #0b162a; --bg-card: #132342; --line: #2d4573; --text: #fff7ef; --text-dim: #a9b6d1;
+  --pink: #ff5f15; --cyan: #ffffff; --yellow: #ff9a3c; --amber: #ff9a3c; --green: #3dff8f; --red: #ff3d57;
+  --pixel: "Jersey 10", "Press Start 2P", monospace;
+  --sans: "Oxanium", ui-sans-serif, system-ui, sans-serif; --mono: "Oxanium", ui-sans-serif, system-ui, sans-serif;
+}
+html { background: var(--bg); }
+html, body { font-size: 18px; font-weight: 600; letter-spacing: 0.1px; }
+strong, b { font-weight: 800; }
+body::before { opacity: 0.22; }
+body::after { background: repeating-linear-gradient(0deg, rgba(0,0,0,0.16) 0 1px, transparent 1px 4px); }
+.site-head { background: linear-gradient(180deg, #102040, rgba(11,22,42,0.95)); border-bottom: 0;
+  box-shadow: 0 5px 0 0 var(--pink), 0 10px 0 0 #ffffff, 0 14px 0 0 #c83803; margin-bottom: 14px; }
+.brand { font-family: var(--pixel); font-size: 2.6rem; line-height: 1; letter-spacing: 1px; color: #fff; text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 #6b1d00; }
+.brand::before { content: "\1F3C8"; font-size: 1.7rem; margin-right: 10px; vertical-align: 4px; filter: saturate(1.3); }
+.brand:hover { color: #fff; }
+.brand-sub { font-family: var(--pixel); font-size: 1.3rem; color: #fff; background: var(--pink); padding: 0 8px 2px; margin-left: 10px; vertical-align: 8px; text-shadow: none; box-shadow: 3px 3px 0 #5a1a00; }
+.site-nav a { font-family: var(--pixel); font-size: 1.35rem; line-height: 1.1; padding: 4px 14px; min-width: 104px; text-align: center; border: 3px solid var(--line); background: #10203d; color: var(--text-dim); transform: skewX(-8deg); text-transform: uppercase; }
+.site-nav a.active, .site-nav a:hover { background: var(--pink); border-color: #fff; color: #fff; box-shadow: 3px 3px 0 #5a1a00; }
+.sys-tagline { color: #fff; border-bottom: 3px solid var(--line); font-family: var(--pixel); font-size: 1.25rem; letter-spacing: 3px;
+  background: repeating-linear-gradient(-45deg, #11213f 0 10px, #0e1c37 10px 20px); }
+h1 { font-family: var(--pixel); font-weight: 400; font-size: 3rem; line-height: 1; color: #fff; text-shadow: 3px 3px 0 var(--pink), 6px 6px 0 #6b1d00; letter-spacing: 1px; }
+h2 { font-family: var(--pixel); font-weight: 400; font-size: 1.9rem; color: var(--yellow); border-top: 3px dashed var(--line); letter-spacing: 1px; }
+h2::before { content: "\25B6 "; color: var(--pink); }
+p.lede, .prop-card-reason, .why-reason { color: #d3dcef; font-weight: 600; line-height: 1.55; }
+.prop-card, .gm-card, .pz-card, .trk-tile, .tonight, .summary-card, .chart-panel { border: 3px solid var(--line); border-top: 6px solid var(--pink); box-shadow: 6px 6px 0 0 #050b17; background: var(--bg-card); }
+.prop-card-edge .num, .trk-tile b, .pz-nums b, .gm-pick b { font-family: var(--pixel); font-weight: 400; line-height: 1; }
+.prop-card-edge .num { font-size: 2.4rem; color: #fff; text-shadow: 2px 2px 0 #6b1d00; }
+.trk-tile b { font-size: 2.6rem; color: #fff; text-shadow: 2px 2px 0 #6b1d00; }
+.trk-tile em, .gm-card em, .pz-rtile em, .pz-nums em { font-family: var(--pixel); font-size: 1.05rem; color: var(--yellow); letter-spacing: 1px; }
+.trk-h span, .tn-title, .pz-name, .nw-h span:first-child { font-family: var(--pixel); font-size: 1.8rem; color: #fff; text-shadow: 2px 2px 0 var(--pink); }
+.gm-pick b { font-size: 1.8rem; color: #fff; }
+.pz-nums b { font-size: 2.2rem; color: #fff; }
+.gm-team { font-family: var(--pixel); font-size: 1.3rem; }
+.chip, .game-tab { font-family: var(--pixel); font-size: 1.25rem; transform: skewX(-8deg); }
+.notice { background: #142849; border-color: var(--pink); }
+table.stat-table th { font-family: var(--pixel); font-weight: 400; font-size: 1.15rem; color: var(--yellow); letter-spacing: .5px; }
+table.stat-table td { border-bottom-color: #1d3157; font-weight: 600; }
+table.stat-table tr:hover td { background: #172c52; }
+.team-badge { font-family: "Press Start 2P", monospace; }
+.psrch input { font-family: var(--sans); font-weight: 700; background: #10203d; transform: skewX(-8deg); }
+.psrch input:focus { border-color: #fff; box-shadow: 3px 3px 0 var(--pink); }
+.psrch-list { border-color: var(--pink); }
+.lv-now b, .tn-chip b { font-family: var(--pixel); font-size: 1.6rem; }
+.lv-tag { font-family: var(--pixel); font-size: 1.05rem; }
+.site-foot { border-top: 0; box-shadow: 0 -5px 0 0 var(--pink), 0 -10px 0 0 #fff; }
+@media (max-width: 640px) { .brand { font-size: 2rem; } .brand::before { font-size: 1.3rem; } .brand-sub { font-size: 1rem; }
+  .sys-tagline { font-size: 0.95rem; letter-spacing: 1px; } h1 { font-size: 2.2rem; } .site-nav a { font-size: 1.15rem; min-width: 0; } }
+.gm-b5 { font-family: var(--sans); font-weight: 800; font-size: 0.7rem; letter-spacing: .5px; color: #0b162a; background: #fff; padding: 2px 6px; }
+@media (max-width: 760px) { body::before { opacity: 0.14; } }

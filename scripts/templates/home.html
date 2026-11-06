@@ -27,7 +27,7 @@
     <a class="trk-tile" href="history.html">
       <em>BEAT THE CLOSE</em>
       <b>{{ track.clv.pct }}%</b>
-      <span class="{{ 'stat-good' if track.clv.pct > 50 else 'stat-bad' }}">of lines that moved went our way</span>
+      <span class="trk-small {{ 'stat-good' if track.clv.pct > 50 else 'stat-bad' }}">of lines that moved went our way</span>
       <small>{{ track.clv.toward }} toward, {{ track.clv.away }} against. At the line we picked, those hit {{ track.clv.toward_hit }}% vs {{ track.clv.away_hit }}%: the edge is in betting early, before the line moves.</small>
     </a>
     {% endif %}

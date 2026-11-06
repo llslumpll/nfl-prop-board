@@ -48,8 +48,6 @@ DATA_DIR = ROOT / "data"
 NAV_PAGES = [
     ("home", "Home", "index.html"),
     ("games", "Games", "games.html"),
-    ("moneyline", "Moneyline", "moneyline.html"),
-    ("matchups", "Matchups", "matchups.html"),
     ("passing", "Passing", "passing.html"),
     ("receiving", "Receiving", "receiving.html"),
     ("receptions", "Receptions", "receptions.html"),
@@ -408,6 +406,11 @@ def build(oddsapi_mode: str | None = None):
     # score, FanDuel's lines, our three game picks, injuries, and every player pick in that game.
     games_page = _games_page(fd_games)
     print(f"Games page: week {games_page['week']}, {len(games_page['games'])} game(s).")
+    # header search (every page): this week's players with a pick -> their game card on the Games tab
+    _idx = sorted({(p["player"], f"games.html#g-{g['away']}-{g['home']}", p["team"])
+                   for g in games_page["games"] for p in g["props"]})
+    import json as _pjson
+    (DOCS / "static" / "players.js").write_text("window.PE_PLAYERS=" + _pjson.dumps([list(x) for x in _idx], separators=(",", ":")) + ";\n")
     try:  # the site's own weekly parlays (parlays_nfl.py)
         import parlays_nfl
         print(f"Parlays: {parlays_nfl.sync(games_page['week'], fd_games)}")
