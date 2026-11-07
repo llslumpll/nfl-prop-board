@@ -579,11 +579,11 @@
       "receiving_yards": 3.5
     },
     "Kirk Cousins": {
-      "passing_yards": 249.5,
+      "passing_yards": 250.5,
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 247.5,
+      "passing_yards": 241.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
@@ -819,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7739,
+    "total_projections_returned": 7740,
     "matched_props": 374,
-    "excluded_goblin_demon_lines": 6287,
+    "excluded_goblin_demon_lines": 6288,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -860,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T15:00:45.083295+00:00"
+  "fetched_at": "2026-11-07T15:20:41.183442+00:00"
 }
