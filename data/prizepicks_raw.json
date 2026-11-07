@@ -324,10 +324,10 @@
     },
     "Braelon Allen": {
       "rushing_yards": 32.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -817,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7695,
+    "total_projections_returned": 7705,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 6252,
+    "excluded_goblin_demon_lines": 6261,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T05:20:40.694872+00:00"
+  "fetched_at": "2026-11-07T05:40:42.431776+00:00"
 }
