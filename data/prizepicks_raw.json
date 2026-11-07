@@ -451,7 +451,7 @@
       "receiving_yards": 38.5
     },
     "Seth McGowan": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 2.5
     },
     "Tyler Goodson": {
@@ -730,10 +730,10 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 34.5
+      "receiving_yards": 33.5
     },
     "Cade Otton": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
@@ -745,14 +745,14 @@
     },
     "Roschon Johnson": {
       "rushing_yards": 16.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Kalif Raymond": {
       "receiving_yards": 15.5,
       "receptions": 2
     },
     "Tez Johnson": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Josh Allen": {
       "passing_yards": 231.5,
@@ -823,7 +823,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7767,
+    "total_projections_returned": 7766,
     "matched_props": 376,
     "excluded_goblin_demon_lines": 6303,
     "sample_stat_types_seen": [
@@ -864,5 +864,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T16:00:44.905434+00:00"
+  "fetched_at": "2026-11-07T16:20:40.796035+00:00"
 }
