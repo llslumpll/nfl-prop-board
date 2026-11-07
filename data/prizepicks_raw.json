@@ -446,7 +446,7 @@
       "receiving_yards": 38.5
     },
     "Seth McGowan": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 2.5
     },
     "Tyler Goodson": {
@@ -667,7 +667,7 @@
       "receptions": 3.5
     },
     "Hunter Henry": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Efton Chism III": {
@@ -812,9 +812,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7675,
+    "total_projections_returned": 7687,
     "matched_props": 367,
-    "excluded_goblin_demon_lines": 6237,
+    "excluded_goblin_demon_lines": 6249,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -853,5 +853,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T08:40:39.147015+00:00"
+  "fetched_at": "2026-11-07T09:00:47.341175+00:00"
 }
