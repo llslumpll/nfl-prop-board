@@ -327,7 +327,7 @@
       "receiving_yards": 10.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -358,7 +358,7 @@
       "passing_yards": 245.5
     },
     "Jayden Daniels": {
-      "passing_yards": 211.5,
+      "passing_yards": 214.5,
       "rushing_yards": 37.5
     },
     "Puka Nacua": {
@@ -372,7 +372,7 @@
       "receptions": 2.5
     },
     "Blake Corum": {
-      "rushing_yards": 49.5,
+      "rushing_yards": 48.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
@@ -477,7 +477,7 @@
       "receptions": 2
     },
     "Ladd McConkey": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 52.5,
       "receptions": 4
     },
     "Omarion Hampton": {
@@ -488,7 +488,7 @@
       "receiving_yards": 33.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
     "Tre' Harris": {
@@ -629,7 +629,8 @@
       "receiving_yards": 20.5
     },
     "Brandin Cooks": {
-      "receiving_yards": 16.5
+      "receiving_yards": 16.5,
+      "receptions": 1.5
     },
     "Jack Bech": {
       "receiving_yards": 10.5
@@ -817,8 +818,8 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7705,
-    "matched_props": 370,
+    "total_projections_returned": 7706,
+    "matched_props": 371,
     "excluded_goblin_demon_lines": 6261,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -858,5 +859,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T05:40:42.431776+00:00"
+  "fetched_at": "2026-11-07T06:00:43.398066+00:00"
 }
