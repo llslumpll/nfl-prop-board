@@ -535,7 +535,7 @@
       "rushing_yards": 5.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 92.5,
+      "receiving_yards": 91.5,
       "receptions": 7
     },
     "Trey McBride": {
@@ -564,8 +564,7 @@
       "receiving_yards": 25.5
     },
     "AJ Barner": {
-      "receiving_yards": 24.5,
-      "receptions": 2.5
+      "receiving_yards": 24.5
     },
     "Tory Horton": {
       "receiving_yards": 17.5
@@ -818,8 +817,8 @@
     "total_leagues": 141,
     "nfl_league_id": "9",
     "total_projections_returned": 7707,
-    "matched_props": 370,
-    "excluded_goblin_demon_lines": 6263,
+    "matched_props": 369,
+    "excluded_goblin_demon_lines": 6264,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +857,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T07:17:10.518650+00:00"
+  "fetched_at": "2026-11-07T07:20:40.245393+00:00"
 }
