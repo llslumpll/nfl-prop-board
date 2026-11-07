@@ -425,7 +425,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 72.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "George Pickens": {
       "receiving_yards": 63.5
@@ -549,7 +549,8 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 4.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 48.5,
@@ -817,9 +818,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7499,
-    "matched_props": 370,
-    "excluded_goblin_demon_lines": 6124,
+    "total_projections_returned": 7523,
+    "matched_props": 371,
+    "excluded_goblin_demon_lines": 6140,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +859,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T01:26:44.431465+00:00"
+  "fetched_at": "2026-11-07T01:40:37.096256+00:00"
 }
