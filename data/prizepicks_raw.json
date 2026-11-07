@@ -26,7 +26,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 49.5,
-      "receiving_yards": 23.5,
+      "receiving_yards": 21.5,
       "receptions": 4
     },
     "Kyle Pitts Sr.": {
@@ -41,12 +41,12 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
+    "Dohnte Meyers": {
+      "receiving_yards": 17.5
+    },
     "Samaje Perine": {
       "rushing_yards": 17.5,
       "receiving_yards": 5.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 16.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 9.5,
@@ -79,7 +79,7 @@
     },
     "Devin Singletary": {
       "rushing_yards": 55.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Saquon Barkley": {
       "rushing_yards": 53.5,
@@ -89,14 +89,13 @@
       "receiving_yards": 43.5
     },
     "Makai Lemon": {
-      "receiving_yards": 39.5,
-      "receptions": 4.5
+      "receiving_yards": 39.5
     },
     "Dallas Goedert": {
       "receiving_yards": 36.5
     },
     "Darius Cooper": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Elijah Mitchell": {
       "rushing_yards": 25.5,
@@ -110,7 +109,7 @@
       "receptions": 1.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Gregory Desrosiers Jr.": {
       "rushing_yards": 10.5
@@ -119,7 +118,7 @@
       "receiving_yards": 8.5
     },
     "Eli Stowers": {
-      "receiving_yards": 6.5
+      "receiving_yards": 5.5
     },
     "Elijah Moore": {
       "receiving_yards": 4.5
@@ -279,7 +278,7 @@
       "receiving_yards": 28.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 16.5
     },
     "Dylan Sampson": {
@@ -329,7 +328,7 @@
       "receiving_yards": 11.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -508,7 +507,7 @@
       "receptions": 1.5
     },
     "Oronde Gadsden II": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 15.5,
@@ -579,13 +578,13 @@
     "Simi Fehoko": {
       "receiving_yards": 3.5
     },
+    "Kirk Cousins": {
+      "passing_yards": 249.5,
+      "rushing_yards": 1.5
+    },
     "Brock Purdy": {
       "passing_yards": 247.5,
       "rushing_yards": 14.5
-    },
-    "Kirk Cousins": {
-      "passing_yards": 246.5,
-      "rushing_yards": 1.5
     },
     "Brock Bowers": {
       "receiving_yards": 76.5,
@@ -606,7 +605,7 @@
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
-      "rushing_yards": 28.5
+      "rushing_yards": 29.5
     },
     "Tre Tucker": {
       "receiving_yards": 36.5
@@ -648,7 +647,7 @@
       "rushing_yards": 24.5
     },
     "Christian Watson": {
-      "receiving_yards": 72.5
+      "receiving_yards": 73.5
     },
     "Matthew Golden": {
       "receiving_yards": 67.5,
@@ -716,7 +715,8 @@
       "receiving_yards": 20.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 5.5
     },
     "Emeka Egbuka": {
       "receiving_yards": 50.5,
@@ -819,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7736,
+    "total_projections_returned": 7732,
     "matched_props": 374,
-    "excluded_goblin_demon_lines": 6284,
+    "excluded_goblin_demon_lines": 6281,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -860,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T14:05:34.022978+00:00"
+  "fetched_at": "2026-11-07T14:20:42.104205+00:00"
 }
