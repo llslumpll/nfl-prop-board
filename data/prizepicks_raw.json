@@ -288,7 +288,7 @@
       "receiving_yards": 28.5
     },
     "Audric Estime": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 3.5
     },
     "Dylan Sampson": {
@@ -329,7 +329,7 @@
       "receptions": 4
     },
     "Breece Hall": {
-      "rushing_yards": 36.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 14.5,
       "receptions": 2
     },
@@ -383,7 +383,7 @@
       "receptions": 2.5
     },
     "Blake Corum": {
-      "rushing_yards": 49.5,
+      "rushing_yards": 48.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
@@ -406,7 +406,7 @@
       "receiving_yards": 27.5
     },
     "Austin Ekeler": {
-      "rushing_yards": 21.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 5.5
     },
     "Tutu Atwell": {
@@ -437,7 +437,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 70.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 62.5,
@@ -625,7 +625,7 @@
       "receiving_yards": 36.5
     },
     "Demarcus Robinson": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 34.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -829,9 +829,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8066,
+    "total_projections_returned": 8071,
     "matched_props": 380,
-    "excluded_goblin_demon_lines": 6501,
+    "excluded_goblin_demon_lines": 6508,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -870,5 +870,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T19:40:39.789979+00:00"
+  "fetched_at": "2026-11-07T20:00:44.783773+00:00"
 }
