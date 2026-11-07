@@ -102,7 +102,7 @@
       "receiving_yards": 8.5
     },
     "Malachi Fields": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Hollywood Brown": {
       "receiving_yards": 17.5,
@@ -182,7 +182,7 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 68.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 16.5
     },
     "Tetairoa McMillan": {
@@ -205,8 +205,8 @@
       "receiving_yards": 35.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 27.5,
-      "receiving_yards": 3.5
+      "rushing_yards": 24.5,
+      "receiving_yards": 2.5
     },
     "Pat Bryant": {
       "receiving_yards": 19.5
@@ -450,7 +450,7 @@
       "receiving_yards": 35.5
     },
     "Seth McGowan": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 3.5
     },
     "Tyler Goodson": {
@@ -707,7 +707,7 @@
       "receptions": 2.5
     },
     "Luther Burden III": {
-      "receiving_yards": 65.5
+      "receiving_yards": 64.5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
@@ -817,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7483,
+    "total_projections_returned": 7485,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 6111,
+    "excluded_goblin_demon_lines": 6112,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T00:40:41.947450+00:00"
+  "fetched_at": "2026-11-07T01:00:45.044725+00:00"
 }
