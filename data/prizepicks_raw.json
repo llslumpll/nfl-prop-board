@@ -41,12 +41,12 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
-    "Dohnte Meyers": {
-      "receiving_yards": 17.5
-    },
     "Samaje Perine": {
       "rushing_yards": 17.5,
       "receiving_yards": 5.5
+    },
+    "Dohnte Meyers": {
+      "receiving_yards": 16.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 9.5,
@@ -62,7 +62,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 188.5,
+      "passing_yards": 189.5,
       "rushing_yards": 17.5
     },
     "J.J. McCarthy": {
@@ -158,8 +158,7 @@
       "receiving_yards": 40.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 37.5,
-      "receptions": 3.5
+      "receiving_yards": 37.5
     },
     "Chris Bell": {
       "receiving_yards": 23.5
@@ -183,7 +182,7 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 69.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 16.5
     },
     "Tetairoa McMillan": {
@@ -203,11 +202,11 @@
       "receiving_yards": 47.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 33.5
+      "receiving_yards": 35.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 25.5,
-      "receiving_yards": 2.5
+      "rushing_yards": 27.5,
+      "receiving_yards": 3.5
     },
     "Pat Bryant": {
       "receiving_yards": 19.5
@@ -242,7 +241,8 @@
       "receiving_yards": 5.5
     },
     "Nate Adkins": {
-      "receiving_yards": 1.5
+      "receiving_yards": 1.5,
+      "receptions": 0.5
     },
     "Tyler Shough": {
       "passing_yards": 226.5,
@@ -583,7 +583,7 @@
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 243.5,
+      "passing_yards": 246.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
@@ -703,7 +703,8 @@
     },
     "Bucky Irving": {
       "rushing_yards": 65.5,
-      "receiving_yards": 14.5
+      "receiving_yards": 14.5,
+      "receptions": 2.5
     },
     "Luther Burden III": {
       "receiving_yards": 65.5
@@ -713,8 +714,7 @@
       "receiving_yards": 20.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5,
-      "receptions": 5.5
+      "receiving_yards": 52.5
     },
     "Emeka Egbuka": {
       "receiving_yards": 51.5,
@@ -739,7 +739,7 @@
       "receiving_yards": 20.5
     },
     "Roschon Johnson": {
-      "rushing_yards": 16.5,
+      "rushing_yards": 17.5,
       "receiving_yards": 3.5
     },
     "Kalif Raymond": {
@@ -817,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7482,
+    "total_projections_returned": 7483,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 6110,
+    "excluded_goblin_demon_lines": 6111,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T00:20:41.905165+00:00"
+  "fetched_at": "2026-11-07T00:40:41.947450+00:00"
 }
