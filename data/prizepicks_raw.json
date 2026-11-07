@@ -139,7 +139,7 @@
       "receptions": 6.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 69.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -713,7 +713,7 @@
       "receiving_yards": 52.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 51.5,
       "receptions": 4
     },
     "Rome Odunze": {
@@ -813,9 +813,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7712,
+    "total_projections_returned": 7711,
     "matched_props": 368,
-    "excluded_goblin_demon_lines": 6272,
+    "excluded_goblin_demon_lines": 6271,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -854,5 +854,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T10:40:41.273650+00:00"
+  "fetched_at": "2026-11-07T11:00:43.976566+00:00"
 }
