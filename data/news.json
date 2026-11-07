@@ -1,3 +1,270 @@
 {
- "9": {}
+ "9": {
+  "Brian Robinson|ATL": {
+   "opp": "CIN",
+   "out": "Brian Robinson",
+   "plays": [
+    {
+     "bump": 30,
+     "call": "OVER",
+     "line": 6.5,
+     "n_wo": 2,
+     "player": "Austin Hooper",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 11.5,
+     "without": 15
+    },
+    {
+     "bump": 23,
+     "call": "OVER",
+     "line": 25.5,
+     "n_wo": 2,
+     "player": "Bijan Robinson",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 24,
+     "without": 29.5
+    },
+    {
+     "bump": 28,
+     "call": "OVER",
+     "line": 28.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 28.5,
+     "player": "Jahan Dotson",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 39.3,
+     "without": 50.5
+    },
+    {
+     "bump": 300,
+     "call": "OVER",
+     "line": 4.5,
+     "n_wo": 2,
+     "player": "Michael Penix Jr.",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 1.2,
+     "without": 5
+    },
+    {
+     "bump": 41,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 1,
+     "player": "Olamide Zaccheaus",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 2.8,
+     "without": 4
+    },
+    {
+     "bump": 33,
+     "call": "OVER",
+     "line": 1.5,
+     "n_wo": 1,
+     "player": "Olamide Zaccheaus",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 0.7,
+     "without": 1
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-07 15:22 UTC",
+   "team": "ATL",
+   "week": 9
+  },
+  "DeVonta Smith|PHI": {
+   "opp": "NYG",
+   "out": "DeVonta Smith",
+   "plays": [
+    {
+     "bump": 300,
+     "call": "OVER",
+     "line": 27.5,
+     "n_wo": 4,
+     "player": "Darius Cooper",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 8.8,
+     "without": 35
+    },
+    {
+     "bump": 240,
+     "call": "OVER",
+     "line": 39.5,
+     "n_wo": 4,
+     "player": "Makai Lemon",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 14.2,
+     "without": 48.5
+    },
+    {
+     "bump": 483,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 3,
+     "player": "Saquon Barkley",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 2,
+     "without": 11.7
+    }
+   ],
+   "pos": "WR",
+   "seen": "2026-11-07 15:22 UTC",
+   "team": "PHI",
+   "week": 9
+  },
+  "Sam Darnold|SEA": {
+   "opp": "ARI",
+   "out": "Sam Darnold",
+   "plays": [
+    {
+     "bump": 62,
+     "call": "OVER",
+     "line": 55.5,
+     "n_wo": 1,
+     "player": "Jadarian Price",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 32,
+     "without": 52
+    },
+    {
+     "bump": 14,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 1,
+     "player": "Jadarian Price",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 7,
+     "without": 8
+    },
+    {
+     "bump": 31,
+     "call": "OVER",
+     "line": 92.5,
+     "moved": false,
+     "n_wo": 1,
+     "now": 92.5,
+     "player": "Jaxon Smith-Njigba",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 118.6,
+     "without": 155
+    },
+    {
+     "bump": 15,
+     "call": "OVER",
+     "line": 7,
+     "moved": false,
+     "n_wo": 1,
+     "now": 7,
+     "player": "Jaxon Smith-Njigba",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 7.9,
+     "without": 9
+    }
+   ],
+   "pos": "QB",
+   "seen": "2026-11-07 15:22 UTC",
+   "team": "SEA",
+   "week": 9
+  },
+  "TreVeyon Henderson|NE": {
+   "opp": "GB",
+   "out": "TreVeyon Henderson",
+   "plays": [
+    {
+     "bump": 22,
+     "call": "OVER",
+     "line": 40.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 40.5,
+     "player": "DeMario Douglas",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 39.3,
+     "without": 48
+    },
+    {
+     "bump": 33,
+     "call": "OVER",
+     "line": 3.5,
+     "n_wo": 2,
+     "player": "DeMario Douglas",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 3,
+     "without": 4
+    },
+    {
+     "bump": 95,
+     "call": "OVER",
+     "line": 30.5,
+     "n_wo": 1,
+     "player": "Efton Chism III",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 19,
+     "without": 37
+    },
+    {
+     "bump": 71,
+     "call": "OVER",
+     "line": 55.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 55.5,
+     "player": "Rhamondre Stevenson",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 39,
+     "without": 66.5
+    },
+    {
+     "bump": 60,
+     "call": "OVER",
+     "line": 3.5,
+     "n_wo": 2,
+     "player": "Rhamondre Stevenson",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 2.5,
+     "without": 4
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-07 15:22 UTC",
+   "team": "NE",
+   "week": 9
+  }
+ }
 }
