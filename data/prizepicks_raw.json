@@ -2,10 +2,10 @@
   "props": {
     "Joe Burrow": {
       "passing_yards": 276.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 8.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 219.5,
+      "passing_yards": 222.5,
       "rushing_yards": 4.5
     },
     "Bijan Robinson": {
@@ -33,13 +33,13 @@
       "receiving_yards": 42.5,
       "receptions": 4
     },
+    "Mike Gesicki": {
+      "receiving_yards": 28.5,
+      "receptions": 2.5
+    },
     "Jahan Dotson": {
       "receiving_yards": 28.5,
       "receptions": 2
-    },
-    "Mike Gesicki": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
     },
     "Dohnte Meyers": {
       "receiving_yards": 17.5
@@ -62,7 +62,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 189.5,
+      "passing_yards": 188.5,
       "rushing_yards": 17.5
     },
     "J.J. McCarthy": {
@@ -74,7 +74,7 @@
       "rushing_yards": 22.5
     },
     "Malik Nabers": {
-      "receiving_yards": 71.5,
+      "receiving_yards": 72.5,
       "receptions": 5.5
     },
     "Devin Singletary": {
@@ -127,7 +127,7 @@
       "passing_yards": 261.5
     },
     "Malik Willis": {
-      "passing_yards": 207.5,
+      "passing_yards": 208.5,
       "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
@@ -202,7 +202,7 @@
       "receiving_yards": 47.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 35.5
+      "receiving_yards": 33.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 24.5,
@@ -251,13 +251,13 @@
     "Chris Olave": {
       "receiving_yards": 71.5
     },
-    "Denzel Boston": {
-      "receiving_yards": 46.5,
-      "receptions": 3
-    },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
       "receptions": 4.5
+    },
+    "Denzel Boston": {
+      "receiving_yards": 43.5,
+      "receptions": 3
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 43.5,
@@ -358,11 +358,11 @@
       "passing_yards": 245.5
     },
     "Jayden Daniels": {
-      "passing_yards": 214.5,
+      "passing_yards": 211.5,
       "rushing_yards": 37.5
     },
     "Puka Nacua": {
-      "receiving_yards": 91.5,
+      "receiving_yards": 92.5,
       "receptions": 8,
       "rushing_yards": 0.5
     },
@@ -460,7 +460,7 @@
       "receiving_yards": 14.5
     },
     "C.J. Stroud": {
-      "passing_yards": 248.5,
+      "passing_yards": 251.5,
       "rushing_yards": 7.5
     },
     "Justin Herbert": {
@@ -642,7 +642,7 @@
       "rushing_yards": 3.5
     },
     "Drake Maye": {
-      "passing_yards": 228.5,
+      "passing_yards": 230.5,
       "rushing_yards": 24.5
     },
     "Christian Watson": {
@@ -697,7 +697,7 @@
       "rushing_yards": 19.5
     },
     "Baker Mayfield": {
-      "passing_yards": 213.5,
+      "passing_yards": 211.5,
       "rushing_yards": 15.5
     },
     "Bucky Irving": {
@@ -769,7 +769,8 @@
       "receptions": 3.5
     },
     "Jordan Mason": {
-      "rushing_yards": 47.5
+      "rushing_yards": 47.5,
+      "receptions": 0.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 44.5,
@@ -816,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7651,
-    "matched_props": 369,
-    "excluded_goblin_demon_lines": 6215,
+    "total_projections_returned": 7677,
+    "matched_props": 370,
+    "excluded_goblin_demon_lines": 6235,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -857,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T04:40:43.466987+00:00"
+  "fetched_at": "2026-11-07T05:00:48.330784+00:00"
 }
