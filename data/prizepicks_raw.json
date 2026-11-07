@@ -279,10 +279,10 @@
       "receiving_yards": 34.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 29.5
+      "receiving_yards": 30.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Audric Estime": {
       "rushing_yards": 26.5,
@@ -359,7 +359,7 @@
       "receiving_yards": 11.5
     },
     "Isaiah Williams": {
-      "receiving_yards": 7.5
+      "receiving_yards": 5.5
     },
     "Jalen Royals": {
       "receptions": 0.5,
@@ -379,12 +379,12 @@
     },
     "Kyren Williams": {
       "rushing_yards": 60.5,
-      "receiving_yards": 19.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Blake Corum": {
       "rushing_yards": 48.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Antonio Williams": {
       "receiving_yards": 48.5,
@@ -572,10 +572,10 @@
       "rushing_yards": 37.5,
       "receiving_yards": 6.5
     },
-    "AJ Barner": {
-      "receiving_yards": 24.5
-    },
     "Cooper Kupp": {
+      "receiving_yards": 25.5
+    },
+    "AJ Barner": {
       "receiving_yards": 24.5
     },
     "Tory Horton": {
@@ -834,9 +834,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8243,
+    "total_projections_returned": 8356,
     "matched_props": 381,
-    "excluded_goblin_demon_lines": 6667,
+    "excluded_goblin_demon_lines": 6769,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -875,5 +875,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T23:00:43.118084+00:00"
+  "fetched_at": "2026-11-07T23:20:40.329402+00:00"
 }
