@@ -33887,8 +33887,7 @@
     "market_prob": 43.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Tyler Allgeier|any_td|9": {
@@ -33913,7 +33912,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Malik Willis|any_td|9": {
     "player": "Malik Willis",
