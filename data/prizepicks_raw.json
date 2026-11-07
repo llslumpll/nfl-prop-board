@@ -14,7 +14,7 @@
       "receptions": 3
     },
     "Drake London": {
-      "receiving_yards": 77.5
+      "receiving_yards": 78.5
     },
     "Tee Higgins": {
       "receiving_yards": 77.5,
@@ -255,7 +255,8 @@
       "rushing_yards": 15.5
     },
     "Chris Olave": {
-      "receiving_yards": 70.5
+      "receiving_yards": 71.5,
+      "receptions": 5.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 67.5,
@@ -274,7 +275,7 @@
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 40.5,
       "receiving_yards": 18.5,
       "receptions": 3.5
     },
@@ -285,10 +286,10 @@
       "receiving_yards": 30.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Audric Estime": {
-      "rushing_yards": 20.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 1.5
     },
     "Dylan Sampson": {
@@ -298,7 +299,7 @@
       "receiving_yards": 14.5
     },
     "Noah Fant": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Patrick Mahomes": {
       "passing_yards": 245.5,
@@ -337,7 +338,7 @@
       "receiving_yards": 10.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 31.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -382,7 +383,7 @@
       "receptions": 2.5
     },
     "Blake Corum": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
@@ -447,7 +448,7 @@
       "receiving_yards": 57.5
     },
     "Josh Downs": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 43.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -612,11 +613,11 @@
     },
     "Kaelon Black": {
       "rushing_yards": 41.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
-      "rushing_yards": 30.5
+      "rushing_yards": 27.5
     },
     "Tre Tucker": {
       "receiving_yards": 36.5
@@ -626,7 +627,7 @@
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 0.5
     },
     "Michael Mayer": {
@@ -658,7 +659,7 @@
       "rushing_yards": 24.5
     },
     "Christian Watson": {
-      "receiving_yards": 73.5,
+      "receiving_yards": 70.5,
       "receptions": 4.5
     },
     "Matthew Golden": {
@@ -703,7 +704,7 @@
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Caleb Williams": {
       "passing_yards": 244.5,
@@ -763,7 +764,7 @@
       "receiving_yards": 14.5
     },
     "Josh Allen": {
-      "passing_yards": 230.5,
+      "passing_yards": 231.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -786,7 +787,7 @@
       "rushing_yards": 47.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 41.5,
       "receptions": 4.5
     },
     "Jordan Addison": {
@@ -801,8 +802,7 @@
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
-      "receiving_yards": 7.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Keon Coleman": {
       "receiving_yards": 28.5
@@ -813,14 +813,11 @@
     "Dawson Knox": {
       "receiving_yards": 7.5
     },
-    "Jauan Jennings": {
-      "receiving_yards": 7.5
-    },
     "Ray Davis": {
       "rushing_yards": 5.5
     },
     "Skyler Bell": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Ben Yurosek": {
       "receiving_yards": 3.5
@@ -830,9 +827,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7987,
-    "matched_props": 379,
-    "excluded_goblin_demon_lines": 6433,
+    "total_projections_returned": 8030,
+    "matched_props": 378,
+    "excluded_goblin_demon_lines": 6474,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -871,5 +868,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T19:00:47.464092+00:00"
+  "fetched_at": "2026-11-07T19:20:46.644205+00:00"
 }
