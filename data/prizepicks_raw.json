@@ -307,7 +307,8 @@
       "receptions": 5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 3.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 48.5
@@ -335,13 +336,13 @@
     "Kenyon Sadiq": {
       "receiving_yards": 17.5
     },
-    "Cyrus Allen": {
-      "receiving_yards": 15.5
-    },
     "Emmett Johnson": {
       "receiving_yards": 15.5,
       "rushing_yards": 12.5,
       "receptions": 2
+    },
+    "Cyrus Allen": {
+      "receiving_yards": 14.5
     },
     "Noah Gray": {
       "receiving_yards": 13.5
@@ -427,7 +428,7 @@
       "receiving_yards": 63.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 61.5,
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
@@ -601,19 +602,19 @@
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
-      "rushing_yards": 29.5,
+      "rushing_yards": 28.5,
       "receptions": 4.5
     },
     "Tre Tucker": {
       "receiving_yards": 36.5
     },
+    "Mike Washington Jr.": {
+      "rushing_yards": 32.5,
+      "receiving_yards": 0.5
+    },
     "Demarcus Robinson": {
       "receiving_yards": 32.5,
       "receptions": 2.5
-    },
-    "Mike Washington Jr.": {
-      "rushing_yards": 31.5,
-      "receiving_yards": 0.5
     },
     "Michael Mayer": {
       "receiving_yards": 28.5
@@ -625,8 +626,7 @@
       "receiving_yards": 21.5
     },
     "Brandin Cooks": {
-      "receiving_yards": 16.5,
-      "receptions": 1.5
+      "receiving_yards": 16.5
     },
     "Jack Bech": {
       "receiving_yards": 10.5
@@ -635,7 +635,7 @@
       "receiving_yards": 10.5
     },
     "Jordan Love": {
-      "passing_yards": 274.5,
+      "passing_yards": 276.5,
       "rushing_yards": 3.5
     },
     "Drake Maye": {
@@ -651,7 +651,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 55.5,
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 3.5
     },
     "Josh Jacobs": {
@@ -664,7 +664,7 @@
       "receptions": 4.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Hunter Henry": {
@@ -815,7 +815,7 @@
     "nfl_league_id": "9",
     "total_projections_returned": 7714,
     "matched_props": 368,
-    "excluded_goblin_demon_lines": 6272,
+    "excluded_goblin_demon_lines": 6273,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -854,5 +854,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T11:20:40.022264+00:00"
+  "fetched_at": "2026-11-07T11:40:43.039980+00:00"
 }
