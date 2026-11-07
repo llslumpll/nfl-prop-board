@@ -27389,7 +27389,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31382,10 +31384,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31437,7 +31436,9 @@
     "graded_at": null,
     "line_attached_at": "2026-11-05 20:55 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this fanduel line was first seen 2026-11-05 20:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Wan'Dale Robinson|receptions|10": {
     "player": "Wan'Dale Robinson",
