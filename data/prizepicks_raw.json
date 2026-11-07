@@ -67,8 +67,8 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 192.5,
-      "rushing_yards": 18.5
+      "passing_yards": 189.5,
+      "rushing_yards": 16.5
     },
     "J.J. McCarthy": {
       "passing_yards": 214.5,
@@ -164,7 +164,7 @@
       "receiving_yards": 40.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 37.5
+      "receiving_yards": 39.5
     },
     "Chris Bell": {
       "receiving_yards": 24.5
@@ -188,8 +188,8 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 69.5,
-      "receiving_yards": 16.5
+      "rushing_yards": 68.5,
+      "receiving_yards": 17.5
     },
     "Tetairoa McMillan": {
       "receiving_yards": 61.5,
@@ -261,13 +261,13 @@
       "rushing_yards": 67.5,
       "receiving_yards": 8.5
     },
+    "Denzel Boston": {
+      "receiving_yards": 46.5,
+      "receptions": 3
+    },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
       "receptions": 4.5
-    },
-    "Denzel Boston": {
-      "receiving_yards": 43.5,
-      "receptions": 3
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 43.5,
@@ -277,11 +277,15 @@
       "rushing_yards": 35.5,
       "receiving_yards": 5.5
     },
-    "Devaughn Vele": {
-      "receiving_yards": 32.5
+    "Jordyn Tyson": {
+      "receiving_yards": 29.5
     },
     "Juwan Johnson": {
       "receiving_yards": 28.5
+    },
+    "Devaughn Vele": {
+      "receiving_yards": 28.5,
+      "receptions": 2.5
     },
     "Alvin Kamara": {
       "rushing_yards": 26.5,
@@ -330,11 +334,11 @@
       "receptions": 2
     },
     "Braelon Allen": {
-      "rushing_yards": 32.5,
+      "rushing_yards": 34.5,
       "receiving_yards": 11.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -457,7 +461,7 @@
       "receiving_yards": 38.5
     },
     "Seth McGowan": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 25.5,
       "receiving_yards": 2.5
     },
     "Tyler Goodson": {
@@ -521,10 +525,10 @@
     "Kayshon Boutte": {
       "receiving_yards": 15.5
     },
-    "Charlie Kolar": {
-      "receiving_yards": 14.5
-    },
     "Tank Dell": {
+      "receiving_yards": 15.5
+    },
+    "Charlie Kolar": {
       "receiving_yards": 14.5
     },
     "Keaton Mitchell": {
@@ -781,13 +785,12 @@
       "rushing_yards": 47.5,
       "receptions": 0.5
     },
-    "Dalton Kincaid": {
-      "receiving_yards": 44.5,
-      "receptions": 3.5
-    },
     "T.J. Hockenson": {
       "receiving_yards": 41.5,
       "receptions": 4.5
+    },
+    "Dalton Kincaid": {
+      "receiving_yards": 40.5
     },
     "Jordan Addison": {
       "receiving_yards": 39.5,
@@ -826,9 +829,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7891,
-    "matched_props": 377,
-    "excluded_goblin_demon_lines": 6351,
+    "total_projections_returned": 7958,
+    "matched_props": 378,
+    "excluded_goblin_demon_lines": 6408,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -867,5 +870,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T18:00:46.801260+00:00"
+  "fetched_at": "2026-11-07T18:20:42.088017+00:00"
 }
