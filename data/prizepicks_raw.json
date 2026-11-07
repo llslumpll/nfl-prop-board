@@ -52,6 +52,9 @@
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
+    "Khalil Herbert": {
+      "rushing_yards": 7.5
+    },
     "Austin Hooper": {
       "receiving_yards": 6.5
     },
@@ -426,7 +429,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 72.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "George Pickens": {
       "receiving_yards": 63.5
@@ -451,7 +454,7 @@
       "receiving_yards": 38.5
     },
     "Seth McGowan": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 2.5
     },
     "Tyler Goodson": {
@@ -613,13 +616,13 @@
     "Tre Tucker": {
       "receiving_yards": 36.5
     },
+    "Demarcus Robinson": {
+      "receiving_yards": 34.5,
+      "receptions": 2.5
+    },
     "Mike Washington Jr.": {
       "rushing_yards": 33.5,
       "receiving_yards": 0.5
-    },
-    "Demarcus Robinson": {
-      "receiving_yards": 32.5,
-      "receptions": 2.5
     },
     "Michael Mayer": {
       "receiving_yards": 29.5,
@@ -823,9 +826,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7766,
-    "matched_props": 376,
-    "excluded_goblin_demon_lines": 6303,
+    "total_projections_returned": 7771,
+    "matched_props": 377,
+    "excluded_goblin_demon_lines": 6307,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -864,5 +867,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T16:20:40.796035+00:00"
+  "fetched_at": "2026-11-07T16:40:41.196473+00:00"
 }
