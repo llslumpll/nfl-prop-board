@@ -149,7 +149,8 @@
       "receptions": 3.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 4
     },
     "Malik Washington": {
       "receiving_yards": 41.5,
@@ -251,6 +252,10 @@
     "Chris Olave": {
       "receiving_yards": 71.5
     },
+    "Quinshon Judkins": {
+      "rushing_yards": 67.5,
+      "receiving_yards": 8.5
+    },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
       "receptions": 4.5
@@ -284,9 +289,6 @@
       "receiving_yards": 14.5
     },
     "Noah Fant": {
-      "receiving_yards": 8.5
-    },
-    "Quinshon Judkins": {
       "receiving_yards": 8.5
     },
     "Patrick Mahomes": {
@@ -509,7 +511,8 @@
       "receiving_yards": 16.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 15.5
+      "receiving_yards": 15.5,
+      "receptions": 1.5
     },
     "Charlie Kolar": {
       "receiving_yards": 14.5
@@ -692,7 +695,7 @@
       "receiving_yards": 3.5
     },
     "Caleb Williams": {
-      "passing_yards": 243.5,
+      "passing_yards": 244.5,
       "rushing_yards": 19.5
     },
     "Baker Mayfield": {
@@ -705,7 +708,8 @@
       "receptions": 2.5
     },
     "Luther Burden III": {
-      "receiving_yards": 65.5
+      "receiving_yards": 65.5,
+      "receptions": 5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
@@ -815,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7719,
-    "matched_props": 370,
-    "excluded_goblin_demon_lines": 6276,
+    "total_projections_returned": 7733,
+    "matched_props": 374,
+    "excluded_goblin_demon_lines": 6283,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -856,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T12:20:41.690687+00:00"
+  "fetched_at": "2026-11-07T12:40:41.497718+00:00"
 }
