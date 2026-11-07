@@ -34,7 +34,7 @@
       "receptions": 4
     },
     "Jahan Dotson": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 28.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -49,7 +49,7 @@
       "receiving_yards": 5.5
     },
     "Olamide Zaccheaus": {
-      "receiving_yards": 9.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Khalil Herbert": {
@@ -500,11 +500,11 @@
     "Dalton Schultz": {
       "receiving_yards": 34.5
     },
-    "Quentin Johnston": {
-      "receiving_yards": 30.5,
+    "Tre' Harris": {
+      "receiving_yards": 32.5,
       "receptions": 2.5
     },
-    "Tre' Harris": {
+    "Quentin Johnston": {
       "receiving_yards": 30.5,
       "receptions": 2.5
     },
@@ -766,7 +766,7 @@
       "receiving_yards": 14.5
     },
     "Josh Allen": {
-      "passing_yards": 231.5,
+      "passing_yards": 232.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -829,9 +829,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8071,
+    "total_projections_returned": 8078,
     "matched_props": 380,
-    "excluded_goblin_demon_lines": 6508,
+    "excluded_goblin_demon_lines": 6516,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -870,5 +870,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T20:00:44.783773+00:00"
+  "fetched_at": "2026-11-07T20:20:40.805084+00:00"
 }
