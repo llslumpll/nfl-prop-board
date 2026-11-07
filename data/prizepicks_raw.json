@@ -136,7 +136,7 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 76.5,
       "receptions": 6.5
     },
     "Ollie Gordon II": {
@@ -669,7 +669,7 @@
       "receptions": 4.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Hunter Henry": {
@@ -819,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7735,
+    "total_projections_returned": 7737,
     "matched_props": 374,
-    "excluded_goblin_demon_lines": 6283,
+    "excluded_goblin_demon_lines": 6285,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -860,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T13:40:39.772818+00:00"
+  "fetched_at": "2026-11-07T14:00:44.871983+00:00"
 }
