@@ -73,7 +73,7 @@
       "rushing_yards": 17.5
     },
     "Joe Milton III": {
-      "passing_yards": 185.5,
+      "passing_yards": 180.5,
       "rushing_yards": 23.5
     },
     "Malik Nabers": {
@@ -105,7 +105,7 @@
       "receiving_yards": 8.5
     },
     "Malachi Fields": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Hollywood Brown": {
       "receiving_yards": 17.5,
@@ -166,7 +166,7 @@
       "receiving_yards": 39.5
     },
     "Chris Bell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 24.5
     },
     "Sione Vaki": {
       "rushing_yards": 16.5
@@ -238,11 +238,11 @@
     "Troy Franklin": {
       "receiving_yards": 6.5
     },
-    "Trevor Etienne": {
-      "rushing_yards": 6.5
-    },
     "Adam Trautman": {
       "receiving_yards": 5.5
+    },
+    "Trevor Etienne": {
+      "rushing_yards": 5.5
     },
     "Nate Adkins": {
       "receiving_yards": 1.5
@@ -271,8 +271,9 @@
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 40.5,
-      "receiving_yards": 18.5
+      "rushing_yards": 41.5,
+      "receiving_yards": 18.5,
+      "receptions": 3.5
     },
     "Devaughn Vele": {
       "receiving_yards": 34.5
@@ -357,6 +358,9 @@
     "Tim Patrick": {
       "receiving_yards": 12.5
     },
+    "Isaiah Williams": {
+      "receiving_yards": 7.5
+    },
     "Jalen Royals": {
       "receptions": 0.5,
       "receiving_yards": 0.5
@@ -431,7 +435,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 72.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 62.5,
@@ -442,8 +446,7 @@
       "receiving_yards": 57.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 44.5,
-      "receptions": 3.5
+      "receiving_yards": 44.5
     },
     "Josh Downs": {
       "receiving_yards": 43.5,
@@ -495,11 +498,11 @@
     "Dalton Schultz": {
       "receiving_yards": 34.5
     },
-    "Tre' Harris": {
-      "receiving_yards": 32.5,
+    "Quentin Johnston": {
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
-    "Quentin Johnston": {
+    "Tre' Harris": {
       "receiving_yards": 30.5,
       "receptions": 2.5
     },
@@ -828,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8242,
-    "matched_props": 377,
-    "excluded_goblin_demon_lines": 6669,
+    "total_projections_returned": 8251,
+    "matched_props": 378,
+    "excluded_goblin_demon_lines": 6677,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -869,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T22:20:41.294918+00:00"
+  "fetched_at": "2026-11-07T22:23:58.661067+00:00"
 }
