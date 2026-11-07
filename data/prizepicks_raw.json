@@ -67,7 +67,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 188.5,
+      "passing_yards": 192.5,
       "rushing_yards": 18.5
     },
     "J.J. McCarthy": {
@@ -208,7 +208,7 @@
       "receiving_yards": 47.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 33.5
+      "receiving_yards": 35.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 24.5,
@@ -254,7 +254,8 @@
       "rushing_yards": 15.5
     },
     "Chris Olave": {
-      "receiving_yards": 71.5
+      "receiving_yards": 71.5,
+      "receptions": 5.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 67.5,
@@ -333,7 +334,7 @@
       "receiving_yards": 11.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -409,7 +410,7 @@
       "receptions": 1.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Van Jefferson": {
       "receiving_yards": 10.5
@@ -430,7 +431,7 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
@@ -442,7 +443,7 @@
       "receiving_yards": 57.5
     },
     "Josh Downs": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 44.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -492,7 +493,7 @@
       "receiving_yards": 6.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 33.5
+      "receiving_yards": 34.5
     },
     "Quentin Johnston": {
       "receiving_yards": 30.5,
@@ -678,7 +679,7 @@
       "receptions": 3.5
     },
     "Hunter Henry": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Efton Chism III": {
@@ -825,13 +826,14 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7844,
-    "matched_props": 376,
-    "excluded_goblin_demon_lines": 6333,
+    "total_projections_returned": 7891,
+    "matched_props": 377,
+    "excluded_goblin_demon_lines": 6351,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
       "completion percentage",
+      "completions in first 10 pass attempts",
       "fantasy score",
       "fg made",
       "fg made (combo)",
@@ -857,8 +859,7 @@
       "punts",
       "punts (combo)",
       "punts inside 20",
-      "quarters with 1+ reception",
-      "quarters with 25+ pass yards"
+      "quarters with 1+ reception"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -866,5 +867,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T17:40:39.770872+00:00"
+  "fetched_at": "2026-11-07T18:00:46.801260+00:00"
 }
