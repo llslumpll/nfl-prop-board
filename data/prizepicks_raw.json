@@ -168,7 +168,7 @@
       "receiving_yards": 39.5
     },
     "Chris Bell": {
-      "receiving_yards": 24.5
+      "receiving_yards": 22.5
     },
     "Sione Vaki": {
       "rushing_yards": 16.5,
@@ -178,7 +178,7 @@
       "receiving_yards": 14.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 10.5
+      "rushing_yards": 9.5
     },
     "Bryce Young": {
       "passing_yards": 225.5,
@@ -284,7 +284,7 @@
       "receiving_yards": 30.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Audric Estime": {
       "rushing_yards": 26.5,
@@ -333,7 +333,7 @@
       "receptions": 2
     },
     "Braelon Allen": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 6.5
     },
     "Xavier Worthy": {
@@ -740,10 +740,11 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 33.5
+      "receiving_yards": 31.5,
+      "receptions": 3.5
     },
     "Cade Otton": {
-      "receiving_yards": 29.5
+      "receiving_yards": 30.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
@@ -821,16 +822,16 @@
       "receiving_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8162,
-    "matched_props": 379,
-    "excluded_goblin_demon_lines": 6594,
+    "total_projections_returned": 8191,
+    "matched_props": 380,
+    "excluded_goblin_demon_lines": 6619,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -869,5 +870,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T20:40:40.497061+00:00"
+  "fetched_at": "2026-11-07T21:00:46.421486+00:00"
 }
