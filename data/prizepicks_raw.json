@@ -62,7 +62,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 189.5,
+      "passing_yards": 188.5,
       "rushing_yards": 17.5
     },
     "J.J. McCarthy": {
@@ -182,7 +182,7 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 68.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 16.5
     },
     "Tetairoa McMillan": {
@@ -231,11 +231,11 @@
     "Mitchell Evans": {
       "receiving_yards": 7.5
     },
-    "Trevor Etienne": {
-      "rushing_yards": 7.5
-    },
     "Troy Franklin": {
       "receiving_yards": 6.5
+    },
+    "Trevor Etienne": {
+      "rushing_yards": 6.5
     },
     "Adam Trautman": {
       "receiving_yards": 5.5
@@ -450,8 +450,8 @@
       "receiving_yards": 38.5
     },
     "Seth McGowan": {
-      "rushing_yards": 26.5,
-      "receiving_yards": 3.5
+      "rushing_yards": 25.5,
+      "receiving_yards": 2.5
     },
     "Tyler Goodson": {
       "rushing_yards": 19.5,
@@ -549,7 +549,7 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Tyler Allgeier": {
@@ -750,7 +750,7 @@
       "receiving_yards": 14.5
     },
     "Josh Allen": {
-      "passing_yards": 234.5,
+      "passing_yards": 231.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -792,7 +792,7 @@
       "receiving_yards": 7.5
     },
     "Keon Coleman": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Ty Johnson": {
       "receiving_yards": 15.5
@@ -817,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7607,
+    "total_projections_returned": 7630,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 6194,
+    "excluded_goblin_demon_lines": 6193,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T03:20:41.417526+00:00"
+  "fetched_at": "2026-11-07T03:40:43.840239+00:00"
 }
