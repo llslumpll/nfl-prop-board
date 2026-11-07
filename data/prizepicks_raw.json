@@ -324,7 +324,7 @@
       "receptions": 4
     },
     "Breece Hall": {
-      "rushing_yards": 40.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 15.5,
       "receptions": 2
     },
@@ -333,7 +333,7 @@
       "receiving_yards": 11.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Mason Taylor": {
@@ -442,7 +442,7 @@
       "receiving_yards": 57.5
     },
     "Josh Downs": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 43.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -472,7 +472,7 @@
     },
     "Justin Herbert": {
       "passing_yards": 208.5,
-      "rushing_yards": 23.5
+      "rushing_yards": 21.5
     },
     "Nico Collins": {
       "receiving_yards": 68.5,
@@ -518,8 +518,7 @@
       "receiving_yards": 16.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+      "receiving_yards": 15.5
     },
     "Charlie Kolar": {
       "receiving_yards": 14.5
@@ -583,7 +582,7 @@
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Kirk Cousins": {
       "passing_yards": 250.5,
@@ -694,8 +693,7 @@
       "rushing_yards": 3.5
     },
     "Kyle Williams": {
-      "receiving_yards": 18.5,
-      "receptions": 1.5
+      "receiving_yards": 18.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
@@ -783,7 +781,7 @@
       "receptions": 0.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 44.5,
       "receptions": 3.5
     },
     "T.J. Hockenson": {
@@ -827,9 +825,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7817,
-    "matched_props": 378,
-    "excluded_goblin_demon_lines": 6330,
+    "total_projections_returned": 7844,
+    "matched_props": 376,
+    "excluded_goblin_demon_lines": 6333,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +866,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T17:20:40.364290+00:00"
+  "fetched_at": "2026-11-07T17:40:39.770872+00:00"
 }
