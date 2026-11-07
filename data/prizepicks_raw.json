@@ -14,7 +14,7 @@
       "receptions": 3
     },
     "Drake London": {
-      "receiving_yards": 78.5
+      "receiving_yards": 77.5
     },
     "Tee Higgins": {
       "receiving_yards": 77.5,
@@ -25,7 +25,7 @@
       "receptions": 7
     },
     "Chase Brown": {
-      "rushing_yards": 49.5,
+      "rushing_yards": 51.5,
       "receiving_yards": 21.5,
       "receptions": 4
     },
@@ -54,8 +54,7 @@
     },
     "Khalil Herbert": {
       "rushing_yards": 7.5,
-      "receptions": 0.5,
-      "receiving_yards": 0.5
+      "receptions": 0.5
     },
     "Austin Hooper": {
       "receiving_yards": 6.5
@@ -138,7 +137,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 76.5,
@@ -168,17 +167,17 @@
       "receiving_yards": 39.5
     },
     "Chris Bell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 24.5
     },
     "Sione Vaki": {
       "rushing_yards": 16.5,
-      "receiving_yards": 1.5
+      "receptions": 0.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 14.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 9.5
+      "rushing_yards": 10.5
     },
     "Bryce Young": {
       "passing_yards": 225.5,
@@ -189,7 +188,7 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 68.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 17.5
     },
     "Tetairoa McMillan": {
@@ -209,7 +208,7 @@
       "receiving_yards": 47.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 32.5
+      "receiving_yards": 34.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 24.5,
@@ -329,7 +328,7 @@
     },
     "Breece Hall": {
       "rushing_yards": 37.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 2
     },
     "Braelon Allen": {
@@ -447,7 +446,7 @@
       "receiving_yards": 57.5
     },
     "Josh Downs": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 43.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -561,11 +560,11 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "Tyler Allgeier": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 16.5
     },
     "Zach Charbonnet": {
@@ -686,26 +685,28 @@
       "receptions": 3.5
     },
     "Hunter Henry": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Efton Chism III": {
       "receiving_yards": 30.5
     },
+    "Mack Hollins": {
+      "receiving_yards": 26.5
+    },
     "Corey Kiner": {
-      "rushing_yards": 21.5,
-      "receptions": 0.5
+      "rushing_yards": 21.5
     },
     "Savion Williams": {
       "receiving_yards": 18.5,
       "rushing_yards": 3.5
     },
     "Kyle Williams": {
-      "receiving_yards": 18.5
+      "receiving_yards": 17.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Caleb Williams": {
       "passing_yards": 244.5,
@@ -740,7 +741,7 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -748,7 +749,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
-      "receiving_yards": 10.5,
+      "receiving_yards": 9.5,
       "receptions": 2
     },
     "Ted Hurst III": {
@@ -829,9 +830,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8191,
-    "matched_props": 380,
-    "excluded_goblin_demon_lines": 6619,
+    "total_projections_returned": 8214,
+    "matched_props": 379,
+    "excluded_goblin_demon_lines": 6643,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -870,5 +871,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T21:00:46.421486+00:00"
+  "fetched_at": "2026-11-07T21:20:40.613322+00:00"
 }
