@@ -26,7 +26,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 49.5,
-      "receiving_yards": 23.5,
+      "receiving_yards": 21.5,
       "receptions": 4
     },
     "Kyle Pitts Sr.": {
@@ -173,7 +173,7 @@
       "receptions": 0.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Jaylen Wright": {
       "rushing_yards": 9.5
@@ -423,7 +423,7 @@
     },
     "Dak Prescott": {
       "passing_yards": 264.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 5.5
     },
     "Daniel Jones": {
       "passing_yards": 204.5,
@@ -434,11 +434,11 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
@@ -446,11 +446,7 @@
       "receiving_yards": 57.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 44.5
-    },
-    "Josh Downs": {
-      "receiving_yards": 43.5,
-      "receptions": 4
+      "receiving_yards": 45.5
     },
     "Tyler Warren": {
       "receiving_yards": 42.5
@@ -458,6 +454,10 @@
     "Keenan Allen": {
       "receiving_yards": 41.5,
       "receptions": 4.5
+    },
+    "Josh Downs": {
+      "receiving_yards": 40.5,
+      "receptions": 4
     },
     "Seth McGowan": {
       "rushing_yards": 25.5,
@@ -503,7 +503,7 @@
       "receptions": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 29.5,
       "receptions": 2.5
     },
     "Marvin Harrison Jr.": {
@@ -522,8 +522,7 @@
       "receiving_yards": 15.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+      "receiving_yards": 15.5
     },
     "Tank Dell": {
       "receiving_yards": 15.5
@@ -533,8 +532,7 @@
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
-      "receiving_yards": 5.5,
-      "receptions": 1.5
+      "receiving_yards": 5.5
     },
     "Foster Moreau": {
       "receiving_yards": 8.5
@@ -744,7 +742,7 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -834,9 +832,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8356,
-    "matched_props": 381,
-    "excluded_goblin_demon_lines": 6769,
+    "total_projections_returned": 8404,
+    "matched_props": 379,
+    "excluded_goblin_demon_lines": 6815,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -875,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T23:20:40.329402+00:00"
+  "fetched_at": "2026-11-07T23:40:39.313330+00:00"
 }
