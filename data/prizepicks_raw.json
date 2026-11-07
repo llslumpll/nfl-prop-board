@@ -16,13 +16,13 @@
     "Drake London": {
       "receiving_yards": 78.5
     },
+    "Ja'Marr Chase": {
+      "receiving_yards": 77.5,
+      "receptions": 7
+    },
     "Tee Higgins": {
       "receiving_yards": 77.5,
       "receptions": 5.5
-    },
-    "Ja'Marr Chase": {
-      "receiving_yards": 76.5,
-      "receptions": 7
     },
     "Chase Brown": {
       "rushing_yards": 49.5,
@@ -311,8 +311,7 @@
       "receptions": 5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 48.5,
-      "receptions": 3.5
+      "receiving_yards": 48.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 48.5
@@ -322,13 +321,13 @@
       "receptions": 4
     },
     "Breece Hall": {
-      "rushing_yards": 40.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 15.5,
       "receptions": 2
     },
     "Braelon Allen": {
       "rushing_yards": 32.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Xavier Worthy": {
       "receiving_yards": 30.5,
@@ -428,7 +427,7 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
@@ -563,8 +562,7 @@
     },
     "Zach Charbonnet": {
       "rushing_yards": 37.5,
-      "receiving_yards": 6.5,
-      "receptions": 1.5
+      "receiving_yards": 6.5
     },
     "Cooper Kupp": {
       "receiving_yards": 25.5
@@ -725,7 +723,7 @@
       "receiving_yards": 52.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 50.5,
       "receptions": 4
     },
     "Rome Odunze": {
@@ -826,9 +824,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7771,
-    "matched_props": 377,
-    "excluded_goblin_demon_lines": 6307,
+    "total_projections_returned": 7773,
+    "matched_props": 375,
+    "excluded_goblin_demon_lines": 6312,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -867,5 +865,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T16:40:41.196473+00:00"
+  "fetched_at": "2026-11-07T17:00:44.584677+00:00"
 }
