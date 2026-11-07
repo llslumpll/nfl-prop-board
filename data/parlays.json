@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "td-2": {
    "chance": 0.3994,
-   "decimal": 3.308,
-   "ev": 0.321,
+   "decimal": 3.37,
+   "ev": 0.346,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 1.852,
+     "decimal": 1.887,
      "game": "BUF@MIN",
      "good": true,
      "kickoff": "2026-11-10T01:15:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.54,
+     "price": 0.53,
      "team": "BUF"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "td-3": {
    "chance": 0.2369,
-   "decimal": 6.486,
-   "ev": 0.536,
+   "decimal": 6.609,
+   "ev": 0.565,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,14 +447,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 1.852,
+     "decimal": 1.887,
      "game": "BUF@MIN",
      "good": true,
      "kickoff": "2026-11-10T01:15:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.54,
+     "price": 0.53,
      "team": "BUF"
     },
     {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "td-4": {
    "chance": 0.1191,
-   "decimal": 14.413,
-   "ev": 0.717,
+   "decimal": 14.685,
+   "ev": 0.75,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,14 +499,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 1.852,
+     "decimal": 1.887,
      "game": "BUF@MIN",
      "good": true,
      "kickoff": "2026-11-10T01:15:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.54,
+     "price": 0.53,
      "team": "BUF"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "value-2": {
@@ -584,7 +584,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   },
   "value-3": {
@@ -645,7 +645,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-07 09:01 UTC",
+   "updated": "2026-11-07 09:20 UTC",
    "week": 9
   }
  }
