@@ -71,7 +71,7 @@
     },
     "Joe Milton III": {
       "passing_yards": 188.5,
-      "rushing_yards": 22.5
+      "rushing_yards": 23.5
     },
     "Malik Nabers": {
       "receiving_yards": 72.5,
@@ -579,13 +579,13 @@
     "Simi Fehoko": {
       "receiving_yards": 3.5
     },
+    "Kirk Cousins": {
+      "passing_yards": 247.5,
+      "rushing_yards": 1.5
+    },
     "Brock Purdy": {
       "passing_yards": 247.5,
       "rushing_yards": 14.5
-    },
-    "Kirk Cousins": {
-      "passing_yards": 246.5,
-      "rushing_yards": 1.5
     },
     "Brock Bowers": {
       "receiving_yards": 76.5,
@@ -819,9 +819,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7733,
+    "total_projections_returned": 7736,
     "matched_props": 374,
-    "excluded_goblin_demon_lines": 6283,
+    "excluded_goblin_demon_lines": 6284,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -860,5 +860,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T12:40:41.497718+00:00"
+  "fetched_at": "2026-11-07T13:00:44.102435+00:00"
 }
