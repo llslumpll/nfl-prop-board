@@ -41,12 +41,12 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
+    "Dohnte Meyers": {
+      "receiving_yards": 17.5
+    },
     "Samaje Perine": {
       "rushing_yards": 17.5,
       "receiving_yards": 5.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 16.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 9.5,
@@ -62,7 +62,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 188.5,
+      "passing_yards": 189.5,
       "rushing_yards": 17.5
     },
     "J.J. McCarthy": {
@@ -647,7 +647,7 @@
       "rushing_yards": 24.5
     },
     "Christian Watson": {
-      "receiving_yards": 71.5
+      "receiving_yards": 72.5
     },
     "Matthew Golden": {
       "receiving_yards": 67.5,
@@ -817,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7641,
+    "total_projections_returned": 7651,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 6204,
+    "excluded_goblin_demon_lines": 6214,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -858,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T04:00:44.646372+00:00"
+  "fetched_at": "2026-11-07T04:20:43.450654+00:00"
 }
