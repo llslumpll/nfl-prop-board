@@ -53,8 +53,7 @@
       "receptions": 1.5
     },
     "Khalil Herbert": {
-      "rushing_yards": 7.5,
-      "receptions": 0.5
+      "rushing_yards": 7.5
     },
     "Austin Hooper": {
       "receiving_yards": 6.5
@@ -113,7 +112,7 @@
       "receptions": 1.5
     },
     "Gregory Desrosiers Jr.": {
-      "rushing_yards": 15.5,
+      "rushing_yards": 13.5,
       "receiving_yards": 0.5
     },
     "Darnell Mooney": {
@@ -170,14 +169,13 @@
       "receiving_yards": 22.5
     },
     "Sione Vaki": {
-      "rushing_yards": 16.5,
-      "receptions": 0.5
+      "rushing_yards": 16.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 14.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 10.5
+      "rushing_yards": 9.5
     },
     "Bryce Young": {
       "passing_yards": 225.5,
@@ -280,7 +278,7 @@
       "receiving_yards": 33.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Juwan Johnson": {
       "receiving_yards": 27.5
@@ -457,7 +455,8 @@
       "receptions": 4.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 38.5
+      "receiving_yards": 36.5,
+      "receptions": 3.5
     },
     "Seth McGowan": {
       "rushing_yards": 25.5,
@@ -560,7 +559,7 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "Tyler Allgeier": {
@@ -684,14 +683,15 @@
       "receptions": 4
     },
     "Mack Hollins": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 3
     },
     "Hunter Henry": {
       "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Efton Chism III": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Corey Kiner": {
       "rushing_yards": 21.5
@@ -829,9 +829,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8226,
+    "total_projections_returned": 8237,
     "matched_props": 378,
-    "excluded_goblin_demon_lines": 6652,
+    "excluded_goblin_demon_lines": 6665,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -870,5 +870,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T21:40:42.270903+00:00"
+  "fetched_at": "2026-11-07T22:00:44.498137+00:00"
 }
