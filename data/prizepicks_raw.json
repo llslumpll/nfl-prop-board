@@ -588,7 +588,7 @@
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 75.5,
       "receptions": 6.5
     },
     "George Kittle": {
@@ -633,8 +633,7 @@
       "receiving_yards": 16.5
     },
     "Jack Bech": {
-      "receiving_yards": 10.5,
-      "receptions": 1.5
+      "receiving_yards": 10.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 10.5
@@ -695,7 +694,7 @@
       "receiving_yards": 2.5
     },
     "Caleb Williams": {
-      "passing_yards": 244.5,
+      "passing_yards": 243.5,
       "rushing_yards": 19.5
     },
     "Baker Mayfield": {
@@ -818,9 +817,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7585,
-    "matched_props": 371,
-    "excluded_goblin_demon_lines": 6182,
+    "total_projections_returned": 7590,
+    "matched_props": 370,
+    "excluded_goblin_demon_lines": 6187,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -859,5 +858,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T02:00:49.540370+00:00"
+  "fetched_at": "2026-11-07T02:20:44.498952+00:00"
 }

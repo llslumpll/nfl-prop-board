@@ -33887,7 +33887,8 @@
     "market_prob": 43.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Tyler Allgeier|any_td|9": {
@@ -33964,9 +33965,7 @@
     "graded_at": null,
     "market_prob": 45.0,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Bo Nix|any_td|9": {
     "player": "Bo Nix",
