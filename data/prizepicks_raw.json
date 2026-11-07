@@ -592,12 +592,12 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 61.5,
-      "receiving_yards": 40.5,
+      "receiving_yards": 39.5,
       "receptions": 5
     },
     "Kaelon Black": {
       "rushing_yards": 41.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
@@ -787,7 +787,7 @@
       "receiving_yards": 7.5
     },
     "Keon Coleman": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Ty Johnson": {
       "receiving_yards": 15.5
@@ -812,9 +812,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7674,
+    "total_projections_returned": 7675,
     "matched_props": 367,
-    "excluded_goblin_demon_lines": 6236,
+    "excluded_goblin_demon_lines": 6237,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -853,5 +853,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T08:20:41.850361+00:00"
+  "fetched_at": "2026-11-07T08:40:39.147015+00:00"
 }
