@@ -45,7 +45,7 @@
       "receiving_yards": 17.5
     },
     "Samaje Perine": {
-      "rushing_yards": 16.5,
+      "rushing_yards": 17.5,
       "receiving_yards": 5.5
     },
     "Olamide Zaccheaus": {
@@ -53,7 +53,7 @@
       "receptions": 1.5
     },
     "Khalil Herbert": {
-      "rushing_yards": 7.5
+      "rushing_yards": 8.5
     },
     "Austin Hooper": {
       "receiving_yards": 6.5
@@ -65,7 +65,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 188.5,
+      "passing_yards": 182.5,
       "rushing_yards": 16.5
     },
     "J.J. McCarthy": {
@@ -73,7 +73,7 @@
       "rushing_yards": 17.5
     },
     "Joe Milton III": {
-      "passing_yards": 182.5,
+      "passing_yards": 185.5,
       "rushing_yards": 23.5
     },
     "Malik Nabers": {
@@ -95,7 +95,7 @@
       "receiving_yards": 39.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Darius Cooper": {
       "receiving_yards": 27.5
@@ -258,24 +258,24 @@
       "rushing_yards": 67.5,
       "receiving_yards": 7.5
     },
-    "Denzel Boston": {
-      "receiving_yards": 46.5,
-      "receptions": 3
-    },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
       "receptions": 4.5
+    },
+    "Denzel Boston": {
+      "receiving_yards": 43.5,
+      "receptions": 3
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 43.5,
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 41.5,
+      "rushing_yards": 40.5,
       "receiving_yards": 18.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 33.5
+      "receiving_yards": 34.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 29.5
@@ -294,7 +294,7 @@
       "receiving_yards": 14.5
     },
     "Noah Fant": {
-      "receiving_yards": 9.5
+      "receiving_yards": 2.5
     },
     "Patrick Mahomes": {
       "passing_yards": 245.5,
@@ -310,7 +310,7 @@
       "receptions": 2.5
     },
     "Rashee Rice": {
-      "receiving_yards": 59.5,
+      "receiving_yards": 56.5,
       "receptions": 5
     },
     "Adonai Mitchell": {
@@ -399,22 +399,20 @@
       "receptions": 3.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Austin Ekeler": {
       "rushing_yards": 24.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 19.5,
-      "receptions": 1.5
+      "receiving_yards": 18.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
+      "receiving_yards": 16.5
     },
     "Van Jefferson": {
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "John Bates": {
       "receiving_yards": 3.5
@@ -432,7 +430,7 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 70.5,
+      "rushing_yards": 72.5,
       "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
@@ -443,8 +441,12 @@
     "George Pickens": {
       "receiving_yards": 57.5
     },
-    "Josh Downs": {
+    "Ryan Flournoy": {
       "receiving_yards": 44.5,
+      "receptions": 3.5
+    },
+    "Josh Downs": {
+      "receiving_yards": 43.5,
       "receptions": 4
     },
     "Tyler Warren": {
@@ -453,10 +455,6 @@
     "Keenan Allen": {
       "receiving_yards": 41.5,
       "receptions": 4.5
-    },
-    "Ryan Flournoy": {
-      "receiving_yards": 36.5,
-      "receptions": 3.5
     },
     "Seth McGowan": {
       "rushing_yards": 25.5,
@@ -559,7 +557,7 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Tyler Allgeier": {
@@ -586,7 +584,8 @@
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5,
+      "receptions": 0.5
     },
     "Kirk Cousins": {
       "passing_yards": 249.5,
@@ -687,7 +686,7 @@
       "receptions": 3
     },
     "Hunter Henry": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Efton Chism III": {
@@ -740,7 +739,7 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -829,9 +828,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8237,
-    "matched_props": 378,
-    "excluded_goblin_demon_lines": 6665,
+    "total_projections_returned": 8242,
+    "matched_props": 377,
+    "excluded_goblin_demon_lines": 6669,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -870,5 +869,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T22:00:44.498137+00:00"
+  "fetched_at": "2026-11-07T22:20:41.294918+00:00"
 }
