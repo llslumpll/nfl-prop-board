@@ -41,12 +41,12 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
+    "Dohnte Meyers": {
+      "receiving_yards": 17.5
+    },
     "Samaje Perine": {
       "rushing_yards": 17.5,
       "receiving_yards": 5.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 16.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 9.5,
@@ -92,7 +92,7 @@
       "receiving_yards": 39.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 35.5
+      "receiving_yards": 37.5
     },
     "Darius Cooper": {
       "receiving_yards": 27.5
@@ -182,7 +182,7 @@
       "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 69.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 16.5
     },
     "Tetairoa McMillan": {
@@ -308,8 +308,7 @@
       "receptions": 5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 48.5,
-      "receptions": 3.5
+      "receiving_yards": 48.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 48.5
@@ -356,7 +355,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 252.5
+      "passing_yards": 245.5
     },
     "Jayden Daniels": {
       "passing_yards": 211.5,
@@ -565,7 +564,8 @@
       "receiving_yards": 26.5
     },
     "AJ Barner": {
-      "receiving_yards": 24.5
+      "receiving_yards": 24.5,
+      "receptions": 2.5
     },
     "Tory Horton": {
       "receiving_yards": 17.5
@@ -702,7 +702,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 65.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "Luther Burden III": {
@@ -816,9 +816,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7602,
+    "total_projections_returned": 7606,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 6199,
+    "excluded_goblin_demon_lines": 6197,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -841,6 +841,7 @@
       "pass yards",
       "pass yards (combo)",
       "pass+rush yds",
+      "pass+rush+rec tds",
       "passer rating",
       "punt touchbacks (combo)",
       "punts",
@@ -848,8 +849,7 @@
       "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards",
-      "quarters with 5+ rush yards"
+      "quarters with 5+ receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -857,5 +857,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T02:40:41.604076+00:00"
+  "fetched_at": "2026-11-07T03:00:46.625993+00:00"
 }
