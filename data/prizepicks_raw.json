@@ -62,7 +62,7 @@
       "receiving_yards": 3.5
     },
     "Shedeur Sanders": {
-      "passing_yards": 188.5,
+      "passing_yards": 195.5,
       "rushing_yards": 17.5
     },
     "J.J. McCarthy": {
@@ -274,7 +274,7 @@
       "receiving_yards": 28.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 25.5,
       "receiving_yards": 16.5
     },
     "Dylan Sampson": {
@@ -358,7 +358,7 @@
       "passing_yards": 245.5
     },
     "Jayden Daniels": {
-      "passing_yards": 214.5,
+      "passing_yards": 211.5,
       "rushing_yards": 37.5
     },
     "Puka Nacua": {
@@ -372,7 +372,7 @@
       "receptions": 2.5
     },
     "Blake Corum": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
@@ -584,11 +584,11 @@
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 241.5,
+      "passing_yards": 243.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 76.5,
       "receptions": 6.5
     },
     "George Kittle": {
@@ -596,8 +596,8 @@
       "receptions": 6
     },
     "Christian McCaffrey": {
-      "rushing_yards": 62.5,
-      "receiving_yards": 39.5,
+      "rushing_yards": 61.5,
+      "receiving_yards": 40.5,
       "receptions": 5
     },
     "Kaelon Black": {
@@ -606,13 +606,14 @@
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
-      "rushing_yards": 28.5
+      "rushing_yards": 28.5,
+      "receptions": 4.5
     },
     "Tre Tucker": {
       "receiving_yards": 36.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 0.5
     },
     "Demarcus Robinson": {
@@ -626,11 +627,10 @@
       "receiving_yards": 25.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Brandin Cooks": {
-      "receiving_yards": 16.5,
-      "receptions": 1.5
+      "receiving_yards": 16.5
     },
     "Jack Bech": {
       "receiving_yards": 10.5
@@ -818,9 +818,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 7706,
+    "total_projections_returned": 7708,
     "matched_props": 371,
-    "excluded_goblin_demon_lines": 6261,
+    "excluded_goblin_demon_lines": 6262,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -859,5 +859,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T06:00:43.398066+00:00"
+  "fetched_at": "2026-11-07T06:20:40.099078+00:00"
 }
