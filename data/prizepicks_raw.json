@@ -233,6 +233,9 @@
     "Marvin Mims Jr.": {
       "receiving_yards": 9.5
     },
+    "Trevor Etienne": {
+      "rushing_yards": 7.5
+    },
     "Troy Franklin": {
       "receiving_yards": 6.5
     },
@@ -241,9 +244,6 @@
     },
     "Adam Trautman": {
       "receiving_yards": 5.5
-    },
-    "Trevor Etienne": {
-      "rushing_yards": 5.5
     },
     "Nate Adkins": {
       "receiving_yards": 1.5
@@ -259,13 +259,13 @@
       "rushing_yards": 67.5,
       "receiving_yards": 7.5
     },
+    "Denzel Boston": {
+      "receiving_yards": 46.5,
+      "receptions": 3
+    },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
       "receptions": 4.5
-    },
-    "Denzel Boston": {
-      "receiving_yards": 43.5,
-      "receptions": 3
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 43.5,
@@ -356,7 +356,7 @@
       "receiving_yards": 13.5
     },
     "Tim Patrick": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Isaiah Williams": {
       "receiving_yards": 7.5
@@ -502,7 +502,7 @@
       "receptions": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 2.5
     },
     "Marvin Harrison Jr.": {
@@ -716,14 +716,14 @@
       "passing_yards": 211.5,
       "rushing_yards": 15.5
     },
-    "Bucky Irving": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
-    },
     "Luther Burden III": {
       "receiving_yards": 65.5,
       "receptions": 5
+    },
+    "Bucky Irving": {
+      "rushing_yards": 63.5,
+      "receiving_yards": 13.5,
+      "receptions": 2.5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
@@ -831,7 +831,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8535,
+    "total_projections_returned": 8534,
     "matched_props": 378,
     "excluded_goblin_demon_lines": 6936,
     "sample_stat_types_seen": [
@@ -872,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T01:20:43.489702+00:00"
+  "fetched_at": "2026-11-08T01:40:39.611600+00:00"
 }
