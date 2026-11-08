@@ -30044,9 +30044,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-02 19:26 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-11-02 19:26 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -30801,7 +30799,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -31385,8 +31382,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -31535,7 +31531,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-11-06 20:08 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-06 20:08 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -33448,7 +33447,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Joe Burrow|any_td|9": {
     "player": "Joe Burrow",
