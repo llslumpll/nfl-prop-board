@@ -33,11 +33,11 @@
       "receiving_yards": 47.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Cade Otton": {
-      "receiving_yards": 29.5
+      "receiving_yards": 28.5
     },
     "Ted Hurst III": {
       "receiving_yards": 22.5,
@@ -124,9 +124,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1317,
+    "total_projections_returned": 1315,
     "matched_props": 55,
-    "excluded_goblin_demon_lines": 1075,
+    "excluded_goblin_demon_lines": 1072,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -165,5 +165,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T22:40:30.359320+00:00"
+  "fetched_at": "2026-11-08T23:00:34.466602+00:00"
 }
