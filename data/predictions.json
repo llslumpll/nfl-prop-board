@@ -33891,7 +33891,8 @@
     "market_prob": 43.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Tyler Allgeier|any_td|9": {
@@ -34299,8 +34300,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Devin Singletary|rushing_yards|9": {

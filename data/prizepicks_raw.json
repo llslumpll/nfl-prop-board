@@ -73,7 +73,7 @@
       "rushing_yards": 17.5
     },
     "Joe Milton III": {
-      "passing_yards": 181.5,
+      "passing_yards": 182.5,
       "rushing_yards": 23.5
     },
     "Malik Nabers": {
@@ -136,7 +136,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 76.5,
@@ -282,7 +282,7 @@
       "receiving_yards": 30.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 28.5
+      "receiving_yards": 26.5
     },
     "Audric Estime": {
       "rushing_yards": 26.5,
@@ -327,7 +327,7 @@
     },
     "Breece Hall": {
       "rushing_yards": 37.5,
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 2
     },
     "Braelon Allen": {
@@ -359,7 +359,7 @@
       "receiving_yards": 11.5
     },
     "Isaiah Williams": {
-      "receiving_yards": 5.5
+      "receiving_yards": 7.5
     },
     "Jalen Royals": {
       "receptions": 0.5,
@@ -503,7 +503,7 @@
       "receptions": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
     "Marvin Harrison Jr.": {
@@ -524,10 +524,10 @@
     "Kayshon Boutte": {
       "receiving_yards": 15.5
     },
-    "Tank Dell": {
-      "receiving_yards": 15.5
-    },
     "Charlie Kolar": {
+      "receiving_yards": 14.5
+    },
+    "Tank Dell": {
       "receiving_yards": 14.5
     },
     "Keaton Mitchell": {
@@ -717,21 +717,21 @@
       "passing_yards": 211.5,
       "rushing_yards": 15.5
     },
-    "Bucky Irving": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
-    },
     "Luther Burden III": {
       "receiving_yards": 65.5,
       "receptions": 5
+    },
+    "Bucky Irving": {
+      "rushing_yards": 64.5,
+      "receiving_yards": 13.5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
       "receiving_yards": 20.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 5.5
     },
     "Emeka Egbuka": {
       "receiving_yards": 50.5,
@@ -756,13 +756,13 @@
       "receiving_yards": 9.5,
       "receptions": 2
     },
+    "Kalif Raymond": {
+      "receiving_yards": 16.5,
+      "receptions": 2
+    },
     "Roschon Johnson": {
       "rushing_yards": 16.5,
       "receiving_yards": 3.5
-    },
-    "Kalif Raymond": {
-      "receiving_yards": 15.5,
-      "receptions": 2
     },
     "Tez Johnson": {
       "receiving_yards": 14.5
@@ -832,9 +832,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8404,
+    "total_projections_returned": 8410,
     "matched_props": 379,
-    "excluded_goblin_demon_lines": 6815,
+    "excluded_goblin_demon_lines": 6819,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -873,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-07T23:40:39.313330+00:00"
+  "fetched_at": "2026-11-08T00:00:44.448253+00:00"
 }
