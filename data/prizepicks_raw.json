@@ -50,7 +50,7 @@
       "receiving_yards": 5.5
     },
     "Olamide Zaccheaus": {
-      "receiving_yards": 9.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Khalil Herbert": {
@@ -212,7 +212,7 @@
       "receiving_yards": 47.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 34.5
+      "receiving_yards": 32.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 25.5,
@@ -244,11 +244,11 @@
     "Mitchell Evans": {
       "receiving_yards": 6.5
     },
+    "Trevor Etienne": {
+      "rushing_yards": 6.5
+    },
     "Adam Trautman": {
       "receiving_yards": 5.5
-    },
-    "Trevor Etienne": {
-      "rushing_yards": 5.5
     },
     "Nate Adkins": {
       "receiving_yards": 1.5
@@ -440,7 +440,7 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
@@ -609,7 +609,7 @@
       "receptions": 6.5
     },
     "George Kittle": {
-      "receiving_yards": 68.5,
+      "receiving_yards": 70.5,
       "receptions": 6
     },
     "Christian McCaffrey": {
@@ -629,7 +629,7 @@
       "rushing_yards": 27.5
     },
     "Demarcus Robinson": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 33.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8834,
+    "total_projections_returned": 8840,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7193,
+    "excluded_goblin_demon_lines": 7197,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -855,6 +855,7 @@
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
+      "halves with 50+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -872,8 +873,7 @@
       "punt touchbacks (combo)",
       "punts",
       "punts (combo)",
-      "punts inside 20",
-      "quarters with 1+ reception"
+      "punts inside 20"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T07:20:43.924355+00:00"
+  "fetched_at": "2026-11-08T07:40:40.930384+00:00"
 }
