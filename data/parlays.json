@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "td-2": {
@@ -422,7 +422,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "td-3": {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "td-4": {
    "chance": 0.1405,
-   "decimal": 12.313,
-   "ev": 0.729,
+   "decimal": 12.065,
+   "ev": 0.695,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -523,14 +523,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 2.083,
+     "decimal": 2.041,
      "game": "GB@NE",
      "good": true,
      "kickoff": "2026-11-08T21:25:00+00:00",
      "kind": "td",
      "label": "Josh Jacobs anytime TD",
      "player": "Josh Jacobs",
-     "price": 0.48,
+     "price": 0.49,
      "team": "GB"
     }
    ],
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "value-2": {
@@ -584,7 +584,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-08 14:20 UTC",
+   "updated": "2026-11-08 14:41 UTC",
    "week": 9
   },
   "value-3": {
@@ -641,6 +641,7 @@
      "team": "ARI"
     }
    ],
+   "locked": "2026-11-08 14:41 UTC",
    "name": "Good price",
    "size": 3,
    "stake": 0.5,
