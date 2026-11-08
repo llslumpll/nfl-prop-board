@@ -155,11 +155,11 @@
       "receptions": 3.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 48.5,
       "receptions": 4
     },
     "Malik Washington": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 42.5,
       "receptions": 4
     },
     "Caleb Douglas": {
@@ -170,7 +170,7 @@
       "receiving_yards": 39.5
     },
     "Chris Bell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 24.5
     },
     "Sione Vaki": {
       "rushing_yards": 16.5,
@@ -185,7 +185,7 @@
     },
     "Bo Nix": {
       "passing_yards": 210.5,
-      "rushing_yards": 13.5
+      "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 69.5,
@@ -258,7 +258,7 @@
     },
     "Quinshon Judkins": {
       "rushing_yards": 67.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
@@ -273,7 +273,7 @@
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 18.5
     },
     "Devaughn Vele": {
@@ -281,7 +281,7 @@
       "receptions": 3.5
     },
     "Audric Estime": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 3.5
     },
     "Juwan Johnson": {
@@ -452,12 +452,12 @@
     "Ryan Flournoy": {
       "receiving_yards": 47.5
     },
-    "Josh Downs": {
-      "receiving_yards": 44.5,
-      "receptions": 4
-    },
     "Tyler Warren": {
       "receiving_yards": 42.5
+    },
+    "Josh Downs": {
+      "receiving_yards": 42.5,
+      "receptions": 4
     },
     "Keenan Allen": {
       "receiving_yards": 41.5,
@@ -599,7 +599,7 @@
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 243.5,
+      "passing_yards": 241.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
@@ -627,7 +627,7 @@
       "rushing_yards": 27.5
     },
     "Demarcus Robinson": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 34.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -771,10 +771,10 @@
       "receptions": 2
     },
     "Tez Johnson": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Josh Allen": {
-      "passing_yards": 237.5,
+      "passing_yards": 236.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -838,9 +838,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8884,
+    "total_projections_returned": 8898,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7240,
+    "excluded_goblin_demon_lines": 7250,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -879,5 +879,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T12:20:39.646265+00:00"
+  "fetched_at": "2026-11-08T12:40:41.262904+00:00"
 }
