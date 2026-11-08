@@ -39,22 +39,22 @@
       "receiving_yards": 22.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 21.5,
       "receptions": 2
     },
     "Kimani Vidal": {
-      "rushing_yards": 19.5,
+      "rushing_yards": 18.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
+    },
+    "Charlie Kolar": {
+      "receiving_yards": 15.5
     },
     "Oronde Gadsden II": {
       "receiving_yards": 15.5
     },
     "Tank Dell": {
       "receiving_yards": 15.5
-    },
-    "Charlie Kolar": {
-      "receiving_yards": 14.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 13.5
@@ -119,7 +119,7 @@
       "receiving_yards": 3.5
     },
     "Kirk Cousins": {
-      "passing_yards": 250.5,
+      "passing_yards": 248.5,
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
@@ -177,7 +177,7 @@
       "receiving_yards": 10.5
     },
     "Jordan Love": {
-      "passing_yards": 271.5,
+      "passing_yards": 269.5,
       "rushing_yards": 3.5
     },
     "Drake Maye": {
@@ -234,7 +234,7 @@
       "rushing_yards": 2.5
     },
     "Kyle Williams": {
-      "receiving_yards": 14.5
+      "receiving_yards": 16.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
@@ -363,9 +363,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3838,
+    "total_projections_returned": 3833,
     "matched_props": 166,
-    "excluded_goblin_demon_lines": 3123,
+    "excluded_goblin_demon_lines": 3120,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -404,5 +404,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T19:20:38.057805+00:00"
+  "fetched_at": "2026-11-08T19:40:39.843488+00:00"
 }
