@@ -30727,7 +30727,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Deshaun Watson|passing_yards|9": {
     "player": "Deshaun Watson",
@@ -31795,9 +31797,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Sione Vaki|rushing_yards|9": {
     "player": "Sione Vaki",
