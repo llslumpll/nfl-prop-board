@@ -35,8 +35,7 @@
       "receiving_yards": 36.5
     },
     "Darius Cooper": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 27.5
     },
     "Elijah Mitchell": {
       "rushing_yards": 24.5,
@@ -46,14 +45,13 @@
       "receiving_yards": 23.5
     },
     "Hollywood Brown": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Darnell Mooney": {
       "receiving_yards": 13.5
     },
     "Gregory Desrosiers Jr.": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 0.5,
+      "rushing_yards": 13.5,
       "receptions": 0.5
     },
     "Theo Johnson": {
@@ -121,7 +119,7 @@
     },
     "Bo Nix": {
       "passing_yards": 210.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 69.5,
@@ -284,13 +282,13 @@
     "Kenyon Sadiq": {
       "receiving_yards": 19.5
     },
+    "Cyrus Allen": {
+      "receiving_yards": 15.5
+    },
     "Emmett Johnson": {
       "receiving_yards": 15.5,
       "rushing_yards": 12.5,
       "receptions": 2
-    },
-    "Cyrus Allen": {
-      "receiving_yards": 14.5
     },
     "Noah Gray": {
       "receiving_yards": 13.5
@@ -350,10 +348,10 @@
       "receiving_yards": 6.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Van Jefferson": {
       "receiving_yards": 8.5
@@ -499,13 +497,13 @@
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
-    "Tyler Allgeier": {
-      "rushing_yards": 49.5,
-      "receiving_yards": 16.5
-    },
     "Michael Wilson": {
       "receiving_yards": 48.5,
       "receptions": 4.5
+    },
+    "Tyler Allgeier": {
+      "rushing_yards": 48.5,
+      "receiving_yards": 16.5
     },
     "Zach Charbonnet": {
       "rushing_yards": 35.5,
@@ -572,8 +570,7 @@
       "receiving_yards": 0.5
     },
     "Michael Mayer": {
-      "receiving_yards": 29.5,
-      "receptions": 3.5
+      "receiving_yards": 29.5
     },
     "Jordan Watkins": {
       "receiving_yards": 25.5
@@ -626,7 +623,7 @@
       "receptions": 3.5
     },
     "Hunter Henry": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Mack Hollins": {
@@ -634,10 +631,11 @@
       "receptions": 3
     },
     "Eli Raridon": {
-      "receiving_yards": 26.5
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "Efton Chism III": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Corey Kiner": {
       "rushing_yards": 21.5,
@@ -778,14 +776,15 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8255,
-    "matched_props": 359,
-    "excluded_goblin_demon_lines": 6734,
+    "total_projections_returned": 8256,
+    "matched_props": 357,
+    "excluded_goblin_demon_lines": 6732,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
+      "consecutive pass completions",
       "fantasy score",
       "fg made",
       "fg made (combo)",
@@ -810,8 +809,7 @@
       "passer rating",
       "punt touchbacks (combo)",
       "punts",
-      "punts (combo)",
-      "punts inside 20"
+      "punts (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -819,5 +817,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T15:13:34.880458+00:00"
+  "fetched_at": "2026-11-08T15:20:44.886194+00:00"
 }
