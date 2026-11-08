@@ -73,7 +73,7 @@
       "rushing_yards": 17.5
     },
     "Joe Milton III": {
-      "passing_yards": 182.5,
+      "passing_yards": 184.5,
       "rushing_yards": 23.5
     },
     "Malik Nabers": {
@@ -105,10 +105,10 @@
       "receiving_yards": 8.5
     },
     "Malachi Fields": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Hollywood Brown": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 1.5
     },
     "Gregory Desrosiers Jr.": {
@@ -166,14 +166,14 @@
       "receiving_yards": 39.5
     },
     "Chris Bell": {
-      "receiving_yards": 24.5
+      "receiving_yards": 22.5
     },
     "Sione Vaki": {
       "rushing_yards": 16.5,
       "receptions": 0.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 14.5
+      "receiving_yards": 16.5
     },
     "Jaylen Wright": {
       "rushing_yards": 9.5
@@ -279,7 +279,7 @@
       "receiving_yards": 34.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 29.5
+      "receiving_yards": 30.5
     },
     "Audric Estime": {
       "rushing_yards": 28.5,
@@ -398,7 +398,7 @@
       "receiving_yards": 16.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Tyler Higbee": {
@@ -447,6 +447,10 @@
     "Ryan Flournoy": {
       "receiving_yards": 45.5
     },
+    "Josh Downs": {
+      "receiving_yards": 43.5,
+      "receptions": 4
+    },
     "Tyler Warren": {
       "receiving_yards": 42.5
     },
@@ -454,13 +458,9 @@
       "receiving_yards": 41.5,
       "receptions": 4.5
     },
-    "Josh Downs": {
-      "receiving_yards": 40.5,
-      "receptions": 4
-    },
     "Seth McGowan": {
       "rushing_yards": 25.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Tyler Goodson": {
       "rushing_yards": 19.5,
@@ -558,14 +558,15 @@
       "receptions": 1.5
     },
     "Michael Wilson": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 4.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 48.5,
       "receiving_yards": 16.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 34.5,
       "receiving_yards": 6.5
     },
     "Cooper Kupp": {
@@ -577,10 +578,10 @@
     "Tory Horton": {
       "receiving_yards": 17.5
     },
-    "Reggie Virgil": {
-      "receiving_yards": 14.5
-    },
     "Elijah Higgins": {
+      "receiving_yards": 13.5
+    },
+    "Reggie Virgil": {
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
@@ -681,13 +682,13 @@
       "receiving_yards": 41.5,
       "receptions": 4
     },
-    "Mack Hollins": {
-      "receiving_yards": 37.5,
-      "receptions": 3
-    },
     "Hunter Henry": {
       "receiving_yards": 36.5,
       "receptions": 3.5
+    },
+    "Mack Hollins": {
+      "receiving_yards": 35.5,
+      "receptions": 3
     },
     "Efton Chism III": {
       "receiving_yards": 25.5
@@ -715,13 +716,14 @@
       "passing_yards": 211.5,
       "rushing_yards": 15.5
     },
+    "Bucky Irving": {
+      "rushing_yards": 65.5,
+      "receiving_yards": 13.5,
+      "receptions": 2.5
+    },
     "Luther Burden III": {
       "receiving_yards": 65.5,
       "receptions": 5
-    },
-    "Bucky Irving": {
-      "rushing_yards": 64.5,
-      "receiving_yards": 13.5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
@@ -747,7 +749,7 @@
       "receiving_yards": 30.5
     },
     "Ted Hurst III": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
@@ -830,9 +832,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8455,
-    "matched_props": 377,
-    "excluded_goblin_demon_lines": 6861,
+    "total_projections_returned": 8488,
+    "matched_props": 379,
+    "excluded_goblin_demon_lines": 6889,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -871,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T00:20:42.919675+00:00"
+  "fetched_at": "2026-11-08T00:40:41.605451+00:00"
 }
