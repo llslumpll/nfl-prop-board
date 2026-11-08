@@ -33919,7 +33919,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Malik Willis|any_td|9": {
     "player": "Malik Willis",
@@ -34301,8 +34303,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Devin Singletary|rushing_yards|9": {

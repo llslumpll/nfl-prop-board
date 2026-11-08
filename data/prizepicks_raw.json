@@ -18,7 +18,7 @@
       "receptions": 2
     },
     "Ladd McConkey": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 53.5,
       "receptions": 4
     },
     "Omarion Hampton": {
@@ -29,8 +29,7 @@
       "receiving_yards": 34.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 31.5,
-      "receptions": 2.5
+      "receiving_yards": 31.5
     },
     "Tre' Harris": {
       "receiving_yards": 29.5,
@@ -121,7 +120,7 @@
       "receptions": 0.5
     },
     "Kirk Cousins": {
-      "passing_yards": 248.5,
+      "passing_yards": 250.5,
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
@@ -143,7 +142,7 @@
     },
     "Kaelon Black": {
       "rushing_yards": 41.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Ashton Jeanty": {
       "receiving_yards": 36.5,
@@ -221,7 +220,7 @@
       "receptions": 3
     },
     "Eli Raridon": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Corey Kiner": {
@@ -236,11 +235,11 @@
       "rushing_yards": 2.5
     },
     "Kyle Williams": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Caleb Williams": {
       "passing_yards": 243.5,
@@ -365,9 +364,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3840,
-    "matched_props": 168,
-    "excluded_goblin_demon_lines": 3123,
+    "total_projections_returned": 3838,
+    "matched_props": 167,
+    "excluded_goblin_demon_lines": 3120,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -406,5 +405,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T18:40:40.456549+00:00"
+  "fetched_at": "2026-11-08T19:00:41.174942+00:00"
 }
