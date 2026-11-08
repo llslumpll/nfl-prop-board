@@ -67,7 +67,7 @@
     },
     "Shedeur Sanders": {
       "passing_yards": 182.5,
-      "rushing_yards": 15.5
+      "rushing_yards": 16.5
     },
     "J.J. McCarthy": {
       "passing_yards": 214.5,
@@ -179,7 +179,7 @@
       "receptions": 0.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 16.5
+      "receiving_yards": 14.5
     },
     "Jaylen Wright": {
       "rushing_yards": 9.5
@@ -278,11 +278,12 @@
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 40.5,
-      "receiving_yards": 18.5
+      "rushing_yards": 41.5,
+      "receiving_yards": 18.5,
+      "receptions": 3.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Jordyn Tyson": {
@@ -841,9 +842,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8607,
-    "matched_props": 388,
-    "excluded_goblin_demon_lines": 6989,
+    "total_projections_returned": 8642,
+    "matched_props": 389,
+    "excluded_goblin_demon_lines": 7020,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -882,5 +883,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T03:00:43.617547+00:00"
+  "fetched_at": "2026-11-08T03:20:42.257761+00:00"
 }
