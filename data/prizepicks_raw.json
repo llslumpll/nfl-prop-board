@@ -111,7 +111,7 @@
       "receiving_yards": 22.5
     },
     "Hollywood Brown": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 1.5
     },
     "Gregory Desrosiers Jr.": {
@@ -286,7 +286,7 @@
       "receptions": 3.5
     },
     "Audric Estime": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 3.5
     },
     "Juwan Johnson": {
@@ -526,7 +526,7 @@
       "receptions": 1.5
     },
     "Oronde Gadsden II": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 15.5
@@ -839,9 +839,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8720,
+    "total_projections_returned": 8761,
     "matched_props": 386,
-    "excluded_goblin_demon_lines": 7090,
+    "excluded_goblin_demon_lines": 7128,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -880,5 +880,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T04:40:39.682693+00:00"
+  "fetched_at": "2026-11-08T05:00:45.314577+00:00"
 }
