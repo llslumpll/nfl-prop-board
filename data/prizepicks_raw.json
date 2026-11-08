@@ -440,7 +440,7 @@
       "receptions": 6.5
     },
     "Javonte Williams": {
-      "rushing_yards": 70.5,
+      "rushing_yards": 72.5,
       "receiving_yards": 7.5
     },
     "Jonathan Taylor": {
@@ -455,12 +455,12 @@
     "Ryan Flournoy": {
       "receiving_yards": 45.5
     },
-    "Josh Downs": {
-      "receiving_yards": 44.5,
-      "receptions": 4
-    },
     "Tyler Warren": {
       "receiving_yards": 42.5
+    },
+    "Josh Downs": {
+      "receiving_yards": 42.5,
+      "receptions": 4
     },
     "Keenan Allen": {
       "receiving_yards": 41.5,
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8861,
+    "total_projections_returned": 8843,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7217,
+    "excluded_goblin_demon_lines": 7202,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T08:00:45.094823+00:00"
+  "fetched_at": "2026-11-08T08:08:52.548804+00:00"
 }
