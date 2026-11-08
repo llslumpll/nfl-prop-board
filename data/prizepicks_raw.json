@@ -27,7 +27,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 51.5,
-      "receiving_yards": 23.5,
+      "receiving_yards": 22.5,
       "receptions": 4
     },
     "Kyle Pitts Sr.": {
@@ -749,7 +749,7 @@
       "receptions": 3
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8840,
+    "total_projections_returned": 8861,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7197,
+    "excluded_goblin_demon_lines": 7217,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T07:40:40.930384+00:00"
+  "fetched_at": "2026-11-08T08:00:45.094823+00:00"
 }
