@@ -75,7 +75,7 @@
     },
     "Joe Milton III": {
       "passing_yards": 184.5,
-      "rushing_yards": 23.5
+      "rushing_yards": 25.5
     },
     "Malik Nabers": {
       "receiving_yards": 72.5,
@@ -156,7 +156,7 @@
       "receptions": 3.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 45.5,
       "receptions": 4
     },
     "Malik Washington": {
@@ -467,7 +467,7 @@
       "receptions": 4.5
     },
     "Seth McGowan": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 1.5
     },
     "Tyler Goodson": {
@@ -574,7 +574,7 @@
       "receptions": 4.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receiving_yards": 6.5
     },
     "AJ Barner": {
@@ -610,7 +610,7 @@
       "receptions": 6.5
     },
     "George Kittle": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 68.5,
       "receptions": 6
     },
     "Christian McCaffrey": {
@@ -635,7 +635,7 @@
     },
     "Mike Washington Jr.": {
       "rushing_yards": 32.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 0.5
     },
     "Michael Mayer": {
       "receiving_yards": 29.5,
@@ -704,7 +704,8 @@
       "receptions": 2.5
     },
     "Corey Kiner": {
-      "rushing_yards": 21.5
+      "rushing_yards": 21.5,
+      "receptions": 0.5
     },
     "Savion Williams": {
       "receiving_yards": 18.5,
@@ -714,7 +715,7 @@
       "receiving_yards": 17.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 7.5,
+      "rushing_yards": 8.5,
       "receiving_yards": 2.5
     },
     "Caleb Williams": {
@@ -841,9 +842,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8891,
-    "matched_props": 388,
-    "excluded_goblin_demon_lines": 7247,
+    "total_projections_returned": 8895,
+    "matched_props": 389,
+    "excluded_goblin_demon_lines": 7248,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -882,5 +883,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T11:00:45.536251+00:00"
+  "fetched_at": "2026-11-08T11:20:41.398110+00:00"
 }
