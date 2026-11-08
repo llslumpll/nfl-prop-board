@@ -34448,5 +34448,122 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "DJ Moore|receiving_yards|9": {
+    "player": "DJ Moore",
+    "team": "BUF",
+    "opponent": "MIN",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 54.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 47.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 7.2,
+    "model_prob": 0.5692,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "opponent_recent_form": "better",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-08 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Khalil Shakir|receiving_yards|9": {
+    "player": "Khalil Shakir",
+    "team": "BUF",
+    "opponent": "MIN",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 44.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 38.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 5.9,
+    "model_prob": 0.5762,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-08 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Dalton Kincaid|receiving_yards|9": {
+    "player": "Dalton Kincaid",
+    "team": "BUF",
+    "opponent": "MIN",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 41.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 36.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 4.6,
+    "model_prob": 0.5712,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-08 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Colston Loveland|receiving_yards|9": {
+    "player": "Colston Loveland",
+    "team": "CHI",
+    "opponent": "TB",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 50.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 52.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.6,
+    "model_prob": 0.4831,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-08 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Kenny Gainwell|rushing_yards|9": {
+    "player": "Kenny Gainwell",
+    "team": "TB",
+    "opponent": "CHI",
+    "week": 9,
+    "stat": "rushing_yards",
+    "projected": 26.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 22.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 3.5,
+    "model_prob": 0.5628,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-08 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
