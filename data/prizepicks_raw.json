@@ -29,7 +29,8 @@
       "receiving_yards": 34.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 30.5
+      "receiving_yards": 30.5,
+      "receptions": 2.5
     },
     "Tre' Harris": {
       "receiving_yards": 29.5,
@@ -47,14 +48,14 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
+    "Charlie Kolar": {
+      "receiving_yards": 15.5
+    },
     "Oronde Gadsden II": {
       "receiving_yards": 15.5
     },
     "Tank Dell": {
       "receiving_yards": 15.5
-    },
-    "Charlie Kolar": {
-      "receiving_yards": 14.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 13.5
@@ -116,7 +117,7 @@
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Kirk Cousins": {
       "passing_yards": 248.5,
@@ -177,7 +178,7 @@
       "receiving_yards": 10.5
     },
     "Jordan Love": {
-      "passing_yards": 269.5,
+      "passing_yards": 271.5,
       "rushing_yards": 3.5
     },
     "Drake Maye": {
@@ -189,11 +190,11 @@
       "receptions": 4.5
     },
     "Matthew Golden": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 69.5,
       "receptions": 5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 23.5,
       "receptions": 3.5
     },
@@ -211,7 +212,7 @@
       "receptions": 3.5
     },
     "Hunter Henry": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Mack Hollins": {
@@ -235,10 +236,6 @@
     },
     "Kyle Williams": {
       "receiving_yards": 16.5
-    },
-    "MarShawn Lloyd": {
-      "rushing_yards": 7.5,
-      "receiving_yards": 2.5
     },
     "Caleb Williams": {
       "passing_yards": 243.5,
@@ -273,7 +270,7 @@
       "receiving_yards": 47.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -300,7 +297,7 @@
       "receiving_yards": 15.5
     },
     "Josh Allen": {
-      "passing_yards": 235.5,
+      "passing_yards": 237.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -363,9 +360,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3834,
-    "matched_props": 166,
-    "excluded_goblin_demon_lines": 3120,
+    "total_projections_returned": 3829,
+    "matched_props": 165,
+    "excluded_goblin_demon_lines": 3117,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -404,5 +401,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T19:42:09.399418+00:00"
+  "fetched_at": "2026-11-08T20:00:43.756322+00:00"
 }
