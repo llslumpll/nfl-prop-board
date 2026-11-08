@@ -14,7 +14,8 @@
       "receptions": 3
     },
     "Drake London": {
-      "receiving_yards": 77.5
+      "receiving_yards": 77.5,
+      "receptions": 6
     },
     "Tee Higgins": {
       "receiving_yards": 77.5,
@@ -34,7 +35,7 @@
       "receptions": 4
     },
     "Jahan Dotson": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 29.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -89,23 +90,26 @@
       "receiving_yards": 9.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 43.5
+      "receiving_yards": 43.5,
+      "receptions": 4
     },
     "Makai Lemon": {
-      "receiving_yards": 39.5
+      "receiving_yards": 39.5,
+      "receptions": 4.5
     },
     "Dallas Goedert": {
       "receiving_yards": 36.5
     },
     "Darius Cooper": {
-      "receiving_yards": 27.5
+      "receiving_yards": 27.5,
+      "receptions": 2.5
     },
     "Elijah Mitchell": {
       "rushing_yards": 24.5,
       "receiving_yards": 8.5
     },
     "Malachi Fields": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Hollywood Brown": {
       "receiving_yards": 16.5,
@@ -136,7 +140,8 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 31.5,
+      "receptions": 4
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 76.5,
@@ -160,7 +165,8 @@
       "receptions": 4
     },
     "Caleb Douglas": {
-      "receiving_yards": 40.5
+      "receiving_yards": 40.5,
+      "receptions": 3
     },
     "Greg Dulcich": {
       "receiving_yards": 39.5
@@ -276,7 +282,8 @@
       "receiving_yards": 18.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 34.5
+      "receiving_yards": 35.5,
+      "receptions": 3.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 29.5,
@@ -332,7 +339,7 @@
       "receptions": 2
     },
     "Braelon Allen": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 6.5
     },
     "Xavier Worthy": {
@@ -443,7 +450,8 @@
       "receptions": 2.5
     },
     "George Pickens": {
-      "receiving_yards": 57.5
+      "receiving_yards": 57.5,
+      "receptions": 4
     },
     "Ryan Flournoy": {
       "receiving_yards": 45.5
@@ -460,7 +468,7 @@
       "receptions": 4.5
     },
     "Seth McGowan": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 1.5
     },
     "Tyler Goodson": {
@@ -833,9 +841,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8552,
-    "matched_props": 380,
-    "excluded_goblin_demon_lines": 6946,
+    "total_projections_returned": 8607,
+    "matched_props": 388,
+    "excluded_goblin_demon_lines": 6989,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +882,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T02:40:44.666264+00:00"
+  "fetched_at": "2026-11-08T03:00:43.617547+00:00"
 }
