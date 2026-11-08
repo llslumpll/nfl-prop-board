@@ -47,14 +47,14 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
-    "Charlie Kolar": {
-      "receiving_yards": 15.5
-    },
     "Oronde Gadsden II": {
       "receiving_yards": 15.5
     },
     "Tank Dell": {
       "receiving_yards": 15.5
+    },
+    "Charlie Kolar": {
+      "receiving_yards": 14.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 13.5
@@ -300,7 +300,7 @@
       "receiving_yards": 15.5
     },
     "Josh Allen": {
-      "passing_yards": 237.5,
+      "passing_yards": 235.5,
       "rushing_yards": 30.5
     },
     "Carson Wentz": {
@@ -363,7 +363,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3833,
+    "total_projections_returned": 3834,
     "matched_props": 166,
     "excluded_goblin_demon_lines": 3120,
     "sample_stat_types_seen": [
@@ -404,5 +404,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T19:40:39.843488+00:00"
+  "fetched_at": "2026-11-08T19:42:09.399418+00:00"
 }
