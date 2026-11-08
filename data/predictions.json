@@ -33919,7 +33919,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Malik Willis|any_td|9": {
     "player": "Malik Willis",
@@ -34301,8 +34303,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Devin Singletary|rushing_yards|9": {
@@ -34329,5 +34330,76 @@
     "best5_tags": [
       "best_value"
     ]
+  },
+  "Brock Bowers|receiving_yards|9": {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "opponent": "SF",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 67.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 76.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.2,
+    "model_prob": 0.3894,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-08 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jordan Addison|receiving_yards|9": {
+    "player": "Jordan Addison",
+    "team": "MIN",
+    "opponent": "BUF",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 48.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 39.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 9.0,
+    "model_prob": 0.5957,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-08 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "DeMario Douglas|receiving_yards|9": {
+    "player": "DeMario Douglas",
+    "team": "NE",
+    "opponent": "GB",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 33.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 40.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -6.6,
+    "model_prob": 0.3948,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-08 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
