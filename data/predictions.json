@@ -27389,7 +27389,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -29944,7 +29946,8 @@
     "line_attached_at": "2026-11-05 20:55 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this fanduel line was first seen 2026-11-05 20:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Chuba Hubbard|receptions|9": {
@@ -31280,9 +31283,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-04 16:50 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 16:50 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31384,10 +31385,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-04 18:14 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-04 18:14 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -31439,7 +31437,9 @@
     "graded_at": null,
     "line_attached_at": "2026-11-05 20:55 UTC",
     "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this fanduel line was first seen 2026-11-05 20:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Wan'Dale Robinson|receptions|10": {
     "player": "Wan'Dale Robinson",
@@ -31570,10 +31570,10 @@
     "stat": "receptions",
     "projected": 2.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -31582,7 +31582,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-08 16:41 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-08 16:41 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Devaughn Vele|receptions|9": {
     "player": "Devaughn Vele",
