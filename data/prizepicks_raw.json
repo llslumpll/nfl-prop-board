@@ -114,12 +114,12 @@
       "receiving_yards": 16.5,
       "receptions": 1.5
     },
-    "Gregory Desrosiers Jr.": {
-      "rushing_yards": 13.5,
-      "receiving_yards": 0.5
-    },
     "Darnell Mooney": {
       "receiving_yards": 12.5
+    },
+    "Gregory Desrosiers Jr.": {
+      "rushing_yards": 12.5,
+      "receiving_yards": 0.5
     },
     "Theo Johnson": {
       "receiving_yards": 7.5
@@ -286,7 +286,7 @@
       "receptions": 3.5
     },
     "Audric Estime": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 3.5
     },
     "Juwan Johnson": {
@@ -318,7 +318,7 @@
       "receptions": 2.5
     },
     "Rashee Rice": {
-      "receiving_yards": 59.5,
+      "receiving_yards": 58.5,
       "receptions": 5
     },
     "Adonai Mitchell": {
@@ -422,7 +422,7 @@
       "receiving_yards": 13.5
     },
     "Van Jefferson": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "John Bates": {
       "receiving_yards": 3.5
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8810,
+    "total_projections_returned": 8812,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7173,
+    "excluded_goblin_demon_lines": 7176,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T05:40:41.881891+00:00"
+  "fetched_at": "2026-11-08T06:00:47.437885+00:00"
 }
