@@ -156,7 +156,7 @@
       "receptions": 3.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 48.5,
       "receptions": 4
     },
     "Malik Washington": {
@@ -189,7 +189,7 @@
     },
     "Bo Nix": {
       "passing_yards": 210.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 69.5,
@@ -286,7 +286,7 @@
       "receptions": 3.5
     },
     "Audric Estime": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 3.5
     },
     "Juwan Johnson": {
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8815,
+    "total_projections_returned": 8821,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7174,
+    "excluded_goblin_demon_lines": 7179,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T06:20:41.900297+00:00"
+  "fetched_at": "2026-11-08T06:40:42.659902+00:00"
 }
