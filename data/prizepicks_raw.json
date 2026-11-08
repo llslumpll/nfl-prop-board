@@ -32,7 +32,7 @@
       "receiving_yards": 39.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Darius Cooper": {
       "receiving_yards": 28.5
@@ -58,9 +58,6 @@
     },
     "Elijah Moore": {
       "receiving_yards": 4.5
-    },
-    "Gregory Desrosiers Jr.": {
-      "receptions": 0.5
     },
     "Jared Goff": {
       "passing_yards": 261.5
@@ -118,8 +115,8 @@
       "rushing_yards": 6.5
     },
     "Bo Nix": {
-      "passing_yards": 210.5,
-      "rushing_yards": 13.5
+      "passing_yards": 212.5,
+      "rushing_yards": 12.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 69.5,
@@ -192,11 +189,11 @@
       "receiving_yards": 71.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 67.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 6.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 45.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -341,14 +338,14 @@
       "receptions": 3.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 27.5
+      "receiving_yards": 29.5
     },
     "Austin Ekeler": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 25.5,
       "receiving_yards": 6.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 14.5
+      "receiving_yards": 13.5
     },
     "Tutu Atwell": {
       "receiving_yards": 12.5
@@ -399,7 +396,7 @@
       "receptions": 4.5
     },
     "Seth McGowan": {
-      "rushing_yards": 27.5,
+      "rushing_yards": 25.5,
       "receiving_yards": 1.5
     },
     "Tyler Goodson": {
@@ -534,7 +531,7 @@
       "rushing_yards": 1.5
     },
     "Brock Purdy": {
-      "passing_yards": 242.5,
+      "passing_yards": 241.5,
       "rushing_yards": 15.5
     },
     "Brock Bowers": {
@@ -552,7 +549,7 @@
     },
     "Kaelon Black": {
       "rushing_yards": 41.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Ashton Jeanty": {
       "receiving_yards": 35.5,
@@ -579,8 +576,7 @@
       "receiving_yards": 20.5
     },
     "Brandin Cooks": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+      "receiving_yards": 13.5
     },
     "Jack Bech": {
       "receiving_yards": 10.5
@@ -589,7 +585,7 @@
       "receiving_yards": 10.5
     },
     "Jordan Love": {
-      "passing_yards": 269.5,
+      "passing_yards": 271.5,
       "rushing_yards": 3.5
     },
     "Drake Maye": {
@@ -733,8 +729,7 @@
       "receptions": 3.5
     },
     "Jordan Mason": {
-      "rushing_yards": 47.5,
-      "receptions": 0.5
+      "rushing_yards": 47.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 41.5,
@@ -777,9 +772,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8277,
-    "matched_props": 358,
-    "excluded_goblin_demon_lines": 6746,
+    "total_projections_returned": 8269,
+    "matched_props": 355,
+    "excluded_goblin_demon_lines": 6743,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -818,5 +813,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T16:00:46.329311+00:00"
+  "fetched_at": "2026-11-08T16:20:41.655613+00:00"
 }
