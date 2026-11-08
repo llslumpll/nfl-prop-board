@@ -30801,7 +30801,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Ladd McConkey|receiving_yards|9": {
@@ -33447,9 +33448,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|any_td|9": {
     "player": "Joe Burrow",
