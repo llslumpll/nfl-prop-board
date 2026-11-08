@@ -258,7 +258,7 @@
       "rushing_yards": 15.5
     },
     "Chris Olave": {
-      "receiving_yards": 71.5
+      "receiving_yards": 72.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 67.5,
@@ -293,8 +293,7 @@
       "receiving_yards": 26.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 26.5,
-      "receptions": 2.5
+      "receiving_yards": 24.5
     },
     "Dylan Sampson": {
       "receiving_yards": 19.5
@@ -319,7 +318,7 @@
       "receptions": 2.5
     },
     "Rashee Rice": {
-      "receiving_yards": 56.5,
+      "receiving_yards": 59.5,
       "receptions": 5
     },
     "Adonai Mitchell": {
@@ -496,7 +495,7 @@
       "receptions": 2
     },
     "Ladd McConkey": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 51.5,
       "receptions": 4
     },
     "Omarion Hampton": {
@@ -587,10 +586,10 @@
     "Tory Horton": {
       "receiving_yards": 17.5
     },
-    "Elijah Higgins": {
-      "receiving_yards": 13.5
-    },
     "Reggie Virgil": {
+      "receiving_yards": 14.5
+    },
+    "Elijah Higgins": {
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
@@ -666,7 +665,7 @@
       "rushing_yards": 24.5
     },
     "Christian Watson": {
-      "receiving_yards": 69.5,
+      "receiving_yards": 70.5,
       "receptions": 4.5
     },
     "Matthew Golden": {
@@ -689,7 +688,7 @@
     },
     "DeMario Douglas": {
       "receiving_yards": 40.5,
-      "receptions": 4
+      "receptions": 3.5
     },
     "Hunter Henry": {
       "receiving_yards": 36.5,
@@ -712,11 +711,11 @@
       "rushing_yards": 3.5
     },
     "Kyle Williams": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 7.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Caleb Williams": {
       "passing_yards": 244.5,
@@ -724,7 +723,7 @@
     },
     "Baker Mayfield": {
       "passing_yards": 211.5,
-      "rushing_yards": 15.5
+      "rushing_yards": 17.5
     },
     "Luther Burden III": {
       "receiving_yards": 65.5,
@@ -841,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8664,
-    "matched_props": 388,
-    "excluded_goblin_demon_lines": 7041,
+    "total_projections_returned": 8700,
+    "matched_props": 387,
+    "excluded_goblin_demon_lines": 7069,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -882,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T03:40:39.587698+00:00"
+  "fetched_at": "2026-11-08T04:00:49.731132+00:00"
 }
