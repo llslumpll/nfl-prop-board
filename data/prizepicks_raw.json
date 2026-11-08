@@ -13,13 +13,13 @@
       "receiving_yards": 25.5,
       "receptions": 3
     },
+    "Drake London": {
+      "receiving_yards": 78.5,
+      "receptions": 6
+    },
     "Ja'Marr Chase": {
       "receiving_yards": 78.5,
       "receptions": 7
-    },
-    "Drake London": {
-      "receiving_yards": 77.5,
-      "receptions": 6
     },
     "Tee Higgins": {
       "receiving_yards": 77.5,
@@ -277,7 +277,7 @@
       "receptions": 4.5
     },
     "Alvin Kamara": {
-      "rushing_yards": 40.5,
+      "rushing_yards": 39.5,
       "receiving_yards": 18.5
     },
     "Devaughn Vele": {
@@ -553,7 +553,7 @@
       "rushing_yards": 5.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 93.5,
+      "receiving_yards": 92.5,
       "receptions": 7
     },
     "Trey McBride": {
@@ -574,7 +574,7 @@
       "receptions": 4.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 34.5,
       "receiving_yards": 6.5
     },
     "AJ Barner": {
@@ -842,7 +842,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8895,
+    "total_projections_returned": 8893,
     "matched_props": 389,
     "excluded_goblin_demon_lines": 7248,
     "sample_stat_types_seen": [
@@ -883,5 +883,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T11:20:41.398110+00:00"
+  "fetched_at": "2026-11-08T11:40:40.150142+00:00"
 }
