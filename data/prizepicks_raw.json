@@ -139,7 +139,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 4
     },
     "Amon-Ra St. Brown": {
@@ -286,7 +286,7 @@
       "receptions": 3.5
     },
     "Audric Estime": {
-      "rushing_yards": 30.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 3.5
     },
     "Juwan Johnson": {
@@ -318,7 +318,7 @@
       "receptions": 2.5
     },
     "Rashee Rice": {
-      "receiving_yards": 58.5,
+      "receiving_yards": 59.5,
       "receptions": 5
     },
     "Adonai Mitchell": {
@@ -326,7 +326,7 @@
       "receptions": 3.5
     },
     "Omar Cooper Jr.": {
-      "receiving_yards": 48.5
+      "receiving_yards": 49.5
     },
     "Travis Kelce": {
       "receiving_yards": 45.5,
@@ -363,7 +363,7 @@
       "receiving_yards": 13.5
     },
     "Tim Patrick": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Isaiah Williams": {
       "receiving_yards": 7.5
@@ -553,7 +553,7 @@
       "rushing_yards": 5.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 92.5,
+      "receiving_yards": 93.5,
       "receptions": 7
     },
     "Trey McBride": {
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8848,
+    "total_projections_returned": 8876,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7207,
+    "excluded_goblin_demon_lines": 7235,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T08:20:38.822771+00:00"
+  "fetched_at": "2026-11-08T08:40:40.043741+00:00"
 }
