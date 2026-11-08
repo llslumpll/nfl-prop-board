@@ -27112,7 +27112,10 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-04 23:46 UTC",
-    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 23:46 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-10-27 15:08 UTC; this prizepicks line was first seen 2026-11-04 23:46 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Zay Flowers|receptions|8": {
     "player": "Zay Flowers",
@@ -29998,10 +30001,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-05 20:55 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this fanduel line was first seen 2026-11-05 20:55 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Josh Jacobs|receptions|9": {
     "player": "Josh Jacobs",
@@ -30048,7 +30048,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ],
     "line_attached_at": "2026-11-02 19:26 UTC",
     "line_attach_note": "Projection frozen 2026-10-30 15:32 UTC; this prizepicks line was first seen 2026-11-02 19:26 UTC, before kickoff. Call set from the frozen projection vs this line."
