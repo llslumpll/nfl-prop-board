@@ -2,8 +2,8 @@
  "9": {
   "ml-2": {
    "chance": 0.6801,
-   "decimal": 1.476,
-   "ev": 0.004,
+   "decimal": 1.465,
+   "ev": -0.004,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -12,28 +12,28 @@
      "away": "ARI",
      "call": "HOME",
      "chance": 0.848,
-     "decimal": 1.222,
+     "decimal": 1.217,
      "game": "ARI@SEA",
      "good": true,
      "home": "SEA",
      "kickoff": "2026-11-08T21:25:00+00:00",
      "kind": "ml",
      "label": "SEA to win",
-     "price": -450,
+     "price": -460,
      "team": "SEA"
     },
     {
      "away": "LV",
      "call": "HOME",
      "chance": 0.802,
-     "decimal": 1.208,
+     "decimal": 1.204,
      "game": "LV@SF",
      "good": false,
      "home": "SF",
      "kickoff": "2026-11-08T21:05:00+00:00",
      "kind": "ml",
      "label": "SF to win",
-     "price": -480,
+     "price": -490,
      "team": "SF"
     }
    ],
@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-08 18:20 UTC",
+   "updated": "2026-11-08 18:33 UTC",
    "week": 9
   },
   "ml-3": {
