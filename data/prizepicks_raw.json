@@ -53,7 +53,7 @@
       "receptions": 1.5
     },
     "Khalil Herbert": {
-      "rushing_yards": 8.5
+      "rushing_yards": 7.5
     },
     "Austin Hooper": {
       "receiving_yards": 6.5
@@ -825,16 +825,16 @@
       "receiving_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8488,
+    "total_projections_returned": 8534,
     "matched_props": 379,
-    "excluded_goblin_demon_lines": 6889,
+    "excluded_goblin_demon_lines": 6934,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -873,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T00:40:41.605451+00:00"
+  "fetched_at": "2026-11-08T01:00:44.526252+00:00"
 }
