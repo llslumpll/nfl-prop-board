@@ -84,6 +84,42 @@
    "team": "ATL",
    "week": 9
   },
+  "David Montgomery|HOU": {
+   "opp": "LAC",
+   "out": "David Montgomery",
+   "plays": [
+    {
+     "bump": 105,
+     "call": "OVER",
+     "line": 60.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 60.5,
+     "player": "Woody Marks",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 29.8,
+     "without": 61
+    },
+    {
+     "bump": 85,
+     "call": "OVER",
+     "line": 13.5,
+     "n_wo": 2,
+     "player": "Woody Marks",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 10.8,
+     "without": 20
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-08 15:43 UTC",
+   "team": "HOU",
+   "week": 9
+  },
   "DeVonta Smith|PHI": {
    "opp": "NYG",
    "out": "DeVonta Smith",
@@ -128,6 +164,15 @@
    "pos": "WR",
    "seen": "2026-11-07 15:22 UTC",
    "team": "PHI",
+   "week": 9
+  },
+  "Kyler Murray|MIN": {
+   "opp": "BUF",
+   "out": "Kyler Murray",
+   "plays": [],
+   "pos": "QB",
+   "seen": "2026-11-08 15:43 UTC",
+   "team": "MIN",
    "week": 9
   },
   "Sam Darnold|SEA": {
