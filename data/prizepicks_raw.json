@@ -27,7 +27,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 51.5,
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 4
     },
     "Kyle Pitts Sr.": {
@@ -293,7 +293,7 @@
       "receiving_yards": 26.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Dylan Sampson": {
       "receiving_yards": 19.5
@@ -453,7 +453,7 @@
       "receptions": 4
     },
     "Ryan Flournoy": {
-      "receiving_yards": 45.5
+      "receiving_yards": 47.5
     },
     "Tyler Warren": {
       "receiving_yards": 42.5
@@ -840,9 +840,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 8843,
+    "total_projections_returned": 8848,
     "matched_props": 387,
-    "excluded_goblin_demon_lines": 7202,
+    "excluded_goblin_demon_lines": 7207,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -881,5 +881,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T08:08:52.548804+00:00"
+  "fetched_at": "2026-11-08T08:20:38.822771+00:00"
 }
