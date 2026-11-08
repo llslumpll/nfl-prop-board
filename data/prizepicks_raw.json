@@ -1,22 +1,22 @@
 {
   "props": {
     "Caleb Williams": {
-      "passing_yards": 243.5,
+      "passing_yards": 245.5,
       "rushing_yards": 19.5
     },
     "Baker Mayfield": {
       "passing_yards": 211.5,
       "rushing_yards": 17.5
     },
-    "Bucky Irving": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
-    },
     "Luther Burden III": {
       "receiving_yards": 65.5,
       "receptions": 5,
       "rushing_yards": 1.5
+    },
+    "Bucky Irving": {
+      "rushing_yards": 64.5,
+      "receiving_yards": 13.5,
+      "receptions": 2.5
     },
     "D'Andre Swift": {
       "rushing_yards": 62.5,
@@ -165,5 +165,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T23:00:34.466602+00:00"
+  "fetched_at": "2026-11-08T23:14:56.447824+00:00"
 }
