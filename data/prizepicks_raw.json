@@ -279,7 +279,8 @@
       "receiving_yards": 34.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5,
+      "receptions": 2.5
     },
     "Audric Estime": {
       "rushing_yards": 28.5,
@@ -356,7 +357,7 @@
       "receiving_yards": 13.5
     },
     "Tim Patrick": {
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Isaiah Williams": {
       "receiving_yards": 7.5
@@ -832,7 +833,7 @@
     "total_leagues": 141,
     "nfl_league_id": "9",
     "total_projections_returned": 8534,
-    "matched_props": 378,
+    "matched_props": 379,
     "excluded_goblin_demon_lines": 6936,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -872,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T01:40:39.611600+00:00"
+  "fetched_at": "2026-11-08T01:46:30.989313+00:00"
 }
