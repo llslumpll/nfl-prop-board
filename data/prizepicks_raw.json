@@ -79,8 +79,7 @@
       "receiving_yards": 47.5
     },
     "Jordan Mason": {
-      "rushing_yards": 47.5,
-      "receptions": 0.5
+      "rushing_yards": 47.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 41.5,
@@ -124,9 +123,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1311,
-    "matched_props": 55,
-    "excluded_goblin_demon_lines": 1069,
+    "total_projections_returned": 1316,
+    "matched_props": 54,
+    "excluded_goblin_demon_lines": 1075,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -165,5 +164,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T22:00:33.106802+00:00"
+  "fetched_at": "2026-11-08T22:20:30.181320+00:00"
 }
