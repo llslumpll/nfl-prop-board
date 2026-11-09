@@ -1,67 +1,5 @@
 {
   "props": {
-    "Caleb Williams": {
-      "passing_yards": 249.5,
-      "rushing_yards": 18.5
-    },
-    "Baker Mayfield": {
-      "passing_yards": 211.5,
-      "rushing_yards": 17.5
-    },
-    "Bucky Irving": {
-      "rushing_yards": 63.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
-    },
-    "Luther Burden III": {
-      "receiving_yards": 63.5,
-      "receptions": 5,
-      "rushing_yards": 1.5
-    },
-    "D'Andre Swift": {
-      "rushing_yards": 63.5,
-      "receiving_yards": 20.5
-    },
-    "Colston Loveland": {
-      "receiving_yards": 54.5
-    },
-    "Rome Odunze": {
-      "receiving_yards": 49.5,
-      "receptions": 3
-    },
-    "Emeka Egbuka": {
-      "receiving_yards": 48.5
-    },
-    "Chris Godwin Jr.": {
-      "receiving_yards": 31.5,
-      "receptions": 3.5
-    },
-    "Cade Otton": {
-      "receiving_yards": 28.5
-    },
-    "Ted Hurst III": {
-      "receiving_yards": 22.5,
-      "receptions": 1.5
-    },
-    "Kenny Gainwell": {
-      "rushing_yards": 21.5,
-      "receiving_yards": 9.5,
-      "receptions": 2
-    },
-    "Kalif Raymond": {
-      "receiving_yards": 16.5,
-      "receptions": 2
-    },
-    "Tez Johnson": {
-      "receiving_yards": 15.5
-    },
-    "Roschon Johnson": {
-      "rushing_yards": 15.5,
-      "receiving_yards": 2.5
-    },
-    "Sam Roush": {
-      "receiving_yards": 6.5
-    },
     "Josh Allen": {
       "passing_yards": 237.5,
       "rushing_yards": 30.5
@@ -120,47 +58,47 @@
       "receiving_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1360,
-    "matched_props": 56,
-    "excluded_goblin_demon_lines": 1110,
+    "total_projections_returned": 617,
+    "matched_props": 26,
+    "excluded_goblin_demon_lines": 506,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
       "completion percentage",
-      "completions in first 10 pass attempts",
       "consecutive pass completions",
       "fantasy score",
       "fg made",
-      "fg made (combo)",
-      "field goal yards (combo)",
-      "first fg distance (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
       "int",
       "kicking points",
-      "kicking points (combo)",
-      "last fg distance (combo)",
       "longest completion",
-      "longest fg made yds (combo)",
       "longest reception",
       "longest rush",
       "pass attempts",
       "pass completions",
       "pass tds",
       "pass yards",
-      "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
-      "pat made (combo)"
+      "punts",
+      "punts inside 20",
+      "quarters with 1+ reception",
+      "quarters with 10+ receiving yards",
+      "quarters with 25+ pass yards",
+      "quarters with 5+ rush yards",
+      "rec targets",
+      "receiving yards",
+      "receiving yards (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -168,5 +106,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T01:20:29.018090+00:00"
+  "fetched_at": "2026-11-09T02:00:35.607112+00:00"
 }
