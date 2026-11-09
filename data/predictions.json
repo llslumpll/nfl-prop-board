@@ -31617,10 +31617,10 @@
     "stat": "receptions",
     "projected": 0.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Out",
@@ -31630,7 +31630,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-09 18:41 UTC",
+    "line_attach_note": "Projection frozen 2026-11-03 16:49 UTC; this prizepicks line was first seen 2026-11-09 18:41 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Trevor Lawrence|any_td|9": {
     "player": "Trevor Lawrence",
@@ -34588,5 +34590,83 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Trevor Lawrence|passing_yards|10": {
+    "player": "Trevor Lawrence",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 248.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 240.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 7.9,
+    "model_prob": 0.5514,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-09 18:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Tony Pollard|rushing_yards|10": {
+    "player": "Tony Pollard",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 63.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 59.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 3.6,
+    "model_prob": 0.5463,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-09 18:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Cam Ward|rushing_yards|10": {
+    "player": "Cam Ward",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 12.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 10.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 2.4,
+    "model_prob": 0.5825,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-09 18:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
