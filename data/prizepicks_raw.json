@@ -5,7 +5,7 @@
       "rushing_yards": 31.5
     },
     "Carson Wentz": {
-      "passing_yards": 213.5,
+      "passing_yards": 212.5,
       "rushing_yards": 7.5
     },
     "James Cook III": {
@@ -31,18 +31,18 @@
       "receiving_yards": 40.5,
       "receptions": 3.5
     },
-    "T.J. Hockenson": {
+    "Dalton Kincaid": {
       "receiving_yards": 39.5
     },
-    "Dalton Kincaid": {
-      "receiving_yards": 37.5
+    "T.J. Hockenson": {
+      "receiving_yards": 39.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
       "receiving_yards": 10.5
     },
     "Keon Coleman": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Ty Johnson": {
       "receiving_yards": 14.5
@@ -54,10 +54,10 @@
       "rushing_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Skyler Bell": {
-      "receiving_yards": 1.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "J.J. McCarthy": {
@@ -118,7 +118,7 @@
       "passing_yards": 267.5
     },
     "Drake Maye": {
-      "passing_yards": 260.5,
+      "passing_yards": 262.5,
       "rushing_yards": 25.5
     },
     "Jahmyr Gibbs": {
@@ -414,9 +414,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2235,
+    "total_projections_returned": 2249,
     "matched_props": 173,
-    "excluded_goblin_demon_lines": 1837,
+    "excluded_goblin_demon_lines": 1845,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -455,5 +455,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T20:00:35.725978+00:00"
+  "fetched_at": "2026-11-09T20:20:39.072662+00:00"
 }
