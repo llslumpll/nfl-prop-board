@@ -24,11 +24,11 @@
       "rushing_yards": 47.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 4
     },
     "Jordan Addison": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "T.J. Hockenson": {
@@ -86,19 +86,19 @@
       "receiving_yards": 42.5
     },
     "Rachaad White": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 12.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 36.5
     },
-    "Devin Singletary": {
-      "rushing_yards": 28.5,
-      "receiving_yards": 6.5
-    },
     "Austin Ekeler": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 7.5
+    },
+    "Devin Singletary": {
+      "rushing_yards": 27.5,
+      "receiving_yards": 6.5
     },
     "Malachi Fields": {
       "receiving_yards": 25.5
@@ -414,9 +414,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2234,
+    "total_projections_returned": 2235,
     "matched_props": 173,
-    "excluded_goblin_demon_lines": 1836,
+    "excluded_goblin_demon_lines": 1837,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -455,5 +455,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T19:40:30.424825+00:00"
+  "fetched_at": "2026-11-09T20:00:35.725978+00:00"
 }
