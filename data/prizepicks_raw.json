@@ -100,7 +100,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 850,
+    "total_projections_returned": 853,
     "matched_props": 41,
     "excluded_goblin_demon_lines": 713,
     "sample_stat_types_seen": [
@@ -124,6 +124,7 @@
       "pass completions",
       "pass tds",
       "pass yards",
+      "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
@@ -132,8 +133,7 @@
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
       "quarters with 25+ pass yards",
-      "quarters with 5+ rush yards",
-      "rec targets"
+      "quarters with 5+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -141,5 +141,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T04:00:34.737276+00:00"
+  "fetched_at": "2026-11-09T04:20:32.292653+00:00"
 }
