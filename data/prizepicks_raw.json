@@ -2,7 +2,7 @@
   "props": {
     "Josh Allen": {
       "passing_yards": 238.5,
-      "rushing_yards": 30.5
+      "rushing_yards": 31.5
     },
     "Carson Wentz": {
       "passing_yards": 211.5,
@@ -43,7 +43,7 @@
       "receiving_yards": 7.5
     },
     "Keon Coleman": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Ty Johnson": {
       "receiving_yards": 14.5
@@ -51,11 +51,11 @@
     "Dawson Knox": {
       "receiving_yards": 7.5
     },
-    "Skyler Bell": {
-      "receiving_yards": 6.5
-    },
     "Ray Davis": {
       "rushing_yards": 5.5
+    },
+    "Skyler Bell": {
+      "receiving_yards": 5.5
     },
     "Ben Yurosek": {
       "receiving_yards": 2.5
@@ -83,7 +83,7 @@
       "receiving_yards": 45.5
     },
     "Antonio Williams": {
-      "receiving_yards": 44.5
+      "receiving_yards": 43.5
     },
     "Rachaad White": {
       "rushing_yards": 39.5,
@@ -140,9 +140,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1375,
+    "total_projections_returned": 1395,
     "matched_props": 59,
-    "excluded_goblin_demon_lines": 1198,
+    "excluded_goblin_demon_lines": 1218,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -181,5 +181,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T14:20:33.359049+00:00"
+  "fetched_at": "2026-11-09T14:40:34.646899+00:00"
 }
