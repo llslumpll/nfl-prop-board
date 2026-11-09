@@ -5,7 +5,7 @@
       "rushing_yards": 31.5
     },
     "Carson Wentz": {
-      "passing_yards": 212.5,
+      "passing_yards": 213.5,
       "rushing_yards": 7.5
     },
     "James Cook III": {
@@ -27,12 +27,12 @@
       "receiving_yards": 41.5,
       "receptions": 4
     },
-    "Jordan Addison": {
-      "receiving_yards": 40.5,
-      "receptions": 3.5
-    },
     "Dalton Kincaid": {
       "receiving_yards": 39.5
+    },
+    "Jordan Addison": {
+      "receiving_yards": 39.5,
+      "receptions": 3.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 39.5
@@ -54,7 +54,8 @@
       "rushing_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5,
+      "receptions": 0.5
     },
     "Skyler Bell": {
       "receiving_yards": 0.5,
@@ -298,6 +299,9 @@
     "Elic Ayomanor": {
       "receiving_yards": 22.5
     },
+    "Calvin Ridley": {
+      "receiving_yards": 12.5
+    },
     "Bryce Young": {
       "passing_yards": 250.5,
       "rushing_yards": 6.5
@@ -414,9 +418,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2249,
-    "matched_props": 173,
-    "excluded_goblin_demon_lines": 1845,
+    "total_projections_returned": 2272,
+    "matched_props": 175,
+    "excluded_goblin_demon_lines": 1864,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -455,5 +459,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T20:20:39.072662+00:00"
+  "fetched_at": "2026-11-09T20:40:36.675725+00:00"
 }
