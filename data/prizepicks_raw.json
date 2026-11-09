@@ -1,32 +1,32 @@
 {
   "props": {
     "Caleb Williams": {
-      "passing_yards": 245.5,
-      "rushing_yards": 19.5
+      "passing_yards": 244.5,
+      "rushing_yards": 18.5
     },
     "Baker Mayfield": {
       "passing_yards": 211.5,
       "rushing_yards": 17.5
     },
+    "Luther Burden III": {
+      "receiving_yards": 64.5,
+      "receptions": 5,
+      "rushing_yards": 1.5
+    },
     "Bucky Irving": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "D'Andre Swift": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 20.5
-    },
-    "Luther Burden III": {
-      "receiving_yards": 61.5,
-      "receptions": 5,
-      "rushing_yards": 1.5
     },
     "Colston Loveland": {
       "receiving_yards": 52.5
     },
     "Rome Odunze": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 48.5,
       "receptions": 3
     },
     "Emeka Egbuka": {
@@ -168,5 +168,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-08T23:40:36.427195+00:00"
+  "fetched_at": "2026-11-09T00:00:39.367988+00:00"
 }
