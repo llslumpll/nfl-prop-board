@@ -58,7 +58,7 @@
       "receiving_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "J.J. McCarthy": {
       "passing_yards": 212.5,
@@ -115,9 +115,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1110,
+    "total_projections_returned": 1112,
     "matched_props": 48,
-    "excluded_goblin_demon_lines": 952,
+    "excluded_goblin_demon_lines": 954,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -156,5 +156,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T11:40:30.136521+00:00"
+  "fetched_at": "2026-11-09T12:00:36.570044+00:00"
 }
