@@ -10,7 +10,7 @@
     },
     "James Cook III": {
       "rushing_yards": 82.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Justin Jefferson": {
       "receiving_yards": 77.5,
@@ -66,7 +66,7 @@
     },
     "Jayden Daniels": {
       "passing_yards": 205.5,
-      "rushing_yards": 33.5
+      "rushing_yards": 32.5
     },
     "Malik Nabers": {
       "receiving_yards": 68.5,
@@ -80,27 +80,27 @@
       "receptions": 4.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 41.5
+      "receiving_yards": 42.5
     },
     "Antonio Williams": {
       "receiving_yards": 41.5
     },
-    "Rachaad White": {
-      "rushing_yards": 39.5,
-      "receiving_yards": 12.5
-    },
     "Chig Okonkwo": {
       "receiving_yards": 39.5
+    },
+    "Rachaad White": {
+      "rushing_yards": 38.5,
+      "receiving_yards": 13.5
     },
     "Devin Singletary": {
       "rushing_yards": 28.5
     },
+    "Malachi Fields": {
+      "receiving_yards": 24.5
+    },
     "Austin Ekeler": {
       "rushing_yards": 24.5,
       "receiving_yards": 7.5
-    },
-    "Malachi Fields": {
-      "receiving_yards": 23.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -115,9 +115,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1019,
+    "total_projections_returned": 1048,
     "matched_props": 48,
-    "excluded_goblin_demon_lines": 863,
+    "excluded_goblin_demon_lines": 891,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -156,5 +156,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T08:40:33.520327+00:00"
+  "fetched_at": "2026-11-09T09:00:33.732006+00:00"
 }
