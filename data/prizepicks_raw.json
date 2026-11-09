@@ -5,7 +5,7 @@
       "rushing_yards": 31.5
     },
     "Carson Wentz": {
-      "passing_yards": 217.5,
+      "passing_yards": 218.5,
       "rushing_yards": 7.5
     },
     "James Cook III": {
@@ -57,11 +57,11 @@
       "receiving_yards": 5.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 209.5,
+      "passing_yards": 210.5,
       "rushing_yards": 18.5
     },
     "Jayden Daniels": {
-      "passing_yards": 205.5,
+      "passing_yards": 204.5,
       "rushing_yards": 34.5
     },
     "Malik Nabers": {
@@ -79,7 +79,7 @@
       "receiving_yards": 43.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Rachaad White": {
       "rushing_yards": 38.5,
@@ -437,9 +437,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2586,
+    "total_projections_returned": 2595,
     "matched_props": 184,
-    "excluded_goblin_demon_lines": 2139,
+    "excluded_goblin_demon_lines": 2146,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -478,5 +478,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T23:00:36.683535+00:00"
+  "fetched_at": "2026-11-09T23:11:58.177597+00:00"
 }

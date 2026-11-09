@@ -8163,5 +8163,71 @@
     "frozen_at": "2026-11-05 20:55 UTC",
     "result": null,
     "graded": false
+  },
+  "SEA@LV|team_moneyline|10": {
+    "away_team": "SEA",
+    "home_team": "LV",
+    "week": 10,
+    "market": "team_moneyline",
+    "our_call": "AWAY",
+    "our_value": 40.7,
+    "market_line": 38.2,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "down",
+      "away_recent_form": "flat",
+      "away_shorthanded": true,
+      "injury_edge": "home",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a -0.4-point margin and a 49.7 total. LV's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.10) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LV's real record over their last games is trending down relative to their season pace. SEA is carrying real, meaningfully more Out/Doubtful designations than LV this week -- a real health edge favoring LV.",
+    "frozen_at": "2026-11-09 23:11 UTC",
+    "result": null,
+    "graded": false,
+    "rule": "2026-11-06"
+  },
+  "SEA@LV|team_spread|10": {
+    "away_team": "SEA",
+    "home_team": "LV",
+    "week": 10,
+    "market": "team_spread",
+    "our_call": "HOME",
+    "our_value": -0.38,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "down",
+      "away_recent_form": "flat",
+      "away_shorthanded": true,
+      "injury_edge": "home",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a -0.4-point margin and a 49.7 total. LV's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.10) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LV's real record over their last games is trending down relative to their season pace. SEA is carrying real, meaningfully more Out/Doubtful designations than LV this week -- a real health edge favoring LV. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
+    "frozen_at": "2026-11-09 23:11 UTC",
+    "result": null,
+    "graded": false,
+    "rule": "2026-11-06"
+  },
+  "SEA@LV|team_total|10": {
+    "away_team": "SEA",
+    "home_team": "LV",
+    "week": 10,
+    "market": "team_total",
+    "our_call": "OVER",
+    "our_value": 49.7,
+    "market_line": 43.5,
+    "market_source": "fanduel",
+    "signals": {
+      "home_recent_form": "down",
+      "away_recent_form": "flat",
+      "away_shorthanded": true,
+      "injury_edge": "home",
+      "epa_edge": "home"
+    },
+    "reason": "Real net-points-per-game model projects a -0.4-point margin and a 49.7 total. LV's real offensive EPA/play (-0.01) against SEA's real defensive EPA/play allowed (-0.10) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. LV's real record over their last games is trending down relative to their season pace. SEA is carrying real, meaningfully more Out/Doubtful designations than LV this week -- a real health edge favoring LV.",
+    "frozen_at": "2026-11-09 23:11 UTC",
+    "result": null,
+    "graded": false,
+    "rule": "2026-11-06"
   }
 }
