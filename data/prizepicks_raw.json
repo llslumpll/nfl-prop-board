@@ -27,20 +27,20 @@
       "receiving_yards": 41.5,
       "receptions": 4.5
     },
+    "Khalil Shakir": {
+      "receiving_yards": 40.5,
+      "receptions": 4
+    },
     "Jordan Addison": {
       "receiving_yards": 39.5,
       "receptions": 3.5
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 38.5,
-      "receptions": 4
     },
     "Dalton Kincaid": {
       "receiving_yards": 36.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Keon Coleman": {
       "receiving_yards": 26.5
@@ -111,10 +111,10 @@
       "receptions": 1.5
     },
     "Jared Goff": {
-      "passing_yards": 266.5
+      "passing_yards": 267.5
     },
     "Drake Maye": {
-      "passing_yards": 263.5,
+      "passing_yards": 261.5,
       "rushing_yards": 25.5
     },
     "Jahmyr Gibbs": {
@@ -123,16 +123,16 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5
+      "receiving_yards": 77.5
     },
     "Jameson Williams": {
-      "receiving_yards": 55.5
+      "receiving_yards": 56.5
     },
     "Sam LaPorta": {
       "receiving_yards": 43.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 20.5,
+      "receiving_yards": 21.5,
       "receptions": 1.5
     }
   },
@@ -140,9 +140,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1291,
+    "total_projections_returned": 1365,
     "matched_props": 59,
-    "excluded_goblin_demon_lines": 1113,
+    "excluded_goblin_demon_lines": 1187,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -181,5 +181,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T13:40:30.252439+00:00"
+  "fetched_at": "2026-11-09T14:00:37.834803+00:00"
 }
