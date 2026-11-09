@@ -1,7 +1,7 @@
 {
   "props": {
     "Josh Allen": {
-      "passing_yards": 238.5,
+      "passing_yards": 232.5,
       "rushing_yards": 31.5
     },
     "Carson Wentz": {
@@ -20,7 +20,7 @@
       "rushing_yards": 47.5
     },
     "DJ Moore": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 44.5,
       "receptions": 3.5
     },
     "T.J. Hockenson": {
@@ -40,7 +40,7 @@
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 9.5
     },
     "Keon Coleman": {
       "receiving_yards": 25.5
@@ -51,11 +51,11 @@
     "Dawson Knox": {
       "receiving_yards": 7.5
     },
+    "Skyler Bell": {
+      "receiving_yards": 6.5
+    },
     "Ray Davis": {
       "rushing_yards": 5.5
-    },
-    "Skyler Bell": {
-      "receiving_yards": 5.5
     },
     "Ben Yurosek": {
       "receiving_yards": 2.5
@@ -83,7 +83,7 @@
       "receiving_yards": 45.5
     },
     "Antonio Williams": {
-      "receiving_yards": 43.5
+      "receiving_yards": 44.5
     },
     "Rachaad White": {
       "rushing_yards": 39.5,
@@ -140,13 +140,14 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1395,
+    "total_projections_returned": 1373,
     "matched_props": 59,
-    "excluded_goblin_demon_lines": 1218,
+    "excluded_goblin_demon_lines": 1196,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
       "completion percentage",
+      "completions in first 10 pass attempts",
       "consecutive pass completions",
       "fantasy score",
       "fg made",
@@ -172,8 +173,7 @@
       "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
-      "quarters with 25+ pass yards",
-      "quarters with 5+ rush yards"
+      "quarters with 25+ pass yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -181,5 +181,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T14:40:34.646899+00:00"
+  "fetched_at": "2026-11-09T15:00:35.192427+00:00"
 }
