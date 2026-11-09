@@ -34565,5 +34565,28 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Luther Burden III|receiving_yards|9": {
+    "player": "Luther Burden III",
+    "team": "CHI",
+    "opponent": "TB",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 47.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "opponent_recent_form": "better",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-09 17:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
