@@ -54,7 +54,7 @@
       "rushing_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 1.5,
+      "receiving_yards": 2.5,
       "receptions": 0.5
     },
     "Skyler Bell": {
@@ -418,9 +418,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2293,
+    "total_projections_returned": 2291,
     "matched_props": 175,
-    "excluded_goblin_demon_lines": 1884,
+    "excluded_goblin_demon_lines": 1885,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -459,5 +459,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T20:49:09.102678+00:00"
+  "fetched_at": "2026-11-09T21:00:37.117114+00:00"
 }
