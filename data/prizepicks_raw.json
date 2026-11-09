@@ -1,7 +1,7 @@
 {
   "props": {
     "Josh Allen": {
-      "passing_yards": 232.5,
+      "passing_yards": 230.5,
       "rushing_yards": 31.5
     },
     "Carson Wentz": {
@@ -38,8 +38,8 @@
       "receiving_yards": 39.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 31.5,
-      "receiving_yards": 10.5
+      "rushing_yards": 30.5,
+      "receiving_yards": 9.5
     },
     "Keon Coleman": {
       "receiving_yards": 24.5
@@ -79,10 +79,10 @@
     "Isaiah Likely": {
       "receiving_yards": 48.5
     },
-    "Stefon Diggs": {
-      "receiving_yards": 42.5
-    },
     "Antonio Williams": {
+      "receiving_yards": 43.5
+    },
+    "Stefon Diggs": {
       "receiving_yards": 42.5
     },
     "Rachaad White": {
@@ -90,7 +90,7 @@
       "receiving_yards": 13.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 36.5
+      "receiving_yards": 37.5
     },
     "Austin Ekeler": {
       "rushing_yards": 27.5,
@@ -115,7 +115,7 @@
       "receiving_yards": 3.5
     },
     "Jared Goff": {
-      "passing_yards": 265.5
+      "passing_yards": 266.5
     },
     "Drake Maye": {
       "passing_yards": 260.5,
@@ -123,10 +123,10 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 97.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 77.5
+      "receiving_yards": 78.5
     },
     "Jameson Williams": {
       "receiving_yards": 55.5
@@ -422,7 +422,7 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2318,
+    "total_projections_returned": 2317,
     "matched_props": 177,
     "excluded_goblin_demon_lines": 1904,
     "sample_stat_types_seen": [
@@ -463,5 +463,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T21:20:32.831179+00:00"
+  "fetched_at": "2026-11-09T21:40:31.286208+00:00"
 }
