@@ -16,12 +16,12 @@
       "receiving_yards": 80.5,
       "receptions": 6.5
     },
+    "DJ Moore": {
+      "receiving_yards": 47.5,
+      "receptions": 3.5
+    },
     "Jordan Mason": {
       "rushing_yards": 47.5
-    },
-    "DJ Moore": {
-      "receiving_yards": 45.5,
-      "receptions": 3.5
     },
     "Khalil Shakir": {
       "receiving_yards": 40.5,
@@ -32,7 +32,7 @@
       "receptions": 3.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 39.5
+      "receiving_yards": 38.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 36.5
@@ -42,7 +42,7 @@
       "receiving_yards": 9.5
     },
     "Keon Coleman": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Ty Johnson": {
       "receiving_yards": 14.5
@@ -60,7 +60,7 @@
       "rushing_yards": 5.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "J.J. McCarthy": {
       "passing_yards": 210.5,
@@ -82,7 +82,7 @@
       "receptions": 4.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 44.5
+      "receiving_yards": 43.5
     },
     "Antonio Williams": {
       "receiving_yards": 42.5
@@ -97,12 +97,12 @@
     "Devin Singletary": {
       "rushing_yards": 28.5
     },
+    "Malachi Fields": {
+      "receiving_yards": 24.5
+    },
     "Austin Ekeler": {
       "rushing_yards": 24.5,
       "receiving_yards": 7.5
-    },
-    "Malachi Fields": {
-      "receiving_yards": 23.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -142,9 +142,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1414,
+    "total_projections_returned": 1416,
     "matched_props": 59,
-    "excluded_goblin_demon_lines": 1237,
+    "excluded_goblin_demon_lines": 1238,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -183,5 +183,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T15:40:30.168627+00:00"
+  "fetched_at": "2026-11-09T16:00:37.659834+00:00"
 }
