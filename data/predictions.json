@@ -34640,7 +34640,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -34667,6 +34666,29 @@
     "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Derrick Henry|rushing_yards|10": {
+    "player": "Derrick Henry",
+    "team": "BAL",
+    "opponent": "LAC",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 95.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 78.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.9,
+    "model_prob": 0.6358,
+    "signals": {},
+    "frozen_at": "2026-11-09 19:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
