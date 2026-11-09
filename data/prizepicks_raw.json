@@ -55,13 +55,18 @@
       "rushing_yards": 5.5
     },
     "Skyler Bell": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Ben Yurosek": {
       "receiving_yards": 3.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 212.5
+      "passing_yards": 212.5,
+      "rushing_yards": 19.5
+    },
+    "Jayden Daniels": {
+      "passing_yards": 212.5,
+      "rushing_yards": 35.5
     },
     "Malik Nabers": {
       "receiving_yards": 69.5
@@ -69,6 +74,19 @@
     "Isaiah Likely": {
       "receiving_yards": 48.5,
       "receptions": 4.5
+    },
+    "Stefon Diggs": {
+      "receiving_yards": 45.5
+    },
+    "Antonio Williams": {
+      "receiving_yards": 45.5
+    },
+    "Chig Okonkwo": {
+      "receiving_yards": 40.5
+    },
+    "Rachaad White": {
+      "rushing_yards": 38.5,
+      "receiving_yards": 14.5
     },
     "Malachi Fields": {
       "receiving_yards": 23.5
@@ -82,9 +100,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 683,
-    "matched_props": 33,
-    "excluded_goblin_demon_lines": 561,
+    "total_projections_returned": 850,
+    "matched_props": 41,
+    "excluded_goblin_demon_lines": 713,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -123,5 +141,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T03:40:31.904353+00:00"
+  "fetched_at": "2026-11-09T04:00:34.737276+00:00"
 }
