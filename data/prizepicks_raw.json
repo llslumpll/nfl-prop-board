@@ -28,14 +28,14 @@
       "receptions": 4
     },
     "Jordan Addison": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 39.5,
       "receptions": 3.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 39.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
@@ -90,7 +90,7 @@
       "receiving_yards": 12.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 37.5
+      "receiving_yards": 36.5
     },
     "Devin Singletary": {
       "rushing_yards": 28.5,
@@ -101,7 +101,7 @@
       "receiving_yards": 7.5
     },
     "Malachi Fields": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -115,10 +115,10 @@
       "receiving_yards": 3.5
     },
     "Jared Goff": {
-      "passing_yards": 266.5
+      "passing_yards": 267.5
     },
     "Drake Maye": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 25.5
     },
     "Jahmyr Gibbs": {
@@ -243,7 +243,8 @@
       "receiving_yards": 20.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 71.5
+      "rushing_yards": 71.5,
+      "receiving_yards": 9.5
     },
     "Caleb Douglas": {
       "receiving_yards": 43.5
@@ -253,6 +254,12 @@
     },
     "Malik Washington": {
       "receiving_yards": 41.5
+    },
+    "Greg Dulcich": {
+      "receiving_yards": 31.5
+    },
+    "Chris Bell": {
+      "receiving_yards": 19.5
     },
     "Trevor Lawrence": {
       "passing_yards": 240.5,
@@ -407,9 +414,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2132,
-    "matched_props": 170,
-    "excluded_goblin_demon_lines": 1751,
+    "total_projections_returned": 2234,
+    "matched_props": 173,
+    "excluded_goblin_demon_lines": 1836,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -448,5 +455,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T19:20:30.975912+00:00"
+  "fetched_at": "2026-11-09T19:40:30.424825+00:00"
 }
