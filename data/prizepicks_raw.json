@@ -9,7 +9,7 @@
       "rushing_yards": 7.5
     },
     "James Cook III": {
-      "rushing_yards": 86.5,
+      "rushing_yards": 85.5,
       "receiving_yards": 8.5
     },
     "Justin Jefferson": {
@@ -62,7 +62,7 @@
       "receptions": 0.5
     },
     "Ben Yurosek": {
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "J.J. McCarthy": {
       "passing_yards": 209.5,
@@ -70,7 +70,7 @@
     },
     "Jayden Daniels": {
       "passing_yards": 208.5,
-      "rushing_yards": 33.5
+      "rushing_yards": 32.5
     },
     "Malik Nabers": {
       "receiving_yards": 67.5,
@@ -91,7 +91,7 @@
     },
     "Rachaad White": {
       "rushing_yards": 40.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 38.5
@@ -113,6 +113,10 @@
     "Van Jefferson": {
       "receiving_yards": 13.5,
       "receptions": 1.5
+    },
+    "Theo Johnson": {
+      "receptions": 0.5,
+      "receiving_yards": 0.5
     },
     "Jared Goff": {
       "passing_yards": 267.5
@@ -144,28 +148,27 @@
       "rushing_yards": 7.5
     },
     "Deshaun Watson": {
-      "passing_yards": 201.5,
+      "passing_yards": 202.5,
       "rushing_yards": 27.5
     },
     "Nico Collins": {
       "receiving_yards": 59.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 45.5
+      "receiving_yards": 47.5
     },
     "Denzel Boston": {
-      "receiving_yards": 44.5
+      "receiving_yards": 46.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 42.5,
-      "receiving_yards": 4.5
+      "rushing_yards": 41.5,
+      "receiving_yards": 5.5
+    },
+    "Harold Fannin Jr.": {
+      "receiving_yards": 35.5
     },
     "Tank Dell": {
       "receiving_yards": 34.5
-    },
-    "Harold Fannin Jr.": {
-      "receiving_yards": 33.5,
-      "receptions": 3.5
     },
     "Dalton Schultz": {
       "receiving_yards": 32.5,
@@ -176,20 +179,21 @@
       "receptions": 2.5
     },
     "Dylan Sampson": {
-      "rushing_yards": 21.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5,
+      "rushing_yards": 20.5
     },
     "Jerry Jeudy": {
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 1.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 1642,
-    "matched_props": 80,
-    "excluded_goblin_demon_lines": 1417,
+    "total_projections_returned": 1695,
+    "matched_props": 82,
+    "excluded_goblin_demon_lines": 1461,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -228,5 +232,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T16:40:31.011183+00:00"
+  "fetched_at": "2026-11-09T17:00:35.196324+00:00"
 }
