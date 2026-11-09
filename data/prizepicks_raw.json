@@ -65,9 +65,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 617,
+    "total_projections_returned": 619,
     "matched_props": 26,
-    "excluded_goblin_demon_lines": 506,
+    "excluded_goblin_demon_lines": 505,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -75,12 +75,14 @@
       "consecutive pass completions",
       "fantasy score",
       "fg made",
+      "fg made (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
+      "longest fg made yds (combo)",
       "longest reception",
       "longest rush",
       "pass attempts",
@@ -96,9 +98,7 @@
       "quarters with 10+ receiving yards",
       "quarters with 25+ pass yards",
       "quarters with 5+ rush yards",
-      "rec targets",
-      "receiving yards",
-      "receiving yards (combo)"
+      "rec targets"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -106,5 +106,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-09T02:00:35.607112+00:00"
+  "fetched_at": "2026-11-09T02:20:31.495368+00:00"
 }
