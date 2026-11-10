@@ -294,11 +294,23 @@
     "Mitchell Evans": {
       "receiving_yards": 9.5
     },
+    "Kirk Cousins": {
+      "passing_yards": 236.5,
+      "rushing_yards": 0.5
+    },
     "Jaxon Smith-Njigba": {
       "receiving_yards": 89.5
     },
     "Brock Bowers": {
       "receiving_yards": 72.5
+    },
+    "Zach Charbonnet": {
+      "rushing_yards": 52.5,
+      "receiving_yards": 10.5
+    },
+    "Jadarian Price": {
+      "rushing_yards": 37.5,
+      "receiving_yards": 8.5
     },
     "Tre Tucker": {
       "receiving_yards": 36.5
@@ -306,6 +318,12 @@
     "Ashton Jeanty": {
       "rushing_yards": 35.5,
       "receiving_yards": 30.5
+    },
+    "Michael Mayer": {
+      "receiving_yards": 30.5
+    },
+    "AJ Barner": {
+      "receiving_yards": 25.5
     },
     "Matthew Stafford": {
       "passing_yards": 207.5
@@ -416,9 +434,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2203,
-    "matched_props": 175,
-    "excluded_goblin_demon_lines": 1825,
+    "total_projections_returned": 2388,
+    "matched_props": 183,
+    "excluded_goblin_demon_lines": 1983,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
@@ -448,5 +466,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T02:00:36.200227+00:00"
+  "fetched_at": "2026-11-10T02:20:30.318214+00:00"
 }
