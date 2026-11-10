@@ -34734,5 +34734,32 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Darnell Washington|receiving_yards|10": {
+    "player": "Darnell Washington",
+    "team": "PIT",
+    "opponent": "CIN",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 20.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 28.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -8.3,
+    "model_prob": 0.3159,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-10 16:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
