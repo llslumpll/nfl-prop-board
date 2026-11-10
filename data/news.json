@@ -1,4 +1,5 @@
 {
+ "10": {},
  "9": {
   "Brian Robinson|ATL": {
    "opp": "CIN",
@@ -89,6 +90,7 @@
    "out": "David Montgomery",
    "plays": [
     {
+     "actual": 70,
      "bump": 105,
      "call": "OVER",
      "line": 60.5,
@@ -96,7 +98,7 @@
      "n_wo": 2,
      "now": 64.5,
      "player": "Woody Marks",
-     "result": null,
+     "result": "hit",
      "short": "RUSH YDS",
      "stat": "rushing_yards",
      "with": 29.8,
@@ -204,6 +206,7 @@
      "without": 8
     },
     {
+     "actual": 51,
      "bump": 31,
      "call": "OVER",
      "line": 92.5,
@@ -211,13 +214,14 @@
      "n_wo": 1,
      "now": 89.5,
      "player": "Jaxon Smith-Njigba",
-     "result": null,
+     "result": "miss",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 118.6,
      "without": 155
     },
     {
+     "actual": 7,
      "bump": 15,
      "call": "OVER",
      "line": 7,
@@ -225,7 +229,7 @@
      "n_wo": 1,
      "now": 7,
      "player": "Jaxon Smith-Njigba",
-     "result": null,
+     "result": "void",
      "short": "REC",
      "stat": "receptions",
      "with": 7.9,
@@ -242,6 +246,7 @@
    "out": "TreVeyon Henderson",
    "plays": [
     {
+     "actual": 102,
      "bump": 22,
      "call": "OVER",
      "line": 40.5,
@@ -249,7 +254,7 @@
      "n_wo": 2,
      "now": 40.5,
      "player": "DeMario Douglas",
-     "result": null,
+     "result": "hit",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 39.3,
@@ -280,6 +285,7 @@
      "without": 37
     },
     {
+     "actual": 32,
      "bump": 71,
      "call": "OVER",
      "line": 55.5,
@@ -287,7 +293,7 @@
      "n_wo": 2,
      "now": 55.5,
      "player": "Rhamondre Stevenson",
-     "result": null,
+     "result": "miss",
      "short": "RUSH YDS",
      "stat": "rushing_yards",
      "with": 39,
