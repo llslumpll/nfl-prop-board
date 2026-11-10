@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,27 +354,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "td-1": {
    "chance": 0.593,
-   "decimal": 2.857,
-   "ev": 0.694,
+   "decimal": 2.564,
+   "ev": 0.52,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 2.857,
+     "decimal": 2.564,
      "game": "BUF@NYJ",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.35,
+     "price": 0.39,
      "team": "BUF"
     }
    ],
@@ -382,39 +382,39 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.2983,
-   "decimal": 7.722,
-   "ev": 1.303,
+   "decimal": 6.105,
+   "ev": 0.821,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 2.857,
+     "decimal": 2.564,
      "game": "BUF@NYJ",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.35,
+     "price": 0.39,
      "team": "BUF"
     },
     {
      "chance": 0.503,
-     "decimal": 2.703,
+     "decimal": 2.381,
      "game": "ATL@KC",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Kenneth Walker III anytime TD",
      "player": "Kenneth Walker III",
-     "price": 0.37,
+     "price": 0.42,
      "team": "KC"
     }
    ],
@@ -422,51 +422,51 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.15,
-   "decimal": 22.063,
-   "ev": 2.31,
+   "decimal": 15.262,
+   "ev": 1.29,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 2.857,
+     "decimal": 2.564,
      "game": "BUF@NYJ",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.35,
+     "price": 0.39,
      "team": "BUF"
     },
     {
      "chance": 0.503,
-     "decimal": 2.703,
+     "decimal": 2.381,
      "game": "ATL@KC",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Kenneth Walker III anytime TD",
      "player": "Kenneth Walker III",
-     "price": 0.37,
+     "price": 0.42,
      "team": "KC"
     },
     {
      "chance": 0.503,
-     "decimal": 2.857,
+     "decimal": 2.5,
      "game": "ATL@KC",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Bijan Robinson anytime TD",
      "player": "Bijan Robinson",
-     "price": 0.35,
+     "price": 0.4,
      "team": "ATL"
     }
    ],
@@ -474,71 +474,71 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.059,
-   "decimal": 66.851,
-   "ev": 2.942,
+   "decimal": 44.886,
+   "ev": 1.647,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 2.857,
+     "decimal": 2.564,
      "game": "BUF@NYJ",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.35,
+     "price": 0.39,
      "team": "BUF"
     },
     {
      "chance": 0.503,
-     "decimal": 2.703,
+     "decimal": 2.381,
      "game": "ATL@KC",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Kenneth Walker III anytime TD",
      "player": "Kenneth Walker III",
-     "price": 0.37,
+     "price": 0.42,
      "team": "KC"
     },
     {
      "chance": 0.503,
-     "decimal": 2.857,
+     "decimal": 2.5,
      "game": "ATL@KC",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Bijan Robinson anytime TD",
      "player": "Bijan Robinson",
-     "price": 0.35,
+     "price": 0.4,
      "team": "ATL"
     },
     {
      "chance": 0.393,
-     "decimal": 3.03,
-     "game": "CAR@NO",
+     "decimal": 2.941,
+     "game": "JAX@TEN",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
-     "label": "Chuba Hubbard anytime TD",
-     "player": "Chuba Hubbard",
-     "price": 0.33,
-     "team": "CAR"
+     "label": "Bhayshul Tuten anytime TD",
+     "player": "Bhayshul Tuten",
+     "price": 0.34,
+     "team": "JAX"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 18:20 UTC",
+   "updated": "2026-11-10 18:40 UTC",
    "week": 10
   }
  },
