@@ -17,7 +17,7 @@
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 47.5
+      "receiving_yards": 46.5
     },
     "Antonio Williams": {
       "receiving_yards": 43.5
@@ -55,7 +55,7 @@
       "receiving_yards": 5.5
     },
     "Jared Goff": {
-      "passing_yards": 268.5
+      "passing_yards": 270.5
     },
     "Drake Maye": {
       "passing_yards": 262.5,
@@ -465,9 +465,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2978,
+    "total_projections_returned": 2980,
     "matched_props": 200,
-    "excluded_goblin_demon_lines": 2489,
+    "excluded_goblin_demon_lines": 2491,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
@@ -502,5 +502,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T11:00:37.676543+00:00"
+  "fetched_at": "2026-11-10T11:12:52.441955+00:00"
 }
