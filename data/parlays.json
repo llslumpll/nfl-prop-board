@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,17 +217,32 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "props-3": {
-   "chance": 0.1622,
+   "chance": 0.1646,
    "decimal": 6.0,
-   "ev": -0.027,
+   "ev": -0.013,
    "family": "props",
    "good": false,
    "id": "props-3",
    "legs": [
+    {
+     "call": "OVER",
+     "chance": 0.548,
+     "conf": 0.683,
+     "game": "BUF@NYJ",
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Josh Allen OVER 226.5 PASS YDS",
+     "line": 226.5,
+     "n": 84,
+     "player": "Josh Allen",
+     "projected": 260.4,
+     "stat": "passing_yards",
+     "team": "BUF"
+    },
     {
      "call": "OVER",
      "chance": 0.548,
@@ -257,7 +272,23 @@
      "projected": 248.4,
      "stat": "passing_yards",
      "team": "JAX"
-    },
+    }
+   ],
+   "name": "Safest props",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-10 17:40 UTC",
+   "week": 10
+  },
+  "props-4": {
+   "chance": 0.085,
+   "decimal": 10.0,
+   "ev": -0.15,
+   "family": "props",
+   "good": false,
+   "id": "props-4",
+   "legs": [
     {
      "call": "UNDER",
      "chance": 0.54,
@@ -272,23 +303,7 @@
      "projected": 3.3,
      "stat": "receptions",
      "team": "NYG"
-    }
-   ],
-   "name": "Safest props",
-   "size": 3,
-   "stake": 0.5,
-   "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
-   "week": 10
-  },
-  "props-4": {
-   "chance": 0.085,
-   "decimal": 10.0,
-   "ev": -0.15,
-   "family": "props",
-   "good": false,
-   "id": "props-4",
-   "legs": [
+    },
     {
      "call": "UNDER",
      "chance": 0.54,
@@ -333,28 +348,13 @@
      "projected": 5.1,
      "stat": "receptions",
      "team": "ATL"
-    },
-    {
-     "call": "UNDER",
-     "chance": 0.54,
-     "conf": 0.5,
-     "game": "JAX@TEN",
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "prop",
-     "label": "Carnell Tate UNDER 4.5 REC",
-     "line": 4.5,
-     "n": 100,
-     "player": "Carnell Tate",
-     "projected": 0.0,
-     "stat": "receptions",
-     "team": "TEN"
     }
    ],
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,7 +422,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "td-3": {
@@ -474,7 +474,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   },
   "td-4": {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 17:20 UTC",
+   "updated": "2026-11-10 17:40 UTC",
    "week": 10
   }
  },
