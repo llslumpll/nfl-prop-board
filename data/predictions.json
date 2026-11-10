@@ -35058,8 +35058,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Matthew Golden|receiving_yards|10": {
@@ -37104,8 +37103,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Kyren Williams|rushing_yards|10": {
@@ -37153,6 +37151,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Drew Lock|passing_yards|10": {
+    "player": "Drew Lock",
+    "team": "SEA",
+    "opponent": "LV",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 140.9,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 203.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -62.6,
+    "model_prob": 0.2932,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-11-10 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
