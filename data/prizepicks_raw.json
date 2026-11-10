@@ -36,10 +36,10 @@
       "receptions": 3.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 39.5
+      "receiving_yards": 38.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 30.5,
+      "rushing_yards": 29.5,
       "receiving_yards": 9.5
     },
     "Keon Coleman": {
@@ -62,7 +62,7 @@
       "rushing_yards": 17.5
     },
     "Jayden Daniels": {
-      "passing_yards": 204.5,
+      "passing_yards": 205.5,
       "rushing_yards": 34.5
     },
     "Malik Nabers": {
@@ -147,7 +147,7 @@
       "rushing_yards": 12.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 218.5,
+      "passing_yards": 213.5,
       "rushing_yards": 3.5
     },
     "Kenneth Walker III": {
@@ -329,14 +329,14 @@
     "Devaughn Vele": {
       "receiving_yards": 34.5
     },
-    "Juwan Johnson": {
-      "receiving_yards": 32.5
-    },
     "Jordyn Tyson": {
       "receiving_yards": 29.5
     },
     "Darren Waller": {
       "receiving_yards": 28.5
+    },
+    "Juwan Johnson": {
+      "receiving_yards": 27.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5,
@@ -455,9 +455,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2734,
+    "total_projections_returned": 2728,
     "matched_props": 192,
-    "excluded_goblin_demon_lines": 2265,
+    "excluded_goblin_demon_lines": 2259,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -496,5 +496,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T00:40:33.171923+00:00"
+  "fetched_at": "2026-11-10T01:00:35.905777+00:00"
 }
