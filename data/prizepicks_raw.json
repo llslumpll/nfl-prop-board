@@ -1,11 +1,11 @@
 {
   "props": {
     "J.J. McCarthy": {
-      "passing_yards": 208.5,
+      "passing_yards": 209.5,
       "rushing_yards": 19.5
     },
     "Jayden Daniels": {
-      "passing_yards": 204.5,
+      "passing_yards": 206.5,
       "rushing_yards": 34.5
     },
     "Malik Nabers": {
@@ -30,7 +30,7 @@
       "receiving_yards": 12.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 36.5
+      "receiving_yards": 37.5
     },
     "Austin Ekeler": {
       "rushing_yards": 26.5,
@@ -48,13 +48,13 @@
       "receptions": 1.5
     },
     "Van Jefferson": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Theo Johnson": {
       "receiving_yards": 4.5
     },
     "Jared Goff": {
-      "passing_yards": 268.5
+      "passing_yards": 269.5
     },
     "Drake Maye": {
       "passing_yards": 262.5,
@@ -62,14 +62,13 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 31.5,
-      "receptions": 4.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5
+      "receiving_yards": 77.5
     },
     "Jameson Williams": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Corey Kiner": {
       "rushing_yards": 53.5
@@ -477,9 +476,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3044,
-    "matched_props": 204,
-    "excluded_goblin_demon_lines": 2544,
+    "total_projections_returned": 3047,
+    "matched_props": 203,
+    "excluded_goblin_demon_lines": 2547,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
@@ -514,5 +513,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T13:20:42.540840+00:00"
+  "fetched_at": "2026-11-10T13:40:37.290242+00:00"
 }
