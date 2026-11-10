@@ -35011,9 +35011,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jared Goff|passing_yards|10": {
     "player": "Jared Goff",
@@ -35060,7 +35058,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Matthew Golden|receiving_yards|10": {
@@ -35297,7 +35296,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ja'Marr Chase|receptions|10": {
     "player": "Ja'Marr Chase",
@@ -35547,7 +35549,10 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-10 18:20 UTC",
-    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:20 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:20 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Matthew Golden|receptions|10": {
     "player": "Matthew Golden",
@@ -35570,10 +35575,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-10 18:00 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:00 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -35715,10 +35717,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-10 18:00 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:00 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -36133,10 +36132,10 @@
     "stat": "receptions",
     "projected": 1.8,
     "tier_at_freeze": "Building 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 1.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.3,
     "model_prob": null,
     "signals": {
       "usage_trend": "up",
@@ -36147,7 +36146,12 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-10 19:40 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-10 19:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "DeMario Douglas|receptions|10": {
     "player": "DeMario Douglas",
