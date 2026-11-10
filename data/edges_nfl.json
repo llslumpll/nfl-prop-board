@@ -1,1 +1,67 @@
-{}
+{
+ "10": {
+  "moneyline|MIA @ IND: MIA wins": {
+   "ask": 0.36,
+   "away": "MIA",
+   "cost": 0.3761,
+   "ev": 0.1401,
+   "fair": 0.4288,
+   "first_ev": 0.1401,
+   "first_seen": "2026-11-10 21:00 UTC",
+   "home": "IND",
+   "kalshi": "YES MIA at 36%",
+   "kickoff": "2026-11-15T18:00:00+00:00",
+   "kind": "moneyline",
+   "label": "MIA @ IND: MIA wins",
+   "line": null,
+   "model": 0.459,
+   "model_agrees": true,
+   "ref": "FanDuel +122/-144",
+   "side": "MIA ML",
+   "status": "pending",
+   "week": 10
+  },
+  "spread|MIA @ IND: MIA +2.5": {
+   "ask": 0.42,
+   "away": "MIA",
+   "cost": 0.4371,
+   "ev": 0.1174,
+   "fair": 0.4884,
+   "first_ev": 0.1174,
+   "first_seen": "2026-11-10 21:00 UTC",
+   "home": "IND",
+   "kalshi": "NO IND by over 2.5 at 42%",
+   "kickoff": "2026-11-15T18:00:00+00:00",
+   "kind": "spread",
+   "label": "MIA @ IND: MIA +2.5",
+   "line": 2.5,
+   "model": 0.5151,
+   "model_agrees": true,
+   "ref": "FanDuel MIA +2.5",
+   "side": "MIA +2.5",
+   "status": "pending",
+   "week": 10
+  },
+  "total|MIA @ IND: OVER 40.5": {
+   "ask": 0.42,
+   "away": "MIA",
+   "cost": 0.4371,
+   "ev": 0.1439,
+   "fair": 0.5,
+   "first_ev": 0.1439,
+   "first_seen": "2026-11-10 21:00 UTC",
+   "home": "IND",
+   "kalshi": "YES over 40.5 at 42%",
+   "kickoff": "2026-11-15T18:00:00+00:00",
+   "kind": "total",
+   "label": "MIA @ IND: OVER 40.5",
+   "line": 40.5,
+   "model": 0.6412,
+   "model_agrees": true,
+   "ref": "FanDuel 40.5 (-110/-110)",
+   "side": "OVER 40.5",
+   "status": "pending",
+   "week": 10
+  }
+ }
+}
