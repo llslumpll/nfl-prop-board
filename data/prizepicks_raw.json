@@ -38,7 +38,7 @@
       "receiving_yards": 6.5
     },
     "Malachi Fields": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Devin Singletary": {
       "rushing_yards": 24.5,
@@ -78,7 +78,7 @@
       "rushing_yards": 52.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 44.5
+      "receiving_yards": 43.5
     },
     "Hunter Henry": {
       "receiving_yards": 33.5
@@ -200,22 +200,19 @@
       "rushing_yards": 4.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 79.5
+      "receiving_yards": 75.5
     },
     "Christian Watson": {
-      "receiving_yards": 68.5,
-      "receptions": 4.5
+      "receiving_yards": 68.5
     },
     "Matthew Golden": {
-      "receiving_yards": 62.5,
-      "receptions": 5.5
+      "receiving_yards": 62.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 42.5,
-      "receptions": 4.5
+      "receiving_yards": 42.5
     },
     "Savion Williams": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Jonnu Smith": {
@@ -398,7 +395,7 @@
       "receiving_yards": 0.5
     },
     "Drew Lock": {
-      "passing_yards": 203.5,
+      "passing_yards": 204.5,
       "rushing_yards": 9.5
     },
     "Fernando Mendoza": {
@@ -425,12 +422,12 @@
     "Tre Tucker": {
       "receiving_yards": 25.5
     },
-    "AJ Barner": {
-      "receiving_yards": 25.5
-    },
     "Mike Washington Jr.": {
       "rushing_yards": 25.5,
       "receptions": 0.5
+    },
+    "AJ Barner": {
+      "receiving_yards": 24.5
     },
     "Michael Mayer": {
       "receiving_yards": 20.5,
@@ -611,9 +608,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3950,
-    "matched_props": 263,
-    "excluded_goblin_demon_lines": 3199,
+    "total_projections_returned": 3956,
+    "matched_props": 260,
+    "excluded_goblin_demon_lines": 3208,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -652,5 +649,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T22:00:46.602939+00:00"
+  "fetched_at": "2026-11-10T22:20:37.082387+00:00"
 }

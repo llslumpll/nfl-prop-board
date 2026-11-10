@@ -35291,7 +35291,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ja'Marr Chase|receptions|10": {
     "player": "Ja'Marr Chase",
@@ -35537,7 +35540,10 @@
     "graded_at": null,
     "line_attached_at": "2026-11-10 18:20 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:20 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|10": {
     "player": "Matthew Golden",
@@ -35560,10 +35566,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-10 18:00 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:00 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -35705,10 +35708,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-10 18:00 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-10 18:00 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -36551,7 +36551,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Patrick Mahomes|any_td|10": {
     "player": "Patrick Mahomes",
