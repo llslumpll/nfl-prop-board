@@ -6,7 +6,7 @@
     },
     "Jayden Daniels": {
       "passing_yards": 204.5,
-      "rushing_yards": 34.5
+      "rushing_yards": 35.5
     },
     "Malik Nabers": {
       "receiving_yards": 66.5,
@@ -17,7 +17,7 @@
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 48.5
+      "receiving_yards": 47.5
     },
     "Antonio Williams": {
       "receiving_yards": 43.5
@@ -27,7 +27,7 @@
     },
     "Rachaad White": {
       "rushing_yards": 38.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 36.5
@@ -55,15 +55,16 @@
       "receiving_yards": 5.5
     },
     "Jared Goff": {
-      "passing_yards": 266.5
+      "passing_yards": 267.5
     },
     "Drake Maye": {
-      "passing_yards": 260.5,
+      "passing_yards": 259.5,
       "rushing_yards": 25.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 97.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 31.5,
+      "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 78.5
@@ -457,9 +458,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2646,
-    "matched_props": 194,
-    "excluded_goblin_demon_lines": 2194,
+    "total_projections_returned": 2598,
+    "matched_props": 195,
+    "excluded_goblin_demon_lines": 2158,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
@@ -494,5 +495,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T05:20:32.598565+00:00"
+  "fetched_at": "2026-11-10T05:40:32.812718+00:00"
 }
