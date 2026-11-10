@@ -115,12 +115,6 @@
     "Drake London": {
       "receiving_yards": 72.5
     },
-    "Rashee Rice": {
-      "receiving_yards": 55.5
-    },
-    "Travis Kelce": {
-      "receiving_yards": 47.5
-    },
     "Kyle Pitts Sr.": {
       "receiving_yards": 37.5
     },
@@ -408,8 +402,7 @@
       "receiving_yards": 27.5
     },
     "Tre Tucker": {
-      "receiving_yards": 26.5,
-      "receptions": 2.5
+      "receiving_yards": 26.5
     },
     "AJ Barner": {
       "receiving_yards": 24.5
@@ -596,9 +589,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3747,
-    "matched_props": 258,
-    "excluded_goblin_demon_lines": 3029,
+    "total_projections_returned": 3745,
+    "matched_props": 255,
+    "excluded_goblin_demon_lines": 3030,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -637,5 +630,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T20:38:36.249670+00:00"
+  "fetched_at": "2026-11-10T20:40:37.255575+00:00"
 }
