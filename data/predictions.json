@@ -34712,5 +34712,28 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Reggie Virgil|receiving_yards|9": {
+    "player": "Reggie Virgil",
+    "team": "ARI",
+    "opponent": "SEA",
+    "week": 9,
+    "stat": "receiving_yards",
+    "projected": 37.9,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 24.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.4,
+    "model_prob": 0.7213,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-10 07:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
