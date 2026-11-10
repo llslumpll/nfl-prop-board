@@ -2,8 +2,8 @@
  "10": {
   "ml-2": {
    "chance": 0.6099,
-   "decimal": 1.441,
-   "ev": -0.121,
+   "decimal": 1.429,
+   "ev": -0.128,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -26,14 +26,14 @@
      "away": "BUF",
      "call": "AWAY",
      "chance": 0.753,
-     "decimal": 1.233,
+     "decimal": 1.222,
      "game": "BUF@NYJ",
      "good": false,
      "home": "NYJ",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "BUF to win",
-     "price": -430,
+     "price": -450,
      "team": "BUF"
     }
    ],
@@ -41,13 +41,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "ml-3": {
    "chance": 0.2788,
-   "decimal": 2.785,
-   "ev": -0.224,
+   "decimal": 2.829,
+   "ev": -0.211,
    "family": "ml",
    "good": false,
    "id": "ml-3",
@@ -70,14 +70,14 @@
      "away": "SF",
      "call": "AWAY",
      "chance": 0.631,
-     "decimal": 1.465,
+     "decimal": 1.488,
      "game": "SF@DAL",
      "good": false,
      "home": "DAL",
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "ml",
      "label": "SF to win",
-     "price": -215,
+     "price": -205,
      "team": "SF"
     },
     {
@@ -99,13 +99,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "ml-4": {
    "chance": 0.1225,
-   "decimal": 4.762,
-   "ev": -0.416,
+   "decimal": 4.062,
+   "ev": -0.502,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -114,28 +114,28 @@
      "away": "PIT",
      "call": "HOME",
      "chance": 0.606,
-     "decimal": 1.505,
+     "decimal": 1.51,
      "game": "PIT@CIN",
      "good": false,
      "home": "CIN",
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "ml",
      "label": "CIN to win",
-     "price": -198,
+     "price": -196,
      "team": "CIN"
     },
     {
      "away": "SEA",
      "call": "AWAY",
      "chance": 0.593,
-     "decimal": 1.556,
+     "decimal": 1.323,
      "game": "SEA@LV",
      "good": false,
      "home": "LV",
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "ml",
      "label": "SEA to win",
-     "price": -180,
+     "price": -310,
      "team": "SEA"
     },
     {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.1544,
-   "decimal": 8.17,
-   "ev": 0.262,
+   "decimal": 7.937,
+   "ev": 0.226,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 2.941,
+     "decimal": 2.857,
      "game": "CLE@HOU",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Nico Collins anytime TD",
      "player": "Nico Collins",
-     "price": 0.34,
+     "price": 0.35,
      "team": "HOU"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.0607,
-   "decimal": 25.532,
-   "ev": 0.55,
+   "decimal": 24.802,
+   "ev": 0.505,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,14 +447,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 2.941,
+     "decimal": 2.857,
      "game": "CLE@HOU",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Nico Collins anytime TD",
      "player": "Nico Collins",
-     "price": 0.34,
+     "price": 0.35,
      "team": "HOU"
     },
     {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.0239,
-   "decimal": 82.365,
-   "ev": 0.965,
+   "decimal": 80.012,
+   "ev": 0.909,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,14 +499,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 2.941,
+     "decimal": 2.857,
      "game": "CLE@HOU",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Nico Collins anytime TD",
      "player": "Nico Collins",
-     "price": 0.34,
+     "price": 0.35,
      "team": "HOU"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 20:20 UTC",
+   "updated": "2026-11-10 20:38 UTC",
    "week": 10
   }
  },
