@@ -17,11 +17,10 @@
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 47.5,
-      "receptions": 4.5
+      "receiving_yards": 47.5
     },
     "Antonio Williams": {
-      "receiving_yards": 42.5
+      "receiving_yards": 43.5
     },
     "Stefon Diggs": {
       "receiving_yards": 41.5
@@ -31,7 +30,7 @@
       "receiving_yards": 13.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5
     },
     "Devin Singletary": {
       "rushing_yards": 27.5,
@@ -42,7 +41,7 @@
       "receiving_yards": 7.5
     },
     "Malachi Fields": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Darnell Mooney": {
       "receiving_yards": 16.5,
@@ -90,14 +89,6 @@
       "passing_yards": 213.5,
       "rushing_yards": 3.5
     },
-    "Kenneth Walker III": {
-      "rushing_yards": 83.5,
-      "receiving_yards": 18.5
-    },
-    "Bijan Robinson": {
-      "rushing_yards": 82.5,
-      "receiving_yards": 28.5
-    },
     "Drake London": {
       "receiving_yards": 72.5
     },
@@ -108,11 +99,13 @@
       "receiving_yards": 47.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 37.5,
-      "receptions": 3.5
+      "receiving_yards": 37.5
     },
-    "Jahan Dotson": {
+    "Bijan Robinson": {
       "receiving_yards": 28.5
+    },
+    "Kenneth Walker III": {
+      "receiving_yards": 18.5
     },
     "Geno Smith": {
       "passing_yards": 225.5,
@@ -473,9 +466,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 2944,
-    "matched_props": 204,
-    "excluded_goblin_demon_lines": 2445,
+    "total_projections_returned": 2854,
+    "matched_props": 199,
+    "excluded_goblin_demon_lines": 2374,
     "sample_stat_types_seen": [
       "anytime tds",
       "fantasy score",
@@ -510,5 +503,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T07:20:33.717050+00:00"
+  "fetched_at": "2026-11-10T07:40:37.168194+00:00"
 }
