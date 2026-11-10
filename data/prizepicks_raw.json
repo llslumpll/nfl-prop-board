@@ -1,7 +1,7 @@
 {
   "props": {
     "Jayden Daniels": {
-      "passing_yards": 200.5,
+      "passing_yards": 199.5,
       "rushing_yards": 34.5
     },
     "J.J. McCarthy": {
@@ -124,7 +124,7 @@
     "Kyle Pitts Sr.": {
       "receiving_yards": 37.5
     },
-    "Josh Woods": {
+    "Josh Downs": {
       "receiving_yards": 35.5
     },
     "Jahan Dotson": {
@@ -200,7 +200,7 @@
       "rushing_yards": 4.5
     },
     "Kirk Cousins": {
-      "passing_yards": 221.5
+      "passing_yards": 220.5
     },
     "Justin Jefferson": {
       "receiving_yards": 70.5
@@ -398,11 +398,11 @@
       "receiving_yards": 0.5
     },
     "Drew Lock": {
-      "passing_yards": 204.5,
+      "passing_yards": 199.5,
       "rushing_yards": 4.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 178.5,
+      "passing_yards": 176.5,
       "rushing_yards": 11.5
     },
     "Jaxon Smith-Njigba": {
@@ -412,22 +412,22 @@
       "receiving_yards": 59.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 9.5
     },
     "Jadarian Price": {
       "rushing_yards": 38.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 10.5,
       "receptions": 2
+    },
+    "Tre Tucker": {
+      "receiving_yards": 26.5
     },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
       "receptions": 0.5
     },
     "Ashton Jeanty": {
-      "receiving_yards": 25.5
-    },
-    "Tre Tucker": {
       "receiving_yards": 25.5
     },
     "AJ Barner": {
@@ -518,7 +518,7 @@
       "receiving_yards": 0.5
     },
     "Joe Burrow": {
-      "passing_yards": 288.5,
+      "passing_yards": 287.5,
       "rushing_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -614,9 +614,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4062,
+    "total_projections_returned": 4119,
     "matched_props": 262,
-    "excluded_goblin_demon_lines": 3306,
+    "excluded_goblin_demon_lines": 3360,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -655,5 +655,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T23:20:38.877537+00:00"
+  "fetched_at": "2026-11-10T23:40:38.842171+00:00"
 }
