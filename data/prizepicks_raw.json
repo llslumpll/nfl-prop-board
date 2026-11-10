@@ -20,18 +20,18 @@
       "receiving_yards": 48.5,
       "receptions": 4.5
     },
-    "Stefon Diggs": {
-      "receiving_yards": 41.5
-    },
     "Antonio Williams": {
       "receiving_yards": 41.5
+    },
+    "Stefon Diggs": {
+      "receiving_yards": 40.5
     },
     "Rachaad White": {
       "rushing_yards": 37.5,
       "receiving_yards": 12.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 35.5
+      "receiving_yards": 34.5
     },
     "Austin Ekeler": {
       "rushing_yards": 27.5,
@@ -52,7 +52,7 @@
       "receiving_yards": 13.5
     },
     "Theo Johnson": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "John Bates": {
       "receiving_yards": 0.5
@@ -200,13 +200,13 @@
       "rushing_yards": 4.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 75.5
+      "receiving_yards": 70.5
     },
     "Christian Watson": {
       "receiving_yards": 68.5
     },
     "Matthew Golden": {
-      "receiving_yards": 62.5
+      "receiving_yards": 66.5
     },
     "Tucker Kraft": {
       "receiving_yards": 42.5
@@ -416,15 +416,15 @@
       "rushing_yards": 37.5,
       "receiving_yards": 8.5
     },
+    "Mike Washington Jr.": {
+      "rushing_yards": 26.5,
+      "receptions": 0.5
+    },
     "Ashton Jeanty": {
       "receiving_yards": 25.5
     },
     "Tre Tucker": {
       "receiving_yards": 25.5
-    },
-    "Mike Washington Jr.": {
-      "rushing_yards": 25.5,
-      "receptions": 0.5
     },
     "AJ Barner": {
       "receiving_yards": 24.5
@@ -473,7 +473,7 @@
       "receiving_yards": 24.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Simi Fehoko": {
       "receiving_yards": 15.5,
@@ -484,7 +484,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 255.5,
+      "passing_yards": 254.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -573,7 +573,7 @@
       "rushing_yards": 21.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 191.5,
+      "passing_yards": 190.5,
       "rushing_yards": 11.5
     },
     "Derrick Henry": {
@@ -608,9 +608,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 3956,
+    "total_projections_returned": 3993,
     "matched_props": 260,
-    "excluded_goblin_demon_lines": 3208,
+    "excluded_goblin_demon_lines": 3242,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -649,5 +649,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T22:20:37.082387+00:00"
+  "fetched_at": "2026-11-10T22:40:41.605369+00:00"
 }

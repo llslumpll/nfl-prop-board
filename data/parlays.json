@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,27 +354,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "td-1": {
    "chance": 0.667,
-   "decimal": 2.439,
-   "ev": 0.627,
+   "decimal": 2.174,
+   "ev": 0.45,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.667,
-     "decimal": 2.439,
+     "decimal": 2.174,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.41,
+     "price": 0.46,
      "team": "SF"
     }
    ],
@@ -382,39 +382,39 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.3955,
-   "decimal": 4.602,
-   "ev": 0.82,
+   "decimal": 4.181,
+   "ev": 0.654,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.667,
-     "decimal": 2.439,
+     "decimal": 2.174,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.41,
+     "price": 0.46,
      "team": "SF"
     },
     {
      "chance": 0.593,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.53,
+     "price": 0.52,
      "team": "LA"
     }
    ],
@@ -422,51 +422,51 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.1784,
-   "decimal": 13.149,
-   "ev": 1.346,
+   "decimal": 10.196,
+   "ev": 0.819,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.667,
-     "decimal": 2.439,
+     "decimal": 2.174,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.41,
+     "price": 0.46,
      "team": "SF"
     },
     {
      "chance": 0.593,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.53,
+     "price": 0.52,
      "team": "LA"
     },
     {
      "chance": 0.451,
-     "decimal": 2.857,
+     "decimal": 2.439,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Javonte Williams anytime TD",
      "player": "Javonte Williams",
-     "price": 0.35,
+     "price": 0.41,
      "team": "DAL"
     }
    ],
@@ -474,51 +474,51 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.0805,
-   "decimal": 38.671,
-   "ev": 2.111,
+   "decimal": 29.988,
+   "ev": 1.413,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.667,
-     "decimal": 2.439,
+     "decimal": 2.174,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.41,
+     "price": 0.46,
      "team": "SF"
     },
     {
      "chance": 0.593,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.53,
+     "price": 0.52,
      "team": "LA"
     },
     {
      "chance": 0.451,
-     "decimal": 2.857,
+     "decimal": 2.439,
      "game": "DAL@SF",
      "good": true,
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "td",
      "label": "Javonte Williams anytime TD",
      "player": "Javonte Williams",
-     "price": 0.35,
+     "price": 0.41,
      "team": "DAL"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 22:20 UTC",
+   "updated": "2026-11-10 22:40 UTC",
    "week": 10
   }
  },
