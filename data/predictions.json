@@ -34639,9 +34639,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|rushing_yards|10": {
     "player": "Cam Ward",
@@ -34664,9 +34662,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Derrick Henry|rushing_yards|10": {
     "player": "Derrick Henry",
@@ -34689,6 +34685,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Rico Dowdle|rushing_yards|10": {
+    "player": "Rico Dowdle",
+    "team": "PIT",
+    "opponent": "CIN",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 44.7,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 26.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 18.2,
+    "model_prob": 0.6533,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-10 04:41 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
