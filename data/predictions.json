@@ -34775,9 +34775,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jayden Daniels|passing_yards|10": {
     "player": "Jayden Daniels",
@@ -35035,9 +35033,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordan Love|passing_yards|10": {
     "player": "Jordan Love",
@@ -35061,7 +35057,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Matthew Golden|receiving_yards|10": {
@@ -35168,8 +35165,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Travis Kelce|receiving_yards|10": {
@@ -35195,7 +35191,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Isaiah Likely|receptions|10": {
@@ -35349,9 +35346,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|10": {
     "player": "Ollie Gordon II",
@@ -35481,7 +35476,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -35690,7 +35684,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Christian Watson|receptions|10": {
     "player": "Christian Watson",
@@ -36399,7 +36396,11 @@
     "hit": null,
     "graded_at": null,
     "market_prob": 21.0,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyquan Thornton|any_td|10": {
     "player": "Tyquan Thornton",
@@ -37021,5 +37022,56 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Darren Waller|receiving_yards|10": {
+    "player": "Darren Waller",
+    "team": "CAR",
+    "opponent": "NO",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 42.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 28.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 13.8,
+    "model_prob": 0.6866,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-10 17:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Jahmyr Gibbs|rushing_yards|10": {
+    "player": "Jahmyr Gibbs",
+    "team": "DET",
+    "opponent": "NE",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 82.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 98.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -16.3,
+    "model_prob": 0.3425,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-10 17:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   }
 }

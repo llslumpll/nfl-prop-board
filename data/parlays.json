@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.1544,
-   "decimal": 11.52,
-   "ev": 0.779,
+   "decimal": 11.123,
+   "ev": 0.718,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 3.571,
+     "decimal": 3.448,
      "game": "DET@NE",
      "good": true,
      "kickoff": "2026-11-15T14:30:00+00:00",
      "kind": "td",
      "label": "Sam LaPorta anytime TD",
      "player": "Sam LaPorta",
-     "price": 0.28,
+     "price": 0.29,
      "team": "DET"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.051,
-   "decimal": 41.138,
-   "ev": 1.097,
+   "decimal": 39.721,
+   "ev": 1.025,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,14 +447,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 3.571,
+     "decimal": 3.448,
      "game": "DET@NE",
      "good": true,
      "kickoff": "2026-11-15T14:30:00+00:00",
      "kind": "td",
      "label": "Sam LaPorta anytime TD",
      "player": "Sam LaPorta",
-     "price": 0.28,
+     "price": 0.29,
      "team": "DET"
     },
     {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.0132,
-   "decimal": 257.113,
-   "ev": 2.394,
+   "decimal": 248.257,
+   "ev": 2.277,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,14 +499,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 3.571,
+     "decimal": 3.448,
      "game": "DET@NE",
      "good": true,
      "kickoff": "2026-11-15T14:30:00+00:00",
      "kind": "td",
      "label": "Sam LaPorta anytime TD",
      "player": "Sam LaPorta",
-     "price": 0.28,
+     "price": 0.29,
      "team": "DET"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-10 16:44 UTC",
+   "updated": "2026-11-10 17:00 UTC",
    "week": 10
   }
  },
