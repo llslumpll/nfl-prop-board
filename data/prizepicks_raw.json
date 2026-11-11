@@ -107,15 +107,15 @@
     },
     "Michael Penix Jr.": {
       "passing_yards": 213.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 6.5
+    },
+    "Bijan Robinson": {
+      "rushing_yards": 84.5,
+      "receiving_yards": 28.5
     },
     "Kenneth Walker III": {
       "rushing_yards": 83.5,
       "receiving_yards": 22.5
-    },
-    "Bijan Robinson": {
-      "rushing_yards": 82.5,
-      "receiving_yards": 28.5
     },
     "Drake London": {
       "receiving_yards": 72.5
@@ -127,17 +127,27 @@
       "receiving_yards": 47.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 3.5
     },
     "Josh Downs": {
-      "receiving_yards": 35.5
+      "receiving_yards": 32.5
     },
     "Jahan Dotson": {
       "receiving_yards": 28.5
     },
+    "Emmett Johnson": {
+      "receiving_yards": 12.5,
+      "rushing_yards": 9.5
+    },
     "Noah Gray": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
+      "receiving_yards": 11.5
+    },
+    "Khalil Herbert": {
+      "rushing_yards": 9.5
+    },
+    "Olamide Zaccheaus": {
+      "receiving_yards": 7.5
     },
     "Charlie Woerner": {
       "receiving_yards": 2.5
@@ -330,7 +340,7 @@
       "rushing_yards": 9.5
     },
     "Cam Ward": {
-      "passing_yards": 194.5,
+      "passing_yards": 201.5,
       "rushing_yards": 10.5
     },
     "Bhayshul Tuten": {
@@ -342,11 +352,10 @@
     },
     "Tony Pollard": {
       "rushing_yards": 57.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 10.5
     },
     "Carnell Tate": {
-      "receiving_yards": 53.5,
-      "receptions": 4.5
+      "receiving_yards": 52.5
     },
     "Brenton Strange": {
       "receiving_yards": 34.5
@@ -354,12 +363,14 @@
     "Wan'Dale Robinson": {
       "receiving_yards": 33.5
     },
-    "Gunnar Helm": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
-    },
     "Elic Ayomanor": {
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
+    },
+    "Gunnar Helm": {
+      "receiving_yards": 19.5
+    },
+    "Calvin Ridley": {
+      "receiving_yards": 11.5
     },
     "Bryce Young": {
       "passing_yards": 250.5,
@@ -519,11 +530,11 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 4.5
     },
     "George Kittle": {
-      "receiving_yards": 61.5
+      "receiving_yards": 62.5
     },
     "Kaelon Black": {
       "rushing_yards": 33.5,
@@ -629,9 +640,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4452,
-    "matched_props": 269,
-    "excluded_goblin_demon_lines": 3659,
+    "total_projections_returned": 4549,
+    "matched_props": 272,
+    "excluded_goblin_demon_lines": 3737,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -670,5 +681,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T03:40:40.615132+00:00"
+  "fetched_at": "2026-11-11T04:00:48.168917+00:00"
 }
