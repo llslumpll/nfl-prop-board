@@ -21,14 +21,14 @@
       "receptions": 4.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 41.5
+      "receiving_yards": 40.5
     },
     "Antonio Williams": {
       "receiving_yards": 39.5
     },
     "Rachaad White": {
       "rushing_yards": 37.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Treylon Burks": {
       "receiving_yards": 35.5
@@ -39,14 +39,15 @@
     },
     "Austin Ekeler": {
       "rushing_yards": 27.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Malachi Fields": {
       "receiving_yards": 26.5
     },
     "Devin Singletary": {
       "rushing_yards": 24.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -73,18 +74,18 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 77.5,
+      "receiving_yards": 78.5,
       "receptions": 7
     },
     "Jameson Williams": {
-      "receiving_yards": 55.5
+      "receiving_yards": 56.5
     },
     "Corey Kiner": {
       "rushing_yards": 51.5,
       "receiving_yards": 11.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 43.5
+      "receiving_yards": 42.5
     },
     "Hunter Henry": {
       "receiving_yards": 33.5
@@ -137,7 +138,7 @@
       "receiving_yards": 32.5
     },
     "Jahan Dotson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Emmett Johnson": {
       "receiving_yards": 12.5,
@@ -264,11 +265,11 @@
       "receiving_yards": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 240.5,
+      "passing_yards": 238.5,
       "rushing_yards": 8.5
     },
     "Deshaun Watson": {
-      "passing_yards": 208.5,
+      "passing_yards": 207.5,
       "rushing_yards": 28.5
     },
     "Woody Marks": {
@@ -301,8 +302,8 @@
       "receptions": 2.5
     },
     "Dylan Sampson": {
-      "receiving_yards": 21.5,
-      "rushing_yards": 20.5
+      "rushing_yards": 20.5,
+      "receiving_yards": 19.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 13.5,
@@ -376,7 +377,8 @@
       "receiving_yards": 11.5
     },
     "Carnell Tate": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 4.5
     },
     "Brenton Strange": {
       "receiving_yards": 35.5
@@ -481,12 +483,12 @@
     "AJ Barner": {
       "receiving_yards": 22.5
     },
+    "Cooper Kupp": {
+      "receiving_yards": 21.5
+    },
     "Michael Mayer": {
       "receiving_yards": 20.5,
       "receptions": 2.5
-    },
-    "Cooper Kupp": {
-      "receiving_yards": 20.5
     },
     "Jalen Nailor": {
       "receiving_yards": 11.5
@@ -555,7 +557,7 @@
       "receptions": 4.5
     },
     "George Kittle": {
-      "receiving_yards": 61.5
+      "receiving_yards": 62.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 38.5,
@@ -666,8 +668,8 @@
     "total_leagues": 141,
     "nfl_league_id": "9",
     "total_projections_returned": 4740,
-    "matched_props": 285,
-    "excluded_goblin_demon_lines": 3899,
+    "matched_props": 287,
+    "excluded_goblin_demon_lines": 3897,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -706,5 +708,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T13:40:42.740161+00:00"
+  "fetched_at": "2026-11-11T14:00:45.352063+00:00"
 }
