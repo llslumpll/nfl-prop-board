@@ -35139,9 +35139,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Christian Watson|receiving_yards|10": {
     "player": "Christian Watson",
@@ -37076,9 +37074,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jahmyr Gibbs|rushing_yards|10": {
     "player": "Jahmyr Gibbs",
@@ -37236,6 +37232,33 @@
     "model_prob": 0.7513,
     "signals": {},
     "frozen_at": "2026-11-11 14:22 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jakobi Meyers|receiving_yards|10": {
+    "player": "Jakobi Meyers",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 61.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 40.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 20.5,
+    "model_prob": 0.7849,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-11 15:40 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
