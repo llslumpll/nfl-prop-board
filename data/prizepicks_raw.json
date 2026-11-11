@@ -72,7 +72,7 @@
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5
+      "receiving_yards": 77.5
     },
     "Jameson Williams": {
       "receiving_yards": 56.5
@@ -102,20 +102,20 @@
       "receiving_yards": 0.5
     },
     "Patrick Mahomes": {
-      "passing_yards": 247.5,
+      "passing_yards": 244.5,
       "rushing_yards": 12.5
     },
     "Michael Penix Jr.": {
       "passing_yards": 213.5,
       "rushing_yards": 6.5
     },
-    "Kenneth Walker III": {
-      "rushing_yards": 84.5,
-      "receiving_yards": 22.5
-    },
     "Bijan Robinson": {
       "rushing_yards": 84.5,
       "receiving_yards": 28.5
+    },
+    "Kenneth Walker III": {
+      "rushing_yards": 83.5,
+      "receiving_yards": 22.5
     },
     "Drake London": {
       "receiving_yards": 72.5
@@ -341,18 +341,18 @@
     },
     "Cam Ward": {
       "passing_yards": 201.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Bhayshul Tuten": {
       "rushing_yards": 67.5,
       "receiving_yards": 10.5
     },
     "Parker Washington": {
-      "receiving_yards": 65.5
+      "receiving_yards": 63.5
     },
     "Tony Pollard": {
       "rushing_yards": 56.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Carnell Tate": {
       "receiving_yards": 52.5,
@@ -365,10 +365,10 @@
       "receiving_yards": 33.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 22.5
+      "receiving_yards": 21.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Calvin Ridley": {
       "receiving_yards": 11.5
@@ -545,7 +545,7 @@
       "receiving_yards": 0.5
     },
     "Joe Burrow": {
-      "passing_yards": 288.5,
+      "passing_yards": 287.5,
       "rushing_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -557,7 +557,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 73.5,
+      "receiving_yards": 76.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -579,7 +579,8 @@
       "receiving_yards": 13.5
     },
     "Darnell Washington": {
-      "receiving_yards": 28.5
+      "receiving_yards": 28.5,
+      "receptions": 2.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 24.5
@@ -592,7 +593,7 @@
       "receiving_yards": 7.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -640,9 +641,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4533,
-    "matched_props": 272,
-    "excluded_goblin_demon_lines": 3730,
+    "total_projections_returned": 4582,
+    "matched_props": 273,
+    "excluded_goblin_demon_lines": 3768,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -681,5 +682,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T04:20:42.497728+00:00"
+  "fetched_at": "2026-11-11T04:40:41.227760+00:00"
 }
