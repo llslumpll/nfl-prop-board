@@ -27,7 +27,7 @@
       "receiving_yards": 39.5
     },
     "Rachaad White": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 12.5
     },
     "Treylon Burks": {
@@ -44,7 +44,7 @@
       "receiving_yards": 25.5
     },
     "Devin Singletary": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 7.5
     },
     "Darnell Mooney": {
@@ -72,7 +72,7 @@
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 77.5
+      "receiving_yards": 78.5
     },
     "Jameson Williams": {
       "receiving_yards": 56.5
@@ -142,7 +142,7 @@
     },
     "Josh Allen": {
       "passing_yards": 227.5,
-      "rushing_yards": 26.5
+      "rushing_yards": 28.5
     },
     "Geno Smith": {
       "passing_yards": 218.5,
@@ -150,7 +150,7 @@
     },
     "James Cook III": {
       "rushing_yards": 91.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Breece Hall": {
@@ -166,10 +166,10 @@
       "receptions": 3.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 39.5
+      "receiving_yards": 41.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Braelon Allen": {
@@ -216,7 +216,7 @@
       "receiving_yards": 68.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Kaleb Johnson": {
       "rushing_yards": 33.5
@@ -228,7 +228,7 @@
       "rushing_yards": 16.5
     },
     "Pierre Strong Jr.": {
-      "rushing_yards": 15.5
+      "rushing_yards": 11.5
     },
     "T.J. Hockenson": {
       "receptions": 4.5
@@ -376,7 +376,7 @@
     },
     "Chris Olave": {
       "receiving_yards": 71.5,
-      "receptions": 5.5
+      "receptions": 6
     },
     "Tetairoa McMillan": {
       "receiving_yards": 60.5
@@ -629,9 +629,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4222,
+    "total_projections_returned": 4255,
     "matched_props": 267,
-    "excluded_goblin_demon_lines": 3454,
+    "excluded_goblin_demon_lines": 3486,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -670,5 +670,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T01:40:36.615143+00:00"
+  "fetched_at": "2026-11-11T02:00:39.788086+00:00"
 }
