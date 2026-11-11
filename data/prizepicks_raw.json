@@ -1,7 +1,7 @@
 {
   "props": {
     "Jayden Daniels": {
-      "passing_yards": 200.5,
+      "passing_yards": 199.5,
       "rushing_yards": 34.5
     },
     "J.J. McCarthy": {
@@ -21,14 +21,14 @@
       "receptions": 4.5
     },
     "Stefon Diggs": {
-      "receiving_yards": 40.5
+      "receiving_yards": 41.5
     },
     "Antonio Williams": {
       "receiving_yards": 39.5
     },
     "Rachaad White": {
-      "rushing_yards": 38.5,
-      "receiving_yards": 12.5
+      "rushing_yards": 37.5,
+      "receiving_yards": 13.5
     },
     "Treylon Burks": {
       "receiving_yards": 35.5
@@ -41,11 +41,11 @@
       "receiving_yards": 7.5
     },
     "Malachi Fields": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Devin Singletary": {
       "rushing_yards": 23.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -61,14 +61,15 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 268.5
+      "passing_yards": 268.5,
+      "rushing_yards": 0.5
     },
     "Drake Maye": {
       "passing_yards": 261.5,
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 97.5,
+      "rushing_yards": 98.5,
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
@@ -92,7 +93,7 @@
       "receiving_yards": 17.5
     },
     "Sione Vaki": {
-      "rushing_yards": 12.5,
+      "rushing_yards": 13.5,
       "receiving_yards": 1.5
     },
     "Tyler Conklin": {
@@ -128,7 +129,8 @@
       "receiving_yards": 47.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 3.5
     },
     "Josh Downs": {
       "receiving_yards": 32.5
@@ -463,12 +465,12 @@
     "AJ Barner": {
       "receiving_yards": 22.5
     },
+    "Cooper Kupp": {
+      "receiving_yards": 21.5
+    },
     "Michael Mayer": {
       "receiving_yards": 20.5,
       "receptions": 2.5
-    },
-    "Cooper Kupp": {
-      "receiving_yards": 20.5
     },
     "Jalen Nailor": {
       "receiving_yards": 11.5
@@ -520,7 +522,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 253.5,
+      "passing_yards": 255.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -647,9 +649,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4724,
-    "matched_props": 275,
-    "excluded_goblin_demon_lines": 3903,
+    "total_projections_returned": 4725,
+    "matched_props": 277,
+    "excluded_goblin_demon_lines": 3900,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -688,5 +690,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T12:00:42.032253+00:00"
+  "fetched_at": "2026-11-11T12:20:41.019821+00:00"
 }
