@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "td-3": {
-   "chance": 0.1345,
-   "decimal": 12.153,
-   "ev": 0.635,
+   "chance": 0.15,
+   "decimal": 10.079,
+   "ev": 0.512,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -458,29 +458,29 @@
      "team": "CIN"
     },
     {
-     "chance": 0.451,
-     "decimal": 2.941,
-     "game": "LV@SEA",
+     "chance": 0.503,
+     "decimal": 2.439,
+     "game": "NYG@WAS",
      "good": true,
-     "kickoff": "2026-11-15T21:05:00+00:00",
+     "kickoff": "2026-11-13T01:15:00+00:00",
      "kind": "td",
-     "label": "Ashton Jeanty anytime TD",
-     "player": "Ashton Jeanty",
-     "price": 0.34,
-     "team": "LV"
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.41,
+     "team": "NYG"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   },
   "td-4": {
-   "chance": 0.0529,
-   "decimal": 34.722,
-   "ev": 0.836,
+   "chance": 0.0677,
+   "decimal": 29.641,
+   "ev": 1.006,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -510,6 +510,18 @@
      "team": "CIN"
     },
     {
+     "chance": 0.503,
+     "decimal": 2.439,
+     "game": "NYG@WAS",
+     "good": true,
+     "kickoff": "2026-11-13T01:15:00+00:00",
+     "kind": "td",
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.41,
+     "team": "NYG"
+    },
+    {
      "chance": 0.451,
      "decimal": 2.941,
      "game": "LV@SEA",
@@ -520,25 +532,13 @@
      "player": "Ashton Jeanty",
      "price": 0.34,
      "team": "LV"
-    },
-    {
-     "chance": 0.393,
-     "decimal": 2.857,
-     "game": "CLE@HOU",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Nico Collins anytime TD",
-     "player": "Nico Collins",
-     "price": 0.35,
-     "team": "HOU"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:20 UTC",
+   "updated": "2026-11-11 08:40 UTC",
    "week": 10
   }
  },
