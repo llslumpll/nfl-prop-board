@@ -528,11 +528,11 @@
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 89.5,
+      "receiving_yards": 88.5,
       "receptions": 7.5
     },
     "Javonte Williams": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 65.5,
       "receiving_yards": 12.5
     },
     "Christian McCaffrey": {
@@ -548,7 +548,7 @@
     },
     "Kaelon Black": {
       "rushing_yards": 33.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 0.5
     },
     "Luke Farrell": {
       "receiving_yards": 0.5
@@ -651,9 +651,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4693,
+    "total_projections_returned": 4694,
     "matched_props": 279,
-    "excluded_goblin_demon_lines": 3867,
+    "excluded_goblin_demon_lines": 3869,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -692,5 +692,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T08:40:38.755002+00:00"
+  "fetched_at": "2026-11-11T09:00:43.043929+00:00"
 }
