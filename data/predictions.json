@@ -35790,10 +35790,10 @@
     "stat": "receptions",
     "projected": 0.0,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -5.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Out",
@@ -35803,7 +35803,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-11 01:00 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 01:00 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Chig Okonkwo|receptions|10": {
     "player": "Chig Okonkwo",
