@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.15,
-   "decimal": 9.901,
-   "ev": 0.485,
+   "decimal": 9.666,
+   "ev": 0.45,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -459,14 +459,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.439,
+     "decimal": 2.381,
      "game": "NYG@WAS",
      "good": true,
      "kickoff": "2026-11-13T01:15:00+00:00",
      "kind": "td",
      "label": "Cam Skattebo anytime TD",
      "player": "Cam Skattebo",
-     "price": 0.41,
+     "price": 0.42,
      "team": "NYG"
     }
    ],
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.059,
-   "decimal": 26.763,
-   "ev": 0.578,
+   "decimal": 26.127,
+   "ev": 0.541,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -511,14 +511,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.439,
+     "decimal": 2.381,
      "game": "NYG@WAS",
      "good": true,
      "kickoff": "2026-11-13T01:15:00+00:00",
      "kind": "td",
      "label": "Cam Skattebo anytime TD",
      "player": "Cam Skattebo",
-     "price": 0.41,
+     "price": 0.42,
      "team": "NYG"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:01 UTC",
+   "updated": "2026-11-11 16:20 UTC",
    "week": 10
   }
  },
