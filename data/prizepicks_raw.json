@@ -35,14 +35,14 @@
     },
     "Austin Ekeler": {
       "rushing_yards": 27.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Malachi Fields": {
       "receiving_yards": 25.5
     },
     "Devin Singletary": {
       "rushing_yards": 24.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -52,7 +52,7 @@
       "receiving_yards": 13.5
     },
     "Theo Johnson": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "John Bates": {
       "receiving_yards": 0.5
@@ -65,7 +65,7 @@
       "rushing_yards": 24.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 96.5,
+      "rushing_yards": 95.5,
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
@@ -78,7 +78,7 @@
       "rushing_yards": 52.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 43.5
+      "receiving_yards": 44.5
     },
     "Hunter Henry": {
       "receiving_yards": 33.5
@@ -200,10 +200,10 @@
       "rushing_yards": 4.5
     },
     "Kirk Cousins": {
-      "passing_yards": 219.5
+      "passing_yards": 218.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 70.5
+      "receiving_yards": 77.5
     },
     "Christian Watson": {
       "receiving_yards": 68.5
@@ -224,7 +224,10 @@
       "rushing_yards": 16.5
     },
     "Pierre Strong Jr.": {
-      "rushing_yards": 15.5
+      "rushing_yards": 13.5
+    },
+    "T.J. Hockenson": {
+      "receptions": 4.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -359,7 +362,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 236.5,
+      "passing_yards": 250.5,
       "rushing_yards": 14.5
     },
     "Chuba Hubbard": {
@@ -375,7 +378,7 @@
       "receiving_yards": 65.5
     },
     "Jalen Coker": {
-      "receiving_yards": 55.5
+      "receiving_yards": 50.5
     },
     "Devaughn Vele": {
       "receiving_yards": 35.5
@@ -424,18 +427,18 @@
       "receiving_yards": 9.5
     },
     "Jadarian Price": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 10.5,
       "receptions": 2
-    },
-    "Tre Tucker": {
-      "receiving_yards": 26.5
     },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
       "receptions": 0.5
     },
     "Ashton Jeanty": {
+      "receiving_yards": 25.5
+    },
+    "Tre Tucker": {
       "receiving_yards": 25.5
     },
     "AJ Barner": {
@@ -538,7 +541,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 76.5,
+      "receiving_yards": 75.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -622,9 +625,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4159,
-    "matched_props": 264,
-    "excluded_goblin_demon_lines": 3396,
+    "total_projections_returned": 4185,
+    "matched_props": 265,
+    "excluded_goblin_demon_lines": 3421,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -663,5 +666,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T00:20:41.224814+00:00"
+  "fetched_at": "2026-11-11T00:40:37.865211+00:00"
 }
