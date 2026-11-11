@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.1345,
-   "decimal": 12.521,
-   "ev": 0.684,
+   "decimal": 12.153,
+   "ev": 0.635,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -459,14 +459,14 @@
     },
     {
      "chance": 0.451,
-     "decimal": 3.03,
+     "decimal": 2.941,
      "game": "LV@SEA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Ashton Jeanty anytime TD",
      "player": "Ashton Jeanty",
-     "price": 0.33,
+     "price": 0.34,
      "team": "LV"
     }
    ],
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.0529,
-   "decimal": 35.772,
-   "ev": 0.891,
+   "decimal": 34.722,
+   "ev": 0.836,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -511,14 +511,14 @@
     },
     {
      "chance": 0.451,
-     "decimal": 3.03,
+     "decimal": 2.941,
      "game": "LV@SEA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Ashton Jeanty anytime TD",
      "player": "Ashton Jeanty",
-     "price": 0.33,
+     "price": 0.34,
      "team": "LV"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 08:00 UTC",
+   "updated": "2026-11-11 08:20 UTC",
    "week": 10
   }
  },
