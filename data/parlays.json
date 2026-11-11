@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.2983,
-   "decimal": 3.869,
-   "ev": 0.154,
+   "decimal": 4.229,
+   "ev": 0.261,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
+     "decimal": 2.326,
      "game": "CIN@PIT",
      "good": true,
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "td",
-     "label": "Ja'Marr Chase anytime TD",
-     "player": "Ja'Marr Chase",
-     "price": 0.47,
+     "label": "Tee Higgins anytime TD",
+     "player": "Tee Higgins",
+     "price": 0.43,
      "team": "CIN"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.15,
-   "decimal": 8.999,
-   "ev": 0.35,
+   "decimal": 10.314,
+   "ev": 0.547,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,18 +447,6 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
-     "game": "CIN@PIT",
-     "good": true,
-     "kickoff": "2026-11-16T01:20:00+00:00",
-     "kind": "td",
-     "label": "Ja'Marr Chase anytime TD",
-     "player": "Ja'Marr Chase",
-     "price": 0.47,
-     "team": "CIN"
-    },
-    {
-     "chance": 0.503,
      "decimal": 2.326,
      "game": "CIN@PIT",
      "good": true,
@@ -468,19 +456,31 @@
      "player": "Tee Higgins",
      "price": 0.43,
      "team": "CIN"
+    },
+    {
+     "chance": 0.503,
+     "decimal": 2.439,
+     "game": "NYG@WAS",
+     "good": true,
+     "kickoff": "2026-11-13T01:15:00+00:00",
+     "kind": "td",
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.41,
+     "team": "NYG"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   },
   "td-4": {
-   "chance": 0.0755,
-   "decimal": 22.497,
-   "ev": 0.698,
+   "chance": 0.059,
+   "decimal": 27.878,
+   "ev": 0.644,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,18 +499,6 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
-     "game": "CIN@PIT",
-     "good": true,
-     "kickoff": "2026-11-16T01:20:00+00:00",
-     "kind": "td",
-     "label": "Ja'Marr Chase anytime TD",
-     "player": "Ja'Marr Chase",
-     "price": 0.47,
-     "team": "CIN"
-    },
-    {
-     "chance": 0.503,
      "decimal": 2.326,
      "game": "CIN@PIT",
      "good": true,
@@ -523,22 +511,34 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.5,
+     "decimal": 2.439,
      "game": "NYG@WAS",
      "good": true,
      "kickoff": "2026-11-13T01:15:00+00:00",
      "kind": "td",
      "label": "Cam Skattebo anytime TD",
      "player": "Cam Skattebo",
-     "price": 0.4,
+     "price": 0.41,
      "team": "NYG"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.703,
+     "game": "CLE@HOU",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Nico Collins anytime TD",
+     "player": "Nico Collins",
+     "price": 0.37,
+     "team": "HOU"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 12:20 UTC",
+   "updated": "2026-11-11 12:40 UTC",
    "week": 10
   }
  },

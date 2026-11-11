@@ -1,7 +1,7 @@
 {
   "props": {
     "Jayden Daniels": {
-      "passing_yards": 199.5,
+      "passing_yards": 196.5,
       "rushing_yards": 34.5
     },
     "J.J. McCarthy": {
@@ -34,7 +34,8 @@
       "receiving_yards": 35.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 34.5
+      "receiving_yards": 34.5,
+      "receptions": 4
     },
     "Austin Ekeler": {
       "rushing_yards": 27.5,
@@ -44,7 +45,7 @@
       "receiving_yards": 26.5
     },
     "Devin Singletary": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 8.5
     },
     "Darnell Mooney": {
@@ -52,7 +53,7 @@
       "receptions": 1.5
     },
     "Van Jefferson": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Theo Johnson": {
       "receiving_yards": 4.5
@@ -73,7 +74,8 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5
+      "receiving_yards": 78.5,
+      "receptions": 7
     },
     "Jameson Williams": {
       "receiving_yards": 55.5,
@@ -107,7 +109,7 @@
       "rushing_yards": 9.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 213.5,
+      "passing_yards": 220.5,
       "rushing_yards": 6.5
     },
     "Kenneth Walker III": {
@@ -155,7 +157,7 @@
       "receiving_yards": 2.5
     },
     "Josh Allen": {
-      "passing_yards": 226.5,
+      "passing_yards": 227.5,
       "rushing_yards": 28.5
     },
     "Geno Smith": {
@@ -229,11 +231,25 @@
     "Matthew Golden": {
       "receiving_yards": 68.5
     },
+    "Jordan Mason": {
+      "rushing_yards": 43.5,
+      "receiving_yards": 3.5
+    },
+    "Jordan Addison": {
+      "receiving_yards": 41.5
+    },
     "Tucker Kraft": {
+      "receiving_yards": 37.5
+    },
+    "T.J. Hockenson": {
       "receiving_yards": 37.5
     },
     "Kaleb Johnson": {
       "rushing_yards": 33.5
+    },
+    "Aaron Jones Sr.": {
+      "rushing_yards": 27.5,
+      "receiving_yards": 9.5
     },
     "Savion Williams": {
       "receiving_yards": 19.5,
@@ -265,18 +281,18 @@
     "KC Concepcion Jr.": {
       "receiving_yards": 47.5
     },
-    "Denzel Boston": {
-      "receiving_yards": 46.5
-    },
     "Quinshon Judkins": {
       "rushing_yards": 44.5,
       "receiving_yards": 5.5
+    },
+    "Denzel Boston": {
+      "receiving_yards": 43.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 37.5
     },
     "Tank Dell": {
-      "receiving_yards": 35.5
+      "receiving_yards": 33.5
     },
     "Dalton Schultz": {
       "receiving_yards": 29.5
@@ -286,8 +302,8 @@
       "receptions": 2.5
     },
     "Dylan Sampson": {
-      "receiving_yards": 21.5,
-      "rushing_yards": 20.5
+      "rushing_yards": 20.5,
+      "receiving_yards": 19.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 13.5,
@@ -342,7 +358,7 @@
       "receiving_yards": 3.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 233.5,
+      "passing_yards": 231.5,
       "rushing_yards": 9.5
     },
     "Cam Ward": {
@@ -379,7 +395,7 @@
       "receiving_yards": 11.5
     },
     "Tyler Shough": {
-      "passing_yards": 252.5,
+      "passing_yards": 251.5,
       "rushing_yards": 14.5
     },
     "Bryce Young": {
@@ -452,12 +468,13 @@
       "receiving_yards": 11.5,
       "receptions": 2
     },
+    "Ashton Jeanty": {
+      "rushing_yards": 35.5,
+      "receiving_yards": 25.5
+    },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
       "receptions": 0.5
-    },
-    "Ashton Jeanty": {
-      "receiving_yards": 25.5
     },
     "Tre Tucker": {
       "receiving_yards": 25.5
@@ -649,9 +666,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4725,
-    "matched_props": 277,
-    "excluded_goblin_demon_lines": 3900,
+    "total_projections_returned": 4741,
+    "matched_props": 286,
+    "excluded_goblin_demon_lines": 3899,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -690,5 +707,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T12:20:41.019821+00:00"
+  "fetched_at": "2026-11-11T12:40:40.126819+00:00"
 }
