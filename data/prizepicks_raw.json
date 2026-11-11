@@ -61,11 +61,11 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 268.5
+      "passing_yards": 267.5
     },
     "Drake Maye": {
       "passing_yards": 260.5,
-      "rushing_yards": 24.5
+      "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 96.5,
@@ -78,7 +78,7 @@
       "receiving_yards": 56.5
     },
     "Corey Kiner": {
-      "rushing_yards": 50.5,
+      "rushing_yards": 51.5,
       "receiving_yards": 11.5
     },
     "Sam LaPorta": {
@@ -109,13 +109,13 @@
       "passing_yards": 213.5,
       "rushing_yards": 6.5
     },
+    "Kenneth Walker III": {
+      "rushing_yards": 84.5,
+      "receiving_yards": 22.5
+    },
     "Bijan Robinson": {
       "rushing_yards": 84.5,
       "receiving_yards": 28.5
-    },
-    "Kenneth Walker III": {
-      "rushing_yards": 83.5,
-      "receiving_yards": 22.5
     },
     "Drake London": {
       "receiving_yards": 72.5
@@ -336,12 +336,12 @@
       "receiving_yards": 3.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 239.5,
+      "passing_yards": 231.5,
       "rushing_yards": 9.5
     },
     "Cam Ward": {
       "passing_yards": 201.5,
-      "rushing_yards": 10.5
+      "rushing_yards": 11.5
     },
     "Bhayshul Tuten": {
       "rushing_yards": 67.5,
@@ -351,11 +351,12 @@
       "receiving_yards": 65.5
     },
     "Tony Pollard": {
-      "rushing_yards": 57.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 10.5
     },
     "Carnell Tate": {
-      "receiving_yards": 52.5
+      "receiving_yards": 52.5,
+      "receptions": 4.5
     },
     "Brenton Strange": {
       "receiving_yards": 34.5
@@ -367,7 +368,7 @@
       "receiving_yards": 22.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Calvin Ridley": {
       "receiving_yards": 11.5
@@ -544,7 +545,7 @@
       "receiving_yards": 0.5
     },
     "Joe Burrow": {
-      "passing_yards": 287.5,
+      "passing_yards": 288.5,
       "rushing_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -556,7 +557,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 73.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -578,8 +579,7 @@
       "receiving_yards": 13.5
     },
     "Darnell Washington": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 28.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 24.5
@@ -592,7 +592,7 @@
       "receiving_yards": 7.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -640,9 +640,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4549,
+    "total_projections_returned": 4533,
     "matched_props": 272,
-    "excluded_goblin_demon_lines": 3737,
+    "excluded_goblin_demon_lines": 3730,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -681,5 +681,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T04:00:48.168917+00:00"
+  "fetched_at": "2026-11-11T04:20:42.497728+00:00"
 }

@@ -34640,7 +34640,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tony Pollard|rushing_yards|10": {
     "player": "Tony Pollard",
@@ -37113,10 +37116,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Kyren Williams|rushing_yards|10": {
     "player": "Kyren Williams",
