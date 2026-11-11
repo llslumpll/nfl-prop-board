@@ -200,7 +200,7 @@
       "rushing_yards": 4.5
     },
     "Kirk Cousins": {
-      "passing_yards": 220.5
+      "passing_yards": 219.5
     },
     "Justin Jefferson": {
       "receiving_yards": 70.5
@@ -209,13 +209,22 @@
       "receiving_yards": 68.5
     },
     "Matthew Golden": {
-      "receiving_yards": 66.5
+      "receiving_yards": 68.5
     },
     "Tucker Kraft": {
       "receiving_yards": 42.5
     },
+    "Kaleb Johnson": {
+      "rushing_yards": 33.5
+    },
     "Savion Williams": {
       "receiving_yards": 18.5
+    },
+    "MarShawn Lloyd": {
+      "rushing_yards": 16.5
+    },
+    "Pierre Strong Jr.": {
+      "rushing_yards": 15.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -401,7 +410,7 @@
       "rushing_yards": 4.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 176.5,
+      "passing_yards": 182.5,
       "rushing_yards": 11.5
     },
     "Jaxon Smith-Njigba": {
@@ -411,13 +420,16 @@
       "receiving_yards": 59.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 58.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 9.5
     },
     "Jadarian Price": {
       "rushing_yards": 38.5,
       "receiving_yards": 10.5,
       "receptions": 2
+    },
+    "Tre Tucker": {
+      "receiving_yards": 26.5
     },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
@@ -426,11 +438,8 @@
     "Ashton Jeanty": {
       "receiving_yards": 25.5
     },
-    "Tre Tucker": {
-      "receiving_yards": 25.5
-    },
     "AJ Barner": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Michael Mayer": {
       "receiving_yards": 20.5,
@@ -613,9 +622,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4154,
-    "matched_props": 261,
-    "excluded_goblin_demon_lines": 3395,
+    "total_projections_returned": 4159,
+    "matched_props": 264,
+    "excluded_goblin_demon_lines": 3396,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -654,5 +663,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T00:00:46.059199+00:00"
+  "fetched_at": "2026-11-11T00:20:41.224814+00:00"
 }

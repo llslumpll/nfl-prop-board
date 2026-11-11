@@ -37130,10 +37130,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Blake Corum|rushing_yards|10": {
     "player": "Blake Corum",
@@ -37173,6 +37170,33 @@
       "injury_flagged": "Limited Participation in Practice"
     },
     "frozen_at": "2026-11-10 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Kaleb Johnson|rushing_yards|10": {
+    "player": "Kaleb Johnson",
+    "team": "GB",
+    "opponent": "MIN",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 12.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 33.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -21.1,
+    "model_prob": 0.01,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-11 00:20 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
