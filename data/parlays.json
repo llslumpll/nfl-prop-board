@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
   "td-1": {
@@ -365,46 +365,6 @@
    "good": true,
    "id": "td-1",
    "legs": [
-    {
-     "chance": 0.593,
-     "decimal": 1.786,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.56,
-     "team": "BUF"
-    }
-   ],
-   "name": "Touchdowns",
-   "size": 1,
-   "stake": 0.5,
-   "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
-   "week": 10
-  },
-  "td-2": {
-   "chance": 0.3516,
-   "decimal": 3.19,
-   "ev": 0.122,
-   "family": "td",
-   "good": true,
-   "id": "td-2",
-   "legs": [
-    {
-     "chance": 0.593,
-     "decimal": 1.786,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.56,
-     "team": "BUF"
-    },
     {
      "chance": 0.593,
      "decimal": 1.786,
@@ -419,32 +379,20 @@
     }
    ],
    "name": "Touchdowns",
-   "size": 2,
-   "stake": 1.0,
+   "size": 1,
+   "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
-  "td-3": {
-   "chance": 0.1769,
-   "decimal": 7.25,
-   "ev": 0.282,
+  "td-2": {
+   "chance": 0.2983,
+   "decimal": 4.06,
+   "ev": 0.211,
    "family": "td",
    "good": true,
-   "id": "td-3",
+   "id": "td-2",
    "legs": [
-    {
-     "chance": 0.593,
-     "decimal": 1.786,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.56,
-     "team": "BUF"
-    },
     {
      "chance": 0.593,
      "decimal": 1.786,
@@ -471,32 +419,20 @@
     }
    ],
    "name": "Touchdowns",
-   "size": 3,
-   "stake": 0.5,
+   "size": 2,
+   "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   },
-  "td-4": {
-   "chance": 0.089,
-   "decimal": 17.263,
-   "ev": 0.536,
+  "td-3": {
+   "chance": 0.15,
+   "decimal": 9.666,
+   "ev": 0.45,
    "family": "td",
    "good": true,
-   "id": "td-4",
+   "id": "td-3",
    "legs": [
-    {
-     "chance": 0.593,
-     "decimal": 1.786,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.56,
-     "team": "BUF"
-    },
     {
      "chance": 0.593,
      "decimal": 1.786,
@@ -535,10 +471,74 @@
     }
    ],
    "name": "Touchdowns",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-11 16:50 UTC",
+   "week": 10
+  },
+  "td-4": {
+   "chance": 0.059,
+   "decimal": 26.852,
+   "ev": 0.583,
+   "family": "td",
+   "good": true,
+   "id": "td-4",
+   "legs": [
+    {
+     "chance": 0.593,
+     "decimal": 1.786,
+     "game": "ARI@LA",
+     "good": true,
+     "kickoff": "2026-11-15T21:05:00+00:00",
+     "kind": "td",
+     "label": "Kyren Williams anytime TD",
+     "player": "Kyren Williams",
+     "price": 0.56,
+     "team": "LA"
+    },
+    {
+     "chance": 0.503,
+     "decimal": 2.273,
+     "game": "CIN@PIT",
+     "good": true,
+     "kickoff": "2026-11-16T01:20:00+00:00",
+     "kind": "td",
+     "label": "Tee Higgins anytime TD",
+     "player": "Tee Higgins",
+     "price": 0.44,
+     "team": "CIN"
+    },
+    {
+     "chance": 0.503,
+     "decimal": 2.381,
+     "game": "NYG@WAS",
+     "good": true,
+     "kickoff": "2026-11-13T01:15:00+00:00",
+     "kind": "td",
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.42,
+     "team": "NYG"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.778,
+     "game": "CLE@HOU",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Nico Collins anytime TD",
+     "player": "Nico Collins",
+     "price": 0.36,
+     "team": "HOU"
+    }
+   ],
+   "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 16:41 UTC",
+   "updated": "2026-11-11 16:50 UTC",
    "week": 10
   }
  },

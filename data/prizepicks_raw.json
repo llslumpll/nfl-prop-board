@@ -9,7 +9,7 @@
       "rushing_yards": 17.5
     },
     "Malik Nabers": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 67.5,
       "receptions": 5.5
     },
     "Cam Skattebo": {
@@ -24,12 +24,12 @@
       "receiving_yards": 40.5,
       "receptions": 4
     },
-    "Antonio Williams": {
-      "receiving_yards": 38.5
-    },
     "Rachaad White": {
       "rushing_yards": 37.5,
       "receiving_yards": 12.5
+    },
+    "Antonio Williams": {
+      "receiving_yards": 37.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 35.5,
@@ -45,7 +45,7 @@
       "receptions": 1.5
     },
     "Malachi Fields": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Devin Singletary": {
       "rushing_yards": 23.5,
@@ -76,7 +76,7 @@
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 77.5,
+      "receiving_yards": 78.5,
       "receptions": 7
     },
     "Jameson Williams": {
@@ -115,13 +115,13 @@
       "passing_yards": 220.5,
       "rushing_yards": 6.5
     },
+    "Kenneth Walker III": {
+      "rushing_yards": 85.5,
+      "receiving_yards": 22.5
+    },
     "Bijan Robinson": {
       "rushing_yards": 84.5,
       "receiving_yards": 28.5
-    },
-    "Kenneth Walker III": {
-      "rushing_yards": 83.5,
-      "receiving_yards": 22.5
     },
     "Drake London": {
       "receiving_yards": 72.5,
@@ -423,7 +423,7 @@
     "Chuba Hubbard": {
       "rushing_yards": 74.5,
       "receiving_yards": 18.5,
-      "receptions": 3.5
+      "receptions": 3
     },
     "Chris Olave": {
       "receiving_yards": 71.5,
@@ -684,9 +684,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 5123,
+    "total_projections_returned": 5141,
     "matched_props": 298,
-    "excluded_goblin_demon_lines": 4161,
+    "excluded_goblin_demon_lines": 4173,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -725,5 +725,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T16:41:22.750427+00:00"
+  "fetched_at": "2026-11-11T16:49:57.570726+00:00"
 }
