@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.2983,
-   "decimal": 3.801,
-   "ev": 0.134,
+   "decimal": 3.72,
+   "ev": 0.11,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
+     "decimal": 2.083,
      "game": "CIN@PIT",
      "good": true,
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "td",
      "label": "Ja'Marr Chase anytime TD",
      "player": "Ja'Marr Chase",
-     "price": 0.47,
+     "price": 0.48,
      "team": "CIN"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.15,
-   "decimal": 8.639,
-   "ev": 0.296,
+   "decimal": 8.456,
+   "ev": 0.269,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,14 +447,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
+     "decimal": 2.083,
      "game": "CIN@PIT",
      "good": true,
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "td",
      "label": "Ja'Marr Chase anytime TD",
      "player": "Ja'Marr Chase",
-     "price": 0.47,
+     "price": 0.48,
      "team": "CIN"
     },
     {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.0755,
-   "decimal": 21.597,
-   "ev": 0.63,
+   "decimal": 21.14,
+   "ev": 0.595,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,14 +499,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
+     "decimal": 2.083,
      "game": "CIN@PIT",
      "good": true,
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "td",
      "label": "Ja'Marr Chase anytime TD",
      "player": "Ja'Marr Chase",
-     "price": 0.47,
+     "price": 0.48,
      "team": "CIN"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 09:00 UTC",
+   "updated": "2026-11-11 09:20 UTC",
    "week": 10
   }
  },
