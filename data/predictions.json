@@ -35162,7 +35162,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Travis Kelce|receiving_yards|10": {
     "player": "Travis Kelce",
@@ -35186,10 +35189,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receptions|10": {
     "player": "Isaiah Likely",
