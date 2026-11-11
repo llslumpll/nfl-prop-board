@@ -224,7 +224,8 @@
       "rushing_yards": 33.5
     },
     "Savion Williams": {
-      "receiving_yards": 18.5
+      "receiving_yards": 18.5,
+      "rushing_yards": 3.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 12.5
@@ -381,7 +382,7 @@
       "receiving_yards": 60.5
     },
     "Jalen Coker": {
-      "receiving_yards": 49.5
+      "receiving_yards": 50.5
     },
     "Devaughn Vele": {
       "receiving_yards": 35.5
@@ -628,9 +629,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4393,
-    "matched_props": 268,
-    "excluded_goblin_demon_lines": 3613,
+    "total_projections_returned": 4403,
+    "matched_props": 269,
+    "excluded_goblin_demon_lines": 3618,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -669,5 +670,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T03:00:44.066783+00:00"
+  "fetched_at": "2026-11-11T03:18:06.856692+00:00"
 }
