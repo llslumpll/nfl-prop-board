@@ -33859,7 +33859,10 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Josh Jacobs|any_td|9": {
     "player": "Josh Jacobs",
@@ -36915,10 +36918,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Dameon Pierce|any_td|11": {
     "player": "Dameon Pierce",
