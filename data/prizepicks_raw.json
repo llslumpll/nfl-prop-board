@@ -215,8 +215,7 @@
       "receiving_yards": 42.5
     },
     "Savion Williams": {
-      "receiving_yards": 22.5,
-      "receptions": 2.5
+      "receiving_yards": 18.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -420,9 +419,6 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "Tre Tucker": {
-      "receiving_yards": 26.5
-    },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
       "receptions": 0.5
@@ -430,8 +426,11 @@
     "Ashton Jeanty": {
       "receiving_yards": 25.5
     },
+    "Tre Tucker": {
+      "receiving_yards": 25.5
+    },
     "AJ Barner": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Michael Mayer": {
       "receiving_yards": 20.5,
@@ -491,7 +490,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 254.5,
+      "passing_yards": 255.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -614,9 +613,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4116,
-    "matched_props": 262,
-    "excluded_goblin_demon_lines": 3357,
+    "total_projections_returned": 4154,
+    "matched_props": 261,
+    "excluded_goblin_demon_lines": 3395,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -655,5 +654,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-10T23:47:50.188171+00:00"
+  "fetched_at": "2026-11-11T00:00:46.059199+00:00"
 }
