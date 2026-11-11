@@ -34781,7 +34781,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jayden Daniels|passing_yards|10": {
     "player": "Jayden Daniels",
@@ -34990,7 +34992,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Brock Purdy|passing_yards|10": {
@@ -35035,10 +35038,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordan Love|passing_yards|10": {
     "player": "Jordan Love",
@@ -35192,9 +35192,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Isaiah Likely|receptions|10": {
     "player": "Isaiah Likely",
@@ -37122,7 +37120,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kyren Williams|rushing_yards|10": {
     "player": "Kyren Williams",
