@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,15 +422,15 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "td-3": {
-   "chance": 0.199,
-   "decimal": 6.272,
-   "ev": 0.248,
+   "chance": 0.1345,
+   "decimal": 12.731,
+   "ev": 0.713,
    "family": "td",
-   "good": false,
+   "good": true,
    "id": "td-3",
    "legs": [
     {
@@ -458,31 +458,31 @@
      "team": "CIN"
     },
     {
-     "chance": 0.667,
-     "decimal": 1.449,
-     "game": "DAL@SF",
-     "good": false,
-     "kickoff": "2026-11-15T21:25:00+00:00",
+     "chance": 0.451,
+     "decimal": 2.941,
+     "game": "LV@SEA",
+     "good": true,
+     "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
-     "label": "Christian McCaffrey anytime TD",
-     "player": "Christian McCaffrey",
-     "price": 0.69,
-     "team": "SF"
+     "label": "Ashton Jeanty anytime TD",
+     "player": "Ashton Jeanty",
+     "price": 0.34,
+     "team": "LV"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   },
   "td-4": {
-   "chance": 0.1327,
-   "decimal": 9.226,
-   "ev": 0.224,
+   "chance": 0.0529,
+   "decimal": 34.411,
+   "ev": 0.819,
    "family": "td",
-   "good": false,
+   "good": true,
    "id": "td-4",
    "legs": [
     {
@@ -510,35 +510,35 @@
      "team": "CIN"
     },
     {
-     "chance": 0.667,
-     "decimal": 1.449,
-     "game": "DAL@SF",
-     "good": false,
-     "kickoff": "2026-11-15T21:25:00+00:00",
+     "chance": 0.451,
+     "decimal": 2.941,
+     "game": "LV@SEA",
+     "good": true,
+     "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
-     "label": "Christian McCaffrey anytime TD",
-     "player": "Christian McCaffrey",
-     "price": 0.69,
-     "team": "SF"
+     "label": "Ashton Jeanty anytime TD",
+     "player": "Ashton Jeanty",
+     "price": 0.34,
+     "team": "LV"
     },
     {
-     "chance": 0.667,
-     "decimal": 1.471,
-     "game": "DET@NE",
-     "good": false,
-     "kickoff": "2026-11-15T14:30:00+00:00",
+     "chance": 0.393,
+     "decimal": 2.703,
+     "game": "CLE@HOU",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
-     "label": "Jahmyr Gibbs anytime TD",
-     "player": "Jahmyr Gibbs",
-     "price": 0.68,
-     "team": "DET"
+     "label": "Nico Collins anytime TD",
+     "player": "Nico Collins",
+     "price": 0.37,
+     "team": "HOU"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 05:20 UTC",
+   "updated": "2026-11-11 05:40 UTC",
    "week": 10
   }
  },

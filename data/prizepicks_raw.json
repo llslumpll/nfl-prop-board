@@ -27,7 +27,7 @@
       "receiving_yards": 39.5
     },
     "Rachaad White": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 13.5
     },
     "Treylon Burks": {
@@ -44,7 +44,7 @@
       "receiving_yards": 26.5
     },
     "Devin Singletary": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 8.5
     },
     "Darnell Mooney": {
@@ -65,18 +65,18 @@
       "rushing_yards": 0.5
     },
     "Drake Maye": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 77.5
     },
     "Jameson Williams": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 56.5,
       "receptions": 3.5
     },
     "Corey Kiner": {
@@ -159,7 +159,7 @@
       "rushing_yards": 28.5
     },
     "Geno Smith": {
-      "passing_yards": 220.5,
+      "passing_yards": 218.5,
       "rushing_yards": 6.5
     },
     "James Cook III": {
@@ -236,7 +236,7 @@
       "rushing_yards": 33.5
     },
     "Savion Williams": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 18.5,
       "rushing_yards": 3.5
     },
     "MarShawn Lloyd": {
@@ -253,8 +253,8 @@
       "rushing_yards": 6.5
     },
     "Deshaun Watson": {
-      "passing_yards": 205.5,
-      "rushing_yards": 28.5
+      "passing_yards": 208.5,
+      "rushing_yards": 27.5
     },
     "Woody Marks": {
       "rushing_yards": 64.5
@@ -273,8 +273,7 @@
       "receiving_yards": 5.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 34.5,
-      "receptions": 3.5
+      "receiving_yards": 34.5
     },
     "Tank Dell": {
       "receiving_yards": 33.5
@@ -288,8 +287,8 @@
       "receptions": 2.5
     },
     "Dylan Sampson": {
-      "rushing_yards": 20.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 19.5,
+      "rushing_yards": 19.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 12.5,
@@ -379,13 +378,13 @@
     "Calvin Ridley": {
       "receiving_yards": 11.5
     },
-    "Tyler Shough": {
-      "passing_yards": 252.5,
-      "rushing_yards": 14.5
-    },
     "Bryce Young": {
       "passing_yards": 250.5,
       "rushing_yards": 6.5
+    },
+    "Tyler Shough": {
+      "passing_yards": 250.5,
+      "rushing_yards": 14.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 74.5,
@@ -431,11 +430,11 @@
       "receiving_yards": 0.5
     },
     "Drew Lock": {
-      "passing_yards": 206.5,
+      "passing_yards": 204.5,
       "rushing_yards": 6.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 179.5,
+      "passing_yards": 176.5,
       "rushing_yards": 11.5
     },
     "Jaxon Smith-Njigba": {
@@ -646,9 +645,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4668,
-    "matched_props": 276,
-    "excluded_goblin_demon_lines": 3846,
+    "total_projections_returned": 4697,
+    "matched_props": 275,
+    "excluded_goblin_demon_lines": 3873,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -687,5 +686,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T05:20:41.303602+00:00"
+  "fetched_at": "2026-11-11T05:40:40.313533+00:00"
 }
