@@ -35465,9 +35465,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Penix Jr.|rushing_yards|10": {
     "player": "Michael Penix Jr.",
@@ -37293,5 +37291,28 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": []
+  },
+  "Seth McGowan|rushing_yards|10": {
+    "player": "Seth McGowan",
+    "team": "IND",
+    "opponent": "MIA",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 40.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 23.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 17.1,
+    "model_prob": 0.7778,
+    "signals": {},
+    "frozen_at": "2026-11-11 23:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
