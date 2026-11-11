@@ -78,7 +78,8 @@
       "receiving_yards": 56.5
     },
     "Corey Kiner": {
-      "rushing_yards": 52.5
+      "rushing_yards": 50.5,
+      "receiving_yards": 11.5
     },
     "Sam LaPorta": {
       "receiving_yards": 44.5
@@ -91,7 +92,8 @@
       "receptions": 1.5
     },
     "Sione Vaki": {
-      "rushing_yards": 12.5
+      "rushing_yards": 12.5,
+      "receiving_yards": 1.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5
@@ -153,13 +155,13 @@
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
+    "Garrett Wilson": {
+      "receiving_yards": 63.5,
+      "receptions": 5.5
+    },
     "Breece Hall": {
       "rushing_yards": 56.5,
       "receiving_yards": 17.5
-    },
-    "Garrett Wilson": {
-      "receiving_yards": 53.5,
-      "receptions": 5.5
     },
     "DJ Moore": {
       "receiving_yards": 45.5,
@@ -216,22 +218,19 @@
       "receiving_yards": 68.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Kaleb Johnson": {
       "rushing_yards": 33.5
     },
     "Savion Williams": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 16.5
+      "rushing_yards": 12.5
     },
     "Pierre Strong Jr.": {
-      "rushing_yards": 11.5
-    },
-    "T.J. Hockenson": {
-      "receptions": 4.5
+      "rushing_yards": 10.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -629,9 +628,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4255,
-    "matched_props": 267,
-    "excluded_goblin_demon_lines": 3486,
+    "total_projections_returned": 4292,
+    "matched_props": 268,
+    "excluded_goblin_demon_lines": 3518,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -670,5 +669,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T02:00:39.788086+00:00"
+  "fetched_at": "2026-11-11T02:20:40.694440+00:00"
 }

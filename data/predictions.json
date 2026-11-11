@@ -33859,10 +33859,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Josh Jacobs|any_td|9": {
     "player": "Josh Jacobs",
@@ -36607,7 +36604,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Kayshon Boutte|any_td|10": {
     "player": "Kayshon Boutte",
@@ -36913,7 +36914,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Dameon Pierce|any_td|11": {
     "player": "Dameon Pierce",
