@@ -61,21 +61,22 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 267.5
+      "passing_yards": 267.5,
+      "rushing_yards": 0.5
     },
     "Drake Maye": {
-      "passing_yards": 259.5,
+      "passing_yards": 261.5,
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 96.5,
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 77.5
     },
     "Jameson Williams": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 55.5,
       "receptions": 3.5
     },
     "Corey Kiner": {
@@ -83,14 +84,13 @@
       "receiving_yards": 11.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 44.5
+      "receiving_yards": 43.5
     },
     "Hunter Henry": {
       "receiving_yards": 33.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
+      "receiving_yards": 17.5
     },
     "Sione Vaki": {
       "rushing_yards": 11.5,
@@ -450,7 +450,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 44.5,
-      "receiving_yards": 11.5,
+      "receiving_yards": 9.5,
       "receptions": 2
     },
     "Mike Washington Jr.": {
@@ -519,7 +519,7 @@
       "receptions": 1.5
     },
     "Dak Prescott": {
-      "passing_yards": 263.5,
+      "passing_yards": 262.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
@@ -527,7 +527,7 @@
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 88.5,
+      "receiving_yards": 89.5,
       "receptions": 7.5
     },
     "Javonte Williams": {
@@ -651,9 +651,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4694,
+    "total_projections_returned": 4693,
     "matched_props": 279,
-    "excluded_goblin_demon_lines": 3869,
+    "excluded_goblin_demon_lines": 3868,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -692,5 +692,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T09:40:39.029991+00:00"
+  "fetched_at": "2026-11-11T10:00:41.815110+00:00"
 }
