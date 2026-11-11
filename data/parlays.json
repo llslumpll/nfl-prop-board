@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,27 +354,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "td-1": {
    "chance": 0.593,
-   "decimal": 1.852,
-   "ev": 0.098,
+   "decimal": 1.818,
+   "ev": 0.078,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.818,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.55,
      "team": "LA"
     }
    ],
@@ -382,27 +382,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.2983,
-   "decimal": 4.21,
-   "ev": 0.256,
+   "decimal": 4.132,
+   "ev": 0.232,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.818,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.55,
      "team": "LA"
     },
     {
@@ -422,27 +422,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.15,
-   "decimal": 10.023,
-   "ev": 0.504,
+   "decimal": 9.839,
+   "ev": 0.476,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.818,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.55,
      "team": "LA"
     },
     {
@@ -474,27 +474,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   },
   "td-4": {
-   "chance": 0.0677,
-   "decimal": 30.37,
-   "ev": 1.055,
+   "chance": 0.059,
+   "decimal": 27.333,
+   "ev": 0.612,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.818,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.55,
      "team": "LA"
     },
     {
@@ -522,23 +522,23 @@
      "team": "NYG"
     },
     {
-     "chance": 0.451,
-     "decimal": 3.03,
-     "game": "LV@SEA",
+     "chance": 0.393,
+     "decimal": 2.778,
+     "game": "CLE@HOU",
      "good": true,
-     "kickoff": "2026-11-15T21:05:00+00:00",
+     "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
-     "label": "Ashton Jeanty anytime TD",
-     "player": "Ashton Jeanty",
-     "price": 0.33,
-     "team": "LV"
+     "label": "Nico Collins anytime TD",
+     "player": "Nico Collins",
+     "price": 0.36,
+     "team": "HOU"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-11 17:01 UTC",
+   "updated": "2026-11-11 17:20 UTC",
    "week": 10
   }
  },

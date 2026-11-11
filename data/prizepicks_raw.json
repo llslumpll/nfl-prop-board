@@ -24,15 +24,15 @@
       "receiving_yards": 40.5,
       "receptions": 4
     },
+    "Antonio Williams": {
+      "receiving_yards": 38.5
+    },
     "Rachaad White": {
       "rushing_yards": 37.5,
       "receiving_yards": 12.5
     },
-    "Antonio Williams": {
-      "receiving_yards": 37.5
-    },
     "Chig Okonkwo": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 34.5,
       "receptions": 4
     },
     "Treylon Burks": {
@@ -273,7 +273,7 @@
       "rushing_yards": 8.5
     },
     "Deshaun Watson": {
-      "passing_yards": 205.5,
+      "passing_yards": 206.5,
       "rushing_yards": 28.5
     },
     "Woody Marks": {
@@ -310,12 +310,12 @@
       "receiving_yards": 21.5,
       "rushing_yards": 19.5
     },
-    "Kayshon Boutte": {
+    "Marvin Harrison Jr.": {
       "receiving_yards": 16.5,
       "receptions": 1.5
     },
-    "Marvin Harrison Jr.": {
-      "receiving_yards": 16.5,
+    "Kayshon Boutte": {
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Jerry Jeudy": {
@@ -323,7 +323,7 @@
       "receptions": 1.5
     },
     "Foster Moreau": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -387,7 +387,8 @@
       "receiving_yards": 11.5
     },
     "Carnell Tate": {
-      "receiving_yards": 53.5
+      "receiving_yards": 51.5,
+      "receptions": 4.5
     },
     "Jakobi Meyers": {
       "receiving_yards": 40.5,
@@ -426,14 +427,14 @@
       "receptions": 3
     },
     "Chris Olave": {
-      "receiving_yards": 71.5,
+      "receiving_yards": 74.5,
       "receptions": 6
     },
     "Tetairoa McMillan": {
       "receiving_yards": 64.5
     },
     "Jalen Coker": {
-      "receiving_yards": 48.5
+      "receiving_yards": 47.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 32.5,
@@ -444,7 +445,8 @@
       "receptions": 3.5
     },
     "Darren Waller": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5,
+      "receptions": 2.5
     },
     "Juwan Johnson": {
       "receiving_yards": 27.5
@@ -614,7 +616,7 @@
       "receiving_yards": 48.5
     },
     "Chase Brown": {
-      "rushing_yards": 43.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 24.5
     },
     "Rico Dowdle": {
@@ -684,11 +686,12 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 5167,
-    "matched_props": 298,
-    "excluded_goblin_demon_lines": 4191,
+    "total_projections_returned": 5253,
+    "matched_props": 300,
+    "excluded_goblin_demon_lines": 4270,
     "sample_stat_types_seen": [
       "anytime tds",
+      "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
       "consecutive pass completions",
@@ -716,8 +719,7 @@
       "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
-      "passer rating",
-      "pat made (combo)"
+      "passer rating"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -725,5 +727,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T17:00:49.217056+00:00"
+  "fetched_at": "2026-11-11T17:20:44.507098+00:00"
 }
