@@ -27,8 +27,11 @@
       "receiving_yards": 39.5
     },
     "Rachaad White": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 12.5
+    },
+    "Treylon Burks": {
+      "receiving_yards": 36.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 34.5
@@ -41,7 +44,7 @@
       "receiving_yards": 25.5
     },
     "Devin Singletary": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 7.5
     },
     "Darnell Mooney": {
@@ -142,7 +145,7 @@
       "rushing_yards": 26.5
     },
     "Geno Smith": {
-      "passing_yards": 219.5,
+      "passing_yards": 218.5,
       "rushing_yards": 6.5
     },
     "James Cook III": {
@@ -213,7 +216,7 @@
       "receiving_yards": 68.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Kaleb Johnson": {
       "rushing_yards": 33.5
@@ -626,9 +629,9 @@
   "diagnostics": {
     "total_leagues": 141,
     "nfl_league_id": "9",
-    "total_projections_returned": 4215,
-    "matched_props": 266,
-    "excluded_goblin_demon_lines": 3448,
+    "total_projections_returned": 4222,
+    "matched_props": 267,
+    "excluded_goblin_demon_lines": 3454,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -667,5 +670,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-11T01:20:39.794282+00:00"
+  "fetched_at": "2026-11-11T01:40:36.615143+00:00"
 }
