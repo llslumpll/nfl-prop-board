@@ -13,7 +13,7 @@
       "receptions": 5.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 53.5,
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
@@ -72,7 +72,7 @@
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 97.5,
+      "rushing_yards": 95.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -510,7 +510,7 @@
       "receiving_yards": 22.5
     },
     "Michael Mayer": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
@@ -545,10 +545,10 @@
     },
     "Blake Corum": {
       "rushing_yards": 56.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Tyler Allgeier": {
-      "rushing_yards": 43.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 11.5
     },
     "Reggie Virgil": {
@@ -710,9 +710,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5736,
+    "total_projections_returned": 5738,
     "matched_props": 312,
-    "excluded_goblin_demon_lines": 4696,
+    "excluded_goblin_demon_lines": 4698,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -751,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T03:40:41.743787+00:00"
+  "fetched_at": "2026-11-12T04:00:43.550958+00:00"
 }
