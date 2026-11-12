@@ -35,14 +35,14 @@
       "receiving_yards": 33.5,
       "receptions": 4
     },
-    "Treylon Burks": {
-      "receiving_yards": 30.5,
-      "receptions": 2
-    },
     "Austin Ekeler": {
       "rushing_yards": 29.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
+    },
+    "Treylon Burks": {
+      "receiving_yards": 28.5,
+      "receptions": 2
     },
     "Malachi Fields": {
       "receiving_yards": 25.5
@@ -59,7 +59,7 @@
       "receiving_yards": 7.5
     },
     "Theo Johnson": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "John Bates": {
       "receiving_yards": 0.5
@@ -308,7 +308,7 @@
     },
     "Dylan Sampson": {
       "receiving_yards": 21.5,
-      "rushing_yards": 20.5
+      "rushing_yards": 19.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -355,7 +355,7 @@
       "receptions": 3.5
     },
     "Malik Washington": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 3.5
     },
     "Laquon Treadwell": {
@@ -436,13 +436,13 @@
       "receptions": 6
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 66.5
+      "receiving_yards": 65.5
     },
     "Jalen Coker": {
       "receiving_yards": 44.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 43.5,
       "receptions": 4.5
     },
     "Darren Waller": {
@@ -453,7 +453,7 @@
       "receiving_yards": 27.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 21.5,
       "receptions": 2.5
     },
     "Tommy Tremble": {
@@ -477,7 +477,7 @@
       "rushing_yards": 5.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 176.5,
+      "passing_yards": 180.5,
       "rushing_yards": 12.5
     },
     "Jaxon Smith-Njigba": {
@@ -514,7 +514,7 @@
       "receptions": 2.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Jalen Nailor": {
       "receiving_yards": 13.5
@@ -529,11 +529,11 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 210.5
+      "passing_yards": 213.5
     },
     "Carson Beck": {
-      "passing_yards": 180.5,
-      "rushing_yards": 14.5
+      "passing_yards": 177.5,
+      "rushing_yards": 13.5
     },
     "Trey McBride": {
       "receiving_yards": 65.5
@@ -552,7 +552,7 @@
       "receptions": 2.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Elijah Higgins": {
       "receiving_yards": 17.5
@@ -626,11 +626,11 @@
       "receiving_yards": 48.5
     },
     "Chase Brown": {
-      "rushing_yards": 44.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 24.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 13.5
     },
     "Darnell Washington": {
@@ -710,9 +710,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5634,
+    "total_projections_returned": 5665,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4597,
+    "excluded_goblin_demon_lines": 4630,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -751,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T00:20:41.423104+00:00"
+  "fetched_at": "2026-11-12T00:40:44.099209+00:00"
 }
