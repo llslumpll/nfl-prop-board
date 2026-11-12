@@ -195,7 +195,7 @@
       "receiving_yards": 36.5
     },
     "Braelon Allen": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 34.5,
       "receiving_yards": 7.5
     },
     "Omar Cooper Jr.": {
@@ -290,7 +290,7 @@
       "receiving_yards": 47.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 44.5,
+      "rushing_yards": 43.5,
       "receiving_yards": 5.5
     },
     "Harold Fannin Jr.": {
@@ -309,7 +309,7 @@
     },
     "Dylan Sampson": {
       "receiving_yards": 21.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -420,7 +420,7 @@
     },
     "Tyler Shough": {
       "passing_yards": 252.5,
-      "rushing_yards": 14.5
+      "rushing_yards": 16.5
     },
     "Bryce Young": {
       "passing_yards": 250.5,
@@ -626,7 +626,7 @@
       "receptions": 5.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 61.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 27.5
     },
     "DK Metcalf": {
@@ -720,9 +720,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5983,
+    "total_projections_returned": 6046,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4871,
+    "excluded_goblin_demon_lines": 4933,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -761,5 +761,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T10:00:55.410992+00:00"
+  "fetched_at": "2026-11-12T10:20:40.258729+00:00"
 }
