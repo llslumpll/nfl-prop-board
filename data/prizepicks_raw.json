@@ -56,7 +56,7 @@
       "receptions": 1.5
     },
     "Van Jefferson": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Theo Johnson": {
       "receiving_yards": 5.5
@@ -317,8 +317,7 @@
       "receiving_yards": 20.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
+      "receiving_yards": 17.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 15.5,
@@ -377,7 +376,7 @@
     },
     "Trevor Lawrence": {
       "passing_yards": 238.5,
-      "rushing_yards": 7.5
+      "rushing_yards": 8.5
     },
     "Cam Ward": {
       "passing_yards": 201.5,
@@ -439,7 +438,7 @@
       "receptions": 6
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 67.5
+      "receiving_yards": 66.5
     },
     "Jalen Coker": {
       "receiving_yards": 44.5
@@ -545,8 +544,8 @@
       "receiving_yards": 21.5
     },
     "Blake Corum": {
-      "rushing_yards": 55.5,
-      "receiving_yards": 7.5
+      "rushing_yards": 56.5,
+      "receiving_yards": 6.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 43.5,
@@ -711,8 +710,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5738,
-    "matched_props": 313,
+    "total_projections_returned": 5736,
+    "matched_props": 312,
     "excluded_goblin_demon_lines": 4696,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -752,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T03:20:41.771872+00:00"
+  "fetched_at": "2026-11-12T03:40:41.743787+00:00"
 }
