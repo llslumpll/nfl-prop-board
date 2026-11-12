@@ -14,7 +14,7 @@
     },
     "Cam Skattebo": {
       "rushing_yards": 63.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Isaiah Likely": {
       "receiving_yards": 48.5,
@@ -33,7 +33,7 @@
       "receptions": 3.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 4
     },
     "Austin Ekeler": {
@@ -184,16 +184,16 @@
     "Dalton Kincaid": {
       "receiving_yards": 41.5
     },
+    "Omar Cooper Jr.": {
+      "receiving_yards": 37.5,
+      "receptions": 3
+    },
     "Adonai Mitchell": {
       "receiving_yards": 36.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
       "receiving_yards": 7.5
-    },
-    "Omar Cooper Jr.": {
-      "receiving_yards": 31.5,
-      "receptions": 3
     },
     "Keon Coleman": {
       "receiving_yards": 28.5
@@ -262,7 +262,7 @@
       "receiving_yards": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 244.5,
+      "passing_yards": 242.5,
       "rushing_yards": 8.5
     },
     "Deshaun Watson": {
@@ -299,11 +299,11 @@
       "receptions": 2.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Dylan Sampson": {
       "receiving_yards": 21.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -395,7 +395,7 @@
       "receptions": 2.5
     },
     "Carnell Tate": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Jakobi Meyers": {
       "receiving_yards": 41.5,
@@ -414,6 +414,9 @@
     "Gunnar Helm": {
       "receiving_yards": 21.5,
       "receptions": 2.5
+    },
+    "Calvin Ridley": {
+      "receiving_yards": 14.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 13.5,
@@ -591,7 +594,7 @@
       "receiving_yards": 16.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 14.5
+      "receiving_yards": 13.5
     },
     "Davis Allen": {
       "receiving_yards": 13.5
@@ -710,7 +713,7 @@
     "Zay Flowers": {
       "receiving_yards": 69.5,
       "receptions": 5.5,
-      "rushing_yards": 2.5
+      "rushing_yards": 3.5
     },
     "Omarion Hampton": {
       "rushing_yards": 32.5,
@@ -749,9 +752,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6415,
-    "matched_props": 325,
-    "excluded_goblin_demon_lines": 5266,
+    "total_projections_returned": 6425,
+    "matched_props": 326,
+    "excluded_goblin_demon_lines": 5275,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -790,5 +793,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T22:20:42.731481+00:00"
+  "fetched_at": "2026-11-12T22:40:50.517270+00:00"
 }
