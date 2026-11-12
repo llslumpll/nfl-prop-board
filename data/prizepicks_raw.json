@@ -33,7 +33,7 @@
       "receptions": 3.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "receptions": 4
     },
     "Austin Ekeler": {
@@ -163,7 +163,7 @@
       "rushing_yards": 4.5
     },
     "James Cook III": {
-      "rushing_yards": 93.5,
+      "rushing_yards": 91.5,
       "receiving_yards": 7.5
     },
     "Garrett Wilson": {
@@ -326,7 +326,7 @@
       "rushing_yards": 7.5
     },
     "Kyle McCord": {
-      "passing_yards": 159.5,
+      "passing_yards": 158.5,
       "rushing_yards": 6.5
     },
     "Ollie Gordon II": {
@@ -334,7 +334,7 @@
       "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 69.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 20.5
     },
     "Caleb Douglas": {
@@ -409,8 +409,11 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 21.5,
       "receptions": 2.5
+    },
+    "Calvin Ridley": {
+      "receiving_yards": 14.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 13.5,
@@ -418,9 +421,6 @@
     },
     "Brian Thomas Jr.": {
       "receiving_yards": 12.5
-    },
-    "Calvin Ridley": {
-      "receiving_yards": 11.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 8.5
@@ -537,12 +537,12 @@
       "passing_yards": 211.5
     },
     "Carson Beck": {
-      "passing_yards": 176.5,
+      "passing_yards": 175.5,
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
       "rushing_yards": 65.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Trey McBride": {
       "receiving_yards": 59.5,
@@ -568,7 +568,7 @@
       "receiving_yards": 29.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Konata Mumpfield": {
@@ -653,7 +653,7 @@
       "receiving_yards": 52.5
     },
     "Germie Bernard": {
-      "receiving_yards": 48.5
+      "receiving_yards": 47.5
     },
     "Chase Brown": {
       "rushing_yards": 46.5,
@@ -740,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6381,
+    "total_projections_returned": 6393,
     "matched_props": 322,
-    "excluded_goblin_demon_lines": 5238,
+    "excluded_goblin_demon_lines": 5245,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T21:17:06.540975+00:00"
+  "fetched_at": "2026-11-12T21:20:41.842608+00:00"
 }
