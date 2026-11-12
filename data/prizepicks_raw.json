@@ -5,7 +5,7 @@
       "rushing_yards": 37.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 210.5,
+      "passing_yards": 204.5,
       "rushing_yards": 15.5
     },
     "Malik Nabers": {
@@ -548,7 +548,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Allgeier": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 42.5,
       "receiving_yards": 11.5
     },
     "Tyler Higbee": {
@@ -722,9 +722,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5853,
+    "total_projections_returned": 5862,
     "matched_props": 316,
-    "excluded_goblin_demon_lines": 4777,
+    "excluded_goblin_demon_lines": 4773,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -763,5 +763,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T05:20:38.756373+00:00"
+  "fetched_at": "2026-11-12T05:40:38.307731+00:00"
 }
