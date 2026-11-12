@@ -680,12 +680,12 @@
     "Rashod Bateman": {
       "receiving_yards": 23.5
     },
+    "Mark Andrews": {
+      "receiving_yards": 21.5,
+      "receptions": 2.5
+    },
     "Ja'Kobi Lane": {
       "receiving_yards": 21.5
-    },
-    "Mark Andrews": {
-      "receiving_yards": 19.5,
-      "receptions": 2.5
     },
     "Kimani Vidal": {
       "rushing_yards": 18.5,
@@ -710,7 +710,7 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5738,
+    "total_projections_returned": 5739,
     "matched_props": 312,
     "excluded_goblin_demon_lines": 4698,
     "sample_stat_types_seen": [
@@ -751,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T04:00:43.550958+00:00"
+  "fetched_at": "2026-11-12T04:20:36.496587+00:00"
 }
