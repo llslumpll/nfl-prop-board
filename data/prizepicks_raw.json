@@ -10,14 +10,14 @@
     },
     "Malik Nabers": {
       "receiving_yards": 69.5,
-      "receptions": 6
+      "receptions": 6.5
     },
     "Cam Skattebo": {
       "rushing_yards": 55.5,
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Stefon Diggs": {
@@ -169,7 +169,7 @@
       "rushing_yards": 6.5
     },
     "James Cook III": {
-      "rushing_yards": 93.5,
+      "rushing_yards": 91.5,
       "receiving_yards": 7.5
     },
     "Garrett Wilson": {
@@ -373,7 +373,7 @@
       "receiving_yards": 3.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 240.5,
+      "passing_yards": 238.5,
       "rushing_yards": 8.5
     },
     "Cam Ward": {
@@ -382,13 +382,13 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 63.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Parker Washington": {
-      "receiving_yards": 62.5
+      "receiving_yards": 60.5
     },
     "Tony Pollard": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 11.5
     },
     "Carnell Tate": {
@@ -584,15 +584,15 @@
       "receptions": 7.5
     },
     "Javonte Williams": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 12.5
+      "rushing_yards": 64.5,
+      "receiving_yards": 13.5
     },
     "George Kittle": {
       "receiving_yards": 63.5
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 32.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 38.5,
@@ -600,7 +600,7 @@
       "receptions": 3.5
     },
     "Kaelon Black": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 34.5,
       "receptions": 0.5
     },
     "Kyle Juszczyk": {
@@ -690,12 +690,12 @@
     "Rashod Bateman": {
       "receiving_yards": 23.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
-    },
     "Ja'Kobi Lane": {
       "receiving_yards": 21.5
+    },
+    "Mark Andrews": {
+      "receiving_yards": 20.5,
+      "receptions": 2.5
     },
     "Kimani Vidal": {
       "rushing_yards": 18.5,
@@ -720,9 +720,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6046,
+    "total_projections_returned": 6056,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4933,
+    "excluded_goblin_demon_lines": 4943,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -761,5 +761,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T10:20:40.258729+00:00"
+  "fetched_at": "2026-11-12T10:40:40.766143+00:00"
 }
