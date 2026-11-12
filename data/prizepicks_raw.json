@@ -84,7 +84,7 @@
     },
     "Corey Kiner": {
       "rushing_yards": 51.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 5.5
     },
     "Sam LaPorta": {
       "receiving_yards": 42.5
@@ -98,6 +98,10 @@
     },
     "Sione Vaki": {
       "rushing_yards": 13.5
+    },
+    "Lan Larison": {
+      "receiving_yards": 12.5,
+      "rushing_yards": 12.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5
@@ -138,7 +142,7 @@
       "receiving_yards": 28.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Emmett Johnson": {
       "receiving_yards": 11.5,
@@ -474,7 +478,7 @@
       "rushing_yards": 5.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 182.5,
+      "passing_yards": 179.5,
       "rushing_yards": 12.5
     },
     "Jaxon Smith-Njigba": {
@@ -512,9 +516,6 @@
     },
     "Cooper Kupp": {
       "receiving_yards": 20.5
-    },
-    "Tory Horton": {
-      "receiving_yards": 15.5
     },
     "Jalen Nailor": {
       "receiving_yards": 12.5
@@ -710,9 +711,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5721,
-    "matched_props": 312,
-    "excluded_goblin_demon_lines": 4680,
+    "total_projections_returned": 5738,
+    "matched_props": 313,
+    "excluded_goblin_demon_lines": 4694,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -751,5 +752,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T02:20:41.249621+00:00"
+  "fetched_at": "2026-11-12T02:40:41.069442+00:00"
 }
