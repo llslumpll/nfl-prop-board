@@ -35292,8 +35292,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Ja'Marr Chase|receptions|10": {
@@ -35829,8 +35828,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ],
     "line_attached_at": "2026-11-11 12:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -35933,10 +35931,10 @@
     "stat": "receptions",
     "projected": 1.3,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -2.2,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -35945,7 +35943,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-12 01:40 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-12 01:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Caleb Douglas|receptions|10": {
     "player": "Caleb Douglas",
