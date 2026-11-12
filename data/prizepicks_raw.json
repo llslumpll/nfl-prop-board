@@ -532,7 +532,7 @@
       "passing_yards": 212.5
     },
     "Carson Beck": {
-      "passing_yards": 178.5,
+      "passing_yards": 175.5,
       "rushing_yards": 11.5
     },
     "Trey McBride": {
@@ -544,7 +544,7 @@
       "receiving_yards": 20.5
     },
     "Blake Corum": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 6.5
     },
     "Tyler Allgeier": {
@@ -552,16 +552,17 @@
       "receiving_yards": 11.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 37.5
+      "receiving_yards": 34.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 32.5
+      "receiving_yards": 32.5,
+      "receptions": 3.5
     },
     "Tutu Atwell": {
       "receiving_yards": 29.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 27.5
+      "receiving_yards": 25.5
     },
     "Reggie Virgil": {
       "receiving_yards": 22.5
@@ -701,7 +702,7 @@
     },
     "Kimani Vidal": {
       "rushing_yards": 18.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Justice Hill": {
       "rushing_yards": 12.5,
@@ -722,9 +723,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5862,
-    "matched_props": 316,
-    "excluded_goblin_demon_lines": 4773,
+    "total_projections_returned": 5881,
+    "matched_props": 317,
+    "excluded_goblin_demon_lines": 4772,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -763,5 +764,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T05:40:38.307731+00:00"
+  "fetched_at": "2026-11-12T06:00:44.637191+00:00"
 }
