@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,13 +382,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.3748,
-   "decimal": 3.632,
-   "ev": 0.361,
+   "decimal": 3.502,
+   "ev": 0.312,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -407,14 +407,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.786,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.56,
      "team": "LA"
     }
    ],
@@ -422,13 +422,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.2222,
-   "decimal": 6.726,
-   "ev": 0.495,
+   "decimal": 6.486,
+   "ev": 0.441,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -447,14 +447,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.786,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.56,
      "team": "LA"
     },
     {
@@ -474,13 +474,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.1118,
-   "decimal": 15.288,
-   "ev": 0.709,
+   "decimal": 14.743,
+   "ev": 0.648,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -499,14 +499,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 1.852,
+     "decimal": 1.786,
      "game": "ARI@LA",
      "good": true,
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.54,
+     "price": 0.56,
      "team": "LA"
     },
     {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 17:20 UTC",
+   "updated": "2026-11-12 17:40 UTC",
    "week": 10
   }
  },

@@ -37079,7 +37079,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jahmyr Gibbs|rushing_yards|10": {
     "player": "Jahmyr Gibbs",
@@ -37242,10 +37244,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jakobi Meyers|receiving_yards|10": {
     "player": "Jakobi Meyers",
@@ -37369,6 +37368,32 @@
     "graded_at": null,
     "best5_tags": [
       "highest_confidence"
+    ]
+  },
+  "Amon-Ra St. Brown|receiving_yards|10": {
+    "player": "Amon-Ra St. Brown",
+    "team": "DET",
+    "opponent": "NE",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 92.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 78.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 14.3,
+    "model_prob": 0.6349,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-12 17:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
