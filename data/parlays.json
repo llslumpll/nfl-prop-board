@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,7 +354,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "td-2": {
@@ -408,27 +408,27 @@
     {
      "chance": 0.593,
      "decimal": 1.754,
-     "game": "BUF@NYJ",
+     "game": "BAL@LAC",
      "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kickoff": "2026-11-17T01:15:00+00:00",
      "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
+     "label": "Derrick Henry anytime TD",
+     "player": "Derrick Henry",
      "price": 0.57,
-     "team": "BUF"
+     "team": "BAL"
     }
    ],
    "name": "Touchdowns",
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.2222,
-   "decimal": 5.805,
-   "ev": 0.29,
+   "decimal": 5.911,
+   "ev": 0.314,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -448,18 +448,6 @@
     {
      "chance": 0.593,
      "decimal": 1.754,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.57,
-     "team": "BUF"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 1.754,
      "game": "BAL@LAC",
      "good": true,
      "kickoff": "2026-11-17T01:15:00+00:00",
@@ -468,19 +456,31 @@
      "player": "Derrick Henry",
      "price": 0.57,
      "team": "BAL"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 1.786,
+     "game": "BUF@NYJ",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.56,
+     "team": "BUF"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.1318,
-   "decimal": 11.164,
-   "ev": 0.471,
+   "decimal": 11.367,
+   "ev": 0.498,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -500,18 +500,6 @@
     {
      "chance": 0.593,
      "decimal": 1.754,
-     "game": "BUF@NYJ",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.57,
-     "team": "BUF"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 1.754,
      "game": "BAL@LAC",
      "good": true,
      "kickoff": "2026-11-17T01:15:00+00:00",
@@ -520,6 +508,18 @@
      "player": "Derrick Henry",
      "price": 0.57,
      "team": "BAL"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 1.786,
+     "game": "BUF@NYJ",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.56,
+     "team": "BUF"
     },
     {
      "chance": 0.593,
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 08:41 UTC",
+   "updated": "2026-11-12 09:00 UTC",
    "week": 10
   }
  },
