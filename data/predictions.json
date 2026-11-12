@@ -35289,8 +35289,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Ja'Marr Chase|receptions|10": {
@@ -35625,10 +35624,10 @@
     "stat": "receptions",
     "projected": 1.5,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.0,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -35639,7 +35638,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-12 11:01 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-12 11:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "DeVonta Smith|receptions|11": {
     "player": "DeVonta Smith",
@@ -35829,8 +35834,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ],
     "line_attached_at": "2026-11-11 12:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line."
