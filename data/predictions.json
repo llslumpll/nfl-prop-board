@@ -35034,10 +35034,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordan Love|passing_yards|10": {
     "player": "Jordan Love",
@@ -35288,9 +35285,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Ja'Marr Chase|receptions|10": {
     "player": "Ja'Marr Chase",
@@ -35414,8 +35409,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jonathan Taylor|rushing_yards|10": {
@@ -35616,7 +35610,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-11 12:40 UTC",
-    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Omar Cooper Jr.|receptions|10": {
     "player": "Omar Cooper Jr.",
@@ -35835,9 +35833,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-11 12:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -37320,6 +37316,59 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Joe Burrow|passing_yards|10": {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opponent": "PIT",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 261.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 289.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -28.3,
+    "model_prob": 0.3756,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-12 17:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Cam Ward|passing_yards|10": {
+    "player": "Cam Ward",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 173.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 201.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -27.7,
+    "model_prob": 0.3355,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-12 17:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }

@@ -1,5 +1,30 @@
 {
- "10": {},
+ "10": {
+  "TreVeyon Henderson|NE": {
+   "opp": "DET",
+   "out": "TreVeyon Henderson",
+   "plays": [
+    {
+     "bump": 49,
+     "call": "OVER",
+     "line": 48.5,
+     "moved": false,
+     "n_wo": 3,
+     "now": 48.5,
+     "player": "Corey Kiner",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 23.3,
+     "without": 34.7
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-12 17:17 UTC",
+   "team": "NE",
+   "week": 10
+  }
+ },
  "9": {
   "Brian Robinson|ATL": {
    "opp": "CIN",
