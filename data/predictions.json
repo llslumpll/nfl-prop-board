@@ -35382,10 +35382,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Christian McCaffrey|rushing_yards|10": {
     "player": "Christian McCaffrey",
@@ -35434,7 +35431,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kaelon Black|rushing_yards|10": {
     "player": "Kaelon Black",
@@ -35458,7 +35457,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Michael Penix Jr.|rushing_yards|10": {
     "player": "Michael Penix Jr.",
@@ -37176,9 +37177,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Drew Lock|passing_yards|10": {
     "player": "Drew Lock",
@@ -37229,7 +37228,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Kayshon Boutte|receiving_yards|10": {
