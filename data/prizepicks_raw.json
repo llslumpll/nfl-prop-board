@@ -57,7 +57,7 @@
       "receiving_yards": 14.5
     },
     "Van Jefferson": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Theo Johnson": {
       "receiving_yards": 5.5
@@ -149,7 +149,7 @@
     },
     "Khalil Herbert": {
       "rushing_yards": 9.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 0.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 7.5
@@ -236,7 +236,7 @@
       "receiving_yards": 2.5
     },
     "Jordan Addison": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 40.5
@@ -392,7 +392,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 55.5,
-      "receiving_yards": 12.5,
+      "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "Carnell Tate": {
@@ -416,12 +416,12 @@
       "receiving_yards": 17.5,
       "receptions": 2.5
     },
-    "Brian Thomas Jr.": {
-      "receiving_yards": 13.5
-    },
     "Nate Boerkircher": {
       "receiving_yards": 13.5,
       "receptions": 1.5
+    },
+    "Brian Thomas Jr.": {
+      "receiving_yards": 12.5
     },
     "Calvin Ridley": {
       "receiving_yards": 11.5
@@ -472,7 +472,7 @@
       "receiving_yards": 13.5
     },
     "Mitchell Evans": {
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Noah Fant": {
       "receiving_yards": 5.5
@@ -537,26 +537,26 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 209.5
+      "passing_yards": 213.5
     },
     "Carson Beck": {
-      "passing_yards": 176.5,
+      "passing_yards": 175.5,
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
-      "rushing_yards": 65.5,
-      "receiving_yards": 20.5
+      "rushing_yards": 66.5,
+      "receiving_yards": 19.5
     },
     "Trey McBride": {
       "receiving_yards": 59.5,
       "receptions": 7
     },
     "Blake Corum": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 6.5
     },
     "Tyler Allgeier": {
-      "rushing_yards": 42.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 10.5
     },
     "Tyler Higbee": {
@@ -564,11 +564,11 @@
       "receptions": 3.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 29.5
+      "receiving_yards": 27.5
     },
     "Reggie Virgil": {
       "receiving_yards": 26.5,
@@ -579,13 +579,13 @@
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Elijah Higgins": {
       "receiving_yards": 16.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Davis Allen": {
       "receiving_yards": 13.5
@@ -743,9 +743,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6348,
+    "total_projections_returned": 6343,
     "matched_props": 323,
-    "excluded_goblin_demon_lines": 5218,
+    "excluded_goblin_demon_lines": 5215,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +784,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T20:00:53.523341+00:00"
+  "fetched_at": "2026-11-12T20:20:41.934963+00:00"
 }

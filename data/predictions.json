@@ -35460,7 +35460,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Michael Penix Jr.|rushing_yards|10": {
     "player": "Michael Penix Jr.",
@@ -37155,8 +37157,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Blake Corum|rushing_yards|10": {
