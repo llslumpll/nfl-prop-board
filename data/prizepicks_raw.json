@@ -13,7 +13,7 @@
       "receptions": 5.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
@@ -25,7 +25,7 @@
       "receptions": 4
     },
     "Rachaad White": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 12.5
     },
     "Antonio Williams": {
@@ -49,9 +49,8 @@
       "receiving_yards": 25.5
     },
     "Devin Singletary": {
-      "rushing_yards": 23.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "rushing_yards": 19.5,
+      "receiving_yards": 8.5
     },
     "Darnell Mooney": {
       "receiving_yards": 13.5
@@ -90,7 +89,7 @@
       "receiving_yards": 35.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 15.5
+      "receiving_yards": 17.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -236,7 +235,8 @@
       "receiving_yards": 40.5
     },
     "Jordan Addison": {
-      "receiving_yards": 40.5
+      "receiving_yards": 40.5,
+      "receptions": 3.5
     },
     "Tucker Kraft": {
       "receiving_yards": 37.5
@@ -343,7 +343,7 @@
       "receiving_yards": 42.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Malik Washington": {
@@ -754,7 +754,7 @@
     "nfl_league_id": "9",
     "total_projections_returned": 6430,
     "matched_props": 326,
-    "excluded_goblin_demon_lines": 5279,
+    "excluded_goblin_demon_lines": 5280,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -793,5 +793,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T22:44:31.418611+00:00"
+  "fetched_at": "2026-11-12T23:00:45.428483+00:00"
 }
