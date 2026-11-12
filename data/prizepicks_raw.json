@@ -67,7 +67,7 @@
       "passing_yards": 268.5
     },
     "Drake Maye": {
-      "passing_yards": 261.5,
+      "passing_yards": 257.5,
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
@@ -75,14 +75,14 @@
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5,
+      "receiving_yards": 77.5,
       "receptions": 7
     },
     "Jameson Williams": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Corey Kiner": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 52.5,
       "receiving_yards": 5.5
     },
     "Sam LaPorta": {
@@ -633,7 +633,7 @@
       "receiving_yards": 52.5
     },
     "Germie Bernard": {
-      "receiving_yards": 47.5
+      "receiving_yards": 48.5
     },
     "Chase Brown": {
       "rushing_yards": 43.5,
@@ -658,7 +658,7 @@
       "receiving_yards": 7.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -720,9 +720,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5883,
+    "total_projections_returned": 5918,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4781,
+    "excluded_goblin_demon_lines": 4812,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -761,5 +761,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T09:00:44.530667+00:00"
+  "fetched_at": "2026-11-12T09:20:39.457834+00:00"
 }

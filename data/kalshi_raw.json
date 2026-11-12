@@ -593,6 +593,38 @@
       "floor_strike": null
     },
     {
+      "event_title": "Miami vs Indianapolis: 1st Touchdown",
+      "market_title": "Tyler Warren",
+      "ticker": "KXNFLFIRSTTD-26NOV15MIAIND-INDTWARREN84",
+      "yes_bid": 0.0,
+      "yes_ask": 0.39,
+      "yes_bid_cents": 0,
+      "yes_ask_cents": 39,
+      "price": 0.39,
+      "decimal_odds": 2.56,
+      "implied_pct": 39.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLFIRSTTD",
+      "floor_strike": null
+    },
+    {
+      "event_title": "Miami vs Indianapolis: 1st Touchdown",
+      "market_title": "Seth McGowan",
+      "ticker": "KXNFLFIRSTTD-26NOV15MIAIND-INDSMCGOWAN20",
+      "yes_bid": 0.0,
+      "yes_ask": 0.39,
+      "yes_bid_cents": 0,
+      "yes_ask_cents": 39,
+      "price": 0.39,
+      "decimal_odds": 2.56,
+      "implied_pct": 39.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLFIRSTTD",
+      "floor_strike": null
+    },
+    {
       "event_title": "Minnesota vs Green Bay: 1st Touchdown",
       "market_title": "Aaron Jones Sr.",
       "ticker": "KXNFLFIRSTTD-26NOV15MINGB-MINAJONES33",
@@ -605,38 +637,6 @@
       "implied_pct": 39.0,
       "volume": 0,
       "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLFIRSTTD",
-      "floor_strike": null
-    },
-    {
-      "event_title": "Minnesota vs Green Bay: 1st Touchdown",
-      "market_title": "T.J. Hockenson",
-      "ticker": "KXNFLFIRSTTD-26NOV15MINGB-MINTHOCKENSON87",
-      "yes_bid": 0.0,
-      "yes_ask": 0.39,
-      "yes_bid_cents": 0,
-      "yes_ask_cents": 39,
-      "price": 0.39,
-      "decimal_odds": 2.56,
-      "implied_pct": 39.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLFIRSTTD",
-      "floor_strike": null
-    },
-    {
-      "event_title": "Los Angeles R vs Arizona: 1st Touchdown",
-      "market_title": "Konata Mumpfield",
-      "ticker": "KXNFLFIRSTTD-26NOV15LARARI-LARKMUMPFIELD4",
-      "yes_bid": 0.0,
-      "yes_ask": 0.39,
-      "yes_bid_cents": 0,
-      "yes_ask_cents": 39,
-      "price": 0.39,
-      "decimal_odds": 2.56,
-      "implied_pct": 39.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLFIRSTTD",
       "floor_strike": null
     }
@@ -2627,22 +2627,6 @@
       "floor_strike": 43.5
     },
     {
-      "event_title": "Los Angeles R vs Arizona: Total Points",
-      "market_title": "Over 32.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15LARARI-33",
-      "yes_bid": 0.7,
-      "yes_ask": 0.74,
-      "yes_bid_cents": 70,
-      "yes_ask_cents": 74,
-      "price": 0.72,
-      "decimal_odds": 1.39,
-      "implied_pct": 72.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 32.5
-    },
-    {
       "event_title": "Jacksonville vs Tennessee: Spread",
       "market_title": "Jacksonville wins by over 4.5 points",
       "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC5",
@@ -2705,6 +2689,22 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 40.5
+    },
+    {
+      "event_title": "Los Angeles R vs Arizona: Total Points",
+      "market_title": "Over 32.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15LARARI-33",
+      "yes_bid": 0.67,
+      "yes_ask": 0.74,
+      "yes_bid_cents": 67,
+      "yes_ask_cents": 74,
+      "price": 0.71,
+      "decimal_odds": 1.41,
+      "implied_pct": 71.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:05:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 32.5
     },
     {
       "event_title": "Jacksonville vs New York G",
@@ -2803,22 +2803,6 @@
       "floor_strike": 35.5
     },
     {
-      "event_title": "Seattle vs Las Vegas: Total Points",
-      "market_title": "Over 34.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15SEALV-35",
-      "yes_bid": 0.67,
-      "yes_ask": 0.71,
-      "yes_bid_cents": 67,
-      "yes_ask_cents": 71,
-      "price": 0.69,
-      "decimal_odds": 1.45,
-      "implied_pct": 69.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 34.5
-    },
-    {
       "event_title": "San Francisco vs Dallas: Total Points",
       "market_title": "Over 49.5 points",
       "ticker": "KXNFLTOTAL-26NOV15SFDAL-50",
@@ -2897,6 +2881,22 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 35.5
+    },
+    {
+      "event_title": "Seattle vs Las Vegas: Total Points",
+      "market_title": "Over 34.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15SEALV-35",
+      "yes_bid": 0.61,
+      "yes_ask": 0.75,
+      "yes_bid_cents": 61,
+      "yes_ask_cents": 75,
+      "price": 0.68,
+      "decimal_odds": 1.47,
+      "implied_pct": 68.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:05:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 34.5
     },
     {
       "event_title": "San Francisco vs Dallas",
@@ -3395,22 +3395,6 @@
       "floor_strike": 1.5
     },
     {
-      "event_title": "Los Angeles C vs Baltimore: Spread",
-      "market_title": "Baltimore wins by over 2.5 points",
-      "ticker": "KXNFLSPREAD-26NOV16LACBAL-BAL3",
-      "yes_bid": 0.59,
-      "yes_ask": 0.63,
-      "yes_bid_cents": 59,
-      "yes_ask_cents": 63,
-      "price": 0.61,
-      "decimal_odds": 1.64,
-      "implied_pct": 61.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 2.5
-    },
-    {
       "event_title": "Carolina vs New Orleans: Total Points",
       "market_title": "Over 44.5 points",
       "ticker": "KXNFLTOTAL-26NOV15CARNO-45",
@@ -3633,6 +3617,22 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 1.5
+    },
+    {
+      "event_title": "Los Angeles C vs Baltimore: Spread",
+      "market_title": "Baltimore wins by over 2.5 points",
+      "ticker": "KXNFLSPREAD-26NOV16LACBAL-BAL3",
+      "yes_bid": 0.54,
+      "yes_ask": 0.65,
+      "yes_bid_cents": 54,
+      "yes_ask_cents": 65,
+      "price": 0.59,
+      "decimal_odds": 1.69,
+      "implied_pct": 59.0,
+      "volume": 0,
+      "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 2.5
     },
     {
       "event_title": "Buffalo vs New York J: Total Points",
@@ -5236,22 +5236,6 @@
     },
     {
       "event_title": "Los Angeles C vs Baltimore: Total Points",
-      "market_title": "Over 40.5 points",
-      "ticker": "KXNFLTOTAL-26NOV16LACBAL-41",
-      "yes_bid": 0.43,
-      "yes_ask": 0.46,
-      "yes_bid_cents": 43,
-      "yes_ask_cents": 46,
-      "price": 0.45,
-      "decimal_odds": 2.22,
-      "implied_pct": 45.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 40.5
-    },
-    {
-      "event_title": "Los Angeles C vs Baltimore: Total Points",
       "market_title": "Over 39.5 points",
       "ticker": "KXNFLTOTAL-26NOV16LACBAL-40",
       "yes_bid": 0.42,
@@ -5281,6 +5265,22 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 1.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "Detroit wins by over 4.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET5",
+      "yes_bid": 0.41,
+      "yes_ask": 0.47,
+      "yes_bid_cents": 41,
+      "yes_ask_cents": 47,
+      "price": 0.44,
+      "decimal_odds": 2.27,
+      "implied_pct": 44.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 4.5
     },
     {
       "event_title": "Buffalo vs New York J: Total Points",
@@ -5539,6 +5539,22 @@
       "floor_strike": 51.5
     },
     {
+      "event_title": "Los Angeles C vs Baltimore: Total Points",
+      "market_title": "Over 40.5 points",
+      "ticker": "KXNFLTOTAL-26NOV16LACBAL-41",
+      "yes_bid": 0.39,
+      "yes_ask": 0.46,
+      "yes_bid_cents": 39,
+      "yes_ask_cents": 46,
+      "price": 0.43,
+      "decimal_odds": 2.33,
+      "implied_pct": 43.0,
+      "volume": 0,
+      "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 40.5
+    },
+    {
       "event_title": "Carolina vs New Orleans: Spread",
       "market_title": "Carolina wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26NOV15CARNO-CAR2",
@@ -5633,22 +5649,6 @@
       "close_time": "2026-11-17T14:30:00Z",
       "series_ticker": "KXNFLGAME",
       "floor_strike": null
-    },
-    {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "Detroit wins by over 4.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET5",
-      "yes_bid": 0.41,
-      "yes_ask": 0.42,
-      "yes_bid_cents": 41,
-      "yes_ask_cents": 42,
-      "price": 0.41,
-      "decimal_odds": 2.44,
-      "implied_pct": 41.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 4.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -6227,22 +6227,6 @@
       "floor_strike": 7.5
     },
     {
-      "event_title": "New England vs Detroit: Total Points",
-      "market_title": "Over 55.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15NEDET-56",
-      "yes_bid": 0.35,
-      "yes_ask": 0.38,
-      "yes_bid_cents": 35,
-      "yes_ask_cents": 38,
-      "price": 0.36,
-      "decimal_odds": 2.78,
-      "implied_pct": 36.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 55.5
-    },
-    {
       "event_title": "Buffalo vs New York J: Total Points",
       "market_title": "Over 55.5 points",
       "ticker": "KXNFLTOTAL-26NOV15BUFNYJ-56",
@@ -6356,6 +6340,22 @@
     },
     {
       "event_title": "Washington vs New York G: Spread",
+      "market_title": "New York G wins by over 6.5 points",
+      "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG7",
+      "yes_bid": 0.31,
+      "yes_ask": 0.4,
+      "yes_bid_cents": 31,
+      "yes_ask_cents": 40,
+      "price": 0.35,
+      "decimal_odds": 2.86,
+      "implied_pct": 35.0,
+      "volume": 0,
+      "close_time": "2026-11-15T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 6.5
+    },
+    {
+      "event_title": "Washington vs New York G: Spread",
       "market_title": "New York G wins by over 5.5 points",
       "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG6",
       "yes_bid": 0.35,
@@ -6374,10 +6374,10 @@
       "event_title": "New England vs Detroit: Spread",
       "market_title": "Detroit wins by over 6.5 points",
       "ticker": "KXNFLSPREAD-26NOV15NEDET-DET7",
-      "yes_bid": 0.34,
-      "yes_ask": 0.37,
-      "yes_bid_cents": 34,
-      "yes_ask_cents": 37,
+      "yes_bid": 0.33,
+      "yes_ask": 0.38,
+      "yes_bid_cents": 33,
+      "yes_ask_cents": 38,
       "price": 0.35,
       "decimal_odds": 2.86,
       "implied_pct": 35.0,
@@ -6483,22 +6483,6 @@
       "floor_strike": 45.5
     },
     {
-      "event_title": "Carolina vs New Orleans: Total Points",
-      "market_title": "Over 53.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15CARNO-54",
-      "yes_bid": 0.34,
-      "yes_ask": 0.37,
-      "yes_bid_cents": 34,
-      "yes_ask_cents": 37,
-      "price": 0.35,
-      "decimal_odds": 2.86,
-      "implied_pct": 35.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 53.5
-    },
-    {
       "event_title": "Kansas City vs Atlanta: Total Points",
       "market_title": "Over 52.5 points",
       "ticker": "KXNFLTOTAL-26NOV15KCATL-53",
@@ -6567,9 +6551,9 @@
       "market_title": "Dallas",
       "ticker": "KXNFLGAME-26NOV15SFDAL-DAL",
       "yes_bid": 0.33,
-      "yes_ask": 0.34,
+      "yes_ask": 0.35,
       "yes_bid_cents": 33,
-      "yes_ask_cents": 34,
+      "yes_ask_cents": 35,
       "price": 0.34,
       "decimal_odds": 2.94,
       "implied_pct": 34.0,
@@ -6641,6 +6625,38 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 7.5
+    },
+    {
+      "event_title": "New England vs Detroit: Total Points",
+      "market_title": "Over 55.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15NEDET-56",
+      "yes_bid": 0.31,
+      "yes_ask": 0.38,
+      "yes_bid_cents": 31,
+      "yes_ask_cents": 38,
+      "price": 0.34,
+      "decimal_odds": 2.94,
+      "implied_pct": 34.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 55.5
+    },
+    {
+      "event_title": "Carolina vs New Orleans: Total Points",
+      "market_title": "Over 53.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15CARNO-54",
+      "yes_bid": 0.3,
+      "yes_ask": 0.39,
+      "yes_bid_cents": 30,
+      "yes_ask_cents": 39,
+      "price": 0.34,
+      "decimal_odds": 2.94,
+      "implied_pct": 34.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 53.5
     },
     {
       "event_title": "Seattle vs Las Vegas: Total Points",
@@ -6753,22 +6769,6 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 3.5
-    },
-    {
-      "event_title": "Washington vs New York G: Spread",
-      "market_title": "New York G wins by over 6.5 points",
-      "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG7",
-      "yes_bid": 0.31,
-      "yes_ask": 0.33,
-      "yes_bid_cents": 31,
-      "yes_ask_cents": 33,
-      "price": 0.32,
-      "decimal_odds": 3.12,
-      "implied_pct": 32.0,
-      "volume": 0,
-      "close_time": "2026-11-15T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 6.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -7028,6 +7028,22 @@
     },
     {
       "event_title": "New England vs Detroit: Spread",
+      "market_title": "New England wins by over 3.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE4",
+      "yes_bid": 0.29,
+      "yes_ask": 0.31,
+      "yes_bid_cents": 29,
+      "yes_ask_cents": 31,
+      "price": 0.3,
+      "decimal_odds": 3.33,
+      "implied_pct": 30.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 3.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
       "market_title": "Detroit wins by over 7.5 points",
       "ticker": "KXNFLSPREAD-26NOV15NEDET-DET8",
       "yes_bid": 0.29,
@@ -7203,22 +7219,6 @@
       "floor_strike": null
     },
     {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "New England wins by over 3.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE4",
-      "yes_bid": 0.29,
-      "yes_ask": 0.3,
-      "yes_bid_cents": 29,
-      "yes_ask_cents": 30,
-      "price": 0.29,
-      "decimal_odds": 3.45,
-      "implied_pct": 29.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 3.5
-    },
-    {
       "event_title": "Minnesota vs Green Bay: Spread",
       "market_title": "Green Bay wins by over 9.5 points",
       "ticker": "KXNFLSPREAD-26NOV15MINGB-GB10",
@@ -7281,6 +7281,22 @@
       "close_time": "2026-11-19T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 1.5
+    },
+    {
+      "event_title": "New England vs Detroit: Total Points",
+      "market_title": "Over 61.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15NEDET-62",
+      "yes_bid": 0.23,
+      "yes_ask": 0.34,
+      "yes_bid_cents": 23,
+      "yes_ask_cents": 34,
+      "price": 0.29,
+      "decimal_odds": 3.45,
+      "implied_pct": 29.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 61.5
     },
     {
       "event_title": "New England vs Detroit: Total Points",
@@ -7393,22 +7409,6 @@
       "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLGAME",
       "floor_strike": null
-    },
-    {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "Detroit wins by over 9.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET10",
-      "yes_bid": 0.26,
-      "yes_ask": 0.29,
-      "yes_bid_cents": 26,
-      "yes_ask_cents": 29,
-      "price": 0.28,
-      "decimal_odds": 3.57,
-      "implied_pct": 28.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 9.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -7779,22 +7779,6 @@
       "floor_strike": 47.5
     },
     {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "New England wins by over 4.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE5",
-      "yes_bid": 0.23,
-      "yes_ask": 0.27,
-      "yes_bid_cents": 23,
-      "yes_ask_cents": 27,
-      "price": 0.25,
-      "decimal_odds": 4.0,
-      "implied_pct": 25.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 4.5
-    },
-    {
       "event_title": "Los Angeles R vs Arizona: Spread",
       "market_title": "Los Angeles R wins by over 17.5 points",
       "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR18",
@@ -7843,6 +7827,22 @@
       "floor_strike": 13.5
     },
     {
+      "event_title": "Buffalo vs New York J: Total Points",
+      "market_title": "Over 61.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15BUFNYJ-62",
+      "yes_bid": 0.13,
+      "yes_ask": 0.37,
+      "yes_bid_cents": 13,
+      "yes_ask_cents": 37,
+      "price": 0.25,
+      "decimal_odds": 4.0,
+      "implied_pct": 25.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 61.5
+    },
+    {
       "event_title": "Kansas City vs Atlanta: Total Points",
       "market_title": "Over 55.5 points",
       "ticker": "KXNFLTOTAL-26NOV15KCATL-56",
@@ -7873,6 +7873,38 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 5.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "New England wins by over 4.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE5",
+      "yes_bid": 0.2,
+      "yes_ask": 0.28,
+      "yes_bid_cents": 20,
+      "yes_ask_cents": 28,
+      "price": 0.24,
+      "decimal_odds": 4.17,
+      "implied_pct": 24.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 4.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "Detroit wins by over 9.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET10",
+      "yes_bid": 0.2,
+      "yes_ask": 0.29,
+      "yes_bid_cents": 20,
+      "yes_ask_cents": 29,
+      "price": 0.24,
+      "decimal_odds": 4.17,
+      "implied_pct": 24.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 9.5
     },
     {
       "event_title": "Kansas City vs Atlanta: Spread",
@@ -8003,38 +8035,6 @@
       "floor_strike": 50.5
     },
     {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "New England wins by over 5.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE6",
-      "yes_bid": 0.21,
-      "yes_ask": 0.25,
-      "yes_bid_cents": 21,
-      "yes_ask_cents": 25,
-      "price": 0.23,
-      "decimal_odds": 4.35,
-      "implied_pct": 23.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 5.5
-    },
-    {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "Detroit wins by over 10.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET11",
-      "yes_bid": 0.23,
-      "yes_ask": 0.24,
-      "yes_bid_cents": 23,
-      "yes_ask_cents": 24,
-      "price": 0.23,
-      "decimal_odds": 4.35,
-      "implied_pct": 23.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 10.5
-    },
-    {
       "event_title": "Buffalo vs New York J: Spread",
       "market_title": "Buffalo wins by over 17.5 points",
       "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF18",
@@ -8147,22 +8147,6 @@
       "floor_strike": 53.5
     },
     {
-      "event_title": "New England vs Detroit: Total Points",
-      "market_title": "Over 61.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15NEDET-62",
-      "yes_bid": 0.23,
-      "yes_ask": 0.24,
-      "yes_bid_cents": 23,
-      "yes_ask_cents": 24,
-      "price": 0.23,
-      "decimal_odds": 4.35,
-      "implied_pct": 23.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 61.5
-    },
-    {
       "event_title": "Carolina vs New Orleans: Total Points",
       "market_title": "Over 59.5 points",
       "ticker": "KXNFLTOTAL-26NOV15CARNO-60",
@@ -8225,6 +8209,22 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 10.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "New England wins by over 5.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE6",
+      "yes_bid": 0.18,
+      "yes_ask": 0.26,
+      "yes_bid_cents": 18,
+      "yes_ask_cents": 26,
+      "price": 0.22,
+      "decimal_odds": 4.55,
+      "implied_pct": 22.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 5.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -8369,22 +8369,6 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 13.5
-    },
-    {
-      "event_title": "Buffalo vs New York J: Total Points",
-      "market_title": "Over 61.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15BUFNYJ-62",
-      "yes_bid": 0.21,
-      "yes_ask": 0.24,
-      "yes_bid_cents": 21,
-      "yes_ask_cents": 24,
-      "price": 0.22,
-      "decimal_odds": 4.55,
-      "implied_pct": 22.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 61.5
     },
     {
       "event_title": "Jacksonville vs Tennessee: Total Points",
@@ -8833,6 +8817,22 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 13.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "Detroit wins by over 10.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-DET11",
+      "yes_bid": 0.14,
+      "yes_ask": 0.24,
+      "yes_bid_cents": 14,
+      "yes_ask_cents": 24,
+      "price": 0.19,
+      "decimal_odds": 5.26,
+      "implied_pct": 19.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 10.5
     },
     {
       "event_title": "Seattle vs Las Vegas: Spread",
@@ -9651,6 +9651,22 @@
       "floor_strike": 9.5
     },
     {
+      "event_title": "Washington vs New York G: Spread",
+      "market_title": "New York G wins by over 16.5 points",
+      "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG17",
+      "yes_bid": 0.09,
+      "yes_ask": 0.2,
+      "yes_bid_cents": 9,
+      "yes_ask_cents": 20,
+      "price": 0.15,
+      "decimal_odds": 6.67,
+      "implied_pct": 15.0,
+      "volume": 0,
+      "close_time": "2026-11-15T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 16.5
+    },
+    {
       "event_title": "New England vs Detroit: Spread",
       "market_title": "New England wins by over 7.5 points",
       "ticker": "KXNFLSPREAD-26NOV15NEDET-NE8",
@@ -10321,22 +10337,6 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 63.5
-    },
-    {
-      "event_title": "Washington vs New York G: Spread",
-      "market_title": "New York G wins by over 16.5 points",
-      "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG17",
-      "yes_bid": 0.09,
-      "yes_ask": 0.15,
-      "yes_bid_cents": 9,
-      "yes_ask_cents": 15,
-      "price": 0.12,
-      "decimal_odds": 8.33,
-      "implied_pct": 12.0,
-      "volume": 0,
-      "close_time": "2026-11-15T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 16.5
     },
     {
       "event_title": "New England vs Detroit: Spread",
@@ -11238,9 +11238,9 @@
       "event_title": "Washington vs New York G: Total Points",
       "market_title": "Over 62.5 points",
       "ticker": "KXNFLTOTAL-26NOV12WASNYG-63",
-      "yes_bid": 0.04,
+      "yes_bid": 0.03,
       "yes_ask": 0.16,
-      "yes_bid_cents": 4,
+      "yes_bid_cents": 3,
       "yes_ask_cents": 16,
       "price": 0.1,
       "decimal_odds": 10.0,
@@ -11345,22 +11345,6 @@
       "close_time": "2026-11-17T14:30:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 14.5
-    },
-    {
-      "event_title": "New England vs Detroit: Spread",
-      "market_title": "New England wins by over 10.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE11",
-      "yes_bid": 0.03,
-      "yes_ask": 0.15,
-      "yes_bid_cents": 3,
-      "yes_ask_cents": 15,
-      "price": 0.09,
-      "decimal_odds": 11.11,
-      "implied_pct": 9.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 10.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -11553,6 +11537,22 @@
       "close_time": "2026-11-17T14:30:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 16.5
+    },
+    {
+      "event_title": "New England vs Detroit: Spread",
+      "market_title": "New England wins by over 10.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15NEDET-NE11",
+      "yes_bid": 0.02,
+      "yes_ask": 0.15,
+      "yes_bid_cents": 2,
+      "yes_ask_cents": 15,
+      "price": 0.08,
+      "decimal_odds": 12.5,
+      "implied_pct": 8.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 10.5
     },
     {
       "event_title": "Buffalo vs New York J: Spread",
