@@ -212,7 +212,7 @@
       "receiving_yards": 15.5
     },
     "Dawson Knox": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Jackson Hawes": {
       "receiving_yards": 0.5
@@ -382,10 +382,10 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 63.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Parker Washington": {
-      "receiving_yards": 60.5
+      "receiving_yards": 62.5
     },
     "Tony Pollard": {
       "rushing_yards": 56.5,
@@ -490,7 +490,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 43.5,
-      "receiving_yards": 11.5,
+      "receiving_yards": 10.5,
       "receptions": 2
     },
     "Ashton Jeanty": {
@@ -505,7 +505,7 @@
       "receptions": 0.5
     },
     "AJ Barner": {
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Cooper Kupp": {
       "receiving_yards": 21.5
@@ -561,7 +561,7 @@
       "receiving_yards": 29.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Reggie Virgil": {
       "receiving_yards": 22.5
@@ -572,6 +572,9 @@
     "Simi Fehoko": {
       "receiving_yards": 13.5,
       "receptions": 1.5
+    },
+    "Davis Allen": {
+      "receiving_yards": 13.5
     },
     "Dak Prescott": {
       "passing_yards": 266.5,
@@ -627,7 +630,7 @@
       "receptions": 7.5
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 76.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -638,7 +641,7 @@
       "receiving_yards": 52.5
     },
     "Germie Bernard": {
-      "receiving_yards": 47.5
+      "receiving_yards": 48.5
     },
     "Chase Brown": {
       "rushing_yards": 44.5,
@@ -658,12 +661,12 @@
     "Mike Gesicki": {
       "receiving_yards": 23.5
     },
-    "Dohnte Meyers": {
-      "receiving_yards": 20.5
-    },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 7.5
+    },
+    "Dohnte Meyers": {
+      "receiving_yards": 19.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -695,16 +698,16 @@
     "Rashod Bateman": {
       "receiving_yards": 23.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
-    },
     "Ja'Kobi Lane": {
       "receiving_yards": 21.5
     },
+    "Mark Andrews": {
+      "receiving_yards": 20.5,
+      "receptions": 2.5
+    },
     "Kimani Vidal": {
       "rushing_yards": 18.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Justice Hill": {
       "rushing_yards": 12.5,
@@ -725,9 +728,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6232,
-    "matched_props": 317,
-    "excluded_goblin_demon_lines": 5109,
+    "total_projections_returned": 6243,
+    "matched_props": 318,
+    "excluded_goblin_demon_lines": 5118,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -766,5 +769,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T12:40:42.934668+00:00"
+  "fetched_at": "2026-11-12T13:00:51.118242+00:00"
 }
