@@ -35417,7 +35417,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jonathan Taylor|rushing_yards|10": {
@@ -37144,10 +37145,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Blake Corum|rushing_yards|10": {
     "player": "Blake Corum",
@@ -37219,7 +37217,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Kayshon Boutte|receiving_yards|10": {
