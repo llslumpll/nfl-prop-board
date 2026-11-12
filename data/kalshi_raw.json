@@ -97,22 +97,6 @@
       "floor_strike": 0.5
     },
     {
-      "event_title": "San Francisco vs Dallas: Touchdowns",
-      "market_title": "Javonte Williams: 1+",
-      "ticker": "KXNFLTD-26NOV15SFDAL-DALJWILLIAMS33-1",
-      "yes_bid": 0.53,
-      "yes_ask": 0.61,
-      "yes_bid_cents": 53,
-      "yes_ask_cents": 61,
-      "price": 0.57,
-      "decimal_odds": 1.75,
-      "implied_pct": 57.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:25:00Z",
-      "series_ticker": "KXNFLTD",
-      "floor_strike": 0.5
-    },
-    {
       "event_title": "Los Angeles C vs Baltimore: Touchdowns",
       "market_title": "Derrick Henry: 1+",
       "ticker": "KXNFLTD-26NOV16LACBAL-BALDHENRY22-1",
@@ -125,6 +109,22 @@
       "implied_pct": 57.0,
       "volume": 0,
       "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLTD",
+      "floor_strike": 0.5
+    },
+    {
+      "event_title": "San Francisco vs Dallas: Touchdowns",
+      "market_title": "Javonte Williams: 1+",
+      "ticker": "KXNFLTD-26NOV15SFDAL-DALJWILLIAMS33-1",
+      "yes_bid": 0.52,
+      "yes_ask": 0.61,
+      "yes_bid_cents": 52,
+      "yes_ask_cents": 61,
+      "price": 0.56,
+      "decimal_odds": 1.79,
+      "implied_pct": 56.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:25:00Z",
       "series_ticker": "KXNFLTD",
       "floor_strike": 0.5
     },
@@ -1886,7 +1886,7 @@
       "decimal_odds": 1.16,
       "implied_pct": 86.0,
       "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
+      "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 25.5
     },
@@ -4547,6 +4547,22 @@
       "floor_strike": 48.5
     },
     {
+      "event_title": "Los Angeles C vs Baltimore: Total Points",
+      "market_title": "Over 38.5 points",
+      "ticker": "KXNFLTOTAL-26NOV16LACBAL-39",
+      "yes_bid": 0.5,
+      "yes_ask": 0.53,
+      "yes_bid_cents": 50,
+      "yes_ask_cents": 53,
+      "price": 0.52,
+      "decimal_odds": 1.92,
+      "implied_pct": 52.0,
+      "volume": 0,
+      "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 38.5
+    },
+    {
       "event_title": "Jacksonville vs Tennessee: Spread",
       "market_title": "Jacksonville wins by over 10.5 points",
       "ticker": "KXNFLSPREAD-26NOV15JACTEN-JAC11",
@@ -4609,22 +4625,6 @@
       "close_time": "2026-11-17T21:25:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 55.5
-    },
-    {
-      "event_title": "Los Angeles C vs Baltimore: Total Points",
-      "market_title": "Over 38.5 points",
-      "ticker": "KXNFLTOTAL-26NOV16LACBAL-39",
-      "yes_bid": 0.5,
-      "yes_ask": 0.52,
-      "yes_bid_cents": 50,
-      "yes_ask_cents": 52,
-      "price": 0.51,
-      "decimal_odds": 1.96,
-      "implied_pct": 51.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 38.5
     },
     {
       "event_title": "Carolina vs New Orleans: Spread",
@@ -5603,6 +5603,22 @@
       "floor_strike": 40.5
     },
     {
+      "event_title": "Minnesota vs Green Bay: Total Points",
+      "market_title": "Over 44.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15MINGB-45",
+      "yes_bid": 0.4,
+      "yes_ask": 0.43,
+      "yes_bid_cents": 40,
+      "yes_ask_cents": 43,
+      "price": 0.42,
+      "decimal_odds": 2.38,
+      "implied_pct": 42.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 44.5
+    },
+    {
       "event_title": "Pittsburgh vs Cincinnati: Total Points",
       "market_title": "Over 51.5 points",
       "ticker": "KXNFLTOTAL-26NOV15PITCIN-52",
@@ -5745,22 +5761,6 @@
       "close_time": "2026-11-15T01:15:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 43.5
-    },
-    {
-      "event_title": "Minnesota vs Green Bay: Total Points",
-      "market_title": "Over 44.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15MINGB-45",
-      "yes_bid": 0.4,
-      "yes_ask": 0.42,
-      "yes_bid_cents": 40,
-      "yes_ask_cents": 42,
-      "price": 0.41,
-      "decimal_odds": 2.44,
-      "implied_pct": 41.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 44.5
     },
     {
       "event_title": "Los Angeles R vs Arizona: Total Points",
@@ -9699,6 +9699,22 @@
       "floor_strike": 20.5
     },
     {
+      "event_title": "Kansas City vs Atlanta: Spread",
+      "market_title": "Kansas City wins by over 16.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15KCATL-KC17",
+      "yes_bid": 0.08,
+      "yes_ask": 0.24,
+      "yes_bid_cents": 8,
+      "yes_ask_cents": 24,
+      "price": 0.16,
+      "decimal_odds": 6.25,
+      "implied_pct": 16.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 16.5
+    },
+    {
       "event_title": "Miami vs Indianapolis: Spread",
       "market_title": "Miami wins by over 7.5 points",
       "ticker": "KXNFLSPREAD-26NOV15MIAIND-MIA8",
@@ -9924,22 +9940,6 @@
     },
     {
       "event_title": "Kansas City vs Atlanta: Spread",
-      "market_title": "Kansas City wins by over 16.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15KCATL-KC17",
-      "yes_bid": 0.08,
-      "yes_ask": 0.23,
-      "yes_bid_cents": 8,
-      "yes_ask_cents": 23,
-      "price": 0.15,
-      "decimal_odds": 6.67,
-      "implied_pct": 15.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 16.5
-    },
-    {
-      "event_title": "Kansas City vs Atlanta: Spread",
       "market_title": "Kansas City wins by over 14.5 points",
       "ticker": "KXNFLSPREAD-26NOV15KCATL-KC15",
       "yes_bid": 0.11,
@@ -10118,9 +10118,9 @@
       "event_title": "Washington vs New York G: Spread",
       "market_title": "New York G wins by over 14.5 points",
       "ticker": "KXNFLSPREAD-26NOV12WASNYG-NYG15",
-      "yes_bid": 0.13,
+      "yes_bid": 0.12,
       "yes_ask": 0.15,
-      "yes_bid_cents": 13,
+      "yes_bid_cents": 12,
       "yes_ask_cents": 15,
       "price": 0.14,
       "decimal_odds": 7.14,
@@ -10337,6 +10337,22 @@
       "close_time": "2026-11-19T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 20.5
+    },
+    {
+      "event_title": "Seattle vs Las Vegas: Total Points",
+      "market_title": "Over 61.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15SEALV-62",
+      "yes_bid": 0.03,
+      "yes_ask": 0.24,
+      "yes_bid_cents": 3,
+      "yes_ask_cents": 24,
+      "price": 0.14,
+      "decimal_odds": 7.14,
+      "implied_pct": 14.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:05:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 61.5
     },
     {
       "event_title": "San Francisco vs Dallas: Total Points",
@@ -10675,22 +10691,6 @@
       "floor_strike": 20.5
     },
     {
-      "event_title": "Los Angeles R vs Arizona: Spread",
-      "market_title": "Los Angeles R wins by over 27.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR28",
-      "yes_bid": 0.05,
-      "yes_ask": 0.19,
-      "yes_bid_cents": 5,
-      "yes_ask_cents": 19,
-      "price": 0.12,
-      "decimal_odds": 8.33,
-      "implied_pct": 12.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 27.5
-    },
-    {
       "event_title": "Los Angeles C vs Baltimore: Spread",
       "market_title": "Los Angeles C wins by over 10.5 points",
       "ticker": "KXNFLSPREAD-26NOV16LACBAL-LAC11",
@@ -10785,22 +10785,6 @@
       "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 59.5
-    },
-    {
-      "event_title": "Seattle vs Las Vegas: Total Points",
-      "market_title": "Over 61.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15SEALV-62",
-      "yes_bid": 0.03,
-      "yes_ask": 0.21,
-      "yes_bid_cents": 3,
-      "yes_ask_cents": 21,
-      "price": 0.12,
-      "decimal_odds": 8.33,
-      "implied_pct": 12.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 61.5
     },
     {
       "event_title": "Washington vs New York G: Spread",
@@ -10913,6 +10897,22 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 9.5
+    },
+    {
+      "event_title": "Los Angeles R vs Arizona: Spread",
+      "market_title": "Los Angeles R wins by over 27.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15LARARI-LAR28",
+      "yes_bid": 0.03,
+      "yes_ask": 0.19,
+      "yes_bid_cents": 3,
+      "yes_ask_cents": 19,
+      "price": 0.11,
+      "decimal_odds": 9.09,
+      "implied_pct": 11.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:05:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 27.5
     },
     {
       "event_title": "Seattle vs Las Vegas: Spread",
@@ -11172,6 +11172,22 @@
     },
     {
       "event_title": "Los Angeles R vs Arizona: Total Points",
+      "market_title": "Over 62.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15LARARI-63",
+      "yes_bid": 0.02,
+      "yes_ask": 0.19,
+      "yes_bid_cents": 2,
+      "yes_ask_cents": 19,
+      "price": 0.1,
+      "decimal_odds": 10.0,
+      "implied_pct": 10.0,
+      "volume": 0,
+      "close_time": "2026-11-17T21:05:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 62.5
+    },
+    {
+      "event_title": "Los Angeles R vs Arizona: Total Points",
       "market_title": "Over 56.5 points",
       "ticker": "KXNFLTOTAL-26NOV15LARARI-57",
       "yes_bid": 0.06,
@@ -11249,6 +11265,22 @@
       "close_time": "2026-11-17T14:30:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 10.5
+    },
+    {
+      "event_title": "Kansas City vs Atlanta: Spread",
+      "market_title": "Atlanta wins by over 13.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15KCATL-ATL14",
+      "yes_bid": 0.02,
+      "yes_ask": 0.16,
+      "yes_bid_cents": 2,
+      "yes_ask_cents": 16,
+      "price": 0.09,
+      "decimal_odds": 11.11,
+      "implied_pct": 9.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 13.5
     },
     {
       "event_title": "Miami vs Indianapolis: Spread",
@@ -11686,9 +11718,9 @@
       "event_title": "Los Angeles C vs Baltimore: Spread",
       "market_title": "Los Angeles C wins by over 13.5 points",
       "ticker": "KXNFLSPREAD-26NOV16LACBAL-LAC14",
-      "yes_bid": 0.03,
+      "yes_bid": 0.02,
       "yes_ask": 0.11,
-      "yes_bid_cents": 3,
+      "yes_bid_cents": 2,
       "yes_ask_cents": 11,
       "price": 0.07,
       "decimal_odds": 14.29,
@@ -11793,22 +11825,6 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 7.5
-    },
-    {
-      "event_title": "Kansas City vs Atlanta: Spread",
-      "market_title": "Atlanta wins by over 13.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15KCATL-ATL14",
-      "yes_bid": 0.02,
-      "yes_ask": 0.1,
-      "yes_bid_cents": 2,
-      "yes_ask_cents": 10,
-      "price": 0.06,
-      "decimal_odds": 16.67,
-      "implied_pct": 6.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 13.5
     },
     {
       "event_title": "Los Angeles R vs Arizona: Spread",
@@ -12049,22 +12065,6 @@
       "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 65.5
-    },
-    {
-      "event_title": "Los Angeles R vs Arizona: Total Points",
-      "market_title": "Over 62.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15LARARI-63",
-      "yes_bid": 0.02,
-      "yes_ask": 0.06,
-      "yes_bid_cents": 2,
-      "yes_ask_cents": 6,
-      "price": 0.04,
-      "decimal_odds": 25.0,
-      "implied_pct": 4.0,
-      "volume": 0,
-      "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 62.5
     },
     {
       "event_title": "Los Angeles R vs Arizona: Spread",

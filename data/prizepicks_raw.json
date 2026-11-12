@@ -36,7 +36,7 @@
       "receptions": 4
     },
     "Austin Ekeler": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 29.5,
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
@@ -71,7 +71,7 @@
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 96.5,
+      "rushing_yards": 95.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -117,7 +117,7 @@
       "rushing_yards": 6.5
     },
     "Kenneth Walker III": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 88.5,
       "receiving_yards": 18.5
     },
     "Bijan Robinson": {
@@ -720,9 +720,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5854,
+    "total_projections_returned": 5866,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4752,
+    "excluded_goblin_demon_lines": 4764,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -761,5 +761,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T08:21:33.642142+00:00"
+  "fetched_at": "2026-11-12T08:40:47.823598+00:00"
 }
