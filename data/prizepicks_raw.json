@@ -1,7 +1,7 @@
 {
   "props": {
     "Jayden Daniels": {
-      "passing_yards": 200.5,
+      "passing_yards": 201.5,
       "rushing_yards": 37.5
     },
     "J.J. McCarthy": {
@@ -395,7 +395,7 @@
       "receiving_yards": 51.5
     },
     "Jakobi Meyers": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Chris Rodriguez Jr.": {
@@ -532,10 +532,11 @@
     },
     "Carson Beck": {
       "passing_yards": 177.5,
-      "rushing_yards": 14.5
+      "rushing_yards": 13.5
     },
     "Trey McBride": {
-      "receiving_yards": 65.5
+      "receiving_yards": 65.5,
+      "receptions": 7.5
     },
     "Kyren Williams": {
       "rushing_yards": 65.5,
@@ -543,21 +544,20 @@
     },
     "Blake Corum": {
       "rushing_yards": 56.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Tyler Allgeier": {
-      "rushing_yards": 47.5,
-      "receiving_yards": 11.5,
-      "receptions": 2.5
+      "rushing_yards": 44.5,
+      "receiving_yards": 11.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 1.5
     },
     "Dak Prescott": {
@@ -611,7 +611,7 @@
       "receptions": 7.5
     },
     "Tee Higgins": {
-      "receiving_yards": 76.5,
+      "receiving_yards": 75.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -630,7 +630,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 31.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 15.5
     },
     "Darnell Washington": {
       "receiving_yards": 28.5,
@@ -709,9 +709,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5695,
+    "total_projections_returned": 5705,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 4658,
+    "excluded_goblin_demon_lines": 4667,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +750,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T01:00:46.645054+00:00"
+  "fetched_at": "2026-11-12T01:06:15.933859+00:00"
 }
