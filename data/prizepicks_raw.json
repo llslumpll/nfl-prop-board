@@ -17,7 +17,7 @@
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Stefon Diggs": {
@@ -29,7 +29,7 @@
       "receiving_yards": 12.5
     },
     "Antonio Williams": {
-      "receiving_yards": 37.5
+      "receiving_yards": 36.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 34.5,
@@ -118,7 +118,7 @@
       "rushing_yards": 6.5
     },
     "Kenneth Walker III": {
-      "rushing_yards": 88.5,
+      "rushing_yards": 90.5,
       "receiving_yards": 18.5
     },
     "Bijan Robinson": {
@@ -296,13 +296,13 @@
     "Harold Fannin Jr.": {
       "receiving_yards": 38.5
     },
-    "Tank Dell": {
-      "receiving_yards": 32.5,
-      "receptions": 2.5
-    },
     "Dalton Schultz": {
       "receiving_yards": 30.5,
       "receptions": 3.5
+    },
+    "Tank Dell": {
+      "receiving_yards": 30.5,
+      "receptions": 2.5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 26.5
@@ -337,7 +337,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 73.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 63.5,
@@ -359,7 +359,7 @@
       "receptions": 3.5
     },
     "Laquon Treadwell": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Seth McGowan": {
@@ -382,13 +382,13 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 63.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Parker Washington": {
       "receiving_yards": 62.5
     },
     "Tony Pollard": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 11.5
     },
     "Carnell Tate": {
@@ -416,7 +416,7 @@
       "receptions": 2.5
     },
     "Calvin Ridley": {
-      "receiving_yards": 13.5
+      "receiving_yards": 10.5
     },
     "Tyler Shough": {
       "passing_yards": 252.5,
@@ -706,7 +706,7 @@
       "receiving_yards": 11.5
     },
     "Keaton Mitchell": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 10.5,
       "rushing_yards": 9.5
     },
     "Josh Cuevas": {
@@ -720,9 +720,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5875,
+    "total_projections_returned": 5852,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4769,
+    "excluded_goblin_demon_lines": 4752,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -761,5 +761,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T07:00:47.116625+00:00"
+  "fetched_at": "2026-11-12T07:20:44.201255+00:00"
 }
