@@ -13,7 +13,7 @@
       "receptions": 6
     },
     "Cam Skattebo": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
@@ -735,9 +735,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6320,
+    "total_projections_returned": 6323,
     "matched_props": 319,
-    "excluded_goblin_demon_lines": 5194,
+    "excluded_goblin_demon_lines": 5196,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -776,5 +776,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T17:00:46.217778+00:00"
+  "fetched_at": "2026-11-12T17:02:27.214167+00:00"
 }
