@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "props-4": {
@@ -354,27 +354,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "td-1": {
    "chance": 0.632,
-   "decimal": 1.887,
-   "ev": 0.193,
+   "decimal": 1.923,
+   "ev": 0.215,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.53,
+     "price": 0.52,
      "team": "IND"
     }
    ],
@@ -382,80 +382,28 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.3748,
-   "decimal": 3.31,
-   "ev": 0.241,
+   "decimal": 3.434,
+   "ev": 0.287,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.53,
+     "price": 0.52,
      "team": "IND"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 1.754,
-     "game": "BAL@LAC",
-     "good": true,
-     "kickoff": "2026-11-17T01:15:00+00:00",
-     "kind": "td",
-     "label": "Derrick Henry anytime TD",
-     "player": "Derrick Henry",
-     "price": 0.57,
-     "team": "BAL"
-    }
-   ],
-   "name": "Touchdowns",
-   "size": 2,
-   "stake": 1.0,
-   "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
-   "week": 10
-  },
-  "td-3": {
-   "chance": 0.2222,
-   "decimal": 5.911,
-   "ev": 0.314,
-   "family": "td",
-   "good": true,
-   "id": "td-3",
-   "legs": [
-    {
-     "chance": 0.632,
-     "decimal": 1.887,
-     "game": "IND@MIA",
-     "good": true,
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "td",
-     "label": "Jonathan Taylor anytime TD",
-     "player": "Jonathan Taylor",
-     "price": 0.53,
-     "team": "IND"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 1.754,
-     "game": "BAL@LAC",
-     "good": true,
-     "kickoff": "2026-11-17T01:15:00+00:00",
-     "kind": "td",
-     "label": "Derrick Henry anytime TD",
-     "player": "Derrick Henry",
-     "price": 0.57,
-     "team": "BAL"
     },
     {
      "chance": 0.593,
@@ -471,43 +419,31 @@
     }
    ],
    "name": "Touchdowns",
-   "size": 3,
-   "stake": 0.5,
+   "size": 2,
+   "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   },
-  "td-4": {
-   "chance": 0.1318,
-   "decimal": 11.367,
-   "ev": 0.498,
+  "td-3": {
+   "chance": 0.2222,
+   "decimal": 6.605,
+   "ev": 0.468,
    "family": "td",
    "good": true,
-   "id": "td-4",
+   "id": "td-3",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.887,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.53,
+     "price": 0.52,
      "team": "IND"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 1.754,
-     "game": "BAL@LAC",
-     "good": true,
-     "kickoff": "2026-11-17T01:15:00+00:00",
-     "kind": "td",
-     "label": "Derrick Henry anytime TD",
-     "player": "Derrick Henry",
-     "price": 0.57,
-     "team": "BAL"
     },
     {
      "chance": 0.593,
@@ -535,10 +471,74 @@
     }
    ],
    "name": "Touchdowns",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-12 10:01 UTC",
+   "week": 10
+  },
+  "td-4": {
+   "chance": 0.1318,
+   "decimal": 12.951,
+   "ev": 0.707,
+   "family": "td",
+   "good": true,
+   "id": "td-4",
+   "legs": [
+    {
+     "chance": 0.632,
+     "decimal": 1.923,
+     "game": "IND@MIA",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Jonathan Taylor anytime TD",
+     "player": "Jonathan Taylor",
+     "price": 0.52,
+     "team": "IND"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 1.786,
+     "game": "BUF@NYJ",
+     "good": true,
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.56,
+     "team": "BUF"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 1.923,
+     "game": "ARI@LA",
+     "good": true,
+     "kickoff": "2026-11-15T21:05:00+00:00",
+     "kind": "td",
+     "label": "Kyren Williams anytime TD",
+     "player": "Kyren Williams",
+     "price": 0.52,
+     "team": "LA"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 1.961,
+     "game": "BAL@LAC",
+     "good": true,
+     "kickoff": "2026-11-17T01:15:00+00:00",
+     "kind": "td",
+     "label": "Derrick Henry anytime TD",
+     "player": "Derrick Henry",
+     "price": 0.51,
+     "team": "BAL"
+    }
+   ],
+   "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 09:40 UTC",
+   "updated": "2026-11-12 10:01 UTC",
    "week": 10
   }
  },
