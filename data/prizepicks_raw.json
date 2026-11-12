@@ -13,7 +13,7 @@
       "receptions": 5.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 7.5
     },
     "Isaiah Likely": {
@@ -29,7 +29,7 @@
       "receiving_yards": 12.5
     },
     "Antonio Williams": {
-      "receiving_yards": 37.5
+      "receiving_yards": 36.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 34.5,
@@ -37,15 +37,15 @@
     },
     "Austin Ekeler": {
       "rushing_yards": 29.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 9.5,
       "receptions": 1.5
-    },
-    "Treylon Burks": {
-      "receiving_yards": 26.5,
-      "receptions": 2
     },
     "Malachi Fields": {
       "receiving_yards": 25.5
+    },
+    "Treylon Burks": {
+      "receiving_yards": 25.5,
+      "receptions": 2
     },
     "Devin Singletary": {
       "rushing_yards": 23.5,
@@ -264,7 +264,7 @@
       "rushing_yards": 11.5
     },
     "Pierre Strong Jr.": {
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -392,7 +392,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 58.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Carnell Tate": {
       "receiving_yards": 51.5
@@ -415,7 +415,7 @@
       "receiving_yards": 23.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Calvin Ridley": {
@@ -580,7 +580,7 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
-      "receiving_yards": 32.5
+      "receiving_yards": 31.5
     },
     "George Kittle": {
       "receiving_yards": 62.5
@@ -713,7 +713,7 @@
     "nfl_league_id": "9",
     "total_projections_returned": 5738,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 4694,
+    "excluded_goblin_demon_lines": 4695,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -752,5 +752,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T02:40:41.069442+00:00"
+  "fetched_at": "2026-11-12T03:00:42.255120+00:00"
 }
