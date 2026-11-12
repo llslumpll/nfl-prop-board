@@ -2,8 +2,8 @@
  "10": {
   "ml-2": {
    "chance": 0.6099,
-   "decimal": 1.429,
-   "ev": -0.128,
+   "decimal": 1.381,
+   "ev": -0.158,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -12,28 +12,28 @@
      "away": "JAX",
      "call": "AWAY",
      "chance": 0.81,
-     "decimal": 1.169,
+     "decimal": 1.143,
      "game": "JAX@TEN",
      "good": false,
      "home": "TEN",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "JAX to win",
-     "price": -590,
+     "price": -700,
      "team": "JAX"
     },
     {
      "away": "BUF",
      "call": "AWAY",
      "chance": 0.753,
-     "decimal": 1.222,
+     "decimal": 1.208,
      "game": "BUF@NYJ",
      "good": false,
      "home": "NYJ",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "BUF to win",
-     "price": -450,
+     "price": -480,
      "team": "BUF"
     }
    ],
@@ -41,13 +41,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "ml-3": {
    "chance": 0.2788,
-   "decimal": 2.829,
-   "ev": -0.211,
+   "decimal": 2.758,
+   "ev": -0.231,
    "family": "ml",
    "good": false,
    "id": "ml-3",
@@ -56,42 +56,42 @@
      "away": "LA",
      "call": "AWAY",
      "chance": 0.729,
-     "decimal": 1.217,
+     "decimal": 1.182,
      "game": "LA@ARI",
      "good": false,
      "home": "ARI",
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "ml",
      "label": "LA to win",
-     "price": -460,
+     "price": -550,
      "team": "LA"
     },
     {
      "away": "SF",
      "call": "AWAY",
      "chance": 0.631,
-     "decimal": 1.488,
+     "decimal": 1.476,
      "game": "SF@DAL",
      "good": false,
      "home": "DAL",
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "ml",
      "label": "SF to win",
-     "price": -205,
+     "price": -210,
      "team": "SF"
     },
     {
      "away": "KC",
      "call": "AWAY",
      "chance": 0.606,
-     "decimal": 1.562,
+     "decimal": 1.581,
      "game": "KC@ATL",
      "good": false,
      "home": "ATL",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "KC to win",
-     "price": -178,
+     "price": -172,
      "team": "KC"
     }
    ],
@@ -99,13 +99,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "ml-4": {
    "chance": 0.1225,
-   "decimal": 4.062,
-   "ev": -0.502,
+   "decimal": 4.279,
+   "ev": -0.476,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -114,56 +114,56 @@
      "away": "PIT",
      "call": "HOME",
      "chance": 0.606,
-     "decimal": 1.51,
+     "decimal": 1.543,
      "game": "PIT@CIN",
      "good": false,
      "home": "CIN",
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "ml",
      "label": "CIN to win",
-     "price": -196,
+     "price": -184,
      "team": "CIN"
     },
     {
      "away": "SEA",
      "call": "AWAY",
      "chance": 0.593,
-     "decimal": 1.323,
+     "decimal": 1.345,
      "game": "SEA@LV",
      "good": false,
      "home": "LV",
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "ml",
      "label": "SEA to win",
-     "price": -310,
+     "price": -290,
      "team": "SEA"
     },
     {
      "away": "LAC",
      "call": "HOME",
      "chance": 0.591,
-     "decimal": 1.426,
+     "decimal": 1.455,
      "game": "LAC@BAL",
      "good": false,
      "home": "BAL",
      "kickoff": "2026-11-17T01:15:00+00:00",
      "kind": "ml",
      "label": "BAL to win",
-     "price": -235,
+     "price": -220,
      "team": "BAL"
     },
     {
      "away": "HOU",
      "call": "AWAY",
      "chance": 0.577,
-     "decimal": 1.426,
+     "decimal": 1.417,
      "game": "HOU@CLE",
      "good": false,
      "home": "CLE",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "HOU to win",
-     "price": -235,
+     "price": -240,
      "team": "HOU"
     }
    ],
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "props-3": {
@@ -261,6 +261,37 @@
     {
      "call": "OVER",
      "chance": 0.548,
+     "conf": 0.667,
+     "game": "ATL@KC",
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Patrick Mahomes OVER 244.5 PASS YDS",
+     "line": 244.5,
+     "n": 84,
+     "player": "Patrick Mahomes",
+     "projected": 268.4,
+     "stat": "passing_yards",
+     "team": "KC"
+    }
+   ],
+   "name": "Safest props",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-12 21:17 UTC",
+   "week": 10
+  },
+  "props-4": {
+   "chance": 0.0863,
+   "decimal": 10.0,
+   "ev": -0.137,
+   "family": "props",
+   "good": false,
+   "id": "props-4",
+   "legs": [
+    {
+     "call": "OVER",
+     "chance": 0.548,
      "conf": 0.551,
      "game": "JAX@TEN",
      "kickoff": "2026-11-15T18:00:00+00:00",
@@ -272,23 +303,7 @@
      "projected": 248.4,
      "stat": "passing_yards",
      "team": "JAX"
-    }
-   ],
-   "name": "Safest props",
-   "size": 3,
-   "stake": 0.5,
-   "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
-   "week": 10
-  },
-  "props-4": {
-   "chance": 0.085,
-   "decimal": 10.0,
-   "ev": -0.15,
-   "family": "props",
-   "good": false,
-   "id": "props-4",
-   "legs": [
+    },
     {
      "call": "UNDER",
      "chance": 0.54,
@@ -333,28 +348,13 @@
      "projected": 4.8,
      "stat": "receptions",
      "team": "CIN"
-    },
-    {
-     "call": "UNDER",
-     "chance": 0.54,
-     "conf": 0.557,
-     "game": "ATL@KC",
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "prop",
-     "label": "Drake London UNDER 5.5 REC",
-     "line": 5.5,
-     "n": 100,
-     "player": "Drake London",
-     "projected": 5.1,
-     "stat": "receptions",
-     "team": "ATL"
     }
    ],
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "td-1": {
@@ -382,7 +382,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "td-2": {
@@ -422,7 +422,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "td-3": {
@@ -474,7 +474,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   },
   "td-4": {
@@ -538,7 +538,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-12 21:00 UTC",
+   "updated": "2026-11-12 21:17 UTC",
    "week": 10
   }
  },

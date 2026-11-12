@@ -34212,10 +34212,11 @@
     },
     "frozen_at": "2026-11-06 17:56 UTC",
     "graded": true,
-    "actual": 1,
+    "actual": null,
     "hit": null,
     "graded_at": "2026-11-10 16:43 UTC",
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Jawhar Jordan|any_td|9": {
     "player": "Jawhar Jordan",
@@ -35431,9 +35432,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Kaelon Black|rushing_yards|10": {
     "player": "Kaelon Black",
@@ -35748,10 +35747,10 @@
     "stat": "receptions",
     "projected": 6.2,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.7,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -35761,7 +35760,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-12 21:17 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Luther Burden III|receptions|11": {
     "player": "Luther Burden III",
@@ -35841,10 +35842,10 @@
     "stat": "receptions",
     "projected": 3.8,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.7,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -35853,7 +35854,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-12 21:17 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Michael Wilson|receptions|10": {
     "player": "Michael Wilson",
@@ -35973,10 +35976,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-12 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-12 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -36058,17 +36058,19 @@
     "stat": "receptions",
     "projected": 1.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -2.9,
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-11-10 16:43 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-12 21:17 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Courtland Sutton|receptions|11": {
     "player": "Courtland Sutton",
@@ -36123,10 +36125,10 @@
     "stat": "receptions",
     "projected": 2.4,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -1.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -36135,7 +36137,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-12 21:17 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Van Jefferson|receptions|10": {
     "player": "Van Jefferson",
@@ -36208,7 +36212,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-12 19:40 UTC",
-    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-12 19:40 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-12 19:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ashton Jeanty|receptions|10": {
     "player": "Ashton Jeanty",
@@ -36218,10 +36226,10 @@
     "stat": "receptions",
     "projected": 3.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -36231,7 +36239,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-12 21:17 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Efton Chism III|receptions|10": {
     "player": "Efton Chism III",
@@ -37177,7 +37187,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Drew Lock|passing_yards|10": {
     "player": "Drew Lock",
@@ -37375,9 +37387,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Amon-Ra St. Brown|receiving_yards|10": {
     "player": "Amon-Ra St. Brown",
@@ -37427,6 +37437,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Patrick Mahomes|passing_yards|10": {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "opponent": "ATL",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 268.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 244.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 23.9,
+    "model_prob": 0.667,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-12 21:17 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "highest_confidence"
     ]
   }

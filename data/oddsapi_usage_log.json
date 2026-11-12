@@ -1189,6 +1189,118 @@
       "requests_used": 90,
       "requests_last": 3,
       "logged_at": "2026-11-10 20:38 UTC"
+    },
+    {
+      "call": "moneylines[bookmakers]",
+      "requests_remaining": 407,
+      "requests_used": 93,
+      "requests_last": 3,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "events (free)",
+      "requests_remaining": 407,
+      "requests_used": 93,
+      "requests_last": 0,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:74d39e19225caf211ad2c8eb4110179f",
+      "requests_remaining": 403,
+      "requests_used": 97,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:b8c10fdf1e0ac4e13deee7f7c0af0b0b",
+      "requests_remaining": 399,
+      "requests_used": 101,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:3c71d515b726f1096aabb435badb83fd",
+      "requests_remaining": 395,
+      "requests_used": 105,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:1057d50949844ddf483da9c8c20354be",
+      "requests_remaining": 391,
+      "requests_used": 109,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:e5aa20e1364dd639f042af1c2281bbe2",
+      "requests_remaining": 387,
+      "requests_used": 113,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:be0e03cc42fbc9b6962467b22c7bf9dd",
+      "requests_remaining": 383,
+      "requests_used": 117,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:5d8d85473b87f772a979ecf294acab94",
+      "requests_remaining": 379,
+      "requests_used": 121,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:b5700b4d938fd94429f60d4622cc9c0a",
+      "requests_remaining": 375,
+      "requests_used": 125,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:28800df7e768ecec14f116454d560f9b",
+      "requests_remaining": 371,
+      "requests_used": 129,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:6c932a965110f3f89ec4a5f1a6ac256e",
+      "requests_remaining": 367,
+      "requests_used": 133,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:6079a5cbabf99b265a17edfc92a1da60",
+      "requests_remaining": 363,
+      "requests_used": 137,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:7627192fd89b05120ab6c712aa23fd81",
+      "requests_remaining": 359,
+      "requests_used": 141,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:48e497c230e6c9afcb3b600091d28e17",
+      "requests_remaining": 355,
+      "requests_used": 145,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
+    },
+    {
+      "call": "event-odds:35e3bdff558b5d1506251e814986f164",
+      "requests_remaining": 351,
+      "requests_used": 149,
+      "requests_last": 4,
+      "logged_at": "2026-11-12 21:17 UTC"
     }
   ]
 }
