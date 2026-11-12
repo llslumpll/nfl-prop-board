@@ -1,7 +1,7 @@
 {
   "props": {
     "Jayden Daniels": {
-      "passing_yards": 201.5,
+      "passing_yards": 200.5,
       "rushing_yards": 37.5
     },
     "J.J. McCarthy": {
@@ -50,13 +50,14 @@
     },
     "Devin Singletary": {
       "rushing_yards": 23.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 8.5,
+      "receptions": 1.5
     },
     "Darnell Mooney": {
       "receiving_yards": 14.5
     },
     "Van Jefferson": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Theo Johnson": {
       "receiving_yards": 5.5
@@ -92,7 +93,7 @@
       "receiving_yards": 35.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 17.5
+      "receiving_yards": 15.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -147,7 +148,7 @@
     },
     "Khalil Herbert": {
       "rushing_yards": 9.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 7.5
@@ -359,11 +360,11 @@
       "rushing_yards": 24.5,
       "receiving_yards": 3.5
     },
-    "Deion Burks": {
+    "Chris Bell": {
       "receiving_yards": 17.5
     },
-    "Chris Bell": {
-      "receiving_yards": 16.5
+    "Deion Burks": {
+      "receiving_yards": 17.5
     },
     "Anthony Gould": {
       "receiving_yards": 14.5,
@@ -624,10 +625,10 @@
       "receptions": 0.5
     },
     "Demarcus Robinson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 25.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Luke Farrell": {
       "receiving_yards": 0.5
@@ -743,9 +744,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6326,
-    "matched_props": 323,
-    "excluded_goblin_demon_lines": 5194,
+    "total_projections_returned": 6334,
+    "matched_props": 324,
+    "excluded_goblin_demon_lines": 5202,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +785,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-12T18:40:44.154541+00:00"
+  "fetched_at": "2026-11-12T19:00:45.644954+00:00"
 }
