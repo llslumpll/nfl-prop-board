@@ -4,7 +4,7 @@
       "passing_yards": 268.5
     },
     "Drake Maye": {
-      "passing_yards": 257.5,
+      "passing_yards": 261.5,
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
@@ -691,9 +691,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6064,
+    "total_projections_returned": 6065,
     "matched_props": 294,
-    "excluded_goblin_demon_lines": 4906,
+    "excluded_goblin_demon_lines": 4907,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -732,5 +732,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T08:20:37.398604+00:00"
+  "fetched_at": "2026-11-13T08:40:45.862093+00:00"
 }
