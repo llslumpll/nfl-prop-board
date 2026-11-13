@@ -25,7 +25,7 @@
       "receiving_yards": 35.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 17.5
+      "receiving_yards": 15.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -685,7 +685,7 @@
     },
     "Keaton Mitchell": {
       "receiving_yards": 10.5,
-      "rushing_yards": 9.5
+      "rushing_yards": 10.5
     },
     "Matt Hibner": {
       "receiving_yards": 7.5
@@ -698,9 +698,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5804,
+    "total_projections_returned": 5819,
     "matched_props": 299,
-    "excluded_goblin_demon_lines": 4779,
+    "excluded_goblin_demon_lines": 4792,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -739,5 +739,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T02:00:46.412854+00:00"
+  "fetched_at": "2026-11-13T02:20:39.864534+00:00"
 }
