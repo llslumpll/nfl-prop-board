@@ -8,7 +8,7 @@
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 93.5,
+      "rushing_yards": 92.5,
       "receiving_yards": 33.5
     },
     "Amon-Ra St. Brown": {
@@ -49,7 +49,7 @@
       "receiving_yards": 18.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 86.5,
+      "rushing_yards": 84.5,
       "receiving_yards": 28.5
     },
     "Drake London": {
@@ -298,7 +298,7 @@
     },
     "Seth McGowan": {
       "rushing_yards": 24.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Deion Burks": {
       "receiving_yards": 16.5
@@ -396,7 +396,7 @@
       "receptions": 6
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 65.5
+      "receiving_yards": 64.5
     },
     "Jalen Coker": {
       "receiving_yards": 47.5
@@ -698,9 +698,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6106,
+    "total_projections_returned": 6193,
     "matched_props": 297,
-    "excluded_goblin_demon_lines": 4937,
+    "excluded_goblin_demon_lines": 4944,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -726,12 +726,12 @@
       "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
+      "passer rating",
       "quarters with 1+ reception",
       "quarters with 25+ pass yards",
       "quarters with 5+ receiving yards",
       "rec targets",
-      "rec tds",
-      "receiving yards"
+      "rec tds"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -739,5 +739,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T15:00:52.012242+00:00"
+  "fetched_at": "2026-11-13T15:20:41.686486+00:00"
 }

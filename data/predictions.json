@@ -35112,8 +35112,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|10": {
@@ -37487,7 +37486,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Zach Charbonnet|rushing_yards|10": {
     "player": "Zach Charbonnet",
