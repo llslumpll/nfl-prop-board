@@ -35112,8 +35112,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|10": {
@@ -35458,9 +35457,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Penix Jr.|rushing_yards|10": {
     "player": "Michael Penix Jr.",
@@ -35902,10 +35899,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-12 19:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-12 19:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -36222,7 +36216,10 @@
     "graded_at": null,
     "line_attached_at": "2026-11-12 19:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-12 19:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Ashton Jeanty|receptions|10": {
     "player": "Ashton Jeanty",
@@ -37518,7 +37515,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Drake Maye|passing_yards|10": {
@@ -38840,5 +38838,32 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Gunnar Helm|receiving_yards|10": {
+    "player": "Gunnar Helm",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 21.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 29.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -7.8,
+    "model_prob": 0.2965,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-13 21:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
