@@ -245,7 +245,8 @@
       "rushing_yards": 18.5
     },
     "Marvin Harrison Jr.": {
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 1.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 17.5
@@ -695,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6050,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4885,
+    "total_projections_returned": 6068,
+    "matched_props": 297,
+    "excluded_goblin_demon_lines": 4901,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -708,6 +709,7 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
+      "halves with 25+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -727,8 +729,7 @@
       "receiving yards",
       "receiving yards (combo)",
       "receptions",
-      "rush attempts",
-      "rush tds"
+      "rush attempts"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -736,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T05:20:37.205220+00:00"
+  "fetched_at": "2026-11-13T05:40:44.385258+00:00"
 }
