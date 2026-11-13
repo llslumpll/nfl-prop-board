@@ -216,7 +216,7 @@
       "receiving_yards": 57.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6098,
+    "total_projections_returned": 6097,
     "matched_props": 296,
-    "excluded_goblin_demon_lines": 4933,
+    "excluded_goblin_demon_lines": 4932,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T11:40:37.548353+00:00"
+  "fetched_at": "2026-11-13T12:00:51.849683+00:00"
 }
