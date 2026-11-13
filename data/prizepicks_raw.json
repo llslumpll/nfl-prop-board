@@ -198,7 +198,7 @@
       "rushing_yards": 11.5
     },
     "Pierre Strong Jr.": {
-      "rushing_yards": 9.5
+      "rushing_yards": 10.5
     },
     "Jonnu Smith": {
       "receiving_yards": 0.5
@@ -540,11 +540,11 @@
     "Elijah Higgins": {
       "receiving_yards": 16.5
     },
-    "Simi Fehoko": {
-      "receiving_yards": 14.5
-    },
     "Davis Allen": {
       "receiving_yards": 13.5
+    },
+    "Simi Fehoko": {
+      "receiving_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 7.5
@@ -698,9 +698,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6109,
+    "total_projections_returned": 6108,
     "matched_props": 297,
-    "excluded_goblin_demon_lines": 4941,
+    "excluded_goblin_demon_lines": 4939,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -739,5 +739,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T14:00:47.887499+00:00"
+  "fetched_at": "2026-11-13T14:20:38.085293+00:00"
 }
