@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "props-4": {
@@ -387,7 +387,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "td-2": {
@@ -427,7 +427,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "td-3": {
@@ -479,13 +479,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.1118,
-   "decimal": 14.133,
-   "ev": 0.58,
+   "decimal": 14.795,
+   "ev": 0.654,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -528,14 +528,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.222,
+     "decimal": 2.326,
      "game": "CIN@PIT",
      "good": true,
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "td",
      "label": "Tee Higgins anytime TD",
      "player": "Tee Higgins",
-     "price": 0.45,
+     "price": 0.43,
      "team": "CIN"
     }
    ],
@@ -543,7 +543,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 22:41 UTC",
+   "updated": "2026-11-13 23:01 UTC",
    "week": 10
   }
  },
