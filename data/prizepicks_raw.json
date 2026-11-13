@@ -9,7 +9,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 95.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 79.5,
@@ -234,8 +234,7 @@
       "receiving_yards": 33.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 31.5,
-      "receptions": 3.5
+      "receiving_yards": 30.5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 28.5
@@ -428,7 +427,7 @@
     },
     "Drew Lock": {
       "passing_yards": 203.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "Fernando Mendoza": {
       "passing_yards": 179.5,
@@ -457,7 +456,7 @@
       "receiving_yards": 26.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 25.5,
       "receptions": 0.5
     },
     "Michael Mayer": {
@@ -693,9 +692,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6064,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4902,
+    "total_projections_returned": 6061,
+    "matched_props": 295,
+    "excluded_goblin_demon_lines": 4900,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -734,5 +733,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T06:20:40.562075+00:00"
+  "fetched_at": "2026-11-13T06:40:39.825137+00:00"
 }
