@@ -691,9 +691,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6056,
+    "total_projections_returned": 6065,
     "matched_props": 294,
-    "excluded_goblin_demon_lines": 4898,
+    "excluded_goblin_demon_lines": 4907,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -732,5 +732,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T07:20:40.248304+00:00"
+  "fetched_at": "2026-11-13T07:40:42.507283+00:00"
 }
