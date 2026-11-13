@@ -581,7 +581,7 @@
       "receiving_yards": 28.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Luke Farrell": {
       "receiving_yards": 0.5
@@ -696,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6068,
+    "total_projections_returned": 6075,
     "matched_props": 297,
-    "excluded_goblin_demon_lines": 4901,
+    "excluded_goblin_demon_lines": 4909,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -724,12 +724,12 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "quarters with 25+ pass yards",
+      "quarters with 5+ receiving yards",
       "rec targets",
       "rec tds",
       "receiving yards",
       "receiving yards (combo)",
-      "receptions",
-      "rush attempts"
+      "receptions"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -737,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T05:40:44.385258+00:00"
+  "fetched_at": "2026-11-13T06:00:46.142429+00:00"
 }
