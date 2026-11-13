@@ -7589,9 +7589,16 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.5 total. NYG enters with a real rest advantage (18 real days for NYG vs 11 for WAS). NYG is carrying real, meaningfully more Out/Doubtful designations than WAS this week -- a real health edge favoring WAS.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false,
+    "graded": true,
     "model_value": 65.0,
-    "rule": "2026-11-06"
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 21,
+      "away_score": 24,
+      "winner": "AWAY"
+    },
+    "our_correct": false,
+    "market_correct": false
   },
   "WAS@NYG|team_spread|10": {
     "away_team": "WAS",
@@ -7615,8 +7622,15 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.5 total. NYG enters with a real rest advantage (18 real days for NYG vs 11 for WAS). NYG is carrying real, meaningfully more Out/Doubtful designations than WAS this week -- a real health edge favoring WAS.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 21,
+      "away_score": 24,
+      "actual_margin": -3
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "WAS@NYG|team_total|10": {
     "away_team": "WAS",
@@ -7640,7 +7654,14 @@
     "reason": "Real net-points-per-game model projects a +3.4-point margin and a 47.5 total. NYG enters with a real rest advantage (18 real days for NYG vs 11 for WAS). NYG is carrying real, meaningfully more Out/Doubtful designations than WAS this week -- a real health edge favoring WAS.",
     "frozen_at": "2026-11-04 20:35 UTC",
     "result": null,
-    "graded": false
+    "graded": true,
+    "actual_result": {
+      "home_score": 21,
+      "away_score": 24,
+      "actual_total": 45
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "KC@ATL|team_moneyline|10": {
     "away_team": "KC",

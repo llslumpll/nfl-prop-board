@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "props-3": {
@@ -246,6 +246,21 @@
     {
      "call": "OVER",
      "chance": 0.548,
+     "conf": 0.677,
+     "game": "IND@MIA",
+     "kickoff": "2026-11-15T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Kyle McCord OVER 159.5 PASS YDS",
+     "line": 159.5,
+     "n": 84,
+     "player": "Kyle McCord",
+     "projected": 198.8,
+     "stat": "passing_yards",
+     "team": "MIA"
+    },
+    {
+     "call": "OVER",
+     "chance": 0.548,
      "conf": 0.673,
      "game": "DET@NE",
      "kickoff": "2026-11-15T14:30:00+00:00",
@@ -257,28 +272,13 @@
      "projected": 298.5,
      "stat": "passing_yards",
      "team": "DET"
-    },
-    {
-     "call": "OVER",
-     "chance": 0.548,
-     "conf": 0.667,
-     "game": "ATL@KC",
-     "kickoff": "2026-11-15T18:00:00+00:00",
-     "kind": "prop",
-     "label": "Patrick Mahomes OVER 244.5 PASS YDS",
-     "line": 244.5,
-     "n": 84,
-     "player": "Patrick Mahomes",
-     "projected": 268.4,
-     "stat": "passing_yards",
-     "team": "KC"
     }
    ],
    "name": "Safest props",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "props-4": {
@@ -287,6 +287,7 @@
    "ev": -0.137,
    "family": "props",
    "good": false,
+   "graded": "2026-11-13 16:54 UTC",
    "id": "props-4",
    "legs": [
     {
@@ -305,6 +306,7 @@
      "team": "JAX"
     },
     {
+     "actual": 9,
      "call": "UNDER",
      "chance": 0.54,
      "conf": 0.755,
@@ -316,6 +318,7 @@
      "n": 100,
      "player": "Isaiah Likely",
      "projected": 3.3,
+     "result": "miss",
      "stat": "receptions",
      "team": "NYG"
     },
@@ -354,7 +357,8 @@
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.25,
    "updated": "2026-11-13 01:00 UTC",
    "week": 10
   },
@@ -383,7 +387,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "td-2": {
@@ -423,7 +427,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "td-3": {
@@ -475,7 +479,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   },
   "td-4": {
@@ -539,7 +543,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 16:40 UTC",
+   "updated": "2026-11-13 16:54 UTC",
    "week": 10
   }
  },
