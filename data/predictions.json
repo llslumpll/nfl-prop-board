@@ -35112,8 +35112,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Parker Washington|receiving_yards|10": {
@@ -35605,7 +35604,10 @@
     "graded_at": null,
     "line_attached_at": "2026-11-11 12:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Omar Cooper Jr.|receptions|10": {
     "player": "Omar Cooper Jr.",
@@ -36137,10 +36139,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-12 21:17 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this fanduel line was first seen 2026-11-12 21:17 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Van Jefferson|receptions|10": {
     "player": "Van Jefferson",
@@ -37189,8 +37188,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Drew Lock|passing_yards|10": {
@@ -37242,8 +37240,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Kayshon Boutte|receiving_yards|10": {
@@ -37463,6 +37460,61 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Carnell Tate|receiving_yards|10": {
+    "player": "Carnell Tate",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 42.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 57.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -14.6,
+    "model_prob": 0.2613,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-13 14:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Zach Charbonnet|rushing_yards|10": {
+    "player": "Zach Charbonnet",
+    "team": "SEA",
+    "opponent": "LV",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 42.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 63.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -20.9,
+    "model_prob": 0.229,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-13 14:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
       "highest_confidence"
     ]
   }
