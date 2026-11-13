@@ -221,7 +221,7 @@
       "receptions": 4.5
     },
     "Denzel Boston": {
-      "receiving_yards": 47.5
+      "receiving_yards": 45.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 44.5,
@@ -231,8 +231,7 @@
       "receiving_yards": 38.5
     },
     "Tank Dell": {
-      "receiving_yards": 33.5,
-      "receptions": 2.5
+      "receiving_yards": 33.5
     },
     "Dalton Schultz": {
       "receiving_yards": 31.5,
@@ -471,7 +470,7 @@
       "receptions": 2.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 18.5
@@ -697,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5843,
-    "matched_props": 298,
-    "excluded_goblin_demon_lines": 4809,
+    "total_projections_returned": 5850,
+    "matched_props": 297,
+    "excluded_goblin_demon_lines": 4817,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -738,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T03:20:42.909055+00:00"
+  "fetched_at": "2026-11-13T03:40:41.675142+00:00"
 }
