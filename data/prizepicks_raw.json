@@ -216,7 +216,7 @@
       "receiving_yards": 57.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 46.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -357,9 +357,6 @@
     "Gunnar Helm": {
       "receiving_yards": 21.5,
       "receptions": 2.5
-    },
-    "Calvin Ridley": {
-      "receiving_yards": 14.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 11.5
@@ -523,11 +520,11 @@
       "receiving_yards": 29.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
+      "receiving_yards": 29.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 26.5
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "Bam Knight": {
       "rushing_yards": 25.5,
@@ -568,7 +565,7 @@
       "receiving_yards": 62.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "rushing_yards": 5.5
     },
     "Kaelon Black": {
@@ -585,7 +582,7 @@
       "receiving_yards": 0.5
     },
     "Joe Burrow": {
-      "passing_yards": 288.5,
+      "passing_yards": 289.5,
       "rushing_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -597,7 +594,7 @@
       "receptions": 7.5
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 74.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -695,9 +692,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6097,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4932,
+    "total_projections_returned": 6084,
+    "matched_props": 295,
+    "excluded_goblin_demon_lines": 4922,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +733,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T12:00:51.849683+00:00"
+  "fetched_at": "2026-11-13T12:20:51.070426+00:00"
 }
