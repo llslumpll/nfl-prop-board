@@ -80,7 +80,7 @@
       "receiving_yards": 10.5
     },
     "Khalil Herbert": {
-      "rushing_yards": 8.5,
+      "rushing_yards": 9.5,
       "receiving_yards": 2.5
     },
     "Olamide Zaccheaus": {
@@ -95,7 +95,7 @@
     },
     "Geno Smith": {
       "passing_yards": 223.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 4.5
     },
     "James Cook III": {
       "rushing_yards": 91.5,
@@ -161,7 +161,7 @@
       "receiving_yards": 77.5
     },
     "Christian Watson": {
-      "receiving_yards": 75.5
+      "receiving_yards": 74.5
     },
     "Matthew Golden": {
       "receiving_yards": 69.5
@@ -171,7 +171,7 @@
       "receiving_yards": 3.5
     },
     "Jordan Addison": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 40.5,
@@ -363,7 +363,7 @@
       "receptions": 1.5
     },
     "Nate Boerkircher": {
-      "receiving_yards": 11.5
+      "receiving_yards": 9.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 8.5
@@ -401,7 +401,7 @@
       "receiving_yards": 47.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 41.5
+      "receiving_yards": 42.5
     },
     "Darren Waller": {
       "receiving_yards": 29.5
@@ -524,11 +524,11 @@
       "receiving_yards": 29.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 29.5
+      "receiving_yards": 29.5,
+      "receptions": 2.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 26.5,
-      "receptions": 2.5
+      "receiving_yards": 26.5
     },
     "Bam Knight": {
       "rushing_yards": 25.5,
@@ -569,7 +569,7 @@
       "receiving_yards": 62.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 36.5,
       "rushing_yards": 5.5
     },
     "Kaelon Black": {
@@ -598,7 +598,7 @@
       "receptions": 7.5
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 74.5,
       "receptions": 5.5
     },
     "Jaylen Warren": {
@@ -657,7 +657,7 @@
     "Zay Flowers": {
       "receiving_yards": 69.5,
       "receptions": 5.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 2.5
     },
     "Omarion Hampton": {
       "rushing_yards": 32.5,
@@ -670,7 +670,7 @@
       "receiving_yards": 21.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Kimani Vidal": {
       "rushing_yards": 18.5,
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6097,
+    "total_projections_returned": 6104,
     "matched_props": 296,
-    "excluded_goblin_demon_lines": 4933,
+    "excluded_goblin_demon_lines": 4938,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T13:20:44.163977+00:00"
+  "fetched_at": "2026-11-13T13:40:47.281228+00:00"
 }
