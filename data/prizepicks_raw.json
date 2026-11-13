@@ -131,7 +131,7 @@
       "receiving_yards": 6.5
     },
     "Keon Coleman": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 21.5
@@ -168,18 +168,18 @@
     },
     "Jordan Mason": {
       "rushing_yards": 45.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Jordan Addison": {
       "receiving_yards": 41.5,
       "receptions": 3.5
     },
+    "T.J. Hockenson": {
+      "receiving_yards": 40.5,
+      "receptions": 4.5
+    },
     "Tucker Kraft": {
       "receiving_yards": 37.5
-    },
-    "T.J. Hockenson": {
-      "receiving_yards": 37.5,
-      "receptions": 4.5
     },
     "Kaleb Johnson": {
       "rushing_yards": 30.5
@@ -521,7 +521,8 @@
       "receptions": 3.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 29.5
+      "receiving_yards": 29.5,
+      "receptions": 2.5
     },
     "Konata Mumpfield": {
       "receiving_yards": 28.5
@@ -543,7 +544,7 @@
       "receiving_yards": 12.5
     },
     "Devin Duvernay": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Dak Prescott": {
       "passing_yards": 268.5,
@@ -695,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6083,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4919,
+    "total_projections_returned": 6088,
+    "matched_props": 297,
+    "excluded_goblin_demon_lines": 4922,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T10:00:48.115534+00:00"
+  "fetched_at": "2026-11-13T10:20:46.609115+00:00"
 }
