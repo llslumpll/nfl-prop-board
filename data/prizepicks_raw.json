@@ -412,12 +412,12 @@
     "Juwan Johnson": {
       "receiving_yards": 24.5
     },
-    "John Metchie III": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
-    },
     "Tommy Tremble": {
       "receiving_yards": 13.5
+    },
+    "John Metchie III": {
+      "receiving_yards": 12.5,
+      "receptions": 1.5
     },
     "Mitchell Evans": {
       "receiving_yards": 8.5
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6044,
+    "total_projections_returned": 6050,
     "matched_props": 296,
-    "excluded_goblin_demon_lines": 4882,
+    "excluded_goblin_demon_lines": 4885,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -707,6 +707,7 @@
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
+      "halves with 100+ pass yards",
       "int",
       "kicking points",
       "longest completion",
@@ -720,15 +721,14 @@
       "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
+      "quarters with 25+ pass yards",
       "rec targets",
       "rec tds",
       "receiving yards",
       "receiving yards (combo)",
       "receptions",
       "rush attempts",
-      "rush tds",
-      "rush yards",
-      "rush yards (combo)"
+      "rush tds"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T05:00:45.413918+00:00"
+  "fetched_at": "2026-11-13T05:20:37.205220+00:00"
 }
