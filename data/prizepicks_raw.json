@@ -16,7 +16,7 @@
       "receptions": 7
     },
     "Jameson Williams": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Sam LaPorta": {
       "receiving_yards": 42.5
@@ -221,7 +221,7 @@
       "receptions": 4.5
     },
     "Denzel Boston": {
-      "receiving_yards": 45.5
+      "receiving_yards": 47.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 44.5,
@@ -413,7 +413,8 @@
       "receiving_yards": 24.5
     },
     "John Metchie III": {
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 1.5
     },
     "Tommy Tremble": {
       "receiving_yards": 13.5
@@ -497,7 +498,7 @@
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 65.5,
       "receiving_yards": 19.5
     },
     "Trey McBride": {
@@ -695,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6032,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4871,
+    "total_projections_returned": 6041,
+    "matched_props": 297,
+    "excluded_goblin_demon_lines": 4878,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T04:20:38.072702+00:00"
+  "fetched_at": "2026-11-13T04:40:41.539375+00:00"
 }
