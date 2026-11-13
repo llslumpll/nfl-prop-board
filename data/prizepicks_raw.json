@@ -126,7 +126,7 @@
       "receptions": 3
     },
     "Adonai Mitchell": {
-      "receiving_yards": 34.5
+      "receiving_yards": 36.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -411,7 +411,7 @@
       "receiving_yards": 30.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 27.5,
@@ -421,7 +421,7 @@
       "receiving_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Mitchell Evans": {
       "receiving_yards": 8.5
@@ -497,7 +497,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 213.5
+      "passing_yards": 212.5
     },
     "Carson Beck": {
       "passing_yards": 175.5,
@@ -541,7 +541,7 @@
       "receiving_yards": 26.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 16.5
+      "receiving_yards": 18.5
     },
     "Simi Fehoko": {
       "receiving_yards": 13.5
@@ -556,7 +556,7 @@
       "receiving_yards": 7.5
     },
     "Dak Prescott": {
-      "passing_yards": 268.5,
+      "passing_yards": 270.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
@@ -685,7 +685,7 @@
     "Zay Flowers": {
       "receiving_yards": 69.5,
       "receptions": 5.5,
-      "rushing_yards": 2.5
+      "rushing_yards": 3.5
     },
     "Omarion Hampton": {
       "rushing_yards": 32.5,
@@ -723,9 +723,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6674,
+    "total_projections_returned": 6669,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5416,
+    "excluded_goblin_demon_lines": 5411,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -764,5 +764,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T23:20:42.202624+00:00"
+  "fetched_at": "2026-11-13T23:40:40.875209+00:00"
 }
