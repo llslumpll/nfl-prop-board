@@ -161,7 +161,7 @@
       "receiving_yards": 77.5
     },
     "Christian Watson": {
-      "receiving_yards": 74.5
+      "receiving_yards": 75.5
     },
     "Matthew Golden": {
       "receiving_yards": 69.5
@@ -171,8 +171,7 @@
       "receiving_yards": 3.5
     },
     "Jordan Addison": {
-      "receiving_yards": 41.5,
-      "receptions": 3.5
+      "receiving_yards": 41.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 40.5,
@@ -221,7 +220,7 @@
       "receptions": 4.5
     },
     "Denzel Boston": {
-      "receiving_yards": 47.5
+      "receiving_yards": 45.5
     },
     "Quinshon Judkins": {
       "rushing_yards": 44.5,
@@ -274,7 +273,8 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 69.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 3.5
     },
     "Caleb Douglas": {
       "receiving_yards": 43.5
@@ -339,7 +339,7 @@
       "receptions": 2.5
     },
     "Carnell Tate": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Jakobi Meyers": {
       "receiving_yards": 41.5,
@@ -482,7 +482,7 @@
       "receiving_yards": 7.5
     },
     "Jack Bech": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Eric Saubert": {
       "receiving_yards": 0.5
@@ -696,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6087,
+    "total_projections_returned": 6092,
     "matched_props": 297,
-    "excluded_goblin_demon_lines": 4921,
+    "excluded_goblin_demon_lines": 4926,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -737,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T10:40:41.934739+00:00"
+  "fetched_at": "2026-11-13T11:00:51.602924+00:00"
 }
