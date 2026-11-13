@@ -156,11 +156,12 @@
       "rushing_yards": 4.5
     },
     "Kirk Cousins": {
-      "passing_yards": 235.5,
+      "passing_yards": 233.5,
       "rushing_yards": 0.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 79.5
+      "receiving_yards": 79.5,
+      "receptions": 6.5
     },
     "Christian Watson": {
       "receiving_yards": 74.5
@@ -169,8 +170,7 @@
       "receiving_yards": 69.5
     },
     "Jordan Addison": {
-      "receiving_yards": 49.5,
-      "receptions": 3.5
+      "receiving_yards": 49.5
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
@@ -183,18 +183,18 @@
       "rushing_yards": 30.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 26.5,
-      "receiving_yards": 9.5
+      "rushing_yards": 27.5,
+      "receiving_yards": 10.5
+    },
+    "Gavin Bartholomew": {
+      "receiving_yards": 21.5
     },
     "Savion Williams": {
       "receiving_yards": 20.5,
       "rushing_yards": 4.5
     },
-    "Gavin Bartholomew": {
-      "receiving_yards": 18.5
-    },
     "MarShawn Lloyd": {
-      "rushing_yards": 14.5
+      "rushing_yards": 13.5
     },
     "Pierre Strong Jr.": {
       "rushing_yards": 9.5
@@ -203,7 +203,7 @@
       "receiving_yards": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 244.5,
+      "passing_yards": 245.5,
       "rushing_yards": 8.5
     },
     "Deshaun Watson": {
@@ -211,7 +211,7 @@
       "rushing_yards": 24.5
     },
     "Nico Collins": {
-      "receiving_yards": 57.5
+      "receiving_yards": 60.5
     },
     "Woody Marks": {
       "rushing_yards": 56.5,
@@ -229,23 +229,23 @@
       "receiving_yards": 5.5
     },
     "Tank Dell": {
-      "receiving_yards": 40.5
+      "receiving_yards": 41.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 29.5
+      "receiving_yards": 30.5
     },
     "Dalton Schultz": {
       "receiving_yards": 29.5
     },
-    "Kayshon Boutte": {
-      "receiving_yards": 23.5
-    },
     "Dylan Sampson": {
       "receiving_yards": 22.5,
       "rushing_yards": 18.5
+    },
+    "Kayshon Boutte": {
+      "receiving_yards": 22.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -331,7 +331,7 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 67.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Parker Washington": {
       "receiving_yards": 60.5
@@ -529,15 +529,15 @@
       "receiving_yards": 31.5,
       "receptions": 3.5
     },
-    "Konata Mumpfield": {
-      "receiving_yards": 29.5
-    },
     "Tutu Atwell": {
       "receiving_yards": 29.5
     },
     "Bam Knight": {
       "rushing_yards": 29.5,
       "receiving_yards": 6.5
+    },
+    "Konata Mumpfield": {
+      "receiving_yards": 28.5
     },
     "Reggie Virgil": {
       "receiving_yards": 26.5
@@ -576,13 +576,13 @@
       "rushing_yards": 62.5,
       "receiving_yards": 33.5
     },
+    "George Kittle": {
+      "receiving_yards": 62.5
+    },
     "Javonte Williams": {
       "rushing_yards": 61.5,
       "receiving_yards": 13.5,
       "receptions": 2.5
-    },
-    "George Kittle": {
-      "receiving_yards": 61.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 37.5,
@@ -599,11 +599,15 @@
     "Demarcus Robinson": {
       "receiving_yards": 28.5
     },
-    "Keenan Allen": {
-      "receiving_yards": 26.5
+    "Jordan Watkins": {
+      "receiving_yards": 24.5,
+      "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 20.5
+    },
+    "Keenan Allen": {
+      "receiving_yards": 18.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 7.5
@@ -721,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6612,
-    "matched_props": 304,
-    "excluded_goblin_demon_lines": 5362,
+    "total_projections_returned": 6653,
+    "matched_props": 306,
+    "excluded_goblin_demon_lines": 5401,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -762,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T22:20:39.859212+00:00"
+  "fetched_at": "2026-11-13T22:41:00.830431+00:00"
 }
