@@ -10864,6 +10864,38 @@
       "volume": 0,
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 6.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Indianapolis wins by over 5.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-IND6",
+      "yes_bid": 0.03,
+      "yes_ask": 0.15,
+      "yes_bid_cents": 3,
+      "yes_ask_cents": 15,
+      "price": 0.09,
+      "decimal_odds": 11.11,
+      "implied_pct": 9.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 5.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Indianapolis wins by over 4.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-IND5",
+      "yes_bid": 0.03,
+      "yes_ask": 0.15,
+      "yes_bid_cents": 3,
+      "yes_ask_cents": 15,
+      "price": 0.09,
+      "decimal_odds": 11.11,
+      "implied_pct": 9.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
       "floor_strike": 4.5
     },
     {
