@@ -415,8 +415,7 @@
       "receiving_yards": 23.5
     },
     "John Metchie III": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+      "receiving_yards": 13.5
     },
     "Tommy Tremble": {
       "receiving_yards": 13.5
@@ -580,7 +579,7 @@
       "receptions": 0.5
     },
     "Demarcus Robinson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 8.5
@@ -698,9 +697,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5819,
-    "matched_props": 299,
-    "excluded_goblin_demon_lines": 4792,
+    "total_projections_returned": 5832,
+    "matched_props": 298,
+    "excluded_goblin_demon_lines": 4798,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -739,5 +738,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T02:20:39.864534+00:00"
+  "fetched_at": "2026-11-13T02:40:41.709483+00:00"
 }
