@@ -533,9 +533,9 @@
       "market_title": "Drake London: 1+",
       "ticker": "KXNFLTD-26NOV15KCATL-ATLDLONDON5-1",
       "yes_bid": 0.37,
-      "yes_ask": 0.39,
+      "yes_ask": 0.38,
       "yes_bid_cents": 37,
-      "yes_ask_cents": 39,
+      "yes_ask_cents": 38,
       "price": 0.38,
       "decimal_odds": 2.63,
       "implied_pct": 38.0,
@@ -1251,6 +1251,22 @@
       "floor_strike": 35.5
     },
     {
+      "event_title": "Jacksonville vs Tennessee: Total Points",
+      "market_title": "Over 33.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15JACTEN-34",
+      "yes_bid": 0.85,
+      "yes_ask": 0.87,
+      "yes_bid_cents": 85,
+      "yes_ask_cents": 87,
+      "price": 0.86,
+      "decimal_odds": 1.16,
+      "implied_pct": 86.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 33.5
+    },
+    {
       "event_title": "Los Angeles R vs Arizona: Total Points",
       "market_title": "Over 26.5 points",
       "ticker": "KXNFLTOTAL-26NOV15LARARI-27",
@@ -1263,22 +1279,6 @@
       "implied_pct": 86.0,
       "volume": 0,
       "close_time": "2026-11-17T21:05:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 26.5
-    },
-    {
-      "event_title": "Los Angeles C vs Baltimore: Total Points",
-      "market_title": "Over 26.5 points",
-      "ticker": "KXNFLTOTAL-26NOV16LACBAL-27",
-      "yes_bid": 0.84,
-      "yes_ask": 0.88,
-      "yes_bid_cents": 84,
-      "yes_ask_cents": 88,
-      "price": 0.86,
-      "decimal_odds": 1.16,
-      "implied_pct": 86.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 26.5
     }
@@ -1907,6 +1907,22 @@
       "floor_strike": 35.5
     },
     {
+      "event_title": "Jacksonville vs Tennessee: Total Points",
+      "market_title": "Over 33.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15JACTEN-34",
+      "yes_bid": 0.85,
+      "yes_ask": 0.87,
+      "yes_bid_cents": 85,
+      "yes_ask_cents": 87,
+      "price": 0.86,
+      "decimal_odds": 1.16,
+      "implied_pct": 86.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 33.5
+    },
+    {
       "event_title": "Los Angeles R vs Arizona: Total Points",
       "market_title": "Over 26.5 points",
       "ticker": "KXNFLTOTAL-26NOV15LARARI-27",
@@ -1969,22 +1985,6 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 37.5
-    },
-    {
-      "event_title": "Jacksonville vs Tennessee: Total Points",
-      "market_title": "Over 33.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15JACTEN-34",
-      "yes_bid": 0.85,
-      "yes_ask": 0.86,
-      "yes_bid_cents": 85,
-      "yes_ask_cents": 86,
-      "price": 0.85,
-      "decimal_odds": 1.18,
-      "implied_pct": 85.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 33.5
     },
     {
       "event_title": "Kansas City vs Atlanta: Total Points",
@@ -2995,22 +2995,6 @@
       "floor_strike": null
     },
     {
-      "event_title": "Los Angeles C vs Baltimore",
-      "market_title": "Baltimore",
-      "ticker": "KXNFLGAME-26NOV16LACBAL-BAL",
-      "yes_bid": 0.66,
-      "yes_ask": 0.67,
-      "yes_bid_cents": 66,
-      "yes_ask_cents": 67,
-      "price": 0.67,
-      "decimal_odds": 1.49,
-      "implied_pct": 67.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
-      "series_ticker": "KXNFLGAME",
-      "floor_strike": null
-    },
-    {
       "event_title": "Buffalo vs New York J: Spread",
       "market_title": "Buffalo wins by over 3.5 points",
       "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF4",
@@ -3107,18 +3091,50 @@
       "floor_strike": null
     },
     {
-      "event_title": "Pittsburgh vs Philadelphia",
-      "market_title": "Pittsburgh",
-      "ticker": "KXNFLGAME-26NOV22PITPHI-PIT",
-      "yes_bid": 0.64,
+      "event_title": "Los Angeles C vs Baltimore",
+      "market_title": "Baltimore",
+      "ticker": "KXNFLGAME-26NOV16LACBAL-BAL",
+      "yes_bid": 0.65,
       "yes_ask": 0.67,
-      "yes_bid_cents": 64,
+      "yes_bid_cents": 65,
       "yes_ask_cents": 67,
       "price": 0.66,
       "decimal_odds": 1.52,
       "implied_pct": 66.0,
       "volume": 0,
+      "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLGAME",
+      "floor_strike": null
+    },
+    {
+      "event_title": "Pittsburgh vs Philadelphia",
+      "market_title": "Pittsburgh",
+      "ticker": "KXNFLGAME-26NOV22PITPHI-PIT",
+      "yes_bid": 0.65,
+      "yes_ask": 0.66,
+      "yes_bid_cents": 65,
+      "yes_ask_cents": 66,
+      "price": 0.66,
+      "decimal_odds": 1.52,
+      "implied_pct": 66.0,
+      "volume": 0,
       "close_time": "2026-11-24T18:00:00Z",
+      "series_ticker": "KXNFLGAME",
+      "floor_strike": null
+    },
+    {
+      "event_title": "Cincinnati vs Washington",
+      "market_title": "Cincinnati",
+      "ticker": "KXNFLGAME-26NOV23CINWAS-CIN",
+      "yes_bid": 0.63,
+      "yes_ask": 0.68,
+      "yes_bid_cents": 63,
+      "yes_ask_cents": 68,
+      "price": 0.66,
+      "decimal_odds": 1.52,
+      "implied_pct": 66.0,
+      "volume": 0,
+      "close_time": "2026-11-26T01:15:00Z",
       "series_ticker": "KXNFLGAME",
       "floor_strike": null
     },
@@ -3201,22 +3217,6 @@
       "close_time": "2026-11-17T21:05:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 35.5
-    },
-    {
-      "event_title": "Cincinnati vs Washington",
-      "market_title": "Cincinnati",
-      "ticker": "KXNFLGAME-26NOV23CINWAS-CIN",
-      "yes_bid": 0.63,
-      "yes_ask": 0.65,
-      "yes_bid_cents": 63,
-      "yes_ask_cents": 65,
-      "price": 0.64,
-      "decimal_odds": 1.56,
-      "implied_pct": 64.0,
-      "volume": 0,
-      "close_time": "2026-11-26T01:15:00Z",
-      "series_ticker": "KXNFLGAME",
-      "floor_strike": null
     },
     {
       "event_title": "Houston vs Cleveland: Spread",
@@ -3651,6 +3651,22 @@
       "floor_strike": 46.5
     },
     {
+      "event_title": "Minnesota vs Green Bay",
+      "market_title": "Green Bay",
+      "ticker": "KXNFLGAME-26NOV15MINGB-GB",
+      "yes_bid": 0.59,
+      "yes_ask": 0.6,
+      "yes_bid_cents": 59,
+      "yes_ask_cents": 60,
+      "price": 0.59,
+      "decimal_odds": 1.69,
+      "implied_pct": 59.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLGAME",
+      "floor_strike": null
+    },
+    {
       "event_title": "Kansas City vs Atlanta: Spread",
       "market_title": "Kansas City wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26NOV15KCATL-KC2",
@@ -3681,6 +3697,22 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 1.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Houston wins by over 6.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU7",
+      "yes_bid": 0.53,
+      "yes_ask": 0.65,
+      "yes_bid_cents": 53,
+      "yes_ask_cents": 65,
+      "price": 0.59,
+      "decimal_odds": 1.69,
+      "implied_pct": 59.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 6.5
     },
     {
       "event_title": "Jacksonville vs Tennessee: Total Points",
@@ -3763,22 +3795,6 @@
       "floor_strike": 36.5
     },
     {
-      "event_title": "Minnesota vs Green Bay",
-      "market_title": "Green Bay",
-      "ticker": "KXNFLGAME-26NOV15MINGB-GB",
-      "yes_bid": 0.58,
-      "yes_ask": 0.59,
-      "yes_bid_cents": 58,
-      "yes_ask_cents": 59,
-      "price": 0.58,
-      "decimal_odds": 1.72,
-      "implied_pct": 58.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLGAME",
-      "floor_strike": null
-    },
-    {
       "event_title": "Buffalo vs New York J: Spread",
       "market_title": "Buffalo wins by over 6.5 points",
       "ticker": "KXNFLSPREAD-26NOV15BUFNYJ-BUF7",
@@ -3809,22 +3825,6 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 2.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 6.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU7",
-      "yes_bid": 0.53,
-      "yes_ask": 0.64,
-      "yes_bid_cents": 53,
-      "yes_ask_cents": 64,
-      "price": 0.58,
-      "decimal_odds": 1.72,
-      "implied_pct": 58.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 6.5
     },
     {
       "event_title": "New England vs Detroit: Total Points",
@@ -4963,22 +4963,6 @@
       "floor_strike": 43.5
     },
     {
-      "event_title": "Kansas City vs Atlanta: Spread",
-      "market_title": "Kansas City wins by over 3.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15KCATL-KC4",
-      "yes_bid": 0.47,
-      "yes_ask": 0.48,
-      "yes_bid_cents": 47,
-      "yes_ask_cents": 48,
-      "price": 0.47,
-      "decimal_odds": 2.13,
-      "implied_pct": 47.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 3.5
-    },
-    {
       "event_title": "San Francisco vs Dallas: Spread",
       "market_title": "San Francisco wins by over 4.5 points",
       "ticker": "KXNFLSPREAD-26NOV15SFDAL-SF5",
@@ -5089,6 +5073,22 @@
       "close_time": "2026-11-17T18:00:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 9.5
+    },
+    {
+      "event_title": "Kansas City vs Atlanta: Spread",
+      "market_title": "Kansas City wins by over 3.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15KCATL-KC4",
+      "yes_bid": 0.46,
+      "yes_ask": 0.47,
+      "yes_bid_cents": 46,
+      "yes_ask_cents": 47,
+      "price": 0.46,
+      "decimal_odds": 2.17,
+      "implied_pct": 46.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 3.5
     },
     {
       "event_title": "Miami vs Indianapolis: Spread",
@@ -5651,22 +5651,6 @@
       "floor_strike": 13.5
     },
     {
-      "event_title": "New England vs Detroit: Total Points",
-      "market_title": "Over 52.5 points",
-      "ticker": "KXNFLTOTAL-26NOV15NEDET-53",
-      "yes_bid": 0.42,
-      "yes_ask": 0.43,
-      "yes_bid_cents": 42,
-      "yes_ask_cents": 43,
-      "price": 0.42,
-      "decimal_odds": 2.38,
-      "implied_pct": 42.0,
-      "volume": 0,
-      "close_time": "2026-11-17T14:30:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 52.5
-    },
-    {
       "event_title": "Jacksonville vs Tennessee: Total Points",
       "market_title": "Over 48.5 points",
       "ticker": "KXNFLTOTAL-26NOV15JACTEN-49",
@@ -5827,6 +5811,22 @@
       "floor_strike": 4.5
     },
     {
+      "event_title": "New England vs Detroit: Total Points",
+      "market_title": "Over 52.5 points",
+      "ticker": "KXNFLTOTAL-26NOV15NEDET-53",
+      "yes_bid": 0.41,
+      "yes_ask": 0.42,
+      "yes_bid_cents": 41,
+      "yes_ask_cents": 42,
+      "price": 0.41,
+      "decimal_odds": 2.44,
+      "implied_pct": 41.0,
+      "volume": 0,
+      "close_time": "2026-11-17T14:30:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 52.5
+    },
+    {
       "event_title": "Miami vs Indianapolis: Total Points",
       "market_title": "Over 40.5 points",
       "ticker": "KXNFLTOTAL-26NOV15MIAIND-41",
@@ -5923,6 +5923,22 @@
       "floor_strike": 41.5
     },
     {
+      "event_title": "Tampa Bay vs Detroit",
+      "market_title": "Tampa Bay",
+      "ticker": "KXNFLGAME-26NOV22TBDET-TB",
+      "yes_bid": 0.39,
+      "yes_ask": 0.4,
+      "yes_bid_cents": 39,
+      "yes_ask_cents": 40,
+      "price": 0.4,
+      "decimal_odds": 2.5,
+      "implied_pct": 40.0,
+      "volume": 0,
+      "close_time": "2026-11-24T18:00:00Z",
+      "series_ticker": "KXNFLGAME",
+      "floor_strike": null
+    },
+    {
       "event_title": "New England vs Detroit: Spread",
       "market_title": "New England wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26NOV15NEDET-NE2",
@@ -6017,22 +6033,6 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 6.5
-    },
-    {
-      "event_title": "Tampa Bay vs Detroit",
-      "market_title": "Tampa Bay",
-      "ticker": "KXNFLGAME-26NOV22TBDET-TB",
-      "yes_bid": 0.38,
-      "yes_ask": 0.4,
-      "yes_bid_cents": 38,
-      "yes_ask_cents": 40,
-      "price": 0.39,
-      "decimal_odds": 2.56,
-      "implied_pct": 39.0,
-      "volume": 0,
-      "close_time": "2026-11-24T18:00:00Z",
-      "series_ticker": "KXNFLGAME",
-      "floor_strike": null
     },
     {
       "event_title": "New England vs Detroit: Spread",
@@ -6195,22 +6195,6 @@
       "floor_strike": 4.5
     },
     {
-      "event_title": "Miami vs Indianapolis: Spread",
-      "market_title": "Indianapolis wins by over 7.5 points",
-      "ticker": "KXNFLSPREAD-26NOV15MIAIND-IND8",
-      "yes_bid": 0.37,
-      "yes_ask": 0.38,
-      "yes_bid_cents": 37,
-      "yes_ask_cents": 38,
-      "price": 0.38,
-      "decimal_odds": 2.63,
-      "implied_pct": 38.0,
-      "volume": 0,
-      "close_time": "2026-11-17T18:00:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 7.5
-    },
-    {
       "event_title": "Minnesota vs Green Bay: Spread",
       "market_title": "Minnesota wins by over 1.5 points",
       "ticker": "KXNFLSPREAD-26NOV15MINGB-MIN2",
@@ -6257,6 +6241,22 @@
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 14.5
+    },
+    {
+      "event_title": "Miami vs Indianapolis: Spread",
+      "market_title": "Indianapolis wins by over 7.5 points",
+      "ticker": "KXNFLSPREAD-26NOV15MIAIND-IND8",
+      "yes_bid": 0.36,
+      "yes_ask": 0.38,
+      "yes_bid_cents": 36,
+      "yes_ask_cents": 38,
+      "price": 0.37,
+      "decimal_odds": 2.7,
+      "implied_pct": 37.0,
+      "volume": 0,
+      "close_time": "2026-11-17T18:00:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 7.5
     },
     {
       "event_title": "Kansas City vs Atlanta",
@@ -6598,10 +6598,10 @@
       "event_title": "Pittsburgh vs Philadelphia",
       "market_title": "Philadelphia",
       "ticker": "KXNFLGAME-26NOV22PITPHI-PHI",
-      "yes_bid": 0.32,
-      "yes_ask": 0.37,
-      "yes_bid_cents": 32,
-      "yes_ask_cents": 37,
+      "yes_bid": 0.33,
+      "yes_ask": 0.36,
+      "yes_bid_cents": 33,
+      "yes_ask_cents": 36,
       "price": 0.34,
       "decimal_odds": 2.94,
       "implied_pct": 34.0,
@@ -11219,6 +11219,22 @@
       "floor_strike": 9.5
     },
     {
+      "event_title": "Los Angeles C vs Baltimore: Spread",
+      "market_title": "Los Angeles C wins by over 10.5 points",
+      "ticker": "KXNFLSPREAD-26NOV16LACBAL-LAC11",
+      "yes_bid": 0.07,
+      "yes_ask": 0.09,
+      "yes_bid_cents": 7,
+      "yes_ask_cents": 9,
+      "price": 0.08,
+      "decimal_odds": 12.5,
+      "implied_pct": 8.0,
+      "volume": 0,
+      "close_time": "2026-11-19T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 10.5
+    },
+    {
       "event_title": "Indianapolis vs Houston: Spread",
       "market_title": "Houston wins by over 30.5 points",
       "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU31",
@@ -11441,22 +11457,6 @@
       "close_time": "2026-11-18T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 13.5
-    },
-    {
-      "event_title": "Los Angeles C vs Baltimore: Spread",
-      "market_title": "Los Angeles C wins by over 10.5 points",
-      "ticker": "KXNFLSPREAD-26NOV16LACBAL-LAC11",
-      "yes_bid": 0.06,
-      "yes_ask": 0.09,
-      "yes_bid_cents": 6,
-      "yes_ask_cents": 9,
-      "price": 0.07,
-      "decimal_odds": 14.29,
-      "implied_pct": 7.0,
-      "volume": 0,
-      "close_time": "2026-11-19T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 10.5
     },
     {
       "event_title": "Indianapolis vs Houston: Spread",
