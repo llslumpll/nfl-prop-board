@@ -98,7 +98,7 @@
     },
     "Geno Smith": {
       "passing_yards": 221.5,
-      "rushing_yards": 4.5
+      "rushing_yards": 5.5
     },
     "James Cook III": {
       "rushing_yards": 91.5,
@@ -239,11 +239,11 @@
       "receiving_yards": 31.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Dylan Sampson": {
       "receiving_yards": 21.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5,
@@ -335,11 +335,11 @@
       "receiving_yards": 13.5
     },
     "Parker Washington": {
-      "receiving_yards": 60.5
+      "receiving_yards": 61.5
     },
     "Tony Pollard": {
       "rushing_yards": 57.5,
-      "receiving_yards": 12.5,
+      "receiving_yards": 11.5,
       "receptions": 2.5
     },
     "Jakobi Meyers": {
@@ -505,7 +505,8 @@
       "receiving_yards": 10.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 35.5
+      "receiving_yards": 35.5,
+      "receptions": 3.5
     },
     "Colby Parkinson": {
       "receiving_yards": 31.5,
@@ -527,11 +528,11 @@
     "Elijah Higgins": {
       "receiving_yards": 16.5
     },
+    "Simi Fehoko": {
+      "receiving_yards": 14.5
+    },
     "Davis Allen": {
       "receiving_yards": 13.5
-    },
-    "Simi Fehoko": {
-      "receiving_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 7.5
@@ -688,9 +689,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6119,
-    "matched_props": 293,
-    "excluded_goblin_demon_lines": 4883,
+    "total_projections_returned": 6121,
+    "matched_props": 294,
+    "excluded_goblin_demon_lines": 4882,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -729,5 +730,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T16:53:46.597188+00:00"
+  "fetched_at": "2026-11-13T17:00:44.677639+00:00"
 }

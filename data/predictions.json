@@ -37385,7 +37385,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -37830,7 +37829,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jordan Mason|rushing_yards|10": {
     "player": "Jordan Mason",
