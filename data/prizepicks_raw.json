@@ -404,14 +404,13 @@
       "receiving_yards": 41.5
     },
     "Darren Waller": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
+      "receiving_yards": 29.5
     },
     "Devaughn Vele": {
       "receiving_yards": 27.5
     },
     "Juwan Johnson": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "John Metchie III": {
       "receiving_yards": 13.5
@@ -696,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5850,
-    "matched_props": 297,
-    "excluded_goblin_demon_lines": 4817,
+    "total_projections_returned": 5991,
+    "matched_props": 296,
+    "excluded_goblin_demon_lines": 4843,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -737,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T03:40:41.675142+00:00"
+  "fetched_at": "2026-11-13T04:00:45.580102+00:00"
 }
