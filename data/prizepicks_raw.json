@@ -573,14 +573,14 @@
       "rushing_yards": 5.5
     },
     "Kaelon Black": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receptions": 0.5
     },
     "Demarcus Robinson": {
       "receiving_yards": 28.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Luke Farrell": {
       "receiving_yards": 0.5
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5991,
+    "total_projections_returned": 6032,
     "matched_props": 296,
-    "excluded_goblin_demon_lines": 4843,
+    "excluded_goblin_demon_lines": 4871,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T04:00:45.580102+00:00"
+  "fetched_at": "2026-11-13T04:20:38.072702+00:00"
 }

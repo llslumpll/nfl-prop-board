@@ -41,7 +41,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "ml-3": {
@@ -99,7 +99,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "ml-4": {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "props-4": {
@@ -360,22 +360,22 @@
   },
   "td-1": {
    "chance": 0.632,
-   "decimal": 1.961,
-   "ev": 0.239,
+   "decimal": 1.923,
+   "ev": 0.215,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.961,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.51,
+     "price": 0.52,
      "team": "IND"
     }
    ],
@@ -383,27 +383,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "td-2": {
    "chance": 0.3748,
-   "decimal": 3.502,
-   "ev": 0.312,
+   "decimal": 3.434,
+   "ev": 0.287,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.961,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.51,
+     "price": 0.52,
      "team": "IND"
     },
     {
@@ -423,27 +423,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "td-3": {
    "chance": 0.2222,
-   "decimal": 6.486,
-   "ev": 0.441,
+   "decimal": 6.361,
+   "ev": 0.414,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.961,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.51,
+     "price": 0.52,
      "team": "IND"
     },
     {
@@ -475,27 +475,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   },
   "td-4": {
    "chance": 0.1118,
-   "decimal": 15.087,
-   "ev": 0.687,
+   "decimal": 14.795,
+   "ev": 0.654,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.961,
+     "decimal": 1.923,
      "game": "IND@MIA",
      "good": true,
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.51,
+     "price": 0.52,
      "team": "IND"
     },
     {
@@ -539,7 +539,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 04:00 UTC",
+   "updated": "2026-11-13 04:20 UTC",
    "week": 10
   }
  },
