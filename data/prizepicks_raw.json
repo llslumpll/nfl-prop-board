@@ -8,7 +8,7 @@
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 95.5,
+      "rushing_yards": 93.5,
       "receiving_yards": 33.5
     },
     "Amon-Ra St. Brown": {
@@ -25,7 +25,7 @@
       "receiving_yards": 35.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -236,7 +236,7 @@
       "receiving_yards": 33.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 28.5
@@ -434,7 +434,7 @@
       "rushing_yards": 5.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 180.5,
+      "passing_yards": 179.5,
       "rushing_yards": 12.5
     },
     "Jaxon Smith-Njigba": {
@@ -552,7 +552,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 254.5,
+      "passing_yards": 256.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -560,7 +560,8 @@
     },
     "Javonte Williams": {
       "rushing_yards": 64.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5,
+      "receptions": 2.5
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
@@ -574,7 +575,7 @@
       "rushing_yards": 5.5
     },
     "Kaelon Black": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receptions": 0.5
     },
     "Demarcus Robinson": {
@@ -697,9 +698,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6111,
-    "matched_props": 296,
-    "excluded_goblin_demon_lines": 4942,
+    "total_projections_returned": 6106,
+    "matched_props": 297,
+    "excluded_goblin_demon_lines": 4937,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -738,5 +739,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T14:40:40.968026+00:00"
+  "fetched_at": "2026-11-13T15:00:52.012242+00:00"
 }
