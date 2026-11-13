@@ -159,7 +159,7 @@
       "rushing_yards": 0.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 77.5
+      "receiving_yards": 79.5
     },
     "Christian Watson": {
       "receiving_yards": 74.5
@@ -167,13 +167,12 @@
     "Matthew Golden": {
       "receiving_yards": 69.5
     },
+    "Jordan Addison": {
+      "receiving_yards": 49.5
+    },
     "Jordan Mason": {
       "rushing_yards": 46.5,
       "receiving_yards": 3.5
-    },
-    "Jordan Addison": {
-      "receiving_yards": 43.5,
-      "receptions": 3.5
     },
     "Tucker Kraft": {
       "receiving_yards": 37.5
@@ -330,7 +329,7 @@
       "receiving_yards": 12.5
     },
     "Parker Washington": {
-      "receiving_yards": 61.5
+      "receiving_yards": 60.5
     },
     "Tony Pollard": {
       "rushing_yards": 57.5,
@@ -346,12 +345,12 @@
     "Brenton Strange": {
       "receiving_yards": 35.5
     },
-    "Gunnar Helm": {
-      "receiving_yards": 29.5
-    },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 31.5,
       "receptions": 0.5
+    },
+    "Gunnar Helm": {
+      "receiving_yards": 28.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 26.5
@@ -470,7 +469,7 @@
       "receiving_yards": 21.5
     },
     "AJ Barner": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
@@ -495,10 +494,10 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 209.5
+      "passing_yards": 212.5
     },
     "Carson Beck": {
-      "passing_yards": 176.5,
+      "passing_yards": 175.5,
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
@@ -718,9 +717,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6564,
-    "matched_props": 303,
-    "excluded_goblin_demon_lines": 5311,
+    "total_projections_returned": 6595,
+    "matched_props": 302,
+    "excluded_goblin_demon_lines": 5348,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -759,5 +758,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T21:40:37.728350+00:00"
+  "fetched_at": "2026-11-13T22:00:44.211959+00:00"
 }
