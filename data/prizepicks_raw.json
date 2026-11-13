@@ -12,7 +12,7 @@
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 80.5,
+      "receiving_yards": 78.5,
       "receptions": 7
     },
     "Jameson Williams": {
@@ -195,7 +195,7 @@
       "rushing_yards": 4.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 13.5
+      "rushing_yards": 14.5
     },
     "Pierre Strong Jr.": {
       "rushing_yards": 9.5
@@ -219,7 +219,7 @@
       "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 46.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -497,7 +497,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 212.5
+      "passing_yards": 213.5
     },
     "Carson Beck": {
       "passing_yards": 175.5,
@@ -582,13 +582,13 @@
       "receiving_yards": 61.5,
       "receptions": 4.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 38.5,
-      "receptions": 3.5
-    },
     "Deebo Samuel Sr.": {
       "receiving_yards": 37.5,
       "rushing_yards": 6.5
+    },
+    "Ryan Flournoy": {
+      "receiving_yards": 37.5,
+      "receptions": 3.5
     },
     "Kaelon Black": {
       "rushing_yards": 34.5,
@@ -602,7 +602,7 @@
       "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 20.5
+      "receiving_yards": 23.5
     },
     "Keenan Allen": {
       "receiving_yards": 18.5
@@ -723,9 +723,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6678,
+    "total_projections_returned": 6675,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5422,
+    "excluded_goblin_demon_lines": 5417,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -764,5 +764,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T23:00:44.415186+00:00"
+  "fetched_at": "2026-11-13T23:18:35.521833+00:00"
 }
