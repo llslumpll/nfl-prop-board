@@ -2,8 +2,8 @@
  "10": {
   "ml-2": {
    "chance": 0.6099,
-   "decimal": 1.381,
-   "ev": -0.158,
+   "decimal": 1.404,
+   "ev": -0.144,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -12,28 +12,28 @@
      "away": "JAX",
      "call": "AWAY",
      "chance": 0.81,
-     "decimal": 1.143,
+     "decimal": 1.149,
      "game": "JAX@TEN",
      "good": false,
      "home": "TEN",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "JAX to win",
-     "price": -700,
+     "price": -670,
      "team": "JAX"
     },
     {
      "away": "BUF",
      "call": "AWAY",
      "chance": 0.753,
-     "decimal": 1.208,
+     "decimal": 1.222,
      "game": "BUF@NYJ",
      "good": false,
      "home": "NYJ",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "BUF to win",
-     "price": -480,
+     "price": -450,
      "team": "BUF"
     }
    ],
@@ -41,13 +41,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "ml-3": {
    "chance": 0.2788,
-   "decimal": 2.758,
-   "ev": -0.231,
+   "decimal": 2.804,
+   "ev": -0.218,
    "family": "ml",
    "good": false,
    "id": "ml-3",
@@ -56,42 +56,42 @@
      "away": "LA",
      "call": "AWAY",
      "chance": 0.729,
-     "decimal": 1.182,
+     "decimal": 1.2,
      "game": "LA@ARI",
      "good": false,
      "home": "ARI",
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "ml",
      "label": "LA to win",
-     "price": -550,
+     "price": -500,
      "team": "LA"
     },
     {
      "away": "SF",
      "call": "AWAY",
      "chance": 0.631,
-     "decimal": 1.476,
+     "decimal": 1.465,
      "game": "SF@DAL",
      "good": false,
      "home": "DAL",
      "kickoff": "2026-11-15T21:25:00+00:00",
      "kind": "ml",
      "label": "SF to win",
-     "price": -210,
+     "price": -215,
      "team": "SF"
     },
     {
      "away": "KC",
      "call": "AWAY",
      "chance": 0.606,
-     "decimal": 1.581,
+     "decimal": 1.595,
      "game": "KC@ATL",
      "good": false,
      "home": "ATL",
      "kickoff": "2026-11-15T18:00:00+00:00",
      "kind": "ml",
      "label": "KC to win",
-     "price": -172,
+     "price": -168,
      "team": "KC"
     }
    ],
@@ -99,13 +99,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "ml-4": {
    "chance": 0.1225,
-   "decimal": 4.279,
-   "ev": -0.476,
+   "decimal": 4.228,
+   "ev": -0.482,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -114,42 +114,42 @@
      "away": "PIT",
      "call": "HOME",
      "chance": 0.606,
-     "decimal": 1.543,
+     "decimal": 1.562,
      "game": "PIT@CIN",
      "good": false,
      "home": "CIN",
      "kickoff": "2026-11-16T01:20:00+00:00",
      "kind": "ml",
      "label": "CIN to win",
-     "price": -184,
+     "price": -178,
      "team": "CIN"
     },
     {
      "away": "SEA",
      "call": "AWAY",
      "chance": 0.593,
-     "decimal": 1.345,
+     "decimal": 1.323,
      "game": "SEA@LV",
      "good": false,
      "home": "LV",
      "kickoff": "2026-11-15T21:05:00+00:00",
      "kind": "ml",
      "label": "SEA to win",
-     "price": -290,
+     "price": -310,
      "team": "SEA"
     },
     {
      "away": "LAC",
      "call": "HOME",
      "chance": 0.591,
-     "decimal": 1.455,
+     "decimal": 1.444,
      "game": "LAC@BAL",
      "good": false,
      "home": "BAL",
      "kickoff": "2026-11-17T01:15:00+00:00",
      "kind": "ml",
      "label": "BAL to win",
-     "price": -220,
+     "price": -225,
      "team": "BAL"
     },
     {
@@ -171,7 +171,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "props-2": {
@@ -217,7 +217,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "props-3": {
@@ -278,7 +278,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "props-4": {
@@ -387,7 +387,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "td-2": {
@@ -427,7 +427,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "td-3": {
@@ -479,7 +479,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   },
   "td-4": {
@@ -543,7 +543,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-13 20:40 UTC",
+   "updated": "2026-11-13 20:41 UTC",
    "week": 10
   }
  },
