@@ -306,14 +306,13 @@
       "receptions": 1.5
     },
     "Anthony Gould": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
+      "receiving_yards": 14.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Ashton Dulin": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Will Kacmarek": {
       "receiving_yards": 3.5
@@ -520,12 +519,12 @@
       "receiving_yards": 31.5,
       "receptions": 3.5
     },
+    "Konata Mumpfield": {
+      "receiving_yards": 29.5
+    },
     "Tutu Atwell": {
       "receiving_yards": 29.5,
       "receptions": 2.5
-    },
-    "Konata Mumpfield": {
-      "receiving_yards": 28.5
     },
     "Reggie Virgil": {
       "receiving_yards": 26.5
@@ -537,11 +536,11 @@
     "Elijah Higgins": {
       "receiving_yards": 16.5
     },
+    "Simi Fehoko": {
+      "receiving_yards": 14.5
+    },
     "Davis Allen": {
       "receiving_yards": 13.5
-    },
-    "Simi Fehoko": {
-      "receiving_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 8.5
@@ -586,7 +585,7 @@
       "receiving_yards": 0.5
     },
     "Joe Burrow": {
-      "passing_yards": 289.5,
+      "passing_yards": 288.5,
       "rushing_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -612,7 +611,7 @@
       "receiving_yards": 50.5
     },
     "Chase Brown": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 24.5
     },
     "Rico Dowdle": {
@@ -696,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6092,
-    "matched_props": 297,
-    "excluded_goblin_demon_lines": 4925,
+    "total_projections_returned": 6098,
+    "matched_props": 296,
+    "excluded_goblin_demon_lines": 4933,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -737,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T11:20:40.263988+00:00"
+  "fetched_at": "2026-11-13T11:40:37.548353+00:00"
 }
