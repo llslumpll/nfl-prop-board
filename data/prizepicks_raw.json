@@ -5,7 +5,7 @@
     },
     "Drake Maye": {
       "passing_yards": 262.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
@@ -132,7 +132,7 @@
       "receiving_yards": 6.5
     },
     "Keon Coleman": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 21.5
@@ -424,14 +424,14 @@
     "Xavier Legette": {
       "receiving_yards": 11.5
     },
-    "John Metchie III": {
-      "receiving_yards": 8.5
-    },
     "Noah Fant": {
       "receiving_yards": 8.5
     },
     "Mitchell Evans": {
       "receiving_yards": 8.5
+    },
+    "John Metchie III": {
+      "receiving_yards": 7.5
     },
     "Oscar Delp": {
       "receiving_yards": 0.5
@@ -725,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7020,
+    "total_projections_returned": 6993,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5683,
+    "excluded_goblin_demon_lines": 5658,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -766,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T07:00:49.795308+00:00"
+  "fetched_at": "2026-11-14T07:20:38.237383+00:00"
 }

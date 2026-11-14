@@ -35111,7 +35111,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Parker Washington|receiving_yards|10": {
     "player": "Parker Washington",
@@ -37290,8 +37292,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Treylon Burks|receiving_yards|10": {
