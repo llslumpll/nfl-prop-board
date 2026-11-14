@@ -1,5 +1,143 @@
 {
  "10": {
+  "Josh Jacobs|GB": {
+   "opp": "MIN",
+   "out": "Josh Jacobs",
+   "plays": [
+    {
+     "bump": 51,
+     "call": "OVER",
+     "line": 14.5,
+     "n_wo": 6,
+     "player": "MarShawn Lloyd",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 13.5,
+     "without": 20.3
+    },
+    {
+     "bump": 25,
+     "call": "OVER",
+     "line": 19.5,
+     "n_wo": 1,
+     "player": "Savion Williams",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 25.7,
+     "without": 32
+    },
+    {
+     "bump": 22,
+     "call": "OVER",
+     "line": 37.5,
+     "n_wo": 6,
+     "player": "Tucker Kraft",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 34,
+     "without": 41.5
+    },
+    {
+     "bump": 14,
+     "call": "OVER",
+     "line": 4,
+     "n_wo": 6,
+     "player": "Tucker Kraft",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 3.7,
+     "without": 4.2
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-14 15:28 UTC",
+   "team": "GB",
+   "week": 10
+  },
+  "Kyler Murray|MIN": {
+   "opp": "GB",
+   "out": "Kyler Murray",
+   "plays": [
+    {
+     "bump": 700,
+     "call": "OVER",
+     "line": 4.5,
+     "n_wo": 1,
+     "player": "Jordan Mason",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 0,
+     "without": 7
+    }
+   ],
+   "pos": "QB",
+   "seen": "2026-11-14 15:28 UTC",
+   "team": "MIN",
+   "week": 10
+  },
+  "Sam Darnold|SEA": {
+   "opp": "LV",
+   "out": "Sam Darnold",
+   "plays": [
+    {
+     "bump": 19,
+     "call": "OVER",
+     "line": 42.5,
+     "n_wo": 2,
+     "player": "Jadarian Price",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 32,
+     "without": 38
+    },
+    {
+     "bump": 343,
+     "call": "OVER",
+     "line": 11.5,
+     "n_wo": 2,
+     "player": "Jadarian Price",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 7,
+     "without": 31
+    },
+    {
+     "bump": 64,
+     "call": "OVER",
+     "line": 17.5,
+     "n_wo": 1,
+     "player": "Rashid Shaheed",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 21.3,
+     "without": 35
+    },
+    {
+     "bump": 18,
+     "call": "OVER",
+     "line": 6.5,
+     "n_wo": 1,
+     "player": "Tory Horton",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 18.6,
+     "without": 22
+    }
+   ],
+   "pos": "QB",
+   "seen": "2026-11-14 15:28 UTC",
+   "team": "SEA",
+   "week": 10
+  },
   "TreVeyon Henderson|NE": {
    "opp": "DET",
    "out": "TreVeyon Henderson",
@@ -22,6 +160,52 @@
    "pos": "RB",
    "seen": "2026-11-12 17:17 UTC",
    "team": "NE",
+   "week": 10
+  },
+  "Tyler Goodson|DAL": {
+   "opp": "SF",
+   "out": "Tyler Goodson",
+   "plays": [
+    {
+     "bump": 29,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 3,
+     "player": "Dak Prescott",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 10.3,
+     "without": 13.3
+    },
+    {
+     "bump": 43,
+     "call": "OVER",
+     "line": 4.5,
+     "n_wo": 3,
+     "player": "George Pickens",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 4.2,
+     "without": 6
+    },
+    {
+     "bump": 131,
+     "call": "OVER",
+     "line": 13.5,
+     "n_wo": 3,
+     "player": "Javonte Williams",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 9.8,
+     "without": 22.7
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-14 15:28 UTC",
+   "team": "DAL",
    "week": 10
   }
  },

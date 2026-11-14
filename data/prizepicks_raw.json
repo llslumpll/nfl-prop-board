@@ -31,7 +31,7 @@
       "receiving_yards": 27.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -385,7 +385,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 251.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -548,21 +548,21 @@
       "receiving_yards": 6.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 26.5
+      "receiving_yards": 24.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
+    },
+    "Devin Duvernay": {
+      "receiving_yards": 14.5
     },
     "Davis Allen": {
       "receiving_yards": 13.5,
       "receptions": 1.5
-    },
-    "Devin Duvernay": {
-      "receiving_yards": 13.5
     },
     "CJ Daniels": {
       "receiving_yards": 12.5
@@ -600,7 +600,7 @@
       "receptions": 3.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "rushing_yards": 6.5
     },
     "Kaelon Black": {
@@ -614,10 +614,10 @@
       "receiving_yards": 24.5,
       "receptions": 1.5
     },
-    "Keenan Allen": {
-      "receiving_yards": 22.5
-    },
     "Brevyn Spann-Ford": {
+      "receiving_yards": 23.5
+    },
+    "Keenan Allen": {
       "receiving_yards": 22.5
     },
     "Kyle Juszczyk": {
@@ -736,9 +736,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7115,
+    "total_projections_returned": 7116,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 5749,
+    "excluded_goblin_demon_lines": 5750,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -777,5 +777,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T15:20:38.665951+00:00"
+  "fetched_at": "2026-11-14T15:28:18.938266+00:00"
 }
