@@ -126,7 +126,7 @@
       "receptions": 3
     },
     "Adonai Mitchell": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -306,8 +306,7 @@
       "receiving_yards": 15.5
     },
     "Ashton Dulin": {
-      "receiving_yards": 14.5,
-      "receptions": 1.5
+      "receiving_yards": 14.5
     },
     "Chris Bell": {
       "receiving_yards": 12.5
@@ -561,7 +560,7 @@
       "receiving_yards": 7.5
     },
     "Dak Prescott": {
-      "passing_yards": 270.5,
+      "passing_yards": 272.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
@@ -692,7 +691,7 @@
       "rushing_yards": 3.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 4.5
     },
     "Rashod Bateman": {
@@ -727,8 +726,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6847,
-    "matched_props": 308,
+    "total_projections_returned": 6871,
+    "matched_props": 307,
     "excluded_goblin_demon_lines": 5584,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -768,5 +767,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T03:40:39.505435+00:00"
+  "fetched_at": "2026-11-14T04:00:53.447239+00:00"
 }
