@@ -27,7 +27,7 @@
       "receptions": 4
     },
     "Hunter Henry": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5
     },
     "Eli Raridon": {
       "receiving_yards": 27.5
@@ -84,7 +84,7 @@
       "receiving_yards": 21.5
     },
     "Noah Gray": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Olamide Zaccheaus": {
       "receiving_yards": 8.5
@@ -275,7 +275,7 @@
       "rushing_yards": 7.5
     },
     "Kyle McCord": {
-      "passing_yards": 160.5,
+      "passing_yards": 158.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -420,32 +420,34 @@
     "Jalen Coker": {
       "receiving_yards": 47.5
     },
-    "Travis Etienne Jr.": {
-      "rushing_yards": 42.5,
-      "receiving_yards": 2.5
-    },
     "Jordyn Tyson": {
       "receiving_yards": 41.5,
       "receptions": 4
     },
-    "Devaughn Vele": {
-      "receiving_yards": 29.5
+    "Travis Etienne Jr.": {
+      "rushing_yards": 34.5,
+      "receiving_yards": 9.5
     },
     "Darren Waller": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 29.5,
       "receptions": 2.5
+    },
+    "Devaughn Vele": {
+      "receiving_yards": 29.5
     },
     "Juwan Johnson": {
       "receiving_yards": 24.5
     },
-    "Alvin Kamara": {
-      "rushing_yards": 16.5
+    "Audric Estime": {
+      "rushing_yards": 21.5,
+      "receptions": 0.5
     },
     "Tommy Tremble": {
       "receiving_yards": 15.5
     },
-    "Audric Estime": {
-      "rushing_yards": 13.5
+    "Alvin Kamara": {
+      "receiving_yards": 15.5,
+      "rushing_yards": 14.5
     },
     "Xavier Legette": {
       "receiving_yards": 10.5
@@ -575,18 +577,18 @@
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
-    "Simi Fehoko": {
-      "receiving_yards": 14.5
-    },
     "Devin Duvernay": {
       "receiving_yards": 14.5
+    },
+    "Simi Fehoko": {
+      "receiving_yards": 13.5
     },
     "Davis Allen": {
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "CJ Daniels": {
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Dak Prescott": {
       "passing_yards": 272.5,
@@ -760,9 +762,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7156,
-    "matched_props": 333,
-    "excluded_goblin_demon_lines": 5767,
+    "total_projections_returned": 7204,
+    "matched_props": 335,
+    "excluded_goblin_demon_lines": 5805,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -801,5 +803,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T16:20:38.426377+00:00"
+  "fetched_at": "2026-11-14T16:40:42.981112+00:00"
 }
