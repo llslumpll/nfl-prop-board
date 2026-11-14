@@ -9,7 +9,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 33.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 81.5,
@@ -126,7 +126,7 @@
       "receptions": 3
     },
     "Adonai Mitchell": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -186,13 +186,13 @@
       "rushing_yards": 27.5,
       "receiving_yards": 10.5
     },
+    "Gavin Bartholomew": {
+      "receiving_yards": 21.5,
+      "receptions": 2.5
+    },
     "Savion Williams": {
       "receiving_yards": 20.5,
       "rushing_yards": 4.5
-    },
-    "Gavin Bartholomew": {
-      "receiving_yards": 20.5,
-      "receptions": 2.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 15.5
@@ -219,7 +219,7 @@
       "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -267,7 +267,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 73.5,
-      "receiving_yards": 5.5,
+      "receiving_yards": 6.5,
       "receptions": 1.5
     },
     "Jonathan Taylor": {
@@ -347,7 +347,7 @@
       "receiving_yards": 35.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 30.5,
+      "rushing_yards": 31.5,
       "receptions": 0.5
     },
     "Gunnar Helm": {
@@ -370,11 +370,11 @@
     "Daniel Bellinger": {
       "receiving_yards": 9.5
     },
-    "Brian Thomas Jr.": {
-      "receiving_yards": 9.5
-    },
     "Travis Hunter": {
       "receiving_yards": 9.5
+    },
+    "Brian Thomas Jr.": {
+      "receiving_yards": 8.5
     },
     "Josh Cameron": {
       "receiving_yards": 6.5
@@ -475,14 +475,14 @@
       "receiving_yards": 21.5
     },
     "AJ Barner": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Jalen Nailor": {
       "receiving_yards": 12.5
@@ -500,7 +500,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 212.5
+      "passing_yards": 213.5
     },
     "Carson Beck": {
       "passing_yards": 176.5,
@@ -605,7 +605,7 @@
       "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Keenan Allen": {
       "receiving_yards": 19.5
@@ -682,7 +682,7 @@
       "rushing_yards": 21.5
     },
     "Derrick Henry": {
-      "rushing_yards": 77.5,
+      "rushing_yards": 80.5,
       "receiving_yards": 6.5
     },
     "Zay Flowers": {
@@ -713,7 +713,7 @@
     },
     "Keaton Mitchell": {
       "receiving_yards": 11.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Matt Hibner": {
       "receiving_yards": 7.5
@@ -726,9 +726,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6995,
+    "total_projections_returned": 7020,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5659,
+    "excluded_goblin_demon_lines": 5685,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -758,8 +758,8 @@
       "passer rating",
       "quarters with 1+ reception",
       "quarters with 10+ receiving yards",
-      "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards"
+      "quarters with 10+ rush yards",
+      "quarters with 25+ pass yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -767,5 +767,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T06:20:37.849058+00:00"
+  "fetched_at": "2026-11-14T06:40:43.729025+00:00"
 }
