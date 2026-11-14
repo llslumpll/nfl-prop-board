@@ -33,7 +33,7 @@
       "receiving_yards": 27.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
@@ -53,7 +53,7 @@
       "rushing_yards": 7.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 83.5,
+      "rushing_yards": 84.5,
       "receiving_yards": 28.5,
       "receptions": 4
     },
@@ -345,7 +345,7 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 67.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Parker Washington": {
       "receiving_yards": 60.5
@@ -423,7 +423,8 @@
       "receptions": 5
     },
     "Jalen Coker": {
-      "receiving_yards": 47.5
+      "receiving_yards": 50.5,
+      "receptions": 4.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 41.5,
@@ -492,7 +493,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 42.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
@@ -587,12 +588,12 @@
     "Simi Fehoko": {
       "receiving_yards": 14.5
     },
-    "Davis Allen": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
-    },
     "Devin Duvernay": {
       "receiving_yards": 13.5
+    },
+    "Davis Allen": {
+      "receiving_yards": 12.5,
+      "receptions": 1.5
     },
     "CJ Daniels": {
       "receiving_yards": 12.5
@@ -606,7 +607,7 @@
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 89.5,
+      "receiving_yards": 88.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -769,9 +770,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7475,
-    "matched_props": 340,
-    "excluded_goblin_demon_lines": 5995,
+    "total_projections_returned": 7485,
+    "matched_props": 341,
+    "excluded_goblin_demon_lines": 6002,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -810,5 +811,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T19:00:41.103221+00:00"
+  "fetched_at": "2026-11-14T19:20:39.067278+00:00"
 }
