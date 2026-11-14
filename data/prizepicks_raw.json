@@ -200,6 +200,9 @@
     "Pierre Strong Jr.": {
       "rushing_yards": 9.5
     },
+    "Ben Yurosek": {
+      "receptions": 1.5
+    },
     "Jonnu Smith": {
       "receiving_yards": 0.5
     },
@@ -267,7 +270,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 73.5,
-      "receiving_yards": 6.5,
+      "receiving_yards": 5.5,
       "receptions": 1.5
     },
     "Jonathan Taylor": {
@@ -727,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6846,
-    "matched_props": 308,
-    "excluded_goblin_demon_lines": 5583,
+    "total_projections_returned": 6852,
+    "matched_props": 309,
+    "excluded_goblin_demon_lines": 5588,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -768,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T02:20:37.367754+00:00"
+  "fetched_at": "2026-11-14T02:40:49.467900+00:00"
 }
