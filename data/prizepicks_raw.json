@@ -173,7 +173,7 @@
       "receiving_yards": 49.5
     },
     "Jordan Mason": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 3.5
     },
     "Tucker Kraft": {
@@ -186,13 +186,13 @@
       "rushing_yards": 27.5,
       "receiving_yards": 10.5
     },
+    "Gavin Bartholomew": {
+      "receiving_yards": 21.5,
+      "receptions": 2.5
+    },
     "Savion Williams": {
       "receiving_yards": 20.5,
       "rushing_yards": 4.5
-    },
-    "Gavin Bartholomew": {
-      "receiving_yards": 20.5,
-      "receptions": 2.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 14.5
@@ -726,9 +726,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6696,
+    "total_projections_returned": 6747,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5434,
+    "excluded_goblin_demon_lines": 5486,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -767,5 +767,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T00:20:53.038382+00:00"
+  "fetched_at": "2026-11-14T00:40:37.956382+00:00"
 }
