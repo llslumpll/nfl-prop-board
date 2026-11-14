@@ -160,7 +160,7 @@
       "rushing_yards": 0.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 79.5,
+      "receiving_yards": 80.5,
       "receptions": 6.5
     },
     "Christian Watson": {
@@ -170,7 +170,7 @@
       "receiving_yards": 69.5
     },
     "Jordan Addison": {
-      "receiving_yards": 49.5
+      "receiving_yards": 50.5
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
@@ -215,7 +215,7 @@
       "receiving_yards": 60.5
     },
     "Woody Marks": {
-      "rushing_yards": 57.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
@@ -272,14 +272,14 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 69.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Tyler Warren": {
       "receiving_yards": 44.5,
       "receptions": 6
     },
     "Caleb Douglas": {
-      "receiving_yards": 43.5
+      "receiving_yards": 42.5
     },
     "Malik Washington": {
       "receiving_yards": 35.5,
@@ -428,11 +428,11 @@
     "John Metchie III": {
       "receiving_yards": 8.5
     },
-    "Mitchell Evans": {
+    "Noah Fant": {
       "receiving_yards": 8.5
     },
-    "Noah Fant": {
-      "receiving_yards": 6.5
+    "Mitchell Evans": {
+      "receiving_yards": 8.5
     },
     "Oscar Delp": {
       "receiving_yards": 0.5
@@ -449,7 +449,7 @@
       "receiving_yards": 89.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 9.5
     },
     "Brock Bowers": {
@@ -464,7 +464,7 @@
       "receiving_yards": 25.5
     },
     "Tre Tucker": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -726,9 +726,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6957,
+    "total_projections_returned": 6973,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5622,
+    "excluded_goblin_demon_lines": 5638,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -767,5 +767,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T05:20:49.665288+00:00"
+  "fetched_at": "2026-11-14T05:40:36.841675+00:00"
 }
