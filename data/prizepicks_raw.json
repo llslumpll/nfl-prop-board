@@ -19,7 +19,7 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 51.5
+      "receiving_yards": 50.5
     },
     "Sam LaPorta": {
       "receiving_yards": 42.5
@@ -51,7 +51,7 @@
       "rushing_yards": 7.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 84.5,
+      "rushing_yards": 83.5,
       "receiving_yards": 28.5
     },
     "Drake London": {
@@ -81,7 +81,7 @@
       "receiving_yards": 10.5
     },
     "Khalil Herbert": {
-      "rushing_yards": 8.5,
+      "rushing_yards": 9.5,
       "receiving_yards": 2.5
     },
     "Olamide Zaccheaus": {
@@ -173,7 +173,7 @@
       "receiving_yards": 49.5
     },
     "Jordan Mason": {
-      "rushing_yards": 45.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 3.5
     },
     "Tucker Kraft": {
@@ -465,7 +465,8 @@
       "receiving_yards": 25.5
     },
     "Tre Tucker": {
-      "receiving_yards": 26.5
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "Mike Washington Jr.": {
       "rushing_yards": 26.5,
@@ -727,8 +728,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 6793,
-    "matched_props": 307,
-    "excluded_goblin_demon_lines": 5533,
+    "matched_props": 308,
+    "excluded_goblin_demon_lines": 5532,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -767,5 +768,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T01:40:53.941025+00:00"
+  "fetched_at": "2026-11-14T02:00:42.719321+00:00"
 }
