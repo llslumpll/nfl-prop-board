@@ -563,7 +563,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 258.5,
+      "passing_yards": 260.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -725,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7000,
+    "total_projections_returned": 6999,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5668,
+    "excluded_goblin_demon_lines": 5667,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -766,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T09:20:39.481767+00:00"
+  "fetched_at": "2026-11-14T09:40:42.048033+00:00"
 }
