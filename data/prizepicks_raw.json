@@ -476,14 +476,14 @@
       "receiving_yards": 21.5
     },
     "AJ Barner": {
-      "receiving_yards": 20.5,
+      "receiving_yards": 21.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
       "receiving_yards": 19.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 18.5
+      "receiving_yards": 15.5
     },
     "Jalen Nailor": {
       "receiving_yards": 12.5
@@ -727,9 +727,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6793,
+    "total_projections_returned": 6846,
     "matched_props": 308,
-    "excluded_goblin_demon_lines": 5532,
+    "excluded_goblin_demon_lines": 5583,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -768,5 +768,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T02:00:42.719321+00:00"
+  "fetched_at": "2026-11-14T02:20:37.367754+00:00"
 }
