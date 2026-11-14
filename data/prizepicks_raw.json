@@ -144,8 +144,7 @@
       "receiving_yards": 15.5
     },
     "Dawson Knox": {
-      "receiving_yards": 11.5,
-      "receptions": 1.5
+      "receiving_yards": 11.5
     },
     "Jackson Hawes": {
       "receiving_yards": 0.5
@@ -172,7 +171,7 @@
       "receiving_yards": 50.5
     },
     "Jordan Mason": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 3.5
     },
     "Tucker Kraft": {
@@ -186,7 +185,7 @@
       "receiving_yards": 10.5
     },
     "Gavin Bartholomew": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Savion Williams": {
@@ -349,10 +348,10 @@
       "rushing_yards": 31.5,
       "receptions": 0.5
     },
-    "Gunnar Helm": {
-      "receiving_yards": 28.5
-    },
     "Chimere Dike": {
+      "receiving_yards": 29.5
+    },
+    "Gunnar Helm": {
       "receiving_yards": 28.5
     },
     "Elic Ayomanor": {
@@ -526,7 +525,7 @@
       "receiving_yards": 10.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3.5
     },
     "Konata Mumpfield": {
@@ -552,11 +551,11 @@
     "Davis Allen": {
       "receiving_yards": 13.5
     },
-    "Devin Duvernay": {
-      "receiving_yards": 12.5
-    },
     "CJ Daniels": {
       "receiving_yards": 12.5
+    },
+    "Devin Duvernay": {
+      "receiving_yards": 11.5
     },
     "Dak Prescott": {
       "passing_yards": 272.5,
@@ -589,7 +588,7 @@
       "receptions": 3.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "rushing_yards": 6.5
     },
     "Kaelon Black": {
@@ -725,8 +724,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7030,
-    "matched_props": 306,
+    "total_projections_returned": 7029,
+    "matched_props": 305,
     "excluded_goblin_demon_lines": 5695,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -766,5 +765,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T11:40:45.132310+00:00"
+  "fetched_at": "2026-11-14T12:00:47.575875+00:00"
 }
