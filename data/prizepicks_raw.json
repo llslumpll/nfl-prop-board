@@ -4,7 +4,7 @@
       "passing_yards": 268.5
     },
     "Drake Maye": {
-      "passing_yards": 260.5,
+      "passing_yards": 262.5,
       "rushing_yards": 27.5
     },
     "Jahmyr Gibbs": {
@@ -19,13 +19,13 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 51.5
+      "receiving_yards": 52.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5
     },
     "Hunter Henry": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5
     },
     "Eli Raridon": {
       "receiving_yards": 27.5
@@ -85,7 +85,7 @@
       "receiving_yards": 2.5
     },
     "Olamide Zaccheaus": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Charlie Woerner": {
       "receiving_yards": 2.5
@@ -378,7 +378,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 252.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -572,12 +572,12 @@
       "rushing_yards": 62.5,
       "receiving_yards": 33.5
     },
-    "George Kittle": {
-      "receiving_yards": 62.5
-    },
     "Javonte Williams": {
       "rushing_yards": 61.5,
       "receiving_yards": 13.5
+    },
+    "George Kittle": {
+      "receiving_yards": 61.5
     },
     "George Pickens": {
       "receiving_yards": 61.5,
@@ -724,9 +724,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7029,
+    "total_projections_returned": 7034,
     "matched_props": 305,
-    "excluded_goblin_demon_lines": 5695,
+    "excluded_goblin_demon_lines": 5700,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -765,5 +765,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T12:00:47.575875+00:00"
+  "fetched_at": "2026-11-14T12:20:39.666874+00:00"
 }
