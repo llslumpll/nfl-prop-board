@@ -9,7 +9,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
-      "receiving_yards": 33.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 81.5,
@@ -137,7 +137,7 @@
       "receiving_yards": 6.5
     },
     "Keon Coleman": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 21.5
@@ -274,7 +274,7 @@
       "rushing_yards": 7.5
     },
     "Kyle McCord": {
-      "passing_yards": 159.5,
+      "passing_yards": 160.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -298,7 +298,7 @@
       "receptions": 3.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 33.5,
       "receptions": 3.5
     },
     "Laquon Treadwell": {
@@ -562,7 +562,7 @@
       "receiving_yards": 6.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5,
@@ -628,10 +628,10 @@
       "receiving_yards": 24.5,
       "receptions": 1.5
     },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 23.5
-    },
     "Keenan Allen": {
+      "receiving_yards": 22.5
+    },
+    "Brevyn Spann-Ford": {
       "receiving_yards": 22.5
     },
     "Kyle Juszczyk": {
@@ -754,9 +754,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7142,
+    "total_projections_returned": 7149,
     "matched_props": 331,
-    "excluded_goblin_demon_lines": 5753,
+    "excluded_goblin_demon_lines": 5760,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -795,5 +795,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T15:40:40.783235+00:00"
+  "fetched_at": "2026-11-14T16:00:44.951918+00:00"
 }
