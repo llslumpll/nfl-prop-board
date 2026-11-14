@@ -234,7 +234,7 @@
       "receiving_yards": 9.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 47.5
+      "receiving_yards": 46.5
     },
     "Denzel Boston": {
       "receiving_yards": 45.5
@@ -434,27 +434,27 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "Darren Waller": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
-    },
     "Devaughn Vele": {
       "receiving_yards": 29.5
+    },
+    "Darren Waller": {
+      "receiving_yards": 27.5,
+      "receptions": 2.5
     },
     "Juwan Johnson": {
       "receiving_yards": 24.5
     },
     "Audric Estime": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 22.5,
       "receptions": 0.5
-    },
-    "Tommy Tremble": {
-      "receiving_yards": 15.5
     },
     "Alvin Kamara": {
       "receiving_yards": 15.5,
       "rushing_yards": 14.5,
       "receptions": 3
+    },
+    "Tommy Tremble": {
+      "receiving_yards": 14.5
     },
     "Xavier Legette": {
       "receiving_yards": 10.5
@@ -540,7 +540,7 @@
       "passing_yards": 212.5
     },
     "Carson Beck": {
-      "passing_yards": 175.5,
+      "passing_yards": 176.5,
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
@@ -591,11 +591,11 @@
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
-    "CJ Daniels": {
-      "receiving_yards": 11.5
-    },
     "Devin Duvernay": {
-      "receiving_yards": 10.5
+      "receiving_yards": 13.5
+    },
+    "CJ Daniels": {
+      "receiving_yards": 12.5
     },
     "Dak Prescott": {
       "passing_yards": 269.5,
@@ -769,9 +769,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7467,
+    "total_projections_returned": 7475,
     "matched_props": 340,
-    "excluded_goblin_demon_lines": 5989,
+    "excluded_goblin_demon_lines": 5995,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -810,5 +810,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T18:53:10.828429+00:00"
+  "fetched_at": "2026-11-14T19:00:41.103221+00:00"
 }
