@@ -8,7 +8,7 @@
       "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 91.5,
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
@@ -234,7 +234,7 @@
       "receiving_yards": 9.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5
+      "receiving_yards": 47.5
     },
     "Denzel Boston": {
       "receiving_yards": 45.5
@@ -252,11 +252,11 @@
       "receptions": 4
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3
     },
     "Dalton Schultz": {
-      "receiving_yards": 29.5
+      "receiving_yards": 28.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 23.5
@@ -310,7 +310,7 @@
       "receiving_yards": 27.5
     },
     "Seth McGowan": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 2.5
     },
     "Deion Burks": {
@@ -425,7 +425,7 @@
       "receiving_yards": 47.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 4
     },
     "Travis Etienne Jr.": {
@@ -444,7 +444,7 @@
       "receiving_yards": 24.5
     },
     "Audric Estime": {
-      "rushing_yards": 21.5,
+      "rushing_yards": 23.5,
       "receptions": 0.5
     },
     "Tommy Tremble": {
@@ -591,7 +591,7 @@
       "receptions": 1.5
     },
     "CJ Daniels": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 10.5
@@ -768,9 +768,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7334,
+    "total_projections_returned": 7385,
     "matched_props": 339,
-    "excluded_goblin_demon_lines": 5901,
+    "excluded_goblin_demon_lines": 5945,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -809,5 +809,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T18:20:37.345342+00:00"
+  "fetched_at": "2026-11-14T18:40:39.675825+00:00"
 }
