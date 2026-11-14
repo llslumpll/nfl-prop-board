@@ -200,9 +200,6 @@
     "Pierre Strong Jr.": {
       "rushing_yards": 9.5
     },
-    "Ben Yurosek": {
-      "receptions": 1.5
-    },
     "Jonnu Smith": {
       "receiving_yards": 0.5
     },
@@ -730,9 +727,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6849,
-    "matched_props": 309,
-    "excluded_goblin_demon_lines": 5585,
+    "total_projections_returned": 6847,
+    "matched_props": 308,
+    "excluded_goblin_demon_lines": 5584,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -771,5 +768,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T03:20:40.218623+00:00"
+  "fetched_at": "2026-11-14T03:22:06.475672+00:00"
 }
