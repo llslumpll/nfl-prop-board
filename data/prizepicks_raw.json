@@ -171,8 +171,8 @@
       "receiving_yards": 50.5
     },
     "Jordan Mason": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 3.5
+      "rushing_yards": 47.5,
+      "receiving_yards": 4.5
     },
     "Tucker Kraft": {
       "receiving_yards": 37.5
@@ -486,7 +486,7 @@
       "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 17.5
+      "receiving_yards": 18.5
     },
     "Jalen Nailor": {
       "receiving_yards": 12.5
@@ -730,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7044,
+    "total_projections_returned": 7052,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5703,
+    "excluded_goblin_demon_lines": 5712,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -771,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T13:40:46.690324+00:00"
+  "fetched_at": "2026-11-14T14:00:42.094570+00:00"
 }
