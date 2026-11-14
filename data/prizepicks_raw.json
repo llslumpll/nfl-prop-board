@@ -131,7 +131,7 @@
       "receiving_yards": 37.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -299,7 +299,7 @@
       "receptions": 3.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 31.5,
       "receptions": 3.5
     },
     "Laquon Treadwell": {
@@ -397,7 +397,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 251.5,
+      "passing_yards": 250.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -425,7 +425,7 @@
       "receptions": 4
     },
     "Travis Etienne Jr.": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 35.5,
       "receiving_yards": 9.5
     },
     "Darren Waller": {
@@ -762,9 +762,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7204,
+    "total_projections_returned": 7213,
     "matched_props": 335,
-    "excluded_goblin_demon_lines": 5805,
+    "excluded_goblin_demon_lines": 5813,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -803,5 +803,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T16:40:42.981112+00:00"
+  "fetched_at": "2026-11-14T16:46:36.546443+00:00"
 }
