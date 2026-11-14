@@ -5,11 +5,11 @@
     },
     "Drake Maye": {
       "passing_yards": 262.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
-      "receiving_yards": 33.5
+      "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 81.5,
@@ -730,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7041,
+    "total_projections_returned": 7044,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5701,
+    "excluded_goblin_demon_lines": 5703,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -771,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T13:20:42.091404+00:00"
+  "fetched_at": "2026-11-14T13:40:46.690324+00:00"
 }
