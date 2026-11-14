@@ -222,7 +222,7 @@
       "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Denzel Boston": {
@@ -308,12 +308,12 @@
     "Anthony Gould": {
       "receiving_yards": 15.5
     },
-    "Chris Bell": {
-      "receiving_yards": 14.5
-    },
     "Ashton Dulin": {
       "receiving_yards": 14.5,
       "receptions": 1.5
+    },
+    "Chris Bell": {
+      "receiving_yards": 12.5
     },
     "Jaylen Wright": {
       "rushing_yards": 12.5
@@ -331,7 +331,7 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 67.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Parker Washington": {
       "receiving_yards": 60.5
@@ -374,17 +374,17 @@
     "Daniel Bellinger": {
       "receiving_yards": 9.5
     },
-    "Travis Hunter": {
+    "Brian Thomas Jr.": {
       "receiving_yards": 9.5
     },
-    "Brian Thomas Jr.": {
-      "receiving_yards": 8.5
+    "Travis Hunter": {
+      "receiving_yards": 9.5
     },
     "Josh Cameron": {
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 251.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -534,15 +534,15 @@
       "receiving_yards": 31.5,
       "receptions": 3.5
     },
+    "Konata Mumpfield": {
+      "receiving_yards": 29.5
+    },
     "Tutu Atwell": {
       "receiving_yards": 29.5
     },
     "Bam Knight": {
       "rushing_yards": 29.5,
       "receiving_yards": 6.5
-    },
-    "Konata Mumpfield": {
-      "receiving_yards": 28.5
     },
     "Reggie Virgil": {
       "receiving_yards": 25.5
@@ -609,7 +609,7 @@
       "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 23.5
+      "receiving_yards": 21.5
     },
     "Keenan Allen": {
       "receiving_yards": 18.5
@@ -730,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6852,
+    "total_projections_returned": 6849,
     "matched_props": 309,
-    "excluded_goblin_demon_lines": 5588,
+    "excluded_goblin_demon_lines": 5585,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -771,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T03:00:43.733287+00:00"
+  "fetched_at": "2026-11-14T03:20:40.218623+00:00"
 }
