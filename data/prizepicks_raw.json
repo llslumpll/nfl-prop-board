@@ -183,7 +183,7 @@
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Tucker Kraft": {
       "receiving_yards": 36.5,
@@ -206,7 +206,7 @@
       "rushing_yards": 4.5
     },
     "MarShawn Lloyd": {
-      "rushing_yards": 14.5
+      "rushing_yards": 11.5
     },
     "Ben Yurosek": {
       "receiving_yards": 9.5
@@ -266,10 +266,10 @@
       "rushing_yards": 18.5
     },
     "Jerry Jeudy": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Foster Moreau": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -320,11 +320,11 @@
     "Kevin Coleman Jr.": {
       "receiving_yards": 16.5
     },
-    "Anthony Gould": {
+    "Ashton Dulin": {
       "receiving_yards": 15.5
     },
-    "Ashton Dulin": {
-      "receiving_yards": 14.5
+    "Anthony Gould": {
+      "receiving_yards": 15.5
     },
     "Chris Bell": {
       "receiving_yards": 13.5
@@ -770,9 +770,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7538,
+    "total_projections_returned": 7559,
     "matched_props": 341,
-    "excluded_goblin_demon_lines": 6038,
+    "excluded_goblin_demon_lines": 6058,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -811,5 +811,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T20:00:42.777228+00:00"
+  "fetched_at": "2026-11-14T20:20:52.887943+00:00"
 }
