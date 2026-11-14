@@ -5,7 +5,7 @@
     },
     "Drake Maye": {
       "passing_yards": 262.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
@@ -19,13 +19,13 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 52.5
+      "receiving_yards": 51.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5
     },
     "Hunter Henry": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Eli Raridon": {
       "receiving_yards": 27.5
@@ -63,7 +63,8 @@
       "receptions": 5
     },
     "Travis Kelce": {
-      "receiving_yards": 47.5
+      "receiving_yards": 47.5,
+      "receptions": 4
     },
     "Kyle Pitts Sr.": {
       "receiving_yards": 37.5
@@ -80,12 +81,12 @@
     "Noah Gray": {
       "receiving_yards": 13.5
     },
-    "Khalil Herbert": {
-      "rushing_yards": 9.5,
-      "receiving_yards": 2.5
-    },
     "Olamide Zaccheaus": {
       "receiving_yards": 8.5
+    },
+    "Khalil Herbert": {
+      "rushing_yards": 8.5,
+      "receiving_yards": 2.5
     },
     "Charlie Woerner": {
       "receiving_yards": 2.5
@@ -121,8 +122,7 @@
       "receptions": 3.5
     },
     "Omar Cooper Jr.": {
-      "receiving_yards": 37.5,
-      "receptions": 3
+      "receiving_yards": 37.5
     },
     "Adonai Mitchell": {
       "receiving_yards": 34.5
@@ -175,7 +175,8 @@
       "receiving_yards": 4.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 4
     },
     "Kaleb Johnson": {
       "rushing_yards": 30.5
@@ -407,7 +408,8 @@
       "receiving_yards": 48.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 41.5
+      "receiving_yards": 41.5,
+      "receptions": 4
     },
     "Darren Waller": {
       "receiving_yards": 29.5,
@@ -457,11 +459,12 @@
       "receiving_yards": 9.5
     },
     "Brock Bowers": {
-      "receiving_yards": 59.5
+      "receiving_yards": 59.5,
+      "receptions": 5.5
     },
     "Jadarian Price": {
       "rushing_yards": 42.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
@@ -512,14 +515,14 @@
     },
     "Kyren Williams": {
       "rushing_yards": 64.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 21.5
     },
     "Trey McBride": {
       "receiving_yards": 59.5,
       "receptions": 7
     },
     "Blake Corum": {
-      "rushing_yards": 58.5,
+      "rushing_yards": 59.5,
       "receiving_yards": 6.5
     },
     "Tyler Higbee": {
@@ -552,17 +555,17 @@
       "receptions": 2.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 13.5
+      "receiving_yards": 15.5
     },
     "Davis Allen": {
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Devin Duvernay": {
-      "receiving_yards": 11.5
+      "receiving_yards": 13.5
     },
     "CJ Daniels": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Dak Prescott": {
       "passing_yards": 272.5,
@@ -573,14 +576,16 @@
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 88.5
+      "receiving_yards": 88.5,
+      "receptions": 7
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
       "receiving_yards": 33.5
     },
     "George Kittle": {
-      "receiving_yards": 62.5
+      "receiving_yards": 62.5,
+      "receptions": 5
     },
     "Javonte Williams": {
       "rushing_yards": 61.5,
@@ -663,7 +668,7 @@
       "receptions": 2.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Dohnte Meyers": {
       "receiving_yards": 19.5
@@ -731,9 +736,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7072,
-    "matched_props": 308,
-    "excluded_goblin_demon_lines": 5729,
+    "total_projections_returned": 7115,
+    "matched_props": 313,
+    "excluded_goblin_demon_lines": 5749,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -772,5 +777,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T15:00:46.147944+00:00"
+  "fetched_at": "2026-11-14T15:20:38.665951+00:00"
 }
