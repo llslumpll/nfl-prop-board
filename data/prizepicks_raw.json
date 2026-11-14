@@ -95,7 +95,7 @@
       "rushing_yards": 27.5
     },
     "Geno Smith": {
-      "passing_yards": 221.5,
+      "passing_yards": 223.5,
       "rushing_yards": 5.5
     },
     "James Cook III": {
@@ -126,7 +126,7 @@
       "receptions": 3
     },
     "Adonai Mitchell": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -263,7 +263,7 @@
     },
     "Kyle McCord": {
       "passing_yards": 159.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 73.5,
@@ -309,7 +309,7 @@
       "receiving_yards": 14.5
     },
     "Chris Bell": {
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Jaylen Wright": {
       "rushing_yards": 12.5
@@ -541,7 +541,7 @@
       "receiving_yards": 6.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5,
@@ -564,7 +564,7 @@
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 256.5,
+      "passing_yards": 258.5,
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
@@ -726,9 +726,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6973,
+    "total_projections_returned": 6995,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5638,
+    "excluded_goblin_demon_lines": 5659,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -757,9 +757,9 @@
       "pass+rush+rec tds",
       "passer rating",
       "quarters with 1+ reception",
+      "quarters with 10+ receiving yards",
       "quarters with 25+ pass yards",
-      "quarters with 5+ receiving yards",
-      "rec targets"
+      "quarters with 5+ receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -767,5 +767,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T06:00:50.356002+00:00"
+  "fetched_at": "2026-11-14T06:20:37.849058+00:00"
 }
