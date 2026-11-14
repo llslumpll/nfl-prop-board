@@ -5,7 +5,7 @@
     },
     "Drake Maye": {
       "passing_yards": 260.5,
-      "rushing_yards": 26.5
+      "rushing_yards": 27.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
@@ -502,7 +502,7 @@
       "passing_yards": 212.5
     },
     "Carson Beck": {
-      "passing_yards": 174.5,
+      "passing_yards": 175.5,
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
@@ -725,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7032,
+    "total_projections_returned": 7030,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5696,
+    "excluded_goblin_demon_lines": 5695,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -766,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T11:20:40.605803+00:00"
+  "fetched_at": "2026-11-14T11:40:45.132310+00:00"
 }
