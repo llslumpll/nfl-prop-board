@@ -53,7 +53,7 @@
       "rushing_yards": 7.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 84.5,
+      "rushing_yards": 83.5,
       "receiving_yards": 28.5,
       "receptions": 4
     },
@@ -190,7 +190,7 @@
       "receptions": 4
     },
     "Kaleb Johnson": {
-      "rushing_yards": 30.5
+      "rushing_yards": 28.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 27.5,
@@ -218,7 +218,7 @@
       "receiving_yards": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 245.5,
+      "passing_yards": 244.5,
       "rushing_yards": 8.5
     },
     "Deshaun Watson": {
@@ -234,7 +234,7 @@
       "receiving_yards": 9.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5
+      "receiving_yards": 47.5
     },
     "Denzel Boston": {
       "receiving_yards": 45.5
@@ -256,7 +256,7 @@
       "receptions": 3
     },
     "Dalton Schultz": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 23.5
@@ -402,7 +402,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 251.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -431,7 +431,7 @@
       "receptions": 4
     },
     "Travis Etienne Jr.": {
-      "rushing_yards": 35.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 10.5,
       "receptions": 2
     },
@@ -446,12 +446,12 @@
       "receiving_yards": 24.5
     },
     "Audric Estime": {
-      "rushing_yards": 22.5,
+      "rushing_yards": 23.5,
       "receptions": 0.5
     },
     "Alvin Kamara": {
       "receiving_yards": 15.5,
-      "rushing_yards": 14.5,
+      "rushing_yards": 15.5,
       "receptions": 3
     },
     "Tommy Tremble": {
@@ -478,7 +478,7 @@
     },
     "Fernando Mendoza": {
       "passing_yards": 180.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Jaxon Smith-Njigba": {
       "receiving_yards": 89.5
@@ -519,7 +519,7 @@
       "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 18.5,
       "receptions": 2
     },
     "Jalen Nailor": {
@@ -554,7 +554,7 @@
     },
     "Blake Corum": {
       "rushing_yards": 59.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Tyler Higbee": {
       "receiving_yards": 35.5,
@@ -634,14 +634,11 @@
       "receiving_yards": 36.5
     },
     "Kaelon Black": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receptions": 0.5
     },
     "Demarcus Robinson": {
       "receiving_yards": 28.5
-    },
-    "Keenan Allen": {
-      "receiving_yards": 23.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 23.5
@@ -649,6 +646,9 @@
     "Jordan Watkins": {
       "receiving_yards": 23.5,
       "receptions": 1.5
+    },
+    "Keenan Allen": {
+      "receiving_yards": 22.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 7.5
@@ -770,9 +770,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7485,
+    "total_projections_returned": 7510,
     "matched_props": 341,
-    "excluded_goblin_demon_lines": 6002,
+    "excluded_goblin_demon_lines": 6014,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -800,10 +800,10 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
+      "punt touchbacks (combo)",
       "punts",
-      "punts inside 20",
-      "quarters with 1+ reception",
-      "quarters with 10+ receiving yards"
+      "punts (combo)",
+      "punts inside 20"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -811,5 +811,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T19:20:39.067278+00:00"
+  "fetched_at": "2026-11-14T19:40:38.597812+00:00"
 }
