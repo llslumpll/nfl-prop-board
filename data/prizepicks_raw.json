@@ -22,7 +22,7 @@
       "receiving_yards": 51.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Hunter Henry": {
       "receiving_yards": 35.5
@@ -186,7 +186,7 @@
       "receiving_yards": 10.5
     },
     "Gavin Bartholomew": {
-      "receiving_yards": 20.5,
+      "receiving_yards": 21.5,
       "receptions": 2.5
     },
     "Savion Williams": {
@@ -571,7 +571,7 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "George Kittle": {
       "receiving_yards": 62.5
@@ -589,7 +589,7 @@
       "receptions": 3.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "rushing_yards": 6.5
     },
     "Kaelon Black": {
@@ -604,7 +604,7 @@
       "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Keenan Allen": {
       "receiving_yards": 19.5
@@ -725,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7000,
+    "total_projections_returned": 7012,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5667,
+    "excluded_goblin_demon_lines": 5679,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -766,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T10:20:39.842237+00:00"
+  "fetched_at": "2026-11-14T10:40:38.146738+00:00"
 }
