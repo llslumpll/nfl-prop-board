@@ -182,11 +182,11 @@
       "receiving_yards": 50.5
     },
     "Jordan Mason": {
-      "rushing_yards": 47.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 4.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 4
     },
     "Kaleb Johnson": {
@@ -247,7 +247,7 @@
       "receptions": 3
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 38.5,
       "receptions": 4
     },
     "Xavier Hutchinson": {
@@ -255,10 +255,10 @@
       "receptions": 3
     },
     "Dalton Schultz": {
-      "receiving_yards": 29.5
+      "receiving_yards": 28.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Dylan Sampson": {
       "receiving_yards": 22.5,
@@ -278,7 +278,7 @@
       "rushing_yards": 7.5
     },
     "Kyle McCord": {
-      "passing_yards": 158.5,
+      "passing_yards": 160.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -309,7 +309,7 @@
       "receiving_yards": 27.5
     },
     "Seth McGowan": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 25.5,
       "receiving_yards": 2.5
     },
     "Deion Burks": {
@@ -470,7 +470,7 @@
       "receiving_yards": 0.5
     },
     "Drew Lock": {
-      "passing_yards": 202.5,
+      "passing_yards": 203.5,
       "rushing_yards": 5.5
     },
     "Fernando Mendoza": {
@@ -516,7 +516,7 @@
       "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 15.5,
       "receptions": 2
     },
     "Jalen Nailor": {
@@ -681,7 +681,7 @@
       "receiving_yards": 50.5
     },
     "Chase Brown": {
-      "rushing_yards": 45.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 24.5
     },
     "Rico Dowdle": {
@@ -693,10 +693,10 @@
       "receptions": 2.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 29.5
+      "receiving_yards": 26.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Dohnte Meyers": {
       "receiving_yards": 19.5
@@ -767,9 +767,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7306,
+    "total_projections_returned": 7326,
     "matched_props": 338,
-    "excluded_goblin_demon_lines": 5878,
+    "excluded_goblin_demon_lines": 5893,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -808,5 +808,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T17:40:36.488910+00:00"
+  "fetched_at": "2026-11-14T18:00:49.203124+00:00"
 }
