@@ -215,7 +215,7 @@
       "receiving_yards": 60.5
     },
     "Woody Marks": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
@@ -229,10 +229,10 @@
       "rushing_yards": 44.5,
       "receiving_yards": 5.5
     },
-    "Tank Dell": {
-      "receiving_yards": 40.5
-    },
     "Harold Fannin Jr.": {
+      "receiving_yards": 37.5
+    },
+    "Tank Dell": {
       "receiving_yards": 37.5
     },
     "Xavier Hutchinson": {
@@ -279,8 +279,7 @@
       "receptions": 6
     },
     "Caleb Douglas": {
-      "receiving_yards": 43.5,
-      "receptions": 3.5
+      "receiving_yards": 43.5
     },
     "Malik Washington": {
       "receiving_yards": 35.5,
@@ -349,11 +348,11 @@
       "receiving_yards": 35.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 30.5,
       "receptions": 0.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 26.5
@@ -411,7 +410,7 @@
       "receiving_yards": 30.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 27.5,
@@ -423,11 +422,15 @@
     "Tommy Tremble": {
       "receiving_yards": 14.5
     },
-    "Mitchell Evans": {
-      "receiving_yards": 8.5
+    "Xavier Legette": {
+      "receiving_yards": 12.5,
+      "receptions": 1.5
     },
     "John Metchie III": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
+    },
+    "Mitchell Evans": {
+      "receiving_yards": 8.5
     },
     "Noah Fant": {
       "receiving_yards": 6.5
@@ -497,7 +500,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 212.5
+      "passing_yards": 213.5
     },
     "Carson Beck": {
       "passing_yards": 175.5,
@@ -538,7 +541,7 @@
       "receiving_yards": 28.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5
@@ -556,7 +559,7 @@
       "receiving_yards": 7.5
     },
     "Dak Prescott": {
-      "passing_yards": 270.5,
+      "passing_yards": 269.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
@@ -568,15 +571,14 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 62.5,
-      "receiving_yards": 33.5
+      "receiving_yards": 32.5
     },
     "George Kittle": {
       "receiving_yards": 62.5
     },
     "Javonte Williams": {
       "rushing_yards": 61.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
+      "receiving_yards": 13.5
     },
     "George Pickens": {
       "receiving_yards": 61.5,
@@ -602,7 +604,7 @@
       "receptions": 1.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 23.5
+      "receiving_yards": 20.5
     },
     "Keenan Allen": {
       "receiving_yards": 18.5
@@ -688,7 +690,7 @@
       "rushing_yards": 3.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 32.5,
+      "rushing_yards": 31.5,
       "receiving_yards": 4.5
     },
     "Rashod Bateman": {
@@ -710,7 +712,7 @@
     },
     "Keaton Mitchell": {
       "receiving_yards": 11.5,
-      "rushing_yards": 10.5
+      "rushing_yards": 11.5
     },
     "Matt Hibner": {
       "receiving_yards": 8.5
@@ -723,9 +725,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6669,
+    "total_projections_returned": 6688,
     "matched_props": 306,
-    "excluded_goblin_demon_lines": 5411,
+    "excluded_goblin_demon_lines": 5429,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -764,5 +766,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-13T23:40:40.875209+00:00"
+  "fetched_at": "2026-11-14T00:00:46.408619+00:00"
 }

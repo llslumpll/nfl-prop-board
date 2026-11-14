@@ -35604,7 +35604,10 @@
     "graded_at": null,
     "line_attached_at": "2026-11-11 12:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-11 12:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Omar Cooper Jr.|receptions|10": {
     "player": "Omar Cooper Jr.",
@@ -35972,10 +35975,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-12 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-12 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -37292,8 +37292,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Treylon Burks|receiving_yards|10": {
@@ -38862,7 +38861,31 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
+    "best5_tags": []
+  },
+  "Xavier Legette|receiving_yards|10": {
+    "player": "Xavier Legette",
+    "team": "CAR",
+    "opponent": "NO",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 32.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 12.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 19.9,
+    "model_prob": 0.8005,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-14 00:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
     "best5_tags": [
+      "best_value",
       "highest_confidence"
     ]
   }
