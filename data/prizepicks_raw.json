@@ -5,7 +5,7 @@
     },
     "Drake Maye": {
       "passing_yards": 262.5,
-      "rushing_yards": 26.5
+      "rushing_yards": 27.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 91.5,
@@ -22,7 +22,7 @@
       "receiving_yards": 52.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Hunter Henry": {
       "receiving_yards": 36.5
@@ -242,18 +242,18 @@
     "Dalton Schultz": {
       "receiving_yards": 29.5
     },
+    "Kayshon Boutte": {
+      "receiving_yards": 24.5
+    },
     "Dylan Sampson": {
       "receiving_yards": 22.5,
       "rushing_yards": 18.5
-    },
-    "Kayshon Boutte": {
-      "receiving_yards": 22.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 17.5
     },
     "Foster Moreau": {
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -263,7 +263,7 @@
       "rushing_yards": 7.5
     },
     "Kyle McCord": {
-      "passing_yards": 159.5,
+      "passing_yards": 160.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -384,7 +384,7 @@
       "receiving_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 251.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -461,7 +461,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 42.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
@@ -479,14 +479,14 @@
       "receiving_yards": 21.5
     },
     "AJ Barner": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
       "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Jalen Nailor": {
       "receiving_yards": 12.5
@@ -578,12 +578,12 @@
       "rushing_yards": 62.5,
       "receiving_yards": 33.5
     },
+    "George Kittle": {
+      "receiving_yards": 62.5
+    },
     "Javonte Williams": {
       "rushing_yards": 61.5,
       "receiving_yards": 13.5
-    },
-    "George Kittle": {
-      "receiving_yards": 61.5
     },
     "George Pickens": {
       "receiving_yards": 61.5,
@@ -716,7 +716,7 @@
       "receiving_yards": 11.5
     },
     "Keaton Mitchell": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 10.5,
       "rushing_yards": 10.5
     },
     "Matt Hibner": {
@@ -730,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7055,
+    "total_projections_returned": 7041,
     "matched_props": 307,
-    "excluded_goblin_demon_lines": 5715,
+    "excluded_goblin_demon_lines": 5701,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -771,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-14T13:00:41.636749+00:00"
+  "fetched_at": "2026-11-14T13:20:42.091404+00:00"
 }
