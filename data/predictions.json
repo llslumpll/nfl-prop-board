@@ -35408,7 +35408,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jonathan Taylor|rushing_yards|10": {
@@ -35456,9 +35457,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Michael Penix Jr.|rushing_yards|10": {
     "player": "Michael Penix Jr.",
@@ -37548,10 +37547,10 @@
     "stat": "rushing_yards",
     "projected": 44.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 50.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -5.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -37562,7 +37561,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-14 21:40 UTC",
+    "line_attach_note": "Projection frozen 2026-11-13 16:53 UTC; this prizepicks line was first seen 2026-11-14 21:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "A.J. Brown|receiving_yards|10": {
     "player": "A.J. Brown",
@@ -38886,7 +38887,33 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
+      "highest_confidence"
+    ]
+  },
+  "Ladd McConkey|receiving_yards|10": {
+    "player": "Ladd McConkey",
+    "team": "LAC",
+    "opponent": "BAL",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 54.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 35.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 19.3,
+    "model_prob": 0.6884,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-14 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "best_value"
     ]
   }
