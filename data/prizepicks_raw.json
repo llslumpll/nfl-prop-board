@@ -19,12 +19,12 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 50.5,
       "receptions": 4
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 46.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 19.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5,
@@ -219,8 +219,7 @@
       "receptions": 2
     },
     "Gavin Bartholomew": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
+      "receiving_yards": 21.5
     },
     "Savion Williams": {
       "receiving_yards": 19.5,
@@ -231,8 +230,7 @@
       "receiving_yards": 7.5
     },
     "Myles Price": {
-      "receiving_yards": 11.5,
-      "receptions": 1.5
+      "receiving_yards": 14.5
     },
     "MarShawn Lloyd": {
       "rushing_yards": 10.5
@@ -255,7 +253,7 @@
     },
     "Deshaun Watson": {
       "passing_yards": 209.5,
-      "rushing_yards": 23.5
+      "rushing_yards": 24.5
     },
     "Nico Collins": {
       "receiving_yards": 60.5
@@ -402,10 +400,10 @@
       "receptions": 0.5
     },
     "Chimere Dike": {
-      "receiving_yards": 29.5
+      "receiving_yards": 28.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 26.5
@@ -568,7 +566,7 @@
       "receiving_yards": 6.5
     },
     "Jack Bech": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Eric Saubert": {
       "receiving_yards": 0.5
@@ -589,7 +587,7 @@
     },
     "Trey McBride": {
       "receiving_yards": 59.5,
-      "receptions": 7
+      "receptions": 6.5
     },
     "Blake Corum": {
       "rushing_yards": 57.5,
@@ -678,13 +676,13 @@
     "Demarcus Robinson": {
       "receiving_yards": 31.5
     },
-    "Brevyn Spann-Ford": {
+    "Keenan Allen": {
       "receiving_yards": 23.5
     },
     "Jordan Watkins": {
       "receiving_yards": 23.5
     },
-    "Keenan Allen": {
+    "Brevyn Spann-Ford": {
       "receiving_yards": 22.5
     },
     "Israel Abanikanda": {
@@ -733,7 +731,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 46.5,
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Rico Dowdle": {
       "rushing_yards": 30.5,
@@ -833,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8295,
-    "matched_props": 366,
-    "excluded_goblin_demon_lines": 6700,
+    "total_projections_returned": 8294,
+    "matched_props": 364,
+    "excluded_goblin_demon_lines": 6704,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T12:00:44.345114+00:00"
+  "fetched_at": "2026-11-15T12:20:38.692941+00:00"
 }
