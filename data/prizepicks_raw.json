@@ -19,11 +19,11 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 53.5,
       "receptions": 4
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 47.5,
       "receiving_yards": 21.5
     },
     "Sam LaPorta": {
@@ -338,10 +338,10 @@
       "rushing_yards": 25.5,
       "receiving_yards": 3.5
     },
-    "Kevin Coleman Jr.": {
-      "receiving_yards": 18.5
-    },
     "Deion Burks": {
+      "receiving_yards": 17.5
+    },
+    "Kevin Coleman Jr.": {
       "receiving_yards": 17.5
     },
     "Ashton Dulin": {
@@ -394,7 +394,7 @@
       "receptions": 0.5
     },
     "Chimere Dike": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Gunnar Helm": {
       "receiving_yards": 27.5
@@ -614,8 +614,11 @@
       "receiving_yards": 24.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 18.5,
       "receptions": 2.5
+    },
+    "CJ Daniels": {
+      "receiving_yards": 13.5
     },
     "Simi Fehoko": {
       "receiving_yards": 12.5
@@ -623,9 +626,6 @@
     "Davis Allen": {
       "receiving_yards": 12.5,
       "receptions": 1.5
-    },
-    "CJ Daniels": {
-      "receiving_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 11.5
@@ -826,9 +826,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8104,
+    "total_projections_returned": 8109,
     "matched_props": 361,
-    "excluded_goblin_demon_lines": 6527,
+    "excluded_goblin_demon_lines": 6533,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -867,5 +867,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T00:40:44.152327+00:00"
+  "fetched_at": "2026-11-15T00:46:31.513755+00:00"
 }
