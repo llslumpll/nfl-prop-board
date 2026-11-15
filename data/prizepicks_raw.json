@@ -5,18 +5,18 @@
     },
     "Drake Maye": {
       "passing_yards": 261.5,
-      "rushing_yards": 25.5
+      "rushing_yards": 26.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 82.5,
       "receptions": 7.5
     },
     "Jameson Williams": {
-      "receiving_yards": 55.5
+      "receiving_yards": 56.5
     },
     "A.J. Brown": {
       "receiving_yards": 51.5,
@@ -41,7 +41,7 @@
       "receiving_yards": 33.5
     },
     "Eli Raridon": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 15.5
@@ -230,12 +230,12 @@
       "rushing_yards": 15.5,
       "receiving_yards": 7.5
     },
-    "Myles Price": {
-      "receiving_yards": 11.5,
-      "receptions": 1.5
-    },
     "MarShawn Lloyd": {
       "rushing_yards": 10.5
+    },
+    "Myles Price": {
+      "receiving_yards": 10.5,
+      "receptions": 1.5
     },
     "Ben Yurosek": {
       "receiving_yards": 9.5
@@ -401,10 +401,10 @@
       "rushing_yards": 31.5,
       "receptions": 0.5
     },
-    "Chimere Dike": {
-      "receiving_yards": 29.5
-    },
     "Gunnar Helm": {
+      "receiving_yards": 28.5
+    },
+    "Chimere Dike": {
       "receiving_yards": 28.5
     },
     "Elic Ayomanor": {
@@ -833,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8299,
+    "total_projections_returned": 8300,
     "matched_props": 366,
-    "excluded_goblin_demon_lines": 6704,
+    "excluded_goblin_demon_lines": 6706,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T11:00:43.407134+00:00"
+  "fetched_at": "2026-11-15T11:20:41.344105+00:00"
 }
