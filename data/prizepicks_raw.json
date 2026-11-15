@@ -208,13 +208,13 @@
       "receiving_yards": 37.5,
       "receptions": 4
     },
+    "Kaleb Johnson": {
+      "rushing_yards": 28.5
+    },
     "Aaron Jones Sr.": {
       "rushing_yards": 27.5,
       "receiving_yards": 10.5,
       "receptions": 2
-    },
-    "Kaleb Johnson": {
-      "rushing_yards": 27.5
     },
     "Savion Williams": {
       "receiving_yards": 20.5,
@@ -484,7 +484,7 @@
     },
     "Alvin Kamara": {
       "receiving_yards": 14.5,
-      "rushing_yards": 13.5,
+      "rushing_yards": 12.5,
       "receptions": 3
     },
     "Xavier Legette": {
@@ -559,7 +559,7 @@
       "receiving_yards": 12.5
     },
     "Tory Horton": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Jack Bech": {
       "receiving_yards": 4.5
@@ -667,7 +667,7 @@
       "rushing_yards": 6.5
     },
     "Kaelon Black": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 34.5,
       "receptions": 0.5
     },
     "Demarcus Robinson": {
@@ -827,9 +827,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8192,
+    "total_projections_returned": 8195,
     "matched_props": 362,
-    "excluded_goblin_demon_lines": 6607,
+    "excluded_goblin_demon_lines": 6610,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +868,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T02:00:45.456823+00:00"
+  "fetched_at": "2026-11-15T02:20:37.221795+00:00"
 }
