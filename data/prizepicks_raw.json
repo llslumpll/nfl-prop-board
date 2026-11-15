@@ -104,12 +104,12 @@
     "Noah Gray": {
       "receiving_yards": 11.5
     },
-    "Khalil Herbert": {
-      "rushing_yards": 9.5,
-      "receiving_yards": 2.5
-    },
     "Olamide Zaccheaus": {
       "receiving_yards": 8.5
+    },
+    "Khalil Herbert": {
+      "rushing_yards": 8.5,
+      "receiving_yards": 2.5
     },
     "Charlie Woerner": {
       "receiving_yards": 2.5
@@ -433,7 +433,7 @@
       "receiving_yards": 3.5
     },
     "Tyler Shough": {
-      "passing_yards": 252.5,
+      "passing_yards": 250.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -632,7 +632,7 @@
       "receiving_yards": 11.5
     },
     "Dak Prescott": {
-      "passing_yards": 269.5,
+      "passing_yards": 268.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
@@ -640,7 +640,7 @@
       "rushing_yards": 19.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 88.5,
+      "receiving_yards": 90.5,
       "receptions": 7
     },
     "George Pickens": {
@@ -664,7 +664,7 @@
       "rushing_yards": 6.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Kaelon Black": {
       "rushing_yards": 34.5,
@@ -673,13 +673,13 @@
     "Demarcus Robinson": {
       "receiving_yards": 32.5
     },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 23.5
-    },
     "Jordan Watkins": {
       "receiving_yards": 23.5
     },
     "Keenan Allen": {
+      "receiving_yards": 22.5
+    },
+    "Brevyn Spann-Ford": {
       "receiving_yards": 22.5
     },
     "Israel Abanikanda": {
@@ -827,9 +827,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8196,
+    "total_projections_returned": 8207,
     "matched_props": 362,
-    "excluded_goblin_demon_lines": 6614,
+    "excluded_goblin_demon_lines": 6624,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +868,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T03:00:42.153349+00:00"
+  "fetched_at": "2026-11-15T03:20:43.811015+00:00"
 }
