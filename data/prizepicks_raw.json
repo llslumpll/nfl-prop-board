@@ -12,7 +12,7 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 82.5,
       "receptions": 7.5
     },
     "Jameson Williams": {
@@ -34,7 +34,7 @@
       "receiving_yards": 39.5
     },
     "Hunter Henry": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Mack Hollins": {
@@ -204,7 +204,7 @@
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Tucker Kraft": {
       "receiving_yards": 37.5,
@@ -214,7 +214,7 @@
       "rushing_yards": 29.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 27.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 10.5,
       "receptions": 2
     },
@@ -789,7 +789,7 @@
       "receiving_yards": 35.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 4.5
     },
     "Rashod Bateman": {
@@ -833,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8300,
+    "total_projections_returned": 8301,
     "matched_props": 366,
-    "excluded_goblin_demon_lines": 6705,
+    "excluded_goblin_demon_lines": 6706,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T10:20:45.804211+00:00"
+  "fetched_at": "2026-11-15T10:40:45.856092+00:00"
 }
