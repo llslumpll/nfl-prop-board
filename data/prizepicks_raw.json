@@ -13,7 +13,7 @@
     },
     "Amon-Ra St. Brown": {
       "receiving_yards": 81.5,
-      "receptions": 7
+      "receptions": 7.5
     },
     "Jameson Williams": {
       "receiving_yards": 56.5
@@ -323,7 +323,7 @@
       "receiving_yards": 21.5
     },
     "Tyler Warren": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 45.5,
       "receptions": 6
     },
     "Caleb Douglas": {
@@ -521,7 +521,7 @@
       "receiving_yards": 89.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 65.5,
       "receiving_yards": 9.5
     },
     "Brock Bowers": {
@@ -622,12 +622,12 @@
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
+    "CJ Daniels": {
+      "receiving_yards": 13.5
+    },
     "Davis Allen": {
       "receiving_yards": 12.5,
       "receptions": 1.5
-    },
-    "CJ Daniels": {
-      "receiving_yards": 12.5
     },
     "Simi Fehoko": {
       "receiving_yards": 11.5
@@ -831,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8274,
+    "total_projections_returned": 8275,
     "matched_props": 364,
-    "excluded_goblin_demon_lines": 6690,
+    "excluded_goblin_demon_lines": 6691,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -872,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T06:00:43.764442+00:00"
+  "fetched_at": "2026-11-15T06:20:38.510665+00:00"
 }
