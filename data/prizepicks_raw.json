@@ -5,10 +5,10 @@
     },
     "Drake Maye": {
       "passing_yards": 261.5,
-      "rushing_yards": 26.5
+      "rushing_yards": 27.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 89.5,
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
@@ -34,8 +34,7 @@
       "receiving_yards": 39.5
     },
     "Hunter Henry": {
-      "receiving_yards": 37.5,
-      "receptions": 3.5
+      "receiving_yards": 37.5
     },
     "Mack Hollins": {
       "receiving_yards": 33.5
@@ -68,13 +67,13 @@
       "receiving_yards": 28.5,
       "receptions": 4
     },
-    "Emmett Johnson": {
-      "rushing_yards": 73.5,
-      "receiving_yards": 25.5
-    },
     "Drake London": {
       "receiving_yards": 72.5,
       "receptions": 5.5
+    },
+    "Emmett Johnson": {
+      "rushing_yards": 72.5,
+      "receiving_yards": 25.5
     },
     "Rashee Rice": {
       "receiving_yards": 55.5,
@@ -105,16 +104,15 @@
       "rushing_yards": 12.5,
       "receptions": 0.5
     },
-    "Khalil Herbert": {
-      "rushing_yards": 9.5,
-      "receiving_yards": 2.5
-    },
     "Olamide Zaccheaus": {
       "receiving_yards": 8.5
     },
+    "Khalil Herbert": {
+      "rushing_yards": 8.5,
+      "receiving_yards": 2.5
+    },
     "Charlie Woerner": {
-      "receiving_yards": 2.5,
-      "receptions": 0.5
+      "receiving_yards": 2.5
     },
     "Josh Allen": {
       "passing_yards": 235.5,
@@ -227,7 +225,7 @@
       "rushing_yards": 3.5
     },
     "Chris Brooks": {
-      "rushing_yards": 16.5,
+      "rushing_yards": 15.5,
       "receiving_yards": 7.5
     },
     "Myles Price": {
@@ -348,11 +346,11 @@
     "Deion Burks": {
       "receiving_yards": 17.5
     },
-    "Kevin Coleman Jr.": {
+    "Anthony Gould": {
       "receiving_yards": 16.5
     },
-    "Anthony Gould": {
-      "receiving_yards": 15.5
+    "Kevin Coleman Jr.": {
+      "receiving_yards": 16.5
     },
     "Ashton Dulin": {
       "receiving_yards": 14.5
@@ -531,7 +529,7 @@
       "receptions": 5.5
     },
     "Jadarian Price": {
-      "rushing_yards": 42.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 11.5
     },
     "Ashton Jeanty": {
@@ -568,7 +566,7 @@
       "receiving_yards": 6.5
     },
     "Jack Bech": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Eric Saubert": {
       "receiving_yards": 0.5
@@ -584,7 +582,7 @@
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 19.5
     },
     "Trey McBride": {
@@ -624,12 +622,12 @@
       "receiving_yards": 19.5,
       "receptions": 2.5
     },
-    "CJ Daniels": {
-      "receiving_yards": 13.5
-    },
     "Davis Allen": {
       "receiving_yards": 12.5,
       "receptions": 1.5
+    },
+    "CJ Daniels": {
+      "receiving_yards": 12.5
     },
     "Simi Fehoko": {
       "receiving_yards": 11.5
@@ -833,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8282,
-    "matched_props": 366,
-    "excluded_goblin_demon_lines": 6694,
+    "total_projections_returned": 8273,
+    "matched_props": 364,
+    "excluded_goblin_demon_lines": 6685,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T07:40:39.718259+00:00"
+  "fetched_at": "2026-11-15T08:00:44.077301+00:00"
 }
