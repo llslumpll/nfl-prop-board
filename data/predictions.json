@@ -37358,7 +37358,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Cam Ward|passing_yards|10": {
     "player": "Cam Ward",
@@ -38932,6 +38934,72 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-15 07:18 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Brock Bowers|receiving_yards|10": {
+    "player": "Brock Bowers",
+    "team": "LV",
+    "opponent": "SEA",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 60.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 58.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 2.4,
+    "model_prob": 0.5292,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-15 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jordan Watkins|receiving_yards|10": {
+    "player": "Jordan Watkins",
+    "team": "SF",
+    "opponent": "DAL",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 24.5,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 23.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.0,
+    "model_prob": 0.5175,
+    "signals": {
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-15 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Omarion Hampton|rushing_yards|10": {
+    "player": "Omarion Hampton",
+    "team": "LAC",
+    "opponent": "BAL",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 48.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 31.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.8,
+    "model_prob": 0.6813,
+    "signals": {},
+    "frozen_at": "2026-11-15 18:20 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
