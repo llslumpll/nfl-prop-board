@@ -88,6 +88,27 @@
    "status": "pending",
    "week": 10
   },
+  "spread|SF @ DAL: SF -4.5": {
+   "ask": 0.46,
+   "away": "SF",
+   "cost": 0.4774,
+   "ev": 0.023,
+   "fair": 0.4884,
+   "first_ev": 0.023,
+   "first_seen": "2026-11-15 21:00 UTC",
+   "home": "DAL",
+   "kalshi": "YES SF by over 4.5 at 46%",
+   "kickoff": "2026-11-15T21:25:00+00:00",
+   "kind": "spread",
+   "label": "SF @ DAL: SF -4.5",
+   "line": 4.5,
+   "model": 0.4103,
+   "model_agrees": false,
+   "ref": "FanDuel SF -4.5",
+   "side": "SF -4.5",
+   "status": "pending",
+   "week": 10
+  },
   "total|MIA @ IND: OVER 40.5": {
    "ask": 0.41,
    "away": "MIA",
