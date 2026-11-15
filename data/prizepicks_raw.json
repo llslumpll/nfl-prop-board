@@ -12,7 +12,7 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 82.5,
+      "receiving_yards": 81.5,
       "receptions": 7
     },
     "Jameson Williams": {
@@ -24,7 +24,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 46.5,
-      "receiving_yards": 22.5
+      "receiving_yards": 21.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5,
@@ -252,8 +252,7 @@
       "rushing_yards": 24.5
     },
     "Nico Collins": {
-      "receiving_yards": 60.5,
-      "receptions": 4.5
+      "receiving_yards": 60.5
     },
     "Woody Marks": {
       "rushing_yards": 57.5,
@@ -275,7 +274,7 @@
       "receptions": 4
     },
     "Tank Dell": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 37.5,
       "receptions": 3
     },
     "Xavier Hutchinson": {
@@ -618,15 +617,15 @@
       "receiving_yards": 18.5,
       "receptions": 2.5
     },
-    "Davis Allen": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
-    },
     "CJ Daniels": {
       "receiving_yards": 13.5
     },
     "Simi Fehoko": {
       "receiving_yards": 11.5
+    },
+    "Davis Allen": {
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Devin Duvernay": {
       "receiving_yards": 11.5
@@ -827,9 +826,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8223,
-    "matched_props": 362,
-    "excluded_goblin_demon_lines": 6640,
+    "total_projections_returned": 8224,
+    "matched_props": 361,
+    "excluded_goblin_demon_lines": 6641,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +867,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T04:00:45.573422+00:00"
+  "fetched_at": "2026-11-15T04:20:40.905721+00:00"
 }
