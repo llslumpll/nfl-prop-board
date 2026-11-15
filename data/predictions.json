@@ -38917,5 +38917,27 @@
     "best5_tags": [
       "best_value"
     ]
+  },
+  "Travis Etienne Jr.|rushing_yards|10": {
+    "player": "Travis Etienne Jr.",
+    "team": "NO",
+    "opponent": "CAR",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 48.0,
+    "tier_at_freeze": "No data (rookie/unproven)",
+    "market_line": 30.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 17.5,
+    "model_prob": 0.7831,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-15 07:18 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
