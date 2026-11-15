@@ -19,7 +19,7 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 50.5,
       "receptions": 4
     },
     "Rhamondre Stevenson": {
@@ -92,7 +92,7 @@
       "receptions": 2
     },
     "Xavier Worthy": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Josh Downs": {
       "receiving_yards": 21.5
@@ -619,15 +619,15 @@
       "receiving_yards": 23.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 19.5,
       "receptions": 2.5
-    },
-    "CJ Daniels": {
-      "receiving_yards": 13.5
     },
     "Davis Allen": {
       "receiving_yards": 12.5,
       "receptions": 1.5
+    },
+    "CJ Daniels": {
+      "receiving_yards": 12.5
     },
     "Simi Fehoko": {
       "receiving_yards": 11.5
@@ -831,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8275,
+    "total_projections_returned": 8274,
     "matched_props": 364,
-    "excluded_goblin_demon_lines": 6691,
+    "excluded_goblin_demon_lines": 6690,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -872,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T06:20:38.510665+00:00"
+  "fetched_at": "2026-11-15T06:40:37.648426+00:00"
 }
