@@ -36359,7 +36359,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Kenneth Walker III|any_td|10": {
     "player": "Kenneth Walker III",
@@ -36741,7 +36744,6 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
