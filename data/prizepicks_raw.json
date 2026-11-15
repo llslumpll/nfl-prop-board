@@ -68,13 +68,13 @@
       "receiving_yards": 28.5,
       "receptions": 4
     },
+    "Emmett Johnson": {
+      "rushing_yards": 73.5,
+      "receiving_yards": 25.5
+    },
     "Drake London": {
       "receiving_yards": 72.5,
       "receptions": 5.5
-    },
-    "Emmett Johnson": {
-      "rushing_yards": 72.5,
-      "receiving_yards": 25.5
     },
     "Rashee Rice": {
       "receiving_yards": 55.5,
@@ -124,7 +124,7 @@
       "rushing_yards": 5.5
     },
     "James Cook III": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 91.5,
       "receiving_yards": 8.5
     },
     "Garrett Wilson": {
@@ -153,9 +153,8 @@
       "receiving_yards": 36.5
     },
     "Braelon Allen": {
-      "rushing_yards": 31.5,
-      "receiving_yards": 6.5,
-      "receptions": 1.5
+      "rushing_yards": 33.5,
+      "receiving_yards": 6.5
     },
     "Keon Coleman": {
       "receiving_yards": 27.5
@@ -172,7 +171,8 @@
       "rushing_yards": 4.5
     },
     "Dawson Knox": {
-      "receiving_yards": 11.5
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Ray Davis": {
       "rushing_yards": 9.5
@@ -437,7 +437,7 @@
       "receiving_yards": 3.5
     },
     "Tyler Shough": {
-      "passing_yards": 252.5,
+      "passing_yards": 250.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -470,12 +470,12 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "Darren Waller": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
-    },
     "Devaughn Vele": {
       "receiving_yards": 29.5
+    },
+    "Darren Waller": {
+      "receiving_yards": 28.5,
+      "receptions": 2.5
     },
     "Juwan Johnson": {
       "receiving_yards": 24.5
@@ -831,9 +831,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8281,
+    "total_projections_returned": 8285,
     "matched_props": 364,
-    "excluded_goblin_demon_lines": 6697,
+    "excluded_goblin_demon_lines": 6700,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -872,5 +872,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T09:00:44.782011+00:00"
+  "fetched_at": "2026-11-15T09:20:40.227171+00:00"
 }
