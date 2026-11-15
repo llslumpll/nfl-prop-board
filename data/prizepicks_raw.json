@@ -484,7 +484,7 @@
       "rushing_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Alvin Kamara": {
       "receiving_yards": 14.5,
@@ -494,9 +494,6 @@
     "Xavier Legette": {
       "receiving_yards": 12.5
     },
-    "Trevor Etienne": {
-      "rushing_yards": 9.5
-    },
     "Noah Fant": {
       "receiving_yards": 8.5
     },
@@ -505,6 +502,9 @@
     },
     "John Metchie III": {
       "receiving_yards": 7.5
+    },
+    "Trevor Etienne": {
+      "rushing_yards": 7.5
     },
     "Oscar Delp": {
       "receiving_yards": 0.5
@@ -832,9 +832,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8248,
+    "total_projections_returned": 8251,
     "matched_props": 365,
-    "excluded_goblin_demon_lines": 6657,
+    "excluded_goblin_demon_lines": 6661,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -850,6 +850,7 @@
       "halves with 25+ rush yards",
       "halves with 40+ receiving yards",
       "halves with 50+ receiving yards",
+      "halves with 50+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -864,8 +865,7 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
-      "punt touchbacks (combo)",
-      "punts"
+      "punt touchbacks (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -873,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T05:00:44.978881+00:00"
+  "fetched_at": "2026-11-15T05:20:38.669697+00:00"
 }
