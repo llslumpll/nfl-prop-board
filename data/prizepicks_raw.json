@@ -12,7 +12,7 @@
       "receiving_yards": 89.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 9.5
     },
     "Brock Bowers": {
@@ -24,7 +24,7 @@
       "receiving_yards": 11.5
     },
     "Ashton Jeanty": {
-      "rushing_yards": 33.5,
+      "rushing_yards": 36.5,
       "receiving_yards": 25.5,
       "receptions": 4
     },
@@ -33,7 +33,7 @@
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 25.5,
       "receptions": 0.5
     },
     "Michael Mayer": {
@@ -66,7 +66,7 @@
       "receiving_yards": 0.5
     },
     "Matthew Stafford": {
-      "passing_yards": 211.5
+      "passing_yards": 208.5
     },
     "Carson Beck": {
       "passing_yards": 175.5,
@@ -110,7 +110,7 @@
       "receiving_yards": 24.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 18.5,
       "receptions": 2.5
     },
     "Davis Allen": {
@@ -155,7 +155,7 @@
       "receptions": 4.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "rushing_yards": 6.5
     },
     "Ryan Flournoy": {
@@ -178,13 +178,14 @@
     },
     "Israel Abanikanda": {
       "rushing_yards": 9.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 7.5
     },
     "Luke Schoonmaker": {
-      "receiving_yards": 3.5
+      "receiving_yards": 3.5,
+      "receptions": 0.5
     },
     "Hunter Luepke": {
       "receiving_yards": 2.5
@@ -221,7 +222,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 42.5,
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Rico Dowdle": {
       "rushing_yards": 30.5,
@@ -238,7 +239,7 @@
       "receiving_yards": 24.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Samaje Perine": {
       "rushing_yards": 18.5,
@@ -292,7 +293,7 @@
       "receiving_yards": 8.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 20.5,
       "receptions": 2
     },
     "Oronde Gadsden II": {
@@ -322,7 +323,7 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 3203,
-    "matched_props": 140,
+    "matched_props": 141,
     "excluded_goblin_demon_lines": 2579,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -362,5 +363,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T19:00:43.631866+00:00"
+  "fetched_at": "2026-11-15T19:20:37.626037+00:00"
 }
