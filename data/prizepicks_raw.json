@@ -208,13 +208,13 @@
       "receiving_yards": 37.5,
       "receptions": 4
     },
-    "Kaleb Johnson": {
-      "rushing_yards": 28.5
-    },
     "Aaron Jones Sr.": {
       "rushing_yards": 27.5,
       "receiving_yards": 10.5,
       "receptions": 2
+    },
+    "Kaleb Johnson": {
+      "rushing_yards": 27.5
     },
     "Savion Williams": {
       "receiving_yards": 20.5,
@@ -578,7 +578,7 @@
       "rushing_yards": 11.5
     },
     "Kyren Williams": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 65.5,
       "receiving_yards": 19.5
     },
     "Trey McBride": {
@@ -612,7 +612,7 @@
       "receiving_yards": 6.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5,
@@ -623,7 +623,7 @@
       "receptions": 1.5
     },
     "CJ Daniels": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Simi Fehoko": {
       "receiving_yards": 11.5
@@ -659,12 +659,12 @@
       "receiving_yards": 61.5,
       "receptions": 5
     },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 36.5,
+      "rushing_yards": 6.5
+    },
     "Ryan Flournoy": {
       "receiving_yards": 36.5
-    },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 35.5,
-      "rushing_yards": 6.5
     },
     "Kaelon Black": {
       "rushing_yards": 34.5,
@@ -741,7 +741,7 @@
       "receiving_yards": 26.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Dohnte Meyers": {
       "receiving_yards": 19.5
@@ -827,9 +827,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8195,
+    "total_projections_returned": 8192,
     "matched_props": 362,
-    "excluded_goblin_demon_lines": 6610,
+    "excluded_goblin_demon_lines": 6607,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +868,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T02:20:37.221795+00:00"
+  "fetched_at": "2026-11-15T02:40:42.738269+00:00"
 }
