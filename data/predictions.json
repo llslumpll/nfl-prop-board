@@ -39011,5 +39011,47 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Justin Herbert|passing_yards|10": {
+    "player": "Justin Herbert",
+    "team": "LAC",
+    "opponent": "BAL",
+    "week": 10,
+    "stat": "passing_yards",
+    "projected": 211.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 203.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 8.1,
+    "model_prob": 0.5424,
+    "signals": {},
+    "frozen_at": "2026-11-15 21:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Justice Hill|rushing_yards|10": {
+    "player": "Justice Hill",
+    "team": "BAL",
+    "opponent": "LAC",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 22.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 12.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 9.5,
+    "model_prob": 0.6813,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-15 21:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }

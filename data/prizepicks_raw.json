@@ -1,135 +1,11 @@
 {
   "props": {
-    "Drew Lock": {
-      "passing_yards": 200.5,
-      "rushing_yards": 5.5
-    },
-    "Fernando Mendoza": {
-      "passing_yards": 180.5,
-      "rushing_yards": 15.5
-    },
-    "Jaxon Smith-Njigba": {
-      "receiving_yards": 89.5
-    },
-    "Zach Charbonnet": {
-      "rushing_yards": 66.5,
-      "receiving_yards": 9.5
-    },
-    "Brock Bowers": {
-      "receiving_yards": 59.5,
-      "receptions": 5.5
-    },
-    "Jadarian Price": {
-      "rushing_yards": 41.5,
-      "receiving_yards": 10.5
-    },
-    "Ashton Jeanty": {
-      "rushing_yards": 36.5,
-      "receiving_yards": 25.5,
-      "receptions": 4
-    },
-    "Tre Tucker": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
-    },
-    "Mike Washington Jr.": {
-      "rushing_yards": 25.5,
-      "receptions": 0.5
-    },
-    "Michael Mayer": {
-      "receiving_yards": 21.5
-    },
-    "AJ Barner": {
-      "receiving_yards": 21.5
-    },
-    "Cooper Kupp": {
-      "receiving_yards": 18.5
-    },
-    "Rashid Shaheed": {
-      "receiving_yards": 18.5,
-      "receptions": 2
-    },
-    "Jalen Nailor": {
-      "receiving_yards": 12.5
-    },
-    "Tory Horton": {
-      "receiving_yards": 7.5
-    },
-    "Jack Bech": {
-      "receiving_yards": 4.5
-    },
-    "Eric Saubert": {
-      "receiving_yards": 0.5
-    },
-    "Ian Thomas": {
-      "receiving_yards": 0.5
-    },
-    "Matthew Stafford": {
-      "passing_yards": 212.5
-    },
-    "Carson Beck": {
-      "passing_yards": 175.5,
-      "rushing_yards": 10.5
-    },
-    "Kyren Williams": {
-      "rushing_yards": 66.5,
-      "receiving_yards": 18.5
-    },
-    "Trey McBride": {
-      "receiving_yards": 59.5
-    },
-    "Blake Corum": {
-      "rushing_yards": 57.5,
-      "receiving_yards": 7.5
-    },
-    "Tyler Higbee": {
-      "receiving_yards": 36.5
-    },
-    "Tyler Allgeier": {
-      "rushing_yards": 35.5,
-      "receiving_yards": 9.5
-    },
-    "Bam Knight": {
-      "rushing_yards": 33.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
-    },
-    "Colby Parkinson": {
-      "receiving_yards": 31.5,
-      "receptions": 3.5
-    },
-    "Tutu Atwell": {
-      "receiving_yards": 29.5
-    },
-    "Konata Mumpfield": {
-      "receiving_yards": 27.5
-    },
-    "Reggie Virgil": {
-      "receiving_yards": 24.5
-    },
-    "Elijah Higgins": {
-      "receiving_yards": 18.5,
-      "receptions": 2.5
-    },
-    "CJ Daniels": {
-      "receiving_yards": 13.5
-    },
-    "Davis Allen": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
-    },
-    "Devin Duvernay": {
-      "receiving_yards": 11.5
-    },
-    "Simi Fehoko": {
-      "receiving_yards": 10.5
-    },
     "Dak Prescott": {
       "passing_yards": 270.5,
       "rushing_yards": 9.5
     },
     "Brock Purdy": {
-      "passing_yards": 259.5,
+      "passing_yards": 257.5,
       "rushing_yards": 20.5
     },
     "CeeDee Lamb": {
@@ -169,7 +45,8 @@
       "receiving_yards": 23.5
     },
     "Keenan Allen": {
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 22.5
@@ -317,9 +194,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3200,
-    "matched_props": 138,
-    "excluded_goblin_demon_lines": 2581,
+    "total_projections_returned": 1931,
+    "matched_props": 85,
+    "excluded_goblin_demon_lines": 1553,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -333,8 +210,6 @@
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
-      "halves with 40+ receiving yards",
-      "halves with 50+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -350,7 +225,9 @@
       "passer rating",
       "punt touchbacks (combo)",
       "punts",
-      "punts (combo)"
+      "punts (combo)",
+      "punts inside 20",
+      "quarters with 1+ reception"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -358,5 +235,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T21:00:41.517573+00:00"
+  "fetched_at": "2026-11-15T21:20:30.561210+00:00"
 }

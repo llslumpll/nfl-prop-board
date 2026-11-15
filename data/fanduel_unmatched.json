@@ -96,6 +96,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Matthew Stafford",
+    "team": "LA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jalen Hurts",
     "team": "PHI",
     "stat": "passing_yards",
@@ -138,6 +144,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Drew Lock",
+    "team": "SEA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Christian Watson",
     "team": "GB",
     "stat": "receiving_yards",
@@ -170,6 +182,12 @@
   {
     "player": "Tyquan Thornton",
     "team": "KC",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Brock Bowers",
+    "team": "LV",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -402,8 +420,26 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Trey McBride",
+    "team": "ARI",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Christian Watson",
     "team": "GB",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Brock Bowers",
+    "team": "LV",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -534,6 +570,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Ashton Jeanty",
+    "team": "LV",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Efton Chism III",
     "team": "NE",
     "stat": "receptions",
@@ -612,6 +654,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Zach Charbonnet",
+    "team": "SEA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jahmyr Gibbs",
     "team": "DET",
     "stat": "rushing_yards",
@@ -644,6 +692,12 @@
   {
     "player": "Breece Hall",
     "team": "NYJ",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Blake Corum",
+    "team": "LA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -687,7 +741,7 @@
     "player": "Michael Penix Jr.",
     "team": "ATL",
     "stat": "rushing_yards",
-    "why": "possible name mismatch: FanDuel has 'Mike Washington Jr.'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Dameon Pierce",
@@ -704,6 +758,18 @@
   {
     "player": "Jonathan Taylor",
     "team": "IND",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Tyler Allgeier",
+    "team": "ARI",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Kyren Williams",
+    "team": "LA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }
