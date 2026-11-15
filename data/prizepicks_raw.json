@@ -205,7 +205,7 @@
       "receiving_yards": 60.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 48.5,
       "receptions": 4
     },
     "Denzel Boston": {
@@ -216,7 +216,7 @@
       "receiving_yards": 5.5
     },
     "Tank Dell": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 3
     },
     "Harold Fannin Jr.": {
@@ -287,12 +287,12 @@
     "Deion Burks": {
       "receiving_yards": 17.5
     },
-    "Anthony Gould": {
-      "receiving_yards": 16.5
-    },
     "Kevin Coleman Jr.": {
       "receiving_yards": 16.5,
       "receptions": 1.5
+    },
+    "Anthony Gould": {
+      "receiving_yards": 15.5
     },
     "Ashton Dulin": {
       "receiving_yards": 14.5
@@ -356,7 +356,7 @@
     },
     "Tyjae Spears": {
       "receiving_yards": 13.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 9.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 10.5
@@ -492,7 +492,7 @@
       "receiving_yards": 21.5
     },
     "AJ Barner": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Cooper Kupp": {
@@ -697,11 +697,11 @@
       "rushing_yards": 18.5,
       "receiving_yards": 4.5
     },
-    "Drew Sample": {
-      "receiving_yards": 5.5
-    },
     "Brandon Smith": {
       "receiving_yards": 5.5
+    },
+    "Drew Sample": {
+      "receiving_yards": 4.5
     },
     "Ben Skowronek": {
       "receiving_yards": 3.5
@@ -774,9 +774,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7660,
+    "total_projections_returned": 7657,
     "matched_props": 341,
-    "excluded_goblin_demon_lines": 6201,
+    "excluded_goblin_demon_lines": 6197,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -815,5 +815,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T14:48:17.368531+00:00"
+  "fetched_at": "2026-11-15T15:00:44.094336+00:00"
 }
