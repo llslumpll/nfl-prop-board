@@ -36,7 +36,7 @@
       "receptions": 2.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 13.5
     },
     "Pat Freiermuth": {
@@ -130,9 +130,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1321,
+    "total_projections_returned": 1318,
     "matched_props": 57,
-    "excluded_goblin_demon_lines": 1062,
+    "excluded_goblin_demon_lines": 1060,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -171,5 +171,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T22:40:28.228398+00:00"
+  "fetched_at": "2026-11-15T23:00:32.688751+00:00"
 }
