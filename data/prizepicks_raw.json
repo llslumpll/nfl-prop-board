@@ -12,7 +12,7 @@
       "receiving_yards": 31.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 82.5,
       "receptions": 7
     },
     "Jameson Williams": {
@@ -24,7 +24,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 46.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5,
@@ -37,7 +37,7 @@
       "receiving_yards": 37.5
     },
     "Mack Hollins": {
-      "receiving_yards": 34.5
+      "receiving_yards": 35.5
     },
     "Eli Raridon": {
       "receiving_yards": 25.5
@@ -343,7 +343,7 @@
       "receiving_yards": 17.5
     },
     "Kevin Coleman Jr.": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Anthony Gould": {
       "receiving_yards": 15.5
@@ -407,7 +407,7 @@
       "receiving_yards": 15.5
     },
     "Tyjae Spears": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "rushing_yards": 12.5,
       "receptions": 2.5
     },
@@ -433,7 +433,7 @@
       "receiving_yards": 3.5
     },
     "Tyler Shough": {
-      "passing_yards": 250.5,
+      "passing_yards": 252.5,
       "rushing_yards": 16.5
     },
     "Bryce Young": {
@@ -827,9 +827,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8217,
+    "total_projections_returned": 8223,
     "matched_props": 362,
-    "excluded_goblin_demon_lines": 6636,
+    "excluded_goblin_demon_lines": 6640,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -868,5 +868,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T03:40:45.284627+00:00"
+  "fetched_at": "2026-11-15T04:00:45.573422+00:00"
 }
