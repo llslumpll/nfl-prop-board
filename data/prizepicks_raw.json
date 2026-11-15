@@ -1,72 +1,5 @@
 {
   "props": {
-    "Dak Prescott": {
-      "passing_yards": 270.5,
-      "rushing_yards": 9.5
-    },
-    "Brock Purdy": {
-      "passing_yards": 257.5,
-      "rushing_yards": 20.5
-    },
-    "CeeDee Lamb": {
-      "receiving_yards": 90.5,
-      "receptions": 7
-    },
-    "Christian McCaffrey": {
-      "rushing_yards": 63.5,
-      "receiving_yards": 33.5
-    },
-    "George Kittle": {
-      "receiving_yards": 62.5,
-      "receptions": 5
-    },
-    "Javonte Williams": {
-      "rushing_yards": 60.5,
-      "receiving_yards": 13.5
-    },
-    "George Pickens": {
-      "receiving_yards": 59.5,
-      "receptions": 4.5
-    },
-    "Ryan Flournoy": {
-      "receiving_yards": 36.5
-    },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 35.5,
-      "rushing_yards": 6.5
-    },
-    "Kaelon Black": {
-      "rushing_yards": 33.5
-    },
-    "Demarcus Robinson": {
-      "receiving_yards": 31.5
-    },
-    "Jordan Watkins": {
-      "receiving_yards": 23.5
-    },
-    "Keenan Allen": {
-      "receiving_yards": 22.5,
-      "receptions": 2.5
-    },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 22.5
-    },
-    "Israel Abanikanda": {
-      "rushing_yards": 9.5,
-      "receiving_yards": 2.5
-    },
-    "Kyle Juszczyk": {
-      "receiving_yards": 7.5
-    },
-    "Luke Schoonmaker": {
-      "receiving_yards": 3.5
-    },
-    "Hunter Luepke": {
-      "receiving_yards": 2.5
-    },
-    "Luke Farrell": {
-      "receiving_yards": 0.5
-    },
     "Joe Burrow": {
       "passing_yards": 293.5,
       "rushing_yards": 7.5
@@ -119,14 +52,14 @@
       "rushing_yards": 18.5,
       "receiving_yards": 4.5
     },
-    "Brandon Smith": {
-      "receiving_yards": 5.5
-    },
     "Drew Sample": {
       "receiving_yards": 4.5
     },
+    "Brandon Smith": {
+      "receiving_yards": 4.5
+    },
     "Ben Skowronek": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Jack Endries": {
       "receiving_yards": 0.5
@@ -149,11 +82,11 @@
       "rushing_yards": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 37.5
+      "receiving_yards": 33.5
     },
     "Omarion Hampton": {
       "rushing_yards": 31.5,
@@ -178,8 +111,11 @@
       "rushing_yards": 12.5,
       "receiving_yards": 11.5
     },
+    "KeAndre Lambert-Smith": {
+      "receiving_yards": 12.5
+    },
     "Keaton Mitchell": {
-      "receiving_yards": 10.5,
+      "receiving_yards": 11.5,
       "rushing_yards": 10.5,
       "receptions": 2
     },
@@ -194,9 +130,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1931,
-    "matched_props": 85,
-    "excluded_goblin_demon_lines": 1553,
+    "total_projections_returned": 1314,
+    "matched_props": 57,
+    "excluded_goblin_demon_lines": 1055,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -235,5 +171,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T21:20:30.561210+00:00"
+  "fetched_at": "2026-11-15T21:40:26.892980+00:00"
 }
