@@ -19,12 +19,12 @@
       "receiving_yards": 56.5
     },
     "A.J. Brown": {
-      "receiving_yards": 55.5,
+      "receiving_yards": 52.5,
       "receptions": 4
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 21.5
+      "rushing_yards": 42.5,
+      "receiving_yards": 19.5
     },
     "Sam LaPorta": {
       "receiving_yards": 41.5,
@@ -34,19 +34,25 @@
       "receiving_yards": 39.5
     },
     "Hunter Henry": {
-      "receiving_yards": 35.5
+      "receiving_yards": 38.5
     },
     "Mack Hollins": {
       "receiving_yards": 35.5
     },
+    "Corey Kiner": {
+      "rushing_yards": 29.5
+    },
     "Eli Raridon": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 15.5
     },
     "Sione Vaki": {
       "rushing_yards": 12.5
+    },
+    "Efton Chism III": {
+      "receiving_yards": 6.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5
@@ -209,13 +215,13 @@
       "receiving_yards": 37.5,
       "receptions": 4
     },
-    "Aaron Jones Sr.": {
-      "rushing_yards": 28.5,
-      "receiving_yards": 10.5,
-      "receptions": 2
-    },
     "Kaleb Johnson": {
       "rushing_yards": 28.5
+    },
+    "Aaron Jones Sr.": {
+      "rushing_yards": 27.5,
+      "receiving_yards": 10.5,
+      "receptions": 2
     },
     "Gavin Bartholomew": {
       "receiving_yards": 21.5
@@ -254,15 +260,15 @@
       "passing_yards": 209.5,
       "rushing_yards": 24.5
     },
+    "Woody Marks": {
+      "rushing_yards": 61.5,
+      "receiving_yards": 9.5
+    },
     "Nico Collins": {
       "receiving_yards": 60.5
     },
-    "Woody Marks": {
-      "rushing_yards": 57.5,
-      "receiving_yards": 9.5
-    },
     "KC Concepcion Jr.": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 48.5,
       "receptions": 4
     },
     "Denzel Boston": {
@@ -396,7 +402,6 @@
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 31.5,
-      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Chimere Dike": {
@@ -413,7 +418,7 @@
     },
     "Tyjae Spears": {
       "receiving_yards": 13.5,
-      "rushing_yards": 9.5
+      "rushing_yards": 11.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 10.5
@@ -458,7 +463,7 @@
       "receptions": 5
     },
     "Jalen Coker": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 51.5,
       "receptions": 4.5
     },
     "Jordyn Tyson": {
@@ -566,7 +571,7 @@
       "receiving_yards": 6.5
     },
     "Jack Bech": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Eric Saubert": {
       "receiving_yards": 0.5
@@ -731,7 +736,7 @@
     },
     "Chase Brown": {
       "rushing_yards": 46.5,
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Rico Dowdle": {
       "rushing_yards": 30.5,
@@ -742,7 +747,7 @@
       "receptions": 2.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Mike Gesicki": {
       "receiving_yards": 24.5
@@ -831,9 +836,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8295,
-    "matched_props": 364,
-    "excluded_goblin_demon_lines": 6705,
+    "total_projections_returned": 8310,
+    "matched_props": 365,
+    "excluded_goblin_demon_lines": 6723,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -872,5 +877,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T12:40:36.179792+00:00"
+  "fetched_at": "2026-11-15T13:00:41.518619+00:00"
 }
