@@ -484,7 +484,7 @@
       "rushing_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 14.5
+      "receiving_yards": 15.5
     },
     "Alvin Kamara": {
       "receiving_yards": 14.5,
@@ -492,7 +492,7 @@
       "receptions": 3
     },
     "Xavier Legette": {
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Noah Fant": {
       "receiving_yards": 8.5
@@ -832,9 +832,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 8251,
+    "total_projections_returned": 8274,
     "matched_props": 365,
-    "excluded_goblin_demon_lines": 6661,
+    "excluded_goblin_demon_lines": 6687,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -873,5 +873,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T05:20:38.669697+00:00"
+  "fetched_at": "2026-11-15T05:40:38.871682+00:00"
 }
