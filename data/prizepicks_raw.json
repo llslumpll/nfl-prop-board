@@ -10,7 +10,7 @@
     },
     "Derrick Henry": {
       "rushing_yards": 81.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Zay Flowers": {
       "receiving_yards": 72.5,
@@ -71,7 +71,7 @@
       "receiving_yards": 2.5
     },
     "C.J. Stroud": {
-      "passing_yards": 258.5,
+      "passing_yards": 257.5,
       "rushing_yards": 11.5
     },
     "Daniel Jones": {
@@ -106,11 +106,11 @@
     "Anthony Gould": {
       "receiving_yards": 22.5
     },
-    "Ashton Dulin": {
+    "Deion Burks": {
       "receiving_yards": 16.5
     },
-    "Deion Burks": {
-      "receiving_yards": 15.5
+    "Ashton Dulin": {
+      "receiving_yards": 16.5
     },
     "Aaron Rodgers": {
       "passing_yards": 217.5,
@@ -366,8 +366,29 @@
       "rushing_yards": 60.5,
       "receiving_yards": 36.5
     },
+    "George Kittle": {
+      "receiving_yards": 56.5
+    },
     "Jordan Mason": {
-      "rushing_yards": 47.5
+      "rushing_yards": 47.5,
+      "receiving_yards": 0.5
+    },
+    "Keenan Allen": {
+      "receiving_yards": 40.5,
+      "receptions": 3.5
+    },
+    "Aaron Jones Sr.": {
+      "rushing_yards": 35.5,
+      "receiving_yards": 9.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 33.5,
+      "rushing_yards": 10.5
+    },
+    "Kaelon Black": {
+      "rushing_yards": 25.5,
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Joe Burrow": {
       "passing_yards": 296.5,
@@ -401,9 +422,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1989,
-    "matched_props": 172,
-    "excluded_goblin_demon_lines": 1627,
+    "total_projections_returned": 2244,
+    "matched_props": 183,
+    "excluded_goblin_demon_lines": 1834,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -442,5 +463,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T21:33:29.671516+00:00"
+  "fetched_at": "2026-11-16T21:40:44.053638+00:00"
 }
