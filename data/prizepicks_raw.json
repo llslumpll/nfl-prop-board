@@ -9,12 +9,12 @@
       "rushing_yards": 20.5
     },
     "Derrick Henry": {
-      "rushing_yards": 80.5,
+      "rushing_yards": 81.5,
       "receiving_yards": 5.5
     },
     "Zay Flowers": {
       "receiving_yards": 72.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 0.5
     },
     "Tre' Harris": {
       "receiving_yards": 42.5,
@@ -62,7 +62,8 @@
       "receiving_yards": 11.5
     },
     "Oronde Gadsden II": {
-      "receiving_yards": 10.5
+      "receiving_yards": 10.5,
+      "receptions": 1.5
     },
     "Josh Cuevas": {
       "receiving_yards": 7.5
@@ -72,7 +73,7 @@
     },
     "C.J. Stroud": {
       "passing_yards": 257.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Daniel Jones": {
       "passing_yards": 180.5,
@@ -398,9 +399,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1952,
-    "matched_props": 171,
-    "excluded_goblin_demon_lines": 1595,
+    "total_projections_returned": 1951,
+    "matched_props": 172,
+    "excluded_goblin_demon_lines": 1593,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -439,5 +440,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T20:00:36.739369+00:00"
+  "fetched_at": "2026-11-16T20:20:31.927636+00:00"
 }
