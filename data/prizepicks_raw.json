@@ -25,7 +25,8 @@
       "receiving_yards": 5.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 32.5
+      "receiving_yards": 34.5,
+      "receptions": 2.5
     },
     "Rashod Bateman": {
       "receiving_yards": 23.5,
@@ -68,7 +69,7 @@
       "receiving_yards": 7.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "C.J. Stroud": {
       "passing_yards": 257.5,
@@ -86,7 +87,7 @@
       "rushing_yards": 56.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 19.5
     },
     "Tyler Warren": {
@@ -191,20 +192,21 @@
       "rushing_yards": 60.5
     },
     "Josh Allen": {
-      "passing_yards": 228.5,
+      "passing_yards": 227.5,
       "rushing_yards": 27.5
     },
     "Kyle McCord": {
-      "passing_yards": 176.5,
+      "passing_yards": 178.5,
       "rushing_yards": 6.5
     },
     "James Cook III": {
-      "rushing_yards": 92.5,
+      "rushing_yards": 93.5,
       "receiving_yards": 11.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 58.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5,
+      "receptions": 2.5
     },
     "DJ Moore": {
       "receiving_yards": 48.5,
@@ -213,13 +215,13 @@
     "Caleb Douglas": {
       "receiving_yards": 46.5
     },
-    "Keon Coleman": {
-      "receiving_yards": 36.5,
-      "receptions": 2.5
-    },
     "Malik Washington": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
+    },
+    "Keon Coleman": {
+      "receiving_yards": 34.5,
+      "receptions": 2.5
     },
     "Greg Dulcich": {
       "receiving_yards": 23.5,
@@ -422,9 +424,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2244,
-    "matched_props": 183,
-    "excluded_goblin_demon_lines": 1834,
+    "total_projections_returned": 2255,
+    "matched_props": 185,
+    "excluded_goblin_demon_lines": 1835,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -463,5 +465,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T21:40:44.053638+00:00"
+  "fetched_at": "2026-11-16T22:00:35.583080+00:00"
 }
