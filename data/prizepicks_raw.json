@@ -1,69 +1,5 @@
 {
   "props": {
-    "Joe Burrow": {
-      "passing_yards": 293.5,
-      "rushing_yards": 7.5
-    },
-    "Aaron Rodgers": {
-      "passing_yards": 240.5,
-      "rushing_yards": 0.5
-    },
-    "Ja'Marr Chase": {
-      "receiving_yards": 91.5,
-      "receptions": 7.5
-    },
-    "Tee Higgins": {
-      "receiving_yards": 76.5,
-      "receptions": 5.5
-    },
-    "Jaylen Warren": {
-      "rushing_yards": 64.5,
-      "receiving_yards": 25.5
-    },
-    "DK Metcalf": {
-      "receiving_yards": 54.5,
-      "receptions": 4
-    },
-    "Germie Bernard": {
-      "receiving_yards": 50.5
-    },
-    "Chase Brown": {
-      "rushing_yards": 44.5,
-      "receiving_yards": 24.5
-    },
-    "Darnell Washington": {
-      "receiving_yards": 30.5,
-      "receptions": 2.5
-    },
-    "Rico Dowdle": {
-      "rushing_yards": 28.5,
-      "receiving_yards": 13.5
-    },
-    "Pat Freiermuth": {
-      "receiving_yards": 26.5
-    },
-    "Mike Gesicki": {
-      "receiving_yards": 26.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 20.5
-    },
-    "Samaje Perine": {
-      "rushing_yards": 18.5,
-      "receiving_yards": 4.5
-    },
-    "Drew Sample": {
-      "receiving_yards": 4.5
-    },
-    "Brandon Smith": {
-      "receiving_yards": 4.5
-    },
-    "Ben Skowronek": {
-      "receiving_yards": 3.5
-    },
-    "Jack Endries": {
-      "receiving_yards": 0.5
-    },
     "Jacoby Brissett": {
       "passing_yards": 214.5,
       "rushing_yards": 5.5
@@ -115,7 +51,7 @@
       "receiving_yards": 12.5
     },
     "Keaton Mitchell": {
-      "receiving_yards": 10.5,
+      "receiving_yards": 11.5,
       "rushing_yards": 10.5,
       "receptions": 2
     },
@@ -130,22 +66,17 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1338,
-    "matched_props": 57,
-    "excluded_goblin_demon_lines": 1072,
+    "total_projections_returned": 638,
+    "matched_props": 29,
+    "excluded_goblin_demon_lines": 517,
     "sample_stat_types_seen": [
       "anytime tds",
-      "anytime tds (combo)",
       "completion percentage",
-      "completions in first 10 pass attempts",
-      "consecutive pass completions",
       "fantasy score",
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
-      "halves with 25+ receiving yards",
-      "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -162,8 +93,13 @@
       "punt touchbacks (combo)",
       "punts",
       "punts (combo)",
-      "punts inside 20",
-      "quarters with 1+ reception"
+      "quarters with 25+ pass yards",
+      "quarters with 5+ rush yards",
+      "rec targets",
+      "rec tds",
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -171,5 +107,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T01:20:29.942003+00:00"
+  "fetched_at": "2026-11-16T01:40:41.032416+00:00"
 }
