@@ -52,18 +52,17 @@
       "rushing_yards": 18.5,
       "receiving_yards": 4.5
     },
-    "Brandon Smith": {
-      "receiving_yards": 5.5
-    },
     "Drew Sample": {
       "receiving_yards": 4.5
     },
-    "Ben Skowronek": {
+    "Brandon Smith": {
       "receiving_yards": 4.5
     },
+    "Ben Skowronek": {
+      "receiving_yards": 3.5
+    },
     "Jack Endries": {
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Jacoby Brissett": {
       "passing_yards": 214.5,
@@ -131,9 +130,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1321,
-    "matched_props": 58,
-    "excluded_goblin_demon_lines": 1061,
+    "total_projections_returned": 1330,
+    "matched_props": 57,
+    "excluded_goblin_demon_lines": 1071,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -172,5 +171,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-15T23:47:00.505317+00:00"
+  "fetched_at": "2026-11-16T00:00:39.295156+00:00"
 }
