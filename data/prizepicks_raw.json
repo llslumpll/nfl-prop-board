@@ -36,7 +36,7 @@
       "receptions": 2.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 13.5
     },
     "Pat Freiermuth": {
@@ -50,7 +50,7 @@
     },
     "Samaje Perine": {
       "rushing_yards": 18.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Drew Sample": {
       "receiving_yards": 4.5
@@ -131,9 +131,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1330,
+    "total_projections_returned": 1333,
     "matched_props": 58,
-    "excluded_goblin_demon_lines": 1068,
+    "excluded_goblin_demon_lines": 1069,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -172,5 +172,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T00:20:34.065273+00:00"
+  "fetched_at": "2026-11-16T00:40:32.571276+00:00"
 }
