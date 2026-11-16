@@ -39165,7 +39165,58 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Caleb Williams|passing_yards|11": {
+    "player": "Caleb Williams",
+    "team": "CHI",
+    "opponent": "NO",
+    "week": 11,
+    "stat": "passing_yards",
+    "projected": 231.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 261.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -29.8,
+    "model_prob": 0.3378,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-16 20:03 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jonah Coleman|rushing_yards|11": {
+    "player": "Jonah Coleman",
+    "team": "DEN",
+    "opponent": "LV",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 43.3,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 61.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.2,
+    "model_prob": 0.2078,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-16 20:03 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "highest_confidence"
     ]
   }
