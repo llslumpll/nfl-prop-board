@@ -9,7 +9,7 @@
       "rushing_yards": 21.5
     },
     "Derrick Henry": {
-      "rushing_yards": 80.5,
+      "rushing_yards": 79.5,
       "receiving_yards": 6.5
     },
     "Zay Flowers": {
@@ -17,7 +17,7 @@
       "rushing_yards": 1.5
     },
     "Tre' Harris": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Omarion Hampton": {
@@ -25,7 +25,7 @@
       "receiving_yards": 5.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 34.5
+      "receiving_yards": 33.5
     },
     "Rashod Bateman": {
       "receiving_yards": 23.5,
@@ -42,11 +42,9 @@
       "rushing_yards": 20.5,
       "receiving_yards": 8.5
     },
-    "Oronde Gadsden II": {
-      "receiving_yards": 17.5
-    },
     "KeAndre Lambert-Smith": {
-      "receiving_yards": 17.5
+      "receiving_yards": 17.5,
+      "receptions": 1.5
     },
     "Charlie Kolar": {
       "receiving_yards": 15.5
@@ -63,6 +61,10 @@
     "David Njoku": {
       "receiving_yards": 11.5
     },
+    "Oronde Gadsden II": {
+      "receiving_yards": 10.5,
+      "receptions": 1.5
+    },
     "Josh Cuevas": {
       "receiving_yards": 7.5
     },
@@ -78,7 +80,7 @@
       "rushing_yards": 7.5
     },
     "Nico Collins": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 64.5,
       "receptions": 4.5
     },
     "Jonathan Taylor": {
@@ -227,9 +229,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1874,
-    "matched_props": 100,
-    "excluded_goblin_demon_lines": 1586,
+    "total_projections_returned": 1898,
+    "matched_props": 102,
+    "excluded_goblin_demon_lines": 1608,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -268,5 +270,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T18:20:33.352960+00:00"
+  "fetched_at": "2026-11-16T18:40:28.835259+00:00"
 }
