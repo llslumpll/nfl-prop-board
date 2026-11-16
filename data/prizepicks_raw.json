@@ -18,7 +18,7 @@
       "rushing_yards": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Quentin Johnston": {
@@ -51,7 +51,7 @@
       "receiving_yards": 12.5
     },
     "Keaton Mitchell": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 10.5,
       "rushing_yards": 10.5,
       "receptions": 2
     },
@@ -63,18 +63,26 @@
     },
     "C.J. Stroud": {
       "passing_yards": 260.5,
-      "rushing_yards": 9.5
+      "rushing_yards": 10.5
     },
     "Daniel Jones": {
       "passing_yards": 184.5,
       "rushing_yards": 9.5
     },
+    "Nico Collins": {
+      "receiving_yards": 65.5,
+      "receptions": 4.5
+    },
     "Jonathan Taylor": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 19.5
     },
     "Tyler Warren": {
       "receiving_yards": 41.5
+    },
+    "Dalton Schultz": {
+      "receiving_yards": 29.5,
+      "receptions": 3.5
     },
     "Seth McGowan": {
       "rushing_yards": 28.5
@@ -83,7 +91,8 @@
       "receiving_yards": 27.5
     },
     "Anthony Gould": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5,
+      "receptions": 2.5
     },
     "Deion Burks": {
       "receiving_yards": 18.5
@@ -93,9 +102,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 846,
-    "matched_props": 40,
-    "excluded_goblin_demon_lines": 702,
+    "total_projections_returned": 902,
+    "matched_props": 45,
+    "excluded_goblin_demon_lines": 749,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -104,6 +113,7 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
+      "halves with 25+ rush yards",
       "int",
       "kicking points",
       "longest completion",
@@ -125,8 +135,7 @@
       "rec targets",
       "rec tds",
       "receiving yards",
-      "receiving yards (combo)",
-      "receptions"
+      "receiving yards (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -134,5 +143,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T03:40:35.178410+00:00"
+  "fetched_at": "2026-11-16T04:00:44.111716+00:00"
 }
