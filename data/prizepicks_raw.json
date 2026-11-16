@@ -25,7 +25,7 @@
       "receiving_yards": 5.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Rashod Bateman": {
       "receiving_yards": 23.5,
@@ -56,8 +56,8 @@
       "receiving_yards": 13.5
     },
     "Keaton Mitchell": {
-      "rushing_yards": 11.5,
       "receiving_yards": 10.5,
+      "rushing_yards": 10.5,
       "receptions": 2
     },
     "Josh Cuevas": {
@@ -67,32 +67,33 @@
       "receiving_yards": 4.5
     },
     "C.J. Stroud": {
-      "passing_yards": 259.5,
-      "rushing_yards": 9.5
+      "passing_yards": 258.5,
+      "rushing_yards": 10.5
     },
     "Daniel Jones": {
       "passing_yards": 184.5,
       "rushing_yards": 7.5
     },
     "Nico Collins": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 66.5,
       "receptions": 4.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 49.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 19.5
     },
     "Tyler Warren": {
-      "receiving_yards": 41.5
+      "receiving_yards": 40.5
+    },
+    "Laquon Treadwell": {
+      "receiving_yards": 29.5,
+      "receptions": 2.5
     },
     "Dalton Schultz": {
       "receiving_yards": 29.5
     },
     "Seth McGowan": {
-      "rushing_yards": 27.5
-    },
-    "Laquon Treadwell": {
-      "receiving_yards": 27.5
+      "rushing_yards": 28.5
     },
     "Anthony Gould": {
       "receiving_yards": 24.5,
@@ -106,9 +107,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1162,
-    "matched_props": 45,
-    "excluded_goblin_demon_lines": 1002,
+    "total_projections_returned": 1231,
+    "matched_props": 46,
+    "excluded_goblin_demon_lines": 1069,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -147,5 +148,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T12:40:30.983868+00:00"
+  "fetched_at": "2026-11-16T13:00:39.511164+00:00"
 }
