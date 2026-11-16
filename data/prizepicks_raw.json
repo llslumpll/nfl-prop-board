@@ -18,14 +18,14 @@
       "rushing_yards": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 36.5
+      "receiving_yards": 37.5
+    },
+    "Quentin Johnston": {
+      "receiving_yards": 34.5
     },
     "Omarion Hampton": {
       "rushing_yards": 33.5,
       "receiving_yards": 5.5
-    },
-    "Quentin Johnston": {
-      "receiving_yards": 33.5
     },
     "Rashod Bateman": {
       "receiving_yards": 23.5,
@@ -89,11 +89,11 @@
       "receiving_yards": 29.5,
       "receptions": 2.5
     },
+    "Dalton Schultz": {
+      "receiving_yards": 29.5
+    },
     "Seth McGowan": {
       "rushing_yards": 28.5
-    },
-    "Dalton Schultz": {
-      "receiving_yards": 28.5
     },
     "Anthony Gould": {
       "receiving_yards": 24.5,
@@ -107,9 +107,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1233,
+    "total_projections_returned": 1231,
     "matched_props": 46,
-    "excluded_goblin_demon_lines": 1071,
+    "excluded_goblin_demon_lines": 1070,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -148,5 +148,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T13:20:29.344840+00:00"
+  "fetched_at": "2026-11-16T13:40:31.553899+00:00"
 }
