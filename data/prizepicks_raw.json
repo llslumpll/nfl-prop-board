@@ -45,10 +45,10 @@
     "Oronde Gadsden II": {
       "receiving_yards": 17.5
     },
-    "Charlie Kolar": {
-      "receiving_yards": 15.5
-    },
     "KeAndre Lambert-Smith": {
+      "receiving_yards": 17.5
+    },
+    "Charlie Kolar": {
       "receiving_yards": 15.5
     },
     "Justice Hill": {
@@ -59,6 +59,9 @@
       "rushing_yards": 11.5,
       "receiving_yards": 10.5,
       "receptions": 2
+    },
+    "David Njoku": {
+      "receiving_yards": 11.5
     },
     "Josh Cuevas": {
       "receiving_yards": 7.5
@@ -79,7 +82,7 @@
       "receptions": 4.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 19.5
     },
     "Tyler Warren": {
@@ -93,15 +96,18 @@
       "receiving_yards": 29.5
     },
     "Seth McGowan": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 0.5
     },
     "Anthony Gould": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Deion Burks": {
       "receiving_yards": 17.5
+    },
+    "Ashton Dulin": {
+      "receiving_yards": 16.5
     },
     "Josh Allen": {
       "passing_yards": 228.5,
@@ -221,9 +227,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1868,
-    "matched_props": 98,
-    "excluded_goblin_demon_lines": 1582,
+    "total_projections_returned": 1874,
+    "matched_props": 100,
+    "excluded_goblin_demon_lines": 1586,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -262,5 +268,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T18:00:36.565435+00:00"
+  "fetched_at": "2026-11-16T18:20:33.352960+00:00"
 }
