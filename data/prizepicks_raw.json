@@ -2,14 +2,14 @@
   "props": {
     "Jacoby Brissett": {
       "passing_yards": 211.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "Justin Herbert": {
       "passing_yards": 203.5,
       "rushing_yards": 21.5
     },
     "Derrick Henry": {
-      "rushing_yards": 80.5,
+      "rushing_yards": 81.5,
       "receiving_yards": 6.5
     },
     "Zay Flowers": {
@@ -84,7 +84,7 @@
       "receptions": 4.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 19.5
     },
     "Tyler Warren": {
@@ -225,9 +225,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1878,
+    "total_projections_returned": 1880,
     "matched_props": 100,
-    "excluded_goblin_demon_lines": 1592,
+    "excluded_goblin_demon_lines": 1594,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -266,5 +266,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T19:00:36.980135+00:00"
+  "fetched_at": "2026-11-16T19:20:46.966622+00:00"
 }
