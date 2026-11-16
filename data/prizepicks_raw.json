@@ -1,7 +1,7 @@
 {
   "props": {
     "Jacoby Brissett": {
-      "passing_yards": 210.5,
+      "passing_yards": 212.5,
       "rushing_yards": 5.5
     },
     "Justin Herbert": {
@@ -17,7 +17,7 @@
       "rushing_yards": 1.5
     },
     "Tre' Harris": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Omarion Hampton": {
@@ -25,7 +25,7 @@
       "receiving_yards": 5.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 33.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
@@ -33,15 +33,15 @@
       "receptions": 2
     },
     "Mark Andrews": {
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
+    },
+    "Kimani Vidal": {
+      "rushing_yards": 21.5,
+      "receiving_yards": 8.5
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 20.5,
       "receptions": 2
-    },
-    "Kimani Vidal": {
-      "rushing_yards": 20.5,
-      "receiving_yards": 8.5
     },
     "Oronde Gadsden II": {
       "receiving_yards": 17.5
@@ -72,7 +72,7 @@
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
-      "passing_yards": 185.5,
+      "passing_yards": 181.5,
       "rushing_yards": 7.5
     },
     "Nico Collins": {
@@ -103,15 +103,78 @@
     },
     "Deion Burks": {
       "receiving_yards": 17.5
+    },
+    "Trevor Lawrence": {
+      "passing_yards": 256.5,
+      "rushing_yards": 11.5
+    },
+    "J.J. McCarthy": {
+      "passing_yards": 224.5,
+      "rushing_yards": 19.5
+    },
+    "Parker Washington": {
+      "receiving_yards": 71.5
+    },
+    "Bhayshul Tuten": {
+      "rushing_yards": 68.5,
+      "receiving_yards": 14.5
+    },
+    "Malik Nabers": {
+      "receiving_yards": 61.5
+    },
+    "Isaiah Likely": {
+      "receiving_yards": 58.5,
+      "receptions": 5.5
+    },
+    "Cam Skattebo": {
+      "rushing_yards": 56.5,
+      "receiving_yards": 13.5
+    },
+    "Jakobi Meyers": {
+      "receiving_yards": 42.5,
+      "receptions": 3.5
+    },
+    "Brenton Strange": {
+      "receiving_yards": 32.5
+    },
+    "Malachi Fields": {
+      "receiving_yards": 28.5
+    },
+    "Chris Rodriguez Jr.": {
+      "rushing_yards": 24.5,
+      "receptions": 0.5,
+      "receiving_yards": 0.5
+    },
+    "Darnell Mooney": {
+      "receiving_yards": 17.5
+    },
+    "Brian Thomas Jr.": {
+      "receiving_yards": 13.5
+    },
+    "Devin Singletary": {
+      "rushing_yards": 13.5,
+      "receiving_yards": 5.5
+    },
+    "Josh Cameron": {
+      "receiving_yards": 10.5
+    },
+    "Nate Boerkircher": {
+      "receiving_yards": 9.5
+    },
+    "Travis Hunter": {
+      "receiving_yards": 5.5
+    },
+    "Theo Johnson": {
+      "receiving_yards": 4.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1307,
-    "matched_props": 48,
-    "excluded_goblin_demon_lines": 1129,
+    "total_projections_returned": 1619,
+    "matched_props": 75,
+    "excluded_goblin_demon_lines": 1384,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -150,5 +213,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T15:40:44.018613+00:00"
+  "fetched_at": "2026-11-16T16:20:31.824507+00:00"
 }
