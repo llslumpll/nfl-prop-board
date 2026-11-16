@@ -62,20 +62,41 @@
       "receiving_yards": 5.5
     },
     "C.J. Stroud": {
-      "passing_yards": 258.5,
+      "passing_yards": 260.5,
       "rushing_yards": 9.5
     },
     "Daniel Jones": {
-      "passing_yards": 184.5
+      "passing_yards": 184.5,
+      "rushing_yards": 9.5
+    },
+    "Jonathan Taylor": {
+      "rushing_yards": 48.5,
+      "receiving_yards": 19.5,
+      "receptions": 2.5
+    },
+    "Tyler Warren": {
+      "receiving_yards": 41.5
+    },
+    "Seth McGowan": {
+      "rushing_yards": 29.5
+    },
+    "Laquon Treadwell": {
+      "receiving_yards": 23.5
+    },
+    "Anthony Gould": {
+      "receiving_yards": 21.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 18.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 721,
-    "matched_props": 32,
-    "excluded_goblin_demon_lines": 591,
+    "total_projections_returned": 842,
+    "matched_props": 41,
+    "excluded_goblin_demon_lines": 698,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -114,5 +135,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T03:00:36.048795+00:00"
+  "fetched_at": "2026-11-16T03:20:29.500813+00:00"
 }
