@@ -43,6 +43,12 @@
       "rushing_yards": 21.5,
       "receiving_yards": 8.5
     },
+    "Oronde Gadsden II": {
+      "receiving_yards": 18.5
+    },
+    "Charlie Kolar": {
+      "receiving_yards": 14.5
+    },
     "Justice Hill": {
       "rushing_yards": 13.5,
       "receiving_yards": 11.5
@@ -101,9 +107,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1138,
-    "matched_props": 44,
-    "excluded_goblin_demon_lines": 981,
+    "total_projections_returned": 1161,
+    "matched_props": 46,
+    "excluded_goblin_demon_lines": 1000,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -142,5 +148,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T12:00:39.146979+00:00"
+  "fetched_at": "2026-11-16T12:20:31.664593+00:00"
 }
