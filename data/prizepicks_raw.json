@@ -69,7 +69,7 @@
       "receiving_yards": 7.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "C.J. Stroud": {
       "passing_yards": 260.5,
@@ -93,12 +93,12 @@
     "Tyler Warren": {
       "receiving_yards": 40.5
     },
+    "Dalton Schultz": {
+      "receiving_yards": 30.5
+    },
     "Laquon Treadwell": {
       "receiving_yards": 29.5,
       "receptions": 2.5
-    },
-    "Dalton Schultz": {
-      "receiving_yards": 29.5
     },
     "Seth McGowan": {
       "rushing_yards": 27.5,
@@ -107,11 +107,11 @@
     "Anthony Gould": {
       "receiving_yards": 22.5
     },
-    "Deion Burks": {
-      "receiving_yards": 16.5
-    },
     "Ashton Dulin": {
       "receiving_yards": 16.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 15.5
     },
     "Aaron Rodgers": {
       "passing_yards": 217.5,
@@ -439,9 +439,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2439,
+    "total_projections_returned": 2446,
     "matched_props": 194,
-    "excluded_goblin_demon_lines": 1990,
+    "excluded_goblin_demon_lines": 1997,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -480,5 +480,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-16T23:04:14.222480+00:00"
+  "fetched_at": "2026-11-16T23:20:38.104711+00:00"
 }
