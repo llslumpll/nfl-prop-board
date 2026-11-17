@@ -17,10 +17,12 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 50.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 19.5,
+      "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 40.5
+      "receiving_yards": 40.5,
+      "receptions": 5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 39.5
@@ -244,8 +246,8 @@
       "receiving_yards": 10.5
     },
     "Josh Allen": {
-      "passing_yards": 228.5,
-      "rushing_yards": 27.5
+      "passing_yards": 230.5,
+      "rushing_yards": 29.5
     },
     "Kyle McCord": {
       "passing_yards": 185.5,
@@ -253,7 +255,7 @@
     },
     "James Cook III": {
       "rushing_yards": 97.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 65.5,
@@ -270,13 +272,15 @@
       "receptions": 2.5
     },
     "Malik Washington": {
-      "receiving_yards": 32.5
+      "receiving_yards": 32.5,
+      "receptions": 4
     },
     "Khalil Shakir": {
       "receiving_yards": 30.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 27.5
+      "receiving_yards": 27.5,
+      "receptions": 2
     },
     "Greg Dulcich": {
       "receiving_yards": 23.5,
@@ -376,7 +380,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 242.5,
+      "passing_yards": 244.5,
       "rushing_yards": 11.5
     },
     "J.J. McCarthy": {
@@ -448,7 +452,8 @@
       "rushing_yards": 2.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 85.5
+      "receiving_yards": 85.5,
+      "receptions": 7
     },
     "George Kittle": {
       "receiving_yards": 64.5,
@@ -529,9 +534,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3478,
-    "matched_props": 234,
-    "excluded_goblin_demon_lines": 2912,
+    "total_projections_returned": 3491,
+    "matched_props": 239,
+    "excluded_goblin_demon_lines": 2920,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -566,5 +571,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T14:40:33.092969+00:00"
+  "fetched_at": "2026-11-17T15:01:10.791410+00:00"
 }
