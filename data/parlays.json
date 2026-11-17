@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,47 +971,59 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "td-1": {
    "chance": 0.632,
-   "decimal": 2.326,
-   "ev": 0.47,
+   "decimal": 1.639,
+   "ev": 0.036,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 2.326,
-     "game": "HOU@IND",
+     "decimal": 1.639,
+     "game": "BUF@MIA",
      "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
+     "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Jonathan Taylor anytime TD",
-     "player": "Jonathan Taylor",
-     "price": 0.43,
-     "team": "IND"
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.61,
+     "team": "BUF"
     }
    ],
    "name": "Touchdowns",
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "td-2": {
-   "chance": 0.2086,
-   "decimal": 11.076,
-   "ev": 1.31,
+   "chance": 0.3994,
+   "decimal": 3.812,
+   "ev": 0.523,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.632,
+     "decimal": 1.639,
+     "game": "BUF@MIA",
+     "good": true,
+     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.61,
+     "team": "BUF"
+    },
+    {
+     "chance": 0.632,
      "decimal": 2.326,
      "game": "HOU@IND",
      "good": true,
@@ -1021,87 +1033,35 @@
      "player": "Jonathan Taylor",
      "price": 0.43,
      "team": "IND"
-    },
-    {
-     "chance": 0.33,
-     "decimal": 4.762,
-     "game": "HOU@IND",
-     "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
-     "kind": "td",
-     "label": "Tank Dell anytime TD",
-     "player": "Tank Dell",
-     "price": 0.21,
-     "team": "HOU"
     }
    ],
    "name": "Touchdowns",
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "td-3": {
-   "chance": 0.054,
-   "decimal": 52.746,
-   "ev": 1.849,
+   "chance": 0.157,
+   "decimal": 11.212,
+   "ev": 0.76,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 2.326,
-     "game": "HOU@IND",
+     "decimal": 1.639,
+     "game": "BUF@MIA",
      "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
+     "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Jonathan Taylor anytime TD",
-     "player": "Jonathan Taylor",
-     "price": 0.43,
-     "team": "IND"
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.61,
+     "team": "BUF"
     },
-    {
-     "chance": 0.33,
-     "decimal": 4.762,
-     "game": "HOU@IND",
-     "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
-     "kind": "td",
-     "label": "Tank Dell anytime TD",
-     "player": "Tank Dell",
-     "price": 0.21,
-     "team": "HOU"
-    },
-    {
-     "chance": 0.259,
-     "decimal": 4.762,
-     "game": "HOU@IND",
-     "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
-     "kind": "td",
-     "label": "Tyler Warren anytime TD",
-     "player": "Tyler Warren",
-     "price": 0.21,
-     "team": "IND"
-    }
-   ],
-   "name": "Touchdowns",
-   "size": 3,
-   "stake": 0.5,
-   "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
-   "week": 11
-  },
-  "td-4": {
-   "chance": 0.014,
-   "decimal": 251.176,
-   "ev": 2.514,
-   "family": "td",
-   "good": true,
-   "id": "td-4",
-   "legs": [
     {
      "chance": 0.632,
      "decimal": 2.326,
@@ -1115,47 +1075,87 @@
      "team": "IND"
     },
     {
-     "chance": 0.33,
-     "decimal": 4.762,
-     "game": "HOU@IND",
+     "chance": 0.393,
+     "decimal": 2.941,
+     "game": "ARI@KC",
      "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
+     "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Tank Dell anytime TD",
-     "player": "Tank Dell",
-     "price": 0.21,
-     "team": "HOU"
+     "label": "Rashee Rice anytime TD",
+     "player": "Rashee Rice",
+     "price": 0.34,
+     "team": "KC"
+    }
+   ],
+   "name": "Touchdowns",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-17 18:20 UTC",
+   "week": 11
+  },
+  "td-4": {
+   "chance": 0.0617,
+   "decimal": 36.17,
+   "ev": 1.231,
+   "family": "td",
+   "good": true,
+   "id": "td-4",
+   "legs": [
+    {
+     "chance": 0.632,
+     "decimal": 1.639,
+     "game": "BUF@MIA",
+     "good": true,
+     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.61,
+     "team": "BUF"
     },
     {
-     "chance": 0.259,
-     "decimal": 4.762,
+     "chance": 0.632,
+     "decimal": 2.326,
      "game": "HOU@IND",
      "good": true,
      "kickoff": "2026-11-20T01:15:00+00:00",
      "kind": "td",
-     "label": "Tyler Warren anytime TD",
-     "player": "Tyler Warren",
-     "price": 0.21,
+     "label": "Jonathan Taylor anytime TD",
+     "player": "Jonathan Taylor",
+     "price": 0.43,
      "team": "IND"
     },
     {
-     "chance": 0.259,
-     "decimal": 4.762,
-     "game": "HOU@IND",
+     "chance": 0.393,
+     "decimal": 2.941,
+     "game": "ARI@KC",
      "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
+     "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Kayshon Boutte anytime TD",
-     "player": "Kayshon Boutte",
-     "price": 0.21,
-     "team": "HOU"
+     "label": "Rashee Rice anytime TD",
+     "player": "Rashee Rice",
+     "price": 0.34,
+     "team": "KC"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 3.226,
+     "game": "DET@TB",
+     "good": true,
+     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kind": "td",
+     "label": "Sam LaPorta anytime TD",
+     "player": "Sam LaPorta",
+     "price": 0.31,
+     "team": "DET"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:05 UTC",
+   "updated": "2026-11-17 18:20 UTC",
    "week": 11
   }
  },
