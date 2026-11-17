@@ -63,7 +63,7 @@
       "rushing_yards": 30.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 66.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 22.5
     },
     "Saquon Barkley": {
@@ -255,9 +255,8 @@
       "rushing_yards": 6.5
     },
     "James Cook III": {
-      "rushing_yards": 92.5,
-      "receiving_yards": 10.5,
-      "receptions": 1.5
+      "rushing_yards": 97.5,
+      "receiving_yards": 10.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 65.5,
@@ -308,7 +307,7 @@
       "receptions": 3.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 78.5,
+      "receiving_yards": 82.5,
       "receptions": 6.5
     },
     "Bucky Irving": {
@@ -322,7 +321,7 @@
       "receiving_yards": 48.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Kenny Gainwell": {
@@ -472,7 +471,7 @@
       "rushing_yards": 8.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 30.5,
+      "rushing_yards": 31.5,
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
@@ -495,13 +494,13 @@
       "receiving_yards": 76.5,
       "receptions": 5.5
     },
-    "Chase Brown": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 24.5,
-      "receptions": 4.5
-    },
     "Stefon Diggs": {
       "receiving_yards": 45.5
+    },
+    "Chase Brown": {
+      "rushing_yards": 43.5,
+      "receiving_yards": 24.5,
+      "receptions": 4.5
     },
     "Chig Okonkwo": {
       "receiving_yards": 40.5
@@ -521,9 +520,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3200,
-    "matched_props": 232,
-    "excluded_goblin_demon_lines": 2677,
+    "total_projections_returned": 3198,
+    "matched_props": 231,
+    "excluded_goblin_demon_lines": 2676,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -558,5 +557,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T04:09:08.011635+00:00"
+  "fetched_at": "2026-11-17T04:20:27.192317+00:00"
 }
