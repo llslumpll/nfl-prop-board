@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 257.5,
+      "passing_yards": 262.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -9,7 +9,7 @@
       "rushing_yards": 7.5
     },
     "Nico Collins": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 66.5,
       "receptions": 4.5
     },
     "David Montgomery": {
@@ -29,12 +29,12 @@
       "receiving_yards": 33.5,
       "receptions": 2.5
     },
+    "Dalton Schultz": {
+      "receiving_yards": 30.5
+    },
     "Laquon Treadwell": {
       "receiving_yards": 29.5,
       "receptions": 2.5
-    },
-    "Dalton Schultz": {
-      "receiving_yards": 29.5
     },
     "Seth McGowan": {
       "rushing_yards": 27.5,
@@ -411,7 +411,7 @@
       "receiving_yards": 4.5
     },
     "Brock Purdy": {
-      "passing_yards": 243.5,
+      "passing_yards": 244.5,
       "rushing_yards": 17.5
     },
     "Kirk Cousins": {
@@ -491,9 +491,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2792,
+    "total_projections_returned": 2790,
     "matched_props": 218,
-    "excluded_goblin_demon_lines": 2330,
+    "excluded_goblin_demon_lines": 2328,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -528,5 +528,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T02:00:35.213653+00:00"
+  "fetched_at": "2026-11-17T02:20:42.194521+00:00"
 }
