@@ -29,12 +29,12 @@
       "receiving_yards": 33.5,
       "receptions": 2.5
     },
-    "Dalton Schultz": {
-      "receiving_yards": 30.5
-    },
     "Laquon Treadwell": {
       "receiving_yards": 29.5,
       "receptions": 2.5
+    },
+    "Dalton Schultz": {
+      "receiving_yards": 29.5
     },
     "Seth McGowan": {
       "rushing_yards": 27.5,
@@ -70,8 +70,20 @@
       "rushing_yards": 56.5,
       "receiving_yards": 11.5
     },
+    "DeVonta Smith": {
+      "receiving_yards": 49.5
+    },
     "DK Metcalf": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 3.5
+    },
+    "Dallas Goedert": {
+      "receiving_yards": 31.5
+    },
+    "Rico Dowdle": {
+      "rushing_yards": 31.5,
+      "receiving_yards": 8.5,
+      "receptions": 1.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 26.5
@@ -235,7 +247,7 @@
       "receiving_yards": 10.5
     },
     "Josh Allen": {
-      "passing_yards": 227.5,
+      "passing_yards": 230.5,
       "rushing_yards": 27.5
     },
     "Kyle McCord": {
@@ -247,8 +259,8 @@
       "receiving_yards": 11.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 57.5,
-      "receiving_yards": 12.5,
+      "rushing_yards": 58.5,
+      "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "DJ Moore": {
@@ -267,7 +279,8 @@
       "receptions": 3.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 23.5
+      "receiving_yards": 23.5,
+      "receptions": 2.5
     },
     "Dawson Knox": {
       "receiving_yards": 12.5,
@@ -491,9 +504,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2790,
-    "matched_props": 218,
-    "excluded_goblin_demon_lines": 2328,
+    "total_projections_returned": 3007,
+    "matched_props": 225,
+    "excluded_goblin_demon_lines": 2515,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -528,5 +541,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T02:20:42.194521+00:00"
+  "fetched_at": "2026-11-17T02:40:33.645725+00:00"
 }
