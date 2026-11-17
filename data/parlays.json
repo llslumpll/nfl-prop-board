@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,7 +971,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "td-1": {
@@ -999,7 +999,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "td-2": {
@@ -1039,7 +1039,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "td-3": {
@@ -1091,13 +1091,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "td-4": {
-   "chance": 0.0865,
-   "decimal": 24.951,
-   "ev": 1.158,
+   "chance": 0.0993,
+   "decimal": 35.353,
+   "ev": 2.509,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1139,23 +1139,23 @@
      "team": "NYG"
     },
     {
-     "chance": 0.393,
-     "decimal": 2.941,
-     "game": "ARI@KC",
+     "chance": 0.451,
+     "decimal": 4.167,
+     "game": "DEN@LV",
      "good": true,
-     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kickoff": "2026-11-22T21:25:00+00:00",
      "kind": "td",
-     "label": "Rashee Rice anytime TD",
-     "player": "Rashee Rice",
-     "price": 0.34,
-     "team": "KC"
+     "label": "Ashton Jeanty anytime TD",
+     "player": "Ashton Jeanty",
+     "price": 0.24,
+     "team": "LV"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 23:20 UTC",
+   "updated": "2026-11-17 23:40 UTC",
    "week": 11
   }
  },

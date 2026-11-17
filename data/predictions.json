@@ -39241,7 +39241,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "David Montgomery|rushing_yards|10": {
@@ -39891,9 +39892,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Kaelon Black|rushing_yards|11": {
     "player": "Kaelon Black",
