@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 262.5,
+      "passing_yards": 261.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -55,7 +55,8 @@
       "receiving_yards": 14.5
     },
     "Derrick Henry": {
-      "rushing_yards": 73.5
+      "rushing_yards": 73.5,
+      "receiving_yards": 9.5
     },
     "Aaron Rodgers": {
       "passing_yards": 217.5,
@@ -207,33 +208,35 @@
     },
     "Javonte Williams": {
       "rushing_yards": 75.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Carnell Tate": {
-      "receiving_yards": 71.5
+      "receiving_yards": 68.5
     },
     "George Pickens": {
       "receiving_yards": 67.5
     },
     "Tony Pollard": {
       "rushing_yards": 62.5,
-      "receiving_yards": 16.5
+      "receiving_yards": 11.5
     },
     "Wan'Dale Robinson": {
       "receiving_yards": 44.5,
       "receptions": 4.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 38.5
+      "receiving_yards": 39.5,
+      "receptions": 3.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 38.5
     },
-    "Brevyn Spann-Ford": {
-      "receiving_yards": 27.5
-    },
     "Gunnar Helm": {
       "receiving_yards": 25.5
+    },
+    "Brevyn Spann-Ford": {
+      "receiving_yards": 23.5,
+      "receptions": 2.5
     },
     "Tyjae Spears": {
       "rushing_yards": 12.5,
@@ -339,11 +342,46 @@
       "passing_yards": 242.5,
       "rushing_yards": 7.5
     },
+    "Jacoby Brissett": {
+      "passing_yards": 238.5,
+      "rushing_yards": 4.5
+    },
     "Chuba Hubbard": {
-      "rushing_yards": 77.5
+      "rushing_yards": 77.5,
+      "receiving_yards": 21.5,
+      "receptions": 3.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 64.5
+      "receiving_yards": 64.5,
+      "receptions": 4.5
+    },
+    "Zay Flowers": {
+      "receiving_yards": 60.5,
+      "receptions": 5.5
+    },
+    "Jalen Coker": {
+      "receiving_yards": 41.5,
+      "receptions": 3.5
+    },
+    "Ja'Kobi Lane": {
+      "receiving_yards": 38.5
+    },
+    "Mark Andrews": {
+      "receiving_yards": 35.5
+    },
+    "Darren Waller": {
+      "receiving_yards": 28.5
+    },
+    "Rashod Bateman": {
+      "receiving_yards": 27.5
+    },
+    "Tommy Tremble": {
+      "receiving_yards": 20.5,
+      "receptions": 2.5
+    },
+    "Justice Hill": {
+      "receiving_yards": 16.5,
+      "rushing_yards": 11.5
     },
     "Geno Smith": {
       "passing_yards": 221.5,
@@ -557,7 +595,7 @@
       "receiving_yards": 33.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Samaje Perine": {
       "rushing_yards": 19.5,
@@ -571,9 +609,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3761,
-    "matched_props": 254,
-    "excluded_goblin_demon_lines": 3135,
+    "total_projections_returned": 4021,
+    "matched_props": 274,
+    "excluded_goblin_demon_lines": 3345,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -609,5 +647,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T17:00:40.444902+00:00"
+  "fetched_at": "2026-11-17T17:20:33.971705+00:00"
 }
