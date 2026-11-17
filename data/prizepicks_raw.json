@@ -354,11 +354,27 @@
       "rushing_yards": 16.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 61.5
+      "rushing_yards": 61.5,
+      "receiving_yards": 25.5,
+      "receptions": 3.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 35.5,
       "receiving_yards": 28.5
+    },
+    "J.K. Dobbins": {
+      "rushing_yards": 33.5,
+      "receiving_yards": 3.5
+    },
+    "Evan Engram": {
+      "receiving_yards": 21.5
+    },
+    "Mike Washington Jr.": {
+      "rushing_yards": 18.5
+    },
+    "Adam Trautman": {
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Trevor Lawrence": {
       "passing_yards": 254.5,
@@ -504,9 +520,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3008,
-    "matched_props": 225,
-    "excluded_goblin_demon_lines": 2516,
+    "total_projections_returned": 3169,
+    "matched_props": 233,
+    "excluded_goblin_demon_lines": 2648,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -541,5 +557,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T03:20:31.746270+00:00"
+  "fetched_at": "2026-11-17T03:40:30.927950+00:00"
 }
