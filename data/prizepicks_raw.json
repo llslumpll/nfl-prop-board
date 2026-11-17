@@ -272,7 +272,7 @@
       "receptions": 2.5
     },
     "Malik Washington": {
-      "receiving_yards": 33.5
+      "receiving_yards": 32.5
     },
     "Khalil Shakir": {
       "receiving_yards": 29.5,
@@ -528,9 +528,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3415,
+    "total_projections_returned": 3414,
     "matched_props": 233,
-    "excluded_goblin_demon_lines": 2865,
+    "excluded_goblin_demon_lines": 2864,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -565,5 +565,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T13:00:41.391766+00:00"
+  "fetched_at": "2026-11-17T13:20:36.688189+00:00"
 }
