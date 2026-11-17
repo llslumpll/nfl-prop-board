@@ -38703,10 +38703,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ],
+    "best5_tags": [],
     "line_attached_at": "2026-11-16 16:20 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-16 16:20 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40196,7 +40193,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Harold Fannin Jr.|receptions|12": {
     "player": "Harold Fannin Jr.",
@@ -40515,7 +40515,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jaylen Warren|receptions|11": {
     "player": "Jaylen Warren",
@@ -40607,7 +40610,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Joe Burrow|any_td|11": {
     "player": "Joe Burrow",
@@ -40810,8 +40817,7 @@
     "market_prob": 17.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Tyquan Thornton|any_td|11": {
@@ -41116,7 +41122,6 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
