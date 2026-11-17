@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 261.5,
+      "passing_yards": 259.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -9,7 +9,7 @@
       "rushing_yards": 7.5
     },
     "Nico Collins": {
-      "receiving_yards": 70.5
+      "receiving_yards": 69.5
     },
     "David Montgomery": {
       "rushing_yards": 53.5,
@@ -261,7 +261,7 @@
     },
     "Kyle McCord": {
       "passing_yards": 185.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "James Cook III": {
       "rushing_yards": 97.5,
@@ -278,7 +278,7 @@
       "receiving_yards": 47.5
     },
     "Keon Coleman": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 34.5,
       "receptions": 2.5
     },
     "Khalil Shakir": {
@@ -293,11 +293,11 @@
       "receptions": 2
     },
     "Greg Dulcich": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Ty Johnson": {
-      "receiving_yards": 13.5,
+      "receiving_yards": 14.5,
       "rushing_yards": 3.5
     },
     "Dawson Knox": {
@@ -305,7 +305,7 @@
       "receptions": 1.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 9.5
+      "rushing_yards": 8.5
     },
     "Jared Goff": {
       "passing_yards": 265.5,
@@ -435,11 +435,11 @@
     },
     "Bo Nix": {
       "passing_yards": 208.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 10.5
     },
     "Fernando Mendoza": {
       "passing_yards": 181.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 16.5
     },
     "Jonah Coleman": {
       "rushing_yards": 61.5,
@@ -451,7 +451,7 @@
       "receiving_yards": 28.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 32.5,
+      "rushing_yards": 20.5,
       "receiving_yards": 3.5
     },
     "Evan Engram": {
@@ -618,9 +618,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4422,
+    "total_projections_returned": 4439,
     "matched_props": 280,
-    "excluded_goblin_demon_lines": 3658,
+    "excluded_goblin_demon_lines": 3675,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -659,5 +659,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T23:00:56.344100+00:00"
+  "fetched_at": "2026-11-17T23:20:38.183534+00:00"
 }
