@@ -39215,5 +39215,52 @@
     "best5_tags": [
       "highest_confidence"
     ]
+  },
+  "David Montgomery|rushing_yards|10": {
+    "player": "David Montgomery",
+    "team": "HOU",
+    "opponent": "CLE",
+    "week": 10,
+    "stat": "rushing_yards",
+    "projected": 49.1,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 57.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -8.4,
+    "model_prob": 0.3972,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "opponent_recent_form": "worse",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-17 07:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Simi Fehoko|receiving_yards|10": {
+    "player": "Simi Fehoko",
+    "team": "ARI",
+    "opponent": "LA",
+    "week": 10,
+    "stat": "receiving_yards",
+    "projected": 7.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 17.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.7,
+    "model_prob": 0.2683,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-17 07:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
