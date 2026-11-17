@@ -144,5 +144,49 @@
    "units": 1.3425,
    "week": 10
   }
+ },
+ "11": {
+  "moneyline|TB @ DET: TB wins": {
+   "ask": 0.26,
+   "away": "TB",
+   "cost": 0.2735,
+   "ev": 0.0492,
+   "fair": 0.2869,
+   "first_ev": 0.0492,
+   "first_seen": "2026-11-17 22:40 UTC",
+   "home": "DET",
+   "kalshi": "YES TB at 26%",
+   "kickoff": "2026-11-22T18:00:00+00:00",
+   "kind": "moneyline",
+   "label": "TB @ DET: TB wins",
+   "line": null,
+   "model": 0.375,
+   "model_agrees": true,
+   "ref": "FanDuel +220/-270",
+   "side": "TB ML",
+   "status": "pending",
+   "week": 11
+  },
+  "spread|TB @ DET: TB +6.5": {
+   "ask": 0.47,
+   "away": "TB",
+   "cost": 0.4874,
+   "ev": 0.0259,
+   "fair": 0.5,
+   "first_ev": 0.0259,
+   "first_seen": "2026-11-17 22:40 UTC",
+   "home": "DET",
+   "kalshi": "NO DET by over 6.5 at 47%",
+   "kickoff": "2026-11-22T18:00:00+00:00",
+   "kind": "spread",
+   "label": "TB @ DET: TB +6.5",
+   "line": 6.5,
+   "model": 0.6156,
+   "model_agrees": true,
+   "ref": "FanDuel TB +6.5",
+   "side": "TB +6.5",
+   "status": "pending",
+   "week": 11
+  }
  }
 }
