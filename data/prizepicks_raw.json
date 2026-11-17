@@ -1,78 +1,7 @@
 {
   "props": {
-    "Jacoby Brissett": {
-      "passing_yards": 209.5,
-      "rushing_yards": 7.5
-    },
-    "Justin Herbert": {
-      "passing_yards": 198.5,
-      "rushing_yards": 19.5
-    },
-    "Derrick Henry": {
-      "rushing_yards": 80.5,
-      "receiving_yards": 5.5
-    },
-    "Zay Flowers": {
-      "receiving_yards": 71.5,
-      "rushing_yards": 1.5
-    },
-    "Tre' Harris": {
-      "receiving_yards": 41.5,
-      "receptions": 3.5
-    },
-    "Omarion Hampton": {
-      "rushing_yards": 34.5,
-      "receiving_yards": 5.5
-    },
-    "Quentin Johnston": {
-      "receiving_yards": 33.5
-    },
-    "Rashod Bateman": {
-      "receiving_yards": 23.5,
-      "receptions": 2
-    },
-    "Mark Andrews": {
-      "receiving_yards": 22.5
-    },
-    "Ja'Kobi Lane": {
-      "receiving_yards": 21.5,
-      "receptions": 2
-    },
-    "Kimani Vidal": {
-      "rushing_yards": 20.5,
-      "receiving_yards": 8.5
-    },
-    "KeAndre Lambert-Smith": {
-      "receiving_yards": 18.5,
-      "receptions": 1.5
-    },
-    "Charlie Kolar": {
-      "receiving_yards": 15.5
-    },
-    "Justice Hill": {
-      "rushing_yards": 12.5,
-      "receiving_yards": 11.5
-    },
-    "Keaton Mitchell": {
-      "rushing_yards": 12.5,
-      "receiving_yards": 11.5,
-      "receptions": 2
-    },
-    "David Njoku": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
-    },
-    "Oronde Gadsden II": {
-      "receiving_yards": 11.5
-    },
-    "Josh Cuevas": {
-      "receiving_yards": 7.5
-    },
-    "Matt Hibner": {
-      "receiving_yards": 3.5
-    },
     "C.J. Stroud": {
-      "passing_yards": 263.5,
+      "passing_yards": 257.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -443,12 +372,11 @@
       "receiving_yards": 4.5
     },
     "Brock Purdy": {
-      "passing_yards": 244.5,
+      "passing_yards": 240.5,
       "rushing_yards": 17.5
     },
     "Kirk Cousins": {
-      "passing_yards": 232.5,
-      "rushing_yards": 0.5
+      "passing_yards": 232.5
     },
     "Justin Jefferson": {
       "receiving_yards": 85.5
@@ -476,7 +404,7 @@
       "receptions": 2.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
@@ -525,26 +453,17 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3165,
-    "matched_props": 234,
-    "excluded_goblin_demon_lines": 2605,
+    "total_projections_returned": 2396,
+    "matched_props": 200,
+    "excluded_goblin_demon_lines": 1987,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
-      "consecutive pass completions",
       "fantasy score",
       "fg made",
-      "fg made (combo)",
-      "field goal yards (combo)",
-      "first fg distance (combo)",
-      "halves with 100+ pass yards",
-      "halves with 25+ rush yards",
       "int",
       "kicking points",
-      "kicking points (combo)",
-      "last fg distance (combo)",
       "longest completion",
-      "longest fg made yds (combo)",
       "longest reception",
       "longest rush",
       "pass attempts",
@@ -553,12 +472,17 @@
       "pass yards",
       "pass yards (combo)",
       "pass+rush yds",
-      "passer rating",
-      "pat made (combo)",
-      "punt touchbacks (combo)",
-      "punts",
-      "punts (combo)",
-      "quarters with 25+ pass yards"
+      "receiving yards",
+      "receiving yards (combo)",
+      "receptions",
+      "rush attempts",
+      "rush tds",
+      "rush yards",
+      "rush yards in first 5 attempts",
+      "rush yards per carry",
+      "rush+rec yds",
+      "sacks",
+      "tackles+ast"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -566,5 +490,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T01:00:40.007246+00:00"
+  "fetched_at": "2026-11-17T01:20:32.916917+00:00"
 }
