@@ -246,7 +246,7 @@
       "receiving_yards": 10.5
     },
     "Josh Allen": {
-      "passing_yards": 229.5,
+      "passing_yards": 228.5,
       "rushing_yards": 29.5
     },
     "Kyle McCord": {
@@ -528,9 +528,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3457,
+    "total_projections_returned": 3462,
     "matched_props": 233,
-    "excluded_goblin_demon_lines": 2894,
+    "excluded_goblin_demon_lines": 2897,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -565,5 +565,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T14:00:40.237199+00:00"
+  "fetched_at": "2026-11-17T14:20:34.662737+00:00"
 }
