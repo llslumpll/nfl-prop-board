@@ -8,6 +8,7 @@
    "fair": 0.4906,
    "first_ev": 0.0498,
    "first_seen": "2026-11-10 22:20 UTC",
+   "hit": true,
    "home": "NO",
    "kalshi": "YES CAR at 45%",
    "kickoff": "2026-11-15T18:00:00+00:00",
@@ -19,7 +20,8 @@
    "model_agrees": true,
    "ref": "FanDuel -104/-112",
    "side": "CAR ML",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.14,
    "week": 10
   },
   "moneyline|MIA @ IND: MIA wins": {
@@ -30,6 +32,7 @@
    "fair": 0.4288,
    "first_ev": 0.1401,
    "first_seen": "2026-11-10 21:00 UTC",
+   "hit": false,
    "home": "IND",
    "kalshi": "YES MIA at 36%",
    "kickoff": "2026-11-15T18:00:00+00:00",
@@ -41,7 +44,8 @@
    "model_agrees": true,
    "ref": "FanDuel +122/-144",
    "side": "MIA ML",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 10
   },
   "spread|CAR @ NO: CAR +1.5": {
@@ -52,6 +56,7 @@
    "fair": 0.5232,
    "first_ev": 0.031,
    "first_seen": "2026-11-10 22:00 UTC",
+   "hit": true,
    "home": "NO",
    "kalshi": "NO NO by over 1.5 at 48%",
    "kickoff": "2026-11-15T18:00:00+00:00",
@@ -63,7 +68,8 @@
    "model_agrees": true,
    "ref": "FanDuel CAR +1.5",
    "side": "CAR +1.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.0101,
    "week": 10
   },
   "spread|MIA @ IND: MIA +2.5": {
@@ -74,6 +80,7 @@
    "fair": 0.4884,
    "first_ev": 0.1174,
    "first_seen": "2026-11-10 21:00 UTC",
+   "hit": true,
    "home": "IND",
    "kalshi": "NO IND by over 2.5 at 41%",
    "kickoff": "2026-11-15T18:00:00+00:00",
@@ -85,7 +92,8 @@
    "model_agrees": true,
    "ref": "FanDuel MIA +2.5",
    "side": "MIA +2.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.3425,
    "week": 10
   },
   "spread|SF @ DAL: SF -4.5": {
@@ -96,6 +104,7 @@
    "fair": 0.4884,
    "first_ev": 0.023,
    "first_seen": "2026-11-15 21:00 UTC",
+   "hit": true,
    "home": "DAL",
    "kalshi": "YES SF by over 4.5 at 46%",
    "kickoff": "2026-11-15T21:25:00+00:00",
@@ -107,7 +116,8 @@
    "model_agrees": false,
    "ref": "FanDuel SF -4.5",
    "side": "SF -4.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.0947,
    "week": 10
   },
   "total|MIA @ IND: OVER 40.5": {
@@ -118,6 +128,7 @@
    "fair": 0.5,
    "first_ev": 0.1439,
    "first_seen": "2026-11-10 21:00 UTC",
+   "hit": true,
    "home": "IND",
    "kalshi": "YES over 40.5 at 41%",
    "kickoff": "2026-11-15T18:00:00+00:00",
@@ -129,7 +140,8 @@
    "model_agrees": true,
    "ref": "FanDuel 40.5 (-110/-110)",
    "side": "OVER 40.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.3425,
    "week": 10
   }
  }
