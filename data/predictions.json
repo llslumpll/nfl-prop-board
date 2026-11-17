@@ -40614,9 +40614,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|any_td|11": {
     "player": "Joe Burrow",
@@ -40818,7 +40816,10 @@
     "graded_at": null,
     "market_prob": 17.0,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Tyquan Thornton|any_td|11": {
     "player": "Tyquan Thornton",
@@ -41122,8 +41123,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Cam Ward|any_td|11": {
