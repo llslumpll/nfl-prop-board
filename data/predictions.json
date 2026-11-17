@@ -39684,7 +39684,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
       "best_value"
     ]
   },
@@ -41168,5 +41167,31 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Christian McCaffrey|receiving_yards|11": {
+    "player": "Christian McCaffrey",
+    "team": "SF",
+    "opponent": "MIN",
+    "week": 11,
+    "stat": "receiving_yards",
+    "projected": 45.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 32.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.8,
+    "model_prob": 0.711,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-17 21:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
