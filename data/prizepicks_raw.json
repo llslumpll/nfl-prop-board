@@ -11,14 +11,14 @@
     "Nico Collins": {
       "receiving_yards": 69.5
     },
+    "David Montgomery": {
+      "rushing_yards": 57.5,
+      "receiving_yards": 10.5
+    },
     "Jonathan Taylor": {
       "rushing_yards": 50.5,
       "receiving_yards": 18.5,
       "receptions": 3
-    },
-    "David Montgomery": {
-      "rushing_yards": 49.5,
-      "receiving_yards": 10.5
     },
     "Tyler Warren": {
       "receiving_yards": 40.5,
@@ -264,7 +264,7 @@
     },
     "James Cook III": {
       "rushing_yards": 97.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 65.5,
@@ -288,7 +288,7 @@
       "receiving_yards": 30.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 27.5,
       "receptions": 2
     },
     "Greg Dulcich": {
@@ -465,7 +465,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 244.5,
+      "passing_yards": 243.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -481,7 +481,7 @@
       "receptions": 5.5
     },
     "Parker Washington": {
-      "receiving_yards": 63.5
+      "receiving_yards": 64.5
     },
     "Cam Skattebo": {
       "rushing_yards": 57.5,
@@ -510,6 +510,9 @@
     "Brian Thomas Jr.": {
       "receiving_yards": 12.5
     },
+    "Josh Cameron": {
+      "receiving_yards": 12.5
+    },
     "Devin Singletary": {
       "rushing_yards": 12.5,
       "receiving_yards": 4.5
@@ -517,11 +520,8 @@
     "Nate Boerkircher": {
       "receiving_yards": 10.5
     },
-    "Josh Cameron": {
-      "receiving_yards": 9.5
-    },
     "Travis Hunter": {
-      "receiving_yards": 5.5
+      "receiving_yards": 8.5
     },
     "Theo Johnson": {
       "receiving_yards": 4.5
@@ -603,7 +603,7 @@
       "receiving_yards": 32.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 19.5,
@@ -658,5 +658,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T19:00:47.635536+00:00"
+  "fetched_at": "2026-11-17T19:20:35.975421+00:00"
 }
