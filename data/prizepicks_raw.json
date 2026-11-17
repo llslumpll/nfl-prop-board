@@ -220,8 +220,7 @@
       "receiving_yards": 67.5
     },
     "Tony Pollard": {
-      "rushing_yards": 62.5,
-      "receiving_yards": 16.5
+      "rushing_yards": 62.5
     },
     "Wan'Dale Robinson": {
       "receiving_yards": 44.5,
@@ -269,7 +268,7 @@
       "receiving_yards": 46.5
     },
     "Keon Coleman": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 35.5,
       "receptions": 2.5
     },
     "Malik Washington": {
@@ -279,17 +278,18 @@
       "receiving_yards": 25.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 23.5
+      "receiving_yards": 23.5,
+      "receptions": 2.5
     },
     "Ty Johnson": {
-      "receiving_yards": 13.5,
+      "receiving_yards": 14.5,
       "rushing_yards": 6.5
     },
     "Dawson Knox": {
       "receiving_yards": 11.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 8.5
+      "rushing_yards": 9.5
     },
     "Jared Goff": {
       "passing_yards": 272.5,
@@ -457,8 +457,7 @@
       "receptions": 3.5
     },
     "Jordan Mason": {
-      "rushing_yards": 47.5,
-      "receiving_yards": 0.5
+      "rushing_yards": 47.5
     },
     "Keenan Allen": {
       "receiving_yards": 39.5,
@@ -526,9 +525,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3401,
-    "matched_props": 233,
-    "excluded_goblin_demon_lines": 2856,
+    "total_projections_returned": 3371,
+    "matched_props": 232,
+    "excluded_goblin_demon_lines": 2831,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -563,5 +562,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T12:00:41.321376+00:00"
+  "fetched_at": "2026-11-17T12:20:32.059426+00:00"
 }
