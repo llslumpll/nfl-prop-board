@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 261.5,
+      "passing_yards": 262.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -13,7 +13,7 @@
     },
     "David Montgomery": {
       "rushing_yards": 56.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 50.5,
@@ -21,7 +21,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -40,8 +40,7 @@
     },
     "Seth McGowan": {
       "rushing_yards": 27.5,
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 27.5
@@ -119,11 +118,6 @@
     "Tyler Allgeier": {
       "rushing_yards": 32.5,
       "receiving_yards": 10.5
-    },
-    "Bam Knight": {
-      "rushing_yards": 29.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
     },
     "Xavier Worthy": {
       "receiving_yards": 26.5
@@ -327,7 +321,8 @@
       "receiving_yards": 48.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 35.5
+      "receiving_yards": 35.5,
+      "receptions": 3.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 18.5,
@@ -351,22 +346,33 @@
       "receiving_yards": 64.5
     },
     "Geno Smith": {
-      "passing_yards": 220.5,
+      "passing_yards": 221.5,
       "rushing_yards": 0.5
     },
+    "Justin Herbert": {
+      "passing_yards": 198.5,
+      "rushing_yards": 26.5
+    },
     "Garrett Wilson": {
-      "receiving_yards": 63.5,
+      "receiving_yards": 61.5,
       "receptions": 5.5
     },
+    "Omarion Hampton": {
+      "rushing_yards": 61.5,
+      "receiving_yards": 6.5
+    },
+    "Tre' Harris": {
+      "receiving_yards": 47.5
+    },
     "Breece Hall": {
-      "rushing_yards": 49.5,
-      "receiving_yards": 19.5
+      "rushing_yards": 46.5,
+      "receiving_yards": 18.5
     },
     "Adonai Mitchell": {
       "receiving_yards": 38.5
     },
     "Braelon Allen": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receiving_yards": 8.5
     },
     "Omar Cooper Jr.": {
@@ -413,11 +419,11 @@
     },
     "Trevor Lawrence": {
       "passing_yards": 244.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
       "passing_yards": 212.5,
-      "rushing_yards": 22.5
+      "rushing_yards": 16.5
     },
     "Parker Washington": {
       "receiving_yards": 68.5,
@@ -449,18 +455,18 @@
       "receiving_yards": 28.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 24.5,
+      "rushing_yards": 19.5,
       "receptions": 0.5
     },
     "Darnell Mooney": {
       "receiving_yards": 16.5
     },
-    "Devin Singletary": {
-      "rushing_yards": 14.5,
-      "receiving_yards": 4.5
-    },
     "Brian Thomas Jr.": {
       "receiving_yards": 13.5
+    },
+    "Devin Singletary": {
+      "rushing_yards": 12.5,
+      "receiving_yards": 4.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 9.5
@@ -565,9 +571,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3682,
-    "matched_props": 252,
-    "excluded_goblin_demon_lines": 3066,
+    "total_projections_returned": 3761,
+    "matched_props": 254,
+    "excluded_goblin_demon_lines": 3135,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -603,5 +609,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T16:40:46.179015+00:00"
+  "fetched_at": "2026-11-17T17:00:40.444902+00:00"
 }
