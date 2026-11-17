@@ -1,7 +1,7 @@
 {
   "props": {
     "Jacoby Brissett": {
-      "passing_yards": 210.5,
+      "passing_yards": 209.5,
       "rushing_yards": 6.5
     },
     "Justin Herbert": {
@@ -17,7 +17,7 @@
       "rushing_yards": 1.5
     },
     "Tre' Harris": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Omarion Hampton": {
@@ -59,17 +59,17 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "David Njoku": {
+    "Oronde Gadsden II": {
       "receiving_yards": 11.5
     },
-    "Oronde Gadsden II": {
-      "receiving_yards": 10.5
+    "David Njoku": {
+      "receiving_yards": 11.5
     },
     "Josh Cuevas": {
       "receiving_yards": 7.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "C.J. Stroud": {
       "passing_yards": 260.5,
@@ -513,9 +513,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2980,
+    "total_projections_returned": 2999,
     "matched_props": 228,
-    "excluded_goblin_demon_lines": 2433,
+    "excluded_goblin_demon_lines": 2452,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -554,5 +554,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T00:00:36.789620+00:00"
+  "fetched_at": "2026-11-17T00:20:31.567542+00:00"
 }
