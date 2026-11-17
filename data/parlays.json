@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,7 +971,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "td-1": {
@@ -999,13 +999,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "td-2": {
    "chance": 0.3994,
-   "decimal": 3.812,
-   "ev": 0.523,
+   "decimal": 3.902,
+   "ev": 0.559,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -1024,14 +1024,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.326,
+     "decimal": 2.381,
      "game": "HOU@IND",
      "good": true,
      "kickoff": "2026-11-20T01:15:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.43,
+     "price": 0.42,
      "team": "IND"
     }
    ],
@@ -1039,13 +1039,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "td-3": {
    "chance": 0.157,
-   "decimal": 11.212,
-   "ev": 0.76,
+   "decimal": 11.477,
+   "ev": 0.802,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1064,14 +1064,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.326,
+     "decimal": 2.381,
      "game": "HOU@IND",
      "good": true,
      "kickoff": "2026-11-20T01:15:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.43,
+     "price": 0.42,
      "team": "IND"
     },
     {
@@ -1091,13 +1091,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "td-4": {
    "chance": 0.0617,
-   "decimal": 36.17,
-   "ev": 1.231,
+   "decimal": 38.253,
+   "ev": 1.36,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1116,14 +1116,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.326,
+     "decimal": 2.381,
      "game": "HOU@IND",
      "good": true,
      "kickoff": "2026-11-20T01:15:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.43,
+     "price": 0.42,
      "team": "IND"
     },
     {
@@ -1140,14 +1140,14 @@
     },
     {
      "chance": 0.393,
-     "decimal": 3.226,
+     "decimal": 3.333,
      "game": "DET@TB",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Sam LaPorta anytime TD",
      "player": "Sam LaPorta",
-     "price": 0.31,
+     "price": 0.3,
      "team": "DET"
     }
    ],
@@ -1155,13 +1155,13 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   },
   "value-3": {
-   "chance": 0.1706,
+   "chance": 0.1719,
    "decimal": 6.0,
-   "ev": 0.024,
+   "ev": 0.031,
    "family": "value",
    "good": true,
    "id": "value-3",
@@ -1197,26 +1197,26 @@
      "team": "NYG"
     },
     {
-     "call": "OVER",
-     "chance": 0.552,
-     "conf": 0.736,
-     "game": "DAL@TEN",
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "CHI@NO",
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "prop",
-     "label": "Dak Prescott OVER 274.5 PASS YDS",
-     "line": 274.5,
-     "n": 96,
-     "player": "Dak Prescott",
-     "projected": 324.2,
-     "stat": "passing_yards",
-     "team": "DAL"
+     "label": "Jordyn Tyson UNDER 5.5 REC",
+     "line": 5.5,
+     "n": 117,
+     "player": "Jordyn Tyson",
+     "projected": 1.7,
+     "stat": "receptions",
+     "team": "NO"
     }
    ],
    "name": "Good price",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 18:20 UTC",
+   "updated": "2026-11-17 18:40 UTC",
    "week": 11
   }
  },
