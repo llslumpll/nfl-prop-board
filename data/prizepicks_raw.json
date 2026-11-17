@@ -25,7 +25,7 @@
       "receptions": 5
     },
     "Tank Dell": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 2.5
     },
     "Xavier Hutchinson": {
@@ -47,8 +47,7 @@
       "receptions": 0.5
     },
     "Anthony Gould": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
+      "receiving_yards": 23.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -152,7 +151,7 @@
       "rushing_yards": 17.5
     },
     "Chris Olave": {
-      "receiving_yards": 68.5
+      "receiving_yards": 69.5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
@@ -229,10 +228,11 @@
     },
     "Tony Pollard": {
       "rushing_yards": 62.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 17.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 41.5
+      "receiving_yards": 42.5,
+      "receptions": 3.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 41.5,
@@ -615,7 +615,7 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4374,
+    "total_projections_returned": 4372,
     "matched_props": 279,
     "excluded_goblin_demon_lines": 3608,
     "sample_stat_types_seen": [
@@ -656,5 +656,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-17T21:40:36.520870+00:00"
+  "fetched_at": "2026-11-17T21:53:52.759270+00:00"
 }

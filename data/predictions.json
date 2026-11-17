@@ -36781,8 +36781,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Shedeur Sanders|any_td|10": {
@@ -40614,7 +40613,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Joe Burrow|any_td|11": {
     "player": "Joe Burrow",
