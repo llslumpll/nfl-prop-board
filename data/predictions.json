@@ -36781,7 +36781,8 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Shedeur Sanders|any_td|10": {
@@ -40816,10 +40817,7 @@
     "graded_at": null,
     "market_prob": 17.0,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Tyquan Thornton|any_td|11": {
     "player": "Tyquan Thornton",
@@ -41123,7 +41121,8 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Cam Ward|any_td|11": {

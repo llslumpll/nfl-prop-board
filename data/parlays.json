@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,27 +971,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "td-1": {
    "chance": 0.632,
-   "decimal": 1.639,
-   "ev": 0.036,
+   "decimal": 1.667,
+   "ev": 0.054,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.639,
+     "decimal": 1.667,
      "game": "BUF@MIA",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.61,
+     "price": 0.6,
      "team": "BUF"
     }
    ],
@@ -999,27 +999,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "td-2": {
    "chance": 0.3994,
-   "decimal": 3.902,
-   "ev": 0.559,
+   "decimal": 3.969,
+   "ev": 0.585,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.639,
+     "decimal": 1.667,
      "game": "BUF@MIA",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.61,
+     "price": 0.6,
      "team": "BUF"
     },
     {
@@ -1039,27 +1039,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "td-3": {
    "chance": 0.157,
-   "decimal": 11.477,
-   "ev": 0.802,
+   "decimal": 11.673,
+   "ev": 0.832,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.639,
+     "decimal": 1.667,
      "game": "BUF@MIA",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.61,
+     "price": 0.6,
      "team": "BUF"
     },
     {
@@ -1091,27 +1091,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "td-4": {
    "chance": 0.0617,
-   "decimal": 38.253,
-   "ev": 1.36,
+   "decimal": 38.907,
+   "ev": 1.4,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.632,
-     "decimal": 1.639,
+     "decimal": 1.667,
      "game": "BUF@MIA",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.61,
+     "price": 0.6,
      "team": "BUF"
     },
     {
@@ -1155,7 +1155,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 20:20 UTC",
+   "updated": "2026-11-17 20:40 UTC",
    "week": 11
   }
  },
