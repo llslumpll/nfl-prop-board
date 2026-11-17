@@ -38831,7 +38831,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jacory Croskey-Merritt|any_td|11": {
     "player": "Jacory Croskey-Merritt",
@@ -40615,9 +40619,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Joe Burrow|any_td|11": {
     "player": "Joe Burrow",
@@ -41123,8 +41125,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Cam Ward|any_td|11": {

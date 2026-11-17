@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,7 +971,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "td-1": {
@@ -999,7 +999,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "td-2": {
@@ -1039,13 +1039,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "td-3": {
-   "chance": 0.157,
-   "decimal": 11.477,
-   "ev": 0.802,
+   "chance": 0.2201,
+   "decimal": 13.936,
+   "ev": 2.067,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1075,29 +1075,29 @@
      "team": "IND"
     },
     {
-     "chance": 0.393,
-     "decimal": 2.941,
-     "game": "ARI@KC",
+     "chance": 0.551,
+     "decimal": 3.571,
+     "game": "JAX@NYG",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Rashee Rice anytime TD",
-     "player": "Rashee Rice",
-     "price": 0.34,
-     "team": "KC"
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.28,
+     "team": "NYG"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "td-4": {
-   "chance": 0.0617,
-   "decimal": 38.253,
-   "ev": 1.36,
+   "chance": 0.0865,
+   "decimal": 40.985,
+   "ev": 2.545,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1127,6 +1127,18 @@
      "team": "IND"
     },
     {
+     "chance": 0.551,
+     "decimal": 3.571,
+     "game": "JAX@NYG",
+     "good": true,
+     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kind": "td",
+     "label": "Cam Skattebo anytime TD",
+     "player": "Cam Skattebo",
+     "price": 0.28,
+     "team": "NYG"
+    },
+    {
      "chance": 0.393,
      "decimal": 2.941,
      "game": "ARI@KC",
@@ -1137,25 +1149,13 @@
      "player": "Rashee Rice",
      "price": 0.34,
      "team": "KC"
-    },
-    {
-     "chance": 0.393,
-     "decimal": 3.333,
-     "game": "DET@TB",
-     "good": true,
-     "kickoff": "2026-11-22T18:00:00+00:00",
-     "kind": "td",
-     "label": "Sam LaPorta anytime TD",
-     "player": "Sam LaPorta",
-     "price": 0.3,
-     "team": "DET"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-17 22:01 UTC",
+   "updated": "2026-11-17 22:20 UTC",
    "week": 11
   }
  },
