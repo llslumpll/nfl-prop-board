@@ -112,7 +112,7 @@
       "rushing_yards": 8.5
     },
     "Rashee Rice": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5
     },
     "Trey McBride": {
@@ -122,7 +122,7 @@
       "receiving_yards": 46.5
     },
     "Josh Downs": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Xavier Worthy": {
@@ -182,7 +182,7 @@
       "receiving_yards": 47.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 44.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
@@ -375,7 +375,7 @@
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Mark Andrews": {
       "receiving_yards": 30.5
@@ -625,14 +625,15 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5030,
+    "total_projections_returned": 5108,
     "matched_props": 283,
-    "excluded_goblin_demon_lines": 4229,
+    "excluded_goblin_demon_lines": 4288,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
+      "consecutive pass completions",
       "fantasy score",
       "fg made",
       "fg made (combo)",
@@ -657,8 +658,7 @@
       "punt touchbacks (combo)",
       "punts",
       "punts (combo)",
-      "punts inside 20",
-      "rec targets"
+      "punts inside 20"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -666,5 +666,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T13:20:37.543355+00:00"
+  "fetched_at": "2026-11-18T13:40:37.783481+00:00"
 }
