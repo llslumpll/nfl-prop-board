@@ -109,21 +109,18 @@
       "passing_yards": 173.5,
       "rushing_yards": 9.5
     },
-    "Kenneth Walker III": {
-      "rushing_yards": 82.5,
-      "receiving_yards": 21.5
-    },
     "Trey McBride": {
       "receiving_yards": 55.5
+    },
+    "Rashee Rice": {
+      "receiving_yards": 48.5
     },
     "Travis Kelce": {
       "receiving_yards": 47.5
     },
-    "Rashee Rice": {
-      "receiving_yards": 47.5
-    },
     "Josh Downs": {
-      "receiving_yards": 35.5
+      "receiving_yards": 37.5,
+      "receptions": 3.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 32.5,
@@ -133,10 +130,10 @@
       "receiving_yards": 26.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Simi Fehoko": {
       "receiving_yards": 17.5
@@ -154,7 +151,7 @@
       "rushing_yards": 18.5
     },
     "Chris Olave": {
-      "receiving_yards": 68.5
+      "receiving_yards": 69.5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
@@ -227,7 +224,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 63.5,
+      "receiving_yards": 64.5,
       "receptions": 5.5
     },
     "Tony Pollard": {
@@ -262,7 +259,7 @@
     },
     "Kyle McCord": {
       "passing_yards": 185.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 5.5
     },
     "James Cook III": {
       "rushing_yards": 97.5,
@@ -306,7 +303,7 @@
       "receptions": 1.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 8.5
+      "rushing_yards": 9.5
     },
     "Jared Goff": {
       "passing_yards": 265.5,
@@ -347,7 +344,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 238.5,
+      "passing_yards": 237.5,
       "rushing_yards": 4.5
     },
     "Chuba Hubbard": {
@@ -403,7 +400,7 @@
       "receiving_yards": 6.5
     },
     "Tre' Harris": {
-      "receiving_yards": 48.5
+      "receiving_yards": 47.5
     },
     "Breece Hall": {
       "rushing_yards": 46.5,
@@ -417,7 +414,7 @@
       "receiving_yards": 8.5
     },
     "Omar Cooper Jr.": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Mason Taylor": {
@@ -445,7 +442,7 @@
       "receptions": 3.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 36.5
+      "receiving_yards": 37.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 35.5,
@@ -476,7 +473,7 @@
     },
     "Bhayshul Tuten": {
       "rushing_yards": 73.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Malik Nabers": {
       "receiving_yards": 65.5,
@@ -529,7 +526,7 @@
       "receiving_yards": 7.5
     },
     "Brock Purdy": {
-      "passing_yards": 247.5,
+      "passing_yards": 246.5,
       "rushing_yards": 17.5
     },
     "Kirk Cousins": {
@@ -619,9 +616,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4503,
-    "matched_props": 281,
-    "excluded_goblin_demon_lines": 3738,
+    "total_projections_returned": 4494,
+    "matched_props": 280,
+    "excluded_goblin_demon_lines": 3734,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -660,5 +657,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T00:20:39.578504+00:00"
+  "fetched_at": "2026-11-18T00:40:41.264157+00:00"
 }
