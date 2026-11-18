@@ -75,7 +75,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 194.5,
+      "passing_yards": 193.5,
       "rushing_yards": 31.5
     },
     "Jaylen Warren": {
@@ -440,14 +440,14 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 67.5,
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Jaylen Waddle": {
       "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 38.5
+      "receiving_yards": 39.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
@@ -458,7 +458,7 @@
     },
     "J.K. Dobbins": {
       "rushing_yards": 22.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 1.5
     },
     "Evan Engram": {
       "receiving_yards": 20.5,
@@ -469,7 +469,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 244.5,
+      "passing_yards": 242.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -621,9 +621,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4898,
+    "total_projections_returned": 4896,
     "matched_props": 283,
-    "excluded_goblin_demon_lines": 4105,
+    "excluded_goblin_demon_lines": 4103,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -662,5 +662,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T07:20:39.538421+00:00"
+  "fetched_at": "2026-11-18T08:00:46.723160+00:00"
 }
