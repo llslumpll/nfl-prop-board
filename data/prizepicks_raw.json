@@ -95,7 +95,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 38.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 9.5
     },
     "Dallas Goedert": {
       "receiving_yards": 31.5
@@ -151,7 +151,7 @@
     },
     "Tyler Shough": {
       "passing_yards": 242.5,
-      "rushing_yards": 17.5
+      "rushing_yards": 18.5
     },
     "Chris Olave": {
       "receiving_yards": 69.5
@@ -431,7 +431,7 @@
       "receptions": 1.5
     },
     "Bo Nix": {
-      "passing_yards": 212.5,
+      "passing_yards": 214.5,
       "rushing_yards": 10.5
     },
     "Fernando Mendoza": {
@@ -551,8 +551,7 @@
       "receiving_yards": 33.5
     },
     "Jordan Mason": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 0.5
+      "rushing_yards": 46.5
     },
     "Keenan Allen": {
       "receiving_yards": 39.5,
@@ -621,9 +620,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4896,
-    "matched_props": 283,
-    "excluded_goblin_demon_lines": 4103,
+    "total_projections_returned": 4887,
+    "matched_props": 282,
+    "excluded_goblin_demon_lines": 4098,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -662,5 +661,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T08:00:46.723160+00:00"
+  "fetched_at": "2026-11-18T08:20:39.952619+00:00"
 }
