@@ -449,11 +449,11 @@
       "receiving_yards": 28.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 23.5
+      "rushing_yards": 24.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 21.5,
-      "receiving_yards": 3.5
+      "rushing_yards": 22.5,
+      "receiving_yards": 2.5
     },
     "Evan Engram": {
       "receiving_yards": 20.5,
@@ -616,9 +616,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4494,
+    "total_projections_returned": 4499,
     "matched_props": 280,
-    "excluded_goblin_demon_lines": 3734,
+    "excluded_goblin_demon_lines": 3742,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -657,5 +657,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T00:40:41.264157+00:00"
+  "fetched_at": "2026-11-18T01:00:45.116093+00:00"
 }
