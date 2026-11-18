@@ -132,6 +132,9 @@
     "Xavier Worthy": {
       "receiving_yards": 26.5
     },
+    "Bam Knight": {
+      "rushing_yards": 22.5
+    },
     "Elijah Higgins": {
       "receiving_yards": 18.5
     },
@@ -155,7 +158,7 @@
     },
     "Tyler Shough": {
       "passing_yards": 240.5,
-      "rushing_yards": 17.5
+      "rushing_yards": 18.5
     },
     "Chris Olave": {
       "receiving_yards": 69.5
@@ -220,8 +223,7 @@
       "rushing_yards": 8.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 92.5,
-      "receptions": 7.5
+      "receiving_yards": 92.5
     },
     "Javonte Williams": {
       "rushing_yards": 79.5,
@@ -231,18 +233,19 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 65.5,
+      "receptions": 5.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
       "receiving_yards": 17.5
     },
-    "Ryan Flournoy": {
+    "Elic Ayomanor": {
       "receiving_yards": 42.5,
       "receptions": 3.5
     },
-    "Elic Ayomanor": {
-      "receiving_yards": 42.5,
+    "Ryan Flournoy": {
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Gunnar Helm": {
@@ -472,7 +475,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 242.5,
+      "passing_yards": 244.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -504,7 +507,7 @@
       "receiving_yards": 32.5
     },
     "Malachi Fields": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 19.5,
@@ -623,9 +626,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4986,
-    "matched_props": 283,
-    "excluded_goblin_demon_lines": 4191,
+    "total_projections_returned": 4992,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4196,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -664,5 +667,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T11:20:39.470588+00:00"
+  "fetched_at": "2026-11-18T11:40:42.340015+00:00"
 }
