@@ -22,7 +22,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -112,7 +112,7 @@
       "rushing_yards": 8.5
     },
     "Rashee Rice": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5
     },
     "Trey McBride": {
@@ -125,12 +125,12 @@
       "receiving_yards": 35.5,
       "receptions": 3.5
     },
+    "Tyler Allgeier": {
+      "rushing_yards": 27.5,
+      "receiving_yards": 7.5
+    },
     "Xavier Worthy": {
       "receiving_yards": 26.5
-    },
-    "Tyler Allgeier": {
-      "rushing_yards": 26.5,
-      "receiving_yards": 7.5
     },
     "Bam Knight": {
       "rushing_yards": 25.5
@@ -204,7 +204,7 @@
     },
     "Alvin Kamara": {
       "receiving_yards": 14.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 7.5
     },
     "Sam Roush": {
       "receiving_yards": 8.5
@@ -235,7 +235,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 43.5,
@@ -325,7 +325,7 @@
       "receptions": 3.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 76.5
+      "receiving_yards": 75.5
     },
     "Bucky Irving": {
       "rushing_yards": 67.5,
@@ -363,7 +363,7 @@
       "receptions": 3.5
     },
     "Zay Flowers": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 66.5,
       "receptions": 5.5
     },
     "Tetairoa McMillan": {
@@ -381,7 +381,7 @@
       "receiving_yards": 31.5
     },
     "Darren Waller": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
@@ -393,7 +393,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 16.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Geno Smith": {
       "passing_yards": 219.5,
@@ -475,7 +475,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 244.5,
+      "passing_yards": 242.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -507,14 +507,14 @@
       "receiving_yards": 32.5
     },
     "Malachi Fields": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 19.5,
       "receptions": 0.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Brian Thomas Jr.": {
@@ -626,9 +626,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5183,
+    "total_projections_returned": 5185,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4336,
+    "excluded_goblin_demon_lines": 4337,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -667,5 +667,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T14:20:39.591496+00:00"
+  "fetched_at": "2026-11-18T14:40:44.354721+00:00"
 }
