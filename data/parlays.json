@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,45 +971,57 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "td-1": {
-   "chance": 0.632,
+   "chance": 0.699,
    "decimal": 2.381,
-   "ev": 0.505,
+   "ev": 0.664,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
-     "chance": 0.632,
+     "chance": 0.699,
      "decimal": 2.381,
-     "game": "HOU@IND",
+     "game": "MIN@SF",
      "good": true,
-     "kickoff": "2026-11-20T01:15:00+00:00",
+     "kickoff": "2026-11-23T01:20:00+00:00",
      "kind": "td",
-     "label": "Jonathan Taylor anytime TD",
-     "player": "Jonathan Taylor",
+     "label": "Christian McCaffrey anytime TD",
+     "player": "Christian McCaffrey",
      "price": 0.42,
-     "team": "IND"
+     "team": "SF"
     }
    ],
    "name": "Touchdowns",
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "td-2": {
-   "chance": 0.3482,
-   "decimal": 5.176,
-   "ev": 0.802,
+   "chance": 0.4418,
+   "decimal": 5.669,
+   "ev": 1.504,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
+    {
+     "chance": 0.699,
+     "decimal": 2.381,
+     "game": "MIN@SF",
+     "good": true,
+     "kickoff": "2026-11-23T01:20:00+00:00",
+     "kind": "td",
+     "label": "Christian McCaffrey anytime TD",
+     "player": "Christian McCaffrey",
+     "price": 0.42,
+     "team": "SF"
+    },
     {
      "chance": 0.632,
      "decimal": 2.381,
@@ -1021,35 +1033,35 @@
      "player": "Jonathan Taylor",
      "price": 0.42,
      "team": "IND"
-    },
-    {
-     "chance": 0.551,
-     "decimal": 2.174,
-     "game": "JAX@NYG",
-     "good": true,
-     "kickoff": "2026-11-22T18:00:00+00:00",
-     "kind": "td",
-     "label": "Cam Skattebo anytime TD",
-     "player": "Cam Skattebo",
-     "price": 0.46,
-     "team": "NYG"
     }
    ],
    "name": "Touchdowns",
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "td-3": {
-   "chance": 0.1571,
-   "decimal": 17.848,
-   "ev": 1.803,
+   "chance": 0.2434,
+   "decimal": 12.325,
+   "ev": 2.0,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
+    {
+     "chance": 0.699,
+     "decimal": 2.381,
+     "game": "MIN@SF",
+     "good": true,
+     "kickoff": "2026-11-23T01:20:00+00:00",
+     "kind": "td",
+     "label": "Christian McCaffrey anytime TD",
+     "player": "Christian McCaffrey",
+     "price": 0.42,
+     "team": "SF"
+    },
     {
      "chance": 0.632,
      "decimal": 2.381,
@@ -1073,35 +1085,35 @@
      "player": "Cam Skattebo",
      "price": 0.46,
      "team": "NYG"
-    },
-    {
-     "chance": 0.451,
-     "decimal": 3.448,
-     "game": "DEN@LV",
-     "good": true,
-     "kickoff": "2026-11-22T21:25:00+00:00",
-     "kind": "td",
-     "label": "Ashton Jeanty anytime TD",
-     "player": "Ashton Jeanty",
-     "price": 0.29,
-     "team": "LV"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "td-4": {
-   "chance": 0.0617,
-   "decimal": 52.491,
-   "ev": 2.24,
+   "chance": 0.0957,
+   "decimal": 34.238,
+   "ev": 2.275,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
+    {
+     "chance": 0.699,
+     "decimal": 2.381,
+     "game": "MIN@SF",
+     "good": true,
+     "kickoff": "2026-11-23T01:20:00+00:00",
+     "kind": "td",
+     "label": "Christian McCaffrey anytime TD",
+     "player": "Christian McCaffrey",
+     "price": 0.42,
+     "team": "SF"
+    },
     {
      "chance": 0.632,
      "decimal": 2.381,
@@ -1127,35 +1139,23 @@
      "team": "NYG"
     },
     {
-     "chance": 0.451,
-     "decimal": 3.448,
-     "game": "DEN@LV",
-     "good": true,
-     "kickoff": "2026-11-22T21:25:00+00:00",
-     "kind": "td",
-     "label": "Ashton Jeanty anytime TD",
-     "player": "Ashton Jeanty",
-     "price": 0.29,
-     "team": "LV"
-    },
-    {
      "chance": 0.393,
-     "decimal": 2.941,
-     "game": "ARI@KC",
+     "decimal": 2.778,
+     "game": "MIN@SF",
      "good": true,
-     "kickoff": "2026-11-22T18:00:00+00:00",
+     "kickoff": "2026-11-23T01:20:00+00:00",
      "kind": "td",
-     "label": "Rashee Rice anytime TD",
-     "player": "Rashee Rice",
-     "price": 0.34,
-     "team": "KC"
+     "label": "George Kittle anytime TD",
+     "player": "George Kittle",
+     "price": 0.36,
+     "team": "SF"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 02:01 UTC",
+   "updated": "2026-11-18 02:20 UTC",
    "week": 11
   }
  },
