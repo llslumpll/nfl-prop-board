@@ -22,7 +22,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -45,7 +45,7 @@
       "receiving_yards": 29.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Anthony Gould": {
       "receiving_yards": 23.5,
@@ -235,7 +235,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
-      "receiving_yards": 18.5
+      "receiving_yards": 17.5
     },
     "Elic Ayomanor": {
       "receiving_yards": 43.5,
@@ -329,7 +329,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 67.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Jameson Williams": {
       "receiving_yards": 51.5,
@@ -448,7 +448,8 @@
       "receiving_yards": 27.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 41.5
+      "receiving_yards": 41.5,
+      "receptions": 3.5
     },
     "Courtland Sutton": {
       "receiving_yards": 38.5
@@ -556,7 +557,7 @@
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 1.5
     },
     "Keenan Allen": {
       "receiving_yards": 39.5,
@@ -568,7 +569,7 @@
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 31.5,
-      "rushing_yards": 9.5,
+      "rushing_yards": 8.5,
       "receptions": 2.5
     },
     "Kaelon Black": {
@@ -625,9 +626,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5108,
-    "matched_props": 283,
-    "excluded_goblin_demon_lines": 4288,
+    "total_projections_returned": 5132,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4303,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -666,5 +667,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T13:40:37.783481+00:00"
+  "fetched_at": "2026-11-18T14:00:46.216132+00:00"
 }
