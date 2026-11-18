@@ -112,7 +112,7 @@
       "rushing_yards": 8.5
     },
     "Rashee Rice": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 50.5,
       "receptions": 4.5
     },
     "Trey McBride": {
@@ -157,15 +157,15 @@
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
-      "passing_yards": 240.5,
-      "rushing_yards": 18.5
+      "passing_yards": 238.5,
+      "rushing_yards": 17.5
     },
     "Chris Olave": {
       "receiving_yards": 69.5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 60.5,
@@ -176,8 +176,7 @@
       "receptions": 4.5
     },
     "Colston Loveland": {
-      "receiving_yards": 50.5,
-      "receptions": 4.5
+      "receiving_yards": 50.5
     },
     "Rome Odunze": {
       "receiving_yards": 47.5
@@ -199,7 +198,7 @@
       "receiving_yards": 3.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Juwan Johnson": {
       "receiving_yards": 19.5
@@ -223,7 +222,8 @@
       "rushing_yards": 8.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 92.5
+      "receiving_yards": 92.5,
+      "receptions": 7.5
     },
     "Javonte Williams": {
       "rushing_yards": 79.5,
@@ -233,19 +233,18 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5,
-      "receptions": 5.5
+      "receiving_yards": 65.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
       "receiving_yards": 18.5
     },
-    "Elic Ayomanor": {
+    "Ryan Flournoy": {
       "receiving_yards": 42.5,
       "receptions": 3.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 41.5,
+    "Elic Ayomanor": {
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Gunnar Helm": {
@@ -314,11 +313,11 @@
       "rushing_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 247.5,
+      "passing_yards": 248.5,
       "rushing_yards": 0.5
     },
     "Jalon Daniels": {
-      "passing_yards": 170.5,
+      "passing_yards": 169.5,
       "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
@@ -450,7 +449,7 @@
       "receiving_yards": 27.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 40.5
+      "receiving_yards": 41.5
     },
     "Courtland Sutton": {
       "receiving_yards": 38.5
@@ -627,8 +626,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 5018,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 4223,
+    "matched_props": 283,
+    "excluded_goblin_demon_lines": 4224,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -667,5 +666,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T12:00:46.037749+00:00"
+  "fetched_at": "2026-11-18T12:20:41.268596+00:00"
 }
