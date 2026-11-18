@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "ml-3": {
@@ -716,7 +716,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "ml-4": {
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,7 +971,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "td-1": {
@@ -999,7 +999,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "td-2": {
@@ -1039,7 +1039,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "td-3": {
@@ -1091,13 +1091,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "td-4": {
-   "chance": 0.1538,
-   "decimal": 15.687,
-   "ev": 1.413,
+   "chance": 0.1656,
+   "decimal": 24.051,
+   "ev": 2.982,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1139,23 +1139,23 @@
      "team": "IND"
     },
     {
-     "chance": 0.551,
-     "decimal": 2.174,
-     "game": "JAX@NYG",
+     "chance": 0.593,
+     "decimal": 3.333,
+     "game": "BAL@CAR",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
-     "label": "Cam Skattebo anytime TD",
-     "player": "Cam Skattebo",
-     "price": 0.46,
-     "team": "NYG"
+     "label": "Derrick Henry anytime TD",
+     "player": "Derrick Henry",
+     "price": 0.3,
+     "team": "BAL"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 06:01 UTC",
+   "updated": "2026-11-18 06:20 UTC",
    "week": 11
   }
  },
