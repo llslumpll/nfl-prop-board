@@ -79,7 +79,7 @@
     },
     "Jaylen Warren": {
       "rushing_yards": 67.5,
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Saquon Barkley": {
       "rushing_yards": 60.5,
@@ -94,7 +94,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 36.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Dallas Goedert": {
       "receiving_yards": 30.5
@@ -190,7 +190,7 @@
       "receiving_yards": 13.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Audric Estime": {
       "rushing_yards": 21.5,
@@ -233,7 +233,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 64.5
+      "receiving_yards": 65.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
@@ -368,7 +368,7 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
@@ -378,7 +378,7 @@
       "receiving_yards": 33.5
     },
     "Darren Waller": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
@@ -523,14 +523,14 @@
       "receiving_yards": 12.5
     },
     "Josh Cameron": {
-      "receiving_yards": 12.5
-    },
-    "Devin Singletary": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 11.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 10.5
+    },
+    "Devin Singletary": {
+      "rushing_yards": 10.5,
+      "receiving_yards": 3.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -628,9 +628,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5312,
+    "total_projections_returned": 5315,
     "matched_props": 282,
-    "excluded_goblin_demon_lines": 4368,
+    "excluded_goblin_demon_lines": 4371,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -669,5 +669,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T20:20:39.685985+00:00"
+  "fetched_at": "2026-11-18T20:40:43.260389+00:00"
 }
