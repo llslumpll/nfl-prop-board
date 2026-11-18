@@ -17,7 +17,7 @@
       "receptions": 1.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 19.5,
       "receptions": 3
     },
@@ -26,7 +26,7 @@
       "receptions": 5
     },
     "Tank Dell": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 36.5,
       "receptions": 2.5
     },
     "Xavier Hutchinson": {
@@ -55,7 +55,7 @@
       "receiving_yards": 6.5
     },
     "Deion Burks": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Ashton Dulin": {
       "receiving_yards": 15.5
@@ -71,30 +71,30 @@
       "receiving_yards": 9.5
     },
     "Aaron Rodgers": {
-      "passing_yards": 201.5,
+      "passing_yards": 211.5,
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
       "passing_yards": 194.5,
       "rushing_yards": 31.5
     },
-    "Jaylen Warren": {
-      "rushing_yards": 69.5,
-      "receiving_yards": 19.5
-    },
     "Saquon Barkley": {
-      "rushing_yards": 66.5,
+      "rushing_yards": 67.5,
       "receiving_yards": 11.5
+    },
+    "Jaylen Warren": {
+      "rushing_yards": 66.5,
+      "receiving_yards": 19.5
     },
     "DeVonta Smith": {
       "receiving_yards": 51.5
     },
     "DK Metcalf": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 36.5,
       "receiving_yards": 11.5
     },
     "Dallas Goedert": {
@@ -122,8 +122,7 @@
       "receiving_yards": 46.5
     },
     "Josh Downs": {
-      "receiving_yards": 35.5,
-      "receptions": 3.5
+      "receiving_yards": 35.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 27.5,
@@ -231,15 +230,14 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 64.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
       "receiving_yards": 16.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 43.5,
-      "receptions": 3.5
+      "receiving_yards": 43.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 41.5,
@@ -253,8 +251,8 @@
       "receptions": 2.5
     },
     "Tyjae Spears": {
-      "rushing_yards": 13.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5,
+      "rushing_yards": 13.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 11.5,
@@ -297,26 +295,24 @@
       "receiving_yards": 27.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
+      "receiving_yards": 23.5
     },
     "Ty Johnson": {
       "receiving_yards": 14.5,
       "rushing_yards": 3.5
     },
     "Dawson Knox": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
+      "receiving_yards": 11.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 9.5
+      "rushing_yards": 8.5
     },
     "Jared Goff": {
       "passing_yards": 247.5,
       "rushing_yards": 0.5
     },
     "Jalon Daniels": {
-      "passing_yards": 169.5,
+      "passing_yards": 171.5,
       "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
@@ -325,7 +321,7 @@
       "receptions": 3.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 75.5
+      "receiving_yards": 76.5
     },
     "Bucky Irving": {
       "rushing_yards": 67.5,
@@ -449,8 +445,7 @@
       "receiving_yards": 27.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 41.5,
-      "receptions": 3.5
+      "receiving_yards": 41.5
     },
     "Courtland Sutton": {
       "receiving_yards": 38.5
@@ -520,11 +515,11 @@
     "Brian Thomas Jr.": {
       "receiving_yards": 12.5
     },
-    "Nate Boerkircher": {
-      "receiving_yards": 11.5
-    },
     "Josh Cameron": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
+    },
+    "Nate Boerkircher": {
+      "receiving_yards": 10.5
     },
     "Devin Singletary": {
       "rushing_yards": 10.5,
@@ -626,9 +621,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5185,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 4337,
+    "total_projections_returned": 5186,
+    "matched_props": 279,
+    "excluded_goblin_demon_lines": 4341,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -667,5 +662,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T14:40:44.354721+00:00"
+  "fetched_at": "2026-11-18T15:00:43.161343+00:00"
 }
