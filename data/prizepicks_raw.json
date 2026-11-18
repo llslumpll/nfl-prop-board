@@ -12,7 +12,7 @@
       "receiving_yards": 70.5
     },
     "David Montgomery": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 53.5,
       "receiving_yards": 9.5,
       "receptions": 1.5
     },
@@ -32,12 +32,12 @@
     "Xavier Hutchinson": {
       "receiving_yards": 34.5
     },
-    "Laquon Treadwell": {
-      "receiving_yards": 29.5,
-      "receptions": 2.5
-    },
     "Dalton Schultz": {
       "receiving_yards": 29.5
+    },
+    "Laquon Treadwell": {
+      "receiving_yards": 27.5,
+      "receptions": 2.5
     },
     "Kayshon Boutte": {
       "receiving_yards": 27.5
@@ -320,12 +320,10 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
-      "receiving_yards": 29.5,
-      "receptions": 3.5
+      "receiving_yards": 29.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 75.5,
-      "receptions": 6.5
+      "receiving_yards": 76.5
     },
     "Bucky Irving": {
       "rushing_yards": 67.5,
@@ -347,7 +345,7 @@
       "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 14.5
+      "receiving_yards": 13.5
     },
     "Bryce Young": {
       "passing_yards": 245.5,
@@ -359,8 +357,7 @@
     },
     "Chuba Hubbard": {
       "rushing_yards": 77.5,
-      "receiving_yards": 20.5,
-      "receptions": 3.5
+      "receiving_yards": 20.5
     },
     "Zay Flowers": {
       "receiving_yards": 66.5,
@@ -629,9 +626,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5291,
-    "matched_props": 287,
-    "excluded_goblin_demon_lines": 4347,
+    "total_projections_returned": 5289,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4348,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -670,5 +667,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T18:00:45.230797+00:00"
+  "fetched_at": "2026-11-18T18:20:39.909111+00:00"
 }
