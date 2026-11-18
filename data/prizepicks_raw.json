@@ -5,7 +5,7 @@
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
-      "passing_yards": 181.5,
+      "passing_yards": 183.5,
       "rushing_yards": 7.5
     },
     "Nico Collins": {
@@ -58,7 +58,7 @@
       "receiving_yards": 16.5
     },
     "Ashton Dulin": {
-      "receiving_yards": 14.5
+      "receiving_yards": 15.5
     },
     "Foster Moreau": {
       "receiving_yards": 5.5
@@ -112,7 +112,7 @@
       "rushing_yards": 8.5
     },
     "Rashee Rice": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5
     },
     "Trey McBride": {
@@ -133,7 +133,7 @@
       "receiving_yards": 7.5
     },
     "Bam Knight": {
-      "rushing_yards": 22.5
+      "rushing_yards": 24.5
     },
     "Elijah Higgins": {
       "receiving_yards": 18.5
@@ -221,8 +221,7 @@
       "rushing_yards": 8.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 92.5,
-      "receptions": 7.5
+      "receiving_yards": 92.5
     },
     "Javonte Williams": {
       "rushing_yards": 79.5,
@@ -238,16 +237,16 @@
       "rushing_yards": 63.5,
       "receiving_yards": 18.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 42.5,
+    "Elic Ayomanor": {
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
-    "Elic Ayomanor": {
-      "receiving_yards": 42.5,
+    "Ryan Flournoy": {
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 23.5,
@@ -258,7 +257,8 @@
       "receiving_yards": 12.5
     },
     "Daniel Bellinger": {
-      "receiving_yards": 11.5
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Josh Allen": {
       "passing_yards": 227.5,
@@ -312,7 +312,7 @@
       "rushing_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 248.5,
+      "passing_yards": 247.5,
       "rushing_yards": 0.5
     },
     "Jalon Daniels": {
@@ -359,7 +359,7 @@
     },
     "Chuba Hubbard": {
       "rushing_yards": 78.5,
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 3.5
     },
     "Zay Flowers": {
@@ -505,7 +505,7 @@
       "receiving_yards": 32.5
     },
     "Malachi Fields": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 19.5,
@@ -518,10 +518,10 @@
     "Brian Thomas Jr.": {
       "receiving_yards": 12.5
     },
-    "Josh Cameron": {
-      "receiving_yards": 12.5
-    },
     "Nate Boerkircher": {
+      "receiving_yards": 11.5
+    },
+    "Josh Cameron": {
       "receiving_yards": 11.5
     },
     "Devin Singletary": {
@@ -562,14 +562,14 @@
       "receiving_yards": 39.5,
       "receptions": 3.5
     },
+    "Aaron Jones Sr.": {
+      "rushing_yards": 31.5,
+      "receiving_yards": 10.5
+    },
     "Deebo Samuel Sr.": {
       "receiving_yards": 31.5,
       "rushing_yards": 9.5,
       "receptions": 2.5
-    },
-    "Aaron Jones Sr.": {
-      "rushing_yards": 30.5,
-      "receiving_yards": 10.5
     },
     "Kaelon Black": {
       "rushing_yards": 26.5,
@@ -625,9 +625,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5029,
+    "total_projections_returned": 5028,
     "matched_props": 283,
-    "excluded_goblin_demon_lines": 4226,
+    "excluded_goblin_demon_lines": 4229,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -666,5 +666,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T12:40:40.223581+00:00"
+  "fetched_at": "2026-11-18T13:00:46.823138+00:00"
 }

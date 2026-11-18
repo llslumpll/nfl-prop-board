@@ -39663,7 +39663,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Rashee Rice|receiving_yards|11": {
@@ -39687,10 +39688,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -41221,6 +41219,33 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-18 03:11 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Elic Ayomanor|receiving_yards|11": {
+    "player": "Elic Ayomanor",
+    "team": "TEN",
+    "opponent": "DAL",
+    "week": 11,
+    "stat": "receiving_yards",
+    "projected": 33.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 43.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.6,
+    "model_prob": 0.2935,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up",
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-18 13:00 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
