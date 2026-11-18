@@ -115,7 +115,7 @@
       "receptions": 4.5
     },
     "Trey McBride": {
-      "receiving_yards": 48.5
+      "receiving_yards": 49.5
     },
     "Travis Kelce": {
       "receiving_yards": 41.5,
@@ -240,7 +240,7 @@
       "receiving_yards": 17.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 43.5
+      "receiving_yards": 44.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 42.5,
@@ -313,12 +313,12 @@
       "rushing_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 248.5,
+      "passing_yards": 246.5,
       "rushing_yards": 0.5
     },
     "Jalon Daniels": {
-      "passing_yards": 168.5,
-      "rushing_yards": 30.5
+      "passing_yards": 169.5,
+      "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
@@ -326,7 +326,7 @@
       "receptions": 3.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 75.5,
       "receptions": 6.5
     },
     "Bucky Irving": {
@@ -346,7 +346,7 @@
     },
     "Sione Vaki": {
       "rushing_yards": 15.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 14.5
@@ -467,7 +467,8 @@
     },
     "J.K. Dobbins": {
       "rushing_yards": 22.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Evan Engram": {
       "receiving_yards": 19.5,
@@ -526,12 +527,12 @@
     "Josh Cameron": {
       "receiving_yards": 12.5
     },
+    "Devin Singletary": {
+      "rushing_yards": 11.5,
+      "receiving_yards": 4.5
+    },
     "Nate Boerkircher": {
       "receiving_yards": 10.5
-    },
-    "Devin Singletary": {
-      "rushing_yards": 10.5,
-      "receiving_yards": 4.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -629,9 +630,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5217,
-    "matched_props": 287,
-    "excluded_goblin_demon_lines": 4356,
+    "total_projections_returned": 5222,
+    "matched_props": 288,
+    "excluded_goblin_demon_lines": 4354,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -670,5 +671,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T17:00:46.606803+00:00"
+  "fetched_at": "2026-11-18T17:20:46.818585+00:00"
 }
