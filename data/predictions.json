@@ -39456,8 +39456,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Dak Prescott|passing_yards|11": {
@@ -41191,6 +41190,31 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-17 21:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Jared Goff|passing_yards|11": {
+    "player": "Jared Goff",
+    "team": "DET",
+    "opponent": "TB",
+    "week": 11,
+    "stat": "passing_yards",
+    "projected": 286.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 249.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 37.0,
+    "model_prob": 0.7102,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-18 03:11 UTC",
     "graded": false,
     "actual": null,
     "hit": null,

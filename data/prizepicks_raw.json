@@ -305,8 +305,11 @@
       "rushing_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 265.5,
+      "passing_yards": 249.5,
       "rushing_yards": 0.5
+    },
+    "Jalon Daniels": {
+      "passing_yards": 169.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 98.5,
@@ -462,7 +465,7 @@
       "receptions": 1.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 244.5,
+      "passing_yards": 242.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -615,9 +618,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4605,
-    "matched_props": 279,
-    "excluded_goblin_demon_lines": 3841,
+    "total_projections_returned": 4614,
+    "matched_props": 280,
+    "excluded_goblin_demon_lines": 3849,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -656,5 +659,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T03:00:50.316144+00:00"
+  "fetched_at": "2026-11-18T03:11:10.106241+00:00"
 }
