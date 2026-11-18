@@ -38733,10 +38733,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-17 21:56 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 21:56 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Van Jefferson|receptions|11": {
     "player": "Van Jefferson",
@@ -39584,7 +39581,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "CeeDee Lamb|receiving_yards|11": {
@@ -39666,7 +39664,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Rashee Rice|receiving_yards|11": {
@@ -39690,10 +39689,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -40016,7 +40012,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
     "line_attached_at": "2026-11-17 18:20 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this prizepicks line was first seen 2026-11-17 18:20 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
