@@ -39533,7 +39533,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Josh Cameron|receiving_yards|11": {
@@ -39662,8 +39663,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Rashee Rice|receiving_yards|11": {
@@ -39687,7 +39687,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -40943,7 +40945,6 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -41073,7 +41074,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Chase Brown|any_td|11": {
     "player": "Chase Brown",
@@ -41223,8 +41226,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Elic Ayomanor|receiving_yards|11": {
