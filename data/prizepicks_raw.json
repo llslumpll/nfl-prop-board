@@ -11,15 +11,15 @@
     "Nico Collins": {
       "receiving_yards": 70.5
     },
+    "David Montgomery": {
+      "rushing_yards": 52.5,
+      "receiving_yards": 8.5,
+      "receptions": 1.5
+    },
     "Jonathan Taylor": {
       "rushing_yards": 51.5,
       "receiving_yards": 19.5,
       "receptions": 3
-    },
-    "David Montgomery": {
-      "rushing_yards": 51.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
     },
     "Tyler Warren": {
       "receiving_yards": 40.5,
@@ -67,7 +67,7 @@
       "receiving_yards": 0.5
     },
     "Derrick Henry": {
-      "rushing_yards": 68.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 9.5
     },
     "Aaron Rodgers": {
@@ -146,12 +146,12 @@
       "receptions": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 248.5,
+      "passing_yards": 247.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
       "passing_yards": 242.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 17.5
     },
     "Chris Olave": {
       "receiving_yards": 69.5
@@ -225,7 +225,8 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 65.5,
+      "receptions": 5.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
@@ -387,7 +388,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 16.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 12.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -431,7 +432,7 @@
       "receptions": 1.5
     },
     "Bo Nix": {
-      "passing_yards": 214.5,
+      "passing_yards": 212.5,
       "rushing_yards": 10.5
     },
     "Fernando Mendoza": {
@@ -440,14 +441,14 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 67.5,
-      "receiving_yards": 29.5
+      "receiving_yards": 27.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 39.5
+      "receiving_yards": 38.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
@@ -580,7 +581,7 @@
       "rushing_yards": 35.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 92.5,
+      "receiving_yards": 96.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -621,9 +622,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4872,
-    "matched_props": 283,
-    "excluded_goblin_demon_lines": 4088,
+    "total_projections_returned": 4900,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4107,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -662,5 +663,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T05:20:41.978629+00:00"
+  "fetched_at": "2026-11-18T05:40:47.928720+00:00"
 }
