@@ -12,11 +12,11 @@
       "receiving_yards": 70.5
     },
     "David Montgomery": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 53.5,
       "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 52.5,
       "receiving_yards": 19.5,
       "receptions": 3
     },
@@ -51,7 +51,7 @@
     },
     "Emari Demercado": {
       "rushing_yards": 20.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 5.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -67,14 +67,14 @@
     },
     "Derrick Henry": {
       "rushing_yards": 67.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5,
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 188.5,
+      "passing_yards": 182.5,
       "rushing_yards": 31.5
     },
     "Jaylen Warren": {
@@ -86,7 +86,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 50.5
+      "receiving_yards": 48.5
     },
     "DK Metcalf": {
       "receiving_yards": 43.5,
@@ -97,7 +97,7 @@
       "receiving_yards": 9.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 26.5
@@ -240,8 +240,7 @@
       "receiving_yards": 17.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 42.5,
-      "receptions": 3.5
+      "receiving_yards": 44.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 41.5,
@@ -251,7 +250,7 @@
       "receiving_yards": 26.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Tyjae Spears": {
@@ -353,15 +352,15 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 238.5,
+      "passing_yards": 236.5,
       "rushing_yards": 4.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 77.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 19.5
     },
     "Zay Flowers": {
-      "receiving_yards": 64.5,
+      "receiving_yards": 66.5,
       "receptions": 5.5
     },
     "Tetairoa McMillan": {
@@ -373,10 +372,10 @@
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 38.5
+      "receiving_yards": 36.5
     },
     "Mark Andrews": {
-      "receiving_yards": 31.5
+      "receiving_yards": 32.5
     },
     "Darren Waller": {
       "receiving_yards": 29.5,
@@ -406,7 +405,7 @@
       "receptions": 5.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 61.5,
+      "rushing_yards": 59.5,
       "receiving_yards": 6.5
     },
     "Breece Hall": {
@@ -441,7 +440,7 @@
     },
     "Bo Nix": {
       "passing_yards": 214.5,
-      "rushing_yards": 10.5
+      "rushing_yards": 11.5
     },
     "Fernando Mendoza": {
       "passing_yards": 168.5,
@@ -564,8 +563,7 @@
       "receiving_yards": 1.5
     },
     "Keenan Allen": {
-      "receiving_yards": 38.5,
-      "receptions": 3.5
+      "receiving_yards": 37.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
@@ -630,9 +628,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5314,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 4368,
+    "total_projections_returned": 5306,
+    "matched_props": 282,
+    "excluded_goblin_demon_lines": 4363,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -671,5 +669,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T19:41:04.562127+00:00"
+  "fetched_at": "2026-11-18T20:00:44.197626+00:00"
 }
