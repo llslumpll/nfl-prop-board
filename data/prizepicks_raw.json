@@ -22,7 +22,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 40.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -53,7 +53,7 @@
       "rushing_yards": 20.5
     },
     "Deion Burks": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Ashton Dulin": {
       "receiving_yards": 14.5
@@ -159,19 +159,18 @@
       "receptions": 2.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 60.5,
-      "receptions": 5.5
+      "receiving_yards": 60.5
     },
     "Luther Burden III": {
       "receiving_yards": 59.5,
       "receptions": 4.5
     },
     "Colston Loveland": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 50.5,
       "receptions": 4.5
     },
     "Rome Odunze": {
-      "receiving_yards": 45.5
+      "receiving_yards": 47.5
     },
     "Kyle Monangai": {
       "rushing_yards": 45.5,
@@ -266,7 +265,7 @@
       "receiving_yards": 9.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 58.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 12.5
     },
     "Caleb Douglas": {
@@ -279,12 +278,12 @@
       "receiving_yards": 34.5,
       "receptions": 2.5
     },
-    "Khalil Shakir": {
-      "receiving_yards": 31.5
-    },
     "Malik Washington": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 34.5,
       "receptions": 4
+    },
+    "Khalil Shakir": {
+      "receiving_yards": 32.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 27.5,
@@ -543,7 +542,8 @@
     },
     "Christian McCaffrey": {
       "rushing_yards": 49.5,
-      "receiving_yards": 33.5
+      "receiving_yards": 33.5,
+      "receptions": 3.5
     },
     "Jordan Mason": {
       "rushing_yards": 47.5,
@@ -559,7 +559,7 @@
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 31.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Kaelon Black": {
       "rushing_yards": 26.5,
@@ -616,9 +616,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4499,
+    "total_projections_returned": 4510,
     "matched_props": 280,
-    "excluded_goblin_demon_lines": 3742,
+    "excluded_goblin_demon_lines": 3752,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -657,5 +657,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T01:00:45.116093+00:00"
+  "fetched_at": "2026-11-18T01:20:39.764226+00:00"
 }
