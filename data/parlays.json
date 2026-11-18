@@ -619,8 +619,8 @@
  "11": {
   "ml-2": {
    "chance": 0.7832,
-   "decimal": 1.127,
-   "ev": -0.117,
+   "decimal": 1.133,
+   "ev": -0.113,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -629,14 +629,14 @@
      "away": "MIA",
      "call": "HOME",
      "chance": 0.89,
-     "decimal": 1.056,
+     "decimal": 1.062,
      "game": "MIA@BUF",
      "good": false,
      "home": "BUF",
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "ml",
      "label": "BUF to win",
-     "price": -1800,
+     "price": -1600,
      "team": "BUF"
     },
     {
@@ -658,13 +658,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "ml-3": {
    "chance": 0.498,
-   "decimal": 1.607,
-   "ev": -0.2,
+   "decimal": 1.576,
+   "ev": -0.215,
    "family": "ml",
    "good": false,
    "id": "ml-3",
@@ -673,28 +673,28 @@
      "away": "NO",
      "call": "HOME",
      "chance": 0.798,
-     "decimal": 1.149,
+     "decimal": 1.139,
      "game": "NO@CHI",
      "good": false,
      "home": "CHI",
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "ml",
      "label": "CHI to win",
-     "price": -670,
+     "price": -720,
      "team": "CHI"
     },
     {
      "away": "IND",
      "call": "HOME",
      "chance": 0.797,
-     "decimal": 1.13,
+     "decimal": 1.118,
      "game": "IND@HOU",
      "good": false,
      "home": "HOU",
      "kickoff": "2026-11-20T01:15:00+00:00",
      "kind": "ml",
      "label": "HOU to win",
-     "price": -770,
+     "price": -850,
      "team": "HOU"
     },
     {
@@ -716,13 +716,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "ml-4": {
    "chance": 0.2333,
-   "decimal": 3.955,
-   "ev": -0.077,
+   "decimal": 3.793,
+   "ev": -0.115,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -731,28 +731,28 @@
      "away": "LV",
      "call": "HOME",
      "chance": 0.76,
-     "decimal": 1.182,
+     "decimal": 1.169,
      "game": "LV@DEN",
      "good": false,
      "home": "DEN",
      "kickoff": "2026-11-22T21:25:00+00:00",
      "kind": "ml",
      "label": "DEN to win",
-     "price": -550,
+     "price": -590,
      "team": "DEN"
     },
     {
      "away": "JAX",
      "call": "AWAY",
      "chance": 0.686,
-     "decimal": 1.408,
+     "decimal": 1.385,
      "game": "JAX@NYG",
      "good": false,
      "home": "NYG",
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "ml",
      "label": "JAX to win",
-     "price": -245,
+     "price": -260,
      "team": "JAX"
     },
     {
@@ -773,14 +773,14 @@
      "away": "PIT",
      "call": "AWAY",
      "chance": 0.659,
-     "decimal": 1.476,
+     "decimal": 1.455,
      "game": "PIT@PHI",
      "good": false,
      "home": "PHI",
      "kickoff": "2026-11-22T21:25:00+00:00",
      "kind": "ml",
      "label": "PIT to win",
-     "price": -210,
+     "price": -220,
      "team": "PIT"
     }
    ],
@@ -788,7 +788,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "props-2": {
@@ -834,7 +834,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "props-3": {
@@ -895,7 +895,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "props-4": {
@@ -971,7 +971,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "td-1": {
@@ -999,7 +999,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "td-2": {
@@ -1039,7 +1039,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "td-3": {
@@ -1091,7 +1091,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "td-4": {
@@ -1155,7 +1155,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   },
   "value-3": {
@@ -1216,7 +1216,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-18 21:21 UTC",
+   "updated": "2026-11-18 21:39 UTC",
    "week": 11
   }
  },
