@@ -12,7 +12,7 @@
       "receiving_yards": 70.5
     },
     "David Montgomery": {
-      "rushing_yards": 53.5,
+      "rushing_yards": 52.5,
       "receiving_yards": 8.5
     },
     "Jonathan Taylor": {
@@ -89,7 +89,7 @@
       "receiving_yards": 50.5
     },
     "DK Metcalf": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Rico Dowdle": {
@@ -108,7 +108,7 @@
     },
     "Carson Beck": {
       "passing_yards": 171.5,
-      "rushing_yards": 7.5
+      "rushing_yards": 8.5
     },
     "Rashee Rice": {
       "receiving_yards": 52.5,
@@ -153,7 +153,7 @@
       "receiving_yards": 11.5
     },
     "Caleb Williams": {
-      "passing_yards": 249.5,
+      "passing_yards": 247.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
@@ -164,7 +164,7 @@
       "receiving_yards": 68.5
     },
     "D'Andre Swift": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 14.5
     },
     "Luther Burden III": {
@@ -313,7 +313,7 @@
       "receptions": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 246.5,
+      "passing_yards": 249.5,
       "rushing_yards": 0.5
     },
     "Jalon Daniels": {
@@ -332,8 +332,7 @@
       "receiving_yards": 12.5
     },
     "Jameson Williams": {
-      "receiving_yards": 51.5,
-      "receptions": 3.5
+      "receiving_yards": 51.5
     },
     "Sam LaPorta": {
       "receiving_yards": 33.5
@@ -362,7 +361,7 @@
       "receiving_yards": 21.5
     },
     "Zay Flowers": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 64.5,
       "receptions": 5.5
     },
     "Tetairoa McMillan": {
@@ -377,7 +376,7 @@
       "receiving_yards": 38.5
     },
     "Mark Andrews": {
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Darren Waller": {
       "receiving_yards": 29.5,
@@ -476,7 +475,7 @@
       "receptions": 2.5
     },
     "Adam Trautman": {
-      "receiving_yards": 10.5,
+      "receiving_yards": 11.5,
       "receptions": 1.5
     },
     "Trevor Lawrence": {
@@ -631,8 +630,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5315,
-    "matched_props": 285,
+    "total_projections_returned": 5314,
+    "matched_props": 284,
     "excluded_goblin_demon_lines": 4368,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -672,5 +671,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T19:20:46.971347+00:00"
+  "fetched_at": "2026-11-18T19:40:13.959426+00:00"
 }
