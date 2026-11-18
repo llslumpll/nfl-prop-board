@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 261.5,
+      "passing_yards": 257.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -11,14 +11,14 @@
     "Nico Collins": {
       "receiving_yards": 70.5
     },
+    "Jonathan Taylor": {
+      "rushing_yards": 53.5,
+      "receiving_yards": 19.5,
+      "receptions": 3
+    },
     "David Montgomery": {
       "rushing_yards": 53.5,
       "receiving_yards": 8.5
-    },
-    "Jonathan Taylor": {
-      "rushing_yards": 52.5,
-      "receiving_yards": 19.5,
-      "receptions": 3
     },
     "Tyler Warren": {
       "receiving_yards": 39.5,
@@ -42,7 +42,7 @@
       "receiving_yards": 27.5
     },
     "Seth McGowan": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 26.5,
       "receptions": 0.5
     },
     "Anthony Gould": {
@@ -67,7 +67,7 @@
     },
     "Derrick Henry": {
       "rushing_yards": 67.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5,
@@ -79,7 +79,7 @@
     },
     "Jaylen Warren": {
       "rushing_yards": 67.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Saquon Barkley": {
       "rushing_yards": 60.5,
@@ -161,7 +161,7 @@
       "rushing_yards": 17.5
     },
     "Chris Olave": {
-      "receiving_yards": 68.5
+      "receiving_yards": 69.5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
@@ -211,7 +211,7 @@
       "receiving_yards": 8.5
     },
     "Noah Fant": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -357,10 +357,10 @@
     },
     "Chuba Hubbard": {
       "rushing_yards": 77.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 21.5
     },
     "Zay Flowers": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 68.5,
       "receptions": 5.5
     },
     "Tetairoa McMillan": {
@@ -375,10 +375,10 @@
       "receiving_yards": 36.5
     },
     "Mark Andrews": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Darren Waller": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
@@ -397,7 +397,7 @@
       "rushing_yards": 0.5
     },
     "Justin Herbert": {
-      "passing_yards": 199.5,
+      "passing_yards": 203.5,
       "rushing_yards": 22.5
     },
     "Garrett Wilson": {
@@ -405,7 +405,7 @@
       "receptions": 5.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 6.5
     },
     "Breece Hall": {
@@ -451,7 +451,7 @@
       "receiving_yards": 25.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Courtland Sutton": {
@@ -628,9 +628,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5306,
+    "total_projections_returned": 5312,
     "matched_props": 282,
-    "excluded_goblin_demon_lines": 4363,
+    "excluded_goblin_demon_lines": 4368,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -669,5 +669,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T20:00:44.197626+00:00"
+  "fetched_at": "2026-11-18T20:20:39.685985+00:00"
 }
