@@ -67,7 +67,7 @@
       "receiving_yards": 0.5
     },
     "Derrick Henry": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 9.5
     },
     "Aaron Rodgers": {
@@ -622,9 +622,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4900,
+    "total_projections_returned": 4902,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4107,
+    "excluded_goblin_demon_lines": 4106,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -663,5 +663,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-18T05:40:47.928720+00:00"
+  "fetched_at": "2026-11-18T06:00:53.760373+00:00"
 }
