@@ -39674,9 +39674,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Rashee Rice|receiving_yards|11": {
     "player": "Rashee Rice",
@@ -39874,8 +39872,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jahmyr Gibbs|rushing_yards|11": {
@@ -40141,9 +40138,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "CeeDee Lamb|receptions|11": {
     "player": "CeeDee Lamb",
@@ -40168,7 +40163,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Garrett Wilson|receptions|11": {
@@ -41262,6 +41258,57 @@
       "opportunity_signal": true
     },
     "frozen_at": "2026-11-18 13:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Carnell Tate|receiving_yards|11": {
+    "player": "Carnell Tate",
+    "team": "TEN",
+    "opponent": "DAL",
+    "week": 11,
+    "stat": "receiving_yards",
+    "projected": 48.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 64.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -15.9,
+    "model_prob": 0.2431,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-19 17:55 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Joe Milton III|rushing_yards|11": {
+    "player": "Joe Milton III",
+    "team": "PHI",
+    "opponent": "PIT",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 19.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 34.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -15.2,
+    "model_prob": 0.2483,
+    "signals": {
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-19 17:55 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
