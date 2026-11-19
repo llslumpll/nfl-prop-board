@@ -40951,7 +40951,8 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Alvin Kamara|any_td|11": {
@@ -41050,9 +41051,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Amon-Ra St. Brown|any_td|11": {
     "player": "Amon-Ra St. Brown",

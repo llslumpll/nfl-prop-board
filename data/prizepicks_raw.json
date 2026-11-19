@@ -86,7 +86,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 48.5
+      "receiving_yards": 49.5
     },
     "DK Metcalf": {
       "receiving_yards": 42.5,
@@ -170,7 +170,7 @@
       "receiving_yards": 12.5
     },
     "Caleb Williams": {
-      "passing_yards": 248.5,
+      "passing_yards": 249.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
@@ -334,7 +334,7 @@
     },
     "Jalon Daniels": {
       "passing_yards": 169.5,
-      "rushing_yards": 30.5
+      "rushing_yards": 29.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
@@ -562,7 +562,7 @@
       "receiving_yards": 42.5
     },
     "Brenton Strange": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Malachi Fields": {
       "receiving_yards": 28.5
@@ -574,10 +574,10 @@
       "receiving_yards": 15.5,
       "receptions": 1.5
     },
-    "Josh Cameron": {
-      "receiving_yards": 12.5
-    },
     "Brian Thomas Jr.": {
+      "receiving_yards": 11.5
+    },
+    "Josh Cameron": {
       "receiving_yards": 11.5
     },
     "Nate Boerkircher": {
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5852,
+    "total_projections_returned": 5853,
     "matched_props": 311,
-    "excluded_goblin_demon_lines": 4769,
+    "excluded_goblin_demon_lines": 4770,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T08:20:49.276159+00:00"
+  "fetched_at": "2026-11-19T08:40:42.079284+00:00"
 }
