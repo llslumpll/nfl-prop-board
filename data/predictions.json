@@ -35651,10 +35651,10 @@
     "stat": "receptions",
     "projected": 0.0,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -4.5,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Out",
@@ -35664,7 +35664,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 15:22 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-19 15:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Chris Olave|receptions|10": {
     "player": "Chris Olave",
@@ -36115,10 +36117,10 @@
     "stat": "receptions",
     "projected": 4.3,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.8,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -36127,7 +36129,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 15:22 UTC",
+    "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-19 15:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Jonathan Taylor|receptions|10": {
     "player": "Jonathan Taylor",
