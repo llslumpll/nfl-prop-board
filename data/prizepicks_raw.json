@@ -66,7 +66,7 @@
       "receiving_yards": 0.5
     },
     "Derrick Henry": {
-      "rushing_yards": 67.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
@@ -148,7 +148,7 @@
       "receiving_yards": 15.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 1.5
     },
     "Cyrus Allen": {
@@ -549,7 +549,7 @@
       "rushing_yards": 2.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 83.5,
+      "receiving_yards": 82.5,
       "receptions": 7
     },
     "George Kittle": {
@@ -562,16 +562,18 @@
     },
     "Jordan Mason": {
       "rushing_yards": 46.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 4.5
+    },
+    "T.J. Hockenson": {
+      "receiving_yards": 44.5
     },
     "Keenan Allen": {
       "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 31.5,
-      "rushing_yards": 8.5,
-      "receptions": 2.5
+      "receiving_yards": 32.5,
+      "rushing_yards": 8.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 30.5,
@@ -584,6 +586,9 @@
     },
     "Jauan Jennings": {
       "receiving_yards": 18.5
+    },
+    "Kyle Juszczyk": {
+      "receiving_yards": 3.5
     },
     "Joe Burrow": {
       "passing_yards": 302.5,
@@ -635,9 +640,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5435,
-    "matched_props": 289,
-    "excluded_goblin_demon_lines": 4478,
+    "total_projections_returned": 5477,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 4514,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -676,5 +681,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T01:28:37.072880+00:00"
+  "fetched_at": "2026-11-19T01:40:47.249566+00:00"
 }
