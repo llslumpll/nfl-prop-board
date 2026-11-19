@@ -13,7 +13,7 @@
     },
     "David Montgomery": {
       "rushing_yards": 56.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 50.5,
@@ -163,12 +163,12 @@
       "receiving_yards": 13.5,
       "receptions": 1.5
     },
+    "Cyrus Allen": {
+      "receiving_yards": 13.5
+    },
     "Noah Gray": {
       "receiving_yards": 13.5,
       "receptions": 1.5
-    },
-    "Cyrus Allen": {
-      "receiving_yards": 12.5
     },
     "Caleb Williams": {
       "passing_yards": 249.5,
@@ -300,7 +300,7 @@
       "receiving_yards": 50.5
     },
     "DJ Moore": {
-      "receiving_yards": 47.5
+      "receiving_yards": 48.5
     },
     "Malik Washington": {
       "receiving_yards": 34.5,
@@ -387,10 +387,10 @@
     },
     "Chuba Hubbard": {
       "rushing_yards": 70.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Zay Flowers": {
-      "receiving_yards": 67.5
+      "receiving_yards": 68.5
     },
     "Tetairoa McMillan": {
       "receiving_yards": 63.5,
@@ -693,9 +693,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5753,
+    "total_projections_returned": 5768,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 4743,
+    "excluded_goblin_demon_lines": 4744,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -734,5 +734,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T04:40:53.580613+00:00"
+  "fetched_at": "2026-11-19T05:00:47.707921+00:00"
 }
