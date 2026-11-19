@@ -170,7 +170,7 @@
       "receiving_yards": 12.5
     },
     "Caleb Williams": {
-      "passing_yards": 249.5,
+      "passing_yards": 248.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
@@ -210,7 +210,7 @@
       "receiving_yards": 22.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Audric Estime": {
       "rushing_yards": 19.5,
@@ -228,7 +228,7 @@
       "receiving_yards": 7.5
     },
     "Noah Fant": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -698,9 +698,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5885,
+    "total_projections_returned": 5907,
     "matched_props": 312,
-    "excluded_goblin_demon_lines": 4802,
+    "excluded_goblin_demon_lines": 4824,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -739,5 +739,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T09:40:45.307826+00:00"
+  "fetched_at": "2026-11-19T10:01:00.421406+00:00"
 }
