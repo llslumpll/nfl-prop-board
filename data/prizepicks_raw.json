@@ -473,6 +473,9 @@
     "Courtland Sutton": {
       "receiving_yards": 39.5
     },
+    "Tre Tucker": {
+      "receiving_yards": 36.5
+    },
     "Ashton Jeanty": {
       "rushing_yards": 33.5,
       "receiving_yards": 28.5
@@ -483,16 +486,20 @@
     },
     "J.K. Dobbins": {
       "rushing_yards": 22.5,
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Evan Engram": {
       "receiving_yards": 20.5,
       "receptions": 2.5
     },
+    "Jalen Nailor": {
+      "receiving_yards": 19.5
+    },
+    "Jack Bech": {
+      "receiving_yards": 18.5
+    },
     "Adam Trautman": {
-      "receiving_yards": 10.5,
-      "receptions": 1.5
+      "receiving_yards": 6.5
     },
     "Trevor Lawrence": {
       "passing_yards": 242.5,
@@ -658,9 +665,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5576,
-    "matched_props": 298,
-    "excluded_goblin_demon_lines": 4592,
+    "total_projections_returned": 5615,
+    "matched_props": 299,
+    "excluded_goblin_demon_lines": 4630,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -699,5 +706,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T02:40:44.301138+00:00"
+  "fetched_at": "2026-11-19T03:00:45.449578+00:00"
 }

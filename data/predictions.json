@@ -38811,9 +38811,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Cam Skattebo|any_td|11": {
     "player": "Cam Skattebo",
@@ -39153,8 +39151,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Malachi Fields|receiving_yards|11": {
@@ -39696,7 +39693,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -41107,7 +41106,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jahmyr Gibbs|any_td|11": {
     "player": "Jahmyr Gibbs",
