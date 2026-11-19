@@ -9,7 +9,7 @@
       "rushing_yards": 7.5
     },
     "Nico Collins": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 72.5,
       "receptions": 5
     },
     "David Montgomery": {
@@ -39,6 +39,7 @@
     },
     "Seth McGowan": {
       "rushing_yards": 27.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Kayshon Boutte": {
@@ -49,7 +50,7 @@
     },
     "Emari Demercado": {
       "rushing_yards": 21.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Anthony Gould": {
       "receiving_yards": 19.5
@@ -68,7 +69,8 @@
     },
     "Derrick Henry": {
       "rushing_yards": 66.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5,
@@ -202,10 +204,10 @@
       "receiving_yards": 50.5
     },
     "Rome Odunze": {
-      "receiving_yards": 46.5
+      "receiving_yards": 45.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 45.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
@@ -215,15 +217,15 @@
     "Devaughn Vele": {
       "receiving_yards": 23.5
     },
-    "Juwan Johnson": {
-      "receiving_yards": 20.5
-    },
     "Kalif Raymond": {
       "receiving_yards": 20.5
     },
     "Audric Estime": {
       "rushing_yards": 19.5,
       "receiving_yards": 0.5
+    },
+    "Juwan Johnson": {
+      "receiving_yards": 19.5
     },
     "Alvin Kamara": {
       "receiving_yards": 14.5,
@@ -234,7 +236,7 @@
       "receiving_yards": 7.5
     },
     "Sam Roush": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -341,12 +343,8 @@
       "passing_yards": 249.5,
       "rushing_yards": 0.5
     },
-    "Jalon Daniels": {
-      "passing_yards": 169.5,
-      "rushing_yards": 29.5
-    },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 89.5,
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
@@ -363,19 +361,9 @@
       "receiving_yards": 35.5,
       "receptions": 3.5
     },
-    "Chris Godwin Jr.": {
-      "receiving_yards": 28.5
-    },
-    "Tez Johnson": {
-      "receiving_yards": 25.5
-    },
-    "Cade Otton": {
-      "receiving_yards": 23.5
-    },
     "Kenny Gainwell": {
       "rushing_yards": 17.5,
-      "receiving_yards": 9.5,
-      "receptions": 1.5
+      "receiving_yards": 9.5
     },
     "Sione Vaki": {
       "rushing_yards": 15.5,
@@ -383,10 +371,6 @@
     },
     "Isaac TeSlaa": {
       "receiving_yards": 14.5
-    },
-    "Ted Hurst III": {
-      "receptions": 0.5,
-      "receiving_yards": 0.5
     },
     "Bryce Young": {
       "passing_yards": 245.5,
@@ -432,10 +416,10 @@
       "rushing_yards": 12.5
     },
     "Josh Cuevas": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Matt Hibner": {
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -485,7 +469,7 @@
       "receptions": 1.5
     },
     "Bo Nix": {
-      "passing_yards": 214.5,
+      "passing_yards": 213.5,
       "rushing_yards": 11.5
     },
     "Fernando Mendoza": {
@@ -709,9 +693,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6078,
-    "matched_props": 317,
-    "excluded_goblin_demon_lines": 4974,
+    "total_projections_returned": 5947,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4857,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +734,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T16:40:54.327765+00:00"
+  "fetched_at": "2026-11-19T17:00:44.344919+00:00"
 }
