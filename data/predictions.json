@@ -36505,9 +36505,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Foster Moreau|any_td|10": {
     "player": "Foster Moreau",
@@ -38844,7 +38842,8 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Jacory Croskey-Merritt|any_td|11": {
@@ -39970,10 +39969,10 @@
     "stat": "receptions",
     "projected": 5.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -39984,7 +39983,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 21:57 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Jordyn Tyson|receptions|11": {
     "player": "Jordyn Tyson",
@@ -40050,10 +40051,10 @@
     "stat": "receptions",
     "projected": 3.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 4.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -0.9,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -40062,7 +40063,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 21:57 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tony Pollard|receptions|11": {
     "player": "Tony Pollard",
@@ -40072,10 +40075,10 @@
     "stat": "receptions",
     "projected": 2.8,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.3,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -40085,7 +40088,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 21:57 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Jaxon Smith-Njigba|receptions|12": {
     "player": "Jaxon Smith-Njigba",
@@ -40470,10 +40475,10 @@
     "stat": "receptions",
     "projected": 2.5,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 3.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -1.0,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice"
@@ -40482,7 +40487,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 21:57 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tee Higgins|receptions|11": {
     "player": "Tee Higgins",
@@ -40537,10 +40544,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -40551,7 +40558,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-19 21:57 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Trey McBride|receptions|11": {
     "player": "Trey McBride",

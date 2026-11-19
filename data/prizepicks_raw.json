@@ -13,12 +13,12 @@
       "receptions": 5
     },
     "David Montgomery": {
-      "rushing_yards": 57.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 9.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 51.5,
-      "receiving_yards": 21.5
+      "rushing_yards": 52.5,
+      "receiving_yards": 23.5
     },
     "Tank Dell": {
       "receiving_yards": 38.5
@@ -45,12 +45,12 @@
     "Laquon Treadwell": {
       "receiving_yards": 25.5
     },
+    "Anthony Gould": {
+      "receiving_yards": 21.5
+    },
     "Emari Demercado": {
       "rushing_yards": 21.5,
       "receiving_yards": 3.5
-    },
-    "Anthony Gould": {
-      "receiving_yards": 20.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -93,14 +93,15 @@
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 36.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 9.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Germie Bernard": {
-      "receiving_yards": 29.5
+      "receiving_yards": 29.5,
+      "receptions": 3
     },
     "Dontayvion Wicks": {
       "receiving_yards": 25.5,
@@ -282,7 +283,7 @@
     },
     "Tyjae Spears": {
       "rushing_yards": 15.5,
-      "receiving_yards": 14.5
+      "receiving_yards": 13.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 11.5,
@@ -536,7 +537,7 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 245.5,
+      "passing_yards": 242.5,
       "rushing_yards": 10.5
     },
     "J.J. McCarthy": {
@@ -610,7 +611,8 @@
       "receiving_yards": 33.5
     },
     "Jordan Mason": {
-      "rushing_yards": 43.5
+      "rushing_yards": 43.5,
+      "receiving_yards": 4.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 42.5
@@ -619,22 +621,21 @@
       "receiving_yards": 38.5,
       "receptions": 3.5
     },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 31.5,
-      "rushing_yards": 8.5,
-      "receptions": 2.5
-    },
     "Aaron Jones Sr.": {
       "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 30.5,
+      "rushing_yards": 8.5
+    },
     "Kaelon Black": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Tai Felton": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Jauan Jennings": {
       "receiving_yards": 18.5
@@ -706,9 +707,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6314,
-    "matched_props": 314,
-    "excluded_goblin_demon_lines": 5093,
+    "total_projections_returned": 6342,
+    "matched_props": 315,
+    "excluded_goblin_demon_lines": 5118,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -747,5 +748,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T21:40:38.976696+00:00"
+  "fetched_at": "2026-11-19T21:57:29.587775+00:00"
 }
