@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 259.5,
+      "passing_yards": 258.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -29,7 +29,7 @@
       "receptions": 2.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 35.5
+      "receiving_yards": 34.5
     },
     "Dalton Schultz": {
       "receiving_yards": 30.5
@@ -67,8 +67,7 @@
     },
     "Derrick Henry": {
       "rushing_yards": 67.5,
-      "receiving_yards": 7.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5,
@@ -123,11 +122,11 @@
       "rushing_yards": 7.5
     },
     "Rashee Rice": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Trey McBride": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 47.5,
       "receptions": 6
     },
     "Travis Kelce": {
@@ -142,22 +141,21 @@
     },
     "Tyler Allgeier": {
       "rushing_yards": 25.5,
-      "receiving_yards": 7.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
       "receiving_yards": 9.5
     },
-    "Reggie Virgil": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+    "Elijah Higgins": {
+      "receiving_yards": 16.5
     },
     "Simi Fehoko": {
       "receiving_yards": 15.5
     },
-    "Elijah Higgins": {
-      "receiving_yards": 15.5
+    "Reggie Virgil": {
+      "receiving_yards": 14.5,
+      "receptions": 1.5
     },
     "Devin Duvernay": {
       "receiving_yards": 13.5,
@@ -382,7 +380,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 236.5,
+      "passing_yards": 234.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -404,14 +402,14 @@
       "receiving_yards": 34.5
     },
     "Mark Andrews": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Darren Waller": {
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 23.5
+      "receiving_yards": 25.5
     },
     "Tommy Tremble": {
       "receiving_yards": 20.5,
@@ -699,9 +697,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5821,
-    "matched_props": 315,
-    "excluded_goblin_demon_lines": 4743,
+    "total_projections_returned": 5826,
+    "matched_props": 313,
+    "excluded_goblin_demon_lines": 4742,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -740,5 +738,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T06:00:45.507438+00:00"
+  "fetched_at": "2026-11-19T06:20:38.443786+00:00"
 }
