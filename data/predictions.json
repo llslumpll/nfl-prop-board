@@ -38840,8 +38840,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Jacory Croskey-Merritt|any_td|11": {
@@ -41109,7 +41108,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jahmyr Gibbs|any_td|11": {
     "player": "Jahmyr Gibbs",

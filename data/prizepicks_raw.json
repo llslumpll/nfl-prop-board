@@ -228,7 +228,7 @@
       "receiving_yards": 7.5
     },
     "Noah Fant": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -695,9 +695,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5849,
+    "total_projections_returned": 5852,
     "matched_props": 311,
-    "excluded_goblin_demon_lines": 4766,
+    "excluded_goblin_demon_lines": 4769,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -736,5 +736,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T07:20:44.650099+00:00"
+  "fetched_at": "2026-11-19T07:40:43.542353+00:00"
 }
