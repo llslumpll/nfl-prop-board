@@ -41052,9 +41052,7 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Amon-Ra St. Brown|any_td|11": {
     "player": "Amon-Ra St. Brown",
@@ -41109,7 +41107,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jahmyr Gibbs|any_td|11": {
     "player": "Jahmyr Gibbs",

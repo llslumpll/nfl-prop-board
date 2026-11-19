@@ -29,7 +29,7 @@
       "receptions": 2.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 34.5
+      "receiving_yards": 35.5
     },
     "Dalton Schultz": {
       "receiving_yards": 30.5
@@ -43,7 +43,7 @@
       "receptions": 2.5
     },
     "Kayshon Boutte": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Anthony Gould": {
       "receiving_yards": 23.5,
@@ -120,14 +120,14 @@
     },
     "Carson Beck": {
       "passing_yards": 171.5,
-      "rushing_yards": 8.5
+      "rushing_yards": 7.5
     },
     "Rashee Rice": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Trey McBride": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 47.5,
       "receptions": 6
     },
     "Travis Kelce": {
@@ -142,22 +142,21 @@
     },
     "Tyler Allgeier": {
       "rushing_yards": 25.5,
-      "receiving_yards": 7.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
       "receiving_yards": 9.5
     },
-    "Reggie Virgil": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+    "Elijah Higgins": {
+      "receiving_yards": 16.5
     },
     "Simi Fehoko": {
       "receiving_yards": 15.5
     },
-    "Elijah Higgins": {
-      "receiving_yards": 15.5
+    "Reggie Virgil": {
+      "receiving_yards": 14.5,
+      "receptions": 1.5
     },
     "Devin Duvernay": {
       "receiving_yards": 13.5,
@@ -268,7 +267,7 @@
       "receiving_yards": 26.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 2.5
     },
     "Tyjae Spears": {
@@ -669,7 +668,7 @@
       "receptions": 4.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 40.5
+      "receiving_yards": 41.5
     },
     "Antonio Williams": {
       "receiving_yards": 35.5,
@@ -693,9 +692,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5768,
-    "matched_props": 313,
-    "excluded_goblin_demon_lines": 4744,
+    "total_projections_returned": 5779,
+    "matched_props": 312,
+    "excluded_goblin_demon_lines": 4743,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -734,5 +733,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T05:00:47.707921+00:00"
+  "fetched_at": "2026-11-19T05:20:45.382353+00:00"
 }
