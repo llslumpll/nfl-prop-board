@@ -46,7 +46,7 @@
       "receiving_yards": 26.5
     },
     "Anthony Gould": {
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Emari Demercado": {
       "rushing_yards": 20.5,
@@ -65,7 +65,7 @@
       "receiving_yards": 1.5
     },
     "Derrick Henry": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -182,7 +182,7 @@
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
-      "passing_yards": 240.5,
+      "passing_yards": 239.5,
       "rushing_yards": 17.5
     },
     "Chris Olave": {
@@ -316,7 +316,8 @@
       "receptions": 4
     },
     "Keon Coleman": {
-      "receiving_yards": 33.5
+      "receiving_yards": 33.5,
+      "receptions": 2.5
     },
     "Khalil Shakir": {
       "receiving_yards": 32.5
@@ -326,11 +327,10 @@
       "receptions": 2.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
+      "receiving_yards": 23.5
     },
     "Dawson Knox": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Ty Johnson": {
       "receiving_yards": 13.5,
@@ -386,7 +386,7 @@
     },
     "Chuba Hubbard": {
       "rushing_yards": 70.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Zay Flowers": {
       "receiving_yards": 68.5
@@ -396,7 +396,7 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
@@ -418,10 +418,10 @@
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Josh Cuevas": {
-      "receiving_yards": 13.5
+      "receiving_yards": 10.5
     },
     "Matt Hibner": {
       "receiving_yards": 2.5
@@ -642,7 +642,7 @@
       "receiving_yards": 21.5
     },
     "Jauan Jennings": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 3.5
@@ -653,14 +653,14 @@
     },
     "Jayden Daniels": {
       "passing_yards": 227.5,
-      "rushing_yards": 36.5
+      "rushing_yards": 35.5
     },
     "Ja'Marr Chase": {
       "receiving_yards": 93.5,
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 73.5,
       "receptions": 5.5
     },
     "Stefon Diggs": {
@@ -696,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6292,
+    "total_projections_returned": 6304,
     "matched_props": 310,
-    "excluded_goblin_demon_lines": 5074,
+    "excluded_goblin_demon_lines": 5088,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -737,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T19:20:38.606729+00:00"
+  "fetched_at": "2026-11-19T19:40:40.226998+00:00"
 }
