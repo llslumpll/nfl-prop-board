@@ -26,8 +26,7 @@
       "receptions": 5
     },
     "Tank Dell": {
-      "receiving_yards": 37.5,
-      "receptions": 2.5
+      "receiving_yards": 37.5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 36.5,
@@ -47,12 +46,12 @@
     "Kayshon Boutte": {
       "receiving_yards": 26.5
     },
-    "Anthony Gould": {
-      "receiving_yards": 21.5
-    },
     "Emari Demercado": {
       "rushing_yards": 21.5,
       "receiving_yards": 3.5
+    },
+    "Anthony Gould": {
+      "receiving_yards": 20.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -159,15 +158,15 @@
     "Elijah Higgins": {
       "receiving_yards": 16.5
     },
-    "Reggie Virgil": {
-      "receiving_yards": 14.5,
-      "receptions": 1.5
-    },
     "Simi Fehoko": {
       "receiving_yards": 14.5
     },
     "Noah Gray": {
       "receiving_yards": 14.5,
+      "receptions": 1.5
+    },
+    "Reggie Virgil": {
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Devin Duvernay": {
@@ -701,9 +700,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6244,
-    "matched_props": 315,
-    "excluded_goblin_demon_lines": 5060,
+    "total_projections_returned": 6241,
+    "matched_props": 314,
+    "excluded_goblin_demon_lines": 5057,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -742,5 +741,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T18:37:19.798237+00:00"
+  "fetched_at": "2026-11-19T18:40:39.153313+00:00"
 }
