@@ -16,7 +16,7 @@
       "receiving_yards": 10.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 50.5,
+      "rushing_yards": 51.5,
       "receiving_yards": 20.5,
       "receptions": 3
     },
@@ -39,7 +39,7 @@
       "receptions": 0.5
     },
     "Laquon Treadwell": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Kayshon Boutte": {
@@ -141,7 +141,8 @@
     },
     "Tyler Allgeier": {
       "rushing_yards": 25.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
@@ -169,7 +170,7 @@
       "receptions": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 249.5,
+      "passing_yards": 248.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
@@ -249,7 +250,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 64.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
@@ -291,8 +292,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 56.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
+      "receiving_yards": 13.5
     },
     "Caleb Douglas": {
       "receiving_yards": 50.5
@@ -355,10 +355,10 @@
       "receptions": 3.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Tez Johnson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Cade Otton": {
       "receiving_yards": 24.5
@@ -433,13 +433,13 @@
       "passing_yards": 203.5,
       "rushing_yards": 22.5
     },
+    "Garrett Wilson": {
+      "receiving_yards": 62.5,
+      "receptions": 5.5
+    },
     "Omarion Hampton": {
       "rushing_yards": 62.5,
       "receiving_yards": 7.5
-    },
-    "Garrett Wilson": {
-      "receiving_yards": 61.5,
-      "receptions": 5.5
     },
     "Breece Hall": {
       "rushing_yards": 46.5,
@@ -449,7 +449,7 @@
       "receiving_yards": 44.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 39.5
+      "receiving_yards": 40.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -464,7 +464,7 @@
     },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
@@ -503,7 +503,7 @@
       "receptions": 0.5
     },
     "Pat Bryant": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 22.5,
@@ -519,11 +519,11 @@
     "Jack Bech": {
       "receiving_yards": 18.5
     },
-    "Troy Franklin": {
-      "receiving_yards": 8.5
-    },
     "Marvin Mims Jr.": {
       "receiving_yards": 8.5
+    },
+    "Troy Franklin": {
+      "receiving_yards": 7.5
     },
     "Adam Trautman": {
       "receiving_yards": 5.5
@@ -621,13 +621,12 @@
       "receiving_yards": 42.5
     },
     "Keenan Allen": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 31.5,
-      "rushing_yards": 8.5,
-      "receptions": 2.5
+      "rushing_yards": 8.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 30.5,
@@ -697,9 +696,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5852,
-    "matched_props": 313,
-    "excluded_goblin_demon_lines": 4767,
+    "total_projections_returned": 5857,
+    "matched_props": 312,
+    "excluded_goblin_demon_lines": 4771,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -738,5 +737,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T06:40:43.638078+00:00"
+  "fetched_at": "2026-11-19T07:00:45.395359+00:00"
 }
