@@ -21,7 +21,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 39.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -38,12 +38,12 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
+    "Kayshon Boutte": {
+      "receiving_yards": 27.5
+    },
     "Seth McGowan": {
       "rushing_yards": 26.5,
       "receptions": 0.5
-    },
-    "Kayshon Boutte": {
-      "receiving_yards": 26.5
     },
     "Anthony Gould": {
       "receiving_yards": 23.5,
@@ -66,8 +66,8 @@
       "receiving_yards": 0.5
     },
     "Derrick Henry": {
-      "rushing_yards": 68.5,
-      "receiving_yards": 8.5
+      "rushing_yards": 67.5,
+      "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5,
@@ -134,7 +134,7 @@
       "receptions": 3.5
     },
     "Josh Downs": {
-      "receiving_yards": 35.5
+      "receiving_yards": 34.5
     },
     "Xavier Worthy": {
       "receiving_yards": 25.5
@@ -174,7 +174,7 @@
       "rushing_yards": 17.5
     },
     "Chris Olave": {
-      "receiving_yards": 69.5
+      "receiving_yards": 68.5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
@@ -245,7 +245,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 64.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
@@ -363,14 +363,14 @@
     },
     "Jacoby Brissett": {
       "passing_yards": 236.5,
-      "rushing_yards": 4.5
+      "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
       "rushing_yards": 70.5,
       "receiving_yards": 21.5
     },
     "Zay Flowers": {
-      "receiving_yards": 64.5,
+      "receiving_yards": 68.5,
       "receptions": 5.5
     },
     "Tetairoa McMillan": {
@@ -399,8 +399,14 @@
       "receptions": 2.5
     },
     "Justice Hill": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "rushing_yards": 12.5
+    },
+    "Josh Cuevas": {
+      "receiving_yards": 10.5
+    },
+    "Matt Hibner": {
+      "receiving_yards": 2.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -414,12 +420,34 @@
       "rushing_yards": 62.5,
       "receiving_yards": 7.5
     },
+    "Garrett Wilson": {
+      "receiving_yards": 61.5,
+      "receptions": 5.5
+    },
+    "Breece Hall": {
+      "rushing_yards": 46.5,
+      "receiving_yards": 17.5
+    },
     "Tre' Harris": {
       "receiving_yards": 44.5
     },
+    "Adonai Mitchell": {
+      "receiving_yards": 39.5
+    },
+    "Braelon Allen": {
+      "rushing_yards": 33.5,
+      "receiving_yards": 7.5,
+      "receptions": 1.5
+    },
+    "Mason Taylor": {
+      "receiving_yards": 18.5
+    },
+    "Kenyon Sadiq": {
+      "receiving_yards": 16.5
+    },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
@@ -630,9 +658,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5445,
-    "matched_props": 286,
-    "excluded_goblin_demon_lines": 4485,
+    "total_projections_returned": 5576,
+    "matched_props": 298,
+    "excluded_goblin_demon_lines": 4592,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -644,6 +672,9 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "first fg distance (combo)",
+      "halves with 25+ receiving yards",
+      "halves with 25+ rush yards",
+      "halves with 40+ receiving yards",
       "int",
       "kicking points",
       "kicking points (combo)",
@@ -660,10 +691,7 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
-      "punt touchbacks (combo)",
-      "punts",
-      "punts (combo)",
-      "punts inside 20"
+      "punt touchbacks (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -671,5 +699,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T02:20:43.914188+00:00"
+  "fetched_at": "2026-11-19T02:40:44.301138+00:00"
 }
