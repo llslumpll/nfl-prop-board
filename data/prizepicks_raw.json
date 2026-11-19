@@ -23,7 +23,7 @@
       "receptions": 3
     },
     "Tyler Warren": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 38.5,
       "receptions": 5
     },
     "Tank Dell": {
@@ -190,7 +190,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 57.5
+      "receiving_yards": 54.5
     },
     "Colston Loveland": {
       "receiving_yards": 50.5
@@ -210,7 +210,7 @@
       "receiving_yards": 23.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Audric Estime": {
       "rushing_yards": 19.5,
@@ -430,12 +430,12 @@
       "receiving_yards": 1.5
     },
     "Geno Smith": {
-      "passing_yards": 217.5,
+      "passing_yards": 214.5,
       "rushing_yards": 3.5
     },
     "Justin Herbert": {
       "passing_yards": 203.5,
-      "rushing_yards": 22.5
+      "rushing_yards": 24.5
     },
     "Garrett Wilson": {
       "receiving_yards": 62.5,
@@ -646,7 +646,7 @@
       "receiving_yards": 21.5
     },
     "Jauan Jennings": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 3.5
@@ -701,9 +701,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5977,
+    "total_projections_returned": 5976,
     "matched_props": 315,
-    "excluded_goblin_demon_lines": 4890,
+    "excluded_goblin_demon_lines": 4891,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -742,5 +742,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T14:00:46.450788+00:00"
+  "fetched_at": "2026-11-19T14:20:46.343157+00:00"
 }
