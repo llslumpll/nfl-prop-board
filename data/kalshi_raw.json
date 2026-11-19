@@ -3316,22 +3316,6 @@
     },
     {
       "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 6.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU7",
-      "yes_bid": 0.64,
-      "yes_ask": 0.71,
-      "yes_bid_cents": 64,
-      "yes_ask_cents": 71,
-      "price": 0.68,
-      "decimal_odds": 1.47,
-      "implied_pct": 68.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 6.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
       "market_title": "Houston wins by over 5.5 points",
       "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU6",
       "yes_bid": 0.63,
@@ -3489,6 +3473,22 @@
       "close_time": "2026-11-24T21:25:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 40.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Houston wins by over 6.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU7",
+      "yes_bid": 0.6,
+      "yes_ask": 0.71,
+      "yes_bid_cents": 60,
+      "yes_ask_cents": 71,
+      "price": 0.66,
+      "decimal_odds": 1.52,
+      "implied_pct": 66.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 6.5
     },
     {
       "event_title": "Cincinnati vs Washington: Spread",
@@ -4451,22 +4451,6 @@
       "floor_strike": 41.5
     },
     {
-      "event_title": "Miami vs Buffalo: Total Points",
-      "market_title": "Over 43.5 points",
-      "ticker": "KXNFLTOTAL-26NOV22MIABUF-44",
-      "yes_bid": 0.54,
-      "yes_ask": 0.58,
-      "yes_bid_cents": 54,
-      "yes_ask_cents": 58,
-      "price": 0.56,
-      "decimal_odds": 1.79,
-      "implied_pct": 56.0,
-      "volume": 0,
-      "close_time": "2026-11-24T18:00:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 43.5
-    },
-    {
       "event_title": "Tennessee vs Dallas: Total Points",
       "market_title": "Over 53.5 points",
       "ticker": "KXNFLTOTAL-26NOV22TENDAL-54",
@@ -4967,9 +4951,9 @@
       "market_title": "Over 43.5 points",
       "ticker": "KXNFLTOTAL-26NOV19INDHOU-44",
       "yes_bid": 0.52,
-      "yes_ask": 0.53,
+      "yes_ask": 0.54,
       "yes_bid_cents": 52,
-      "yes_ask_cents": 53,
+      "yes_ask_cents": 54,
       "price": 0.53,
       "decimal_odds": 1.89,
       "implied_pct": 53.0,
@@ -5281,6 +5265,22 @@
       "close_time": "2026-11-24T18:00:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 4.5
+    },
+    {
+      "event_title": "Miami vs Buffalo: Total Points",
+      "market_title": "Over 43.5 points",
+      "ticker": "KXNFLTOTAL-26NOV22MIABUF-44",
+      "yes_bid": 0.35,
+      "yes_ask": 0.64,
+      "yes_bid_cents": 35,
+      "yes_ask_cents": 64,
+      "price": 0.49,
+      "decimal_odds": 2.04,
+      "implied_pct": 49.0,
+      "volume": 0,
+      "close_time": "2026-11-24T18:00:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 43.5
     },
     {
       "event_title": "Minnesota vs San Francisco: Total Points",
@@ -6563,22 +6563,6 @@
       "floor_strike": 9.5
     },
     {
-      "event_title": "Indianapolis vs Houston: Total Points",
-      "market_title": "Over 47.5 points",
-      "ticker": "KXNFLTOTAL-26NOV19INDHOU-48",
-      "yes_bid": 0.38,
-      "yes_ask": 0.4,
-      "yes_bid_cents": 38,
-      "yes_ask_cents": 40,
-      "price": 0.39,
-      "decimal_odds": 2.56,
-      "implied_pct": 39.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 47.5
-    },
-    {
       "event_title": "Baltimore vs Carolina: Total Points",
       "market_title": "Over 45.5 points",
       "ticker": "KXNFLTOTAL-26NOV22BALCAR-46",
@@ -6947,6 +6931,22 @@
       "floor_strike": 2.5
     },
     {
+      "event_title": "Indianapolis vs Houston: Total Points",
+      "market_title": "Over 47.5 points",
+      "ticker": "KXNFLTOTAL-26NOV19INDHOU-48",
+      "yes_bid": 0.3,
+      "yes_ask": 0.4,
+      "yes_bid_cents": 30,
+      "yes_ask_cents": 40,
+      "price": 0.35,
+      "decimal_odds": 2.86,
+      "implied_pct": 35.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 47.5
+    },
+    {
       "event_title": "Arizona vs Kansas City: Total Points",
       "market_title": "Over 44.5 points",
       "ticker": "KXNFLTOTAL-26NOV22ARIKC-45",
@@ -6961,22 +6961,6 @@
       "close_time": "2026-11-24T18:00:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 44.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 17.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU18",
-      "yes_bid": 0.33,
-      "yes_ask": 0.35,
-      "yes_bid_cents": 33,
-      "yes_ask_cents": 35,
-      "price": 0.34,
-      "decimal_odds": 2.94,
-      "implied_pct": 34.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 17.5
     },
     {
       "event_title": "New Orleans vs Chicago: Spread",
@@ -7137,6 +7121,22 @@
       "close_time": "2026-12-02T01:20:00Z",
       "series_ticker": "KXNFLGAME",
       "floor_strike": null
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Houston wins by over 17.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU18",
+      "yes_bid": 0.31,
+      "yes_ask": 0.35,
+      "yes_bid_cents": 31,
+      "yes_ask_cents": 35,
+      "price": 0.33,
+      "decimal_odds": 3.03,
+      "implied_pct": 33.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 17.5
     },
     {
       "event_title": "Baltimore vs Carolina: Spread",
@@ -8307,6 +8307,22 @@
       "floor_strike": null
     },
     {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Houston wins by over 23.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU24",
+      "yes_bid": 0.17,
+      "yes_ask": 0.29,
+      "yes_bid_cents": 17,
+      "yes_ask_cents": 29,
+      "price": 0.23,
+      "decimal_odds": 4.35,
+      "implied_pct": 23.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 23.5
+    },
+    {
       "event_title": "Pittsburgh vs Philadelphia: Spread",
       "market_title": "Philadelphia wins by over 3.5 points",
       "ticker": "KXNFLSPREAD-26NOV22PITPHI-PHI4",
@@ -8609,22 +8625,6 @@
       "close_time": "2026-11-25T01:20:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 54.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 23.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU24",
-      "yes_bid": 0.2,
-      "yes_ask": 0.21,
-      "yes_bid_cents": 20,
-      "yes_ask_cents": 21,
-      "price": 0.21,
-      "decimal_odds": 4.76,
-      "implied_pct": 21.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 23.5
     },
     {
       "event_title": "Baltimore vs Carolina: Spread",
@@ -9025,6 +9025,22 @@
       "close_time": "2026-11-25T01:20:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 6.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Total Points",
+      "market_title": "Over 56.5 points",
+      "ticker": "KXNFLTOTAL-26NOV19INDHOU-57",
+      "yes_bid": 0.08,
+      "yes_ask": 0.29,
+      "yes_bid_cents": 8,
+      "yes_ask_cents": 29,
+      "price": 0.18,
+      "decimal_odds": 5.56,
+      "implied_pct": 18.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 56.5
     },
     {
       "event_title": "Baltimore vs Carolina: Total Points",
@@ -10035,22 +10051,6 @@
       "floor_strike": 6.5
     },
     {
-      "event_title": "Indianapolis vs Houston: Total Points",
-      "market_title": "Over 56.5 points",
-      "ticker": "KXNFLTOTAL-26NOV19INDHOU-57",
-      "yes_bid": 0.08,
-      "yes_ask": 0.21,
-      "yes_bid_cents": 8,
-      "yes_ask_cents": 21,
-      "price": 0.14,
-      "decimal_odds": 7.14,
-      "implied_pct": 14.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 56.5
-    },
-    {
       "event_title": "Baltimore vs Carolina: Total Points",
       "market_title": "Over 65.5 points",
       "ticker": "KXNFLTOTAL-26NOV22BALCAR-66",
@@ -10321,22 +10321,6 @@
       "close_time": "2026-11-24T21:25:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 61.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 27.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU28",
-      "yes_bid": 0.11,
-      "yes_ask": 0.13,
-      "yes_bid_cents": 11,
-      "yes_ask_cents": 13,
-      "price": 0.12,
-      "decimal_odds": 8.33,
-      "implied_pct": 12.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 27.5
     },
     {
       "event_title": "Baltimore vs Carolina: Spread",
@@ -10689,6 +10673,22 @@
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 3.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Houston wins by over 30.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU31",
+      "yes_bid": 0.05,
+      "yes_ask": 0.16,
+      "yes_bid_cents": 5,
+      "yes_ask_cents": 16,
+      "price": 0.11,
+      "decimal_odds": 9.09,
+      "implied_pct": 11.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 30.5
     },
     {
       "event_title": "New Orleans vs Chicago: Spread",
@@ -11380,19 +11380,19 @@
     },
     {
       "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Houston wins by over 30.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU31",
-      "yes_bid": 0.07,
-      "yes_ask": 0.09,
-      "yes_bid_cents": 7,
-      "yes_ask_cents": 9,
+      "market_title": "Houston wins by over 27.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-HOU28",
+      "yes_bid": 0.03,
+      "yes_ask": 0.13,
+      "yes_bid_cents": 3,
+      "yes_ask_cents": 13,
       "price": 0.08,
       "decimal_odds": 12.5,
       "implied_pct": 8.0,
       "volume": 0,
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 30.5
+      "floor_strike": 27.5
     },
     {
       "event_title": "Miami vs Buffalo: Spread",
@@ -11859,22 +11859,6 @@
       "floor_strike": 27.5
     },
     {
-      "event_title": "Indianapolis vs Houston: Total Points",
-      "market_title": "Over 62.5 points",
-      "ticker": "KXNFLTOTAL-26NOV19INDHOU-63",
-      "yes_bid": 0.04,
-      "yes_ask": 0.1,
-      "yes_bid_cents": 4,
-      "yes_ask_cents": 10,
-      "price": 0.07,
-      "decimal_odds": 14.29,
-      "implied_pct": 7.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLTOTAL",
-      "floor_strike": 62.5
-    },
-    {
       "event_title": "Indianapolis vs Houston: Spread",
       "market_title": "Indianapolis wins by over 7.5 points",
       "ticker": "KXNFLSPREAD-26NOV19INDHOU-IND8",
@@ -11889,22 +11873,6 @@
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLSPREAD",
       "floor_strike": 7.5
-    },
-    {
-      "event_title": "Indianapolis vs Houston: Spread",
-      "market_title": "Indianapolis wins by over 6.5 points",
-      "ticker": "KXNFLSPREAD-26NOV19INDHOU-IND7",
-      "yes_bid": 0.04,
-      "yes_ask": 0.07,
-      "yes_bid_cents": 4,
-      "yes_ask_cents": 7,
-      "price": 0.06,
-      "decimal_odds": 16.67,
-      "implied_pct": 6.0,
-      "volume": 0,
-      "close_time": "2026-11-22T01:15:00Z",
-      "series_ticker": "KXNFLSPREAD",
-      "floor_strike": 6.5
     },
     {
       "event_title": "Arizona vs Kansas City: Spread",
@@ -12017,6 +11985,38 @@
       "close_time": "2026-11-22T01:15:00Z",
       "series_ticker": "KXNFLTOTAL",
       "floor_strike": 65.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Total Points",
+      "market_title": "Over 62.5 points",
+      "ticker": "KXNFLTOTAL-26NOV19INDHOU-63",
+      "yes_bid": 0.01,
+      "yes_ask": 0.1,
+      "yes_bid_cents": 1,
+      "yes_ask_cents": 10,
+      "price": 0.06,
+      "decimal_odds": 16.67,
+      "implied_pct": 6.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLTOTAL",
+      "floor_strike": 62.5
+    },
+    {
+      "event_title": "Indianapolis vs Houston: Spread",
+      "market_title": "Indianapolis wins by over 6.5 points",
+      "ticker": "KXNFLSPREAD-26NOV19INDHOU-IND7",
+      "yes_bid": 0.02,
+      "yes_ask": 0.07,
+      "yes_bid_cents": 2,
+      "yes_ask_cents": 7,
+      "price": 0.05,
+      "decimal_odds": 20.0,
+      "implied_pct": 5.0,
+      "volume": 0,
+      "close_time": "2026-11-22T01:15:00Z",
+      "series_ticker": "KXNFLSPREAD",
+      "floor_strike": 6.5
     },
     {
       "event_title": "Arizona vs Kansas City: Spread",
