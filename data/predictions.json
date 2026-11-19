@@ -39720,7 +39720,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Justin Jefferson|receptions|11": {
     "player": "Justin Jefferson",
@@ -40130,8 +40133,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "CeeDee Lamb|receptions|11": {
@@ -40157,8 +40159,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Garrett Wilson|receptions|11": {
