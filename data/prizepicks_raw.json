@@ -1,7 +1,7 @@
 {
   "props": {
     "C.J. Stroud": {
-      "passing_yards": 259.5,
+      "passing_yards": 257.5,
       "rushing_yards": 10.5
     },
     "Daniel Jones": {
@@ -69,7 +69,7 @@
       "receiving_yards": 1.5
     },
     "Derrick Henry": {
-      "rushing_yards": 67.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -77,7 +77,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 185.5,
+      "passing_yards": 187.5,
       "rushing_yards": 34.5
     },
     "Jaylen Warren": {
@@ -89,7 +89,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "DK Metcalf": {
@@ -101,15 +101,11 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 35.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Dallas Goedert": {
       "receiving_yards": 28.5,
       "receptions": 3.5
-    },
-    "Pat Freiermuth": {
-      "receiving_yards": 25.5,
-      "receptions": 2.5
     },
     "Dontayvion Wicks": {
       "receiving_yards": 25.5,
@@ -117,6 +113,10 @@
     },
     "Makai Lemon": {
       "receiving_yards": 24.5
+    },
+    "Pat Freiermuth": {
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Darnell Washington": {
       "receiving_yards": 20.5
@@ -164,7 +164,7 @@
       "receiving_yards": 15.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Devin Duvernay": {
@@ -362,7 +362,7 @@
       "receiving_yards": 50.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Chris Godwin Jr.": {
@@ -572,7 +572,7 @@
       "receiving_yards": 54.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 53.5,
       "receiving_yards": 13.5
     },
     "Jakobi Meyers": {
@@ -597,12 +597,12 @@
     "Josh Cameron": {
       "receiving_yards": 11.5
     },
+    "Devin Singletary": {
+      "rushing_yards": 11.5,
+      "receiving_yards": 2.5
+    },
     "Nate Boerkircher": {
       "receiving_yards": 10.5
-    },
-    "Devin Singletary": {
-      "rushing_yards": 10.5,
-      "receiving_yards": 2.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -711,9 +711,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6028,
+    "total_projections_returned": 6032,
     "matched_props": 319,
-    "excluded_goblin_demon_lines": 4932,
+    "excluded_goblin_demon_lines": 4937,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -752,5 +752,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T15:20:41.614891+00:00"
+  "fetched_at": "2026-11-19T15:40:40.683855+00:00"
 }
