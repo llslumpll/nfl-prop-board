@@ -36501,7 +36501,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Foster Moreau|any_td|10": {
     "player": "Foster Moreau",
@@ -38838,8 +38840,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Jacory Croskey-Merritt|any_td|11": {
@@ -39587,8 +39588,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "CeeDee Lamb|receiving_yards|11": {
@@ -40951,8 +40951,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Alvin Kamara|any_td|11": {
@@ -41051,7 +41050,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Amon-Ra St. Brown|any_td|11": {
     "player": "Amon-Ra St. Brown",
@@ -41206,7 +41207,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jared Goff|passing_yards|11": {
     "player": "Jared Goff",
