@@ -39,11 +39,11 @@
       "receiving_yards": 0.5,
       "receptions": 0.5
     },
+    "Laquon Treadwell": {
+      "receiving_yards": 27.5
+    },
     "Kayshon Boutte": {
       "receiving_yards": 26.5
-    },
-    "Laquon Treadwell": {
-      "receiving_yards": 25.5
     },
     "Anthony Gould": {
       "receiving_yards": 21.5
@@ -537,7 +537,7 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 242.5,
+      "passing_yards": 245.5,
       "rushing_yards": 10.5
     },
     "J.J. McCarthy": {
@@ -707,9 +707,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6342,
+    "total_projections_returned": 6345,
     "matched_props": 315,
-    "excluded_goblin_demon_lines": 5118,
+    "excluded_goblin_demon_lines": 5121,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -748,5 +748,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T21:57:29.587775+00:00"
+  "fetched_at": "2026-11-19T22:00:46.901451+00:00"
 }
