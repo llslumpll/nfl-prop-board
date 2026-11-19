@@ -38844,8 +38844,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Jacory Croskey-Merritt|any_td|11": {
@@ -39840,10 +39839,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Christian McCaffrey|rushing_yards|11": {
     "player": "Christian McCaffrey",
@@ -39868,7 +39864,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Jahmyr Gibbs|rushing_yards|11": {
@@ -41051,7 +41048,9 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Amon-Ra St. Brown|any_td|11": {
     "player": "Amon-Ra St. Brown",
@@ -41384,6 +41383,33 @@
     "best5_tags": [
       "best_value",
       "highest_confidence"
+    ]
+  },
+  "Kyle Monangai|rushing_yards|11": {
+    "player": "Kyle Monangai",
+    "team": "CHI",
+    "opponent": "NO",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 62.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 44.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 18.3,
+    "model_prob": 0.665,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-19 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
     ]
   }
 }
