@@ -321,7 +321,7 @@
       "receiving_yards": 29.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 76.5,
       "receptions": 6.5
     },
     "Bucky Irving": {
@@ -340,8 +340,7 @@
       "receiving_yards": 10.5
     },
     "Sione Vaki": {
-      "rushing_yards": 15.5,
-      "receiving_yards": 0.5
+      "rushing_yards": 15.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 13.5
@@ -355,7 +354,7 @@
       "rushing_yards": 4.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 71.5,
       "receiving_yards": 21.5
     },
     "Zay Flowers": {
@@ -400,26 +399,22 @@
       "rushing_yards": 22.5
     },
     "Garrett Wilson": {
-      "receiving_yards": 63.5,
+      "receiving_yards": 65.5,
       "receptions": 5.5
     },
     "Omarion Hampton": {
       "rushing_yards": 62.5,
       "receiving_yards": 7.5
     },
-    "Breece Hall": {
-      "rushing_yards": 48.5,
-      "receiving_yards": 19.5
-    },
     "Tre' Harris": {
-      "receiving_yards": 47.5
+      "receiving_yards": 45.5
     },
     "Adonai Mitchell": {
       "receiving_yards": 40.5
     },
     "Braelon Allen": {
-      "rushing_yards": 35.5,
-      "receiving_yards": 8.5
+      "rushing_yards": 34.5,
+      "receiving_yards": 9.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 27.5
@@ -427,13 +422,16 @@
     "Mason Taylor": {
       "receiving_yards": 19.5
     },
+    "Breece Hall": {
+      "receiving_yards": 19.5
+    },
+    "Kenyon Sadiq": {
+      "receiving_yards": 13.5,
+      "receptions": 1.5
+    },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
       "receiving_yards": 7.5
-    },
-    "Kenyon Sadiq": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
@@ -481,7 +479,7 @@
     },
     "Trevor Lawrence": {
       "passing_yards": 242.5,
-      "rushing_yards": 8.5
+      "rushing_yards": 9.5
     },
     "J.J. McCarthy": {
       "passing_yards": 217.5,
@@ -632,9 +630,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5359,
-    "matched_props": 288,
-    "excluded_goblin_demon_lines": 4408,
+    "total_projections_returned": 5369,
+    "matched_props": 286,
+    "excluded_goblin_demon_lines": 4420,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -673,5 +671,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T00:00:49.231805+00:00"
+  "fetched_at": "2026-11-19T00:20:38.464953+00:00"
 }
