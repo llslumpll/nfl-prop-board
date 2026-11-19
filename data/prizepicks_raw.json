@@ -19,7 +19,7 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 51.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Tyler Warren": {
       "receiving_yards": 37.5,
@@ -355,7 +355,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 68.5,
-      "receiving_yards": 13.5,
+      "receiving_yards": 14.5,
       "receptions": 2.5
     },
     "Jameson Williams": {
@@ -700,9 +700,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6087,
+    "total_projections_returned": 6102,
     "matched_props": 314,
-    "excluded_goblin_demon_lines": 4989,
+    "excluded_goblin_demon_lines": 5004,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -741,5 +741,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-19T17:55:02.506962+00:00"
+  "fetched_at": "2026-11-19T18:00:47.656310+00:00"
 }
