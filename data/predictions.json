@@ -39597,7 +39597,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "CeeDee Lamb|receiving_yards|11": {
@@ -40140,7 +40141,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "CeeDee Lamb|receptions|11": {
     "player": "CeeDee Lamb",
@@ -40165,8 +40168,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Garrett Wilson|receptions|11": {
@@ -41270,9 +41272,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Carnell Tate|receiving_yards|11": {
     "player": "Carnell Tate",
