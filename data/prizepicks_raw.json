@@ -10,10 +10,10 @@
     },
     "Joe Milton III": {
       "passing_yards": 186.5,
-      "rushing_yards": 34.5
+      "rushing_yards": 38.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 21.5
     },
     "Saquon Barkley": {
@@ -21,8 +21,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 48.5,
-      "receptions": 4.5
+      "receiving_yards": 52.5
     },
     "DK Metcalf": {
       "receiving_yards": 42.5,
@@ -34,7 +33,8 @@
       "receptions": 2
     },
     "Dallas Goedert": {
-      "receiving_yards": 30.5
+      "receiving_yards": 30.5,
+      "receptions": 3.5
     },
     "Germie Bernard": {
       "receiving_yards": 25.5,
@@ -53,6 +53,9 @@
     "Darnell Washington": {
       "receiving_yards": 17.5,
       "receptions": 2
+    },
+    "Zach Ertz": {
+      "receiving_yards": 7.5
     },
     "Patrick Mahomes": {
       "passing_yards": 250.5,
@@ -109,6 +112,9 @@
     "Cyrus Allen": {
       "receiving_yards": 12.5
     },
+    "Nate Carter": {
+      "rushing_yards": 12.5
+    },
     "Devin Duvernay": {
       "receiving_yards": 8.5
     },
@@ -142,7 +148,7 @@
       "receptions": 4.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 47.5,
       "receiving_yards": 5.5
     },
     "Rome Odunze": {
@@ -200,7 +206,7 @@
       "receiving_yards": 69.5
     },
     "Carnell Tate": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 65.5,
       "receptions": 5
     },
     "Tony Pollard": {
@@ -268,18 +274,18 @@
       "receiving_yards": 28.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Ray Davis": {
-      "rushing_yards": 21.5
+      "rushing_yards": 22.5
     },
     "Dawson Knox": {
       "receiving_yards": 16.5,
       "receptions": 2
     },
     "Chris Bell": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 16.5,
       "receptions": 1.5
     },
     "Ty Johnson": {
@@ -368,7 +374,7 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 41.5,
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
@@ -383,7 +389,7 @@
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5,
@@ -519,6 +525,10 @@
       "passing_yards": 221.5,
       "rushing_yards": 16.5
     },
+    "Bhayshul Tuten": {
+      "rushing_yards": 70.5,
+      "receiving_yards": 13.5
+    },
     "Malik Nabers": {
       "receiving_yards": 69.5
     },
@@ -540,6 +550,9 @@
     },
     "Malachi Fields": {
       "receiving_yards": 29.5
+    },
+    "Chris Rodriguez Jr.": {
+      "rushing_yards": 19.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -653,12 +666,16 @@
       "receiving_yards": 43.5,
       "receptions": 4
     },
+    "Jacory Croskey-Merritt": {
+      "rushing_yards": 36.5,
+      "receiving_yards": 4.5
+    },
     "Antonio Williams": {
       "receiving_yards": 35.5,
       "receptions": 3.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 27.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -669,7 +686,7 @@
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 8.5
+      "receiving_yards": 11.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -713,9 +730,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6627,
-    "matched_props": 326,
-    "excluded_goblin_demon_lines": 5255,
+    "total_projections_returned": 6742,
+    "matched_props": 333,
+    "excluded_goblin_demon_lines": 5347,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -754,5 +771,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T21:00:45.550196+00:00"
+  "fetched_at": "2026-11-20T21:20:39.307662+00:00"
 }
