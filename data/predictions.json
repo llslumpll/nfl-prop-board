@@ -39619,7 +39619,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "George Pickens|receiving_yards|11": {
     "player": "George Pickens",
@@ -41245,9 +41247,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Elic Ayomanor|receiving_yards|11": {
     "player": "Elic Ayomanor",
@@ -41372,7 +41372,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receiving_yards|12": {
     "player": "Matthew Golden",
@@ -41470,7 +41472,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
