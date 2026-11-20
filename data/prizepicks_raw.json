@@ -21,7 +21,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 52.5
+      "receiving_yards": 51.5
     },
     "DK Metcalf": {
       "receiving_yards": 42.5,
@@ -225,7 +225,7 @@
       "receiving_yards": 24.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 20.5,
+      "receiving_yards": 21.5,
       "receptions": 2.5
     },
     "Chimere Dike": {
@@ -351,7 +351,7 @@
       "receiving_yards": 14.5
     },
     "Ted Hurst III": {
-      "receiving_yards": 3.5,
+      "receiving_yards": 2.5,
       "receptions": 0.5
     },
     "Bryce Young": {
@@ -428,10 +428,10 @@
       "receptions": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 46.5
+      "receiving_yards": 45.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 44.5,
       "receptions": 3
     },
     "Braelon Allen": {
@@ -452,7 +452,8 @@
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5,
+      "receptions": 1.5
     },
     "Bo Nix": {
       "passing_yards": 214.5,
@@ -731,9 +732,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6757,
-    "matched_props": 334,
-    "excluded_goblin_demon_lines": 5364,
+    "total_projections_returned": 6780,
+    "matched_props": 335,
+    "excluded_goblin_demon_lines": 5383,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -772,5 +773,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T21:35:45.558017+00:00"
+  "fetched_at": "2026-11-20T21:40:40.249071+00:00"
 }
