@@ -74,7 +74,7 @@
       "receptions": 3
     },
     "Rashee Rice": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Trey McBride": {
@@ -211,7 +211,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 67.5,
       "receptions": 5
     },
     "Tony Pollard": {
@@ -227,14 +227,14 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 24.5
+      "receiving_yards": 27.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 21.5,
       "receptions": 2.5
     },
     "Chimere Dike": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Tyjae Spears": {
       "rushing_yards": 15.5,
@@ -248,7 +248,7 @@
     },
     "Josh Allen": {
       "passing_yards": 227.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 26.5
     },
     "Kyle McCord": {
       "passing_yards": 185.5,
@@ -309,7 +309,7 @@
       "rushing_yards": 9.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 89.5,
+      "rushing_yards": 90.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -353,10 +353,11 @@
       "receiving_yards": 13.5
     },
     "Ted Hurst III": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5,
+      "receptions": 0.5
     },
     "Bryce Young": {
-      "passing_yards": 245.5,
+      "passing_yards": 238.5,
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
@@ -393,7 +394,8 @@
       "receiving_yards": 25.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
@@ -404,7 +406,7 @@
       "receiving_yards": 11.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -415,7 +417,7 @@
       "rushing_yards": 23.5
     },
     "Garrett Wilson": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 64.5,
       "receptions": 5.5
     },
     "Omarion Hampton": {
@@ -436,14 +438,14 @@
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Mason Taylor": {
       "receiving_yards": 19.5,
       "receptions": 2.5
     },
     "Kenyon Sadiq": {
-      "receiving_yards": 16.5
+      "receiving_yards": 18.5
     },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
@@ -466,7 +468,8 @@
       "receiving_yards": 21.5
     },
     "Brock Bowers": {
-      "receiving_yards": 51.5
+      "receiving_yards": 51.5,
+      "receptions": 4.5
     },
     "Jaylen Waddle": {
       "receiving_yards": 42.5
@@ -522,7 +525,7 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 218.5,
+      "passing_yards": 221.5,
       "rushing_yards": 16.5
     },
     "Malik Nabers": {
@@ -542,13 +545,13 @@
       "receiving_yards": 42.5
     },
     "Brenton Strange": {
-      "receiving_yards": 32.5
+      "receiving_yards": 31.5
     },
     "Malachi Fields": {
       "receiving_yards": 28.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Brian Thomas Jr.": {
@@ -565,7 +568,7 @@
       "receiving_yards": 2.5
     },
     "Theo Johnson": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -712,9 +715,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6466,
-    "matched_props": 325,
-    "excluded_goblin_demon_lines": 5123,
+    "total_projections_returned": 6503,
+    "matched_props": 328,
+    "excluded_goblin_demon_lines": 5154,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -753,5 +756,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T18:40:38.426759+00:00"
+  "fetched_at": "2026-11-20T19:00:52.714563+00:00"
 }
