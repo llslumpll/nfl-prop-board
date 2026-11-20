@@ -359,7 +359,7 @@
       "receiving_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 2.5
     },
     "Justice Hill": {
@@ -655,9 +655,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5770,
+    "total_projections_returned": 5779,
     "matched_props": 290,
-    "excluded_goblin_demon_lines": 4679,
+    "excluded_goblin_demon_lines": 4689,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -696,5 +696,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T03:20:43.495248+00:00"
+  "fetched_at": "2026-11-20T03:40:41.103131+00:00"
 }
