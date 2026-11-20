@@ -5,7 +5,7 @@
       "rushing_yards": 9.5
     },
     "Daniel Jones": {
-      "passing_yards": 180.5,
+      "passing_yards": 179.5,
       "rushing_yards": 8.5
     },
     "Nico Collins": {
@@ -45,12 +45,12 @@
     "Kayshon Boutte": {
       "receiving_yards": 26.5
     },
-    "Anthony Gould": {
-      "receiving_yards": 21.5
-    },
     "Emari Demercado": {
       "rushing_yards": 21.5,
-      "receiving_yards": 3.5
+      "receiving_yards": 1.5
+    },
+    "Anthony Gould": {
+      "receiving_yards": 20.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -85,7 +85,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "DK Metcalf": {
@@ -100,7 +100,7 @@
       "receiving_yards": 29.5
     },
     "Germie Bernard": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 26.5,
       "receptions": 3
     },
     "Dontayvion Wicks": {
@@ -112,7 +112,8 @@
       "receptions": 2.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Roman Wilson": {
       "receiving_yards": 22.5
@@ -458,7 +459,7 @@
       "receiving_yards": 42.5
     },
     "Braelon Allen": {
-      "rushing_yards": 32.5,
+      "rushing_yards": 33.5,
       "receiving_yards": 7.5
     },
     "Mason Taylor": {
@@ -497,7 +498,7 @@
       "receiving_yards": 52.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Courtland Sutton": {
@@ -546,7 +547,7 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 242.5,
+      "passing_yards": 243.5,
       "rushing_yards": 10.5
     },
     "J.J. McCarthy": {
@@ -564,7 +565,7 @@
       "receiving_yards": 54.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 13.5
     },
     "Jakobi Meyers": {
@@ -574,7 +575,7 @@
       "receiving_yards": 32.5
     },
     "Malachi Fields": {
-      "receiving_yards": 29.5
+      "receiving_yards": 27.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -586,12 +587,12 @@
     "Josh Cameron": {
       "receiving_yards": 12.5
     },
-    "Devin Singletary": {
-      "rushing_yards": 11.5,
-      "receiving_yards": 2.5
-    },
     "Nate Boerkircher": {
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
+    },
+    "Devin Singletary": {
+      "rushing_yards": 10.5,
+      "receiving_yards": 2.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -687,7 +688,7 @@
       "receiving_yards": 26.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 19.5,
@@ -716,9 +717,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6393,
-    "matched_props": 316,
-    "excluded_goblin_demon_lines": 5170,
+    "total_projections_returned": 6395,
+    "matched_props": 317,
+    "excluded_goblin_demon_lines": 5171,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -757,5 +758,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T00:00:49.798994+00:00"
+  "fetched_at": "2026-11-20T00:20:52.562985+00:00"
 }
