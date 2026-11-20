@@ -251,7 +251,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 56.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Caleb Douglas": {
       "receiving_yards": 49.5
@@ -334,7 +334,7 @@
       "receiving_yards": 18.5
     },
     "Zay Flowers": {
-      "receiving_yards": 68.5
+      "receiving_yards": 67.5
     },
     "Tetairoa McMillan": {
       "receiving_yards": 63.5,
@@ -345,13 +345,13 @@
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 35.5
+      "receiving_yards": 34.5
     },
     "Mark Andrews": {
       "receiving_yards": 33.5
     },
     "Darren Waller": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Rashod Bateman": {
@@ -554,7 +554,7 @@
       "receiving_yards": 33.5
     },
     "George Kittle": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 49.5,
       "receptions": 4
     },
     "Jordan Mason": {
@@ -655,9 +655,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5873,
+    "total_projections_returned": 5895,
     "matched_props": 290,
-    "excluded_goblin_demon_lines": 4782,
+    "excluded_goblin_demon_lines": 4803,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -696,5 +696,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T05:40:40.255980+00:00"
+  "fetched_at": "2026-11-20T06:00:43.318735+00:00"
 }
