@@ -97,7 +97,7 @@
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Elijah Higgins": {
@@ -501,7 +501,7 @@
     },
     "Cam Skattebo": {
       "rushing_yards": 54.5,
-      "receiving_yards": 14.5
+      "receiving_yards": 13.5
     },
     "Isaiah Likely": {
       "receiving_yards": 53.5
@@ -600,7 +600,7 @@
       "rushing_yards": 36.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 95.5,
+      "receiving_yards": 93.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -654,9 +654,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5940,
+    "total_projections_returned": 5942,
     "matched_props": 289,
-    "excluded_goblin_demon_lines": 4846,
+    "excluded_goblin_demon_lines": 4848,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -695,5 +695,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T08:40:39.199131+00:00"
+  "fetched_at": "2026-11-20T09:00:43.786567+00:00"
 }
