@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Games — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1795214419">
+  <link rel="stylesheet" href="static/style.css?v=1795214810">
 </head>
 <body>
   <header class="site-head">
@@ -74,7 +74,7 @@
   <button class="pk-stat-btn" data-gt="moneyline">MONEYLINE</button>
   <button class="pk-stat-btn" data-gt="spread">SPREAD</button>
   <button class="pk-stat-btn" data-gt="total">TOTAL</button>
-  <button class="pk-stat-btn" data-gt="edges">EDGES (1)</button>
+  <button class="pk-stat-btn" data-gt="edges">EDGES</button>
   <button class="pk-stat-btn" data-gt="all">ALL GAMES</button>
   <button class="pk-stat-btn gm-live-btn" data-gt="live"><i class="live-dot"></i>LIVE</button>
 </div>
@@ -503,18 +503,7 @@
   
 
   <h3>+EV on Kalshi</h3>
-  
-  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
-    <thead><tr><th>Bet</th><th class="num">Better than fair</th><th class="num">Real chance</th><th class="hide-sm">Our model</th><th class="hide-sm">Fair from</th></tr></thead>
-    <tbody><tr>
-      <td><b>TB @ DET: TB +4.5</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: NO DET by over 4.5 at 46%</div></td>
-      <td class="num stat-good"><b>about 2%</b></td>
-      <td class="num">49%</td>
-      <td class="hide-sm small"><span class="stat-good">56% &#10004; agrees</span></td>
-      <td class="hide-sm small dim">FanDuel TB +4.5</td></tr></tbody>
-  </table></div></div>
-  <p class="small dim">Checked 62 Kalshi bets that FanDuel also prices. Listed: Kalshi's price, fee included, at least 2% cheaper than the bet is really worth. <b>Real chance</b> = FanDuel's odds with their cut removed. <b>Better than fair</b> = roughly what each unit returns on average over many bets.</p>
-  
+  <p class="notice compact">No +EV prices right now: Kalshi and FanDuel agree within the fee on all 62 matched bets. Refreshes every 20 minutes.</p>
 
   
 
@@ -1854,6 +1843,16 @@
     </div>
     
     <div class="gm-prop">
+      <a href="picks.html#receiving">Parker Washington</a> <span class="dim">JAX</span>
+      <span class="gm-b5">BEST 5</span>
+      
+      <span class="gm-call stat-bad">UNDER 68.5 REC YDS</span>
+      <span class="dim">proj 44.9</span>
+      
+      <span class="lv" hidden data-lv="JAX|Parker Washington|receiving_yards|68.5|UNDER|44.9"></span>
+    </div>
+    
+    <div class="gm-prop">
       <a href="picks.html#passing">J.J. McCarthy</a> <span class="dim">NYG</span>
       <span class="gm-b5">BEST 5</span>
       
@@ -1881,16 +1880,6 @@
       <span class="dim">proj 3.2</span>
       
       <span class="lv" hidden data-lv="NYG|Isaiah Likely|receptions|5.5|UNDER|3.2"></span>
-    </div>
-    
-    <div class="gm-prop">
-      <a href="picks.html#receiving">Parker Washington</a> <span class="dim">JAX</span>
-      
-      
-      <span class="gm-call stat-bad">UNDER 68.5 REC YDS</span>
-      <span class="dim">proj 44.9</span>
-      
-      <span class="lv" hidden data-lv="JAX|Parker Washington|receiving_yards|68.5|UNDER|44.9"></span>
     </div>
     
     <div class="gm-prop">
@@ -2500,16 +2489,6 @@
     </div>
     
     <div class="gm-prop">
-      <a href="picks.html#receiving">Mike Evans</a> <span class="dim">SF</span>
-      <span class="gm-b5">BEST 5</span>
-      
-      <span class="gm-call stat-good">OVER 47.5 REC YDS</span>
-      <span class="dim">proj 67.6</span>
-      
-      <span class="lv" hidden data-lv="SF|Mike Evans|receiving_yards|47.5|OVER|67.6"></span>
-    </div>
-    
-    <div class="gm-prop">
       <a href="picks.html#receptions">Justin Jefferson</a> <span class="dim">MIN</span>
       <span class="gm-b5">BEST 5</span>
       <span class="pk-tag pk-proven">&#9733; PROVEN</span>
@@ -2537,6 +2516,16 @@
       <span class="dim">proj 43.3</span>
       
       <span class="lv" hidden data-lv="SF|Kaelon Black|rushing_yards|26.5|OVER|43.3"></span>
+    </div>
+    
+    <div class="gm-prop">
+      <a href="picks.html#receiving">Mike Evans</a> <span class="dim">SF</span>
+      
+      
+      <span class="gm-call stat-good">OVER 47.5 REC YDS</span>
+      <span class="dim">proj 67.6</span>
+      
+      <span class="lv" hidden data-lv="SF|Mike Evans|receiving_yards|47.5|OVER|67.6"></span>
     </div>
     
     <div class="gm-prop">
@@ -2940,7 +2929,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-20 22:40 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-20 22:46 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
