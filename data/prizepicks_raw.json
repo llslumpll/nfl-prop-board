@@ -70,7 +70,7 @@
     },
     "Emmett Johnson": {
       "rushing_yards": 83.5,
-      "receiving_yards": 26.5,
+      "receiving_yards": 27.5,
       "receptions": 3
     },
     "Rashee Rice": {
@@ -88,13 +88,13 @@
     "Josh Downs": {
       "receiving_yards": 37.5
     },
+    "Xavier Worthy": {
+      "receiving_yards": 25.5
+    },
     "Tyler Allgeier": {
       "rushing_yards": 25.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
-    },
-    "Xavier Worthy": {
-      "receiving_yards": 24.5
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
@@ -130,7 +130,7 @@
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
-      "passing_yards": 238.5,
+      "passing_yards": 239.5,
       "rushing_yards": 18.5
     },
     "Chris Olave": {
@@ -145,7 +145,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 56.5
+      "receiving_yards": 57.5
     },
     "Colston Loveland": {
       "receiving_yards": 50.5,
@@ -161,8 +161,7 @@
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
-      "receiving_yards": 13.5,
-      "receptions": 2.5
+      "receiving_yards": 13.5
     },
     "Devaughn Vele": {
       "receiving_yards": 22.5
@@ -259,7 +258,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 54.5,
-      "receiving_yards": 18.5
+      "receiving_yards": 14.5
     },
     "Caleb Douglas": {
       "receiving_yards": 49.5
@@ -289,10 +288,11 @@
       "receptions": 2
     },
     "Chris Bell": {
-      "receiving_yards": 15.5
+      "receiving_yards": 15.5,
+      "receptions": 1.5
     },
     "Ty Johnson": {
-      "receiving_yards": 13.5,
+      "receiving_yards": 12.5,
       "rushing_yards": 5.5,
       "receptions": 2
     },
@@ -360,7 +360,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 228.5,
+      "passing_yards": 227.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -573,7 +573,7 @@
       "receiving_yards": 8.5
     },
     "Brock Purdy": {
-      "passing_yards": 249.5,
+      "passing_yards": 245.5,
       "rushing_yards": 16.5
     },
     "Kirk Cousins": {
@@ -581,7 +581,7 @@
       "rushing_yards": 1.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 83.5,
+      "receiving_yards": 84.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -596,23 +596,23 @@
       "receiving_yards": 46.5,
       "receptions": 3.5
     },
+    "T.J. Hockenson": {
+      "receiving_yards": 44.5
+    },
     "Jordan Mason": {
       "rushing_yards": 43.5,
       "receiving_yards": 3.5
     },
-    "T.J. Hockenson": {
-      "receiving_yards": 42.5
-    },
     "Keenan Allen": {
-      "receiving_yards": 35.5
+      "receiving_yards": 34.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 29.5,
-      "rushing_yards": 8.5,
+      "rushing_yards": 7.5,
       "receptions": 2.5
     },
     "Kaelon Black": {
@@ -624,7 +624,11 @@
       "receiving_yards": 19.5
     },
     "Tai Felton": {
-      "receiving_yards": 19.5
+      "receiving_yards": 15.5,
+      "receptions": 1.5
+    },
+    "Myles Price": {
+      "receiving_yards": 8.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 2.5
@@ -642,7 +646,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 73.5,
+      "receiving_yards": 75.5,
       "receptions": 5.5
     },
     "Stefon Diggs": {
@@ -666,7 +670,7 @@
       "receptions": 2
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Samaje Perine": {
       "rushing_yards": 19.5,
@@ -717,9 +721,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6536,
-    "matched_props": 328,
-    "excluded_goblin_demon_lines": 5178,
+    "total_projections_returned": 6551,
+    "matched_props": 330,
+    "excluded_goblin_demon_lines": 5191,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -758,5 +762,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T19:20:45.091060+00:00"
+  "fetched_at": "2026-11-20T19:40:39.518360+00:00"
 }
