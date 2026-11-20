@@ -9,7 +9,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 186.5,
+      "passing_yards": 187.5,
       "rushing_yards": 38.5
     },
     "Jaylen Warren": {
@@ -21,7 +21,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 51.5
+      "receiving_yards": 54.5
     },
     "DK Metcalf": {
       "receiving_yards": 42.5,
@@ -220,7 +220,7 @@
       "receiving_yards": 16.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Ryan Flournoy": {
@@ -302,6 +302,9 @@
       "rushing_yards": 4.5,
       "receptions": 0.5
     },
+    "Kevin Coleman Jr.": {
+      "receiving_yards": 4.5
+    },
     "Will Kacmarek": {
       "receiving_yards": 3.5
     },
@@ -314,7 +317,7 @@
       "rushing_yards": 9.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 86.5,
+      "rushing_yards": 87.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -526,11 +529,11 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 243.5,
+      "passing_yards": 244.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 220.5,
+      "passing_yards": 221.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
@@ -538,7 +541,7 @@
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
-      "receiving_yards": 69.5
+      "receiving_yards": 67.5
     },
     "Parker Washington": {
       "receiving_yards": 64.5
@@ -609,7 +612,7 @@
       "receptions": 4
     },
     "Mike Evans": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 3.5
     },
     "Jordan Mason": {
@@ -738,9 +741,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6844,
-    "matched_props": 337,
-    "excluded_goblin_demon_lines": 5443,
+    "total_projections_returned": 6863,
+    "matched_props": 338,
+    "excluded_goblin_demon_lines": 5463,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -779,5 +782,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T22:00:48.087559+00:00"
+  "fetched_at": "2026-11-20T22:20:43.258624+00:00"
 }
