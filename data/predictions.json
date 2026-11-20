@@ -38749,10 +38749,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-17 21:56 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 21:56 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Van Jefferson|receptions|11": {
     "player": "Van Jefferson",
@@ -40142,9 +40139,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "CeeDee Lamb|receptions|11": {
     "player": "CeeDee Lamb",
@@ -40169,7 +40164,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Garrett Wilson|receptions|11": {
@@ -40192,7 +40188,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Jahmyr Gibbs|receptions|11": {
     "player": "Jahmyr Gibbs",
@@ -40360,7 +40359,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Emmett Johnson|receptions|11": {
     "player": "Emmett Johnson",
