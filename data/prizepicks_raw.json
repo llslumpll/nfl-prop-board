@@ -124,7 +124,7 @@
       "receiving_yards": 5.5
     },
     "Caleb Williams": {
-      "passing_yards": 246.5,
+      "passing_yards": 247.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
@@ -150,10 +150,10 @@
       "receptions": 4.5
     },
     "Rome Odunze": {
-      "receiving_yards": 45.5
+      "receiving_yards": 46.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 45.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
@@ -182,7 +182,7 @@
       "receiving_yards": 7.5
     },
     "Sam Roush": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -358,7 +358,8 @@
       "receiving_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 21.5
+      "receiving_yards": 21.5,
+      "receptions": 2.5
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
@@ -545,16 +546,16 @@
       "rushing_yards": 1.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 82.5,
       "receptions": 7
-    },
-    "George Kittle": {
-      "receiving_yards": 50.5,
-      "receptions": 4
     },
     "Christian McCaffrey": {
       "rushing_yards": 49.5,
       "receiving_yards": 33.5
+    },
+    "George Kittle": {
+      "receiving_yards": 47.5,
+      "receptions": 4
     },
     "Jordan Mason": {
       "rushing_yards": 43.5,
@@ -654,9 +655,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5865,
-    "matched_props": 289,
-    "excluded_goblin_demon_lines": 4775,
+    "total_projections_returned": 5873,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 4782,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -695,5 +696,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T05:20:39.965111+00:00"
+  "fetched_at": "2026-11-20T05:40:40.255980+00:00"
 }
