@@ -28,7 +28,7 @@
       "receptions": 5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 3
     },
     "Dalton Schultz": {
@@ -50,7 +50,7 @@
     },
     "Emari Demercado": {
       "rushing_yards": 21.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "Deion Burks": {
       "receiving_yards": 15.5
@@ -718,9 +718,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6443,
+    "total_projections_returned": 6445,
     "matched_props": 318,
-    "excluded_goblin_demon_lines": 5221,
+    "excluded_goblin_demon_lines": 5223,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -759,5 +759,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T00:53:28.954844+00:00"
+  "fetched_at": "2026-11-20T01:00:41.318807+00:00"
 }
