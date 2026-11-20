@@ -38746,7 +38746,10 @@
     "graded_at": null,
     "line_attached_at": "2026-11-17 21:56 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 21:56 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Van Jefferson|receptions|11": {
     "player": "Van Jefferson",
@@ -40155,9 +40158,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Garrett Wilson|receptions|11": {
     "player": "Garrett Wilson",
@@ -40500,9 +40501,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Tee Higgins|receptions|11": {
     "player": "Tee Higgins",
