@@ -17,7 +17,7 @@
       "receiving_yards": 21.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 60.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
@@ -29,7 +29,7 @@
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 9.5,
       "receptions": 2
     },
@@ -62,7 +62,7 @@
       "receptions": 2
     },
     "Darius Cooper": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Patrick Mahomes": {
       "passing_yards": 250.5,
@@ -105,7 +105,7 @@
       "receiving_yards": 15.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 2
     },
     "Reggie Virgil": {
@@ -120,7 +120,7 @@
       "receiving_yards": 12.5
     },
     "Devin Duvernay": {
-      "receiving_yards": 11.5
+      "receiving_yards": 8.5
     },
     "Hunter Long": {
       "receiving_yards": 4.5
@@ -161,7 +161,8 @@
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 2.5
     },
     "Devaughn Vele": {
       "receiving_yards": 22.5
@@ -202,7 +203,7 @@
     },
     "Javonte Williams": {
       "rushing_yards": 80.5,
-      "receiving_yards": 10.5,
+      "receiving_yards": 11.5,
       "receptions": 2
     },
     "George Pickens": {
@@ -225,7 +226,7 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 24.5
+      "receiving_yards": 27.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 21.5,
@@ -242,7 +243,7 @@
       "receiving_yards": 9.5
     },
     "KaVontae Turpin": {
-      "receiving_yards": 5.5
+      "receiving_yards": 8.5
     },
     "Josh Allen": {
       "passing_yards": 227.5,
@@ -292,8 +293,8 @@
       "receptions": 1.5
     },
     "Ty Johnson": {
-      "receiving_yards": 12.5,
-      "rushing_yards": 5.5
+      "receiving_yards": 13.5,
+      "rushing_yards": 3.5
     },
     "Jaylen Wright": {
       "rushing_yards": 4.5
@@ -326,8 +327,7 @@
       "receptions": 4
     },
     "Sam LaPorta": {
-      "receiving_yards": 35.5,
-      "receptions": 3.5
+      "receiving_yards": 35.5
     },
     "Chris Godwin Jr.": {
       "receiving_yards": 32.5
@@ -344,14 +344,14 @@
       "receptions": 2
     },
     "Sione Vaki": {
-      "rushing_yards": 14.5,
+      "rushing_yards": 15.5,
       "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Ted Hurst III": {
-      "receiving_yards": 2.5,
+      "receiving_yards": 3.5,
       "receptions": 0.5
     },
     "Bryce Young": {
@@ -389,7 +389,7 @@
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5,
@@ -415,7 +415,7 @@
       "rushing_yards": 23.5
     },
     "Garrett Wilson": {
-      "receiving_yards": 64.5,
+      "receiving_yards": 65.5,
       "receptions": 5.5
     },
     "Omarion Hampton": {
@@ -431,19 +431,19 @@
       "receiving_yards": 47.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 44.5,
       "receptions": 3
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
       "receiving_yards": 7.5
     },
+    "Kenyon Sadiq": {
+      "receiving_yards": 22.5
+    },
     "Mason Taylor": {
       "receiving_yards": 19.5,
       "receptions": 2.5
-    },
-    "Kenyon Sadiq": {
-      "receiving_yards": 18.5
     },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
@@ -495,7 +495,7 @@
       "receptions": 0.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5
+      "receiving_yards": 19.5
     },
     "Jalen Nailor": {
       "receiving_yards": 18.5
@@ -508,7 +508,7 @@
       "receiving_yards": 9.5
     },
     "Troy Franklin": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Adam Trautman": {
       "receiving_yards": 5.5
@@ -719,9 +719,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6650,
+    "total_projections_returned": 6660,
     "matched_props": 328,
-    "excluded_goblin_demon_lines": 5276,
+    "excluded_goblin_demon_lines": 5289,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -760,5 +760,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T20:20:44.424785+00:00"
+  "fetched_at": "2026-11-20T20:40:42.703219+00:00"
 }
