@@ -179,7 +179,7 @@
       "receptions": 2.5
     },
     "Noah Fant": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Sam Roush": {
       "receiving_yards": 4.5
@@ -281,11 +281,11 @@
       "receiving_yards": 17.5
     },
     "Ty Johnson": {
-      "receiving_yards": 12.5,
+      "receiving_yards": 13.5,
       "rushing_yards": 5.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 8.5
+      "rushing_yards": 9.5
     },
     "Jared Goff": {
       "passing_yards": 249.5,
@@ -326,7 +326,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 235.5,
+      "passing_yards": 232.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -363,7 +363,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Josh Cuevas": {
       "receiving_yards": 11.5
@@ -447,7 +447,7 @@
       "receiving_yards": 30.5
     },
     "Tre Tucker": {
-      "receiving_yards": 31.5
+      "receiving_yards": 32.5
     },
     "Pat Bryant": {
       "receiving_yards": 26.5,
@@ -465,7 +465,7 @@
       "receptions": 2.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Jack Bech": {
       "receiving_yards": 13.5,
@@ -501,7 +501,7 @@
     },
     "Cam Skattebo": {
       "rushing_yards": 54.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Isaiah Likely": {
       "receiving_yards": 53.5
@@ -622,7 +622,7 @@
       "receptions": 3.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5
+      "receiving_yards": 26.5
     },
     "Mike Gesicki": {
       "receiving_yards": 25.5
@@ -654,9 +654,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5942,
+    "total_projections_returned": 5948,
     "matched_props": 289,
-    "excluded_goblin_demon_lines": 4848,
+    "excluded_goblin_demon_lines": 4854,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -695,5 +695,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T09:00:43.786567+00:00"
+  "fetched_at": "2026-11-20T09:20:46.382877+00:00"
 }
