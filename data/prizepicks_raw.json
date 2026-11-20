@@ -36,6 +36,9 @@
       "receiving_yards": 30.5,
       "receptions": 3.5
     },
+    "Makai Lemon": {
+      "receiving_yards": 26.5
+    },
     "Germie Bernard": {
       "receiving_yards": 25.5,
       "receptions": 3
@@ -54,8 +57,11 @@
       "receiving_yards": 17.5,
       "receptions": 2
     },
+    "Darius Cooper": {
+      "receiving_yards": 14.5
+    },
     "Zach Ertz": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Patrick Mahomes": {
       "passing_yards": 250.5,
@@ -198,7 +204,7 @@
       "receptions": 7.5
     },
     "Javonte Williams": {
-      "rushing_yards": 78.5,
+      "rushing_yards": 77.5,
       "receiving_yards": 10.5,
       "receptions": 2
     },
@@ -211,10 +217,10 @@
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Ryan Flournoy": {
@@ -229,7 +235,7 @@
       "receptions": 2.5
     },
     "Chimere Dike": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Tyjae Spears": {
       "rushing_yards": 15.5,
@@ -265,7 +271,7 @@
       "receptions": 3.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 35.5
+      "receiving_yards": 37.5
     },
     "Keon Coleman": {
       "receiving_yards": 30.5
@@ -312,7 +318,7 @@
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 80.5,
       "receptions": 7
     },
     "Bucky Irving": {
@@ -482,7 +488,7 @@
       "receiving_yards": 30.5
     },
     "Tre Tucker": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 28.5,
       "receptions": 2.5
     },
     "Pat Bryant": {
@@ -497,13 +503,13 @@
       "receptions": 0.5
     },
     "Evan Engram": {
-      "receiving_yards": 19.5
+      "receiving_yards": 21.5
     },
     "Jalen Nailor": {
       "receiving_yards": 18.5
     },
     "Jack Bech": {
-      "receiving_yards": 12.5,
+      "receiving_yards": 13.5,
       "receptions": 1.5
     },
     "Marvin Mims Jr.": {
@@ -732,9 +738,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6780,
-    "matched_props": 335,
-    "excluded_goblin_demon_lines": 5383,
+    "total_projections_returned": 6844,
+    "matched_props": 337,
+    "excluded_goblin_demon_lines": 5443,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -773,5 +779,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T21:40:40.249071+00:00"
+  "fetched_at": "2026-11-20T22:00:48.087559+00:00"
 }
