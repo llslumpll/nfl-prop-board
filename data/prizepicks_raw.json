@@ -21,7 +21,7 @@
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "DK Metcalf": {
@@ -35,13 +35,13 @@
     "Dallas Goedert": {
       "receiving_yards": 29.5
     },
+    "Germie Bernard": {
+      "receiving_yards": 26.5,
+      "receptions": 3
+    },
     "Dontayvion Wicks": {
       "receiving_yards": 25.5,
       "receptions": 2.5
-    },
-    "Germie Bernard": {
-      "receiving_yards": 25.5,
-      "receptions": 3
     },
     "Makai Lemon": {
       "receiving_yards": 23.5,
@@ -327,7 +327,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 238.5,
+      "passing_yards": 235.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -359,7 +359,8 @@
       "receiving_yards": 24.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 21.5
+      "receiving_yards": 21.5,
+      "receptions": 2.5
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
@@ -654,9 +655,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5753,
-    "matched_props": 289,
-    "excluded_goblin_demon_lines": 4664,
+    "total_projections_returned": 5761,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 4670,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -664,6 +665,7 @@
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
+      "halves with 100+ pass yards",
       "int",
       "kicking points",
       "longest completion",
@@ -677,6 +679,7 @@
       "pass yards (combo)",
       "pass+rush yds",
       "pass+rush+rec tds",
+      "quarters with 25+ pass yards",
       "rec targets",
       "receiving yards",
       "receiving yards (combo)",
@@ -685,9 +688,7 @@
       "rush yards",
       "rush yards (combo)",
       "rush yards in first 5 attempts",
-      "rush yards per carry",
-      "rush+rec yds",
-      "sacks"
+      "rush yards per carry"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -695,5 +696,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T02:00:46.734950+00:00"
+  "fetched_at": "2026-11-20T02:20:43.899736+00:00"
 }
