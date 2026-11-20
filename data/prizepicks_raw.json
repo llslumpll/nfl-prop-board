@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -209,7 +209,7 @@
       "receiving_yards": 17.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 44.5,
       "receptions": 3.5
     },
     "Elic Ayomanor": {
@@ -416,7 +416,7 @@
       "receiving_yards": 46.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
@@ -624,7 +624,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 73.5,
+      "receiving_yards": 74.5,
       "receptions": 5.5
     },
     "Stefon Diggs": {
@@ -674,7 +674,7 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5979,
+    "total_projections_returned": 5980,
     "matched_props": 297,
     "excluded_goblin_demon_lines": 4864,
     "sample_stat_types_seen": [
@@ -715,5 +715,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T12:40:39.653706+00:00"
+  "fetched_at": "2026-11-20T13:00:50.032339+00:00"
 }
