@@ -9,7 +9,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 187.5,
+      "passing_yards": 186.5,
       "rushing_yards": 34.5
     },
     "Jaylen Warren": {
@@ -43,9 +43,6 @@
       "receiving_yards": 25.5,
       "receptions": 2.5
     },
-    "Roman Wilson": {
-      "receiving_yards": 24.5
-    },
     "Makai Lemon": {
       "receiving_yards": 23.5,
       "receptions": 2.5
@@ -53,6 +50,9 @@
     "Pat Freiermuth": {
       "receiving_yards": 22.5,
       "receptions": 2.5
+    },
+    "Roman Wilson": {
+      "receiving_yards": 22.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 20.5
@@ -143,7 +143,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 56.5
+      "receiving_yards": 55.5
     },
     "Colston Loveland": {
       "receiving_yards": 50.5,
@@ -251,7 +251,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 56.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Caleb Douglas": {
       "receiving_yards": 49.5
@@ -292,7 +292,7 @@
       "rushing_yards": 0.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 89.5,
+      "rushing_yards": 90.5,
       "receiving_yards": 30.5
     },
     "Amon-Ra St. Brown": {
@@ -315,7 +315,7 @@
       "receiving_yards": 11.5
     },
     "Sione Vaki": {
-      "rushing_yards": 14.5,
+      "rushing_yards": 15.5,
       "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
@@ -654,9 +654,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5798,
+    "total_projections_returned": 5843,
     "matched_props": 289,
-    "excluded_goblin_demon_lines": 4714,
+    "excluded_goblin_demon_lines": 4753,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -695,5 +695,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T04:20:39.667956+00:00"
+  "fetched_at": "2026-11-20T04:40:40.546514+00:00"
 }
