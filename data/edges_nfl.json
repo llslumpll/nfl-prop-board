@@ -235,6 +235,27 @@
    "status": "pending",
    "week": 11
   },
+  "spread|TB @ DET: TB +4.5": {
+   "ask": 0.46,
+   "away": "TB",
+   "cost": 0.4774,
+   "ev": 0.023,
+   "fair": 0.4884,
+   "first_ev": 0.023,
+   "first_seen": "2026-11-20 21:35 UTC",
+   "home": "DET",
+   "kalshi": "NO DET by over 4.5 at 46%",
+   "kickoff": "2026-11-22T18:00:00+00:00",
+   "kind": "spread",
+   "label": "TB @ DET: TB +4.5",
+   "line": 4.5,
+   "model": 0.558,
+   "model_agrees": true,
+   "ref": "FanDuel TB +4.5",
+   "side": "TB +4.5",
+   "status": "pending",
+   "week": 11
+  },
   "spread|TB @ DET: TB +6.5": {
    "ask": 0.46,
    "away": "TB",

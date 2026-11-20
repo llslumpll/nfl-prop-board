@@ -1,13 +1,6 @@
 {
   "entries": [
     {
-      "call": "event-odds:99a9bae4dc0dc2590496bd3102b211f2",
-      "requests_remaining": 491,
-      "requests_used": 9,
-      "requests_last": 0,
-      "logged_at": "2026-09-29 00:23 UTC"
-    },
-    {
       "call": "event-odds:1b4f2e60ce83fa1d63a5dff83769d27c",
       "requests_remaining": 491,
       "requests_used": 9,
@@ -1399,6 +1392,13 @@
       "requests_used": 218,
       "requests_last": 0,
       "logged_at": "2026-11-19 21:57 UTC"
+    },
+    {
+      "call": "moneylines[bookmakers]",
+      "requests_remaining": 279,
+      "requests_used": 221,
+      "requests_last": 3,
+      "logged_at": "2026-11-20 21:35 UTC"
     }
   ]
 }
