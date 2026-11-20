@@ -40142,9 +40142,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "CeeDee Lamb|receptions|11": {
     "player": "CeeDee Lamb",
@@ -40169,7 +40167,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   },
   "Garrett Wilson|receptions|11": {
