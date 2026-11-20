@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "ml-3": {
@@ -695,6 +695,7 @@
      "kind": "ml",
      "label": "HOU to win",
      "price": -820,
+     "result": "hit",
      "team": "HOU"
     },
     {
@@ -789,7 +790,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "props-2": {
@@ -835,7 +836,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "props-3": {
@@ -896,7 +897,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "props-4": {
@@ -972,7 +973,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "td-1": {
@@ -1000,7 +1001,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "td-2": {
@@ -1040,7 +1041,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   },
   "td-3": {
@@ -1049,6 +1050,7 @@
    "ev": 1.028,
    "family": "td",
    "good": true,
+   "graded": "2026-11-20 17:29 UTC",
    "id": "td-3",
    "legs": [
     {
@@ -1076,6 +1078,7 @@
      "team": "BUF"
     },
     {
+     "actual": 0,
      "chance": 0.632,
      "decimal": 2.439,
      "game": "HOU@IND",
@@ -1085,6 +1088,7 @@
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
      "price": 0.41,
+     "result": "miss",
      "team": "IND"
     }
    ],
@@ -1092,7 +1096,8 @@
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.5,
    "updated": "2026-11-20 01:00 UTC",
    "week": 11
   },
@@ -1102,6 +1107,7 @@
    "ev": 1.227,
    "family": "td",
    "good": true,
+   "graded": "2026-11-20 17:29 UTC",
    "id": "td-4",
    "legs": [
     {
@@ -1129,6 +1135,7 @@
      "team": "BUF"
     },
     {
+     "actual": 0,
      "chance": 0.632,
      "decimal": 2.439,
      "game": "HOU@IND",
@@ -1138,6 +1145,7 @@
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
      "price": 0.41,
+     "result": "miss",
      "team": "IND"
     },
     {
@@ -1157,7 +1165,8 @@
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.25,
    "updated": "2026-11-20 01:00 UTC",
    "week": 11
   },
@@ -1219,7 +1228,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-20 17:20 UTC",
+   "updated": "2026-11-20 17:29 UTC",
    "week": 11
   }
  },

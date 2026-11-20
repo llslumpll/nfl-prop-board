@@ -73,7 +73,7 @@
       "rushing_yards": 8.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 83.5,
+      "rushing_yards": 82.5,
       "receiving_yards": 26.5,
       "receptions": 3
     },
@@ -273,10 +273,6 @@
       "receiving_yards": 47.5,
       "receptions": 3.5
     },
-    "Keon Coleman": {
-      "receiving_yards": 36.5,
-      "receptions": 2.5
-    },
     "Khalil Shakir": {
       "receiving_yards": 32.5
     },
@@ -284,9 +280,11 @@
       "receiving_yards": 31.5,
       "receptions": 2.5
     },
+    "Keon Coleman": {
+      "receiving_yards": 30.5
+    },
     "Malik Washington": {
-      "receiving_yards": 28.5,
-      "receptions": 3.5
+      "receiving_yards": 28.5
     },
     "Greg Dulcich": {
       "receiving_yards": 24.5,
@@ -371,7 +369,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 238.5,
+      "passing_yards": 236.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -424,7 +422,7 @@
     },
     "Justin Herbert": {
       "passing_yards": 203.5,
-      "rushing_yards": 24.5
+      "rushing_yards": 23.5
     },
     "Garrett Wilson": {
       "receiving_yards": 65.5,
@@ -535,7 +533,7 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 219.5,
+      "passing_yards": 217.5,
       "rushing_yards": 16.5
     },
     "Malik Nabers": {
@@ -550,7 +548,7 @@
       "receiving_yards": 13.5
     },
     "Isaiah Likely": {
-      "receiving_yards": 53.5
+      "receiving_yards": 52.5
     },
     "Jakobi Meyers": {
       "receiving_yards": 42.5
@@ -566,7 +564,7 @@
       "receptions": 1.5
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 11.5
@@ -703,9 +701,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6266,
-    "matched_props": 322,
-    "excluded_goblin_demon_lines": 4994,
+    "total_projections_returned": 6269,
+    "matched_props": 320,
+    "excluded_goblin_demon_lines": 5000,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -744,5 +742,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T17:20:42.275946+00:00"
+  "fetched_at": "2026-11-20T17:28:49.111596+00:00"
 }

@@ -8838,8 +8838,15 @@
     "reason": "Real net-points-per-game model projects a +6.5-point margin and a 49.1 total. HOU's real offensive EPA/play (+0.06) against IND's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. HOU's real record over their last games is trending up relative to their season pace. IND's real record over their last games is trending down relative to their season pace. IND is carrying real, meaningfully more Out/Doubtful designations than HOU this week -- a real health edge favoring HOU.",
     "frozen_at": "2026-11-10 20:38 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 3,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": true
   },
   "IND@HOU|team_spread|11": {
     "away_team": "IND",
@@ -8861,8 +8868,15 @@
     "reason": "Real net-points-per-game model projects a +6.5-point margin and a 49.1 total. HOU's real offensive EPA/play (+0.06) against IND's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. HOU's real record over their last games is trending up relative to their season pace. IND's real record over their last games is trending down relative to their season pace. IND is carrying real, meaningfully more Out/Doubtful designations than HOU this week -- a real health edge favoring HOU.",
     "frozen_at": "2026-11-10 20:38 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 3,
+      "actual_margin": 23
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "IND@HOU|team_total|11": {
     "away_team": "IND",
@@ -8884,8 +8898,15 @@
     "reason": "Real net-points-per-game model projects a +6.5-point margin and a 49.1 total. HOU's real offensive EPA/play (+0.06) against IND's real defensive EPA/play allowed (+0.07) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. HOU's real record over their last games is trending up relative to their season pace. IND's real record over their last games is trending down relative to their season pace. IND is carrying real, meaningfully more Out/Doubtful designations than HOU this week -- a real health edge favoring HOU.",
     "frozen_at": "2026-11-10 20:38 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 3,
+      "actual_total": 29
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "MIA@BUF|team_moneyline|11": {
     "away_team": "MIA",
