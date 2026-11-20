@@ -39592,9 +39592,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "CeeDee Lamb|receiving_yards|11": {
     "player": "CeeDee Lamb",
@@ -41268,9 +41266,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Carnell Tate|receiving_yards|11": {
     "player": "Carnell Tate",
@@ -41470,8 +41466,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Emmett Johnson|rushing_yards|11": {
@@ -42585,7 +42580,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-20 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-20 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -42635,5 +42632,58 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Konata Mumpfield|receiving_yards|12": {
+    "player": "Konata Mumpfield",
+    "team": "LA",
+    "opponent": "GB",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 14.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 36.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -21.8,
+    "model_prob": 0.0322,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-20 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Blake Corum|rushing_yards|12": {
+    "player": "Blake Corum",
+    "team": "LA",
+    "opponent": "GB",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 38.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 56.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.0,
+    "model_prob": 0.2596,
+    "signals": {
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-20 18:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
   }
 }
