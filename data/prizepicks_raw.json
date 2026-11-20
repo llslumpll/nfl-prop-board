@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -96,13 +96,13 @@
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
-    "Elijah Higgins": {
-      "receiving_yards": 16.5
-    },
     "Simi Fehoko": {
+      "receiving_yards": 15.5
+    },
+    "Elijah Higgins": {
       "receiving_yards": 15.5
     },
     "Reggie Virgil": {
@@ -180,7 +180,7 @@
       "receiving_yards": 7.5
     },
     "Sam Roush": {
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Dak Prescott": {
       "passing_yards": 277.5,
@@ -202,7 +202,7 @@
       "receiving_yards": 67.5
     },
     "Carnell Tate": {
-      "receiving_yards": 65.5
+      "receiving_yards": 66.5
     },
     "Tony Pollard": {
       "rushing_yards": 63.5,
@@ -350,7 +350,7 @@
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 70.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 18.5
     },
     "Zay Flowers": {
@@ -454,7 +454,7 @@
       "receiving_yards": 21.5
     },
     "Brock Bowers": {
-      "receiving_yards": 52.5
+      "receiving_yards": 51.5
     },
     "Jaylen Waddle": {
       "receiving_yards": 42.5
@@ -495,7 +495,7 @@
       "receiving_yards": 9.5
     },
     "Troy Franklin": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Adam Trautman": {
       "receiving_yards": 5.5
@@ -536,7 +536,7 @@
       "receiving_yards": 28.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 14.5,
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Brian Thomas Jr.": {
@@ -674,9 +674,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5980,
+    "total_projections_returned": 5978,
     "matched_props": 297,
-    "excluded_goblin_demon_lines": 4864,
+    "excluded_goblin_demon_lines": 4862,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -715,5 +715,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-20T13:00:50.032339+00:00"
+  "fetched_at": "2026-11-20T13:20:38.841238+00:00"
 }
