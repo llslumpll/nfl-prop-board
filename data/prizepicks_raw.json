@@ -65,8 +65,8 @@
       "rushing_yards": 9.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 88.5,
-      "receiving_yards": 27.5
+      "rushing_yards": 87.5,
+      "receiving_yards": 26.5
     },
     "Rashee Rice": {
       "receiving_yards": 53.5,
@@ -93,8 +93,7 @@
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 8.5
     },
     "Simi Fehoko": {
       "receiving_yards": 15.5
@@ -121,7 +120,7 @@
       "receiving_yards": 8.5
     },
     "Hunter Long": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Caleb Williams": {
       "passing_yards": 245.5,
@@ -150,13 +149,13 @@
       "receiving_yards": 50.5,
       "receptions": 4.5
     },
-    "Kyle Monangai": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 5.5
-    },
     "Rome Odunze": {
       "receiving_yards": 45.5,
       "receptions": 3
+    },
+    "Kyle Monangai": {
+      "rushing_yards": 45.5,
+      "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 28.5,
@@ -193,7 +192,7 @@
       "rushing_yards": 7.5
     },
     "Cam Ward": {
-      "passing_yards": 239.5,
+      "passing_yards": 238.5,
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
@@ -356,7 +355,7 @@
       "receiving_yards": 1.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Ted Hurst III": {
       "receiving_yards": 3.5,
@@ -533,7 +532,7 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 234.5,
+      "passing_yards": 232.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
@@ -747,9 +746,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7080,
-    "matched_props": 344,
-    "excluded_goblin_demon_lines": 5654,
+    "total_projections_returned": 7081,
+    "matched_props": 343,
+    "excluded_goblin_demon_lines": 5651,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -788,5 +787,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T14:40:45.425239+00:00"
+  "fetched_at": "2026-11-21T15:00:44.876259+00:00"
 }
