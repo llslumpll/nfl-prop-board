@@ -196,7 +196,7 @@
       "rushing_yards": 7.5
     },
     "Cam Ward": {
-      "passing_yards": 233.5,
+      "passing_yards": 238.5,
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
@@ -610,34 +610,33 @@
     "T.J. Hockenson": {
       "receiving_yards": 48.5
     },
-    "Mike Evans": {
-      "receiving_yards": 48.5,
-      "receptions": 3.5
-    },
     "George Kittle": {
       "receiving_yards": 47.5,
       "receptions": 4
+    },
+    "Mike Evans": {
+      "receiving_yards": 47.5,
+      "receptions": 3.5
     },
     "Jordan Mason": {
       "rushing_yards": 43.5,
       "receiving_yards": 3.5
     },
     "Keenan Allen": {
-      "receiving_yards": 34.5
+      "receiving_yards": 32.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 29.5,
-      "rushing_yards": 7.5,
-      "receptions": 2.5
-    },
     "Kaelon Black": {
       "rushing_yards": 28.5,
       "receiving_yards": 0.5,
       "receptions": 0.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 27.5,
+      "rushing_yards": 7.5
     },
     "Jauan Jennings": {
       "receiving_yards": 19.5
@@ -650,7 +649,7 @@
       "receiving_yards": 9.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "Joe Burrow": {
       "passing_yards": 302.5,
@@ -744,9 +743,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6914,
-    "matched_props": 339,
-    "excluded_goblin_demon_lines": 5513,
+    "total_projections_returned": 6917,
+    "matched_props": 338,
+    "excluded_goblin_demon_lines": 5517,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -785,5 +784,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T02:20:48.155286+00:00"
+  "fetched_at": "2026-11-21T02:40:40.740052+00:00"
 }
