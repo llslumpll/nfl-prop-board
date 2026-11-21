@@ -299,6 +299,27 @@
    "side": "OVER 45.5",
    "status": "pending",
    "week": 11
+  },
+  "total|TB @ DET: UNDER 46.5": {
+   "ask": 0.48,
+   "away": "TB",
+   "cost": 0.4975,
+   "ev": 0.033,
+   "fair": 0.5139,
+   "first_ev": 0.033,
+   "first_seen": "2026-11-21 22:20 UTC",
+   "home": "DET",
+   "kalshi": "NO over 46.5 at 48%",
+   "kickoff": "2026-11-22T18:00:00+00:00",
+   "kind": "total",
+   "label": "TB @ DET: UNDER 46.5",
+   "line": 46.5,
+   "model": 0.4908,
+   "model_agrees": false,
+   "ref": "FanDuel 46.5 (-104/-116)",
+   "side": "UNDER 46.5",
+   "status": "pending",
+   "week": 11
   }
  }
 }

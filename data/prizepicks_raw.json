@@ -249,7 +249,7 @@
     },
     "Michael Carter": {
       "rushing_yards": 8.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "KaVontae Turpin": {
@@ -337,7 +337,7 @@
       "rushing_yards": 7.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 85.5,
+      "rushing_yards": 87.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -359,10 +359,10 @@
       "receiving_yards": 35.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 32.5
+      "receiving_yards": 33.5
     },
     "Cade Otton": {
-      "receiving_yards": 32.5
+      "receiving_yards": 30.5
     },
     "Tez Johnson": {
       "receiving_yards": 20.5,
@@ -728,7 +728,7 @@
       "receptions": 4
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 39.5,
       "receiving_yards": 5.5
     },
     "Antonio Williams": {
@@ -739,18 +739,18 @@
       "receiving_yards": 30.5,
       "receptions": 2
     },
-    "Mike Gesicki": {
-      "receiving_yards": 25.5
-    },
     "Dohnte Meyers": {
       "receiving_yards": 25.5
+    },
+    "Mike Gesicki": {
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -796,9 +796,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7510,
+    "total_projections_returned": 7527,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6018,
+    "excluded_goblin_demon_lines": 6030,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -837,5 +837,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T22:00:52.394720+00:00"
+  "fetched_at": "2026-11-21T22:20:45.833597+00:00"
 }
