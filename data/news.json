@@ -211,6 +211,168 @@
   }
  },
  "11": {
+  "Kenneth Walker III|KC": {
+   "opp": "ARI",
+   "out": "Kenneth Walker III",
+   "plays": [
+    {
+     "bump": 306,
+     "call": "OVER",
+     "line": 12.5,
+     "n_wo": 1,
+     "player": "Cyrus Allen",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 10.8,
+     "without": 44
+    },
+    {
+     "bump": 628,
+     "call": "OVER",
+     "line": 87.5,
+     "moved": false,
+     "n_wo": 1,
+     "now": 87.5,
+     "player": "Emmett Johnson",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 13.9,
+     "without": 101
+    },
+    {
+     "bump": 136,
+     "call": "OVER",
+     "line": 27.5,
+     "moved": false,
+     "n_wo": 1,
+     "now": 27.5,
+     "player": "Emmett Johnson",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 29.6,
+     "without": 70
+    },
+    {
+     "bump": 37,
+     "call": "OVER",
+     "line": 250.5,
+     "moved": false,
+     "n_wo": 1,
+     "now": 250.5,
+     "player": "Patrick Mahomes",
+     "result": null,
+     "short": "PASS YDS",
+     "stat": "passing_yards",
+     "with": 254.6,
+     "without": 348
+    },
+    {
+     "bump": 41,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 1,
+     "player": "Patrick Mahomes",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 10.6,
+     "without": 15
+    },
+    {
+     "bump": 40,
+     "call": "OVER",
+     "line": 53.5,
+     "moved": false,
+     "n_wo": 1,
+     "now": 53.5,
+     "player": "Rashee Rice",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 58.4,
+     "without": 82
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-21 16:33 UTC",
+   "team": "KC",
+   "week": 11
+  },
+  "Kyler Murray|MIN": {
+   "opp": "SF",
+   "out": "Kyler Murray",
+   "plays": [
+    {
+     "bump": 350,
+     "call": "OVER",
+     "line": 3.5,
+     "n_wo": 2,
+     "player": "Jordan Mason",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 0,
+     "without": 3.5
+    },
+    {
+     "bump": 11,
+     "call": "OVER",
+     "line": 85.5,
+     "moved": false,
+     "n_wo": 3,
+     "now": 85.5,
+     "player": "Justin Jefferson",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 56,
+     "without": 62.3
+    },
+    {
+     "bump": 323,
+     "call": "OVER",
+     "line": 9.5,
+     "n_wo": 3,
+     "player": "Myles Price",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 4.3,
+     "without": 18.3
+    },
+    {
+     "bump": 222,
+     "call": "OVER",
+     "line": 14.5,
+     "n_wo": 1,
+     "player": "Tai Felton",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 10.2,
+     "without": 33
+    },
+    {
+     "bump": 225,
+     "call": "OVER",
+     "line": 1.5,
+     "n_wo": 1,
+     "player": "Tai Felton",
+     "result": null,
+     "short": "REC",
+     "stat": "receptions",
+     "with": 0.8,
+     "without": 3
+    }
+   ],
+   "pos": "QB",
+   "seen": "2026-11-21 16:33 UTC",
+   "team": "MIN",
+   "week": 11
+  },
   "Woody Marks|HOU": {
    "opp": "IND",
    "out": "Woody Marks",

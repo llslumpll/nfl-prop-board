@@ -55,7 +55,7 @@
       "receptions": 2
     },
     "Darius Cooper": {
-      "receiving_yards": 14.5
+      "receiving_yards": 15.5
     },
     "Zach Ertz": {
       "receiving_yards": 6.5
@@ -276,7 +276,7 @@
       "receptions": 3
     },
     "Keon Coleman": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Malik Washington": {
       "receiving_yards": 27.5
@@ -370,7 +370,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 227.5,
+      "passing_yards": 228.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -450,7 +450,7 @@
       "receiving_yards": 6.5
     },
     "Kenyon Sadiq": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Mason Taylor": {
       "receiving_yards": 19.5,
@@ -554,7 +554,7 @@
       "receiving_yards": 67.5
     },
     "Parker Washington": {
-      "receiving_yards": 63.5
+      "receiving_yards": 64.5
     },
     "Cam Skattebo": {
       "rushing_yards": 54.5,
@@ -564,7 +564,7 @@
       "receiving_yards": 49.5
     },
     "Jakobi Meyers": {
-      "receiving_yards": 42.5
+      "receiving_yards": 40.5
     },
     "Brenton Strange": {
       "receiving_yards": 32.5,
@@ -670,7 +670,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 94.5,
+      "receiving_yards": 96.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -689,10 +689,6 @@
       "receiving_yards": 43.5,
       "receptions": 4
     },
-    "Jacory Croskey-Merritt": {
-      "rushing_yards": 37.5,
-      "receiving_yards": 4.5
-    },
     "Antonio Williams": {
       "receiving_yards": 35.5,
       "receptions": 3.5
@@ -709,7 +705,7 @@
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 11.5
+      "receiving_yards": 9.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -753,9 +749,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7124,
-    "matched_props": 344,
-    "excluded_goblin_demon_lines": 5691,
+    "total_projections_returned": 7117,
+    "matched_props": 342,
+    "excluded_goblin_demon_lines": 5686,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -794,5 +790,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T16:20:43.957287+00:00"
+  "fetched_at": "2026-11-21T16:33:28.930454+00:00"
 }
