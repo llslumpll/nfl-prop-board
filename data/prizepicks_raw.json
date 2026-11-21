@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -9,7 +9,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 187.5,
+      "passing_yards": 186.5,
       "rushing_yards": 38.5
     },
     "Jaylen Warren": {
@@ -273,11 +273,11 @@
     "Khalil Shakir": {
       "receiving_yards": 37.5
     },
-    "Keon Coleman": {
-      "receiving_yards": 30.5
-    },
     "Malik Washington": {
       "receiving_yards": 28.5
+    },
+    "Keon Coleman": {
+      "receiving_yards": 27.5
     },
     "Greg Dulcich": {
       "receiving_yards": 25.5,
@@ -368,7 +368,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 228.5,
+      "passing_yards": 227.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -383,7 +383,7 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
@@ -398,7 +398,7 @@
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5,
@@ -424,7 +424,7 @@
       "rushing_yards": 22.5
     },
     "Garrett Wilson": {
-      "receiving_yards": 64.5,
+      "receiving_yards": 65.5,
       "receptions": 5.5
     },
     "Omarion Hampton": {
@@ -444,7 +444,7 @@
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 22.5
@@ -643,7 +643,7 @@
       "receiving_yards": 19.5
     },
     "Tai Felton": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 1.5
     },
     "Myles Price": {
@@ -744,9 +744,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6911,
+    "total_projections_returned": 6912,
     "matched_props": 339,
-    "excluded_goblin_demon_lines": 5510,
+    "excluded_goblin_demon_lines": 5511,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -785,5 +785,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T01:40:40.153389+00:00"
+  "fetched_at": "2026-11-21T02:00:54.121215+00:00"
 }
