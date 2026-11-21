@@ -9,7 +9,7 @@
       "rushing_yards": 0.5
     },
     "Joe Milton III": {
-      "passing_yards": 186.5,
+      "passing_yards": 187.5,
       "rushing_yards": 38.5
     },
     "Jaylen Warren": {
@@ -152,13 +152,13 @@
       "receiving_yards": 50.5,
       "receptions": 4.5
     },
-    "Rome Odunze": {
-      "receiving_yards": 45.5,
-      "receptions": 3
-    },
     "Kyle Monangai": {
-      "rushing_yards": 45.5,
+      "rushing_yards": 47.5,
       "receiving_yards": 5.5
+    },
+    "Rome Odunze": {
+      "receiving_yards": 46.5,
+      "receptions": 3
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
@@ -219,7 +219,7 @@
       "receiving_yards": 16.5
     },
     "Elic Ayomanor": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Ryan Flournoy": {
@@ -238,7 +238,7 @@
     },
     "Tyjae Spears": {
       "rushing_yards": 15.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 9.5
@@ -598,7 +598,7 @@
       "rushing_yards": 1.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 84.5,
+      "receiving_yards": 86.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -694,7 +694,7 @@
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Van Jefferson": {
       "receiving_yards": 11.5
@@ -741,9 +741,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6922,
+    "total_projections_returned": 6930,
     "matched_props": 336,
-    "excluded_goblin_demon_lines": 5525,
+    "excluded_goblin_demon_lines": 5534,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -782,5 +782,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T05:20:40.954127+00:00"
+  "fetched_at": "2026-11-21T05:40:47.002502+00:00"
 }
