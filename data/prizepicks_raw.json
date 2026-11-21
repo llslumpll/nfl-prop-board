@@ -35,8 +35,15 @@
       "receiving_yards": 30.5,
       "receptions": 3.5
     },
+    "Germie Bernard": {
+      "receiving_yards": 28.5
+    },
     "Makai Lemon": {
       "receiving_yards": 27.5
+    },
+    "Pat Freiermuth": {
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Darius Cooper": {
       "receiving_yards": 17.5,
@@ -188,7 +195,7 @@
       "receptions": 7.5
     },
     "Javonte Williams": {
-      "rushing_yards": 77.5,
+      "rushing_yards": 78.5,
       "receiving_yards": 10.5,
       "receptions": 2
     },
@@ -218,7 +225,7 @@
       "receiving_yards": 20.5
     },
     "Chimere Dike": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 9.5
@@ -737,9 +744,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7215,
-    "matched_props": 336,
-    "excluded_goblin_demon_lines": 5780,
+    "total_projections_returned": 7257,
+    "matched_props": 339,
+    "excluded_goblin_demon_lines": 5815,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -778,5 +785,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T20:16:57.461262+00:00"
+  "fetched_at": "2026-11-21T20:20:50.338595+00:00"
 }
