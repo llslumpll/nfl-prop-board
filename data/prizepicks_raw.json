@@ -597,7 +597,7 @@
       "rushing_yards": 1.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 85.5,
+      "receiving_yards": 86.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -623,7 +623,7 @@
       "receiving_yards": 32.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
@@ -740,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6933,
+    "total_projections_returned": 6938,
     "matched_props": 335,
-    "excluded_goblin_demon_lines": 5538,
+    "excluded_goblin_demon_lines": 5544,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T06:20:49.314061+00:00"
+  "fetched_at": "2026-11-21T06:40:41.049010+00:00"
 }
