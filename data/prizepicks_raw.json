@@ -28,7 +28,7 @@
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 9.5,
       "receptions": 2
     },
@@ -69,8 +69,7 @@
     },
     "Emmett Johnson": {
       "rushing_yards": 85.5,
-      "receiving_yards": 27.5,
-      "receptions": 3
+      "receiving_yards": 27.5
     },
     "Rashee Rice": {
       "receiving_yards": 53.5,
@@ -153,13 +152,13 @@
       "receiving_yards": 50.5,
       "receptions": 4.5
     },
-    "Kyle Monangai": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 5.5
-    },
     "Rome Odunze": {
       "receiving_yards": 45.5,
       "receptions": 3
+    },
+    "Kyle Monangai": {
+      "rushing_yards": 45.5,
+      "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
@@ -196,7 +195,7 @@
       "rushing_yards": 7.5
     },
     "Cam Ward": {
-      "passing_yards": 238.5,
+      "passing_yards": 237.5,
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
@@ -228,7 +227,7 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 20.5,
@@ -413,7 +412,7 @@
       "receiving_yards": 10.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -439,7 +438,7 @@
       "receiving_yards": 47.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 46.5,
       "receptions": 3
     },
     "Braelon Allen": {
@@ -688,7 +687,7 @@
       "receptions": 3.5
     },
     "Treylon Burks": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 27.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -743,8 +742,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6917,
-    "matched_props": 338,
+    "total_projections_returned": 6916,
+    "matched_props": 337,
     "excluded_goblin_demon_lines": 5517,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -784,5 +783,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T02:40:40.740052+00:00"
+  "fetched_at": "2026-11-21T03:00:44.161862+00:00"
 }
