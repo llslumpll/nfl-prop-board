@@ -32,7 +32,7 @@
       "receptions": 2
     },
     "Dallas Goedert": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3.5
     },
     "Makai Lemon": {
@@ -54,7 +54,7 @@
       "receiving_yards": 16.5
     },
     "Darius Cooper": {
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Zach Ertz": {
       "receiving_yards": 6.5
@@ -198,16 +198,16 @@
       "receptions": 7.5
     },
     "Javonte Williams": {
-      "rushing_yards": 78.5,
+      "rushing_yards": 77.5,
       "receiving_yards": 10.5,
       "receptions": 2
-    },
-    "George Pickens": {
-      "receiving_yards": 71.5
     },
     "Tony Pollard": {
       "rushing_yards": 69.5,
       "receiving_yards": 19.5
+    },
+    "George Pickens": {
+      "receiving_yards": 69.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -222,7 +222,7 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 20.5,
@@ -234,14 +234,14 @@
     "Daniel Bellinger": {
       "receiving_yards": 9.5
     },
+    "Xavier Restrepo": {
+      "receiving_yards": 8.5
+    },
     "Calvin Ridley": {
       "receiving_yards": 8.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 7.5
-    },
-    "Xavier Restrepo": {
-      "receiving_yards": 6.5
     },
     "Josh Allen": {
       "passing_yards": 227.5,
@@ -627,9 +627,6 @@
       "rushing_yards": 43.5,
       "receiving_yards": 3.5
     },
-    "Keenan Allen": {
-      "receiving_yards": 31.5
-    },
     "Aaron Jones Sr.": {
       "rushing_yards": 30.5,
       "receiving_yards": 9.5
@@ -644,6 +641,10 @@
       "rushing_yards": 7.5,
       "receptions": 2.5
     },
+    "Keenan Allen": {
+      "receiving_yards": 23.5,
+      "receptions": 2.5
+    },
     "Jauan Jennings": {
       "receiving_yards": 19.5
     },
@@ -652,6 +653,9 @@
       "receptions": 1.5
     },
     "Myles Price": {
+      "receiving_yards": 9.5
+    },
+    "Jordan Watkins": {
       "receiving_yards": 9.5
     },
     "Kyle Juszczyk": {
@@ -748,9 +752,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7113,
-    "matched_props": 341,
-    "excluded_goblin_demon_lines": 5685,
+    "total_projections_returned": 7161,
+    "matched_props": 343,
+    "excluded_goblin_demon_lines": 5724,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -789,5 +793,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T19:00:45.252351+00:00"
+  "fetched_at": "2026-11-21T19:20:41.257156+00:00"
 }
