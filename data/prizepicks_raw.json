@@ -68,7 +68,7 @@
       "rushing_yards": 9.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 85.5,
+      "rushing_yards": 87.5,
       "receiving_yards": 27.5,
       "receptions": 3
     },
@@ -231,7 +231,7 @@
       "receiving_yards": 25.5
     },
     "Brevyn Spann-Ford": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Chimere Dike": {
@@ -368,7 +368,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 227.5,
+      "passing_yards": 228.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -535,7 +535,7 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 212.5,
+      "passing_yards": 214.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
@@ -585,7 +585,7 @@
       "receiving_yards": 2.5
     },
     "Theo Johnson": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Travis Hunter": {
       "receiving_yards": 8.5
@@ -695,7 +695,7 @@
       "receiving_yards": 24.5
     },
     "Samaje Perine": {
-      "rushing_yards": 19.5,
+      "rushing_yards": 20.5,
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
@@ -743,9 +743,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6909,
+    "total_projections_returned": 6911,
     "matched_props": 338,
-    "excluded_goblin_demon_lines": 5510,
+    "excluded_goblin_demon_lines": 5512,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +784,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T00:40:45.838853+00:00"
+  "fetched_at": "2026-11-21T01:00:50.349247+00:00"
 }
