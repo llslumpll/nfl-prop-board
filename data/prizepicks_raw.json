@@ -17,7 +17,7 @@
       "receiving_yards": 21.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 54.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
@@ -68,7 +68,7 @@
       "rushing_yards": 9.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 87.5,
+      "rushing_yards": 85.5,
       "receiving_yards": 27.5,
       "receptions": 3
     },
@@ -77,7 +77,7 @@
       "receptions": 4.5
     },
     "Trey McBride": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 49.5,
       "receptions": 6
     },
     "Travis Kelce": {
@@ -228,7 +228,7 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 20.5,
@@ -444,7 +444,7 @@
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 22.5
@@ -531,19 +531,20 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 234.5,
+      "passing_yards": 230.5,
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 214.5,
+      "passing_yards": 211.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 71.5,
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
-      "receiving_yards": 67.5
+      "receiving_yards": 67.5,
+      "receptions": 5.5
     },
     "Parker Washington": {
       "receiving_yards": 63.5
@@ -574,10 +575,10 @@
     "Brian Thomas Jr.": {
       "receiving_yards": 12.5
     },
-    "Josh Cameron": {
-      "receiving_yards": 12.5
-    },
     "Nate Boerkircher": {
+      "receiving_yards": 11.5
+    },
+    "Josh Cameron": {
       "receiving_yards": 11.5
     },
     "Devin Singletary": {
@@ -591,7 +592,7 @@
       "receiving_yards": 8.5
     },
     "Brock Purdy": {
-      "passing_yards": 243.5,
+      "passing_yards": 245.5,
       "rushing_yards": 16.5
     },
     "Kirk Cousins": {
@@ -743,9 +744,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6912,
-    "matched_props": 338,
-    "excluded_goblin_demon_lines": 5512,
+    "total_projections_returned": 6911,
+    "matched_props": 339,
+    "excluded_goblin_demon_lines": 5510,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +785,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T01:20:40.042683+00:00"
+  "fetched_at": "2026-11-21T01:40:40.153389+00:00"
 }
