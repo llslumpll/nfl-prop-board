@@ -146,7 +146,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 55.5
+      "receiving_yards": 56.5
     },
     "Colston Loveland": {
       "receiving_yards": 50.5,
@@ -743,9 +743,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6981,
+    "total_projections_returned": 6985,
     "matched_props": 338,
-    "excluded_goblin_demon_lines": 5583,
+    "excluded_goblin_demon_lines": 5587,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +784,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T10:00:44.611165+00:00"
+  "fetched_at": "2026-11-21T10:20:43.291437+00:00"
 }
