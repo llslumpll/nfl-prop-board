@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
@@ -194,7 +194,7 @@
       "rushing_yards": 7.5
     },
     "Cam Ward": {
-      "passing_yards": 233.5,
+      "passing_yards": 234.5,
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
@@ -399,7 +399,7 @@
       "receiving_yards": 25.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Justice Hill": {
@@ -538,7 +538,7 @@
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 71.5,
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
@@ -624,7 +624,7 @@
       "receiving_yards": 32.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 30.5,
+      "rushing_yards": 29.5,
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
@@ -633,7 +633,7 @@
       "receptions": 0.5
     },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 24.5,
       "rushing_yards": 7.5,
       "receptions": 2.5
     },
@@ -675,7 +675,7 @@
       "receiving_yards": 25.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 44.5,
       "receptions": 4
     },
     "Jacory Croskey-Merritt": {
@@ -742,9 +742,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7023,
+    "total_projections_returned": 7031,
     "matched_props": 337,
-    "excluded_goblin_demon_lines": 5621,
+    "excluded_goblin_demon_lines": 5627,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -783,5 +783,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T11:41:49.442138+00:00"
+  "fetched_at": "2026-11-21T12:00:43.970046+00:00"
 }
