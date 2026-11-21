@@ -96,8 +96,7 @@
     },
     "Bam Knight": {
       "rushing_yards": 22.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 8.5
     },
     "Simi Fehoko": {
       "receiving_yards": 15.5
@@ -742,8 +741,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 6933,
-    "matched_props": 336,
-    "excluded_goblin_demon_lines": 5537,
+    "matched_props": 335,
+    "excluded_goblin_demon_lines": 5538,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -782,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T06:00:47.566278+00:00"
+  "fetched_at": "2026-11-21T06:20:49.314061+00:00"
 }
