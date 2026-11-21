@@ -9,7 +9,7 @@
     },
     "Joe Milton III": {
       "passing_yards": 186.5,
-      "rushing_yards": 38.5
+      "rushing_yards": 35.5
     },
     "Jaylen Warren": {
       "rushing_yards": 65.5,
@@ -17,10 +17,10 @@
     },
     "Saquon Barkley": {
       "rushing_yards": 55.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 9.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 54.5
+      "receiving_yards": 53.5
     },
     "DK Metcalf": {
       "receiving_yards": 43.5,
@@ -392,7 +392,7 @@
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 73.5,
+      "rushing_yards": 74.5,
       "receiving_yards": 18.5
     },
     "Zay Flowers": {
@@ -419,7 +419,7 @@
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Tommy Tremble": {
       "receiving_yards": 20.5,
@@ -502,8 +502,7 @@
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
-      "receiving_yards": 10.5,
-      "receptions": 1.5
+      "receiving_yards": 8.5
     },
     "Isaiah Williams": {
       "receiving_yards": 11.5,
@@ -736,22 +735,21 @@
       "receptions": 4
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 5.5
     },
     "Antonio Williams": {
-      "receiving_yards": 35.5,
-      "receptions": 3.5
+      "receiving_yards": 35.5
     },
     "Treylon Burks": {
       "receiving_yards": 30.5,
       "receptions": 2
     },
-    "Dohnte Meyers": {
+    "Mike Gesicki": {
       "receiving_yards": 25.5
     },
-    "Mike Gesicki": {
-      "receiving_yards": 24.5
+    "Dohnte Meyers": {
+      "receiving_yards": 25.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
@@ -764,7 +762,7 @@
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Jordan Love": {
       "passing_yards": 263.5,
@@ -804,9 +802,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7563,
-    "matched_props": 367,
-    "excluded_goblin_demon_lines": 6062,
+    "total_projections_returned": 7616,
+    "matched_props": 365,
+    "excluded_goblin_demon_lines": 6115,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -845,5 +843,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T22:40:39.632159+00:00"
+  "fetched_at": "2026-11-21T23:00:46.977190+00:00"
 }

@@ -41316,9 +41316,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Stafford|passing_yards|12": {
     "player": "Matthew Stafford",
@@ -42684,7 +42682,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
