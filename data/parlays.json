@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "ml-3": {
@@ -790,7 +790,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "props-2": {
@@ -836,7 +836,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "props-3": {
@@ -897,7 +897,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "props-4": {
@@ -973,7 +973,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "td-1": {
@@ -1001,13 +1001,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 2.875,
-   "ev": 0.27,
+   "decimal": 2.924,
+   "ev": 0.292,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -1026,14 +1026,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 1.639,
+     "decimal": 1.667,
      "game": "BUF@MIA",
      "good": true,
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "td",
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
-     "price": 0.61,
+     "price": 0.6,
      "team": "BUF"
     }
    ],
@@ -1041,7 +1041,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   },
   "td-3": {
@@ -1228,7 +1228,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 07:21 UTC",
+   "updated": "2026-11-21 07:40 UTC",
    "week": 11
   }
  },
