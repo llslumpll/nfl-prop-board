@@ -484,7 +484,7 @@
       "receiving_yards": 42.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 32.5,
@@ -741,9 +741,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6923,
+    "total_projections_returned": 6924,
     "matched_props": 336,
-    "excluded_goblin_demon_lines": 5527,
+    "excluded_goblin_demon_lines": 5528,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -782,5 +782,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T03:35:52.925036+00:00"
+  "fetched_at": "2026-11-21T03:40:41.022315+00:00"
 }
