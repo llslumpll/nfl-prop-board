@@ -539,7 +539,7 @@
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 71.5,
+      "rushing_yards": 72.5,
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
@@ -743,9 +743,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6975,
+    "total_projections_returned": 6978,
     "matched_props": 338,
-    "excluded_goblin_demon_lines": 5579,
+    "excluded_goblin_demon_lines": 5580,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -784,5 +784,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T09:20:38.594917+00:00"
+  "fetched_at": "2026-11-21T09:40:43.614349+00:00"
 }
