@@ -28,7 +28,7 @@
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 39.5,
       "receiving_yards": 9.5,
       "receptions": 2
     },
@@ -46,9 +46,6 @@
     "Pat Freiermuth": {
       "receiving_yards": 22.5,
       "receptions": 2.5
-    },
-    "Roman Wilson": {
-      "receiving_yards": 22.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 19.5
@@ -403,7 +400,7 @@
       "receiving_yards": 25.5
     },
     "Tommy Tremble": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Justice Hill": {
@@ -418,7 +415,7 @@
       "receiving_yards": 2.5
     },
     "Geno Smith": {
-      "passing_yards": 218.5,
+      "passing_yards": 217.5,
       "rushing_yards": 4.5
     },
     "Justin Herbert": {
@@ -749,8 +746,8 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7057,
-    "matched_props": 344,
+    "total_projections_returned": 7055,
+    "matched_props": 343,
     "excluded_goblin_demon_lines": 5641,
     "sample_stat_types_seen": [
       "anytime tds",
@@ -790,5 +787,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T13:40:46.553895+00:00"
+  "fetched_at": "2026-11-21T14:00:45.875895+00:00"
 }
