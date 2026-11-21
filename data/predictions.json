@@ -38744,10 +38744,7 @@
     "graded_at": null,
     "line_attached_at": "2026-11-17 21:56 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 21:56 UTC, before kickoff. Call set from the frozen projection vs this line.",
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Van Jefferson|receptions|11": {
     "player": "Van Jefferson",
@@ -39641,9 +39638,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Jordyn Tyson|receiving_yards|11": {
     "player": "Jordyn Tyson",
@@ -39691,7 +39686,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -42609,7 +42606,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "C.J. Stroud|any_td|12": {
     "player": "C.J. Stroud",
