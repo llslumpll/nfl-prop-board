@@ -619,8 +619,8 @@
  "11": {
   "ml-2": {
    "chance": 0.7832,
-   "decimal": 1.128,
-   "ev": -0.117,
+   "decimal": 1.121,
+   "ev": -0.122,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -643,14 +643,14 @@
      "away": "ARI",
      "call": "HOME",
      "chance": 0.88,
-     "decimal": 1.062,
+     "decimal": 1.056,
      "game": "ARI@KC",
      "good": false,
      "home": "KC",
      "kickoff": "2026-11-22T18:00:00+00:00",
      "kind": "ml",
      "label": "KC to win",
-     "price": -1600,
+     "price": -1800,
      "team": "KC"
     }
    ],
@@ -658,7 +658,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "ml-3": {
@@ -723,8 +723,8 @@
   },
   "ml-4": {
    "chance": 0.2333,
-   "decimal": 3.872,
-   "ev": -0.097,
+   "decimal": 3.965,
+   "ev": -0.075,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -733,14 +733,14 @@
      "away": "LV",
      "call": "HOME",
      "chance": 0.76,
-     "decimal": 1.167,
+     "decimal": 1.161,
      "game": "LV@DEN",
      "good": false,
      "home": "DEN",
      "kickoff": "2026-11-22T21:25:00+00:00",
      "kind": "ml",
      "label": "DEN to win",
-     "price": -600,
+     "price": -620,
      "team": "DEN"
     },
     {
@@ -761,28 +761,28 @@
      "away": "MIN",
      "call": "HOME",
      "chance": 0.679,
-     "decimal": 1.602,
+     "decimal": 1.595,
      "game": "MIN@SF",
      "good": true,
      "home": "SF",
      "kickoff": "2026-11-23T01:20:00+00:00",
      "kind": "ml",
      "label": "SF to win",
-     "price": -166,
+     "price": -168,
      "team": "SF"
     },
     {
      "away": "PIT",
      "call": "AWAY",
      "chance": 0.659,
-     "decimal": 1.488,
+     "decimal": 1.538,
      "game": "PIT@PHI",
-     "good": false,
+     "good": true,
      "home": "PHI",
      "kickoff": "2026-11-22T21:25:00+00:00",
      "kind": "ml",
      "label": "PIT to win",
-     "price": -205,
+     "price": -186,
      "team": "PIT"
     }
    ],
@@ -790,7 +790,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "props-2": {
@@ -836,7 +836,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "props-3": {
@@ -897,7 +897,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "props-4": {
@@ -973,7 +973,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "td-1": {
@@ -1001,7 +1001,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "td-2": {
@@ -1041,7 +1041,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   },
   "td-3": {
@@ -1228,7 +1228,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-21 20:00 UTC",
+   "updated": "2026-11-21 20:17 UTC",
    "week": 11
   }
  },
