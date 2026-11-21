@@ -69,14 +69,14 @@
     },
     "Josh Johnson": {
       "passing_yards": 163.5,
-      "rushing_yards": 17.5
+      "rushing_yards": 14.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 87.5,
+      "rushing_yards": 85.5,
       "receiving_yards": 30.5
     },
     "Trey McBride": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 51.5,
       "receptions": 6
     },
     "Rashee Rice": {
@@ -88,7 +88,7 @@
       "receptions": 3.5
     },
     "Josh Downs": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 27.5,
@@ -106,17 +106,17 @@
       "receiving_yards": 14.5
     },
     "Reggie Virgil": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 13.5
-    },
-    "Noah Gray": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
+      "receiving_yards": 12.5
     },
     "Cyrus Allen": {
       "receiving_yards": 12.5
+    },
+    "Noah Gray": {
+      "receiving_yards": 12.5,
+      "receptions": 1.5
     },
     "Jaydn Ott": {
       "rushing_yards": 11.5
@@ -151,20 +151,21 @@
       "receiving_yards": 54.5
     },
     "Colston Loveland": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
-    },
-    "Kyle Monangai": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 5.5
     },
     "Rome Odunze": {
       "receiving_yards": 45.5,
       "receptions": 3
     },
+    "Kyle Monangai": {
+      "rushing_yards": 45.5,
+      "receiving_yards": 5.5
+    },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 2.5
     },
     "Devaughn Vele": {
       "receiving_yards": 22.5
@@ -200,8 +201,7 @@
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 92.5,
-      "receptions": 7.5
+      "receiving_yards": 92.5
     },
     "Javonte Williams": {
       "rushing_yards": 77.5,
@@ -228,7 +228,7 @@
       "receptions": 3.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Chimere Dike": {
       "receiving_yards": 22.5
@@ -244,13 +244,13 @@
     "Daniel Bellinger": {
       "receiving_yards": 9.5
     },
-    "Xavier Restrepo": {
-      "receiving_yards": 8.5
-    },
     "Michael Carter": {
-      "rushing_yards": 8.5,
+      "rushing_yards": 9.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
+    },
+    "Xavier Restrepo": {
+      "receiving_yards": 8.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 7.5
@@ -259,7 +259,7 @@
       "receiving_yards": 6.5
     },
     "Hunter Luepke": {
-      "rushing_yards": 2.5,
+      "rushing_yards": 3.5,
       "receptions": 0.5,
       "receiving_yards": 0.5
     },
@@ -291,7 +291,7 @@
       "receptions": 3
     },
     "Keon Coleman": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Malik Washington": {
       "receiving_yards": 29.5
@@ -359,7 +359,7 @@
       "receiving_yards": 35.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 33.5
+      "receiving_yards": 32.5
     },
     "Cade Otton": {
       "receiving_yards": 30.5
@@ -392,7 +392,7 @@
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 73.5,
       "receiving_yards": 18.5
     },
     "Zay Flowers": {
@@ -467,18 +467,26 @@
       "rushing_yards": 49.5,
       "receiving_yards": 20.5
     },
-    "Tre' Harris": {
-      "receiving_yards": 47.5
-    },
     "Adonai Mitchell": {
       "receiving_yards": 46.5,
       "receptions": 3
+    },
+    "Tre' Harris": {
+      "receiving_yards": 44.5,
+      "receptions": 3.5
+    },
+    "Ladd McConkey": {
+      "receiving_yards": 40.5,
+      "receptions": 3.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
       "receiving_yards": 6.5
     },
     "Kenyon Sadiq": {
+      "receiving_yards": 23.5
+    },
+    "Quentin Johnston": {
       "receiving_yards": 23.5
     },
     "Mason Taylor": {
@@ -796,9 +804,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7527,
-    "matched_props": 363,
-    "excluded_goblin_demon_lines": 6030,
+    "total_projections_returned": 7563,
+    "matched_props": 367,
+    "excluded_goblin_demon_lines": 6062,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -837,5 +845,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T22:20:45.833597+00:00"
+  "fetched_at": "2026-11-21T22:40:39.632159+00:00"
 }
