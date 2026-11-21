@@ -117,7 +117,7 @@
       "receiving_yards": 12.5
     },
     "Nate Carter": {
-      "rushing_yards": 11.5
+      "rushing_yards": 12.5
     },
     "Devin Duvernay": {
       "receiving_yards": 8.5
@@ -134,7 +134,8 @@
       "rushing_yards": 18.5
     },
     "Chris Olave": {
-      "receiving_yards": 66.5
+      "receiving_yards": 66.5,
+      "receptions": 5
     },
     "D'Andre Swift": {
       "rushing_yards": 63.5,
@@ -269,7 +270,8 @@
       "receptions": 3.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 3
     },
     "Keon Coleman": {
       "receiving_yards": 29.5
@@ -343,7 +345,8 @@
       "receiving_yards": 30.5
     },
     "Tez Johnson": {
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 1.5
     },
     "Kenny Gainwell": {
       "rushing_yards": 17.5,
@@ -374,7 +377,8 @@
       "receiving_yards": 18.5
     },
     "Zay Flowers": {
-      "receiving_yards": 68.5
+      "receiving_yards": 68.5,
+      "receptions": 6
     },
     "Tetairoa McMillan": {
       "receiving_yards": 63.5,
@@ -453,7 +457,7 @@
     },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
@@ -488,7 +492,8 @@
     },
     "Ashton Jeanty": {
       "rushing_yards": 32.5,
-      "receiving_yards": 30.5
+      "receiving_yards": 30.5,
+      "receptions": 4
     },
     "Tre Tucker": {
       "receiving_yards": 29.5,
@@ -534,11 +539,11 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 210.5,
+      "passing_yards": 211.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 71.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
@@ -558,13 +563,14 @@
       "receiving_yards": 42.5
     },
     "Brenton Strange": {
-      "receiving_yards": 32.5
+      "receiving_yards": 32.5,
+      "receptions": 3
     },
     "Malachi Fields": {
       "receiving_yards": 29.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 19.5
+      "rushing_yards": 20.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
@@ -606,7 +612,8 @@
       "receiving_yards": 33.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 48.5
+      "receiving_yards": 48.5,
+      "receptions": 5
     },
     "George Kittle": {
       "receiving_yards": 47.5,
@@ -742,9 +749,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7036,
-    "matched_props": 337,
-    "excluded_goblin_demon_lines": 5632,
+    "total_projections_returned": 7067,
+    "matched_props": 344,
+    "excluded_goblin_demon_lines": 5649,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -783,5 +790,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T12:20:38.891289+00:00"
+  "fetched_at": "2026-11-21T12:40:42.201027+00:00"
 }
