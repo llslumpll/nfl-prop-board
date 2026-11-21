@@ -16,7 +16,7 @@
       "receiving_yards": 21.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 11.5
     },
     "DeVonta Smith": {
@@ -36,7 +36,7 @@
       "receptions": 3.5
     },
     "Makai Lemon": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Germie Bernard": {
       "receiving_yards": 25.5,
@@ -340,7 +340,7 @@
       "receiving_yards": 35.5
     },
     "Chris Godwin Jr.": {
-      "receiving_yards": 33.5
+      "receiving_yards": 32.5
     },
     "Cade Otton": {
       "receiving_yards": 31.5
@@ -369,7 +369,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 228.5,
+      "passing_yards": 227.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -385,7 +385,7 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 43.5,
       "receptions": 3.5
     },
     "Ja'Kobi Lane": {
@@ -415,7 +415,7 @@
       "receiving_yards": 10.5
     },
     "Matt Hibner": {
-      "receiving_yards": 2.5
+      "receiving_yards": 0.5
     },
     "Geno Smith": {
       "passing_yards": 217.5,
@@ -564,7 +564,7 @@
       "receiving_yards": 45.5
     },
     "Jakobi Meyers": {
-      "receiving_yards": 40.5
+      "receiving_yards": 42.5
     },
     "Brenton Strange": {
       "receiving_yards": 32.5,
@@ -667,14 +667,14 @@
     },
     "Jayden Daniels": {
       "passing_yards": 225.5,
-      "rushing_yards": 40.5
+      "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
       "receiving_yards": 94.5,
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 75.5,
       "receptions": 5.5
     },
     "Stefon Diggs": {
@@ -698,20 +698,20 @@
       "receptions": 2
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 10.5
+      "receiving_yards": 8.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Jordan Love": {
       "passing_yards": 263.5,
@@ -752,9 +752,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7145,
+    "total_projections_returned": 7146,
     "matched_props": 343,
-    "excluded_goblin_demon_lines": 5710,
+    "excluded_goblin_demon_lines": 5711,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -793,5 +793,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-21T17:40:42.967702+00:00"
+  "fetched_at": "2026-11-21T18:00:51.749154+00:00"
 }
