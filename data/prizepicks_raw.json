@@ -115,8 +115,7 @@
       "receiving_yards": 12.5
     },
     "Noah Gray": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
+      "receiving_yards": 12.5
     },
     "Jaydn Ott": {
       "rushing_yards": 12.5
@@ -578,8 +577,8 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 232.5,
-      "rushing_yards": 8.5
+      "passing_yards": 230.5,
+      "rushing_yards": 10.5
     },
     "J.J. McCarthy": {
       "passing_yards": 212.5,
@@ -698,7 +697,7 @@
       "receiving_yards": 7.5
     },
     "Jordan Watkins": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
     },
     "Kyle Juszczyk": {
       "receiving_yards": 3.5
@@ -716,7 +715,8 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5
+      "receiving_yards": 75.5,
+      "receptions": 5.5
     },
     "Stefon Diggs": {
       "receiving_yards": 45.5,
@@ -798,9 +798,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7932,
+    "total_projections_returned": 7937,
     "matched_props": 361,
-    "excluded_goblin_demon_lines": 6418,
+    "excluded_goblin_demon_lines": 6424,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -839,5 +839,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T10:40:41.161436+00:00"
+  "fetched_at": "2026-11-22T11:00:46.283511+00:00"
 }
