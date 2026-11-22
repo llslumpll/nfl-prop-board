@@ -39,13 +39,13 @@
       "rushing_yards": 28.5,
       "receiving_yards": 0.5
     },
-    "Keenan Allen": {
+    "Deebo Samuel Sr.": {
       "receiving_yards": 26.5,
+      "rushing_yards": 7.5,
       "receptions": 2.5
     },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 25.5,
-      "rushing_yards": 7.5,
+    "Keenan Allen": {
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Jauan Jennings": {
@@ -55,7 +55,7 @@
       "receiving_yards": 14.5
     },
     "Jordan Watkins": {
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Myles Price": {
       "receiving_yards": 7.5
@@ -158,9 +158,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1484,
+    "total_projections_returned": 1482,
     "matched_props": 69,
-    "excluded_goblin_demon_lines": 1215,
+    "excluded_goblin_demon_lines": 1213,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -199,5 +199,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T22:20:32.685796+00:00"
+  "fetched_at": "2026-11-22T22:40:32.413665+00:00"
 }
