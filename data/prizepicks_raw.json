@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 63.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
@@ -363,7 +363,7 @@
       "receiving_yards": 32.5
     },
     "Cade Otton": {
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "Tez Johnson": {
       "receiving_yards": 20.5,
@@ -371,7 +371,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 17.5,
-      "receiving_yards": 12.5,
+      "receiving_yards": 11.5,
       "receptions": 2
     },
     "Isaac TeSlaa": {
@@ -465,7 +465,7 @@
     },
     "Breece Hall": {
       "rushing_yards": 49.5,
-      "receiving_yards": 19.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Adonai Mitchell": {
@@ -611,7 +611,7 @@
       "receptions": 3
     },
     "Malachi Fields": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Chris Rodriguez Jr.": {
       "rushing_yards": 20.5
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7818,
+    "total_projections_returned": 7820,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6300,
+    "excluded_goblin_demon_lines": 6302,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T03:00:46.425497+00:00"
+  "fetched_at": "2026-11-22T03:20:50.911249+00:00"
 }
