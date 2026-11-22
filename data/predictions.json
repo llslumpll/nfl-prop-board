@@ -42596,7 +42596,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value"
+      "best_value",
+      "highest_confidence"
     ],
     "line_attached_at": "2026-11-20 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-20 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -42768,6 +42769,98 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-22 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Joe Burrow|passing_yards|11": {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opponent": "WAS",
+    "week": 11,
+    "stat": "passing_yards",
+    "projected": 304.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 302.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.5,
+    "model_prob": 0.5067,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-22 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "George Kittle|receiving_yards|11": {
+    "player": "George Kittle",
+    "team": "SF",
+    "opponent": "MIN",
+    "week": 11,
+    "stat": "receiving_yards",
+    "projected": 61.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 47.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 14.0,
+    "model_prob": 0.6366,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-22 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Stefon Diggs|receiving_yards|11": {
+    "player": "Stefon Diggs",
+    "team": "WAS",
+    "opponent": "CIN",
+    "week": 11,
+    "stat": "receiving_yards",
+    "projected": 58.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 45.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 12.5,
+    "model_prob": 0.6358,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "opponent_recent_form": "better",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-22 21:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Chase Brown|rushing_yards|11": {
+    "player": "Chase Brown",
+    "team": "CIN",
+    "opponent": "WAS",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 53.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 44.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 8.7,
+    "model_prob": 0.6011,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-22 21:40 UTC",
     "graded": false,
     "actual": null,
     "hit": null,

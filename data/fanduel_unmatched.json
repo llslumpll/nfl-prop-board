@@ -1,5 +1,11 @@
 [
   {
+    "player": "Trevor Lawrence",
+    "team": "JAX",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Patrick Mahomes",
     "team": "KC",
     "stat": "passing_yards",
@@ -36,10 +42,16 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "J.J. McCarthy",
+    "team": "NYG",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Michael Penix Jr.",
     "team": "ATL",
     "stat": "passing_yards",
-    "why": "possible name mismatch: FanDuel has 'Mike Washington Jr.'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "Caleb Williams",
@@ -62,6 +74,12 @@
   {
     "player": "Drew Lock",
     "team": "SEA",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Bo Nix",
+    "team": "DEN",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -144,6 +162,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Parker Washington",
+    "team": "JAX",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Puka Nacua",
     "team": "LA",
     "stat": "receiving_yards",
@@ -152,6 +176,12 @@
   {
     "player": "George Pickens",
     "team": "DAL",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Isaiah Likely",
+    "team": "NYG",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -261,7 +291,7 @@
     "player": "Tez Johnson",
     "team": "TB",
     "stat": "receiving_yards",
-    "why": "possible name mismatch: FanDuel has 'Theo Johnson'"
+    "why": "FanDuel lists no props for this player"
   },
   {
     "player": "DeVonta Smith",
@@ -324,6 +354,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Josh Cameron",
+    "team": "JAX",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tony Pollard",
     "team": "TEN",
     "stat": "receiving_yards",
@@ -344,6 +380,12 @@
   {
     "player": "Jordyn Tyson",
     "team": "NO",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Isaiah Likely",
+    "team": "NYG",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -392,6 +434,12 @@
   {
     "player": "Garrett Wilson",
     "team": "NYJ",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Parker Washington",
+    "team": "JAX",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -612,6 +660,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Cam Skattebo",
+    "team": "NYG",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Tyler Goodson",
     "team": "DAL",
     "stat": "rushing_yards",
@@ -638,6 +692,12 @@
   {
     "player": "Javonte Williams",
     "team": "DAL",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jonah Coleman",
+    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
