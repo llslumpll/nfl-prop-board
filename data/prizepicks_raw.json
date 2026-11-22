@@ -148,10 +148,10 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 54.5
+      "receiving_yards": 55.5
     },
     "Colston Loveland": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 50.5,
       "receptions": 4.5
     },
     "Kyle Monangai": {
@@ -182,7 +182,7 @@
       "receiving_yards": 0.5
     },
     "Alvin Kamara": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "rushing_yards": 6.5,
       "receptions": 2.5
     },
@@ -338,7 +338,7 @@
       "rushing_yards": 7.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 87.5,
+      "rushing_yards": 84.5,
       "receiving_yards": 32.5
     },
     "Amon-Ra St. Brown": {
@@ -428,8 +428,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
-      "rushing_yards": 13.5,
-      "receptions": 3
+      "rushing_yards": 13.5
     },
     "John Metchie III": {
       "receiving_yards": 10.5
@@ -490,7 +489,7 @@
       "receiving_yards": 22.5
     },
     "Mason Taylor": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Charlie Kolar": {
@@ -633,11 +632,11 @@
       "rushing_yards": 11.5,
       "receiving_yards": 2.5
     },
-    "Travis Hunter": {
+    "Theo Johnson": {
       "receiving_yards": 7.5
     },
-    "Theo Johnson": {
-      "receiving_yards": 6.5
+    "Travis Hunter": {
+      "receiving_yards": 7.5
     },
     "Brock Purdy": {
       "passing_yards": 245.5,
@@ -802,9 +801,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7670,
-    "matched_props": 365,
-    "excluded_goblin_demon_lines": 6170,
+    "total_projections_returned": 7720,
+    "matched_props": 364,
+    "excluded_goblin_demon_lines": 6216,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -843,5 +842,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T00:00:49.161791+00:00"
+  "fetched_at": "2026-11-22T00:20:41.689038+00:00"
 }
