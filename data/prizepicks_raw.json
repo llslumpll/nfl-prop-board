@@ -132,7 +132,7 @@
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
-      "passing_yards": 237.5,
+      "passing_yards": 236.5,
       "rushing_yards": 18.5
     },
     "Chris Olave": {
@@ -154,13 +154,13 @@
       "receiving_yards": 50.5,
       "receptions": 4.5
     },
+    "Kyle Monangai": {
+      "rushing_yards": 46.5,
+      "receiving_yards": 5.5
+    },
     "Rome Odunze": {
       "receiving_yards": 45.5,
       "receptions": 3
-    },
-    "Kyle Monangai": {
-      "rushing_yards": 45.5,
-      "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 30.5,
@@ -192,7 +192,7 @@
       "receiving_yards": 7.5
     },
     "Dak Prescott": {
-      "passing_yards": 278.5,
+      "passing_yards": 279.5,
       "rushing_yards": 7.5
     },
     "Cam Ward": {
@@ -213,8 +213,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 69.5,
-      "receiving_yards": 19.5,
-      "receptions": 3.5
+      "receiving_yards": 19.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -799,9 +798,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7933,
-    "matched_props": 362,
-    "excluded_goblin_demon_lines": 6416,
+    "total_projections_returned": 7932,
+    "matched_props": 361,
+    "excluded_goblin_demon_lines": 6419,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -840,5 +839,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T10:00:43.901196+00:00"
+  "fetched_at": "2026-11-22T10:20:42.590815+00:00"
 }
