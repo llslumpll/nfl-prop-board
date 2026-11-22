@@ -27,12 +27,12 @@
       "receptions": 3.5
     },
     "Rico Dowdle": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 9.5,
       "receptions": 2
     },
     "Dallas Goedert": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3.5
     },
     "Germie Bernard": {
@@ -420,7 +420,7 @@
       "receptions": 2.5
     },
     "Rashod Bateman": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Tommy Tremble": {
       "receiving_yards": 20.5,
@@ -489,15 +489,15 @@
       "receiving_yards": 22.5
     },
     "Mason Taylor": {
-      "receiving_yards": 20.5,
+      "receiving_yards": 19.5,
       "receptions": 2.5
-    },
-    "Charlie Kolar": {
-      "receiving_yards": 14.5
     },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
       "receiving_yards": 7.5
+    },
+    "Charlie Kolar": {
+      "receiving_yards": 13.5
     },
     "Keaton Mitchell": {
       "rushing_yards": 11.5,
@@ -517,8 +517,7 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 72.5,
-      "receiving_yards": 21.5,
-      "receptions": 3.5
+      "receiving_yards": 21.5
     },
     "Brock Bowers": {
       "receiving_yards": 53.5,
@@ -536,7 +535,7 @@
       "receiving_yards": 31.5
     },
     "Tre Tucker": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 30.5,
       "receptions": 2.5
     },
     "Pat Bryant": {
@@ -548,6 +547,7 @@
     },
     "J.K. Dobbins": {
       "rushing_yards": 24.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Michael Mayer": {
@@ -555,10 +555,10 @@
       "receptions": 2.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Jack Bech": {
       "receiving_yards": 13.5,
@@ -714,7 +714,7 @@
       "rushing_yards": 40.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 97.5,
+      "receiving_yards": 94.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -747,7 +747,7 @@
       "receiving_yards": 25.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7756,
+    "total_projections_returned": 7812,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6243,
+    "excluded_goblin_demon_lines": 6296,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T01:40:48.321393+00:00"
+  "fetched_at": "2026-11-22T02:00:49.209057+00:00"
 }
