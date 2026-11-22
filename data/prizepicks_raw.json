@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 64.5,
+      "rushing_yards": 62.5,
       "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
@@ -12,7 +12,7 @@
       "rushing_yards": 35.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 19.5
     },
     "Saquon Barkley": {
@@ -120,7 +120,7 @@
       "receiving_yards": 12.5
     },
     "Jaydn Ott": {
-      "rushing_yards": 10.5
+      "rushing_yards": 11.5
     },
     "Devin Duvernay": {
       "receiving_yards": 8.5
@@ -197,7 +197,7 @@
       "rushing_yards": 7.5
     },
     "Cam Ward": {
-      "passing_yards": 239.5,
+      "passing_yards": 238.5,
       "rushing_yards": 15.5
     },
     "CeeDee Lamb": {
@@ -209,12 +209,12 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "George Pickens": {
-      "receiving_yards": 70.5
-    },
     "Tony Pollard": {
       "rushing_yards": 69.5,
       "receiving_yards": 19.5
+    },
+    "George Pickens": {
+      "receiving_yards": 69.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -428,7 +428,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Josh Cuevas": {
       "receiving_yards": 10.5
@@ -589,7 +589,7 @@
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 69.5,
       "receptions": 5.5
     },
     "Parker Washington": {
@@ -658,12 +658,12 @@
       "receiving_yards": 48.5,
       "receptions": 5
     },
+    "Mike Evans": {
+      "receiving_yards": 48.5
+    },
     "George Kittle": {
       "receiving_yards": 47.5,
       "receptions": 4
-    },
-    "Mike Evans": {
-      "receiving_yards": 47.5
     },
     "Jordan Mason": {
       "rushing_yards": 43.5,
@@ -691,8 +691,7 @@
       "receiving_yards": 19.5
     },
     "Tai Felton": {
-      "receiving_yards": 14.5,
-      "receptions": 1.5
+      "receiving_yards": 13.5
     },
     "Jordan Watkins": {
       "receiving_yards": 8.5
@@ -712,7 +711,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 97.5,
+      "receiving_yards": 94.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -798,9 +797,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7874,
-    "matched_props": 361,
-    "excluded_goblin_demon_lines": 6357,
+    "total_projections_returned": 7872,
+    "matched_props": 360,
+    "excluded_goblin_demon_lines": 6356,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -839,5 +838,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T06:00:45.097742+00:00"
+  "fetched_at": "2026-11-22T06:20:50.790345+00:00"
 }
