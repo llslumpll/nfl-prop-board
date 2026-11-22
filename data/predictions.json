@@ -42564,7 +42564,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Mike Evans|receiving_yards|11": {
     "player": "Mike Evans",
@@ -42720,8 +42723,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Jacory Croskey-Merritt|rushing_yards|11": {

@@ -2,7 +2,7 @@
   "props": {
     "Geno Smith": {
       "passing_yards": 223.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 4.5
     },
     "Justin Herbert": {
       "passing_yards": 202.5,
@@ -44,9 +44,6 @@
       "receiving_yards": 21.5,
       "receptions": 2.5
     },
-    "Charlie Kolar": {
-      "receiving_yards": 15.5
-    },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
       "receiving_yards": 7.5
@@ -56,19 +53,18 @@
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
+    "Charlie Kolar": {
+      "receiving_yards": 13.5
+    },
     "David Njoku": {
       "receiving_yards": 12.5,
-      "receptions": 1.5
-    },
-    "Isaiah Williams": {
-      "receiving_yards": 11.5,
       "receptions": 1.5
     },
     "Oronde Gadsden II": {
       "receiving_yards": 9.5
     },
     "Bo Nix": {
-      "passing_yards": 216.5,
+      "passing_yards": 217.5,
       "rushing_yards": 10.5
     },
     "Fernando Mendoza": {
@@ -84,16 +80,16 @@
       "receiving_yards": 42.5
     },
     "Tre Tucker": {
-      "receiving_yards": 34.5
-    },
-    "Michael Mayer": {
-      "receiving_yards": 33.5,
-      "receptions": 3.5
+      "receiving_yards": 38.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 32.5,
       "receiving_yards": 28.5,
       "receptions": 4
+    },
+    "Michael Mayer": {
+      "receiving_yards": 32.5,
+      "receptions": 3.5
     },
     "Courtland Sutton": {
       "receiving_yards": 31.5
@@ -106,14 +102,14 @@
       "rushing_yards": 25.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 22.5,
       "receiving_yards": 0.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 21.5
+      "receiving_yards": 19.5
     },
     "Evan Engram": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Jack Bech": {
       "receiving_yards": 18.5
@@ -172,8 +168,7 @@
       "rushing_yards": 20.5
     },
     "Darnell Mooney": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
+      "receiving_yards": 15.5
     },
     "Brian Thomas Jr.": {
       "receiving_yards": 13.5
@@ -230,7 +225,7 @@
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 0.5,
       "receptions": 0.5
     },
@@ -353,9 +348,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3478,
-    "matched_props": 156,
-    "excluded_goblin_demon_lines": 2833,
+    "total_projections_returned": 3475,
+    "matched_props": 153,
+    "excluded_goblin_demon_lines": 2835,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -394,5 +389,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T20:20:38.078312+00:00"
+  "fetched_at": "2026-11-22T20:30:10.503482+00:00"
 }

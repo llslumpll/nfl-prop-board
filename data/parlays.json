@@ -983,22 +983,22 @@
   },
   "td-1": {
    "chance": 0.699,
-   "decimal": 1.754,
-   "ev": 0.226,
+   "decimal": 1.724,
+   "ev": 0.205,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.754,
+     "decimal": 1.724,
      "game": "MIN@SF",
      "good": true,
      "kickoff": "2026-11-23T01:20:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.57,
+     "price": 0.58,
      "team": "SF"
     }
    ],
@@ -1006,7 +1006,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-22 20:20 UTC",
+   "updated": "2026-11-22 20:30 UTC",
    "week": 11
   },
   "td-2": {
