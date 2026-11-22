@@ -50,7 +50,7 @@
     },
     "Keaton Mitchell": {
       "rushing_yards": 13.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 6.5,
       "receptions": 1.5
     },
     "Charlie Kolar": {
@@ -98,7 +98,7 @@
       "receiving_yards": 31.5
     },
     "Pat Bryant": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -336,7 +336,7 @@
     "nfl_league_id": "9",
     "total_projections_returned": 3276,
     "matched_props": 145,
-    "excluded_goblin_demon_lines": 2665,
+    "excluded_goblin_demon_lines": 2664,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -375,5 +375,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T19:00:54.720071+00:00"
+  "fetched_at": "2026-11-22T19:20:42.666524+00:00"
 }
