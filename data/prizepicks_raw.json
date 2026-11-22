@@ -1,7 +1,7 @@
 {
   "props": {
     "Geno Smith": {
-      "passing_yards": 223.5,
+      "passing_yards": 225.5,
       "rushing_yards": 4.5
     },
     "Justin Herbert": {
@@ -28,10 +28,10 @@
       "receiving_yards": 40.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 39.5
+      "receiving_yards": 38.5
     },
     "Braelon Allen": {
-      "rushing_yards": 34.5,
+      "rushing_yards": 33.5,
       "receiving_yards": 6.5
     },
     "Kenyon Sadiq": {
@@ -41,7 +41,7 @@
       "receiving_yards": 23.5
     },
     "Mason Taylor": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2.5
     },
     "Kimani Vidal": {
@@ -58,6 +58,9 @@
     },
     "David Njoku": {
       "receiving_yards": 11.5
+    },
+    "Tim Patrick": {
+      "receiving_yards": 10.5
     },
     "Oronde Gadsden II": {
       "receiving_yards": 9.5
@@ -79,7 +82,7 @@
       "receiving_yards": 42.5
     },
     "Tre Tucker": {
-      "receiving_yards": 38.5
+      "receiving_yards": 35.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 32.5,
@@ -102,7 +105,8 @@
     },
     "J.K. Dobbins": {
       "rushing_yards": 21.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Jalen Nailor": {
       "receiving_yards": 20.5
@@ -123,8 +127,7 @@
       "receiving_yards": 6.5
     },
     "Nate Adkins": {
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 1.5
     },
     "Trevor Lawrence": {
       "passing_yards": 239.5,
@@ -164,7 +167,7 @@
       "receiving_yards": 30.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 20.5
+      "rushing_yards": 18.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5
@@ -179,8 +182,8 @@
       "receiving_yards": 10.5
     },
     "Devin Singletary": {
-      "rushing_yards": 10.5,
-      "receiving_yards": 2.5
+      "rushing_yards": 9.5,
+      "receiving_yards": 1.5
     },
     "Theo Johnson": {
       "receiving_yards": 7.5
@@ -347,9 +350,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3478,
-    "matched_props": 152,
-    "excluded_goblin_demon_lines": 2839,
+    "total_projections_returned": 3482,
+    "matched_props": 153,
+    "excluded_goblin_demon_lines": 2842,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -388,5 +391,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T20:40:38.394664+00:00"
+  "fetched_at": "2026-11-22T21:00:43.982130+00:00"
 }
