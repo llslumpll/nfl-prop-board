@@ -24,18 +24,18 @@
       "receiving_yards": 46.5,
       "receptions": 3
     },
-    "Tre' Harris": {
-      "receiving_yards": 40.5
-    },
     "Ladd McConkey": {
-      "receiving_yards": 38.5
+      "receiving_yards": 39.5
+    },
+    "Tre' Harris": {
+      "receiving_yards": 37.5
     },
     "Braelon Allen": {
       "rushing_yards": 33.5,
       "receiving_yards": 6.5
     },
     "Kenyon Sadiq": {
-      "receiving_yards": 25.5
+      "receiving_yards": 23.5
     },
     "Quentin Johnston": {
       "receiving_yards": 23.5
@@ -61,10 +61,10 @@
       "receptions": 1.5
     },
     "David Njoku": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Oronde Gadsden II": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Bo Nix": {
       "passing_yards": 216.5,
@@ -98,7 +98,7 @@
       "receiving_yards": 31.5
     },
     "Pat Bryant": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -185,7 +185,7 @@
     },
     "Devin Singletary": {
       "rushing_yards": 10.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Theo Johnson": {
       "receiving_yards": 7.5
@@ -315,7 +315,8 @@
       "receiving_yards": 2.5
     },
     "Jordan Love": {
-      "passing_yards": 263.5
+      "passing_yards": 263.5,
+      "rushing_yards": 4.5
     },
     "Matthew Stafford": {
       "passing_yards": 228.5
@@ -326,17 +327,34 @@
     "Christian Watson": {
       "receiving_yards": 71.5
     },
+    "Kyren Williams": {
+      "rushing_yards": 61.5,
+      "receiving_yards": 19.5
+    },
+    "Blake Corum": {
+      "rushing_yards": 58.5,
+      "receiving_yards": 9.5
+    },
     "Tucker Kraft": {
-      "receiving_yards": 38.5
+      "receiving_yards": 38.5,
+      "receptions": 4.5
+    },
+    "Konata Mumpfield": {
+      "receiving_yards": 36.5
+    },
+    "Savion Williams": {
+      "receiving_yards": 22.5,
+      "rushing_yards": 3.5,
+      "receptions": 2.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3276,
-    "matched_props": 145,
-    "excluded_goblin_demon_lines": 2664,
+    "total_projections_returned": 3475,
+    "matched_props": 155,
+    "excluded_goblin_demon_lines": 2828,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -375,5 +393,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T19:20:42.666524+00:00"
+  "fetched_at": "2026-11-22T19:40:41.443187+00:00"
 }
