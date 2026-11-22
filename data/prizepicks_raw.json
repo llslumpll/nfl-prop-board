@@ -224,7 +224,7 @@
       "receptions": 3.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 40.5,
+      "receiving_yards": 39.5,
       "receptions": 3.5
     },
     "Gunnar Helm": {
@@ -428,7 +428,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 14.5,
-      "rushing_yards": 13.5
+      "rushing_yards": 12.5
     },
     "Josh Cuevas": {
       "receiving_yards": 10.5
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7820,
+    "total_projections_returned": 7821,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6302,
+    "excluded_goblin_demon_lines": 6303,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T03:20:50.911249+00:00"
+  "fetched_at": "2026-11-22T03:26:08.230724+00:00"
 }

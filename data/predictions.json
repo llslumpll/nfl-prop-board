@@ -39688,7 +39688,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Keenan Allen|receptions|11": {
     "player": "Keenan Allen",
@@ -41291,8 +41293,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Joe Milton III|rushing_yards|11": {
