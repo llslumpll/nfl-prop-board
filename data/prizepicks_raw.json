@@ -2,7 +2,7 @@
   "props": {
     "Derrick Henry": {
       "rushing_yards": 62.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Aaron Rodgers": {
       "passing_yards": 211.5
@@ -53,8 +53,7 @@
       "receiving_yards": 18.5
     },
     "Darius Cooper": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
+      "receiving_yards": 17.5
     },
     "Will Shipley": {
       "rushing_yards": 9.5,
@@ -210,12 +209,12 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
+    "George Pickens": {
+      "receiving_yards": 70.5
+    },
     "Tony Pollard": {
       "rushing_yards": 69.5,
       "receiving_yards": 19.5
-    },
-    "George Pickens": {
-      "receiving_yards": 69.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -240,21 +239,22 @@
     },
     "Jashaun Corbin": {
       "rushing_yards": 13.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 9.5
     },
-    "KaVontae Turpin": {
-      "receiving_yards": 8.5
-    },
     "Xavier Restrepo": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Michael Carter": {
       "rushing_yards": 8.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
+    },
+    "KaVontae Turpin": {
+      "receiving_yards": 7.5
     },
     "Calvin Ridley": {
       "receiving_yards": 7.5
@@ -305,7 +305,7 @@
       "rushing_yards": 20.5
     },
     "Dawson Knox": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 2
     },
     "Chris Bell": {
@@ -343,7 +343,7 @@
       "receptions": 4
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 81.5,
+      "receiving_yards": 82.5,
       "receptions": 7
     },
     "Bucky Irving": {
@@ -450,7 +450,7 @@
       "receptions": 0.5
     },
     "Geno Smith": {
-      "passing_yards": 220.5,
+      "passing_yards": 217.5,
       "rushing_yards": 3.5
     },
     "Justin Herbert": {
@@ -799,9 +799,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7921,
+    "total_projections_returned": 7920,
     "matched_props": 362,
-    "excluded_goblin_demon_lines": 6404,
+    "excluded_goblin_demon_lines": 6400,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -840,5 +840,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T08:20:43.088478+00:00"
+  "fetched_at": "2026-11-22T08:40:41.473156+00:00"
 }
