@@ -44,6 +44,9 @@
       "receiving_yards": 21.5,
       "receptions": 2.5
     },
+    "Charlie Kolar": {
+      "receiving_yards": 15.5
+    },
     "Kimani Vidal": {
       "rushing_yards": 13.5,
       "receiving_yards": 7.5
@@ -53,8 +56,9 @@
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
-    "Charlie Kolar": {
-      "receiving_yards": 13.5
+    "David Njoku": {
+      "receiving_yards": 12.5,
+      "receptions": 1.5
     },
     "Isaiah Williams": {
       "receiving_yards": 11.5,
@@ -63,16 +67,13 @@
     "Oronde Gadsden II": {
       "receiving_yards": 9.5
     },
-    "David Njoku": {
-      "receiving_yards": 9.5
-    },
     "Bo Nix": {
       "passing_yards": 216.5,
       "rushing_yards": 10.5
     },
     "Fernando Mendoza": {
       "passing_yards": 170.5,
-      "rushing_yards": 16.5
+      "rushing_yards": 18.5
     },
     "Jonah Coleman": {
       "rushing_yards": 72.5,
@@ -85,6 +86,10 @@
     "Tre Tucker": {
       "receiving_yards": 34.5
     },
+    "Michael Mayer": {
+      "receiving_yards": 33.5,
+      "receptions": 3.5
+    },
     "Ashton Jeanty": {
       "rushing_yards": 32.5,
       "receiving_yards": 28.5,
@@ -94,21 +99,20 @@
       "receiving_yards": 31.5
     },
     "Pat Bryant": {
-      "receiving_yards": 26.5,
+      "receiving_yards": 27.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 25.5,
-      "receptions": 0.5
+      "rushing_yards": 25.5
     },
     "J.K. Dobbins": {
-      "rushing_yards": 22.5,
+      "rushing_yards": 23.5,
       "receiving_yards": 0.5
     },
-    "Evan Engram": {
-      "receiving_yards": 19.5
-    },
     "Jalen Nailor": {
+      "receiving_yards": 21.5
+    },
+    "Evan Engram": {
       "receiving_yards": 19.5
     },
     "Jack Bech": {
@@ -124,7 +128,8 @@
       "receiving_yards": 6.5
     },
     "Nate Adkins": {
-      "receiving_yards": 1.5
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Trevor Lawrence": {
       "passing_yards": 239.5,
@@ -135,7 +140,7 @@
       "rushing_yards": 15.5
     },
     "Bhayshul Tuten": {
-      "rushing_yards": 68.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 13.5
     },
     "Malik Nabers": {
@@ -157,7 +162,7 @@
       "receiving_yards": 42.5
     },
     "Brenton Strange": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3
     },
     "Malachi Fields": {
@@ -181,7 +186,7 @@
     },
     "Devin Singletary": {
       "rushing_yards": 10.5,
-      "receiving_yards": 1.5
+      "receiving_yards": 2.5
     },
     "Theo Johnson": {
       "receiving_yards": 7.5
@@ -213,7 +218,7 @@
       "receiving_yards": 47.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 45.5,
       "receptions": 5
     },
     "Jordan Mason": {
@@ -348,9 +353,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3460,
-    "matched_props": 153,
-    "excluded_goblin_demon_lines": 2818,
+    "total_projections_returned": 3478,
+    "matched_props": 156,
+    "excluded_goblin_demon_lines": 2833,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -389,5 +394,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T20:00:44.056860+00:00"
+  "fetched_at": "2026-11-22T20:20:38.078312+00:00"
 }
