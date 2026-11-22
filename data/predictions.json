@@ -39859,7 +39859,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jahmyr Gibbs|rushing_yards|11": {
     "player": "Jahmyr Gibbs",
@@ -41215,7 +41217,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jared Goff|passing_yards|11": {
     "player": "Jared Goff",
@@ -41315,9 +41319,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Stafford|passing_yards|12": {
     "player": "Matthew Stafford",
@@ -41367,7 +41369,8 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Matthew Golden|receiving_yards|12": {
@@ -42218,7 +42221,10 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-21 22:40 UTC",
-    "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-21 22:40 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-21 22:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Fernando Mendoza|passing_yards|11": {
     "player": "Fernando Mendoza",
@@ -42307,7 +42313,11 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jaylen Waddle|receiving_yards|11": {
     "player": "Jaylen Waddle",
@@ -42582,7 +42592,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-20 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-20 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -42656,10 +42668,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Blake Corum|rushing_yards|12": {
     "player": "Blake Corum",
@@ -42686,5 +42695,77 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Jayden Daniels|passing_yards|11": {
+    "player": "Jayden Daniels",
+    "team": "WAS",
+    "opponent": "CIN",
+    "week": 11,
+    "stat": "passing_yards",
+    "projected": 213.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 225.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -12.4,
+    "model_prob": 0.4324,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-22 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jacory Croskey-Merritt|rushing_yards|11": {
+    "player": "Jacory Croskey-Merritt",
+    "team": "WAS",
+    "opponent": "CIN",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 46.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 37.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 9.3,
+    "model_prob": 0.6164,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-22 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Deebo Samuel Sr.|rushing_yards|11": {
+    "player": "Deebo Samuel Sr.",
+    "team": "SF",
+    "opponent": "MIN",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 14.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 7.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 6.6,
+    "model_prob": 0.7288,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-22 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
