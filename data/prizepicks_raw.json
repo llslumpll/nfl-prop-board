@@ -39,7 +39,7 @@
       "receiving_yards": 28.5
     },
     "Makai Lemon": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 22.5,
@@ -128,15 +128,15 @@
       "receiving_yards": 4.5
     },
     "Caleb Williams": {
-      "passing_yards": 244.5,
+      "passing_yards": 246.5,
       "rushing_yards": 17.5
     },
     "Tyler Shough": {
-      "passing_yards": 236.5,
+      "passing_yards": 232.5,
       "rushing_yards": 18.5
     },
     "Chris Olave": {
-      "receiving_yards": 66.5,
+      "receiving_yards": 65.5,
       "receptions": 5
     },
     "D'Andre Swift": {
@@ -186,11 +186,11 @@
       "rushing_yards": 6.5,
       "receptions": 2.5
     },
-    "Sam Roush": {
-      "receiving_yards": 7.5
-    },
     "Noah Fant": {
       "receiving_yards": 7.5
+    },
+    "Sam Roush": {
+      "receiving_yards": 6.5
     },
     "Dak Prescott": {
       "passing_yards": 279.5,
@@ -473,7 +473,7 @@
       "receptions": 3
     },
     "Tre' Harris": {
-      "receiving_yards": 41.5
+      "receiving_yards": 40.5
     },
     "Ladd McConkey": {
       "receiving_yards": 39.5
@@ -536,7 +536,7 @@
       "receiving_yards": 31.5
     },
     "Tre Tucker": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 29.5,
       "receptions": 2.5
     },
     "Pat Bryant": {
@@ -568,14 +568,14 @@
     "Marvin Mims Jr.": {
       "receiving_yards": 9.5
     },
+    "Adam Trautman": {
+      "receiving_yards": 6.5
+    },
     "Troy Franklin": {
       "receiving_yards": 6.5
     },
-    "Adam Trautman": {
-      "receiving_yards": 5.5
-    },
     "Nate Adkins": {
-      "receiving_yards": 0.5,
+      "receiving_yards": 1.5,
       "receptions": 0.5
     },
     "Trevor Lawrence": {
@@ -673,7 +673,7 @@
       "receiving_yards": 3.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 29.5,
+      "rushing_yards": 30.5,
       "receiving_yards": 9.5
     },
     "Kaelon Black": {
@@ -741,7 +741,7 @@
       "receptions": 3.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -801,9 +801,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7943,
+    "total_projections_returned": 7954,
     "matched_props": 364,
-    "excluded_goblin_demon_lines": 6426,
+    "excluded_goblin_demon_lines": 6434,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -842,5 +842,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T12:40:46.855462+00:00"
+  "fetched_at": "2026-11-22T13:00:48.410639+00:00"
 }
