@@ -120,7 +120,7 @@
       "receiving_yards": 12.5
     },
     "Jaydn Ott": {
-      "rushing_yards": 11.5
+      "rushing_yards": 10.5
     },
     "Devin Duvernay": {
       "receiving_yards": 8.5
@@ -209,12 +209,12 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
-    "George Pickens": {
-      "receiving_yards": 70.5
-    },
     "Tony Pollard": {
       "rushing_yards": 69.5,
       "receiving_yards": 19.5
+    },
+    "George Pickens": {
+      "receiving_yards": 69.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -540,7 +540,7 @@
       "receptions": 2.5
     },
     "Pat Bryant": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Mike Washington Jr.": {
@@ -583,7 +583,7 @@
       "rushing_yards": 9.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 212.5,
+      "passing_yards": 211.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
@@ -599,7 +599,7 @@
     },
     "Cam Skattebo": {
       "rushing_yards": 54.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Isaiah Likely": {
       "receiving_yards": 47.5
@@ -608,7 +608,7 @@
       "receiving_yards": 42.5
     },
     "Brenton Strange": {
-      "receiving_yards": 32.5,
+      "receiving_yards": 31.5,
       "receptions": 3
     },
     "Malachi Fields": {
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7855,
+    "total_projections_returned": 7859,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6335,
+    "excluded_goblin_demon_lines": 6338,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T04:20:41.177568+00:00"
+  "fetched_at": "2026-11-22T04:40:41.230082+00:00"
 }
