@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Games — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1795387218">
+  <link rel="stylesheet" href="static/style.css?v=1795388424">
 </head>
 <body>
   <header class="site-head">
@@ -74,7 +74,7 @@
   <button class="pk-stat-btn" data-gt="moneyline">MONEYLINE</button>
   <button class="pk-stat-btn" data-gt="spread">SPREAD</button>
   <button class="pk-stat-btn" data-gt="total">TOTAL</button>
-  <button class="pk-stat-btn" data-gt="edges">EDGES</button>
+  <button class="pk-stat-btn" data-gt="edges">EDGES (1)</button>
   <button class="pk-stat-btn" data-gt="all">ALL GAMES</button>
   <button class="pk-stat-btn gm-live-btn" data-gt="live"><i class="live-dot"></i>LIVE</button>
 </div>
@@ -291,7 +291,7 @@
     in between. FanDuel updates about once a day here, so prices older than 8 hours are skipped. Treat edges as leads; every one
     is recorded and graded below, 1U each.</div>
   <div class="pz-board gm-board">
-    <div class="pz-fam"><em>EDGES RECORD</em><b>6&ndash;1</b><small>9 pending</small></div>
+    <div class="pz-fam"><em>EDGES RECORD</em><b>6&ndash;1</b><small>10 pending</small></div>
     <div class="pz-fam"><em>UNITS</em><b class="stat-good">+5.09U</b><small>+72.8% per unit</small></div>
     <div class="pz-fam"><em>HIT RATE</em><b>85.7%</b><small>vs 54.3% fair</small></div>
     <div class="pz-fam"><em>MODEL AGREED</em><b>4&ndash;1</b><small>+3.84U</small></div>
@@ -299,7 +299,18 @@
   
 
   <h3>+EV on Kalshi</h3>
-  <p class="notice compact">No +EV prices right now: Kalshi and FanDuel agree within the fee on all 12 matched bets. Refreshes every 20 minutes.</p>
+  
+  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
+    <thead><tr><th>Bet</th><th class="num">Better than fair</th><th class="num">Real chance</th><th class="hide-sm">Our model</th><th class="hide-sm">Fair from</th></tr></thead>
+    <tbody><tr>
+      <td><b>MIN @ SF: OVER 46.5</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: YES over 46.5 at 46%</div></td>
+      <td class="num stat-good"><b>about 2%</b></td>
+      <td class="num">49%</td>
+      <td class="hide-sm small"><span class="stat-bad">33% disagrees</span></td>
+      <td class="hide-sm small dim">FanDuel 46.5 (-105/-115)</td></tr></tbody>
+  </table></div></div>
+  <p class="small dim">Checked 12 Kalshi bets that FanDuel also prices. Listed: Kalshi's price, fee included, at least 2% cheaper than the bet is really worth. <b>Real chance</b> = FanDuel's odds with their cut removed. <b>Better than fair</b> = roughly what each unit returns on average over many bets.</p>
+  
 
   
 
@@ -308,10 +319,12 @@
 
   
 
-  <details class="info-collapse"><summary>Recorded edges (16 most recent)</summary>
+  <details class="info-collapse"><summary>Recorded edges (17 most recent)</summary>
   <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
     <thead><tr><th>Week</th><th>Bet</th><th class="num">Edge when seen</th><th>Result</th><th class="num">Units</th></tr></thead>
-    <tbody><tr><td>W11</td><td>TB @ DET: DET -4.5 <span class="dim small">YES DET by over 4.5 at 47%</span></td><td class="num">+2.6%</td>
+    <tbody><tr><td>W11</td><td>MIN @ SF: OVER 46.5 <span class="dim small">YES over 46.5 at 46%</span></td><td class="num">+2.3%</td>
+      <td class="">PENDING</td>
+      <td class="num">&ndash;</td></tr><tr><td>W11</td><td>TB @ DET: DET -4.5 <span class="dim small">YES DET by over 4.5 at 47%</span></td><td class="num">+2.6%</td>
       <td class="">PENDING</td>
       <td class="num">&ndash;</td></tr><tr><td>W11</td><td>CIN @ WAS: UNDER 53.5 <span class="dim small">NO over 53.5 at 46%</span></td><td class="num">+2.3%</td>
       <td class="">PENDING</td>
@@ -2926,7 +2939,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-22 22:40 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-22 23:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

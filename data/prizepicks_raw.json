@@ -91,18 +91,18 @@
       "receiving_yards": 43.5
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 38.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 27.5,
       "receptions": 2
     },
     "Mike Gesicki": {
-      "receiving_yards": 26.5
+      "receiving_yards": 24.5
     },
     "Dohnte Meyers": {
       "receiving_yards": 21.5
@@ -112,7 +112,7 @@
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -134,7 +134,7 @@
       "receiving_yards": 71.5
     },
     "Kyren Williams": {
-      "rushing_yards": 61.5,
+      "rushing_yards": 60.5,
       "receiving_yards": 19.5
     },
     "Blake Corum": {
@@ -146,11 +146,11 @@
       "receptions": 4.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 36.5
+      "receiving_yards": 35.5
     },
     "Savion Williams": {
       "receiving_yards": 22.5,
-      "rushing_yards": 3.5,
+      "rushing_yards": 4.5,
       "receptions": 2.5
     }
   },
@@ -158,9 +158,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1482,
+    "total_projections_returned": 1483,
     "matched_props": 69,
-    "excluded_goblin_demon_lines": 1213,
+    "excluded_goblin_demon_lines": 1215,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -199,5 +199,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T22:40:32.413665+00:00"
+  "fetched_at": "2026-11-22T23:00:37.975837+00:00"
 }
