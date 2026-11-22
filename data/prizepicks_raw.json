@@ -77,7 +77,7 @@
       "receptions": 3.5
     },
     "Trey McBride": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 50.5,
       "receptions": 6
     },
     "Rashee Rice": {
@@ -89,7 +89,7 @@
       "receptions": 3.5
     },
     "Josh Downs": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 28.5,
@@ -137,7 +137,7 @@
       "rushing_yards": 18.5
     },
     "Chris Olave": {
-      "receiving_yards": 68.5
+      "receiving_yards": 67.5
     },
     "D'Andre Swift": {
       "rushing_yards": 64.5,
@@ -448,7 +448,7 @@
       "receptions": 0.5
     },
     "Geno Smith": {
-      "passing_yards": 217.5,
+      "passing_yards": 220.5,
       "rushing_yards": 3.5
     },
     "Justin Herbert": {
@@ -582,7 +582,7 @@
       "rushing_yards": 9.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 211.5,
+      "passing_yards": 210.5,
       "rushing_yards": 16.5
     },
     "Bhayshul Tuten": {
@@ -640,7 +640,7 @@
       "receiving_yards": 7.5
     },
     "Brock Purdy": {
-      "passing_yards": 245.5,
+      "passing_yards": 244.5,
       "rushing_yards": 16.5
     },
     "Kirk Cousins": {
@@ -648,7 +648,7 @@
       "rushing_yards": 1.5
     },
     "Justin Jefferson": {
-      "receiving_yards": 85.5,
+      "receiving_yards": 84.5,
       "receptions": 7
     },
     "Christian McCaffrey": {
@@ -734,7 +734,7 @@
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 37.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "Antonio Williams": {
       "receiving_yards": 35.5
@@ -760,7 +760,7 @@
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
-      "receiving_yards": 4.5
+      "receiving_yards": 0.5
     },
     "Jordan Love": {
       "passing_yards": 263.5,
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7821,
+    "total_projections_returned": 7834,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6303,
+    "excluded_goblin_demon_lines": 6316,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T03:26:08.230724+00:00"
+  "fetched_at": "2026-11-22T03:40:43.941482+00:00"
 }
