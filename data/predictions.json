@@ -39494,9 +39494,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Cam Ward|passing_yards|11": {
     "player": "Cam Ward",
@@ -41240,7 +41238,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Elic Ayomanor|receiving_yards|11": {
     "player": "Elic Ayomanor",
