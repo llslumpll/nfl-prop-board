@@ -63,7 +63,7 @@
       "receiving_yards": 6.5
     },
     "Patrick Mahomes": {
-      "passing_yards": 250.5,
+      "passing_yards": 251.5,
       "rushing_yards": 9.5
     },
     "Josh Johnson": {
@@ -147,10 +147,10 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 54.5
+      "receiving_yards": 56.5
     },
     "Colston Loveland": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "Kyle Monangai": {
@@ -212,7 +212,8 @@
     },
     "Tony Pollard": {
       "rushing_yards": 69.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 19.5,
+      "receptions": 3.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -715,8 +716,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 75.5,
-      "receptions": 5.5
+      "receiving_yards": 75.5
     },
     "Stefon Diggs": {
       "receiving_yards": 45.5,
@@ -798,9 +798,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7937,
+    "total_projections_returned": 7935,
     "matched_props": 361,
-    "excluded_goblin_demon_lines": 6424,
+    "excluded_goblin_demon_lines": 6416,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -839,5 +839,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T11:00:46.283511+00:00"
+  "fetched_at": "2026-11-22T11:20:49.086218+00:00"
 }
