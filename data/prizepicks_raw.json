@@ -1,7 +1,7 @@
 {
   "props": {
     "Derrick Henry": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 8.5
     },
     "Aaron Rodgers": {
@@ -12,7 +12,7 @@
       "rushing_yards": 35.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 66.5,
+      "rushing_yards": 65.5,
       "receiving_yards": 19.5
     },
     "Saquon Barkley": {
@@ -155,13 +155,13 @@
       "receiving_yards": 50.5,
       "receptions": 4.5
     },
-    "Kyle Monangai": {
-      "rushing_yards": 46.5,
-      "receiving_yards": 5.5
-    },
     "Rome Odunze": {
       "receiving_yards": 45.5,
       "receptions": 3
+    },
+    "Kyle Monangai": {
+      "rushing_yards": 45.5,
+      "receiving_yards": 5.5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 29.5,
@@ -209,12 +209,12 @@
       "receiving_yards": 10.5,
       "receptions": 2
     },
+    "George Pickens": {
+      "receiving_yards": 70.5
+    },
     "Tony Pollard": {
       "rushing_yards": 69.5,
       "receiving_yards": 19.5
-    },
-    "George Pickens": {
-      "receiving_yards": 69.5
     },
     "Carnell Tate": {
       "receiving_yards": 65.5,
@@ -239,7 +239,6 @@
     },
     "Jashaun Corbin": {
       "rushing_yards": 13.5,
-      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Daniel Bellinger": {
@@ -390,7 +389,7 @@
       "rushing_yards": 7.5
     },
     "Jacoby Brissett": {
-      "passing_yards": 227.5,
+      "passing_yards": 228.5,
       "rushing_yards": 5.5
     },
     "Chuba Hubbard": {
@@ -466,7 +465,7 @@
     },
     "Breece Hall": {
       "rushing_yards": 49.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Adonai Mitchell": {
       "receiving_yards": 46.5,
@@ -799,9 +798,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7863,
-    "matched_props": 362,
-    "excluded_goblin_demon_lines": 6342,
+    "total_projections_returned": 7866,
+    "matched_props": 361,
+    "excluded_goblin_demon_lines": 6348,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -840,5 +839,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T05:00:46.564518+00:00"
+  "fetched_at": "2026-11-22T05:20:41.965550+00:00"
 }
