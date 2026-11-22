@@ -77,7 +77,7 @@
       "receptions": 3.5
     },
     "Trey McBride": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 49.5,
       "receptions": 6
     },
     "Rashee Rice": {
@@ -363,7 +363,7 @@
       "receiving_yards": 32.5
     },
     "Cade Otton": {
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Tez Johnson": {
       "receiving_yards": 20.5,
@@ -371,7 +371,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 17.5,
-      "receiving_yards": 11.5,
+      "receiving_yards": 12.5,
       "receptions": 2
     },
     "Isaac TeSlaa": {
@@ -578,7 +578,7 @@
       "receptions": 0.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 232.5,
+      "passing_yards": 230.5,
       "rushing_yards": 9.5
     },
     "J.J. McCarthy": {
@@ -614,14 +614,14 @@
       "receiving_yards": 28.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 19.5
+      "rushing_yards": 20.5
     },
     "Darnell Mooney": {
       "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Nate Boerkircher": {
       "receiving_yards": 11.5
@@ -760,7 +760,7 @@
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Jordan Love": {
       "passing_yards": 263.5,
@@ -800,9 +800,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7812,
+    "total_projections_returned": 7818,
     "matched_props": 363,
-    "excluded_goblin_demon_lines": 6296,
+    "excluded_goblin_demon_lines": 6300,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -841,5 +841,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T02:00:49.209057+00:00"
+  "fetched_at": "2026-11-22T02:20:41.879149+00:00"
 }
