@@ -40713,8 +40713,7 @@
     "graded_at": null,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Josh Allen|any_td|11": {
@@ -41034,7 +41033,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Chuba Hubbard|any_td|11": {
     "player": "Chuba Hubbard",

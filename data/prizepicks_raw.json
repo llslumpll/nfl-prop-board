@@ -37,8 +37,7 @@
     },
     "Kaelon Black": {
       "rushing_yards": 28.5,
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Keenan Allen": {
       "receiving_yards": 26.5,
@@ -53,7 +52,7 @@
       "receiving_yards": 20.5
     },
     "Tai Felton": {
-      "receiving_yards": 13.5
+      "receiving_yards": 14.5
     },
     "Jordan Watkins": {
       "receiving_yards": 9.5
@@ -159,9 +158,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1481,
-    "matched_props": 70,
-    "excluded_goblin_demon_lines": 1211,
+    "total_projections_returned": 1484,
+    "matched_props": 69,
+    "excluded_goblin_demon_lines": 1215,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -200,5 +199,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T22:00:37.518161+00:00"
+  "fetched_at": "2026-11-22T22:20:32.685796+00:00"
 }
