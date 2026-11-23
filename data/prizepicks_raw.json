@@ -2,7 +2,7 @@
   "props": {
     "Joe Burrow": {
       "passing_yards": 302.5,
-      "rushing_yards": 7.5
+      "rushing_yards": 8.5
     },
     "Jayden Daniels": {
       "passing_yards": 225.5,
@@ -59,10 +59,10 @@
     },
     "Jordan Love": {
       "passing_yards": 263.5,
-      "rushing_yards": 4.5
+      "rushing_yards": 5.5
     },
     "Matthew Stafford": {
-      "passing_yards": 228.5
+      "passing_yards": 233.5
     },
     "Matthew Golden": {
       "receiving_yards": 71.5
@@ -72,15 +72,14 @@
     },
     "Kyren Williams": {
       "rushing_yards": 60.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Blake Corum": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 9.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 38.5,
-      "receptions": 4.5
+      "receiving_yards": 38.5
     },
     "Konata Mumpfield": {
       "receiving_yards": 36.5
@@ -106,12 +105,20 @@
     "Davis Allen": {
       "receiving_yards": 9.5
     },
+    "Jared Goff": {
+      "passing_yards": 278.5,
+      "rushing_yards": 1.5
+    },
+    "Caleb Williams": {
+      "passing_yards": 258.5,
+      "rushing_yards": 22.5
+    },
     "Dak Prescott": {
       "passing_yards": 264.5
     },
     "Joe Milton III": {
-      "passing_yards": 195.5,
-      "rushing_yards": 27.5
+      "passing_yards": 196.5,
+      "rushing_yards": 26.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 85.5
@@ -125,24 +132,53 @@
       "receptions": 5.5
     },
     "George Pickens": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 66.5,
       "receptions": 4.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 33.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 30.5
+    },
+    "Patrick Mahomes": {
+      "passing_yards": 245.5,
+      "rushing_yards": 9.5
+    },
+    "Josh Allen": {
+      "passing_yards": 235.5,
+      "rushing_yards": 31.5
+    },
+    "James Cook III": {
+      "rushing_yards": 85.5,
+      "receiving_yards": 8.5,
+      "receptions": 1.5
+    },
+    "Rashee Rice": {
+      "receiving_yards": 55.5
+    },
+    "DJ Moore": {
+      "receiving_yards": 48.5
+    },
+    "Travis Kelce": {
+      "receiving_yards": 47.5
+    },
+    "Khalil Shakir": {
+      "receiving_yards": 37.5,
+      "receptions": 3.5
+    },
+    "Xavier Worthy": {
+      "receiving_yards": 26.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1033,
-    "matched_props": 59,
-    "excluded_goblin_demon_lines": 869,
+    "total_projections_returned": 1237,
+    "matched_props": 75,
+    "excluded_goblin_demon_lines": 1051,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -172,8 +208,8 @@
       "punt touchbacks (combo)",
       "punts",
       "punts (combo)",
-      "quarters with 50+ pass yards",
-      "rec targets"
+      "quarters with 1+ reception",
+      "quarters with 50+ pass yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -181,5 +217,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T01:40:42.126214+00:00"
+  "fetched_at": "2026-11-23T02:00:42.885314+00:00"
 }
