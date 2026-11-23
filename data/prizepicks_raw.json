@@ -84,8 +84,8 @@
       "receiving_yards": 19.5
     },
     "Blake Corum": {
-      "rushing_yards": 56.5,
-      "receiving_yards": 9.5
+      "rushing_yards": 58.5,
+      "receiving_yards": 10.5
     },
     "Tucker Kraft": {
       "receiving_yards": 38.5
@@ -102,7 +102,7 @@
     },
     "Savion Williams": {
       "receiving_yards": 23.5,
-      "rushing_yards": 3.5,
+      "rushing_yards": 4.5,
       "receptions": 2.5
     },
     "Colby Parkinson": {
@@ -241,9 +241,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1969,
+    "total_projections_returned": 1971,
     "matched_props": 102,
-    "excluded_goblin_demon_lines": 1678,
+    "excluded_goblin_demon_lines": 1680,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -282,5 +282,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T07:40:42.668028+00:00"
+  "fetched_at": "2026-11-23T08:00:42.181541+00:00"
 }
