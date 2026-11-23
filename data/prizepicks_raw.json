@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 98.5,
+      "receiving_yards": 97.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -45,12 +45,12 @@
     "Mike Gesicki": {
       "receiving_yards": 25.5
     },
-    "Dohnte Meyers": {
-      "receiving_yards": 21.5
-    },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 6.5
+    },
+    "Dohnte Meyers": {
+      "receiving_yards": 20.5
     },
     "Austin Ekeler": {
       "rushing_yards": 13.5,
@@ -236,15 +236,21 @@
     },
     "Ty Johnson": {
       "receiving_yards": 16.5
+    },
+    "Bo Nix": {
+      "passing_yards": 212.5
+    },
+    "Aaron Rodgers": {
+      "passing_yards": 203.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2052,
-    "matched_props": 103,
-    "excluded_goblin_demon_lines": 1759,
+    "total_projections_returned": 2101,
+    "matched_props": 105,
+    "excluded_goblin_demon_lines": 1806,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -283,5 +289,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T11:20:32.998363+00:00"
+  "fetched_at": "2026-11-23T11:40:35.504948+00:00"
 }
