@@ -35,15 +35,15 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 30.5,
       "receptions": 2
     },
-    "Mike Gesicki": {
-      "receiving_yards": 26.5
-    },
     "Rachaad White": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 10.5
+    },
+    "Mike Gesicki": {
+      "receiving_yards": 24.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
@@ -54,10 +54,10 @@
     },
     "Austin Ekeler": {
       "rushing_yards": 13.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Van Jefferson": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -82,13 +82,13 @@
     "Christian Watson": {
       "receiving_yards": 71.5
     },
-    "Kyren Williams": {
-      "rushing_yards": 58.5,
-      "receiving_yards": 18.5
-    },
     "Blake Corum": {
-      "rushing_yards": 57.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 10.5
+    },
+    "Kyren Williams": {
+      "rushing_yards": 57.5,
+      "receiving_yards": 18.5
     },
     "Tucker Kraft": {
       "receiving_yards": 38.5
@@ -124,12 +124,12 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 258.5,
+      "passing_yards": 257.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
@@ -140,15 +140,15 @@
       "receiving_yards": 63.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5
-    },
-    "Colston Loveland": {
-      "receiving_yards": 54.5,
-      "receptions": 5.5
+      "receiving_yards": 58.5
     },
     "D'Andre Swift": {
-      "rushing_yards": 53.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 15.5
+    },
+    "Colston Loveland": {
+      "receiving_yards": 56.5,
+      "receptions": 5.5
     },
     "Rome Odunze": {
       "receiving_yards": 48.5
@@ -184,19 +184,19 @@
       "receiving_yards": 7.5
     },
     "George Pickens": {
-      "receiving_yards": 66.5
+      "receiving_yards": 69.5
     },
     "DeVonta Smith": {
-      "receiving_yards": 64.5
+      "receiving_yards": 66.5
     },
     "Dallas Goedert": {
       "receiving_yards": 36.5,
       "receptions": 3.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 31.5
-    },
     "Makai Lemon": {
+      "receiving_yards": 33.5
+    },
+    "Ryan Flournoy": {
       "receiving_yards": 31.5
     },
     "Darius Cooper": {
@@ -204,7 +204,7 @@
     },
     "Josh Allen": {
       "passing_yards": 247.5,
-      "rushing_yards": 32.5
+      "rushing_yards": 34.5
     },
     "Patrick Mahomes": {
       "passing_yards": 247.5,
@@ -228,7 +228,7 @@
       "receiving_yards": 41.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Keon Coleman": {
@@ -243,16 +243,16 @@
       "rushing_yards": 4.5
     },
     "Bo Nix": {
-      "passing_yards": 212.5,
-      "rushing_yards": 11.5
+      "passing_yards": 213.5,
+      "rushing_yards": 12.5
     },
     "Aaron Rodgers": {
       "passing_yards": 199.5,
       "rushing_yards": 0.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 70.5,
-      "receiving_yards": 19.5
+      "rushing_yards": 72.5,
+      "receiving_yards": 20.5
     },
     "Jaylen Warren": {
       "rushing_yards": 58.5,
@@ -263,7 +263,7 @@
       "receiving_yards": 45.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 28.5
+      "receiving_yards": 29.5
     },
     "Rico Dowdle": {
       "rushing_yards": 28.5,
@@ -290,9 +290,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2608,
+    "total_projections_returned": 2631,
     "matched_props": 123,
-    "excluded_goblin_demon_lines": 2254,
+    "excluded_goblin_demon_lines": 2276,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -331,5 +331,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T14:41:14.552189+00:00"
+  "fetched_at": "2026-11-23T15:00:42.470987+00:00"
 }
