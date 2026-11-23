@@ -35,7 +35,7 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 28.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -58,14 +58,16 @@
       "receiving_yards": 2.5
     },
     "Jordan Love": {
-      "passing_yards": 263.5,
+      "passing_yards": 273.5,
       "rushing_yards": 5.5
     },
     "Matthew Stafford": {
-      "passing_yards": 233.5
+      "passing_yards": 233.5,
+      "rushing_yards": 0.5
     },
     "Matthew Golden": {
-      "receiving_yards": 71.5
+      "receiving_yards": 71.5,
+      "receptions": 5.5
     },
     "Christian Watson": {
       "receiving_yards": 71.5
@@ -82,14 +84,14 @@
       "receiving_yards": 38.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 36.5
+      "receiving_yards": 37.5
     },
     "Tyler Higbee": {
       "receiving_yards": 33.5,
       "receptions": 3.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Savion Williams": {
       "receiving_yards": 22.5,
@@ -112,6 +114,18 @@
     "Caleb Williams": {
       "passing_yards": 258.5,
       "rushing_yards": 22.5
+    },
+    "Jahmyr Gibbs": {
+      "rushing_yards": 90.5
+    },
+    "D'Andre Swift": {
+      "rushing_yards": 53.5
+    },
+    "Kyle Monangai": {
+      "rushing_yards": 34.5
+    },
+    "Sione Vaki": {
+      "rushing_yards": 9.5
     },
     "Dak Prescott": {
       "passing_yards": 264.5
@@ -176,9 +190,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1237,
-    "matched_props": 75,
-    "excluded_goblin_demon_lines": 1051,
+    "total_projections_returned": 1326,
+    "matched_props": 81,
+    "excluded_goblin_demon_lines": 1132,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -217,5 +231,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T02:00:42.885314+00:00"
+  "fetched_at": "2026-11-23T02:20:35.767003+00:00"
 }
