@@ -59,11 +59,10 @@
     },
     "Jordan Love": {
       "passing_yards": 273.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "Matthew Stafford": {
-      "passing_yards": 233.5,
-      "rushing_yards": 0.5
+      "passing_yards": 233.5
     },
     "Matthew Golden": {
       "receiving_yards": 71.5,
@@ -116,13 +115,41 @@
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5
+      "rushing_yards": 90.5,
+      "receiving_yards": 37.5,
+      "receptions": 4.5
+    },
+    "Amon-Ra St. Brown": {
+      "receiving_yards": 89.5
+    },
+    "Luther Burden III": {
+      "receiving_yards": 63.5
+    },
+    "Jameson Williams": {
+      "receiving_yards": 57.5
+    },
+    "Colston Loveland": {
+      "receiving_yards": 54.5,
+      "receptions": 5.5
     },
     "D'Andre Swift": {
-      "rushing_yards": 53.5
+      "rushing_yards": 53.5,
+      "receiving_yards": 15.5
+    },
+    "Rome Odunze": {
+      "receiving_yards": 48.5
+    },
+    "Sam LaPorta": {
+      "receiving_yards": 44.5
     },
     "Kyle Monangai": {
       "rushing_yards": 34.5
+    },
+    "Kalif Raymond": {
+      "receiving_yards": 22.5
+    },
+    "Isaac TeSlaa": {
+      "receiving_yards": 19.5
     },
     "Sione Vaki": {
       "rushing_yards": 9.5
@@ -190,9 +217,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1326,
-    "matched_props": 81,
-    "excluded_goblin_demon_lines": 1132,
+    "total_projections_returned": 1462,
+    "matched_props": 92,
+    "excluded_goblin_demon_lines": 1255,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -231,5 +258,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T02:20:35.767003+00:00"
+  "fetched_at": "2026-11-23T02:40:34.053483+00:00"
 }
