@@ -35,7 +35,7 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 30.5,
       "receptions": 2
     },
     "Mike Gesicki": {
@@ -48,12 +48,12 @@
     "Dohnte Meyers": {
       "receiving_yards": 20.5
     },
+    "Austin Ekeler": {
+      "rushing_yards": 12.5,
+      "receiving_yards": 5.5
+    },
     "Van Jefferson": {
       "receiving_yards": 8.5
-    },
-    "Austin Ekeler": {
-      "rushing_yards": 8.5,
-      "receiving_yards": 6.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -78,13 +78,13 @@
     "Christian Watson": {
       "receiving_yards": 71.5
     },
+    "Kyren Williams": {
+      "rushing_yards": 59.5,
+      "receiving_yards": 18.5
+    },
     "Blake Corum": {
       "rushing_yards": 58.5,
       "receiving_yards": 9.5
-    },
-    "Kyren Williams": {
-      "rushing_yards": 57.5,
-      "receiving_yards": 18.5
     },
     "Tucker Kraft": {
       "receiving_yards": 38.5
@@ -142,7 +142,7 @@
       "receptions": 5.5
     },
     "D'Andre Swift": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 15.5
     },
     "Rome Odunze": {
@@ -182,6 +182,10 @@
       "receiving_yards": 69.5,
       "receptions": 5
     },
+    "Saquon Barkley": {
+      "rushing_yards": 68.5,
+      "receiving_yards": 9.5
+    },
     "DeVonta Smith": {
       "receiving_yards": 66.5,
       "receptions": 5
@@ -190,10 +194,10 @@
       "receiving_yards": 36.5,
       "receptions": 3.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 31.5
-    },
     "Makai Lemon": {
+      "receiving_yards": 33.5
+    },
+    "Ryan Flournoy": {
       "receiving_yards": 31.5
     },
     "Darius Cooper": {
@@ -215,14 +219,15 @@
       "receiving_yards": 50.5
     },
     "Rashee Rice": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
       "receiving_yards": 44.5
     },
     "Josh Downs": {
-      "receiving_yards": 41.5
+      "receiving_yards": 41.5,
+      "receptions": 3.5
     },
     "Khalil Shakir": {
       "receiving_yards": 36.5,
@@ -232,7 +237,7 @@
       "receiving_yards": 25.5
     },
     "Xavier Worthy": {
-      "receiving_yards": 23.5,
+      "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Ty Johnson": {
@@ -287,9 +292,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2818,
-    "matched_props": 122,
-    "excluded_goblin_demon_lines": 2358,
+    "total_projections_returned": 2857,
+    "matched_props": 125,
+    "excluded_goblin_demon_lines": 2388,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -328,5 +333,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T16:20:37.097747+00:00"
+  "fetched_at": "2026-11-23T16:40:35.594864+00:00"
 }
