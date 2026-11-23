@@ -25,10 +25,10 @@
       "receiving_yards": 25.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 40.5
+      "receiving_yards": 42.5
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 38.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 4.5
     },
     "Antonio Williams": {
@@ -124,7 +124,7 @@
       "receiving_yards": 9.5
     },
     "Chris Brooks": {
-      "receiving_yards": 9.5,
+      "receiving_yards": 8.5,
       "rushing_yards": 7.5
     },
     "Jared Goff": {
@@ -132,24 +132,24 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 21.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
-      "receiving_yards": 35.5,
+      "receiving_yards": 37.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 84.5,
-      "receptions": 7.5
+      "receiving_yards": 84.5
     },
     "Luther Burden III": {
       "receiving_yards": 61.5,
       "rushing_yards": 1.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5
+      "receiving_yards": 57.5,
+      "receptions": 3.5
     },
     "D'Andre Swift": {
       "rushing_yards": 53.5,
@@ -186,7 +186,7 @@
       "receiving_yards": 5.5
     },
     "Brock Wright": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Dak Prescott": {
       "passing_yards": 259.5,
@@ -203,13 +203,13 @@
       "rushing_yards": 78.5,
       "receiving_yards": 8.5
     },
+    "Saquon Barkley": {
+      "rushing_yards": 67.5,
+      "receiving_yards": 9.5
+    },
     "George Pickens": {
       "receiving_yards": 66.5,
       "receptions": 5
-    },
-    "Saquon Barkley": {
-      "rushing_yards": 66.5,
-      "receiving_yards": 9.5
     },
     "DeVonta Smith": {
       "receiving_yards": 64.5,
@@ -282,14 +282,10 @@
     },
     "Jaylen Warren": {
       "rushing_yards": 58.5,
-      "receiving_yards": 19.5,
-      "receptions": 2.5
+      "receiving_yards": 19.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 45.5
-    },
-    "Courtland Sutton": {
-      "receiving_yards": 29.5
+      "receiving_yards": 42.5
     },
     "Rico Dowdle": {
       "rushing_yards": 29.5,
@@ -297,6 +293,9 @@
     },
     "Pat Bryant": {
       "receiving_yards": 28.5
+    },
+    "Courtland Sutton": {
+      "receiving_yards": 27.5
     },
     "Evan Engram": {
       "receiving_yards": 20.5,
@@ -316,9 +315,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3118,
-    "matched_props": 137,
-    "excluded_goblin_demon_lines": 2559,
+    "total_projections_returned": 3125,
+    "matched_props": 136,
+    "excluded_goblin_demon_lines": 2567,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -357,5 +356,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T18:20:35.836353+00:00"
+  "fetched_at": "2026-11-23T18:40:32.177227+00:00"
 }
