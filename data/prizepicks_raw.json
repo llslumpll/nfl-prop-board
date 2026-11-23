@@ -23,7 +23,7 @@
       "receiving_yards": 25.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 37.5,
@@ -55,14 +55,14 @@
       "rushing_yards": 12.5,
       "receiving_yards": 7.5
     },
-    "Van Jefferson": {
-      "receiving_yards": 7.5
-    },
     "Drew Sample": {
       "receiving_yards": 6.5
     },
+    "Van Jefferson": {
+      "receiving_yards": 6.5
+    },
     "Ben Sinnott": {
-      "receiving_yards": 2.5,
+      "receiving_yards": 5.5,
       "receptions": 0.5
     },
     "Jack Endries": {
@@ -136,6 +136,9 @@
       "rushing_yards": 7.5,
       "receptions": 1.5
     },
+    "Jonnu Smith": {
+      "receiving_yards": 0.5
+    },
     "Jared Goff": {
       "passing_yards": 280.5,
       "rushing_yards": 1.5
@@ -154,12 +157,12 @@
       "receptions": 7
     },
     "Luther Burden III": {
-      "receiving_yards": 61.5,
+      "receiving_yards": 60.5,
       "receptions": 5,
-      "rushing_yards": 0.5
+      "rushing_yards": 1.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5,
+      "receiving_yards": 56.5,
       "receptions": 3.5
     },
     "D'Andre Swift": {
@@ -199,6 +202,9 @@
     "Brock Wright": {
       "receiving_yards": 3.5
     },
+    "Tyler Conklin": {
+      "receiving_yards": 0.5
+    },
     "Dak Prescott": {
       "passing_yards": 263.5,
       "rushing_yards": 8.5
@@ -208,7 +214,7 @@
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 88.5,
+      "receiving_yards": 89.5,
       "receptions": 7
     },
     "Javonte Williams": {
@@ -216,7 +222,7 @@
       "receiving_yards": 7.5
     },
     "George Pickens": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 71.5,
       "receptions": 5
     },
     "Saquon Barkley": {
@@ -228,7 +234,7 @@
       "receptions": 5.5
     },
     "Dallas Goedert": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Makai Lemon": {
@@ -239,11 +245,14 @@
       "receptions": 3
     },
     "Darius Cooper": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 5.5,
       "rushing_yards": 3.5
+    },
+    "Luke Schoonmaker": {
+      "receiving_yards": 4.5
     },
     "Patrick Mahomes": {
       "passing_yards": 251.5,
@@ -290,6 +299,12 @@
       "receiving_yards": 16.5,
       "rushing_yards": 4.5,
       "receptions": 2
+    },
+    "Jake Briningstool": {
+      "receiving_yards": 0.5
+    },
+    "Keleki Latu": {
+      "receiving_yards": 0.5
     },
     "Bo Nix": {
       "passing_yards": 212.5,
@@ -552,6 +567,9 @@
       "rushing_yards": 40.5,
       "receiving_yards": 33.5
     },
+    "Blake Whiteheart": {
+      "receiving_yards": 0.5
+    },
     "Bryce Young": {
       "passing_yards": 245.5,
       "rushing_yards": 5.5
@@ -580,9 +598,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3631,
-    "matched_props": 251,
-    "excluded_goblin_demon_lines": 2877,
+    "total_projections_returned": 3655,
+    "matched_props": 257,
+    "excluded_goblin_demon_lines": 2894,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -621,5 +639,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T20:40:33.251969+00:00"
+  "fetched_at": "2026-11-23T21:00:43.119903+00:00"
 }
