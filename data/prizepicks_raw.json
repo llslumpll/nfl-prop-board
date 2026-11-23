@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 99.5,
+      "receiving_yards": 100.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -120,12 +120,12 @@
       "receiving_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 277.5,
+      "passing_yards": 278.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
       "passing_yards": 257.5,
-      "rushing_yards": 22.5
+      "rushing_yards": 21.5
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
@@ -154,7 +154,7 @@
       "receiving_yards": 48.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 43.5
+      "receiving_yards": 44.5
     },
     "Kyle Monangai": {
       "rushing_yards": 34.5
@@ -174,7 +174,7 @@
     },
     "Joe Milton III": {
       "passing_yards": 199.5,
-      "rushing_yards": 32.5
+      "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 83.5
@@ -200,7 +200,7 @@
       "receiving_yards": 31.5
     },
     "Darius Cooper": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Josh Allen": {
       "passing_yards": 247.5,
@@ -290,9 +290,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2631,
+    "total_projections_returned": 2646,
     "matched_props": 123,
-    "excluded_goblin_demon_lines": 2276,
+    "excluded_goblin_demon_lines": 2286,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -331,5 +331,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T15:00:42.470987+00:00"
+  "fetched_at": "2026-11-23T15:20:44.553547+00:00"
 }
