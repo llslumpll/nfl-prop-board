@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 94.5,
+      "receiving_yards": 98.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -67,7 +67,7 @@
     },
     "Jordan Love": {
       "passing_yards": 273.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 4.5
     },
     "Matthew Stafford": {
       "passing_yards": 233.5
@@ -91,16 +91,11 @@
       "receiving_yards": 38.5
     },
     "Konata Mumpfield": {
-      "receiving_yards": 37.5
+      "receiving_yards": 36.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3.5
-    },
-    "Savion Williams": {
-      "receiving_yards": 22.5,
-      "rushing_yards": 4.5,
-      "receptions": 2.5
     },
     "Tutu Atwell": {
       "receiving_yards": 21.5
@@ -111,9 +106,16 @@
     "CJ Daniels": {
       "receiving_yards": 20.5
     },
+    "Savion Williams": {
+      "receiving_yards": 18.5,
+      "rushing_yards": 4.5
+    },
     "Davis Allen": {
       "receiving_yards": 9.5,
       "receptions": 1.5
+    },
+    "Xavier Smith": {
+      "receiving_yards": 9.5
     },
     "Jared Goff": {
       "passing_yards": 276.5,
@@ -198,7 +200,7 @@
       "receiving_yards": 24.5
     },
     "Josh Allen": {
-      "passing_yards": 248.5,
+      "passing_yards": 247.5,
       "rushing_yards": 32.5
     },
     "Patrick Mahomes": {
@@ -206,7 +208,7 @@
       "rushing_yards": 12.5
     },
     "James Cook III": {
-      "rushing_yards": 82.5,
+      "rushing_yards": 81.5,
       "receiving_yards": 8.5
     },
     "DJ Moore": {
@@ -234,7 +236,7 @@
       "receptions": 2.5
     },
     "Ty Johnson": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Bo Nix": {
       "passing_yards": 212.5,
@@ -284,9 +286,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2409,
+    "total_projections_returned": 2480,
     "matched_props": 121,
-    "excluded_goblin_demon_lines": 2086,
+    "excluded_goblin_demon_lines": 2156,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -325,5 +327,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T13:20:34.973369+00:00"
+  "fetched_at": "2026-11-23T13:40:35.632343+00:00"
 }
