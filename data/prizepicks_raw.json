@@ -13,7 +13,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 76.5
+      "receiving_yards": 77.5
     },
     "Stefon Diggs": {
       "receiving_yards": 50.5
@@ -106,7 +106,7 @@
       "rushing_yards": 32.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Colby Parkinson": {
       "receiving_yards": 20.5,
@@ -206,19 +206,19 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 263.5,
-      "rushing_yards": 9.5
+      "passing_yards": 259.5,
+      "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 200.5,
+      "passing_yards": 198.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 89.5,
+      "receiving_yards": 88.5,
       "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 78.5,
+      "rushing_yards": 79.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
@@ -241,7 +241,7 @@
       "receiving_yards": 32.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 31.5,
       "receptions": 3
     },
     "Darius Cooper": {
@@ -259,8 +259,8 @@
       "rushing_yards": 12.5
     },
     "Josh Allen": {
-      "passing_yards": 241.5,
-      "rushing_yards": 34.5
+      "passing_yards": 239.5,
+      "rushing_yards": 33.5
     },
     "James Cook III": {
       "rushing_yards": 82.5,
@@ -298,7 +298,7 @@
       "receptions": 2.5
     },
     "Ty Johnson": {
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "rushing_yards": 4.5,
       "receptions": 2
     },
@@ -313,25 +313,26 @@
       "rushing_yards": 11.5
     },
     "Aaron Rodgers": {
-      "passing_yards": 201.5,
+      "passing_yards": 200.5,
       "rushing_yards": 0.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 71.5,
-      "receiving_yards": 20.5
+      "rushing_yards": 69.5,
+      "receiving_yards": 19.5
     },
     "Jaylen Warren": {
       "rushing_yards": 58.5,
       "receiving_yards": 18.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 45.5
+      "receiving_yards": 42.5
     },
     "Courtland Sutton": {
       "receiving_yards": 29.5
     },
     "Pat Bryant": {
-      "receiving_yards": 28.5
+      "receiving_yards": 28.5,
+      "receptions": 2.5
     },
     "Rico Dowdle": {
       "rushing_yards": 28.5,
@@ -620,9 +621,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3956,
-    "matched_props": 265,
-    "excluded_goblin_demon_lines": 3149,
+    "total_projections_returned": 3958,
+    "matched_props": 266,
+    "excluded_goblin_demon_lines": 3151,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -661,5 +662,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T22:00:45.897504+00:00"
+  "fetched_at": "2026-11-23T22:20:32.819726+00:00"
 }
