@@ -25,7 +25,7 @@
       "receiving_yards": 25.5
     },
     "Chig Okonkwo": {
-      "receiving_yards": 43.5
+      "receiving_yards": 40.5
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 38.5,
@@ -35,11 +35,11 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 2
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
@@ -79,11 +79,11 @@
       "receiving_yards": 71.5
     },
     "Kyren Williams": {
-      "rushing_yards": 56.5,
-      "receiving_yards": 18.5
+      "rushing_yards": 57.5,
+      "receiving_yards": 21.5
     },
     "Blake Corum": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 10.5
     },
     "Tucker Kraft": {
@@ -93,11 +93,10 @@
       "receiving_yards": 37.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 32.5,
-      "receptions": 3.5
+      "receiving_yards": 31.5
     },
     "Kaleb Johnson": {
-      "rushing_yards": 30.5
+      "rushing_yards": 29.5
     },
     "Colby Parkinson": {
       "receiving_yards": 21.5
@@ -106,7 +105,7 @@
       "receiving_yards": 21.5
     },
     "CJ Daniels": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Savion Williams": {
       "receiving_yards": 18.5,
@@ -124,7 +123,7 @@
     },
     "Chris Brooks": {
       "receiving_yards": 9.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 7.5
     },
     "Jared Goff": {
       "passing_yards": 277.5,
@@ -136,7 +135,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
-      "receiving_yards": 38.5,
+      "receiving_yards": 36.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
@@ -150,7 +149,7 @@
       "receiving_yards": 57.5
     },
     "Colston Loveland": {
-      "receiving_yards": 56.5,
+      "receiving_yards": 55.5,
       "receptions": 5.5
     },
     "D'Andre Swift": {
@@ -171,14 +170,14 @@
       "receiving_yards": 22.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
+    },
+    "Zavion Thomas": {
+      "receiving_yards": 9.5
     },
     "Sione Vaki": {
       "rushing_yards": 8.5,
       "receiving_yards": 1.5
-    },
-    "Zavion Thomas": {
-      "receiving_yards": 8.5
     },
     "Brock Wright": {
       "receiving_yards": 3.5
@@ -246,7 +245,7 @@
       "receptions": 4.5
     },
     "Travis Kelce": {
-      "receiving_yards": 44.5
+      "receiving_yards": 45.5
     },
     "Josh Downs": {
       "receiving_yards": 41.5,
@@ -315,9 +314,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3000,
-    "matched_props": 136,
-    "excluded_goblin_demon_lines": 2498,
+    "total_projections_returned": 3020,
+    "matched_props": 135,
+    "excluded_goblin_demon_lines": 2515,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -356,5 +355,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T17:20:37.504579+00:00"
+  "fetched_at": "2026-11-23T17:40:35.963798+00:00"
 }
