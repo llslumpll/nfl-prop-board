@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 94.5,
+      "receiving_yards": 98.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -35,7 +35,7 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 30.5,
       "receptions": 2
     },
     "Rachaad White": {
@@ -81,10 +81,10 @@
     },
     "Kyren Williams": {
       "rushing_yards": 60.5,
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Blake Corum": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 10.5
     },
     "Tucker Kraft": {
@@ -97,6 +97,9 @@
       "receiving_yards": 33.5,
       "receptions": 3.5
     },
+    "Colby Parkinson": {
+      "receiving_yards": 23.5
+    },
     "Savion Williams": {
       "receiving_yards": 22.5,
       "rushing_yards": 4.5,
@@ -104,9 +107,6 @@
     },
     "Tutu Atwell": {
       "receiving_yards": 22.5
-    },
-    "Colby Parkinson": {
-      "receiving_yards": 21.5
     },
     "CJ Daniels": {
       "receiving_yards": 19.5
@@ -135,16 +135,16 @@
     "Luther Burden III": {
       "receiving_yards": 63.5
     },
-    "Colston Loveland": {
-      "receiving_yards": 56.5,
-      "receptions": 5.5
-    },
     "Jameson Williams": {
       "receiving_yards": 56.5
     },
+    "Colston Loveland": {
+      "receiving_yards": 54.5,
+      "receptions": 5.5
+    },
     "D'Andre Swift": {
       "rushing_yards": 53.5,
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Rome Odunze": {
       "receiving_yards": 48.5
@@ -153,7 +153,7 @@
       "receiving_yards": 42.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 34.5
+      "rushing_yards": 33.5
     },
     "Kalif Raymond": {
       "receiving_yards": 22.5
@@ -165,7 +165,7 @@
       "rushing_yards": 9.5
     },
     "Dak Prescott": {
-      "passing_yards": 259.5,
+      "passing_yards": 261.5,
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
@@ -242,9 +242,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2023,
+    "total_projections_returned": 2022,
     "matched_props": 103,
-    "excluded_goblin_demon_lines": 1731,
+    "excluded_goblin_demon_lines": 1728,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -283,5 +283,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T10:40:35.603170+00:00"
+  "fetched_at": "2026-11-23T11:00:43.689787+00:00"
 }
