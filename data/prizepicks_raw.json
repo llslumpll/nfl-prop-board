@@ -45,12 +45,12 @@
     "Mike Gesicki": {
       "receiving_yards": 25.5
     },
+    "Dohnte Meyers": {
+      "receiving_yards": 21.5
+    },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 6.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 20.5
     },
     "Austin Ekeler": {
       "rushing_yards": 13.5,
@@ -217,7 +217,7 @@
       "receptions": 4.5
     },
     "Travis Kelce": {
-      "receiving_yards": 46.5
+      "receiving_yards": 45.5
     },
     "Josh Downs": {
       "receiving_yards": 37.5
@@ -241,9 +241,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1968,
+    "total_projections_returned": 1969,
     "matched_props": 102,
-    "excluded_goblin_demon_lines": 1677,
+    "excluded_goblin_demon_lines": 1678,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -282,5 +282,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T07:20:32.646228+00:00"
+  "fetched_at": "2026-11-23T07:40:42.668028+00:00"
 }
