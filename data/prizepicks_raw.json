@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 100.5,
+      "receiving_yards": 101.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -55,11 +55,11 @@
       "rushing_yards": 12.5,
       "receiving_yards": 7.5
     },
-    "Van Jefferson": {
+    "Drew Sample": {
       "receiving_yards": 6.5
     },
-    "Drew Sample": {
-      "receiving_yards": 5.5
+    "Van Jefferson": {
+      "receiving_yards": 6.5
     },
     "Jack Endries": {
       "receiving_yards": 0.5
@@ -140,15 +140,15 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 280.5,
+      "passing_yards": 275.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 259.5,
+      "passing_yards": 254.5,
       "rushing_yards": 21.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 89.5,
       "receiving_yards": 36.5,
       "receptions": 4.5
     },
@@ -173,10 +173,10 @@
       "receiving_yards": 53.5
     },
     "Rome Odunze": {
-      "receiving_yards": 49.5
+      "receiving_yards": 48.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 44.5,
+      "receiving_yards": 45.5,
       "receptions": 4
     },
     "Kyle Monangai": {
@@ -187,7 +187,7 @@
       "receiving_yards": 23.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 18.5
+      "receiving_yards": 17.5
     },
     "Sione Vaki": {
       "rushing_yards": 8.5,
@@ -210,7 +210,7 @@
       "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 198.5,
+      "passing_yards": 200.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -218,7 +218,7 @@
       "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 79.5,
+      "rushing_yards": 78.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
@@ -231,21 +231,25 @@
     },
     "Saquon Barkley": {
       "rushing_yards": 64.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 9.5,
+      "receptions": 1.5
     },
     "Dallas Goedert": {
       "receiving_yards": 34.5,
       "receptions": 3.5
     },
-    "Makai Lemon": {
-      "receiving_yards": 32.5
-    },
     "Ryan Flournoy": {
       "receiving_yards": 31.5,
       "receptions": 3
     },
+    "Makai Lemon": {
+      "receiving_yards": 31.5
+    },
     "Darius Cooper": {
       "receiving_yards": 25.5
+    },
+    "Brevyn Spann-Ford": {
+      "receiving_yards": 13.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 5.5,
@@ -255,15 +259,15 @@
       "receiving_yards": 4.5
     },
     "Patrick Mahomes": {
-      "passing_yards": 252.5,
+      "passing_yards": 250.5,
       "rushing_yards": 12.5
     },
     "Josh Allen": {
-      "passing_yards": 239.5,
-      "rushing_yards": 33.5
+      "passing_yards": 238.5,
+      "rushing_yards": 34.5
     },
     "James Cook III": {
-      "rushing_yards": 82.5,
+      "rushing_yards": 81.5,
       "receiving_yards": 8.5
     },
     "Kenneth Walker III": {
@@ -506,7 +510,7 @@
     },
     "Jacoby Brissett": {
       "passing_yards": 235.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 4.5
     },
     "Derrick Henry": {
       "rushing_yards": 69.5,
@@ -642,11 +646,12 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4049,
-    "matched_props": 275,
-    "excluded_goblin_demon_lines": 3228,
+    "total_projections_returned": 4076,
+    "matched_props": 277,
+    "excluded_goblin_demon_lines": 3245,
     "sample_stat_types_seen": [
       "anytime tds",
+      "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
       "consecutive pass completions",
@@ -674,8 +679,7 @@
       "passer rating",
       "punt touchbacks (combo)",
       "punts",
-      "punts (combo)",
-      "punts inside 20"
+      "punts (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -683,5 +687,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T22:40:36.934716+00:00"
+  "fetched_at": "2026-11-23T23:00:37.647803+00:00"
 }
