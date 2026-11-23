@@ -40,7 +40,7 @@
     },
     "Rachaad White": {
       "rushing_yards": 26.5,
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Mike Gesicki": {
       "receiving_yards": 25.5
@@ -50,7 +50,7 @@
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Austin Ekeler": {
       "rushing_yards": 13.5,
@@ -100,13 +100,13 @@
     "Colby Parkinson": {
       "receiving_yards": 23.5
     },
+    "Tutu Atwell": {
+      "receiving_yards": 23.5
+    },
     "Savion Williams": {
       "receiving_yards": 22.5,
       "rushing_yards": 4.5,
       "receptions": 2.5
-    },
-    "Tutu Atwell": {
-      "receiving_yards": 22.5
     },
     "CJ Daniels": {
       "receiving_yards": 19.5
@@ -120,7 +120,7 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 258.5,
+      "passing_yards": 259.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -153,7 +153,7 @@
       "receiving_yards": 42.5
     },
     "Kyle Monangai": {
-      "rushing_yards": 33.5
+      "rushing_yards": 34.5
     },
     "Kalif Raymond": {
       "receiving_yards": 22.5
@@ -165,7 +165,7 @@
       "rushing_yards": 9.5
     },
     "Dak Prescott": {
-      "passing_yards": 261.5,
+      "passing_yards": 259.5,
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
@@ -242,9 +242,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2022,
+    "total_projections_returned": 2052,
     "matched_props": 103,
-    "excluded_goblin_demon_lines": 1728,
+    "excluded_goblin_demon_lines": 1759,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -283,5 +283,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T11:00:43.689787+00:00"
+  "fetched_at": "2026-11-23T11:20:32.998363+00:00"
 }
