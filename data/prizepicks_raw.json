@@ -13,8 +13,7 @@
       "receptions": 8
     },
     "Tee Higgins": {
-      "receiving_yards": 74.5,
-      "receptions": 5.5
+      "receiving_yards": 74.5
     },
     "Stefon Diggs": {
       "receiving_yards": 50.5
@@ -34,18 +33,19 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 30.5,
       "receptions": 2
     },
     "Mike Gesicki": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 5.5
     },
     "Dohnte Meyers": {
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 2
     },
     "Rachaad White": {
       "rushing_yards": 18.5,
@@ -84,17 +84,20 @@
     },
     "Kyren Williams": {
       "rushing_yards": 57.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 3
     },
     "Blake Corum": {
       "rushing_yards": 55.5,
       "receiving_yards": 10.5
     },
     "Tucker Kraft": {
-      "receiving_yards": 38.5
+      "receiving_yards": 38.5,
+      "receptions": 4
     },
     "Konata Mumpfield": {
-      "receiving_yards": 37.5
+      "receiving_yards": 37.5,
+      "receptions": 3
     },
     "Tyler Higbee": {
       "receiving_yards": 32.5
@@ -106,10 +109,12 @@
       "receiving_yards": 22.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 20.5
+      "receiving_yards": 20.5,
+      "receptions": 3
     },
     "CJ Daniels": {
-      "receiving_yards": 19.5
+      "receiving_yards": 19.5,
+      "receptions": 2
     },
     "Savion Williams": {
       "receiving_yards": 18.5,
@@ -145,10 +150,12 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 84.5
+      "receiving_yards": 84.5,
+      "receptions": 7
     },
     "Luther Burden III": {
       "receiving_yards": 61.5,
+      "receptions": 5,
       "rushing_yards": 0.5
     },
     "Jameson Williams": {
@@ -166,7 +173,8 @@
       "receiving_yards": 48.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 46.5
+      "receiving_yards": 46.5,
+      "receptions": 4
     },
     "Kyle Monangai": {
       "rushing_yards": 34.5,
@@ -192,22 +200,23 @@
       "receiving_yards": 3.5
     },
     "Dak Prescott": {
-      "passing_yards": 259.5,
-      "rushing_yards": 9.5
+      "passing_yards": 263.5,
+      "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 197.5,
+      "passing_yards": 200.5,
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 84.5
+      "receiving_yards": 88.5,
+      "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 79.5,
+      "rushing_yards": 78.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
-      "receiving_yards": 69.5,
+      "receiving_yards": 70.5,
       "receptions": 5
     },
     "Saquon Barkley": {
@@ -216,7 +225,7 @@
     },
     "DeVonta Smith": {
       "receiving_yards": 64.5,
-      "receptions": 5
+      "receptions": 5.5
     },
     "Dallas Goedert": {
       "receiving_yards": 35.5,
@@ -226,7 +235,8 @@
       "receiving_yards": 32.5
     },
     "Ryan Flournoy": {
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5,
+      "receptions": 3
     },
     "Darius Cooper": {
       "receiving_yards": 24.5
@@ -252,7 +262,8 @@
       "receiving_yards": 18.5
     },
     "DJ Moore": {
-      "receiving_yards": 50.5
+      "receiving_yards": 50.5,
+      "receptions": 4
     },
     "Rashee Rice": {
       "receiving_yards": 49.5
@@ -277,7 +288,8 @@
     },
     "Ty Johnson": {
       "receiving_yards": 16.5,
-      "rushing_yards": 4.5
+      "rushing_yards": 4.5,
+      "receptions": 2
     },
     "Bo Nix": {
       "passing_yards": 212.5,
@@ -568,9 +580,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 3600,
-    "matched_props": 239,
-    "excluded_goblin_demon_lines": 2871,
+    "total_projections_returned": 3631,
+    "matched_props": 251,
+    "excluded_goblin_demon_lines": 2877,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -609,5 +621,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T20:20:35.717542+00:00"
+  "fetched_at": "2026-11-23T20:40:33.251969+00:00"
 }
