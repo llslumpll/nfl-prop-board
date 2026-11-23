@@ -108,11 +108,11 @@
       "receptions": 1.5
     },
     "Jared Goff": {
-      "passing_yards": 278.5,
+      "passing_yards": 274.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 257.5,
+      "passing_yards": 258.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -121,13 +121,13 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 88.5
+      "receiving_yards": 89.5
     },
     "Luther Burden III": {
       "receiving_yards": 63.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5
+      "receiving_yards": 56.5
     },
     "Colston Loveland": {
       "receiving_yards": 54.5,
@@ -150,7 +150,7 @@
       "receiving_yards": 22.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Sione Vaki": {
       "rushing_yards": 9.5
@@ -184,42 +184,52 @@
       "receiving_yards": 30.5
     },
     "Patrick Mahomes": {
-      "passing_yards": 245.5,
-      "rushing_yards": 9.5
+      "passing_yards": 254.5,
+      "rushing_yards": 12.5
     },
     "Josh Allen": {
-      "passing_yards": 236.5,
-      "rushing_yards": 31.5
+      "passing_yards": 251.5,
+      "rushing_yards": 32.5
     },
     "James Cook III": {
-      "rushing_yards": 86.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
-    },
-    "Rashee Rice": {
-      "receiving_yards": 55.5
+      "rushing_yards": 85.5,
+      "receiving_yards": 8.5
     },
     "DJ Moore": {
-      "receiving_yards": 47.5
+      "receiving_yards": 50.5
+    },
+    "Rashee Rice": {
+      "receiving_yards": 48.5,
+      "receptions": 4.5
     },
     "Travis Kelce": {
-      "receiving_yards": 47.5
+      "receiving_yards": 46.5
     },
     "Khalil Shakir": {
       "receiving_yards": 36.5,
       "receptions": 3.5
     },
+    "Josh Downs": {
+      "receiving_yards": 36.5
+    },
+    "Keon Coleman": {
+      "receiving_yards": 25.5
+    },
     "Xavier Worthy": {
-      "receiving_yards": 26.5
+      "receiving_yards": 24.5,
+      "receptions": 2.5
+    },
+    "Ty Johnson": {
+      "receiving_yards": 18.5
     }
   },
   "error": null,
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1504,
-    "matched_props": 92,
-    "excluded_goblin_demon_lines": 1293,
+    "total_projections_returned": 1561,
+    "matched_props": 96,
+    "excluded_goblin_demon_lines": 1344,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -258,5 +268,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T03:40:35.962826+00:00"
+  "fetched_at": "2026-11-23T04:00:38.412496+00:00"
 }
