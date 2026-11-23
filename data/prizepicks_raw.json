@@ -39,8 +39,8 @@
       "receptions": 2
     },
     "Rachaad White": {
-      "rushing_yards": 26.5,
-      "receiving_yards": 11.5
+      "rushing_yards": 25.5,
+      "receiving_yards": 10.5
     },
     "Mike Gesicki": {
       "receiving_yards": 24.5
@@ -52,13 +52,14 @@
     "Dohnte Meyers": {
       "receiving_yards": 20.5
     },
+    "Austin Ekeler": {
+      "rushing_yards": 13.5,
+      "receiving_yards": 5.5
+    },
     "Van Jefferson": {
       "receiving_yards": 8.5
     },
     "Drew Sample": {
-      "receiving_yards": 6.5
-    },
-    "Austin Ekeler": {
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
@@ -80,7 +81,7 @@
     },
     "Kyren Williams": {
       "rushing_yards": 59.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 18.5
     },
     "Blake Corum": {
       "rushing_yards": 56.5,
@@ -131,10 +132,10 @@
       "receiving_yards": 89.5
     },
     "Luther Burden III": {
-      "receiving_yards": 63.5
+      "receiving_yards": 62.5
     },
     "Jameson Williams": {
-      "receiving_yards": 56.5
+      "receiving_yards": 57.5
     },
     "Colston Loveland": {
       "receiving_yards": 54.5,
@@ -163,17 +164,18 @@
       "rushing_yards": 9.5
     },
     "Dak Prescott": {
-      "passing_yards": 262.5
+      "passing_yards": 259.5,
+      "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 191.5,
-      "rushing_yards": 30.5
+      "passing_yards": 197.5,
+      "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 84.5
     },
     "Javonte Williams": {
-      "rushing_yards": 72.5,
+      "rushing_yards": 73.5,
       "receiving_yards": 9.5
     },
     "George Pickens": {
@@ -190,13 +192,13 @@
     "Ryan Flournoy": {
       "receiving_yards": 30.5
     },
+    "Josh Allen": {
+      "passing_yards": 248.5,
+      "rushing_yards": 32.5
+    },
     "Patrick Mahomes": {
       "passing_yards": 245.5,
       "rushing_yards": 12.5
-    },
-    "Josh Allen": {
-      "passing_yards": 236.5,
-      "rushing_yards": 32.5
     },
     "James Cook III": {
       "rushing_yards": 85.5,
@@ -234,9 +236,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1690,
-    "matched_props": 99,
-    "excluded_goblin_demon_lines": 1450,
+    "total_projections_returned": 1749,
+    "matched_props": 101,
+    "excluded_goblin_demon_lines": 1503,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -275,5 +277,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T04:20:34.746977+00:00"
+  "fetched_at": "2026-11-23T04:40:32.295345+00:00"
 }
