@@ -78,13 +78,13 @@
     "Christian Watson": {
       "receiving_yards": 71.5
     },
-    "Blake Corum": {
-      "rushing_yards": 58.5,
-      "receiving_yards": 9.5
-    },
     "Kyren Williams": {
       "rushing_yards": 56.5,
       "receiving_yards": 18.5
+    },
+    "Blake Corum": {
+      "rushing_yards": 56.5,
+      "receiving_yards": 10.5
     },
     "Tucker Kraft": {
       "receiving_yards": 38.5
@@ -95,6 +95,9 @@
     "Tyler Higbee": {
       "receiving_yards": 32.5,
       "receptions": 3.5
+    },
+    "Kaleb Johnson": {
+      "rushing_yards": 30.5
     },
     "Colby Parkinson": {
       "receiving_yards": 21.5
@@ -109,11 +112,19 @@
       "receiving_yards": 18.5,
       "rushing_yards": 4.5
     },
+    "MarShawn Lloyd": {
+      "rushing_yards": 11.5,
+      "receiving_yards": 8.5
+    },
     "Davis Allen": {
       "receiving_yards": 9.5
     },
     "Xavier Smith": {
       "receiving_yards": 9.5
+    },
+    "Chris Brooks": {
+      "receiving_yards": 9.5,
+      "rushing_yards": 6.5
     },
     "Jared Goff": {
       "passing_yards": 277.5,
@@ -129,14 +140,14 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 88.5,
-      "receptions": 7.5
+      "receiving_yards": 88.5
     },
     "Luther Burden III": {
-      "receiving_yards": 63.5
+      "receiving_yards": 63.5,
+      "rushing_yards": 1.5
     },
     "Jameson Williams": {
-      "receiving_yards": 58.5
+      "receiving_yards": 57.5
     },
     "Colston Loveland": {
       "receiving_yards": 56.5,
@@ -162,14 +173,18 @@
     "Isaac TeSlaa": {
       "receiving_yards": 18.5
     },
-    "Zavion Thomas": {
-      "receiving_yards": 11.5
-    },
     "Sione Vaki": {
-      "rushing_yards": 8.5
+      "rushing_yards": 8.5,
+      "receiving_yards": 1.5
+    },
+    "Zavion Thomas": {
+      "receiving_yards": 8.5
+    },
+    "Brock Wright": {
+      "receiving_yards": 3.5
     },
     "Sam Roush": {
-      "receiving_yards": 4.5
+      "receiving_yards": 2.5
     },
     "Dak Prescott": {
       "passing_yards": 260.5,
@@ -209,7 +224,7 @@
       "receiving_yards": 31.5
     },
     "Darius Cooper": {
-      "receiving_yards": 24.5
+      "receiving_yards": 25.5
     },
     "Josh Allen": {
       "passing_yards": 247.5,
@@ -300,9 +315,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2891,
-    "matched_props": 129,
-    "excluded_goblin_demon_lines": 2417,
+    "total_projections_returned": 3000,
+    "matched_props": 136,
+    "excluded_goblin_demon_lines": 2498,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -341,5 +356,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T17:00:44.412819+00:00"
+  "fetched_at": "2026-11-23T17:20:37.504579+00:00"
 }

@@ -42886,5 +42886,32 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Kaleb Johnson|rushing_yards|12": {
+    "player": "Kaleb Johnson",
+    "team": "GB",
+    "opponent": "LA",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 11.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 30.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -19.0,
+    "model_prob": 0.01,
+    "signals": {
+      "opponent_recent_form": "better",
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-23 17:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
