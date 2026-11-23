@@ -38,6 +38,10 @@
       "receiving_yards": 28.5,
       "receptions": 2
     },
+    "Rachaad White": {
+      "rushing_yards": 26.5,
+      "receiving_yards": 11.5
+    },
     "Mike Gesicki": {
       "receiving_yards": 24.5
     },
@@ -52,6 +56,9 @@
       "receiving_yards": 8.5
     },
     "Drew Sample": {
+      "receiving_yards": 6.5
+    },
+    "Austin Ekeler": {
       "receiving_yards": 6.5
     },
     "Ben Sinnott": {
@@ -127,7 +134,7 @@
       "receiving_yards": 63.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5
+      "receiving_yards": 56.5
     },
     "Colston Loveland": {
       "receiving_yards": 54.5,
@@ -227,9 +234,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1661,
-    "matched_props": 96,
-    "excluded_goblin_demon_lines": 1428,
+    "total_projections_returned": 1690,
+    "matched_props": 99,
+    "excluded_goblin_demon_lines": 1450,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -268,5 +275,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T04:12:42.921091+00:00"
+  "fetched_at": "2026-11-23T04:20:34.746977+00:00"
 }

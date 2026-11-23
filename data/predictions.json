@@ -42867,5 +42867,27 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Rachaad White|rushing_yards|11": {
+    "player": "Rachaad White",
+    "team": "WAS",
+    "opponent": "CIN",
+    "week": 11,
+    "stat": "rushing_yards",
+    "projected": 42.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 26.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 15.7,
+    "model_prob": 0.7339,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-23 04:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
