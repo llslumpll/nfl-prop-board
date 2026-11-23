@@ -35,15 +35,15 @@
       "receiving_yards": 35.5
     },
     "Treylon Burks": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 28.5,
       "receptions": 2
-    },
-    "Rachaad White": {
-      "rushing_yards": 27.5,
-      "receiving_yards": 10.5
     },
     "Mike Gesicki": {
       "receiving_yards": 26.5
+    },
+    "Rachaad White": {
+      "rushing_yards": 26.5,
+      "receiving_yards": 10.5
     },
     "Samaje Perine": {
       "rushing_yards": 20.5,
@@ -57,7 +57,7 @@
       "receiving_yards": 5.5
     },
     "Van Jefferson": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -70,7 +70,7 @@
     },
     "Jordan Love": {
       "passing_yards": 273.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 4.5
     },
     "Matthew Stafford": {
       "passing_yards": 233.5
@@ -120,7 +120,7 @@
       "receiving_yards": 9.5
     },
     "Jared Goff": {
-      "passing_yards": 276.5,
+      "passing_yards": 277.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
@@ -163,17 +163,17 @@
       "receiving_yards": 22.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 17.5
+      "receiving_yards": 18.5
     },
     "Sione Vaki": {
       "rushing_yards": 8.5
     },
     "Dak Prescott": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 200.5,
+      "passing_yards": 199.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -290,9 +290,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2604,
+    "total_projections_returned": 2608,
     "matched_props": 123,
-    "excluded_goblin_demon_lines": 2249,
+    "excluded_goblin_demon_lines": 2254,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -331,5 +331,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T14:20:34.972569+00:00"
+  "fetched_at": "2026-11-23T14:40:30.379896+00:00"
 }
