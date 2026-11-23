@@ -42569,10 +42569,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Mike Evans|receiving_yards|11": {
     "player": "Mike Evans",
@@ -42599,8 +42596,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ],
     "line_attached_at": "2026-11-20 18:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-20 18:01 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -42728,7 +42724,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jacory Croskey-Merritt|rushing_yards|11": {
     "player": "Jacory Croskey-Merritt",
@@ -42819,7 +42818,10 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Stefon Diggs|receiving_yards|11": {
     "player": "Stefon Diggs",

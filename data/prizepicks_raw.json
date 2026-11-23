@@ -1,7 +1,7 @@
 {
   "props": {
     "Brock Purdy": {
-      "passing_yards": 235.5,
+      "passing_yards": 242.5,
       "rushing_yards": 16.5
     },
     "Kirk Cousins": {
@@ -17,13 +17,13 @@
       "receiving_yards": 33.5,
       "receptions": 4
     },
+    "Mike Evans": {
+      "receiving_yards": 48.5,
+      "receptions": 3.5
+    },
     "George Kittle": {
       "receiving_yards": 47.5,
       "receptions": 4
-    },
-    "Mike Evans": {
-      "receiving_yards": 47.5,
-      "receptions": 3.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 45.5,
@@ -64,7 +64,7 @@
       "receiving_yards": 7.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Joe Burrow": {
       "passing_yards": 302.5,
@@ -161,9 +161,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1484,
+    "total_projections_returned": 1481,
     "matched_props": 72,
-    "excluded_goblin_demon_lines": 1214,
+    "excluded_goblin_demon_lines": 1211,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -202,5 +202,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-22T23:55:20.090992+00:00"
+  "fetched_at": "2026-11-23T00:00:42.924161+00:00"
 }
