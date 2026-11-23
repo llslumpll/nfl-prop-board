@@ -42910,5 +42910,31 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Deshaun Watson|passing_yards|12": {
+    "player": "Deshaun Watson",
+    "team": "CLE",
+    "opponent": "LV",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 160.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 221.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -60.6,
+    "model_prob": 0.1846,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-23 20:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }
