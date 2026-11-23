@@ -48,12 +48,12 @@
     "Dohnte Meyers": {
       "receiving_yards": 20.5
     },
-    "Austin Ekeler": {
-      "rushing_yards": 13.5,
-      "receiving_yards": 6.5
-    },
     "Van Jefferson": {
       "receiving_yards": 8.5
+    },
+    "Austin Ekeler": {
+      "rushing_yards": 8.5,
+      "receiving_yards": 6.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
@@ -179,19 +179,21 @@
       "receiving_yards": 7.5
     },
     "George Pickens": {
-      "receiving_yards": 69.5
+      "receiving_yards": 69.5,
+      "receptions": 5
     },
     "DeVonta Smith": {
-      "receiving_yards": 66.5
+      "receiving_yards": 66.5,
+      "receptions": 5
     },
     "Dallas Goedert": {
       "receiving_yards": 36.5,
       "receptions": 3.5
     },
-    "Makai Lemon": {
-      "receiving_yards": 33.5
-    },
     "Ryan Flournoy": {
+      "receiving_yards": 31.5
+    },
+    "Makai Lemon": {
       "receiving_yards": 31.5
     },
     "Darius Cooper": {
@@ -213,7 +215,7 @@
       "receiving_yards": 50.5
     },
     "Rashee Rice": {
-      "receiving_yards": 47.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
@@ -285,9 +287,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 2761,
-    "matched_props": 120,
-    "excluded_goblin_demon_lines": 2342,
+    "total_projections_returned": 2818,
+    "matched_props": 122,
+    "excluded_goblin_demon_lines": 2358,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -326,5 +328,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T16:00:41.599233+00:00"
+  "fetched_at": "2026-11-23T16:20:37.097747+00:00"
 }
