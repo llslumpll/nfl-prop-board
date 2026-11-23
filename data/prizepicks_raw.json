@@ -45,12 +45,12 @@
     "Mike Gesicki": {
       "receiving_yards": 25.5
     },
+    "Dohnte Meyers": {
+      "receiving_yards": 21.5
+    },
     "Samaje Perine": {
       "rushing_yards": 20.5,
       "receiving_yards": 5.5
-    },
-    "Dohnte Meyers": {
-      "receiving_yards": 20.5
     },
     "Austin Ekeler": {
       "rushing_yards": 13.5,
@@ -125,7 +125,7 @@
     },
     "Jahmyr Gibbs": {
       "rushing_yards": 90.5,
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
@@ -168,7 +168,7 @@
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 199.5,
+      "passing_yards": 198.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -192,13 +192,13 @@
       "receiving_yards": 33.5
     },
     "Makai Lemon": {
-      "receiving_yards": 32.5
+      "receiving_yards": 31.5
     },
     "Darius Cooper": {
       "receiving_yards": 25.5
     },
     "Josh Allen": {
-      "passing_yards": 247.5,
+      "passing_yards": 248.5,
       "rushing_yards": 31.5
     },
     "Patrick Mahomes": {
@@ -223,7 +223,7 @@
       "receiving_yards": 38.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Xavier Worthy": {
@@ -241,9 +241,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 1998,
+    "total_projections_returned": 1999,
     "matched_props": 102,
-    "excluded_goblin_demon_lines": 1707,
+    "excluded_goblin_demon_lines": 1708,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -282,5 +282,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-23T10:00:49.820894+00:00"
+  "fetched_at": "2026-11-23T10:20:44.902368+00:00"
 }
