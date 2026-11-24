@@ -87,7 +87,7 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 86.5,
+      "receiving_yards": 84.5,
       "receptions": 7
     },
     "Luther Burden III": {
@@ -140,12 +140,12 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 262.5,
+      "passing_yards": 263.5,
       "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 194.5,
-      "rushing_yards": 31.5
+      "passing_yards": 200.5,
+      "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 89.5,
@@ -222,16 +222,16 @@
     "Travis Kelce": {
       "receiving_yards": 46.5
     },
-    "Dalton Kincaid": {
-      "receiving_yards": 44.5,
-      "receptions": 3.5
-    },
     "Josh Downs": {
       "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Khalil Shakir": {
       "receiving_yards": 40.5,
+      "receptions": 3.5
+    },
+    "Dalton Kincaid": {
+      "receiving_yards": 39.5,
       "receptions": 3.5
     },
     "Xavier Worthy": {
@@ -260,7 +260,8 @@
       "receiving_yards": 0.5
     },
     "Jalen Royals": {
-      "receptions": 0.5
+      "receptions": 0.5,
+      "receiving_yards": 0.5
     },
     "Bo Nix": {
       "passing_yards": 214.5,
@@ -704,9 +705,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4509,
-    "matched_props": 305,
-    "excluded_goblin_demon_lines": 3600,
+    "total_projections_returned": 4506,
+    "matched_props": 306,
+    "excluded_goblin_demon_lines": 3597,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -745,5 +746,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T04:20:42.357316+00:00"
+  "fetched_at": "2026-11-24T04:40:42.025236+00:00"
 }
