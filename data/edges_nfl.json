@@ -178,6 +178,7 @@
    "fair": 0.8664,
    "first_ev": 0.02,
    "first_seen": "2026-11-19 05:20 UTC",
+   "hit": true,
    "home": "CHI",
    "kalshi": "YES CHI at 84%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -188,7 +189,8 @@
    "model_agrees": false,
    "ref": "FanDuel +520/-720",
    "side": "CHI ML",
-   "status": "pending",
+   "status": "graded",
+   "units": 0.1773,
    "week": 11
   },
   "moneyline|TB @ DET: TB wins": {
@@ -199,6 +201,7 @@
    "fair": 0.2869,
    "first_ev": 0.0492,
    "first_seen": "2026-11-17 22:40 UTC",
+   "hit": false,
    "home": "DET",
    "kalshi": "YES TB at 25%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -210,7 +213,8 @@
    "model_agrees": true,
    "ref": "FanDuel +220/-270",
    "side": "TB ML",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   },
   "moneyline|TEN @ DAL: DAL wins": {
@@ -221,6 +225,7 @@
    "fair": 0.8044,
    "first_ev": 0.0281,
    "first_seen": "2026-11-19 21:57 UTC",
+   "hit": true,
    "home": "DAL",
    "kalshi": "YES DAL at 77%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -232,7 +237,8 @@
    "model_agrees": true,
    "ref": "FanDuel +350/-450",
    "side": "DAL ML",
-   "status": "pending",
+   "status": "graded",
+   "units": 0.2781,
    "week": 11
   },
   "spread|MIN @ SF: MIN +3.5": {
@@ -243,6 +249,7 @@
    "fair": 0.5,
    "first_ev": 0.0259,
    "first_seen": "2026-11-23 01:00 UTC",
+   "hit": false,
    "home": "SF",
    "kalshi": "NO SF by over 3.5 at 47%",
    "kickoff": "2026-11-23T01:20:00+00:00",
@@ -253,7 +260,8 @@
    "model_agrees": false,
    "ref": "FanDuel MIN +3.5",
    "side": "MIN +3.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   },
   "spread|TB @ DET: DET -4.5": {
@@ -264,6 +272,7 @@
    "fair": 0.5,
    "first_ev": 0.0259,
    "first_seen": "2026-11-22 01:40 UTC",
+   "hit": true,
    "home": "DET",
    "kalshi": "YES DET by over 4.5 at 47%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -275,7 +284,8 @@
    "model_agrees": false,
    "ref": "FanDuel DET -4.5",
    "side": "DET -4.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.0517,
    "week": 11
   },
   "spread|TB @ DET: TB +4.5": {
@@ -286,6 +296,7 @@
    "fair": 0.4884,
    "first_ev": 0.023,
    "first_seen": "2026-11-20 21:35 UTC",
+   "hit": false,
    "home": "DET",
    "kalshi": "NO DET by over 4.5 at 46%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -297,7 +308,8 @@
    "model_agrees": true,
    "ref": "FanDuel TB +4.5",
    "side": "TB +4.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   },
   "spread|TB @ DET: TB +6.5": {
@@ -308,6 +320,7 @@
    "fair": 0.5,
    "first_ev": 0.0259,
    "first_seen": "2026-11-17 22:40 UTC",
+   "hit": false,
    "home": "DET",
    "kalshi": "NO DET by over 6.5 at 46%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -319,7 +332,8 @@
    "model_agrees": true,
    "ref": "FanDuel TB +6.5",
    "side": "TB +6.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   },
   "total|CIN @ WAS: UNDER 53.5": {
@@ -330,6 +344,7 @@
    "fair": 0.4884,
    "first_ev": 0.023,
    "first_seen": "2026-11-22 01:20 UTC",
+   "hit": true,
    "home": "WAS",
    "kalshi": "NO over 53.5 at 46%",
    "kickoff": "2026-11-24T01:15:00+00:00",
@@ -341,7 +356,8 @@
    "model_agrees": true,
    "ref": "FanDuel 53.5 (-115/-105)",
    "side": "UNDER 53.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.0947,
    "week": 11
   },
   "total|MIN @ SF: OVER 46.5": {
@@ -352,6 +368,7 @@
    "fair": 0.4884,
    "first_ev": 0.023,
    "first_seen": "2026-11-22 23:00 UTC",
+   "hit": false,
    "home": "SF",
    "kalshi": "YES over 46.5 at 46%",
    "kickoff": "2026-11-23T01:20:00+00:00",
@@ -363,7 +380,8 @@
    "model_agrees": false,
    "ref": "FanDuel 46.5 (-105/-115)",
    "side": "OVER 46.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   },
   "total|TB @ DET: OVER 45.5": {
@@ -374,6 +392,7 @@
    "fair": 0.4768,
    "first_ev": 0.0203,
    "first_seen": "2026-11-17 23:00 UTC",
+   "hit": true,
    "home": "DET",
    "kalshi": "YES over 45.5 at 45%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -384,7 +403,8 @@
    "model_agrees": true,
    "ref": "FanDuel 45.5 (+100/-120)",
    "side": "OVER 45.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.14,
    "week": 11
   },
   "total|TB @ DET: UNDER 46.5": {
@@ -395,6 +415,7 @@
    "fair": 0.5139,
    "first_ev": 0.033,
    "first_seen": "2026-11-21 22:20 UTC",
+   "hit": false,
    "home": "DET",
    "kalshi": "NO over 46.5 at 46%",
    "kickoff": "2026-11-22T18:00:00+00:00",
@@ -406,7 +427,8 @@
    "model_agrees": true,
    "ref": "FanDuel 46.5 (-104/-116)",
    "side": "UNDER 46.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 11
   }
  }

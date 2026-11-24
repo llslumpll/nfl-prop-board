@@ -35661,10 +35661,10 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-10 16:43 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 5,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 15:22 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-19 15:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -35787,10 +35787,10 @@
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-11-10 16:43 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 2,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-17 18:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-17 18:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -35935,10 +35935,10 @@
       "opportunity_signal": true
     },
     "frozen_at": "2026-11-10 16:43 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [],
     "line_attached_at": "2026-11-19 22:41 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:43 UTC; this prizepicks line was first seen 2026-11-19 22:41 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -36107,10 +36107,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 0,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [],
     "line_attached_at": "2026-11-19 22:41 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-19 22:41 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -36132,10 +36132,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 15:22 UTC",
     "line_attach_note": "Projection frozen 2026-11-10 16:44 UTC; this prizepicks line was first seen 2026-11-19 15:22 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -36506,10 +36506,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -36712,10 +36712,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -36736,10 +36736,10 @@
       "red_zone_rush_share_high": true
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "AJ Barner|any_td|10": {
@@ -36787,10 +36787,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -36857,11 +36857,12 @@
       "injury_flagged": "Out"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Jacory Croskey-Merritt|any_td|10": {
     "player": "Jacory Croskey-Merritt",
@@ -36907,10 +36908,10 @@
       "injury_flagged": "Out"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Romeo Doubs|any_td|10": {
@@ -37001,11 +37002,12 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Emanuel Wilson|any_td|10": {
     "player": "Emanuel Wilson",
@@ -37106,11 +37108,12 @@
       "injury_flagged": "Out"
     },
     "frozen_at": "2026-11-10 16:44 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Darren Waller|receiving_yards|10": {
     "player": "Darren Waller",
@@ -38712,10 +38715,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
@@ -38741,10 +38744,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 4,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-17 21:56 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 21:56 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": []
@@ -38767,10 +38770,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Malik Nabers|receptions|11": {
     "player": "Malik Nabers",
@@ -38789,10 +38792,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 7,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [],
     "line_attached_at": "2026-11-17 14:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-13 16:54 UTC; this prizepicks line was first seen 2026-11-17 14:40 UTC, before kickoff. Call set from the frozen projection vs this line."
@@ -38816,10 +38819,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -38842,10 +38845,10 @@
       "red_zone_rush_share_high": true
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence",
@@ -38870,10 +38873,10 @@
       "injury_flagged": "Out"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Tyrone Tracy Jr.|any_td|11": {
@@ -38895,11 +38898,12 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-13 16:54 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Gunnar Helm|receiving_yards|10": {
     "player": "Gunnar Helm",
@@ -39128,10 +39132,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-16 16:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 173,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39156,10 +39160,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-16 16:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 35,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Malachi Fields|receiving_yards|11": {
@@ -39179,10 +39183,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-16 16:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 25,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Cam Skattebo|rushing_yards|11": {
@@ -39204,10 +39208,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-16 16:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 34,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Caleb Williams|passing_yards|11": {
@@ -39227,10 +39231,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-16 20:03 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 181,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Jonah Coleman|rushing_yards|11": {
@@ -39251,10 +39255,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-16 20:03 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 111,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
@@ -39465,10 +39469,10 @@
       "injury_flagged": "Did Not Participate In Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 276,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value"
     ]
@@ -39490,10 +39494,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 325,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Cam Ward|passing_yards|11": {
@@ -39511,10 +39515,10 @@
     "model_prob": 0.2441,
     "signals": {},
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 248,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39538,10 +39542,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 254,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Josh Cameron|receiving_yards|11": {
@@ -39559,10 +39563,10 @@
     "model_prob": 0.9113,
     "signals": {},
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 44,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39583,10 +39587,10 @@
     "model_prob": 0.2645,
     "signals": {},
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 103,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value"
     ]
@@ -39610,10 +39614,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 132,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "George Pickens|receiving_yards|11": {
@@ -39636,10 +39640,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 102,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Jordyn Tyson|receiving_yards|11": {
@@ -39661,10 +39665,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 6,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Rashee Rice|receiving_yards|11": {
@@ -39684,10 +39688,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 53,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Keenan Allen|receptions|11": {
@@ -39708,10 +39712,10 @@
       "opportunity_signal": true
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 3,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39734,10 +39738,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 7,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Omar Cooper Jr.|receptions|11": {
@@ -39758,11 +39762,12 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "best5_tags": []
+    "graded_at": "2026-11-24 19:51 UTC",
+    "best5_tags": [],
+    "void": "did not play"
   },
   "Parker Washington|receptions|11": {
     "player": "Parker Washington",
@@ -39779,10 +39784,10 @@
     "model_prob": 0.3344,
     "signals": {},
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 8,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Ollie Gordon II|rushing_yards|11": {
@@ -39800,10 +39805,10 @@
     "model_prob": 0.01,
     "signals": {},
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 69,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39828,10 +39833,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 33,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -39855,10 +39860,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 49,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -39880,10 +39885,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 98,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Kaelon Black|rushing_yards|11": {
@@ -39905,10 +39910,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 8,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Puka Nacua|receptions|12": {
@@ -39950,10 +39955,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 5,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "George Pickens|receptions|11": {
     "player": "George Pickens",
@@ -39974,10 +39979,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 7,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40000,10 +40005,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -40054,10 +40059,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 2,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40079,10 +40084,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 0,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:04 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40132,10 +40137,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 5,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "CeeDee Lamb|receptions|11": {
@@ -40156,10 +40161,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 11,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Garrett Wilson|receptions|11": {
@@ -40179,10 +40184,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 3,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Jahmyr Gibbs|receptions|11": {
@@ -40203,10 +40208,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 4,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Harold Fannin Jr.|receptions|12": {
@@ -40250,10 +40255,11 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "George Kittle|receptions|11": {
     "player": "George Kittle",
@@ -40273,10 +40279,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 3,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Drake London|receptions|12": {
@@ -40322,10 +40328,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 8,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Ryan Flournoy|receptions|11": {
@@ -40345,10 +40351,10 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-17 18:04 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 1,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Emmett Johnson|receptions|11": {
@@ -40369,10 +40375,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 4,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -40398,10 +40404,11 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "Carnell Tate|receptions|11": {
     "player": "Carnell Tate",
@@ -40421,10 +40428,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 2,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Derrick Henry|receptions|11": {
@@ -40444,10 +40451,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 4,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 04:01 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this prizepicks line was first seen 2026-11-19 04:01 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40491,10 +40498,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 4,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": []
@@ -40516,10 +40523,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 2,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Chuba Hubbard|receptions|11": {
@@ -40539,10 +40546,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 0,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Jaylen Warren|receptions|11": {
@@ -40564,10 +40571,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 2,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-19 21:57 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this fanduel line was first seen 2026-11-19 21:57 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40588,10 +40595,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 9,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-18 03:23 UTC",
     "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this prizepicks line was first seen 2026-11-18 03:23 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -40612,10 +40619,10 @@
       "xtd_debt": "positive"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Patrick Mahomes|any_td|11": {
@@ -40635,10 +40642,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -40661,10 +40668,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Kenneth Walker III|any_td|11": {
@@ -40687,11 +40694,12 @@
       "goal_line_rush_share_high": true
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Christian McCaffrey|any_td|11": {
     "player": "Christian McCaffrey",
@@ -40713,10 +40721,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence"
@@ -40741,10 +40749,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence"
@@ -40765,10 +40773,10 @@
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "George Pickens|any_td|11": {
@@ -40792,10 +40800,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "best_value"
@@ -40816,10 +40824,10 @@
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "C.J. Stroud|any_td|11": {
@@ -40864,11 +40872,12 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Foster Moreau|any_td|11": {
     "player": "Foster Moreau",
@@ -40912,11 +40921,12 @@
       "due_for_td": true
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Shedeur Sanders|any_td|12": {
     "player": "Shedeur Sanders",
@@ -40960,10 +40970,10 @@
       "goal_line_rush_share_high": true
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence"
@@ -40988,10 +40998,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Drew Lock|any_td|12": {
@@ -41035,10 +41045,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "best_value"
@@ -41063,10 +41073,10 @@
       "goal_line_rush_share_high": true
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 2,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "best_value"
@@ -41093,10 +41103,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": []
   },
@@ -41120,10 +41130,10 @@
       "xtd_debt": "positive"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 0,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "best_value"
@@ -41150,10 +41160,10 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 2,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence"
@@ -41176,10 +41186,10 @@
       "red_zone_rush_share_high": true
     },
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
-    "actual": null,
+    "graded": true,
+    "actual": 1,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-24 19:51 UTC",
     "td_rule": "scoring"
   },
   "Tanner Hudson|any_td|11": {
@@ -41197,11 +41207,12 @@
     "model_prob": null,
     "signals": {},
     "frozen_at": "2026-11-17 18:05 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "td_rule": "scoring"
+    "graded_at": "2026-11-24 19:51 UTC",
+    "td_rule": "scoring",
+    "void": "did not play"
   },
   "Christian McCaffrey|receiving_yards|11": {
     "player": "Christian McCaffrey",
@@ -41221,10 +41232,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-17 21:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 13,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -41246,10 +41257,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-18 03:11 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 279,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -41273,10 +41284,10 @@
       "opportunity_signal": true
     },
     "frozen_at": "2026-11-18 13:00 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 27,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Carnell Tate|receiving_yards|11": {
@@ -41297,10 +41308,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-19 17:55 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 58,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence",
       "best_value"
@@ -41323,10 +41334,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-19 17:55 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 7,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Matthew Stafford|passing_yards|12": {
@@ -41426,10 +41437,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-19 21:40 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 18,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Javonte Williams|rushing_yards|11": {
@@ -41449,10 +41460,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 15:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 67,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Emmett Johnson|receiving_yards|11": {
     "player": "Emmett Johnson",
@@ -41472,10 +41483,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-20 16:01 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 38,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "highest_confidence"
     ]
@@ -41498,10 +41509,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 16:01 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 105,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -41524,10 +41535,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 102,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Malik Washington|receiving_yards|11": {
     "player": "Malik Washington",
@@ -41547,10 +41558,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 30,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Josh Allen|passing_yards|11": {
     "player": "Josh Allen",
@@ -41569,10 +41580,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 304,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "James Cook III|rushing_yards|11": {
     "player": "James Cook III",
@@ -41591,10 +41602,11 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "DJ Moore|receiving_yards|11": {
     "player": "DJ Moore",
@@ -41615,10 +41627,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 91,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Derrick Henry|rushing_yards|11": {
     "player": "Derrick Henry",
@@ -41637,10 +41649,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 94,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Zay Flowers|receiving_yards|11": {
     "player": "Zay Flowers",
@@ -41661,10 +41673,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 97,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Chuba Hubbard|rushing_yards|11": {
     "player": "Chuba Hubbard",
@@ -41683,10 +41695,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 120,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Tetairoa McMillan|receiving_yards|11": {
     "player": "Tetairoa McMillan",
@@ -41705,10 +41717,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 71,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Tyler Shough|passing_yards|11": {
     "player": "Tyler Shough",
@@ -41727,10 +41739,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 222,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Travis Etienne Jr.|rushing_yards|11": {
     "player": "Travis Etienne Jr.",
@@ -41747,10 +41759,11 @@
     "model_prob": 0.6678,
     "signals": {},
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "Chris Olave|receiving_yards|11": {
     "player": "Chris Olave",
@@ -41770,10 +41783,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 102,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "D'Andre Swift|rushing_yards|11": {
     "player": "D'Andre Swift",
@@ -41793,10 +41806,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 51,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Luther Burden III|receiving_yards|11": {
     "player": "Luther Burden III",
@@ -41815,10 +41828,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 10,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Tony Pollard|rushing_yards|11": {
     "player": "Tony Pollard",
@@ -41837,10 +41850,10 @@
       "injury_flagged": "Did Not Participate In Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 110,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Baker Mayfield|passing_yards|11": {
     "player": "Baker Mayfield",
@@ -41860,10 +41873,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 187,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Bucky Irving|rushing_yards|11": {
     "player": "Bucky Irving",
@@ -41884,10 +41897,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 68,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Emeka Egbuka|receiving_yards|11": {
     "player": "Emeka Egbuka",
@@ -41908,10 +41921,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 18,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Amon-Ra St. Brown|receiving_yards|11": {
     "player": "Amon-Ra St. Brown",
@@ -41931,10 +41944,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 37,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Carson Beck|passing_yards|11": {
     "player": "Carson Beck",
@@ -41953,10 +41966,11 @@
       "injury_flagged": "Limited Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "Tyler Allgeier|rushing_yards|11": {
     "player": "Tyler Allgeier",
@@ -41976,10 +41990,10 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 23,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Simi Fehoko|receiving_yards|11": {
     "player": "Simi Fehoko",
@@ -41998,10 +42012,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 2,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Patrick Mahomes|passing_yards|11": {
     "player": "Patrick Mahomes",
@@ -42020,10 +42034,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 324,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Kenneth Walker III|rushing_yards|11": {
     "player": "Kenneth Walker III",
@@ -42044,10 +42058,11 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-24 19:51 UTC",
+    "void": "did not play"
   },
   "Trevor Lawrence|passing_yards|11": {
     "player": "Trevor Lawrence",
@@ -42064,10 +42079,10 @@
     "model_prob": 0.4531,
     "signals": {},
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 301,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Malik Nabers|receiving_yards|11": {
     "player": "Malik Nabers",
@@ -42087,10 +42102,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 55,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Geno Smith|passing_yards|11": {
     "player": "Geno Smith",
@@ -42110,10 +42125,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 176,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Breece Hall|rushing_yards|11": {
     "player": "Breece Hall",
@@ -42134,10 +42149,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 86,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Garrett Wilson|receiving_yards|11": {
     "player": "Garrett Wilson",
@@ -42157,10 +42172,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 39,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Justin Herbert|passing_yards|11": {
     "player": "Justin Herbert",
@@ -42177,10 +42192,10 @@
     "model_prob": 0.5606,
     "signals": {},
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 131,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Omarion Hampton|rushing_yards|11": {
     "player": "Omarion Hampton",
@@ -42200,10 +42215,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 89,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Ladd McConkey|receiving_yards|11": {
     "player": "Ladd McConkey",
@@ -42224,10 +42239,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 37,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "line_attached_at": "2026-11-21 22:40 UTC",
     "line_attach_note": "Projection frozen 2026-11-20 17:28 UTC; this prizepicks line was first seen 2026-11-21 22:40 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
@@ -42251,10 +42266,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 267,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Ashton Jeanty|rushing_yards|11": {
     "player": "Ashton Jeanty",
@@ -42274,10 +42289,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 79,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Tre Tucker|receiving_yards|11": {
     "player": "Tre Tucker",
@@ -42298,10 +42313,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 50,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Bo Nix|passing_yards|11": {
     "player": "Bo Nix",
@@ -42318,10 +42333,10 @@
     "model_prob": 0.573,
     "signals": {},
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 225,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -42346,10 +42361,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 61,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Aaron Rodgers|passing_yards|11": {
     "player": "Aaron Rodgers",
@@ -42366,10 +42381,10 @@
     "model_prob": 0.5012,
     "signals": {},
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 227,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Jaylen Warren|rushing_yards|11": {
     "player": "Jaylen Warren",
@@ -42389,10 +42404,10 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 28,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "DK Metcalf|receiving_yards|11": {
     "player": "DK Metcalf",
@@ -42411,10 +42426,10 @@
       "injury_flagged": "Did Not Participate In Practice"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 2,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Joe Milton III|passing_yards|11": {
     "player": "Joe Milton III",
@@ -42433,10 +42448,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 141,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Saquon Barkley|rushing_yards|11": {
     "player": "Saquon Barkley",
@@ -42457,10 +42472,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 75,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "DeVonta Smith|receiving_yards|11": {
     "player": "DeVonta Smith",
@@ -42481,10 +42496,10 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 41,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Kirk Cousins|passing_yards|11": {
     "player": "Kirk Cousins",
@@ -42503,10 +42518,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 235,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Jordan Mason|rushing_yards|11": {
     "player": "Jordan Mason",
@@ -42526,10 +42541,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 38,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Justin Jefferson|receiving_yards|11": {
     "player": "Justin Jefferson",
@@ -42549,10 +42564,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 86,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Brock Purdy|passing_yards|11": {
     "player": "Brock Purdy",
@@ -42571,10 +42586,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 255,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Mike Evans|receiving_yards|11": {
@@ -42597,10 +42612,10 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-20 17:28 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 109,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -42625,10 +42640,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-20 17:29 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 6,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": [
       "best_value",
       "highest_confidence"
@@ -42704,7 +42719,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Jayden Daniels|passing_yards|11": {
     "player": "Jayden Daniels",
@@ -42724,10 +42741,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-22 18:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 289,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Jacory Croskey-Merritt|rushing_yards|11": {
@@ -42747,10 +42764,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-22 18:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 54,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Deebo Samuel Sr.|rushing_yards|11": {
     "player": "Deebo Samuel Sr.",
@@ -42770,10 +42787,10 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-22 18:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 27,
+    "hit": true,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Joe Burrow|passing_yards|11": {
     "player": "Joe Burrow",
@@ -42792,10 +42809,10 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-22 21:40 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 300,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "George Kittle|receiving_yards|11": {
     "player": "George Kittle",
@@ -42816,10 +42833,10 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-22 21:40 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null,
+    "graded": true,
+    "actual": 34,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC",
     "best5_tags": []
   },
   "Stefon Diggs|receiving_yards|11": {
@@ -42841,10 +42858,10 @@
       "target_share_trend": "up"
     },
     "frozen_at": "2026-11-22 21:40 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 45,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Chase Brown|rushing_yards|11": {
     "player": "Chase Brown",
@@ -42863,10 +42880,10 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-22 21:40 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 6,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Rachaad White|rushing_yards|11": {
     "player": "Rachaad White",
@@ -42885,10 +42902,10 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-23 04:20 UTC",
-    "graded": false,
-    "actual": null,
-    "hit": null,
-    "graded_at": null
+    "graded": true,
+    "actual": 0,
+    "hit": false,
+    "graded_at": "2026-11-24 19:51 UTC"
   },
   "Kaleb Johnson|rushing_yards|12": {
     "player": "Kaleb Johnson",
@@ -42968,5 +42985,1927 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Josh Jacobs|rushing_yards|12": {
+    "player": "Josh Jacobs",
+    "team": "GB",
+    "opponent": "LA",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 0.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out",
+      "opponent_recent_form": "better",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Christian Watson|receiving_yards|12": {
+    "player": "Christian Watson",
+    "team": "GB",
+    "opponent": "LA",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 53.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 71.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.5,
+    "model_prob": 0.3088,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Kyren Williams|rushing_yards|12": {
+    "player": "Kyren Williams",
+    "team": "LA",
+    "opponent": "GB",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 81.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 54.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 26.5,
+    "model_prob": 0.8261,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jacoby Brissett|passing_yards|12": {
+    "player": "Jacoby Brissett",
+    "team": "BAL",
+    "opponent": "HOU",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 188.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 244.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -55.6,
+    "model_prob": 0.313,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Bryce Young|passing_yards|12": {
+    "player": "Bryce Young",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 184.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 235.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -51.0,
+    "model_prob": 0.2566,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Cam Ward|passing_yards|12": {
+    "player": "Cam Ward",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 169.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 205.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -36.0,
+    "model_prob": 0.2904,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Jakobi Meyers|receiving_yards|12": {
+    "player": "Jakobi Meyers",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 65.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 40.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 24.7,
+    "model_prob": 0.8291,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Parker Washington|receiving_yards|12": {
+    "player": "Parker Washington",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 54.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 78.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -23.6,
+    "model_prob": 0.2645,
+    "signals": {
+      "opponent_recent_form": "worse",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Ja'Kobi Lane|receiving_yards|12": {
+    "player": "Ja'Kobi Lane",
+    "team": "BAL",
+    "opponent": "HOU",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 37.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 21.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 16.1,
+    "model_prob": 0.7596,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Matthew Golden|receptions|12": {
+    "player": "Matthew Golden",
+    "team": "GB",
+    "opponent": "LA",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 2.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -2.7,
+    "model_prob": 0.0515,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Evan Engram|receptions|12": {
+    "player": "Evan Engram",
+    "team": "DEN",
+    "opponent": "PIT",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.9,
+    "model_prob": 0.7586,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Zay Flowers|receptions|12": {
+    "player": "Zay Flowers",
+    "team": "BAL",
+    "opponent": "HOU",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 6.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.7,
+    "model_prob": 0.2214,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Rashee Rice|receptions|12": {
+    "player": "Rashee Rice",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.3,
+    "model_prob": 0.697,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Chimere Dike|receptions|12": {
+    "player": "Chimere Dike",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 2.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -1.0,
+    "model_prob": 0.2973,
+    "signals": {
+      "usage_trend": "down",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Ollie Gordon II|rushing_yards|12": {
+    "player": "Ollie Gordon II",
+    "team": "MIA",
+    "opponent": "NYJ",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 23.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 70.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -46.9,
+    "model_prob": 0.01,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jonah Coleman|rushing_yards|12": {
+    "player": "Jonah Coleman",
+    "team": "DEN",
+    "opponent": "PIT",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 37.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 69.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -32.3,
+    "model_prob": 0.0743,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Saquon Barkley|rushing_yards|12": {
+    "player": "Saquon Barkley",
+    "team": "PHI",
+    "opponent": "DAL",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 87.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 64.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 23.4,
+    "model_prob": 0.6844,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Jordan Mason|rushing_yards|12": {
+    "player": "Jordan Mason",
+    "team": "MIN",
+    "opponent": "ATL",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 39.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 57.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.1,
+    "model_prob": 0.3175,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value"
+    ]
+  },
+  "Braelon Allen|rushing_yards|12": {
+    "player": "Braelon Allen",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 29.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 41.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -12.1,
+    "model_prob": 0.2004,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "CeeDee Lamb|receptions|12": {
+    "player": "CeeDee Lamb",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 8.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 7,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.1,
+    "model_prob": 0.6457,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Chris Olave|receptions|12": {
+    "player": "Chris Olave",
+    "team": "NO",
+    "opponent": "CIN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Trey McBride|receptions|12": {
+    "player": "Trey McBride",
+    "team": "ARI",
+    "opponent": "WAS",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 6.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Antonio Williams|receptions|12": {
+    "player": "Antonio Williams",
+    "team": "WAS",
+    "opponent": "ARI",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Omar Cooper Jr.|receptions|12": {
+    "player": "Omar Cooper Jr.",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 0.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "DJ Moore|receptions|12": {
+    "player": "DJ Moore",
+    "team": "BUF",
+    "opponent": "KC",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 4,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.1,
+    "model_prob": 0.6765,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Parker Washington|receptions|12": {
+    "player": "Parker Washington",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 3.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jack Bech|receptions|12": {
+    "player": "Jack Bech",
+    "team": "LV",
+    "opponent": "CLE",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.6,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Ty Johnson|receptions|12": {
+    "player": "Ty Johnson",
+    "team": "BUF",
+    "opponent": "KC",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 2,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.2,
+    "model_prob": 0.4355,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Justin Jefferson|receptions|12": {
+    "player": "Justin Jefferson",
+    "team": "MIN",
+    "opponent": "ATL",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "George Pickens|receptions|12": {
+    "player": "George Pickens",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.4,
+    "model_prob": 0.5744,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Malik Nabers|receptions|12": {
+    "player": "Malik Nabers",
+    "team": "NYG",
+    "opponent": "IND",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 7.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Devaughn Vele|receptions|12": {
+    "player": "Devaughn Vele",
+    "team": "NO",
+    "opponent": "CIN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 3.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Michael Wilson|receptions|12": {
+    "player": "Michael Wilson",
+    "team": "ARI",
+    "opponent": "WAS",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 3.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Travis Kelce|receptions|12": {
+    "player": "Travis Kelce",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Mike Evans|receptions|12": {
+    "player": "Mike Evans",
+    "team": "SF",
+    "opponent": "SEA",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "T.J. Hockenson|receptions|12": {
+    "player": "T.J. Hockenson",
+    "team": "MIN",
+    "opponent": "ATL",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.4,
+    "model_prob": 0.565,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tetairoa McMillan|receptions|12": {
+    "player": "Tetairoa McMillan",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 4.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
+    "model_prob": 0.5199,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tai Felton|receptions|12": {
+    "player": "Tai Felton",
+    "team": "MIN",
+    "opponent": "ATL",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 0.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up",
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Max Hurleman|receptions|12": {
+    "player": "Max Hurleman",
+    "team": "PIT",
+    "opponent": "DEN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Germie Bernard|receptions|12": {
+    "player": "Germie Bernard",
+    "team": "PIT",
+    "opponent": "DEN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Tyquan Thornton|receptions|12": {
+    "player": "Tyquan Thornton",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 1.8,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Mike Gesicki|receptions|12": {
+    "player": "Mike Gesicki",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 3.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Calvin Ridley|receptions|12": {
+    "player": "Calvin Ridley",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 2.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Pat Freiermuth|receptions|12": {
+    "player": "Pat Freiermuth",
+    "team": "PIT",
+    "opponent": "DEN",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 2.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Ja'Marr Chase|receptions|12": {
+    "player": "Ja'Marr Chase",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 8.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "target_share_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "DeVonta Smith|receptions|12": {
+    "player": "DeVonta Smith",
+    "team": "PHI",
+    "opponent": "DAL",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 5.0,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -0.5,
+    "model_prob": 0.412,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Amon-Ra St. Brown|receptions|12": {
+    "player": "Amon-Ra St. Brown",
+    "team": "DET",
+    "opponent": "CHI",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 7.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 7,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
+    "model_prob": 0.5135,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Khalil Shakir|receptions|12": {
+    "player": "Khalil Shakir",
+    "team": "BUF",
+    "opponent": "KC",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 4.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 3.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.1,
+    "model_prob": 0.6661,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Chase Brown|receptions|12": {
+    "player": "Chase Brown",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "receptions",
+    "projected": 3.9,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Dak Prescott|any_td|12": {
+    "player": "Dak Prescott",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kenneth Walker III|any_td|12": {
+    "player": "Kenneth Walker III",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.7,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Out",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Geno Smith|any_td|12": {
+    "player": "Geno Smith",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Patrick Mahomes|any_td|12": {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Justin Herbert|any_td|12": {
+    "player": "Justin Herbert",
+    "team": "LAC",
+    "opponent": "NE",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Brock Purdy|any_td|12": {
+    "player": "Brock Purdy",
+    "team": "SF",
+    "opponent": "SEA",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Cam Ward|any_td|12": {
+    "player": "Cam Ward",
+    "team": "TEN",
+    "opponent": "JAX",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jonah Coleman|any_td|12": {
+    "player": "Jonah Coleman",
+    "team": "DEN",
+    "opponent": "PIT",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -30.9,
+    "model_prob": 18.1,
+    "signals": {
+      "injury_flagged": "Questionable",
+      "red_zone_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 49.0,
+    "td_rule": "scoring"
+  },
+  "Fernando Mendoza|any_td|12": {
+    "player": "Fernando Mendoza",
+    "team": "LV",
+    "opponent": "CLE",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Tyquan Thornton|any_td|12": {
+    "player": "Tyquan Thornton",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kyler Murray|any_td|12": {
+    "player": "Kyler Murray",
+    "team": "MIN",
+    "opponent": "ATL",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out",
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "positive",
+      "due_for_td": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Travis Kelce|any_td|12": {
+    "player": "Travis Kelce",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -3.1,
+    "model_prob": 25.9,
+    "signals": {
+      "usage_trend": "up",
+      "target_share_trend": "up",
+      "injury_flagged": "Full Participation in Practice",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 29.0,
+    "td_rule": "scoring"
+  },
+  "Sterling Shepard|any_td|12": {
+    "player": "Sterling Shepard",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "George Kittle|any_td|12": {
+    "player": "George Kittle",
+    "team": "SF",
+    "opponent": "SEA",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "target_share_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_target_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Baker Mayfield|any_td|12": {
+    "player": "Baker Mayfield",
+    "team": "TB",
+    "opponent": "CAR",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Joe Burrow|any_td|12": {
+    "player": "Joe Burrow",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Chuba Hubbard|any_td|12": {
+    "player": "Chuba Hubbard",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Javonte Williams|any_td|12": {
+    "player": "Javonte Williams",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.6,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -14.9,
+    "model_prob": 45.1,
+    "signals": {
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "positive"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 60.0,
+    "td_rule": "scoring"
+  },
+  "Jahmyr Gibbs|any_td|12": {
+    "player": "Jahmyr Gibbs",
+    "team": "DET",
+    "opponent": "CHI",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 1.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -2.3,
+    "model_prob": 66.7,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 69.0,
+    "td_rule": "scoring"
+  },
+  "Bryce Young|any_td|12": {
+    "player": "Bryce Young",
+    "team": "CAR",
+    "opponent": "TB",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Ladd McConkey|any_td|12": {
+    "player": "Ladd McConkey",
+    "team": "LAC",
+    "opponent": "NE",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up",
+      "injury_flagged": "Questionable",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Caleb Williams|any_td|12": {
+    "player": "Caleb Williams",
+    "team": "CHI",
+    "opponent": "DET",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": 0.5,
+    "market_source": "kalshi_1plus_td",
+    "call": "UNDER",
+    "edge": -11.5,
+    "model_prob": 9.5,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "market_prob": 21.0,
+    "td_rule": "scoring"
+  },
+  "Tanner Hudson|any_td|12": {
+    "player": "Tanner Hudson",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jalen Hurts|any_td|12": {
+    "player": "Jalen Hurts",
+    "team": "PHI",
+    "opponent": "DAL",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.7,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Romeo Doubs|any_td|12": {
+    "player": "Romeo Doubs",
+    "team": "NE",
+    "opponent": "LAC",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jawhar Jordan|any_td|12": {
+    "player": "Jawhar Jordan",
+    "team": "HOU",
+    "opponent": "BAL",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {},
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Dameon Pierce|any_td|12": {
+    "player": "Dameon Pierce",
+    "team": "PHI",
+    "opponent": "DAL",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Emanuel Wilson|any_td|12": {
+    "player": "Emanuel Wilson",
+    "team": "SEA",
+    "opponent": "SF",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.2,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Tyrone Tracy Jr.|any_td|12": {
+    "player": "Tyrone Tracy Jr.",
+    "team": "NYG",
+    "opponent": "IND",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "RJ Harvey|any_td|12": {
+    "player": "RJ Harvey",
+    "team": "DEN",
+    "opponent": "PIT",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.7,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Out"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Jake Ferguson|any_td|12": {
+    "player": "Jake Ferguson",
+    "team": "DAL",
+    "opponent": "PHI",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "up",
+      "injury_flagged": "Out",
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Puka Nacua|any_td|12": {
+    "player": "Puka Nacua",
+    "team": "LA",
+    "opponent": "GB",
+    "week": 12,
+    "stat": "any_td",
+    "projected": 0.5,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice"
+    },
+    "frozen_at": "2026-11-24 19:52 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
   }
 }

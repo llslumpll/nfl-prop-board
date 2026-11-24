@@ -228,6 +228,7 @@
      "without": 44
     },
     {
+     "actual": 105,
      "bump": 628,
      "call": "OVER",
      "line": 87.5,
@@ -235,13 +236,14 @@
      "n_wo": 1,
      "now": 88.5,
      "player": "Emmett Johnson",
-     "result": null,
+     "result": "hit",
      "short": "RUSH YDS",
      "stat": "rushing_yards",
      "with": 13.9,
      "without": 101
     },
     {
+     "actual": 38,
      "bump": 136,
      "call": "OVER",
      "line": 27.5,
@@ -249,13 +251,14 @@
      "n_wo": 1,
      "now": 30.5,
      "player": "Emmett Johnson",
-     "result": null,
+     "result": "hit",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 29.6,
      "without": 70
     },
     {
+     "actual": 324,
      "bump": 37,
      "call": "OVER",
      "line": 250.5,
@@ -263,7 +266,7 @@
      "n_wo": 1,
      "now": 242.5,
      "player": "Patrick Mahomes",
-     "result": null,
+     "result": "hit",
      "short": "PASS YDS",
      "stat": "passing_yards",
      "with": 254.6,
@@ -282,6 +285,7 @@
      "without": 15
     },
     {
+     "actual": 53,
      "bump": 40,
      "call": "OVER",
      "line": 53.5,
@@ -289,7 +293,7 @@
      "n_wo": 1,
      "now": 47.5,
      "player": "Rashee Rice",
-     "result": null,
+     "result": "miss",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 58.4,
@@ -318,6 +322,7 @@
      "without": 3.5
     },
     {
+     "actual": 86,
      "bump": 11,
      "call": "OVER",
      "line": 85.5,
@@ -325,7 +330,7 @@
      "n_wo": 3,
      "now": 86.5,
      "player": "Justin Jefferson",
-     "result": null,
+     "result": "hit",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 56,
@@ -383,6 +388,7 @@
    "week": 11
   }
  },
+ "12": {},
  "9": {
   "Brian Robinson|ATL": {
    "opp": "CIN",

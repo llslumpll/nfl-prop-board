@@ -623,6 +623,7 @@
    "ev": -0.122,
    "family": "ml",
    "good": false,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "ml-2",
    "legs": [
     {
@@ -637,6 +638,7 @@
      "kind": "ml",
      "label": "BUF to win",
      "price": -1600,
+     "result": "hit",
      "team": "BUF"
     },
     {
@@ -651,14 +653,17 @@
      "kind": "ml",
      "label": "KC to win",
      "price": -1800,
+     "result": "hit",
      "team": "KC"
     }
    ],
    "locked": "2026-11-22 18:01 UTC",
    "name": "Moneyline",
+   "paid": 1.121,
    "size": 2,
    "stake": 1.0,
-   "status": "pending",
+   "status": "hit",
+   "units": 0.12,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -668,6 +673,7 @@
    "ev": -0.229,
    "family": "ml",
    "good": false,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "ml-3",
    "legs": [
     {
@@ -682,6 +688,7 @@
      "kind": "ml",
      "label": "CHI to win",
      "price": -770,
+     "result": "hit",
      "team": "CHI"
     },
     {
@@ -711,14 +718,17 @@
      "kind": "ml",
      "label": "DAL to win",
      "price": -450,
+     "result": "hit",
      "team": "DAL"
     }
    ],
    "locked": "2026-11-20 01:20 UTC",
    "name": "Moneyline",
+   "paid": 1.549,
    "size": 3,
    "stake": 0.5,
-   "status": "pending",
+   "status": "hit",
+   "units": 0.27,
    "updated": "2026-11-20 01:00 UTC",
    "week": 11
   },
@@ -728,6 +738,7 @@
    "ev": -0.075,
    "family": "ml",
    "good": false,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "ml-4",
    "legs": [
     {
@@ -742,6 +753,7 @@
      "kind": "ml",
      "label": "DEN to win",
      "price": -620,
+     "result": "hit",
      "team": "DEN"
     },
     {
@@ -756,6 +768,7 @@
      "kind": "ml",
      "label": "JAX to win",
      "price": -255,
+     "result": "miss",
      "team": "JAX"
     },
     {
@@ -770,6 +783,7 @@
      "kind": "ml",
      "label": "SF to win",
      "price": -168,
+     "result": "hit",
      "team": "SF"
     },
     {
@@ -784,6 +798,7 @@
      "kind": "ml",
      "label": "PIT to win",
      "price": -186,
+     "result": "miss",
      "team": "PIT"
     }
    ],
@@ -791,7 +806,8 @@
    "name": "Moneyline",
    "size": 4,
    "stake": 0.25,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.25,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -801,9 +817,11 @@
    "ev": -0.073,
    "family": "props",
    "good": false,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "props-2",
    "legs": [
     {
+     "actual": 2,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.99,
@@ -815,10 +833,12 @@
      "n": 117,
      "player": "Carnell Tate",
      "projected": 0.0,
+     "result": "hit",
      "stat": "receptions",
      "team": "TEN"
     },
     {
+     "actual": null,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.765,
@@ -830,6 +850,7 @@
      "n": 117,
      "player": "Omar Cooper Jr.",
      "projected": 1.4,
+     "result": "void",
      "stat": "receptions",
      "team": "NYJ"
     }
@@ -838,7 +859,8 @@
    "name": "Safest props",
    "size": 2,
    "stake": 1.0,
-   "status": "pending",
+   "status": "void",
+   "units": 0.0,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -848,9 +870,11 @@
    "ev": 0.031,
    "family": "props",
    "good": true,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "props-3",
    "legs": [
     {
+     "actual": 7,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.719,
@@ -862,10 +886,12 @@
      "n": 117,
      "player": "Justin Jefferson",
      "projected": 5.6,
+     "result": "void",
      "stat": "receptions",
      "team": "MIN"
     },
     {
+     "actual": 8,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.666,
@@ -877,10 +903,12 @@
      "n": 117,
      "player": "Parker Washington",
      "projected": 3.5,
+     "result": "miss",
      "stat": "receptions",
      "team": "JAX"
     },
     {
+     "actual": 0,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.65,
@@ -892,6 +920,7 @@
      "n": 117,
      "player": "Chuba Hubbard",
      "projected": 2.9,
+     "result": "hit",
      "stat": "receptions",
      "team": "CAR"
     }
@@ -900,7 +929,8 @@
    "name": "Safest props",
    "size": 3,
    "stake": 0.5,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.5,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -910,9 +940,11 @@
    "ev": -0.044,
    "family": "props",
    "good": false,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "props-4",
    "legs": [
     {
+     "actual": 8,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.607,
@@ -924,10 +956,12 @@
      "n": 117,
      "player": "Zay Flowers",
      "projected": 4.9,
+     "result": "miss",
      "stat": "receptions",
      "team": "BAL"
     },
     {
+     "actual": 5,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.59,
@@ -939,10 +973,12 @@
      "n": 117,
      "player": "Chase Brown",
      "projected": 4.0,
+     "result": "miss",
      "stat": "receptions",
      "team": "CIN"
     },
     {
+     "actual": 1,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.573,
@@ -954,10 +990,12 @@
      "n": 117,
      "player": "Ryan Flournoy",
      "projected": 3.1,
+     "result": "hit",
      "stat": "receptions",
      "team": "DAL"
     },
     {
+     "actual": 3,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.561,
@@ -969,6 +1007,7 @@
      "n": 117,
      "player": "Garrett Wilson",
      "projected": 5.1,
+     "result": "hit",
      "stat": "receptions",
      "team": "NYJ"
     }
@@ -977,7 +1016,8 @@
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.25,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -987,9 +1027,11 @@
    "ev": 0.205,
    "family": "td",
    "good": true,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "td-1",
    "legs": [
     {
+     "actual": 1,
      "chance": 0.699,
      "decimal": 1.724,
      "game": "MIN@SF",
@@ -999,14 +1041,17 @@
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
      "price": 0.58,
+     "result": "hit",
      "team": "SF"
     }
    ],
    "locked": "2026-11-23 01:20 UTC",
    "name": "Touchdowns",
+   "paid": 1.724,
    "size": 1,
    "stake": 0.5,
-   "status": "pending",
+   "status": "hit",
+   "units": 0.36,
    "updated": "2026-11-23 01:00 UTC",
    "week": 11
   },
@@ -1016,9 +1061,11 @@
    "ev": 0.336,
    "family": "td",
    "good": true,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "td-2",
    "legs": [
     {
+     "actual": 1,
      "chance": 0.699,
      "decimal": 1.754,
      "game": "MIN@SF",
@@ -1028,9 +1075,11 @@
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
      "price": 0.57,
+     "result": "hit",
      "team": "SF"
     },
     {
+     "actual": 0,
      "chance": 0.632,
      "decimal": 1.724,
      "game": "BUF@MIA",
@@ -1040,6 +1089,7 @@
      "label": "Josh Allen anytime TD",
      "player": "Josh Allen",
      "price": 0.58,
+     "result": "miss",
      "team": "BUF"
     }
    ],
@@ -1047,7 +1097,8 @@
    "name": "Touchdowns",
    "size": 2,
    "stake": 1.0,
-   "status": "pending",
+   "status": "miss",
+   "units": -1.0,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
   },
@@ -1183,9 +1234,11 @@
    "ev": 0.031,
    "family": "value",
    "good": true,
+   "graded": "2026-11-24 19:52 UTC",
    "id": "value-3",
    "legs": [
     {
+     "actual": 2,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.562,
@@ -1197,10 +1250,12 @@
      "n": 117,
      "player": "Tee Higgins",
      "projected": 5.1,
+     "result": "hit",
      "stat": "receptions",
      "team": "CIN"
     },
     {
+     "actual": 5,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.5,
@@ -1212,10 +1267,12 @@
      "n": 117,
      "player": "DeVonta Smith",
      "projected": 0.0,
+     "result": "miss",
      "stat": "receptions",
      "team": "PHI"
     },
     {
+     "actual": 2,
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.5,
@@ -1227,6 +1284,7 @@
      "n": 117,
      "player": "Luther Burden III",
      "projected": 4.0,
+     "result": "hit",
      "stat": "receptions",
      "team": "CHI"
     }
@@ -1235,9 +1293,553 @@
    "name": "Good price",
    "size": 3,
    "stake": 0.5,
-   "status": "pending",
+   "status": "miss",
+   "units": -0.5,
    "updated": "2026-11-22 17:41 UTC",
    "week": 11
+  }
+ },
+ "12": {
+  "ml-2": {
+   "chance": 0.7349,
+   "decimal": 1.266,
+   "ev": -0.07,
+   "family": "ml",
+   "good": false,
+   "id": "ml-2",
+   "legs": [
+    {
+     "away": "TEN",
+     "call": "HOME",
+     "chance": 0.893,
+     "decimal": 1.083,
+     "game": "TEN@JAX",
+     "good": false,
+     "home": "JAX",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "ml",
+     "label": "JAX to win",
+     "price": -1200,
+     "team": "JAX"
+    },
+    {
+     "away": "NO",
+     "call": "HOME",
+     "chance": 0.823,
+     "decimal": 1.169,
+     "game": "NO@CIN",
+     "good": false,
+     "home": "CIN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "ml",
+     "label": "CIN to win",
+     "price": -590,
+     "team": "CIN"
+    }
+   ],
+   "name": "Moneyline",
+   "size": 2,
+   "stake": 1.0,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "ml-3": {
+   "chance": 0.4176,
+   "decimal": 2.128,
+   "ev": -0.111,
+   "family": "ml",
+   "good": false,
+   "id": "ml-3",
+   "legs": [
+    {
+     "away": "PHI",
+     "call": "HOME",
+     "chance": 0.781,
+     "decimal": 1.217,
+     "game": "PHI@DAL",
+     "good": false,
+     "home": "DAL",
+     "kickoff": "2026-11-26T21:30:00+00:00",
+     "kind": "ml",
+     "label": "DAL to win",
+     "price": -460,
+     "team": "DAL"
+    },
+    {
+     "away": "ATL",
+     "call": "HOME",
+     "chance": 0.752,
+     "decimal": 1.333,
+     "game": "ATL@MIN",
+     "good": true,
+     "home": "MIN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "ml",
+     "label": "MIN to win",
+     "price": -300,
+     "team": "MIN"
+    },
+    {
+     "away": "BAL",
+     "call": "HOME",
+     "chance": 0.711,
+     "decimal": 1.312,
+     "game": "BAL@HOU",
+     "good": false,
+     "home": "HOU",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "ml",
+     "label": "HOU to win",
+     "price": -320,
+     "team": "HOU"
+    }
+   ],
+   "name": "Moneyline",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "ml-4": {
+   "chance": 0.1878,
+   "decimal": 4.187,
+   "ev": -0.214,
+   "family": "ml",
+   "good": false,
+   "id": "ml-4",
+   "legs": [
+    {
+     "away": "WAS",
+     "call": "AWAY",
+     "chance": 0.697,
+     "decimal": 1.294,
+     "game": "WAS@ARI",
+     "good": false,
+     "home": "ARI",
+     "kickoff": "2026-11-29T21:25:00+00:00",
+     "kind": "ml",
+     "label": "WAS to win",
+     "price": -340,
+     "team": "WAS"
+    },
+    {
+     "away": "GB",
+     "call": "HOME",
+     "chance": 0.667,
+     "decimal": 1.725,
+     "game": "GB@LA",
+     "good": true,
+     "home": "LA",
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "ml",
+     "label": "LA to win",
+     "price": -138,
+     "team": "LA"
+    },
+    {
+     "away": "NYG",
+     "call": "AWAY",
+     "chance": 0.637,
+     "decimal": 1.299,
+     "game": "NYG@IND",
+     "good": false,
+     "home": "IND",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "ml",
+     "label": "NYG to win",
+     "price": -335,
+     "team": "NYG"
+    },
+    {
+     "away": "LV",
+     "call": "HOME",
+     "chance": 0.634,
+     "decimal": 1.444,
+     "game": "LV@CLE",
+     "good": false,
+     "home": "CLE",
+     "kickoff": "2026-11-30T01:20:00+00:00",
+     "kind": "ml",
+     "label": "CLE to win",
+     "price": -225,
+     "team": "CLE"
+    }
+   ],
+   "name": "Moneyline",
+   "size": 4,
+   "stake": 0.25,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "props-2": {
+   "chance": 0.3091,
+   "decimal": 3.0,
+   "ev": -0.073,
+   "family": "props",
+   "good": false,
+   "id": "props-2",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.949,
+     "game": "GB@LA",
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "prop",
+     "label": "Matthew Golden UNDER 5.5 REC",
+     "line": 5.5,
+     "n": 135,
+     "player": "Matthew Golden",
+     "projected": 2.8,
+     "stat": "receptions",
+     "team": "GB"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.779,
+     "game": "BAL@HOU",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Zay Flowers UNDER 6.5 REC",
+     "line": 6.5,
+     "n": 135,
+     "player": "Zay Flowers",
+     "projected": 4.8,
+     "stat": "receptions",
+     "team": "BAL"
+    }
+   ],
+   "name": "Safest props",
+   "size": 2,
+   "stake": 1.0,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "props-3": {
+   "chance": 0.1719,
+   "decimal": 6.0,
+   "ev": 0.031,
+   "family": "props",
+   "good": true,
+   "id": "props-3",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.703,
+     "game": "JAX@TEN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Chimere Dike UNDER 3.5 REC",
+     "line": 3.5,
+     "n": 135,
+     "player": "Chimere Dike",
+     "projected": 2.5,
+     "stat": "receptions",
+     "team": "TEN"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.588,
+     "game": "DAL@PHI",
+     "kickoff": "2026-11-26T21:30:00+00:00",
+     "kind": "prop",
+     "label": "DeVonta Smith UNDER 5.5 REC",
+     "line": 5.5,
+     "n": 135,
+     "player": "DeVonta Smith",
+     "projected": 5.0,
+     "stat": "receptions",
+     "team": "PHI"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.565,
+     "game": "BUF@KC",
+     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kind": "prop",
+     "label": "Ty Johnson UNDER 2 REC",
+     "line": 2,
+     "n": 135,
+     "player": "Ty Johnson",
+     "projected": 1.8,
+     "stat": "receptions",
+     "team": "BUF"
+    }
+   ],
+   "name": "Safest props",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "props-4": {
+   "chance": 0.0799,
+   "decimal": 10.0,
+   "ev": -0.201,
+   "family": "props",
+   "good": false,
+   "id": "props-4",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "SEA@SF",
+     "kickoff": "2026-11-29T21:25:00+00:00",
+     "kind": "prop",
+     "label": "Jaxon Smith-Njigba UNDER 7.5 REC",
+     "line": 7.5,
+     "n": 135,
+     "player": "Jaxon Smith-Njigba",
+     "projected": 6.3,
+     "stat": "receptions",
+     "team": "SEA"
+    },
+    {
+     "call": "OVER",
+     "chance": 0.554,
+     "conf": 0.763,
+     "game": "GB@LA",
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "prop",
+     "label": "Matthew Stafford OVER 228.5 PASS YDS",
+     "line": 228.5,
+     "n": 112,
+     "player": "Matthew Stafford",
+     "projected": 278.6,
+     "stat": "passing_yards",
+     "team": "LA"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.519,
+     "conf": 0.736,
+     "game": "JAX@TEN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Parker Washington UNDER 78.5 REC YDS",
+     "line": 78.5,
+     "n": 156,
+     "player": "Parker Washington",
+     "projected": 54.9,
+     "stat": "receiving_yards",
+     "team": "JAX"
+    },
+    {
+     "call": "OVER",
+     "chance": 0.5,
+     "conf": 0.76,
+     "game": "BAL@HOU",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Ja'Kobi Lane OVER 21.5 REC YDS",
+     "line": 21.5,
+     "n": 202,
+     "player": "Ja'Kobi Lane",
+     "projected": 37.6,
+     "stat": "receiving_yards",
+     "team": "BAL"
+    }
+   ],
+   "name": "Safest props",
+   "size": 4,
+   "stake": 0.25,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "td-1": {
+   "chance": 0.593,
+   "decimal": 1.923,
+   "ev": 0.14,
+   "family": "td",
+   "good": true,
+   "id": "td-1",
+   "legs": [
+    {
+     "chance": 0.593,
+     "decimal": 1.923,
+     "game": "BUF@KC",
+     "good": true,
+     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.52,
+     "team": "BUF"
+    }
+   ],
+   "name": "Touchdowns",
+   "size": 1,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "td-2": {
+   "chance": 0.233,
+   "decimal": 5.494,
+   "ev": 0.28,
+   "family": "td",
+   "good": true,
+   "id": "td-2",
+   "legs": [
+    {
+     "chance": 0.593,
+     "decimal": 1.923,
+     "game": "BUF@KC",
+     "good": true,
+     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.52,
+     "team": "BUF"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.857,
+     "game": "GB@LA",
+     "good": true,
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "td",
+     "label": "Christian Watson anytime TD",
+     "player": "Christian Watson",
+     "price": 0.35,
+     "team": "GB"
+    }
+   ],
+   "name": "Touchdowns",
+   "size": 2,
+   "stake": 1.0,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "td-3": {
+   "chance": 0.0916,
+   "decimal": 17.169,
+   "ev": 0.572,
+   "family": "td",
+   "good": true,
+   "id": "td-3",
+   "legs": [
+    {
+     "chance": 0.593,
+     "decimal": 1.923,
+     "game": "BUF@KC",
+     "good": true,
+     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.52,
+     "team": "BUF"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.857,
+     "game": "GB@LA",
+     "good": true,
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "td",
+     "label": "Christian Watson anytime TD",
+     "player": "Christian Watson",
+     "price": 0.35,
+     "team": "GB"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 3.125,
+     "game": "CHI@DET",
+     "good": true,
+     "kickoff": "2026-11-26T18:00:00+00:00",
+     "kind": "td",
+     "label": "Sam LaPorta anytime TD",
+     "player": "Sam LaPorta",
+     "price": 0.32,
+     "team": "DET"
+    }
+   ],
+   "name": "Touchdowns",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
+  },
+  "td-4": {
+   "chance": 0.036,
+   "decimal": 55.386,
+   "ev": 0.994,
+   "family": "td",
+   "good": true,
+   "id": "td-4",
+   "legs": [
+    {
+     "chance": 0.593,
+     "decimal": 1.923,
+     "game": "BUF@KC",
+     "good": true,
+     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kind": "td",
+     "label": "Josh Allen anytime TD",
+     "player": "Josh Allen",
+     "price": 0.52,
+     "team": "BUF"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.857,
+     "game": "GB@LA",
+     "good": true,
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "td",
+     "label": "Christian Watson anytime TD",
+     "player": "Christian Watson",
+     "price": 0.35,
+     "team": "GB"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 3.125,
+     "game": "CHI@DET",
+     "good": true,
+     "kickoff": "2026-11-26T18:00:00+00:00",
+     "kind": "td",
+     "label": "Sam LaPorta anytime TD",
+     "player": "Sam LaPorta",
+     "price": 0.32,
+     "team": "DET"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 3.226,
+     "game": "CHI@DET",
+     "good": true,
+     "kickoff": "2026-11-26T18:00:00+00:00",
+     "kind": "td",
+     "label": "Jameson Williams anytime TD",
+     "player": "Jameson Williams",
+     "price": 0.31,
+     "team": "DET"
+    }
+   ],
+   "name": "Touchdowns",
+   "size": 4,
+   "stake": 0.25,
+   "status": "pending",
+   "updated": "2026-11-24 19:52 UTC",
+   "week": 12
   }
  },
  "9": {
