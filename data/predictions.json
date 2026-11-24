@@ -42719,9 +42719,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jayden Daniels|passing_yards|11": {
     "player": "Jayden Daniels",
@@ -44954,6 +44952,32 @@
     "graded_at": null,
     "best5_tags": [
       "best_value"
+    ]
+  },
+  "Zach Charbonnet|rushing_yards|12": {
+    "player": "Zach Charbonnet",
+    "team": "SEA",
+    "opponent": "SF",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 38.4,
+    "tier_at_freeze": "Moderate 2026 sample",
+    "market_line": 56.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.1,
+    "model_prob": 0.2602,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-24 21:21 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
     ]
   }
 }

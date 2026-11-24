@@ -20,7 +20,7 @@
     },
     "Kyren Williams": {
       "rushing_yards": 54.5,
-      "receiving_yards": 20.5,
+      "receiving_yards": 21.5,
       "receptions": 3
     },
     "Tucker Kraft": {
@@ -77,16 +77,16 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 260.5,
+      "passing_yards": 261.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 92.5,
       "receiving_yards": 35.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 87.5,
+      "receiving_yards": 84.5,
       "receptions": 7
     },
     "Luther Burden III": {
@@ -95,7 +95,7 @@
       "rushing_yards": 1.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5,
+      "receiving_yards": 56.5,
       "receptions": 3.5
     },
     "Colston Loveland": {
@@ -123,12 +123,12 @@
     "Isaac TeSlaa": {
       "receiving_yards": 19.5
     },
+    "Zavion Thomas": {
+      "receiving_yards": 10.5
+    },
     "Sione Vaki": {
       "rushing_yards": 9.5,
       "receiving_yards": 2.5
-    },
-    "Zavion Thomas": {
-      "receiving_yards": 9.5
     },
     "Sam Roush": {
       "receiving_yards": 7.5
@@ -140,12 +140,12 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 261.5,
+      "passing_yards": 259.5,
       "rushing_yards": 8.5
     },
     "Joe Milton III": {
       "passing_yards": 195.5,
-      "rushing_yards": 32.5
+      "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 89.5,
@@ -167,7 +167,7 @@
       "receiving_yards": 63.5,
       "receptions": 5.5
     },
-    "Ryan Flournoy": {
+    "Makai Lemon": {
       "receiving_yards": 31.5,
       "receptions": 3
     },
@@ -175,8 +175,8 @@
       "receiving_yards": 30.5,
       "receptions": 3.5
     },
-    "Makai Lemon": {
-      "receiving_yards": 30.5,
+    "Ryan Flournoy": {
+      "receiving_yards": 29.5,
       "receptions": 3
     },
     "Darius Cooper": {
@@ -184,14 +184,15 @@
     },
     "Jashaun Corbin": {
       "rushing_yards": 14.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 13.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 6.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 4.5
     },
     "Will Shipley": {
       "receiving_yards": 6.5
@@ -225,19 +226,19 @@
       "receiving_yards": 47.5,
       "receptions": 4.5
     },
+    "Travis Kelce": {
+      "receiving_yards": 46.5
+    },
     "Dalton Kincaid": {
       "receiving_yards": 44.5,
       "receptions": 3.5
     },
-    "Travis Kelce": {
-      "receiving_yards": 43.5
+    "Khalil Shakir": {
+      "receiving_yards": 42.5,
+      "receptions": 3.5
     },
     "Josh Downs": {
       "receiving_yards": 41.5,
-      "receptions": 3.5
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Keon Coleman": {
@@ -248,7 +249,7 @@
       "receiving_yards": 20.5
     },
     "Ty Johnson": {
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "receptions": 2,
       "rushing_yards": 1.5
     },
@@ -266,7 +267,7 @@
       "receiving_yards": 0.5
     },
     "Bo Nix": {
-      "passing_yards": 208.5,
+      "passing_yards": 207.5,
       "rushing_yards": 11.5
     },
     "Aaron Rodgers": {
@@ -309,12 +310,12 @@
       "receiving_yards": 20.5,
       "receptions": 2.5
     },
+    "Roman Wilson": {
+      "receiving_yards": 18.5,
+      "receptions": 1.5
+    },
     "Darnell Washington": {
       "receiving_yards": 18.5
-    },
-    "Roman Wilson": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 11.5,
@@ -666,7 +667,7 @@
       "receptions": 4.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -694,10 +695,11 @@
       "receptions": 2.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Kaelon Black": {
       "rushing_yards": 19.5,
+      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Rashid Shaheed": {
@@ -815,8 +817,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 5927,
-    "matched_props": 358,
-    "excluded_goblin_demon_lines": 4792,
+    "matched_props": 360,
+    "excluded_goblin_demon_lines": 4786,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -855,5 +857,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T21:00:47.452962+00:00"
+  "fetched_at": "2026-11-24T21:20:51.697494+00:00"
 }
