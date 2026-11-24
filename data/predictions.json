@@ -41350,7 +41350,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jordan Love|passing_yards|12": {
     "player": "Jordan Love",
