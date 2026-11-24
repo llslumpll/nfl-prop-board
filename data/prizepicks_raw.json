@@ -123,12 +123,12 @@
     "Isaac TeSlaa": {
       "receiving_yards": 17.5
     },
+    "Sione Vaki": {
+      "rushing_yards": 9.5,
+      "receiving_yards": 2.5
+    },
     "Zavion Thomas": {
       "receiving_yards": 9.5
-    },
-    "Sione Vaki": {
-      "rushing_yards": 8.5,
-      "receiving_yards": 2.5
     },
     "Sam Roush": {
       "receiving_yards": 5.5
@@ -152,7 +152,7 @@
       "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 78.5,
+      "rushing_yards": 76.5,
       "receiving_yards": 8.5
     },
     "George Pickens": {
@@ -197,8 +197,8 @@
       "rushing_yards": 12.5
     },
     "Josh Allen": {
-      "passing_yards": 229.5,
-      "rushing_yards": 35.5
+      "passing_yards": 230.5,
+      "rushing_yards": 36.5
     },
     "James Cook III": {
       "rushing_yards": 85.5,
@@ -676,7 +676,7 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4202,
+    "total_projections_returned": 4203,
     "matched_props": 293,
     "excluded_goblin_demon_lines": 3345,
     "sample_stat_types_seen": [
@@ -717,5 +717,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T01:53:26.969237+00:00"
+  "fetched_at": "2026-11-24T02:00:40.787166+00:00"
 }
