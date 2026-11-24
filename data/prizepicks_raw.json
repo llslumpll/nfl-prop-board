@@ -14,7 +14,7 @@
       "receiving_yards": 71.5
     },
     "Blake Corum": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 10.5
     },
     "Kyren Williams": {
@@ -38,7 +38,7 @@
       "receptions": 0.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Colby Parkinson": {
       "receiving_yards": 20.5,
@@ -52,13 +52,13 @@
       "receiving_yards": 18.5,
       "rushing_yards": 4.5
     },
+    "Davis Allen": {
+      "receiving_yards": 11.5,
+      "receptions": 1.5
+    },
     "MarShawn Lloyd": {
       "rushing_yards": 11.5,
       "receiving_yards": 7.5,
-      "receptions": 1.5
-    },
-    "Davis Allen": {
-      "receiving_yards": 10.5,
       "receptions": 1.5
     },
     "Xavier Smith": {
@@ -622,16 +622,16 @@
     "Keenan Allen": {
       "receiving_yards": 24.5
     },
+    "Kaelon Black": {
+      "rushing_yards": 23.5,
+      "receptions": 0.5
+    },
     "AJ Barner": {
       "receiving_yards": 23.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 23.5,
       "rushing_yards": 8.5
-    },
-    "Kaelon Black": {
-      "rushing_yards": 22.5,
-      "receptions": 0.5
     },
     "Cooper Kupp": {
       "receiving_yards": 20.5
@@ -740,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4979,
+    "total_projections_returned": 5011,
     "matched_props": 321,
-    "excluded_goblin_demon_lines": 4019,
+    "excluded_goblin_demon_lines": 4051,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T10:20:38.014062+00:00"
+  "fetched_at": "2026-11-24T10:40:35.828460+00:00"
 }
