@@ -216,7 +216,7 @@
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 48.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
@@ -704,11 +704,12 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4464,
+    "total_projections_returned": 4505,
     "matched_props": 305,
-    "excluded_goblin_demon_lines": 3565,
+    "excluded_goblin_demon_lines": 3595,
     "sample_stat_types_seen": [
       "anytime tds",
+      "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
       "consecutive pass completions",
@@ -736,8 +737,7 @@
       "rec targets",
       "rec tds",
       "receiving yards",
-      "receiving yards (combo)",
-      "receptions"
+      "receiving yards (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -745,5 +745,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T03:40:33.945871+00:00"
+  "fetched_at": "2026-11-24T04:00:39.166495+00:00"
 }
