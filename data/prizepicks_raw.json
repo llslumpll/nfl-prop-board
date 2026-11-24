@@ -166,12 +166,12 @@
       "rushing_yards": 64.5,
       "receiving_yards": 7.5
     },
+    "Dallas Goedert": {
+      "receiving_yards": 32.5,
+      "receptions": 3.5
+    },
     "Makai Lemon": {
       "receiving_yards": 32.5
-    },
-    "Dallas Goedert": {
-      "receiving_yards": 31.5,
-      "receptions": 3.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 31.5,
@@ -388,8 +388,8 @@
       "receiving_yards": 48.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 240.5,
-      "rushing_yards": 8.5
+      "passing_yards": 275.5,
+      "rushing_yards": 9.5
     },
     "Cam Ward": {
       "passing_yards": 205.5,
@@ -399,16 +399,44 @@
       "receiving_yards": 68.5
     },
     "Tony Pollard": {
-      "rushing_yards": 58.5
+      "rushing_yards": 58.5,
+      "receiving_yards": 14.5
     },
     "Carnell Tate": {
-      "receiving_yards": 56.5
+      "receiving_yards": 56.5,
+      "receptions": 4.5
     },
     "Jakobi Meyers": {
       "receiving_yards": 40.5
     },
     "Brenton Strange": {
       "receiving_yards": 30.5
+    },
+    "Elic Ayomanor": {
+      "receiving_yards": 30.5
+    },
+    "Chimere Dike": {
+      "receiving_yards": 27.5
+    },
+    "Gunnar Helm": {
+      "receiving_yards": 22.5
+    },
+    "Josh Cameron": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
+    },
+    "Brian Thomas Jr.": {
+      "receiving_yards": 16.5
+    },
+    "Nate Boerkircher": {
+      "receiving_yards": 9.5
+    },
+    "Travis Hunter": {
+      "receiving_yards": 8.5
+    },
+    "Michael Carter": {
+      "rushing_yards": 8.5,
+      "receiving_yards": 5.5
     },
     "Geno Smith": {
       "passing_yards": 222.5,
@@ -711,9 +739,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4698,
-    "matched_props": 308,
-    "excluded_goblin_demon_lines": 3771,
+    "total_projections_returned": 4945,
+    "matched_props": 320,
+    "excluded_goblin_demon_lines": 3978,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -752,5 +780,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T07:00:43.801166+00:00"
+  "fetched_at": "2026-11-24T07:20:37.005233+00:00"
 }
