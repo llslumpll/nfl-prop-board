@@ -81,7 +81,7 @@
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 92.5,
       "receiving_yards": 35.5,
       "receptions": 4.5
     },
@@ -95,7 +95,7 @@
       "rushing_yards": 0.5
     },
     "Jameson Williams": {
-      "receiving_yards": 57.5,
+      "receiving_yards": 56.5,
       "receptions": 3.5
     },
     "Colston Loveland": {
@@ -120,7 +120,7 @@
       "receiving_yards": 23.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Sione Vaki": {
       "rushing_yards": 9.5,
@@ -270,7 +270,7 @@
       "rushing_yards": 0.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 71.5,
+      "rushing_yards": 70.5,
       "receiving_yards": 19.5
     },
     "Jaylen Warren": {
@@ -366,7 +366,7 @@
       "receiving_yards": 31.5
     },
     "Jahan Dotson": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "J.J. McCarthy": {
       "passing_yards": 212.5,
@@ -440,17 +440,16 @@
       "receiving_yards": 5.5
     },
     "Geno Smith": {
-      "passing_yards": 222.5,
+      "passing_yards": 221.5,
       "rushing_yards": 0.5
     },
     "Kyle McCord": {
-      "passing_yards": 192.5,
+      "passing_yards": 193.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 70.5,
-      "receiving_yards": 14.5,
-      "receptions": 2.5
+      "receiving_yards": 14.5
     },
     "Garrett Wilson": {
       "receiving_yards": 60.5
@@ -463,7 +462,7 @@
       "receiving_yards": 49.5
     },
     "Braelon Allen": {
-      "rushing_yards": 41.5,
+      "rushing_yards": 42.5,
       "receiving_yards": 9.5
     },
     "Adonai Mitchell": {
@@ -489,10 +488,10 @@
       "receiving_yards": 14.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Will Kacmarek": {
-      "receiving_yards": 3.5
+      "receiving_yards": 2.5
     },
     "C.J. Stroud": {
       "passing_yards": 254.5,
@@ -507,8 +506,7 @@
       "receiving_yards": 9.5
     },
     "Zay Flowers": {
-      "receiving_yards": 67.5,
-      "receptions": 6.5
+      "receiving_yards": 67.5
     },
     "Nico Collins": {
       "receiving_yards": 65.5
@@ -561,7 +559,7 @@
       "rushing_yards": 61.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 45.5,
       "receiving_yards": 14.5
     },
     "Corey Kiner": {
@@ -596,7 +594,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 89.5
+      "receiving_yards": 97.5
     },
     "Zach Charbonnet": {
       "rushing_yards": 58.5,
@@ -713,7 +711,7 @@
       "receptions": 3.5
     },
     "Cade Otton": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Ted Hurst III": {
       "receiving_yards": 26.5
@@ -740,9 +738,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5011,
-    "matched_props": 321,
-    "excluded_goblin_demon_lines": 4051,
+    "total_projections_returned": 5059,
+    "matched_props": 319,
+    "excluded_goblin_demon_lines": 4094,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +779,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T10:40:35.828460+00:00"
+  "fetched_at": "2026-11-24T11:00:42.311439+00:00"
 }
