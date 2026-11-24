@@ -44621,7 +44621,8 @@
     "market_prob": 69.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "highest_confidence"
+      "highest_confidence",
+      "best_value"
     ]
   },
   "Bryce Young|any_td|12": {
@@ -44695,9 +44696,7 @@
     "graded_at": null,
     "market_prob": 21.0,
     "td_rule": "scoring",
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Tanner Hudson|any_td|12": {
     "player": "Tanner Hudson",
