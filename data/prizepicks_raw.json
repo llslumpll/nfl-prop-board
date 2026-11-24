@@ -18,7 +18,7 @@
       "receiving_yards": 10.5
     },
     "Kyren Williams": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 20.5,
       "receptions": 3
     },
@@ -598,12 +598,12 @@
     "Jaxon Smith-Njigba": {
       "receiving_yards": 89.5
     },
+    "Zach Charbonnet": {
+      "rushing_yards": 58.5,
+      "receiving_yards": 12.5
+    },
     "Mike Evans": {
       "receiving_yards": 56.5
-    },
-    "Zach Charbonnet": {
-      "rushing_yards": 55.5,
-      "receiving_yards": 12.5
     },
     "Christian McCaffrey": {
       "rushing_yards": 53.5,
@@ -634,10 +634,10 @@
       "receptions": 0.5
     },
     "Cooper Kupp": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Jordan Watkins": {
       "receiving_yards": 11.5
@@ -740,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4944,
+    "total_projections_returned": 4900,
     "matched_props": 321,
-    "excluded_goblin_demon_lines": 3977,
+    "excluded_goblin_demon_lines": 3941,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T08:00:41.554080+00:00"
+  "fetched_at": "2026-11-24T08:20:35.792448+00:00"
 }
