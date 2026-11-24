@@ -44485,7 +44485,11 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "td_rule": "scoring"
+    "td_rule": "scoring",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Baker Mayfield|any_td|12": {
     "player": "Baker Mayfield",
@@ -44618,7 +44622,6 @@
     "market_prob": 69.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -44694,8 +44697,7 @@
     "market_prob": 21.0,
     "td_rule": "scoring",
     "best5_tags": [
-      "best_value",
-      "highest_confidence"
+      "best_value"
     ]
   },
   "Tanner Hudson|any_td|12": {
