@@ -78,11 +78,11 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 261.5,
+      "passing_yards": 259.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 90.5,
+      "rushing_yards": 92.5,
       "receiving_yards": 35.5,
       "receptions": 4.5
     },
@@ -107,7 +107,7 @@
       "receiving_yards": 15.5
     },
     "Rome Odunze": {
-      "receiving_yards": 49.5
+      "receiving_yards": 47.5
     },
     "Sam LaPorta": {
       "receiving_yards": 44.5,
@@ -345,7 +345,7 @@
       "receiving_yards": 86.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 74.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 25.5
     },
     "Drake London": {
@@ -595,7 +595,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 97.5
+      "receiving_yards": 96.5
     },
     "Zach Charbonnet": {
       "rushing_yards": 58.5,
@@ -621,16 +621,16 @@
     "Keenan Allen": {
       "receiving_yards": 24.5
     },
-    "Kaelon Black": {
-      "rushing_yards": 23.5,
-      "receptions": 0.5
-    },
     "AJ Barner": {
       "receiving_yards": 23.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 23.5,
       "rushing_yards": 8.5
+    },
+    "Kaelon Black": {
+      "rushing_yards": 22.5,
+      "receptions": 0.5
     },
     "Cooper Kupp": {
       "receiving_yards": 20.5
@@ -739,9 +739,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5057,
+    "total_projections_returned": 5060,
     "matched_props": 320,
-    "excluded_goblin_demon_lines": 4091,
+    "excluded_goblin_demon_lines": 4094,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -780,5 +780,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T11:20:35.507383+00:00"
+  "fetched_at": "2026-11-24T11:40:41.005860+00:00"
 }
