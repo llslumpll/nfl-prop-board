@@ -118,7 +118,8 @@
       "receiving_yards": 4.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 23.5
+      "receiving_yards": 23.5,
+      "receptions": 2.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 18.5
@@ -271,7 +272,7 @@
       "rushing_yards": 0.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 70.5,
+      "rushing_yards": 71.5,
       "receiving_yards": 19.5
     },
     "Jaylen Warren": {
@@ -290,13 +291,13 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 28.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Pat Bryant": {
       "receiving_yards": 26.5
     },
     "Germie Bernard": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 21.5
@@ -739,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5060,
-    "matched_props": 320,
-    "excluded_goblin_demon_lines": 4094,
+    "total_projections_returned": 5063,
+    "matched_props": 321,
+    "excluded_goblin_demon_lines": 4096,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -780,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T11:42:07.549701+00:00"
+  "fetched_at": "2026-11-24T12:00:44.200309+00:00"
 }
