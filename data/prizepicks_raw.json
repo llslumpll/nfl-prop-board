@@ -217,7 +217,7 @@
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
@@ -272,7 +272,7 @@
       "receiving_yards": 20.5
     },
     "Jaylen Warren": {
-      "rushing_yards": 58.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 16.5
     },
     "Jaylen Waddle": {
@@ -316,7 +316,7 @@
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 8.5,
-      "rushing_yards": 0.5
+      "rushing_yards": 1.5
     },
     "J.K. Dobbins": {
       "rushing_yards": 6.5
@@ -571,12 +571,21 @@
     "Matt Hibner": {
       "receiving_yards": 6.5
     },
+    "Joe Burrow": {
+      "passing_yards": 305.5
+    },
     "Tyler Shough": {
       "passing_yards": 248.5,
       "rushing_yards": 18.5
     },
+    "Ja'Marr Chase": {
+      "receiving_yards": 97.5
+    },
     "Chris Olave": {
       "receiving_yards": 75.5
+    },
+    "Tee Higgins": {
+      "receiving_yards": 74.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 52.5
@@ -627,7 +636,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 97.5,
+      "receiving_yards": 96.5,
       "receptions": 7.5
     },
     "Mike Evans": {
@@ -652,7 +661,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 26.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "AJ Barner": {
       "receiving_yards": 23.5
@@ -781,9 +790,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5557,
-    "matched_props": 340,
-    "excluded_goblin_demon_lines": 4498,
+    "total_projections_returned": 5583,
+    "matched_props": 343,
+    "excluded_goblin_demon_lines": 4517,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -806,6 +815,7 @@
       "pass yards",
       "pass yards (combo)",
       "pass+rush yds",
+      "pass+rush+rec tds",
       "passer rating",
       "punt touchbacks (combo)",
       "punts",
@@ -813,8 +823,7 @@
       "punts inside 20",
       "rec targets",
       "rec tds",
-      "receiving yards",
-      "receiving yards (combo)"
+      "receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -822,5 +831,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T17:20:38.948706+00:00"
+  "fetched_at": "2026-11-24T17:40:36.114183+00:00"
 }
