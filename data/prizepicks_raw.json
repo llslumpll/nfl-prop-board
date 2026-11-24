@@ -74,11 +74,11 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 275.5,
+      "passing_yards": 276.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 260.5,
+      "passing_yards": 261.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -122,7 +122,7 @@
       "receptions": 2.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
     },
     "Sione Vaki": {
       "rushing_yards": 9.5,
@@ -141,11 +141,11 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 263.5,
+      "passing_yards": 259.5,
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 198.5,
+      "passing_yards": 195.5,
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
@@ -263,7 +263,7 @@
       "receptions": 0.5
     },
     "Bo Nix": {
-      "passing_yards": 211.5,
+      "passing_yards": 215.5,
       "rushing_yards": 11.5
     },
     "Aaron Rodgers": {
@@ -595,7 +595,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 94.5
+      "receiving_yards": 97.5
     },
     "Zach Charbonnet": {
       "rushing_yards": 58.5,
@@ -739,9 +739,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5079,
+    "total_projections_returned": 5078,
     "matched_props": 320,
-    "excluded_goblin_demon_lines": 4108,
+    "excluded_goblin_demon_lines": 4107,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -780,5 +780,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T15:00:53.187306+00:00"
+  "fetched_at": "2026-11-24T15:20:39.252794+00:00"
 }
