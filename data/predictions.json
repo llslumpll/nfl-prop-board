@@ -42942,5 +42942,31 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Jerry Jeudy|receiving_yards|12": {
+    "player": "Jerry Jeudy",
+    "team": "CLE",
+    "opponent": "LV",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 46.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 20.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 25.6,
+    "model_prob": 0.7417,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-24 05:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   }
 }

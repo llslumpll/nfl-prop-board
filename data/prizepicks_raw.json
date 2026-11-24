@@ -67,7 +67,7 @@
     },
     "Chris Brooks": {
       "receiving_yards": 8.5,
-      "rushing_yards": 7.5,
+      "rushing_yards": 6.5,
       "receptions": 1.5
     },
     "Jonnu Smith": {
@@ -140,11 +140,11 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 263.5,
+      "passing_yards": 259.5,
       "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 200.5,
+      "passing_yards": 198.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -156,7 +156,7 @@
       "receiving_yards": 8.5
     },
     "George Pickens": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 69.5,
       "receptions": 5
     },
     "DeVonta Smith": {
@@ -186,7 +186,7 @@
     },
     "KaVontae Turpin": {
       "receiving_yards": 6.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 4.5
     },
     "Will Shipley": {
       "receiving_yards": 6.5
@@ -222,16 +222,16 @@
     "Travis Kelce": {
       "receiving_yards": 46.5
     },
+    "Dalton Kincaid": {
+      "receiving_yards": 44.5,
+      "receptions": 3.5
+    },
     "Josh Downs": {
       "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Khalil Shakir": {
       "receiving_yards": 40.5,
-      "receptions": 3.5
-    },
-    "Dalton Kincaid": {
-      "receiving_yards": 39.5,
       "receptions": 3.5
     },
     "Xavier Worthy": {
@@ -567,8 +567,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 88.5,
-      "receptions": 7.5
+      "receiving_yards": 88.5
     },
     "Mike Evans": {
       "receiving_yards": 56.5
@@ -582,28 +581,29 @@
       "receiving_yards": 31.5
     },
     "George Kittle": {
-      "receiving_yards": 48.5
-    },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 29.5,
-      "rushing_yards": 8.5,
-      "receptions": 2.5
+      "receiving_yards": 48.5,
+      "receptions": 4.5
     },
     "Keenan Allen": {
       "receiving_yards": 28.5
     },
-    "Kaelon Black": {
-      "rushing_yards": 28.5,
-      "receiving_yards": 0.5,
-      "receptions": 0.5
-    },
     "Jadarian Price": {
-      "rushing_yards": 27.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "AJ Barner": {
-      "receiving_yards": 26.5
+      "receiving_yards": 23.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 23.5,
+      "rushing_yards": 8.5,
+      "receptions": 2.5
+    },
+    "Kaelon Black": {
+      "rushing_yards": 22.5,
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Cooper Kupp": {
       "receiving_yards": 19.5
@@ -633,7 +633,8 @@
       "receiving_yards": 58.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 55.5
+      "rushing_yards": 55.5,
+      "receiving_yards": 10.5
     },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5
@@ -647,6 +648,13 @@
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
       "receiving_yards": 33.5
+    },
+    "Dylan Sampson": {
+      "receiving_yards": 23.5,
+      "rushing_yards": 20.5
+    },
+    "Jerry Jeudy": {
+      "receiving_yards": 20.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -705,9 +713,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4506,
-    "matched_props": 306,
-    "excluded_goblin_demon_lines": 3597,
+    "total_projections_returned": 4666,
+    "matched_props": 310,
+    "excluded_goblin_demon_lines": 3737,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -746,5 +754,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T04:40:42.025236+00:00"
+  "fetched_at": "2026-11-24T05:00:44.342878+00:00"
 }
