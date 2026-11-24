@@ -77,7 +77,7 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 259.5,
+      "passing_yards": 261.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -95,7 +95,7 @@
       "rushing_yards": 0.5
     },
     "Jameson Williams": {
-      "receiving_yards": 55.5,
+      "receiving_yards": 57.5,
       "receptions": 3.5
     },
     "D'Andre Swift": {
@@ -103,13 +103,13 @@
       "receiving_yards": 15.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5
+      "receiving_yards": 53.5
     },
     "Rome Odunze": {
       "receiving_yards": 49.5
     },
     "Sam LaPorta": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 44.5,
       "receptions": 4
     },
     "Kyle Monangai": {
@@ -120,14 +120,14 @@
       "receiving_yards": 23.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Sione Vaki": {
       "rushing_yards": 9.5,
       "receiving_yards": 2.5
     },
     "Zavion Thomas": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Sam Roush": {
       "receiving_yards": 6.5
@@ -139,11 +139,11 @@
       "receiving_yards": 0.5
     },
     "Dak Prescott": {
-      "passing_yards": 260.5,
+      "passing_yards": 259.5,
       "rushing_yards": 8.5
     },
     "Joe Milton III": {
-      "passing_yards": 200.5,
+      "passing_yards": 198.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -241,7 +241,7 @@
       "receptions": 2.5
     },
     "Ty Johnson": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 18.5,
       "rushing_yards": 4.5,
       "receptions": 2
     },
@@ -740,9 +740,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4933,
+    "total_projections_returned": 4946,
     "matched_props": 321,
-    "excluded_goblin_demon_lines": 3974,
+    "excluded_goblin_demon_lines": 3986,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +781,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T09:00:47.824454+00:00"
+  "fetched_at": "2026-11-24T09:20:35.301616+00:00"
 }
