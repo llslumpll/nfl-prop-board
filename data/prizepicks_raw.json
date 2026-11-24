@@ -208,8 +208,8 @@
       "receiving_yards": 8.5
     },
     "Kenneth Walker III": {
-      "rushing_yards": 66.5,
-      "receiving_yards": 16.5
+      "rushing_yards": 67.5,
+      "receiving_yards": 17.5
     },
     "DJ Moore": {
       "receiving_yards": 49.5,
@@ -217,11 +217,11 @@
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
-      "receiving_yards": 45.5
+      "receiving_yards": 44.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 44.5,
@@ -232,7 +232,7 @@
       "receptions": 3.5
     },
     "Khalil Shakir": {
-      "receiving_yards": 38.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Keon Coleman": {
@@ -260,7 +260,8 @@
       "receiving_yards": 0.5
     },
     "Jalen Royals": {
-      "receptions": 0.5
+      "receptions": 0.5,
+      "receiving_yards": 0.5
     },
     "Bo Nix": {
       "passing_yards": 212.5,
@@ -283,7 +284,7 @@
       "receiving_yards": 42.5
     },
     "DK Metcalf": {
-      "receiving_yards": 33.5
+      "receiving_yards": 35.5
     },
     "Courtland Sutton": {
       "receiving_yards": 29.5
@@ -740,9 +741,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5071,
-    "matched_props": 321,
-    "excluded_goblin_demon_lines": 4097,
+    "total_projections_returned": 5073,
+    "matched_props": 322,
+    "excluded_goblin_demon_lines": 4100,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +782,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T13:00:42.352564+00:00"
+  "fetched_at": "2026-11-24T13:20:37.255725+00:00"
 }
