@@ -204,7 +204,7 @@
       "rushing_yards": 14.5
     },
     "Josh Allen": {
-      "passing_yards": 228.5,
+      "passing_yards": 227.5,
       "rushing_yards": 36.5
     },
     "James Cook III": {
@@ -759,10 +759,11 @@
       "receiving_yards": 43.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 39.5
+      "receiving_yards": 38.5,
+      "receptions": 3.5
     },
     "Cade Otton": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Darren Waller": {
       "receiving_yards": 26.5
@@ -795,9 +796,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5668,
-    "matched_props": 347,
-    "excluded_goblin_demon_lines": 4573,
+    "total_projections_returned": 5692,
+    "matched_props": 348,
+    "excluded_goblin_demon_lines": 4595,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -836,5 +837,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T20:20:39.079135+00:00"
+  "fetched_at": "2026-11-24T20:40:42.729968+00:00"
 }

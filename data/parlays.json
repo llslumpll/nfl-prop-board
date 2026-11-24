@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,7 +1722,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "td-3": {
@@ -1764,8 +1764,8 @@
      "good": true,
      "kickoff": "2026-11-26T18:00:00+00:00",
      "kind": "td",
-     "label": "Sam LaPorta anytime TD",
-     "player": "Sam LaPorta",
+     "label": "Jameson Williams anytime TD",
+     "player": "Jameson Williams",
      "price": 0.32,
      "team": "DET"
     }
@@ -1774,13 +1774,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.036,
-   "decimal": 55.386,
-   "ev": 0.994,
+   "decimal": 53.652,
+   "ev": 0.931,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1816,21 +1816,21 @@
      "good": true,
      "kickoff": "2026-11-26T18:00:00+00:00",
      "kind": "td",
-     "label": "Sam LaPorta anytime TD",
-     "player": "Sam LaPorta",
+     "label": "Jameson Williams anytime TD",
+     "player": "Jameson Williams",
      "price": 0.32,
      "team": "DET"
     },
     {
      "chance": 0.393,
-     "decimal": 3.226,
+     "decimal": 3.125,
      "game": "CHI@DET",
      "good": true,
      "kickoff": "2026-11-26T18:00:00+00:00",
      "kind": "td",
-     "label": "Jameson Williams anytime TD",
-     "player": "Jameson Williams",
-     "price": 0.31,
+     "label": "Sam LaPorta anytime TD",
+     "player": "Sam LaPorta",
+     "price": 0.32,
      "team": "DET"
     }
    ],
@@ -1838,7 +1838,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-24 20:20 UTC",
+   "updated": "2026-11-24 20:40 UTC",
    "week": 12
   }
  },
