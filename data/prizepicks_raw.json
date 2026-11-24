@@ -53,20 +53,20 @@
       "receiving_yards": 18.5,
       "rushing_yards": 4.5
     },
+    "Davis Allen": {
+      "receiving_yards": 11.5,
+      "receptions": 1.5
+    },
     "MarShawn Lloyd": {
       "rushing_yards": 11.5,
       "receiving_yards": 7.5,
-      "receptions": 1.5
-    },
-    "Davis Allen": {
-      "receiving_yards": 10.5,
       "receptions": 1.5
     },
     "Xavier Smith": {
       "receiving_yards": 9.5
     },
     "Chris Brooks": {
-      "receiving_yards": 9.5,
+      "receiving_yards": 8.5,
       "rushing_yards": 6.5,
       "receptions": 1.5
     },
@@ -74,11 +74,11 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 276.5,
+      "passing_yards": 275.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 257.5,
+      "passing_yards": 260.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -153,7 +153,7 @@
       "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 74.5,
+      "rushing_yards": 76.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
@@ -168,16 +168,16 @@
       "rushing_yards": 64.5,
       "receiving_yards": 7.5
     },
-    "Ryan Flournoy": {
-      "receiving_yards": 32.5,
-      "receptions": 3
-    },
     "Makai Lemon": {
       "receiving_yards": 31.5
     },
     "Dallas Goedert": {
       "receiving_yards": 30.5,
       "receptions": 3.5
+    },
+    "Ryan Flournoy": {
+      "receiving_yards": 29.5,
+      "receptions": 3
     },
     "Darius Cooper": {
       "receiving_yards": 26.5
@@ -197,7 +197,7 @@
     },
     "Patrick Mahomes": {
       "passing_yards": 242.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 13.5
     },
     "Josh Allen": {
       "passing_yards": 228.5,
@@ -242,7 +242,7 @@
       "receiving_yards": 20.5
     },
     "Ty Johnson": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 2,
       "rushing_yards": 1.5
     },
@@ -263,7 +263,7 @@
       "receptions": 0.5
     },
     "Bo Nix": {
-      "passing_yards": 212.5,
+      "passing_yards": 211.5,
       "rushing_yards": 11.5
     },
     "Aaron Rodgers": {
@@ -272,12 +272,11 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 69.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Jaylen Warren": {
       "rushing_yards": 58.5,
-      "receiving_yards": 15.5,
-      "receptions": 2.5
+      "receiving_yards": 15.5
     },
     "Jaylen Waddle": {
       "receiving_yards": 42.5
@@ -290,7 +289,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 28.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Pat Bryant": {
       "receiving_yards": 26.5,
@@ -740,9 +739,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5077,
-    "matched_props": 321,
-    "excluded_goblin_demon_lines": 4105,
+    "total_projections_returned": 5079,
+    "matched_props": 320,
+    "excluded_goblin_demon_lines": 4108,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -781,5 +780,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T14:40:36.614504+00:00"
+  "fetched_at": "2026-11-24T15:00:53.187306+00:00"
 }
