@@ -9,7 +9,7 @@
       "rushing_yards": 41.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 101.5,
+      "receiving_yards": 100.5,
       "receptions": 8
     },
     "Tee Higgins": {
@@ -107,7 +107,7 @@
       "receptions": 0.5
     },
     "Tutu Atwell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Colby Parkinson": {
       "receiving_yards": 20.5,
@@ -146,7 +146,7 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 253.5,
+      "passing_yards": 260.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -189,14 +189,14 @@
       "receiving_yards": 23.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 17.5
+      "receiving_yards": 19.5
+    },
+    "Zavion Thomas": {
+      "receiving_yards": 9.5
     },
     "Sione Vaki": {
       "rushing_yards": 8.5,
       "receiving_yards": 2.5
-    },
-    "Zavion Thomas": {
-      "receiving_yards": 8.5
     },
     "Sam Roush": {
       "receiving_yards": 5.5
@@ -216,7 +216,7 @@
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 89.5,
+      "receiving_yards": 87.5,
       "receptions": 7
     },
     "Javonte Williams": {
@@ -407,8 +407,8 @@
       "receiving_yards": 86.5
     },
     "Bijan Robinson": {
-      "rushing_yards": 75.5,
-      "receiving_yards": 26.5
+      "rushing_yards": 74.5,
+      "receiving_yards": 25.5
     },
     "Drake London": {
       "receiving_yards": 64.5
@@ -587,10 +587,38 @@
       "rushing_yards": 47.5
     },
     "Tommy DeVito": {
-      "passing_yards": 194.5
+      "passing_yards": 182.5,
+      "rushing_yards": 24.5
     },
     "Omarion Hampton": {
       "rushing_yards": 61.5
+    },
+    "Rhamondre Stevenson": {
+      "rushing_yards": 46.5,
+      "receiving_yards": 13.5
+    },
+    "Corey Kiner": {
+      "rushing_yards": 29.5
+    },
+    "Mack Hollins": {
+      "receiving_yards": 28.5
+    },
+    "DeMario Douglas": {
+      "receiving_yards": 25.5,
+      "receptions": 2.5
+    },
+    "Hunter Henry": {
+      "receiving_yards": 23.5,
+      "receptions": 2.5
+    },
+    "Eli Raridon": {
+      "receiving_yards": 17.5
+    },
+    "Efton Chism III": {
+      "receiving_yards": 13.5
+    },
+    "Kyle Williams": {
+      "receiving_yards": 12.5
     },
     "Brock Purdy": {
       "passing_yards": 245.5,
@@ -713,9 +741,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 4758,
-    "matched_props": 310,
-    "excluded_goblin_demon_lines": 3803,
+    "total_projections_returned": 4923,
+    "matched_props": 322,
+    "excluded_goblin_demon_lines": 3938,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -754,5 +782,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T00:40:44.264541+00:00"
+  "fetched_at": "2026-11-24T01:00:39.155815+00:00"
 }
