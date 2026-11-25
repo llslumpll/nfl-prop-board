@@ -42,7 +42,7 @@
       "receiving_yards": 23.5
     },
     "CJ Daniels": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 2
     },
     "Colby Parkinson": {
@@ -59,7 +59,7 @@
     },
     "MarShawn Lloyd": {
       "rushing_yards": 11.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Xavier Smith": {
@@ -118,19 +118,19 @@
       "receiving_yards": 4.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 23.5,
+      "receiving_yards": 22.5,
       "receptions": 2.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 19.5
     },
-    "Zavion Thomas": {
-      "receiving_yards": 10.5
-    },
     "Sione Vaki": {
       "rushing_yards": 9.5,
       "receiving_yards": 2.5,
       "receptions": 0.5
+    },
+    "Zavion Thomas": {
+      "receiving_yards": 9.5
     },
     "Sam Roush": {
       "receiving_yards": 7.5
@@ -179,7 +179,7 @@
       "receptions": 3.5
     },
     "Makai Lemon": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Darius Cooper": {
@@ -221,7 +221,7 @@
       "receptions": 2.5
     },
     "DJ Moore": {
-      "receiving_yards": 50.5,
+      "receiving_yards": 49.5,
       "receptions": 4,
       "rushing_yards": 0.5
     },
@@ -232,16 +232,16 @@
     "Travis Kelce": {
       "receiving_yards": 43.5
     },
+    "Khalil Shakir": {
+      "receiving_yards": 42.5,
+      "receptions": 3.5
+    },
     "Josh Downs": {
       "receiving_yards": 41.5,
       "receptions": 3.5
     },
     "Dalton Kincaid": {
       "receiving_yards": 40.5
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 39.5,
-      "receptions": 3.5
     },
     "Keon Coleman": {
       "receiving_yards": 24.5,
@@ -316,11 +316,11 @@
     "Pat Freiermuth": {
       "receiving_yards": 20.5
     },
-    "Roman Wilson": {
-      "receiving_yards": 18.5
-    },
     "Darnell Washington": {
       "receiving_yards": 18.5
+    },
+    "Roman Wilson": {
+      "receiving_yards": 16.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 11.5,
@@ -355,7 +355,7 @@
       "receiving_yards": 19.5
     },
     "Drake London": {
-      "receiving_yards": 64.5
+      "receiving_yards": 67.5
     },
     "Jordan Mason": {
       "rushing_yards": 56.5,
@@ -511,7 +511,7 @@
       "receiving_yards": 18.5
     },
     "Caleb Douglas": {
-      "receiving_yards": 47.5
+      "receiving_yards": 48.5
     },
     "Braelon Allen": {
       "rushing_yards": 39.5,
@@ -528,7 +528,7 @@
       "receiving_yards": 32.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 18.5
@@ -799,7 +799,8 @@
       "receptions": 3.5
     },
     "Darren Waller": {
-      "receiving_yards": 26.5
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "Cade Otton": {
       "receiving_yards": 25.5
@@ -832,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6308,
-    "matched_props": 368,
-    "excluded_goblin_demon_lines": 5133,
+    "total_projections_returned": 6323,
+    "matched_props": 369,
+    "excluded_goblin_demon_lines": 5147,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -873,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T00:20:41.929271+00:00"
+  "fetched_at": "2026-11-25T00:40:42.542379+00:00"
 }
