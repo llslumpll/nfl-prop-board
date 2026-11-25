@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,7 +1722,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "td-3": {
@@ -1774,13 +1774,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1049,
-   "decimal": 24.748,
-   "ev": 1.595,
+   "decimal": 22.43,
+   "ev": 1.352,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1823,14 +1823,14 @@
     },
     {
      "chance": 0.503,
-     "decimal": 3.448,
+     "decimal": 3.125,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Mike Evans anytime TD",
      "player": "Mike Evans",
-     "price": 0.29,
+     "price": 0.32,
      "team": "SF"
     }
    ],
@@ -1838,7 +1838,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 06:40 UTC",
+   "updated": "2026-11-25 07:02 UTC",
    "week": 12
   }
  },
