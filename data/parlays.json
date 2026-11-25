@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "props-4": {
@@ -1623,6 +1623,21 @@
      "call": "UNDER",
      "chance": 0.556,
      "conf": 0.5,
+     "game": "ARI@WAS",
+     "kickoff": "2026-11-29T21:25:00+00:00",
+     "kind": "prop",
+     "label": "Trey McBride UNDER 6.5 REC",
+     "line": 6.5,
+     "n": 135,
+     "player": "Trey McBride",
+     "projected": 6.3,
+     "stat": "receptions",
+     "team": "ARI"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
      "game": "JAX@TEN",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "prop",
@@ -1633,48 +1648,33 @@
      "projected": 3.8,
      "stat": "receptions",
      "team": "JAX"
-    },
-    {
-     "call": "UNDER",
-     "chance": 0.556,
-     "conf": 0.5,
-     "game": "ATL@MIN",
-     "kickoff": "2026-11-29T18:00:00+00:00",
-     "kind": "prop",
-     "label": "Justin Jefferson UNDER 6.5 REC",
-     "line": 6.5,
-     "n": 135,
-     "player": "Justin Jefferson",
-     "projected": 5.8,
-     "stat": "receptions",
-     "team": "MIN"
     }
    ],
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "td-1": {
    "chance": 0.699,
-   "decimal": 1.695,
-   "ev": 0.185,
+   "decimal": 1.724,
+   "ev": 0.205,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.695,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.59,
+     "price": 0.58,
      "team": "SF"
     }
    ],
@@ -1682,27 +1682,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 3.766,
-   "ev": 0.664,
+   "decimal": 3.831,
+   "ev": 0.692,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.695,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.59,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1722,27 +1722,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 7.243,
-   "ev": 0.897,
+   "decimal": 7.366,
+   "ev": 0.93,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.695,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.59,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1774,27 +1774,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 14.485,
-   "ev": 1.25,
+   "decimal": 14.733,
+   "ev": 1.289,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.695,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.59,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1838,7 +1838,68 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 19:20 UTC",
+   "updated": "2026-11-25 19:40 UTC",
+   "week": 12
+  },
+  "value-3": {
+   "chance": 0.1713,
+   "decimal": 6.0,
+   "ev": 0.028,
+   "family": "value",
+   "good": true,
+   "id": "value-3",
+   "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "ATL@MIN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Justin Jefferson UNDER 6.5 REC",
+     "line": 6.5,
+     "n": 135,
+     "player": "Justin Jefferson",
+     "projected": 5.8,
+     "stat": "receptions",
+     "team": "MIN"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "CIN@NO",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Chase Brown UNDER 4.5 REC",
+     "line": 4.5,
+     "n": 135,
+     "player": "Chase Brown",
+     "projected": 3.9,
+     "stat": "receptions",
+     "team": "CIN"
+    },
+    {
+     "call": "OVER",
+     "chance": 0.554,
+     "conf": 0.763,
+     "game": "GB@LA",
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "prop",
+     "label": "Matthew Stafford OVER 228.5 PASS YDS",
+     "line": 228.5,
+     "n": 112,
+     "player": "Matthew Stafford",
+     "projected": 278.6,
+     "stat": "passing_yards",
+     "team": "LA"
+    }
+   ],
+   "name": "Good price",
+   "size": 3,
+   "stake": 0.5,
+   "status": "pending",
+   "updated": "2026-11-25 19:40 UTC",
    "week": 12
   }
  },
