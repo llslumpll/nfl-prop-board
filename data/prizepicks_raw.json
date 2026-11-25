@@ -39,7 +39,7 @@
       "receiving_yards": 29.5
     },
     "CJ Daniels": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 23.5,
       "receptions": 2
     },
     "Tutu Atwell": {
@@ -50,7 +50,7 @@
       "rushing_yards": 4.5
     },
     "Colby Parkinson": {
-      "receiving_yards": 16.5,
+      "receiving_yards": 18.5,
       "receptions": 2.5
     },
     "Davis Allen": {
@@ -271,14 +271,14 @@
     },
     "Bo Nix": {
       "passing_yards": 201.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 11.5
     },
     "Mason Rudolph": {
       "passing_yards": 177.5,
       "rushing_yards": 5.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 76.5,
+      "rushing_yards": 75.5,
       "receiving_yards": 25.5
     },
     "Jaylen Warren": {
@@ -302,7 +302,7 @@
       "receiving_yards": 27.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Germie Bernard": {
       "receiving_yards": 22.5
@@ -355,7 +355,7 @@
       "receiving_yards": 67.5
     },
     "Jordan Mason": {
-      "rushing_yards": 56.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 3.5
     },
     "T.J. Hockenson": {
@@ -450,7 +450,7 @@
     },
     "Tony Pollard": {
       "rushing_yards": 58.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Carnell Tate": {
       "receiving_yards": 46.5,
@@ -487,7 +487,7 @@
       "receiving_yards": 6.5
     },
     "Travis Hunter": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Geno Smith": {
       "passing_yards": 211.5,
@@ -734,7 +734,7 @@
       "receiving_yards": 54.5
     },
     "Deshaun Watson": {
-      "passing_yards": 231.5,
+      "passing_yards": 232.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -836,9 +836,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6656,
+    "total_projections_returned": 6648,
     "matched_props": 370,
-    "excluded_goblin_demon_lines": 5464,
+    "excluded_goblin_demon_lines": 5456,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -877,5 +877,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T14:40:48.015719+00:00"
+  "fetched_at": "2026-11-25T14:52:01.000098+00:00"
 }
