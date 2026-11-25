@@ -1302,8 +1302,8 @@
  "12": {
   "ml-2": {
    "chance": 0.7349,
-   "decimal": 1.266,
-   "ev": -0.07,
+   "decimal": 1.277,
+   "ev": -0.061,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -1326,14 +1326,14 @@
      "away": "NO",
      "call": "HOME",
      "chance": 0.823,
-     "decimal": 1.169,
+     "decimal": 1.179,
      "game": "NO@CIN",
      "good": false,
      "home": "CIN",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "CIN to win",
-     "price": -590,
+     "price": -560,
      "team": "CIN"
     }
    ],
@@ -1341,13 +1341,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "ml-3": {
    "chance": 0.4176,
-   "decimal": 2.045,
-   "ev": -0.146,
+   "decimal": 2.108,
+   "ev": -0.12,
    "family": "ml",
    "good": false,
    "id": "ml-3",
@@ -1356,42 +1356,42 @@
      "away": "PHI",
      "call": "HOME",
      "chance": 0.781,
-     "decimal": 1.2,
+     "decimal": 1.208,
      "game": "PHI@DAL",
      "good": false,
      "home": "DAL",
      "kickoff": "2026-11-26T21:30:00+00:00",
      "kind": "ml",
      "label": "DAL to win",
-     "price": -500,
+     "price": -480,
      "team": "DAL"
     },
     {
      "away": "ATL",
      "call": "HOME",
      "chance": 0.752,
-     "decimal": 1.312,
+     "decimal": 1.303,
      "game": "ATL@MIN",
      "good": false,
      "home": "MIN",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "MIN to win",
-     "price": -320,
+     "price": -330,
      "team": "MIN"
     },
     {
      "away": "BAL",
      "call": "HOME",
      "chance": 0.711,
-     "decimal": 1.299,
+     "decimal": 1.339,
      "game": "BAL@HOU",
      "good": false,
      "home": "HOU",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "HOU to win",
-     "price": -335,
+     "price": -295,
      "team": "HOU"
     }
    ],
@@ -1399,13 +1399,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "ml-4": {
    "chance": 0.1878,
-   "decimal": 3.959,
-   "ev": -0.257,
+   "decimal": 4.253,
+   "ev": -0.201,
    "family": "ml",
    "good": false,
    "id": "ml-4",
@@ -1414,14 +1414,14 @@
      "away": "WAS",
      "call": "AWAY",
      "chance": 0.697,
-     "decimal": 1.267,
+     "decimal": 1.299,
      "game": "WAS@ARI",
      "good": false,
      "home": "ARI",
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "ml",
      "label": "WAS to win",
-     "price": -375,
+     "price": -335,
      "team": "WAS"
     },
     {
@@ -1442,28 +1442,28 @@
      "away": "NYG",
      "call": "AWAY",
      "chance": 0.637,
-     "decimal": 1.294,
+     "decimal": 1.339,
      "game": "NYG@IND",
      "good": false,
      "home": "IND",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "NYG to win",
-     "price": -340,
+     "price": -295,
      "team": "NYG"
     },
     {
      "away": "LV",
      "call": "HOME",
      "chance": 0.634,
-     "decimal": 1.417,
+     "decimal": 1.435,
      "game": "LV@CLE",
      "good": false,
      "home": "CLE",
      "kickoff": "2026-11-30T01:20:00+00:00",
      "kind": "ml",
      "label": "CLE to win",
-     "price": -240,
+     "price": -230,
      "team": "CLE"
     }
    ],
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,13 +1682,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 3.987,
-   "ev": 0.761,
+   "decimal": 3.897,
+   "ev": 0.722,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -1707,14 +1707,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.273,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.44,
+     "price": 0.45,
      "team": "IND"
     }
    ],
@@ -1722,13 +1722,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 7.667,
-   "ev": 1.009,
+   "decimal": 7.495,
+   "ev": 0.963,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1747,14 +1747,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.273,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.44,
+     "price": 0.45,
      "team": "IND"
     },
     {
@@ -1774,13 +1774,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 15.034,
-   "ev": 1.335,
+   "decimal": 14.697,
+   "ev": 1.283,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1799,14 +1799,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.273,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.44,
+     "price": 0.45,
      "team": "IND"
     },
     {
@@ -1838,7 +1838,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   },
   "value-3": {
@@ -1899,7 +1899,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 22:40 UTC",
+   "updated": "2026-11-25 22:52 UTC",
    "week": 12
   }
  },
