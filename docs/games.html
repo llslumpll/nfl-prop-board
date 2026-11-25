@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Games — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1795590024">
+  <link rel="stylesheet" href="static/style.css?v=1795591219">
 </head>
 <body>
   <header class="site-head">
@@ -74,7 +74,7 @@
   <button class="pk-stat-btn" data-gt="moneyline">MONEYLINE</button>
   <button class="pk-stat-btn" data-gt="spread">SPREAD</button>
   <button class="pk-stat-btn" data-gt="total">TOTAL</button>
-  <button class="pk-stat-btn" data-gt="edges">EDGES (4)</button>
+  <button class="pk-stat-btn" data-gt="edges">EDGES</button>
   <button class="pk-stat-btn" data-gt="all">ALL GAMES</button>
   <button class="pk-stat-btn gm-live-btn" data-gt="live"><i class="live-dot"></i>LIVE</button>
 </div>
@@ -571,45 +571,14 @@
   
 
   <h3>+EV on Kalshi</h3>
-  
-  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
-    <thead><tr><th>Bet</th><th class="num">Better than fair</th><th class="num">Real chance</th><th class="hide-sm">Our model</th><th class="hide-sm">Fair from</th></tr></thead>
-    <tbody><tr>
-      <td><b>DEN @ PIT: PIT +2.5</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: NO DEN by over 2.5 at 41%</div></td>
-      <td class="num stat-good"><b>about 12%</b></td>
-      <td class="num">48%</td>
-      <td class="hide-sm small"><span class="stat-good">63% &#10004; agrees</span></td>
-      <td class="hide-sm small dim">FanDuel PIT +2.5</td></tr><tr>
-      <td><b>DEN @ PIT: PIT wins</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: YES PIT at 36%</div></td>
-      <td class="num stat-good"><b>about 10%</b></td>
-      <td class="num">41%</td>
-      <td class="hide-sm small"><span class="stat-good">50% &#10004; agrees</span></td>
-      <td class="hide-sm small dim">FanDuel -154/+130</td></tr><tr>
-      <td><b>DEN @ PIT: OVER 37.5</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: YES over 37.5 at 45%</div></td>
-      <td class="num stat-good"><b>about 5%</b></td>
-      <td class="num">49%</td>
-      <td class="hide-sm small"><span class="stat-good">65% &#10004; agrees</span></td>
-      <td class="hide-sm small dim">FanDuel 37.5 (-105/-115)</td></tr><tr>
-      <td><b>CHI @ DET: CHI wins</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: YES CHI at 53%</div></td>
-      <td class="num stat-good"><b>about 4%</b></td>
-      <td class="num">57%</td>
-      <td class="hide-sm small"><span class="stat-bad">53% disagrees</span></td>
-      <td class="hide-sm small dim">FanDuel -142/+120</td></tr></tbody>
-  </table></div></div>
-  <p class="small dim">Checked 80 Kalshi bets that FanDuel also prices. Listed: Kalshi's price, fee included, at least 2% cheaper than the bet is really worth. <b>Real chance</b> = FanDuel's odds with their cut removed. <b>Better than fair</b> = roughly what each unit returns on average over many bets.</p>
-  
+  <p class="notice compact">No +EV prices right now. 16 games skipped because FanDuel's price is over 8 hours old. Refreshes every 20 minutes.</p>
 
   
 
   <h3>Arbitrage</h3>
-  <div class="notice compact"><strong>DEN @ PIT: PIT wins:</strong> YES PIT at 36% on Kalshi + FanDuel DEN ML wins about 1.8% whatever happens. Prices move fast; check both before betting.</div>
-  
+  <p class="small dim">None right now.</p>
 
-  <h3>Middles</h3>
-  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
-    <thead><tr><th>Two bets</th><th class="num">Both win if</th><th class="num">Chance both win</th><th class="num">Edge (1U each)</th></tr></thead>
-    <tbody><tr><td><b>GB @ LA: FanDuel OVER 44.5 + Kalshi NO over 66.5</b></td><td class="num">44.5 to 66.5</td><td class="num">45.5%</td><td class="num stat-good">+0.1%</td></tr></tbody>
-  </table></div></div>
+  
 
   <details class="info-collapse"><summary>Recorded edges (22 most recent)</summary>
   <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
@@ -1211,6 +1180,16 @@
     </div>
     
     <div class="gm-prop">
+      <a href="picks.html#receptions">DJ Moore</a> <span class="dim">BUF</span>
+      <span class="gm-b5">BEST 5</span>
+      
+      <span class="gm-call stat-good">OVER 4 REC</span>
+      <span class="dim">proj 5.1</span>
+      
+      <span class="lv" hidden data-lv="BUF|DJ Moore|receptions|4|OVER|5.1"></span>
+    </div>
+    
+    <div class="gm-prop">
       <a href="touchdowns.html">Travis Kelce</a> <span class="dim">KC</span>
       <span class="gm-b5">BEST 5</span>
       
@@ -1218,16 +1197,6 @@
       <span class="dim">proj 0.3</span>
       
       
-    </div>
-    
-    <div class="gm-prop">
-      <a href="picks.html#receptions">DJ Moore</a> <span class="dim">BUF</span>
-      
-      
-      <span class="gm-call stat-good">OVER 4 REC</span>
-      <span class="dim">proj 5.1</span>
-      
-      <span class="lv" hidden data-lv="BUF|DJ Moore|receptions|4|OVER|5.1"></span>
     </div>
     
     <div class="gm-prop">
@@ -1540,16 +1509,6 @@
     </div>
     
     <div class="gm-prop">
-      <a href="picks.html#receptions">Zay Flowers</a> <span class="dim">BAL</span>
-      <span class="gm-b5">BEST 5</span>
-      <span class="pk-tag pk-proven">&#9733; PROVEN</span>
-      <span class="gm-call stat-bad">UNDER 6.5 REC</span>
-      <span class="dim">proj 4.8</span>
-      
-      <span class="lv" hidden data-lv="BAL|Zay Flowers|receptions|6.5|UNDER|4.8"></span>
-    </div>
-    
-    <div class="gm-prop">
       <a href="picks.html#passing">Jacoby Brissett</a> <span class="dim">BAL</span>
       <span class="gm-b5">BEST 5</span>
       
@@ -1557,6 +1516,16 @@
       <span class="dim">proj 188.9</span>
       
       <span class="lv" hidden data-lv="BAL|Jacoby Brissett|passing_yards|244.5|UNDER|188.9"></span>
+    </div>
+    
+    <div class="gm-prop">
+      <a href="picks.html#receptions">Zay Flowers</a> <span class="dim">BAL</span>
+      
+      <span class="pk-tag pk-proven">&#9733; PROVEN</span>
+      <span class="gm-call stat-bad">UNDER 6.5 REC</span>
+      <span class="dim">proj 4.8</span>
+      
+      <span class="lv" hidden data-lv="BAL|Zay Flowers|receptions|6.5|UNDER|4.8"></span>
     </div>
     
     
@@ -2691,7 +2660,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-25 07:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-25 07:20 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>
