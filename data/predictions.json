@@ -43252,7 +43252,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Zay Flowers|receptions|12": {
     "player": "Zay Flowers",
@@ -43478,9 +43481,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Chris Olave|receptions|12": {
     "player": "Chris Olave",
@@ -44119,9 +44120,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Chase Brown|receptions|12": {
     "player": "Chase Brown",
