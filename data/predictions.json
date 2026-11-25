@@ -43203,9 +43203,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Matthew Golden|receptions|12": {
     "player": "Matthew Golden",
@@ -44982,5 +44980,30 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": []
+  },
+  "Evan Engram|receiving_yards|12": {
+    "player": "Evan Engram",
+    "team": "DEN",
+    "opponent": "PIT",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 37.6,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 19.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 18.1,
+    "model_prob": 0.7567,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-25 11:02 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
   }
 }
