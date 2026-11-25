@@ -31,12 +31,12 @@
       "receiving_yards": 38.5,
       "receptions": 4
     },
-    "Tyler Higbee": {
-      "receiving_yards": 32.5
-    },
     "Kaleb Johnson": {
       "rushing_yards": 32.5,
       "receptions": 0.5
+    },
+    "Tyler Higbee": {
+      "receiving_yards": 31.5
     },
     "CJ Daniels": {
       "receiving_yards": 24.5,
@@ -835,9 +835,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6592,
+    "total_projections_returned": 6597,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 5397,
+    "excluded_goblin_demon_lines": 5403,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -876,5 +876,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T06:20:40.985295+00:00"
+  "fetched_at": "2026-11-25T06:40:40.167244+00:00"
 }
