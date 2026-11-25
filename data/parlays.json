@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,13 +1578,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "props-4": {
-   "chance": 0.0889,
+   "chance": 0.0952,
    "decimal": 10.0,
-   "ev": -0.111,
+   "ev": -0.048,
    "family": "props",
    "good": false,
    "id": "props-4",
@@ -1603,6 +1603,21 @@
      "projected": 6.3,
      "stat": "receptions",
      "team": "SEA"
+    },
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "JAX@TEN",
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "prop",
+     "label": "Parker Washington UNDER 4.5 REC",
+     "line": 4.5,
+     "n": 135,
+     "player": "Parker Washington",
+     "projected": 3.8,
+     "stat": "receptions",
+     "team": "JAX"
     },
     {
      "call": "UNDER",
@@ -1633,28 +1648,13 @@
      "projected": 278.6,
      "stat": "passing_yards",
      "team": "LA"
-    },
-    {
-     "call": "UNDER",
-     "chance": 0.519,
-     "conf": 0.736,
-     "game": "JAX@TEN",
-     "kickoff": "2026-11-29T18:00:00+00:00",
-     "kind": "prop",
-     "label": "Parker Washington UNDER 78.5 REC YDS",
-     "line": 78.5,
-     "n": 156,
-     "player": "Parker Washington",
-     "projected": 54.9,
-     "stat": "receiving_yards",
-     "team": "JAX"
     }
    ],
    "name": "Safest props",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,7 +1722,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "td-3": {
@@ -1774,7 +1774,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   },
   "td-4": {
@@ -1838,7 +1838,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 14:20 UTC",
+   "updated": "2026-11-25 14:40 UTC",
    "week": 12
   }
  },
