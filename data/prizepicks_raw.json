@@ -118,19 +118,19 @@
       "receiving_yards": 4.5
     },
     "Kalif Raymond": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Isaac TeSlaa": {
       "receiving_yards": 19.5
     },
+    "Zavion Thomas": {
+      "receiving_yards": 10.5
+    },
     "Sione Vaki": {
       "rushing_yards": 9.5,
       "receiving_yards": 2.5,
       "receptions": 0.5
-    },
-    "Zavion Thomas": {
-      "receiving_yards": 9.5
     },
     "Sam Roush": {
       "receiving_yards": 7.5
@@ -833,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6341,
+    "total_projections_returned": 6342,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 5167,
+    "excluded_goblin_demon_lines": 5168,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T01:00:45.778484+00:00"
+  "fetched_at": "2026-11-25T01:20:41.818447+00:00"
 }
