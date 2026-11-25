@@ -7,12 +7,12 @@
       "passing_yards": 273.5,
       "rushing_yards": 3.5
     },
-    "Matthew Golden": {
-      "receiving_yards": 75.5,
-      "receptions": 5.5
-    },
     "Christian Watson": {
       "receiving_yards": 75.5
+    },
+    "Matthew Golden": {
+      "receiving_yards": 74.5,
+      "receptions": 5.5
     },
     "Blake Corum": {
       "rushing_yards": 55.5,
@@ -372,7 +372,7 @@
       "receptions": 2.5
     },
     "Jahan Dotson": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Kyle Pitts Sr.": {
       "receiving_yards": 25.5
@@ -384,7 +384,7 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 212.5,
+      "passing_yards": 224.5,
       "rushing_yards": 22.5
     },
     "Anthony Richardson Sr.": {
@@ -592,7 +592,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 248.5,
+      "passing_yards": 238.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -612,7 +612,7 @@
       "receiving_yards": 24.5
     },
     "Travis Etienne Jr.": {
-      "rushing_yards": 47.5,
+      "rushing_yards": 42.5,
       "receiving_yards": 12.5
     },
     "Mike Gesicki": {
@@ -835,9 +835,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6582,
+    "total_projections_returned": 6592,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 5386,
+    "excluded_goblin_demon_lines": 5397,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -876,5 +876,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T06:00:51.717676+00:00"
+  "fetched_at": "2026-11-25T06:20:40.985295+00:00"
 }
