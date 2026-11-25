@@ -42721,9 +42721,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jayden Daniels|passing_yards|11": {
     "player": "Jayden Daniels",
@@ -42932,7 +42930,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
@@ -43152,10 +43149,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Parker Washington|receiving_yards|12": {
     "player": "Parker Washington",
@@ -43254,10 +43248,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Zay Flowers|receptions|12": {
     "player": "Zay Flowers",
@@ -43455,9 +43446,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "CeeDee Lamb|receptions|12": {
     "player": "CeeDee Lamb",
@@ -43480,7 +43469,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Chris Olave|receptions|12": {
     "player": "Chris Olave",
@@ -44132,7 +44123,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Chase Brown|receptions|12": {
     "player": "Chase Brown",
@@ -44962,9 +44955,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Zach Charbonnet|rushing_yards|12": {
     "player": "Zach Charbonnet",
@@ -45012,7 +45003,88 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jaxon Smith-Njigba|receiving_yards|12": {
+    "player": "Jaxon Smith-Njigba",
+    "team": "SEA",
+    "opponent": "SF",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 79.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 97.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -18.2,
+    "model_prob": 0.3435,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-25 17:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
       "best_value"
+    ]
+  },
+  "Emmett Johnson|rushing_yards|12": {
+    "player": "Emmett Johnson",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 40.3,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 81.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -41.2,
+    "model_prob": 0.0327,
+    "signals": {
+      "opportunity_signal": true
+    },
+    "frozen_at": "2026-11-25 17:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
+  },
+  "Jayden Daniels|rushing_yards|12": {
+    "player": "Jayden Daniels",
+    "team": "WAS",
+    "opponent": "ARI",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 51.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 27.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 23.9,
+    "model_prob": 0.8165,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-25 17:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
     ]
   }
 }
