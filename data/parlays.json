@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,13 +1682,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "td-2": {
-   "chance": 0.4145,
-   "decimal": 3.315,
-   "ev": 0.374,
+   "chance": 0.4418,
+   "decimal": 4.105,
+   "ev": 0.813,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -1706,29 +1706,29 @@
      "team": "SF"
     },
     {
-     "chance": 0.593,
-     "decimal": 1.923,
-     "game": "BUF@KC",
+     "chance": 0.632,
+     "decimal": 2.381,
+     "game": "IND@NYG",
      "good": true,
-     "kickoff": "2026-11-27T01:20:00+00:00",
+     "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
-     "label": "Josh Allen anytime TD",
-     "player": "Josh Allen",
-     "price": 0.52,
-     "team": "BUF"
+     "label": "Jonathan Taylor anytime TD",
+     "player": "Jonathan Taylor",
+     "price": 0.42,
+     "team": "IND"
     }
    ],
    "name": "Touchdowns",
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "td-3": {
-   "chance": 0.2458,
-   "decimal": 6.766,
-   "ev": 0.663,
+   "chance": 0.262,
+   "decimal": 7.894,
+   "ev": 1.068,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1746,6 +1746,18 @@
      "team": "SF"
     },
     {
+     "chance": 0.632,
+     "decimal": 2.381,
+     "game": "IND@NYG",
+     "good": true,
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "td",
+     "label": "Jonathan Taylor anytime TD",
+     "player": "Jonathan Taylor",
+     "price": 0.42,
+     "team": "IND"
+    },
+    {
      "chance": 0.593,
      "decimal": 1.923,
      "game": "BUF@KC",
@@ -1756,31 +1768,19 @@
      "player": "Josh Allen",
      "price": 0.52,
      "team": "BUF"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 2.041,
-     "game": "BAL@HOU",
-     "good": true,
-     "kickoff": "2026-11-29T18:00:00+00:00",
-     "kind": "td",
-     "label": "Derrick Henry anytime TD",
-     "player": "Derrick Henry",
-     "price": 0.49,
-     "team": "BAL"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   },
   "td-4": {
-   "chance": 0.1458,
-   "decimal": 15.035,
-   "ev": 1.192,
+   "chance": 0.1553,
+   "decimal": 16.111,
+   "ev": 1.503,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1798,6 +1798,18 @@
      "team": "SF"
     },
     {
+     "chance": 0.632,
+     "decimal": 2.381,
+     "game": "IND@NYG",
+     "good": true,
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "td",
+     "label": "Jonathan Taylor anytime TD",
+     "player": "Jonathan Taylor",
+     "price": 0.42,
+     "team": "IND"
+    },
+    {
      "chance": 0.593,
      "decimal": 1.923,
      "game": "BUF@KC",
@@ -1820,25 +1832,13 @@
      "player": "Derrick Henry",
      "price": 0.49,
      "team": "BAL"
-    },
-    {
-     "chance": 0.593,
-     "decimal": 2.222,
-     "game": "GB@LA",
-     "good": true,
-     "kickoff": "2026-11-26T01:00:00+00:00",
-     "kind": "td",
-     "label": "Kyren Williams anytime TD",
-     "player": "Kyren Williams",
-     "price": 0.45,
-     "team": "LA"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 13:20 UTC",
+   "updated": "2026-11-25 13:42 UTC",
    "week": 12
   }
  },

@@ -42719,9 +42719,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jayden Daniels|passing_yards|11": {
     "player": "Jayden Daniels",
@@ -44978,7 +44976,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Evan Engram|receiving_yards|12": {
     "player": "Evan Engram",
