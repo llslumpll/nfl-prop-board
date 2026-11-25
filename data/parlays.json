@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,13 +1722,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "td-3": {
-   "chance": 0.2085,
-   "decimal": 10.733,
-   "ev": 1.238,
+   "chance": 0.2458,
+   "decimal": 7.807,
+   "ev": 0.919,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1758,29 +1758,29 @@
      "team": "BUF"
     },
     {
-     "chance": 0.503,
-     "decimal": 3.125,
-     "game": "SEA@SF",
+     "chance": 0.593,
+     "decimal": 2.273,
+     "game": "GB@LA",
      "good": true,
-     "kickoff": "2026-11-29T21:25:00+00:00",
+     "kickoff": "2026-11-26T01:00:00+00:00",
      "kind": "td",
-     "label": "Mike Evans anytime TD",
-     "player": "Mike Evans",
-     "price": 0.32,
-     "team": "SF"
+     "label": "Kyren Williams anytime TD",
+     "player": "Kyren Williams",
+     "price": 0.44,
+     "team": "LA"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   },
   "td-4": {
-   "chance": 0.0819,
-   "decimal": 30.663,
-   "ev": 1.513,
+   "chance": 0.1354,
+   "decimal": 18.158,
+   "ev": 1.459,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1810,35 +1810,35 @@
      "team": "BUF"
     },
     {
-     "chance": 0.503,
-     "decimal": 3.125,
-     "game": "SEA@SF",
-     "good": true,
-     "kickoff": "2026-11-29T21:25:00+00:00",
-     "kind": "td",
-     "label": "Mike Evans anytime TD",
-     "player": "Mike Evans",
-     "price": 0.32,
-     "team": "SF"
-    },
-    {
-     "chance": 0.393,
-     "decimal": 2.857,
+     "chance": 0.593,
+     "decimal": 2.273,
      "game": "GB@LA",
      "good": true,
      "kickoff": "2026-11-26T01:00:00+00:00",
      "kind": "td",
-     "label": "Christian Watson anytime TD",
-     "player": "Christian Watson",
-     "price": 0.35,
-     "team": "GB"
+     "label": "Kyren Williams anytime TD",
+     "player": "Kyren Williams",
+     "price": 0.44,
+     "team": "LA"
+    },
+    {
+     "chance": 0.551,
+     "decimal": 2.326,
+     "game": "DAL@PHI",
+     "good": true,
+     "kickoff": "2026-11-26T21:30:00+00:00",
+     "kind": "td",
+     "label": "Saquon Barkley anytime TD",
+     "player": "Saquon Barkley",
+     "price": 0.43,
+     "team": "PHI"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:00 UTC",
+   "updated": "2026-11-25 09:20 UTC",
    "week": 12
   }
  },
