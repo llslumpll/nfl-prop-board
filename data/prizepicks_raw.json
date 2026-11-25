@@ -87,7 +87,7 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 84.5,
+      "receiving_yards": 86.5,
       "receptions": 7
     },
     "Luther Burden III": {
@@ -124,13 +124,13 @@
     "Isaac TeSlaa": {
       "receiving_yards": 19.5
     },
+    "Zavion Thomas": {
+      "receiving_yards": 10.5
+    },
     "Sione Vaki": {
       "rushing_yards": 9.5,
       "receiving_yards": 2.5,
       "receptions": 0.5
-    },
-    "Zavion Thomas": {
-      "receiving_yards": 9.5
     },
     "Sam Roush": {
       "receiving_yards": 7.5
@@ -161,14 +161,14 @@
       "receiving_yards": 70.5,
       "receptions": 5
     },
-    "DeVonta Smith": {
-      "receiving_yards": 64.5,
-      "receptions": 5.5
-    },
     "Saquon Barkley": {
       "rushing_yards": 64.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
+    },
+    "DeVonta Smith": {
+      "receiving_yards": 63.5,
+      "receptions": 5.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 31.5,
@@ -183,22 +183,22 @@
       "receptions": 3
     },
     "Darius Cooper": {
-      "receiving_yards": 26.5
+      "receiving_yards": 28.5
     },
     "Brevyn Spann-Ford": {
       "receiving_yards": 14.5
     },
     "Jashaun Corbin": {
-      "rushing_yards": 14.5,
-      "receiving_yards": 0.5,
+      "rushing_yards": 12.5,
       "receptions": 0.5
+    },
+    "Will Shipley": {
+      "rushing_yards": 10.5,
+      "receiving_yards": 5.5
     },
     "KaVontae Turpin": {
       "receiving_yards": 6.5,
       "rushing_yards": 3.5
-    },
-    "Will Shipley": {
-      "receiving_yards": 6.5
     },
     "Luke Schoonmaker": {
       "receiving_yards": 4.5
@@ -248,19 +248,19 @@
       "receptions": 2
     },
     "Xavier Worthy": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Ty Johnson": {
       "receiving_yards": 16.5,
       "receptions": 2,
       "rushing_yards": 1.5
     },
+    "Noah Gray": {
+      "receiving_yards": 13.5,
+      "receptions": 1.5
+    },
     "Dawson Knox": {
       "receiving_yards": 13.5
-    },
-    "Noah Gray": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
     },
     "Cyrus Allen": {
       "receiving_yards": 11.5
@@ -359,7 +359,7 @@
       "receiving_yards": 64.5
     },
     "Jordan Mason": {
-      "rushing_yards": 57.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 3.5
     },
     "T.J. Hockenson": {
@@ -368,7 +368,8 @@
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 37.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Jauan Jennings": {
       "receiving_yards": 30.5,
@@ -682,7 +683,7 @@
       "receptions": 4.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 54.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -698,7 +699,7 @@
       "receiving_yards": 27.5
     },
     "Jadarian Price": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 9.5
     },
     "AJ Barner": {
@@ -731,7 +732,7 @@
       "receiving_yards": 54.5
     },
     "Deshaun Watson": {
-      "passing_yards": 236.5,
+      "passing_yards": 237.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -795,7 +796,7 @@
       "receiving_yards": 43.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 39.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Darren Waller": {
@@ -832,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6231,
-    "matched_props": 368,
-    "excluded_goblin_demon_lines": 5061,
+    "total_projections_returned": 6267,
+    "matched_props": 369,
+    "excluded_goblin_demon_lines": 5095,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -873,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-24T23:40:49.920022+00:00"
+  "fetched_at": "2026-11-25T00:00:42.804572+00:00"
 }
