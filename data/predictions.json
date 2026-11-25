@@ -43203,7 +43203,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|12": {
     "player": "Matthew Golden",
@@ -44433,7 +44435,10 @@
     "graded_at": null,
     "market_prob": 29.0,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Sterling Shepard|any_td|12": {
     "player": "Sterling Shepard",
@@ -45002,8 +45007,6 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   }
 }
