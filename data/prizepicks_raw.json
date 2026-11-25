@@ -8,7 +8,7 @@
       "rushing_yards": 3.5
     },
     "Matthew Golden": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 73.5,
       "receptions": 5.5
     },
     "Christian Watson": {
@@ -41,7 +41,7 @@
       "receptions": 2
     },
     "Tutu Atwell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 23.5
     },
     "Colby Parkinson": {
       "receiving_yards": 16.5,
@@ -68,8 +68,7 @@
       "rushing_yards": 6.5
     },
     "Jonnu Smith": {
-      "receiving_yards": 0.5,
-      "receptions": 0.5
+      "receiving_yards": 0.5
     },
     "Jared Goff": {
       "passing_yards": 278.5,
@@ -85,7 +84,7 @@
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 82.5,
+      "receiving_yards": 83.5,
       "receptions": 7
     },
     "Luther Burden III": {
@@ -355,7 +354,7 @@
     },
     "Michael Penix Jr.": {
       "passing_yards": 200.5,
-      "rushing_yards": 9.5
+      "rushing_yards": 8.5
     },
     "Justin Jefferson": {
       "receiving_yards": 86.5,
@@ -410,7 +409,7 @@
       "receiving_yards": 15.5
     },
     "Jonathan Taylor": {
-      "rushing_yards": 67.5,
+      "rushing_yards": 69.5,
       "receiving_yards": 13.5,
       "receptions": 2.5
     },
@@ -498,7 +497,10 @@
       "receptions": 3
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 16.5
+      "receiving_yards": 18.5
+    },
+    "Nate Boerkircher": {
+      "receiving_yards": 10.5
     },
     "Xavier Restrepo": {
       "receiving_yards": 10.5
@@ -510,9 +512,6 @@
       "rushing_yards": 9.5,
       "receiving_yards": 6.5
     },
-    "Nate Boerkircher": {
-      "receiving_yards": 9.5
-    },
     "Calvin Ridley": {
       "receiving_yards": 9.5
     },
@@ -520,7 +519,7 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 211.5,
+      "passing_yards": 215.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
@@ -529,7 +528,7 @@
     },
     "Ollie Gordon II": {
       "rushing_yards": 72.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 10.5
     },
     "Breece Hall": {
       "rushing_yards": 56.5,
@@ -555,7 +554,7 @@
       "receiving_yards": 34.5
     },
     "Omar Cooper Jr.": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Greg Dulcich": {
       "receiving_yards": 26.5
@@ -646,7 +645,7 @@
       "receptions": 7.5
     },
     "Chris Olave": {
-      "receiving_yards": 69.5,
+      "receiving_yards": 68.5,
       "receptions": 5.5
     },
     "Tee Higgins": {
@@ -843,11 +842,11 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 231.5,
+      "passing_yards": 227.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 196.5,
+      "passing_yards": 195.5,
       "rushing_yards": 14.5
     },
     "Brock Bowers": {
@@ -909,7 +908,8 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 41.5
+      "receiving_yards": 41.5,
+      "receptions": 3.5
     },
     "Emeka Egbuka": {
       "receiving_yards": 38.5,
@@ -926,13 +926,13 @@
     "Ted Hurst III": {
       "receiving_yards": 25.5
     },
+    "Kenny Gainwell": {
+      "rushing_yards": 22.5,
+      "receiving_yards": 15.5
+    },
     "Chris Godwin Jr.": {
       "receiving_yards": 22.5,
       "receptions": 2.5
-    },
-    "Kenny Gainwell": {
-      "rushing_yards": 21.5,
-      "receiving_yards": 15.5
     },
     "Tommy Tremble": {
       "receiving_yards": 19.5
@@ -951,9 +951,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7740,
+    "total_projections_returned": 7734,
     "matched_props": 435,
-    "excluded_goblin_demon_lines": 6318,
+    "excluded_goblin_demon_lines": 6314,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -992,5 +992,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T21:00:46.829270+00:00"
+  "fetched_at": "2026-11-25T21:20:41.436469+00:00"
 }
