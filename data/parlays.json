@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,27 +1654,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "td-1": {
    "chance": 0.699,
-   "decimal": 1.786,
-   "ev": 0.248,
+   "decimal": 1.724,
+   "ev": 0.205,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     }
    ],
@@ -1682,27 +1682,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4145,
-   "decimal": 3.434,
-   "ev": 0.423,
+   "decimal": 3.315,
+   "ev": 0.374,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1722,27 +1722,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.2458,
-   "decimal": 7.154,
-   "ev": 0.758,
+   "decimal": 6.766,
+   "ev": 0.663,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1759,14 +1759,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 2.083,
+     "decimal": 2.041,
      "game": "BAL@HOU",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Derrick Henry anytime TD",
      "player": "Derrick Henry",
-     "price": 0.48,
+     "price": 0.49,
      "team": "BAL"
     }
    ],
@@ -1774,27 +1774,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1458,
-   "decimal": 15.896,
-   "ev": 1.317,
+   "decimal": 15.035,
+   "ev": 1.192,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1811,14 +1811,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 2.083,
+     "decimal": 2.041,
      "game": "BAL@HOU",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Derrick Henry anytime TD",
      "player": "Derrick Henry",
-     "price": 0.48,
+     "price": 0.49,
      "team": "BAL"
     },
     {
@@ -1838,7 +1838,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 12:21 UTC",
+   "updated": "2026-11-25 12:40 UTC",
    "week": 12
   }
  },
