@@ -11,7 +11,7 @@
       "receiving_yards": 75.5
     },
     "Matthew Golden": {
-      "receiving_yards": 74.5,
+      "receiving_yards": 73.5,
       "receptions": 5.5
     },
     "Blake Corum": {
@@ -36,7 +36,7 @@
       "receptions": 0.5
     },
     "Tyler Higbee": {
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "CJ Daniels": {
       "receiving_yards": 24.5,
@@ -77,7 +77,7 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -101,12 +101,12 @@
     "Colston Loveland": {
       "receiving_yards": 53.5
     },
-    "D'Andre Swift": {
-      "rushing_yards": 47.5,
-      "receiving_yards": 15.5
-    },
     "Rome Odunze": {
       "receiving_yards": 47.5
+    },
+    "D'Andre Swift": {
+      "rushing_yards": 46.5,
+      "receiving_yards": 15.5
     },
     "Sam LaPorta": {
       "receiving_yards": 44.5,
@@ -134,7 +134,7 @@
       "receiving_yards": 7.5
     },
     "Brock Wright": {
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5
@@ -224,18 +224,18 @@
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 47.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
-      "receiving_yards": 43.5
+      "receiving_yards": 46.5
+    },
+    "Khalil Shakir": {
+      "receiving_yards": 42.5,
+      "receptions": 3.5
     },
     "Josh Downs": {
       "receiving_yards": 41.5,
-      "receptions": 3.5
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 40.5,
       "receptions": 3.5
     },
     "Dalton Kincaid": {
@@ -273,7 +273,7 @@
       "rushing_yards": 12.5
     },
     "Mason Rudolph": {
-      "passing_yards": 176.5,
+      "passing_yards": 177.5,
       "rushing_yards": 5.5
     },
     "Jonah Coleman": {
@@ -513,12 +513,12 @@
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
+    "Malik Washington": {
+      "receiving_yards": 35.5,
+      "receptions": 3.5
+    },
     "Adonai Mitchell": {
       "receiving_yards": 34.5
-    },
-    "Malik Washington": {
-      "receiving_yards": 34.5,
-      "receptions": 3.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 31.5
@@ -834,9 +834,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6582,
+    "total_projections_returned": 6586,
     "matched_props": 368,
-    "excluded_goblin_demon_lines": 5395,
+    "excluded_goblin_demon_lines": 5398,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -875,5 +875,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T10:20:50.662769+00:00"
+  "fetched_at": "2026-11-25T10:40:41.374681+00:00"
 }
