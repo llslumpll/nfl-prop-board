@@ -8,7 +8,7 @@
       "rushing_yards": 3.5
     },
     "Matthew Golden": {
-      "receiving_yards": 75.5,
+      "receiving_yards": 74.5,
       "receptions": 5.5
     },
     "Christian Watson": {
@@ -45,13 +45,13 @@
       "receiving_yards": 22.5,
       "receptions": 2
     },
-    "Savion Williams": {
-      "receiving_yards": 20.5,
-      "rushing_yards": 4.5
-    },
     "Colby Parkinson": {
       "receiving_yards": 20.5,
       "receptions": 3
+    },
+    "Savion Williams": {
+      "receiving_yards": 18.5,
+      "rushing_yards": 4.5
     },
     "Davis Allen": {
       "receiving_yards": 11.5,
@@ -150,7 +150,7 @@
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
-      "receiving_yards": 90.5,
+      "receiving_yards": 88.5,
       "receptions": 7
     },
     "Javonte Williams": {
@@ -161,14 +161,14 @@
       "receiving_yards": 70.5,
       "receptions": 5
     },
+    "DeVonta Smith": {
+      "receiving_yards": 66.5,
+      "receptions": 5.5
+    },
     "Saquon Barkley": {
-      "rushing_yards": 66.5,
+      "rushing_yards": 64.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
-    },
-    "DeVonta Smith": {
-      "receiving_yards": 65.5,
-      "receptions": 5.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 31.5,
@@ -214,7 +214,7 @@
     },
     "James Cook III": {
       "rushing_yards": 85.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Kenneth Walker III": {
       "rushing_yards": 63.5,
@@ -282,7 +282,7 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 76.5,
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Jaylen Warren": {
       "rushing_yards": 58.5,
@@ -290,7 +290,7 @@
       "receptions": 2.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 42.5,
+      "receiving_yards": 43.5,
       "receptions": 4
     },
     "DK Metcalf": {
@@ -310,12 +310,12 @@
     "Germie Bernard": {
       "receiving_yards": 24.5
     },
+    "Pat Freiermuth": {
+      "receiving_yards": 21.5
+    },
     "Evan Engram": {
       "receiving_yards": 20.5,
       "receptions": 2.5
-    },
-    "Pat Freiermuth": {
-      "receiving_yards": 20.5
     },
     "Darnell Washington": {
       "receiving_yards": 18.5
@@ -324,11 +324,11 @@
       "receiving_yards": 16.5
     },
     "Michael Pittman Jr.": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 12.5,
       "receptions": 1.5
     },
     "Marvin Mims Jr.": {
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "rushing_yards": 1.5
     },
     "Troy Franklin": {
@@ -682,7 +682,7 @@
       "receptions": 4.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 56.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -833,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6354,
+    "total_projections_returned": 6378,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 5180,
+    "excluded_goblin_demon_lines": 5203,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T02:00:49.296986+00:00"
+  "fetched_at": "2026-11-25T02:20:41.041088+00:00"
 }
