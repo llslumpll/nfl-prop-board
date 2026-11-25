@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,13 +1722,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.2085,
-   "decimal": 7.309,
-   "ev": 0.524,
+   "decimal": 10.733,
+   "ev": 1.238,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1759,28 +1759,28 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
-     "game": "ATL@MIN",
+     "decimal": 3.125,
+     "game": "SEA@SF",
      "good": true,
-     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
-     "label": "Bijan Robinson anytime TD",
-     "player": "Bijan Robinson",
-     "price": 0.47,
-     "team": "ATL"
+     "label": "Mike Evans anytime TD",
+     "player": "Mike Evans",
+     "price": 0.32,
+     "team": "SF"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   },
   "td-4": {
-   "chance": 0.1049,
-   "decimal": 22.839,
-   "ev": 1.395,
+   "chance": 0.0819,
+   "decimal": 30.663,
+   "ev": 1.513,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1811,18 +1811,6 @@
     },
     {
      "chance": 0.503,
-     "decimal": 2.128,
-     "game": "ATL@MIN",
-     "good": true,
-     "kickoff": "2026-11-29T18:00:00+00:00",
-     "kind": "td",
-     "label": "Bijan Robinson anytime TD",
-     "player": "Bijan Robinson",
-     "price": 0.47,
-     "team": "ATL"
-    },
-    {
-     "chance": 0.503,
      "decimal": 3.125,
      "game": "SEA@SF",
      "good": true,
@@ -1832,13 +1820,25 @@
      "player": "Mike Evans",
      "price": 0.32,
      "team": "SF"
+    },
+    {
+     "chance": 0.393,
+     "decimal": 2.857,
+     "game": "GB@LA",
+     "good": true,
+     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kind": "td",
+     "label": "Christian Watson anytime TD",
+     "player": "Christian Watson",
+     "price": 0.35,
+     "team": "GB"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 07:20 UTC",
+   "updated": "2026-11-25 07:41 UTC",
    "week": 12
   }
  },
