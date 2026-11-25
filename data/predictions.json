@@ -40466,10 +40466,10 @@
     "stat": "receptions",
     "projected": 2.6,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -40479,7 +40479,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-25 15:40 UTC",
+    "line_attach_note": "Projection frozen 2026-11-17 18:05 UTC; this prizepicks line was first seen 2026-11-25 15:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Justice Hill|receptions|11": {
     "player": "Justice Hill",
@@ -43252,7 +43254,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Zay Flowers|receptions|12": {
     "player": "Zay Flowers",
@@ -43475,9 +43480,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Chris Olave|receptions|12": {
     "player": "Chris Olave",
@@ -43593,9 +43596,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Parker Washington|receptions|12": {
     "player": "Parker Washington",
@@ -43723,10 +43724,10 @@
     "stat": "receptions",
     "projected": 7.1,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 5.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 1.6,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Full Participation in Practice",
@@ -43736,7 +43737,13 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ],
+    "line_attached_at": "2026-11-25 15:40 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this prizepicks line was first seen 2026-11-25 15:40 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Devaughn Vele|receptions|12": {
     "player": "Devaughn Vele",
@@ -44125,10 +44132,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Chase Brown|receptions|12": {
     "player": "Chase Brown",
