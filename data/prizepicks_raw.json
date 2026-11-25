@@ -77,7 +77,7 @@
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 259.5,
+      "passing_yards": 260.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -135,7 +135,7 @@
       "receiving_yards": 7.5
     },
     "Brock Wright": {
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5
@@ -280,7 +280,7 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 75.5,
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Jaylen Warren": {
       "rushing_yards": 62.5,
@@ -291,7 +291,7 @@
       "receptions": 4
     },
     "DK Metcalf": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 30.5,
       "receptions": 3
     },
     "Rico Dowdle": {
@@ -302,14 +302,13 @@
       "receiving_yards": 26.5
     },
     "Courtland Sutton": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Germie Bernard": {
       "receiving_yards": 21.5
     },
     "Evan Engram": {
-      "receiving_yards": 20.5,
-      "receptions": 2.5
+      "receiving_yards": 20.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 19.5
@@ -836,9 +835,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6572,
-    "matched_props": 370,
-    "excluded_goblin_demon_lines": 5375,
+    "total_projections_returned": 6568,
+    "matched_props": 369,
+    "excluded_goblin_demon_lines": 5372,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -877,5 +876,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T05:20:42.548905+00:00"
+  "fetched_at": "2026-11-25T05:40:42.272467+00:00"
 }
