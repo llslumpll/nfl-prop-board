@@ -74,11 +74,11 @@
       "receiving_yards": 0.5
     },
     "Jared Goff": {
-      "passing_yards": 276.5,
+      "passing_yards": 277.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
-      "passing_yards": 261.5,
+      "passing_yards": 260.5,
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
@@ -100,7 +100,7 @@
       "receptions": 3.5
     },
     "Colston Loveland": {
-      "receiving_yards": 52.5
+      "receiving_yards": 53.5
     },
     "D'Andre Swift": {
       "rushing_yards": 47.5,
@@ -166,9 +166,8 @@
       "receptions": 5.5
     },
     "Saquon Barkley": {
-      "rushing_yards": 64.5,
-      "receiving_yards": 7.5,
-      "receptions": 1.5
+      "rushing_yards": 66.5,
+      "receiving_yards": 7.5
     },
     "Ryan Flournoy": {
       "receiving_yards": 31.5,
@@ -839,9 +838,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6510,
-    "matched_props": 373,
-    "excluded_goblin_demon_lines": 5312,
+    "total_projections_returned": 6514,
+    "matched_props": 372,
+    "excluded_goblin_demon_lines": 5317,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -853,6 +852,7 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "first fg distance (combo)",
+      "halves with 100+ pass yards",
       "int",
       "kicking points",
       "kicking points (combo)",
@@ -871,8 +871,7 @@
       "passer rating",
       "pat made (combo)",
       "punt touchbacks (combo)",
-      "punts",
-      "punts (combo)"
+      "punts"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -880,5 +879,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T03:20:44.770340+00:00"
+  "fetched_at": "2026-11-25T03:40:44.179028+00:00"
 }
