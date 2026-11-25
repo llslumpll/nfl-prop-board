@@ -42720,8 +42720,7 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
-      "best_value"
+      "highest_confidence"
     ]
   },
   "Jayden Daniels|passing_yards|11": {
@@ -44959,7 +44958,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Zach Charbonnet|rushing_yards|12": {
     "player": "Zach Charbonnet",
