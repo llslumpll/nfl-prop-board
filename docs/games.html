@@ -12,7 +12,7 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>Games — Prop Edge Board</title>
-  <link rel="stylesheet" href="static/style.css?v=1795575625">
+  <link rel="stylesheet" href="static/style.css?v=1795576822">
 </head>
 <body>
   <header class="site-head">
@@ -74,7 +74,7 @@
   <button class="pk-stat-btn" data-gt="moneyline">MONEYLINE</button>
   <button class="pk-stat-btn" data-gt="spread">SPREAD</button>
   <button class="pk-stat-btn" data-gt="total">TOTAL</button>
-  <button class="pk-stat-btn" data-gt="edges">EDGES</button>
+  <button class="pk-stat-btn" data-gt="edges">EDGES (1)</button>
   <button class="pk-stat-btn" data-gt="all">ALL GAMES</button>
   <button class="pk-stat-btn gm-live-btn" data-gt="live"><i class="live-dot"></i>LIVE</button>
 </div>
@@ -563,7 +563,7 @@
     in between. FanDuel updates about once a day here, so prices older than 8 hours are skipped. Treat edges as leads; every one
     is recorded and graded below, 1U each.</div>
   <div class="pz-board gm-board">
-    <div class="pz-fam"><em>EDGES RECORD</em><b>11&ndash;7</b><small>0 pending</small></div>
+    <div class="pz-fam"><em>EDGES RECORD</em><b>11&ndash;7</b><small>1 pending</small></div>
     <div class="pz-fam"><em>UNITS</em><b class="stat-good">+2.84U</b><small>+15.8% per unit</small></div>
     <div class="pz-fam"><em>HIT RATE</em><b>61.1%</b><small>vs 54.0% fair</small></div>
     <div class="pz-fam"><em>MODEL AGREED</em><b>7&ndash;5</b><small>+2.35U</small></div>
@@ -571,12 +571,23 @@
   
 
   <h3>+EV on Kalshi</h3>
-  <p class="notice compact">No +EV prices right now: Kalshi and FanDuel agree within the fee on all 80 matched bets. Refreshes every 20 minutes.</p>
+  
+  <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
+    <thead><tr><th>Bet</th><th class="num">Better than fair</th><th class="num">Real chance</th><th class="hide-sm">Our model</th><th class="hide-sm">Fair from</th></tr></thead>
+    <tbody><tr>
+      <td><b>CHI @ DET: CHI wins</b> <span class="gp-chip">GOOD PRICE</span><div class="small dim">Kalshi: YES CHI at 53%</div></td>
+      <td class="num stat-good"><b>about 4%</b></td>
+      <td class="num">57%</td>
+      <td class="hide-sm small"><span class="stat-bad">53% disagrees</span></td>
+      <td class="hide-sm small dim">FanDuel -142/+120</td></tr></tbody>
+  </table></div></div>
+  <p class="small dim">Checked 80 Kalshi bets that FanDuel also prices. Listed: Kalshi's price, fee included, at least 2% cheaper than the bet is really worth. <b>Real chance</b> = FanDuel's odds with their cut removed. <b>Better than fair</b> = roughly what each unit returns on average over many bets.</p>
+  
 
   
 
   <h3>Arbitrage</h3>
-  <p class="small dim">None right now. Closest: 1.2% short of a sure profit.</p>
+  <p class="small dim">None right now. Closest: 0.2% short of a sure profit.</p>
 
   <h3>Middles</h3>
   <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
@@ -584,10 +595,12 @@
     <tbody><tr><td><b>GB @ LA: FanDuel OVER 44.5 + Kalshi NO over 66.5</b></td><td class="num">44.5 to 66.5</td><td class="num">45.5%</td><td class="num stat-good">+0.1%</td></tr></tbody>
   </table></div></div>
 
-  <details class="info-collapse"><summary>Recorded edges (18 most recent)</summary>
+  <details class="info-collapse"><summary>Recorded edges (19 most recent)</summary>
   <div class="table-wrap"><div class="table-scroll"><table class="stat-table">
     <thead><tr><th>Week</th><th>Bet</th><th class="num">Edge when seen</th><th>Result</th><th class="num">Units</th></tr></thead>
-    <tbody><tr><td>W11</td><td>MIN @ SF: MIN +3.5 <span class="dim small">NO SF by over 3.5 at 47%</span></td><td class="num">+2.6%</td>
+    <tbody><tr><td>W12</td><td>CHI @ DET: CHI wins <span class="dim small">YES CHI at 53%</span></td><td class="num">+3.7%</td>
+      <td class="">PENDING</td>
+      <td class="num">&ndash;</td></tr><tr><td>W11</td><td>MIN @ SF: MIN +3.5 <span class="dim small">NO SF by over 3.5 at 47%</span></td><td class="num">+2.6%</td>
       <td class="stat-bad">MISS</td>
       <td class="num">-1.00U</td></tr><tr><td>W11</td><td>MIN @ SF: OVER 46.5 <span class="dim small">YES over 46.5 at 46%</span></td><td class="num">+2.3%</td>
       <td class="stat-bad">MISS</td>
@@ -2646,7 +2659,7 @@
     </div>
     
     <div class="foot-row foot-dim">
-      BUILD: 2026-11-25 03:00 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
+      BUILD: 2026-11-25 03:20 UTC &middot; BATCH: AUTO &middot; via GitHub Actions
     </div>
   </footer>
 </body>

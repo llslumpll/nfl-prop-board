@@ -431,5 +431,28 @@
    "units": -1.0,
    "week": 11
   }
+ },
+ "12": {
+  "moneyline|CHI @ DET: CHI wins": {
+   "ask": 0.53,
+   "away": "CHI",
+   "cost": 0.5474,
+   "ev": 0.0366,
+   "fair": 0.5674,
+   "first_ev": 0.0366,
+   "first_seen": "2026-11-25 03:20 UTC",
+   "home": "DET",
+   "kalshi": "YES CHI at 53%",
+   "kickoff": "2026-11-26T18:00:00+00:00",
+   "kind": "moneyline",
+   "label": "CHI @ DET: CHI wins",
+   "line": null,
+   "model": 0.532,
+   "model_agrees": false,
+   "ref": "FanDuel -142/+120",
+   "side": "CHI ML",
+   "status": "pending",
+   "week": 12
+  }
  }
 }

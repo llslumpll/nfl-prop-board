@@ -38,16 +38,16 @@
       "rushing_yards": 32.5,
       "receptions": 0.5
     },
+    "CJ Daniels": {
+      "receiving_yards": 24.5,
+      "receptions": 2
+    },
     "Tutu Atwell": {
       "receiving_yards": 23.5
     },
     "Colby Parkinson": {
       "receiving_yards": 20.5,
       "receptions": 3
-    },
-    "CJ Daniels": {
-      "receiving_yards": 20.5,
-      "receptions": 2
     },
     "Savion Williams": {
       "receiving_yards": 18.5,
@@ -636,7 +636,9 @@
       "rushing_yards": 20.5
     },
     "Omarion Hampton": {
-      "rushing_yards": 61.5
+      "rushing_yards": 61.5,
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 47.5,
@@ -646,15 +648,19 @@
       "rushing_yards": 30.5
     },
     "Mack Hollins": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Hunter Henry": {
       "receiving_yards": 23.5,
       "receptions": 2.5
+    },
+    "Kimani Vidal": {
+      "rushing_yards": 22.5,
+      "receiving_yards": 7.5
     },
     "Eli Raridon": {
       "receiving_yards": 17.5
@@ -833,9 +839,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6426,
-    "matched_props": 369,
-    "excluded_goblin_demon_lines": 5246,
+    "total_projections_returned": 6510,
+    "matched_props": 373,
+    "excluded_goblin_demon_lines": 5312,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +880,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T03:00:47.294064+00:00"
+  "fetched_at": "2026-11-25T03:20:44.770340+00:00"
 }
