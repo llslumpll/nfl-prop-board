@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,7 +1682,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "td-2": {
@@ -1722,13 +1722,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.2458,
-   "decimal": 7.807,
-   "ev": 0.919,
+   "decimal": 7.631,
+   "ev": 0.876,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1759,28 +1759,28 @@
     },
     {
      "chance": 0.593,
-     "decimal": 2.273,
-     "game": "GB@LA",
+     "decimal": 2.222,
+     "game": "BAL@HOU",
      "good": true,
-     "kickoff": "2026-11-26T01:00:00+00:00",
+     "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
-     "label": "Kyren Williams anytime TD",
-     "player": "Kyren Williams",
-     "price": 0.44,
-     "team": "LA"
+     "label": "Derrick Henry anytime TD",
+     "player": "Derrick Henry",
+     "price": 0.45,
+     "team": "BAL"
     }
    ],
    "name": "Touchdowns",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   },
   "td-4": {
-   "chance": 0.1354,
-   "decimal": 18.158,
-   "ev": 1.459,
+   "chance": 0.1458,
+   "decimal": 17.751,
+   "ev": 1.587,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1811,34 +1811,34 @@
     },
     {
      "chance": 0.593,
-     "decimal": 2.273,
+     "decimal": 2.222,
+     "game": "BAL@HOU",
+     "good": true,
+     "kickoff": "2026-11-29T18:00:00+00:00",
+     "kind": "td",
+     "label": "Derrick Henry anytime TD",
+     "player": "Derrick Henry",
+     "price": 0.45,
+     "team": "BAL"
+    },
+    {
+     "chance": 0.593,
+     "decimal": 2.326,
      "game": "GB@LA",
      "good": true,
      "kickoff": "2026-11-26T01:00:00+00:00",
      "kind": "td",
      "label": "Kyren Williams anytime TD",
      "player": "Kyren Williams",
-     "price": 0.44,
-     "team": "LA"
-    },
-    {
-     "chance": 0.551,
-     "decimal": 2.326,
-     "game": "DAL@PHI",
-     "good": true,
-     "kickoff": "2026-11-26T21:30:00+00:00",
-     "kind": "td",
-     "label": "Saquon Barkley anytime TD",
-     "player": "Saquon Barkley",
      "price": 0.43,
-     "team": "PHI"
+     "team": "LA"
     }
    ],
    "name": "Touchdowns",
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-25 09:20 UTC",
+   "updated": "2026-11-25 09:40 UTC",
    "week": 12
   }
  },
