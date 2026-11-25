@@ -543,7 +543,7 @@
       "receptions": 4
     },
     "Braelon Allen": {
-      "rushing_yards": 39.5,
+      "rushing_yards": 44.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
@@ -865,7 +865,7 @@
     },
     "KC Concepcion Jr.": {
       "receiving_yards": 46.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 0.5
     },
     "Denzel Boston": {
       "receiving_yards": 43.5
@@ -880,7 +880,7 @@
       "receptions": 4
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 32.5
+      "rushing_yards": 31.5
     },
     "Tre Tucker": {
       "receiving_yards": 31.5
@@ -970,9 +970,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7972,
+    "total_projections_returned": 7978,
     "matched_props": 444,
-    "excluded_goblin_demon_lines": 6527,
+    "excluded_goblin_demon_lines": 6532,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -1011,5 +1011,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T23:20:39.625505+00:00"
+  "fetched_at": "2026-11-25T23:23:48.031813+00:00"
 }

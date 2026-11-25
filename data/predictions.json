@@ -43450,7 +43450,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "CeeDee Lamb|receptions|12": {
     "player": "CeeDee Lamb",
@@ -45086,7 +45088,6 @@
     "hit": null,
     "graded_at": null,
     "best5_tags": [
-      "highest_confidence",
       "best_value"
     ]
   },
