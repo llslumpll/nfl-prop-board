@@ -50,7 +50,7 @@
       "receptions": 3
     },
     "Savion Williams": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 19.5,
       "rushing_yards": 4.5
     },
     "Davis Allen": {
@@ -59,7 +59,7 @@
     },
     "MarShawn Lloyd": {
       "rushing_yards": 11.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Xavier Smith": {
@@ -143,10 +143,10 @@
     },
     "Dak Prescott": {
       "passing_yards": 261.5,
-      "rushing_yards": 8.5
+      "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 198.5,
+      "passing_yards": 200.5,
       "rushing_yards": 31.5
     },
     "CeeDee Lamb": {
@@ -179,7 +179,7 @@
       "receptions": 3.5
     },
     "Makai Lemon": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 29.5,
       "receptions": 3
     },
     "Darius Cooper": {
@@ -216,12 +216,12 @@
       "receiving_yards": 7.5
     },
     "Kenneth Walker III": {
-      "rushing_yards": 62.5,
+      "rushing_yards": 63.5,
       "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "DJ Moore": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 50.5,
       "receptions": 4,
       "rushing_yards": 0.5
     },
@@ -232,10 +232,6 @@
     "Travis Kelce": {
       "receiving_yards": 43.5
     },
-    "Khalil Shakir": {
-      "receiving_yards": 42.5,
-      "receptions": 3.5
-    },
     "Josh Downs": {
       "receiving_yards": 41.5,
       "receptions": 3.5
@@ -243,24 +239,28 @@
     "Dalton Kincaid": {
       "receiving_yards": 40.5
     },
+    "Khalil Shakir": {
+      "receiving_yards": 39.5,
+      "receptions": 3.5
+    },
     "Keon Coleman": {
       "receiving_yards": 24.5,
       "receptions": 2
     },
     "Xavier Worthy": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Ty Johnson": {
       "receiving_yards": 16.5,
       "receptions": 2,
       "rushing_yards": 1.5
     },
-    "Noah Gray": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
-    },
     "Dawson Knox": {
       "receiving_yards": 13.5
+    },
+    "Noah Gray": {
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Cyrus Allen": {
       "receiving_yards": 11.5
@@ -490,7 +490,7 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 214.5,
+      "passing_yards": 213.5,
       "rushing_yards": 1.5
     },
     "Kyle McCord": {
@@ -820,7 +820,7 @@
       "receiving_yards": 18.5
     },
     "Tez Johnson": {
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "John Metchie III": {
       "receiving_yards": 10.5
@@ -833,9 +833,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6323,
+    "total_projections_returned": 6341,
     "matched_props": 369,
-    "excluded_goblin_demon_lines": 5147,
+    "excluded_goblin_demon_lines": 5167,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -874,5 +874,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-25T00:40:42.542379+00:00"
+  "fetched_at": "2026-11-25T01:00:45.778484+00:00"
 }
