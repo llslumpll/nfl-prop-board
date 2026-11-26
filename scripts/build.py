@@ -1127,6 +1127,14 @@ def build(oddsapi_mode: str | None = None):
     except Exception as e:  # noqa: BLE001
         print(f"Tipsters failed: {e}")
         tipsters_page = {"tipsters": [], "week": games_page["week"], "this_week": [], "weeks": [], "lab": {}}
+    try:  # Site ladders vs Dr. Profit (nfl-update-24)
+        import docladder_nfl
+        print(f"Dr. Profit-style ladders: {docladder_nfl.sync(games_page['week'])}")
+        docladder_page = docladder_nfl.summary(games_page["week"])
+    except Exception:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
+        docladder_page = None
     try:  # Proven picks (nfl-update-21): every kind of pick graded vs its price
         import proven_nfl
         proven_page = proven_nfl.build(tipsters_page, kb_page)
@@ -1182,7 +1190,7 @@ def build(oddsapi_mode: str | None = None):
         "tipsters.html": (
             "tipsters",
             "tipsters.html",
-            {"tp": tipsters_page, "proven": proven_page},
+            {"tp": tipsters_page, "proven": proven_page, "dl": docladder_page},
         ),
         "moneyline.html": (
             "moneyline",
