@@ -148,7 +148,7 @@
     },
     "Emmett Johnson": {
       "rushing_yards": 81.5,
-      "receiving_yards": 31.5
+      "receiving_yards": 30.5
     },
     "DJ Moore": {
       "receiving_yards": 47.5,
@@ -247,8 +247,7 @@
       "receiving_yards": 22.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
+      "receiving_yards": 21.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 21.5
@@ -451,7 +450,7 @@
     },
     "Kyle McCord": {
       "passing_yards": 175.5,
-      "rushing_yards": 8.5
+      "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
       "rushing_yards": 64.5,
@@ -541,10 +540,10 @@
     "Xavier Hutchinson": {
       "receiving_yards": 28.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 23.5
-    },
     "Dalton Schultz": {
+      "receiving_yards": 24.5
+    },
+    "Mark Andrews": {
       "receiving_yards": 23.5
     },
     "Ja'Kobi Lane": {
@@ -782,7 +781,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 229.5,
+      "passing_yards": 230.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -801,7 +800,7 @@
       "rushing_yards": 3.5
     },
     "Denzel Boston": {
-      "receiving_yards": 45.5
+      "receiving_yards": 42.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
@@ -813,7 +812,7 @@
       "receptions": 4
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 32.5
+      "rushing_yards": 31.5
     },
     "Tre Tucker": {
       "receiving_yards": 31.5
@@ -904,8 +903,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 7593,
-    "matched_props": 410,
-    "excluded_goblin_demon_lines": 6231,
+    "matched_props": 409,
+    "excluded_goblin_demon_lines": 6230,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -944,5 +943,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T07:00:50.048415+00:00"
+  "fetched_at": "2026-11-26T07:20:40.899569+00:00"
 }
