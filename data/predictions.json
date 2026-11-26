@@ -43254,10 +43254,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Zay Flowers|receptions|12": {
     "player": "Zay Flowers",
@@ -43304,7 +43301,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chimere Dike|receptions|12": {
     "player": "Chimere Dike",

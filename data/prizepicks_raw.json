@@ -29,7 +29,7 @@
       "receptions": 5
     },
     "Rome Odunze": {
-      "receiving_yards": 49.5
+      "receiving_yards": 48.5
     },
     "D'Andre Swift": {
       "rushing_yards": 46.5,
@@ -135,11 +135,11 @@
     },
     "Patrick Mahomes": {
       "passing_yards": 233.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 12.5
     },
     "Josh Allen": {
       "passing_yards": 216.5,
-      "rushing_yards": 38.5
+      "rushing_yards": 39.5
     },
     "James Cook III": {
       "rushing_yards": 86.5,
@@ -154,7 +154,7 @@
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 44.5,
       "receptions": 4.5
     },
     "Travis Kelce": {
@@ -245,8 +245,7 @@
       "receiving_yards": 22.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
+      "receiving_yards": 21.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 21.5
@@ -264,11 +263,11 @@
       "receiving_yards": 8.5,
       "rushing_yards": 1.5
     },
+    "Troy Franklin": {
+      "receiving_yards": 5.5
+    },
     "Adam Trautman": {
       "receiving_yards": 4.5
-    },
-    "Troy Franklin": {
-      "receiving_yards": 3.5
     },
     "Nate Adkins": {
       "receiving_yards": 0.5
@@ -424,9 +423,6 @@
     "Brian Thomas Jr.": {
       "receiving_yards": 17.5
     },
-    "Xavier Restrepo": {
-      "receiving_yards": 10.5
-    },
     "Michael Carter": {
       "rushing_yards": 9.5,
       "receiving_yards": 6.5
@@ -437,8 +433,11 @@
     "Calvin Ridley": {
       "receiving_yards": 9.5
     },
+    "Xavier Restrepo": {
+      "receiving_yards": 9.5
+    },
     "Travis Hunter": {
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Daniel Bellinger": {
       "receiving_yards": 7.5
@@ -476,8 +475,7 @@
       "receiving_yards": 38.5
     },
     "Malik Washington": {
-      "receiving_yards": 30.5,
-      "receptions": 3.5
+      "receiving_yards": 30.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 28.5
@@ -638,7 +636,7 @@
       "receiving_yards": 7.5
     },
     "Eli Raridon": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Efton Chism III": {
       "receiving_yards": 12.5
@@ -744,7 +742,8 @@
     },
     "Austin Ekeler": {
       "rushing_yards": 24.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 9.5,
+      "receptions": 1.5
     },
     "Treylon Burks": {
       "receiving_yards": 22.5
@@ -777,7 +776,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 230.5,
+      "passing_yards": 229.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -896,9 +895,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7667,
-    "matched_props": 403,
-    "excluded_goblin_demon_lines": 6306,
+    "total_projections_returned": 7672,
+    "matched_props": 402,
+    "excluded_goblin_demon_lines": 6316,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -937,5 +936,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T13:40:40.352267+00:00"
+  "fetched_at": "2026-11-26T14:00:51.786595+00:00"
 }
