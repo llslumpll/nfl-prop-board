@@ -45627,5 +45627,28 @@
       "best_value",
       "highest_confidence"
     ]
+  },
+  "Sam Darnold|passing_yards|12": {
+    "player": "Sam Darnold",
+    "team": "SEA",
+    "opponent": "SF",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 199.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 230.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -30.7,
+    "model_prob": 0.3878,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-26 20:45 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
