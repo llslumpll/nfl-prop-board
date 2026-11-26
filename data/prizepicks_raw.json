@@ -6,7 +6,7 @@
     },
     "Josh Allen": {
       "passing_yards": 216.5,
-      "rushing_yards": 40.5
+      "rushing_yards": 38.5
     },
     "James Cook III": {
       "rushing_yards": 86.5,
@@ -38,19 +38,19 @@
       "receiving_yards": 33.5,
       "receptions": 3
     },
-    "Xavier Worthy": {
-      "receiving_yards": 21.5
-    },
     "Keon Coleman": {
       "receiving_yards": 21.5,
       "receptions": 2
+    },
+    "Xavier Worthy": {
+      "receiving_yards": 20.5
     },
     "Ty Johnson": {
       "receiving_yards": 16.5,
       "rushing_yards": 1.5
     },
     "Dawson Knox": {
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Noah Gray": {
       "receiving_yards": 11.5
@@ -388,10 +388,10 @@
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
-    "Tank Dell": {
-      "receiving_yards": 34.5
-    },
     "Rashod Bateman": {
+      "receiving_yards": 35.5
+    },
+    "Tank Dell": {
       "receiving_yards": 32.5
     },
     "Xavier Hutchinson": {
@@ -421,7 +421,7 @@
       "receiving_yards": 17.5
     },
     "Josh Cuevas": {
-      "receiving_yards": 9.5
+      "receiving_yards": 11.5
     },
     "Matt Hibner": {
       "receiving_yards": 5.5
@@ -781,7 +781,7 @@
     "nfl_league_id": "9",
     "total_projections_returned": 6391,
     "matched_props": 342,
-    "excluded_goblin_demon_lines": 5301,
+    "excluded_goblin_demon_lines": 5302,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -820,5 +820,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T23:40:40.061243+00:00"
+  "fetched_at": "2026-11-26T23:49:35.371561+00:00"
 }
