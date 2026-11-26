@@ -1,0 +1,37 @@
+name: Kalshi NFL prop history
+
+on:
+  schedule:
+    # Tuesdays 10:00 UTC: add last week's settled Kalshi player markets (pre-kickoff ask + result)
+    - cron: "0 10 * * 2"
+  workflow_dispatch: {}
+
+concurrency:
+  group: nfl-site-repo-write
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install requests
+      - name: Fetch settled Kalshi NFL player markets
+        run: python scripts/kalshi_history_nfl.py
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/kalshi_history_nfl.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Kalshi NFL prop history: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 10; done
+          exit 1
