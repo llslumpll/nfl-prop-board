@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Players — Prop Edge NFL{% endblock %}
+{% block content %}
+<h1>Player Lab &middot; week {{ pl.week }}</h1>
+<p class="lede">Every player with a pick or a Kalshi rung this week: our projection, each Kalshi rung's price and how often it really hits, how often he's cleared it, splits, game log and the tipsters' picks on him.</p>
+<input id="pl-q" type="search" placeholder="Filter players or teams" style="width:100%;margin:8px 0 14px;padding:8px;font-size:1rem">
+{% for team, rows in pl.index.items() %}
+<section class="pl-team" data-team="{{ team }}">
+  <h2>{{ team }}{% set o = rows[0] %}{% if o.opp %} <span class="small dim">{{ 'vs' if o.home else '@' }} {{ o.opp }}</span>{% endif %}</h2>
+  <p class="small">{% for r in rows %}<a class="pl-a" data-n="{{ r.name|lower }} {{ team|lower }}" href="{{ r.slug }}">{{ r.name }}</a> <span class="dim">{{ r.pos }}{% if r.inj %} &middot; <span class="stat-bad">{{ r.inj }}</span>{% endif %}</span>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</section>
+{% endfor %}
+<script>
+(function () {
+  var q = document.getElementById('pl-q');
+  q.addEventListener('input', function () {
+    var v = q.value.toLowerCase().trim();
+    document.querySelectorAll('.pl-team').forEach(function (s) {
+      var any = false;
+      s.querySelectorAll('.pl-a').forEach(function (a) { var ok = !v || a.getAttribute('data-n').indexOf(v) >= 0; a.style.display = ok ? '' : 'none'; if (a.nextElementSibling) a.nextElementSibling.style.display = ok ? '' : 'none'; any = any || ok; });
+      s.hidden = !any;
+    });
+  });
+})();
+</script>
+{% endblock %}
