@@ -9971,8 +9971,15 @@
     "reason": "Real net-points-per-game model projects a +4.6-point margin and a 44.1 total. LA's real record over their last games is trending up relative to their season pace. GB is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 13,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": true
   },
   "GB@LA|team_spread|12": {
     "away_team": "GB",
@@ -9993,8 +10000,15 @@
     "reason": "Real net-points-per-game model projects a +4.6-point margin and a 44.1 total. LA's real record over their last games is trending up relative to their season pace. GB is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 13,
+      "actual_margin": 13
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "GB@LA|team_total|12": {
     "away_team": "GB",
@@ -10015,8 +10029,15 @@
     "reason": "Real net-points-per-game model projects a +4.6-point margin and a 44.1 total. LA's real record over their last games is trending up relative to their season pace. GB is carrying real, meaningfully more Out/Doubtful designations than LA this week -- a real health edge favoring LA.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 26,
+      "away_score": 13,
+      "actual_total": 39
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "CHI@DET|team_moneyline|12": {
     "away_team": "CHI",

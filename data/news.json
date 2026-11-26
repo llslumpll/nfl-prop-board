@@ -388,7 +388,106 @@
    "week": 11
   }
  },
- "12": {},
+ "12": {
+  "Kenneth Walker III|KC": {
+   "opp": "BUF",
+   "out": "Kenneth Walker III",
+   "plays": [
+    {
+     "bump": 292,
+     "call": "OVER",
+     "line": 11.5,
+     "n_wo": 2,
+     "player": "Cyrus Allen",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 10.8,
+     "without": 42.5
+    },
+    {
+     "bump": 642,
+     "call": "OVER",
+     "line": 80.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 80.5,
+     "player": "Emmett Johnson",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 13.9,
+     "without": 103
+    },
+    {
+     "bump": 82,
+     "call": "OVER",
+     "line": 30.5,
+     "n_wo": 2,
+     "player": "Emmett Johnson",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 29.6,
+     "without": 54
+    },
+    {
+     "bump": 178,
+     "call": "OVER",
+     "line": 0.5,
+     "n_wo": 2,
+     "player": "Jake Briningstool",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 3.6,
+     "without": 10
+    },
+    {
+     "bump": 26,
+     "call": "OVER",
+     "line": 5.5,
+     "n_wo": 1,
+     "player": "Jaydn Ott",
+     "result": null,
+     "short": "RUSH YDS",
+     "stat": "rushing_yards",
+     "with": 9.5,
+     "without": 12
+    },
+    {
+     "bump": 32,
+     "call": "OVER",
+     "line": 232.5,
+     "moved": false,
+     "n_wo": 2,
+     "now": 232.5,
+     "player": "Patrick Mahomes",
+     "result": null,
+     "short": "PASS YDS",
+     "stat": "passing_yards",
+     "with": 254.6,
+     "without": 336
+    },
+    {
+     "bump": 16,
+     "call": "OVER",
+     "line": 44.5,
+     "n_wo": 2,
+     "player": "Rashee Rice",
+     "result": null,
+     "short": "REC YDS",
+     "stat": "receiving_yards",
+     "with": 58.4,
+     "without": 67.5
+    }
+   ],
+   "pos": "RB",
+   "seen": "2026-11-26 17:15 UTC",
+   "team": "KC",
+   "week": 12
+  }
+ },
  "9": {
   "Brian Robinson|ATL": {
    "opp": "CIN",

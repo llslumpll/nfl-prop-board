@@ -84,12 +84,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Matthew Stafford",
-    "team": "LA",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Cam Ward",
     "team": "TEN",
     "stat": "passing_yards",
@@ -132,12 +126,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Jordan Love",
-    "team": "GB",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Tanner McKee",
     "team": "PHI",
     "stat": "passing_yards",
@@ -146,6 +134,12 @@
   {
     "player": "Kyler Murray",
     "team": "MIN",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jordan Love",
+    "team": "GB",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -176,6 +170,12 @@
   {
     "player": "Caleb Williams",
     "team": "CHI",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Geno Smith",
+    "team": "NYJ",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -294,12 +294,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Konata Mumpfield",
-    "team": "LA",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Mike Gesicki",
     "team": "CIN",
     "stat": "receiving_yards",
@@ -342,14 +336,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Matthew Golden",
-    "team": "GB",
+    "player": "Chimere Dike",
+    "team": "TEN",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Chimere Dike",
-    "team": "TEN",
+    "player": "Konata Mumpfield",
+    "team": "LA",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -368,6 +362,12 @@
   {
     "player": "Chig Okonkwo",
     "team": "WAS",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Christian Watson",
+    "team": "GB",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -606,12 +606,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Matthew Golden",
-    "team": "GB",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Mike Gesicki",
     "team": "CIN",
     "stat": "receptions",
@@ -660,6 +654,18 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Ladd McConkey",
+    "team": "LAC",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Blake Corum",
+    "team": "LA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Chuba Hubbard",
     "team": "CAR",
     "stat": "rushing_yards",
@@ -702,12 +708,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Blake Corum",
-    "team": "LA",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Jahmyr Gibbs",
     "team": "DET",
     "stat": "rushing_yards",
@@ -740,12 +740,6 @@
   {
     "player": "Breece Hall",
     "team": "NYJ",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Ronnie Rivers",
-    "team": "LA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -858,14 +852,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Jawhar Jordan",
-    "team": "HOU",
+    "player": "Kyren Williams",
+    "team": "LA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Kaleb Johnson",
-    "team": "GB",
+    "player": "Jawhar Jordan",
+    "team": "HOU",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -896,6 +890,12 @@
   {
     "player": "Jordan Mason",
     "team": "MIN",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jadarian Price",
+    "team": "SEA",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   }

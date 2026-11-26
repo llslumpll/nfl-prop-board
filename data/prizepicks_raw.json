@@ -1,7 +1,7 @@
 {
   "props": {
     "Jared Goff": {
-      "passing_yards": 280.5,
+      "passing_yards": 281.5,
       "rushing_yards": 0.5
     },
     "Caleb Williams": {
@@ -9,7 +9,7 @@
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 94.5,
+      "rushing_yards": 95.5,
       "receiving_yards": 35.5,
       "receptions": 4.5
     },
@@ -49,7 +49,7 @@
       "receptions": 2.5
     },
     "Isaac TeSlaa": {
-      "receiving_yards": 18.5
+      "receiving_yards": 17.5
     },
     "Zavion Thomas": {
       "receiving_yards": 10.5
@@ -65,7 +65,7 @@
       "receiving_yards": 4.5
     },
     "Salvon Ahmed": {
-      "rushing_yards": 4.5
+      "rushing_yards": 3.5
     },
     "Tyler Conklin": {
       "receiving_yards": 0.5,
@@ -76,7 +76,7 @@
       "rushing_yards": 9.5
     },
     "Joe Milton III": {
-      "passing_yards": 201.5,
+      "passing_yards": 198.5,
       "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
@@ -88,7 +88,7 @@
       "receiving_yards": 7.5
     },
     "George Pickens": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 69.5,
       "receptions": 5
     },
     "DeVonta Smith": {
@@ -97,7 +97,7 @@
     },
     "Saquon Barkley": {
       "rushing_yards": 64.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Dallas Goedert": {
       "receiving_yards": 31.5,
@@ -119,7 +119,8 @@
     },
     "Jashaun Corbin": {
       "rushing_yards": 12.5,
-      "receiving_yards": 0.5
+      "receiving_yards": 0.5,
+      "receptions": 0.5
     },
     "Will Shipley": {
       "rushing_yards": 12.5,
@@ -127,7 +128,7 @@
     },
     "KaVontae Turpin": {
       "receiving_yards": 5.5,
-      "rushing_yards": 3.5
+      "rushing_yards": 2.5
     },
     "Luke Schoonmaker": {
       "receiving_yards": 3.5
@@ -163,14 +164,14 @@
       "receptions": 4
     },
     "Khalil Shakir": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 37.5,
       "receptions": 3.5
     },
     "Josh Downs": {
       "receiving_yards": 36.5
     },
     "Dalton Kincaid": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 34.5,
       "receptions": 3
     },
     "Keon Coleman": {
@@ -178,11 +179,10 @@
       "receptions": 2
     },
     "Xavier Worthy": {
-      "receiving_yards": 19.5
+      "receiving_yards": 20.5
     },
     "Ty Johnson": {
       "receiving_yards": 16.5,
-      "receptions": 2,
       "rushing_yards": 1.5
     },
     "Noah Gray": {
@@ -192,7 +192,8 @@
       "receiving_yards": 11.5
     },
     "Dawson Knox": {
-      "receiving_yards": 11.5
+      "receiving_yards": 11.5,
+      "receptions": 1.5
     },
     "Jaydn Ott": {
       "rushing_yards": 5.5
@@ -212,7 +213,7 @@
     },
     "Mason Rudolph": {
       "passing_yards": 175.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "Jonah Coleman": {
       "rushing_yards": 75.5,
@@ -229,7 +230,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 32.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 8.5
     },
     "Pat Bryant": {
       "receiving_yards": 27.5,
@@ -246,8 +247,7 @@
       "receiving_yards": 22.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5,
-      "receptions": 2.5
+      "receiving_yards": 21.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 20.5
@@ -447,7 +447,7 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 173.5,
+      "passing_yards": 172.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -652,7 +652,7 @@
       "rushing_yards": 5.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 97.5,
+      "receiving_yards": 98.5,
       "receptions": 7.5
     },
     "Mike Evans": {
@@ -677,7 +677,7 @@
       "receptions": 3
     },
     "Jadarian Price": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 9.5
     },
     "AJ Barner": {
@@ -688,11 +688,11 @@
       "rushing_yards": 8.5,
       "receptions": 2.5
     },
-    "Cooper Kupp": {
-      "receiving_yards": 20.5
-    },
     "Kaelon Black": {
       "rushing_yards": 19.5
+    },
+    "Cooper Kupp": {
+      "receiving_yards": 18.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 17.5
@@ -853,11 +853,12 @@
       "receptions": 4.5
     },
     "Jalen Coker": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 42.5,
       "receptions": 3.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 34.5
+      "receiving_yards": 34.5,
+      "receptions": 3.5
     },
     "Cade Otton": {
       "receiving_yards": 28.5,
@@ -894,9 +895,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7757,
-    "matched_props": 399,
-    "excluded_goblin_demon_lines": 6387,
+    "total_projections_returned": 7763,
+    "matched_props": 400,
+    "excluded_goblin_demon_lines": 6393,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -935,5 +936,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T17:00:45.218621+00:00"
+  "fetched_at": "2026-11-26T17:15:00.327980+00:00"
 }
