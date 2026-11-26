@@ -45168,5 +45168,25 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Josh Allen|passing_yards|12": {
+    "player": "Josh Allen",
+    "team": "BUF",
+    "opponent": "KC",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 246.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 215.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 30.6,
+    "model_prob": 0.6667,
+    "signals": {},
+    "frozen_at": "2026-11-26 01:42 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
