@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1471,7 +1471,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "props-2": {
@@ -1517,7 +1517,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "props-3": {
@@ -1578,7 +1578,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "props-4": {
@@ -1654,7 +1654,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "td-1": {
@@ -1682,13 +1682,13 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 3.748,
-   "ev": 0.656,
+   "decimal": 3.831,
+   "ev": 0.692,
    "family": "td",
    "good": true,
    "id": "td-2",
@@ -1707,14 +1707,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.45,
      "team": "IND"
     }
    ],
@@ -1722,13 +1722,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 6.814,
-   "ev": 0.785,
+   "decimal": 6.964,
+   "ev": 0.824,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1747,14 +1747,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.45,
      "team": "IND"
     },
     {
@@ -1774,13 +1774,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 13.103,
-   "ev": 1.036,
+   "decimal": 13.392,
+   "ev": 1.08,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1799,14 +1799,14 @@
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.222,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.45,
      "team": "IND"
     },
     {
@@ -1838,17 +1838,32 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   },
   "value-3": {
-   "chance": 0.1713,
+   "chance": 0.1719,
    "decimal": 6.0,
-   "ev": 0.028,
+   "ev": 0.031,
    "family": "value",
    "good": true,
    "id": "value-3",
    "legs": [
+    {
+     "call": "UNDER",
+     "chance": 0.556,
+     "conf": 0.5,
+     "game": "ARI@WAS",
+     "kickoff": "2026-11-29T21:25:00+00:00",
+     "kind": "prop",
+     "label": "Antonio Williams UNDER 3.5 REC",
+     "line": 3.5,
+     "n": 135,
+     "player": "Antonio Williams",
+     "projected": 1.4,
+     "stat": "receptions",
+     "team": "WAS"
+    },
     {
      "call": "UNDER",
      "chance": 0.556,
@@ -1878,28 +1893,13 @@
      "projected": 3.9,
      "stat": "receptions",
      "team": "CIN"
-    },
-    {
-     "call": "OVER",
-     "chance": 0.554,
-     "conf": 0.763,
-     "game": "GB@LA",
-     "kickoff": "2026-11-26T01:00:00+00:00",
-     "kind": "prop",
-     "label": "Matthew Stafford OVER 228.5 PASS YDS",
-     "line": 228.5,
-     "n": 112,
-     "player": "Matthew Stafford",
-     "projected": 278.6,
-     "stat": "passing_yards",
-     "team": "LA"
     }
    ],
    "name": "Good price",
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 00:02 UTC",
+   "updated": "2026-11-26 00:22 UTC",
    "week": 12
   }
  },

@@ -43153,9 +43153,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Parker Washington|receiving_yards|12": {
     "player": "Parker Washington",
@@ -43228,10 +43226,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Evan Engram|receptions|12": {
     "player": "Evan Engram",
@@ -43304,7 +43299,10 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Chimere Dike|receptions|12": {
     "player": "Chimere Dike",
@@ -45040,7 +45038,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Emmett Johnson|rushing_yards|12": {
     "player": "Emmett Johnson",
