@@ -4,7 +4,11 @@ on:
   schedule:
     # Tuesdays 10:00 UTC: add last week's settled Kalshi player markets (pre-kickoff ask + result)
     - cron: "0 10 * * 2"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      refetch:
+        description: "1 = refetch every market"
+        default: "0"
 
 concurrency:
   group: nfl-site-repo-write
@@ -23,9 +27,11 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests polars pyarrow tzdata
       - name: Fetch settled Kalshi NFL player markets
         run: timeout 3600 python -u scripts/kalshi_history_nfl.py || true
+        env:
+          REFETCH: ${{ github.event.inputs.refetch || '0' }}
       - name: Commit and push if changed
         if: always()
         run: |

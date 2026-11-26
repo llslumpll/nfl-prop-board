@@ -23,6 +23,37 @@ OUT = Path(__file__).resolve().parent.parent / "data" / "kalshi_history_nfl.json
 SERIES = {"KXNFLRECYDS": "recyd", "KXNFLRSHYDS": "rushyd", "KXNFLPASSYDS": "passyd", "KXNFLREC": "rec",
           "KXNFLRRYDS": "rr", "KXNFLANYTD": "td", "KXNFL2TD": "td2", "KXNFLTD": "td"}
 SEASON_START = datetime(2026, 9, 1, tzinfo=timezone.utc)
+SCHED = Path(__file__).resolve().parent.parent / "data" / "schedules_2026.parquet"
+KCODE = {"LA": "LAR", "JAX": "JAC"}   # nflverse -> Kalshi team codes
+MON = {"JAN": 1, "FEB": 2, "MAR": 3, "APR": 4, "MAY": 5, "JUN": 6, "JUL": 7, "AUG": 8, "SEP": 9, "OCT": 10, "NOV": 11, "DEC": 12}
+_KICK = None
+
+
+def kickoffs() -> dict:
+    """(date 'YYYY-MM-DD', 'AWAYHOME' in Kalshi codes) -> (kickoff UTC, week). Kalshi's occurrence_datetime is about
+    when the game ENDS, so pre-kickoff prices must be cut at the scheduled kickoff instead."""
+    global _KICK
+    if _KICK is None:
+        import polars as pl
+        from zoneinfo import ZoneInfo
+        _KICK = {}
+        for g in pl.read_parquet(SCHED).iter_rows(named=True):
+            if not g.get("gameday") or not g.get("gametime"):
+                continue
+            k = datetime.fromisoformat(f"{g['gameday']}T{g['gametime']}").replace(tzinfo=ZoneInfo("America/New_York"))
+            key = (g["gameday"], KCODE.get(g["away_team"], g["away_team"]) + KCODE.get(g["home_team"], g["home_team"]))
+            _KICK[key] = (k.astimezone(timezone.utc), g["week"])
+    return _KICK
+
+
+def event_kickoff(event: str):
+    """KXNFLRECYDS-26NOV25GBLAR -> (kickoff UTC, week) or None."""
+    try:
+        code = event.split("-")[1]
+        d = f"20{code[:2]}-{MON[code[2:5]]:02d}-{int(code[5:7]):02d}"
+        return kickoffs().get((d, code[7:]))
+    except (IndexError, KeyError, ValueError):
+        return None
 S = requests.Session()
 
 
@@ -114,6 +145,9 @@ def main(max_new: int = 60000, workers: int = 4) -> None:
     if OUT.exists():
         store = json.loads(OUT.read_text())
     have = store["markets"]
+    import os
+    if os.environ.get("REFETCH") == "1":
+        have.clear()
     todo = []
     for series, stat in SERIES.items():
         n = 0
@@ -124,7 +158,10 @@ def main(max_new: int = 60000, workers: int = 4) -> None:
             if _iso(m["occurrence_datetime"]) < SEASON_START:
                 continue
             rec = _parse(series, stat, m)
-            if rec:
+            ko = event_kickoff(m.get("event_ticker") or "")
+            if rec and ko:
+                rec["kickoff"] = ko[0].strftime("%Y-%m-%dT%H:%M:%SZ")
+                rec["week"] = ko[1]
                 todo.append((t, series, m, rec))
                 n += 1
         print(f"{series}: {n} to fetch", flush=True)
@@ -137,7 +174,7 @@ def main(max_new: int = 60000, workers: int = 4) -> None:
     # Batch candlesticks: one call per group of up to 100 markets with the same kickoff (same event time).
     groups = {}
     for x in todo:
-        groups.setdefault(x[2]["occurrence_datetime"], []).append(x)
+        groups.setdefault(x[3]["kickoff"], []).append(x)
     chunks = []
     for kick, xs in groups.items():
         for k in range(0, len(xs), 100):
