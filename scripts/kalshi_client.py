@@ -184,7 +184,7 @@ def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
 
 # --- nfl-update-19: player ladders (receiving / rushing / passing yards, receptions, rush+rec, anytime TD, 2+ TD) ---
 PLAYER_SERIES = {"KXNFLRECYDS": "recyd", "KXNFLRSHYDS": "rushyd", "KXNFLPASSYDS": "passyd", "KXNFLREC": "rec",
-                 "KXNFLRRYDS": "rr", "KXNFLANYTD": "td", "KXNFL2TD": "td2"}
+                 "KXNFLRRYDS": "rr", "KXNFLTD": "td"}
 
 
 def fetch_nfl_player_ladders() -> dict:
@@ -203,11 +203,18 @@ def fetch_nfl_player_ladders() -> dict:
                     ask, bid = _to_num(m.get("yes_ask_dollars")), _to_num(m.get("yes_bid_dollars"))
                     title = m.get("yes_sub_title") or m.get("title") or ""
                     rung = _to_num(m.get("floor_strike"))
-                    if rung is None:
-                        rung = 0.5 if stat == "td" else (1.5 if stat == "td2" else None)
+                    stat_ = stat
+                    if series == "KXNFLTD":          # "Player: 1+" / "2+" touchdowns
+                        try:
+                            k = int(title.split(":")[1].strip().rstrip("+"))
+                        except (IndexError, ValueError):
+                            continue
+                        if k not in (1, 2):
+                            continue
+                        stat_, rung = ("td" if k == 1 else "td2"), k - 0.5
                     if rung is None or not ask or ask >= 1:
                         continue
-                    out["legs"].append({"series": series, "stat": stat, "player": title.split(":")[0].strip(),
+                    out["legs"].append({"series": series, "stat": stat_, "player": title.split(":")[0].strip(),
                                         "event": m.get("event_ticker"), "ticker": m.get("ticker"), "rung": rung,
                                         "ask": ask, "bid": bid, "kickoff": m.get("occurrence_datetime")})
                     n += 1

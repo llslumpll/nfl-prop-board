@@ -1101,6 +1101,14 @@ def build(oddsapi_mode: str | None = None):
         parlays_page = {"week": games_page["week"], "families": [], "record": {}, "total": {}, "past": [], "names": {},
                         "error": f"{type(e).__name__}: {str(e)[:200]}"}
 
+    try:  # Best 5 on Kalshi + 3x slip (nfl-update-20)
+        import kbest_nfl
+        print(f"Kalshi Best 5 / 3x slip: {kbest_nfl.sync(games_page['week'])}")
+        kb_page = kbest_nfl.summary(games_page["week"])
+    except Exception as e:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
+        kb_page = None
     try:  # Tipsters page (nfl-update-18)
         import tipsters_nfl
         tipsters_page = tipsters_nfl.summary()
@@ -1134,6 +1142,7 @@ def build(oddsapi_mode: str | None = None):
             "home",
             "home.html",
             {
+                "kb": kb_page,
                 "weeks": dataio.weeks_available(),
                 "best5": best5_data,
                 "recent_results": grade.recent_graded_results(),
