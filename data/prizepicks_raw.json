@@ -81,7 +81,7 @@
       "receiving_yards": 28.5
     },
     "DJ Moore": {
-      "receiving_yards": 49.5,
+      "receiving_yards": 47.5,
       "rushing_yards": 0.5
     },
     "Rashee Rice": {
@@ -497,7 +497,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 242.5,
+      "passing_yards": 243.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -844,9 +844,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7096,
+    "total_projections_returned": 7094,
     "matched_props": 373,
-    "excluded_goblin_demon_lines": 5871,
+    "excluded_goblin_demon_lines": 5870,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -885,5 +885,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T20:50:05.492012+00:00"
+  "fetched_at": "2026-11-26T21:00:45.324220+00:00"
 }
