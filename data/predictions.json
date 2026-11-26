@@ -45217,5 +45217,28 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Patrick Mahomes|passing_yards|12": {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "opponent": "BUF",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 260.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 235.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 24.6,
+    "model_prob": 0.6716,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "better"
+    },
+    "frozen_at": "2026-11-26 10:21 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
