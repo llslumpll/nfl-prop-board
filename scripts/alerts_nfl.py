@@ -174,6 +174,53 @@ def early_lines(week: int | None, now: datetime, sent: dict) -> tuple[list[str],
     return [x[0] for x in new], "\n".join(lines)
 
 
+def _am(a: float) -> str:
+    return f"-{round(100 * a / (1 - a))}" if a >= 0.5 else f"+{round(100 * (1 - a) / a)}"
+
+
+KLAB = {"recyd": "rec yds", "rushyd": "rush yds", "passyd": "pass yds", "rec": "receptions", "rr": "rush+rec yds",
+        "td": "anytime TD", "td2": "2+ TDs"}
+
+
+def _kleg(l: dict) -> str:
+    what = KLAB[l["stat"]] if l["stat"] in ("td", "td2") else f"{int(l['rung'] + 0.5)}+ {KLAB.get(l['stat'], l['stat'])}"
+    return f"• {l['player']} {what} · {_am(l['ask'])} (Kalshi {round(100 * l['ask'])}%, really ~{round(100 * l['est'])}%)"
+
+
+def kalshi_board(week: int | None, now: datetime, sent: dict) -> tuple[str, str] | None:
+    """Best 5 on Kalshi + 3x slip (nfl-update-23): posted about an hour before the first of their legs kicks off,
+    and again only if the not-yet-started legs change."""
+    if not week:
+        return None
+    import kbest_nfl
+    st = kbest_nfl._load()
+    b5 = (st.get("best5") or {}).get(str(week)) or {}
+    t3 = (st.get("triple") or {}).get(str(week)) or {}
+
+    def ko(l):
+        return datetime.fromisoformat(l["kickoff"].replace("Z", "+00:00"))
+    open5 = [l for l in b5.get("legs") or [] if ko(l) > now]
+    open3 = [l for l in t3.get("legs") or [] if ko(l) > now] if t3.get("legs") and min(ko(l) for l in t3["legs"]) > now else []
+    legs = open5 + open3
+    if not legs or min(ko(l) for l in legs) - now > timedelta(minutes=70):
+        return None
+    sig = "|".join(sorted(f"{l['player']}{l['stat']}{l['rung']}" for l in legs))
+    import hashlib
+    key = f"kboard|{week}|{hashlib.md5(sig.encode()).hexdigest()[:8]}"
+    if key in sent:
+        return None
+    again = any(k.startswith(f"kboard|{week}|") for k in sent)
+    lines = [f"🎯 **Your board · week {week}**{' (updated)' if again else ''} · TESTING: 0.5U or less"]
+    if open5:
+        lines.append("**Best 5 on Kalshi** (straight bets, each locks at its kickoff):")
+        lines += [_kleg(l) for l in open5]
+    if open3:
+        lines.append(f"**3x slip** (one Kalshi combo, about {t3['quote_est']:.1f}x, ~{round(100 * t3['chance'])}% to cash):")
+        lines += [_kleg(l) for l in open3]
+    lines.append(SITE)
+    return key, "\n".join(lines)
+
+
 def recap_message(now: datetime) -> tuple[str, str] | None:
     """The most recent week whose picks with lines are all graded, once."""
     import news_nfl
@@ -203,6 +250,17 @@ def recap_message(now: datetime) -> tuple[str, str] | None:
     nd = [b for ev in news_nfl.load().get(str(w), {}).values() for b in ev["plays"] if b.get("result") in ("hit", "miss")]
     if nd:
         lines.append(f"News plays: {sum(1 for b in nd if b['result'] == 'hit')}/{len(nd)}")
+    try:  # Best 5 on Kalshi + 3x slip (nfl-update-23)
+        import kbest_nfl
+        ks = kbest_nfl.summary(w)
+        b = ks.get("best5")
+        if b and (b["w"] + b["l"]):
+            lines.append(f"Best 5 on Kalshi: {b['w']}-{b['l']} · {_money(b['u'])}")
+        t = ks.get("triple")
+        if t and t.get("hit") is not None:
+            lines.append(f"3x slip: {'cashed ' + format(t['quote_est'], '.1f') + 'x' if t['hit'] else 'lost'}")
+    except Exception as e:  # noqa: BLE001
+        print(f"Recap Kalshi board failed: {e}")
     lines.append(SITE)
     return (f"recap|{w}", "\n".join(lines))
 
@@ -221,7 +279,8 @@ def run(week: int | None, now: datetime | None = None) -> dict:
     if not st.get("connected"):
         msgs.append(("connected", "✅ Prop Edge NFL alerts are connected. You'll get injury-news plays, the Sunday card "
                                   f"and a recap when each week is graded.\n{SITE}"))
-    for fn in (lambda: news_messages(week), lambda: sunday_card(week, now), lambda: [recap_message(now)]):
+    for fn in (lambda: news_messages(week), lambda: sunday_card(week, now), lambda: [kalshi_board(week, now, sent)],
+               lambda: [recap_message(now)]):
         try:
             msgs += [m for m in fn() if m]
         except Exception as e:  # noqa: BLE001
