@@ -136,11 +136,11 @@
     },
     "Patrick Mahomes": {
       "passing_yards": 236.5,
-      "rushing_yards": 11.5
+      "rushing_yards": 13.5
     },
     "Josh Allen": {
       "passing_yards": 215.5,
-      "rushing_yards": 38.5
+      "rushing_yards": 39.5
     },
     "James Cook III": {
       "rushing_yards": 81.5,
@@ -148,10 +148,10 @@
     },
     "Emmett Johnson": {
       "rushing_yards": 81.5,
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "DJ Moore": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 47.5,
       "receptions": 4,
       "rushing_yards": 0.5
     },
@@ -251,7 +251,7 @@
       "receptions": 2.5
     },
     "Pat Freiermuth": {
-      "receiving_yards": 21.5
+      "receiving_yards": 20.5
     },
     "Darnell Washington": {
       "receiving_yards": 17.5
@@ -324,7 +324,7 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 218.5,
+      "passing_yards": 216.5,
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
@@ -445,11 +445,11 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 204.5,
+      "passing_yards": 201.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 174.5,
+      "passing_yards": 175.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -648,7 +648,7 @@
       "receiving_yards": 11.5
     },
     "Brock Purdy": {
-      "passing_yards": 234.5,
+      "passing_yards": 233.5,
       "rushing_yards": 16.5
     },
     "Sam Darnold": {
@@ -820,18 +820,18 @@
       "receiving_yards": 24.5
     },
     "Dylan Sampson": {
-      "receiving_yards": 19.5,
+      "receiving_yards": 20.5,
       "rushing_yards": 18.5
     },
     "Jerry Jeudy": {
       "receiving_yards": 16.5,
       "receptions": 1.5
     },
-    "Jack Bech": {
-      "receiving_yards": 9.5
-    },
     "Jalen Nailor": {
       "receiving_yards": 9.5
+    },
+    "Jack Bech": {
+      "receiving_yards": 8.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -901,9 +901,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7587,
+    "total_projections_returned": 7588,
     "matched_props": 408,
-    "excluded_goblin_demon_lines": 6228,
+    "excluded_goblin_demon_lines": 6229,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -942,5 +942,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T08:40:42.090547+00:00"
+  "fetched_at": "2026-11-26T09:00:46.273533+00:00"
 }
