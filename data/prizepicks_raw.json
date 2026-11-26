@@ -9,16 +9,16 @@
       "rushing_yards": 22.5
     },
     "Jahmyr Gibbs": {
-      "rushing_yards": 92.5,
+      "rushing_yards": 93.5,
       "receiving_yards": 35.5,
       "receptions": 4.5
     },
     "Amon-Ra St. Brown": {
-      "receiving_yards": 82.5,
+      "receiving_yards": 83.5,
       "receptions": 7
     },
     "Luther Burden III": {
-      "receiving_yards": 62.5,
+      "receiving_yards": 61.5,
       "receptions": 5,
       "rushing_yards": 1.5
     },
@@ -30,12 +30,12 @@
       "receiving_yards": 52.5,
       "receptions": 5
     },
-    "Rome Odunze": {
-      "receiving_yards": 49.5
-    },
     "D'Andre Swift": {
-      "rushing_yards": 46.5,
+      "rushing_yards": 47.5,
       "receiving_yards": 15.5
+    },
+    "Rome Odunze": {
+      "receiving_yards": 47.5
     },
     "Sam LaPorta": {
       "receiving_yards": 44.5,
@@ -247,7 +247,8 @@
       "receiving_yards": 22.5
     },
     "Evan Engram": {
-      "receiving_yards": 21.5
+      "receiving_yards": 21.5,
+      "receptions": 2.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 21.5
@@ -382,15 +383,14 @@
     },
     "Trevor Lawrence": {
       "passing_yards": 269.5,
-      "rushing_yards": 7.5
+      "rushing_yards": 8.5
     },
     "Cam Ward": {
       "passing_yards": 206.5,
       "rushing_yards": 8.5
     },
     "Parker Washington": {
-      "receiving_yards": 71.5,
-      "receptions": 4.5
+      "receiving_yards": 71.5
     },
     "Tony Pollard": {
       "rushing_yards": 54.5,
@@ -419,11 +419,11 @@
       "receiving_yards": 24.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 23.5,
       "receptions": 3
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 18.5
+      "receiving_yards": 20.5
     },
     "Xavier Restrepo": {
       "receiving_yards": 10.5
@@ -474,7 +474,7 @@
       "receptions": 1.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 30.5
@@ -522,7 +522,7 @@
       "receiving_yards": 7.5
     },
     "David Montgomery": {
-      "rushing_yards": 44.5,
+      "rushing_yards": 46.5,
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
@@ -540,14 +540,14 @@
     "Xavier Hutchinson": {
       "receiving_yards": 28.5
     },
-    "Dalton Schultz": {
-      "receiving_yards": 24.5
+    "Ja'Kobi Lane": {
+      "receiving_yards": 25.5
     },
     "Mark Andrews": {
       "receiving_yards": 23.5
     },
-    "Ja'Kobi Lane": {
-      "receiving_yards": 22.5
+    "Dalton Schultz": {
+      "receiving_yards": 23.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -616,21 +616,21 @@
       "receiving_yards": 7.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 48.5,
+      "rushing_yards": 50.5,
       "receiving_yards": 13.5
     },
     "Corey Kiner": {
       "rushing_yards": 30.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
-    },
-    "Hunter Henry": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Mack Hollins": {
+      "receiving_yards": 24.5,
+      "receptions": 2.5
+    },
+    "Hunter Henry": {
       "receiving_yards": 22.5,
       "receptions": 2.5
     },
@@ -639,7 +639,7 @@
       "receiving_yards": 7.5
     },
     "Eli Raridon": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Efton Chism III": {
       "receiving_yards": 12.5
@@ -648,7 +648,7 @@
       "receiving_yards": 11.5
     },
     "Brock Purdy": {
-      "passing_yards": 233.5,
+      "passing_yards": 234.5,
       "rushing_yards": 16.5
     },
     "Sam Darnold": {
@@ -902,9 +902,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7593,
+    "total_projections_returned": 7598,
     "matched_props": 409,
-    "excluded_goblin_demon_lines": 6230,
+    "excluded_goblin_demon_lines": 6237,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -943,5 +943,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T07:20:40.899569+00:00"
+  "fetched_at": "2026-11-26T07:40:47.044013+00:00"
 }
