@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}{{ p.name }} — Prop Edge NFL{% endblock %}
+{% block content %}
+<p class="small"><a href="players.html">&larr; All players</a></p>
+<section class="gm-card" style="padding:14px 16px">
+  <div style="display:flex;gap:14px;align-items:center">
+    {% if p.headshot %}<img src="{{ p.headshot }}" alt="" width="72" height="52" style="object-fit:cover;border-radius:6px" loading="lazy">{% endif %}
+    <div>
+      <h1 style="margin:0">{{ p.name }}</h1>
+      <div class="small">{{ p.team }} &middot; {{ p.pos }}{% if p.opp %} &middot; week {{ wk }} {{ 'vs' if p.home else '@' }} {{ p.opp }}{% if p.when %} &middot; {{ p.when }}{% endif %}{% endif %}{% if p.inj %} &middot; <span class="stat-bad">{{ p.inj|upper }}</span>{% endif %}</div>
+      <div class="small dim">Our record on him: {% if p.record.n %}<b class="{{ 'stat-good' if p.record.w * 2 >= p.record.n else 'stat-bad' }}">{{ p.record.w }}-{{ p.record.n - p.record.w }}</b>{% else %}no graded picks yet{% endif %}</div>
+    </div>
+  </div>
+</section>
+
+<h2>Week {{ wk }}</h2>
+{% for r in p.rows %}
+<section class="tk" style="margin-bottom:12px">
+  <header class="tk-head"><span class="tk-name">{{ r.label }}</span><span class="tk-state">{% if r.proj is not none %}OUR PROJ {{ r.proj }}{% endif %}{% if r.line is not none %} &middot; LINE {{ r.line }}{% if r.call %} &middot; <span class="{{ 'c-over' if r.call == 'OVER' else 'c-under' }}">{{ r.call }}</span>{% endif %}{% endif %}</span></header>
+  <p class="small" style="margin:6px 12px">Season {{ r.season if r.season is not none else '—' }} <span class="dim">({{ r.n }} g)</span> &middot; last 5 {{ r.l5 if r.l5 is not none else '—' }} &middot; last season {{ r.last if r.last is not none else '—' }}{% if p.opp and r.vs_n %} &middot; vs {{ p.opp }} {{ r.vs }} <span class="dim">({{ r.vs_n }} g)</span>{% endif %}</p>
+  {% if r.rungs %}<div class="table-wrap"><table class="stat-table">
+    <thead><tr><th>Kalshi rung &middot; this season</th><th>Price &rarr; really hits</th></tr></thead><tbody>
+    {% for x in r.rungs %}<tr><td><b>{{ x.label }}</b> <span class="dim small">cleared {{ x.cleared }}/{{ x.games }}</span></td><td>{{ x.odds }} <span class="dim small">{{ (x.ask * 100)|round|int }}%</span>{% if x.est is not none %} &rarr; <span class="{{ 'stat-good' if x.edge > 1 else 'stat-bad' if x.edge < -1 }}">~{{ x.est }}%</span>{% endif %}</td></tr>{% endfor %}
+    </tbody></table></div>{% else %}<p class="small dim" style="margin:0 12px 10px">{% if p.started %}Game has started: Kalshi rungs are hidden until next week.{% else %}No Kalshi rungs open for this stat.{% endif %}</p>{% endif %}
+</section>
+{% endfor %}
+<p class="small dim">"Really hits" is Kalshi's price corrected by how rungs like it (same stat, price, our projection vs the rung, and his last 5 games) finished this season. Green = beats the price by 2+ points. NFL Kalshi prices are tight: most rungs are a little overpriced.</p>
+
+<h2>Game log</h2>
+<div class="table-wrap"><table class="stat-table">
+  <thead><tr><th>Wk</th><th>Opp</th>{% for s in p.stats %}<th>{{ p.labels[s] }}</th>{% endfor %}</tr></thead><tbody>
+  {% for g in p.log %}<tr><td>{{ g.week }}</td><td>{{ 'vs' if g.home else '@' }} {{ g.opp }}</td>{% for s in p.stats %}<td>{{ g.cells[s]|int }}</td>{% endfor %}</tr>
+  {% if g.picks %}<tr><td></td><td colspan="{{ p.stats|length + 1 }}" class="small dim">Our picks: {{ g.picks|join(' · ') }}</td></tr>{% endif %}{% endfor %}
+  </tbody></table></div>
+
+{% if p.tips %}<h2>Tipster picks on him</h2>
+<ul class="small">{% for t in p.tips %}<li>Week {{ t.week }} &middot; {{ t.who }}: {{ t.text }}{% if t.res %} &middot; <span class="{{ 'stat-good' if t.res == 'hit' else 'stat-bad' if t.res == 'miss' }}">{{ t.res }}{% if t.actual is not none %} ({{ t.actual|int }}){% endif %}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
+{% endblock %}

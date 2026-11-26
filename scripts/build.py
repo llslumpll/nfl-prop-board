@@ -51,6 +51,7 @@ NAV_PAGES = [
     ("picks", "Picks", "picks.html"),
     ("touchdowns", "Touchdowns", "touchdowns.html"),
     ("parlays", "Parlays", "parlays.html"),
+    ("players", "Players", "players.html"),
     ("tipsters", "Tipsters", "tipsters.html"),
     ("history", "History", "history.html"),
 ]
@@ -444,9 +445,20 @@ def build(oddsapi_mode: str | None = None):
         import traceback
         traceback.print_exc()
         games_page["x"] = None
-    # header search (every page): this week's players with a pick -> their game card on the Games tab
-    _idx = sorted({(p["player"], f"games.html#g-{g['away']}-{g['home']}", p["team"])
-                   for g in games_page["games"] for p in g["props"]})
+    # Player Lab (nfl-update-22): one page per player with a pick or a Kalshi rung this week
+    try:
+        import players_nfl
+        players_lab = players_nfl.build(games_page["week"])
+    except Exception:  # noqa: BLE001
+        import traceback
+        traceback.print_exc()
+        players_lab = None
+    # header search (every page): this week's players -> their Player Lab page (else their game card on the Games tab)
+    _pslug = {p["name"]: (p["slug"], p["team"]) for p in (players_lab or {}).get("pages", [])}
+    _idx = {(p["player"], f"games.html#g-{g['away']}-{g['home']}", p["team"])
+            for g in games_page["games"] for p in g["props"] if p["player"] not in _pslug}
+    _idx |= {(n, s, t) for n, (s, t) in _pslug.items()}
+    _idx = sorted(_idx)
     import json as _pjson
     (DOCS / "static" / "players.js").write_text("window.PE_PLAYERS=" + _pjson.dumps([list(x) for x in _idx], separators=(",", ":")) + ";\n")
 
@@ -1324,6 +1336,15 @@ def build(oddsapi_mode: str | None = None):
         html = template.render(current_page=slug, **common, **ctx)
         (DOCS / filename).write_text(html)
         print(f"wrote {filename}")
+
+    if players_lab:  # Player Lab pages (nfl-update-22); stale player pages from earlier weeks are removed
+        for f in DOCS.glob("player-*.html"):
+            f.unlink()
+        _pt = env.get_template("player.html")
+        for _p in players_lab["pages"]:
+            (DOCS / _p["slug"]).write_text(_pt.render(current_page="players", p=_p, wk=players_lab["week"], **common))
+        (DOCS / "players.html").write_text(env.get_template("players.html").render(current_page="players", pl=players_lab, **common))
+        print(f"wrote players.html (+{len(players_lab['pages'])} player pages)")
 
     # Picks tab (Nov 2026): passing / receiving / receptions / rushing on one page. Each stat's board (Best 5,
     # Best Value, every projection by game in kickoff order) is its own small file, loaded when its tab opens.
