@@ -1,7 +1,7 @@
 {
   "props": {
     "Jared Goff": {
-      "passing_yards": 280.5,
+      "passing_yards": 279.5,
       "rushing_yards": 1.5
     },
     "Caleb Williams": {
@@ -330,7 +330,7 @@
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
-      "passing_yards": 163.5,
+      "passing_yards": 162.5,
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
@@ -358,7 +358,7 @@
       "receptions": 4
     },
     "Laquon Treadwell": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "receptions": 2
     },
     "Anthony Gould": {
@@ -448,7 +448,7 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 206.5,
+      "passing_yards": 208.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
@@ -456,7 +456,7 @@
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 10.5
     },
     "Breece Hall": {
@@ -468,7 +468,7 @@
       "receiving_yards": 53.5
     },
     "Caleb Douglas": {
-      "receiving_yards": 45.5,
+      "receiving_yards": 46.5,
       "receptions": 4
     },
     "Braelon Allen": {
@@ -479,19 +479,18 @@
     "Adonai Mitchell": {
       "receiving_yards": 38.5
     },
-    "Malik Washington": {
-      "receiving_yards": 32.5,
-      "receptions": 3.5
-    },
     "Omar Cooper Jr.": {
       "receiving_yards": 30.5
     },
+    "Malik Washington": {
+      "receiving_yards": 30.5,
+      "receptions": 3.5
+    },
     "Greg Dulcich": {
-      "receiving_yards": 24.5,
-      "receptions": 2.5
+      "receiving_yards": 24.5
     },
     "Kenyon Sadiq": {
-      "receiving_yards": 18.5
+      "receiving_yards": 17.5
     },
     "Mason Taylor": {
       "receiving_yards": 15.5
@@ -545,7 +544,7 @@
       "receiving_yards": 28.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Mark Andrews": {
       "receiving_yards": 22.5
@@ -742,7 +741,7 @@
     },
     "Bam Knight": {
       "rushing_yards": 25.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 6.5,
       "receptions": 1.5
     },
     "Austin Ekeler": {
@@ -868,7 +867,7 @@
       "receptions": 3.5
     },
     "Cade Otton": {
-      "receiving_yards": 27.5,
+      "receiving_yards": 28.5,
       "receptions": 3
     },
     "Darren Waller": {
@@ -890,7 +889,7 @@
       "receiving_yards": 19.5
     },
     "Tez Johnson": {
-      "receiving_yards": 14.5
+      "receiving_yards": 15.5
     },
     "Mitchell Evans": {
       "receiving_yards": 10.5
@@ -903,9 +902,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7428,
-    "matched_props": 412,
-    "excluded_goblin_demon_lines": 6119,
+    "total_projections_returned": 7462,
+    "matched_props": 411,
+    "excluded_goblin_demon_lines": 6154,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -944,5 +943,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T02:00:47.027416+00:00"
+  "fetched_at": "2026-11-26T02:20:43.661813+00:00"
 }
