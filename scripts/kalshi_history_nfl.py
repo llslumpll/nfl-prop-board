@@ -54,7 +54,8 @@ def _iso(s: str) -> datetime:
 def settled(series: str):
     cursor = None
     while True:
-        p = {"series_ticker": series, "status": "settled", "limit": 1000}
+        p = {"series_ticker": series, "status": "settled", "limit": 1000,
+             "min_close_ts": int(SEASON_START.timestamp())}
         if cursor:
             p["cursor"] = cursor
         d = _get("/markets", p)
@@ -106,7 +107,7 @@ def _parse(series: str, stat: str, m: dict):
             "kickoff": m["occurrence_datetime"], "result": m["result"]}
 
 
-def main(max_new: int = 60000, workers: int = 10) -> None:
+def main(max_new: int = 12000, workers: int = 12) -> None:
     from concurrent.futures import ThreadPoolExecutor
     store = {"markets": {}}
     if OUT.exists():
@@ -126,7 +127,10 @@ def main(max_new: int = 60000, workers: int = 10) -> None:
                 todo.append((t, series, m, rec))
                 n += 1
         print(f"{series}: {n} to fetch", flush=True)
-    todo = todo[:max_new]
+    import os
+    left = max(len(todo) - max_new, 0)
+    todo = todo[:int(os.environ.get("MAX_NEW", max_new))]
+    print(f"{left} more left for the next run", flush=True)
     print(f"fetching pre-kickoff quotes for {len(todo)} markets with {workers} workers", flush=True)
 
     def job(x):
