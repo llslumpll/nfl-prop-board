@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1580,7 +1580,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "props-4": {
@@ -1656,27 +1656,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "td-1": {
    "chance": 0.699,
-   "decimal": 1.786,
-   "ev": 0.248,
+   "decimal": 1.724,
+   "ev": 0.205,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     }
    ],
@@ -1684,27 +1684,27 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 3.968,
-   "ev": 0.753,
+   "decimal": 3.831,
+   "ev": 0.692,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1724,27 +1724,27 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 7.35,
-   "ev": 0.925,
+   "decimal": 7.095,
+   "ev": 0.859,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1776,27 +1776,27 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 14.133,
-   "ev": 1.196,
+   "decimal": 13.643,
+   "ev": 1.119,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.786,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.56,
+     "price": 0.58,
      "team": "SF"
     },
     {
@@ -1840,7 +1840,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   },
   "value-3": {
@@ -1901,7 +1901,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 10:21 UTC",
+   "updated": "2026-11-26 10:41 UTC",
    "week": 12
   }
  },
