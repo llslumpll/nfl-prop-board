@@ -52,6 +52,26 @@
   <p class="small dim">{{ t.handle }} &middot; {{ t.what }} {{ trust(t.honest) }}</p>
   {% if rows %}<div class="tk-grid">{% for r in rows %}{{ pick(r, t, tp.lab) }}{% endfor %}</div>
   {% else %}<p class="small dim">No picks logged for week {{ tp.week }} yet.</p>{% endif %}
+  {% if t.key == 'doc' and dl %}{% set ss = dl.site %}{% set hs = dl.his %}
+  <h3 id="docladder">Site ladders vs Dr. Profit <span class="pk-tag">TESTING</span></h3>
+  <p class="small dim">How he builds a ladder: receiving yards on a secondary target (a WR2/3 or tight end), a low base line near &minus;115, then about +20 and +40 yards. The site builds a <b>safer</b> one, two a week: the player's safest Kalshi receiving-yards rung priced 70&ndash;90% (ranked by the site's real-chance edge), then the first rung 20+ yards higher and a +40 bonus rung, staked 1U / 0.25U / 0.1U. <b>Ladder cashed</b> = base and next rung both hit. Replay (weeks 4&ndash;11, each week judged on the others): base 15 of 16, ladder cashed 15 of 16, +3.2U on 21.6U. Only 16 ladders, so the live record decides. His row uses the same stakes so the race is fair.</p>
+  <div class="table-wrap"><table class="stat-table">
+    <thead><tr><th></th><th>Base &middot; next &middot; top</th></tr></thead><tbody>
+    {% for who, x in [('Site', ss), ('Dr. Profit', hs)] %}
+    <tr><td><b>{{ who }}</b><br><span class="dim small">{{ x.ladders }} ladder{{ 's' if x.ladders != 1 }} &middot; {{ x.full }} cashed{% if x.ladders %} ({{ (100 * x.full / x.ladders)|round|int }}%){% endif %}</span></td>
+      <td>{% for st in x.steps %}{% if st.n %}{{ st.w }}/{{ st.n }}{% if st.price %} <span class="dim small">({{ st.price }}% priced)</span>{% endif %}{% else %}&ndash;{% endif %}{{ ' · ' if not loop.last }}{% endfor %}<br>{% if x.staked %}{{ u(x.u) }} <span class="dim small">on {{ x.staked }}U</span>{% else %}<span class="dim small">starts this week</span>{% endif %}</td></tr>
+    {% endfor %}
+    </tbody></table></div>
+  {% if hs.recent %}<p class="small dim"><b>His recent ladders:</b> {% for r in hs.recent %}wk {{ r.week }} {{ r.player }} {{ r.stat }} ({% for x in r.rungs %}{{ x.line }}{{ '&#10004;'|safe if x.hit else '&#10008;'|safe }}{{ ' ' if not loop.last }}{% endfor %}{% if r.actual is not none %}, had {{ r.actual|int }}{% endif %}){{ ' · ' if not loop.last }}{% endfor %}</p>{% endif %}
+  {% set lads = (dl.this.ladders if dl.this else []) %}
+  {% if lads %}<div class="tk-grid">{% for lad in lads %}
+    <article class="tk"><header class="tk-head"><span class="tk-name">SITE LADDER &middot; {{ lad.player|upper }}</span><span class="tk-state">REC YDS &middot; LOCKS AT KICKOFF</span></header>
+      <p class="small dim" style="margin:4px 12px 0">Last 5 games: {{ lad.avg5 }} yds{% if lad.proj %} &middot; our projection {{ lad.proj }}{% endif %}</p>
+      <ol class="tk-legs">{% for x in lad.tiers %}<li class="{{ 'gm-hit' if x.res == 'hit' else 'gm-miss' if x.res == 'miss' else '' }}"><div class="tk-leg"><b>{{ ['Base', 'Next rung', 'Bonus'][x.step] }}: {{ (x.rung + 0.5)|int }}+ rec yds</b><span class="tk-px">{% if x.ask >= 0.5 %}-{{ (100 * x.ask / (1 - x.ask))|round|int }}{% else %}+{{ (100 * (1 - x.ask) / x.ask)|round|int }}{% endif %}</span>{% if x.res %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void', 'push': 'push'}[x.res]|safe }}{% if x.actual is not none %} {{ x.actual|int }}{% endif %}</i>{% endif %}</div>
+        <div class="tk-sub">Kalshi {{ (x.ask * 100)|round|int }}% &middot; really ~{{ (x.est * 100)|round|int }}% &middot; {{ x.stake }}U</div>{% if x.lv %}<span class="lv" hidden data-lv="{{ x.lv }}"></span>{% endif %}</li>{% endfor %}</ol>
+    </article>{% endfor %}</div>
+  {% else %}<p class="small dim">No site ladder yet this week: it's built once Kalshi posts the receiving-yards rungs.</p>{% endif %}
+  {% endif %}
   {% endfor %}
 </section>
 

@@ -110,6 +110,10 @@ def _val(r: dict | None, st: str) -> float | None:
 def grade_leg(leg: dict, week: int, box: Box) -> tuple[str | None, float | None]:
     if leg["stat"] == "ftd":
         return None, None
+    team = box.team_of(leg["player"])
+    g0 = box.game(week, team) if team else None
+    if g0 is not None and g0.get("home_score") is None:
+        return None, None                # his game isn't final yet (also stops a same-name player matching)
     r, played = box.row(week, leg["player"])
     if r is None and not played:
         team = box.team_of(leg["player"])
