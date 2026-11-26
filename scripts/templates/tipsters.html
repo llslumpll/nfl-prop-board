@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block title %}Tipsters — Prop Edge Board{% endblock %}
+{% block content %}
+{% macro u(x) %}<span class="{{ 'stat-good' if x > 0 else 'stat-bad' if x < 0 }}">{{ '%+.2f'|format(x) }}U</span>{% endmacro %}
+{% macro trust(h) %}{% if h %}<span class="pk-tag pk-toward">POSTS HIS MISSES</span>{% elif h is sameas false %}<span class="pk-tag pk-against">ONLY POSTS WINS</span>{% endif %}{% endmacro %}
+{% macro leg(l, lab) %}<b>{{ l.player }} <span class="{{ 'c-over' if l.side == 'over' else 'c-under' }}">{{ 'OVER' if l.side == 'over' else 'UNDER' }}</span> {% if l.stat == 'td' %}{{ 'anytime TD' if l.line == 0.5 else ((l.line + 0.5)|int) ~ '+ TDs' }}{% elif l.stat == 'ftd' %}first TD{% else %}{{ l.line }} {{ lab.get(l.stat, l.stat) }}{% endif %}</b>{% endmacro %}
+{% macro pick(r, t, lab) %}
+<article class="tk {{ 'tk-hit' if r.res == 'hit' else 'tk-miss' if r.res == 'miss' else '' }}">
+  <header class="tk-head">
+    <span class="tk-name">{{ t.name|upper }}</span>
+    <span class="tk-state">{% if r.res == 'hit' %}&#10004; HIT{% elif r.res == 'miss' %}&#10008; MISSED{% elif r.res in ('void', 'push') %}{{ r.res|upper }}{% else %}WEEK {{ r.week }}{% endif %}</span>
+  </header>
+  {% if r.label %}<p class="small dim" style="margin:4px 12px 0">{{ r.label }}</p>{% endif %}
+  {% if r.why %}<p class="small dim" style="margin:4px 12px 0">{{ r.why }}</p>{% endif %}
+  <ol class="tk-legs">
+  {% if r.kind in ('spread', 'ml') %}
+    <li class="{{ 'gm-hit' if r.res == 'hit' else 'gm-miss' if r.res == 'miss' else '' }}"><div class="tk-leg"><b>{{ r.team }} {% if r.kind == 'ml' %}to win{% else %}{{ '%+.1f'|format(r.line) if r.line is not none else 'closing spread' }}{% endif %}</b><span class="tk-px">{{ '+' if r.odds > 0 }}{{ r.odds }}</span>{% if r.score %}<i>{{ r.score }}</i>{% endif %}</div>
+    <div class="tk-sub">{{ r.game or '' }}</div>{% if not r.res %}<span class="lv lv-game" hidden data-lvg="{{ r.team }}"></span>{% endif %}</li>
+  {% else %}
+    {% for l in r.legs %}
+    <li class="{{ 'gm-hit' if l.res == 'hit' else 'gm-miss' if l.res == 'miss' else '' }}"><div class="tk-leg">{{ leg(l, lab) }}{% if r.legs|length == 1 %}<span class="tk-px">{{ '+' if r.odds > 0 }}{{ r.odds }}{% if r.odds_est %}*{% endif %}</span>{% endif %}{% if l.res %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void', 'push': 'push'}[l.res]|safe }}{% if l.actual is not none %} {{ l.actual|int }}{% endif %}</i>{% endif %}</div>
+      {% if l.team %}<div class="tk-sub">{{ l.team }}</div>{% endif %}
+      {% if l.lv %}<span class="lv" hidden data-lv="{{ l.lv }}"></span>{% endif %}</li>
+    {% endfor %}
+    {% for x in r.rungs or [] %}
+    <li class="{{ 'gm-hit' if x.hit else 'gm-miss' if x.hit is sameas false else '' }}"><div class="tk-leg"><b>Ladder rung {{ x.line }}</b>{% if x.odds is not none %}<span class="tk-px">{{ '+' if x.odds > 0 }}{{ x.odds }}</span>{% endif %}{% if x.hit is defined %}<i>{{ '&#10004;'|safe if x.hit else '&#10008;'|safe }}</i>{% endif %}</div></li>
+    {% endfor %}
+  {% endif %}
+  </ol>
+  {% if r.legs and r.legs|length > 1 %}<footer class="tk-foot">{{ r.legs|length }}-leg slip &middot; {{ '+' if r.odds > 0 }}{{ r.odds }}</footer>{% endif %}
+  {% if r.note %}<footer class="tk-foot">{{ r.note }}</footer>{% endif %}
+</article>
+{% endmacro %}
+
+<h1>Tipsters</h1>
+<p class="lede">Picks from betting accounts on X (and Jake Venom's YouTube TD Watch), logged before kickoff and graded against the final box scores, misses included. 1U per pick at the odds each account posted; ladders are graded rung by rung. Use it to see who's actually worth following, and on what.</p>
+
+<div class="pk-bar gm-tabs" role="tablist">
+  <button class="pk-stat-btn active" data-gt="week">WEEK {{ tp.week }}</button>
+  <button class="pk-stat-btn" data-gt="record">TRACK RECORD</button>
+  <button class="pk-stat-btn" data-gt="weeks">WEEK BY WEEK</button>
+  <button class="pk-stat-btn" data-gt="how">HOW IT WORKS</button>
+</div>
+
+<section data-gp="week">
+  <div class="pz-board">
+    {% for t in tp.tipsters %}<div class="pz-fam"><em>{{ t.name|upper }}</em><b>{{ t.w }}&ndash;{{ t.l }}</b>{{ u(t.u) }}</div>{% endfor %}
+  </div>
+  {% for t in tp.tipsters %}
+  {% set rows = tp.this_week|selectattr('tipster', 'equalto', t.key)|list %}
+  <h2>{{ t.name }}{% if rows %} &middot; {{ rows|length }} pick{{ 's' if rows|length != 1 }}{% endif %}</h2>
+  <p class="small dim">{{ t.handle }} &middot; {{ t.what }} {{ trust(t.honest) }}</p>
+  {% if rows %}<div class="tk-grid">{% for r in rows %}{{ pick(r, t, tp.lab) }}{% endfor %}</div>
+  {% else %}<p class="small dim">No picks logged for week {{ tp.week }} yet.</p>{% endif %}
+  {% endfor %}
+</section>
+
+<section data-gp="record" hidden>
+  <p class="small dim">Graded against nflverse box scores and snap counts: a player who played with no catches counts as 0, a player who didn't play is void. Spreads and moneylines use the final score.</p>
+  <div class="table-wrap"><table class="stat-table">
+    <thead><tr><th>Account</th><th>Record &middot; units</th></tr></thead><tbody>
+    {% for t in tp.tipsters %}<tr><td><b>{{ t.name }}</b><br><span class="dim small">{{ t.handle }}</span></td><td>{{ t.w }}-{{ t.l }} &middot; {{ u(t.u) }}<br><span class="dim small">{{ t.rate if t.rate is not none else '-' }}% hit &middot; {{ '%+d'|format(t.per) if t.per is not none else '-' }}% a pick &middot; last 10: {{ t.last10 or '-' }}</span></td></tr>{% endfor %}
+    </tbody></table></div>
+  {% for t in tp.tipsters %}
+  <h2>{{ t.name }}</h2>
+  <p class="small dim">{{ t.note }} {{ trust(t.honest) }}</p>
+  <div class="table-wrap"><table class="stat-table">
+    <thead><tr><th>Kind of pick</th><th>Record &middot; units</th></tr></thead><tbody>
+    {% for k, v in t.by.items() if v.n %}<tr><td>{{ k }}</td><td>{{ v.w }}-{{ v.l }} &middot; {{ u(v.u) }}</td></tr>{% endfor %}
+    </tbody></table></div>
+  {% if t.ladders %}{% set lr = t.ladders %}<p class="small"><b>Ladders:</b> {{ lr.n }} graded &middot; base rung {{ lr.base }}/{{ lr.n }} &middot; next rung {{ lr.next }}/{{ lr.next_n }} &middot; higher rungs {{ lr.top }}/{{ lr.top_n }} &middot; every rung counted: {{ u(lr.u) }} on {{ lr.staked }}U.</p>{% endif %}
+  {% if t.legrec %}<p class="small"><b>Legs:</b> {{ t.legrec.w }} of {{ t.legrec.n }} legs hit ({{ (100 * t.legrec.w / t.legrec.n)|round|int }}%), but a slip needs every leg.</p>{% endif %}
+  {% endfor %}
+</section>
+
+<section data-gp="weeks" hidden>
+  {% for w in tp.weeks %}
+  <details class="info-collapse"{% if loop.first %} open{% endif %}><summary>Week {{ w.week }} &middot; {{ w.w }}&ndash;{{ w.l }} &middot; {{ u(w.u) }}</summary>
+    <div class="table-wrap"><table class="stat-table"><tbody>
+    {% for r in w.rows %}{% set t = (tp.tipsters|selectattr('key', 'equalto', r.tipster)|first) %}
+      <tr><td>{{ t.name }}</td><td>{% if r.kind in ('spread', 'ml') %}{{ r.team }} {{ 'ML' if r.kind == 'ml' else ('%+.1f'|format(r.line) if r.line is not none else 'spread') }}{% elif r.legs|length > 1 %}{{ r.label or (r.legs|length ~ '-leg slip') }}{% else %}{% set l = r.legs[0] %}{{ l.player }} {{ 'o' if l.side == 'over' else 'u' }}{{ l.line }} {{ tp.lab.get(l.stat, l.stat) }}{% if l.actual is not none %} <span class="dim">({{ l.actual|int }})</span>{% endif %}{% endif %}</td><td>{{ '+' if r.odds > 0 }}{{ r.odds }}</td><td class="{{ 'stat-good' if r.res == 'hit' else 'stat-bad' }}">{{ '&#10004;'|safe if r.res == 'hit' else '&#10008;'|safe }}</td></tr>
+    {% endfor %}
+    </tbody></table></div>
+  </details>
+  {% endfor %}
+</section>
+
+<section data-gp="how" hidden>
+  <h2>How it works</h2>
+  <ul class="small">
+    <li><b>Logged before kickoff:</b> picks come from each account's public posts and are added to the site before the game starts. Paid/VIP picks and anything posted after kickoff aren't counted.</li>
+    <li><b>Graded from box scores:</b> nflverse weekly stats and snap counts. Played with no catches = 0; didn't play = void. Anytime TD counts rushing and receiving TDs (not passing).</li>
+    <li><b>Units:</b> 1U per pick at the posted odds. Ladders: the base rung at 1U and each higher rung at the stake he gave (1U when he didn't say). Slips: 1U per slip. Jake Venom's TD Watch is priced at his app's TD % (marked *).</li>
+    <li><b>Live:</b> once a game kicks off, yardage and reception picks show where the player is now and whether he's on pace.</li>
+  </ul>
+</section>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.gm-tabs [data-gt]');
+  function show(k) {
+    tabs.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-gt') === k); });
+    document.querySelectorAll('[data-gp]').forEach(function (s) { s.hidden = s.getAttribute('data-gp') !== k; });
+  }
+  tabs.forEach(function (b) { b.addEventListener('click', function () { var k = b.getAttribute('data-gt'); show(k); history.replaceState(null, '', '#' + k); }); });
+  var h = (location.hash || '').slice(1); if (h && document.querySelector('[data-gt="' + h + '"]')) show(h);
+})();
+</script>
+{% endblock %}

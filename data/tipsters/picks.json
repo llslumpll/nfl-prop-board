@@ -1,0 +1,3743 @@
+{
+ "note": "NFL tipster picks, logged from public X posts (and Jake Venom's YouTube TD Watch). Weeks are NFL weeks of the 2026 season.",
+ "picks": [
+  {
+   "id": "w01-doc-001",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Brock Purdy",
+     "stat": "passyd",
+     "line": 238.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w01-doc-002",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Joe Burrow",
+     "stat": "rushyd",
+     "line": 6.5,
+     "side": "over"
+    }
+   ],
+   "odds": -125,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 14.5,
+     "odds": 225
+    }
+   ]
+  },
+  {
+   "id": "w01-doc-003",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Charlie Kolar",
+     "stat": "recyd",
+     "line": 17.5,
+     "side": "over"
+    }
+   ],
+   "odds": -108,
+   "posted": null
+  },
+  {
+   "id": "w01-doc-004",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Zay Flowers",
+     "stat": "recyd",
+     "line": 63.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w01-doc-005",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Xavier Hutchinson",
+     "stat": "recyd",
+     "line": 19.5,
+     "side": "under"
+    }
+   ],
+   "odds": -110,
+   "posted": null
+  },
+  {
+   "id": "w01-doc-006",
+   "week": 1,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "CeeDee Lamb",
+     "stat": "rec",
+     "line": 5.5,
+     "side": "over"
+    }
+   ],
+   "odds": -150,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 6.5,
+     "odds": 130
+    }
+   ]
+  },
+  {
+   "id": "w02-doc-007",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jameson Williams",
+     "stat": "recyd",
+     "line": 49.5,
+     "side": "over"
+    }
+   ],
+   "odds": -116,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 69.5,
+     "odds": 204
+    },
+    {
+     "line": 89.5,
+     "odds": 464
+    },
+    {
+     "line": 119.5,
+     "odds": 1480
+    }
+   ]
+  },
+  {
+   "id": "w02-doc-008",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kyle Monangai",
+     "stat": "rushatt",
+     "line": 8.5,
+     "side": "over"
+    }
+   ],
+   "odds": -103,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-009",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jordan Addison",
+     "stat": "recyd",
+     "line": 38.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-010",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Makai Lemon",
+     "stat": "rec",
+     "line": 2.5,
+     "side": "over"
+    }
+   ],
+   "odds": -106,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-011",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ryan Flournoy",
+     "stat": "rec",
+     "line": 2.5,
+     "side": "over"
+    }
+   ],
+   "odds": -121,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 3.5,
+     "odds": 191
+    }
+   ]
+  },
+  {
+   "id": "w02-doc-012",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jeremiyah Love",
+     "stat": "recyd",
+     "line": 14.5,
+     "side": "over"
+    }
+   ],
+   "odds": -108,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-013",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "DAL",
+   "line": -3.5
+  },
+  {
+   "id": "w02-doc-014",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Josh Downs",
+     "stat": "recyd",
+     "line": 39.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-015",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaxson Dart",
+     "stat": "rushyd",
+     "line": 31.5,
+     "side": "over"
+    }
+   ],
+   "odds": -112,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-016",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Terrance Ferguson",
+     "stat": "recyd",
+     "line": 34.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w02-doc-017",
+   "week": 2,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "LA",
+   "line": null
+  },
+  {
+   "id": "w03-doc-018",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Christian Watson",
+     "stat": "recyd",
+     "line": 67.5,
+     "side": "over"
+    }
+   ],
+   "odds": -111,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-019",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bijan Robinson",
+     "stat": "rushatt",
+     "line": 17.5,
+     "side": "over"
+    }
+   ],
+   "odds": -122,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-020",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "ml",
+   "legs": [],
+   "odds": 233,
+   "posted": null,
+   "team": "ATL",
+   "line": 0.0
+  },
+  {
+   "id": "w03-doc-021",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaylin Noel",
+     "stat": "recyd",
+     "line": 27.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-022",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "KC Concepcion",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-023",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "DET",
+   "line": -6.5
+  },
+  {
+   "id": "w03-doc-024",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ashton Jeanty",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": -103,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-025",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Terrance Ferguson",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -136,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-026",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "ml",
+   "legs": [],
+   "odds": 100,
+   "posted": null,
+   "team": "DEN",
+   "line": 0.0
+  },
+  {
+   "id": "w03-doc-027",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jeremiyah Love",
+     "stat": "rr",
+     "line": 55.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-028",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Roman Wilson",
+     "stat": "recyd",
+     "line": 23.5,
+     "side": "under"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-029",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "D'Andre Swift",
+     "stat": "rushyd",
+     "line": 59.5,
+     "side": "over"
+    }
+   ],
+   "odds": -121,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 79.5,
+     "odds": 225
+    },
+    {
+     "line": 99.5,
+     "odds": 550
+    },
+    {
+     "line": 119.5,
+     "odds": 1236
+    }
+   ]
+  },
+  {
+   "id": "w03-doc-030",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Makai Lemon",
+     "stat": "recyd",
+     "line": 24.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w03-doc-031",
+   "week": 3,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "PHI",
+   "line": -3.5
+  },
+  {
+   "id": "w04-doc-032",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Michael Pittman",
+     "stat": "recyd",
+     "line": 32.5,
+     "side": "over"
+    }
+   ],
+   "odds": -109,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 217
+    },
+    {
+     "line": 69.5,
+     "odds": 525
+    }
+   ]
+  },
+  {
+   "id": "w04-doc-033",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jacory Croskey-Merritt",
+     "stat": "rushyd",
+     "line": 57.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w04-doc-034",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Colston Loveland",
+     "stat": "recyd",
+     "line": 33.5,
+     "side": "over"
+    }
+   ],
+   "odds": -112,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 225
+    }
+   ]
+  },
+  {
+   "id": "w04-doc-035",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bhayshul Tuten",
+     "stat": "rushyd",
+     "line": 54.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w04-doc-036",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Malik Nabers",
+     "stat": "recyd",
+     "line": 54.5,
+     "side": "over"
+    }
+   ],
+   "odds": -111,
+   "posted": null
+  },
+  {
+   "id": "w04-doc-037",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Michael Mayer",
+     "stat": "recyd",
+     "line": 24.5,
+     "side": "over"
+    }
+   ],
+   "odds": -125,
+   "posted": null
+  },
+  {
+   "id": "w04-doc-038",
+   "week": 4,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Malik Washington",
+     "stat": "recyd",
+     "line": 38.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w05-doc-039",
+   "week": 5,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Brock Bowers",
+     "stat": "rec",
+     "line": 6.5,
+     "side": "over"
+    }
+   ],
+   "odds": -106,
+   "posted": null
+  },
+  {
+   "id": "w05-doc-040",
+   "week": 5,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -104,
+   "posted": null,
+   "team": "DET",
+   "line": -5.5
+  },
+  {
+   "id": "w05-doc-041",
+   "week": 5,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bhayshul Tuten",
+     "stat": "rushyd",
+     "line": 59.5,
+     "side": "over"
+    }
+   ],
+   "odds": -122,
+   "posted": null
+  },
+  {
+   "id": "w05-doc-042",
+   "week": 5,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jonathan Taylor",
+     "stat": "rushyd",
+     "line": 83.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w05-doc-043",
+   "week": 5,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tyler Higbee",
+     "stat": "recyd",
+     "line": 21.5,
+     "side": "over"
+    }
+   ],
+   "odds": -116,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 39.5,
+     "odds": 267
+    },
+    {
+     "line": 59.5,
+     "odds": 730
+    }
+   ]
+  },
+  {
+   "id": "w06-doc-044",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kendre Miller",
+     "stat": "rushyd",
+     "line": 34.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 205
+    },
+    {
+     "line": 69.5,
+     "odds": 550
+    }
+   ]
+  },
+  {
+   "id": "w06-doc-045",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jalen Royals",
+     "stat": "recyd",
+     "line": 22.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 39.5,
+     "odds": 234
+    },
+    {
+     "line": 59.5,
+     "odds": 630
+    }
+   ]
+  },
+  {
+   "id": "w06-doc-046",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tony Pollard",
+     "stat": "recyd",
+     "line": 8.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null
+  },
+  {
+   "id": "w06-doc-047",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Germie Bernard",
+     "stat": "recyd",
+     "line": 39.5,
+     "side": "over"
+    }
+   ],
+   "odds": -127,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 200
+    },
+    {
+     "line": 79.5,
+     "odds": 470
+    }
+   ]
+  },
+  {
+   "id": "w06-doc-048",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kayshon Boutte",
+     "stat": "rec",
+     "line": 2.5,
+     "side": "under"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w06-doc-049",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Garrett Wilson",
+     "stat": "recyd",
+     "line": 72.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w06-doc-050",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "ml",
+   "legs": [],
+   "odds": 102,
+   "posted": null,
+   "team": "ATL",
+   "line": 0.0
+  },
+  {
+   "id": "w06-doc-051",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -105,
+   "posted": null,
+   "team": "CAR",
+   "line": -3.5
+  },
+  {
+   "id": "w06-doc-052",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Keon Coleman",
+     "stat": "recyd",
+     "line": 37.5,
+     "side": "over"
+    }
+   ],
+   "odds": -120,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 235
+    },
+    {
+     "line": 99.5,
+     "odds": 1240
+    }
+   ]
+  },
+  {
+   "id": "w06-doc-053",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "ml",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "DAL",
+   "line": 0.0
+  },
+  {
+   "id": "w06-doc-054",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Javonte Williams",
+     "stat": "rushyd",
+     "line": 66.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w06-doc-055",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Matthew Golden",
+     "stat": "recyd",
+     "line": 65.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w06-doc-056",
+   "week": 6,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Christian McCaffrey",
+     "stat": "rec",
+     "line": 4.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 5.5,
+     "odds": 150
+    },
+    {
+     "line": 6.5,
+     "odds": 295
+    }
+   ]
+  },
+  {
+   "id": "w07-doc-057",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Germie Bernard",
+     "stat": "recyd",
+     "line": 51.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null
+  },
+  {
+   "id": "w07-doc-058",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jordan Mason",
+     "stat": "rushyd",
+     "line": 46.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 190
+    }
+   ]
+  },
+  {
+   "id": "w07-doc-059",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bijan Robinson",
+     "stat": "rushatt",
+     "line": 18.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null
+  },
+  {
+   "id": "w07-doc-060",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jameson Williams",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w07-doc-061",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Konata Mumpfield",
+     "stat": "rec",
+     "line": 1.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w07-doc-062",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tony Pollard",
+     "stat": "rec",
+     "line": 1.5,
+     "side": "over"
+    }
+   ],
+   "odds": -105,
+   "posted": null
+  },
+  {
+   "id": "w07-doc-063",
+   "week": 7,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Noah Gray",
+     "stat": "rec",
+     "line": 1.5,
+     "side": "over"
+    }
+   ],
+   "odds": -155,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 2.5,
+     "odds": 174
+    },
+    {
+     "line": 4.5,
+     "odds": 450
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-064",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tucker Kraft",
+     "stat": "recyd",
+     "line": 43.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 205
+    },
+    {
+     "line": 99.5,
+     "odds": 1100
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-065",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Travis Hunter",
+     "stat": "rec",
+     "line": 1.5,
+     "side": "over"
+    }
+   ],
+   "odds": -135,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 2.5,
+     "odds": 180
+    },
+    {
+     "line": 3.5,
+     "odds": 450
+    },
+    {
+     "line": 4.5,
+     "odds": 800
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-066",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chase Brown",
+     "stat": "rushyd",
+     "line": 57.5,
+     "side": "over"
+    }
+   ],
+   "odds": -111,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 79.5,
+     "odds": 256
+    },
+    {
+     "line": 99.5,
+     "odds": 600
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-067",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ashton Jeanty",
+     "stat": "rr",
+     "line": 80.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 99.5,
+     "odds": 178
+    },
+    {
+     "line": 149.5,
+     "odds": 1200
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-068",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Sam LaPorta",
+     "stat": "recyd",
+     "line": 45.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null
+  },
+  {
+   "id": "w08-doc-069",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Drake London",
+     "stat": "recyd",
+     "line": 78.5,
+     "side": "over"
+    }
+   ],
+   "odds": -111,
+   "posted": null
+  },
+  {
+   "id": "w08-doc-070",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ladd McConkey",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w08-doc-071",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -110,
+   "posted": null,
+   "team": "DET",
+   "line": -3
+  },
+  {
+   "id": "w08-doc-072",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Antonio Williams",
+     "stat": "recyd",
+     "line": 37.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 165
+    },
+    {
+     "line": 79.5,
+     "odds": 572
+    },
+    {
+     "line": 119.5,
+     "odds": 1800
+    }
+   ]
+  },
+  {
+   "id": "w08-doc-073",
+   "week": 8,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tory Horton",
+     "stat": "recyd",
+     "line": 19.5,
+     "side": "over"
+    }
+   ],
+   "odds": -127,
+   "posted": null,
+   "rungs": []
+  },
+  {
+   "id": "w09-doc-074",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Justice Hill",
+     "stat": "rec",
+     "line": 2.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 3.5,
+     "odds": 220
+    },
+    {
+     "line": 4.5,
+     "odds": 430
+    },
+    {
+     "line": 5.5,
+     "odds": 880
+    }
+   ]
+  },
+  {
+   "id": "w09-doc-075",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ladd McConkey",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w09-doc-076",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Antonio Williams",
+     "stat": "recyd",
+     "line": 42.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 188
+    },
+    {
+     "line": 79.5,
+     "odds": 453
+    },
+    {
+     "line": 99.5,
+     "odds": 1020
+    }
+   ]
+  },
+  {
+   "id": "w09-doc-077",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jadarian Price",
+     "stat": "rushyd",
+     "line": 54.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null
+  },
+  {
+   "id": "w09-doc-078",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Audric Estime",
+     "stat": "rushyd",
+     "line": 24.5,
+     "side": "over"
+    }
+   ],
+   "odds": -124,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 392
+    }
+   ]
+  },
+  {
+   "id": "w09-doc-079",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Audric Estime",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 310,
+   "posted": null,
+   "rungs": []
+  },
+  {
+   "id": "w09-doc-080",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jahmyr Gibbs",
+     "stat": "rr",
+     "line": 133.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-doc-081",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaylen Waddle",
+     "stat": "recyd",
+     "line": 48.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-doc-082",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Emeka Egbuka",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null,
+   "rungs": []
+  },
+  {
+   "id": "w09-doc-083",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Emeka Egbuka",
+     "stat": "recyd",
+     "line": 59.5,
+     "side": "over"
+    }
+   ],
+   "odds": 154,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 79.5,
+     "odds": 320
+    },
+    {
+     "line": 99.5,
+     "odds": 660
+    }
+   ]
+  },
+  {
+   "id": "w09-doc-084",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Josh Allen",
+     "stat": "rushatt",
+     "line": 7.5,
+     "side": "under"
+    }
+   ],
+   "odds": -125,
+   "posted": null
+  },
+  {
+   "id": "w09-doc-085",
+   "week": 9,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Josh Allen",
+     "stat": "rushyd",
+     "line": 31.5,
+     "side": "under"
+    }
+   ],
+   "odds": -110,
+   "posted": null
+  },
+  {
+   "id": "w10-doc-086",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Austin Ekeler",
+     "stat": "rushyd",
+     "line": 27.5,
+     "side": "over"
+    }
+   ],
+   "odds": -112,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 39.5,
+     "odds": 188
+    },
+    {
+     "line": 59.5,
+     "odds": 630
+    }
+   ]
+  },
+  {
+   "id": "w10-doc-087",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "ml",
+   "legs": [],
+   "odds": 117,
+   "posted": null,
+   "team": "WAS",
+   "line": 0.0
+  },
+  {
+   "id": "w10-doc-088",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Xavier Hutchinson",
+     "stat": "recyd",
+     "line": 32.5,
+     "side": "over"
+    }
+   ],
+   "odds": -110,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 225
+    },
+    {
+     "line": 79.5,
+     "odds": 880
+    }
+   ]
+  },
+  {
+   "id": "w10-doc-089",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Myles Price",
+     "stat": "recyd",
+     "line": 10.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 24.5,
+     "odds": 314
+    },
+    {
+     "line": 39.5,
+     "odds": 920
+    },
+    {
+     "line": 59.5,
+     "odds": 2800
+    }
+   ]
+  },
+  {
+   "id": "w10-doc-090",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "DJ Moore",
+     "stat": "recyd",
+     "line": 45.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 79.5,
+     "odds": 350
+    }
+   ]
+  },
+  {
+   "id": "w10-doc-091",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Amon-Ra St. Brown",
+     "stat": "recyd",
+     "line": 78.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w10-doc-092",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -108,
+   "posted": null,
+   "team": "CIN",
+   "line": -3.5
+  },
+  {
+   "id": "w10-doc-093",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tyler Warren",
+     "stat": "recyd",
+     "line": 45.5,
+     "side": "over"
+    }
+   ],
+   "odds": -114,
+   "posted": null
+  },
+  {
+   "id": "w10-doc-094",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": -102,
+   "posted": null,
+   "team": "SF",
+   "line": -3.5
+  },
+  {
+   "id": "w10-doc-095",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Zay Flowers",
+     "stat": "rec",
+     "line": 5.5,
+     "side": "over"
+    }
+   ],
+   "odds": -130,
+   "posted": null
+  },
+  {
+   "id": "w10-doc-096",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "David Njoku",
+     "stat": "recyd",
+     "line": 11.5,
+     "side": "over"
+    }
+   ],
+   "odds": -108,
+   "posted": null,
+   "rungs": []
+  },
+  {
+   "id": "w10-doc-097",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "David Njoku",
+     "stat": "rec",
+     "line": 2.5,
+     "side": "over"
+    }
+   ],
+   "odds": 320,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 3.5,
+     "odds": 800
+    },
+    {
+     "line": 4.5,
+     "odds": 1440
+    }
+   ]
+  },
+  {
+   "id": "w10-doc-098",
+   "week": 10,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "KeAndre Lambert-Smith",
+     "stat": "recyd",
+     "line": 17.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 29.5,
+     "odds": 194
+    },
+    {
+     "line": 49.5,
+     "odds": 490
+    },
+    {
+     "line": 79.5,
+     "odds": 1600
+    },
+    {
+     "line": 99.5,
+     "odds": 3200
+    }
+   ]
+  },
+  {
+   "id": "w11-doc-099",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tank Dell",
+     "stat": "recyd",
+     "line": 35.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 59.5,
+     "odds": 260
+    },
+    {
+     "line": 99.5,
+     "odds": 1120
+    }
+   ]
+  },
+  {
+   "id": "w11-doc-100",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "spread",
+   "legs": [],
+   "odds": 100,
+   "posted": null,
+   "team": "HOU",
+   "line": -12.5
+  },
+  {
+   "id": "w11-doc-101",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tetairoa McMillan",
+     "stat": "recyd",
+     "line": 63.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w11-doc-102",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tony Pollard",
+     "stat": "rr",
+     "line": 95.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w11-doc-103",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kyle McCord",
+     "stat": "passyd",
+     "line": 185.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w11-doc-104",
+   "week": 11,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Garrett Wilson",
+     "stat": "recyd",
+     "line": 65.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w02-nlb-105",
+   "week": 2,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Mike Gesicki",
+     "stat": "recyd",
+     "line": 24.5,
+     "side": "over"
+    }
+   ],
+   "odds": -125,
+   "posted": null
+  },
+  {
+   "id": "w02-nlb-106",
+   "week": 2,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Stefon Diggs",
+     "stat": "recyd",
+     "line": 46.5,
+     "side": "over"
+    }
+   ],
+   "odds": -125,
+   "posted": null
+  },
+  {
+   "id": "w02-nlb-107",
+   "week": 2,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bijan Robinson",
+     "stat": "rushyd",
+     "line": 79.5,
+     "side": "over"
+    }
+   ],
+   "odds": -122,
+   "posted": null
+  },
+  {
+   "id": "w02-nlb-108",
+   "week": 2,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Saquon Barkley",
+     "stat": "rushyd",
+     "line": 79.5,
+     "side": "over"
+    }
+   ],
+   "odds": -120,
+   "posted": null
+  },
+  {
+   "id": "w02-nlb-109",
+   "week": 2,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 155,
+   "posted": null
+  },
+  {
+   "id": "w04-nlb-110",
+   "week": 4,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jeremiyah Love",
+     "stat": "rushyd",
+     "line": 66.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w04-nlb-111",
+   "week": 4,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Rashee Rice",
+     "stat": "recyd",
+     "line": 55.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w04-nlb-112",
+   "week": 4,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Nico Collins",
+     "stat": "recyd",
+     "line": 70.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w04-nlb-113",
+   "week": 4,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Parker Washington",
+     "stat": "recyd",
+     "line": 69.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-nlb-114",
+   "week": 9,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Keenan Allen",
+     "stat": "recyd",
+     "line": 41.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-nlb-115",
+   "week": 9,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jahmyr Gibbs",
+     "stat": "rushyd",
+     "line": 98.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-nlb-116",
+   "week": 9,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kenneth Walker",
+     "stat": "rushyd",
+     "line": 90.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w09-nlb-117",
+   "week": 9,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Shedeur Sanders",
+     "stat": "passyd",
+     "line": 178.5,
+     "side": "over"
+    }
+   ],
+   "odds": -113,
+   "posted": null
+  },
+  {
+   "id": "w10-nlb-118",
+   "week": 10,
+   "tipster": "nlb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jayden Daniels",
+     "stat": "rushyd",
+     "line": 39.5,
+     "side": "over"
+    }
+   ],
+   "odds": 100,
+   "posted": null,
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 188
+    }
+   ]
+  },
+  {
+   "id": "w08-bhb-119",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "George Pickens",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Garrett Wilson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 1495,
+   "posted": null,
+   "label": "ATD 3-leg"
+  },
+  {
+   "id": "w08-bhb-120",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ja'Marr Chase",
+     "stat": "recyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Ja'Marr Chase",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "recyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Zay Flowers",
+     "stat": "recyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Zay Flowers",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 6426,
+   "posted": null,
+   "label": "SGP+ 6-leg 100yd+TD (3 of 3 shown)"
+  },
+  {
+   "id": "w08-bhb-121",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Khalil Shakir",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Tee Higgins",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Michael Wilson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Stefon Diggs",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 5377,
+   "posted": null,
+   "label": "ATD 4-leg"
+  },
+  {
+   "id": "w08-bhb-122",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Lamar Jackson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Trevor Lawrence",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Drake Maye",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jayden Daniels",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 20367,
+   "posted": null,
+   "label": "QB rush TD 4-leg"
+  },
+  {
+   "id": "w08-bhb-123",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jayden Daniels",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Tanner McKee",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 3920,
+   "posted": null,
+   "label": "SNF SGP ATD"
+  },
+  {
+   "id": "w08-bhb-124",
+   "week": 8,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Luther Burden",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Caleb Williams",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 4354,
+   "posted": null,
+   "label": "MNF SGP ATD 3+ legs"
+  },
+  {
+   "id": "w09-bhb-125",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Amon-Ra St. Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "CeeDee Lamb",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "George Kittle",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 1074,
+   "posted": null,
+   "label": "ATD 4-leg"
+  },
+  {
+   "id": "w09-bhb-126",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Malik Nabers",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "George Pickens",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Zach Charbonnet",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 1521,
+   "posted": null,
+   "label": "ATD 3-leg"
+  },
+  {
+   "id": "w09-bhb-127",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tee Higgins",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jameson Williams",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Rashee Rice",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Nico Collins",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 3104,
+   "posted": null,
+   "label": "ATD 4-leg"
+  },
+  {
+   "id": "w09-bhb-128",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "J.J. McCarthy",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jayden Daniels",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Malik Willis",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Drake Maye",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 20605,
+   "posted": null,
+   "label": "QB rush TD 4-leg"
+  },
+  {
+   "id": "w09-bhb-129",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jonathan Taylor",
+     "stat": "rushyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Jonathan Taylor",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Kenneth Walker",
+     "stat": "rushyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Kenneth Walker",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Christian McCaffrey",
+     "stat": "rushyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Christian McCaffrey",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 5433,
+   "posted": null,
+   "label": "SGP+ 6-leg 100yd+TD"
+  },
+  {
+   "id": "w09-bhb-130",
+   "week": 9,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Josh Allen",
+     "stat": "td",
+     "line": 1.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 1.5,
+     "side": "over"
+    }
+   ],
+   "odds": 4615,
+   "posted": null,
+   "label": "MNF 2+ TD SGP"
+  },
+  {
+   "id": "w10-bhb-131",
+   "week": 10,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jayden Daniels",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "J.J. McCarthy",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jayden Daniels",
+     "stat": "rushyd",
+     "line": 39.5,
+     "side": "over"
+    },
+    {
+     "player": "J.J. McCarthy",
+     "stat": "rushyd",
+     "line": 14.5,
+     "side": "over"
+    }
+   ],
+   "odds": 4574,
+   "posted": null,
+   "label": "TNF QB SGP"
+  },
+  {
+   "id": "w10-bhb-132",
+   "week": 10,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chris Olave",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 1076,
+   "posted": null,
+   "label": "ATD 3-leg"
+  },
+  {
+   "id": "w10-bhb-133",
+   "week": 10,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Drake Maye",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Trevor Lawrence",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Tyler Shough",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 7111,
+   "posted": null,
+   "label": "QB rush TD 3-leg"
+  },
+  {
+   "id": "w10-bhb-134",
+   "week": 10,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jahmyr Gibbs",
+     "stat": "ftd",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "ftd",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Josh Allen",
+     "stat": "ftd",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 19388,
+   "posted": null,
+   "label": "First TD 3-leg"
+  },
+  {
+   "id": "w10-bhb-135",
+   "week": 10,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "A.J. Brown",
+     "stat": "recyd",
+     "line": 79.5,
+     "side": "over"
+    },
+    {
+     "player": "A.J. Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "recyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "recyd",
+     "line": 99.5,
+     "side": "over"
+    },
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 7365,
+   "posted": null,
+   "label": "SGP+ 6-leg 80/100yd+TD"
+  },
+  {
+   "id": "w10-jake-136",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Amon-Ra St. Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 144,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 59.2, app 41% TD"
+  },
+  {
+   "id": "w10-jake-137",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "A.J. Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 194,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 51.1, app 34% TD"
+  },
+  {
+   "id": "w10-jake-138",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Mack Hollins",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 245,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 47.2, app 29% TD"
+  },
+  {
+   "id": "w10-jake-139",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jordan Mason",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 186,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 52.6, app 35% TD"
+  },
+  {
+   "id": "w10-jake-140",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Justin Jefferson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 257,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 45.0, app 28% TD"
+  },
+  {
+   "id": "w10-jake-141",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Dalton Schultz",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 488,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 31.7, app 17% TD"
+  },
+  {
+   "id": "w10-jake-142",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Woody Marks",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 133,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 62.2, app 43% TD"
+  },
+  {
+   "id": "w10-jake-143",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Bijan Robinson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 150,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 57.9, app 40% TD"
+  },
+  {
+   "id": "w10-jake-144",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Rashee Rice",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 285,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 42.6, app 26% TD"
+  },
+  {
+   "id": "w10-jake-145",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kyle Pitts",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 300,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 41.6, app 25% TD"
+  },
+  {
+   "id": "w10-jake-146",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ollie Gordon",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 156,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 57.2, app 39% TD"
+  },
+  {
+   "id": "w10-jake-147",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tyler Warren",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 285,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 43.2, app 26% TD"
+  },
+  {
+   "id": "w10-jake-148",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jonathan Taylor",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 117,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 65.8, app 46% TD"
+  },
+  {
+   "id": "w10-jake-149",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jakobi Meyers",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 285,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 43.2, app 26% TD"
+  },
+  {
+   "id": "w10-jake-150",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chris Rodriguez",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 186,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 44.5, app 35% TD"
+  },
+  {
+   "id": "w10-jake-151",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tetairoa McMillan",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 270,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 44.3, app 27% TD"
+  },
+  {
+   "id": "w10-jake-152",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Audric Estime",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 117,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 55.4, app 46% TD"
+  },
+  {
+   "id": "w10-jake-153",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chris Olave",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 257,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 45.0, app 28% TD"
+  },
+  {
+   "id": "w10-jake-154",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Breece Hall",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 104,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 69.9, app 49% TD"
+  },
+  {
+   "id": "w10-jake-155",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Kyren Williams",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 156,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 56.9, app 39% TD"
+  },
+  {
+   "id": "w10-jake-156",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Xavier Smith",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 376,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 36.5, app 21% TD"
+  },
+  {
+   "id": "w10-jake-157",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Zach Charbonnet",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 186,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 52.2, app 35% TD"
+  },
+  {
+   "id": "w10-jake-158",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "AJ Barner",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 223,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 47.9, app 31% TD"
+  },
+  {
+   "id": "w10-jake-159",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Deebo Samuel",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 138,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 60.0, app 42% TD"
+  },
+  {
+   "id": "w10-jake-160",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Javonte Williams",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 127,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 63.2, app 44% TD"
+  },
+  {
+   "id": "w10-jake-161",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Demarcus Robinson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 178,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 53.7, app 36% TD"
+  },
+  {
+   "id": "w10-jake-162",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "DK Metcalf",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 317,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 40.7, app 24% TD"
+  },
+  {
+   "id": "w10-jake-163",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaylen Warren",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 186,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 52.7, app 35% TD"
+  },
+  {
+   "id": "w10-jake-164",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chase Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 144,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 58.8, app 41% TD"
+  },
+  {
+   "id": "w10-jake-165",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tre Harris",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 488,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 31.5, app 17% TD"
+  },
+  {
+   "id": "w10-jake-166",
+   "week": 10,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Derrick Henry",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 133,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 62.1, app 43% TD"
+  },
+  {
+   "id": "w09-jake-167",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chase Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": -100,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 72.2, app 50% TD"
+  },
+  {
+   "id": "w09-jake-168",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Drake London",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 170,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 55.1, app 37% TD"
+  },
+  {
+   "id": "w09-jake-169",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jahan Dotson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 203,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 50.6, app 33% TD"
+  },
+  {
+   "id": "w09-jake-170",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chuba Hubbard",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 127,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 62.4, app 44% TD"
+  },
+  {
+   "id": "w09-jake-171",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "George Pickens",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 270,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 44.4, app 27% TD"
+  },
+  {
+   "id": "w09-jake-172",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Keenan Allen",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 245,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 46.6, app 29% TD"
+  },
+  {
+   "id": "w09-jake-173",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Javonte Williams",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": -117,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 78.7, app 54% TD"
+  },
+  {
+   "id": "w09-jake-174",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Chris Olave",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 257,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 44.8, app 28% TD"
+  },
+  {
+   "id": "w09-jake-175",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Juwan Johnson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 426,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 35.2, app 19% TD"
+  },
+  {
+   "id": "w09-jake-176",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Rashee Rice",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 194,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 51.2, app 34% TD"
+  },
+  {
+   "id": "w09-jake-177",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Xavier Worthy",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 203,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 50.7, app 33% TD"
+  },
+  {
+   "id": "w09-jake-178",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Sam LaPorta",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 233,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 47.3, app 30% TD"
+  },
+  {
+   "id": "w09-jake-179",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Amon-Ra St. Brown",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 127,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 62.7, app 44% TD"
+  },
+  {
+   "id": "w09-jake-180",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Malik Nabers",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 150,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 57.9, app 40% TD"
+  },
+  {
+   "id": "w09-jake-181",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Tyler Higbee",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 456,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 33.8, app 18% TD"
+  },
+  {
+   "id": "w09-jake-182",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Woody Marks",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 117,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 65.0, app 46% TD"
+  },
+  {
+   "id": "w09-jake-183",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Dalton Schultz",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 614,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 27.3, app 14% TD"
+  },
+  {
+   "id": "w09-jake-184",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "George Kittle",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 133,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 62.1, app 43% TD"
+  },
+  {
+   "id": "w09-jake-185",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Rhamondre Stevenson",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 138,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 60.1, app 42% TD"
+  },
+  {
+   "id": "w09-jake-186",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "DeMario Douglas",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 335,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 39.9, app 23% TD"
+  },
+  {
+   "id": "w09-jake-187",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jaxon Smith-Njigba",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 178,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 53.8, app 36% TD"
+  },
+  {
+   "id": "w09-jake-188",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "AJ Barner",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 376,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 36.6, app 21% TD"
+  },
+  {
+   "id": "w09-jake-189",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Rome Odunze",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 300,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 41.2, app 25% TD"
+  },
+  {
+   "id": "w09-jake-190",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Colston Loveland",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 245,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 45.7, app 29% TD"
+  },
+  {
+   "id": "w09-jake-191",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jordan Mason",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 170,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 55.2, app 37% TD"
+  },
+  {
+   "id": "w09-jake-192",
+   "week": 9,
+   "tipster": "jake",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Jordan Addison",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 212,
+   "posted": null,
+   "odds_est": true,
+   "note": "Venom score 49.0, app 32% TD"
+  }
+ ]
+}
