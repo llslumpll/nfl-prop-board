@@ -108,7 +108,7 @@ def _parse(series: str, stat: str, m: dict):
             "kickoff": m["occurrence_datetime"], "result": m["result"]}
 
 
-def main(max_new: int = 12000, workers: int = 12) -> None:
+def main(max_new: int = 60000, workers: int = 4) -> None:
     from concurrent.futures import ThreadPoolExecutor
     store = {"markets": {}}
     if OUT.exists():
@@ -134,31 +134,51 @@ def main(max_new: int = 12000, workers: int = 12) -> None:
     print(f"{left} more left for the next run", flush=True)
     print(f"fetching pre-kickoff quotes for {len(todo)} markets with {workers} workers", flush=True)
 
-    def job(x):
-        t, series, m, rec = x
-        ask, bid = pre_kick_quote(series, m)
-        return t, {**rec, "ask": ask, "bid": bid}
+    # Batch candlesticks: one call per group of up to 100 markets with the same kickoff (same event time).
+    groups = {}
+    for x in todo:
+        groups.setdefault(x[2]["occurrence_datetime"], []).append(x)
+    chunks = []
+    for kick, xs in groups.items():
+        for k in range(0, len(xs), 100):
+            chunks.append((kick, xs[k:k + 100]))
+    print(f"{len(chunks)} batch calls", flush=True)
+
+    def job(chunk):
+        kick, xs = chunk
+        end = int(_iso(kick).timestamp())
+        d = _get("/markets/candlesticks", {"market_tickers": ",".join(x[0] for x in xs),
+                                          "start_ts": end - 30 * 3600, "end_ts": end, "period_interval": 60})
+        got = {}
+        for mk in (d or {}).get("markets") or []:
+            ask = bid = None
+            for c in mk.get("candlesticks") or []:
+                if c.get("end_period_ts", 0) > end:
+                    break
+                a = _f(((c.get("yes_ask") or {}).get("close_dollars")))
+                b = _f(((c.get("yes_bid") or {}).get("close_dollars")))
+                if a is not None and 0 < a < 1:
+                    ask = a
+                if b is not None and 0 <= b < 1:
+                    bid = b
+            got[mk.get("market_ticker")] = (ask, bid)
+        return [(x[0], {**x[3], "ask": got.get(x[0], (None, None))[0], "bid": got.get(x[0], (None, None))[1]})
+                for x in xs if x[0] in got]
 
     done = 0
     t0 = time.time()
     budget = float(os.environ.get("BUDGET_SEC", 2400))
-    todo = [x for x in todo]
-    with ThreadPoolExecutor(workers) as ex:
-        futs = []
-        for x in todo:
-            futs.append(ex.submit(job, x))
-        for f in futs:
-            if time.time() - t0 > budget:
-                print("time budget reached; saving what we have", flush=True)
-                for g in futs:
-                    g.cancel()
-                break
-            t, rec = f.result()
-            have[t] = rec
-            done += 1
-            if done % 1000 == 0:
+    with ThreadPoolExecutor(4) as ex:
+        for res in ex.map(job, chunks):
+            for t, rec in res:
+                have[t] = rec
+                done += 1
+            if done and done % 2000 < len(res):
                 OUT.write_text(json.dumps(store, separators=(",", ":")))
                 print(f"{done} stored", flush=True)
+            if time.time() - t0 > budget:
+                print("time budget reached; saving what we have", flush=True)
+                break
     store["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     OUT.write_text(json.dumps(store, separators=(",", ":")))
     print(f"done: {done} new, {len(have)} total")
