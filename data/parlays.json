@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1580,7 +1580,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "props-4": {
@@ -1656,7 +1656,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "td-1": {
@@ -1684,7 +1684,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "td-2": {
@@ -1724,13 +1724,13 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 7.085,
-   "ev": 0.856,
+   "decimal": 7.218,
+   "ev": 0.891,
    "family": "td",
    "good": true,
    "id": "td-3",
@@ -1761,14 +1761,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 1.818,
+     "decimal": 1.852,
      "game": "BAL@HOU",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Derrick Henry anytime TD",
      "player": "Derrick Henry",
-     "price": 0.55,
+     "price": 0.54,
      "team": "BAL"
     }
    ],
@@ -1776,13 +1776,13 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 13.625,
-   "ev": 1.117,
+   "decimal": 13.88,
+   "ev": 1.156,
    "family": "td",
    "good": true,
    "id": "td-4",
@@ -1813,14 +1813,14 @@
     },
     {
      "chance": 0.593,
-     "decimal": 1.818,
+     "decimal": 1.852,
      "game": "BAL@HOU",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Derrick Henry anytime TD",
      "player": "Derrick Henry",
-     "price": 0.55,
+     "price": 0.54,
      "team": "BAL"
     },
     {
@@ -1840,7 +1840,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   },
   "value-3": {
@@ -1901,7 +1901,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 12:01 UTC",
+   "updated": "2026-11-26 12:20 UTC",
    "week": 12
   }
  },
