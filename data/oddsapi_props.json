@@ -1,490 +1,175 @@
 {
   "lines": [
     {
-      "player": "Daniel Jones",
+      "player": "Josh Allen",
       "stat": "passing_yards",
-      "line": 180.5,
+      "line": 215.5,
       "over_price": -113,
       "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "C.J. Stroud",
+      "player": "Patrick Mahomes",
       "stat": "passing_yards",
-      "line": 251.5,
+      "line": 228.5,
       "over_price": -113,
       "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "David Montgomery",
+      "player": "Emmett Johnson",
       "stat": "receiving_yards",
-      "line": 8.5,
+      "line": 30.5,
       "over_price": -113,
       "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Anthony Gould",
+      "player": "Dawson Knox",
       "stat": "receiving_yards",
-      "line": 21.5,
+      "line": 13.5,
       "over_price": -113,
       "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Xavier Hutchinson",
+      "player": "Josh Downs",
       "stat": "receiving_yards",
       "line": 36.5,
       "over_price": -113,
       "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Kayshon Boutte",
-      "stat": "receiving_yards",
-      "line": 27.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Nico Collins",
-      "stat": "receiving_yards",
-      "line": 71.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Ashton Dulin",
-      "stat": "receiving_yards",
-      "line": 12.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Dalton Schultz",
-      "stat": "receiving_yards",
-      "line": 29.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Tank Dell",
-      "stat": "receiving_yards",
-      "line": 38.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Drew Ogletree",
-      "stat": "receiving_yards",
-      "line": 2.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Laquon Treadwell",
-      "stat": "receiving_yards",
-      "line": 27.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Jonathan Taylor",
-      "stat": "receiving_yards",
-      "line": 23.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Deion Burks",
-      "stat": "receiving_yards",
-      "line": 15.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Foster Moreau",
-      "stat": "receiving_yards",
-      "line": 3.5,
-      "over_price": 102,
-      "under_price": -130,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Tyler Warren",
-      "stat": "receiving_yards",
-      "line": 37.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Nico Collins",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -148,
-      "under_price": 112,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Anthony Gould",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 134,
-      "under_price": -180,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "David Montgomery",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Tank Dell",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -148,
-      "under_price": 112,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Xavier Hutchinson",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 134,
-      "under_price": -180,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Dalton Schultz",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Drew Ogletree",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -140,
-      "under_price": 106,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Foster Moreau",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -148,
-      "under_price": 112,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Tyler Warren",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -136,
-      "under_price": 102,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Deion Burks",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -148,
-      "under_price": 112,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Jonathan Taylor",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Ashton Dulin",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 124,
-      "under_price": -166,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Kayshon Boutte",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 144,
-      "under_price": -194,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Laquon Treadwell",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Daniel Jones",
-      "stat": "rushing_yards",
-      "line": 7.5,
-      "over_price": -120,
-      "under_price": -106,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "David Montgomery",
-      "stat": "rushing_yards",
-      "line": 56.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "C.J. Stroud",
-      "stat": "rushing_yards",
-      "line": 10.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Seth McGowan",
-      "stat": "rushing_yards",
-      "line": 26.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Jonathan Taylor",
-      "stat": "rushing_yards",
-      "line": 51.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Emari Demercado",
-      "stat": "rushing_yards",
-      "line": 20.5,
-      "over_price": -113,
-      "under_price": -113,
-      "event_id": "66f9e83cf025d58acee12bce18661fb3",
-      "commence_time": "2026-11-20T01:15:00Z"
-    },
-    {
-      "player": "Patrick Mahomes",
-      "stat": "passing_yards",
-      "line": 250.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Carson Beck",
-      "stat": "passing_yards",
-      "line": 170.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Josh Downs",
-      "stat": "receiving_yards",
-      "line": 39.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
       "player": "Travis Kelce",
       "stat": "receiving_yards",
-      "line": 40.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 44.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Tyler Allgeier",
+      "player": "Keon Coleman",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "James Cook",
       "stat": "receiving_yards",
       "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Trey McBride",
+      "player": "Khalil Shakir",
+      "stat": "receiving_yards",
+      "line": 36.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Dalton Kincaid",
+      "stat": "receiving_yards",
+      "line": 34.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "DJ Moore",
       "stat": "receiving_yards",
       "line": 49.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Simi Fehoko",
-      "stat": "receiving_yards",
-      "line": 15.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Xavier Worthy",
-      "stat": "receiving_yards",
-      "line": 24.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Rashee Rice",
-      "stat": "receiving_yards",
-      "line": 51.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
       "player": "Cyrus Allen",
       "stat": "receiving_yards",
-      "line": 12.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 11.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Bam Knight",
+      "player": "Xavier Worthy",
       "stat": "receiving_yards",
-      "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 21.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Devin Duvernay",
+      "player": "Ty Johnson",
       "stat": "receiving_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 16.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Noah Gray",
+      "player": "Rashee Rice",
       "stat": "receiving_yards",
-      "line": 14.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 44.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Elijah Higgins",
-      "stat": "receiving_yards",
-      "line": 15.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Reggie Virgil",
-      "stat": "receiving_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Simi Fehoko",
+      "player": "Dawson Knox",
       "stat": "receptions",
       "line": 1.5,
-      "over_price": 106,
-      "under_price": -140,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -108,
+      "under_price": -122,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Devin Duvernay",
+      "player": "Xavier Worthy",
       "stat": "receptions",
-      "line": 1.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 2.5,
+      "over_price": 116,
+      "under_price": -154,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Noah Gray",
+      "player": "Khalil Shakir",
       "stat": "receptions",
-      "line": 1.5,
+      "line": 3.5,
+      "over_price": 100,
+      "under_price": -132,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Emmett Johnson",
+      "stat": "receptions",
+      "line": 3.5,
       "over_price": -132,
       "under_price": 100,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
       "player": "Cyrus Allen",
@@ -492,2087 +177,2663 @@
       "line": 1.5,
       "over_price": 154,
       "under_price": -210,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Josh Downs",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Travis Kelce",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bam Knight",
+      "player": "Keon Coleman",
       "stat": "receptions",
       "line": 1.5,
-      "over_price": -122,
-      "under_price": -106,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Reggie Virgil",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Xavier Worthy",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Trey McBride",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": -158,
-      "under_price": 118,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -188,
+      "under_price": 140,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
       "player": "Rashee Rice",
       "stat": "receptions",
       "line": 4.5,
-      "over_price": -122,
-      "under_price": -106,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tyler Allgeier",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -125,
-      "under_price": -106,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Elijah Higgins",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 158,
-      "under_price": -215,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Carson Beck",
-      "stat": "rushing_yards",
-      "line": 8.5,
-      "over_price": -120,
-      "under_price": -108,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bam Knight",
-      "stat": "rushing_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tyler Allgeier",
-      "stat": "rushing_yards",
-      "line": 25.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Patrick Mahomes",
-      "stat": "rushing_yards",
-      "line": 9.5,
-      "over_price": -108,
-      "under_price": -120,
-      "event_id": "403a88701352da05b0710a9e883b803e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jacoby Brissett",
-      "stat": "passing_yards",
-      "line": 238.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bryce Young",
-      "stat": "passing_yards",
-      "line": 245.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Rashod Bateman",
-      "stat": "receiving_yards",
-      "line": 25.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chuba Hubbard",
-      "stat": "receiving_yards",
-      "line": 18.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jalen Coker",
-      "stat": "receiving_yards",
-      "line": 40.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Derrick Henry",
-      "stat": "receiving_yards",
-      "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Ja'Kobi Lane",
-      "stat": "receiving_yards",
-      "line": 35.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Mark Andrews",
-      "stat": "receiving_yards",
-      "line": 33.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Zay Flowers",
-      "stat": "receiving_yards",
-      "line": 68.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "stat": "receiving_yards",
-      "line": 63.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Darren Waller",
-      "stat": "receiving_yards",
-      "line": 26.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Justice Hill",
-      "stat": "receiving_yards",
-      "line": 14.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Josh Cuevas",
-      "stat": "receiving_yards",
-      "line": 11.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Ja'Kobi Lane",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -154,
-      "under_price": 116,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jalen Coker",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -122,
-      "under_price": -108,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Rashod Bateman",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 118,
-      "under_price": -158,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Derrick Henry",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -140,
-      "under_price": 106,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Justice Hill",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 124,
-      "under_price": -166,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chuba Hubbard",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Mark Andrews",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": 124,
-      "under_price": -166,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Darren Waller",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -112,
-      "under_price": -118,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Josh Cuevas",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tetairoa McMillan",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Zay Flowers",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": -148,
-      "under_price": 112,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Justice Hill",
-      "stat": "rushing_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bryce Young",
-      "stat": "rushing_yards",
-      "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jacoby Brissett",
-      "stat": "rushing_yards",
-      "line": 5.5,
-      "over_price": -128,
-      "under_price": -102,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chuba Hubbard",
-      "stat": "rushing_yards",
-      "line": 70.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Derrick Henry",
-      "stat": "rushing_yards",
-      "line": 65.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4527f57f5bc32742d8194af1ccf7da7e",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kyle McCord",
-      "stat": "passing_yards",
-      "line": 185.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Josh Allen",
-      "stat": "passing_yards",
-      "line": 227.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Malik Washington",
-      "stat": "receiving_yards",
-      "line": 34.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "James Cook",
-      "stat": "receiving_yards",
-      "line": 8.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Dalton Kincaid",
-      "stat": "receiving_yards",
-      "line": 31.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Caleb Douglas",
-      "stat": "receiving_yards",
-      "line": 48.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Khalil Shakir",
-      "stat": "receiving_yards",
-      "line": 32.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "DJ Moore",
-      "stat": "receiving_yards",
-      "line": 47.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Dalton Kincaid",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 102,
-      "under_price": -136,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "James Cook",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Khalil Shakir",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -144,
-      "under_price": 108,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Malik Washington",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -138,
-      "under_price": 104,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Caleb Douglas",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "DJ Moore",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "James Cook",
-      "stat": "rushing_yards",
-      "line": 97.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Ollie Gordon II",
-      "stat": "rushing_yards",
-      "line": 56.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Josh Allen",
-      "stat": "rushing_yards",
-      "line": 27.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4c5b1c0843a260278e95eb93e7787576",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tyler Shough",
-      "stat": "passing_yards",
-      "line": 239.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Caleb Williams",
-      "stat": "passing_yards",
-      "line": 245.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kalif Raymond",
-      "stat": "receiving_yards",
-      "line": 20.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Rome Odunze",
-      "stat": "receiving_yards",
-      "line": 45.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Noah Fant",
-      "stat": "receiving_yards",
-      "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Colston Loveland",
-      "stat": "receiving_yards",
-      "line": 50.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Travis Etienne Jr.",
-      "stat": "receiving_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Devaughn Vele",
-      "stat": "receiving_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "D'Andre Swift",
-      "stat": "receiving_yards",
-      "line": 14.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kyle Monangai",
-      "stat": "receiving_yards",
-      "line": 5.5,
-      "over_price": -102,
-      "under_price": -128,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Juwan Johnson",
-      "stat": "receiving_yards",
-      "line": 20.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Luther Burden III",
-      "stat": "receiving_yards",
-      "line": 59.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Sam Roush",
-      "stat": "receiving_yards",
-      "line": 5.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Alvin Kamara",
-      "stat": "receiving_yards",
-      "line": 14.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chris Olave",
-      "stat": "receiving_yards",
-      "line": 66.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jordyn Tyson",
-      "stat": "receiving_yards",
-      "line": 56.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Luther Burden III",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -110,
-      "under_price": -120,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Noah Fant",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -250,
-      "under_price": 182,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "D'Andre Swift",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 124,
-      "under_price": -166,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Alvin Kamara",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -130,
-      "under_price": -102,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kalif Raymond",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 110,
-      "under_price": -146,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jordyn Tyson",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Colston Loveland",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -128,
-      "under_price": -104,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kyle Monangai",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -225,
-      "under_price": 164,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chris Olave",
-      "stat": "receptions",
-      "line": 5.5,
       "over_price": 106,
       "under_price": -140,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Rome Odunze",
+      "player": "Ty Johnson",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 116,
+      "under_price": -154,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Josh Downs",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Dalton Kincaid",
       "stat": "receptions",
       "line": 3.5,
       "over_price": 134,
       "under_price": -180,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Sam Roush",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -158,
-      "under_price": 118,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Travis Etienne Jr.",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Juwan Johnson",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 134,
-      "under_price": -180,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Devaughn Vele",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 122,
-      "under_price": -162,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Audric Estime",
-      "stat": "rushing_yards",
-      "line": 17.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Caleb Williams",
-      "stat": "rushing_yards",
-      "line": 17.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tyler Shough",
-      "stat": "rushing_yards",
-      "line": 18.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "D'Andre Swift",
-      "stat": "rushing_yards",
-      "line": 63.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Alvin Kamara",
-      "stat": "rushing_yards",
-      "line": 6.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Travis Etienne Jr.",
-      "stat": "rushing_yards",
-      "line": 29.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kyle Monangai",
-      "stat": "rushing_yards",
-      "line": 44.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3ea90704fb576633bd1e2fa5aafd9ea3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Dak Prescott",
-      "stat": "passing_yards",
-      "line": 276.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Cam Ward",
-      "stat": "passing_yards",
-      "line": 237.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Javonte Williams",
-      "stat": "receiving_yards",
-      "line": 10.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tony Pollard",
-      "stat": "receiving_yards",
-      "line": 16.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "CeeDee Lamb",
-      "stat": "receiving_yards",
-      "line": 92.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Carnell Tate",
-      "stat": "receiving_yards",
-      "line": 64.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Ryan Flournoy",
-      "stat": "receiving_yards",
-      "line": 40.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Brevyn Spann-Ford",
-      "stat": "receiving_yards",
-      "line": 21.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "George Pickens",
-      "stat": "receiving_yards",
-      "line": 69.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tony Pollard",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Javonte Williams",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 134,
-      "under_price": -180,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "George Pickens",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Ryan Flournoy",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -120,
-      "under_price": -110,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "CeeDee Lamb",
-      "stat": "receptions",
-      "line": 7.5,
-      "over_price": -108,
-      "under_price": -122,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Brevyn Spann-Ford",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -108,
-      "under_price": -122,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Carnell Tate",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Javonte Williams",
-      "stat": "rushing_yards",
-      "line": 79.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tony Pollard",
-      "stat": "rushing_yards",
-      "line": 63.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "5e63079b678f8c13419adc169fff02d3",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Baker Mayfield",
-      "stat": "passing_yards",
-      "line": 211.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jared Goff",
-      "stat": "passing_yards",
-      "line": 249.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kenny Gainwell",
-      "stat": "receiving_yards",
-      "line": 11.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bucky Irving",
-      "stat": "receiving_yards",
-      "line": 14.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tez Johnson",
-      "stat": "receiving_yards",
-      "line": 24.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jameson Williams",
-      "stat": "receiving_yards",
-      "line": 50.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jahmyr Gibbs",
-      "stat": "receiving_yards",
-      "line": 33.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Amon-Ra St. Brown",
-      "stat": "receiving_yards",
-      "line": 76.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Cade Otton",
-      "stat": "receiving_yards",
-      "line": 29.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Isaac TeSlaa",
-      "stat": "receiving_yards",
-      "line": 15.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chris Godwin",
-      "stat": "receiving_yards",
-      "line": 32.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Emeka Egbuka",
-      "stat": "receiving_yards",
-      "line": 45.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Sam LaPorta",
-      "stat": "receiving_yards",
-      "line": 35.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Kenny Gainwell",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -200,
-      "under_price": 148,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Bucky Irving",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -130,
-      "under_price": -102,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jameson Williams",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -132,
-      "under_price": 100,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Tez Johnson",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -168,
-      "under_price": 126,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Sam LaPorta",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Chris Godwin",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jahmyr Gibbs",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": -154,
-      "under_price": 116,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Cade Otton",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Amon-Ra St. Brown",
-      "stat": "receptions",
-      "line": 6.5,
-      "over_price": -138,
-      "under_price": 104,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Isaac TeSlaa",
+      "player": "James Cook",
       "stat": "receptions",
       "line": 1.5,
       "over_price": 130,
       "under_price": -174,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Emeka Egbuka",
+      "player": "DJ Moore",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Travis Kelce",
       "stat": "receptions",
       "line": 4.5,
       "over_price": 134,
       "under_price": -180,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Jahmyr Gibbs",
+      "player": "Josh Allen",
       "stat": "rushing_yards",
-      "line": 90.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 38.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Jared Goff",
+      "player": "Ray Davis",
       "stat": "rushing_yards",
-      "line": 0.5,
-      "over_price": -106,
-      "under_price": -122,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 3.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Kenny Gainwell",
+      "player": "Ty Johnson",
       "stat": "rushing_yards",
-      "line": 16.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 1.5,
+      "over_price": 102,
+      "under_price": -130,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Sione Vaki",
+      "player": "Emmett Johnson",
       "stat": "rushing_yards",
-      "line": 15.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 80.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Bucky Irving",
-      "stat": "rushing_yards",
-      "line": 67.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Baker Mayfield",
+      "player": "Patrick Mahomes",
       "stat": "rushing_yards",
       "line": 12.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
     },
     {
-      "player": "Joe Milton",
+      "player": "Jaydn Ott",
+      "stat": "rushing_yards",
+      "line": 5.5,
+      "over_price": -106,
+      "under_price": -120,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "James Cook",
+      "stat": "rushing_yards",
+      "line": 87.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "f36f518585aec40e8cb40e071c0844aa",
+      "commence_time": "2026-11-27T01:20:00Z"
+    },
+    {
+      "player": "Bo Nix",
       "stat": "passing_yards",
-      "line": 187.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 201.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Aaron Rodgers",
+      "player": "Mason Rudolph",
       "stat": "passing_yards",
-      "line": 211.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Germie Bernard",
-      "stat": "receiving_yards",
-      "line": 29.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "DeVonta Smith",
-      "stat": "receiving_yards",
-      "line": 48.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Dallas Goedert",
-      "stat": "receiving_yards",
-      "line": 30.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 175.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "DK Metcalf",
       "stat": "receiving_yards",
-      "line": 42.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 27.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Saquon Barkley",
+      "player": "Michael Pittman Jr.",
       "stat": "receiving_yards",
       "line": 10.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Pat Bryant",
+      "stat": "receiving_yards",
+      "line": 27.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Germie Bernard",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "Pat Freiermuth",
       "stat": "receiving_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 20.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Marvin Mims Jr.",
+      "stat": "receiving_yards",
+      "line": 8.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "Rico Dowdle",
       "stat": "receiving_yards",
-      "line": 9.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jaylen Warren",
-      "stat": "receiving_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 8.5,
+      "over_price": -102,
+      "under_price": -125,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "Darnell Washington",
       "stat": "receiving_yards",
-      "line": 20.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 17.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Saquon Barkley",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -182,
-      "under_price": 136,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Rico Dowdle",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -192,
-      "under_price": 142,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "DeVonta Smith",
-      "stat": "receptions",
+      "player": "Troy Franklin",
+      "stat": "receiving_yards",
       "line": 4.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Dallas Goedert",
+      "player": "Evan Engram",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Adam Trautman",
+      "stat": "receiving_yards",
+      "line": 4.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Courtland Sutton",
+      "stat": "receiving_yards",
+      "line": 26.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jonah Coleman",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jaylen Waddle",
+      "stat": "receiving_yards",
+      "line": 41.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Roman Wilson",
+      "stat": "receiving_yards",
+      "line": 12.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jaylen Warren",
+      "stat": "receiving_yards",
+      "line": 18.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Courtland Sutton",
       "stat": "receptions",
-      "line": 3.5,
-      "over_price": 106,
-      "under_price": -140,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 2.5,
+      "over_price": -138,
+      "under_price": 104,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "DK Metcalf",
       "stat": "receptions",
-      "line": 3.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "line": 2.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "Pat Freiermuth",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -144,
-      "under_price": 108,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Germie Bernard",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 102,
-      "under_price": -136,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Jaylen Warren",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -136,
-      "under_price": 102,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Darnell Washington",
       "stat": "receptions",
       "line": 2.5,
       "over_price": 116,
       "under_price": -154,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Jaylen Warren",
-      "stat": "rushing_yards",
-      "line": 65.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Saquon Barkley",
-      "stat": "rushing_yards",
-      "line": 60.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "player": "Darnell Washington",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
       "player": "Rico Dowdle",
-      "stat": "rushing_yards",
-      "line": 37.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Joe Milton",
-      "stat": "rushing_yards",
-      "line": 34.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "cbe45bafcc2615fc1d96cbc12840377a",
-      "commence_time": "2026-11-22T18:00:00Z"
-    },
-    {
-      "player": "Justin Herbert",
-      "stat": "passing_yards",
-      "line": 203.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Geno Smith",
-      "stat": "passing_yards",
-      "line": 217.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Geno Smith",
-      "stat": "rushing_yards",
-      "line": 4.5,
-      "over_price": -102,
-      "under_price": -128,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Kimani Vidal",
-      "stat": "rushing_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Justin Herbert",
-      "stat": "rushing_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Keaton Mitchell",
-      "stat": "rushing_yards",
-      "line": 11.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Omarion Hampton",
-      "stat": "rushing_yards",
-      "line": 62.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "4b20b742b6168aaca4f25d87f11b1526",
-      "commence_time": "2026-11-22T21:05:00Z"
-    },
-    {
-      "player": "Bo Nix",
-      "stat": "passing_yards",
-      "line": 214.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Fernando Mendoza",
-      "stat": "passing_yards",
-      "line": 168.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Mike Washington Jr.",
-      "stat": "rushing_yards",
-      "line": 24.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "J.K. Dobbins",
-      "stat": "rushing_yards",
-      "line": 22.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Fernando Mendoza",
-      "stat": "rushing_yards",
-      "line": 16.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Ashton Jeanty",
-      "stat": "rushing_yards",
-      "line": 32.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Bo Nix",
-      "stat": "rushing_yards",
-      "line": 10.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Jonah Coleman",
-      "stat": "rushing_yards",
-      "line": 67.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "1940706a79cbcbafacdcbf231069716b",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "J.J. McCarthy",
-      "stat": "passing_yards",
-      "line": 217.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Trevor Lawrence",
-      "stat": "passing_yards",
-      "line": 245.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Brian Thomas Jr",
-      "stat": "receiving_yards",
-      "line": 12.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Josh Cameron",
-      "stat": "receiving_yards",
-      "line": 12.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Malachi Fields",
-      "stat": "receiving_yards",
-      "line": 29.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Brenton Strange",
-      "stat": "receiving_yards",
-      "line": 32.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Parker Washington",
-      "stat": "receiving_yards",
-      "line": 64.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Nate Boerkircher",
-      "stat": "receiving_yards",
-      "line": 10.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Darnell Mooney",
-      "stat": "receiving_yards",
-      "line": 15.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Cam Skattebo",
-      "stat": "receiving_yards",
-      "line": 13.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Theo Johnson",
-      "stat": "receiving_yards",
-      "line": 7.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Jakobi Meyers",
-      "stat": "receiving_yards",
-      "line": 42.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Malik Nabers",
-      "stat": "receiving_yards",
-      "line": 65.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Travis Hunter",
-      "stat": "receiving_yards",
-      "line": 8.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Isaiah Likely",
-      "stat": "receiving_yards",
-      "line": 54.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Malachi Fields",
+      "player": "Jaylen Warren",
       "stat": "receptions",
       "line": 2.5,
-      "over_price": 110,
-      "under_price": -146,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Malik Nabers",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": -120,
-      "under_price": -110,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Theo Johnson",
-      "stat": "receptions",
-      "line": 0.5,
-      "over_price": -210,
-      "under_price": 154,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Nate Boerkircher",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 120,
-      "under_price": -160,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Travis Hunter",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 154,
-      "under_price": -210,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Darnell Mooney",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": -106,
-      "under_price": -125,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Brian Thomas Jr",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 154,
-      "under_price": -210,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Brenton Strange",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -174,
-      "under_price": 130,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Cam Skattebo",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": 134,
-      "under_price": -180,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Jakobi Meyers",
-      "stat": "receptions",
-      "line": 3.5,
-      "over_price": 120,
-      "under_price": -160,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Isaiah Likely",
-      "stat": "receptions",
-      "line": 5.5,
-      "over_price": 106,
-      "under_price": -140,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Parker Washington",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": 114,
-      "under_price": -152,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Josh Cameron",
-      "stat": "receptions",
-      "line": 1.5,
-      "over_price": 148,
-      "under_price": -200,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Devin Singletary",
-      "stat": "rushing_yards",
-      "line": 10.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
     },
     {
-      "player": "Trevor Lawrence",
-      "stat": "rushing_yards",
-      "line": 8.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Cam Skattebo",
-      "stat": "rushing_yards",
-      "line": 52.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "J.J. McCarthy",
-      "stat": "rushing_yards",
-      "line": 16.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "8ba112fabf4e87639338a5f437c5abfe",
-      "commence_time": "2026-11-22T21:25:00Z"
-    },
-    {
-      "player": "Brock Purdy",
-      "stat": "passing_yards",
-      "line": 246.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Kirk Cousins",
-      "stat": "passing_yards",
-      "line": 232.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Jauan Jennings",
-      "stat": "receiving_yards",
-      "line": 18.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Aaron Jones",
-      "stat": "receiving_yards",
-      "line": 9.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Christian McCaffrey",
-      "stat": "receiving_yards",
-      "line": 33.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Justin Jefferson",
-      "stat": "receiving_yards",
-      "line": 82.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "George Kittle",
-      "stat": "receiving_yards",
-      "line": 51.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "George Kittle",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Jauan Jennings",
-      "stat": "receptions",
-      "line": 2.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Christian McCaffrey",
+      "player": "Jaylen Waddle",
       "stat": "receptions",
       "line": 3.5,
       "over_price": -132,
       "under_price": 100,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Michael Pittman Jr.",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 110,
+      "under_price": -146,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Pat Bryant",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -102,
+      "under_price": -130,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jonah Coleman",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 102,
+      "under_price": -136,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Adam Trautman",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -188,
+      "under_price": 140,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Troy Franklin",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -166,
+      "under_price": 124,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Evan Engram",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -102,
+      "under_price": -130,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Germie Bernard",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Roman Wilson",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 104,
+      "under_price": -138,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Marvin Mims Jr.",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 158,
+      "under_price": -215,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Mason Rudolph",
+      "stat": "rushing_yards",
+      "line": 5.5,
+      "over_price": -128,
+      "under_price": 100,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jaylen Warren",
+      "stat": "rushing_yards",
+      "line": 64.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Bo Nix",
+      "stat": "rushing_yards",
+      "line": 10.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Marvin Mims Jr.",
+      "stat": "rushing_yards",
+      "line": 3.5,
+      "over_price": -102,
+      "under_price": -125,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Jonah Coleman",
+      "stat": "rushing_yards",
+      "line": 73.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Rico Dowdle",
+      "stat": "rushing_yards",
+      "line": 32.5,
+      "over_price": -113,
+      "under_price": -113,
+      "event_id": "44a3bcf5bd002583ddef2207a92dd977",
+      "commence_time": "2026-11-27T20:00:00Z"
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "stat": "passing_yards",
+      "line": 200.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kirk Cousins",
+      "stat": "passing_yards",
+      "line": 249.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kyle Pitts",
+      "stat": "receiving_yards",
+      "line": 25.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jauan Jennings",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Drake London",
+      "stat": "receiving_yards",
+      "line": 67.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "T.J. Hockenson",
+      "stat": "receiving_yards",
+      "line": 44.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Justin Jefferson",
+      "stat": "receiving_yards",
+      "line": 85.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Aaron Jones",
+      "stat": "receiving_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Bijan Robinson",
+      "stat": "receiving_yards",
+      "line": 19.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jahan Dotson",
+      "stat": "receiving_yards",
+      "line": 29.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tai Felton",
+      "stat": "receiving_yards",
+      "line": 20.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
     },
     {
       "player": "Aaron Jones",
       "stat": "receptions",
       "line": 1.5,
-      "over_price": -172,
-      "under_price": 128,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "over_price": -108,
+      "under_price": -122,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jauan Jennings",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -102,
+      "under_price": -130,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Bijan Robinson",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -166,
+      "under_price": 124,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jahan Dotson",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -166,
+      "under_price": 124,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tai Felton",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 112,
+      "under_price": -148,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
     },
     {
       "player": "Justin Jefferson",
       "stat": "receptions",
       "line": 6.5,
-      "over_price": -158,
-      "under_price": 118,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
     },
     {
-      "player": "Brock Purdy",
+      "player": "T.J. Hockenson",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -125,
+      "under_price": -106,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kyle Pitts",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 134,
+      "under_price": -180,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Drake London",
+      "stat": "receptions",
+      "line": 5.5,
+      "over_price": 120,
+      "under_price": -160,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Bijan Robinson",
       "stat": "rushing_yards",
-      "line": 16.5,
+      "line": 75.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
-    },
-    {
-      "player": "Kirk Cousins",
-      "stat": "rushing_yards",
-      "line": 1.5,
-      "over_price": -125,
-      "under_price": -104,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
     },
     {
       "player": "Aaron Jones",
       "stat": "rushing_yards",
-      "line": 30.5,
+      "line": 37.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
     },
     {
       "player": "Jordan Mason",
       "stat": "rushing_yards",
+      "line": 57.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kirk Cousins",
+      "stat": "rushing_yards",
+      "line": 0.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Khalil Herbert",
+      "stat": "rushing_yards",
+      "line": 8.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Michael Penix Jr.",
+      "stat": "rushing_yards",
+      "line": 8.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "6a05021bdb6bab24b9bb381ffff10f0c",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "C.J. Stroud",
+      "stat": "passing_yards",
+      "line": 257.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jacoby Brissett",
+      "stat": "passing_yards",
+      "line": 235.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Derrick Henry",
+      "stat": "receiving_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mark Andrews",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Woody Marks",
+      "stat": "receiving_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Josh Cuevas",
+      "stat": "receiving_yards",
+      "line": 11.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "David Montgomery",
+      "stat": "receiving_yards",
+      "line": 6.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ja'Kobi Lane",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Rashod Bateman",
+      "stat": "receiving_yards",
+      "line": 32.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tank Dell",
+      "stat": "receiving_yards",
+      "line": 32.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Nico Collins",
+      "stat": "receiving_yards",
+      "line": 57.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Zay Flowers",
+      "stat": "receiving_yards",
+      "line": 74.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Dalton Schultz",
+      "stat": "receiving_yards",
+      "line": 24.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Justice Hill",
+      "stat": "receiving_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Zay Flowers",
+      "stat": "receptions",
+      "line": 6.5,
+      "over_price": 106,
+      "under_price": -140,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mark Andrews",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -188,
+      "under_price": 140,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Rashod Bateman",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 106,
+      "under_price": -140,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Dalton Schultz",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -154,
+      "under_price": 116,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Marvin Harrison Jr.",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -136,
+      "under_price": 102,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Nico Collins",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -118,
+      "under_price": -112,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Josh Cuevas",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 136,
+      "under_price": -182,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "David Montgomery",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -106,
+      "under_price": -125,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Xavier Hutchinson",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -172,
+      "under_price": 128,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Woody Marks",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -106,
+      "under_price": -125,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Justice Hill",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 112,
+      "under_price": -148,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Derrick Henry",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -205,
+      "under_price": 152,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tank Dell",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -178,
+      "under_price": 132,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ja'Kobi Lane",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 144,
+      "under_price": -194,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jacoby Brissett",
+      "stat": "rushing_yards",
+      "line": 3.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Derrick Henry",
+      "stat": "rushing_yards",
+      "line": 54.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "C.J. Stroud",
+      "stat": "rushing_yards",
+      "line": 11.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Woody Marks",
+      "stat": "rushing_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "David Montgomery",
+      "stat": "rushing_yards",
+      "line": 44.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "60d0c074801985c1062795362a24200e",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tyler Shough",
+      "stat": "passing_yards",
+      "line": 247.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Joe Burrow",
+      "stat": "passing_yards",
+      "line": 294.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chase Brown",
+      "stat": "receiving_yards",
+      "line": 25.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Travis Etienne Jr.",
+      "stat": "receiving_yards",
+      "line": 13.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Devaughn Vele",
+      "stat": "receiving_yards",
+      "line": 30.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jordyn Tyson",
+      "stat": "receiving_yards",
+      "line": 41.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tee Higgins",
+      "stat": "receiving_yards",
+      "line": 68.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mike Gesicki",
+      "stat": "receiving_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "stat": "receiving_yards",
+      "line": 91.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chris Olave",
+      "stat": "receiving_yards",
+      "line": 70.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mike Gesicki",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Travis Etienne Jr.",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 112,
+      "under_price": -148,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jordyn Tyson",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ja'Marr Chase",
+      "stat": "receptions",
+      "line": 7.5,
+      "over_price": -120,
+      "under_price": -110,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Devaughn Vele",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 122,
+      "under_price": -162,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tee Higgins",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -160,
+      "under_price": 120,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chase Brown",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -108,
+      "under_price": -122,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chris Olave",
+      "stat": "receptions",
+      "line": 5.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chase Brown",
+      "stat": "rushing_yards",
       "line": 43.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Joe Burrow",
+      "stat": "rushing_yards",
+      "line": 6.5,
+      "over_price": -108,
+      "under_price": -120,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tyler Shough",
+      "stat": "rushing_yards",
+      "line": 18.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Travis Etienne Jr.",
+      "stat": "rushing_yards",
+      "line": 48.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Samaje Perine",
+      "stat": "rushing_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "f7d3ae7a8fe2438cef7d7d7bc67e31db",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Anthony Richardson",
+      "stat": "passing_yards",
+      "line": 163.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "J.J. McCarthy",
+      "stat": "passing_yards",
+      "line": 219.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malik Nabers",
+      "stat": "receiving_yards",
+      "line": 65.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Laquon Treadwell",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Anthony Gould",
+      "stat": "receiving_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Darnell Mooney",
+      "stat": "receiving_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Theo Johnson",
+      "stat": "receiving_yards",
+      "line": 6.5,
+      "over_price": -108,
+      "under_price": -120,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malachi Fields",
+      "stat": "receiving_yards",
+      "line": 29.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Deion Burks",
+      "stat": "receiving_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Isaiah Likely",
+      "stat": "receiving_yards",
+      "line": 50.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tyler Warren",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jonathan Taylor",
+      "stat": "receiving_yards",
+      "line": 13.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ashton Dulin",
+      "stat": "receiving_yards",
+      "line": 16.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Cam Skattebo",
+      "stat": "receiving_yards",
+      "line": 15.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Anthony Gould",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ashton Dulin",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 102,
+      "under_price": -136,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Deion Burks",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malachi Fields",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 122,
+      "under_price": -162,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jonathan Taylor",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -108,
+      "under_price": -122,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Cam Skattebo",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 108,
+      "under_price": -144,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tyler Warren",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malik Nabers",
+      "stat": "receptions",
+      "line": 5.5,
+      "over_price": -118,
+      "under_price": -112,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Laquon Treadwell",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Isaiah Likely",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -144,
+      "under_price": 108,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Theo Johnson",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -162,
+      "under_price": 122,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Darnell Mooney",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jonathan Taylor",
+      "stat": "rushing_yards",
+      "line": 69.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Cam Skattebo",
+      "stat": "rushing_yards",
+      "line": 75.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "J.J. McCarthy",
+      "stat": "rushing_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Devin Singletary",
+      "stat": "rushing_yards",
+      "line": 12.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Anthony Richardson",
+      "stat": "rushing_yards",
+      "line": 37.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "e9da808e36e1b7475698a57465ad4519",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Trevor Lawrence",
+      "stat": "passing_yards",
+      "line": 261.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Cam Ward",
+      "stat": "passing_yards",
+      "line": 208.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tony Pollard",
+      "stat": "receiving_yards",
+      "line": 14.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Parker Washington",
+      "stat": "receiving_yards",
+      "line": 69.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Brian Thomas Jr",
+      "stat": "receiving_yards",
+      "line": 18.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Travis Hunter",
+      "stat": "receiving_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Josh Cameron",
+      "stat": "receiving_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Carnell Tate",
+      "stat": "receiving_yards",
+      "line": 52.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Elic Ayomanor",
+      "stat": "receiving_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Xavier Restrepo",
+      "stat": "receiving_yards",
+      "line": 9.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Calvin Ridley",
+      "stat": "receiving_yards",
+      "line": 13.5,
+      "over_price": -108,
+      "under_price": -120,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Gunnar Helm",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jakobi Meyers",
+      "stat": "receiving_yards",
+      "line": 52.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Brenton Strange",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chimere Dike",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Brenton Strange",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -160,
+      "under_price": 120,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Josh Cameron",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 148,
+      "under_price": -200,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Gunnar Helm",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -172,
+      "under_price": 128,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Xavier Restrepo",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -220,
+      "under_price": 162,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Travis Hunter",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 168,
+      "under_price": -230,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Calvin Ridley",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 140,
+      "under_price": -188,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Parker Washington",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -120,
+      "under_price": -110,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jakobi Meyers",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -136,
+      "under_price": 102,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Brian Thomas Jr",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -138,
+      "under_price": 104,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tony Pollard",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -136,
+      "under_price": 102,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Carnell Tate",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -122,
+      "under_price": -108,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chimere Dike",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -205,
+      "under_price": 152,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Elic Ayomanor",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 116,
+      "under_price": -154,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Cam Ward",
+      "stat": "rushing_yards",
+      "line": 7.5,
+      "over_price": -128,
+      "under_price": -102,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Tony Pollard",
+      "stat": "rushing_yards",
+      "line": 52.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Trevor Lawrence",
+      "stat": "rushing_yards",
+      "line": 7.5,
+      "over_price": -128,
+      "under_price": -102,
+      "event_id": "81a8fee5b649a3ad5ad59e9528f2f376",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kyle McCord",
+      "stat": "passing_yards",
+      "line": 170.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Geno Smith",
+      "stat": "passing_yards",
+      "line": 204.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Greg Dulcich",
+      "stat": "receiving_yards",
+      "line": 24.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ollie Gordon II",
+      "stat": "receiving_yards",
+      "line": 10.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malik Washington",
+      "stat": "receiving_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Garrett Wilson",
+      "stat": "receiving_yards",
+      "line": 53.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Caleb Douglas",
+      "stat": "receiving_yards",
+      "line": 44.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Breece Hall",
+      "stat": "receiving_yards",
+      "line": 19.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chris Bell",
+      "stat": "receiving_yards",
+      "line": 14.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Adonai Mitchell",
+      "stat": "receiving_yards",
+      "line": 38.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kenyon Sadiq",
+      "stat": "receiving_yards",
+      "line": 20.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mason Taylor",
+      "stat": "receiving_yards",
+      "line": 16.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Adonai Mitchell",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -138,
+      "under_price": 104,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Breece Hall",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Mason Taylor",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Garrett Wilson",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -136,
+      "under_price": 102,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Chris Bell",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Greg Dulcich",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kenyon Sadiq",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -198,
+      "under_price": 146,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Caleb Douglas",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -122,
+      "under_price": -108,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Malik Washington",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 106,
+      "under_price": -140,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ollie Gordon II",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 110,
+      "under_price": -146,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Ollie Gordon II",
+      "stat": "rushing_yards",
+      "line": 66.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Jaylen Wright",
+      "stat": "rushing_yards",
+      "line": 10.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Kyle McCord",
+      "stat": "rushing_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Breece Hall",
+      "stat": "rushing_yards",
+      "line": 59.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Geno Smith",
+      "stat": "rushing_yards",
+      "line": 3.5,
+      "over_price": -110,
+      "under_price": -118,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Braelon Allen",
+      "stat": "rushing_yards",
+      "line": 44.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "5ea0e3ea5944b0ad5169f21c0787b331",
+      "commence_time": "2026-11-29T18:00:00Z"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "stat": "receiving_yards",
+      "line": 13.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "DeMario Douglas",
+      "stat": "receiving_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Eli Raridon",
+      "stat": "receiving_yards",
+      "line": 16.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Mack Hollins",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Hunter Henry",
+      "stat": "receiving_yards",
+      "line": 22.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Mack Hollins",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -108,
+      "under_price": -122,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Hunter Henry",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -128,
+      "under_price": -104,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Eli Raridon",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -160,
+      "under_price": 120,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "DeMario Douglas",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -122,
+      "under_price": -106,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Rhamondre Stevenson",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 102,
+      "under_price": -136,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Kimani Vidal",
+      "stat": "rushing_yards",
+      "line": 19.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Omarion Hampton",
+      "stat": "rushing_yards",
+      "line": 63.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Corey Kiner",
+      "stat": "rushing_yards",
+      "line": 31.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "c64ceba13ede564e8658693e3171e7f9",
+      "commence_time": "2026-11-29T21:05:00Z"
+    },
+    {
+      "player": "Josh Johnson",
+      "stat": "passing_yards",
+      "line": 162.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jayden Daniels",
+      "stat": "passing_yards",
+      "line": 224.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Antonio Williams",
+      "stat": "receiving_yards",
+      "line": 41.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Trey McBride",
+      "stat": "receiving_yards",
+      "line": 59.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Treylon Burks",
+      "stat": "receiving_yards",
+      "line": 25.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Stefon Diggs",
+      "stat": "receiving_yards",
+      "line": 43.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Harrison Wallace III",
+      "stat": "receiving_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Chig Okonkwo",
+      "stat": "receiving_yards",
+      "line": 37.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Bam Knight",
+      "stat": "receiving_yards",
+      "line": 6.5,
+      "over_price": -128,
+      "under_price": -102,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Simi Fehoko",
+      "stat": "receiving_yards",
+      "line": 19.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Zay Jones",
+      "stat": "receiving_yards",
+      "line": 13.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Trey McBride",
+      "stat": "receptions",
+      "line": 6.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Treylon Burks",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Harrison Wallace III",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 120,
+      "under_price": -160,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Chig Okonkwo",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -172,
+      "under_price": 128,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Bam Knight",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Stefon Diggs",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": 116,
+      "under_price": -154,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Simi Fehoko",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -172,
+      "under_price": 128,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Antonio Williams",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Zay Jones",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 106,
+      "under_price": -140,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jacory Croskey-Merritt",
+      "stat": "rushing_yards",
+      "line": 54.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Tyler Allgeier",
+      "stat": "rushing_yards",
+      "line": 32.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jayden Daniels",
+      "stat": "rushing_yards",
+      "line": 31.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Bam Knight",
+      "stat": "rushing_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Josh Johnson",
+      "stat": "rushing_yards",
+      "line": 13.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Austin Ekeler",
+      "stat": "rushing_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "69a1dbe9de3d3212c3a7a55be5d204ab",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Sam Darnold",
+      "stat": "passing_yards",
+      "line": 227.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "stat": "receiving_yards",
+      "line": 97.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "George Kittle",
+      "stat": "receiving_yards",
+      "line": 46.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Christian McCaffrey",
+      "stat": "receiving_yards",
+      "line": 29.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Tory Horton",
+      "stat": "receiving_yards",
+      "line": 3.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jadarian Price",
+      "stat": "receiving_yards",
+      "line": 9.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Kyle Juszczyk",
+      "stat": "receiving_yards",
+      "line": 2.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Keenan Allen",
+      "stat": "receiving_yards",
+      "line": 27.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Deebo Samuel",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Zach Charbonnet",
+      "stat": "receiving_yards",
+      "line": 7.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Cooper Kupp",
+      "stat": "receiving_yards",
+      "line": 20.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "AJ Barner",
+      "stat": "receiving_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Mike Evans",
+      "stat": "receiving_yards",
+      "line": 59.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Rashid Shaheed",
+      "stat": "receiving_yards",
+      "line": 17.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "George Kittle",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": 116,
+      "under_price": -154,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Mike Evans",
+      "stat": "receptions",
+      "line": 4.5,
+      "over_price": -104,
+      "under_price": -128,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jadarian Price",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Rashid Shaheed",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -188,
+      "under_price": 140,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Kyle Juszczyk",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -130,
+      "under_price": -102,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Tory Horton",
+      "stat": "receptions",
+      "line": 0.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Cooper Kupp",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 120,
+      "under_price": -160,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Deebo Samuel",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -118,
+      "under_price": -112,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "AJ Barner",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": 144,
+      "under_price": -194,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Keenan Allen",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Zach Charbonnet",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -112,
+      "under_price": -118,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Christian McCaffrey",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jaxon Smith-Njigba",
+      "stat": "receptions",
+      "line": 7.5,
+      "over_price": 102,
+      "under_price": -136,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
     },
     {
       "player": "Deebo Samuel",
@@ -2580,224 +2841,638 @@
       "line": 8.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Zach Charbonnet",
+      "stat": "rushing_yards",
+      "line": 55.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Jadarian Price",
+      "stat": "rushing_yards",
+      "line": 24.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
     },
     {
       "player": "Christian McCaffrey",
       "stat": "rushing_yards",
-      "line": 49.5,
+      "line": 54.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
     },
     {
       "player": "Kaelon Black",
       "stat": "rushing_yards",
-      "line": 26.5,
+      "line": 19.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "60e1d27b083a335b722c2c852ea85612",
-      "commence_time": "2026-11-23T01:20:00Z"
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
     },
     {
-      "player": "Jayden Daniels",
+      "player": "Sam Darnold",
+      "stat": "rushing_yards",
+      "line": 5.5,
+      "over_price": -108,
+      "under_price": -120,
+      "event_id": "d68dced0b26726890b9c79bd19a5ffe5",
+      "commence_time": "2026-11-29T21:25:00Z"
+    },
+    {
+      "player": "Deshaun Watson",
       "stat": "passing_yards",
-      "line": 225.5,
+      "line": 227.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Joe Burrow",
+      "player": "Fernando Mendoza",
       "stat": "passing_yards",
-      "line": 300.5,
+      "line": 206.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Chase Brown",
-      "stat": "receiving_yards",
-      "line": 25.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Stefon Diggs",
-      "stat": "receiving_yards",
-      "line": 44.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Antonio Williams",
-      "stat": "receiving_yards",
-      "line": 35.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Chig Okonkwo",
-      "stat": "receiving_yards",
-      "line": 40.5,
-      "over_price": -114,
-      "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Mike Gesicki",
+      "player": "Michael Mayer",
       "stat": "receiving_yards",
       "line": 24.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Ja'Marr Chase",
+      "player": "Jalen Nailor",
       "stat": "receiving_yards",
-      "line": 93.5,
+      "line": 9.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Tee Higgins",
+      "player": "Quinshon Judkins",
       "stat": "receiving_yards",
-      "line": 74.5,
+      "line": 7.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Chase Brown",
+      "player": "Ashton Jeanty",
+      "stat": "receiving_yards",
+      "line": 29.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "KC Concepcion",
+      "stat": "receiving_yards",
+      "line": 47.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Dylan Sampson",
+      "stat": "receiving_yards",
+      "line": 20.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Brock Bowers",
+      "stat": "receiving_yards",
+      "line": 59.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "stat": "receiving_yards",
+      "line": 39.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Jack Bech",
+      "stat": "receiving_yards",
+      "line": 10.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Jerry Jeudy",
+      "stat": "receiving_yards",
+      "line": 16.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Tre Tucker",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Michael Mayer",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 118,
+      "under_price": -158,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Jack Bech",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Ashton Jeanty",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -122,
+      "under_price": -108,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Harold Fannin Jr.",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Brock Bowers",
       "stat": "receptions",
       "line": 4.5,
-      "over_price": 102,
-      "under_price": -136,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "over_price": -158,
+      "under_price": 118,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Stefon Diggs",
+      "player": "Dylan Sampson",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -148,
+      "under_price": 112,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Tre Tucker",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 140,
+      "under_price": -188,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "KC Concepcion",
       "stat": "receptions",
       "line": 4.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "over_price": 114,
+      "under_price": -152,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Tee Higgins",
+      "player": "Jerry Jeudy",
       "stat": "receptions",
-      "line": 5.5,
-      "over_price": -102,
-      "under_price": -130,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "line": 1.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
     },
     {
-      "player": "Mike Gesicki",
+      "player": "Quinshon Judkins",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 130,
+      "under_price": -174,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Fernando Mendoza",
+      "stat": "rushing_yards",
+      "line": 14.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Deshaun Watson",
+      "stat": "rushing_yards",
+      "line": 25.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Dylan Sampson",
+      "stat": "rushing_yards",
+      "line": 18.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Ashton Jeanty",
+      "stat": "rushing_yards",
+      "line": 42.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Quinshon Judkins",
+      "stat": "rushing_yards",
+      "line": 56.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "KC Concepcion",
+      "stat": "rushing_yards",
+      "line": 3.5,
+      "over_price": -108,
+      "under_price": -120,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Mike Washington Jr.",
+      "stat": "rushing_yards",
+      "line": 32.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "eaa993c3d62d6b5aeb6142cdd7862fd5",
+      "commence_time": "2026-11-30T01:20:00Z"
+    },
+    {
+      "player": "Bryce Young",
+      "stat": "passing_yards",
+      "line": 235.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Baker Mayfield",
+      "stat": "passing_yards",
+      "line": 203.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "John Metchie III",
+      "stat": "receiving_yards",
+      "line": 10.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Tez Johnson",
+      "stat": "receiving_yards",
+      "line": 15.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Kenny Gainwell",
+      "stat": "receiving_yards",
+      "line": 15.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Emeka Egbuka",
+      "stat": "receiving_yards",
+      "line": 34.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Chris Godwin",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Mitchell Evans",
+      "stat": "receiving_yards",
+      "line": 10.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Chuba Hubbard",
+      "stat": "receiving_yards",
+      "line": 18.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Jalen Coker",
+      "stat": "receiving_yards",
+      "line": 44.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Darren Waller",
+      "stat": "receiving_yards",
+      "line": 26.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Tommy Tremble",
+      "stat": "receiving_yards",
+      "line": 21.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Bucky Irving",
+      "stat": "receiving_yards",
+      "line": 16.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Ted Hurst III",
+      "stat": "receiving_yards",
+      "line": 23.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Cade Otton",
+      "stat": "receiving_yards",
+      "line": 28.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Emeka Egbuka",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -102,
+      "under_price": -130,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Cade Otton",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -172,
+      "under_price": 128,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Ted Hurst III",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": -200,
+      "under_price": 148,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Chris Godwin",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -106,
+      "under_price": -125,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Jalen Coker",
+      "stat": "receptions",
+      "line": 3.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Chuba Hubbard",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": -140,
+      "under_price": 106,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Tommy Tremble",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 126,
+      "under_price": -168,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Mitchell Evans",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 142,
+      "under_price": -192,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Tez Johnson",
+      "stat": "receptions",
+      "line": 1.5,
+      "over_price": 124,
+      "under_price": -166,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Kenny Gainwell",
+      "stat": "receptions",
+      "line": 2.5,
+      "over_price": 110,
+      "under_price": -146,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Darren Waller",
       "stat": "receptions",
       "line": 2.5,
       "over_price": 106,
       "under_price": -140,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     },
     {
-      "player": "Ja'Marr Chase",
+      "player": "John Metchie III",
       "stat": "receptions",
-      "line": 8.5,
-      "over_price": 116,
-      "under_price": -154,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "line": 1.5,
+      "over_price": 140,
+      "under_price": -188,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     },
     {
-      "player": "Chig Okonkwo",
-      "stat": "receptions",
-      "line": 4.5,
-      "over_price": 112,
-      "under_price": -148,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Antonio Williams",
+      "player": "Bucky Irving",
       "stat": "receptions",
       "line": 3.5,
-      "over_price": -108,
-      "under_price": -122,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "over_price": 142,
+      "under_price": -192,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     },
     {
-      "player": "Joe Burrow",
+      "player": "Bryce Young",
       "stat": "rushing_yards",
-      "line": 7.5,
-      "over_price": -108,
-      "under_price": -120,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
-    },
-    {
-      "player": "Jayden Daniels",
-      "stat": "rushing_yards",
-      "line": 36.5,
+      "line": 5.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     },
     {
-      "player": "Chase Brown",
+      "player": "Chuba Hubbard",
       "stat": "rushing_yards",
-      "line": 44.5,
+      "line": 66.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     },
     {
-      "player": "Samaje Perine",
+      "player": "Kenny Gainwell",
       "stat": "rushing_yards",
-      "line": 20.5,
+      "line": 22.5,
       "over_price": -114,
       "under_price": -114,
-      "event_id": "3a60ed1d20004aa4d4772b2c1a2272e7",
-      "commence_time": "2026-11-24T01:15:00Z"
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Bucky Irving",
+      "stat": "rushing_yards",
+      "line": 81.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
+    },
+    {
+      "player": "Baker Mayfield",
+      "stat": "rushing_yards",
+      "line": 15.5,
+      "over_price": -114,
+      "under_price": -114,
+      "event_id": "2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "commence_time": "2026-12-01T01:15:00Z"
     }
   ],
   "error": null,
-  "pulled_at": "2026-11-19 21:57 UTC",
+  "pulled_at": "2026-11-26 22:46 UTC",
   "diagnostics": {
-    "events_listed": 29,
-    "events_in_window": 16,
-    "credits_remaining_before": 330,
-    "events_attempted": 16,
+    "events_listed": 24,
+    "events_in_window": 13,
+    "credits_remaining_before": 261,
+    "events_attempted": 13,
     "usage": {
-      "call": "event-odds:ffaa06af56a7137d4b078c5c46c0b730",
-      "requests_remaining": 282,
-      "requests_used": 218,
-      "requests_last": 0,
-      "logged_at": "2026-11-19 21:57 UTC"
+      "call": "event-odds:2cdaecba7c0bff9b58a48a82e6ee17a7",
+      "requests_remaining": 210,
+      "requests_used": 290,
+      "requests_last": 4,
+      "logged_at": "2026-11-26 22:46 UTC"
     },
     "events_with_fanduel_lines": 13,
     "events_failed": 0,
-    "lines_found": 309
+    "lines_found": 384
   }
 }

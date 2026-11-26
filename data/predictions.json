@@ -43631,10 +43631,10 @@
     "stat": "receptions",
     "projected": 1.6,
     "tier_at_freeze": "Moderate 2026 sample",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 1.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.1,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -43644,7 +43644,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Ty Johnson|receptions|12": {
     "player": "Ty Johnson",
@@ -43898,10 +43900,10 @@
     "stat": "receptions",
     "projected": 0.8,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -1.7,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up",
@@ -43911,7 +43913,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Max Hurleman|receptions|12": {
     "player": "Max Hurleman",
@@ -43941,10 +43945,10 @@
     "stat": "receptions",
     "projected": 1.4,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "UNDER",
+    "edge": -1.1,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -43953,7 +43957,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Tyquan Thornton|receptions|12": {
     "player": "Tyquan Thornton",
@@ -43986,10 +43992,10 @@
     "stat": "receptions",
     "projected": 3.3,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.8,
     "model_prob": null,
     "signals": {
       "target_share_trend": "up"
@@ -43998,7 +44004,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Calvin Ridley|receptions|12": {
     "player": "Calvin Ridley",
@@ -44008,10 +44016,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 1.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 1.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable",
@@ -44022,7 +44030,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Pat Freiermuth|receptions|12": {
     "player": "Pat Freiermuth",
@@ -44032,10 +44042,10 @@
     "stat": "receptions",
     "projected": 2.9,
     "tier_at_freeze": "Established (2026 sample)",
-    "market_line": null,
-    "market_source": null,
-    "call": null,
-    "edge": null,
+    "market_line": 2.5,
+    "market_source": "fanduel",
+    "call": "OVER",
+    "edge": 0.4,
     "model_prob": null,
     "signals": {
       "injury_flagged": "Questionable"
@@ -44044,7 +44054,9 @@
     "graded": false,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": null,
+    "line_attached_at": "2026-11-26 22:47 UTC",
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
   "Ja'Marr Chase|receptions|12": {
     "player": "Ja'Marr Chase",

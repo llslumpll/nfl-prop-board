@@ -1302,8 +1302,8 @@
  "12": {
   "ml-2": {
    "chance": 0.7349,
-   "decimal": 1.277,
-   "ev": -0.061,
+   "decimal": 1.282,
+   "ev": -0.058,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -1312,14 +1312,14 @@
      "away": "TEN",
      "call": "HOME",
      "chance": 0.893,
-     "decimal": 1.083,
+     "decimal": 1.087,
      "game": "TEN@JAX",
      "good": false,
      "home": "JAX",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "JAX to win",
-     "price": -1200,
+     "price": -1150,
      "team": "JAX"
     },
     {
@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1661,7 +1661,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "td-1": {
@@ -1689,7 +1689,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "td-2": {
@@ -1729,7 +1729,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "td-3": {
@@ -1781,7 +1781,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "td-4": {
@@ -1845,7 +1845,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   },
   "value-3": {
@@ -1906,7 +1906,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 22:40 UTC",
+   "updated": "2026-11-26 22:46 UTC",
    "week": 12
   }
  },

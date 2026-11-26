@@ -6,14 +6,14 @@
     },
     "Josh Allen": {
       "passing_yards": 216.5,
-      "rushing_yards": 38.5
+      "rushing_yards": 39.5
     },
     "James Cook III": {
       "rushing_yards": 86.5,
       "receiving_yards": 7.5
     },
     "Emmett Johnson": {
-      "rushing_yards": 81.5,
+      "rushing_yards": 80.5,
       "receiving_yards": 30.5
     },
     "DJ Moore": {
@@ -39,7 +39,7 @@
       "receptions": 3
     },
     "Keon Coleman": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 2
     },
     "Xavier Worthy": {
@@ -119,8 +119,7 @@
       "receiving_yards": 16.5
     },
     "Roman Wilson": {
-      "receiving_yards": 12.5,
-      "receptions": 1.5
+      "receiving_yards": 12.5
     },
     "Michael Pittman Jr.": {
       "receiving_yards": 10.5
@@ -759,12 +758,12 @@
       "rushing_yards": 22.5,
       "receiving_yards": 15.5
     },
+    "Tommy Tremble": {
+      "receiving_yards": 21.5
+    },
     "Chris Godwin Jr.": {
       "receiving_yards": 21.5,
       "receptions": 2.5
-    },
-    "Tommy Tremble": {
-      "receiving_yards": 19.5
     },
     "Tez Johnson": {
       "receiving_yards": 15.5
@@ -780,9 +779,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6390,
-    "matched_props": 343,
-    "excluded_goblin_demon_lines": 5298,
+    "total_projections_returned": 6392,
+    "matched_props": 342,
+    "excluded_goblin_demon_lines": 5300,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -821,5 +820,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T22:40:41.158477+00:00"
+  "fetched_at": "2026-11-26T22:46:46.465734+00:00"
 }
