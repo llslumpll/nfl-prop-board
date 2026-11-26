@@ -441,6 +441,7 @@
    "fair": 0.5674,
    "first_ev": 0.0366,
    "first_seen": "2026-11-25 03:20 UTC",
+   "hit": true,
    "home": "DET",
    "kalshi": "YES CHI at 53%",
    "kickoff": "2026-11-26T18:00:00+00:00",
@@ -452,7 +453,8 @@
    "model_agrees": false,
    "ref": "FanDuel -142/+120",
    "side": "CHI ML",
-   "status": "pending",
+   "status": "graded",
+   "units": 0.8268,
    "week": 12
   },
   "moneyline|DEN @ PIT: PIT wins": {

@@ -44108,10 +44108,11 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-24 19:52 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Khalil Shakir|receptions|12": {
     "player": "Khalil Shakir",
@@ -44632,16 +44633,17 @@
       "xtd_debt": "negative"
     },
     "frozen_at": "2026-11-24 19:52 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-26 21:51 UTC",
     "market_prob": 69.0,
     "td_rule": "scoring",
     "best5_tags": [
       "highest_confidence",
       "best_value"
-    ]
+    ],
+    "void": "did not play"
   },
   "Bryce Young|any_td|12": {
     "player": "Bryce Young",
@@ -44708,13 +44710,14 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-24 19:52 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
+    "graded_at": "2026-11-26 21:51 UTC",
     "market_prob": 21.0,
     "td_rule": "scoring",
-    "best5_tags": []
+    "best5_tags": [],
+    "void": "did not play"
   },
   "Tanner Hudson|any_td|12": {
     "player": "Tanner Hudson",
@@ -44969,11 +44972,12 @@
       "usage_trend": "down"
     },
     "frozen_at": "2026-11-24 21:00 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null,
-    "best5_tags": []
+    "graded_at": "2026-11-26 21:51 UTC",
+    "best5_tags": [],
+    "void": "did not play"
   },
   "Zach Charbonnet|rushing_yards|12": {
     "player": "Zach Charbonnet",
@@ -45258,10 +45262,11 @@
       "opponent_recent_form": "better"
     },
     "frozen_at": "2026-11-26 17:15 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Luther Burden III|receiving_yards|12": {
     "player": "Luther Burden III",
@@ -45282,10 +45287,11 @@
       "target_share_trend": "down"
     },
     "frozen_at": "2026-11-26 17:15 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Jared Goff|passing_yards|12": {
     "player": "Jared Goff",
@@ -45304,10 +45310,11 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-26 17:15 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Jahmyr Gibbs|rushing_yards|12": {
     "player": "Jahmyr Gibbs",
@@ -45327,10 +45334,11 @@
       "opponent_recent_form": "worse"
     },
     "frozen_at": "2026-11-26 17:15 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Amon-Ra St. Brown|receiving_yards|12": {
     "player": "Amon-Ra St. Brown",
@@ -45349,10 +45357,11 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-26 17:15 UTC",
-    "graded": false,
+    "graded": true,
     "actual": null,
     "hit": null,
-    "graded_at": null
+    "graded_at": "2026-11-26 21:51 UTC",
+    "void": "did not play"
   },
   "Joe Milton III|passing_yards|12": {
     "player": "Joe Milton III",
@@ -45647,5 +45656,100 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Woody Marks|rushing_yards|12": {
+    "player": "Woody Marks",
+    "team": "HOU",
+    "opponent": "BAL",
+    "week": 12,
+    "stat": "rushing_yards",
+    "projected": 49.2,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 28.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 20.7,
+    "model_prob": 0.7663,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-26 21:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Amon-Ra St. Brown|receptions|13": {
+    "player": "Amon-Ra St. Brown",
+    "team": "DET",
+    "opponent": "ATL",
+    "week": 13,
+    "stat": "receptions",
+    "projected": 7.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-26 21:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jahmyr Gibbs|any_td|13": {
+    "player": "Jahmyr Gibbs",
+    "team": "DET",
+    "opponent": "ATL",
+    "week": 13,
+    "stat": "any_td",
+    "projected": 1.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true,
+      "goal_line_rush_share_high": true,
+      "xtd_debt": "negative"
+    },
+    "frozen_at": "2026-11-26 21:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Caleb Williams|any_td|13": {
+    "player": "Caleb Williams",
+    "team": "CHI",
+    "opponent": "JAX",
+    "week": 13,
+    "stat": "any_td",
+    "projected": 0.1,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-26 21:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
   }
 }
