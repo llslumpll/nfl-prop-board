@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1399,7 +1399,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "ml-4": {
@@ -1583,7 +1583,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "props-4": {
@@ -1659,27 +1659,27 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "td-1": {
    "chance": 0.699,
-   "decimal": 1.754,
-   "ev": 0.226,
+   "decimal": 1.724,
+   "ev": 0.205,
    "family": "td",
    "good": true,
    "id": "td-1",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.754,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.57,
+     "price": 0.58,
      "team": "SF"
     }
    ],
@@ -1687,39 +1687,39 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "td-2": {
    "chance": 0.4418,
-   "decimal": 3.813,
-   "ev": 0.684,
+   "decimal": 3.669,
+   "ev": 0.621,
    "family": "td",
    "good": true,
    "id": "td-2",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.754,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.57,
+     "price": 0.58,
      "team": "SF"
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.128,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.47,
      "team": "IND"
     }
    ],
@@ -1727,39 +1727,39 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "td-3": {
    "chance": 0.262,
-   "decimal": 6.81,
-   "ev": 0.784,
+   "decimal": 6.552,
+   "ev": 0.716,
    "family": "td",
    "good": true,
    "id": "td-3",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.754,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.57,
+     "price": 0.58,
      "team": "SF"
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.128,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.47,
      "team": "IND"
     },
     {
@@ -1779,39 +1779,39 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "td-4": {
    "chance": 0.1553,
-   "decimal": 13.096,
-   "ev": 1.034,
+   "decimal": 12.6,
+   "ev": 0.957,
    "family": "td",
    "good": true,
    "id": "td-4",
    "legs": [
     {
      "chance": 0.699,
-     "decimal": 1.754,
+     "decimal": 1.724,
      "game": "SEA@SF",
      "good": true,
      "kickoff": "2026-11-29T21:25:00+00:00",
      "kind": "td",
      "label": "Christian McCaffrey anytime TD",
      "player": "Christian McCaffrey",
-     "price": 0.57,
+     "price": 0.58,
      "team": "SF"
     },
     {
      "chance": 0.632,
-     "decimal": 2.174,
+     "decimal": 2.128,
      "game": "IND@NYG",
      "good": true,
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "td",
      "label": "Jonathan Taylor anytime TD",
      "player": "Jonathan Taylor",
-     "price": 0.46,
+     "price": 0.47,
      "team": "IND"
     },
     {
@@ -1843,7 +1843,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   },
   "value-3": {
@@ -1904,7 +1904,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-26 17:20 UTC",
+   "updated": "2026-11-26 19:36 UTC",
    "week": 12
   }
  },
