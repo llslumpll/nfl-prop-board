@@ -4480,6 +4480,94 @@
    "posted": "2026-11-26T06:20Z",
    "odds_est": true,
    "note": "Venom score 34.9, app 19% TD"
+  },
+  {
+   "id": "w12-doc-231",
+   "week": 12,
+   "tipster": "doc",
+   "kind": "spread",
+   "team": "DAL",
+   "line": -8.5,
+   "legs": [],
+   "odds": -102,
+   "posted": "2026-11-26T21:14Z"
+  },
+  {
+   "id": "w12-doc-232",
+   "week": 12,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "DeVonta Smith",
+     "stat": "rec",
+     "line": 5.5,
+     "side": "over"
+    }
+   ],
+   "odds": -112,
+   "posted": "2026-11-26T21:14Z"
+  },
+  {
+   "id": "w12-doc-233",
+   "week": 12,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Ryan Flournoy",
+     "stat": "recyd",
+     "line": 29.5,
+     "side": "over"
+    }
+   ],
+   "odds": -115,
+   "posted": "2026-11-26T21:14Z",
+   "rungs": [
+    {
+     "line": 49.5,
+     "odds": 265
+    },
+    {
+     "line": 79.5,
+     "odds": 920
+    }
+   ]
+  },
+  {
+   "id": "w12-bhb-234",
+   "week": 12,
+   "tipster": "bhb",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "DJ Moore",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "Rashee Rice",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "DeVonta Smith",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    },
+    {
+     "player": "George Pickens",
+     "stat": "td",
+     "line": 0.5,
+     "side": "over"
+    }
+   ],
+   "odds": 6142,
+   "posted": "2026-11-26T21:19Z",
+   "label": "SGP+ 4-leg ATD (Afternoon Turkey Special)"
   }
  ]
 }
