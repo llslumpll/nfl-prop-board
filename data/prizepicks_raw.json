@@ -361,20 +361,20 @@
       "receiving_yards": 21.5,
       "receptions": 2
     },
-    "Deion Burks": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
     "Anthony Gould": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 20.5,
       "receptions": 2
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
+    "Deion Burks": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
+    },
     "Ashton Dulin": {
-      "receiving_yards": 13.5
+      "receiving_yards": 15.5
     },
     "Devin Singletary": {
       "rushing_yards": 12.5,
@@ -448,11 +448,11 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 204.5,
+      "passing_yards": 206.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 176.5,
+      "passing_yards": 175.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -468,7 +468,7 @@
       "receiving_yards": 53.5
     },
     "Caleb Douglas": {
-      "receiving_yards": 46.5,
+      "receiving_yards": 45.5,
       "receptions": 4
     },
     "Braelon Allen": {
@@ -477,10 +477,10 @@
       "receptions": 1.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Malik Washington": {
-      "receiving_yards": 31.5,
+      "receiving_yards": 32.5,
       "receptions": 3.5
     },
     "Omar Cooper Jr.": {
@@ -652,7 +652,7 @@
       "receiving_yards": 12.5
     },
     "Brock Purdy": {
-      "passing_yards": 233.5,
+      "passing_yards": 235.5,
       "rushing_yards": 16.5
     },
     "Sam Darnold": {
@@ -742,7 +742,7 @@
     },
     "Bam Knight": {
       "rushing_yards": 25.5,
-      "receiving_yards": 6.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Austin Ekeler": {
@@ -903,9 +903,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7395,
+    "total_projections_returned": 7428,
     "matched_props": 412,
-    "excluded_goblin_demon_lines": 6087,
+    "excluded_goblin_demon_lines": 6119,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -944,5 +944,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T01:40:44.853638+00:00"
+  "fetched_at": "2026-11-26T02:00:47.027416+00:00"
 }
