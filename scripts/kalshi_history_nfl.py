@@ -51,9 +51,9 @@ def _iso(s: str) -> datetime:
     return datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 
-def settled(series: str):
+def settled(series: str, max_pages: int = 80):
     cursor = None
-    while True:
+    for _page in range(max_pages):
         p = {"series_ticker": series, "status": "settled", "limit": 1000,
              "min_close_ts": int(SEASON_START.timestamp())}
         if cursor:
@@ -61,10 +61,11 @@ def settled(series: str):
         d = _get("/markets", p)
         if not d:
             return
-        for m in d.get("markets") or []:
+        ms = d.get("markets") or []
+        for m in ms:
             yield m
         cursor = d.get("cursor")
-        if not cursor:
+        if not cursor or not ms:
             return
 
 
@@ -139,8 +140,20 @@ def main(max_new: int = 12000, workers: int = 12) -> None:
         return t, {**rec, "ask": ask, "bid": bid}
 
     done = 0
+    t0 = time.time()
+    budget = float(os.environ.get("BUDGET_SEC", 2400))
+    todo = [x for x in todo]
     with ThreadPoolExecutor(workers) as ex:
-        for t, rec in ex.map(job, todo):
+        futs = []
+        for x in todo:
+            futs.append(ex.submit(job, x))
+        for f in futs:
+            if time.time() - t0 > budget:
+                print("time budget reached; saving what we have", flush=True)
+                for g in futs:
+                    g.cancel()
+                break
+            t, rec = f.result()
             have[t] = rec
             done += 1
             if done % 1000 == 0:
