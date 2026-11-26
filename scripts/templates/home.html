@@ -23,6 +23,8 @@
     <div class="pz-fam"><em>BEST 5 ON KALSHI</em>{% if kb.best5_rec.n %}<b>{{ kb.best5_rec.w }}&ndash;{{ kb.best5_rec.n - kb.best5_rec.w }}</b><span class="{{ 'stat-good' if kb.best5_rec.u > 0 else 'stat-bad' if kb.best5_rec.u < 0 }}">{{ '%+.2f'|format(kb.best5_rec.u) }}U</span>{% else %}<b>NEW</b><span>replay 36&ndash;14 &middot; +6.0U</span>{% endif %}</div>
     <div class="pz-fam"><em>3X SLIP</em>{% if kb.triple_rec.n %}<b>{{ kb.triple_rec.w }}/{{ kb.triple_rec.n }}</b><span class="{{ 'stat-good' if kb.triple_rec.u > 0 else 'stat-bad' if kb.triple_rec.u < 0 }}">{{ '%+.2f'|format(kb.triple_rec.u) }}U</span>{% else %}<b>NEW</b><span>replay cashed 3 of 10 &middot; &minus;1.0U</span>{% endif %}</div>
   </div>
+  {% if proven %}{% set good = proven.kinds|selectattr('status', 'in', ['PROVEN', 'PROMISING'])|list %}{% set bad = proven.kinds|selectattr('status', 'equalto', 'AVOID')|list %}
+  <p class="small"><b>What's beating the price:</b> {% if good %}{% for k in good %}<span class="pk-tag pk-proven">{{ k.status }}</span> {{ k.name }} ({{ k.w }}-{{ k.l }}){{ ' · ' if not loop.last }}{% endfor %}{% else %}nothing proven yet{% endif %}.{% if bad %} <span class="dim">Avoid: {% for k in bad %}{{ k.name }}{{ ', ' if not loop.last }}{% endfor %}.</span>{% endif %} <a href="tipsters.html#record">every kind &rarr;</a></p>{% endif %}
   <div class="tk-grid">
     {% if kb.best5 %}<article class="tk">
       <header class="tk-head"><span class="tk-name">BEST 5 ON KALSHI</span><span class="tk-state">STRAIGHT BETS &middot; EACH LOCKS AT KICKOFF</span></header>

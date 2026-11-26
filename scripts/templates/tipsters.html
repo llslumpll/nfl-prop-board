@@ -71,6 +71,16 @@
   {% if t.ladders %}{% set lr = t.ladders %}<p class="small"><b>Ladders:</b> {{ lr.n }} graded &middot; base rung {{ lr.base }}/{{ lr.n }} &middot; next rung {{ lr.next }}/{{ lr.next_n }} &middot; higher rungs {{ lr.top }}/{{ lr.top_n }} &middot; every rung counted: {{ u(lr.u) }} on {{ lr.staked }}U.</p>{% endif %}
   {% if t.legrec %}<p class="small"><b>Legs:</b> {{ t.legrec.w }} of {{ t.legrec.n }} legs hit ({{ (100 * t.legrec.w / t.legrec.n)|round|int }}%), but a slip needs every leg.</p>{% endif %}
   {% endfor %}
+{% if proven %}
+  <h2 id="proven">What's beating the price</h2>
+  <p class="small dim">Every kind of pick the site tracks, graded against what you would have paid: Kalshi's ask, the parlay payout, the tipster's posted odds, or the PrizePicks 5/6-pick flex break-even (54.2%) for the site's own prop calls. <b>PROVEN</b> = 50+ picks and still above the price at the low end of the range; <b>PROMISING</b> = 15+ picks, 2+ points above; <b>AVOID</b> = 30+ picks, 2+ points below.</p>
+  <div class="table-wrap"><table class="stat-table">
+    <thead><tr><th>Kind of pick</th><th>Record &middot; vs price</th></tr></thead><tbody>
+    {% for k in proven.kinds if k.n %}<tr><td><span class="pk-tag {{ 'pk-proven' if k.status in ('PROVEN', 'PROMISING') else 'pk-weak' if k.status == 'AVOID' else '' }}">{{ k.status }}</span> <b>{{ k.name }}</b><br><span class="dim small">{{ k.what }}</span></td>
+      <td>{{ k.w }}-{{ k.l }} &middot; <span class="{{ 'stat-good' if k.u > 0 else 'stat-bad' if k.u < 0 }}">{{ '%+.2f'|format(k.u) }}U</span><br><span class="dim small">hit {{ k.rate }}% vs {{ k.price }}% priced ({{ '%+.1f'|format(k.edge) }})</span></td></tr>{% endfor %}
+    </tbody></table></div>
+  {% set nk = proven.kinds|rejectattr('n')|list %}{% if nk %}<p class="small dim">Starting this week: {% for k in nk %}{{ k.name }}{{ ', ' if not loop.last }}{% endfor %}.</p>{% endif %}
+{% endif %}
 </section>
 
 <section data-gp="weeks" hidden>
