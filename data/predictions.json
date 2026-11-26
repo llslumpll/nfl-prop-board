@@ -43617,7 +43617,11 @@
     "hit": null,
     "graded_at": null,
     "line_attached_at": "2026-11-25 14:20 UTC",
-    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this prizepicks line was first seen 2026-11-25 14:20 UTC, before kickoff. Call set from the frozen projection vs this line."
+    "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this prizepicks line was first seen 2026-11-25 14:20 UTC, before kickoff. Call set from the frozen projection vs this line.",
+    "best5_tags": [
+      "best_value",
+      "highest_confidence"
+    ]
   },
   "Jack Bech|receptions|12": {
     "player": "Jack Bech",
@@ -44136,10 +44140,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence",
-      "best_value"
-    ]
+    "best5_tags": []
   },
   "Chase Brown|receptions|12": {
     "player": "Chase Brown",
@@ -45746,6 +45747,121 @@
       "injury_flagged": "Questionable"
     },
     "frozen_at": "2026-11-26 21:51 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "D'Andre Swift|receptions|13": {
+    "player": "D'Andre Swift",
+    "team": "CHI",
+    "opponent": "JAX",
+    "week": 13,
+    "stat": "receptions",
+    "projected": 2.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "usage_trend": "down"
+    },
+    "frozen_at": "2026-11-26 22:32 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Jameson Williams|receptions|13": {
+    "player": "Jameson Williams",
+    "team": "DET",
+    "opponent": "ATL",
+    "week": 13,
+    "stat": "receptions",
+    "projected": 3.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-26 22:32 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Rome Odunze|receptions|13": {
+    "player": "Rome Odunze",
+    "team": "CHI",
+    "opponent": "JAX",
+    "week": 13,
+    "stat": "receptions",
+    "projected": 3.4,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-26 22:32 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Rome Odunze|any_td|13": {
+    "player": "Rome Odunze",
+    "team": "CHI",
+    "opponent": "JAX",
+    "week": 13,
+    "stat": "any_td",
+    "projected": 0.3,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "injury_flagged": "Questionable"
+    },
+    "frozen_at": "2026-11-26 22:32 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "td_rule": "scoring"
+  },
+  "Kyle Monangai|any_td|13": {
+    "player": "Kyle Monangai",
+    "team": "CHI",
+    "opponent": "JAX",
+    "week": 13,
+    "stat": "any_td",
+    "projected": 0.4,
+    "tier_at_freeze": "Building 2026 sample",
+    "market_line": null,
+    "market_source": null,
+    "call": null,
+    "edge": null,
+    "model_prob": null,
+    "signals": {
+      "usage_trend": "down",
+      "injury_flagged": "Full Participation in Practice",
+      "red_zone_rush_share_high": true
+    },
+    "frozen_at": "2026-11-26 22:32 UTC",
     "graded": false,
     "actual": null,
     "hit": null,

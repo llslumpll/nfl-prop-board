@@ -106,11 +106,11 @@
     "Courtland Sutton": {
       "receiving_yards": 26.5
     },
-    "Germie Bernard": {
+    "Evan Engram": {
       "receiving_yards": 22.5
     },
-    "Evan Engram": {
-      "receiving_yards": 21.5
+    "Germie Bernard": {
+      "receiving_yards": 22.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 20.5
@@ -197,7 +197,7 @@
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 75.5,
+      "rushing_yards": 74.5,
       "receiving_yards": 15.5
     },
     "Jonathan Taylor": {
@@ -317,11 +317,11 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 172.5,
+      "passing_yards": 173.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 65.5,
+      "rushing_yards": 66.5,
       "receiving_yards": 10.5
     },
     "Breece Hall": {
@@ -433,7 +433,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 243.5,
+      "passing_yards": 242.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -780,9 +780,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6394,
+    "total_projections_returned": 6400,
     "matched_props": 343,
-    "excluded_goblin_demon_lines": 5302,
+    "excluded_goblin_demon_lines": 5309,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -821,5 +821,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T22:20:42.666100+00:00"
+  "fetched_at": "2026-11-26T22:32:04.074747+00:00"
 }
