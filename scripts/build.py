@@ -51,6 +51,7 @@ NAV_PAGES = [
     ("picks", "Picks", "picks.html"),
     ("touchdowns", "Touchdowns", "touchdowns.html"),
     ("parlays", "Parlays", "parlays.html"),
+    ("tipsters", "Tipsters", "tipsters.html"),
     ("history", "History", "history.html"),
 ]
 COMING_SOON: list[str] = []
@@ -68,6 +69,11 @@ def refresh_data():
     nfl.load_injuries([2026]).write_parquet(DATA_DIR / "injuries_2026.parquet")
     print("Fetching live schedule...")
     nfl.load_schedules([2026]).write_parquet(DATA_DIR / "schedules_2026.parquet")
+    try:  # snap counts: lets the Tipsters page tell "played, 0 catches" from "didn't play" (nfl-update-18)
+        print("Fetching snap counts...")
+        nfl.load_snap_counts([2026]).write_parquet(DATA_DIR / "snap_counts_2026.parquet")
+    except Exception as e:  # noqa: BLE001
+        print(f"Snap counts failed (kept the old file): {e}")
     # Historical stats (for Teams/Matchups) change slowly -- only refetch
     # if we don't already have a cached copy, to save a bigger pull on
     # every scheduled run.
@@ -1090,6 +1096,12 @@ def build(oddsapi_mode: str | None = None):
         parlays_page = {"week": games_page["week"], "families": [], "record": {}, "total": {}, "past": [], "names": {},
                         "error": f"{type(e).__name__}: {str(e)[:200]}"}
 
+    try:  # Tipsters page (nfl-update-18)
+        import tipsters_nfl
+        tipsters_page = tipsters_nfl.summary()
+    except Exception as e:  # noqa: BLE001
+        print(f"Tipsters failed: {e}")
+        tipsters_page = {"tipsters": [], "week": games_page["week"], "this_week": [], "weeks": [], "lab": {}}
     # Let picks frozen without a line pick up their first real line, but only
     # before kickoff (see line_attach.py). PrizePicks preferred over FanDuel.
     attach_result = line_attach.attach_lines([("prizepicks", pp_props), ("fanduel", fanduel_props)])
@@ -1133,6 +1145,11 @@ def build(oddsapi_mode: str | None = None):
             "parlays",
             "parlays.html",
             {"pz": parlays_page},
+        ),
+        "tipsters.html": (
+            "tipsters",
+            "tipsters.html",
+            {"tp": tipsters_page},
         ),
         "moneyline.html": (
             "moneyline",
