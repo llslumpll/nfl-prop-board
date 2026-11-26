@@ -43205,7 +43205,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|12": {
     "player": "Matthew Golden",
@@ -45019,9 +45021,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jaxon Smith-Njigba|receiving_yards|12": {
     "player": "Jaxon Smith-Njigba",
