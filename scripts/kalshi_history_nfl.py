@@ -86,54 +86,65 @@ def pre_kick_quote(series: str, m: dict) -> tuple[float | None, float | None]:
     return ask, bid
 
 
-def main(max_new: int = 40000) -> None:
+def _parse(series: str, stat: str, m: dict):
+    title = m.get("yes_sub_title") or m.get("title") or ""
+    player = title.split(":")[0].strip()
+    rung = m.get("floor_strike")
+    stat_ = stat
+    if series == "KXNFLTD":                    # "Player: 1+" / "2+" style
+        try:
+            k = int(title.split(":")[1].strip().rstrip("+"))
+        except (IndexError, ValueError):
+            return None
+        stat_ = "td" if k == 1 else ("td2" if k == 2 else None)
+        if not stat_:
+            return None
+        rung = k - 0.5
+    elif rung is None:
+        rung = 0.5 if stat == "td" else (1.5 if stat == "td2" else None)
+    return {"series": series, "stat": stat_, "player": player, "event": m.get("event_ticker"), "rung": rung,
+            "kickoff": m["occurrence_datetime"], "result": m["result"]}
+
+
+def main(max_new: int = 60000, workers: int = 10) -> None:
+    from concurrent.futures import ThreadPoolExecutor
     store = {"markets": {}}
     if OUT.exists():
         store = json.loads(OUT.read_text())
     have = store["markets"]
-    new = 0
+    todo = []
     for series, stat in SERIES.items():
-        n_s = 0
+        n = 0
         for m in settled(series):
             t = m["ticker"]
             if t in have or m.get("result") not in ("yes", "no") or not m.get("occurrence_datetime"):
                 continue
             if _iso(m["occurrence_datetime"]) < SEASON_START:
                 continue
-            title = m.get("yes_sub_title") or m.get("title") or ""
-            player = title.split(":")[0].strip()
-            rung = m.get("floor_strike")
-            if stat == "td" and series == "KXNFLTD":   # "Player: 1+" / "2+" style
-                try:
-                    k = int(title.split(":")[1].strip().rstrip("+"))
-                except (IndexError, ValueError):
-                    continue
-                stat_ = "td" if k == 1 else ("td2" if k == 2 else None)
-                if not stat_:
-                    continue
-                rung = k - 0.5
-            else:
-                stat_ = stat
-                if rung is None:
-                    rung = 0.5 if stat == "td" else (1.5 if stat == "td2" else None)
-            ask, bid = pre_kick_quote(series, m)
-            have[t] = {"series": series, "stat": stat_, "player": player, "event": m.get("event_ticker"),
-                       "rung": rung, "kickoff": m["occurrence_datetime"], "ask": ask, "bid": bid,
-                       "result": m["result"]}
-            new += 1
-            n_s += 1
-            if new % 200 == 0:
+            rec = _parse(series, stat, m)
+            if rec:
+                todo.append((t, series, m, rec))
+                n += 1
+        print(f"{series}: {n} to fetch", flush=True)
+    todo = todo[:max_new]
+    print(f"fetching pre-kickoff quotes for {len(todo)} markets with {workers} workers", flush=True)
+
+    def job(x):
+        t, series, m, rec = x
+        ask, bid = pre_kick_quote(series, m)
+        return t, {**rec, "ask": ask, "bid": bid}
+
+    done = 0
+    with ThreadPoolExecutor(workers) as ex:
+        for t, rec in ex.map(job, todo):
+            have[t] = rec
+            done += 1
+            if done % 1000 == 0:
                 OUT.write_text(json.dumps(store, separators=(",", ":")))
-                print(f"{new} stored ...", flush=True)
-            if new >= max_new:
-                break
-            time.sleep(0.12)
-        print(f"{series}: {n_s} new", flush=True)
-        if new >= max_new:
-            break
+                print(f"{done} stored", flush=True)
     store["updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     OUT.write_text(json.dumps(store, separators=(",", ":")))
-    print(f"done: {new} new, {len(have)} total")
+    print(f"done: {done} new, {len(have)} total")
 
 
 if __name__ == "__main__":
