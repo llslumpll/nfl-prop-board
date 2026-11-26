@@ -1115,6 +1115,12 @@ def build(oddsapi_mode: str | None = None):
     except Exception as e:  # noqa: BLE001
         print(f"Tipsters failed: {e}")
         tipsters_page = {"tipsters": [], "week": games_page["week"], "this_week": [], "weeks": [], "lab": {}}
+    try:  # Proven picks (nfl-update-21): every kind of pick graded vs its price
+        import proven_nfl
+        proven_page = proven_nfl.build(tipsters_page, kb_page)
+    except Exception as e:  # noqa: BLE001
+        print(f"Proven picks failed: {e}")
+        proven_page = None
     # Let picks frozen without a line pick up their first real line, but only
     # before kickoff (see line_attach.py). PrizePicks preferred over FanDuel.
     attach_result = line_attach.attach_lines([("prizepicks", pp_props), ("fanduel", fanduel_props)])
@@ -1143,6 +1149,7 @@ def build(oddsapi_mode: str | None = None):
             "home.html",
             {
                 "kb": kb_page,
+                "proven": proven_page,
                 "weeks": dataio.weeks_available(),
                 "best5": best5_data,
                 "recent_results": grade.recent_graded_results(),
@@ -1163,7 +1170,7 @@ def build(oddsapi_mode: str | None = None):
         "tipsters.html": (
             "tipsters",
             "tipsters.html",
-            {"tp": tipsters_page},
+            {"tp": tipsters_page, "proven": proven_page},
         ),
         "moneyline.html": (
             "moneyline",
