@@ -75,14 +75,14 @@
     },
     "Joe Milton III": {
       "passing_yards": 198.5,
-      "rushing_yards": 31.5
+      "rushing_yards": 32.5
     },
     "CeeDee Lamb": {
       "receiving_yards": 88.5,
       "receptions": 7
     },
     "Javonte Williams": {
-      "rushing_yards": 76.5,
+      "rushing_yards": 75.5,
       "receiving_yards": 7.5
     },
     "George Pickens": {
@@ -282,7 +282,7 @@
       "rushing_yards": 0.5
     },
     "Michael Penix Jr.": {
-      "passing_yards": 200.5,
+      "passing_yards": 198.5,
       "rushing_yards": 8.5
     },
     "Justin Jefferson": {
@@ -354,7 +354,7 @@
       "receiving_yards": 29.5
     },
     "Tyler Warren": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 28.5,
       "receptions": 4
     },
     "Laquon Treadwell": {
@@ -384,7 +384,7 @@
       "receiving_yards": 6.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 267.5,
+      "passing_yards": 269.5,
       "rushing_yards": 8.5
     },
     "Cam Ward": {
@@ -452,7 +452,7 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 174.5,
+      "passing_yards": 175.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -717,6 +717,10 @@
       "passing_yards": 220.5,
       "rushing_yards": 31.5
     },
+    "Josh Johnson": {
+      "passing_yards": 162.5,
+      "rushing_yards": 13.5
+    },
     "Trey McBride": {
       "receiving_yards": 54.5,
       "receptions": 6.5
@@ -825,7 +829,7 @@
       "rushing_yards": 18.5
     },
     "Jerry Jeudy": {
-      "receiving_yards": 15.5,
+      "receiving_yards": 16.5,
       "receptions": 1.5
     },
     "Jalen Nailor": {
@@ -902,9 +906,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7466,
-    "matched_props": 411,
-    "excluded_goblin_demon_lines": 6138,
+    "total_projections_returned": 7507,
+    "matched_props": 413,
+    "excluded_goblin_demon_lines": 6178,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -943,5 +947,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T03:00:45.895847+00:00"
+  "fetched_at": "2026-11-26T03:20:44.410860+00:00"
 }
