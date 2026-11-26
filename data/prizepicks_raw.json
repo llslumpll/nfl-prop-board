@@ -20,7 +20,7 @@
     "Luther Burden III": {
       "receiving_yards": 60.5,
       "receptions": 5,
-      "rushing_yards": 0.5
+      "rushing_yards": 1.5
     },
     "Jameson Williams": {
       "receiving_yards": 57.5,
@@ -354,7 +354,7 @@
       "receiving_yards": 29.5
     },
     "Tyler Warren": {
-      "receiving_yards": 28.5,
+      "receiving_yards": 25.5,
       "receptions": 4
     },
     "Laquon Treadwell": {
@@ -452,7 +452,7 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 175.5,
+      "passing_yards": 174.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -477,13 +477,13 @@
       "receptions": 1.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 38.5
+      "receiving_yards": 37.5
     },
     "Omar Cooper Jr.": {
       "receiving_yards": 30.5
     },
     "Malik Washington": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 30.5,
       "receptions": 3.5
     },
     "Greg Dulcich": {
@@ -815,7 +815,7 @@
       "rushing_yards": 31.5
     },
     "Tre Tucker": {
-      "receiving_yards": 30.5
+      "receiving_yards": 31.5
     },
     "Michael Mayer": {
       "receiving_yards": 24.5
@@ -825,7 +825,7 @@
       "rushing_yards": 18.5
     },
     "Jerry Jeudy": {
-      "receiving_yards": 16.5,
+      "receiving_yards": 15.5,
       "receptions": 1.5
     },
     "Jalen Nailor": {
@@ -902,9 +902,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 7467,
+    "total_projections_returned": 7466,
     "matched_props": 411,
-    "excluded_goblin_demon_lines": 6147,
+    "excluded_goblin_demon_lines": 6138,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -943,5 +943,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-26T02:40:39.304341+00:00"
+  "fetched_at": "2026-11-26T03:00:45.895847+00:00"
 }
