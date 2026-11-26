@@ -180,3 +180,43 @@ def fetch_nfl_touchdown_and_game_props(max_per_bucket: int = 40) -> dict:
     result["game_props"] = result["game_props"][:max_per_bucket]
 
     return result
+
+
+# --- nfl-update-19: player ladders (receiving / rushing / passing yards, receptions, rush+rec, anytime TD, 2+ TD) ---
+PLAYER_SERIES = {"KXNFLRECYDS": "recyd", "KXNFLRSHYDS": "rushyd", "KXNFLPASSYDS": "passyd", "KXNFLREC": "rec",
+                 "KXNFLRRYDS": "rr", "KXNFLANYTD": "td", "KXNFL2TD": "td2"}
+
+
+def fetch_nfl_player_ladders() -> dict:
+    """Every open Kalshi NFL player rung, one bulk /markets call (paged) per series. Never raises.
+    Returns {"legs": [{series, stat, player, event, ticker, rung, ask, bid, kickoff}], "per_series": {...}, "error"}."""
+    out = {"legs": [], "per_series": {}, "error": None}
+    for series, stat in PLAYER_SERIES.items():
+        n, cursor = 0, None
+        try:
+            while True:
+                params = {"series_ticker": series, "status": "open", "limit": 1000}
+                if cursor:
+                    params["cursor"] = cursor
+                data = _get(f"{BASE_URL}/markets", params=params)
+                for m in data.get("markets") or []:
+                    ask, bid = _to_num(m.get("yes_ask_dollars")), _to_num(m.get("yes_bid_dollars"))
+                    title = m.get("yes_sub_title") or m.get("title") or ""
+                    rung = _to_num(m.get("floor_strike"))
+                    if rung is None:
+                        rung = 0.5 if stat == "td" else (1.5 if stat == "td2" else None)
+                    if rung is None or not ask or ask >= 1:
+                        continue
+                    out["legs"].append({"series": series, "stat": stat, "player": title.split(":")[0].strip(),
+                                        "event": m.get("event_ticker"), "ticker": m.get("ticker"), "rung": rung,
+                                        "ask": ask, "bid": bid, "kickoff": m.get("occurrence_datetime")})
+                    n += 1
+                cursor = data.get("cursor")
+                if not cursor or not data.get("markets"):
+                    break
+                time.sleep(0.1)
+            out["per_series"][series] = f"{n} rung(s)"
+        except Exception as e:  # noqa: BLE001
+            out["per_series"][series] = f"error: {type(e).__name__}: {e}"
+            out["error"] = out["per_series"][series]
+    return out

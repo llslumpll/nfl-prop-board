@@ -191,6 +191,11 @@ def build(oddsapi_mode: str | None = None):
     print(f"Kalshi per-series results: {kalshi_data['diagnostics']['per_series']}")
     import json
     (DATA_DIR / "kalshi_raw.json").write_text(json.dumps(kalshi_data, indent=2))
+    # nfl-update-19: every open Kalshi player rung (yards, receptions, rush+rec, TDs) for the 3x slip / Best 5 on Kalshi
+    kalshi_ladders = kalshi_client.fetch_nfl_player_ladders()
+    print(f"Kalshi player ladders: {len(kalshi_ladders['legs'])} rungs {kalshi_ladders['per_series']}")
+    if kalshi_ladders["legs"] or not (DATA_DIR / "kalshi_ladders_nfl.json").exists():
+        (DATA_DIR / "kalshi_ladders_nfl.json").write_text(json.dumps(kalshi_ladders, separators=(",", ":")))
 
     # Known Kalshi <-> nflreadpy team-code mismatches. Defined here
     # (right after kalshi_data exists) rather than near its first use,
