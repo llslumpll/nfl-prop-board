@@ -1302,8 +1302,8 @@
  "12": {
   "ml-2": {
    "chance": 0.7349,
-   "decimal": 1.282,
-   "ev": -0.058,
+   "decimal": 1.267,
+   "ev": -0.069,
    "family": "ml",
    "good": false,
    "id": "ml-2",
@@ -1312,28 +1312,28 @@
      "away": "TEN",
      "call": "HOME",
      "chance": 0.893,
-     "decimal": 1.087,
+     "decimal": 1.091,
      "game": "TEN@JAX",
      "good": false,
      "home": "JAX",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "JAX to win",
-     "price": -1150,
+     "price": -1100,
      "team": "JAX"
     },
     {
      "away": "NO",
      "call": "HOME",
      "chance": 0.823,
-     "decimal": 1.179,
+     "decimal": 1.161,
      "game": "NO@CIN",
      "good": false,
      "home": "CIN",
      "kickoff": "2026-11-29T18:00:00+00:00",
      "kind": "ml",
      "label": "CIN to win",
-     "price": -560,
+     "price": -620,
      "team": "CIN"
     }
    ],
@@ -1341,7 +1341,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   },
   "ml-3": {
@@ -1668,7 +1668,7 @@
    "size": 4,
    "stake": 0.25,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   },
   "td-1": {
@@ -1696,7 +1696,7 @@
    "size": 1,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   },
   "td-2": {
@@ -1736,7 +1736,7 @@
    "size": 2,
    "stake": 1.0,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   },
   "td-3": {
@@ -1788,7 +1788,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   },
   "td-4": {
@@ -1918,7 +1918,7 @@
    "size": 3,
    "stake": 0.5,
    "status": "pending",
-   "updated": "2026-11-27 22:20 UTC",
+   "updated": "2026-11-27 22:24 UTC",
    "week": 12
   }
  },
