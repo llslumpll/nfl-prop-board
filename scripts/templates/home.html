@@ -9,37 +9,7 @@
   the same way PrizePicks and the books handle it.
 </p>
 
-{% macro kleg(l) %}{% set lab = {'recyd': 'REC YDS', 'rushyd': 'RUSH YDS', 'passyd': 'PASS YDS', 'rec': 'REC', 'rr': 'RUSH+REC YDS', 'td': 'ANYTIME TD', 'td2': '2+ TDs'} %}
-<li class="{{ 'gm-hit' if l.res == 'hit' else 'gm-miss' if l.res == 'miss' else '' }}">
-  <div class="tk-leg"><b>{{ l.player }} {% if l.stat in ('td', 'td2') %}<span class="c-over">{{ lab[l.stat] }}</span>{% else %}<span class="c-over">{{ (l.rung + 0.5)|int }}+</span> {{ lab.get(l.stat, l.stat) }}{% endif %}</b><span class="tk-px">{% if l.ask >= 0.5 %}-{{ (100 * l.ask / (1 - l.ask))|round|int }}{% else %}+{{ (100 * (1 - l.ask) / l.ask)|round|int }}{% endif %}</span>{% if l.res %}<i>{{ {'hit': '&#10004;', 'miss': '&#10008;', 'void': 'void', 'push': 'push'}[l.res]|safe }}{% if l.actual is not none %} {{ l.actual|int }}{% endif %}</i>{% endif %}</div>
-  <div class="tk-sub">{{ l.team or '' }} &middot; Kalshi {{ (l.ask * 100)|round|int }}% &middot; <b>really hits ~{{ (l.est * 100)|round|int }}%</b>{% if l.proj is not none %} &middot; our proj {{ l.proj }}{% endif %}{% if l.l5 is not none %} &middot; cleared it {{ (l.l5 * 5)|round|int }} of last 5{% endif %}</div>
-  {% if l.lv %}<span class="lv" hidden data-lv="{{ l.lv }}"></span>{% endif %}
-</li>{% endmacro %}
-{% if kb %}
-<section class="pz-sec" id="board">
-  <h2>Your board &middot; week {{ kb.week }}</h2>
-  <p class="small dim">Built from 49,137 settled Kalshi NFL player markets this season: each rung's real chance is Kalshi's price corrected by how rungs like it (same stat, price, our projection vs the rung, and his last 5 games) actually finished in other weeks. NFL Kalshi prices are tight (all rungs together lose about 8% a bet), so both are <b>TESTING</b>: 0.5U or less.</p>
-  <div class="pz-board">
-    <div class="pz-fam"><em>BEST 5 ON KALSHI</em>{% if kb.best5_rec.n %}<b>{{ kb.best5_rec.w }}&ndash;{{ kb.best5_rec.n - kb.best5_rec.w }}</b><span class="{{ 'stat-good' if kb.best5_rec.u > 0 else 'stat-bad' if kb.best5_rec.u < 0 }}">{{ '%+.2f'|format(kb.best5_rec.u) }}U</span>{% else %}<b>NEW</b><span>replay 36&ndash;14 &middot; +6.0U</span>{% endif %}</div>
-    <div class="pz-fam"><em>3X SLIP</em>{% if kb.triple_rec.n %}<b>{{ kb.triple_rec.w }}/{{ kb.triple_rec.n }}</b><span class="{{ 'stat-good' if kb.triple_rec.u > 0 else 'stat-bad' if kb.triple_rec.u < 0 }}">{{ '%+.2f'|format(kb.triple_rec.u) }}U</span>{% else %}<b>NEW</b><span>replay cashed 3 of 10 &middot; &minus;1.0U</span>{% endif %}</div>
-  </div>
-  {% if proven %}{% set good = proven.kinds|selectattr('status', 'in', ['PROVEN', 'PROMISING'])|list %}{% set bad = proven.kinds|selectattr('status', 'equalto', 'AVOID')|list %}
-  <p class="small"><b>What's beating the price:</b> {% if good %}{% for k in good %}<span class="pk-tag pk-proven">{{ k.status }}</span> {{ k.name }} ({{ k.w }}-{{ k.l }}){{ ' · ' if not loop.last }}{% endfor %}{% else %}nothing proven yet{% endif %}.{% if bad %} <span class="dim">Avoid: {% for k in bad %}{{ k.name }}{{ ', ' if not loop.last }}{% endfor %}.</span>{% endif %} <a href="tipsters.html#record">every kind &rarr;</a></p>{% endif %}
-  <div class="tk-grid">
-    {% if kb.best5 %}<article class="tk">
-      <header class="tk-head"><span class="tk-name">BEST 5 ON KALSHI</span><span class="tk-state">STRAIGHT BETS &middot; EACH LOCKS AT KICKOFF</span></header>
-      <p class="small dim" style="margin:4px 12px 0">The 5 Kalshi rungs this week priced 60&ndash;90% with the biggest real edge, one per player. Replay (each week judged only on the other weeks): 36&ndash;14, +6.0U, positive in both halves of the season, but it only holds at 60&ndash;90% prices.</p>
-      <ol class="tk-legs">{% for l in kb.best5.legs %}{{ kleg(l) }}{% endfor %}</ol>
-    </article>{% endif %}
-    {% if kb.triple %}{% set t = kb.triple %}<article class="tk {{ 'tk-hit' if t.hit else 'tk-miss' if t.hit is sameas false else '' }}">
-      <header class="tk-head"><span class="tk-name">3X SLIP</span><span class="tk-state">{% if t.hit %}&#10004; CASHED{% elif t.hit is sameas false %}&#10008; LOST{% else %}ABOUT {{ '%.1f'|format(t.quote_est) }}X &middot; ~{{ (t.chance * 100)|round|int }}% TO CASH{% endif %}</span></header>
-      <p class="small dim" style="margin:4px 12px 0">One Kalshi combo, the one most likely to cash at a 3x+ quote. Replay: cashed 3 of 10 weeks against ~40% expected, &minus;1.0U, so treat it as a test.</p>
-      <ol class="tk-legs">{% for l in t.legs %}{{ kleg(l) }}{% endfor %}</ol>
-      <footer class="tk-foot">Legs multiply to {{ '%.2f'|format(t.pays_k) }}x at Kalshi's asks; Kalshi quotes the combo a bit lower, so the site counts {{ '%.1f'|format(t.quote_est) }}x. Locks at its first kickoff.</footer>
-    </article>{% endif %}
-  </div>
-</section>
-{% endif %}
+{% if kb and (kb.best5 or kb.triple) %}<p class="small" style="margin:10px 0"><b>This week's Best 5 on Kalshi and 3x slip</b> are on the <a href="tipsters.html#board">Tipsters page &rarr;</a></p>{% endif %}
 
 {# Track record: the lists the site stands behind first, every pick and game picks after (from the NBA site) #}
 {% if track and track.tiles %}
