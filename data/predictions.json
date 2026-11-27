@@ -45046,9 +45046,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Jaxon Smith-Njigba|receiving_yards|12": {
     "player": "Jaxon Smith-Njigba",
@@ -46145,6 +46143,32 @@
       "usage_trend": "up"
     },
     "frozen_at": "2026-11-27 05:00 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null,
+    "best5_tags": [
+      "highest_confidence"
+    ]
+  },
+  "Michael Penix Jr.|passing_yards|12": {
+    "player": "Michael Penix Jr.",
+    "team": "ATL",
+    "opponent": "MIN",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 176.5,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 199.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -23.0,
+    "model_prob": 0.402,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice",
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-27 13:40 UTC",
     "graded": false,
     "actual": null,
     "hit": null,

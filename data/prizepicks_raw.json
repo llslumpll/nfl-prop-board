@@ -9,8 +9,8 @@
       "rushing_yards": 5.5
     },
     "Jonah Coleman": {
-      "rushing_yards": 75.5,
-      "receiving_yards": 21.5
+      "rushing_yards": 74.5,
+      "receiving_yards": 22.5
     },
     "Jaylen Warren": {
       "rushing_yards": 64.5,
@@ -57,14 +57,14 @@
       "receiving_yards": 8.5,
       "rushing_yards": 1.5
     },
-    "Troy Franklin": {
-      "receiving_yards": 4.5
-    },
     "Adam Trautman": {
       "receiving_yards": 4.5
     },
     "Tyler Badie": {
       "rushing_yards": 4.5
+    },
+    "Troy Franklin": {
+      "receiving_yards": 3.5
     },
     "Nate Adkins": {
       "receiving_yards": 0.5
@@ -177,8 +177,8 @@
       "rushing_yards": 3.5
     },
     "Trevor Lawrence": {
-      "passing_yards": 266.5,
-      "rushing_yards": 7.5
+      "passing_yards": 264.5,
+      "rushing_yards": 8.5
     },
     "Cam Ward": {
       "passing_yards": 206.5,
@@ -193,7 +193,7 @@
       "receiving_yards": 14.5
     },
     "Carnell Tate": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 51.5,
       "receptions": 4.5
     },
     "Jakobi Meyers": {
@@ -358,7 +358,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 242.5,
+      "passing_yards": 241.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -383,7 +383,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 41.5
+      "receiving_yards": 42.5
     },
     "Devaughn Vele": {
       "receiving_yards": 30.5,
@@ -391,7 +391,7 @@
     },
     "Samaje Perine": {
       "rushing_yards": 27.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 8.5
     },
     "Mike Gesicki": {
       "receiving_yards": 23.5
@@ -400,7 +400,8 @@
       "receiving_yards": 6.5
     },
     "Jack Endries": {
-      "receiving_yards": 5.5
+      "receiving_yards": 5.5,
+      "receptions": 1.5
     },
     "Tommy DeVito": {
       "passing_yards": 175.5,
@@ -636,7 +637,7 @@
       "receptions": 1.5
     },
     "Jack Bech": {
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -685,7 +686,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 22.5,
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Chris Godwin Jr.": {
       "receiving_yards": 22.5,
@@ -708,9 +709,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5759,
-    "matched_props": 311,
-    "excluded_goblin_demon_lines": 4795,
+    "total_projections_returned": 5794,
+    "matched_props": 312,
+    "excluded_goblin_demon_lines": 4829,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -749,5 +750,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T13:20:44.595824+00:00"
+  "fetched_at": "2026-11-27T13:40:39.690488+00:00"
 }
