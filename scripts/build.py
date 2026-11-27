@@ -1190,7 +1190,7 @@ def build(oddsapi_mode: str | None = None):
         "tipsters.html": (
             "tipsters",
             "tipsters.html",
-            {"tp": tipsters_page, "proven": proven_page, "dl": docladder_page},
+            {"tp": tipsters_page, "proven": proven_page, "dl": docladder_page, "kb": kb_page},
         ),
         "moneyline.html": (
             "moneyline",
