@@ -230,7 +230,7 @@
       "receiving_yards": 6.5
     },
     "Xavier Restrepo": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Travis Hunter": {
       "receiving_yards": 7.5
@@ -326,7 +326,7 @@
     },
     "Woody Marks": {
       "rushing_yards": 29.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Mark Andrews": {
@@ -709,9 +709,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5727,
+    "total_projections_returned": 5719,
     "matched_props": 312,
-    "excluded_goblin_demon_lines": 4770,
+    "excluded_goblin_demon_lines": 4762,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +750,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T08:20:38.742013+00:00"
+  "fetched_at": "2026-11-27T08:34:24.940830+00:00"
 }
