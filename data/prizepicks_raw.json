@@ -35,7 +35,8 @@
       "receiving_yards": 26.5
     },
     "Evan Engram": {
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 2.5
     },
     "Germie Bernard": {
       "receiving_yards": 22.5
@@ -96,7 +97,7 @@
       "receiving_yards": 44.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 36.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -466,7 +467,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 97.5
+      "receiving_yards": 96.5
     },
     "Mike Evans": {
       "receiving_yards": 57.5
@@ -496,13 +497,13 @@
     "AJ Barner": {
       "receiving_yards": 23.5
     },
-    "Cooper Kupp": {
-      "receiving_yards": 21.5
-    },
     "Deebo Samuel Sr.": {
       "receiving_yards": 21.5,
       "rushing_yards": 8.5,
       "receptions": 2.5
+    },
+    "Cooper Kupp": {
+      "receiving_yards": 20.5
     },
     "Kaelon Black": {
       "rushing_yards": 19.5
@@ -528,7 +529,7 @@
       "rushing_yards": 13.5
     },
     "Trey McBride": {
-      "receiving_yards": 60.5
+      "receiving_yards": 59.5
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 54.5,
@@ -707,9 +708,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5754,
-    "matched_props": 310,
-    "excluded_goblin_demon_lines": 4791,
+    "total_projections_returned": 5759,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4795,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -748,5 +749,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T13:00:44.336918+00:00"
+  "fetched_at": "2026-11-27T13:20:44.595824+00:00"
 }
