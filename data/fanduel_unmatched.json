@@ -12,8 +12,20 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Patrick Mahomes",
+    "team": "KC",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Jared Goff",
     "team": "DET",
+    "stat": "passing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Josh Allen",
+    "team": "BUF",
     "stat": "passing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -102,14 +114,32 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Khalil Shakir",
+    "team": "BUF",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "D'Andre Swift",
     "team": "CHI",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "DJ Moore",
+    "team": "BUF",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Rome Odunze",
     "team": "CHI",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Travis Kelce",
+    "team": "KC",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -174,6 +204,18 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "DJ Moore",
+    "team": "BUF",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Ty Johnson",
+    "team": "BUF",
+    "stat": "receptions",
+    "why": "possible name mismatch: FanDuel has 'Theo Johnson'"
+  },
+  {
     "player": "George Pickens",
     "team": "DAL",
     "stat": "receptions",
@@ -194,6 +236,18 @@
   {
     "player": "Michael Wilson",
     "team": "ARI",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Travis Kelce",
+    "team": "KC",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Rashee Rice",
+    "team": "KC",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -246,6 +300,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Emmett Johnson",
+    "team": "KC",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Kenneth Walker III",
     "team": "KC",
     "stat": "rushing_yards",
@@ -254,6 +314,12 @@
   {
     "player": "Emanuel Wilson",
     "team": "SEA",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "James Cook",
+    "team": "BUF",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
