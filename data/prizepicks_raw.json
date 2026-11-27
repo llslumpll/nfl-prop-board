@@ -50,7 +50,7 @@
       "receiving_yards": 12.5
     },
     "Michael Pittman Jr.": {
-      "receiving_yards": 10.5
+      "receiving_yards": 11.5
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 8.5,
@@ -709,9 +709,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5732,
+    "total_projections_returned": 5727,
     "matched_props": 312,
-    "excluded_goblin_demon_lines": 4771,
+    "excluded_goblin_demon_lines": 4770,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +750,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T08:00:42.946006+00:00"
+  "fetched_at": "2026-11-27T08:20:38.742013+00:00"
 }
