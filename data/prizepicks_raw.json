@@ -1,7 +1,7 @@
 {
   "props": {
     "Bo Nix": {
-      "passing_yards": 201.5,
+      "passing_yards": 202.5,
       "rushing_yards": 10.5
     },
     "Mason Rudolph": {
@@ -23,7 +23,7 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 31.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Pat Bryant": {
       "receiving_yards": 27.5,
@@ -240,11 +240,11 @@
       "receiving_yards": 7.5
     },
     "Geno Smith": {
-      "passing_yards": 203.5,
+      "passing_yards": 202.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 172.5,
+      "passing_yards": 169.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -271,7 +271,7 @@
       "receiving_yards": 37.5
     },
     "Malik Washington": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Greg Dulcich": {
       "receiving_yards": 24.5,
@@ -368,13 +368,13 @@
       "receiving_yards": 91.5,
       "receptions": 7.5
     },
-    "Tee Higgins": {
-      "receiving_yards": 69.5,
-      "receptions": 5
-    },
     "Chris Olave": {
-      "receiving_yards": 68.5,
+      "receiving_yards": 70.5,
       "receptions": 5.5
+    },
+    "Tee Higgins": {
+      "receiving_yards": 68.5,
+      "receptions": 5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 48.5,
@@ -382,7 +382,8 @@
     },
     "Chase Brown": {
       "rushing_yards": 43.5,
-      "receiving_yards": 25.5
+      "receiving_yards": 25.5,
+      "receptions": 4.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 42.5
@@ -396,12 +397,12 @@
       "receiving_yards": 11.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
-    },
-    "Jack Endries": {
-      "receiving_yards": 5.5
+      "receiving_yards": 24.5
     },
     "Drew Sample": {
+      "receiving_yards": 6.5
+    },
+    "Jack Endries": {
       "receiving_yards": 5.5
     },
     "Tommy DeVito": {
@@ -468,7 +469,7 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 98.5
+      "receiving_yards": 97.5
     },
     "Mike Evans": {
       "receiving_yards": 60.5
@@ -498,16 +499,16 @@
     "AJ Barner": {
       "receiving_yards": 23.5
     },
+    "Cooper Kupp": {
+      "receiving_yards": 20.5
+    },
     "Deebo Samuel Sr.": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 20.5,
       "rushing_yards": 8.5,
       "receptions": 2.5
     },
     "Kaelon Black": {
       "rushing_yards": 19.5
-    },
-    "Cooper Kupp": {
-      "receiving_yards": 18.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 15.5
@@ -551,7 +552,7 @@
       "receiving_yards": 6.5
     },
     "Bam Knight": {
-      "rushing_yards": 26.5,
+      "rushing_yards": 27.5,
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
@@ -663,7 +664,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 53.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -698,10 +699,10 @@
     "Tez Johnson": {
       "receiving_yards": 15.5
     },
-    "Mitchell Evans": {
-      "receiving_yards": 10.5
-    },
     "John Metchie III": {
+      "receiving_yards": 9.5
+    },
+    "Mitchell Evans": {
       "receiving_yards": 9.5
     }
   },
@@ -709,9 +710,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5701,
-    "matched_props": 312,
-    "excluded_goblin_demon_lines": 4751,
+    "total_projections_returned": 5694,
+    "matched_props": 313,
+    "excluded_goblin_demon_lines": 4742,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T03:20:43.233924+00:00"
+  "fetched_at": "2026-11-27T03:40:40.140578+00:00"
 }
