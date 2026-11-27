@@ -4568,6 +4568,33 @@
    "odds": 6142,
    "posted": "2026-11-26T21:19Z",
    "label": "SGP+ 4-leg ATD (Afternoon Turkey Special)"
+  },
+  {
+   "id": "w12-doc-235",
+   "week": 12,
+   "tipster": "doc",
+   "kind": "ml",
+   "team": "KC",
+   "line": 0.0,
+   "legs": [],
+   "odds": 150,
+   "posted": "2026-11-27T01:16Z"
+  },
+  {
+   "id": "w12-doc-236",
+   "week": 12,
+   "tipster": "doc",
+   "kind": "prop",
+   "legs": [
+    {
+     "player": "Khalil Shakir",
+     "stat": "rec",
+     "line": 3.5,
+     "side": "over"
+    }
+   ],
+   "odds": 104,
+   "posted": "2026-11-27T01:16Z"
   }
  ]
 }
