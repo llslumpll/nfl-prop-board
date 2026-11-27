@@ -34,7 +34,7 @@
       "receptions": 1.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Jauan Jennings": {
       "receiving_yards": 28.5
@@ -191,20 +191,20 @@
       "receiving_yards": 8.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Malik Washington": {
       "receiving_yards": 26.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 23.5,
+      "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Kenyon Sadiq": {
       "receiving_yards": 20.5
     },
     "Mason Taylor": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Chris Bell": {
       "receiving_yards": 14.5,
@@ -218,7 +218,7 @@
       "rushing_yards": 10.5
     },
     "Will Kacmarek": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "C.J. Stroud": {
       "passing_yards": 257.5,
@@ -266,7 +266,7 @@
       "receiving_yards": 25.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Mark Andrews": {
       "receiving_yards": 22.5
@@ -303,12 +303,12 @@
       "receptions": 5.5
     },
     "Tee Higgins": {
-      "receiving_yards": 65.5,
+      "receiving_yards": 67.5,
       "receptions": 5
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 48.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Chase Brown": {
       "rushing_yards": 43.5,
@@ -347,17 +347,15 @@
     },
     "Omarion Hampton": {
       "rushing_yards": 65.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 14.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 33.5,
-      "receptions": 3.5
+      "receiving_yards": 34.5
     },
     "Corey Kiner": {
       "rushing_yards": 31.5
@@ -370,27 +368,25 @@
       "receiving_yards": 26.5,
       "receptions": 2.5
     },
-    "Quentin Johnston": {
-      "receiving_yards": 26.5
-    },
     "DeMario Douglas": {
       "receiving_yards": 25.5,
       "receptions": 2.5
     },
+    "Quentin Johnston": {
+      "receiving_yards": 25.5
+    },
     "Hunter Henry": {
-      "receiving_yards": 23.5,
-      "receptions": 2.5
+      "receiving_yards": 23.5
     },
     "Kimani Vidal": {
       "rushing_yards": 19.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 7.5
     },
     "Eli Raridon": {
       "receiving_yards": 17.5
     },
     "Charlie Kolar": {
-      "receiving_yards": 15.5
+      "receiving_yards": 14.5
     },
     "Efton Chism III": {
       "receiving_yards": 12.5
@@ -528,7 +524,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 210.5,
+      "passing_yards": 211.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -562,7 +558,7 @@
     },
     "Dylan Sampson": {
       "receiving_yards": 22.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -634,9 +630,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5358,
-    "matched_props": 281,
-    "excluded_goblin_demon_lines": 4427,
+    "total_projections_returned": 5392,
+    "matched_props": 277,
+    "excluded_goblin_demon_lines": 4461,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -658,16 +654,16 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "quarters with 1+ reception",
+      "rec tds",
       "receiving yards",
       "receiving yards (combo)",
       "receptions",
       "rush attempts",
+      "rush tds",
       "rush yards",
       "rush yards (combo)",
       "rush yards in first 5 attempts",
-      "rush yards per carry",
-      "rush+rec yds",
-      "sacks"
+      "rush yards per carry"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -675,5 +671,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T20:20:38.233466+00:00"
+  "fetched_at": "2026-11-27T20:40:39.379670+00:00"
 }
