@@ -46102,5 +46102,27 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Tyler Shough|passing_yards|12": {
+    "player": "Tyler Shough",
+    "team": "NO",
+    "opponent": "CIN",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 220.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 242.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -22.4,
+    "model_prob": 0.4086,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-27 02:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
