@@ -88,7 +88,7 @@
     },
     "Bijan Robinson": {
       "rushing_yards": 75.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Drake London": {
       "receiving_yards": 71.5,
@@ -694,9 +694,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5838,
+    "total_projections_returned": 5844,
     "matched_props": 309,
-    "excluded_goblin_demon_lines": 4796,
+    "excluded_goblin_demon_lines": 4802,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -735,5 +735,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T18:38:48.093466+00:00"
+  "fetched_at": "2026-11-27T18:40:41.104322+00:00"
 }
