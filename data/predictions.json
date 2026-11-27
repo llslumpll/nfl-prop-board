@@ -46225,5 +46225,28 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Mike Gesicki|receiving_yards|12": {
+    "player": "Mike Gesicki",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 33.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 23.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 10.3,
+    "model_prob": 0.6493,
+    "signals": {
+      "opponent_recent_form": "better",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-27 18:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
