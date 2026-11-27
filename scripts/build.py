@@ -1350,7 +1350,8 @@ def build(oddsapi_mode: str | None = None):
             f.unlink()
         _pt = env.get_template("player.html")
         for _p in players_lab["pages"]:
-            (DOCS / _p["slug"]).write_text(_pt.render(current_page="players", p=_p, wk=players_lab["week"], **common))
+            (DOCS / _p["slug"]).write_text(_pt.render(current_page="players", p=_p, wk=players_lab["week"],
+                                                      proven=proven_page, **common))
         (DOCS / "players.html").write_text(env.get_template("players.html").render(current_page="players", pl=players_lab, **common))
         print(f"wrote players.html (+{len(players_lab['pages'])} player pages)")
 
