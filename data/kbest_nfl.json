@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 11:40 UTC",
+   "built": "2026-11-27 12:01 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -23,11 +23,11 @@
      "week": 12
     },
     {
-     "ask": 0.66,
+     "ask": 0.65,
      "avg5": 0.7,
-     "bid": 0.65,
+     "bid": 0.63,
      "edge": 0.0557,
-     "est": 0.7157,
+     "est": 0.7057,
      "event": "KXNFLPASSYDS-26NOV27DENPIT",
      "g": 3,
      "game": "DENPIT",
@@ -103,28 +103,9 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 11:40 UTC",
-   "chance": 0.3853,
+   "built": "2026-11-27 12:01 UTC",
+   "chance": 0.3832,
    "legs": [
-    {
-     "ask": 0.66,
-     "avg5": 0.7,
-     "bid": 0.65,
-     "edge": 0.0557,
-     "est": 0.7157,
-     "event": "KXNFLPASSYDS-26NOV27DENPIT",
-     "g": 3,
-     "game": "DENPIT",
-     "kickoff": "2026-11-27T20:00:00Z",
-     "l5": 0.0,
-     "player": "Mason Rudolph",
-     "proj": null,
-     "rung": 149.5,
-     "series": "KXNFLPASSYDS",
-     "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV27DENPIT-PITMRUDOLPH2-150",
-     "week": 12
-    },
     {
      "ask": 0.69,
      "avg5": 213.2,
@@ -142,6 +123,25 @@
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
      "ticker": "KXNFLPASSYDS-26NOV29NYJMIA-NYJGSMITH7-175",
+     "week": 12
+    },
+    {
+     "ask": 0.66,
+     "avg5": 202.2,
+     "bid": 0.62,
+     "edge": 0.0518,
+     "est": 0.7118,
+     "event": "KXNFLPASSYDS-26NOV29ATLMIN",
+     "g": 8,
+     "game": "ATLMIN",
+     "kickoff": "2026-11-29T18:00:00Z",
+     "l5": 0.6,
+     "player": "Michael Penix Jr.",
+     "proj": null,
+     "rung": 174.5,
+     "series": "KXNFLPASSYDS",
+     "stat": "passyd",
+     "ticker": "KXNFLPASSYDS-26NOV29ATLMIN-ATLMPENIX9-175",
      "week": 12
     },
     {
