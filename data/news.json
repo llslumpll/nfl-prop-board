@@ -406,6 +406,7 @@
      "without": 42.5
     },
     {
+     "actual": 72,
      "bump": 642,
      "call": "OVER",
      "line": 80.5,
@@ -413,7 +414,7 @@
      "n_wo": 2,
      "now": 81.5,
      "player": "Emmett Johnson",
-     "result": null,
+     "result": "miss",
      "short": "RUSH YDS",
      "stat": "rushing_yards",
      "with": 13.9,
@@ -456,6 +457,7 @@
      "without": 12
     },
     {
+     "actual": 174,
      "bump": 32,
      "call": "OVER",
      "line": 232.5,
@@ -463,19 +465,20 @@
      "n_wo": 2,
      "now": 226.5,
      "player": "Patrick Mahomes",
-     "result": null,
+     "result": "miss",
      "short": "PASS YDS",
      "stat": "passing_yards",
      "with": 254.6,
      "without": 336
     },
     {
+     "actual": 19,
      "bump": 16,
      "call": "OVER",
      "line": 44.5,
      "n_wo": 2,
      "player": "Rashee Rice",
-     "result": null,
+     "result": "miss",
      "short": "REC YDS",
      "stat": "receiving_yards",
      "with": 58.4,

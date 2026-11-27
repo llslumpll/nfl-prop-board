@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-11-27 18:25 UTC",
+  "generated_at": "2026-11-27 18:38 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -27,9 +27,9 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 2.15,
-        "sample_size": 101,
-        "avg_raw_bias": 7.17,
+        "bias": 1.38,
+        "sample_size": 103,
+        "avg_raw_bias": 4.6,
         "status": "active"
       },
       "No data (rookie/unproven)": {
@@ -62,9 +62,9 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 1.43,
-        "sample_size": 123,
-        "avg_raw_bias": 4.75,
+        "bias": 1.49,
+        "sample_size": 124,
+        "avg_raw_bias": 4.97,
         "status": "active"
       }
     },
@@ -92,9 +92,9 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 1.18,
-        "sample_size": 143,
-        "avg_raw_bias": 3.93,
+        "bias": 1.0,
+        "sample_size": 146,
+        "avg_raw_bias": 3.34,
         "status": "active"
       }
     },
@@ -111,41 +111,41 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.09,
-        "sample_size": 120,
-        "avg_raw_bias": 0.3,
+        "bias": 0.06,
+        "sample_size": 125,
+        "avg_raw_bias": 0.21,
         "status": "active"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 23,
+    "sample_size": 24,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.721,
-      "sample_size": 246,
-      "raw_shrink_factor": 0.07,
+      "shrink_factor": 0.713,
+      "sample_size": 248,
+      "raw_shrink_factor": 0.044,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.628,
-      "sample_size": 260,
-      "raw_shrink_factor": -0.239,
+      "shrink_factor": 0.635,
+      "sample_size": 261,
+      "raw_shrink_factor": -0.217,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.78,
-      "sample_size": 294,
-      "raw_shrink_factor": 0.265,
+      "shrink_factor": 0.777,
+      "sample_size": 297,
+      "raw_shrink_factor": 0.257,
       "status": "active"
     },
     "receptions": {
-      "shrink_factor": 0.75,
-      "sample_size": 53,
-      "raw_shrink_factor": 0.167,
+      "shrink_factor": 0.715,
+      "sample_size": 57,
+      "raw_shrink_factor": 0.051,
       "status": "active"
     }
   }

@@ -10250,8 +10250,15 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 48.8 total. BUF's real offensive EPA/play (+0.14) against KC's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. KC's real record over their last games is trending down relative to their season pace. KC is carrying real, meaningfully more Out/Doubtful designations than BUF this week -- a real health edge favoring BUF.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 13,
+      "away_score": 10,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": true
   },
   "KC@BUF|team_spread|12": {
     "away_team": "KC",
@@ -10272,8 +10279,15 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 48.8 total. BUF's real offensive EPA/play (+0.14) against KC's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. KC's real record over their last games is trending down relative to their season pace. KC is carrying real, meaningfully more Out/Doubtful designations than BUF this week -- a real health edge favoring BUF. FanDuel's real line is adjacent to the 3-point key number -- a single common scoring play flips who covers.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 13,
+      "away_score": 10,
+      "actual_margin": 3
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "KC@BUF|team_total|12": {
     "away_team": "KC",
@@ -10294,8 +10308,15 @@
     "reason": "Real net-points-per-game model projects a +2.2-point margin and a 48.8 total. BUF's real offensive EPA/play (+0.14) against KC's real defensive EPA/play allowed (-0.08) is the strongest real signal here -- EPA/play is widely regarded as the single best real indicator of team strength, since it isolates real execution quality from raw yardage that garbage time or a soft prevent defense can inflate. KC's real record over their last games is trending down relative to their season pace. KC is carrying real, meaningfully more Out/Doubtful designations than BUF this week -- a real health edge favoring BUF.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 13,
+      "away_score": 10,
+      "actual_total": 23
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "DEN@PIT|team_moneyline|12": {
     "away_team": "DEN",
