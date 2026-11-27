@@ -46175,5 +46175,27 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Geno Smith|passing_yards|12": {
+    "player": "Geno Smith",
+    "team": "NYJ",
+    "opponent": "MIA",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 224.7,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 203.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 21.2,
+    "model_prob": 0.6058,
+    "signals": {
+      "injury_flagged": "Full Participation in Practice"
+    },
+    "frozen_at": "2026-11-27 16:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
