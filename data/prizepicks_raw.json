@@ -10,7 +10,7 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 74.5,
-      "receiving_yards": 21.5
+      "receiving_yards": 22.5
     },
     "Jaylen Warren": {
       "rushing_yards": 64.5,
@@ -22,7 +22,7 @@
       "receptions": 4
     },
     "Rico Dowdle": {
-      "rushing_yards": 31.5,
+      "rushing_yards": 32.5,
       "receiving_yards": 8.5
     },
     "Pat Bryant": {
@@ -55,7 +55,7 @@
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 8.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 2.5
     },
     "Adam Trautman": {
       "receiving_yards": 4.5
@@ -142,14 +142,14 @@
       "receptions": 5
     },
     "Tyler Warren": {
-      "receiving_yards": 30.5,
+      "receiving_yards": 29.5,
       "receptions": 4
     },
     "Malachi Fields": {
       "receiving_yards": 29.5
     },
     "Laquon Treadwell": {
-      "receiving_yards": 22.5
+      "receiving_yards": 21.5
     },
     "Anthony Gould": {
       "receiving_yards": 18.5,
@@ -227,7 +227,7 @@
       "receiving_yards": 6.5
     },
     "Nate Boerkircher": {
-      "receiving_yards": 8.5
+      "receiving_yards": 9.5
     },
     "Xavier Restrepo": {
       "receiving_yards": 8.5
@@ -269,7 +269,7 @@
       "receiving_yards": 37.5
     },
     "Malik Washington": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Greg Dulcich": {
       "receiving_yards": 23.5,
@@ -303,8 +303,7 @@
       "receiving_yards": 73.5
     },
     "Nico Collins": {
-      "receiving_yards": 58.5,
-      "receptions": 4.5
+      "receiving_yards": 58.5
     },
     "Derrick Henry": {
       "rushing_yards": 55.5,
@@ -332,10 +331,10 @@
     "Dalton Schultz": {
       "receiving_yards": 24.5
     },
-    "Ja'Kobi Lane": {
-      "receiving_yards": 24.5
-    },
     "Mark Andrews": {
+      "receiving_yards": 23.5
+    },
+    "Ja'Kobi Lane": {
       "receiving_yards": 23.5
     },
     "Marvin Harrison Jr.": {
@@ -654,7 +653,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -683,13 +682,13 @@
     "Darren Waller": {
       "receiving_yards": 26.5
     },
+    "Chris Godwin Jr.": {
+      "receiving_yards": 23.5,
+      "receptions": 2.5
+    },
     "Kenny Gainwell": {
       "rushing_yards": 22.5,
-      "receiving_yards": 15.5
-    },
-    "Chris Godwin Jr.": {
-      "receiving_yards": 22.5,
-      "receptions": 2.5
+      "receiving_yards": 16.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5
@@ -708,9 +707,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5812,
-    "matched_props": 311,
-    "excluded_goblin_demon_lines": 4842,
+    "total_projections_returned": 5804,
+    "matched_props": 310,
+    "excluded_goblin_demon_lines": 4838,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -749,5 +748,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T14:00:47.361157+00:00"
+  "fetched_at": "2026-11-27T14:20:39.268415+00:00"
 }
