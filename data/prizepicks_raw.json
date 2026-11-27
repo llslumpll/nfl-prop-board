@@ -1,7 +1,7 @@
 {
   "props": {
     "Bo Nix": {
-      "passing_yards": 202.5,
+      "passing_yards": 201.5,
       "rushing_yards": 10.5
     },
     "Mason Rudolph": {
@@ -26,8 +26,7 @@
       "receiving_yards": 7.5
     },
     "Pat Bryant": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 27.5
     },
     "Courtland Sutton": {
       "receiving_yards": 27.5
@@ -56,9 +55,6 @@
     "Marvin Mims Jr.": {
       "receiving_yards": 8.5,
       "rushing_yards": 1.5
-    },
-    "Max Hurleman": {
-      "receiving_yards": 5.5
     },
     "Troy Franklin": {
       "receiving_yards": 4.5
@@ -194,7 +190,7 @@
       "receiving_yards": 14.5
     },
     "Jakobi Meyers": {
-      "receiving_yards": 51.5
+      "receiving_yards": 54.5
     },
     "Carnell Tate": {
       "receiving_yards": 49.5,
@@ -244,7 +240,7 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 170.5,
+      "passing_yards": 169.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -252,7 +248,7 @@
       "receiving_yards": 10.5
     },
     "Breece Hall": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 20.5,
       "receptions": 3
     },
@@ -295,7 +291,7 @@
       "receptions": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 257.5,
+      "passing_yards": 255.5,
       "rushing_yards": 9.5
     },
     "Jacoby Brissett": {
@@ -318,7 +314,7 @@
       "receptions": 1.5
     },
     "Tank Dell": {
-      "receiving_yards": 34.5
+      "receiving_yards": 35.5
     },
     "Rashod Bateman": {
       "receiving_yards": 33.5
@@ -415,12 +411,12 @@
       "receptions": 1.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 50.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 14.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 34.5
+      "receiving_yards": 35.5
     },
     "Corey Kiner": {
       "rushing_yards": 31.5
@@ -430,14 +426,15 @@
       "receptions": 2.5
     },
     "Quentin Johnston": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "DeMario Douglas": {
       "receiving_yards": 25.5,
       "receptions": 2.5
     },
     "Hunter Henry": {
-      "receiving_yards": 24.5
+      "receiving_yards": 24.5,
+      "receptions": 2.5
     },
     "Mack Hollins": {
       "receiving_yards": 24.5,
@@ -690,7 +687,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5
@@ -699,10 +696,10 @@
       "receiving_yards": 15.5
     },
     "John Metchie III": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Mitchell Evans": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     }
   },
   "error": null,
@@ -710,8 +707,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 5704,
-    "matched_props": 312,
-    "excluded_goblin_demon_lines": 4746,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4745,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +747,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T04:40:41.438846+00:00"
+  "fetched_at": "2026-11-27T05:00:44.701522+00:00"
 }

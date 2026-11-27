@@ -43202,7 +43202,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "highest_confidence"
+    ]
   },
   "Matthew Golden|receptions|12": {
     "player": "Matthew Golden",
@@ -45074,7 +45076,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": []
+    "best5_tags": [
+      "best_value"
+    ]
   },
   "Emmett Johnson|rushing_yards|12": {
     "player": "Emmett Johnson",
@@ -45659,10 +45663,7 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [
-      "best_value",
-      "highest_confidence"
-    ]
+    "best5_tags": []
   },
   "Sam Darnold|passing_yards|12": {
     "player": "Sam Darnold",
@@ -46123,6 +46124,30 @@
       "injury_flagged": "Full Participation in Practice"
     },
     "frozen_at": "2026-11-27 02:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
+  },
+  "Samaje Perine|receiving_yards|12": {
+    "player": "Samaje Perine",
+    "team": "CIN",
+    "opponent": "NO",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 18.8,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 11.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 7.3,
+    "model_prob": 0.6817,
+    "signals": {
+      "injury_flagged": "Did Not Participate In Practice",
+      "opponent_recent_form": "better",
+      "usage_trend": "up"
+    },
+    "frozen_at": "2026-11-27 05:00 UTC",
     "graded": false,
     "actual": null,
     "hit": null,
