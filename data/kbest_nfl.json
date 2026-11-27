@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 17:41 UTC",
+   "built": "2026-11-27 18:01 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -80,11 +80,11 @@
      "week": 12
     },
     {
-     "ask": 0.63,
+     "ask": 0.62,
      "avg5": 152.7,
      "bid": 0.59,
      "edge": 0.0557,
-     "est": 0.6857,
+     "est": 0.6757,
      "event": "KXNFLPASSYDS-26NOV29LVCLE",
      "g": 3,
      "game": "LVCLE",
@@ -103,50 +103,50 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 17:41 UTC",
-   "chance": 0.3689,
+   "built": "2026-11-27 18:01 UTC",
+   "chance": 0.3695,
    "legs": [
     {
-     "ask": 0.51,
-     "avg5": 202.2,
+     "ask": 0.5,
+     "avg5": 217.2,
      "bid": 0.49,
      "edge": 0.0469,
-     "est": 0.5569,
-     "event": "KXNFLPASSYDS-26NOV29ATLMIN",
-     "g": 8,
-     "game": "ATLMIN",
-     "kickoff": "2026-11-29T18:00:00Z",
-     "l5": 0.6,
-     "player": "Michael Penix Jr.",
-     "proj": 176.5,
-     "rung": 199.5,
+     "est": 0.5469,
+     "event": "KXNFLPASSYDS-26NOV29SEASF",
+     "g": 7,
+     "game": "SEASF",
+     "kickoff": "2026-11-29T21:25:00Z",
+     "l5": 0.4,
+     "player": "Sam Darnold",
+     "proj": 199.8,
+     "rung": 224.5,
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV29ATLMIN-ATLMPENIX9-200",
+     "ticker": "KXNFLPASSYDS-26NOV29SEASF-SEASDARNOLD14-225",
      "week": 12
     },
     {
-     "ask": 0.61,
-     "avg5": 64.7,
-     "bid": 0.54,
-     "edge": 0.0524,
-     "est": 0.6624,
-     "event": "KXNFLRSHYDS-26NOV29SEASF",
+     "ask": 0.62,
+     "avg5": 152.7,
+     "bid": 0.59,
+     "edge": 0.0557,
+     "est": 0.6757,
+     "event": "KXNFLPASSYDS-26NOV29LVCLE",
      "g": 3,
-     "game": "SEASF",
-     "kickoff": "2026-11-29T21:25:00Z",
-     "l5": 0.6666666666666666,
-     "player": "Zach Charbonnet",
-     "proj": 38.4,
-     "rung": 49.5,
-     "series": "KXNFLRSHYDS",
-     "stat": "rushyd",
-     "ticker": "KXNFLRSHYDS-26NOV29SEASF-SEAZCHARBONNET26-50",
+     "game": "LVCLE",
+     "kickoff": "2026-11-30T01:20:00Z",
+     "l5": 0.3333333333333333,
+     "player": "Fernando Mendoza",
+     "proj": null,
+     "rung": 174.5,
+     "series": "KXNFLPASSYDS",
+     "stat": "passyd",
+     "ticker": "KXNFLPASSYDS-26NOV29LVCLE-LVFMENDOZA15-175",
      "week": 12
     }
    ],
-   "pays_k": 3.21,
-   "quote_est": 3.03
+   "pays_k": 3.23,
+   "quote_est": 3.05
   }
  }
 }
