@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 08:34 UTC",
+   "built": "2026-11-27 08:40 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -103,8 +103,8 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 08:34 UTC",
-   "chance": 0.3836,
+   "built": "2026-11-27 08:40 UTC",
+   "chance": 0.3853,
    "legs": [
     {
      "ask": 0.66,
@@ -127,21 +127,21 @@
     },
     {
      "ask": 0.69,
-     "avg5": 202.6,
-     "bid": 0.68,
-     "edge": 0.0486,
-     "est": 0.7386,
-     "event": "KXNFLPASSYDS-26NOV27DENPIT",
-     "g": 10,
-     "game": "DENPIT",
-     "kickoff": "2026-11-27T20:00:00Z",
-     "l5": 0.8,
-     "player": "Bo Nix",
+     "avg5": 213.2,
+     "bid": 0.67,
+     "edge": 0.0518,
+     "est": 0.7418,
+     "event": "KXNFLPASSYDS-26NOV29NYJMIA",
+     "g": 11,
+     "game": "NYJMIA",
+     "kickoff": "2026-11-29T18:00:00Z",
+     "l5": 0.6,
+     "player": "Geno Smith",
      "proj": null,
      "rung": 174.5,
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-175",
+     "ticker": "KXNFLPASSYDS-26NOV29NYJMIA-NYJGSMITH7-175",
      "week": 12
     },
     {
