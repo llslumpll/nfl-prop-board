@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 16:41 UTC",
+   "built": "2026-11-27 17:00 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -80,11 +80,11 @@
      "week": 12
     },
     {
-     "ask": 0.63,
+     "ask": 0.62,
      "avg5": 152.7,
      "bid": 0.59,
      "edge": 0.0557,
-     "est": 0.6857,
+     "est": 0.6757,
      "event": "KXNFLPASSYDS-26NOV29LVCLE",
      "g": 3,
      "game": "LVCLE",
@@ -103,34 +103,34 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 16:41 UTC",
-   "chance": 0.3791,
+   "built": "2026-11-27 17:00 UTC",
+   "chance": 0.3756,
    "legs": [
     {
-     "ask": 0.68,
-     "avg5": 202.6,
-     "bid": 0.67,
-     "edge": 0.0486,
-     "est": 0.7286,
-     "event": "KXNFLPASSYDS-26NOV27DENPIT",
-     "g": 10,
+     "ask": 0.67,
+     "avg5": 60.4,
+     "bid": 0.66,
+     "edge": 0.042,
+     "est": 0.712,
+     "event": "KXNFLRSHYDS-26NOV27DENPIT",
+     "g": 6,
      "game": "DENPIT",
      "kickoff": "2026-11-27T20:00:00Z",
-     "l5": 0.8,
-     "player": "Bo Nix",
-     "proj": null,
-     "rung": 174.5,
-     "series": "KXNFLPASSYDS",
-     "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV27DENPIT-DENBNIX10-175",
+     "l5": 0.2,
+     "player": "Jonah Coleman",
+     "proj": 37.2,
+     "rung": 59.5,
+     "series": "KXNFLRSHYDS",
+     "stat": "rushyd",
+     "ticker": "KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-60",
      "week": 12
     },
     {
-     "ask": 0.67,
+     "ask": 0.68,
      "avg5": 0.4,
-     "bid": 0.49,
+     "bid": 0.36,
      "edge": 0.0509,
-     "est": 0.7209,
+     "est": 0.7309,
      "event": "KXNFLTD-26NOV29TENJAC",
      "g": 10,
      "game": "TENJAC",
@@ -147,7 +147,7 @@
     {
      "ask": 0.67,
      "avg5": 142.2,
-     "bid": 0.65,
+     "bid": 0.64,
      "edge": 0.0518,
      "est": 0.7218,
      "event": "KXNFLPASSYDS-26NOV30CARTB",
