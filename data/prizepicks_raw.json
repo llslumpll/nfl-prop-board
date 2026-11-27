@@ -86,16 +86,16 @@
       "receiving_yards": 18.5,
       "receptions": 2
     },
-    "Deion Burks": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 12.5,
@@ -140,7 +140,7 @@
       "receptions": 2.5
     },
     "Chimere Dike": {
-      "receiving_yards": 29.5,
+      "receiving_yards": 28.5,
       "receptions": 3
     },
     "Elic Ayomanor": {
@@ -209,7 +209,7 @@
       "receiving_yards": 38.5
     },
     "Malik Washington": {
-      "receiving_yards": 26.5
+      "receiving_yards": 27.5
     },
     "Greg Dulcich": {
       "receiving_yards": 24.5,
@@ -281,7 +281,7 @@
       "receiving_yards": 25.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Mark Andrews": {
       "receiving_yards": 22.5
@@ -463,7 +463,7 @@
       "receiving_yards": 17.5
     },
     "Jordan Watkins": {
-      "receiving_yards": 3.5
+      "receiving_yards": 5.5
     },
     "Tory Horton": {
       "receiving_yards": 3.5
@@ -646,9 +646,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5457,
+    "total_projections_returned": 5456,
     "matched_props": 287,
-    "excluded_goblin_demon_lines": 4508,
+    "excluded_goblin_demon_lines": 4510,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -687,5 +687,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T21:20:44.977337+00:00"
+  "fetched_at": "2026-11-27T21:40:40.793823+00:00"
 }
