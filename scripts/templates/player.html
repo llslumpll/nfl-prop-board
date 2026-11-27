@@ -13,7 +13,25 @@
   </div>
 </section>
 
-<h2>Week {{ wk }}</h2>
+<h2>Bottom line &middot; week {{ wk }}</h2>
+{% set good = [] %}{% for r in p.rows %}{% for x in r.rungs if x.edge is not none and x.edge >= 2 %}{% set _ = good.append((r, x)) %}{% endfor %}{% endfor %}
+{% set picks = p.rows|selectattr('call')|list %}
+{% set pstat = {'passyd': 'passing_yards', 'rushyd': 'rushing_yards', 'recyd': 'receiving_yards', 'rec': 'receptions'} %}
+{% set kstat = {} %}{% for k in (proven.kinds if proven else []) %}{% set _ = kstat.update({k.key: k}) %}{% endfor %}
+<section class="tk" style="margin-bottom:12px"><ol class="tk-legs">
+  {% if p.started %}<li><div class="tk-leg"><b>His game has started</b></div><div class="tk-sub">Kalshi prices are hidden until next week.</div></li>
+  {% elif good %}{% for r, x in good|sort(attribute='1.edge', reverse=true) %}{% if loop.index <= 4 %}
+  <li class="gm-hit"><div class="tk-leg"><b>Good price: {{ x.label }} {{ r.label|lower }}</b><span class="tk-px">{{ x.odds }}</span></div>
+    <div class="tk-sub">Kalshi says {{ (x.ask * 100)|round|int }}%, the site thinks it really hits about {{ x.est }}%. He's cleared it {{ x.cleared }} of {{ x.games }} games this season.</div></li>
+  {% endif %}{% endfor %}
+  {% else %}<li><div class="tk-leg"><b>No good-price Kalshi rungs on him this week</b></div><div class="tk-sub">Every open rung is priced at or above how often the site thinks it really hits, so there's no edge betting him on Kalshi.</div></li>{% endif %}
+  {% for r in picks %}{% set kk = kstat.get('model|' ~ pstat.get(r.stat, '') ~ '|' ~ r.call) %}<li class="{{ 'gm-miss' if kk and kk.status == 'AVOID' else '' }}"><div class="tk-leg"><b>Our pick: <span class="{{ 'c-over' if r.call == 'OVER' else 'c-under' }}">{{ r.call }}</span> {{ r.line }} {{ r.label|lower }}</b>{% if kk and kk.status in ('AVOID', 'PROVEN', 'PROMISING') %}<span class="pk-tag {{ 'pk-weak' if kk.status == 'AVOID' else 'pk-proven' }}">{{ kk.status }}</span>{% endif %}</div>
+    <div class="tk-sub">We project {{ r.proj }}. Season average {{ r.season }}, last 5 games {{ r.l5 }}.{% if kk and kk.status == 'AVOID' %} <b>Careful:</b> the site's {{ r.call|lower }}s on {{ r.label|lower }} are {{ kk.w }}-{{ kk.l }} this season, below the price, so don't bet this one on our say-so.{% endif %}</div></li>{% endfor %}
+</ol></section>
+<p class="small dim">"Good price" = the site's estimate beats Kalshi's price by 2+ points. Our picks are vs the PrizePicks line; check Proven picks on the Tipsters page for which kinds of picks are actually winning.</p>
+
+<details class="info-collapse"><summary>Every Kalshi rung and his stats</summary>
+
 {% for r in p.rows %}
 <section class="tk" style="margin-bottom:12px">
   <header class="tk-head"><span class="tk-name">{{ r.label }}</span><span class="tk-state">{% if r.proj is not none %}OUR PROJ {{ r.proj }}{% endif %}{% if r.line is not none %} &middot; LINE {{ r.line }}{% if r.call %} &middot; <span class="{{ 'c-over' if r.call == 'OVER' else 'c-under' }}">{{ r.call }}</span>{% endif %}{% endif %}</span></header>
@@ -26,12 +44,14 @@
 {% endfor %}
 <p class="small dim">"Really hits" is Kalshi's price corrected by how rungs like it (same stat, price, our projection vs the rung, and his last 5 games) finished this season. Green = beats the price by 2+ points. NFL Kalshi prices are tight: most rungs are a little overpriced.</p>
 
-<h2>Game log</h2>
+</details>
+<details class="info-collapse"><summary>Game log</summary>
 <div class="table-wrap"><table class="stat-table">
   <thead><tr><th>Wk</th><th>Opp</th>{% for s in p.stats %}<th>{{ p.labels[s] }}</th>{% endfor %}</tr></thead><tbody>
   {% for g in p.log %}<tr><td>{{ g.week }}</td><td>{{ 'vs' if g.home else '@' }} {{ g.opp }}</td>{% for s in p.stats %}<td>{{ g.cells[s]|int }}</td>{% endfor %}</tr>
   {% if g.picks %}<tr><td></td><td colspan="{{ p.stats|length + 1 }}" class="small dim">Our picks: {{ g.picks|join(' · ') }}</td></tr>{% endif %}{% endfor %}
   </tbody></table></div>
+</details>
 
 {% if p.tips %}<h2>Tipster picks on him</h2>
 <ul class="small">{% for t in p.tips %}<li>Week {{ t.week }} &middot; {{ t.who }}: {{ t.text }}{% if t.res %} &middot; <span class="{{ 'stat-good' if t.res == 'hit' else 'stat-bad' if t.res == 'miss' }}">{{ t.res }}{% if t.actual is not none %} ({{ t.actual|int }}){% endif %}</span>{% endif %}</li>{% endfor %}</ul>{% endif %}
