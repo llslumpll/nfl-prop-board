@@ -222,12 +222,12 @@
     "Calvin Ridley": {
       "receiving_yards": 12.5
     },
-    "Nate Boerkircher": {
-      "receiving_yards": 10.5
-    },
     "Michael Carter": {
       "rushing_yards": 9.5,
       "receiving_yards": 6.5
+    },
+    "Nate Boerkircher": {
+      "receiving_yards": 9.5
     },
     "Xavier Restrepo": {
       "receiving_yards": 9.5
@@ -251,7 +251,7 @@
       "receiving_yards": 10.5
     },
     "Breece Hall": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 20.5,
       "receptions": 3
     },
@@ -330,14 +330,14 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
+    "Mark Andrews": {
+      "receiving_yards": 24.5
+    },
     "Dalton Schultz": {
       "receiving_yards": 24.5
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 24.5
-    },
-    "Mark Andrews": {
-      "receiving_yards": 23.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -452,7 +452,7 @@
       "receiving_yards": 17.5
     },
     "Charlie Kolar": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Efton Chism III": {
       "receiving_yards": 12.5
@@ -523,7 +523,7 @@
       "receiving_yards": 1.5
     },
     "Jayden Daniels": {
-      "passing_yards": 221.5,
+      "passing_yards": 224.5,
       "rushing_yards": 31.5
     },
     "Josh Johnson": {
@@ -710,9 +710,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5736,
+    "total_projections_returned": 5740,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 4771,
+    "excluded_goblin_demon_lines": 4775,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -751,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T10:40:41.956210+00:00"
+  "fetched_at": "2026-11-27T11:00:47.642101+00:00"
 }
