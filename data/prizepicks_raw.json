@@ -1,74 +1,5 @@
 {
   "props": {
-    "Patrick Mahomes": {
-      "passing_yards": 226.5,
-      "rushing_yards": 12.5
-    },
-    "Josh Allen": {
-      "passing_yards": 215.5,
-      "rushing_yards": 39.5
-    },
-    "James Cook III": {
-      "rushing_yards": 88.5,
-      "receiving_yards": 7.5
-    },
-    "Emmett Johnson": {
-      "rushing_yards": 81.5,
-      "receiving_yards": 31.5
-    },
-    "DJ Moore": {
-      "receiving_yards": 49.5,
-      "rushing_yards": 0.5
-    },
-    "Rashee Rice": {
-      "receiving_yards": 44.5
-    },
-    "Travis Kelce": {
-      "receiving_yards": 43.5,
-      "receptions": 4
-    },
-    "Khalil Shakir": {
-      "receiving_yards": 36.5,
-      "receptions": 3.5
-    },
-    "Josh Downs": {
-      "receiving_yards": 36.5
-    },
-    "Dalton Kincaid": {
-      "receiving_yards": 33.5,
-      "receptions": 3
-    },
-    "Keon Coleman": {
-      "receiving_yards": 20.5,
-      "receptions": 2
-    },
-    "Xavier Worthy": {
-      "receiving_yards": 19.5
-    },
-    "Ty Johnson": {
-      "receiving_yards": 16.5
-    },
-    "Dawson Knox": {
-      "receiving_yards": 12.5
-    },
-    "Cyrus Allen": {
-      "receiving_yards": 11.5
-    },
-    "Noah Gray": {
-      "receiving_yards": 10.5
-    },
-    "Jaydn Ott": {
-      "rushing_yards": 6.5
-    },
-    "Ray Davis": {
-      "rushing_yards": 3.5
-    },
-    "Jake Briningstool": {
-      "receiving_yards": 0.5
-    },
-    "Keleki Latu": {
-      "receiving_yards": 0.5
-    },
     "Bo Nix": {
       "passing_yards": 202.5,
       "rushing_yards": 10.5
@@ -371,7 +302,7 @@
       "receiving_yards": 73.5
     },
     "Nico Collins": {
-      "receiving_yards": 59.5
+      "receiving_yards": 58.5
     },
     "Derrick Henry": {
       "rushing_yards": 55.5,
@@ -675,7 +606,7 @@
       "rushing_yards": 3.5
     },
     "Denzel Boston": {
-      "receiving_yards": 45.5
+      "receiving_yards": 44.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
@@ -775,9 +706,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6395,
-    "matched_props": 340,
-    "excluded_goblin_demon_lines": 5311,
+    "total_projections_returned": 5695,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4741,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -788,14 +719,11 @@
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
-      "first fg distance (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
       "halves with 25+ rush yards",
       "int",
       "kicking points",
-      "kicking points (combo)",
-      "last fg distance (combo)",
       "longest completion",
       "longest fg made yds (combo)",
       "longest reception",
@@ -808,7 +736,10 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "passer rating",
-      "pat made (combo)"
+      "punt touchbacks (combo)",
+      "punts",
+      "punts (combo)",
+      "quarters with 1+ reception"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -816,5 +747,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T01:20:42.353084+00:00"
+  "fetched_at": "2026-11-27T01:40:38.168556+00:00"
 }

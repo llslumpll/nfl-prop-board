@@ -45879,5 +45879,27 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Trevor Lawrence|passing_yards|12": {
+    "player": "Trevor Lawrence",
+    "team": "JAX",
+    "opponent": "TEN",
+    "week": 12,
+    "stat": "passing_yards",
+    "projected": 285.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 266.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 18.5,
+    "model_prob": 0.6189,
+    "signals": {
+      "opponent_recent_form": "worse"
+    },
+    "frozen_at": "2026-11-27 01:40 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
