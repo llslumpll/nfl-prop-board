@@ -46569,5 +46569,30 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Drake London|receiving_yards|12": {
+    "player": "Drake London",
+    "team": "ATL",
+    "opponent": "MIN",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 62.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 71.5,
+    "market_source": "prizepicks",
+    "call": "UNDER",
+    "edge": -9.4,
+    "model_prob": 0.4153,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice",
+      "opponent_recent_form": "worse",
+      "usage_trend": "down",
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-27 20:20 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
