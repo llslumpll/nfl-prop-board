@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 16:20 UTC",
+   "built": "2026-11-27 16:41 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -80,11 +80,11 @@
      "week": 12
     },
     {
-     "ask": 0.67,
+     "ask": 0.63,
      "avg5": 152.7,
-     "bid": 0.65,
+     "bid": 0.59,
      "edge": 0.0557,
-     "est": 0.7257,
+     "est": 0.6857,
      "event": "KXNFLPASSYDS-26NOV29LVCLE",
      "g": 3,
      "game": "LVCLE",
@@ -103,8 +103,8 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 16:20 UTC",
-   "chance": 0.3816,
+   "built": "2026-11-27 16:41 UTC",
+   "chance": 0.3791,
    "legs": [
     {
      "ask": 0.68,
@@ -127,21 +127,21 @@
     },
     {
      "ask": 0.67,
-     "avg5": 152.7,
-     "bid": 0.65,
-     "edge": 0.0557,
-     "est": 0.7257,
-     "event": "KXNFLPASSYDS-26NOV29LVCLE",
-     "g": 3,
-     "game": "LVCLE",
-     "kickoff": "2026-11-30T01:20:00Z",
-     "l5": 0.3333333333333333,
-     "player": "Fernando Mendoza",
+     "avg5": 0.4,
+     "bid": 0.49,
+     "edge": 0.0509,
+     "est": 0.7209,
+     "event": "KXNFLTD-26NOV29TENJAC",
+     "g": 10,
+     "game": "TENJAC",
+     "kickoff": "2026-11-29T18:00:00Z",
+     "l5": 0.4,
+     "player": "Chris Rodriguez Jr.",
      "proj": null,
-     "rung": 174.5,
-     "series": "KXNFLPASSYDS",
-     "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV29LVCLE-LVFMENDOZA15-175",
+     "rung": 0.5,
+     "series": "KXNFLTD",
+     "stat": "td",
+     "ticker": "KXNFLTD-26NOV29TENJAC-JACCRODRIGUEZ24-1",
      "week": 12
     },
     {
