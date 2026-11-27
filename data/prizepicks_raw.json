@@ -5,7 +5,7 @@
       "rushing_yards": 10.5
     },
     "Mason Rudolph": {
-      "passing_yards": 174.5,
+      "passing_yards": 173.5,
       "rushing_yards": 6.5
     },
     "Jonah Coleman": {
@@ -55,7 +55,7 @@
     },
     "Marvin Mims Jr.": {
       "receiving_yards": 9.5,
-      "rushing_yards": 1.5
+      "rushing_yards": 2.5
     },
     "Adam Trautman": {
       "receiving_yards": 4.5
@@ -131,7 +131,7 @@
     },
     "Jonathan Taylor": {
       "rushing_yards": 69.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "Malik Nabers": {
@@ -242,7 +242,7 @@
       "receiving_yards": 8.5
     },
     "Adonai Mitchell": {
-      "receiving_yards": 37.5
+      "receiving_yards": 38.5
     },
     "Malik Washington": {
       "receiving_yards": 26.5
@@ -356,12 +356,12 @@
       "rushing_yards": 48.5,
       "receiving_yards": 13.5
     },
+    "Jordyn Tyson": {
+      "receiving_yards": 43.5
+    },
     "Chase Brown": {
       "rushing_yards": 43.5,
       "receiving_yards": 25.5
-    },
-    "Jordyn Tyson": {
-      "receiving_yards": 42.5
     },
     "Devaughn Vele": {
       "receiving_yards": 31.5,
@@ -567,7 +567,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 227.5,
+      "passing_yards": 224.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -586,7 +586,7 @@
       "rushing_yards": 3.5
     },
     "Denzel Boston": {
-      "receiving_yards": 45.5
+      "receiving_yards": 44.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
@@ -600,10 +600,10 @@
       "rushing_yards": 33.5
     },
     "Tre Tucker": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Michael Mayer": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Dylan Sampson": {
       "receiving_yards": 20.5,
@@ -617,7 +617,7 @@
       "receiving_yards": 11.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -640,7 +640,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 53.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -648,7 +648,7 @@
       "receptions": 3.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 35.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -686,9 +686,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5682,
+    "total_projections_returned": 5680,
     "matched_props": 303,
-    "excluded_goblin_demon_lines": 4721,
+    "excluded_goblin_demon_lines": 4719,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -727,5 +727,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T16:00:45.612095+00:00"
+  "fetched_at": "2026-11-27T16:20:42.013138+00:00"
 }
