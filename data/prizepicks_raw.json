@@ -124,12 +124,12 @@
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
-      "rushing_yards": 75.5,
+      "rushing_yards": 74.5,
       "receiving_yards": 15.5
     },
     "Jonathan Taylor": {
       "rushing_yards": 69.5,
-      "receiving_yards": 13.5,
+      "receiving_yards": 14.5,
       "receptions": 2.5
     },
     "Malik Nabers": {
@@ -664,7 +664,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 53.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -710,9 +710,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5741,
+    "total_projections_returned": 5742,
     "matched_props": 313,
-    "excluded_goblin_demon_lines": 4777,
+    "excluded_goblin_demon_lines": 4778,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -751,5 +751,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T11:20:37.988147+00:00"
+  "fetched_at": "2026-11-27T11:40:38.165254+00:00"
 }
