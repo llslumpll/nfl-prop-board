@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 04:00 UTC",
+   "built": "2026-11-27 04:20 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -103,15 +103,15 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 04:00 UTC",
-   "chance": 0.3812,
+   "built": "2026-11-27 04:20 UTC",
+   "chance": 0.3832,
    "legs": [
     {
-     "ask": 0.68,
+     "ask": 0.69,
      "avg5": 213.2,
      "bid": 0.67,
      "edge": 0.0518,
-     "est": 0.7318,
+     "est": 0.7418,
      "event": "KXNFLPASSYDS-26NOV29NYJMIA",
      "g": 11,
      "game": "NYJMIA",
@@ -145,22 +145,22 @@
      "week": 12
     },
     {
-     "ask": 0.68,
-     "avg5": 142.2,
+     "ask": 0.67,
+     "avg5": 152.7,
      "bid": 0.65,
-     "edge": 0.0518,
-     "est": 0.7318,
-     "event": "KXNFLPASSYDS-26NOV30CARTB",
-     "g": 7,
-     "game": "CARTB",
-     "kickoff": "2026-12-01T01:15:00Z",
-     "l5": 0.6,
-     "player": "Baker Mayfield",
+     "edge": 0.0557,
+     "est": 0.7257,
+     "event": "KXNFLPASSYDS-26NOV29LVCLE",
+     "g": 3,
+     "game": "LVCLE",
+     "kickoff": "2026-11-30T01:20:00Z",
+     "l5": 0.3333333333333333,
+     "player": "Fernando Mendoza",
      "proj": null,
      "rung": 174.5,
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV30CARTB-TBBMAYFIELD6-175",
+     "ticker": "KXNFLPASSYDS-26NOV29LVCLE-LVFMENDOZA15-175",
      "week": 12
     }
    ],
