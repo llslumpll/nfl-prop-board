@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-27 18:40 UTC",
+   "built": "2026-11-27 19:01 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -103,69 +103,50 @@
  },
  "triple": {
   "12": {
-   "built": "2026-11-27 18:40 UTC",
-   "chance": 0.3834,
+   "built": "2026-11-27 19:01 UTC",
+   "chance": 0.3695,
    "legs": [
     {
-     "ask": 0.67,
-     "avg5": 67.4,
-     "bid": 0.66,
-     "edge": 0.069,
-     "est": 0.739,
-     "event": "KXNFLRSHYDS-26NOV27DENPIT",
-     "g": 10,
-     "game": "DENPIT",
-     "kickoff": "2026-11-27T20:00:00Z",
-     "l5": 0.6,
-     "player": "Jaylen Warren",
-     "proj": 46.1,
-     "rung": 49.5,
-     "series": "KXNFLRSHYDS",
-     "stat": "rushyd",
-     "ticker": "KXNFLRSHYDS-26NOV27DENPIT-PITJWARREN30-50",
-     "week": 12
-    },
-    {
-     "ask": 0.67,
-     "avg5": 60.4,
-     "bid": 0.66,
-     "edge": 0.042,
-     "est": 0.712,
-     "event": "KXNFLRSHYDS-26NOV27DENPIT",
-     "g": 6,
-     "game": "DENPIT",
-     "kickoff": "2026-11-27T20:00:00Z",
-     "l5": 0.2,
-     "player": "Jonah Coleman",
-     "proj": 37.2,
-     "rung": 59.5,
-     "series": "KXNFLRSHYDS",
-     "stat": "rushyd",
-     "ticker": "KXNFLRSHYDS-26NOV27DENPIT-DENJCOLEMAN20-60",
-     "week": 12
-    },
-    {
-     "ask": 0.68,
-     "avg5": 285.6,
-     "bid": 0.55,
-     "edge": 0.0486,
-     "est": 0.7286,
+     "ask": 0.5,
+     "avg5": 217.2,
+     "bid": 0.49,
+     "edge": 0.0469,
+     "est": 0.5469,
      "event": "KXNFLPASSYDS-26NOV29SEASF",
-     "g": 10,
+     "g": 7,
      "game": "SEASF",
      "kickoff": "2026-11-29T21:25:00Z",
-     "l5": 1.0,
-     "player": "Brock Purdy",
-     "proj": null,
-     "rung": 199.5,
+     "l5": 0.4,
+     "player": "Sam Darnold",
+     "proj": 199.8,
+     "rung": 224.5,
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV29SEASF-SFBPURDY13-200",
+     "ticker": "KXNFLPASSYDS-26NOV29SEASF-SEASDARNOLD14-225",
+     "week": 12
+    },
+    {
+     "ask": 0.62,
+     "avg5": 152.7,
+     "bid": 0.59,
+     "edge": 0.0557,
+     "est": 0.6757,
+     "event": "KXNFLPASSYDS-26NOV29LVCLE",
+     "g": 3,
+     "game": "LVCLE",
+     "kickoff": "2026-11-30T01:20:00Z",
+     "l5": 0.3333333333333333,
+     "player": "Fernando Mendoza",
+     "proj": null,
+     "rung": 174.5,
+     "series": "KXNFLPASSYDS",
+     "stat": "passyd",
+     "ticker": "KXNFLPASSYDS-26NOV29LVCLE-LVFMENDOZA15-175",
      "week": 12
     }
    ],
-   "pays_k": 3.28,
-   "quote_est": 3.0
+   "pays_k": 3.23,
+   "quote_est": 3.05
   }
  }
 }

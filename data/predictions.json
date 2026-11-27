@@ -46548,5 +46548,27 @@
     "hit": null,
     "graded_at": null,
     "td_rule": "scoring"
+  },
+  "Devaughn Vele|receiving_yards|12": {
+    "player": "Devaughn Vele",
+    "team": "NO",
+    "opponent": "CIN",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 36.0,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 25.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 10.5,
+    "model_prob": 0.6492,
+    "signals": {
+      "target_share_trend": "up"
+    },
+    "frozen_at": "2026-11-27 19:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
