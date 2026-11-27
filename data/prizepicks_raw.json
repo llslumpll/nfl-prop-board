@@ -185,7 +185,7 @@
       "rushing_yards": 8.5
     },
     "Parker Washington": {
-      "receiving_yards": 72.5,
+      "receiving_yards": 71.5,
       "receptions": 4.5
     },
     "Tony Pollard": {
@@ -217,7 +217,7 @@
       "receptions": 3
     },
     "Brian Thomas Jr.": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Calvin Ridley": {
       "receiving_yards": 12.5
@@ -312,21 +312,21 @@
     },
     "David Montgomery": {
       "rushing_yards": 45.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 6.5,
       "receptions": 1.5
-    },
-    "Tank Dell": {
-      "receiving_yards": 36.5
     },
     "Rashod Bateman": {
       "receiving_yards": 33.5
+    },
+    "Tank Dell": {
+      "receiving_yards": 32.5
     },
     "Xavier Hutchinson": {
       "receiving_yards": 30.5
     },
     "Woody Marks": {
       "rushing_yards": 29.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Mark Andrews": {
@@ -336,7 +336,7 @@
       "receiving_yards": 24.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 24.5
+      "receiving_yards": 22.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -346,7 +346,7 @@
       "receptions": 1.5
     },
     "Justice Hill": {
-      "receiving_yards": 19.5
+      "receiving_yards": 17.5
     },
     "Josh Cuevas": {
       "receiving_yards": 9.5
@@ -709,9 +709,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5734,
+    "total_projections_returned": 5742,
     "matched_props": 312,
-    "excluded_goblin_demon_lines": 4771,
+    "excluded_goblin_demon_lines": 4780,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +750,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T07:00:46.515253+00:00"
+  "fetched_at": "2026-11-27T07:20:37.886236+00:00"
 }
