@@ -13,7 +13,7 @@
   </div>
 </section>
 
-<h2>Bottom line &middot; week {{ wk }}</h2>
+<h2>This week &middot; week {{ wk }}</h2>
 {% set good = [] %}{% for r in p.rows %}{% for x in r.rungs if x.edge is not none and x.edge >= 2 %}{% set _ = good.append((r, x)) %}{% endfor %}{% endfor %}
 {% set picks = p.rows|selectattr('call')|list %}
 {% set pstat = {'passyd': 'passing_yards', 'rushyd': 'rushing_yards', 'recyd': 'receiving_yards', 'rec': 'receptions'} %}
