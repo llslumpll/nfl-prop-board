@@ -6,11 +6,12 @@
     },
     "Mason Rudolph": {
       "passing_yards": 174.5,
-      "rushing_yards": 5.5
+      "rushing_yards": 6.5
     },
     "Jonah Coleman": {
       "rushing_yards": 74.5,
-      "receiving_yards": 22.5
+      "receiving_yards": 22.5,
+      "receptions": 3.5
     },
     "Jaylen Warren": {
       "rushing_yards": 64.5,
@@ -61,7 +62,8 @@
       "receiving_yards": 4.5
     },
     "Tyler Badie": {
-      "rushing_yards": 4.5
+      "rushing_yards": 4.5,
+      "receiving_yards": 4.5
     },
     "Troy Franklin": {
       "receiving_yards": 3.5
@@ -98,7 +100,7 @@
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 36.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Jahan Dotson": {
@@ -152,7 +154,7 @@
       "receiving_yards": 21.5
     },
     "Anthony Gould": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 2
     },
     "Darnell Mooney": {
@@ -192,12 +194,12 @@
       "rushing_yards": 54.5,
       "receiving_yards": 14.5
     },
-    "Carnell Tate": {
-      "receiving_yards": 51.5,
-      "receptions": 4.5
-    },
     "Jakobi Meyers": {
-      "receiving_yards": 51.5
+      "receiving_yards": 54.5
+    },
+    "Carnell Tate": {
+      "receiving_yards": 52.5,
+      "receptions": 4.5
     },
     "Brenton Strange": {
       "receiving_yards": 30.5
@@ -252,10 +254,10 @@
     },
     "Breece Hall": {
       "rushing_yards": 58.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Garrett Wilson": {
-      "receiving_yards": 53.5
+      "receiving_yards": 52.5
     },
     "Caleb Douglas": {
       "receiving_yards": 44.5,
@@ -328,14 +330,14 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
+    "Mark Andrews": {
+      "receiving_yards": 24.5
+    },
     "Dalton Schultz": {
       "receiving_yards": 24.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 23.5
-    },
     "Ja'Kobi Lane": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -390,7 +392,7 @@
     },
     "Samaje Perine": {
       "rushing_yards": 27.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Mike Gesicki": {
       "receiving_yards": 24.5
@@ -416,7 +418,8 @@
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 35.5
+      "receiving_yards": 36.5,
+      "receptions": 3.5
     },
     "Corey Kiner": {
       "rushing_yards": 31.5
@@ -432,12 +435,12 @@
       "receiving_yards": 25.5,
       "receptions": 2.5
     },
-    "Hunter Henry": {
+    "Mack Hollins": {
       "receiving_yards": 24.5,
       "receptions": 2.5
     },
-    "Mack Hollins": {
-      "receiving_yards": 24.5,
+    "Hunter Henry": {
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Kimani Vidal": {
@@ -466,15 +469,14 @@
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
-      "receiving_yards": 96.5
+      "receiving_yards": 97.5
     },
     "Mike Evans": {
       "receiving_yards": 57.5
     },
     "Zach Charbonnet": {
       "rushing_yards": 55.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
+      "receiving_yards": 8.5
     },
     "Christian McCaffrey": {
       "rushing_yards": 53.5,
@@ -520,7 +522,7 @@
       "receiving_yards": 1.5
     },
     "Jayden Daniels": {
-      "passing_yards": 221.5,
+      "passing_yards": 224.5,
       "rushing_yards": 31.5
     },
     "Josh Johnson": {
@@ -568,14 +570,14 @@
     },
     "Rachaad White": {
       "rushing_yards": 18.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Zay Jones": {
       "receiving_yards": 13.5
     },
     "Elijah Higgins": {
-      "receiving_yards": 11.5,
-      "receptions": 1.5
+      "receiving_yards": 12.5
     },
     "Van Jefferson": {
       "receiving_yards": 6.5
@@ -584,7 +586,6 @@
       "receiving_yards": 2.5
     },
     "Ben Sinnott": {
-      "receiving_yards": 0.5,
       "receptions": 0.5
     },
     "Deshaun Watson": {
@@ -653,7 +654,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -688,7 +689,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 22.5,
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5
@@ -707,9 +708,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5804,
-    "matched_props": 310,
-    "excluded_goblin_demon_lines": 4838,
+    "total_projections_returned": 5832,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4861,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -748,5 +749,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T14:20:39.268415+00:00"
+  "fetched_at": "2026-11-27T14:40:43.082320+00:00"
 }
