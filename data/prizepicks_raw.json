@@ -1,12 +1,12 @@
 {
   "props": {
     "Bo Nix": {
-      "passing_yards": 199.5,
+      "passing_yards": 202.5,
       "rushing_yards": 10.5
     },
     "Mason Rudolph": {
       "passing_yards": 169.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 7.5
     },
     "Jonah Coleman": {
       "rushing_yards": 73.5,
@@ -18,7 +18,7 @@
       "receptions": 2.5
     },
     "Jaylen Waddle": {
-      "receiving_yards": 43.5,
+      "receiving_yards": 42.5,
       "receptions": 4
     },
     "Rico Dowdle": {
@@ -34,15 +34,15 @@
     "Pat Bryant": {
       "receiving_yards": 24.5
     },
+    "Pat Freiermuth": {
+      "receiving_yards": 22.5
+    },
     "Germie Bernard": {
       "receiving_yards": 22.5
     },
     "Evan Engram": {
       "receiving_yards": 21.5,
       "receptions": 2.5
-    },
-    "Pat Freiermuth": {
-      "receiving_yards": 20.5
     },
     "Darnell Washington": {
       "receiving_yards": 17.5
@@ -59,7 +59,7 @@
     },
     "Tyler Badie": {
       "rushing_yards": 5.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 3.5
     },
     "Adam Trautman": {
       "receiving_yards": 4.5
@@ -69,9 +69,6 @@
     },
     "Nate Adkins": {
       "receiving_yards": 0.5
-    },
-    "Max Hurleman": {
-      "receptions": 0.5
     },
     "Kirk Cousins": {
       "passing_yards": 247.5,
@@ -87,7 +84,7 @@
     },
     "Bijan Robinson": {
       "rushing_yards": 75.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Drake London": {
       "receiving_yards": 71.5,
@@ -328,13 +325,13 @@
       "receiving_yards": 29.5,
       "receptions": 2.5
     },
-    "Woody Marks": {
-      "rushing_yards": 29.5,
-      "receiving_yards": 8.5,
-      "receptions": 1.5
-    },
     "Marvin Harrison Jr.": {
       "receiving_yards": 28.5
+    },
+    "Woody Marks": {
+      "rushing_yards": 28.5,
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Dalton Schultz": {
       "receiving_yards": 25.5
@@ -358,15 +355,14 @@
       "receiving_yards": 4.5
     },
     "Marlin Klein": {
-      "receiving_yards": 2.5,
-      "receptions": 0.5
+      "receiving_yards": 3.5
     },
     "Joe Burrow": {
       "passing_yards": 285.5,
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 233.5,
+      "passing_yards": 229.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -442,7 +438,7 @@
       "receiving_yards": 26.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Hunter Henry": {
@@ -476,7 +472,7 @@
       "rushing_yards": 14.5
     },
     "Sam Darnold": {
-      "passing_yards": 227.5,
+      "passing_yards": 218.5,
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
@@ -587,12 +583,11 @@
       "receiving_yards": 11.5,
       "receptions": 1.5
     },
-    "Rachaad White": {
-      "receiving_yards": 7.5,
-      "receptions": 1.5
-    },
     "Van Jefferson": {
-      "receiving_yards": 6.5
+      "receiving_yards": 7.5
+    },
+    "Rachaad White": {
+      "receiving_yards": 7.5
     },
     "Hunter Long": {
       "receiving_yards": 2.5
@@ -617,7 +612,7 @@
       "receiving_yards": 58.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5,
       "rushing_yards": 2.5
     },
@@ -636,10 +631,10 @@
     },
     "Dylan Sampson": {
       "receiving_yards": 22.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 19.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 10.5
+      "receiving_yards": 9.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -708,9 +703,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6037,
-    "matched_props": 315,
-    "excluded_goblin_demon_lines": 4967,
+    "total_projections_returned": 6052,
+    "matched_props": 312,
+    "excluded_goblin_demon_lines": 4987,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -749,5 +744,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T19:20:38.081862+00:00"
+  "fetched_at": "2026-11-27T19:40:37.350247+00:00"
 }
