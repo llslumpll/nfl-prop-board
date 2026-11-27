@@ -1,7 +1,7 @@
 {
   "props": {
     "Bo Nix": {
-      "passing_yards": 202.5,
+      "passing_yards": 203.5,
       "rushing_yards": 10.5
     },
     "Mason Rudolph": {
@@ -23,10 +23,11 @@
     },
     "Rico Dowdle": {
       "rushing_yards": 31.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5
     },
     "Pat Bryant": {
-      "receiving_yards": 27.5
+      "receiving_yards": 27.5,
+      "receptions": 2.5
     },
     "Courtland Sutton": {
       "receiving_yards": 27.5
@@ -34,11 +35,11 @@
     "DK Metcalf": {
       "receiving_yards": 27.5
     },
-    "Evan Engram": {
-      "receiving_yards": 22.5
-    },
     "Germie Bernard": {
       "receiving_yards": 22.5
+    },
+    "Evan Engram": {
+      "receiving_yards": 21.5
     },
     "Pat Freiermuth": {
       "receiving_yards": 20.5
@@ -56,14 +57,14 @@
       "receiving_yards": 8.5,
       "rushing_yards": 1.5
     },
+    "Troy Franklin": {
+      "receiving_yards": 4.5
+    },
     "Adam Trautman": {
       "receiving_yards": 4.5
     },
     "Tyler Badie": {
       "rushing_yards": 4.5
-    },
-    "Troy Franklin": {
-      "receiving_yards": 3.5
     },
     "Nate Adkins": {
       "receiving_yards": 0.5
@@ -96,7 +97,7 @@
       "receiving_yards": 44.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 36.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -190,7 +191,7 @@
       "receiving_yards": 14.5
     },
     "Jakobi Meyers": {
-      "receiving_yards": 54.5
+      "receiving_yards": 51.5
     },
     "Carnell Tate": {
       "receiving_yards": 49.5,
@@ -240,7 +241,7 @@
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
-      "passing_yards": 169.5,
+      "passing_yards": 170.5,
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
@@ -324,7 +325,7 @@
     },
     "Woody Marks": {
       "rushing_yards": 29.5,
-      "receiving_yards": 7.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Mark Andrews": {
@@ -334,17 +335,17 @@
       "receiving_yards": 24.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 23.5
+      "receiving_yards": 22.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
     },
-    "Justice Hill": {
-      "receiving_yards": 19.5
-    },
     "Kayshon Boutte": {
       "receiving_yards": 18.5,
       "receptions": 1.5
+    },
+    "Justice Hill": {
+      "receiving_yards": 17.5
     },
     "Josh Cuevas": {
       "receiving_yards": 9.5
@@ -382,7 +383,7 @@
       "receptions": 4.5
     },
     "Jordyn Tyson": {
-      "receiving_yards": 42.5
+      "receiving_yards": 41.5
     },
     "Devaughn Vele": {
       "receiving_yards": 30.5,
@@ -531,7 +532,7 @@
       "receiving_yards": 60.5
     },
     "Jacory Croskey-Merritt": {
-      "rushing_yards": 53.5,
+      "rushing_yards": 54.5,
       "receiving_yards": 5.5
     },
     "Stefon Diggs": {
@@ -548,7 +549,7 @@
       "receiving_yards": 6.5
     },
     "Bam Knight": {
-      "rushing_yards": 27.5,
+      "rushing_yards": 26.5,
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
@@ -610,7 +611,7 @@
     },
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
-      "receiving_yards": 27.5
+      "receiving_yards": 29.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 39.5,
@@ -652,7 +653,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -660,7 +661,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 53.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -687,7 +688,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5
@@ -695,10 +696,10 @@
     "Tez Johnson": {
       "receiving_yards": 15.5
     },
-    "John Metchie III": {
-      "receiving_yards": 9.5
-    },
     "Mitchell Evans": {
+      "receiving_yards": 10.5
+    },
+    "John Metchie III": {
       "receiving_yards": 9.5
     }
   },
@@ -706,9 +707,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5725,
-    "matched_props": 311,
-    "excluded_goblin_demon_lines": 4762,
+    "total_projections_returned": 5739,
+    "matched_props": 312,
+    "excluded_goblin_demon_lines": 4775,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -747,5 +748,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T05:20:36.619450+00:00"
+  "fetched_at": "2026-11-27T05:40:40.810999+00:00"
 }
