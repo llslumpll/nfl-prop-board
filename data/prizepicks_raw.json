@@ -29,7 +29,7 @@
       "receptions": 4.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 37.5,
+      "rushing_yards": 36.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -146,7 +146,7 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 21.5,
       "receptions": 3
     },
     "Ameer Abdullah": {
@@ -330,7 +330,8 @@
     },
     "Chase Brown": {
       "rushing_yards": 43.5,
-      "receiving_yards": 25.5
+      "receiving_yards": 25.5,
+      "receptions": 4.5
     },
     "Samaje Perine": {
       "rushing_yards": 27.5,
@@ -341,7 +342,7 @@
       "receptions": 3
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Noah Fant": {
       "receiving_yards": 22.5,
@@ -358,7 +359,7 @@
       "rushing_yards": 21.5
     },
     "DJ Uiagalelei": {
-      "passing_yards": 147.5
+      "passing_yards": 148.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
@@ -366,7 +367,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 49.5,
-      "receiving_yards": 14.5,
+      "receiving_yards": 13.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
@@ -402,22 +403,22 @@
     "Eli Raridon": {
       "receiving_yards": 16.5
     },
-    "Charlie Kolar": {
+    "Efton Chism III": {
       "receiving_yards": 13.5
     },
-    "Efton Chism III": {
-      "receiving_yards": 12.5
+    "Charlie Kolar": {
+      "receiving_yards": 13.5
     },
     "Kyle Williams": {
       "receiving_yards": 12.5
     },
-    "Mac Jones": {
-      "passing_yards": 225.5,
-      "rushing_yards": 8.5
-    },
     "Sam Darnold": {
       "passing_yards": 224.5,
       "rushing_yards": 4.5
+    },
+    "Mac Jones": {
+      "passing_yards": 215.5,
+      "rushing_yards": 8.5
     },
     "Jaxon Smith-Njigba": {
       "receiving_yards": 97.5
@@ -520,7 +521,7 @@
       "rushing_yards": 14.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 60.5,
+      "rushing_yards": 59.5,
       "receiving_yards": 7.5
     },
     "Brock Bowers": {
@@ -619,9 +620,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5226,
-    "matched_props": 276,
-    "excluded_goblin_demon_lines": 4311,
+    "total_projections_returned": 5374,
+    "matched_props": 277,
+    "excluded_goblin_demon_lines": 4347,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -643,6 +644,7 @@
       "pass+rush yds",
       "pass+rush+rec tds",
       "quarters with 1+ reception",
+      "rec targets",
       "rec tds",
       "receiving yards",
       "receiving yards (combo)",
@@ -651,8 +653,7 @@
       "rush tds",
       "rush yards",
       "rush yards (combo)",
-      "rush yards in first 5 attempts",
-      "rush yards per carry"
+      "rush yards in first 5 attempts"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -660,5 +661,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T22:40:37.691063+00:00"
+  "fetched_at": "2026-11-27T23:00:43.471744+00:00"
 }
