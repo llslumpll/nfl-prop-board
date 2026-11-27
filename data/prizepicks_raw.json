@@ -10,7 +10,7 @@
     },
     "Jonah Coleman": {
       "rushing_yards": 74.5,
-      "receiving_yards": 22.5
+      "receiving_yards": 21.5
     },
     "Jaylen Warren": {
       "rushing_yards": 64.5,
@@ -269,7 +269,7 @@
       "receiving_yards": 37.5
     },
     "Malik Washington": {
-      "receiving_yards": 27.5
+      "receiving_yards": 26.5
     },
     "Greg Dulcich": {
       "receiving_yards": 23.5,
@@ -329,14 +329,14 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 24.5
-    },
     "Dalton Schultz": {
       "receiving_yards": 24.5
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 24.5
+    },
+    "Mark Andrews": {
+      "receiving_yards": 23.5
     },
     "Marvin Harrison Jr.": {
       "receiving_yards": 20.5
@@ -358,7 +358,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 241.5,
+      "passing_yards": 242.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -391,17 +391,16 @@
     },
     "Samaje Perine": {
       "rushing_yards": 27.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 7.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
+    },
+    "Jack Endries": {
+      "receiving_yards": 9.5
     },
     "Drew Sample": {
       "receiving_yards": 6.5
-    },
-    "Jack Endries": {
-      "receiving_yards": 5.5,
-      "receptions": 1.5
     },
     "Tommy DeVito": {
       "passing_yards": 175.5,
@@ -637,7 +636,7 @@
       "receptions": 1.5
     },
     "Jack Bech": {
-      "receiving_yards": 11.5
+      "receiving_yards": 10.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -709,9 +708,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5794,
-    "matched_props": 312,
-    "excluded_goblin_demon_lines": 4829,
+    "total_projections_returned": 5812,
+    "matched_props": 311,
+    "excluded_goblin_demon_lines": 4842,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -750,5 +749,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T13:40:39.690488+00:00"
+  "fetched_at": "2026-11-27T14:00:47.361157+00:00"
 }
