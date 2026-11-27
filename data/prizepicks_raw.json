@@ -160,16 +160,16 @@
       "receiving_yards": 18.5,
       "receptions": 2
     },
-    "Deion Burks": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 12.5,
@@ -293,7 +293,7 @@
       "receptions": 4.5
     },
     "Derrick Henry": {
-      "rushing_yards": 54.5,
+      "rushing_yards": 55.5,
       "receiving_yards": 8.5
     },
     "David Montgomery": {
@@ -360,7 +360,7 @@
       "receptions": 5.5
     },
     "Tee Higgins": {
-      "receiving_yards": 67.5,
+      "receiving_yards": 65.5,
       "receptions": 5
     },
     "Travis Etienne Jr.": {
@@ -402,7 +402,7 @@
       "receptions": 1.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 52.5,
+      "rushing_yards": 51.5,
       "receiving_yards": 13.5,
       "receptions": 2.5
     },
@@ -421,7 +421,7 @@
       "receiving_yards": 26.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 25.5,
+      "receiving_yards": 24.5,
       "receptions": 2.5
     },
     "Mack Hollins": {
@@ -566,11 +566,12 @@
       "receiving_yards": 11.5,
       "receptions": 1.5
     },
-    "Rachaad White": {
+    "Van Jefferson": {
       "receiving_yards": 7.5
     },
-    "Van Jefferson": {
-      "receiving_yards": 6.5
+    "Rachaad White": {
+      "receiving_yards": 7.5,
+      "receptions": 1.5
     },
     "Hunter Long": {
       "receiving_yards": 2.5
@@ -591,15 +592,16 @@
       "receiving_yards": 63.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 54.5,
+      "rushing_yards": 58.5,
       "receiving_yards": 6.5
+    },
+    "KC Concepcion Jr.": {
+      "receiving_yards": 51.5,
+      "receptions": 4.5,
+      "rushing_yards": 2.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 50.5
-    },
-    "KC Concepcion Jr.": {
-      "receiving_yards": 46.5,
-      "receptions": 4.5
     },
     "Ashton Jeanty": {
       "rushing_yards": 40.5,
@@ -691,9 +693,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5783,
-    "matched_props": 306,
-    "excluded_goblin_demon_lines": 4746,
+    "total_projections_returned": 5795,
+    "matched_props": 308,
+    "excluded_goblin_demon_lines": 4755,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -732,5 +734,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T18:20:37.985638+00:00"
+  "fetched_at": "2026-11-27T18:25:28.301196+00:00"
 }
