@@ -86,16 +86,16 @@
       "receiving_yards": 18.5,
       "receptions": 2
     },
+    "Deion Burks": {
+      "receiving_yards": 17.5,
+      "receptions": 1.5
+    },
     "Darnell Mooney": {
-      "receiving_yards": 18.5,
+      "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
-    },
-    "Deion Burks": {
-      "receiving_yards": 16.5,
-      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 12.5,
@@ -146,7 +146,7 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 3
     },
     "Ameer Abdullah": {
@@ -366,36 +366,38 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 49.5,
-      "receiving_yards": 15.5,
+      "receiving_yards": 14.5,
       "receptions": 2.5
+    },
+    "Ladd McConkey": {
+      "receiving_yards": 34.5,
+      "receptions": 3.5
     },
     "Corey Kiner": {
       "rushing_yards": 31.5
-    },
-    "Ladd McConkey": {
-      "receiving_yards": 31.5
     },
     "Mack Hollins": {
       "receiving_yards": 26.5,
       "receptions": 2.5
     },
     "Tre' Harris": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "DeMario Douglas": {
-      "receiving_yards": 25.5,
-      "receptions": 2.5
-    },
-    "Quentin Johnston": {
-      "receiving_yards": 24.5
-    },
-    "Hunter Henry": {
       "receiving_yards": 23.5,
       "receptions": 2.5
     },
+    "Hunter Henry": {
+      "receiving_yards": 22.5,
+      "receptions": 2.5
+    },
+    "Quentin Johnston": {
+      "receiving_yards": 22.5
+    },
     "Kimani Vidal": {
       "rushing_yards": 19.5,
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5,
+      "receptions": 1.5
     },
     "Eli Raridon": {
       "receiving_yards": 16.5
@@ -409,8 +411,12 @@
     "Kyle Williams": {
       "receiving_yards": 12.5
     },
+    "Mac Jones": {
+      "passing_yards": 225.5,
+      "rushing_yards": 8.5
+    },
     "Sam Darnold": {
-      "passing_yards": 216.5,
+      "passing_yards": 224.5,
       "rushing_yards": 4.5
     },
     "Jaxon Smith-Njigba": {
@@ -418,23 +424,24 @@
     },
     "Zach Charbonnet": {
       "rushing_yards": 55.5,
-      "receiving_yards": 8.5
+      "receiving_yards": 8.5,
+      "receptions": 1.5
     },
     "Jadarian Price": {
       "rushing_yards": 24.5,
       "receiving_yards": 9.5
     },
-    "Cooper Kupp": {
-      "receiving_yards": 21.5
-    },
     "AJ Barner": {
-      "receiving_yards": 21.5
+      "receiving_yards": 23.5
+    },
+    "Cooper Kupp": {
+      "receiving_yards": 20.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 17.5
     },
     "Tory Horton": {
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "Jayden Daniels": {
       "passing_yards": 224.5,
@@ -470,7 +477,8 @@
       "receiving_yards": 5.5
     },
     "Harrison Wallace III": {
-      "receiving_yards": 26.5
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "Treylon Burks": {
       "receiving_yards": 25.5
@@ -611,9 +619,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5148,
-    "matched_props": 270,
-    "excluded_goblin_demon_lines": 4247,
+    "total_projections_returned": 5226,
+    "matched_props": 276,
+    "excluded_goblin_demon_lines": 4311,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -652,5 +660,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T22:23:56.563673+00:00"
+  "fetched_at": "2026-11-27T22:40:37.691063+00:00"
 }
