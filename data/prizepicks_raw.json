@@ -82,13 +82,13 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
-    "Anthony Gould": {
-      "receiving_yards": 18.5,
-      "receptions": 2
-    },
     "Deion Burks": {
       "receiving_yards": 17.5,
       "receptions": 1.5
+    },
+    "Anthony Gould": {
+      "receiving_yards": 17.5,
+      "receptions": 2
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
@@ -119,13 +119,13 @@
       "rushing_yards": 80.5,
       "receiving_yards": 8.5
     },
-    "Carnell Tate": {
-      "receiving_yards": 53.5,
-      "receptions": 4.5
-    },
     "Tony Pollard": {
       "rushing_yards": 52.5,
       "receiving_yards": 14.5
+    },
+    "Carnell Tate": {
+      "receiving_yards": 52.5,
+      "receptions": 4.5
     },
     "Josh Cameron": {
       "receiving_yards": 43.5,
@@ -145,7 +145,7 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 22.5,
+      "receiving_yards": 21.5,
       "receptions": 3
     },
     "Ameer Abdullah": {
@@ -278,7 +278,7 @@
       "receiving_yards": 25.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Mark Andrews": {
       "receiving_yards": 22.5
@@ -358,7 +358,7 @@
     },
     "DJ Uiagalelei": {
       "passing_yards": 148.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 17.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
@@ -370,7 +370,7 @@
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 36.5,
+      "receiving_yards": 34.5,
       "receptions": 3.5
     },
     "Corey Kiner": {
@@ -549,7 +549,7 @@
       "receiving_yards": 58.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 52.5,
+      "receiving_yards": 51.5,
       "receptions": 4.5,
       "rushing_yards": 2.5
     },
@@ -641,9 +641,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5840,
+    "total_projections_returned": 5859,
     "matched_props": 286,
-    "excluded_goblin_demon_lines": 4622,
+    "excluded_goblin_demon_lines": 4639,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -682,5 +682,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T01:40:38.539576+00:00"
+  "fetched_at": "2026-11-28T02:00:45.255837+00:00"
 }
