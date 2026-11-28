@@ -82,6 +82,9 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
+    "Ashton Dulin": {
+      "receiving_yards": 18.5
+    },
     "Anthony Gould": {
       "receiving_yards": 18.5,
       "receptions": 2
@@ -89,9 +92,6 @@
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
-    },
-    "Ashton Dulin": {
-      "receiving_yards": 16.5
     },
     "Deion Burks": {
       "receiving_yards": 16.5,
@@ -429,7 +429,7 @@
     },
     "Zach Charbonnet": {
       "rushing_yards": 55.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "George Kittle": {
@@ -461,7 +461,7 @@
       "receiving_yards": 3.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 2.5
+      "receiving_yards": 1.5
     },
     "Jayden Daniels": {
       "passing_yards": 222.5,
@@ -640,9 +640,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6083,
+    "total_projections_returned": 6096,
     "matched_props": 285,
-    "excluded_goblin_demon_lines": 4843,
+    "excluded_goblin_demon_lines": 4856,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -654,6 +654,8 @@
       "fg made (combo)",
       "field goal yards (combo)",
       "halves with 100+ pass yards",
+      "halves with 25+ receiving yards",
+      "halves with 50+ receiving yards",
       "int",
       "kicking points",
       "longest completion",
@@ -671,9 +673,7 @@
       "punts",
       "punts (combo)",
       "punts inside 20",
-      "quarters with 1+ reception",
-      "quarters with 25+ pass yards",
-      "quarters with 5+ rush yards"
+      "quarters with 1+ reception"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -681,5 +681,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T04:20:44.589290+00:00"
+  "fetched_at": "2026-11-28T04:40:40.215216+00:00"
 }
