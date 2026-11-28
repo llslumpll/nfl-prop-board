@@ -84,7 +84,7 @@
     },
     "Anthony Gould": {
       "receiving_yards": 18.5,
-      "receptions": 2
+      "receptions": 1.5
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
@@ -310,7 +310,7 @@
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 90.5,
+      "receiving_yards": 91.5,
       "receptions": 7.5
     },
     "Chris Olave": {
@@ -639,9 +639,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6111,
+    "total_projections_returned": 6136,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4871,
+    "excluded_goblin_demon_lines": 4896,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -680,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T05:00:42.706220+00:00"
+  "fetched_at": "2026-11-28T05:20:37.804619+00:00"
 }
