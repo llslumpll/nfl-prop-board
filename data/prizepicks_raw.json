@@ -116,8 +116,8 @@
       "rushing_yards": 8.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 86.5,
-      "receiving_yards": 9.5,
+      "rushing_yards": 82.5,
+      "receiving_yards": 8.5,
       "receptions": 1.5
     },
     "Tony Pollard": {
@@ -150,7 +150,7 @@
       "receptions": 3
     },
     "Ameer Abdullah": {
-      "rushing_yards": 20.5,
+      "rushing_yards": 18.5,
       "receptions": 0.5
     },
     "Travis Hunter": {
@@ -338,8 +338,7 @@
       "receiving_yards": 9.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 26.5,
-      "receptions": 3
+      "receiving_yards": 26.5
     },
     "Mike Gesicki": {
       "receiving_yards": 23.5
@@ -367,7 +366,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 50.5,
-      "receiving_yards": 13.5,
+      "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
@@ -511,10 +510,11 @@
       "receptions": 1.5
     },
     "Rachaad White": {
-      "receiving_yards": 7.5
+      "receiving_yards": 8.5,
+      "receptions": 1.5
     },
     "Van Jefferson": {
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Hunter Long": {
       "receiving_yards": 2.5
@@ -560,6 +560,9 @@
     "Dylan Sampson": {
       "receiving_yards": 23.5,
       "rushing_yards": 19.5
+    },
+    "Jalen Nailor": {
+      "receiving_yards": 9.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -628,9 +631,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5490,
-    "matched_props": 281,
-    "excluded_goblin_demon_lines": 4427,
+    "total_projections_returned": 5551,
+    "matched_props": 282,
+    "excluded_goblin_demon_lines": 4486,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -669,5 +672,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-27T23:40:45.404517+00:00"
+  "fetched_at": "2026-11-28T00:00:45.209900+00:00"
 }
