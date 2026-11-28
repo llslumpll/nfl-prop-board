@@ -25,7 +25,8 @@
       "receiving_yards": 3.5
     },
     "T.J. Hockenson": {
-      "receiving_yards": 44.5
+      "receiving_yards": 44.5,
+      "receptions": 4.5
     },
     "Aaron Jones Sr.": {
       "rushing_yards": 36.5,
@@ -33,7 +34,7 @@
       "receptions": 1.5
     },
     "Kyle Pitts Sr.": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Jahan Dotson": {
       "receiving_yards": 29.5
@@ -274,7 +275,7 @@
       "receiving_yards": 28.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 25.5
+      "receiving_yards": 26.5
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 23.5
@@ -284,7 +285,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 18.5,
-      "rushing_yards": 12.5
+      "rushing_yards": 14.5
     },
     "Josh Cuevas": {
       "receiving_yards": 9.5
@@ -356,7 +357,8 @@
       "rushing_yards": 21.5
     },
     "DJ Uiagalelei": {
-      "passing_yards": 148.5
+      "passing_yards": 148.5,
+      "rushing_yards": 27.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
@@ -378,9 +380,6 @@
       "receiving_yards": 27.5,
       "receptions": 2.5
     },
-    "Tre' Harris": {
-      "receiving_yards": 26.5
-    },
     "DeMario Douglas": {
       "receiving_yards": 25.5,
       "receptions": 2.5
@@ -389,13 +388,16 @@
       "receiving_yards": 24.5,
       "receptions": 2.5
     },
-    "Quentin Johnston": {
-      "receiving_yards": 22.5
+    "Tre' Harris": {
+      "receiving_yards": 23.5
     },
     "Kimani Vidal": {
       "rushing_yards": 19.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
+    },
+    "Quentin Johnston": {
+      "receiving_yards": 18.5
     },
     "Eli Raridon": {
       "receiving_yards": 17.5
@@ -404,10 +406,10 @@
       "receiving_yards": 13.5
     },
     "Efton Chism III": {
-      "receiving_yards": 12.5
+      "receiving_yards": 11.5
     },
     "Kyle Williams": {
-      "receiving_yards": 12.5
+      "receiving_yards": 10.5
     },
     "Sam Darnold": {
       "passing_yards": 224.5,
@@ -537,7 +539,7 @@
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 193.5,
+      "passing_yards": 192.5,
       "rushing_yards": 15.5
     },
     "Quinshon Judkins": {
@@ -548,7 +550,7 @@
       "receiving_yards": 58.5
     },
     "KC Concepcion Jr.": {
-      "receiving_yards": 51.5,
+      "receiving_yards": 52.5,
       "receptions": 4.5,
       "rushing_yards": 2.5
     },
@@ -561,14 +563,14 @@
       "receiving_yards": 29.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 33.5
+      "rushing_yards": 31.5
     },
     "Tre Tucker": {
-      "receiving_yards": 30.5
+      "receiving_yards": 29.5
     },
     "Dylan Sampson": {
       "receiving_yards": 23.5,
-      "rushing_yards": 19.5
+      "rushing_yards": 18.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -640,9 +642,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5777,
-    "matched_props": 285,
-    "excluded_goblin_demon_lines": 4577,
+    "total_projections_returned": 5820,
+    "matched_props": 287,
+    "excluded_goblin_demon_lines": 4605,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -667,13 +669,13 @@
       "pass+rush+rec tds",
       "passer rating",
       "punts",
+      "punts (combo)",
       "punts inside 20",
       "quarters with 1+ reception",
       "rec targets",
       "rec tds",
       "receiving yards",
-      "receiving yards (combo)",
-      "receptions"
+      "receiving yards (combo)"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -681,5 +683,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T01:00:41.994775+00:00"
+  "fetched_at": "2026-11-28T01:20:39.351962+00:00"
 }
