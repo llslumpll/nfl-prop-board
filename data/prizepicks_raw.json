@@ -37,7 +37,7 @@
       "receiving_yards": 29.5
     },
     "Jauan Jennings": {
-      "receiving_yards": 28.5
+      "receiving_yards": 27.5
     },
     "Tai Felton": {
       "receiving_yards": 22.5
@@ -50,7 +50,7 @@
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
-      "passing_yards": 163.5,
+      "passing_yards": 164.5,
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
@@ -79,11 +79,11 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
-    "Ashton Dulin": {
-      "receiving_yards": 18.5
-    },
     "Anthony Gould": {
-      "receiving_yards": 18.5
+      "receiving_yards": 19.5
+    },
+    "Ashton Dulin": {
+      "receiving_yards": 17.5
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
@@ -229,7 +229,7 @@
       "receiving_yards": 1.5
     },
     "C.J. Stroud": {
-      "passing_yards": 258.5,
+      "passing_yards": 259.5,
       "rushing_yards": 11.5
     },
     "Jacoby Brissett": {
@@ -271,13 +271,13 @@
       "receiving_yards": 28.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Mark Andrews": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Justice Hill": {
       "receiving_yards": 18.5,
@@ -495,7 +495,7 @@
       "receiving_yards": 5.5
     },
     "Treylon Burks": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Austin Ekeler": {
       "rushing_yards": 22.5,
@@ -562,9 +562,6 @@
     "Dylan Sampson": {
       "receiving_yards": 22.5,
       "rushing_yards": 18.5
-    },
-    "Jalen Nailor": {
-      "receiving_yards": 9.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -633,9 +630,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6168,
-    "matched_props": 282,
-    "excluded_goblin_demon_lines": 4935,
+    "total_projections_returned": 6163,
+    "matched_props": 281,
+    "excluded_goblin_demon_lines": 4931,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -674,5 +671,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T10:40:36.463908+00:00"
+  "fetched_at": "2026-11-28T11:00:42.192747+00:00"
 }
