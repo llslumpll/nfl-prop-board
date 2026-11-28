@@ -82,9 +82,6 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
-    "Ashton Dulin": {
-      "receiving_yards": 18.5
-    },
     "Anthony Gould": {
       "receiving_yards": 18.5,
       "receptions": 2
@@ -92,6 +89,9 @@
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
+    },
+    "Ashton Dulin": {
+      "receiving_yards": 16.5
     },
     "Deion Burks": {
       "receiving_yards": 16.5,
@@ -146,7 +146,7 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 3
     },
     "Ameer Abdullah": {
@@ -278,10 +278,10 @@
     "Dalton Schultz": {
       "receiving_yards": 25.5
     },
-    "Ja'Kobi Lane": {
-      "receiving_yards": 24.5
-    },
     "Mark Andrews": {
+      "receiving_yards": 22.5
+    },
+    "Ja'Kobi Lane": {
       "receiving_yards": 22.5
     },
     "Justice Hill": {
@@ -306,11 +306,11 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 231.5,
+      "passing_yards": 228.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
-      "receiving_yards": 91.5,
+      "receiving_yards": 90.5,
       "receptions": 7.5
     },
     "Chris Olave": {
@@ -323,15 +323,14 @@
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 48.5,
-      "receiving_yards": 12.5
+      "receiving_yards": 13.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 43.5
     },
     "Chase Brown": {
       "rushing_yards": 43.5,
-      "receiving_yards": 25.5,
-      "receptions": 4.5
+      "receiving_yards": 25.5
     },
     "Samaje Perine": {
       "rushing_yards": 28.5,
@@ -341,10 +340,10 @@
       "receiving_yards": 25.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 23.5
+      "receiving_yards": 24.5
     },
     "Noah Fant": {
-      "receiving_yards": 20.5
+      "receiving_yards": 19.5
     },
     "Jack Endries": {
       "receiving_yards": 9.5
@@ -594,7 +593,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 53.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -640,9 +639,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6096,
-    "matched_props": 285,
-    "excluded_goblin_demon_lines": 4856,
+    "total_projections_returned": 6111,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4871,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -655,6 +654,7 @@
       "field goal yards (combo)",
       "halves with 100+ pass yards",
       "halves with 25+ receiving yards",
+      "halves with 40+ receiving yards",
       "halves with 50+ receiving yards",
       "int",
       "kicking points",
@@ -672,8 +672,7 @@
       "passer rating",
       "punts",
       "punts (combo)",
-      "punts inside 20",
-      "quarters with 1+ reception"
+      "punts inside 20"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -681,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T04:40:40.215216+00:00"
+  "fetched_at": "2026-11-28T05:00:42.706220+00:00"
 }
