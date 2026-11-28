@@ -22,7 +22,7 @@
     },
     "Jordan Mason": {
       "rushing_yards": 57.5,
-      "receiving_yards": 2.5
+      "receiving_yards": 3.5
     },
     "T.J. Hockenson": {
       "receiving_yards": 44.5,
@@ -497,7 +497,7 @@
       "receiving_yards": 25.5
     },
     "Austin Ekeler": {
-      "rushing_yards": 23.5,
+      "rushing_yards": 22.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
@@ -578,7 +578,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -586,7 +586,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 55.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -621,10 +621,10 @@
     "Tez Johnson": {
       "receiving_yards": 11.5
     },
-    "Mitchell Evans": {
-      "receiving_yards": 10.5
-    },
     "John Metchie III": {
+      "receiving_yards": 11.5
+    },
+    "Mitchell Evans": {
       "receiving_yards": 9.5
     }
   },
@@ -632,9 +632,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6168,
+    "total_projections_returned": 6167,
     "matched_props": 281,
-    "excluded_goblin_demon_lines": 4936,
+    "excluded_goblin_demon_lines": 4935,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -673,5 +673,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T08:20:42.092867+00:00"
+  "fetched_at": "2026-11-28T08:40:39.111092+00:00"
 }
