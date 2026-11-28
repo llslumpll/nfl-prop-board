@@ -538,7 +538,7 @@
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
-      "passing_yards": 192.5,
+      "passing_yards": 191.5,
       "rushing_yards": 15.5
     },
     "Quinshon Judkins": {
@@ -641,9 +641,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5841,
+    "total_projections_returned": 5840,
     "matched_props": 286,
-    "excluded_goblin_demon_lines": 4623,
+    "excluded_goblin_demon_lines": 4622,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -682,5 +682,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T01:37:56.818133+00:00"
+  "fetched_at": "2026-11-28T01:40:38.539576+00:00"
 }
