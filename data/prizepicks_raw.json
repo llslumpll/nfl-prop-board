@@ -82,16 +82,16 @@
     "Anthony Gould": {
       "receiving_yards": 19.5
     },
-    "Ashton Dulin": {
-      "receiving_yards": 17.5
+    "Deion Burks": {
+      "receiving_yards": 17.5,
+      "receptions": 1.5
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
-    "Deion Burks": {
-      "receiving_yards": 16.5,
-      "receptions": 1.5
+    "Ashton Dulin": {
+      "receiving_yards": 16.5
     },
     "Devin Singletary": {
       "rushing_yards": 11.5,
@@ -425,7 +425,7 @@
       "receiving_yards": 57.5
     },
     "Zach Charbonnet": {
-      "rushing_yards": 55.5,
+      "rushing_yards": 57.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
     },
@@ -636,9 +636,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6173,
+    "total_projections_returned": 6174,
     "matched_props": 283,
-    "excluded_goblin_demon_lines": 4937,
+    "excluded_goblin_demon_lines": 4938,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -677,5 +677,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T11:20:38.227905+00:00"
+  "fetched_at": "2026-11-28T11:40:45.360935+00:00"
 }
