@@ -112,7 +112,7 @@
       "rushing_yards": 8.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 76.5,
+      "rushing_yards": 77.5,
       "receiving_yards": 8.5
     },
     "Tony Pollard": {
@@ -193,13 +193,13 @@
     "Garrett Wilson": {
       "receiving_yards": 57.5
     },
-    "Caleb Douglas": {
-      "receiving_yards": 44.5,
-      "receptions": 3.5
-    },
     "Braelon Allen": {
       "rushing_yards": 44.5,
       "receiving_yards": 8.5
+    },
+    "Caleb Douglas": {
+      "receiving_yards": 43.5,
+      "receptions": 3.5
     },
     "Adonai Mitchell": {
       "receiving_yards": 38.5
@@ -412,7 +412,7 @@
     },
     "Mac Jones": {
       "passing_yards": 212.5,
-      "rushing_yards": 6.5
+      "rushing_yards": 7.5
     },
     "Jaxon Smith-Njigba": {
       "receiving_yards": 97.5
@@ -457,10 +457,10 @@
     "Rashid Shaheed": {
       "receiving_yards": 17.5
     },
-    "Kyle Juszczyk": {
-      "receiving_yards": 2.5
-    },
     "Tory Horton": {
+      "receiving_yards": 3.5
+    },
+    "Kyle Juszczyk": {
       "receiving_yards": 2.5
     },
     "Jayden Daniels": {
@@ -472,7 +472,7 @@
       "rushing_yards": 13.5
     },
     "Trey McBride": {
-      "receiving_yards": 59.5
+      "receiving_yards": 60.5
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 54.5,
@@ -640,9 +640,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6206,
+    "total_projections_returned": 6202,
     "matched_props": 285,
-    "excluded_goblin_demon_lines": 4960,
+    "excluded_goblin_demon_lines": 4956,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -681,5 +681,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T13:00:47.029624+00:00"
+  "fetched_at": "2026-11-28T13:20:37.559351+00:00"
 }
