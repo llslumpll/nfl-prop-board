@@ -29,7 +29,7 @@
       "receptions": 4.5
     },
     "Aaron Jones Sr.": {
-      "rushing_yards": 36.5,
+      "rushing_yards": 37.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -119,13 +119,13 @@
       "rushing_yards": 80.5,
       "receiving_yards": 8.5
     },
+    "Carnell Tate": {
+      "receiving_yards": 53.5,
+      "receptions": 4.5
+    },
     "Tony Pollard": {
       "rushing_yards": 52.5,
       "receiving_yards": 14.5
-    },
-    "Carnell Tate": {
-      "receiving_yards": 52.5,
-      "receptions": 4.5
     },
     "Josh Cameron": {
       "receiving_yards": 43.5,
@@ -145,11 +145,11 @@
       "receiving_yards": 25.5
     },
     "Gunnar Helm": {
-      "receiving_yards": 21.5,
+      "receiving_yards": 22.5,
       "receptions": 3
     },
     "Ameer Abdullah": {
-      "rushing_yards": 18.5,
+      "rushing_yards": 20.5,
       "receptions": 0.5
     },
     "Travis Hunter": {
@@ -275,7 +275,7 @@
       "receiving_yards": 28.5
     },
     "Dalton Schultz": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Ja'Kobi Lane": {
       "receiving_yards": 23.5
@@ -285,7 +285,7 @@
     },
     "Justice Hill": {
       "receiving_yards": 18.5,
-      "rushing_yards": 14.5
+      "rushing_yards": 12.5
     },
     "Josh Cuevas": {
       "receiving_yards": 9.5
@@ -358,19 +358,19 @@
     },
     "DJ Uiagalelei": {
       "passing_yards": 148.5,
-      "rushing_yards": 27.5
+      "rushing_yards": 18.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
       "receiving_yards": 7.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 49.5,
+      "rushing_yards": 51.5,
       "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 36.5,
       "receptions": 3.5
     },
     "Corey Kiner": {
@@ -385,8 +385,7 @@
       "receptions": 2.5
     },
     "Hunter Henry": {
-      "receiving_yards": 24.5,
-      "receptions": 2.5
+      "receiving_yards": 24.5
     },
     "Tre' Harris": {
       "receiving_yards": 23.5
@@ -416,7 +415,7 @@
       "rushing_yards": 4.5
     },
     "Mac Jones": {
-      "passing_yards": 215.5,
+      "passing_yards": 212.5,
       "rushing_yards": 7.5
     },
     "Jaxon Smith-Njigba": {
@@ -453,7 +452,7 @@
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 20.5,
-      "rushing_yards": 7.5,
+      "rushing_yards": 8.5,
       "receptions": 2.5
     },
     "Rashid Shaheed": {
@@ -463,7 +462,7 @@
       "receiving_yards": 3.5
     },
     "Kyle Juszczyk": {
-      "receiving_yards": 0.5
+      "receiving_yards": 2.5
     },
     "Jayden Daniels": {
       "passing_yards": 222.5,
@@ -494,16 +493,16 @@
       "receiving_yards": 6.5,
       "receptions": 1.5
     },
+    "Harrison Wallace III": {
+      "receiving_yards": 27.5,
+      "receptions": 2.5
+    },
     "Tyler Allgeier": {
       "rushing_yards": 26.5,
       "receiving_yards": 5.5
     },
-    "Harrison Wallace III": {
-      "receiving_yards": 26.5,
-      "receptions": 2.5
-    },
     "Treylon Burks": {
-      "receiving_yards": 25.5
+      "receiving_yards": 24.5
     },
     "Austin Ekeler": {
       "rushing_yards": 23.5,
@@ -642,9 +641,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5820,
-    "matched_props": 287,
-    "excluded_goblin_demon_lines": 4605,
+    "total_projections_returned": 5841,
+    "matched_props": 286,
+    "excluded_goblin_demon_lines": 4623,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -672,10 +671,10 @@
       "punts (combo)",
       "punts inside 20",
       "quarters with 1+ reception",
+      "quarters with 5+ rush yards",
       "rec targets",
       "rec tds",
-      "receiving yards",
-      "receiving yards (combo)"
+      "receiving yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -683,5 +682,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T01:20:39.351962+00:00"
+  "fetched_at": "2026-11-28T01:37:56.818133+00:00"
 }
