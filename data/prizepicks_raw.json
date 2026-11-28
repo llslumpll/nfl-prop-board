@@ -147,7 +147,8 @@
       "receptions": 0.5
     },
     "Travis Hunter": {
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 1.5
     },
     "Calvin Ridley": {
       "receiving_yards": 12.5
@@ -203,7 +204,7 @@
       "receiving_yards": 27.5
     },
     "Greg Dulcich": {
-      "receiving_yards": 24.5,
+      "receiving_yards": 23.5,
       "receptions": 2.5
     },
     "Kenyon Sadiq": {
@@ -221,7 +222,7 @@
       "receptions": 1.5
     },
     "Jaylen Wright": {
-      "rushing_yards": 10.5
+      "rushing_yards": 9.5
     },
     "Will Kacmarek": {
       "receiving_yards": 1.5
@@ -358,8 +359,7 @@
     },
     "Rhamondre Stevenson": {
       "rushing_yards": 49.5,
-      "receiving_yards": 14.5,
-      "receptions": 2.5
+      "receiving_yards": 14.5
     },
     "Ladd McConkey": {
       "receiving_yards": 34.5
@@ -431,7 +431,7 @@
     },
     "Jadarian Price": {
       "rushing_yards": 24.5,
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "AJ Barner": {
       "receiving_yards": 23.5
@@ -673,5 +673,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T07:40:39.146701+00:00"
+  "fetched_at": "2026-11-28T08:00:42.380623+00:00"
 }
