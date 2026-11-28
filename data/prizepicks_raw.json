@@ -53,7 +53,7 @@
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
-      "passing_yards": 163.5,
+      "passing_yards": 164.5,
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
@@ -98,7 +98,7 @@
       "receiving_yards": 16.5
     },
     "Devin Singletary": {
-      "rushing_yards": 12.5,
+      "rushing_yards": 11.5,
       "receiving_yards": 2.5
     },
     "Theo Johnson": {
@@ -313,7 +313,7 @@
       "receptions": 7.5
     },
     "Chris Olave": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 69.5,
       "receptions": 5.5
     },
     "Tee Higgins": {
@@ -322,7 +322,7 @@
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 48.5,
-      "receiving_yards": 13.5
+      "receiving_yards": 12.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 43.5
@@ -337,14 +337,13 @@
       "receiving_yards": 9.5
     },
     "Devaughn Vele": {
-      "receiving_yards": 26.5
+      "receiving_yards": 25.5
     },
     "Mike Gesicki": {
       "receiving_yards": 23.5
     },
     "Noah Fant": {
-      "receiving_yards": 22.5,
-      "receptions": 2.5
+      "receiving_yards": 20.5
     },
     "Jack Endries": {
       "receiving_yards": 9.5
@@ -354,7 +353,7 @@
     },
     "Tommy DeVito": {
       "passing_yards": 175.5,
-      "rushing_yards": 21.5
+      "rushing_yards": 20.5
     },
     "DJ Uiagalelei": {
       "passing_yards": 148.5,
@@ -365,20 +364,19 @@
       "receiving_yards": 7.5
     },
     "Rhamondre Stevenson": {
-      "rushing_yards": 51.5,
+      "rushing_yards": 49.5,
       "receiving_yards": 15.5,
       "receptions": 2.5
     },
     "Ladd McConkey": {
-      "receiving_yards": 34.5,
-      "receptions": 3.5
-    },
-    "Corey Kiner": {
-      "rushing_yards": 31.5
+      "receiving_yards": 34.5
     },
     "Mack Hollins": {
       "receiving_yards": 27.5,
       "receptions": 2.5
+    },
+    "Corey Kiner": {
+      "rushing_yards": 26.5
     },
     "DeMario Douglas": {
       "receiving_yards": 25.5,
@@ -395,10 +393,10 @@
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
-    "Quentin Johnston": {
-      "receiving_yards": 18.5
-    },
     "Eli Raridon": {
+      "receiving_yards": 17.5
+    },
+    "Quentin Johnston": {
       "receiving_yards": 17.5
     },
     "Charlie Kolar": {
@@ -562,14 +560,14 @@
       "receiving_yards": 29.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 31.5
+      "rushing_yards": 33.5
     },
     "Tre Tucker": {
       "receiving_yards": 29.5
     },
     "Dylan Sampson": {
       "receiving_yards": 23.5,
-      "rushing_yards": 18.5
+      "rushing_yards": 19.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -595,7 +593,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 53.5,
+      "receiving_yards": 54.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -641,9 +639,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5859,
-    "matched_props": 286,
-    "excluded_goblin_demon_lines": 4639,
+    "total_projections_returned": 5903,
+    "matched_props": 284,
+    "excluded_goblin_demon_lines": 4686,
     "sample_stat_types_seen": [
       "anytime tds",
       "completion percentage",
@@ -682,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T02:00:45.255837+00:00"
+  "fetched_at": "2026-11-28T02:20:38.539753+00:00"
 }
