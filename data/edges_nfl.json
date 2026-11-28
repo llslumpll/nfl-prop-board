@@ -465,6 +465,7 @@
    "fair": 0.4125,
    "first_ev": 0.0969,
    "first_seen": "2026-11-25 04:20 UTC",
+   "hit": true,
    "home": "PIT",
    "kalshi": "YES PIT at 36%",
    "kickoff": "2026-11-27T20:00:00+00:00",
@@ -476,7 +477,8 @@
    "model_agrees": true,
    "ref": "FanDuel -154/+130",
    "side": "PIT ML",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.6589,
    "week": 12
   },
   "moneyline|SEA @ SF: SF wins": {
@@ -509,6 +511,7 @@
    "fair": 0.4768,
    "first_ev": 0.0203,
    "first_seen": "2026-11-25 04:20 UTC",
+   "hit": true,
    "home": "PIT",
    "kalshi": "NO DEN by over 2.5 at 41%",
    "kickoff": "2026-11-27T20:00:00+00:00",
@@ -520,7 +523,8 @@
    "model_agrees": true,
    "ref": "FanDuel PIT +2.5",
    "side": "PIT +2.5",
-   "status": "pending",
+   "status": "graded",
+   "units": 1.3425,
    "week": 12
   },
   "spread|SEA @ SF: SF -2.5": {
@@ -553,6 +557,7 @@
    "fair": 0.4884,
    "first_ev": 0.0451,
    "first_seen": "2026-11-25 04:32 UTC",
+   "hit": false,
    "home": "PIT",
    "kalshi": "YES over 37.5 at 45%",
    "kickoff": "2026-11-27T20:00:00+00:00",
@@ -564,7 +569,8 @@
    "model_agrees": true,
    "ref": "FanDuel 37.5 (-105/-115)",
    "side": "OVER 37.5",
-   "status": "pending",
+   "status": "graded",
+   "units": -1.0,
    "week": 12
   },
   "total|SEA @ SF: OVER 44.5": {

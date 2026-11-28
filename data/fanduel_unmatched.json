@@ -48,12 +48,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Bo Nix",
-    "team": "DEN",
-    "stat": "passing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Jalen Hurts",
     "team": "PHI",
     "stat": "passing_yards",
@@ -132,12 +126,6 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Evan Engram",
-    "team": "DEN",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Samaje Perine",
     "team": "CIN",
     "stat": "receiving_yards",
@@ -186,20 +174,14 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Jaylen Waddle",
-    "team": "DEN",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Max Hurleman",
-    "team": "PIT",
-    "stat": "receiving_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Michael Wilson",
     "team": "ARI",
+    "stat": "receiving_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Omar Cooper Jr.",
+    "team": "NYJ",
     "stat": "receiving_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -218,6 +200,12 @@
   {
     "player": "Omar Cooper Jr.",
     "team": "NYJ",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jonah Coleman",
+    "team": "DEN",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -246,26 +234,8 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Evan Engram",
-    "team": "DEN",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
     "player": "Tetairoa McMillan",
     "team": "CAR",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Max Hurleman",
-    "team": "PIT",
-    "stat": "receptions",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Germie Bernard",
-    "team": "PIT",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -288,14 +258,26 @@
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Pat Freiermuth",
-    "team": "PIT",
+    "player": "Ladd McConkey",
+    "team": "LAC",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
   {
-    "player": "Ladd McConkey",
-    "team": "LAC",
+    "player": "Jaylen Waddle",
+    "team": "DEN",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "George Pickens",
+    "team": "DAL",
+    "stat": "receptions",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jahmyr Gibbs",
+    "team": "DET",
     "stat": "receptions",
     "why": "FanDuel lists no props for this player"
   },
@@ -314,12 +296,6 @@
   {
     "player": "James Cook",
     "team": "BUF",
-    "stat": "rushing_yards",
-    "why": "FanDuel lists no props for this player"
-  },
-  {
-    "player": "Jonah Coleman",
-    "team": "DEN",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },
@@ -354,6 +330,12 @@
     "why": "FanDuel lists no props for this player"
   },
   {
+    "player": "Rico Dowdle",
+    "team": "PIT",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
     "player": "Justice Hill",
     "team": "BAL",
     "stat": "rushing_yards",
@@ -380,6 +362,12 @@
   {
     "player": "Dameon Pierce",
     "team": "PHI",
+    "stat": "rushing_yards",
+    "why": "FanDuel lists no props for this player"
+  },
+  {
+    "player": "Jaylen Warren",
+    "team": "PIT",
     "stat": "rushing_yards",
     "why": "FanDuel lists no props for this player"
   },

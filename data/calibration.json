@@ -1,7 +1,7 @@
 {
   "min_sample": 30,
   "dampen": 0.3,
-  "generated_at": "2026-11-28 17:00 UTC",
+  "generated_at": "2026-11-28 17:18 UTC",
   "bias": {
     "passing_yards": {
       "Career baseline (established veteran)": {
@@ -21,15 +21,15 @@
         "status": "active"
       },
       "Moderate 2026 sample": {
-        "bias": 5.57,
-        "sample_size": 96,
-        "avg_raw_bias": 18.58,
+        "bias": 5.61,
+        "sample_size": 97,
+        "avg_raw_bias": 18.69,
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 1.38,
-        "sample_size": 103,
-        "avg_raw_bias": 4.6,
+        "bias": 1.24,
+        "sample_size": 104,
+        "avg_raw_bias": 4.14,
         "status": "active"
       },
       "No data (rookie/unproven)": {
@@ -62,9 +62,9 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 1.49,
-        "sample_size": 124,
-        "avg_raw_bias": 4.97,
+        "bias": 1.44,
+        "sample_size": 126,
+        "avg_raw_bias": 4.8,
         "status": "active"
       }
     },
@@ -80,9 +80,9 @@
         "status": "insufficient data"
       },
       "Building 2026 sample": {
-        "bias": 1.78,
-        "sample_size": 71,
-        "avg_raw_bias": 5.92,
+        "bias": 1.56,
+        "sample_size": 72,
+        "avg_raw_bias": 5.2,
         "status": "active"
       },
       "Moderate 2026 sample": {
@@ -92,16 +92,16 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 1.0,
-        "sample_size": 146,
-        "avg_raw_bias": 3.34,
+        "bias": 0.87,
+        "sample_size": 149,
+        "avg_raw_bias": 2.9,
         "status": "active"
       }
     },
     "receptions": {
       "Building 2026 sample": {
         "bias": 0.0,
-        "sample_size": 11,
+        "sample_size": 12,
         "status": "insufficient data"
       },
       "Moderate 2026 sample": {
@@ -111,41 +111,41 @@
         "status": "active"
       },
       "Established (2026 sample)": {
-        "bias": 0.06,
-        "sample_size": 125,
-        "avg_raw_bias": 0.21,
+        "bias": 0.05,
+        "sample_size": 128,
+        "avg_raw_bias": 0.15,
         "status": "active"
       }
     }
   },
   "touchdown_prob_shrink": {
     "shrink_factor": 1.0,
-    "sample_size": 24,
+    "sample_size": 25,
     "status": "insufficient data"
   },
   "confidence_shrink": {
     "passing_yards": {
-      "shrink_factor": 0.713,
-      "sample_size": 248,
-      "raw_shrink_factor": 0.044,
+      "shrink_factor": 0.717,
+      "sample_size": 250,
+      "raw_shrink_factor": 0.055,
       "status": "active"
     },
     "rushing_yards": {
-      "shrink_factor": 0.635,
-      "sample_size": 261,
-      "raw_shrink_factor": -0.217,
+      "shrink_factor": 0.643,
+      "sample_size": 263,
+      "raw_shrink_factor": -0.189,
       "status": "active"
     },
     "receiving_yards": {
-      "shrink_factor": 0.777,
-      "sample_size": 297,
-      "raw_shrink_factor": 0.257,
+      "shrink_factor": 0.768,
+      "sample_size": 301,
+      "raw_shrink_factor": 0.226,
       "status": "active"
     },
     "receptions": {
-      "shrink_factor": 0.715,
-      "sample_size": 57,
-      "raw_shrink_factor": 0.051,
+      "shrink_factor": 0.701,
+      "sample_size": 58,
+      "raw_shrink_factor": 0.003,
       "status": "active"
     }
   }

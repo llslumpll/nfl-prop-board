@@ -10339,8 +10339,15 @@
     "reason": "Real net-points-per-game model projects a +2.0-point margin and a 42.4 total. DEN enters with a real rest advantage (12 real days for PIT vs 19 for DEN). DEN's real record over their last games is trending up relative to their season pace. DEN is carrying real, meaningfully more Out/Doubtful designations than PIT this week -- a real health edge favoring PIT.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 5,
+      "winner": "HOME"
+    },
+    "our_correct": true,
+    "market_correct": false
   },
   "DEN@PIT|team_spread|12": {
     "away_team": "DEN",
@@ -10363,8 +10370,15 @@
     "reason": "Real net-points-per-game model projects a +2.0-point margin and a 42.4 total. DEN enters with a real rest advantage (12 real days for PIT vs 19 for DEN). DEN's real record over their last games is trending up relative to their season pace. DEN is carrying real, meaningfully more Out/Doubtful designations than PIT this week -- a real health edge favoring PIT.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 5,
+      "actual_margin": 22
+    },
+    "our_correct": true,
+    "market_correct": null
   },
   "DEN@PIT|team_total|12": {
     "away_team": "DEN",
@@ -10387,8 +10401,15 @@
     "reason": "Real net-points-per-game model projects a +2.0-point margin and a 42.4 total. DEN enters with a real rest advantage (12 real days for PIT vs 19 for DEN). DEN's real record over their last games is trending up relative to their season pace. DEN is carrying real, meaningfully more Out/Doubtful designations than PIT this week -- a real health edge favoring PIT.",
     "frozen_at": "2026-11-17 21:56 UTC",
     "result": null,
-    "graded": false,
-    "rule": "2026-11-06"
+    "graded": true,
+    "rule": "2026-11-06",
+    "actual_result": {
+      "home_score": 27,
+      "away_score": 5,
+      "actual_total": 32
+    },
+    "our_correct": false,
+    "market_correct": null
   },
   "NO@CIN|team_moneyline|12": {
     "away_team": "NO",
