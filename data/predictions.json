@@ -43547,7 +43547,9 @@
     "actual": null,
     "hit": null,
     "graded_at": null,
-    "best5_tags": [],
+    "best5_tags": [
+      "best_value"
+    ],
     "line_attached_at": "2026-11-26 00:02 UTC",
     "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this prizepicks line was first seen 2026-11-26 00:02 UTC, before kickoff. Call set from the frozen projection vs this line."
   },
@@ -43914,7 +43916,6 @@
     "line_attached_at": "2026-11-26 22:47 UTC",
     "line_attach_note": "Projection frozen 2026-11-24 19:52 UTC; this fanduel line was first seen 2026-11-26 22:47 UTC, before kickoff. Call set from the frozen projection vs this line.",
     "best5_tags": [
-      "best_value",
       "highest_confidence"
     ]
   },
