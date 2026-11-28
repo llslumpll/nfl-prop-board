@@ -82,12 +82,8 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
-    "Deion Burks": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
     "Anthony Gould": {
-      "receiving_yards": 17.5,
+      "receiving_yards": 18.5,
       "receptions": 2
     },
     "Darnell Mooney": {
@@ -96,6 +92,10 @@
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 11.5,
@@ -278,7 +278,7 @@
       "receiving_yards": 25.5
     },
     "Ja'Kobi Lane": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Mark Andrews": {
       "receiving_yards": 22.5
@@ -389,7 +389,7 @@
       "receiving_yards": 23.5
     },
     "Kimani Vidal": {
-      "rushing_yards": 19.5,
+      "rushing_yards": 20.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -532,7 +532,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 212.5,
+      "passing_yards": 211.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -552,7 +552,7 @@
       "rushing_yards": 2.5
     },
     "Harold Fannin Jr.": {
-      "receiving_yards": 48.5,
+      "receiving_yards": 49.5,
       "receptions": 4.5
     },
     "Ashton Jeanty": {
@@ -566,8 +566,8 @@
       "receiving_yards": 29.5
     },
     "Dylan Sampson": {
-      "receiving_yards": 23.5,
-      "rushing_yards": 19.5
+      "receiving_yards": 22.5,
+      "rushing_yards": 18.5
     },
     "Jalen Nailor": {
       "receiving_yards": 9.5
@@ -614,13 +614,13 @@
     "Ted Hurst III": {
       "receiving_yards": 26.5
     },
-    "Kenny Gainwell": {
-      "rushing_yards": 22.5,
-      "receiving_yards": 16.5
-    },
     "Chris Godwin Jr.": {
       "receiving_yards": 22.5,
       "receptions": 2.5
+    },
+    "Kenny Gainwell": {
+      "rushing_yards": 21.5,
+      "receiving_yards": 16.5
     },
     "Tommy Tremble": {
       "receiving_yards": 21.5
@@ -639,11 +639,12 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5903,
+    "total_projections_returned": 5912,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4686,
+    "excluded_goblin_demon_lines": 4687,
     "sample_stat_types_seen": [
       "anytime tds",
+      "anytime tds (combo)",
       "completion percentage",
       "completions in first 10 pass attempts",
       "consecutive pass completions",
@@ -671,8 +672,7 @@
       "quarters with 1+ reception",
       "quarters with 5+ rush yards",
       "rec targets",
-      "rec tds",
-      "receiving yards"
+      "rec tds"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -680,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T02:20:38.539753+00:00"
+  "fetched_at": "2026-11-28T02:40:38.618669+00:00"
 }
