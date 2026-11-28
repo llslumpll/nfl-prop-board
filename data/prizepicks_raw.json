@@ -14,7 +14,7 @@
     },
     "Bijan Robinson": {
       "rushing_yards": 75.5,
-      "receiving_yards": 20.5
+      "receiving_yards": 21.5
     },
     "Drake London": {
       "receiving_yards": 71.5
@@ -39,7 +39,7 @@
       "receiving_yards": 29.5
     },
     "Jauan Jennings": {
-      "receiving_yards": 27.5
+      "receiving_yards": 28.5
     },
     "Tai Felton": {
       "receiving_yards": 22.5
@@ -168,7 +168,8 @@
       "receiving_yards": 6.5
     },
     "Xavier Restrepo": {
-      "receiving_yards": 5.5
+      "receiving_yards": 5.5,
+      "receptions": 0.5
     },
     "LeQuint Allen Jr.": {
       "receiving_yards": 4.5,
@@ -225,12 +226,11 @@
       "rushing_yards": 13.5
     },
     "Isaiah Williams": {
-      "receiving_yards": 11.5,
+      "receiving_yards": 12.5,
       "receptions": 1.5
     },
     "Will Kacmarek": {
-      "receiving_yards": 1.5,
-      "receptions": 0.5
+      "receiving_yards": 1.5
     },
     "C.J. Stroud": {
       "passing_yards": 259.5,
@@ -259,6 +259,9 @@
     "Rashod Bateman": {
       "receiving_yards": 32.5
     },
+    "Xavier Hutchinson": {
+      "receiving_yards": 32.5
+    },
     "Tank Dell": {
       "receiving_yards": 29.5,
       "receptions": 2.5
@@ -267,9 +270,6 @@
       "rushing_yards": 29.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
-    },
-    "Xavier Hutchinson": {
-      "receiving_yards": 28.5
     },
     "Dalton Schultz": {
       "receiving_yards": 26.5
@@ -313,7 +313,7 @@
       "receptions": 7.5
     },
     "Chris Olave": {
-      "receiving_yards": 70.5,
+      "receiving_yards": 69.5,
       "receptions": 5.5
     },
     "Tee Higgins": {
@@ -322,7 +322,7 @@
     },
     "Travis Etienne Jr.": {
       "rushing_yards": 48.5,
-      "receiving_yards": 11.5
+      "receiving_yards": 12.5
     },
     "Jordyn Tyson": {
       "receiving_yards": 44.5
@@ -388,7 +388,7 @@
       "receiving_yards": 23.5
     },
     "Kimani Vidal": {
-      "rushing_yards": 21.5,
+      "rushing_yards": 19.5,
       "receiving_yards": 7.5,
       "receptions": 1.5
     },
@@ -398,11 +398,11 @@
     "Eli Raridon": {
       "receiving_yards": 16.5
     },
-    "Charlie Kolar": {
+    "Efton Chism III": {
       "receiving_yards": 13.5
     },
-    "Efton Chism III": {
-      "receiving_yards": 11.5
+    "Charlie Kolar": {
+      "receiving_yards": 13.5
     },
     "Kyle Williams": {
       "receiving_yards": 11.5
@@ -438,11 +438,11 @@
       "receiving_yards": 25.5
     },
     "Jadarian Price": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 9.5
     },
     "AJ Barner": {
-      "receiving_yards": 23.5
+      "receiving_yards": 21.5
     },
     "Deebo Samuel Sr.": {
       "receiving_yards": 21.5,
@@ -540,7 +540,7 @@
       "rushing_yards": 15.5
     },
     "Quinshon Judkins": {
-      "rushing_yards": 59.5,
+      "rushing_yards": 60.5,
       "receiving_yards": 7.5
     },
     "Brock Bowers": {
@@ -619,7 +619,7 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 22.5,
-      "receiving_yards": 15.5
+      "receiving_yards": 16.5
     },
     "Chris Godwin Jr.": {
       "receiving_yards": 22.5,
@@ -642,9 +642,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6288,
+    "total_projections_returned": 6325,
     "matched_props": 283,
-    "excluded_goblin_demon_lines": 5044,
+    "excluded_goblin_demon_lines": 5080,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -683,5 +683,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T16:00:40.681240+00:00"
+  "fetched_at": "2026-11-28T16:20:41.393366+00:00"
 }
