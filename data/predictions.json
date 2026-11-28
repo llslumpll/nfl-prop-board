@@ -46593,5 +46593,27 @@
     "actual": null,
     "hit": null,
     "graded_at": null
+  },
+  "Mike Evans|receiving_yards|12": {
+    "player": "Mike Evans",
+    "team": "SF",
+    "opponent": "SEA",
+    "week": 12,
+    "stat": "receiving_yards",
+    "projected": 64.1,
+    "tier_at_freeze": "Established (2026 sample)",
+    "market_line": 53.5,
+    "market_source": "prizepicks",
+    "call": "OVER",
+    "edge": 10.6,
+    "model_prob": 0.5979,
+    "signals": {
+      "injury_flagged": "Limited Participation in Practice"
+    },
+    "frozen_at": "2026-11-28 17:01 UTC",
+    "graded": false,
+    "actual": null,
+    "hit": null,
+    "graded_at": null
   }
 }
