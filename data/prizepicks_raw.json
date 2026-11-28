@@ -79,15 +79,15 @@
     "Laquon Treadwell": {
       "receiving_yards": 21.5
     },
+    "Ashton Dulin": {
+      "receiving_yards": 18.5
+    },
     "Anthony Gould": {
       "receiving_yards": 18.5
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
-    },
-    "Ashton Dulin": {
-      "receiving_yards": 16.5
     },
     "Deion Burks": {
       "receiving_yards": 16.5,
@@ -633,9 +633,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6169,
+    "total_projections_returned": 6168,
     "matched_props": 282,
-    "excluded_goblin_demon_lines": 4934,
+    "excluded_goblin_demon_lines": 4933,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -674,5 +674,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T09:40:35.874130+00:00"
+  "fetched_at": "2026-11-28T10:00:47.520489+00:00"
 }
