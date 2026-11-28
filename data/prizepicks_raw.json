@@ -333,7 +333,7 @@
       "receptions": 4.5
     },
     "Samaje Perine": {
-      "rushing_yards": 27.5,
+      "rushing_yards": 28.5,
       "receiving_yards": 9.5
     },
     "Devaughn Vele": {
@@ -357,7 +357,7 @@
     },
     "DJ Uiagalelei": {
       "passing_yards": 148.5,
-      "rushing_yards": 16.5
+      "rushing_yards": 14.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
@@ -639,9 +639,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 5968,
+    "total_projections_returned": 6002,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4727,
+    "excluded_goblin_demon_lines": 4764,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -652,6 +652,7 @@
       "fg made",
       "fg made (combo)",
       "field goal yards (combo)",
+      "halves with 100+ pass yards",
       "int",
       "kicking points",
       "longest completion",
@@ -671,8 +672,7 @@
       "punts inside 20",
       "quarters with 1+ reception",
       "quarters with 5+ rush yards",
-      "rec targets",
-      "rec tds"
+      "rec targets"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -680,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T03:20:41.423555+00:00"
+  "fetched_at": "2026-11-28T03:40:38.351082+00:00"
 }
