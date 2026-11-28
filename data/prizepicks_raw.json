@@ -52,7 +52,7 @@
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
-      "passing_yards": 164.5,
+      "passing_yards": 163.5,
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
@@ -84,16 +84,16 @@
     "Anthony Gould": {
       "receiving_yards": 19.5
     },
-    "Deion Burks": {
-      "receiving_yards": 17.5,
-      "receptions": 1.5
-    },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
+    },
+    "Deion Burks": {
+      "receiving_yards": 16.5,
+      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 12.5,
@@ -114,7 +114,7 @@
       "rushing_yards": 8.5
     },
     "Chris Rodriguez Jr.": {
-      "rushing_yards": 77.5,
+      "rushing_yards": 76.5,
       "receiving_yards": 7.5
     },
     "Tony Pollard": {
@@ -175,7 +175,7 @@
       "rushing_yards": 4.5
     },
     "Geno Smith": {
-      "passing_yards": 204.5,
+      "passing_yards": 203.5,
       "rushing_yards": 3.5
     },
     "Kyle McCord": {
@@ -244,7 +244,7 @@
       "receiving_yards": 73.5
     },
     "Nico Collins": {
-      "receiving_yards": 57.5,
+      "receiving_yards": 60.5,
       "receptions": 4.5
     },
     "Derrick Henry": {
@@ -369,12 +369,12 @@
     "Ladd McConkey": {
       "receiving_yards": 36.5
     },
-    "Mack Hollins": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
-    },
     "Corey Kiner": {
       "rushing_yards": 27.5
+    },
+    "Mack Hollins": {
+      "receiving_yards": 26.5,
+      "receptions": 2.5
     },
     "DeMario Douglas": {
       "receiving_yards": 25.5,
@@ -396,7 +396,7 @@
       "receiving_yards": 18.5
     },
     "Eli Raridon": {
-      "receiving_yards": 17.5
+      "receiving_yards": 16.5
     },
     "Charlie Kolar": {
       "receiving_yards": 13.5
@@ -438,22 +438,22 @@
       "receiving_yards": 25.5
     },
     "Jadarian Price": {
-      "rushing_yards": 25.5,
+      "rushing_yards": 24.5,
       "receiving_yards": 9.5
     },
     "AJ Barner": {
       "receiving_yards": 23.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 21.5,
+      "rushing_yards": 8.5,
+      "receptions": 2.5
     },
     "Cooper Kupp": {
       "receiving_yards": 20.5
     },
     "Kaelon Black": {
       "rushing_yards": 20.5
-    },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 20.5,
-      "rushing_yards": 8.5,
-      "receptions": 2.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 17.5
@@ -498,8 +498,7 @@
       "receiving_yards": 4.5
     },
     "Harrison Wallace III": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 27.5
     },
     "Treylon Burks": {
       "receiving_yards": 24.5
@@ -589,7 +588,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 16.5,
+      "receiving_yards": 17.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -605,7 +604,7 @@
       "receptions": 3.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 37.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Cade Otton": {
@@ -643,9 +642,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6267,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 5021,
+    "total_projections_returned": 6301,
+    "matched_props": 283,
+    "excluded_goblin_demon_lines": 5056,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -684,5 +683,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T15:20:41.318797+00:00"
+  "fetched_at": "2026-11-28T15:40:35.923128+00:00"
 }
