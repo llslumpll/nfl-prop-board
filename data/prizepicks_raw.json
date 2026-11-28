@@ -357,7 +357,7 @@
     },
     "DJ Uiagalelei": {
       "passing_yards": 148.5,
-      "rushing_yards": 14.5
+      "rushing_yards": 13.5
     },
     "Omarion Hampton": {
       "rushing_yards": 63.5,
@@ -549,7 +549,7 @@
     "KC Concepcion Jr.": {
       "receiving_yards": 51.5,
       "receptions": 4.5,
-      "rushing_yards": 2.5
+      "rushing_yards": 3.5
     },
     "Harold Fannin Jr.": {
       "receiving_yards": 49.5,
@@ -560,7 +560,7 @@
       "receiving_yards": 29.5
     },
     "Mike Washington Jr.": {
-      "rushing_yards": 33.5
+      "rushing_yards": 31.5
     },
     "Tre Tucker": {
       "receiving_yards": 29.5
@@ -639,9 +639,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6002,
+    "total_projections_returned": 6050,
     "matched_props": 284,
-    "excluded_goblin_demon_lines": 4764,
+    "excluded_goblin_demon_lines": 4812,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -671,8 +671,8 @@
       "punts (combo)",
       "punts inside 20",
       "quarters with 1+ reception",
-      "quarters with 5+ rush yards",
-      "rec targets"
+      "quarters with 25+ pass yards",
+      "quarters with 5+ rush yards"
     ],
     "sample_odds_types_seen": [
       "demon",
@@ -680,5 +680,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T03:40:38.351082+00:00"
+  "fetched_at": "2026-11-28T04:00:42.474129+00:00"
 }
