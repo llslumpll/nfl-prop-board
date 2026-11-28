@@ -47,7 +47,8 @@
       "receptions": 2.5
     },
     "Olamide Zaccheaus": {
-      "receiving_yards": 12.5
+      "receiving_yards": 15.5,
+      "receptions": 1.5
     },
     "Beaux Collins": {
       "receiving_yards": 12.5
@@ -156,11 +157,12 @@
       "receptions": 3
     },
     "Ameer Abdullah": {
-      "rushing_yards": 18.5,
+      "rushing_yards": 19.5,
       "receptions": 0.5
     },
     "Travis Hunter": {
-      "receiving_yards": 13.5
+      "receiving_yards": 13.5,
+      "receptions": 1.5
     },
     "Calvin Ridley": {
       "receiving_yards": 13.5
@@ -313,7 +315,7 @@
       "rushing_yards": 6.5
     },
     "Tyler Shough": {
-      "passing_yards": 231.5,
+      "passing_yards": 233.5,
       "rushing_yards": 18.5
     },
     "Ja'Marr Chase": {
@@ -397,7 +399,7 @@
     },
     "Kimani Vidal": {
       "rushing_yards": 21.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Quentin Johnston": {
@@ -452,16 +454,16 @@
     "AJ Barner": {
       "receiving_yards": 21.5
     },
-    "Deebo Samuel Sr.": {
-      "receiving_yards": 21.5,
-      "rushing_yards": 9.5,
-      "receptions": 2.5
-    },
     "Cooper Kupp": {
       "receiving_yards": 20.5
     },
     "Kaelon Black": {
       "rushing_yards": 20.5
+    },
+    "Deebo Samuel Sr.": {
+      "receiving_yards": 20.5,
+      "rushing_yards": 9.5,
+      "receptions": 2.5
     },
     "Rashid Shaheed": {
       "receiving_yards": 17.5
@@ -597,7 +599,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -626,16 +628,16 @@
     "Ted Hurst III": {
       "receiving_yards": 23.5
     },
-    "Kenny Gainwell": {
-      "rushing_yards": 22.5,
-      "receiving_yards": 16.5
-    },
     "Chris Godwin Jr.": {
       "receiving_yards": 22.5,
       "receptions": 2.5
     },
+    "Kenny Gainwell": {
+      "rushing_yards": 21.5,
+      "receiving_yards": 15.5
+    },
     "Tommy Tremble": {
-      "receiving_yards": 21.5
+      "receiving_yards": 19.5
     },
     "Tez Johnson": {
       "receiving_yards": 11.5
@@ -652,8 +654,8 @@
     "total_leagues": 142,
     "nfl_league_id": "9",
     "total_projections_returned": 6349,
-    "matched_props": 288,
-    "excluded_goblin_demon_lines": 5100,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 5098,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -692,5 +694,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T17:20:45.822065+00:00"
+  "fetched_at": "2026-11-28T17:40:38.237991+00:00"
 }
