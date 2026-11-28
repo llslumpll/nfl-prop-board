@@ -83,8 +83,7 @@
       "receiving_yards": 21.5
     },
     "Anthony Gould": {
-      "receiving_yards": 18.5,
-      "receptions": 1.5
+      "receiving_yards": 19.5
     },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
@@ -170,7 +169,7 @@
       "receiving_yards": 7.5
     },
     "Xavier Restrepo": {
-      "receiving_yards": 5.5
+      "receiving_yards": 4.5
     },
     "LeQuint Allen Jr.": {
       "receiving_yards": 4.5,
@@ -185,7 +184,7 @@
       "rushing_yards": 7.5
     },
     "Ollie Gordon II": {
-      "rushing_yards": 66.5,
+      "rushing_yards": 68.5,
       "receiving_yards": 10.5
     },
     "Breece Hall": {
@@ -278,10 +277,10 @@
     "Dalton Schultz": {
       "receiving_yards": 25.5
     },
-    "Mark Andrews": {
-      "receiving_yards": 22.5
-    },
     "Ja'Kobi Lane": {
+      "receiving_yards": 24.5
+    },
+    "Mark Andrews": {
       "receiving_yards": 22.5
     },
     "Justice Hill": {
@@ -340,7 +339,7 @@
       "receiving_yards": 25.5
     },
     "Mike Gesicki": {
-      "receiving_yards": 24.5
+      "receiving_yards": 23.5
     },
     "Noah Fant": {
       "receiving_yards": 19.5
@@ -532,7 +531,7 @@
       "receptions": 0.5
     },
     "Deshaun Watson": {
-      "passing_yards": 209.5,
+      "passing_yards": 211.5,
       "rushing_yards": 24.5
     },
     "Fernando Mendoza": {
@@ -639,9 +638,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6136,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 4896,
+    "total_projections_returned": 6125,
+    "matched_props": 283,
+    "excluded_goblin_demon_lines": 4886,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -680,5 +679,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T05:20:37.804619+00:00"
+  "fetched_at": "2026-11-28T05:40:35.718399+00:00"
 }
