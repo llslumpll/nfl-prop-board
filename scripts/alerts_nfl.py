@@ -209,7 +209,12 @@ def kalshi_board(week: int | None, now: datetime, sent: dict) -> tuple[str, str]
     key = f"kboard|{week}|{hashlib.md5(sig.encode()).hexdigest()[:8]}"
     if key in sent:
         return None
-    again = any(k.startswith(f"kboard|{week}|") for k in sent)
+    prev = [v for k, v in sent.items() if k.startswith(f"kboard|{week}|")]
+    if prev:   # an update at most every 3 hours (Best 5 refills as prices move; Nov 27 posted 3 times in 40 minutes)
+        last = max(datetime.strptime(v, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc) for v in prev)
+        if now - last < timedelta(hours=3):
+            return None
+    again = bool(prev)
     lines = [f"🎯 **Your board · week {week}**{' (updated)' if again else ''} · TESTING: 0.5U or less"]
     if open5:
         lines.append("**Best 5 on Kalshi** (straight bets, each locks at its kickoff):")
