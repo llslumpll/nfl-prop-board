@@ -1,7 +1,7 @@
 {
  "best5": {
   "12": {
-   "built": "2026-11-28 00:01 UTC",
+   "built": "2026-11-28 00:20 UTC",
    "legs": [
     {
      "ask": 0.62,
@@ -42,6 +42,25 @@
      "week": 12
     },
     {
+     "ask": 0.62,
+     "avg5": 44,
+     "bid": 0.58,
+     "edge": 0.0524,
+     "est": 0.6724,
+     "event": "KXNFLRSHYDS-26NOV29ATLMIN",
+     "g": 6,
+     "game": "ATLMIN",
+     "kickoff": "2026-11-29T18:00:00Z",
+     "l5": 0.4,
+     "player": "Jordan Mason",
+     "proj": 39.4,
+     "rung": 49.5,
+     "series": "KXNFLRSHYDS",
+     "stat": "rushyd",
+     "ticker": "KXNFLRSHYDS-26NOV29ATLMIN-MINJMASON27-50",
+     "week": 12
+    },
+    {
      "ask": 0.68,
      "avg5": 44,
      "bid": 0.63,
@@ -58,25 +77,6 @@
      "series": "KXNFLPASSYDS",
      "stat": "passyd",
      "ticker": "KXNFLPASSYDS-26NOV29NELAC-NETDEVITO16-150",
-     "week": 12
-    },
-    {
-     "ask": 0.6,
-     "avg5": 1.7,
-     "bid": 0.56,
-     "edge": 0.0557,
-     "est": 0.6557,
-     "event": "KXNFLPASSYDS-26NOV29SEASF",
-     "g": 3,
-     "game": "SEASF",
-     "kickoff": "2026-11-29T21:25:00Z",
-     "l5": 0.0,
-     "player": "Mac Jones",
-     "proj": null,
-     "rung": 199.5,
-     "series": "KXNFLPASSYDS",
-     "stat": "passyd",
-     "ticker": "KXNFLPASSYDS-26NOV29SEASF-SFMJONES10-200",
      "week": 12
     },
     {
