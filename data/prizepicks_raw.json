@@ -46,11 +46,11 @@
       "rushing_yards": 8.5
     },
     "J.J. McCarthy": {
-      "passing_yards": 217.5,
+      "passing_yards": 218.5,
       "rushing_yards": 18.5
     },
     "Anthony Richardson Sr.": {
-      "passing_yards": 163.5,
+      "passing_yards": 164.5,
       "rushing_yards": 38.5
     },
     "Cam Skattebo": {
@@ -82,16 +82,16 @@
     "Anthony Gould": {
       "receiving_yards": 19.5
     },
+    "Deion Burks": {
+      "receiving_yards": 17.5,
+      "receptions": 1.5
+    },
     "Darnell Mooney": {
       "receiving_yards": 17.5,
       "receptions": 1.5
     },
     "Ashton Dulin": {
       "receiving_yards": 16.5
-    },
-    "Deion Burks": {
-      "receiving_yards": 15.5,
-      "receptions": 1.5
     },
     "Devin Singletary": {
       "rushing_yards": 11.5,
@@ -147,12 +147,10 @@
     },
     "Ameer Abdullah": {
       "rushing_yards": 19.5,
-      "receptions": 0.5,
-      "receiving_yards": 0.5
+      "receptions": 0.5
     },
     "Travis Hunter": {
-      "receiving_yards": 13.5,
-      "receptions": 1.5
+      "receiving_yards": 13.5
     },
     "Calvin Ridley": {
       "receiving_yards": 12.5
@@ -165,14 +163,14 @@
       "receiving_yards": 6.5
     },
     "Daniel Bellinger": {
-      "receiving_yards": 7.5
+      "receiving_yards": 6.5
+    },
+    "Xavier Restrepo": {
+      "receiving_yards": 5.5
     },
     "LeQuint Allen Jr.": {
       "receiving_yards": 4.5,
       "rushing_yards": 4.5
-    },
-    "Xavier Restrepo": {
-      "receiving_yards": 2.5
     },
     "Geno Smith": {
       "passing_yards": 204.5,
@@ -262,13 +260,13 @@
       "receiving_yards": 29.5,
       "receptions": 2.5
     },
-    "Xavier Hutchinson": {
-      "receiving_yards": 28.5
-    },
     "Woody Marks": {
-      "rushing_yards": 28.5,
+      "rushing_yards": 29.5,
       "receiving_yards": 8.5,
       "receptions": 1.5
+    },
+    "Xavier Hutchinson": {
+      "receiving_yards": 28.5
     },
     "Dalton Schultz": {
       "receiving_yards": 26.5
@@ -472,8 +470,7 @@
       "rushing_yards": 13.5
     },
     "Trey McBride": {
-      "receiving_yards": 57.5,
-      "receptions": 6.5
+      "receiving_yards": 56.5
     },
     "Jacory Croskey-Merritt": {
       "rushing_yards": 54.5,
@@ -490,15 +487,14 @@
     },
     "Bam Knight": {
       "rushing_yards": 28.5,
-      "receiving_yards": 5.5
+      "receiving_yards": 6.5
     },
     "Harrison Wallace III": {
-      "receiving_yards": 27.5,
-      "receptions": 2.5
+      "receiving_yards": 27.5
     },
     "Tyler Allgeier": {
       "rushing_yards": 26.5,
-      "receiving_yards": 4.5
+      "receiving_yards": 5.5
     },
     "Treylon Burks": {
       "receiving_yards": 24.5
@@ -509,7 +505,7 @@
       "receptions": 1.5
     },
     "Simi Fehoko": {
-      "receiving_yards": 19.5
+      "receiving_yards": 18.5
     },
     "Rachaad White": {
       "rushing_yards": 13.5,
@@ -570,7 +566,7 @@
       "rushing_yards": 18.5
     },
     "Jalen Nailor": {
-      "receiving_yards": 9.5
+      "receiving_yards": 10.5
     },
     "Blake Whiteheart": {
       "receiving_yards": 0.5
@@ -585,7 +581,7 @@
     },
     "Bucky Irving": {
       "rushing_yards": 81.5,
-      "receiving_yards": 17.5,
+      "receiving_yards": 16.5,
       "receptions": 3
     },
     "Chuba Hubbard": {
@@ -593,7 +589,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 55.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -620,13 +616,13 @@
     },
     "Kenny Gainwell": {
       "rushing_yards": 21.5,
-      "receiving_yards": 16.5
+      "receiving_yards": 15.5
     },
     "Tommy Tremble": {
       "receiving_yards": 20.5
     },
     "Tez Johnson": {
-      "receiving_yards": 14.5
+      "receiving_yards": 11.5
     },
     "Mitchell Evans": {
       "receiving_yards": 10.5
@@ -639,9 +635,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6212,
-    "matched_props": 284,
-    "excluded_goblin_demon_lines": 4965,
+    "total_projections_returned": 6218,
+    "matched_props": 280,
+    "excluded_goblin_demon_lines": 4976,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -680,5 +676,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T14:20:39.777503+00:00"
+  "fetched_at": "2026-11-28T14:40:38.168490+00:00"
 }
