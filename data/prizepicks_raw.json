@@ -17,8 +17,7 @@
       "receiving_yards": 21.5
     },
     "Drake London": {
-      "receiving_yards": 71.5,
-      "receptions": 5.5
+      "receiving_yards": 71.5
     },
     "Jordan Mason": {
       "rushing_yards": 57.5,
@@ -40,7 +39,7 @@
       "receiving_yards": 29.5
     },
     "Jauan Jennings": {
-      "receiving_yards": 28.5
+      "receiving_yards": 26.5
     },
     "Tai Felton": {
       "receiving_yards": 22.5,
@@ -245,7 +244,7 @@
       "receptions": 0.5
     },
     "C.J. Stroud": {
-      "passing_yards": 259.5,
+      "passing_yards": 258.5,
       "rushing_yards": 11.5
     },
     "Jacoby Brissett": {
@@ -275,7 +274,7 @@
       "receiving_yards": 32.5
     },
     "Xavier Hutchinson": {
-      "receiving_yards": 30.5
+      "receiving_yards": 28.5
     },
     "Woody Marks": {
       "rushing_yards": 28.5,
@@ -324,7 +323,7 @@
       "receptions": 7.5
     },
     "Chris Olave": {
-      "receiving_yards": 68.5,
+      "receiving_yards": 69.5,
       "receptions": 5.5
     },
     "Tee Higgins": {
@@ -346,10 +345,10 @@
       "rushing_yards": 28.5,
       "receiving_yards": 9.5
     },
-    "Devaughn Vele": {
-      "receiving_yards": 25.5
-    },
     "Mike Gesicki": {
+      "receiving_yards": 24.5
+    },
+    "Devaughn Vele": {
       "receiving_yards": 24.5
     },
     "Noah Fant": {
@@ -400,14 +399,14 @@
     },
     "Kimani Vidal": {
       "rushing_yards": 21.5,
-      "receiving_yards": 8.5,
+      "receiving_yards": 7.5,
       "receptions": 1.5
     },
     "Quentin Johnston": {
       "receiving_yards": 18.5
     },
     "Eli Raridon": {
-      "receiving_yards": 16.5
+      "receiving_yards": 17.5
     },
     "Efton Chism III": {
       "receiving_yards": 13.5
@@ -608,7 +607,7 @@
       "receiving_yards": 18.5
     },
     "Tetairoa McMillan": {
-      "receiving_yards": 54.5,
+      "receiving_yards": 55.5,
       "receptions": 4.5
     },
     "Jalen Coker": {
@@ -616,7 +615,7 @@
       "receptions": 3.5
     },
     "Emeka Egbuka": {
-      "receiving_yards": 34.5,
+      "receiving_yards": 38.5,
       "receptions": 3.5
     },
     "Darren Waller": {
@@ -654,9 +653,9 @@
   "diagnostics": {
     "total_leagues": 142,
     "nfl_league_id": "9",
-    "total_projections_returned": 6344,
-    "matched_props": 291,
-    "excluded_goblin_demon_lines": 5092,
+    "total_projections_returned": 6350,
+    "matched_props": 290,
+    "excluded_goblin_demon_lines": 5101,
     "sample_stat_types_seen": [
       "anytime tds",
       "anytime tds (combo)",
@@ -695,5 +694,5 @@
       "standard"
     ]
   },
-  "fetched_at": "2026-11-28T17:46:36.595587+00:00"
+  "fetched_at": "2026-11-28T18:00:45.305590+00:00"
 }
